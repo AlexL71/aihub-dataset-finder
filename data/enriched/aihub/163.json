@@ -1,0 +1,29 @@
+{
+ "dataset_id": "163",
+ "title_en": "Construction site safety equipment recognition images",
+ "summary_ko": "공사현장에서 직접 찍은 이미지 200만 장 이상에 안전모·안전화·안전벨트 같은 보호구와 중장비·비계·사다리·자재 등 물체 상자 948만 개, 안전벨트 다각형, 작업자 키포인트를 표시한 데이터입니다. 작업자의 보호구 착용 여부를 실시간으로 감지하는 안전 관리 AI에 쓸 수 있습니다.",
+ "summary_en": "2+ million images taken at construction sites with 9.48 million boxes for protective gear (helmets, safety shoes, harnesses) and objects such as heavy machinery, scaffolding, ladders and materials, plus harness polygons and worker keypoints. For safety AI that detects in real time whether workers wear protective gear.",
+ "contents_ko": "현장 사진(jpg) + JSON(물체 상자, 안전벨트 다각형, 작업자 키포인트, 착용 여부).",
+ "contents_en": "Site photo (jpg) + JSON (object boxes, harness polygons, worker keypoints, wearing status).",
+ "modalities": ["image"],
+ "tasks": ["object_detection", "segmentation", "keypoint_pose"],
+ "topics": [{"ko": "건설·산업 안전", "en": "Construction and industrial safety"}, {"ko": "노동·작업 환경", "en": "Work environment"}],
+ "keywords_ko": ["안전모", "보호구", "공사현장", "중장비", "산업안전", "착용 감지"],
+ "keywords_en": ["safety helmet", "protective gear", "construction site", "heavy machinery", "industrial safety", "PPE detection"],
+ "labels": ["bounding box", "polygon (harness)", "keypoints"],
+ "file_formats": ["jpg", "json"],
+ "scale_ko": "이미지 203만 장, 상자 9,481,123개, 다각형 76,769개, 키포인트 128,656개",
+ "classes_example": ["안전모", "안전화", "안전벨트", "중장비", "비계", "사다리", "자재 및 공구"],
+ "baseline": [],
+ "difficulty": "beginner",
+ "difficulty_note_ko": "안전모 탐지는 YOLO 첫 프로젝트로 좋습니다. 전체 약 1.1TB라 일부만 받아 쓰세요.",
+ "skills_needed_ko": ["파이썬 기초", "YOLO 객체 탐지"],
+ "caveats_ko": ["전체 약 1.1TB", "성능 지표가 팩에서 확인되지 않음(설명에는 YOLACT 언급)"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "안전모 착용 탐지기", "title_en": "Helmet detector", "desc_ko": "현장 사진에서 안전모를 쓴 사람과 안 쓴 사람을 탐지합니다.", "desc_en": "Detect workers with and without helmets."},
+  {"level": "capstone", "title_ko": "현장 CCTV 안전 알림", "title_en": "Site CCTV safety alerts", "desc_ko": "보호구 미착용을 실시간으로 감지해 관리자에게 알리는 대시보드를 만듭니다.", "desc_en": "Detect missing gear in real time and alert supervisors."},
+  {"level": "research", "title_ko": "추락 위험 자세 인식", "title_en": "Recognising fall-risk postures", "desc_ko": "키포인트와 사다리·비계 위치로 추락 위험 상황을 판단하는 방법을 연구합니다.", "desc_en": "Use keypoints and ladder/scaffold positions to judge fall risk."}
+ ],
+ "doc_used": true,
+ "uncertain": []
+}

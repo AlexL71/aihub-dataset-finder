@@ -1,0 +1,12 @@
+{
+ "dataset_id": "137",
+ "easy_ko": "금속, 벽돌, 유리, 타이어, 나무, 종이, 콘크리트, 플라스틱 같은 산업 쓰레기를 여러 방향에서 찍고, 사진마다 쓰레기 위치와 종류를 표시한 데이터입니다. 폐기물 처리장에서 쓰레기 종류를 자동으로 가려내는 AI를 만들 수 있습니다.",
+ "easy_en": "Photos of industrial waste such as metal, bricks, glass, tyres, wood, paper, concrete and plastic, taken from several angles, each marked with where the waste is and what type it is. You can build AI that sorts waste automatically at recycling plants.",
+ "detail_ko": "산업폐기물 10종 × 2만 건, 총 20만 건으로 1건당 사진 5장, 총 100만 장(jpg)입니다. JSON 라벨에는 바운딩박스 좌표, 종류, 훼손 정도, 촬영 정보가 있습니다. 성능 지표 표는 비어 있으며 설명에는 YOLOv4 사용이 언급됩니다. 전체 약 466GB입니다.",
+ "detail_en": "200k waste items in 10 industrial waste types (20k each), 5 photos per item, 1M jpg photos in total. JSON labels give bounding box, type, damage level and capture info. The performance table is empty, though YOLOv4 is mentioned. Total size is about 466 GB.",
+ "amount_ko": "사진 100만 장, 폐기물 20만 건, 10종",
+ "amount_en": "1M photos, 200k waste items, 10 types",
+ "labels_ko": "폐기물 위치 상자, 종류, 훼손 정도",
+ "labels_en": "box around the waste, waste type, damage level",
+ "status": "full-run-2026-11-02"
+}

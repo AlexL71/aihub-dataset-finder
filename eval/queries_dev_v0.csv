@@ -1,0 +1,33 @@
+query,expected_id,note
+I like dogs,59|498|499|501|561|562|71520|71878|71879,plain wish; any pet dataset
+I like dogs and cats,59|498|499|501|561|562|71520|71878|71879,plain wish; any pet dataset
+강아지 행동 영상,59,Korean
+사과 나무 병 사진,146,Korean everyday words
+약 알약 구분,576,Korean
+법률 상담 챗봇 만들고 싶어요,99|71841|71847|71848|71723|71610,Korean wish
+night driving lidar,71567|71571|71580|71588|71624|71625|71931|71932,English technical
+수학 문제 풀이,71716|71859|133|479,Korean
+korean dialect speech,118|119|120|121|122|71517|71558,English
+skin tone makeup,71963|71961,English
+air pollution from factories satellite,71805,English
+음식 칼로리,74|242|71564,Korean
+essay scoring,545|71817|71818|71819,English
+I want to work with text about emotions,86|71305|71631|71632,data type + topic
+fish farm images,154|155|71513|71345|71681|71321,English (71321 added after the first run: also a fish-farm image dataset)
+건물 균열,162|567|71769,Korean
+travel records of tourists,71581|71582|71584|71585|71776|71778|71779|71780,English
+voice synthesis with emotion,71349|466,English
+x-ray images for disease,71521|71862|498|499|501,English; pet X-rays also fit
+products in a store,64|71510|71508|71431,English
+pill code json format,576,detail in manual
+KOMPSAT 위성,71805|73,exact term
+football player tracking,71482|67|71435,now in the full set
+honeybee disease,71667|71488,English
+수어 번역,103|636,Korean
+교통사고 블랙박스 영상,597|71958,Korean
+wildfire smoke detection,71330|71751|176,English
+반려견 피부병,561,Korean
+bird song recordings,,no match expected
+stock market prices,,no match expected
+cryptocurrency transactions,,no match expected
+photos of Mars surface,,no match expected

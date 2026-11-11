@@ -1,0 +1,29 @@
+{
+ "dataset_id": "123",
+ "title_en": "Korean speech (KsponSpeech)",
+ "summary_ko": "조용한 환경에서 2,000여 명이 두 명씩 일상·쇼핑·정치·경제·날씨·취미 등 다양한 주제로 자유롭게 나눈 대화 음성 1,000시간과, 머뭇거림·간투사까지 적은 전사문입니다. 'KsponSpeech'라는 이름으로 한국어 음성 인식 연구의 표준 벤치마크로 널리 쓰입니다.",
+ "summary_en": "1,000 hours of free conversation between pairs of about 2,000 speakers on everyday life, shopping, politics, economy, weather, hobbies and more, recorded in quiet rooms, with transcripts that keep fillers and hesitations. Known as KsponSpeech, it is a standard benchmark for Korean speech recognition research.",
+ "contents_ko": "음성 파일(pcm/wav) + 전사 텍스트(ETRI 전사 규칙: 철자·발음 이중 전사, 간투사 표기).",
+ "contents_en": "Audio files (pcm/wav) + transcripts (ETRI rules: dual spelling/pronunciation transcription, filler marks).",
+ "modalities": ["audio", "text"],
+ "tasks": ["speech_recognition"],
+ "topics": [{"ko": "음성", "en": "Speech"}, {"ko": "일상 대화", "en": "Everyday conversation"}],
+ "keywords_ko": ["KsponSpeech", "음성 인식", "자유 발화", "대화 음성", "전사", "벤치마크"],
+ "keywords_en": ["KsponSpeech", "speech recognition", "spontaneous speech", "conversational speech", "transcription", "benchmark"],
+ "labels": ["transcript (ETRI rules)"],
+ "file_formats": ["pcm", "txt"],
+ "scale_ko": "음성 1,000시간, 화자 약 2,000명",
+ "classes_example": ["안부·일상", "쇼핑", "취미", "날씨", "정치·경제", "TV·연예"],
+ "baseline": [],
+ "difficulty": "intermediate",
+ "difficulty_note_ko": "약 72GB로 음성 데이터 중 작은 편이고 공개 레시피(ESPnet 등)와 논문이 있어 실습하기 좋습니다.",
+ "skills_needed_ko": ["파이썬", "오디오 처리", "음성 인식 툴킷(ESPnet, Whisper)"],
+ "caveats_ko": ["2018년 구축", "전사 규칙(이중 전사, 특수 기호)을 이해하고 전처리해야 함"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "Whisper 한국어 성능 측정", "title_en": "Benchmark Whisper on Korean", "desc_ko": "평가 세트로 공개 음성 인식기의 문자 오류율을 계산합니다.", "desc_en": "Compute character error rate of an open recogniser on the eval set."},
+  {"level": "capstone", "title_ko": "작은 한국어 음성 인식기 학습", "title_en": "Train a small Korean recogniser", "desc_ko": "ESPnet 레시피로 작은 모델을 학습하고 결과를 웹 데모로 보여줍니다.", "desc_en": "Train a small model with an ESPnet recipe and demo it."},
+  {"level": "research", "title_ko": "간투사·머뭇거림 처리 연구", "title_en": "Handling fillers and disfluency", "desc_ko": "간투사를 지우거나 남기는 방식이 인식 성능과 읽기 쉬움에 주는 영향을 비교합니다.", "desc_en": "Compare removing or keeping fillers for accuracy and readability."}
+ ],
+ "doc_used": true,
+ "uncertain": ["파일 형식(pcm/txt)은 KsponSpeech 공개 정보 기준 추정"]
+}

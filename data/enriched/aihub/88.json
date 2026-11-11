@@ -1,0 +1,29 @@
+{
+ "dataset_id": "88",
+ "title_en": "Public administration document OCR",
+ "summary_ko": "김해시가 제공한 오래된 공공행정문서(인허가·주민자치·도시개발 등 12개 업무) 이미지 90만 장과 단어 2,500만 개의 위치·글자 라벨입니다. 손글씨·인쇄체·타자체가 섞인 흐린 스캔 문서에서 글자를 읽는 행정 문서 OCR을 만들 수 있습니다.",
+ "summary_en": "900,000 images of old public administration documents from Gimhae City (12 work areas such as permits, community affairs and urban development) with positions and text for 25 million words. For OCR that reads blurry scans mixing handwriting, print and typewriter text.",
+ "contents_ko": "문서 이미지 + JSON(단어별 상자 좌표와 글자, 문자 형태, 업무 분류).",
+ "contents_en": "Document image + JSON (box and text per word, character type, work category).",
+ "modalities": ["image", "text"],
+ "tasks": ["ocr", "text_classification"],
+ "topics": [{"ko": "행정·공공 서비스", "en": "Public administration and services"}, {"ko": "문서 디지털화", "en": "Document digitisation"}, {"ko": "기록 보존", "en": "Records and archives"}],
+ "keywords_ko": ["OCR", "공공행정문서", "스캔 문서", "손글씨", "타자체", "지자체", "기록물"],
+ "keywords_en": ["OCR", "public documents", "scanned documents", "handwriting", "typewriter text", "local government", "archives"],
+ "labels": ["word bounding box", "text transcription", "character type", "document category"],
+ "file_formats": ["jpg", "json"],
+ "scale_ko": "이미지 90만 장, 단어 2,500만 개, 업무 분류 12종(인허가 약 37.8만 장으로 최다)",
+ "classes_example": ["인.허가", "주민자치", "도시개발", "농림.축산지원", "일반행정", "주민생활지원", "회계.예산"],
+ "baseline": [],
+ "difficulty": "intermediate",
+ "difficulty_note_ko": "공개 OCR 모델을 미세조정하는 형태로 실습할 수 있습니다. 전체 약 390GB입니다.",
+ "skills_needed_ko": ["파이썬", "OCR 모델 미세조정(PaddleOCR 등)", "문서 이미지 전처리"],
+ "caveats_ko": ["성능 지표 표가 비어 있음", "행정문서라 개인정보 비식별 상태를 확인해야 함", "김해시 한 곳의 문서만 포함"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "문서 업무 분류", "title_en": "Document category classifier", "desc_ko": "문서 이미지(또는 OCR 텍스트)로 인허가·도시개발 같은 업무 종류를 분류합니다.", "desc_en": "Classify documents into work areas from images or OCR text."},
+  {"level": "capstone", "title_ko": "옛 행정문서 검색 시스템", "title_en": "Search for old administrative records", "desc_ko": "스캔 문서를 OCR로 읽어 전문 검색이 되는 기록물 검색 웹을 만듭니다.", "desc_en": "OCR scanned records and build a full-text search site."},
+  {"level": "research", "title_ko": "손글씨·타자체 혼합 문서 인식", "title_en": "Mixed handwriting and typewriter OCR", "desc_ko": "문자 형태별 인식 오류를 분석하고 열화된 스캔에 강한 방법을 연구합니다.", "desc_en": "Analyse errors by character type and study methods robust to degraded scans."}
+ ],
+ "doc_used": true,
+ "uncertain": []
+}

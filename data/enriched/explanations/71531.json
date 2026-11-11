@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71531",
+ "easy_ko": "한국 특허 30만여 건을 나라에서 정한 과학기술 분류표에 맞춰 어느 분야인지 나누어 표시한 글 데이터입니다. 특허 같은 기술 문서를 나라의 분류 체계로 자동으로 나누는 AI에 쓸 수 있습니다.",
+ "easy_en": "Text data with over 300,000 Korean patents, each sorted into a field of the national science and technology classification. You can use it to build AI that automatically files technical documents such as patents into the national classification system.",
+ "detail_ko": "한국 공개·등록 특허 300,240건(txt)에 국가과학기술표준분류(17개 대분류·188개 중분류; 예: 기계 > 측정표준/시험평가기술, 생산기반기술, 로봇/자동화기계, 나노/마이크로기계시스템), 중점과학기술분류(11개), 6T 분류(6개)를 JSON으로 붙였습니다. 모델은 KoBERT, 지표는 F1이지만 성능 수치는 팩에서 확인되지 않고, 중분류별 수량 분포는 팩 앞부분에서 잘렸습니다.",
+ "detail_en": "300,240 Korean published and registered patents (txt) with JSON labels for the national science and technology standard classification (17 major and 188 middle classes; for example machinery > measurement standards/testing, production technology, robotics/automation, nano/micro mechanical systems), the key-technology classification (11 classes) and the 6T classification (6 classes). The model is KoBERT and the metric F1, but no values are visible in the pack, and the per-class counts are cut off.",
+ "amount_ko": "특허 300,240건, 중분류 188개",
+ "amount_en": "300,240 patents, 188 middle classes",
+ "labels_ko": "과학기술 분야 분류(세 가지 체계)",
+ "labels_en": "standard classification, key-technology class, 6T class",
+ "status": "full-run-2026-11-02"
+}

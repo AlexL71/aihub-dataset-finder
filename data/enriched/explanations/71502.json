@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71502",
+ "easy_ko": "어린이 교육 방송, 드라마, 예능에서 모은 말소리 약 1,000시간에 받아쓴 글과 프로그램 종류, 주제어를 붙인 데이터입니다. 어린이 목소리를 알아듣는 음성 인식과 방송 자막을 자동으로 만드는 AI에 쓸 수 있습니다.",
+ "easy_en": "About 1,000 hours of speech from children's educational TV, dramas and variety shows, with written transcripts, programme type and keywords. You can use it to build speech recognition that understands children's voices and AI that makes TV subtitles automatically.",
+ "detail_ko": "EBS·KBS 어린이 교육방송·드라마·예능에서 모은 음성 23,146개(WAV, 약 1,001.7시간)에 전사, 카테고리(미취학 아동 발달 교육, 어린이 교육, 어린이 드라마, 어린이 예능), 주제어 등 맥락 정보를 JSON으로 붙였습니다. 기준 성능은 KoBERT 카테고리 분류 AP 98.03%, 주제어 분류 AP 89.17%, HuBERT 음성 인식 CER 11.49%, WER 23.31%입니다. 전체 약 860GB이고, 방송 음성이라 어른 목소리와 배경음이 섞여 있을 수 있으며 방송 저작물 이용 조건을 확인해야 합니다.",
+ "detail_en": "23,146 audio files (WAV, about 1,001.7 hours) from EBS and KBS children's educational programmes, dramas and variety shows, with JSON transcripts, categories (preschool development, children's education, children's drama, children's variety) and keywords. Baselines: category classification with KoBERT, AP 98.03%; keyword classification with KoBERT, AP 89.17%; speech recognition with HuBERT, CER 11.49% and WER 23.31%. Total size is about 860 GB. Being broadcast audio, it may include adult voices and background sound, and the broadcast licence terms should be checked.",
+ "amount_ko": "음성 23,146개, 약 1,001.7시간",
+ "amount_en": "23,146 audio files, about 1,001.7 hours",
+ "labels_ko": "받아쓴 글, 프로그램 종류, 주제어",
+ "labels_en": "transcripts, category, keywords",
+ "status": "full-run-2026-11-02"
+}

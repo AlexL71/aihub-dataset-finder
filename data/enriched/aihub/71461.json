@@ -1,0 +1,29 @@
+{
+ "dataset_id": "71461",
+ "title_en": "Korean-style vision data for action classification and interaction recognition",
+ "summary_ko": "한국에서 찍은 이미지 603,452장에 사람 관절 키포인트(17개 1세트)와 사람-물체 상호작용(HOI) 라벨이 붙은 데이터입니다. 사람이 무엇을 하고 있는지(예: 사진 촬영) 알아보는 스마트 CCTV 같은 AI에 쓸 수 있습니다.",
+ "summary_en": "603,452 images taken in Korea with 17-point human keypoints and human-object interaction (HOI) labels. For AI that recognises what people are doing, e.g. smart CCTV that spots photo-taking in restricted areas.",
+ "contents_ko": "이미지(jpg) + JSON(관절 키포인트 17개, 사람-물체 상호작용).",
+ "contents_en": "Image (jpg) + JSON (17 keypoints, human-object interaction).",
+ "modalities": ["image", "text"],
+ "tasks": ["keypoint_pose", "action_recognition", "object_detection"],
+ "topics": [{"ko": "행동 인식", "en": "Action recognition"}, {"ko": "한국 생활", "en": "Everyday life in Korea"}],
+ "keywords_ko": ["행동 분류", "상호작용", "HOI", "키포인트", "한국형 비전", "스마트 CCTV"],
+ "keywords_en": ["action classification", "interaction", "HOI", "keypoints", "Korean vision", "smart CCTV"],
+ "labels": ["keypoints (17)", "human-object interaction", "bounding box"],
+ "file_formats": ["jpg", "json"],
+ "scale_ko": "이미지 603,452장, 키포인트 60만 세트 이상, HOI 60만 개 이상",
+ "classes_example": ["사람(person)", "탈것(vehicle) > 자전거, 승용차(sedan·suv), 경찰차", "실외(outdoor)", "동물(animal)", "액세서리(accessory)", "스포츠(sports)", "상호작용 > 잡기(hold)", "상호작용 > 차기(kick)", "상호작용 > 앉기(sit)"],
+ "baseline": [],
+ "difficulty": "advanced",
+ "difficulty_note_ko": "자세 추정과 사람-물체 관계를 함께 다뤄 어렵습니다. 키포인트 자세 추정부터 시작하세요.",
+ "skills_needed_ko": ["파이썬", "자세 추정 모델", "객체 탐지"],
+ "caveats_ko": ["메타데이터에는 300만 이미지로 적혀 있지만 통계표는 603,452건임", "통계표의 카테고리 수량은 300만 장 시리즈(71452 등) 것을 그대로 쓴 것으로 보임", "행동·상호작용 종류 전체 목록과 성능 지표가 팩에 없음", "전체 약 177GB"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "사람 자세 추정", "title_en": "Human pose estimation", "desc_ko": "키포인트 라벨로 사람의 관절 위치를 찾는 모델을 학습합니다.", "desc_en": "Train a model to find body joints from keypoints."},
+  {"level": "capstone", "title_ko": "촬영 금지 구역 감시", "title_en": "No-photo zone monitor", "desc_ko": "사람이 휴대폰으로 사진을 찍는 행동을 찾아 알리는 CCTV 데모를 만듭니다.", "desc_en": "CCTV demo that flags people taking photos."},
+  {"level": "research", "title_ko": "사람-물체 상호작용 인식", "title_en": "Human-object interaction recognition", "desc_ko": "자세와 주변 물체를 함께 써 행동을 더 정확히 맞히는 방법을 연구합니다.", "desc_en": "Use pose and nearby objects together to recognise actions."}
+ ],
+ "doc_used": true,
+ "uncertain": ["행동·상호작용 클래스 전체 목록(17개 대분류·150개 객체 중 일부와 예시만 확인)", "실제 이미지 수(60만 vs 300만)"]
+}

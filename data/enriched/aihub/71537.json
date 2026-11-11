@@ -1,0 +1,29 @@
+{
+ "dataset_id": "71537",
+ "title_en": "Object occlusion data",
+ "summary_ko": "대상 물체가 다른 물체에 일부 가려진(폐색) 장면을 직접 촬영한 이미지 약 200만 장입니다. 카메라나 가림 물체가 움직이는 '유동적 폐색'은 상자로, 대상이 고정된 '일정한 폐색'은 분할로 표시되어 있어, 가려진 물체도 잘 찾는 AI에 쓸 수 있습니다.",
+ "summary_en": "About 2 million photos of target objects partly hidden by other objects. Moving occlusion is labelled with boxes, fixed occlusion with segmentation. For AI that finds objects even when partly hidden.",
+ "contents_ko": "이미지(jpg, 비식별) + JSON(유동적 폐색: 상자, 일정한 폐색: 분할, 폐색 비율).",
+ "contents_en": "Image (jpg, anonymised) + JSON (moving occlusion: boxes, fixed occlusion: segmentation, occlusion ratio).",
+ "modalities": ["image"],
+ "tasks": ["object_detection", "segmentation", "object_tracking"],
+ "topics": [{"ko": "컴퓨터 비전 기초", "en": "Core computer vision"}, {"ko": "CCTV·안전", "en": "CCTV and safety"}],
+ "keywords_ko": ["폐색", "가려진 물체", "객체 검출", "분할", "CCTV"],
+ "keywords_en": ["occlusion", "hidden objects", "object detection", "segmentation", "CCTV"],
+ "labels": ["bounding box", "segmentation", "occlusion ratio"],
+ "file_formats": ["jpg", "json"],
+ "scale_ko": "이미지 2,007,759장 (유동적 폐색 1,506,395 + 일정한 폐색 501,364), 촬영 장소 12종, 영상 클립 41,713개",
+ "classes_example": ["유동적 폐색", "일정한 폐색"],
+ "baseline": [],
+ "difficulty": "intermediate",
+ "difficulty_note_ko": "탐지·분할 실습에 좋지만 전체 약 1.5TB입니다. 일부만 받아 쓰세요.",
+ "skills_needed_ko": ["파이썬", "탐지 모델", "분할 모델"],
+ "caveats_ko": ["전체 약 1.5TB", "팩에 성능 지표 표가 없음", "분포 표의 비율 합계가 100%를 넘음(100.39%, 100.28%)"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "가림 정도별 탐지 성능 비교", "title_en": "Detection accuracy by occlusion level", "desc_ko": "YOLO로 탐지한 뒤 폐색 비율이 높을수록 성능이 얼마나 떨어지는지 봅니다.", "desc_en": "Check how detection accuracy drops as occlusion grows."},
+  {"level": "capstone", "title_ko": "가려진 물체 추적", "title_en": "Tracking occluded objects", "desc_ko": "영상 프레임에서 잠깐 가려졌다 나오는 물체를 계속 추적합니다.", "desc_en": "Keep tracking objects that disappear behind others briefly."},
+  {"level": "research", "title_ko": "가려진 부분 형상 복원", "title_en": "Amodal shape completion", "desc_ko": "가려진 부분까지 포함한 물체 전체 모양을 예측하는 방법을 연구합니다.", "desc_en": "Predict the full object shape including hidden parts."}
+ ],
+ "doc_used": true,
+ "uncertain": ["대상 물체의 종류 목록이 팩 앞부분에 없음"]
+}

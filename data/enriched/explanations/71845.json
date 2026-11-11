@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71845",
+ "easy_ko": "한국어 학술 논문 1만 편과 학술 포스터 1만 건의 글과 그림 구조를 정리하고, 논문마다 요약을 붙인 데이터입니다. 논문을 요약하거나 논문 구성을 이해하는 AI에 쓸 수 있습니다.",
+ "easy_en": "The text and figure structure of 10,000 Korean academic papers and 10,000 academic posters, with a summary for each paper. You can use it to build AI that summarises papers or understands how they are organised.",
+ "detail_ko": "한국어 학술논문 10,000건(pdf)과 학술 포스터 10,000건(pptx)의 텍스트·그림 구조 어노테이션 약 60만 건과 논문 요약 라벨 10,000건(JSON)으로, 분야는 사회과학, 과학기술, 인문학·예술·체육학입니다. 논문 저작권·이용 조건을 확인해야 하고, 논문과 포스터의 짝 관계도 확인이 필요하며, 모델 성능 수치는 팩에 없습니다.",
+ "detail_en": "10,000 Korean academic papers (pdf) and 10,000 academic posters (pptx) with about 600,000 structure annotations for text and figures and 10,000 paper summary labels (JSON), in social science, science and technology, and humanities/arts/physical education. Check the copyright and terms for the papers, and whether papers and posters are paired; no model scores are in the pack.",
+ "amount_ko": "논문 10,000건, 포스터 10,000건, 어노테이션 약 60만 건, 요약 라벨 10,000건",
+ "amount_en": "10,000 papers, 10,000 posters, about 600,000 annotations, 10,000 summary labels",
+ "labels_ko": "논문 요약, 글·그림 구조 표시",
+ "labels_en": "summary, structure annotation",
+ "status": "full-run-2026-11-02"
+}

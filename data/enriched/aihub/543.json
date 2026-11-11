@@ -1,0 +1,29 @@
+{
+ "dataset_id": "543",
+ "title_en": "Daily conversation text by topic",
+ "summary_ko": "식음료·주거·교통·회사/아르바이트·군대·교육·가족 등 20여 개 주제로 사람들이 직접 쓴 일상 대화 텍스트 13만 건으로, 대화 주제, 화자 정보, 문장별 화행(질문·요청·응답 등)이 표시되어 있습니다. 자연스러운 한국어 챗봇이나 대화 이해 연구에 쓸 수 있습니다.",
+ "summary_en": "134,000 everyday conversation texts written by workers on about 20 topics (food and drink, housing, transport, jobs, military service, education, family and more), with topic, speaker info and dialogue acts (question, request, answer and so on) per sentence. For natural Korean chatbots and dialogue understanding research.",
+ "contents_ko": "대화 텍스트 + JSON(주제, 화자 정보, 문장별 화행).",
+ "contents_en": "Conversation text + JSON (topic, speaker info, dialogue act per sentence).",
+ "modalities": ["text"],
+ "tasks": ["dialogue", "text_classification"],
+ "topics": [{"ko": "일상 대화", "en": "Everyday conversation"}, {"ko": "챗봇", "en": "Chatbots"}, {"ko": "한국어 구어체", "en": "Colloquial Korean"}],
+ "keywords_ko": ["일상대화", "주제별 대화", "화행", "챗봇", "대화 생성"],
+ "keywords_en": ["everyday conversation", "topic dialogue", "dialogue acts", "chatbot", "dialogue generation"],
+ "labels": ["topic", "speaker info", "dialogue act"],
+ "file_formats": ["txt", "json"],
+ "scale_ko": "텍스트 134,263건(구축량 109,614건), 주제 20여 개",
+ "classes_example": ["식음료", "주거와 생활", "교통", "회사/아르바이트", "군대", "교육", "가족"],
+ "baseline": [],
+ "difficulty": "beginner",
+ "difficulty_note_ko": "약 0.25GB 텍스트라 노트북에서 주제·화행 분류를 바로 해볼 수 있습니다.",
+ "skills_needed_ko": ["파이썬", "pandas", "한국어 텍스트 분류"],
+ "caveats_ko": ["사람이 상황을 정해 쓴 대화라 실제 대화보다 정돈됨"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "대화 주제 분류", "title_en": "Conversation topic classifier", "desc_ko": "대화를 20여 개 주제로 분류합니다.", "desc_en": "Classify conversations into about 20 topics."},
+  {"level": "capstone", "title_ko": "주제별 잡담 챗봇", "title_en": "Topic-aware small-talk bot", "desc_ko": "주제를 고르면 그 주제로 자연스럽게 대화하는 챗봇을 만듭니다.", "desc_en": "Build a bot that chats naturally on a chosen topic."},
+  {"level": "research", "title_ko": "화행 인식으로 대화 흐름 분석", "title_en": "Dialogue-act flow analysis", "desc_ko": "화행 순서 패턴을 분석해 자연스러운 응답 생성에 활용합니다.", "desc_en": "Analyse dialogue-act sequences to guide natural responses."}
+ ],
+ "doc_used": true,
+ "uncertain": []
+}

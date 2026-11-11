@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71565",
+ "easy_ko": "학술 자료나 나라 통계 같은 문서 속 표를 보고 묻는 질문과 답 100만 개로, 표에서 답을 찾을 수 있는 질문과 표로는 답할 수 없는 질문이 섞여 있습니다. 표를 읽고 답하는 챗봇이나 검색 AI에 쓸 수 있습니다.",
+ "easy_en": "1 million questions and answers about tables in documents such as research papers and national statistics, mixing questions the table can answer and questions it cannot. You can use it to build chatbots or search AI that read tables and answer questions.",
+ "detail_ko": "학술자료·국가통계 등 일반 문서 속 표(txt)를 보고 만든 질의응답 1,000,000건(정답 추출형 800,000, 응답 불가형 200,000)에 질문, 정답, 정답 위치, 유형, 분야(예: 건축, 공공행정, 과학기술, 교육, 금융, 농수산, 문화·스포츠, 보건·의료, 환경 등 10종)를 JSON으로 붙였습니다. 기준 성능은 BART 표 질의응답 F1 0.8732입니다. 분야별 비율 합계가 정확히 100이 아니고(예: 기타 11,576건이 5.78%), 원문 HWP·PDF 표가 텍스트로 바뀌면서 표 구조 일부가 사라졌을 수 있습니다.",
+ "detail_en": "1,000,000 question-answer pairs (800,000 answerable by extraction, 200,000 unanswerable) about tables (txt) from general documents such as research material and national statistics, with JSON question, answer, answer position, type and domain (10 domains such as architecture, public administration, science and technology, education, finance, agriculture and fisheries, culture and sports, health and medicine, environment). Baseline: table QA with BART, F1 0.8732. Domain shares do not add up to exactly 100 (for example 11,576 'other' items listed as 5.78%), and some table structure may have been lost when HWP and PDF tables were turned into text.",
+ "amount_ko": "질의응답 1,000,000건(정답 추출형 800,000, 응답 불가형 200,000), 분야 10종",
+ "amount_en": "1,000,000 QA pairs (800,000 answerable, 200,000 unanswerable), 10 domains",
+ "labels_ko": "질문, 정답, 정답 위치, 질문 유형, 분야",
+ "labels_en": "question, answer, answer span, QA type, domain",
+ "status": "full-run-2026-11-02"
+}

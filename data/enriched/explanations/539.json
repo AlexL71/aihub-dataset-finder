@@ -1,0 +1,12 @@
+{
+ "dataset_id": "539",
+ "easy_ko": "사람들이 혼자 말하거나 둘이 대화하는 모습을 여러 카메라와 동작 기록 장비로 찍어, 말소리와 몸짓, 얼굴 움직임, 자막을 시간에 맞춰 묶어 둔 데이터입니다. 말하는 내용과 목소리에 맞춰 아바타나 가상 유튜버가 자연스럽게 몸짓하도록 만드는 AI를 만들 수 있습니다.",
+ "easy_en": "People talking alone or in pairs, recorded by several cameras and motion-capture equipment, with their voice, body movements, facial motion and subtitles all lined up in time. You can build AI that makes avatars or virtual YouTubers move naturally to match what they say and how they sound.",
+ "detail_ko": "화자 486명(독백·2인 대화 각 50%, 자유 발화 75%)을 카메라 4대와 모션캡처로 촬영한 영상 4,070시간(mp4), 음성 1,017시간(wav), 모션캡처(bvh, c3d), 라벨 8,524건으로, JSON에 2D·3D 몸·얼굴 키포인트, 문장별 자막과 시작·끝 시간, 감정 7종, 화자 성별·연령대·전문가 여부, 발화 주제가 있습니다. 기준 성능은 ARP 발화 기반 제스처 생성 Likert 척도(사람 평가) 3.97입니다. 전체 약 4TB이고, 감정 라벨의 79%가 무표정이라 매우 불균형하며, 얼굴이 나오므로 초상권 확인이 필요합니다.",
+ "detail_en": "4,070 hours of 4-camera video (mp4), 1,017 hours of audio (wav), motion capture (bvh, c3d) and 8,524 label files for 486 speakers (half monologue, half two-person dialogue; 75% free speech), with JSON 2D/3D body and face keypoints, per-sentence subtitles with start and end times, 7 emotions, speaker sex, age group and expert flag, and topic. Baseline: Audio-Representation-Pose (ARP) gesture generation Likert score (human rating) 3.97. Total size is about 4 TB; 79% of emotion labels are neutral, so classes are very imbalanced; faces are visible, so check portrait rights.",
+ "amount_ko": "영상 4,070시간, 음성 1,017시간, 화자 486명",
+ "amount_en": "4,070 hours of video, 1,017 hours of audio, 486 speakers",
+ "labels_ko": "몸·얼굴 주요 점(평면·입체), 시간 맞춘 자막, 감정, 화자 정보",
+ "labels_en": "2D and 3D body and face key points, timed subtitles, emotion, speaker info",
+ "status": "full-run-2026-11-02"
+}

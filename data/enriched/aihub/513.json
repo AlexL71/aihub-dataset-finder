@@ -1,0 +1,29 @@
+{
+ "dataset_id": "513",
+ "title_en": "Road facility data for pedestrian safety",
+ "summary_ko": "보행로의 안전·관리·환경·편의 시설물(볼라드, 펜스, 맨홀, 벤치, 표지판 등)을 유형별 양호·불량 상태로 나눠 찍은 이미지로, 상자와 분할 라벨이 붙어 있습니다. 파손된 도로 시설물을 자동으로 찾는 도로 관리 AI에 쓸 수 있습니다.",
+ "summary_en": "Images of sidewalk facilities (safety, management, environmental and convenience facilities such as bollards, fences, manholes, benches and signs) in good or defective condition, with boxes and segmentation labels. For road-management AI that finds damaged facilities automatically.",
+ "contents_ko": "시설물 이미지(jpg) + JSON(시설물 종류, 양호/불량 상태, 상자·분할).",
+ "contents_en": "Facility image (jpg) + JSON (facility type, good/defective state, box and segmentation).",
+ "modalities": ["image"],
+ "tasks": ["object_detection", "segmentation", "anomaly_detection"],
+ "topics": [{"ko": "보행·이동 안전", "en": "Pedestrian safety"}, {"ko": "도시 기반시설", "en": "Urban infrastructure"}, {"ko": "공공시설 관리", "en": "Public facility management"}],
+ "keywords_ko": ["도로 시설물", "보행 안전", "파손 인지", "볼라드", "펜스", "시설물 관리"],
+ "keywords_en": ["road facilities", "pedestrian safety", "damage detection", "bollard", "fence", "facility management"],
+ "labels": ["bounding box", "segmentation", "class", "condition (good/defective)"],
+ "file_formats": ["jpg", "json"],
+ "scale_ko": "구축량은 팩 앞부분에 없음(전체 약 3.6TB)",
+ "classes_example": ["안전시설", "관리시설", "환경시설", "편의시설"],
+ "baseline": [],
+ "difficulty": "intermediate",
+ "difficulty_note_ko": "탐지·상태 분류 실습에 좋지만 전체 약 3.6TB로 매우 큽니다.",
+ "skills_needed_ko": ["파이썬", "YOLO 탐지", "분할 모델"],
+ "caveats_ko": ["전체 약 3.6TB", "구축 수량과 성능 지표가 팩 앞부분에 없음", "노후 시설물 데이터(166번)와 비슷함"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "볼라드 파손 분류", "title_en": "Bollard damage classifier", "desc_ko": "볼라드 사진을 양호·불량으로 분류합니다.", "desc_en": "Classify bollards as good or damaged."},
+  {"level": "capstone", "title_ko": "보행로 시설물 점검 앱", "title_en": "Sidewalk facility inspection app", "desc_ko": "걷으며 찍은 사진에서 불량 시설물을 찾아 위치와 함께 기록합니다.", "desc_en": "Find defective facilities in walking photos and log them with location."},
+  {"level": "research", "title_ko": "다양한 시설물 통합 결함 탐지", "title_en": "Unified defect detection", "desc_ko": "시설물 종류가 달라도 통하는 결함 탐지 방법을 연구합니다.", "desc_en": "Study defect detection that works across facility types."}
+ ],
+ "doc_used": true,
+ "uncertain": ["구축 수량을 팩에서 확인하지 못함"]
+}

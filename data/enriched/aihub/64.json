@@ -1,0 +1,29 @@
+{
+ "dataset_id": "64",
+ "title_en": "Retail product images",
+ "summary_ko": "과자·음료·라면·생활용품·화장품 등 14개 분류, 1만 280종 상품을 3가지 높이와 24가지 각도에서 찍은 사진 144만 장입니다. 한 개씩, 여러 개 묶음 사진이 있어 무인 매장이나 셀프 계산대에서 상품을 자동으로 알아보는 AI에 쓸 수 있습니다.",
+ "summary_en": "1.44 million photos of 10,280 retail products in 14 groups (snacks, drinks, noodles, household goods, cosmetics and more), each taken from 3 heights and 24 angles, alone and in groups. For AI that recognises products in unmanned shops or self-checkout.",
+ "contents_ko": "상품 사진 1장(단수 또는 복수 상품, 높이 0·30·60도, 24각도) + 라벨(상품 ID·이름, 대분류, 상자).",
+ "contents_en": "One product photo (single or multiple items, heights 0/30/60°, 24 angles) + label (product ID and name, group, box).",
+ "modalities": ["image"],
+ "tasks": ["image_classification", "object_detection"],
+ "topics": [{"ko": "유통·매장", "en": "Retail and shops"}, {"ko": "생활용품·식품", "en": "Consumer goods and food"}, {"ko": "무인 결제", "en": "Self-checkout"}],
+ "keywords_ko": ["상품 인식", "무인 매장", "셀프 계산대", "편의점", "진열", "상품 분류"],
+ "keywords_en": ["product recognition", "unmanned store", "self-checkout", "convenience store", "shelf", "product classification"],
+ "labels": ["class (product)", "bounding box"],
+ "file_formats": ["jpg", "json"],
+ "scale_ko": "상품 10,280종, 사진 144만 장(단수 72만, 복수 72만), 14개 대분류",
+ "classes_example": ["과자", "음료", "면류", "상온HMR", "생활용품", "이/미용", "주류", "커피차", "유제품", "홈클린"],
+ "baseline": [{"task": "product classification", "model": "EfficientNet-B7", "metric": "accuracy", "value": "97.51%"}],
+ "difficulty": "beginner",
+ "difficulty_note_ko": "촬영 조건이 일정하고 라벨이 단순해 분류 실습에 좋습니다. 전체 약 720GB라 일부 분류만 받아 시작하세요.",
+ "skills_needed_ko": ["파이썬 기초", "전이학습으로 이미지 분류"],
+ "caveats_ko": ["전체 약 720GB", "스튜디오 촬영이라 실제 매장 선반 사진에서는 정확도가 떨어질 수 있음"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "과자 종류 분류기", "title_en": "Snack classifier", "desc_ko": "과자 대분류 상품 몇십 종만 골라 사진으로 상품을 맞히는 모델을 만듭니다.", "desc_en": "Pick a few dozen snack products and train a classifier."},
+  {"level": "capstone", "title_ko": "셀프 계산대 데모", "title_en": "Self-checkout demo", "desc_ko": "여러 상품이 놓인 사진에서 상품을 탐지하고 가격을 합산하는 데모를 만듭니다.", "desc_en": "Detect several products in one photo and total the price."},
+  {"level": "research", "title_ko": "새 상품 추가에 강한 인식", "title_en": "Recognition that handles new products", "desc_ko": "새 상품을 몇 장의 사진만으로 추가할 수 있는 임베딩 기반 인식 방법을 연구합니다.", "desc_en": "Study embedding-based recognition that adds a new product from a few photos."}
+ ],
+ "doc_used": true,
+ "uncertain": []
+}

@@ -1,0 +1,33 @@
+{
+ "dataset_id": "630",
+ "title_en": "Driving data in various weather conditions",
+ "summary_ko": "맑은 날뿐 아니라 폭설·폭우·안개·도로 반사 같은 악천후에서 주행하며 모은 카메라 이미지 36만 장과 라이다 36만 프레임에 차량·보행자 등 다각형과 3D 상자를 표시한 데이터입니다. 날씨가 나빠도 물체를 잘 알아보는 자율주행 AI에 쓸 수 있습니다.",
+ "summary_en": "360,000 camera images and 360,000 LiDAR frames collected while driving in clear weather and in bad weather (heavy snow, heavy rain, fog, road glare), with polygons and 3D boxes for vehicles, pedestrians and more. For self-driving AI that still recognises objects in bad weather.",
+ "contents_ko": "카메라 이미지 + 라이다 포인트클라우드 + 센서 정보(txt) + JSON(다각형, 3D 큐보이드, 날씨).",
+ "contents_en": "Camera images + LiDAR point clouds + sensor info (txt) + JSON (polygons, 3D cuboids, weather).",
+ "modalities": ["image", "3d"],
+ "tasks": ["object_detection", "segmentation"],
+ "topics": [{"ko": "자율주행", "en": "Autonomous driving"}, {"ko": "날씨·악천후", "en": "Weather and adverse conditions"}],
+ "keywords_ko": ["자율주행", "악천후", "폭우", "폭설", "안개", "라이다"],
+ "keywords_en": ["autonomous driving", "adverse weather", "heavy rain", "snow", "fog", "LiDAR"],
+ "labels": ["2D polygon", "3D cuboid", "weather condition"],
+ "file_formats": ["txt", "json"],
+ "scale_ko": "카메라 이미지 36만 장, 라이다 36만 프레임",
+ "classes_example": ["승용차(car)", "버스(bus)", "트럭(truck)", "보행자(pedestrian)", "자전거(bicycle)", "오토바이(motorcycle)", "킥보드(kickboard)", "볼라드(bollard)", "라바콘(labacon)", "횡단보도 표지(crosswalk sign)", "속도제한 차선(speed limit lane)", "날씨: Normal / Hazy / Rainy / Snowy"],
+ "baseline": [
+  {"task": "3D detection", "model": "Voxel R-CNN", "metric": "mAP", "value": "75.54%"},
+  {"task": "segmentation (clear, day/night)", "model": "Mask R-CNN", "metric": "mIoU", "value": "68.39%"},
+  {"task": "segmentation (rain)", "model": "Mask R-CNN", "metric": "mIoU", "value": "58.01%"}
+ ],
+ "difficulty": "advanced",
+ "difficulty_note_ko": "약 151GB이고 카메라·라이다를 함께 다뤄야 합니다.",
+ "skills_needed_ko": ["파이썬", "분할 모델", "포인트클라우드 3D 탐지"],
+ "caveats_ko": ["이미지·포인트클라우드 파일 형식이 팩에 txt로만 적혀 있음", "629번 융합 센서 데이터와 같은 구축 기관"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "날씨 분류", "title_en": "Weather classifier", "desc_ko": "주행 사진으로 맑음·비·눈·안개를 분류합니다.", "desc_en": "Classify clear, rain, snow or fog from driving photos."},
+  {"level": "capstone", "title_ko": "악천후 위험 알림", "title_en": "Bad-weather hazard alert", "desc_ko": "비·눈 속 보행자를 찾아 운전자에게 경고합니다.", "desc_en": "Detect pedestrians in rain or snow and warn the driver."},
+  {"level": "research", "title_ko": "날씨별 성능 격차 줄이기", "title_en": "Closing the weather gap", "desc_ko": "맑은 날 대비 비 오는 날 성능 하락을 줄이는 방법을 연구합니다.", "desc_en": "Reduce the accuracy drop from clear to rainy conditions."}
+ ],
+ "doc_used": true,
+ "uncertain": ["image and point-cloud file formats"]
+}

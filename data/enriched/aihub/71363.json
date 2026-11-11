@@ -1,0 +1,29 @@
+{
+ "dataset_id": "71363",
+ "title_en": "AI-based national park change detection monitoring platform data",
+ "summary_ko": "국립공원을 드론(0.1m)과 위성(Skysat 0.5m, Sentinel-2 10m, Landsat 30m)으로 찍은 영상 5만 장에 건물·하천·도로·논·밭·산림·벌목지·해안쓰레기 등 토지 피복을 칠한 데이터입니다. 국립공원 안의 산사태·벌목·불법 경작·시설물 같은 변화를 감시하는 AI에 쓸 수 있습니다.",
+ "summary_en": "50,000 drone (0.1 m) and satellite (Skysat 0.5 m, Sentinel-2 10 m, Landsat 30 m) images of national parks, painted with land cover such as buildings, streams, roads, paddies, fields, forest, logged areas and coastal litter. For AI that monitors changes in national parks such as landslides, logging, illegal farming or structures.",
+ "contents_ko": "드론·위성 영상(TIF) + 라벨 마스크(TIF) + JSON.",
+ "contents_en": "Drone and satellite images (TIF) + label masks (TIF) + JSON.",
+ "modalities": ["image"],
+ "tasks": ["segmentation", "anomaly_detection"],
+ "topics": [{"ko": "자연 보호", "en": "Nature conservation"}, {"ko": "원격탐사", "en": "Remote sensing"}],
+ "keywords_ko": ["국립공원", "변화 탐지", "드론", "위성영상", "산사태", "벌목"],
+ "keywords_en": ["national parks", "change detection", "drone", "satellite imagery", "landslides", "logging"],
+ "labels": ["segmentation mask", "land-cover class"],
+ "file_formats": ["tif", "json"],
+ "scale_ko": "이미지 5만 장(드론 2만, 위성 3만), 해상도 4종",
+ "classes_example": ["건물", "하천", "도로", "논", "밭", "벌목지", "해안쓰레기"],
+ "baseline": [{"task": "national park land-cover segmentation", "model": "SegFormer", "metric": "mIoU", "value": "72.25%"}],
+ "difficulty": "intermediate",
+ "difficulty_note_ko": "약 99GB이고 해상도가 다른 영상 4종을 함께 다뤄야 합니다.",
+ "skills_needed_ko": ["파이썬", "분할 모델(SegFormer·U-Net)", "GIS 기초"],
+ "caveats_ko": ["해상도별로 클래스 구성이 다름", "국립공원 지역만 있음"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "벌목지 분할", "title_en": "Logged-area segmentation", "desc_ko": "드론 사진에서 벌목된 영역을 칠합니다.", "desc_en": "Segment logged areas in drone photos."},
+  {"level": "capstone", "title_ko": "국립공원 변화 알림", "title_en": "Park change alert", "desc_ko": "두 시기 영상을 비교해 새로 생긴 시설·경작지를 알려줍니다.", "desc_en": "Compare two dates and flag new structures or farmland."},
+  {"level": "research", "title_ko": "다중 해상도 융합", "title_en": "Multi-resolution fusion", "desc_ko": "드론과 위성 영상을 함께 써서 변화 탐지를 높이는 방법을 연구합니다.", "desc_en": "Fuse drone and satellite imagery for better change detection."}
+ ],
+ "doc_used": true,
+ "uncertain": []
+}

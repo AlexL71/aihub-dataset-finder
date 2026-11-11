@@ -1,0 +1,29 @@
+{
+ "dataset_id": "71376",
+ "title_en": "Sound data in extreme noise environments",
+ "summary_ko": "공장·공사장·교통수단·공연장 같은 아주 시끄러운 환경에서 녹음한 소리 약 1,053시간입니다. 기침·동물 소리·전화벨·사이렌 같은 특정 소리를 소음 속에서 알아보는 AI에 쓸 수 있으며, 청각이 약한 사람의 비상 알림 등을 목표로 합니다.",
+ "summary_en": "About 1,053 hours of sound recorded in very noisy places such as factories, construction sites, transport and concert halls. For AI that picks out specific sounds (coughs, animals, phone rings, sirens) inside noise, e.g. emergency alerts for people with hearing loss.",
+ "contents_ko": "소리 오디오(wav; 소리가 큰 파일과 소음이 큰 파일 두 종류) + JSON(소음 환경·소리 분류·녹음 환경 등 메타정보).",
+ "contents_en": "Sound audio (wav; one file with louder target sound, one with louder noise) + JSON (noise environment, sound class, recording setting metadata).",
+ "modalities": ["audio"],
+ "tasks": ["audio_classification"],
+ "topics": [{"ko": "소리 인식·안전 알림", "en": "Sound recognition and safety alerts"}, {"ko": "산업 현장 안전", "en": "Industrial workplace safety"}],
+ "keywords_ko": ["극한 소음", "환경 소리", "소리 분류", "소음 제거", "청각 보조", "비상 알림"],
+ "keywords_en": ["extreme noise", "environmental sound", "sound classification", "noise removal", "hearing assistance", "emergency alert"],
+ "labels": ["noise environment class", "sound class", "metadata"],
+ "file_formats": ["wav", "json"],
+ "scale_ko": "약 1,053시간(소음 환경 6개 대분류), 녹음 약 10만 건",
+ "classes_example": ["교통수단", "공사장", "공장", "시설류", "복합소음", "사람의 비언어적 소리", "동물 및 자연물 소리", "전자제품 및 생활환경 소리"],
+ "baseline": [],
+ "difficulty": "intermediate",
+ "difficulty_note_ko": "스펙트로그램(소리를 그림처럼 바꾼 것) 기반 분류 실습에 좋지만 전체 약 477GB입니다. 일부 환경만 받아 쓰세요.",
+ "skills_needed_ko": ["파이썬", "오디오 전처리(STFT·스펙트로그램)", "CNN 분류 모델"],
+ "caveats_ko": ["전체 약 477GB", "학습 모델로 ESResNet이 소개되지만 이 데이터의 성능 점수는 페이지에 없음", "라벨링 유형이 '해당없음'으로 적혀 있어 소리 구간 표시 수준이 불분명함"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "소음 환경 분류", "title_en": "Noise environment classifier", "desc_ko": "녹음을 듣고 공장·공사장·교통 등 어떤 환경인지 분류합니다.", "desc_en": "Classify whether a recording is from a factory, construction site, transport, etc."},
+  {"level": "capstone", "title_ko": "청각장애인 소리 알림 앱", "title_en": "Sound alert app for deaf users", "desc_ko": "시끄러운 곳에서 사이렌·전화벨 같은 소리를 감지해 진동·화면으로 알려 줍니다.", "desc_en": "Detect sirens or phone rings in noise and alert by vibration and screen."},
+  {"level": "research", "title_ko": "소음 속 소리 분리", "title_en": "Separating sounds from noise", "desc_ko": "소리가 큰 파일과 소음이 큰 파일을 이용해 잡음 제거·소리 분리 모델을 연구합니다.", "desc_en": "Use paired sound-heavy and noise-heavy files to study denoising and source separation."}
+ ],
+ "doc_used": true,
+ "uncertain": ["녹음 건수(약 10만 건)는 거리·녹음 환경 분포 표의 합으로 추정"]
+}

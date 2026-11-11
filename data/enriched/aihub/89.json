@@ -1,0 +1,29 @@
+{
+ "dataset_id": "89",
+ "title_en": "Machine reading comprehension (news)",
+ "summary_ko": "정치·경제·연예·스포츠 등 뉴스 기사 본문에 질문과 정답을 붙인 한국어 기계독해 데이터 45만 건입니다. 일반 질문-답 25만 건, 답이 없는 질문 10만 건, 답의 근거(단서)까지 표시한 10만 건으로 나뉘어 있어 질의응답 챗봇 학습에 쓸 수 있습니다.",
+ "summary_en": "450,000 Korean reading-comprehension items built on news articles (politics, economy, entertainment, sports and more): 250,000 standard question-answer pairs, 100,000 unanswerable questions, and 100,000 items that also mark the clue supporting the answer. For training question-answering chatbots.",
+ "contents_ko": "SQuAD 형식 JSON: 본문, 질문, 정답(시작 위치·텍스트), 단서(위치·텍스트), 육하원칙 유형, 기사 분야.",
+ "contents_en": "SQuAD-style JSON: passage, question, answer (start and text), clue (start and text), 5W1H type, news category.",
+ "modalities": ["text"],
+ "tasks": ["question_answering"],
+ "topics": [{"ko": "뉴스·언론", "en": "News and journalism"}, {"ko": "한국어 질의응답", "en": "Korean question answering"}],
+ "keywords_ko": ["기계독해", "질의응답", "뉴스", "SQuAD", "정답 없는 질문", "설명 가능"],
+ "keywords_en": ["machine reading comprehension", "question answering", "news", "SQuAD", "unanswerable questions", "explainable"],
+ "labels": ["question-answer pairs", "answer span", "clue span", "5W1H type"],
+ "file_formats": ["json"],
+ "scale_ko": "45만 건(표준 25만, 정답 없음 10만, 설명 가능 10만), 기사 분야 9개",
+ "classes_example": ["정치", "경제", "사회", "생활", "IT/과학", "연예", "스포츠", "문화", "미용/건강"],
+ "baseline": [],
+ "difficulty": "beginner",
+ "difficulty_note_ko": "0.08GB로 매우 작고 SQuAD 형식이라 Hugging Face 예제 코드로 바로 질의응답 모델을 학습할 수 있습니다.",
+ "skills_needed_ko": ["파이썬", "Hugging Face로 질의응답 모델 미세조정"],
+ "caveats_ko": ["2018년 기사 기반이라 오래됨", "성능 지표 없음"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "뉴스 질의응답 모델", "title_en": "News QA model", "desc_ko": "KoELECTRA로 표준 데이터셋을 학습해 기사에서 답을 찾는 모델을 만듭니다.", "desc_en": "Fine-tune KoELECTRA on the standard set to find answers in articles."},
+  {"level": "capstone", "title_ko": "기사 읽어주는 질문 답변 챗봇", "title_en": "Ask-the-article chatbot", "desc_ko": "기사 링크를 넣으면 질문에 답하고 근거 문장을 보여주는 챗봇을 만듭니다.", "desc_en": "Paste an article and get answers with the supporting sentence."},
+  {"level": "research", "title_ko": "답이 없을 때 모른다고 하는 모델", "title_en": "Knowing when there is no answer", "desc_ko": "정답 없는 질문과 단서 데이터로 근거 없는 답(환각)을 줄이는 방법을 연구합니다.", "desc_en": "Use unanswerable and clue data to reduce unsupported answers."}
+ ],
+ "doc_used": true,
+ "uncertain": []
+}

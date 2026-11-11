@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71477",
+ "easy_ko": "맞춤법이 틀린 한국어 문장과 고친 문장, 음성 인식 결과를 바로잡은 문장, 원래 맞는 문장을 괜히 고친 경우를 가려내는 문장을 모은 글 데이터입니다. 한국어 맞춤법 검사기와 받아쓰기 결과를 다듬는 AI에 쓸 수 있습니다.",
+ "easy_en": "Text data with misspelled Korean sentences and their corrections, corrected speech-recognition output, and sentences for catching cases where a correct sentence was changed by mistake (over-correction). You can use it to build Korean spell checkers and AI that cleans up speech-to-text output.",
+ "detail_ko": "한국어 철자·문법 교정 1,000,001건, 음성인식 후처리 병렬 말뭉치 1,001,600건, 과교정 검증 200,000건, 총 2,201,601건(JSON: 오류 문장, 교정 문장, 오류 분류; 주제 4종 CA, ES, SH, ST)입니다. 기준 성능은 COMET22 + COMET-KIWI 분류 정확도 철자 교정 84%, 음성인식 후처리 91%, 과교정 98%, Transformer(Fairseq) BLEU 철자 교정 0.924, 음성인식 후처리 0.6751입니다. 주제 약어의 뜻은 팩에 설명되어 있지 않고, 텍스트인데 용량이 약 112GB로 커서 구성을 확인해야 합니다.",
+ "detail_en": "2,201,601 items (JSON: erroneous sentence, corrected sentence, error class; 4 topics CA, ES, SH, ST): 1,000,001 Korean spelling/grammar corrections, 1,001,600 parallel pairs for speech-recognition post-correction and 200,000 over-correction checks. Baselines: classification accuracy with COMET22 + COMET-KIWI of 84% (spelling), 91% (ASR post-correction) and 98% (over-correction); Transformer (Fairseq) BLEU 0.924 (spelling) and 0.6751 (ASR post-correction). The topic abbreviations are not explained in the pack, and at about 112 GB the text data is unusually large, so check what it contains.",
+ "amount_ko": "2,201,601건(철자·문법 1,000,001, 음성인식 후처리 1,001,600, 과교정 200,000)",
+ "amount_en": "2,201,601 items (1,000,001 spelling/grammar, 1,001,600 ASR post-correction, 200,000 over-correction)",
+ "labels_ko": "고친 문장, 오류 종류",
+ "labels_en": "corrected text, error class",
+ "status": "full-run-2026-11-02"
+}

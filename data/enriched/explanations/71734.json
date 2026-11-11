@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71734",
+ "easy_ko": "화가들이 직접 그린 한국 전통 수묵 채색화 4,000여 장에 무엇을 그렸는지와 한국어, 영어 설명을 붙인 데이터입니다. 글로 설명하면 전통 채색화를 그려 주는 AI에 쓸 수 있습니다.",
+ "easy_en": "Over 4,000 traditional Korean ink-and-colour paintings drawn by artists for this project, each with what it shows and descriptions in Korean and English. You can use it to build AI that paints in the traditional style from a text description.",
+ "detail_ko": "화가들이 직접 그린 한국 전통 수묵 채색화 이미지 4,439장(jpg)에 대상 분류 태그(예: 용기, 가정용 전자기기, 가정용 가구, 차량, 운송기기, 물고기, 꽃, 곤충)와 한국어·영어 캡션 각 4,439개(총 8,878개)를 JSON으로 붙였습니다. 페이지에 성능 점수 표가 없고, 이미지 수가 적어 큰 모델을 처음부터 학습하기엔 부족하며, 인공물(2,285)+자연물(2,449) 합 4,734가 전체 4,439장과 다릅니다. 71380 수묵화 데이터와 같은 기관입니다.",
+ "detail_en": "4,439 traditional Korean ink-and-colour paintings (jpg) made by artists, with JSON subject tags (such as containers, home electronics, furniture, vehicles, transport, fish, flowers, insects) and 4,439 captions each in Korean and English (8,878 in total). There is no score table, the set is too small to train a large model from scratch, and artificial (2,285) plus natural (2,449) objects add up to 4,734, not 4,439. Same builder as the ink-painting set 71380.",
+ "amount_ko": "채색화 이미지 4,439장, 캡션 8,878개(한·영)",
+ "amount_en": "4,439 paintings, 8,878 captions (Korean and English)",
+ "labels_ko": "그린 대상 분류, 한국어·영어 설명",
+ "labels_en": "class tags, Korean caption, English caption",
+ "status": "full-run-2026-11-02"
+}

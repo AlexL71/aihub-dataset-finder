@@ -1,0 +1,29 @@
+{
+ "dataset_id": "71453",
+ "title_en": "Korean-style vision data for object segmentation",
+ "summary_ko": "한국에서 찍은 이미지 약 300만 장에서 사람·탈것·동물·주방용품·음식 등 물체 영역을 배경과 분리해 칠한 대규모 분할 데이터입니다. 한국 환경에 맞는 물체 분할 AI(예: 주변 차량·표지판·주행 가능 영역 검출)에 쓸 수 있습니다.",
+ "summary_en": "About 3 million images taken in Korea with object areas (people, vehicles, animals, kitchenware, food and more) separated from the background. For Korean-context segmentation AI, e.g. detecting nearby cars, signs and drivable areas.",
+ "contents_ko": "이미지(jpg) + JSON(분할 영역, 카테고리).",
+ "contents_en": "Image (jpg) + JSON (segmentation area, category).",
+ "modalities": ["image"],
+ "tasks": ["segmentation"],
+ "topics": [{"ko": "일반 물체 인식", "en": "General object recognition"}, {"ko": "한국 생활", "en": "Everyday life in Korea"}],
+ "keywords_ko": ["한국형 비전", "객체 분할", "배경 분리", "대규모 데이터", "지리적 편향", "인스턴스 분할"],
+ "keywords_en": ["Korean vision", "object segmentation", "background separation", "large-scale data", "geographic bias", "instance segmentation"],
+ "labels": ["segmentation", "category"],
+ "file_formats": ["jpg", "json"],
+ "scale_ko": "이미지 약 300만 장, 라벨 약 300만 건",
+ "classes_example": ["사람", "탈것", "실외", "동물", "주방", "채소", "가구", "실내", "전자기기"],
+ "baseline": [],
+ "difficulty": "intermediate",
+ "difficulty_note_ko": "분할 실습에 좋지만 전체 약 1.46TB입니다. 카테고리 몇 개만 받아 쓰세요.",
+ "skills_needed_ko": ["파이썬", "분할 모델", "대용량 데이터 관리"],
+ "caveats_ko": ["전체 약 1,464GB", "같은 300만 장 이미지가 탐지(71452)·설명문(71454)·관계성(71456) 데이터와 공유됨", "카테고리별 수량 차이가 큼", "성능 지표가 팩에 없음"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "사람 영역 분리", "title_en": "Person cut-out", "desc_ko": "사진에서 사람 영역만 칠해 배경을 지웁니다.", "desc_en": "Segment people and remove the background."},
+  {"level": "capstone", "title_ko": "주방 물건 분할 앱", "title_en": "Kitchen item segmentation app", "desc_ko": "주방 사진에서 그릇·조리도구를 칠하고 목록을 만드는 앱을 만듭니다.", "desc_en": "App that outlines and lists kitchen items."},
+  {"level": "research", "title_ko": "탐지 라벨로 분할 학습", "title_en": "Segmentation from box labels", "desc_ko": "같은 이미지의 상자 라벨(71452)만으로 분할 모델을 학습하는 약지도 학습을 연구합니다.", "desc_en": "Weakly supervised segmentation using the box labels of 71452."}
+ ],
+ "doc_used": true,
+ "uncertain": ["분할이 다각형인지 마스크인지", "세부 클래스 수"]
+}

@@ -1,0 +1,29 @@
+{
+ "dataset_id": "71613",
+ "title_en": "Temporal expression detection data",
+ "summary_ko": "뉴스·일상 대화·역사 문서·스포츠 글 41,111건에 시간 표현(TIMEX3), 사건(EVENT), 시간 관계(TLINK)가 약 212만 개 태깅된 데이터입니다. 글에서 '언제 무슨 일이 있었는지'를 뽑아 내는 정보 추출, 챗봇·요약 AI에 쓸 수 있습니다.",
+ "summary_en": "41,111 documents (news, daily conversation, history, sports) with about 2.12 million tags for time expressions (TIMEX3), events (EVENT) and temporal links (TLINK). For extracting when events happened, for chatbots and summarisation.",
+ "contents_ko": "문서 텍스트(txt) + JSON(TIMEX3·EVENT·TLINK 태그).",
+ "contents_en": "Document text (txt) + JSON (TIMEX3, EVENT and TLINK tags).",
+ "modalities": ["text"],
+ "tasks": ["information_extraction"],
+ "topics": [{"ko": "언어·정보 추출", "en": "Language and information extraction"}, {"ko": "뉴스·역사 문서", "en": "News and historical documents"}],
+ "keywords_ko": ["시간 표현", "사건 추출", "TIMEX3", "TLINK", "정보 추출", "타임라인"],
+ "keywords_en": ["temporal expressions", "event extraction", "TIMEX3", "TLINK", "information extraction", "timeline"],
+ "labels": ["TIMEX3", "EVENT", "TLINK"],
+ "file_formats": ["txt", "json"],
+ "scale_ko": "문서 41,111건, 태그 2,123,386개(EVENT·TIMEX3·TLINK)",
+ "classes_example": ["TIMEX3", "EVENT", "TLINK", "뉴스", "대화", "역사"],
+ "baseline": [{"task": "time expression tagging (TIMEX3)", "model": "KoBERT / KoELECTRA", "metric": "F1-score", "value": "0.8078"}, {"task": "event tagging (EVENT)", "model": "KoBERT / KoELECTRA", "metric": "F1-score", "value": "0.8285"}, {"task": "temporal link (TLINK)", "model": "KoBERT / KoELECTRA", "metric": "F1-score", "value": "0.9711"}],
+ "difficulty": "intermediate",
+ "difficulty_note_ko": "약 0.13GB로 가볍지만 TIMEX3·TLINK 같은 태깅 규칙을 먼저 익혀야 합니다.",
+ "skills_needed_ko": ["파이썬", "Hugging Face 토큰 분류(NER)", "관계 추출 기초"],
+ "caveats_ko": ["TLINK 기준값이 0.4로 낮게 잡혀 있음", "도메인별 문서 수 비율은 팩 앞부분에 없음"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "시간 표현 찾기", "title_en": "Time expression tagger", "desc_ko": "문장에서 '어제', '2020년 3월' 같은 시간 표현을 찾아 표시합니다.", "desc_en": "Tag expressions like 'yesterday' or 'March 2020'."},
+  {"level": "capstone", "title_ko": "뉴스 타임라인 생성기", "title_en": "News timeline builder", "desc_ko": "기사에서 사건과 시간을 뽑아 시간 순서 타임라인으로 보여 줍니다.", "desc_en": "Extract events and times from articles into a timeline."},
+  {"level": "research", "title_ko": "대화 속 상대 시간 해석", "title_en": "Relative time in dialogue", "desc_ko": "'다음 주 화요일' 같은 상대 시간을 실제 날짜로 바꾸는 방법을 연구합니다.", "desc_en": "Study resolving relative times like 'next Tuesday' to dates."}
+ ],
+ "doc_used": true,
+ "uncertain": []
+}

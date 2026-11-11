@@ -1,0 +1,29 @@
+{
+ "dataset_id": "71919",
+ "title_en": "NEW step-by-step reasoning patent drawing inference data",
+ "summary_ko": "공개 특허 공보(KIPRIS)의 대표 도면 40,000장과, 도면 요소 인식·구성요소 관계·발명의 기술적 의미를 단계적 사고(CoT)로 적은 추론 텍스트 40,000건입니다. 사시도·분해도·단면도·블록도·흐름도·공정도·회로도가 국제특허분류(IPC)별로 나뉘어 있어 특허 도면 해석, 명세서 작성 보조, 특허 검색 AI에 쓸 수 있습니다.",
+ "summary_en": "40,000 representative drawings from public patent gazettes (KIPRIS) with 40,000 chain-of-thought texts covering drawing elements, relations between components and the invention's technical meaning. Drawings (perspective, exploded, cross-section, block, flow, process, circuit) are grouped by IPC section. For patent drawing interpretation, specification drafting and patent search.",
+ "contents_ko": "특허 도면(png) + JSON(CoT 추론, 도면 유형, IPC).",
+ "contents_en": "Patent drawing (png) + JSON (CoT reasoning, drawing type, IPC).",
+ "modalities": ["image", "text"],
+ "tasks": ["visual_qa", "image_captioning", "image_classification"],
+ "topics": [{"ko": "지식재산·특허", "en": "Intellectual property and patents"}, {"ko": "멀티모달 추론", "en": "Multimodal reasoning"}],
+ "keywords_ko": ["특허 도면", "CoT", "도면 해석", "IPC", "KIPRIS", "Qwen3-VL"],
+ "keywords_en": ["patent drawings", "chain-of-thought", "drawing interpretation", "IPC", "KIPRIS", "Qwen3-VL"],
+ "labels": ["CoT reasoning", "drawing type", "IPC"],
+ "file_formats": ["png", "json"],
+ "scale_ko": "도면 40,000장, CoT 라벨 40,000건",
+ "classes_example": ["사시도", "분해도", "단면도", "블록도", "흐름도", "공정도", "회로도"],
+ "baseline": [],
+ "difficulty": "advanced",
+ "difficulty_note_ko": "약 80GB이고 30B급 비전-언어 모델을 쓰므로 GPU 부담이 큽니다. 도면 유형 분류부터 해보세요.",
+ "skills_needed_ko": ["파이썬", "이미지 분류", "비전-언어 모델(VLM) 미세조정"],
+ "caveats_ko": ["페이지에 성능 점수 표가 없음(Qwen3-VL-30B-A3B 소개만 있음)", "메타데이터 유형은 '텍스트'지만 원천은 PNG 도면", "회로도는 일부 분야에서 매우 적음(C 화학·야금 3장)"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "도면 유형 분류", "title_en": "Drawing type classifier", "desc_ko": "특허 도면이 사시도·단면도·흐름도 중 무엇인지 분류합니다.", "desc_en": "Classify patent drawings by type."},
+  {"level": "capstone", "title_ko": "도면 설명 자동 생성", "title_en": "Drawing description generator", "desc_ko": "도면을 넣으면 구성요소와 관계를 설명하는 VLM 데모를 만듭니다.", "desc_en": "Describe components and relations from a drawing with a VLM."},
+  {"level": "research", "title_ko": "도면 기반 유사 특허 검색", "title_en": "Drawing-based patent search", "desc_ko": "도면 추론 텍스트로 비슷한 특허를 찾는 검색 방법을 연구합니다.", "desc_en": "Study finding similar patents via drawing reasoning text."}
+ ],
+ "doc_used": true,
+ "uncertain": []
+}

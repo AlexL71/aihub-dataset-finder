@@ -1,0 +1,29 @@
+{
+ "dataset_id": "176",
+ "title_en": "Fire prediction images (smoke before fire)",
+ "summary_ko": "화재가 나기 전 피어오르는 연기를 찍은 화재 장면 74만 장과, 구름·안개·조명·햇빛처럼 연기와 헷갈리는 유사 장면 66만 장, 무관 장면 30만 장입니다. 연기를 일찍 찾아 화재를 미리 알리는 CCTV AI에 쓸 수 있습니다.",
+ "summary_en": "740,000 fire-scene images of smoke rising before a fire, 660,000 look-alike scenes (clouds, fog, haze, lights, sunlight) and 300,000 unrelated scenes. For CCTV AI that spots smoke early and warns of fire before it spreads.",
+ "contents_ko": "이미지(jpg) + JSON(연기·불꽃 상자와 다각형, 화재·진화 시작-끝 키프레임).",
+ "contents_en": "Image (jpg) + JSON (smoke and flame boxes and polygons, fire and extinguishing start/end key frames).",
+ "modalities": ["image", "video"],
+ "tasks": ["object_detection", "segmentation", "anomaly_detection"],
+ "topics": [{"ko": "재난·화재 안전", "en": "Disaster and fire safety"}, {"ko": "CCTV", "en": "CCTV"}],
+ "keywords_ko": ["화재 예측", "연기 탐지", "조기 경보", "CCTV", "안개", "유사 장면"],
+ "keywords_en": ["fire prediction", "smoke detection", "early warning", "CCTV", "fog", "look-alike scenes"],
+ "labels": ["bounding box", "polygon", "key frames"],
+ "file_formats": ["jpg", "json"],
+ "scale_ko": "이미지 173만 장(화재씬 74만, 유사씬 66만, 무관씬 30만), 상자 약 200만 개",
+ "classes_example": ["연기", "불꽃", "구름", "안개", "조명", "햇빛"],
+ "baseline": [],
+ "difficulty": "beginner",
+ "difficulty_note_ko": "연기 탐지는 YOLO 첫 프로젝트로 좋고, 유사 장면 덕분에 오탐 연구도 할 수 있습니다. 전체 약 1TB입니다.",
+ "skills_needed_ko": ["파이썬 기초", "YOLO 객체 탐지"],
+ "caveats_ko": ["전체 약 1TB", "성능 지표가 팩에서 확인되지 않음(설명에 YOLACT 언급)"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "연기 탐지기", "title_en": "Smoke detector", "desc_ko": "이미지에서 연기를 탐지하는 YOLO 모델을 학습합니다.", "desc_en": "Train a YOLO model that detects smoke."},
+  {"level": "capstone", "title_ko": "산불 조기 경보 CCTV 데모", "title_en": "Wildfire early-warning demo", "desc_ko": "CCTV 영상에서 연기를 감지하면 위치와 함께 알림을 보내는 데모를 만듭니다.", "desc_en": "Send alerts with location when smoke is detected in CCTV."},
+  {"level": "research", "title_ko": "구름·안개 오탐 줄이기", "title_en": "Reducing false alarms from fog and clouds", "desc_ko": "유사 장면으로 오탐을 분석하고 줄이는 학습 방법을 비교합니다.", "desc_en": "Analyse false alarms with look-alike scenes and compare fixes."}
+ ],
+ "doc_used": true,
+ "uncertain": []
+}

@@ -1,0 +1,12 @@
+{
+ "dataset_id": "113",
+ "easy_ko": "전기·전자 분야 특허 문서에서 '무엇을 발명했고 어떤 부품으로 이루어졌는지'를 표시하고, 관련 특허, 분쟁, 거래, 인용 정보와 기술 용어 사전을 서로 연결한 데이터입니다. 비슷한 특허를 찾거나 기술 흐름을 분석하는 특허 검색 AI를 만들 수 있습니다.",
+ "easy_en": "Electrical and electronics patents where each claim is tagged with what was invented and which parts it is made of, linked to related patents, disputes, sales, citations and a technical-term dictionary. You can build patent-search AI that finds similar patents or analyses technology trends.",
+ "detail_ko": "전기전자 분야 특허·실용신안 100만 건의 청구항에 아이템·구성요소 태그를 붙이고, 특허 패밀리·분쟁·거래·인용 등 60여 종 연관 정보, 기술 용어 사전(용어 12만 개 + 7만 건, 키워드-출원번호·동의어), 도면 태그 2,338만 건을 연결했습니다(구축량 170만). 기준 성능 지표는 없습니다. 2017~2018년 구축이라 최신 특허가 없고 전기전자 분야 중심이며, 파일 형식(json/csv)은 확인되지 않은 추정입니다.",
+ "detail_en": "1M electrical and electronics patents and utility models with claim-structure tags (items, components), linked to 60+ kinds of related info (families, disputes, transactions, citations), a technical-term dictionary (120k terms + 70k entries, keyword–application links, synonyms) and 23.38M drawing tags (1.7M built items). No baseline is published. Built in 2017–2018, so recent patents are missing; focus is electrical/electronics; file formats (json/csv) are not confirmed.",
+ "amount_ko": "특허 100만 건, 도면 태그 2,338만 건",
+ "amount_en": "1M patents, 23.38M drawing tags",
+ "labels_ko": "청구항의 발명 대상·구성요소, 특허 사이 관계, 용어-특허 연결, 도면 태그",
+ "labels_en": "claim item and component tags, patent relations, term–patent links, drawing tags",
+ "status": "full-run-2026-11-02"
+}

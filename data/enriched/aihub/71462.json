@@ -1,0 +1,29 @@
+{
+ "dataset_id": "71462",
+ "title_en": "Broadcast content Korean-Asian language interpretation and translation speech data",
+ "summary_ko": "KBS 등 방송 콘텐츠(예능·드라마·다큐·교양 등)의 한국어 음성과 이를 중국어(북경어)·일본어·대만어·몽골어·힌디어로 옮긴 원어민 음성과 번역 문장을 모은 약 3,000시간 데이터입니다. 방송 자막 번역과 자동 통역 AI에 쓸 수 있습니다.",
+ "summary_en": "About 3,000 hours of Korean broadcast speech (variety shows, dramas, documentaries, etc.) with native-speaker speech and translations in Mandarin, Japanese, Taiwanese Mandarin, Mongolian and Hindi. For subtitle translation and automatic interpretation AI.",
+ "contents_ko": "음성(wav) + 텍스트(txt) + JSON(한국어 원문, 아시아어 번역).",
+ "contents_en": "Speech (wav) + text (txt) + JSON (Korean source, Asian-language translation).",
+ "modalities": ["audio", "text"],
+ "tasks": ["translation", "speech_recognition"],
+ "topics": [{"ko": "방송·미디어", "en": "Broadcasting and media"}, {"ko": "번역·통역", "en": "Translation and interpretation"}],
+ "keywords_ko": ["기계번역", "자동 통역", "방송 콘텐츠", "중국어", "일본어", "몽골어"],
+ "keywords_en": ["machine translation", "speech interpretation", "broadcast content", "Chinese", "Japanese", "Mongolian"],
+ "labels": ["translation", "transcript"],
+ "file_formats": ["wav", "txt", "json"],
+ "scale_ko": "음성 약 3,000시간(북경어·일본어·대만어·몽골어 각 700시간, 힌디어 200시간), 한국어 약 894시간",
+ "classes_example": ["북경어", "일본어", "대만어", "몽골어", "힌디어"],
+ "baseline": [{"task": "Korean-Chinese translation", "model": "Transformer", "metric": "BLEU", "value": "0.4514"}, {"task": "Korean-Japanese translation", "model": "Transformer", "metric": "BLEU", "value": "0.4814"}, {"task": "Korean-Taiwanese translation", "model": "Transformer", "metric": "BLEU", "value": "0.4085"}, {"task": "Korean-Mongolian translation", "model": "Transformer", "metric": "BLEU", "value": "0.2106"}, {"task": "Korean-Hindi translation", "model": "Transformer", "metric": "BLEU", "value": "0.1689"}],
+ "difficulty": "advanced",
+ "difficulty_note_ko": "번역 텍스트만 쓰면 중급이지만, 음성까지 다루면 전체가 약 632GB로 매우 큽니다.",
+ "skills_needed_ko": ["파이썬", "트랜스포머 번역 모델", "음성 처리"],
+ "caveats_ko": ["전체 약 632GB(가장 작은 파일도 21GB)", "힌디어는 200시간으로 다른 언어보다 적음", "오락/예능 비중이 30%로 높음", "몽골어·힌디어 번역 성능(BLEU)이 낮음"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "한-일 예능 자막 번역", "title_en": "Korean-Japanese variety subtitles", "desc_ko": "예능 대사 텍스트로 작은 번역 모델을 미세조정합니다.", "desc_en": "Fine-tune a small translator on variety-show lines."},
+  {"level": "capstone", "title_ko": "방송 자동 자막 파이프라인", "title_en": "Automatic broadcast subtitles", "desc_ko": "한국어 음성 인식 후 아시아어로 번역해 자막을 만드는 도구를 만듭니다.", "desc_en": "Recognise Korean speech and translate it into subtitles."},
+  {"level": "research", "title_ko": "저자원 언어 번역 개선", "title_en": "Low-resource translation", "desc_ko": "몽골어·힌디어처럼 성능이 낮은 언어의 번역 품질을 높이는 방법을 연구합니다.", "desc_en": "Improve translation for weaker languages like Mongolian and Hindi."}
+ ],
+ "doc_used": true,
+ "uncertain": ["외국어 음성이 원어민 낭독인지 방송 원음인지"]
+}

@@ -1,0 +1,29 @@
+{
+ "dataset_id": "480",
+ "title_en": "Intelligent smart farm data (mushrooms)",
+ "summary_ko": "느타리·큰느타리·팽이·표고·양송이 버섯 5종의 배양·생육·병해 과정을 농가 5곳과 국립원예특작과학원 스마트 배양실에서 찍은 이미지로, 버섯 상자와 영역이 표시되어 있습니다. 버섯 품종 인식, 수확 시기 판단, 병해 판정 같은 버섯 스마트팜 AI에 쓸 수 있습니다.",
+ "summary_en": "Images of 5 mushroom species (oyster, king oyster, enoki, shiitake, button) through cultivation, growth and disease, taken at 5 farms and smart cultivation rooms of the national horticulture institute, with mushroom boxes and regions labelled. For mushroom smart-farm AI that recognises species, judges harvest time and detects disease.",
+ "contents_ko": "버섯 이미지(jpg) + JSON(버섯 상자·분할, 품종, 생육 단계, 병해 여부, 재배 환경).",
+ "contents_en": "Mushroom image (jpg) + JSON (box and segmentation, species, growth stage, disease, growing environment).",
+ "modalities": ["image"],
+ "tasks": ["object_detection", "segmentation", "image_classification"],
+ "topics": [{"ko": "농업·스마트팜", "en": "Agriculture and smart farming"}, {"ko": "버섯", "en": "Mushrooms"}, {"ko": "식물 병해", "en": "Plant disease"}],
+ "keywords_ko": ["버섯", "스마트팜", "수확 시기", "버섯 병해", "느타리", "표고"],
+ "keywords_en": ["mushrooms", "smart farm", "harvest timing", "mushroom disease", "oyster mushroom", "shiitake"],
+ "labels": ["bounding box", "segmentation", "species", "growth stage", "disease"],
+ "file_formats": ["jpg", "json"],
+ "scale_ko": "버섯 5종, 농가 5곳 + 스마트배양실 4실(정확한 장수는 팩 앞부분에 없음)",
+ "classes_example": ["느타리", "큰느타리", "팽이", "표고", "양송이"],
+ "baseline": [],
+ "difficulty": "beginner",
+ "difficulty_note_ko": "약 47GB로 다룰 만하고 버섯 품종 분류는 첫 프로젝트로 좋습니다.",
+ "skills_needed_ko": ["파이썬 기초", "이미지 분류·탐지"],
+ "caveats_ko": ["구축 수량과 성능 지표가 팩 앞부분에 없음"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "버섯 품종 분류", "title_en": "Mushroom species classifier", "desc_ko": "사진으로 버섯 5종을 분류합니다.", "desc_en": "Classify the 5 mushroom species from photos."},
+  {"level": "capstone", "title_ko": "수확 시기 알림 카메라", "title_en": "Harvest-time camera", "desc_ko": "배양실 사진으로 생육 단계를 판단해 수확 시기를 알려주는 데모를 만듭니다.", "desc_en": "Judge growth stage from cultivation-room photos and signal harvest time."},
+  {"level": "research", "title_ko": "재배 환경과 버섯 품질", "title_en": "Growing environment and quality", "desc_ko": "온습도 같은 환경 정보와 이미지로 품질 등급을 예측하는 방법을 연구합니다.", "desc_en": "Predict quality from environment data and images."}
+ ],
+ "doc_used": true,
+ "uncertain": ["구축 수량을 팩에서 확인하지 못함"]
+}

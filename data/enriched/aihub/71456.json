@@ -1,0 +1,29 @@
+{
+ "dataset_id": "71456",
+ "title_en": "Korean-style vision data for object relationship recognition",
+ "summary_ko": "한국에서 찍은 이미지 3,003,848장과 설명문으로부터 물체 사이의 관계(예: 무엇이 무엇 위에 있는지)를 그래프로 정리한 대규모 데이터입니다. 사진 속 장면을 이해하거나 자연어로 길을 안내하는 AI에 쓸 수 있습니다.",
+ "summary_en": "3,003,848 images taken in Korea with relationships between objects (e.g. what is on what) written as graphs from images and captions. For scene understanding and natural-language navigation AI.",
+ "contents_ko": "이미지(jpg) + JSON(객체, 객체 간 관계 그래프).",
+ "contents_en": "Image (jpg) + JSON (objects, object-relationship graph).",
+ "modalities": ["image", "text"],
+ "tasks": ["visual_qa", "object_detection"],
+ "topics": [{"ko": "장면 이해", "en": "Scene understanding"}, {"ko": "한국 생활", "en": "Everyday life in Korea"}],
+ "keywords_ko": ["관계성 그래프", "장면 그래프", "객체 관계", "한국형 비전", "멀티모달", "내비게이션"],
+ "keywords_en": ["relationship graph", "scene graph", "object relations", "Korean vision", "multimodal", "navigation"],
+ "labels": ["object", "relationship", "text"],
+ "file_formats": ["jpg", "json"],
+ "scale_ko": "이미지 3,003,848장(약 1,540GB), 라벨 3,003,848건(약 11.4GB)",
+ "classes_example": ["사람", "탈것", "동물", "스포츠", "주방", "과일", "가구"],
+ "baseline": [],
+ "difficulty": "advanced",
+ "difficulty_note_ko": "장면 그래프는 탐지와 관계 예측을 함께 다뤄 어렵습니다. 라벨 JSON(약 11GB)만 먼저 받아 분석해 보세요.",
+ "skills_needed_ko": ["파이썬", "객체 탐지", "그래프 신경망"],
+ "caveats_ko": ["원천 이미지가 약 1.5TB", "같은 300만 장 이미지가 탐지(71452)·분할(71453)·설명문(71454) 데이터와 공유됨", "관계 종류 목록과 성능 지표가 팩에 없음"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "자주 나오는 관계 분석", "title_en": "Common relationship analysis", "desc_ko": "라벨 JSON에서 많이 나오는 물체-관계-물체 조합을 세어 시각화합니다.", "desc_en": "Count and visualise frequent object-relation-object triples."},
+  {"level": "capstone", "title_ko": "사진 질문 답변 데모", "title_en": "Photo question answering demo", "desc_ko": "관계 그래프로 '컵 옆에 무엇이 있나요?' 같은 질문에 답합니다.", "desc_en": "Answer questions like 'what is next to the cup?' from the graph."},
+  {"level": "research", "title_ko": "장면 그래프 생성", "title_en": "Scene graph generation", "desc_ko": "사진에서 물체와 관계를 함께 예측하는 모델을 연구합니다.", "desc_en": "Predict objects and their relations from images."}
+ ],
+ "doc_used": true,
+ "uncertain": ["관계 라벨의 형식과 종류 수"]
+}

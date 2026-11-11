@@ -1,0 +1,33 @@
+{
+ "dataset_id": "71522",
+ "title_en": "Seaweed (laver) seed production data",
+ "summary_ko": "김 종자를 키우는 배양장에서 찍은 패각사상체·유엽 현미경 이미지 12만 6천여 장에 성장 단계(과포자 잠입기·포자낭 형성기·포자낭 성숙기·유엽)가 분할로 표시되어 있습니다. 김 종자 생산의 배양 환경 분석과 생산량 예측 AI에 쓸 수 있습니다.",
+ "summary_en": "About 126,000 images of shell conchocelis and young laver blades from seed-culture facilities, segmented by growth stage (spore penetration, sporangium formation, sporangium maturation, young blade). For analysing culture conditions and predicting laver seed production.",
+ "contents_ko": "이미지(JPG) + JSON(분할, 성장 단계, 양식장 정보).",
+ "contents_en": "Images (JPG) + JSON (segmentation, growth stage, farm info).",
+ "modalities": ["image"],
+ "tasks": ["segmentation", "object_detection", "image_classification"],
+ "topics": [{"ko": "수산·양식", "en": "Fisheries and aquaculture"}, {"ko": "해조류", "en": "Seaweed"}],
+ "keywords_ko": ["김", "해조류", "종자생산", "사상체", "유엽", "스마트 양식"],
+ "keywords_en": ["laver", "seaweed", "seed production", "conchocelis", "young blade", "smart aquaculture"],
+ "labels": ["segmentation", "growth stage", "farm"],
+ "file_formats": ["jpg", "json"],
+ "scale_ko": "이미지 126,105건 (패각사상체 114,335, 유엽 11,770), 성장 단계 4종",
+ "classes_example": ["과포자 잠입기", "포자낭 형성기", "포자낭 성숙기", "유엽"],
+ "baseline": [
+  {"task": "object detection (larvae, attached diatoms)", "model": "YOLOv7", "metric": "mAP", "value": "75.5%"},
+  {"task": "object detection (larva, diatom, spat density)", "model": "YOLOv7", "metric": "mAP", "value": "75.2%"},
+  {"task": "polygon detection (spat)", "model": "YOLACT", "metric": "mAP", "value": "97.8%"}
+ ],
+ "difficulty": "intermediate",
+ "difficulty_note_ko": "분할·분류 실습에 쓸 수 있지만 현미경 이미지라 도메인 이해가 필요합니다. 약 121GB입니다.",
+ "skills_needed_ko": ["파이썬", "분할 모델", "YOLO 탐지"],
+ "caveats_ko": ["전체 약 121GB", "클래스 비율 표의 비율 값이 건수와 맞지 않음", "성능지표에 유생·규조류·치패 등 김과 다른 대상이 나와 다른 데이터셋 내용이 섞였을 수 있음"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "김 성장 단계 분류", "title_en": "Laver growth-stage classification", "desc_ko": "현미경 사진이 어느 성장 단계인지 분류합니다.", "desc_en": "Classify microscope images by growth stage."},
+  {"level": "capstone", "title_ko": "배양장 성장 모니터링", "title_en": "Culture facility growth monitor", "desc_ko": "양식장별로 단계 비율 변화를 추적하는 대시보드를 만듭니다.", "desc_en": "Track stage ratios per facility in a dashboard."},
+  {"level": "research", "title_ko": "배양 환경과 성장 속도", "title_en": "Culture conditions and growth speed", "desc_ko": "양식장 차이가 포자낭 성숙 속도에 주는 영향을 분석합니다.", "desc_en": "Analyse facility effects on sporangium maturation."}
+ ],
+ "doc_used": true,
+ "uncertain": ["배양 환경(수온·영양염) 데이터가 포함되어 있는지 팩에서 확인되지 않음"]
+}

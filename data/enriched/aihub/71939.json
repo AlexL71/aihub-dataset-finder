@@ -1,0 +1,29 @@
+{
+ "dataset_id": "71939",
+ "title_en": "NEW welding robot action generation data",
+ "summary_ko": "모양·크기가 다른 모재(평판·원형·복합형상 조합)에 맞대기·모서리·겹치기·T형·코너 용접을 적용해 모은 용접 로봇 데이터로, RGB-D 이미지 1,501세트(RGB·깊이 각 13,509장), 모재 점군 1,501건, 3D CAD, 로봇 구동 정보가 있습니다. 가용접 점과 본용접 선이 2D 포인트·폴리라인으로, 본용접 구간이 3D 분할로 표시되어 용접 로봇 자율 경로 생성 AI에 쓸 수 있습니다.",
+ "summary_en": "Welding robot data on base metals of different shapes (flat, round, complex combinations) with butt, edge, lap, tee and corner joints: 1,501 RGB-D sets (13,509 RGB and 13,509 depth images), 1,501 point clouds, 3D CAD and robot motion info. Tack points and weld lines are 2D points/polylines and main weld sections are 3D segments. For autonomous weld path generation.",
+ "contents_ko": "RGB-D 이미지(png) + 점군(pcd) + 3D CAD + 2D 라벨(json) + 3D 분할 라벨(csv).",
+ "contents_en": "RGB-D images (png) + point cloud (pcd) + 3D CAD + 2D labels (json) + 3D segmentation labels (csv).",
+ "modalities": ["image", "3d", "sensor"],
+ "tasks": ["object_detection", "segmentation", "keypoint_pose"],
+ "topics": [{"ko": "용접 자동화", "en": "Welding automation"}, {"ko": "피지컬 AI", "en": "Physical AI"}],
+ "keywords_ko": ["용접 로봇", "가용접", "본용접", "점군 분할", "RGB-D", "Sim2Real"],
+ "keywords_en": ["welding robot", "tack weld", "main weld", "point cloud segmentation", "RGB-D", "Sim2Real"],
+ "labels": ["point", "polyline", "3D segmentation"],
+ "file_formats": ["png", "pcd", "json", "csv"],
+ "scale_ko": "RGB-D 1,501세트(RGB·깊이 각 13,509장), PCD 1,501건, 2D·3D 라벨 각 1,501개",
+ "classes_example": ["Butt", "Edge", "Lap", "Tee", "Corner", "가용접", "본용접"],
+ "baseline": [],
+ "difficulty": "advanced",
+ "difficulty_note_ko": "약 43GB이며 3D 점군 분할과 로봇 경로 지식이 필요합니다. 2D 용접선 탐지부터 시작하세요.",
+ "skills_needed_ko": ["파이썬", "YOLO 탐지", "3D 점군 분할(PointNet 등)", "로봇 경로 계획 기초"],
+ "caveats_ko": ["페이지에 성능 점수 표가 없음(2D 탐지·3D 분할 임무 소개만 있음)", "평판-평판이 45.3%로 많음", "세트 수(1,501)가 적어 점군 모델이 과적합되기 쉬움"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "용접 이음 종류 분류", "title_en": "Joint type classifier", "desc_ko": "이미지로 맞대기·겹치기·T형 등 이음 종류를 분류합니다.", "desc_en": "Classify butt, lap, tee and other joints from images."},
+  {"level": "capstone", "title_ko": "용접선 자동 검출", "title_en": "Weld line detection", "desc_ko": "RGB 이미지에서 가용접 점과 본용접 선을 찾아 표시합니다.", "desc_en": "Find tack points and weld lines in RGB images."},
+  {"level": "research", "title_ko": "점군 기반 용접 경로 생성", "title_en": "Point-cloud weld path generation", "desc_ko": "3D 분할 결과로 로봇 용접 경로를 자동 생성하는 방법을 연구합니다.", "desc_en": "Study generating robot weld paths from 3D segments."}
+ ],
+ "doc_used": true,
+ "uncertain": []
+}

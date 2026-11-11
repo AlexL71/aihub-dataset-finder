@@ -1,0 +1,12 @@
+{
+ "dataset_id": "187",
+ "easy_ko": "수도권 밖 광역시·고속도로·국도 도로를 달리며 찍은 사진마다 신호등 위치와 지금 켜진 불(빨강·노랑·초록·화살표), 도로 표지판 위치와 종류(주의·규제·지시)를 표시한 데이터입니다. 자율주행차가 신호와 표지판을 알아보게 하거나 정밀 도로 지도를 자동으로 만드는 AI를 만들 수 있습니다.",
+ "easy_en": "Photos taken while driving on metropolitan, highway and national roads outside the capital area roads, marked with traffic lights and which light is on (red, yellow, green, arrow), and road signs with their type (warning, regulatory, instruction). You can build AI that lets self-driving cars read signals and signs, or that makes detailed road maps automatically.",
+ "detail_ko": "수도권 밖 광역시·고속도로·국도 도로 주행 영상에서 뽑은 이미지 808,994장(jpg)에 신호등·표지판 바운딩박스, 신호 상태(적색·황색·녹색 불, 좌회전 화살표), 표지판 모양·색·종류 속성, 라바콘·포트홀·공사 같은 유고정보를 JSON으로 붙였습니다. 신호등 객체 3,029,801개와 표지판 객체 2,946,632개는 188번 데이터와 합친 값입니다. 기준 성능은 MobileNetV2 신호등 인식 정확도 96.7%, YOLO v4 scaled(1536) 표지판 탐지 mAP 65%입니다. 설명서가 스캔 이미지라 페이지 정보만 사용했습니다.",
+ "detail_en": "808,994 jpg images from driving video on metropolitan, highway and national roads outside the capital area roads, with JSON boxes for traffic lights and signs, signal state (red, yellow, green, left arrow), sign shape, colour and type, and incident objects (traffic cones, potholes, roadworks). The counts of 3,029,801 traffic-light objects and 2,946,632 sign objects are combined with dataset 188. Baselines: MobileNetV2 traffic-light recognition accuracy 96.7%, YOLO v4 scaled (1536) sign detection mAP 65%. The manual is a scanned image, so only page information was used.",
+ "amount_ko": "이미지 약 81만 장",
+ "amount_en": "about 809k images",
+ "labels_ko": "신호등·표지판 위치 상자, 켜진 불 색, 표지판 종류, 도로 위 돌발 물체",
+ "labels_en": "boxes around traffic lights and signs, light state, sign type, road incident objects",
+ "status": "full-run-2026-11-02"
+}

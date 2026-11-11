@@ -1,0 +1,12 @@
+{
+ "dataset_id": "226",
+ "easy_ko": "치매 위험이 높은 어르신들이 손목 기기로 기록한 잠, 걸음, 활동 기록과 기억력 검사 점수를 모은 표 데이터입니다. 평소 생활 기록만으로 치매 위험을 일찍 알아채는 AI를 만들 수 있습니다.",
+ "easy_en": "Tables of sleep, steps and activity recorded by wearable devices worn by older people at high risk of dementia, together with memory-test scores. You can build AI that spots dementia risk early from everyday life records.",
+ "detail_ko": "광주광역시 치매 고위험군 어르신의 웨어러블 라이프로그 CSV 총 39,300건(수면 1.5만, 걸음·활동 1.5만, 인지기능 검사 MMSE 9천, 고위험군 여부 라벨 300)입니다. 기준 성능은 계층형 BiLSTM 정상/이상 분류 AUC-ROC 0.90입니다. 라벨이 300건으로 적어 과적합에 주의해야 하고, 건강 데이터라 이용 약관·개인정보 확인이 필요하며, 태그에 '문서요약'이 잘못 붙어 있습니다.",
+ "detail_en": "39,300 CSV records of wearable lifelogs from older adults at high dementia risk in Gwangju: 15k sleep, 15k steps and activity, 9k MMSE cognitive-test scores and 300 risk-group labels. Baseline: hierarchical BiLSTM normal/abnormal classification AUC-ROC 0.90. With only 300 labels, overfitting is a risk; this is health data, so check terms and privacy; the page is wrongly tagged as document summarisation.",
+ "amount_ko": "기록 39,300건(라벨 300건)",
+ "amount_en": "39,300 records (300 labels)",
+ "labels_ko": "치매 고위험 여부, 기억력 검사 점수",
+ "labels_en": "high-risk or normal label, MMSE score",
+ "status": "full-run-2026-11-02"
+}

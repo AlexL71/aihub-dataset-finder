@@ -1,0 +1,29 @@
+{
+ "dataset_id": "71786",
+ "title_en": "Nationwide road facility image data",
+ "summary_ko": "전국 고속도로·국도·지방도 약 4.5만 km를 달리며 찍은 이미지 220,000건에 도로안전시설물 16종, 도로관리시설물 8종, 교통관리시설물 8종 등 34종 시설물이 상자·분할·설명문으로 표시되고 위치 정보가 붙어 있습니다. 도로 시설물 유지관리와 자율주행 인지 AI에 쓸 수 있습니다.",
+ "summary_en": "220,000 images from about 45,000 km of Korean expressways, national and local roads, with 34 facility types (16 road-safety, 8 road-management, 8 traffic-management, 2 other) marked by boxes, segmentation and captions, plus location info. For road facility maintenance and self-driving perception AI.",
+ "contents_ko": "도로 이미지(jpg) + JSON(상자, 분할, 시설물 종류·상태, 위치) + 캡션(txt).",
+ "contents_en": "Road image (jpg) + JSON (boxes, segmentation, facility type and condition, location) + captions (txt).",
+ "modalities": ["image", "text"],
+ "tasks": ["object_detection", "segmentation", "image_captioning"],
+ "topics": [{"ko": "도로 관리·안전", "en": "Road maintenance and safety"}, {"ko": "자율주행", "en": "Autonomous driving"}],
+ "keywords_ko": ["도로 시설물", "시선유도표지", "중앙분리대", "조명시설", "시설물 관리", "고속도로"],
+ "keywords_en": ["road facilities", "delineators", "median barriers", "street lights", "facility management", "expressway"],
+ "labels": ["bounding box", "segmentation", "caption", "location"],
+ "file_formats": ["jpg", "json", "txt"],
+ "scale_ko": "이미지 220,000건, 시설물 34종",
+ "classes_example": ["시선유도표지", "시선유도봉", "조명시설", "중앙분리대"],
+ "baseline": [],
+ "difficulty": "intermediate",
+ "difficulty_note_ko": "탐지 실습에 좋지만 전체가 약 1.7TB로 매우 큽니다. 일부 구간만 받아 쓰세요.",
+ "skills_needed_ko": ["파이썬", "YOLO 탐지", "분할 모델"],
+ "caveats_ko": ["전체 약 1,718GB", "34종 전체 목록과 성능 지표가 팩 앞부분에 없음", "71444(터널 시설물)와 같은 기관"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "도로 시설물 탐지", "title_en": "Road facility detection", "desc_ko": "주행 이미지에서 시선유도봉·조명 등을 상자로 찾습니다.", "desc_en": "Box delineators, lights and more in driving images."},
+  {"level": "capstone", "title_ko": "시설물 관리 대장 자동화", "title_en": "Automated facility inventory", "desc_ko": "탐지 결과와 위치로 구간별 시설물 목록을 만듭니다.", "desc_en": "Build per-section facility lists from detections and GPS."},
+  {"level": "research", "title_ko": "시설물 파손 상태 판별", "title_en": "Facility damage assessment", "desc_ko": "시설물이 정상인지 파손되었는지 판단하는 방법을 연구합니다.", "desc_en": "Judge whether facilities are intact or damaged."}
+ ],
+ "doc_used": true,
+ "uncertain": ["시설물 상태 라벨 포함 여부"]
+}

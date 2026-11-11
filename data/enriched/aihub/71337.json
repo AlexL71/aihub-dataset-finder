@@ -1,0 +1,29 @@
+{
+ "dataset_id": "71337",
+ "title_en": "Construction sand quality control data",
+ "summary_ko": "전국 80개 지역 420개 모래 시료를 맨눈 배율로 찍은 입자 크기 이미지 약 51만 장(안정·위험·불가 등급, 육상·하천·바다 출처, 건조 상태)과, 고배율 현미경으로 찍은 위험 광물 이미지 약 11만 장(분할 표시)을 담은 데이터입니다. 건설용 모래 품질을 사진으로 빠르게 판정하는 AI에 쓸 수 있습니다.",
+ "summary_en": "About 510,000 normal-magnification images of 420 sand samples from 80 regions for grain-size grading (stable, risky, unusable; land, river or sea origin; dryness), plus about 110,000 high-magnification microscope images of hazardous minerals with segmentation. For AI that quickly grades construction sand quality from photos.",
+ "contents_ko": "모래 이미지(png) + JSON(입자 등급 분류, 광물 분할).",
+ "contents_en": "Sand images (png) + JSON (grain-size class, mineral segmentation).",
+ "modalities": ["image"],
+ "tasks": ["image_classification", "segmentation"],
+ "topics": [{"ko": "건설·자재", "en": "Construction and materials"}, {"ko": "안전 점검", "en": "Safety inspection"}],
+ "keywords_ko": ["건설 모래", "골재", "입자 크기", "위험 광물", "현미경 이미지"],
+ "keywords_en": ["construction sand", "aggregate", "grain size", "hazardous minerals", "microscope images"],
+ "labels": ["grain-size grade", "origin", "moisture", "mineral segmentation"],
+ "file_formats": ["png", "json"],
+ "scale_ko": "이미지 약 61만 장(입자 51만, 광물 11만), 시료 420개",
+ "classes_example": ["안정", "위험", "불가", "육상", "하천", "바다"],
+ "baseline": [{"task": "sand quality grade classification", "model": "Inception-ResNet", "metric": "accuracy", "value": "96.16%"}],
+ "difficulty": "advanced",
+ "difficulty_note_ko": "전체 약 1.8TB로 매우 큽니다. 입자 크기 이미지 일부만 받아 쓰세요.",
+ "skills_needed_ko": ["파이썬", "CNN 이미지 분류", "분할 모델"],
+ "caveats_ko": ["전체 약 1.8TB", "시료가 420개라 같은 시료 이미지가 학습·검증에 섞이지 않게 나눠야 함(데이터 누수 주의)", "바다·산림 출처 모래는 적음"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "모래 품질 등급 분류", "title_en": "Sand grade classifier", "desc_ko": "모래 사진으로 안정·위험·불가 등급을 분류합니다.", "desc_en": "Classify sand photos as stable, risky or unusable."},
+  {"level": "capstone", "title_ko": "현장 모래 검사 앱", "title_en": "On-site sand inspection app", "desc_ko": "공사 현장에서 모래 사진을 찍으면 품질 등급을 알려줍니다.", "desc_en": "Snap sand on site and get a quality grade."},
+  {"level": "research", "title_ko": "시료 단위 분할 평가", "title_en": "Sample-level split evaluation", "desc_ko": "시료별로 데이터를 나눴을 때 실제 일반화 성능이 얼마인지 연구합니다.", "desc_en": "Measure true generalisation with sample-level train/test splits."}
+ ],
+ "doc_used": true,
+ "uncertain": []
+}

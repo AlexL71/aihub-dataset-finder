@@ -1,0 +1,29 @@
+{
+ "dataset_id": "71465",
+ "title_en": "Architectural drawing data",
+ "summary_ko": "아파트·연립다세대·단독주택의 평면도·단면도·입면도·구조도 48,033장에 문·창·벽 같은 구조 객체와 거실·침실 같은 공간 등 2,653,998개 객체, 도면 속 글자 304,462건이 상자와 분할로 표시된 데이터입니다. 건축 도면 자동 분석·설계 AI에 쓸 수 있습니다.",
+ "summary_en": "48,033 floor plans, sections, elevations and structural drawings of apartments, multi-family and detached houses, with 2,653,998 objects (doors, windows, walls, rooms such as living rooms and bedrooms) and 304,462 text items marked by boxes and segmentation. For automatic architectural drawing analysis and design AI.",
+ "contents_ko": "건축 도면 이미지(png) + JSON(상자, 시맨틱 분할, 텍스트).",
+ "contents_en": "Architectural drawing image (png) + JSON (boxes, semantic segmentation, text).",
+ "modalities": ["image"],
+ "tasks": ["object_detection", "segmentation", "ocr"],
+ "topics": [{"ko": "건축·설계", "en": "Architecture and design"}, {"ko": "부동산", "en": "Real estate"}],
+ "keywords_ko": ["건축 도면", "평면도", "공간 분석", "문·창호", "도면 OCR", "아파트"],
+ "keywords_en": ["architectural drawings", "floor plan", "space analysis", "doors and windows", "drawing OCR", "apartment"],
+ "labels": ["bounding box", "semantic segmentation", "text"],
+ "file_formats": ["png", "json"],
+ "scale_ko": "도면 48,033장(아파트 평면도 33,998), 객체 2,653,998개, 텍스트 304,462건, 구조 8종·공간 12종",
+ "classes_example": ["여닫이문", "미닫이문", "여닫이창", "미닫이창", "철근콘크리트벽", "거실", "침실"],
+ "baseline": [{"task": "drawing text OCR", "model": "YOLO v5", "metric": "CER", "value": "4.95%"}, {"task": "object detection", "model": "YOLO v5", "metric": "mAP", "value": "90.33%"}, {"task": "segmentation", "model": "DeepLabv3+", "metric": "mIoU", "value": "71.2%"}],
+ "difficulty": "intermediate",
+ "difficulty_note_ko": "약 26GB로 다룰 만하고 탐지 성능도 높아 실습하기 좋습니다.",
+ "skills_needed_ko": ["파이썬", "YOLO 탐지", "분할 모델"],
+ "caveats_ko": ["아파트 평면도가 약 71%로 대부분임", "입면도·구조도는 수량이 적음"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "평면도 문·창 탐지", "title_en": "Door and window detection", "desc_ko": "평면도에서 문과 창을 상자로 찾습니다.", "desc_en": "Box doors and windows in floor plans."},
+  {"level": "capstone", "title_ko": "평면도 방 면적 계산기", "title_en": "Floor-plan room area calculator", "desc_ko": "공간 분할로 방을 나누고 방별 면적과 구성을 자동으로 정리합니다.", "desc_en": "Segment rooms and summarise their areas and layout."},
+  {"level": "research", "title_ko": "도면 벡터화", "title_en": "Drawing vectorisation", "desc_ko": "이미지 도면을 벽·문·방 구조 그래프로 바꾸는 방법을 연구합니다.", "desc_en": "Turn drawing images into wall-door-room graphs."}
+ ],
+ "doc_used": true,
+ "uncertain": []
+}

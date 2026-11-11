@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71958",
+ "easy_ko": "실제 교통사고를 컴퓨터로 재현한 장면 500개와 이를 바탕으로 새로 만든 사고 장면 300개, 차와 사람 같은 입체 모형을 모은 데이터입니다. 평소 자료로는 얻기 어려운 드문 사고 상황에 자율주행차가 잘 대처하도록 시험하는 데 쓸 수 있습니다.",
+ "easy_en": "500 computer reconstructions of real traffic accidents, 300 new accident scenes built from them, and three-dimensional models of cars, people and more. You can use it to test whether self-driving cars handle rare accident situations that ordinary data seldom captures.",
+ "detail_ko": "실제 교통사고를 재현한 시뮬레이션 500건(파일 1,500개)과 이를 바탕으로 합성한 사고 시뮬레이션 300건(파일 900개), 3D 에셋 300건(obj, 파일 1,370개)으로, PC-Crash 시뮬레이션(pro)과 OpenDRIVE(도로 구조, xodr)·OpenSCENARIO(차량 움직임, xosc) 형식으로 저장됐습니다. 객체 모델은 차량, 보행자, PM, 환경, 시설물(예: car, truck, bus, pedestrian, motorbike, bicycle, train, pole)입니다. '.pro' 파일은 PC-Crash 전용 형식이라 상용 소프트웨어가 필요할 수 있고, 사고 유형 분포는 팩 앞부분에 없습니다(숫자 코드로만 적힘).",
+ "detail_en": "500 reconstructed real-accident simulations (1,500 files), 300 synthetic accident simulations built from them (900 files) and 300 3D assets (obj, 1,370 files), stored as PC-Crash simulations (pro) and OpenDRIVE (road layout, xodr) and OpenSCENARIO (vehicle movement, xosc). Object models cover vehicles, pedestrians, personal mobility, environment and facilities (such as car, truck, bus, pedestrian, motorbike, bicycle, train, pole). The '.pro' files are a PC-Crash format, so commercial software may be needed, and the accident-type distribution is not in the pack (types appear only as number codes).",
+ "amount_ko": "3D 에셋 300건, 실제 사고 모사 500건, 합성 사고 모사 300건",
+ "amount_en": "300 3D assets, 500 real-accident simulations, 300 synthetic accident simulations",
+ "labels_ko": "사고 재현 장면, 도로·물체 배치, 차량 움직임",
+ "labels_en": "accident simulation, static object mapping, dynamic scenario mapping",
+ "status": "full-run-2026-11-02"
+}

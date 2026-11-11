@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71773",
+ "easy_ko": "AI 대화 응답 100만여 개에 정확한지, 알맞은지, 앞뒤가 맞는지, 재미있는지 같은 기준별 평가와 요약을 붙인 데이터입니다. 챗봇이나 AI 비서의 답변 품질을 자동으로 평가하는 AI에 쓸 수 있습니다.",
+ "easy_en": "Over 1 million AI chat responses, each rated on criteria such as accuracy, appropriateness, consistency and interest, with summaries. You can use it to build AI that automatically judges the quality of chatbot or AI-assistant answers.",
+ "detail_ko": "AI 대화 응답 1,001,428개(대화 세션 56,819개, tsv)에 평가 지표별(예: 정확성, 적절성, 일관성, 흥미성) 분류·이진 판정, 요약, 원문 주석을 JSON으로 붙였습니다. 통계표에 '1,001,428만'처럼 단위가 잘못 적혀 있고, 평가 지표 전체 목록과 성능 지표는 팩 앞부분에 없습니다.",
+ "detail_en": "1,001,428 AI chat responses (56,819 conversation sessions, tsv) with JSON per-criterion classes and binary judgements (such as accuracy, appropriateness, consistency, interest), summaries and annotations. The statistics table writes the unit wrongly ('1,001,428 ten-thousands'), and the full list of criteria and any metrics are not in the pack.",
+ "amount_ko": "발화 1,001,428개, 대화 세션 56,819개",
+ "amount_en": "1,001,428 utterances, 56,819 sessions",
+ "labels_ko": "기준별 품질 평가, 맞다·틀리다 판정, 요약, 주석",
+ "labels_en": "quality class, binary judgement, summary, annotation",
+ "status": "full-run-2026-11-02"
+}

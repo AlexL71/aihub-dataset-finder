@@ -1,0 +1,108 @@
+{
+ "dataset_id": "99",
+ "title_en": "Legal knowledge base",
+ "summary_ko": "교통사고·층간소음·창업 인허가·퇴직금·이혼·한부모가족·학교폭력처럼 생활과 가까운 분야의 법령, 조문, 판례, 법률 상담을 서로 연결한 지식베이스와 법률·생활 용어 사전입니다. 쉬운 법률 안내 챗봇이나 법령 검색에 쓸 수 있습니다.",
+ "summary_en": "A knowledge base linking laws, articles, court cases and legal consultations in everyday areas (traffic accidents, noise between floors, business permits, severance pay, divorce, single-parent families, school violence), plus a legal and everyday term dictionary. For plain-language legal chatbots or law search.",
+ "contents_ko": "법령·조문·판례·상담 데이터와 이들 사이 연결 관계, 온톨로지 모델, 용어 사전·색인 데이터.",
+ "contents_en": "Laws, articles, cases and consultations with links between them, an ontology model, and term dictionary and index data.",
+ "modalities": [
+  "text"
+ ],
+ "tasks": [
+  "retrieval_recommendation",
+  "question_answering",
+  "information_extraction"
+ ],
+ "topics": [
+  {
+   "ko": "법률·생활법령",
+   "en": "Law and everyday legal issues"
+  },
+  {
+   "ko": "판례",
+   "en": "Court cases"
+  },
+  {
+   "ko": "가족·노동 문제",
+   "en": "Family and labour issues"
+  }
+ ],
+ "keywords_ko": [
+  "법령",
+  "판례",
+  "생활법령",
+  "지식베이스",
+  "온톨로지",
+  "법률 용어",
+  "법률 상담"
+ ],
+ "keywords_en": [
+  "laws",
+  "court cases",
+  "everyday law",
+  "knowledge base",
+  "ontology",
+  "legal terms",
+  "legal consultation"
+ ],
+ "labels": [
+  "law-case links",
+  "term relations",
+  "ontology"
+ ],
+ "file_formats": [
+  "json",
+  "csv",
+  "owl"
+ ],
+ "scale_ko": "약 27만 건(2017~2018년 구축, 7개 생활 분야)",
+ "classes_example": [
+  "교통사고",
+  "층간소음",
+  "창업 인허가",
+  "퇴직금",
+  "이혼",
+  "한부모가족",
+  "학교폭력"
+ ],
+ "baseline": [],
+ "difficulty": "intermediate",
+ "difficulty_note_ko": "약 0.4GB로 작지만 지식베이스·온톨로지 구조를 이해해야 합니다. 법령 검색 실습은 어렵지 않습니다.",
+ "skills_needed_ko": [
+  "파이썬",
+  "검색(BM25·임베딩)",
+  "그래프·온톨로지 기초"
+ ],
+ "caveats_ko": [
+  "2017~2018년 자료라 이후 바뀐 법령이 반영되지 않음",
+  "법률 조언 대체용으로 쓰면 안 됨",
+  "파일 형식은 팩에서 확인하지 못해 추정"
+ ],
+ "project_ideas": [
+  {
+   "level": "beginner",
+   "title_ko": "생활 법률 용어 사전 검색",
+   "title_en": "Everyday legal term lookup",
+   "desc_ko": "용어 사전으로 어려운 법률 용어를 쉬운 말로 찾아주는 검색기를 만듭니다.",
+   "desc_en": "Look up hard legal terms in plain words using the dictionary."
+  },
+  {
+   "level": "capstone",
+   "title_ko": "층간소음·학교폭력 법률 안내 챗봇",
+   "title_en": "Legal guide chatbot for everyday issues",
+   "desc_ko": "질문과 관련된 법령·판례를 찾아 쉽게 설명하는 RAG 챗봇을 만듭니다.",
+   "desc_en": "Build a RAG chatbot that finds related laws and cases and explains them simply."
+  },
+  {
+   "level": "research",
+   "title_ko": "법령-판례 연결 자동화",
+   "title_en": "Automatic law-case linking",
+   "desc_ko": "새 판례가 어떤 조문과 관련되는지 자동으로 연결하는 모델을 연구합니다.",
+   "desc_en": "Study models that link new cases to the relevant articles."
+  }
+ ],
+ "doc_used": false,
+ "uncertain": [
+  "파일 형식이 팩에 명시되지 않음"
+ ]
+}

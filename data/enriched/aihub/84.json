@@ -1,0 +1,29 @@
+{
+ "dataset_id": "84",
+ "title_en": "Korean person re-identification images",
+ "summary_ko": "1,000명 이상의 보행자가 실내외 CCTV 10대 이상에 찍힌 사진 400만 장으로, 같은 사람을 다른 카메라에서도 알아보는 '재식별' AI용 데이터입니다. 시간대·옷차림·마스크·소지품·성별·나이·키 정보가 있어 공공 관제, 동선 추적, 혼잡도 분석에 쓸 수 있습니다.",
+ "summary_en": "4 million images of 1,000+ pedestrians captured by 10+ indoor and outdoor CCTV cameras, for re-identification AI that recognises the same person across cameras. Time of day, clothing, masks, belongings, sex, age and height are recorded, for public monitoring, route tracking and crowd analysis.",
+ "contents_ko": "보행자 이미지 + 라벨(사람 ID, 카메라 ID, 상자, 실내/외, 낮/일몰, 옷차림·마스크·소지품, 성별·나이·키).",
+ "contents_en": "Pedestrian images + labels (person ID, camera ID, box, indoor/outdoor, day/sunset, clothing, mask, belongings, sex, age, height).",
+ "modalities": ["image"],
+ "tasks": ["retrieval_recommendation", "object_detection", "object_tracking"],
+ "topics": [{"ko": "CCTV·보안", "en": "CCTV and security"}, {"ko": "보행자·군중", "en": "Pedestrians and crowds"}, {"ko": "공공 안전", "en": "Public safety"}],
+ "keywords_ko": ["재식별", "Re-ID", "보행자", "CCTV", "동선 추적", "공공 관제"],
+ "keywords_en": ["re-identification", "Re-ID", "pedestrian", "CCTV", "route tracking", "public monitoring"],
+ "labels": ["person ID", "bounding box", "attributes (clothing, mask, sex, age, height)"],
+ "file_formats": ["jpg", "json"],
+ "scale_ko": "이미지 400만 장 이상, 보행자 1,000명 이상(1인당 4,000장 이상), 카메라 10대 이상",
+ "classes_example": [],
+ "baseline": [{"task": "person re-identification", "model": "MGN", "metric": "accuracy", "value": "96.8%"}],
+ "difficulty": "intermediate",
+ "difficulty_note_ko": "약 163GB이고 재식별 공개 코드(torchreid)로 실습할 수 있습니다. 개인정보 이슈를 이해하고 써야 합니다.",
+ "skills_needed_ko": ["파이썬", "이미지 임베딩·거리 학습", "재식별 평가(mAP, Rank-1)"],
+ "caveats_ko": ["사람 추적 기술이라 개인정보·감시 남용 우려가 있어 이용 약관과 윤리 검토 필요"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "옷차림 속성 분류", "title_en": "Clothing attribute classifier", "desc_ko": "보행자 사진으로 마스크 착용·소지품 여부를 분류합니다.", "desc_en": "Classify mask wearing and belongings from pedestrian images."},
+  {"level": "capstone", "title_ko": "캠퍼스 혼잡도 분석(익명)", "title_en": "Anonymous crowd counting", "desc_ko": "개인을 식별하지 않고 구역별 보행자 수와 이동 방향만 집계하는 대시보드를 만듭니다.", "desc_en": "Count people and movement direction by zone without identifying anyone."},
+  {"level": "research", "title_ko": "옷을 갈아입어도 강한 재식별", "title_en": "Re-ID under clothing change", "desc_ko": "마스크·옷차림 변화가 재식별 성능에 주는 영향을 분석하고 개선 방법을 비교합니다.", "desc_en": "Analyse how masks and clothing changes affect Re-ID and compare fixes."}
+ ],
+ "doc_used": true,
+ "uncertain": ["클래스 목록을 페이지와 설명서에서 찾지 못함"]
+}

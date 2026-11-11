@@ -1,0 +1,29 @@
+{
+ "dataset_id": "71504",
+ "title_en": "Egg data",
+ "summary_ko": "계란 판을 빛에 비춰 찍은 흑백(MONO) 이미지, 컬러 이미지, 보관기간(1~50일, 세척/비세척)별 이미지로 이루어진 데이터로, 계란 낱개 약 138만 개에 정상·크랙·혈반·탈색·이물질·기형 등 상태가 표시되어 있습니다. 계란 품질 검사와 신선도·등급 판정 AI에 쓸 수 있습니다.",
+ "summary_en": "Candled monochrome (MONO), colour and storage-period (1–50 days, washed/unwashed) images of egg trays, with about 1.38 million individual eggs labelled as normal, crack, blood spot, discolouration, foreign matter or deformed. For egg quality inspection and freshness/grade assessment.",
+ "contents_ko": "계란 이미지(jpg) + XML(계란별 상자, 상태 클래스, 보관기간).",
+ "contents_en": "Egg images (jpg) + XML (per-egg boxes, condition class, storage period).",
+ "modalities": ["image"],
+ "tasks": ["object_detection", "anomaly_detection", "image_classification"],
+ "topics": [{"ko": "축산·식품", "en": "Livestock and food"}, {"ko": "품질 검사", "en": "Quality inspection"}],
+ "keywords_ko": ["계란", "크랙", "혈반", "투광 검사", "신선도", "등급 판정"],
+ "keywords_en": ["eggs", "cracks", "blood spots", "candling", "freshness", "grading"],
+ "labels": ["bounding box", "condition class", "storage period"],
+ "file_formats": ["jpg", "xml"],
+ "scale_ko": "판 기준 약 15만 건(MONO 69,616·COLOR 53,933·보관기간 28,807), 계란 낱개 기준 약 138만 건",
+ "classes_example": ["정상", "크랙", "혈반", "탈색", "이물질", "기형", "외형이상"],
+ "baseline": [{"task": "egg condition detection (MONO)", "model": "Faster R-CNN (ResNet-50 + FPN)", "metric": "mAP", "value": "0.53"}],
+ "difficulty": "intermediate",
+ "difficulty_note_ko": "탐지 실습에 좋지만 결점 클래스가 작고 미묘합니다. 전체 약 92GB입니다.",
+ "skills_needed_ko": ["파이썬", "객체 탐지(Faster R-CNN·YOLO)", "XML 라벨 변환"],
+ "caveats_ko": ["전체 약 92GB", "라벨이 XML 형식이라 YOLO용 변환이 필요", "구축량 표기(150만 건·140만 건·약 138만 건)가 곳마다 다름", "성능 지표가 페이지 표가 아니라 설명서에만 있음"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "깨진 계란 탐지", "title_en": "Cracked egg detection", "desc_ko": "계란 판 사진에서 크랙이 있는 계란을 찾아 상자로 표시합니다.", "desc_en": "Find cracked eggs in tray photos."},
+  {"level": "capstone", "title_ko": "계란 선별 검사 시스템", "title_en": "Egg sorting inspection system", "desc_ko": "판 단위로 불량 계란 위치와 비율을 보여주는 검사 화면을 만듭니다.", "desc_en": "Show defective egg positions and ratio per tray."},
+  {"level": "research", "title_ko": "보관기간 추정", "title_en": "Storage-period estimation", "desc_ko": "투광 이미지로 계란이 며칠 보관됐는지 예측하는 방법을 연구합니다.", "desc_en": "Predict storage days from candled images."}
+ ],
+ "doc_used": true,
+ "uncertain": ["COLOR 데이터의 탐지 성능값은 팩 앞부분에서 확인되지 않음"]
+}

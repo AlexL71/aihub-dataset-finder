@@ -1,0 +1,12 @@
+{
+ "dataset_id": "180",
+ "easy_ko": "자율주행차처럼 장비를 단 차가 실제 도로를 달리며 찍은 영상과 센서 기록으로, 화면 속 자동차·버스·오토바이·사람의 위치와 차선, 차가 달릴 수 있는 공간이 표시되어 있습니다. 자율주행차가 도로 위 상황을 알아보게 하는 AI를 연습할 수 있습니다.",
+ "easy_en": "Video and sensor recordings from a car driving real roads like a self-driving car, with cars, buses, motorbikes, people, lanes and the drivable road area marked in the frames. You can practise AI that lets a self-driving car understand the road.",
+ "detail_ko": "자율주행 모사 차량으로 70개 이상 주행 유스케이스에 따라 수집한 주행 영상과 동기화된 라이다·DGPS·차량 신호 데이터입니다. 라벨은 차량·보행자 바운딩박스, 차선 스플라인, 다각형, 주행 가능 영역(free space)이며, 번호판과 얼굴은 마스킹되었습니다. 원천은 175TB 이상이나 공개 파일은 약 278GB로 일부만 공개된 것으로 보입니다. 페이지에 성능 지표가 없습니다.",
+ "detail_en": "Driving video from a sensor-equipped test vehicle across 70+ driving use-cases, with synchronised LiDAR, DGPS and vehicle-signal data. Labels: vehicle and pedestrian boxes, lane splines, polygons and free space; plates and faces are masked. The source is over 175 TB, but about 278 GB of files are published, so only part seems available. No performance figures on the page.",
+ "amount_ko": "표시된 장면 종류별 20만 프레임 이상, 공개 파일 약 278GB",
+ "amount_en": "200k+ labelled frames per label type, about 278 GB published",
+ "labels_ko": "자동차·사람 위치 상자, 차선 선, 영역 다각형, 달릴 수 있는 공간",
+ "labels_en": "boxes around cars and people, lane lines, region outlines, drivable area",
+ "status": "sample-2026-11-02"
+}

@@ -1,0 +1,12 @@
+{
+ "dataset_id": "94",
+ "easy_ko": "노인 남녀가 AI 비서나 로봇, 키오스크에 말하는 명령어 녹음과 그 말을 받아 적은 글을 짝지은 데이터입니다. 어르신 목소리를 잘 알아듣는 음성 비서나 응급 안내 앱을 만들 수 있습니다.",
+ "easy_en": "Recordings of older men and women giving commands to AI assistants, robots and kiosks, paired with written transcripts. You can build voice assistants or emergency-help apps that understand older people's voices well.",
+ "detail_ko": "노인 남녀 화자의 명령어 음성 3,000시간(구축량 432만)으로, wav 음성, 전사 텍스트, JSON 메타정보(화자 성별·연령대, 녹음 환경, 명령어 분야)로 구성됩니다. 기준 성능은 Kaldi 음성 인식 CER 4.75%, WER 11.56%입니다. 전체 약 500GB이며 페이지 개요에 엑셀 문구가 섞여 있는 등 정리가 덜 되어 있습니다.",
+ "detail_en": "3,000 hours of command speech from older men and women (4.32M built items), with wav audio, transcripts and JSON metadata (speaker sex and age group, recording environment, command category). Baselines: Kaldi speech recognition CER 4.75%, WER 11.56%. Total size is about 500 GB; the page overview is messy (spreadsheet text mixed in).",
+ "amount_ko": "음성 3,000시간",
+ "amount_en": "3,000 hours of speech",
+ "labels_ko": "말소리를 받아 적은 글(전사), 화자 성별·나이대, 명령 분야",
+ "labels_en": "transcripts, speaker sex and age group, command category",
+ "status": "full-run-2026-11-02"
+}

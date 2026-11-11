@@ -1,0 +1,29 @@
+{
+ "dataset_id": "483",
+ "title_en": "Videos for removing weather noise (snow, rain, fog)",
+ "summary_ko": "눈·비·안개·황사/미세먼지·저조도 같은 날씨·잡음이 낀 영상 829시간과 같은 장소의 깨끗한 정답 영상 88시간(프레임 약 101만 장)입니다. 악천후에도 CCTV 영상을 선명하게 복원하는 영상 노이즈 제거 AI에 쓸 수 있습니다.",
+ "summary_en": "829 hours of video degraded by snow, rain, fog, yellow dust/fine dust and low light, plus 88 hours of clean ground-truth video of the same scenes (about 1.01 million frames). For AI that restores clear CCTV video in bad weather.",
+ "contents_ko": "잡음 영상 프레임 + 깨끗한 정답 프레임(jpg) + JSON(잡음 종류, 계절, 실내외, 분할 정보).",
+ "contents_en": "Noisy frames + clean ground-truth frames (jpg) + JSON (noise type, season, indoor/outdoor, segmentation).",
+ "modalities": ["image", "video"],
+ "tasks": ["image_generation", "segmentation"],
+ "topics": [{"ko": "영상 화질 개선", "en": "Image quality enhancement"}, {"ko": "날씨·악천후", "en": "Weather and bad conditions"}, {"ko": "CCTV", "en": "CCTV"}],
+ "keywords_ko": ["노이즈 제거", "디레이닝", "안개 제거", "저조도", "영상 복원", "CCTV"],
+ "keywords_en": ["denoising", "deraining", "dehazing", "low light", "image restoration", "CCTV"],
+ "labels": ["clean/noisy pairs", "noise type", "segmentation"],
+ "file_formats": ["jpg", "json"],
+ "scale_ko": "총 917시간(정답 88시간, 노이즈 829시간), 프레임 1,009,662장",
+ "classes_example": ["눈", "비", "안개", "황사/미세먼지", "저조도"],
+ "baseline": [],
+ "difficulty": "intermediate",
+ "difficulty_note_ko": "입력-정답 쌍이라 이해하기 쉽지만 복원 모델 학습에 GPU가 필요하고 전체 약 1.6TB입니다.",
+ "skills_needed_ko": ["파이썬", "PyTorch 영상 복원 모델", "PSNR·SSIM 평가"],
+ "caveats_ko": ["전체 약 1.6TB", "성능 지표가 팩 앞부분에 없음"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "날씨 잡음 종류 분류", "title_en": "Weather noise classifier", "desc_ko": "영상 프레임이 눈·비·안개 중 무엇에 영향을 받았는지 분류합니다.", "desc_en": "Classify whether frames are affected by snow, rain or fog."},
+  {"level": "capstone", "title_ko": "비 오는 CCTV 선명하게", "title_en": "Clear up rainy CCTV", "desc_ko": "공개 디레이닝 모델을 미세조정해 비 오는 CCTV 영상을 복원하는 데모를 만듭니다.", "desc_en": "Fine-tune a deraining model to restore rainy CCTV."},
+  {"level": "research", "title_ko": "복원 후 탐지 성능", "title_en": "Detection after restoration", "desc_ko": "노이즈 제거가 사람·차량 탐지 성능을 얼마나 높이는지 연구합니다.", "desc_en": "Study how much restoration improves person and vehicle detection."}
+ ],
+ "doc_used": true,
+ "uncertain": []
+}

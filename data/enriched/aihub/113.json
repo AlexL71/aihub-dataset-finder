@@ -1,0 +1,97 @@
+{
+ "dataset_id": "113",
+ "title_en": "Patent knowledge base",
+ "summary_ko": "전기전자 분야 특허·실용신안 100만 건의 청구항에 특허 대상과 구성요소 태그를 붙이고, 특허 패밀리·분쟁·거래·인용 등 60여 종 연관 정보와 기술 용어 사전을 연결한 지식베이스입니다. 특허 검색, 기술 동향 분석, 선행기술 조사에 쓸 수 있습니다.",
+ "summary_en": "A knowledge base of 1 million electrical/electronics patents and utility models with claims tagged by patent item and components, linked to 60+ related facts (families, disputes, transfers, citations) and a technical term dictionary. For patent search, technology trend analysis and prior-art search.",
+ "contents_ko": "특허 청구항 구조화 정보(아이템·구성요소), 특허 연관 정보, 기술 용어 사전(키워드-출원번호, 동의어), 도면 태그 2,338만 건.",
+ "contents_en": "Structured claim data (items, components), related patent facts, technical term dictionary (keyword to application numbers, synonyms), 23.38 million drawing tags.",
+ "modalities": [
+  "text"
+ ],
+ "tasks": [
+  "information_extraction",
+  "retrieval_recommendation"
+ ],
+ "topics": [
+  {
+   "ko": "특허·지식재산",
+   "en": "Patents and intellectual property"
+  },
+  {
+   "ko": "기술 동향",
+   "en": "Technology trends"
+  },
+  {
+   "ko": "전기전자",
+   "en": "Electrical and electronics"
+  }
+ ],
+ "keywords_ko": [
+  "특허",
+  "청구항",
+  "기술 용어",
+  "특허 패밀리",
+  "선행기술 조사",
+  "지식베이스"
+ ],
+ "keywords_en": [
+  "patents",
+  "claims",
+  "technical terms",
+  "patent family",
+  "prior-art search",
+  "knowledge base"
+ ],
+ "labels": [
+  "claim structure tags",
+  "term-patent links",
+  "patent relations",
+  "drawing tags"
+ ],
+ "file_formats": [
+  "json",
+  "csv"
+ ],
+ "scale_ko": "특허·실용신안 100만 건, 기술 용어 12만 개 + 7만 건, 도면 태그 2,338만 건(구축량 170만)",
+ "classes_example": [],
+ "baseline": [],
+ "difficulty": "intermediate",
+ "difficulty_note_ko": "약 2.3GB로 다룰 만하지만 특허 구조와 지식베이스 형식을 이해해야 합니다.",
+ "skills_needed_ko": [
+  "파이썬",
+  "검색·임베딩",
+  "그래프 데이터 기초"
+ ],
+ "caveats_ko": [
+  "2017~2018년 구축이라 최신 특허가 없음",
+  "전기전자 분야 중심",
+  "파일 형식은 팩에서 확인하지 못해 추정"
+ ],
+ "project_ideas": [
+  {
+   "level": "beginner",
+   "title_ko": "기술 키워드별 특허 수 추이",
+   "title_en": "Patent counts by tech keyword",
+   "desc_ko": "용어 사전으로 키워드별 특허 수를 집계해 기술 동향 그래프를 그립니다.",
+   "desc_en": "Count patents per keyword and plot technology trends."
+  },
+  {
+   "level": "capstone",
+   "title_ko": "청구항 기반 유사 특허 검색",
+   "title_en": "Claim-based similar patent search",
+   "desc_ko": "청구항 구성요소 임베딩으로 비슷한 특허를 찾아주는 검색기를 만듭니다.",
+   "desc_en": "Find similar patents using embeddings of claim components."
+  },
+  {
+   "level": "research",
+   "title_ko": "특허 분쟁 위험 예측",
+   "title_en": "Predicting patent dispute risk",
+   "desc_ko": "인용·패밀리·거래 정보로 분쟁 가능성이 높은 특허를 예측하는 모델을 연구합니다.",
+   "desc_en": "Predict dispute-prone patents from citation, family and transfer data."
+  }
+ ],
+ "doc_used": false,
+ "uncertain": [
+  "파일 형식이 팩에 명시되지 않음"
+ ]
+}

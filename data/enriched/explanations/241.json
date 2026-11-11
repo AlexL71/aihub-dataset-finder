@@ -1,0 +1,12 @@
+{
+ "dataset_id": "241",
+ "easy_ko": "높은 건물 옥상 CCTV로 넓은 도심을 내려다본 영상에 차와 사람 위치, 얼마나 붐비는지를 표시하고, 사람과 차를 지운 빈 거리 사진도 함께 담은 데이터입니다. 넓은 지역의 교통 혼잡이나 정류장 인파를 자동으로 분석하는 AI를 만들 수 있습니다.",
+ "easy_en": "Video from rooftop CCTV looking down over a wide city area, marked with cars and people and how crowded it is, plus background images with the people and cars removed. You can build AI that analyses traffic jams or crowds at bus stops over a large area.",
+ "detail_ko": "서초구 고층 건물 옥상 광각 CCTV 20개 지점의 버드아이뷰 영상으로, 초당 1프레임 라벨이 있는 차량 이동 338시간과 정류장 사람 군집·이동 300시간, 배경 이미지 1,222시간, 원본 영상 20,800시간(구축량 216만)으로 구성됩니다. JSON에 차량·사람 바운딩박스와 혼잡도가 있습니다. 성능 지표 표가 비어 있으며 서초구 20개 지점만 포함됩니다.",
+ "detail_en": "Bird's-eye video from wide-angle rooftop CCTV at 20 sites in Seocho-gu: 338 hours of labelled vehicle movement and 300 hours of crowds at bus stops (labels at 1 frame per second), 1,222 hours of background images and 20,800 hours of raw video (2.16M built items). JSON gives vehicle and person boxes and congestion level. The performance table is empty, and only 20 Seocho-gu sites are covered.",
+ "amount_ko": "라벨 영상 638시간(차 338 + 사람 300), 원본 영상 20,800시간",
+ "amount_en": "638 labelled hours (338 vehicles + 300 people), 20,800 hours raw",
+ "labels_ko": "차·사람 위치 상자, 붐비는 정도",
+ "labels_en": "boxes around vehicles and people, congestion level",
+ "status": "full-run-2026-11-02"
+}

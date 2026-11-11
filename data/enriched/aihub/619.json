@@ -1,0 +1,32 @@
+{
+ "dataset_id": "619",
+ "title_en": "Civil complaint automation AI language data",
+ "summary_ko": "창원시 콜센터와 국민신문고 민원 글 20만 건에 개체명·의도(요청·문의 등)·담당 부서·키워드를 붙이고, 비슷한 문장을 만들어 100만 건으로 늘린 데이터입니다. 민원을 자동으로 이해하고 담당 부서로 보내는 챗봇에 쓸 수 있습니다.",
+ "summary_en": "200,000 civil complaints from Changwon city's call centre and the national e-petition board, labelled with named entities, intent (request, inquiry and more), responsible department and keywords, then expanded to 1 million with paraphrases. For chatbots that understand complaints and route them to the right department.",
+ "contents_ko": "민원 문장 JSON(의도, 개체명, 부서, 키워드, 유사 문장).",
+ "contents_en": "Complaint sentence JSON (intent, entities, department, keywords, paraphrases).",
+ "modalities": ["text"],
+ "tasks": ["text_classification", "information_extraction", "dialogue"],
+ "topics": [{"ko": "공공 행정·민원", "en": "Public administration and complaints"}, {"ko": "챗봇", "en": "Chatbots"}],
+ "keywords_ko": ["민원", "챗봇", "의도 분류", "개체명 인식", "지자체"],
+ "keywords_en": ["civil complaints", "chatbot", "intent classification", "named entity recognition", "local government"],
+ "labels": ["intent", "named entity", "department", "keyword"],
+ "file_formats": ["json"],
+ "scale_ko": "100만 건(원문 20만 + 유사 문장 80만), 부서 분야 18종",
+ "classes_example": ["자동차", "안전건설", "교통", "건축허가", "환경미화", "요청/개선", "문의(질의)"],
+ "baseline": [
+  {"task": "intent classification", "model": "ELECTRA", "metric": "accuracy", "value": "98.68%"},
+  {"task": "named entity recognition", "model": "BERT", "metric": "F1", "value": "0.908"}
+ ],
+ "difficulty": "beginner",
+ "difficulty_note_ko": "약 80MB로 작아 노트북에서 문장 분류 실습이 가능합니다.",
+ "skills_needed_ko": ["파이썬", "텍스트 분류(BERT 등)", "개체명 인식"],
+ "caveats_ko": ["80%가 자동 생성한 유사 문장이라 실제보다 쉬움", "자동차 분야가 37%로 치우침", "창원시 민원만 있음"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "민원 담당 부서 분류", "title_en": "Complaint department classifier", "desc_ko": "민원 문장을 담당 부서별로 분류합니다.", "desc_en": "Classify complaints by responsible department."},
+  {"level": "capstone", "title_ko": "구청 민원 챗봇", "title_en": "District complaint chatbot", "desc_ko": "민원 의도와 부서를 파악해 안내하는 챗봇을 만듭니다.", "desc_en": "Build a chatbot that detects intent and directs citizens to the right office."},
+  {"level": "research", "title_ko": "유사 문장 증강 효과", "title_en": "Effect of paraphrase augmentation", "desc_ko": "원문만 쓸 때와 증강 문장을 더할 때 실제 민원 성능을 비교합니다.", "desc_en": "Compare real-complaint accuracy with and without paraphrase augmentation."}
+ ],
+ "doc_used": true,
+ "uncertain": []
+}

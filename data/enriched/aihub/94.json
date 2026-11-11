@@ -1,0 +1,32 @@
+{
+ "dataset_id": "94",
+ "title_en": "Command speech (older adults)",
+ "summary_ko": "노인 남녀가 AI 비서·로봇·키오스크에 말하는 명령어 음성 3,000시간과 전사문입니다. 노년층 목소리를 잘 알아듣는 음성 인식을 만들어 어르신용 음성 비서나 응급 안내 앱에 쓸 수 있습니다.",
+ "summary_en": "3,000 hours of voice commands spoken by older men and women to AI assistants, robots and kiosks, with transcripts. For speech recognition that understands older voices, for seniors' voice assistants or emergency-guide apps.",
+ "contents_ko": "음성(wav) + 전사 텍스트 + JSON 메타정보(화자 성별·연령대, 녹음 환경, 명령어 분야).",
+ "contents_en": "Audio (wav) + transcript + JSON metadata (speaker sex and age group, recording environment, command category).",
+ "modalities": ["audio", "text"],
+ "tasks": ["speech_recognition", "text_classification"],
+ "topics": [{"ko": "노인·고령화", "en": "Older adults and ageing"}, {"ko": "음성 비서", "en": "Voice assistants"}, {"ko": "접근성", "en": "Accessibility"}],
+ "keywords_ko": ["음성 명령", "노인 음성", "음성 인식", "AI 비서", "키오스크", "노년층"],
+ "keywords_en": ["voice commands", "older speakers", "speech recognition", "AI assistant", "kiosk", "seniors"],
+ "labels": ["transcript", "speaker attributes", "command category"],
+ "file_formats": ["wav", "json"],
+ "scale_ko": "음성 3,000시간(구축량 432만)",
+ "classes_example": [],
+ "baseline": [
+  {"task": "speech recognition", "model": "Kaldi", "metric": "CER", "value": "4.75%"},
+  {"task": "speech recognition", "model": "Kaldi", "metric": "WER", "value": "11.56%"}
+ ],
+ "difficulty": "intermediate",
+ "difficulty_note_ko": "Whisper 등으로 음성 인식 미세조정 실습을 할 수 있습니다. 전체 약 500GB라 일부만 받아 쓰세요.",
+ "skills_needed_ko": ["파이썬", "오디오 처리", "음성 인식 모델 미세조정"],
+ "caveats_ko": ["전체 약 500GB", "개요 설명에 엑셀 문구가 섞여 있는 등 페이지 정리가 덜 됨"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "어르신 명령어 의도 분류", "title_en": "Seniors' command intent", "desc_ko": "전사문으로 '전화 걸어줘', '날씨 알려줘' 같은 명령 종류를 분류합니다.", "desc_en": "Classify command types such as calling or weather from transcripts."},
+  {"level": "capstone", "title_ko": "어르신용 음성 비서 데모", "title_en": "Voice assistant for seniors", "desc_ko": "노인 음성으로 미세조정한 인식기로 간단한 명령을 실행하는 데모를 만듭니다.", "desc_en": "Build a demo that runs simple commands using a recogniser tuned on older voices."},
+  {"level": "research", "title_ko": "연령대별 음성 인식 격차", "title_en": "Speech recognition gap by age", "desc_ko": "일반인·노인·소아 데이터로 학습한 모델의 연령대별 오류를 비교하고 격차를 줄이는 방법을 연구합니다.", "desc_en": "Compare errors across adult, senior and child data and reduce the gap."}
+ ],
+ "doc_used": true,
+ "uncertain": ["클래스 목록을 페이지와 설명서에서 찾지 못함"]
+}

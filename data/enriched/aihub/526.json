@@ -1,0 +1,29 @@
+{
+ "dataset_id": "526",
+ "title_en": "Autonomous driving data for precision-agriculture machinery",
+ "summary_ko": "트랙터 같은 농기계에서 찍은 RGB 26.7만 장, 근적외선(NIR) 25.4만 장, 라이다 8만 장으로, 농작지와 사람·장애물 같은 위험물이 상자·다각형·3D 큐보이드로 표시되어 있습니다. 농촌 인력 부족을 메우는 자율주행 농기계의 작업지·위험물 인식에 쓸 수 있습니다.",
+ "summary_en": "267,000 RGB, 254,000 near-infrared (NIR) and 80,000 lidar frames captured from farm machinery such as tractors, with farmland areas and hazards (people, obstacles) labelled by boxes, polygons and 3D cuboids. For autonomous farm machines that recognise work areas and hazards, helping with rural labour shortages.",
+ "contents_ko": "RGB·NIR 이미지(jpg) + 라이다(pcd) + JSON(상자, 다각형, 3D 큐보이드, 클래스).",
+ "contents_en": "RGB and NIR images (jpg) + lidar (pcd) + JSON (boxes, polygons, 3D cuboids, class).",
+ "modalities": ["image", "3d", "sensor"],
+ "tasks": ["object_detection", "segmentation"],
+ "topics": [{"ko": "농업·스마트팜", "en": "Agriculture and smart farming"}, {"ko": "자율주행", "en": "Self-driving"}, {"ko": "농기계", "en": "Farm machinery"}],
+ "keywords_ko": ["자율주행 농기계", "트랙터", "정밀농업", "라이다", "근적외선", "위험물 인식"],
+ "keywords_en": ["autonomous farm machinery", "tractor", "precision agriculture", "lidar", "near-infrared", "hazard recognition"],
+ "labels": ["bounding box", "polygon", "3D cuboid"],
+ "file_formats": ["jpg", "pcd", "json"],
+ "scale_ko": "총 600,716장(RGB 266,905, NIR 253,500, 라이다 80,311)",
+ "classes_example": ["공통 > 사람(person)", "공통 > 전봇대(pole)", "공통 > 트랙터(tractor)", "공통 > 차량(vehicle)", "공통 > 돌(rocks)", "공통 > 나무(tree)", "공통 > 도로(road)", "밭 > 고랑(field_furrow)", "밭 > 두렁(field_levee)", "논 > 벼(paddy_rice)", "논 > 가장자리(paddy_edge)", "과수원 > 나무(orchard_tree)"],
+ "baseline": [],
+ "difficulty": "advanced",
+ "difficulty_note_ko": "RGB·NIR·라이다를 함께 다루는 자율주행 연구 수준입니다. 약 119GB입니다.",
+ "skills_needed_ko": ["파이썬", "객체 탐지·분할", "라이다 3D 탐지"],
+ "caveats_ko": ["성능 지표가 팩 앞부분에 없음"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "밭 경계 분할", "title_en": "Field boundary segmentation", "desc_ko": "RGB 이미지에서 농작지 영역을 칠합니다.", "desc_en": "Segment farmland areas in RGB images."},
+  {"level": "capstone", "title_ko": "농기계 앞 사람 감지 경고", "title_en": "Person warning for tractors", "desc_ko": "농기계 앞에 사람이 있으면 멈추도록 경고하는 데모를 만듭니다.", "desc_en": "Warn the machine to stop when a person is ahead."},
+  {"level": "research", "title_ko": "NIR로 야간·역광 인식", "title_en": "NIR for night and backlight", "desc_ko": "근적외선 영상이 어두운 환경에서 탐지 성능을 높이는지 연구합니다.", "desc_en": "Study whether NIR improves detection in low light."}
+ ],
+ "doc_used": true,
+ "uncertain": []
+}

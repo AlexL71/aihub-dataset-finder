@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71465",
+ "easy_ko": "아파트와 주택의 설계 도면 약 4만 8천 장에 문, 창문, 벽 같은 구조와 거실, 침실 같은 공간, 도면 속 글자를 표시한 데이터입니다. 건축 도면을 자동으로 읽고 설계를 돕는 AI에 쓸 수 있습니다.",
+ "easy_en": "About 48,000 architectural drawings of apartments and houses, marking structures such as doors, windows and walls, rooms such as living rooms and bedrooms, and the text written on the drawings. You can use it to build AI that reads drawings automatically and helps with design.",
+ "detail_ko": "아파트·연립다세대·단독주택의 평면도·단면도·입면도·구조도 48,033장(png, 아파트 평면도 33,998장)에 구조 8종·공간 12종 객체 2,653,998개(예: 여닫이문, 미닫이창, 철근콘크리트벽, 거실, 침실)를 상자와 시맨틱 분할로, 도면 텍스트 304,462건을 JSON으로 표시했습니다. 기준 성능은 도면 텍스트 OCR YOLO v5 CER 4.95%, 객체 탐지 YOLO v5 mAP 90.33%, 분할 DeepLabv3+ mIoU 71.2%입니다. 아파트 평면도가 약 71%로 대부분이고 입면도·구조도는 수량이 적습니다.",
+ "detail_en": "48,033 floor plans, sections, elevations and structural drawings (png; 33,998 are apartment floor plans) of apartments, row houses and detached houses, with 2,653,998 objects in 8 structure and 12 space classes (such as swing door, sliding window, reinforced-concrete wall, living room, bedroom) as boxes and semantic segmentation, plus 304,462 text items, in JSON. Baselines: drawing-text OCR with YOLO v5, CER 4.95%; object detection with YOLO v5, mAP 90.33%; segmentation with DeepLabv3+, mIoU 71.2%. Apartment floor plans make up about 71%, and elevations and structural drawings are few.",
+ "amount_ko": "도면 48,033장, 객체 2,653,998개, 텍스트 304,462건",
+ "amount_en": "48,033 drawings, 2,653,998 objects, 304,462 text items",
+ "labels_ko": "구조·공간 위치 상자와 영역, 도면 글자",
+ "labels_en": "boxes and semantic masks for structures and spaces, drawing text",
+ "status": "full-run-2026-11-02"
+}

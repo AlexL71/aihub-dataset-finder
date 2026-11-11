@@ -1,0 +1,12 @@
+{
+ "dataset_id": "568",
+ "easy_ko": "가전제품, 차, 길거리, 카페, 시장, 지하철, 공사장, 공장, 자연 소리 같은 여러 소음이 섞인 곳에서 나눈 한국어 대화를 녹음하고, 그 말을 받아 적은 글과 소음 종류를 붙인 데이터입니다. 시끄러운 곳에서도 말을 잘 알아듣는 음성 인식 AI를 만들 수 있습니다.",
+ "easy_en": "Recordings of Korean conversations with real background noise such as appliances, traffic, streets, cafes, markets, subways, construction, factories and nature, paired with transcripts and the noise type. You can build speech recognition that understands people well even in noisy places.",
+ "detail_ko": "11가지 소음(가전, 교통수단, 길거리, 카페/음식점, 시장/쇼핑몰, 지하철/버스, 공사장 등)이 섞인 한국어 대화 음성 약 7,500시간(wav)과 JSON(전사 텍스트, 소음 종류)으로 구성됩니다. 기준 성능은 기록에서 확인되지 않습니다. 전체 약 3.8TB이며 실제 사람 목소리라 개인 음성 정보에 주의해야 합니다.",
+ "detail_en": "About 7,500 hours of Korean conversational speech (wav) mixed with 11 noise types (appliances, transport, streets, cafes and restaurants, markets and malls, subways and buses, construction and more), with JSON transcripts and noise class. No baseline is visible in the record. Total size is about 3.8 TB; these are real voices, so take care with personal voice data.",
+ "amount_ko": "음성 약 7,500시간, 소음 11종",
+ "amount_en": "about 7,500 hours of speech, 11 noise types",
+ "labels_ko": "말소리를 받아 적은 글(전사), 소음 종류",
+ "labels_en": "transcripts, noise class",
+ "status": "full-run-2026-11-02"
+}

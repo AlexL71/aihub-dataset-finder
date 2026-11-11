@@ -1,0 +1,29 @@
+{
+ "dataset_id": "91",
+ "title_en": "Korean text OCR in various forms",
+ "summary_ko": "행정·경제·교통 등 실생활 서식 50종을 인기 폰트 10종으로 다시 만든 인쇄체 문서 7.5만 장과, 152명이 직접 쓴 한글 글자·단어 손글씨 110만 장입니다. 표 안의 글자, 숫자, 문장부호까지 포함해 서식 문서를 자동으로 읽는 OCR이나 업무 자동화(RPA)에 쓸 수 있습니다.",
+ "summary_en": "75,000 printed form documents (50 real-life forms such as administrative, economic and traffic forms, re-made with 10 popular fonts) and 1.1 million handwritten Hangul characters and words by 152 writers. Includes text in tables, numbers and punctuation, for OCR that reads forms automatically or office automation (RPA).",
+ "contents_ko": "서식 문서 이미지 또는 손글씨 글자·단어 이미지 + JSON(글자 위치 상자, 정답 텍스트).",
+ "contents_en": "Form document image or handwritten character/word image + JSON (text boxes, ground-truth text).",
+ "modalities": ["image", "text"],
+ "tasks": ["ocr", "information_extraction"],
+ "topics": [{"ko": "한글·문자", "en": "Hangul and writing"}, {"ko": "문서 디지털화", "en": "Document digitisation"}, {"ko": "사무 자동화", "en": "Office automation"}],
+ "keywords_ko": ["OCR", "서식 문서", "손글씨", "인쇄체", "표 인식", "RPA"],
+ "keywords_en": ["OCR", "form documents", "handwriting", "printed text", "table text", "RPA"],
+ "labels": ["text bounding box", "text transcription"],
+ "file_formats": ["png", "jpg", "json"],
+ "scale_ko": "총 1,176,225장: 인쇄체 서식 75,000장, 손글씨 글자 344,412장, 손글씨 단어 756,813장",
+ "classes_example": ["인쇄체", "손글씨 글자", "손글씨 단어"],
+ "baseline": [],
+ "difficulty": "intermediate",
+ "difficulty_note_ko": "약 40GB로 다룰 만하고 OCR 미세조정 실습에 좋습니다. 서식에서 항목을 뽑는 것까지 하면 더 어려워집니다.",
+ "skills_needed_ko": ["파이썬", "OCR 모델 사용·미세조정", "문서 레이아웃 이해"],
+ "caveats_ko": ["서식 내용은 비식별 후 다시 만든 것이라 실제 문서와 차이가 있음", "성능 지표가 팩 앞부분에 없음"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "손글씨 단어 인식", "title_en": "Handwritten word recognition", "desc_ko": "손글씨 단어 이미지로 공개 OCR 모델을 미세조정해 정확도 변화를 봅니다.", "desc_en": "Fine-tune an open OCR model on handwritten words and compare accuracy."},
+  {"level": "capstone", "title_ko": "신청서 자동 입력 도구", "title_en": "Automatic form entry", "desc_ko": "스캔한 서식에서 이름·주소 같은 항목을 읽어 표로 정리합니다.", "desc_en": "Read fields such as name and address from scanned forms into a table."},
+  {"level": "research", "title_ko": "폰트 변화에 강한 OCR", "title_en": "OCR robust to fonts", "desc_ko": "일부 폰트로만 학습했을 때 처음 보는 폰트에서 성능이 얼마나 떨어지는지 분석합니다.", "desc_en": "Train on some fonts and measure the drop on unseen fonts."}
+ ],
+ "doc_used": true,
+ "uncertain": []
+}

@@ -1,0 +1,12 @@
+{
+ "dataset_id": "93",
+ "easy_ko": "사회과학·기술·철학·법학 같은 여러 분야의 한국어 책 글에 사람이 쓴 요약을 붙인 데이터입니다. 긴 글의 핵심만 짧게 정리해 주는 요약 AI를 만들 수 있습니다.",
+ "easy_en": "Passages from Korean books in fields such as social science, technology, philosophy and law, each with a human-written summary. You can build AI that sums up the key points of a long text.",
+ "detail_ko": "사회과학·기술과학·철학·법학 등 다양한 분야 한국어 도서 원문 20만 건에 생성 요약문(일부 추출 요약 포함)을 붙인 JSON 데이터로, 원문 ID·분야, 원문 텍스트, 요약문이 있습니다. 기준 성능 지표는 페이지에 없습니다.",
+ "detail_en": "200k Korean book passages in fields such as social science, technology, philosophy and law, each with an abstractive summary (some extractive), in JSON with passage ID, field, text and summary. No baseline is given on the page.",
+ "amount_ko": "원문-요약 20만 건",
+ "amount_en": "200k text–summary pairs",
+ "labels_ko": "요약문, 책 분야",
+ "labels_en": "summary text, book field",
+ "status": "full-run-2026-11-02"
+}

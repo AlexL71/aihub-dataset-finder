@@ -1,0 +1,12 @@
+{
+ "dataset_id": "560",
+ "easy_ko": "한국 성인 남녀를 찍은 사진과 입체 몸 모형, 그리고 키·몸무게 같은 몸 치수를 직접 잰 값을 함께 모은 데이터입니다. 사진만으로 몸 치수를 재 주는 AI나 몸에 맞는 옷을 추천하는 서비스를 만들 수 있습니다.",
+ "easy_en": "Photos and 3D body models of Korean adult men and women, together with directly measured body sizes such as height and weight. You can build AI that measures body sizes from photos, or services that recommend clothes that fit.",
+ "detail_ko": "20~60대 한국 성인 1,000명(남녀 각 500명)의 2D 이미지 100만 장(jpg), 3D 몸 형상 1,000세트(메시 obj, 포인트클라우드 ply), 키·몸무게 등 36개 실측 치수(CSV), 분할 JSON으로 구성됩니다. 기준 성능은 기록에서 확인되지 않습니다. 전체 약 436GB이며, 사람 몸을 찍은 민감한 데이터이고 실측 치수는 1,000명분뿐입니다.",
+ "detail_en": "Data on 1,000 Korean adults aged 20s–60s (500 men, 500 women): 1M 2D images (jpg), 1,000 3D body scans (obj meshes, ply point clouds), 36 measured body dimensions such as height and weight (CSV) and segmentation JSON. No baseline is visible in the record. Total size is about 436 GB; this is sensitive body data, and measurements exist for only 1,000 people.",
+ "amount_ko": "사진 100만 장, 1,000명, 치수 36항목",
+ "amount_en": "1M images, 1,000 people, 36 measurements",
+ "labels_ko": "몸 영역, 입체 몸 모형, 몸 치수 값",
+ "labels_en": "body segmentation, 3D body shape, body measurements",
+ "status": "full-run-2026-11-02"
+}

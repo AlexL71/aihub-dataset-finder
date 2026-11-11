@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71921",
+ "easy_ko": "산불이 번질 위험이 있는 상황에서 어떻게 대응할지 여러 선택지를 비교하며 따지도록 만든 질문과 답 27만여 건으로, 산불 크기와 지역별로 나뉩니다. 산불 대응 결정을 돕는 언어 AI 서비스에 쓸 수 있습니다.",
+ "easy_en": "Over 270,000 questions and answers on how to respond when a wildfire may spread, written to weigh several options side by side, grouped by fire size and region. You can use it for language-AI services that support wildfire response decisions.",
+ "detail_ko": "산불 확산 위험 상황의 대응방안을 추론하도록 만든 질의응답 274,204건(JSON, 라벨 총 1,477,814어절)으로, 생각의 나무(ToT, 여러 선택지를 가지처럼 펼쳐 비교하는 추론) 형식이며 대형·중형·소형 산불과 강원·경상·전라·충청·경기 지역별로 나뉩니다. 페이지에 성능 점수 표가 없고(LLM 미세조정 소개만 있음), 자체 제작 데이터라 실제 산불 대응 기록과 다를 수 있으며, 대형 경상도가 35%로 많고 대형 전라도·중형 경기도 등은 1%대입니다.",
+ "detail_en": "274,204 question-answer items (JSON, 1,477,814 words of labels) for reasoning about responses to wildfire spread, in tree-of-thought (ToT) form, where options branch out and are compared, grouped by large, medium and small fires and by region (Gangwon, Gyeongsang, Jeolla, Chungcheong, Gyeonggi). There is no score table (only LLM fine-tuning is mentioned); the data was written for the project, so it may differ from real response records; large fires in Gyeongsang make up 35%, while some groups are around 1%.",
+ "amount_ko": "질의응답 274,204건, 라벨 1,477,814어절",
+ "amount_en": "274,204 QA items, 1,477,814 words of labels",
+ "labels_ko": "질문과 답, 선택지 비교 추론",
+ "labels_en": "question-answer, ToT reasoning",
+ "status": "full-run-2026-11-02"
+}

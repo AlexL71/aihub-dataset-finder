@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71349",
+ "easy_ko": "성우들이 기쁨, 슬픔, 화남, 담담함 같은 감정과 이야기책 읽기, 스포츠 중계, 안내 방송 같은 여러 말투로 한국어 문장을 읽은 녹음과 대본입니다. 상황에 맞는 감정과 말투로 말하는 AI 목소리(음성합성)를 만들 수 있습니다.",
+ "easy_en": "Voice actors reading Korean sentences with emotions such as joy, sadness, anger and calm, in styles like storytelling, sports commentary and customer-service announcements, with the scripts. You can build an AI voice that speaks with the right emotion and style for each situation.",
+ "detail_ko": "독백체·대화체·구연체·중계체·친절체·애니체·낭독체 7가지 발화 스타일과 기쁨·슬픔·분노·무감정 4가지 감정을 함께 고려해 녹음한 한국어 음성 약 1,000시간(wav), 대본(txt), 스타일·감정·화자 정보(JSON)로 구성됩니다. 기준 성능은 Transformer-GST 음성합성 MOS 3.74입니다. 낭독체 데이터가 적고, 성우 음성이므로 음성 복제·사칭에 악용되지 않도록 주의해야 합니다.",
+ "detail_en": "About 1,000 hours of Korean speech (wav) recorded for seven speaking styles (monologue, dialogue, storytelling, commentary, polite service, animation, reading) crossed with four emotions (joy, sadness, anger, neutral), with scripts (txt) and style, emotion and speaker labels (JSON). Baseline: Transformer-GST TTS, MOS 3.74. The reading style has less data; as these are actors' voices, guard against voice cloning or impersonation.",
+ "amount_ko": "음성 약 1,000시간, 말투 7가지, 감정 4가지",
+ "amount_en": "about 1,000 hours of speech, 7 styles, 4 emotions",
+ "labels_ko": "말투, 감정, 대본, 화자 정보",
+ "labels_en": "speaking style, emotion, script, speaker info",
+ "status": "sample-2026-11-02"
+}

@@ -1,0 +1,12 @@
+{
+ "dataset_id": "596",
+ "easy_ko": "수직 농장에서 딸기가 자라는 모습을 정해진 시간마다 찍고, 위치와 자라는 단계(심기·꽃봉오리·꽃 피기·열매 커지기·수확)를 표시한 뒤 재배 환경 기록을 함께 붙인 데이터입니다. 딸기가 언제 익고 열매가 얼마나 무거울지 예측하는 AI를 만들 수 있습니다.",
+ "easy_en": "Strawberries photographed at set times as they grow in a vertical farm, with positions and growth stages (planting, budding, flowering, fruit swelling, harvest) marked, plus growing-environment records. You can build AI that predicts when strawberries will ripen and how heavy the fruit will be.",
+ "detail_ko": "수직농장 딸기(설향 약 13.8만, 금실 약 3만) 시계열 이미지 약 17만 장(jpg)에 바운딩박스와 생육 단계 5종(정식기, 출뢰기, 개화기, 과실비대기, 수확기), 과실 무게를 JSON으로 붙이고, 재배 환경 센서 데이터 약 20만 건을 함께 제공합니다. 기준 성능은 YOLOv5 딸기 탐지 mAP 97.37%, LSTM 과실 무게 예측 RMSE 0.056입니다. 전체 약 335GB이며 설향 품종이 82%로 치우쳐 있고, 595번 엽채류 데이터와 같은 구축 기관·구조입니다.",
+ "detail_en": "About 170k time-series images (jpg) of vertical-farm strawberries (about 138k Seolhyang, 30k Geumsil), with JSON boxes, 5 growth stages (transplanting, budding, flowering, fruit enlargement, harvest) and fruit weight, plus about 200k environment sensor records. Baselines: YOLOv5 strawberry detection mAP 97.37%, LSTM fruit-weight prediction RMSE 0.056. Total size is about 335 GB; Seolhyang makes up 82%; same organisation and structure as dataset 595.",
+ "amount_ko": "이미지 약 17만 장, 센서 기록 약 20만 건",
+ "amount_en": "about 170k images, about 200k sensor records",
+ "labels_ko": "딸기 위치 상자, 자라는 단계, 열매 무게, 재배 환경 값",
+ "labels_en": "boxes around plants, growth stage, fruit weight, environment values",
+ "status": "full-run-2026-11-02"
+}

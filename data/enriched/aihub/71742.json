@@ -1,0 +1,29 @@
+{
+ "dataset_id": "71742",
+ "title_en": "Daily-life task and command execution data (objects), 2023",
+ "summary_ko": "일상 물체 42,003개를 3D(FBX)로 만든 데이터로, 물체마다 '깨끗한·액체가 찬·더러운' 같은 상태 3가지와 '열 수 있는·집을 수 있는' 같은 활용 속성이 붙어 있습니다. 분할·깊이 정보가 있어 명령을 수행하는 로봇·AI 에이전트의 물체 인식에 쓸 수 있습니다.",
+ "summary_en": "42,003 everyday 3D objects (FBX), each in 3 states (e.g. clean, filled with liquid, dirty) with affordances such as openable or pickable, plus segmentation and depth. For object understanding in command-following robots and AI agents.",
+ "contents_ko": "3D 물체(fbx) + 렌더링 이미지(png) + JSON(분할, 깊이, 상태·활용 속성).",
+ "contents_en": "3D object (fbx) + rendered images (png) + JSON (segmentation, depth, state and affordance attributes).",
+ "modalities": ["3d", "image"],
+ "tasks": ["segmentation", "depth_estimation", "image_classification"],
+ "topics": [{"ko": "로봇·AI 에이전트", "en": "Robots and AI agents"}, {"ko": "3D 콘텐츠", "en": "3D content"}],
+ "keywords_ko": ["3D 물체", "물체 상태", "어포던스", "로봇 에이전트", "분할", "임베디드 AI"],
+ "keywords_en": ["3D objects", "object states", "affordances", "robot agent", "segmentation", "embodied AI"],
+ "labels": ["semantic segmentation", "instance segmentation", "depth", "state", "affordance"],
+ "file_formats": ["fbx", "png", "json"],
+ "scale_ko": "3D 물체 42,003개(물체당 상태 3종)",
+ "classes_example": ["컵-깨끗한", "컵-액체가 차있는", "컵-더러운", "열 수 있는", "집을 수 있는"],
+ "baseline": [],
+ "difficulty": "advanced",
+ "difficulty_note_ko": "3D 물체와 속성 개념을 다뤄야 하고 약 348GB이며 가장 작은 파일도 약 0.33GB입니다.",
+ "skills_needed_ko": ["파이썬", "분할 모델", "3D 도구(Blender·Unity)", "이미지 분류"],
+ "caveats_ko": ["페이지에 성능 점수 표가 없음", "물체 종류 전체 목록은 팩 앞부분에 없음", "71741(공간)·71743(명령어)과 같은 시리즈"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "물체 상태 분류", "title_en": "Object state classifier", "desc_ko": "컵 이미지가 깨끗한지·찼는지·더러운지 분류합니다.", "desc_en": "Classify whether a cup is clean, filled or dirty."},
+  {"level": "capstone", "title_ko": "물체 활용 정보 검색", "title_en": "Affordance lookup tool", "desc_ko": "물체 사진을 넣으면 '열 수 있음·집을 수 있음' 같은 활용 정보를 보여 줍니다.", "desc_en": "Show affordances like openable or pickable for an object photo."},
+  {"level": "research", "title_ko": "상태 변화 인식", "title_en": "State change recognition", "desc_ko": "같은 물체의 상태가 바뀐 것을 로봇이 알아차리는 방법을 연구합니다.", "desc_en": "Study how robots notice changes in an object's state."}
+ ],
+ "doc_used": true,
+ "uncertain": []
+}

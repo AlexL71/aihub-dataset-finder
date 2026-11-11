@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71354",
+ "easy_ko": "실제 장소, 가상 공간, 만들어 낸 상황의 분위기 소리(환경음)를 현장에서 녹음하거나 효과음·전자 악기로 만들어 종류별로 나눈 데이터입니다. 게임이나 메타버스, 영상의 장면에 어울리는 배경 소리를 자동으로 골라 주는 AI를 만들 수 있습니다.",
+ "easy_en": "Ambient sounds for real places, virtual spaces and made-up scenarios, recorded on location or created with sound effects and synthesizers, sorted by type. You can build AI that automatically picks background sounds that fit a scene in games, the metaverse or videos.",
+ "detail_ko": "현실 공간·가상 공간·인공 시나리오 3가지, 소분류 121종의 환경음 약 3.9만 개(약 800시간, mp3/wav)에 3단계 소리 분류를 JSON으로 붙였으며, 현장 녹음과 폴리·신시사이저 합성으로 만들었습니다. 기준 성능은 PaSST 환경음 분류 mAP 60.45%입니다. 전체 약 1.5TB이며, 합성 소리가 많아 실제 녹음과 차이가 있고, 121개 소분류 이름은 기록에서 확인되지 않습니다.",
+ "detail_en": "About 39k ambient sounds (about 800 hours, mp3/wav) in 3 groups (real spaces, virtual spaces, artificial scenarios) and 121 fine classes, recorded on location or made with Foley and synthesizers, with JSON three-level classes. Baseline: PaSST ambient-sound classification mAP 60.45%. Total size is about 1.5 TB; many sounds are synthetic and differ from real recordings; the 121 fine class names are not in the record.",
+ "amount_ko": "소리 약 3.9만 개(약 800시간), 세부 종류 121종",
+ "amount_en": "about 39k sounds (about 800 hours), 121 fine classes",
+ "labels_ko": "소리 종류(큰·중간·세부 분류)",
+ "labels_en": "sound class (three levels)",
+ "status": "full-run-2026-11-02"
+}

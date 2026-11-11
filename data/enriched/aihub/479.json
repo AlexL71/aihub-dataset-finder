@@ -1,0 +1,29 @@
+{
+ "dataset_id": "479",
+ "title_en": "Math expression, shape and doodle OCR data",
+ "summary_ko": "인쇄체 3.9만 장과 손글씨 14.9만 장 이미지에 수식(LaTeX), 그래프·평면도형·집합 같은 교육용 도형, 낙서 기호를 표시한 데이터입니다. 수학 문제 사진을 찍으면 수식을 읽어 주는 교육용 OCR이나 풀이 앱에 쓸 수 있습니다.",
+ "summary_en": "39,000 printed and 149,000 handwritten images labelled with math expressions (LaTeX), educational diagrams (graphs, plane figures, sets) and doodle symbols. For educational OCR that reads formulas from photos of maths problems, or problem-solving apps.",
+ "contents_ko": "이미지(png) + JSON(수식 LaTeX 텍스트, 도형 구성 정보, 영역 분할).",
+ "contents_en": "Image (png) + JSON (LaTeX for expressions, diagram structure, region segmentation).",
+ "modalities": ["image", "text"],
+ "tasks": ["ocr", "segmentation", "text_generation"],
+ "topics": [{"ko": "교육·학습", "en": "Education and learning"}, {"ko": "수학", "en": "Mathematics"}, {"ko": "손글씨", "en": "Handwriting"}],
+ "keywords_ko": ["수식 인식", "LaTeX", "손글씨", "도형 인식", "수학 문제", "에듀테크"],
+ "keywords_en": ["math expression recognition", "LaTeX", "handwriting", "diagram recognition", "math problems", "edtech"],
+ "labels": ["LaTeX text", "diagram structure", "segmentation"],
+ "file_formats": ["png", "json"],
+ "scale_ko": "인쇄체 38,997장, 손글씨 149,268장(식별 데이터셋 각 38,990장)",
+ "classes_example": ["수식", "그래프", "평면도형", "집합", "낙서기호"],
+ "baseline": [],
+ "difficulty": "intermediate",
+ "difficulty_note_ko": "약 6GB로 작지만 이미지→LaTeX 변환은 시퀀스 생성 모델이 필요합니다.",
+ "skills_needed_ko": ["파이썬", "이미지-텍스트 생성 모델(im2latex)", "OCR 기초"],
+ "caveats_ko": ["성능 지표가 팩 앞부분에 없음"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "수식 vs 도형 분류", "title_en": "Expression vs diagram classifier", "desc_ko": "이미지 영역이 수식인지 도형인지 분류합니다.", "desc_en": "Classify regions as expressions or diagrams."},
+  {"level": "capstone", "title_ko": "손글씨 수식 LaTeX 변환기", "title_en": "Handwritten math to LaTeX", "desc_ko": "손으로 쓴 수식 사진을 LaTeX로 바꿔 주는 웹을 만듭니다.", "desc_en": "Turn photos of handwritten formulas into LaTeX."},
+  {"level": "research", "title_ko": "인쇄체에서 손글씨로 전이", "title_en": "Printed-to-handwritten transfer", "desc_ko": "인쇄체로 학습한 수식 인식기가 손글씨에서 얼마나 통하는지 연구합니다.", "desc_en": "Study how a printed-trained recogniser transfers to handwriting."}
+ ],
+ "doc_used": true,
+ "uncertain": []
+}

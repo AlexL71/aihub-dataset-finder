@@ -1,0 +1,29 @@
+{
+ "dataset_id": "71448",
+ "title_en": "Autonomous-driving virtual sensor simulation data",
+ "summary_ko": "디지털 트윈 도로에서 시뮬레이터로 만든 카메라·라이다·레이더·GPS·IMU 가상 센서 데이터로, 날씨·시간·차량 종류·센서 배치를 바꿔 가며 생성했고 2D·3D 상자가 붙어 있습니다. 실제로 모으기 어려운 눈·비 상황의 자율주행 인지 AI 학습과 검증에 쓸 수 있습니다.",
+ "summary_en": "Simulated camera, LiDAR, radar, GPS and IMU data from a digital-twin road, varying weather, time, vehicle type and sensor setup, with 2D and 3D boxes. For training and testing self-driving perception in conditions like snow and rain that are hard to record in reality.",
+ "contents_ko": "카메라(png) + 라이다(pcd) + 레이더(bin) + GPS·IMU(txt) + JSON(메타데이터, 2D·3D 상자).",
+ "contents_en": "Camera (png) + LiDAR (pcd) + radar (bin) + GPS/IMU (txt) + JSON (metadata, 2D and 3D boxes).",
+ "modalities": ["image", "3d", "sensor"],
+ "tasks": ["object_detection"],
+ "topics": [{"ko": "자율주행", "en": "Autonomous driving"}, {"ko": "시뮬레이션", "en": "Simulation"}],
+ "keywords_ko": ["가상 센서", "시뮬레이션", "디지털 트윈", "라이다", "레이더", "합성 데이터"],
+ "keywords_en": ["virtual sensors", "simulation", "digital twin", "LiDAR", "radar", "synthetic data"],
+ "labels": ["2D bounding box", "3D bounding box", "segmentation image"],
+ "file_formats": ["png", "pcd", "bin", "txt", "json"],
+ "scale_ko": "원천 192,096,000건(센서 5종 각 3,840만 건), 라벨 76,800,000건",
+ "classes_example": [],
+ "baseline": [{"task": "3D object detection", "model": "SECOND", "metric": "AP", "value": "77.21%"}, {"task": "2D object detection", "model": "Swin Transformer", "metric": "mAP", "value": "74.9%"}],
+ "difficulty": "advanced",
+ "difficulty_note_ko": "센서가 많고 3D 탐지까지 다뤄 어렵습니다. AI Hub에는 샘플만 있고 전체는 따로 요청해야 합니다.",
+ "skills_needed_ko": ["파이썬", "3D 탐지", "포인트 클라우드 처리", "센서 좌표 변환"],
+ "caveats_ko": ["AI Hub에는 샘플(약 2GB)만 올라가 있고 전체는 문의로 요청해야 함", "가상 데이터라 실제 도로와 차이가 있을 수 있음", "탐지 클래스 목록이 팩 앞부분에 없음"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "가상 카메라 차량 탐지", "title_en": "Car detection on simulated camera", "desc_ko": "샘플 카메라 이미지에서 차량을 상자로 찾습니다.", "desc_en": "Box vehicles in sample simulated camera images."},
+  {"level": "capstone", "title_ko": "날씨별 인지 성능 비교", "title_en": "Perception by weather", "desc_ko": "맑음·비·눈 조건에서 탐지 성능이 어떻게 바뀌는지 비교합니다.", "desc_en": "Compare detection quality across clear, rain and snow."},
+  {"level": "research", "title_ko": "가상→실제 도메인 적응", "title_en": "Sim-to-real adaptation", "desc_ko": "가상 데이터로 학습한 모델을 실제 주행 데이터에 맞추는 방법을 연구합니다.", "desc_en": "Adapt models trained on simulation to real driving data."}
+ ],
+ "doc_used": true,
+ "uncertain": ["탐지 대상 클래스", "라벨 png의 의미(분할 이미지로 추정)", "클래스 목록을 페이지와 설명서에서 찾지 못함"]
+}

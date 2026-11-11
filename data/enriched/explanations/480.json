@@ -1,0 +1,12 @@
+{
+ "dataset_id": "480",
+ "easy_ko": "느타리, 큰느타리, 팽이, 표고, 양송이 버섯이 자라는 과정과 병든 모습을 농가와 연구소 재배실에서 찍고, 버섯 위치와 영역을 표시한 데이터입니다. 버섯 종류를 알아보고 수확할 때나 병을 알려 주는 버섯 농장 AI를 만들 수 있습니다.",
+ "easy_en": "Photos of oyster, king oyster, enoki, shiitake and button mushrooms growing and getting sick, taken on farms and in research growing rooms, with each mushroom's position and area marked. You can build mushroom-farm AI that recognises the type and tells when to harvest or when there is disease.",
+ "detail_ko": "버섯 5종(느타리·큰느타리·팽이·표고·양송이)의 배양·생육·병해 과정을 농가 5곳과 국립원예특작과학원 스마트 배양실 4실에서 촬영한 이미지 350,621건(jpg)에 바운딩박스·분할, 품종, 생육 단계, 병해 여부, 재배 환경을 JSON으로 붙였습니다. 구축량은 상세 페이지 기준이며, 기준 성능은 기록에서 확인되지 않습니다.",
+ "detail_en": "350,621 images (jpg) of 5 mushroom species (oyster, king oyster, enoki, shiitake, button) during culture, growth and disease, taken at 5 farms and 4 smart growing rooms of the National Institute of Horticultural and Herbal Science, with JSON boxes and segmentation, species, growth stage, disease status and growing environment. The count comes from the detail page; no baseline is visible in the record.",
+ "amount_ko": "이미지 약 35.1만 건, 버섯 5종",
+ "amount_en": "about 351k images, 5 mushroom species",
+ "labels_ko": "버섯 위치 상자·영역, 품종, 자란 단계, 병 여부",
+ "labels_en": "boxes and masks around mushrooms, species, growth stage, disease status",
+ "status": "full-run-2026-11-02"
+}

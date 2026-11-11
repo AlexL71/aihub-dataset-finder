@@ -1,0 +1,29 @@
+{
+ "dataset_id": "71261",
+ "title_en": "Korean-English and Korean-Chinese speech utterance data",
+ "summary_ko": "같은 뜻의 한국어-영어, 한국어-중국어 문장을 각각 읽은 병렬 음성 약 5,200시간과 전사를 담은 데이터입니다. 다큐멘터리·애니메이션·영화드라마 같은 방송과 일상·전문 분야 문장이 들어 있습니다. 말을 바로 다른 언어로 옮기는 음성 번역·통역 AI에 쓸 수 있습니다.",
+ "summary_en": "About 5,200 hours of parallel speech where the same meaning is spoken in Korean and English or Korean and Chinese, with transcripts, covering broadcast (documentary, animation, film/drama) and everyday and specialist topics. For speech translation and interpretation AI.",
+ "contents_ko": "병렬 음성(pcm) + JSON(전사, 대응 번역, 분야).",
+ "contents_en": "Parallel speech (pcm) + JSON (transcript, paired translation, topic).",
+ "modalities": ["audio", "text"],
+ "tasks": ["translation", "speech_recognition", "speech_synthesis"],
+ "topics": [{"ko": "번역·통역", "en": "Translation and interpretation"}, {"ko": "방송·미디어", "en": "Broadcasting and media"}],
+ "keywords_ko": ["음성 번역", "자동 통역", "중국어", "영어", "병렬 음성"],
+ "keywords_en": ["speech translation", "automatic interpretation", "Chinese", "English", "parallel speech"],
+ "labels": ["transcript", "paired translation", "topic"],
+ "file_formats": ["pcm", "json"],
+ "scale_ko": "음성 약 5,200시간, 언어 쌍 2종(한-영, 한-중)",
+ "classes_example": ["다큐멘터리", "애니메이션", "영화드라마", "여행", "음식", "의료/의학"],
+ "baseline": [{"task": "speech translation", "model": "Transformer", "metric": "BLEU", "value": "0.5095"}],
+ "difficulty": "advanced",
+ "difficulty_note_ko": "전체 약 767GB이고 음성 번역은 음성인식·번역을 함께 다루는 어려운 과제입니다.",
+ "skills_needed_ko": ["파이썬", "음성 처리", "번역 모델", "음성인식 모델"],
+ "caveats_ko": ["전체 약 767GB", "pcm 원시 음성이라 샘플링 정보 확인 필요", "71260번 한영 혼합 데이터와 같은 구축 기관"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "한·중 언어 판별", "title_en": "Korean vs Chinese identification", "desc_ko": "음성이 한국어인지 중국어인지 분류합니다.", "desc_en": "Classify speech as Korean or Chinese."},
+  {"level": "capstone", "title_ko": "여행 음성 통역기", "title_en": "Travel speech interpreter", "desc_ko": "한국어로 말하면 중국어 문장으로 바꿔 보여주는 데모를 만듭니다.", "desc_en": "Speak Korean and see the Chinese translation."},
+  {"level": "research", "title_ko": "종단간 vs 단계별 음성 번역", "title_en": "End-to-end vs cascaded", "desc_ko": "한 번에 번역하는 모델과 인식 후 번역하는 방식을 비교합니다.", "desc_en": "Compare end-to-end speech translation with recognise-then-translate."}
+ ],
+ "doc_used": true,
+ "uncertain": []
+}

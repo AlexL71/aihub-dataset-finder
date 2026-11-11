@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71840",
+ "easy_ko": "대중교통 이용자 5,000명이 출발부터 도착까지 어떻게 이동했는지 기록하고, 이동 중 녹음한 목소리와 받아쓴 글, 이동을 설명하는 문장을 함께 담은 데이터입니다. 막히는 시간 안내나 맞춤 길 안내 같은 교통 서비스, 음성 질문 답변에 쓸 수 있습니다.",
+ "easy_en": "Records of how 5,000 public-transport users travelled from start to finish, with voice recordings made on the way, their transcripts and sentences describing each trip. You can use it for transport services such as crowding alerts or personalised route guidance, and for voice question answering.",
+ "detail_ko": "대중교통 이용자 5,000명의 출발부터 도착까지 이동 경로(트립체인) 기록(JSON, 환승 포함)과 이동 중 녹음한 음성 30,911건(mp3), 전사문과 이동 설명 문장(JSON)입니다. 트립체인 5,000건은 통행 패턴 학습에 많지 않고, 음성 인식 CER 15%·질의응답 Context Precision 0.6은 목표값으로 보이며 실제 결과는 팩에 없습니다. 71842 승용차 트립체인 데이터과 같은 기관·구조입니다.",
+ "detail_en": "Trip-chain records of 5,000 public-transport users from departure to arrival (JSON, including transfers), plus 30,911 voice recordings (mp3) made on the move, with JSON transcripts and trip-description sentences. 5,000 trip chains is not many for learning travel patterns, and speech recognition CER 15% and QA context precision 0.6 look like targets; real results are not in the pack. Same builder and structure as the car trip-chain set 71842.",
+ "amount_ko": "트립체인 5,000건, 음성 30,911건",
+ "amount_en": "5,000 trip chains, 30,911 audio clips",
+ "labels_ko": "받아쓴 글, 이동 설명 문장",
+ "labels_en": "transcript, sentence",
+ "status": "full-run-2026-11-02"
+}

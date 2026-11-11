@@ -1,0 +1,358 @@
+# Controlled list of domains (subject areas) used for datasets ("domains" field) and majors.
+# A domain says WHAT PART OF THE WORLD the data is about (farms, hospitals, roads, laws ...).
+# It never names an AI method: the method is in tasks.yaml ("tasks") and the data kind in "modalities".
+# Built 2026-10-31 by Claude from all 867 enriched records (their free "topics", titles, keywords);
+# AI Hub's own 데이터 영역 field is not used. Assignments: data/enriched/domain_tags.json.
+#
+# Tagging rules (keep them when tagging new datasets):
+#   - 1 to 3 domains per dataset; the FIRST one is the main subject.
+#   - Tag where the data comes from / what it shows, not what a project could later use it for.
+#   - "general_ai" only when no subject area fits (benchmarks, general objects, reasoning, image quality),
+#     or as a second tag for broad multipurpose data.
+#   - When two domains look possible, read their "scope" lines below; "not:" names where a case goes instead.
+# Add or rename a domain here first; the validator rejects unknown ids.
+
+groups:
+  people_health:    {ko: "사람·건강", en: "People and health"}
+  language_knowledge: {ko: "언어·지식·교육", en: "Language, knowledge and education"}
+  society_safety:   {ko: "사회·공공·안전", en: "Society, public sector and safety"}
+  culture_life:     {ko: "문화·미디어·생활", en: "Culture, media and everyday life"}
+  economy:          {ko: "경제·비즈니스", en: "Economy and business"}
+  industry_tech:    {ko: "산업·기술", en: "Industry and technology"}
+  mobility_city:    {ko: "교통·도시·공간", en: "Mobility, cities and space"}
+  nature_env:       {ko: "자연·농축수산·환경", en: "Nature, farming and environment"}
+
+domains:
+  # --- People and health -------------------------------------------------------------
+  medical:
+    group: people_health
+    ko: "의료·질병 진단"
+    en: "Medicine and diagnosis"
+    scope_ko: "병원·임상 데이터: 의료영상(X-ray, CT, MRI, 병리, 내시경, 피부질환), 진료 음성, 의학 지식 질의응답"
+    scope_en: "Hospital and clinical data: medical images, clinical speech, medical knowledge QA. not: fitness or wellbeing -> health_care; pets -> pets_vet"
+  health_care:
+    group: people_health
+    ko: "건강관리·웰빙"
+    en: "Health care and wellbeing"
+    scope_ko: "일상 건강: 영양·식단, 운동 자세, 웨어러블·생체신호, 피부·두피 상태, 낙상·체온 등 예방"
+    scope_en: "Everyday health: diet and nutrition, exercise form, wearables and biosignals, skin condition, fall and fever prevention"
+  pharma:
+    group: people_health
+    ko: "의약품·약학"
+    en: "Medicines and pharmacy"
+    scope_ko: "알약·의약품 식별, 약초·독초, 약물·독성 예측, 바이오·의약 논문"
+    scope_en: "Pill identification, medicinal and poisonous plants, drug and toxicity prediction, biomedical papers"
+  mind_emotion:
+    group: people_health
+    ko: "감정·심리·상담"
+    en: "Emotion, mind and counselling"
+    scope_ko: "감정 인식(얼굴·음성·대화), 공감 대화, 심리·진로 상담, 아동 심리 검사"
+    scope_en: "Emotion in faces, voices and dialogue; empathetic chat; psychological and career counselling"
+  people_body:
+    group: people_health
+    ko: "사람·얼굴·몸동작"
+    en: "People, faces and body movement"
+    scope_ko: "얼굴, 체형·신체 치수, 자세·동작, 손동작, 시선, 사람 간 상호작용"
+    scope_en: "Faces, body shape, pose and motion, hands, gaze, person-to-person interaction. not: sport moves -> sports"
+  sports:
+    group: people_health
+    ko: "스포츠·운동"
+    en: "Sports and exercise"
+    scope_ko: "경기 영상·전술, 종목별 동작(골프, 축구, 태권도 등), 피트니스·요가·필라테스"
+    scope_en: "Match video and tactics, sport-specific moves, fitness, yoga and Pilates"
+  welfare_care:
+    group: people_health
+    ko: "아동·노인·돌봄"
+    en: "Children, older adults and care"
+    scope_ko: "아동·청소년·노인 대상 데이터(음성, 행동, 상담), 돌봄·복지 서비스"
+    scope_en: "Data of children, teenagers or older adults (speech, behaviour, counselling); care and welfare services"
+  accessibility:
+    group: people_health
+    ko: "장애·접근성"
+    en: "Disability and accessibility"
+    scope_ko: "수어, 시각장애인 보조, 휠체어·보행 약자 이동, 구음장애, 접근성 설명(차트·표 설명)"
+    scope_en: "Sign language, help for blind users, wheelchair and pedestrian mobility, speech disorders, accessible descriptions"
+
+  # --- Language, knowledge and education ------------------------------------------------
+  korean_language:
+    group: language_knowledge
+    ko: "한국어·국어"
+    en: "Korean language"
+    scope_ko: "한국어 말뭉치, 일상 대화·채팅, 방언, 맞춤법, 한글 인식, 외국인의 한국어, 한국어 독해"
+    scope_en: "Korean corpora, everyday dialogue, dialects, spelling, Hangul text recognition, Korean for learners, reading comprehension"
+  foreign_languages:
+    group: language_knowledge
+    ko: "외국어·번역"
+    en: "Foreign languages and translation"
+    scope_ko: "번역·통역 병렬 말뭉치, 외국어 발음·말하기, 다국어 말뭉치(베트남어, 인도네시아어 등)"
+    scope_en: "Translation and interpretation corpora, foreign-language speaking, multilingual corpora"
+  speech_voice:
+    group: language_knowledge
+    ko: "음성·목소리"
+    en: "Speech and voice"
+    scope_ko: "말소리 자체가 주인공인 데이터: 음성 명령, 자유 대화 음성, 화자, 음성합성, 소음 속 음성"
+    scope_en: "Data where the human voice itself is the subject: commands, conversational speech, speakers, synthesis, noisy speech"
+  books_writing:
+    group: language_knowledge
+    ko: "문학·출판·글쓰기"
+    en: "Books, literature and writing"
+    scope_ko: "도서·문학작품, 이야기·줄거리, 동화, 방송 대본, 창작 지원"
+    scope_en: "Books and literature, stories and plots, fairy tales, scripts, creative writing"
+  education:
+    group: language_knowledge
+    ko: "교육·학습"
+    en: "Education and learning"
+    scope_ko: "교과·강의, 학습 분석, 글쓰기·말하기 평가, 외국어 교육, 진로 교육, 에듀테크"
+    scope_en: "School subjects and lectures, learning analytics, writing and speaking assessment, language teaching, edtech"
+  math:
+    group: language_knowledge
+    ko: "수학"
+    en: "Mathematics"
+    scope_ko: "수학 문제·풀이, 수식 인식, 수치 추론"
+    scope_en: "Maths problems and solutions, formula recognition, numerical reasoning"
+  science_research:
+    group: language_knowledge
+    ko: "과학기술·학술연구"
+    en: "Science and research"
+    scope_ko: "논문·학술 자료, 기술과학 문서, 생명과학·유전체, 설문·인터뷰 연구"
+    scope_en: "Papers and academic material, science and technology documents, life science and genomes, survey research"
+  general_ai:
+    group: language_knowledge
+    ko: "범용·일반 AI"
+    en: "General-purpose AI"
+    scope_ko: "특정 분야가 없는 데이터: 일반 사물, 상식·추론, 언어모델 평가·신뢰성, 화질 개선"
+    scope_en: "Data with no single field: general objects, commonsense and reasoning, LLM evaluation and safety, image quality"
+
+  # --- Society, public sector and safety --------------------------------------------------
+  law:
+    group: society_safety
+    ko: "법률"
+    en: "Law"
+    scope_ko: "판결문, 법령·약관, 계약서, 법률 질의응답, 개인정보·규제"
+    scope_en: "Court rulings, laws and terms, contracts, legal QA, privacy and regulation"
+  government:
+    group: society_safety
+    ko: "행정·공공서비스"
+    en: "Government and public services"
+    scope_ko: "민원, 행정·공공 문서, 국회·회의, 국가기록물, 공공데이터"
+    scope_en: "Civil complaints, administrative documents, parliament and meetings, national records, public data"
+  patents_ip:
+    group: society_safety
+    ko: "특허·지식재산"
+    en: "Patents and intellectual property"
+    scope_ko: "특허 문서·분류, 상표·로고, 저작권·표절, 기술 가치평가"
+    scope_en: "Patents and their classification, trademarks and logos, copyright and plagiarism, technology valuation"
+  documents_office:
+    group: society_safety
+    ko: "문서·사무"
+    en: "Documents and office work"
+    scope_ko: "문서·서식 OCR, 손글씨, 표·차트 이해, 보고서·오피스 문서 생성"
+    scope_en: "Document and form OCR, handwriting, tables and charts, reports and office documents. not: old books -> culture_heritage"
+  social_media:
+    group: society_safety
+    ko: "SNS·온라인 여론"
+    en: "Social media and online talk"
+    scope_ko: "SNS·메신저 대화, 온라인 커뮤니티 글, 혐오·비윤리 표현, 낚시성 기사"
+    scope_en: "Social media chat, online community posts, hate speech, clickbait and misinformation"
+  security_surveillance:
+    group: society_safety
+    ko: "보안·CCTV·치안"
+    en: "Security, CCTV and public safety"
+    scope_ko: "이상행동 CCTV, 얼굴 인증·위조 탐지, 재식별, 보안 검색(X-ray), 국방 경계, 금융 이상거래"
+    scope_en: "CCTV abnormal behaviour, face authentication and spoofing, re-identification, X-ray screening, defence, fraud"
+  disaster_emergency:
+    group: society_safety
+    ko: "재난·화재·응급"
+    en: "Disasters, fire and emergencies"
+    scope_ko: "화재·산불, 홍수·태풍 피해, 이안류, 119 신고, 소방 훈련"
+    scope_en: "Fire and wildfire, flood and typhoon damage, rip currents, emergency calls, firefighting training"
+  workplace_safety:
+    group: society_safety
+    ko: "산업·작업장 안전"
+    en: "Workplace safety"
+    scope_ko: "건설·제조·물류 현장의 작업자 안전, 보호구, 위험 상황, 근골격계 부담, 화학물질 위험"
+    scope_en: "Worker safety on construction, factory and warehouse sites: protective gear, hazards, posture strain"
+
+  # --- Culture, media and everyday life ---------------------------------------------------
+  media_broadcast:
+    group: culture_life
+    ko: "방송·영상 콘텐츠"
+    en: "Broadcasting and media content"
+    scope_ko: "방송·드라마·유튜브 영상, 뉴스, 자막, 영상 요약·편집, 애니메이션·웹툰"
+    scope_en: "TV, drama and online video, news, subtitles, video summaries and editing, animation and webtoons"
+  culture_heritage:
+    group: culture_life
+    ko: "문화유산·역사"
+    en: "Cultural heritage and history"
+    scope_ko: "문화재·유적 3D, 고서·옛한글, 전통 미술·음악·무용·건축·의복"
+    scope_en: "Heritage sites and objects, old books and scripts, traditional art, music, dance, buildings and dress"
+  music_performing:
+    group: culture_life
+    ko: "음악·공연"
+    en: "Music and performing arts"
+    scope_ko: "노래·가창, 음원·악보, 국악, 춤·안무"
+    scope_en: "Singing, songs and scores, Korean traditional music, dance"
+  design_art:
+    group: culture_life
+    ko: "미술·디자인"
+    en: "Art and design"
+    scope_ko: "그림·화풍, 아이콘·스케치, 로고·상표 디자인, 제품·의류 디자인, 전시"
+    scope_en: "Paintings and styles, icons and sketches, logo design, product and garment design, exhibitions"
+  games_virtual:
+    group: culture_life
+    ko: "게임·가상현실·3D"
+    en: "Games, VR and 3D content"
+    scope_ko: "메타버스, 3D 에셋·스캔, 디지털 휴먼·아바타, 모션캡처, AR/VR"
+    scope_en: "Metaverse, 3D assets and scans, digital humans and avatars, motion capture, AR/VR"
+  fashion_beauty:
+    group: culture_life
+    ko: "패션·뷰티"
+    en: "Fashion and beauty"
+    scope_ko: "의류·패션 이미지, 가상 피팅, 헤어·메이크업·네일, 피부 미용·화장품"
+    scope_en: "Clothing and fashion images, virtual try-on, hair, makeup and nails, skincare and cosmetics"
+  tourism:
+    group: culture_life
+    ko: "관광·여행"
+    en: "Tourism and travel"
+    scope_ko: "관광지·랜드마크, 여행 로그, 관광 질의응답, 다국어 안내"
+    scope_en: "Sights and landmarks, travel logs, tourism QA, multilingual guides"
+  food:
+    group: culture_life
+    ko: "음식·식품"
+    en: "Food"
+    scope_ko: "음식 사진·메뉴, 영양 정보, 식품 품질(농축산물 등급), 발효식품, 식용곤충"
+    scope_en: "Food photos and menus, nutrition, food quality grading, fermented food, edible insects"
+  daily_life:
+    group: culture_life
+    ko: "일상생활·가정"
+    en: "Home and everyday life"
+    scope_ko: "집안 물건·가전, 가정용 로봇 작업, 일상 행동 영상, 생활 소리, 생활화학제품"
+    scope_en: "Household objects and appliances, home-robot tasks, daily-life video, everyday sounds"
+
+  # --- Economy and business ---------------------------------------------------------------
+  business_commerce:
+    group: economy
+    ko: "유통·쇼핑·고객서비스"
+    en: "Retail, shopping and customer service"
+    scope_ko: "상품 인식·무인매장, 리뷰·소비자 분석, 고객 상담·콜센터, 주문 대화, 마케팅, 채용"
+    scope_en: "Products and unmanned stores, reviews and consumers, customer service and call centres, orders, marketing, hiring"
+  finance:
+    group: economy
+    ko: "금융·보험·회계"
+    en: "Finance, insurance and accounting"
+    scope_ko: "금융 문서·상담, 금융상품 추천, 보험(차량 파손), 회계 기준, 금융 합성 데이터"
+    scope_en: "Finance documents and advice, product recommendation, insurance, accounting standards"
+  logistics:
+    group: economy
+    ko: "물류·배송"
+    en: "Logistics and delivery"
+    scope_ko: "창고·항만 물류, 배송 로봇·드론, 화물차, 물류 로봇 파지"
+    scope_en: "Warehouses and ports, delivery robots and drones, freight trucks, picking robots"
+
+  # --- Industry and technology -----------------------------------------------------------
+  manufacturing:
+    group: industry_tech
+    ko: "제조·품질검사"
+    en: "Manufacturing and quality inspection"
+    scope_ko: "부품·용접·도장 불량 검사, 설비 고장 예지, 3D 프린팅, 조선, 전자(PCB·SMT)"
+    scope_en: "Part, weld and paint defect inspection, machine fault prediction, 3D printing, shipbuilding, electronics"
+  energy:
+    group: industry_tech
+    ko: "에너지·전력·배터리"
+    en: "Energy, power and batteries"
+    scope_ko: "전력 사용량, 전력 설비 진단, 태양광·풍력, 배터리"
+    scope_en: "Power use, power-equipment diagnosis, solar and wind, batteries"
+  materials_chemistry:
+    group: industry_tech
+    ko: "소재·화학"
+    en: "Materials and chemistry"
+    scope_ko: "재료 물성, 배터리 소재, 화학물질 위험성·독성, 건설 골재 품질"
+    scope_en: "Material properties, battery materials, chemical hazards and toxicity, construction aggregate"
+  construction_infra:
+    group: industry_tech
+    ko: "건설·시설물"
+    en: "Construction and infrastructure"
+    scope_ko: "건물·교량·터널 균열, 상하수도관, 도로·철도 시설 점검, 건설 현장 장비, 건축 도면"
+    scope_en: "Cracks in buildings, bridges and tunnels; water pipes; road and rail inspection; site machines; drawings"
+  robotics:
+    group: industry_tech
+    ko: "로봇"
+    en: "Robots"
+    scope_ko: "로봇 파지·조작, 서비스·안내·배송 로봇 주행, 사람-로봇 협업, 로봇 명령 수행"
+    scope_en: "Grasping and manipulation, service and delivery robot navigation, human-robot work, instruction following"
+
+  # --- Mobility, cities and space --------------------------------------------------------
+  autonomous_driving:
+    group: mobility_city
+    ko: "자율주행·자동차"
+    en: "Self-driving and cars"
+    scope_ko: "차량 시점 센서(카메라, 라이다, 레이다), 주행 시뮬레이션, 운전자 상태, 차량 외관·차종"
+    scope_en: "Vehicle-view sensors, driving simulation, driver monitoring, car exteriors and models"
+  traffic_transport:
+    group: mobility_city
+    ko: "교통·도로·대중교통"
+    en: "Traffic, roads and public transport"
+    scope_ko: "교통 CCTV·교통량, 신호, 교통법규 위반·사고, 대중교통·통행, 보행자·개인형 이동장치, 공항·철도"
+    scope_en: "Traffic CCTV and volume, signals, violations and accidents, public transport and trips, pedestrians, airports, rail"
+  city_space:
+    group: mobility_city
+    ko: "도시·국토·공간정보"
+    en: "Cities, land and spatial data"
+    scope_ko: "도시 3D·디지털트윈, 토지 피복, 유동인구, 실내 측위, 도시 소음·민원"
+    scope_en: "City 3D and digital twins, land cover, foot traffic, indoor positioning, urban noise"
+  satellite_aerial:
+    group: mobility_city
+    ko: "위성·항공·드론"
+    en: "Satellite, aerial and drone views"
+    scope_ko: "위성·항공 영상, 드론 촬영·비행, 원격탐사(다분광·초분광)"
+    scope_en: "Satellite and aerial images, drone imaging and flight, remote sensing"
+
+  # --- Nature, farming and environment ---------------------------------------------------
+  agriculture:
+    group: nature_env
+    ko: "농업·작물·스마트팜"
+    en: "Farming, crops and smart farms"
+    scope_ko: "작물 병해충, 생육, 스마트팜·수직농장, 농기계·농업 로봇, 종자·육종, 화훼·특용작물"
+    scope_en: "Crop disease and pests, growth, smart and vertical farms, farm machines and robots, seeds, flowers"
+  livestock:
+    group: nature_env
+    ko: "축산·양봉·곤충"
+    en: "Livestock, bees and insect farming"
+    scope_ko: "소·돼지·닭·말 행동과 건강, 스마트 축사, 꿀벌, 곤충 사육"
+    scope_en: "Cattle, pigs, poultry and horses; smart barns; honeybees; insect rearing"
+  pets_vet:
+    group: nature_env
+    ko: "반려동물·수의"
+    en: "Pets and veterinary care"
+    scope_ko: "반려견·반려묘 질병 진단(X-ray, 피부, 안구), 건강 정보, 행동"
+    scope_en: "Dog and cat disease diagnosis, health information, behaviour"
+  ocean_fisheries:
+    group: nature_env
+    ko: "해양·수산·선박"
+    en: "Ocean, fisheries and ships"
+    scope_ko: "양식장·어류·패류·해조류, 해양 생물, 선박·항해, 해상 감시"
+    scope_en: "Aquaculture, fish, shellfish and seaweed; marine life; ships and navigation"
+  nature_ecology:
+    group: nature_env
+    ko: "자연·생태·산림"
+    en: "Nature, ecology and forests"
+    scope_ko: "산림·수종, 야생동물, 자생식물, 국립공원, 지질·화석"
+    scope_en: "Forests and tree species, wildlife, native plants, national parks, geology and fossils"
+  environment:
+    group: nature_env
+    ko: "환경·오염"
+    en: "Environment and pollution"
+    scope_ko: "수질·녹조, 지하수, 대기오염, 토지 피복 변화, 소음, 해양·하천 오염"
+    scope_en: "Water quality, groundwater, air pollution, land-cover change, noise, marine and river pollution"
+  waste_recycling:
+    group: nature_env
+    ko: "폐기물·재활용"
+    en: "Waste and recycling"
+    scope_ko: "생활·산업 폐기물, 플라스틱·폐의류 선별, 해양 쓰레기"
+    scope_en: "Household and industrial waste, plastic and clothing sorting, marine litter"
+  weather_climate:
+    group: nature_env
+    ko: "날씨·기후·탄소"
+    en: "Weather, climate and carbon"
+    scope_ko: "기상 관측·예보, 악천후(비·눈·안개), 기후변화, 탄소 흡수·저장"
+    scope_en: "Weather observation and forecasts, bad weather, climate change, carbon capture and storage"

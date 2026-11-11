@@ -1,0 +1,12 @@
+{
+ "dataset_id": "108",
+ "easy_ko": "어린이들이 자유롭게 이야기한 목소리를 녹음하고, 그 말을 받아 적은 글을 짝지은 데이터입니다. 아이들 특유의 말투와 발음을 잘 알아듣는 어린이용 AI 비서나 교육 앱을 만들 수 있습니다.",
+ "easy_en": "Recordings of young children speaking freely, paired with written transcripts. You can build AI assistants or learning apps that understand children's own way of speaking and pronouncing words.",
+ "detail_ko": "3~10세 남녀 어린이 1,000명 이상의 자유 발화 음성 약 3,000시간으로, wav 음성, 전사 텍스트, JSON 메타정보(화자 성별·나이, 녹음 환경, 주제)로 구성됩니다. 어린이의 어휘·발음·어순 특성을 반영하기 위해 구축되었습니다. 기준 성능은 CNN-BLSTM + 통계 언어모델(적응 학습) CER 5.95%, WER 9.64%입니다. 어린이 음성이므로 개인정보·이용 약관 확인이 필요합니다.",
+ "detail_en": "About 3,000 hours of free speech from 1,000+ boys and girls aged 3–10, with wav audio, transcripts and JSON metadata (speaker sex and age, recording environment, topic), built to capture children's vocabulary, pronunciation and word order. Baselines: adapted CNN-BLSTM + statistical language model CER 5.95%, WER 9.64%. These are children's voices, so check privacy and terms of use.",
+ "amount_ko": "음성 약 3,000시간, 어린이 1,000명 이상",
+ "amount_en": "about 3,000 hours of speech, 1,000+ children",
+ "labels_ko": "말소리를 받아 적은 글(전사), 화자 성별·나이",
+ "labels_en": "transcripts, speaker sex and age",
+ "status": "full-run-2026-11-02"
+}

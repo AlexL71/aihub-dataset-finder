@@ -1,0 +1,29 @@
+{
+ "dataset_id": "71285",
+ "title_en": "User-input image data from a similar-trademark image search service",
+ "summary_ko": "유사 상표 검색 서비스 사용자가 올린 상표 이미지 약 28만 장에, 상표 도형 분류 코드인 '비엔나코드' 중분류 기준으로 도형 객체 약 52만 개를 상자로 표시한 데이터입니다. 45개 국제상품분류에 고르게 나뉘어 있습니다. 비슷한 상표를 찾는 이미지 검색 AI에 쓸 수 있습니다.",
+ "summary_en": "About 280,000 trademark images uploaded by users of a similar-trademark search service, with about 520,000 figure objects boxed by Vienna Code (trademark figure classification) mid-level class, spread evenly over the 45 Nice classes of goods and services. For image search AI that finds similar trademarks.",
+ "contents_ko": "상표 이미지(jpg) + JSON(도형 상자, 비엔나코드, 상품분류).",
+ "contents_en": "Trademark images (jpg) + JSON (figure boxes, Vienna Code, Nice class).",
+ "modalities": ["image"],
+ "tasks": ["object_detection", "retrieval_recommendation"],
+ "topics": [{"ko": "특허·지식재산", "en": "Patents and intellectual property"}, {"ko": "디자인", "en": "Design"}],
+ "keywords_ko": ["상표", "로고", "비엔나코드", "유사 이미지 검색", "지식재산"],
+ "keywords_en": ["trademarks", "logos", "Vienna Code", "similar image search", "intellectual property"],
+ "labels": ["bounding box", "Vienna Code class", "Nice class"],
+ "file_formats": ["jpg", "json"],
+ "scale_ko": "상표 이미지 약 28만 장, 도형 객체 약 52만 개, 상품분류 45종",
+ "classes_example": ["비엔나코드 중분류 > 별, 혜성(101)", "비엔나코드 중분류 > 태양(103)", "비엔나코드 중분류 > 지구, 행성(105)", "비엔나코드 중분류 > 달(107)", "비엔나코드 중분류 > 사다리(1411)", "비엔나코드 중분류 > 산업용·농업용 기계(1501)", "니스 상품분류 nc01~nc45"],
+ "baseline": [{"task": "trademark figure detection", "model": "YOLOv5", "metric": "uncertain", "value": "uncertain"}],
+ "difficulty": "intermediate",
+ "difficulty_note_ko": "약 13GB로 받기 쉽습니다. 비엔나코드 클래스가 많아 분류가 어렵습니다.",
+ "skills_needed_ko": ["파이썬", "YOLO 탐지", "임베딩 검색(FAISS 등)"],
+ "caveats_ko": ["실제 기업 상표 이미지라 상업적 사용 주의", "성능 지표 값이 팩에서 잘려 확인 안 됨", "비엔나코드 소분류는 1,400개 이상이라 중분류만 라벨됨"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "상표 도형 탐지", "title_en": "Trademark figure detection", "desc_ko": "상표 이미지에서 별·동물·사람 같은 도형을 찾습니다.", "desc_en": "Detect figures such as stars, animals and people in logos."},
+  {"level": "capstone", "title_ko": "유사 상표 검색기", "title_en": "Similar-trademark finder", "desc_ko": "로고를 올리면 비슷한 상표를 FAISS로 찾아 보여줍니다.", "desc_en": "Upload a logo and find similar trademarks with FAISS."},
+  {"level": "research", "title_ko": "도형 기반 vs 전체 임베딩", "title_en": "Figure-level vs global embeddings", "desc_ko": "도형 단위 임베딩이 전체 이미지 임베딩보다 유사 상표 검색에 좋은지 연구합니다.", "desc_en": "Compare figure-level and whole-image embeddings for trademark search."}
+ ],
+ "doc_used": true,
+ "uncertain": ["baseline metric and value (cut in pack)"]
+}

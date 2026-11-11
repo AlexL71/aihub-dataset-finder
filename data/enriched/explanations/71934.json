@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71934",
+ "easy_ko": "예전 배달 로봇 데이터를 다시 다듬어, 인도, 골목, 공원, 사무실, 식당, 복도 같은 곳에서 로봇 눈높이로 찍은 사진 5,000여 장에 사진 설명과 질문-답을 붙인 데이터입니다. 배달이나 안내 로봇이 주변을 이해하고 질문에 답하는 AI에 쓸 수 있습니다.",
+ "easy_en": "Over 5,000 robot's-eye photos of pavements, alleys, parks, offices, restaurants and corridors, reworked from older delivery-robot data, each with a description and questions and answers. You can use it to build AI that helps delivery or guide robots understand their surroundings and answer questions.",
+ "detail_ko": "기존 AI 허브 배송로봇 데이터를 재가공(업사이클링)한 로봇 시점 이미지 5,031장(jpg; 인도, 골목, 공원, 사무실, 식당, 전시 공간, 홀_복도)에 장면 설명(이미지-텍스트 관계)과 질의응답 라벨 10,062건(관계·QA 각 5,031; JSON)을 붙였습니다. 실외 75.6%·실내 24.4%, 실제 75%·가상 25%입니다. 페이지에 성능 점수 표와 모델 설명이 없고, 가상 환경 이미지가 25% 섞여 있으며, 사무실·식당·복도는 각 250장으로 적습니다.",
+ "detail_en": "5,031 robot-view images (jpg; pavement, alley, park, office, restaurant, exhibition space, hall/corridor) upcycled from AI Hub's earlier delivery-robot data, with 10,062 JSON labels (5,031 scene descriptions and 5,031 QA). It is 75.6% outdoor and 24.4% indoor, and 75% real and 25% virtual. There is no score table or model description, a quarter of the images are virtual, and offices, restaurants and corridors have only 250 images each.",
+ "amount_ko": "이미지 5,031장, 라벨 10,062건",
+ "amount_en": "5,031 images, 10,062 labels",
+ "labels_ko": "장면 설명, 질문과 답",
+ "labels_en": "image-text relation, question-answer",
+ "status": "full-run-2026-11-02"
+}

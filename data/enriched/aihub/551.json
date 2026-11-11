@@ -1,0 +1,29 @@
+{
+ "dataset_id": "551",
+ "title_en": "Real-life transparent object 3D data",
+ "summary_ko": "유리컵·병·플라스틱 용기 같은 일상 속 투명 물체를 RGB-D 카메라로 찍은 이미지 20만 장과 물체 500개의 고품질 3D 모델(점구름·메시)입니다. 투명체·비투명체·배경·깊이 정보와 상자·다각형·큐보이드 라벨이 있어 투명 물체를 집는 로봇이나 실감 렌더링에 쓸 수 있습니다.",
+ "summary_en": "200,000 RGB-D images of everyday transparent objects (glasses, bottles, plastic containers) plus high-quality 3D models (point clouds and meshes) of 500 objects. Transparent/opaque/background/depth information and box, polygon and cuboid labels support robots that grasp transparent objects and realistic rendering.",
+ "contents_ko": "RGB 이미지(png) + 깊이(pcd) + 3D 모델(ply, obj) + 라벨(상자, 다각형, 큐보이드).",
+ "contents_en": "RGB image (png) + depth (pcd) + 3D model (ply, obj) + labels (box, polygon, cuboid).",
+ "modalities": ["image", "3d"],
+ "tasks": ["segmentation", "object_detection", "depth_estimation", "3d_reconstruction"],
+ "topics": [{"ko": "생활용품", "en": "Everyday objects"}, {"ko": "로봇", "en": "Robots"}, {"ko": "게임·그래픽스", "en": "Games and graphics"}],
+ "keywords_ko": ["투명 물체", "RGB-D", "3D 모델", "깊이 추정", "로봇 파지", "피지컬 AI"],
+ "keywords_en": ["transparent objects", "RGB-D", "3D models", "depth estimation", "robot grasping", "physical AI"],
+ "labels": ["bounding box", "polygon", "3D cuboid", "depth"],
+ "file_formats": ["png", "pcd", "ply", "obj", "json"],
+ "scale_ko": "이미지 20만 장, 3D 모델 500개",
+ "classes_example": ["병류", "그릇류", "1회용 포장류", "계량용기", "장식류 > 꽃병", "가구류", "액세서리류", "기타", "비정상형태"],
+ "baseline": [],
+ "difficulty": "advanced",
+ "difficulty_note_ko": "투명 물체는 깊이 센서가 잘 못 재서 어렵고, 전체 약 5.6TB입니다.",
+ "skills_needed_ko": ["파이썬", "3D 비전", "깊이 보정·분할 모델"],
+ "caveats_ko": ["전체 약 5.6TB", "성능 지표가 팩 앞부분에 없음"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "투명 물체 분할", "title_en": "Transparent object segmentation", "desc_ko": "RGB 사진에서 투명 물체 영역을 칠합니다.", "desc_en": "Segment transparent objects in RGB photos."},
+  {"level": "capstone", "title_ko": "투명 컵 깊이 보정", "title_en": "Depth repair for glasses", "desc_ko": "깊이 센서가 놓친 투명 물체의 깊이를 채우는 데모를 만듭니다.", "desc_en": "Fill in missing depth for transparent objects."},
+  {"level": "research", "title_ko": "투명 물체 로봇 파지", "title_en": "Grasping transparent objects", "desc_ko": "복원한 깊이로 로봇 파지 성공률이 오르는지 연구합니다.", "desc_en": "Study whether restored depth improves robot grasping."}
+ ],
+ "doc_used": true,
+ "uncertain": []
+}

@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71470",
+ "easy_ko": "궁중음악, 민속악 같은 국악과 창작·퓨전 국악의 악보 파일과 음원 1만 개 넘게 모으고, 가사, 꾸밈음(시김새), 빠르기, 장단 정보를 붙인 데이터입니다. 국악 장르를 구분하거나 악보를 자동으로 받아 적고 국악을 작곡하는 AI에 쓸 수 있습니다.",
+ "easy_en": "Over 11,000 sheet-music files and matching audio clips of Korean traditional music (court and folk music) and new or fusion traditional music, with lyrics, ornaments, tempo and rhythm-cycle information. You can use it to build AI that tells traditional genres apart, writes down music automatically or composes gugak.",
+ "detail_ko": "국악(궁중음악·풍류음악·민속악) 8,006개와 유사 국악(창작국악·퓨전국악) 3,063개, 총 11,069개의 MIDI 악보(mid)와 같은 수의 음원 클립(wav, 총 154,076초, 평균 14초)에 가사, 시김새, 템포, 음조직·장단, 장르 정보를 JSON으로 붙였습니다. 장르별 수량 차이가 크고(가야금병창·창극 각 3개), 클립이 짧습니다. 성능 지표는 팩에 없습니다.",
+ "detail_en": "11,069 MIDI scores (mid) and as many audio clips (wav, 154,076 seconds in total, 14 seconds on average): 8,006 of traditional gugak (court, pungnyu and folk music) and 3,063 of gugak-style music (new and fusion), with JSON lyrics, ornamentation (sigimsae), tempo, mode and rhythm cycle (jangdan), and genre. Genre counts vary widely (only 3 each for gayageum byeongchang and changgeuk), and the clips are short. No metrics are in the pack.",
+ "amount_ko": "MIDI 악보·음원 각 11,069개, 총 154,076초",
+ "amount_en": "11,069 MIDI scores and 11,069 audio clips, 154,076 seconds in total",
+ "labels_ko": "가사, 꾸밈음, 빠르기, 음계·장단, 장르",
+ "labels_en": "lyrics, ornamentation, tempo, mode and rhythm cycle, genre",
+ "status": "full-run-2026-11-02"
+}

@@ -1,0 +1,29 @@
+{
+ "dataset_id": "71580",
+ "title_en": "High-precision collection vehicle night-time urban road data",
+ "summary_ko": "카메라·라이다·레이더·GNSS/INS를 동기화해 단 수집 차량으로 밤 시간 도심 도로를 달리며 모은 데이터로, 전방 카메라 이미지 10만 장과 360도 라이다 점군 10만 개가 있습니다. 이미지는 판옵틱 분할, 라이다는 3D 상자로 표시되어 있어 야간 자율주행 인식 연구에 쓸 수 있습니다.",
+ "summary_en": "Night-time urban driving data from a vehicle with synchronised camera, lidar, radar and GNSS/INS: 100k front-camera images and 100k 360-degree lidar point clouds, with panoptic segmentation and 3D boxes, for night autonomous-driving perception.",
+ "contents_ko": "카메라 이미지(jpg) + 라이다 점군(pcd) + JSON(2D 판옵틱 분할, 3D 상자) + GNSS/INS 위치 정보.",
+ "contents_en": "Camera image (jpg) + lidar point cloud (pcd) + JSON (2D panoptic segmentation, 3D cuboids) + GNSS/INS pose.",
+ "modalities": ["image", "3d", "sensor"],
+ "tasks": ["segmentation", "object_detection"],
+ "topics": [{"ko": "자율주행", "en": "Autonomous driving"}, {"ko": "야간 주행 안전", "en": "Night driving safety"}],
+ "keywords_ko": ["자율주행", "야간", "라이다", "판옵틱 분할", "3D 객체 탐지", "도심 도로"],
+ "keywords_en": ["autonomous driving", "night", "lidar", "panoptic segmentation", "3D object detection", "urban roads"],
+ "labels": ["panoptic segmentation", "3D cuboid"],
+ "file_formats": ["jpg", "pcd", "json"],
+ "scale_ko": "전방 카메라 이미지 100,000장, 라이다 점군 100,000개, 주행 장면 500개 이상",
+ "classes_example": ["맑음", "흐림", "비/눈", "평일", "휴일"],
+ "baseline": [{"task": "3D object detection", "model": "Voxel R-CNN", "metric": "mAP", "value": "81.22%"}, {"task": "panoptic segmentation", "model": "EfficientPS", "metric": "PQ", "value": "42.47%"}],
+ "difficulty": "advanced",
+ "difficulty_note_ko": "카메라·라이다를 함께 다뤄야 하고 전체 약 307GB입니다. 야간 이미지는 분할이 더 어렵습니다.",
+ "skills_needed_ko": ["파이썬", "분할 모델", "3D 점군 처리(Open3D·OpenPCDet)", "센서 좌표 변환"],
+ "caveats_ko": ["날씨 목표 비율 표의 합이 110%로 오기가 있음", "물체 클래스 목록은 팩 앞부분에 없음", "71577 주간 데이터와 같은 구성이며 수집 차량은 다름"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "야간 도로 분할", "title_en": "Night road segmentation", "desc_ko": "어두운 전방 이미지에서 도로·차량 영역을 분할합니다.", "desc_en": "Segment road and vehicles in dark front-camera images."},
+  {"level": "capstone", "title_ko": "야간 보행자 경고", "title_en": "Night pedestrian warning", "desc_ko": "라이다와 카메라로 밤길 보행자를 찾아 운전자에게 경고하는 데모를 만듭니다.", "desc_en": "Warn drivers of pedestrians at night using lidar and camera."},
+  {"level": "research", "title_ko": "주간→야간 일반화", "title_en": "Day-to-night generalisation", "desc_ko": "주간 데이터(71577)로 학습한 모델이 야간에 얼마나 떨어지는지 연구합니다.", "desc_en": "Study how day-trained models (71577) degrade at night."}
+ ],
+ "doc_used": true,
+ "uncertain": []
+}

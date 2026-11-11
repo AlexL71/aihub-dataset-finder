@@ -1,0 +1,12 @@
+{
+ "dataset_id": "546",
+ "easy_ko": "공항, 비행기 안, 식당, 스포츠 경기장, 일상생활 같은 상황에서 쓰는 말투의 한국어 문장과 중국어·일본어 번역을 짝지은 데이터입니다. 여행이나 일상 대화를 바로 번역해 주는 통역 앱이나 여러 나라 말을 하는 챗봇을 만들 수 있습니다.",
+ "easy_en": "Everyday spoken-style Korean sentences for situations such as airports, flights, restaurants, sports events and daily life, paired with Chinese and Japanese translations. You can build travel and daily-conversation interpreter apps or multilingual chatbots.",
+ "detail_ko": "여행(공항/기내, 음식점), 스포츠 관람, 일상생활 상황의 구어체 한국어-중국어·한국어-일본어(양방향) 병렬 문장 860만 개로, 상황 대·중·소분류 라벨이 있습니다(txt/xlsx/json). 기준 성능은 기록에서 확인되지 않습니다.",
+ "detail_en": "8.6M colloquial parallel sentences in Korean–Chinese and Korean–Japanese (both directions) for travel (airport and in-flight, restaurants), sports events and daily life, with three-level situation labels (txt/xlsx/json). No baseline is visible in the record.",
+ "amount_ko": "번역 문장 860만 개",
+ "amount_en": "8.6M sentence pairs",
+ "labels_ko": "한국어-중국어·일본어 번역 짝, 상황 분류",
+ "labels_en": "Korean–Chinese and Korean–Japanese sentence pairs, situation category",
+ "status": "full-run-2026-11-02"
+}

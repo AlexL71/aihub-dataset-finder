@@ -1,0 +1,29 @@
+{
+ "dataset_id": "501",
+ "title_en": "Pet disease diagnosis images (musculoskeletal)",
+ "summary_ko": "동물병원에서 찍은 반려동물 근골격계 엑스레이 영상 16만 건으로, 골격계 종양·사지 골절·갈비뼈 골절·엉덩관절 탈구·슬개골 탈구 등 질환과 정상이 상자·다각형·선으로 표시되어 있습니다. 반려동물 골절·관절 질환 진단을 돕는 AI에 쓸 수 있습니다.",
+ "summary_en": "160,000 musculoskeletal X-ray images of pets from animal hospitals, labelled normal or with conditions such as bone tumours, limb fractures, rib fractures, hip dislocation and patellar luxation, using boxes, polygons and lines. For AI that helps diagnose fractures and joint problems in pets.",
+ "contents_ko": "엑스레이 영상(jpg) + JSON(질환 코드, 병변 상자·다각형·선, 동물 정보).",
+ "contents_en": "X-ray image (jpg) + JSON (disease code, lesion box/polygon/line, animal info).",
+ "modalities": ["image"],
+ "tasks": ["image_classification", "object_detection", "segmentation"],
+ "topics": [{"ko": "반려동물", "en": "Pets"}, {"ko": "수의학·동물 의료", "en": "Veterinary medicine"}, {"ko": "의료 영상", "en": "Medical imaging"}],
+ "keywords_ko": ["반려동물", "골절", "슬개골 탈구", "엑스레이", "수의 영상", "근골격계"],
+ "keywords_en": ["pets", "fracture", "patellar luxation", "X-ray", "veterinary imaging", "musculoskeletal"],
+ "labels": ["class (disease)", "bounding box", "polygon", "line"],
+ "file_formats": ["jpg", "json"],
+ "scale_ko": "160,142건(갈비뼈골절 4.4만, 골격계종양 3.2만, 사지골절 2.7만 등), 질환 비율 0.5~10%",
+ "classes_example": ["골격계종양", "사지골절", "갈비뼈골절", "엉덩관절탈구", "슬개골탈구"],
+ "baseline": [],
+ "difficulty": "intermediate",
+ "difficulty_note_ko": "약 22GB로 작지만 질환 사진이 매우 적어(일부 0.5%) 불균형 처리가 필요합니다.",
+ "skills_needed_ko": ["파이썬", "의료 영상 분류", "불균형 데이터 처리"],
+ "caveats_ko": ["질환 비율이 매우 낮은 클래스가 많음", "수의사 진단을 대신하면 안 됨"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "엉덩관절 탈구 분류", "title_en": "Hip dislocation classifier", "desc_ko": "엑스레이로 엉덩관절 탈구 유무를 분류합니다.", "desc_en": "Classify hip X-rays for dislocation."},
+  {"level": "capstone", "title_ko": "골절 위치 표시 도구", "title_en": "Fracture localisation tool", "desc_ko": "엑스레이에서 골절 의심 부위를 상자로 표시해 줍니다.", "desc_en": "Box suspected fracture sites on X-rays."},
+  {"level": "research", "title_ko": "부위 간 전이 학습", "title_en": "Transfer across body regions", "desc_ko": "흉부·복부 데이터로 사전학습하면 근골격계 진단이 좋아지는지 연구합니다.", "desc_en": "Test whether pre-training on chest and abdomen data helps."}
+ ],
+ "doc_used": true,
+ "uncertain": []
+}

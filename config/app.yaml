@@ -1,0 +1,36 @@
+# Student app settings (app/server.py). Development only for now; hosting is future work.
+
+server:
+  host: 127.0.0.1          # local default; the HOST environment variable overrides it (Docker: 0.0.0.0)
+  port: 8000
+
+limits:
+  max_text_chars: 300      # longest "describe what you want" text accepted
+  default_results: 12      # datasets shown per recommendation
+  max_results: 30
+  max_interests: 8         # interest chips one student can pick
+  max_compare: 3           # datasets side by side on the compare page
+  recommend_per_minute: 20 # searches per address per minute (each new text costs one embedding call)
+  keywords_shown: 10       # suggested keywords per major
+
+ui:
+  name_ko: "AI Hub DataFinder"
+  name_en: "AI Hub DataFinder"
+  # Shown in the footer of every page: the app is not the official AI Hub site, and the data information
+  # comes from AI Hub (its usage policy asks users to credit NIA).
+  notice_ko: "AI Hub DataFinder는 AI Hub, 한국지능정보사회진흥원(NIA)과 관계없는 학생 연구 프로젝트입니다. 데이터 정보와 아이콘은 AI Hub(한국지능정보사회진흥원의 사업결과)에서 가져왔으며, 데이터 신청과 다운로드는 AI Hub에서 하실 수 있습니다."
+  notice_en: "AI Hub DataFinder is an independent student research project, not affiliated with AI Hub or NIA. Dataset information and icons come from AI Hub (results of NIA projects); request and download data on AI Hub."
+
+# Universities shown before the major. Only "ready" ones open the major list; the rest show "coming soon".
+universities:
+  - {id: ku_sejong, ko: "고려대학교 세종캠퍼스", en: "Korea University Sejong Campus", ready: true}
+  - {id: other, ko: "다른 대학교", en: "Other universities", ready: false}
+
+# "AI로 프로젝트 계획 세우기" (app/prompt.py): copies a prompt and opens one of these sites in a new tab.
+# No model is called by this app, so it has no API cost and no daily limit.
+prompt:
+  sites:
+    - {id: chatgpt, name: ChatGPT, by: OpenAI, url: "https://chatgpt.com/"}
+    - {id: claude, name: Claude, by: Anthropic, url: "https://claude.ai/new"}
+    - {id: gemini, name: Gemini, by: Google, url: "https://gemini.google.com/app"}
+  detail_chars: 1200          # dataset description length put into the prompt

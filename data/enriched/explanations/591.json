@@ -1,0 +1,12 @@
+{
+ "dataset_id": "591",
+ "easy_ko": "KBS 가족극, 현대극, 사극, 시사, 교양, 예능 프로그램 대본마다 내용을 짧게 줄인 요약을 붙인 데이터입니다. 긴 방송 대본을 몇 문장으로 정리해 주는 요약 AI를 만들 수 있습니다.",
+ "easy_en": "Scripts of KBS family dramas, modern dramas, historical dramas, current-affairs, educational and entertainment shows, each with a short summary. You can build AI that sums up long broadcast scripts in a few sentences.",
+ "detail_ko": "KBS 6개 장르(가족관련방송, 현대드라마, 역사극, 시사, 교양지식, 예능) 대본(txt)에 2~3문장 요약 또는 원문 20% 길이 요약 약 11.4만 건을 JSON으로 붙였으며, 대사 요약과 상황 묘사가 포함됩니다. 기준 성능은 Transformer 생성요약 ROUGE-L 37.55%입니다. 방송 대본 저작권 때문에 사용 범위 확인이 필요하며, 582번 요약 데이터와 같은 구축 기관입니다.",
+ "detail_en": "About 114k summaries (2–3 sentences or 20% of the original length) of KBS scripts (txt) in 6 genres (family, modern drama, historical drama, current affairs, educational, entertainment), in JSON with dialogue summaries and scene descriptions. Baseline: Transformer abstractive summarisation ROUGE-L 37.55%. Script copyright limits use; built by the same organisation as dataset 582.",
+ "amount_ko": "요약 약 11.4만 건, 장르 6종",
+ "amount_en": "about 114k summaries, 6 genres",
+ "labels_ko": "대본 요약문, 방송 장르",
+ "labels_en": "script summary, genre",
+ "status": "full-run-2026-11-02"
+}

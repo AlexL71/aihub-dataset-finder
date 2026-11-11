@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71771",
+ "easy_ko": "전기 설비 공사 현장에서 찍은 작업 안전 사진에 작업 종류, 사고 유형, 안전 장비를 표시한 데이터입니다. 현장의 위험을 미리 평가하고 사고를 막는 안전 관리 AI에 쓸 수 있습니다.",
+ "easy_en": "Work-safety photos from electrical construction sites, marking the type of work, accident types and safety equipment. You can use it to build safety-management AI that assesses on-site risks in advance and helps prevent accidents.",
+ "detail_ko": "전기 설비 공사 현장에서 찍은 작업 안전 이미지 387,709건(jpg)으로, 작업 공정 이미지 192,542건(예: 지중송전, 변전, 배전, 철탑, 건축전기 설비 작업), 사고 유형 이미지 97,265건(예: 케이블협착, 감전, 추락, 고소차량협착), 안전장비 이미지 97,902건에 상자, 키포인트, 작업·사고 유형을 JSON으로 붙였습니다. 페이지에 성능 점수 표가 없고(YOLOv8·LightGBM·YOLOv8-pose·DD-Net 소개만 있음), 통계 요약은 '33만 건'이라 쓰였지만 구축량은 387,709건으로 다르고, 배전·건축전기 작업이 각 17%대로 많아 작업 종류가 불균형합니다.",
+ "detail_en": "387,709 work-safety images (jpg) from electrical construction sites: 192,542 work-process images (such as underground transmission, substation, distribution, pylon and building electrical work), 97,265 accident-type images (such as cable entrapment, electric shock, fall, aerial-lift entrapment) and 97,902 safety-equipment images, with JSON boxes and keypoints. There is no score table (only YOLOv8·LightGBM·YOLOv8-pose·DD-Net are described). The statistics summary says '330,000' but the build amount is 387,709, and distribution and building electrical work make up about 17% each, so work types are imbalanced.",
+ "amount_ko": "387,709건(작업 공정 192,542, 사고 유형 97,265, 안전장비 97,902)",
+ "amount_en": "387,709 images (192,542 work process, 97,265 accident type, 97,902 safety equipment)",
+ "labels_ko": "위치 상자, 몸 관절 점, 작업·사고 종류",
+ "labels_en": "boxes, keypoints, work/accident class",
+ "status": "full-run-2026-11-02"
+}

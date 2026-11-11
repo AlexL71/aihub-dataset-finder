@@ -1,0 +1,12 @@
+{
+ "dataset_id": "144",
+ "easy_ko": "궁궐·한옥·탑·절·성곽 같은 문화재, 화장품·시계·가방 같은 국내 상품, 동상·타워·다리·등대 같은 도시 랜드마크를 찍은 사진마다 이름과 위치를 표시한 데이터입니다. 외국인 관광객용 안내 AI나 쇼핑몰에서 상품을 알아보는 AI를 만들 수 있습니다.",
+ "easy_en": "Photos of cultural heritage (palaces, traditional houses, pagodas, temples, fortress walls), Korean products (cosmetics, watches, bags) and city landmarks (statues, towers, bridges, lighthouses), each marked with its name and position. You can build tour-guide AI for foreign visitors or AI that recognises products in online shops.",
+ "detail_ko": "국가지정문화재(유적건조물) 250만 장, 귀금속·화장품·시계·가방 등 국내 상품 80만 장, 동상·타워·대교·등대 등 도시 랜드마크 20만 장, 총 350만 장(jpg)에 대상 이름·분류와 바운딩박스가 JSON으로 붙어 있습니다. 기준 성능은 RetinaNet 객체 탐지 mAP 90%입니다. 전체 약 3.9TB이고 파일 하나가 최소 8GB이며, 2019년 구축입니다.",
+ "detail_en": "3.5M jpg photos: 2.5M of national cultural heritage structures, 800k of Korean products (jewellery, cosmetics, watches, bags) and 200k of city landmarks (statues, towers, bridges, lighthouses), with JSON name, category and bounding box. Baseline: RetinaNet object detection mAP 90%. Total size is about 3.9 TB with each file at least 8 GB; built in 2019.",
+ "amount_ko": "사진 350만 장(문화재 250만, 상품 80만, 랜드마크 20만)",
+ "amount_en": "3.5M photos (2.5M heritage, 800k products, 200k landmarks)",
+ "labels_ko": "대상 이름·종류, 위치 상자",
+ "labels_en": "object name and category, boxes",
+ "status": "full-run-2026-11-02"
+}

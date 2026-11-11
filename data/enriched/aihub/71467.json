@@ -1,0 +1,29 @@
+{
+ "dataset_id": "71467",
+ "title_en": "Multi-camera same-situation and object re-identification data",
+ "summary_ko": "서로 다른 장비 3종 이상으로 같은 장면을 동시에 찍은 영상에서 뽑은 이미지 547,763장으로, 쓰러짐·차량 손괴·자전거·킥보드 사고·침입·응급 상황 등 10종 상황과 사람 재식별(re-id) 라벨이 상자로 표시되어 있습니다. 실종자 찾기, 범죄자 경로 추적, 위험 상황 감지 AI에 쓸 수 있습니다.",
+ "summary_en": "547,763 images from video of the same scene recorded by 3+ different devices, with 10 situations (falls, vehicle damage, bicycle and scooter accidents, intrusion, emergencies, etc.) and person re-identification labels marked by boxes. For missing-person search, suspect tracking and danger detection AI.",
+ "contents_ko": "이미지(jpg) + JSON(상자, 상황 클래스, 객체 재식별 ID).",
+ "contents_en": "Image (jpg) + JSON (box, situation class, re-identification ID).",
+ "modalities": ["image", "video"],
+ "tasks": ["object_detection", "action_recognition", "object_tracking", "retrieval_recommendation"],
+ "topics": [{"ko": "공공 안전·CCTV", "en": "Public safety and CCTV"}, {"ko": "교통 사고", "en": "Traffic accidents"}],
+ "keywords_ko": ["재식별", "멀티 카메라", "이상 상황", "킥보드 사고", "실종자 검색", "CCTV"],
+ "keywords_en": ["re-identification", "multi-camera", "abnormal events", "scooter accidents", "missing person search", "CCTV"],
+ "labels": ["bounding box", "situation class", "re-id"],
+ "file_formats": ["jpg", "json"],
+ "scale_ko": "이미지 547,763장, 상황 10종(상황별 re-id 약 2만·이상상황 약 3.4만)",
+ "classes_example": ["쓰러짐", "위험상황", "차량 손괴", "자전거 대 자전거 사고", "사람 대 킥보드 사고", "침입", "응급상황"],
+ "baseline": [{"task": "person re-identification", "model": "ResNet50", "metric": "Top-1 Accuracy", "value": "97%"}, {"task": "abnormal situation classification", "model": "MViTv2", "metric": "Top-1 Accuracy", "value": "86.68%"}],
+ "difficulty": "advanced",
+ "difficulty_note_ko": "카메라 간 재식별과 상황 분류를 함께 다뤄 어렵고 전체가 약 348GB입니다.",
+ "skills_needed_ko": ["파이썬", "객체 탐지", "재식별(metric learning)", "영상 분류"],
+ "caveats_ko": ["전체 약 348GB", "연출(재연) 상황일 가능성 확인 필요", "얼굴 등 개인정보 처리 여부를 설명서에서 확인 필요"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "쓰러짐 상황 분류", "title_en": "Fall situation classifier", "desc_ko": "이미지가 쓰러짐 상황인지 아닌지 분류합니다.", "desc_en": "Classify whether an image shows a fall."},
+  {"level": "capstone", "title_ko": "다중 카메라 사람 찾기", "title_en": "Multi-camera person search", "desc_ko": "한 카메라에서 고른 사람을 다른 카메라 영상에서 찾아 줍니다.", "desc_en": "Find a person picked in one camera across other cameras."},
+  {"level": "research", "title_ko": "이기종 장비 재식별", "title_en": "Cross-device re-identification", "desc_ko": "화질·각도가 다른 장비 사이에서 재식별 성능을 높이는 방법을 연구합니다.", "desc_en": "Improve re-id across devices with different quality and angles."}
+ ],
+ "doc_used": true,
+ "uncertain": ["원본 영상 파일 제공 여부"]
+}

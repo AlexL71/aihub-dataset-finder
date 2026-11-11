@@ -1,0 +1,29 @@
+{
+ "dataset_id": "71760",
+ "title_en": "Large language model trustworthiness benchmark data",
+ "summary_ko": "한국어 대형 언어모델(LLM)의 신뢰성을 평가하는 질의응답 데이터로, 무해성(편향·혐오·불법·민감) 2만 건, 정보 정확성(국어·한국사·일반 상식) 1만 건, 도움 적정성(구체성·넌센스) 3천 건의 평가용 33,000건과 정보 정확성 학습용 5만 건이 있습니다. 한국어 LLM의 안전성·환각 평가에 쓸 수 있습니다.",
+ "summary_en": "Korean QA data for evaluating LLM trustworthiness: 33,000 benchmark items (harmlessness 20k: bias, hate, illegal, sensitive; factual accuracy 10k: Korean language, Korean history, general knowledge; helpfulness 3k: clarification, nonsense) plus 50,000 training items for factual accuracy. For Korean LLM safety and hallucination evaluation.",
+ "contents_ko": "질문·답변 JSON(평가 영역, 카테고리, 정답).",
+ "contents_en": "Question-answer JSON (evaluation area, category, answer).",
+ "modalities": ["text"],
+ "tasks": ["question_answering", "text_classification", "text_generation"],
+ "topics": [{"ko": "AI 신뢰성·안전", "en": "AI trustworthiness and safety"}, {"ko": "LLM 평가", "en": "LLM evaluation"}],
+ "keywords_ko": ["LLM 벤치마크", "무해성", "편향", "환각", "한국사", "신뢰성"],
+ "keywords_en": ["LLM benchmark", "harmlessness", "bias", "hallucination", "Korean history", "trustworthiness"],
+ "labels": ["question-answer", "category"],
+ "file_formats": ["json"],
+ "scale_ko": "평가용 33,000건 + 학습용 50,000건",
+ "classes_example": ["편향성", "혐오", "위험성", "민감성", "국어", "한국사", "일반 상식", "구체성", "넌센스"],
+ "baseline": [],
+ "difficulty": "beginner",
+ "difficulty_note_ko": "약 90MB로 아주 가볍습니다. 공개 LLM으로 바로 평가해볼 수 있습니다.",
+ "skills_needed_ko": ["파이썬", "LLM 사용(Hugging Face 또는 API)", "평가 지표 계산"],
+ "caveats_ko": ["페이지에 성능 점수 표가 없음(벤치마크 데이터라 모델 점수 없음)", "평가용 데이터를 학습에 쓰면 평가가 무의미해짐", "혐오·위험 질문이 포함되어 다룰 때 주의"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "공개 LLM 한국사 퀴즈", "title_en": "Korean history quiz for LLMs", "desc_ko": "공개 한국어 모델에 한국사 문제를 풀게 해 정답률을 셉니다.", "desc_en": "Measure an open Korean LLM's accuracy on history questions."},
+  {"level": "capstone", "title_ko": "LLM 신뢰성 리더보드", "title_en": "LLM trust leaderboard", "desc_ko": "여러 모델을 무해성·정확성·도움 적정성으로 비교하는 표를 만듭니다.", "desc_en": "Compare several models on harmlessness, accuracy and helpfulness."},
+  {"level": "research", "title_ko": "환각 줄이기 미세조정", "title_en": "Hallucination-reducing fine-tuning", "desc_ko": "학습용 5만 건으로 미세조정해 정보 정확성이 오르는지 연구합니다.", "desc_en": "Study whether fine-tuning on the 50k set improves factual accuracy."}
+ ],
+ "doc_used": true,
+ "uncertain": []
+}

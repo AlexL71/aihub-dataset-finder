@@ -1,0 +1,29 @@
+{
+ "dataset_id": "71834",
+ "title_en": "Contract legal document template data",
+ "summary_ko": "비밀유지·사업양수도·투자 계약서 등 계약 법률 문서 서식 10,215건을 정리하고, 문서 종류와 각 항목의 형식·내용·위치를 약 61만 개 태그로 표시한 데이터입니다. 계약서를 자동으로 분석하거나 만들어 주는 AI에 쓸 수 있습니다.",
+ "summary_en": "10,215 contract templates (NDAs, business transfer, investment agreements and more) with document categories and about 610,000 tags for each clause's type, content and position. For AI that analyses or drafts contracts.",
+ "contents_ko": "계약서 서식 원문(JSON) + 라벨(JSON: 문서 분류, 항목 형식·내용·위치 태그).",
+ "contents_en": "Contract template text (JSON) + labels (JSON: document category, clause type/content/position tags).",
+ "modalities": ["text"],
+ "tasks": ["text_classification", "information_extraction", "text_generation"],
+ "topics": [{"ko": "법률", "en": "Law"}, {"ko": "계약서", "en": "Contracts"}],
+ "keywords_ko": ["계약서", "법률 문서", "서식", "조항 추출", "문서 자동 생성", "리걸테크"],
+ "keywords_en": ["contracts", "legal documents", "templates", "clause extraction", "document generation", "legal tech"],
+ "labels": ["document category", "clause tag"],
+ "file_formats": ["json"],
+ "scale_ko": "계약 문서 10,215건, 라벨 612,868개",
+ "classes_example": ["비밀유지 계약서", "사업양수도 계약서", "제휴/협약 계약서", "국내 투자 계약서", "해외 투자 계약서"],
+ "baseline": [],
+ "difficulty": "beginner",
+ "difficulty_note_ko": "약 0.09GB로 작아 노트북에서 바로 분류·추출 실습을 할 수 있습니다.",
+ "skills_needed_ko": ["파이썬", "Hugging Face", "한국어 BERT"],
+ "caveats_ko": ["문서 수 표기(10,215·10,216건, 612,868·612,899건)가 곳에 따라 다름", "모델 성능 수치가 팩에 없음", "71835 계약 외 법률 문서 데이터와 같은 구조"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "계약서 종류 분류", "title_en": "Contract type classifier", "desc_ko": "계약서 본문으로 어떤 종류의 계약서인지 분류합니다.", "desc_en": "Classify contracts by type from their text."},
+  {"level": "capstone", "title_ko": "계약서 초안 생성기", "title_en": "Contract draft generator", "desc_ko": "계약 종류와 당사자 정보를 넣으면 서식에 맞춘 초안을 만듭니다.", "desc_en": "Draft a contract from type and party info."},
+  {"level": "research", "title_ko": "누락 조항 탐지", "title_en": "Missing-clause detection", "desc_ko": "계약서에서 필요한 조항이 빠졌는지 찾아내는 방법을 연구합니다.", "desc_en": "Study detecting missing required clauses."}
+ ],
+ "doc_used": true,
+ "uncertain": []
+}

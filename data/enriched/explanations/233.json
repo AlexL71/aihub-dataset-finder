@@ -1,0 +1,12 @@
+{
+ "dataset_id": "233",
+ "easy_ko": "공항과 항구의 짐 검사 엑스레이로 칼, 가위, 총 같은 위험한 물건과 USB 같은 저장 장치를 찍은 사진마다 물건 종류와 위치를 표시한 데이터입니다. 가방 속 위험한 물건을 자동으로 찾아내는 보안 검색 AI를 만들 수 있습니다.",
+ "easy_en": "X-ray images from airport and port baggage scanners showing dangerous items such as knives, scissors and guns, and storage devices such as USB drives, each marked with the item type and position. You can build security-screening AI that finds dangerous items in bags automatically.",
+ "detail_ko": "수하물 엑스레이 이미지 482,650장(위해물품 27종 405,900장, 저장매체 7종 76,750장, png)에 물품 종류(34종)와 바운딩박스 또는 폴리곤을 JSON으로 붙였습니다. 2019년 구축이며 성능 지표 표가 비어 있습니다. 물품 클래스 이름은 기록에서 일부만 확인되어 예시(칼, 가위, 총기, USB, SSD)는 추정입니다.",
+ "detail_en": "482,650 baggage X-ray images (405,900 of 27 dangerous items, 76,750 of 7 storage media; png) with JSON item class (34 types) and bounding box or polygon. Built in 2019; the performance table is empty. Only some class names are visible in the record, so the examples (knife, scissors, gun, USB, SSD) are partly assumed.",
+ "amount_ko": "엑스레이 사진 약 48.3만 장, 물품 34종",
+ "amount_en": "about 483k X-ray images, 34 item types",
+ "labels_ko": "물건 종류, 물건 위치 상자·윤곽",
+ "labels_en": "item class, boxes or outlines around items",
+ "status": "full-run-2026-11-02"
+}

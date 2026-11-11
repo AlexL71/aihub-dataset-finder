@@ -1,0 +1,48 @@
+{
+ "id": "pharm",
+ "name_ko": "약학과",
+ "name_en": "Pharmacy",
+ "college": "약학대학",
+ "summary_ko": "약의 작용, 분석, 제조와 환자에게 안전하게 쓰는 방법을 배우는 6년제(2+4) 약사 양성 학과입니다. 기초 생명과학과 약물과학에서 시작해 임상약학, 보건사회약학, 제약산업 실무까지 다루며 병원·약국·제약회사 실습이 포함됩니다.",
+ "summary_en": "A 6-year (2+4) program that trains pharmacists: how drugs act, how they are analysed and made, and how to use them safely with patients. It moves from life science and drug science to clinical pharmacy, social pharmacy and industry practice, with hospital, pharmacy and factory placements.",
+ "key_topics": ["약물 작용과 약동학", "신약 개발", "임상약학과 복약지도", "의약품 분석과 품질관리", "독성학과 안전성", "천연물·생약", "보건사회약학·약물경제", "건강기능식품과 화장품", "바이오의약품"],
+ "course_keywords": ["약품생화학", "약품미생물학", "생리학", "병태생리학", "약학통계학", "약동학", "면역학", "약물학", "약품분석학", "약품제조화학", "의약화학", "약물대사학", "독성학", "임상약료학", "임상사례연구학", "약물역학개론", "약물경제학개론", "약사법과 관련법규", "생약학", "천연물약품학", "약제학", "건강기능식품학", "향장품학", "나노약학", "의약품품질관리학", "약물유전체학", "신약개발론"],
+ "curriculum_by_year": {
+  "3": ["약학개론", "약품미생물학", "약품생화학", "생리학", "약학통계학", "병태생리학", "약품분석학", "약품유기화학", "약물학 I", "약과 보건의료체계", "임상약학개론", "물리약학"],
+  "4": ["분자생물학", "약동학", "면역학", "약물학 II", "예방약학", "임상약료학 I·II", "임상사례연구학", "생약학", "약제학", "건강기능식품학", "향장품학", "천연물약품학"],
+  "5": ["독성학", "세포생물학", "동물의약품학", "의약화학", "약물대사학", "임상약료학 III", "약업경영", "의약품품질관리학", "산업약학", "병원·약국·제약 실무실습"],
+  "6": ["고급생명약학", "고급약물과학", "고급임상약학", "고급보건사회약학", "고급산업약학", "약사법과 관련법규", "약학세미나", "약무현장인턴십"]
+ },
+ "careers": ["병원약사", "약국 약사(개국·관리약사)", "제약회사 연구·생산·품질관리·마케팅", "공직약사(식약처, 질병관리청, 심평원, 특허청 등)", "대학원 진학 후 제약·바이오 연구소, 출연연구소"],
+ "research_areas": ["신약 개발", "바이오의료·융복합 분야", "보건사회약학", "임상약학"],
+ "data_interests": [
+  {"topic_ko": "의약품 식별", "topic_en": "Pill and drug identification", "keywords": ["알약 이미지", "의약품 외형", "경구약제", "약 포장"]},
+  {"topic_ko": "약물 정보와 복약지도", "topic_en": "Drug information and patient counselling", "keywords": ["의약품 설명서", "복약 안내", "약물 상호작용", "질의응답"]},
+  {"topic_ko": "질병과 진료 기록", "topic_en": "Diseases and clinical records", "keywords": ["의료 영상", "진단", "환자 상담", "의료 텍스트"]},
+  {"topic_ko": "천연물·약용식물", "topic_en": "Medicinal plants and natural products", "keywords": ["약초", "식물 이미지", "생약"]},
+  {"topic_ko": "건강기능식품과 영양", "topic_en": "Supplements and nutrition", "keywords": ["식품 성분", "영양 정보", "건강 관리"]},
+  {"topic_ko": "화장품과 피부", "topic_en": "Cosmetics and skin", "keywords": ["피부 이미지", "피부 상태", "화장품 성분"]},
+  {"topic_ko": "분자와 세포", "topic_en": "Molecules and cells", "keywords": ["화합물 구조", "세포 이미지", "유전체", "단백질"]},
+  {"topic_ko": "보건 통계와 약물 사용", "topic_en": "Public health and drug use statistics", "keywords": ["처방 통계", "건강 설문", "보건 정책"]}
+ ],
+ "interest_questions": [
+  {"q_ko": "약학에서 어떤 쪽이 가장 궁금한가요?", "q_en": "Which side of pharmacy interests you most?",
+   "options": [{"ko": "환자와 복약 상담", "en": "Patients and counselling"}, {"ko": "새로운 약 개발", "en": "Discovering new drugs"}, {"ko": "약의 품질과 안전", "en": "Drug quality and safety"}, {"ko": "천연물·건강기능식품", "en": "Natural products and supplements"}, {"ko": "보건 정책과 통계", "en": "Health policy and statistics"}]},
+  {"q_ko": "다뤄보고 싶은 자료는?", "q_en": "What kind of data would you like to work with?",
+   "options": [{"ko": "알약·의약품 사진", "en": "Photos of pills and medicines"}, {"ko": "의료 영상(X-ray, CT 등)", "en": "Medical images (X-ray, CT)"}, {"ko": "의료·약 관련 글과 대화", "en": "Medical and drug texts or conversations"}, {"ko": "숫자·통계 표", "en": "Numbers and statistics tables"}]}
+ ],
+ "project_themes": ["사진으로 알약 종류를 알아내는 도우미", "복약 안내 질문에 답하는 챗봇", "의약품 설명서에서 부작용 정보 정리하기", "약용식물 사진 분류", "피부 사진으로 피부 상태 분류"],
+ "data_skill_level": "low",
+ "data_skill_note": "통계(약학통계학)는 배우지만 프로그래밍 과목은 없습니다. 노코드 도구나 아주 쉬운 Python 실습부터 시작하는 것이 좋습니다.",
+ "sources": [
+  {"kind": "page", "label": "대학소개", "url": "https://sejong.korea.ac.kr/pharm/3660/subview.do"},
+  {"kind": "page", "label": "졸업후진로", "url": "https://sejong.korea.ac.kr/pharm/3666/subview.do"},
+  {"kind": "page", "label": "교육과정", "url": "https://sejong.korea.ac.kr/pharm/3723/subview.do"},
+  {"kind": "pdf", "label": "전공역량기반 교육과정", "url": "https://sejong.korea.ac.kr/pdfView/pharm/11/69/fileDownload.do"},
+  {"kind": "image", "label": "전공체계도", "url": "https://sejong.korea.ac.kr/sites/pharm/images/temp_1787624673266100.png"}
+ ],
+ "inferred_fields": ["data_interests", "interest_questions", "project_themes", "data_skill_level"],
+ "gaps": ["Undergraduate entry is in year 3 (2+4 system); years 1-2 are taken in another college. Integrated 6-year entry also exists."],
+ "version": 1,
+ "created": "2026-10-29"
+}

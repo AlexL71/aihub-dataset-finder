@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71695",
+ "easy_ko": "어린이 동화와 소설 장면을 그린 그림 약 5만 장마다 그 장면을 설명하는 글을 짝지은 데이터입니다. 동화 내용에 맞는 그림을 자동으로 그려 주는 AI에 쓸 수 있습니다.",
+ "easy_en": "About 50,000 illustrations of scenes from children's stories and novels, each paired with text describing the scene. You can use it to build AI that draws pictures to match a story automatically.",
+ "detail_ko": "어린이 동화·소설 원문 50,000건을 바탕으로 삽화 이미지(jpg)와 장면 설명 텍스트-이미지 쌍 50,001건(추출 요약 3문장 59,342건, 생성 요약 1문장 50,001건, 캡션; JSON)을 만들었고, 분류는 의사소통, 자연탐구, 사회관계, 예술경험, 신체운동/건강입니다. 원본 도서와 삽화의 저작권·이용 조건을 확인해야 하고, 성능 지표는 팩 앞부분에 없습니다. 71696 동화 줄거리 생성 데이터와 같은 기관·분류 체계입니다.",
+ "detail_en": "50,001 text-image pairs built from 50,000 children's stories and novels: illustrations (jpg) with JSON captions, 59,342 three-sentence extractive summaries and 50,001 one-sentence abstractive summaries, classified as communication, nature exploration, social relations, art experience and physical activity/health. Check copyright and terms of use for the books and illustrations; no metrics are in the pack. Same builder and classification as the storyline set 71696.",
+ "amount_ko": "원문 50,000건, 텍스트-이미지 쌍 50,001건",
+ "amount_en": "50,000 source texts, 50,001 text-image pairs",
+ "labels_ko": "그림-글 짝, 그림 설명, 요약",
+ "labels_en": "text-image pair, caption, summary",
+ "status": "full-run-2026-11-02"
+}

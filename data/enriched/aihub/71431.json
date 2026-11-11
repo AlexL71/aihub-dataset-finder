@@ -1,0 +1,29 @@
+{
+ "dataset_id": "71431",
+ "title_en": "Data for preventing same-object recognition errors",
+ "summary_ko": "과일·채소·음료·유제품·주방용품·화장품·완구 등 10개 분류 상품을 정상, 변형, 분리·분해, 손실·파손, 훼손 상태와 여러 개가 뭉친 상태로 찍은 이미지 649,128장입니다. 모양이 달라져도 같은 상품으로 알아보는 탐지 AI, 무인 계산대·상품 분류 로봇에 쓸 수 있습니다.",
+ "summary_en": "649,128 images of products in 10 groups (fruit, vegetables, drinks, dairy, kitchenware, cosmetics, toys, etc.) shown normal, deformed, taken apart, broken, damaged or clustered in groups. Boxed for detection that recognises the same product despite changes, for unmanned checkouts and sorting robots.",
+ "contents_ko": "상품 이미지(jpg) + JSON(상자, 상품 분류, 상태 유형, 메타정보).",
+ "contents_en": "Product image (jpg) + JSON (boxes, product class, condition type, metadata).",
+ "modalities": ["image"],
+ "tasks": ["object_detection", "image_classification"],
+ "topics": [{"ko": "스마트 매장·유통", "en": "Smart retail"}, {"ko": "물류 로봇", "en": "Logistics robots"}],
+ "keywords_ko": ["상품 인식", "무인 계산대", "변형 객체", "객체 탐지", "스마트 매장", "물류"],
+ "keywords_en": ["product recognition", "unmanned checkout", "deformed objects", "object detection", "smart store", "logistics"],
+ "labels": ["bounding box", "product class", "condition type"],
+ "file_formats": ["jpg", "json"],
+ "scale_ko": "이미지 649,128장, 상품 분류 10종, 상태 6종(계수변환 56,439장 포함)",
+ "classes_example": ["과실류", "채소류", "음료", "유제품", "주방용품", "정상", "변형", "분리/분해", "손실/파손", "계수변환"],
+ "baseline": [],
+ "difficulty": "intermediate",
+ "difficulty_note_ko": "YOLO 탐지 실습에 좋지만 전체 약 537GB입니다. 한 상품 분류만 받아 쓰세요.",
+ "skills_needed_ko": ["파이썬", "YOLO 탐지", "이미지 분류"],
+ "caveats_ko": ["전체 약 537GB", "성능 지표 표가 비어 있음(YOLOX 사용만 소개)", "같은 상품의 여러 상태 사진이 있어 분할 시 같은 상품이 섞이지 않게 주의"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "과일·채소 탐지", "title_en": "Fruit and vegetable detection", "desc_ko": "사진에서 과일과 채소를 YOLO로 찾아 종류를 표시합니다.", "desc_en": "Detect fruit and vegetables and label their type with YOLO."},
+  {"level": "capstone", "title_ko": "무인 계산대 데모", "title_en": "Self-checkout demo", "desc_ko": "카메라로 담긴 상품을 인식해 개수와 가격을 계산하는 데모를 만듭니다.", "desc_en": "Recognise items on camera and total their count and price."},
+  {"level": "research", "title_ko": "변형 상품 강건성", "title_en": "Robustness to deformed products", "desc_ko": "정상 상품으로만 학습한 모델이 변형·파손 상품에서 얼마나 틀리는지 연구합니다.", "desc_en": "Study how normal-only training fails on deformed or broken items."}
+ ],
+ "doc_used": true,
+ "uncertain": []
+}

@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71323",
+ "easy_ko": "전시와 공연, 전시 작품을 설명하는 해설(도슨트) 글에, 내용을 묻는 질문과 정답, 작가·작품·장소 같은 이름 표시를 붙인 데이터입니다. 전시장이나 공연장에서 질문에 답해 주는 안내 챗봇을 만들 수 있습니다.",
+ "easy_en": "Guide (docent) texts describing exhibitions, performances and artworks, with questions and answers about them and names such as artists, works and venues marked. You can build guide chatbots that answer visitors' questions at exhibitions and shows.",
+ "detail_ko": "전국 전시·공연과 전시 작품 도슨트 원문 약 1,200건(csv)에 기계독해 질문-답변 약 7,400개와 개체명(작가, 작품, 장소 등) 약 2.9만 개를 JSON으로 붙였습니다. 기준 성능은 KoELECTRA 기계독해 F1 0.8554, 개체명 인식 F1 0.9245입니다. 원문이 약 1,200건으로 적고, 전시·공연 설명 저작권 확인이 필요합니다.",
+ "detail_en": "About 1,200 docent texts (csv) on exhibitions, performances and artworks across Korea, with about 7,400 machine-reading QA pairs and about 29k named entities (artists, works, venues and more) in JSON. Baselines: KoELECTRA machine reading F1 0.8554, NER F1 0.9245. There are only about 1,200 source texts; check copyright on the descriptions.",
+ "amount_ko": "해설 글 약 1,200건, 질문-답 약 7,400개",
+ "amount_en": "about 1,200 docent texts, about 7,400 QA pairs",
+ "labels_ko": "질문과 정답, 정답 위치, 이름(작가·작품·장소)",
+ "labels_en": "questions and answers, answer span, named entities",
+ "status": "full-run-2026-11-02"
+}

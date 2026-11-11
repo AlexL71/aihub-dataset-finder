@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71953",
+ "easy_ko": "교차로, 골목길, 인도에서 두 방향 이상으로 동시에 찍은 CCTV 영상 5,000쌍에 침입, 스토킹, 싸움, 헬멧 안 쓰기 같은 생활 안전 상황과 사람 움직임, 설명, 질문과 답을 붙인 데이터입니다. 여러 방향을 함께 보는 똑똑한 CCTV 관제나 사고 예측 AI에 쓸 수 있습니다.",
+ "easy_en": "5,000 pairs of CCTV videos filmed at the same time from two or more angles at intersections, alleys and pavements, marking everyday-safety situations such as intrusion, stalking, fights and riding without a helmet, with object tracks, descriptions and questions and answers. You can use it for smart CCTV monitoring that combines several views, or accident-prediction AI.",
+ "detail_ko": "교차로·골목길·보행로에서 2개 이상 각도로 동시에 찍은 CCTV 영상쌍 5,000건(mp4)에 11종 생활안전 상황(예: 침입, 스토킹, 싸움, 헬멧 미착용)의 객체 추적, 프레임 캡션, 행동 분류, 질의응답(VQA), 3단계 사고과정(CoT) 라벨을 JSON으로 붙였습니다. 상황별 수량 차이가 크고(싸움 50건 등), 사람이 찍힌 CCTV 영상이라 이용 조건과 개인정보 처리를 확인해야 하며, 성능 지표 값은 팩 앞부분에 없습니다.",
+ "detail_en": "5,000 CCTV video pairs (mp4) filmed simultaneously from 2 or more angles at intersections, alleys and footpaths, with JSON object tracks, frame captions, action classes, visual question answering (VQA) and 3-step chain-of-thought (CoT) labels for 11 everyday-safety situations (such as intrusion, stalking, fights, no helmet). Counts vary widely by situation (only 50 fights, for example); people appear in the footage, so check the terms of use and personal-data handling; no metric values are in the pack.",
+ "amount_ko": "영상쌍 5,000건(11종 상황)",
+ "amount_en": "5,000 video pairs (11 situation types)",
+ "labels_ko": "사람 움직임 추적, 장면 설명, 행동 종류, 질문과 답, 생각 과정",
+ "labels_en": "object track, frame caption, action class, question-answer, chain of thought",
+ "status": "full-run-2026-11-02"
+}

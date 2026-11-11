@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71443",
+ "easy_ko": "배와 바다 위 시설(해양플랜트)의 배관·계기 설계 도면마다 파이프, 밸브, 탱크, 압축기 같은 기호의 위치와 종류를 상자로 표시한 데이터입니다. 설계 도면에서 기호를 자동으로 찾고 개수를 세어 주는 AI를 만들 수 있습니다.",
+ "easy_en": "Piping and instrumentation design drawings for ships and offshore plants, with symbols such as pipes, valves, tanks and compressors boxed and labelled by type. You can build AI that finds and counts symbols in design drawings automatically.",
+ "detail_ko": "조선·해양플랜트 설계사 4곳(V01~V04)의 P&ID 도면 이미지 23,028장(png)에 심볼 554,214개(Compressor, Agitator, Eye Washer, Hose Reel 등)의 바운딩박스와 대분류·소분류를 JSON으로 붙였습니다. 기준 성능은 기록에 없습니다. 심볼 종류별 수량 차이가 매우 크고, 설계사마다 도면 스타일이 다릅니다.",
+ "detail_en": "23,028 P&ID drawing images (png) from 4 shipbuilding and offshore-plant design firms (V01–V04), with JSON boxes and main and sub-classes for 554,214 symbols (compressor, agitator, eye washer, hose reel and more). No baseline is in the record. Symbol counts vary greatly by type, and drawing styles differ by firm.",
+ "amount_ko": "도면 23,028장, 기호 554,214개",
+ "amount_en": "23,028 drawings, 554,214 symbols",
+ "labels_ko": "기호 위치 상자, 기호 종류(큰 분류·작은 분류)",
+ "labels_en": "symbol boxes, symbol class (main and sub)",
+ "status": "full-run-2026-11-02"
+}

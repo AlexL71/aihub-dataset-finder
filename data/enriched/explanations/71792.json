@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71792",
+ "easy_ko": "카드사, 은행, 신용평가, 통신, 펀드 회사 데이터의 특징을 AI가 배워 새로 만들어 낸 가짜 금융 표 데이터로, 카드 회원, 신용, 결제, 청구, 잔액 같은 정보가 있습니다. 실제 고객 정보 없이 마케팅이나 대출 평가 AI를 연습하는 데 쓸 수 있습니다.",
+ "easy_en": "Fake financial table data created by AI after learning the patterns of card companies, banks, credit bureaus, telecoms and fund companies, with information such as card members, credit, payments, billing and balances. You can use it to practise marketing or loan-assessment AI without any real customer data.",
+ "detail_ko": "카드·은행·신용평가(CB)·통신·펀드 기관 데이터의 특성을 AI로 학습해 만든 금융 합성 데이터로, 카드 회원정보, 카드 신용정보, 카드 승인매출정보, 카드 청구정보, 개인 CB정보 등 74개 CSV 파일, 총 레코드 27,635,997건(메타데이터 기준)입니다. 합성 데이터라 실제 고객 행동과 다를 수 있고, 통계표의 파일별 레코드 수(각 1,800만 건 등)가 총 레코드 수와 맞지 않으며, 예측 대상 컬럼은 설명서를 확인해야 합니다.",
+ "detail_en": "Synthetic financial data made by AI trained on the characteristics of card, bank, credit-bureau (CB), telecom and fund data: 74 CSV files such as card member, card credit, card approved sales, card billing and personal CB information, 27,635,997 records in total (per metadata). Being synthetic, it may differ from real customer behaviour; the per-file counts in the statistics table (such as 18 million each) do not match the total; and the target columns need checking in the manual.",
+ "amount_ko": "파일 74개, 총 레코드 27,635,997건",
+ "amount_en": "74 files, 27,635,997 records",
+ "labels_ko": "합성 금융 기록(별도 정답 표시 없음)",
+ "labels_en": "synthetic records",
+ "status": "full-run-2026-11-02"
+}

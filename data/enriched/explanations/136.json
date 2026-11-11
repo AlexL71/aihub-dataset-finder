@@ -1,0 +1,12 @@
+{
+ "dataset_id": "136",
+ "easy_ko": "수도권 지역을 비행기에서 찍은 사진에 소나무, 낙엽송, 그 밖의 바늘잎나무, 넓은잎나무가 자라는 곳을 색으로 칠해 구분한 데이터입니다. 하늘에서 찍은 사진만으로 숲의 나무 종류 지도를 만들고 도시 주변 녹지 변화를 살피는 AI를 만들 수 있습니다.",
+ "easy_en": "Aerial photos of the Seoul metropolitan region where areas of pine, larch, other conifers and broadleaf trees are coloured in. You can build AI that maps tree species from the air and monitors green-space changes around cities.",
+ "detail_ko": "수도권 지역 항공사진(25cm 해상도) 60,392장(정밀 라벨 22,807, 대략 라벨 37,585)과 위성 모사영상(5m) 500장으로 구성되며, 512×512 또는 1024×1024 TIFF 패치에 소나무·낙엽송·기타 침엽수·활엽수 4종 세그멘테이션 라벨이 JSON으로 붙어 있습니다. 기준 성능은 DeepLab v3+ 항공 4종 수종 분할 픽셀 정확도 88%, 침엽수/활엽수 분할 89%입니다. 대략(Coarse) 라벨은 경계가 거칠어 평가는 정밀 라벨로 하는 것이 좋습니다.",
+ "detail_en": "60,392 aerial images of the Seoul metropolitan region at 25 cm resolution (22,807 fine, 37,585 coarse labels) and 500 simulated satellite images at 5 m, as 512×512 or 1024×1024 TIFF patches with JSON segmentation labels for 4 classes: pine, larch, other conifers and broadleaf. Baselines: DeepLab v3+ pixel accuracy 88% for 4-species segmentation and 89% for conifer/broadleaf. Coarse labels have rough borders, so evaluate on the fine labels.",
+ "amount_ko": "항공사진 60,392장, 위성 모사영상 500장",
+ "amount_en": "60,392 aerial images, 500 simulated satellite images",
+ "labels_ko": "나무 종류별 영역(색칠), 정밀·대략 라벨 구분",
+ "labels_en": "tree-species regions (colour masks), fine or coarse label flag",
+ "status": "full-run-2026-11-02"
+}

@@ -1,0 +1,29 @@
+{
+ "dataset_id": "71850",
+ "title_en": "CCTV video data for intelligent monitoring services",
+ "summary_ko": "지자체·공공기관에서 받은 실제 CCTV 영상 300건에 침입·쓰러짐·싸움·군집·인파밀집·침수 6종 안전사고 구간과 설명 문장이 표시되어 있습니다. 위험 상황을 자동으로 알려 주는 지능형 CCTV 관제에 쓸 수 있습니다.",
+ "summary_en": "300 real CCTV videos from local governments and public bodies, with time segments and captions for 6 safety events: intrusion, falling, fighting, gathering, crowd crush risk and flooding. For intelligent CCTV that raises alerts automatically.",
+ "contents_ko": "CCTV 영상(mp4) + JSON(사고 구간 태그, 캡션).",
+ "contents_en": "CCTV video (mp4) + JSON (event segment tags, captions).",
+ "modalities": ["video", "text"],
+ "tasks": ["action_recognition", "anomaly_detection", "image_captioning"],
+ "topics": [{"ko": "공공 안전", "en": "Public safety"}, {"ko": "영상 관제", "en": "Video surveillance"}],
+ "keywords_ko": ["CCTV", "지능형 관제", "이상행동", "쓰러짐", "인파밀집", "침수"],
+ "keywords_en": ["CCTV", "intelligent monitoring", "abnormal behaviour", "falls", "crowd density", "flooding"],
+ "labels": ["temporal segment", "caption", "event class"],
+ "file_formats": ["mp4", "json"],
+ "scale_ko": "영상 300건, 사고 유형 6종",
+ "classes_example": ["침입", "쓰러짐", "싸움", "군집", "인파밀집", "침수"],
+ "baseline": [],
+ "difficulty": "intermediate",
+ "difficulty_note_ko": "약 12GB로 받기 쉽지만 영상 300건뿐이라 사전학습 모델 활용이 필요합니다.",
+ "skills_needed_ko": ["파이썬", "영상 행동 인식", "시간 구간 탐지"],
+ "caveats_ko": ["영상 수가 300건으로 적음", "실제 CCTV라 사람이 찍혀 있어 개인정보 주의", "품질 점수는 라벨 정확도이며 모델 성능 수치는 팩에 없음"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "쓰러짐 구간 찾기", "title_en": "Fall segment detection", "desc_ko": "CCTV 영상에서 사람이 쓰러지는 구간을 찾습니다.", "desc_en": "Find segments where a person falls."},
+  {"level": "capstone", "title_ko": "CCTV 위험 알림 시스템", "title_en": "CCTV alert system", "desc_ko": "6가지 사고를 감지하면 설명 문장과 함께 알림을 보내는 데모를 만듭니다.", "desc_en": "Alert with a caption when any of 6 events occurs."},
+  {"level": "research", "title_ko": "적은 영상으로 이상 탐지", "title_en": "Few-shot video anomaly detection", "desc_ko": "영상이 적을 때 사전학습 모델로 사고를 찾는 방법을 연구합니다.", "desc_en": "Study anomaly detection with few labelled videos."}
+ ],
+ "doc_used": true,
+ "uncertain": ["활용 서비스 설명(어린이 보호구역)이 데이터 내용과 다르게 보임"]
+}

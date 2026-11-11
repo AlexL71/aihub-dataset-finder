@@ -1,0 +1,29 @@
+{
+ "dataset_id": "71644",
+ "title_en": "Waterside area change detection data (Nakdong River basin)",
+ "summary_ko": "낙동강 유역의 항공사진(25cm) 24,621장, 위성 이미지(10m) 24,104장, 위성 SAR(10m) 13,182장에 물(수체)과 물이 아닌 영역이 분할로 칠해진 데이터입니다. 홍수 같은 수재해 대응과 수변 구역 변화 탐지 AI에 쓸 수 있습니다.",
+ "summary_en": "24,621 aerial photos (25 cm), 24,104 satellite images (10 m) and 13,182 SAR satellite images (10 m) of the Nakdong River basin, with water and non-water areas segmented. For flood response and waterside change detection AI.",
+ "contents_ko": "항공·위성·SAR 영상(tif) + JSON(수체/비수체 분할).",
+ "contents_en": "Aerial, satellite and SAR image (tif) + JSON (water/non-water segmentation).",
+ "modalities": ["image"],
+ "tasks": ["segmentation", "anomaly_detection"],
+ "topics": [{"ko": "수자원·재해", "en": "Water resources and disasters"}, {"ko": "원격탐사", "en": "Remote sensing"}],
+ "keywords_ko": ["수체 탐지", "SAR", "위성 영상", "변화 탐지", "홍수", "낙동강"],
+ "keywords_en": ["water detection", "SAR", "satellite imagery", "change detection", "flood", "Nakdong River"],
+ "labels": ["segmentation (water/non-water)"],
+ "file_formats": ["tif", "json"],
+ "scale_ko": "가공 항공사진 24,621건, 위성 24,104건, SAR 13,182건",
+ "classes_example": ["수체", "비수체"],
+ "baseline": [],
+ "difficulty": "intermediate",
+ "difficulty_note_ko": "클래스가 2개라 분할 입문에 좋지만 SAR·위성 tif 처리에 익숙해져야 합니다. 약 45GB입니다.",
+ "skills_needed_ko": ["파이썬", "분할 모델(U-Net)", "원격탐사 영상 처리(rasterio)"],
+ "caveats_ko": ["성능 지표가 팩에 없음", "한강 유역(71643)과 같은 구조"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "위성 영상 물 영역 분할", "title_en": "Water segmentation in satellite images", "desc_ko": "위성 영상에서 물 영역을 칠합니다.", "desc_en": "Segment water areas in satellite images."},
+  {"level": "capstone", "title_ko": "강 유역 수위 변화 모니터", "title_en": "River basin water monitor", "desc_ko": "시기별 수체 면적 변화를 그래프와 지도로 보여 줍니다.", "desc_en": "Show water area changes over time on charts and maps."},
+  {"level": "research", "title_ko": "유역 간 일반화", "title_en": "Cross-basin generalisation", "desc_ko": "한강(71643)으로 학습한 모델이 낙동강에서도 잘 되는지 연구합니다.", "desc_en": "Test Han River models on the Nakdong basin."}
+ ],
+ "doc_used": true,
+ "uncertain": ["같은 지역의 영상끼리 시기별로 짝지어져 있는지"]
+}

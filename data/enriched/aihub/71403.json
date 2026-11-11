@@ -1,0 +1,29 @@
+{
+ "dataset_id": "71403",
+ "title_en": "Overhead contact line and insulator condition recognition data",
+ "summary_ko": "도시철도·일반철도·고속철도·경전철의 전차선(전기를 공급하는 공중 전선)과 애자(절연 부품)를 특수 장비로 촬영한 이미지 133,845세트입니다. 행거·클램프·볼트·애자 등 부품별로 정상과 파손 같은 비정상이 상자와 영역으로 표시되어 있어 전차선 자동 점검 AI에 쓸 수 있습니다.",
+ "summary_en": "133,845 sets of images of overhead contact lines and insulators on urban, conventional, high-speed and light rail, with parts such as hangers, clamps, bolts and insulators marked normal or abnormal by boxes and masks. For automatic catenary inspection.",
+ "contents_ko": "전차선·애자 이미지(jpg) + JSON(상자, 분할 영역, 부품 종류, 정상·비정상).",
+ "contents_en": "Catenary and insulator image (jpg) + JSON (boxes, masks, part type, normal/abnormal).",
+ "modalities": ["image"],
+ "tasks": ["object_detection", "segmentation", "anomaly_detection"],
+ "topics": [{"ko": "철도 안전 점검", "en": "Railway safety inspection"}, {"ko": "전력 설비 유지관리", "en": "Power equipment maintenance"}],
+ "keywords_ko": ["전차선", "애자", "철도 전력", "결함 탐지", "볼트·너트", "시설 점검"],
+ "keywords_en": ["overhead contact line", "insulator", "railway power", "defect detection", "bolts and nuts", "inspection"],
+ "labels": ["bounding box", "segmentation mask", "part type", "normal/abnormal"],
+ "file_formats": ["jpg", "json"],
+ "scale_ko": "133,845세트(도시철도 52,131·일반철도 22,312·고속철도 31,136·경전철 28,266), 시설물 14종",
+ "classes_example": ["전차선", "T-Bar", "롱이어", "안전핀", "행거", "클램프", "절연애자", "현수애자"],
+ "baseline": [],
+ "difficulty": "intermediate",
+ "difficulty_note_ko": "탐지·분할 실습에 적당하고 약 45GB로 비교적 가볍습니다. 작은 부품이 많아 고해상도 입력이 필요할 수 있습니다.",
+ "skills_needed_ko": ["파이썬", "YOLO 탐지", "분할 모델(Mask R-CNN)", "작은 물체 탐지"],
+ "caveats_ko": ["성능 지표 표가 비어 있음(YOLOv5·Mask R-CNN 사용만 소개)", "비정상 데이터 일부는 인위적으로 파손을 만들어 촬영함", "71391 선로 데이터와 같은 기관·구성"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "애자 탐지", "title_en": "Insulator detection", "desc_ko": "전차선 사진에서 애자와 클램프를 YOLO로 찾습니다.", "desc_en": "Detect insulators and clamps in catenary photos with YOLO."},
+  {"level": "capstone", "title_ko": "전차선 이상 알림 대시보드", "title_en": "Catenary fault dashboard", "desc_ko": "점검 영상에서 비정상 부품을 찾아 노선별로 보여 주는 대시보드를 만듭니다.", "desc_en": "Show abnormal parts found in inspection footage per line."},
+  {"level": "research", "title_ko": "희귀 결함 탐지", "title_en": "Rare defect detection", "desc_ko": "비정상 데이터가 적을 때 이상 탐지·데이터 증강으로 성능을 높이는 방법을 연구합니다.", "desc_en": "Study anomaly detection and augmentation when defects are rare."}
+ ],
+ "doc_used": true,
+ "uncertain": []
+}

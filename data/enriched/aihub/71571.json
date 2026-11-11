@@ -1,0 +1,29 @@
+{
+ "dataset_id": "71571",
+ "title_en": "Commercial autonomous vehicle night-time expressway data",
+ "summary_ko": "실제로 운행 중인 상용 자율주행차가 밤 시간 자동차 전용도로에서 5개 카메라와 3D 라이다로 수집한 데이터입니다. 이미지에는 분할, 라이다 점군에는 3D 큐보이드(입체 상자)가 표시되고 차량 판단·제어 정보도 있어 야간 고속 주행 자율주행 인지 AI에 쓸 수 있습니다.",
+ "summary_en": "Night-time expressway data from commercial self-driving cars with 5 cameras and 3D LiDAR: segmentation on images, 3D cuboids on point clouds, plus vehicle decision and control data. For night-time high-speed autonomous-driving perception.",
+ "contents_ko": "카메라 이미지(jpg, 5채널) + 라이다 점군(pcd) + 분할 마스크(png) + JSON(분할, 3D 큐보이드, 센서·메타 정보).",
+ "contents_en": "Camera image (jpg, 5 channels) + LiDAR point cloud (pcd) + segmentation mask (png) + JSON (segmentation, 3D cuboids, sensor and meta info).",
+ "modalities": ["image", "3d", "sensor"],
+ "tasks": ["segmentation", "object_detection"],
+ "topics": [{"ko": "자율주행", "en": "Autonomous driving"}, {"ko": "야간 주행", "en": "Night driving"}],
+ "keywords_ko": ["자율주행", "야간", "자동차 전용도로", "라이다", "3D 큐보이드"],
+ "keywords_en": ["autonomous driving", "night", "expressway", "LiDAR", "3D cuboid"],
+ "labels": ["segmentation", "3D cuboid", "sensor data", "metadata"],
+ "file_formats": ["jpg", "pcd", "png", "json"],
+ "scale_ko": "이미지 401,200장, 점군 80,240건, 분할 마스크 80,240장, 장면 약 2,006개",
+ "classes_example": ["동적객체", "정적객체", "도로객체", "Car", "truck"],
+ "baseline": [{"task": "3D object detection", "model": "PointPillars", "metric": "mAP", "value": "77.785%"}, {"task": "2D segmentation", "model": "Swin Transformer + UperNet", "metric": "mIoU", "value": "72.75%"}],
+ "difficulty": "advanced",
+ "difficulty_note_ko": "카메라·라이다 센서 정렬과 3D 탐지 경험이 필요하고, 야간이라 이미지가 어둡습니다. 전체 약 183GB입니다.",
+ "skills_needed_ko": ["파이썬", "점군 처리", "3D 탐지 모델(OpenPCDet)", "분할 모델"],
+ "caveats_ko": ["분할은 전방 카메라 이미지에만 제공", "센서 데이터 161,480개가 점군 수의 2배(160,480)와 맞지 않음", "71570 주간판과 같은 구조"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "야간 전용도로 분할", "title_en": "Night expressway segmentation", "desc_ko": "어두운 전방 카메라 이미지에서 도로·차량 영역을 분할합니다.", "desc_en": "Segment road and vehicles in dark front-camera images."},
+  {"level": "capstone", "title_ko": "야간 라이다 3D 탐지", "title_en": "Night LiDAR 3D detection", "desc_ko": "PointPillars로 야간 점군에서 차량 3D 상자를 탐지하고 주간과 비교합니다.", "desc_en": "Detect cars in night point clouds and compare with day."},
+  {"level": "research", "title_ko": "주야간 도메인 적응", "title_en": "Day-night domain adaptation", "desc_ko": "주간 데이터 모델을 야간 데이터에 적은 라벨로 맞추는 방법을 연구합니다.", "desc_en": "Adapt day-trained models to night with few labels."}
+ ],
+ "doc_used": true,
+ "uncertain": ["전체 클래스 목록은 첨부 카테고리 정의서에만 있고 예시 클래스만 확인됨"]
+}

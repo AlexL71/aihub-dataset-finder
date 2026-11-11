@@ -1,0 +1,12 @@
+{
+ "dataset_id": "184",
+ "easy_ko": "실내외를 다니는 배달·안내 로봇의 눈높이에서 찍은 주행 영상에, 로봇 길을 막는 의자·기둥·가로수 같은 고정된 물체와 사람·자전거·개 같은 움직이는 물체, 병원의 휠체어·침대를 표시한 데이터입니다. 배달·안내·물류 로봇이 장애물을 피해 다니게 하는 AI를 만들 수 있습니다.",
+ "easy_en": "Driving videos from the eye level of delivery and guide robots moving indoors and outdoors, with fixed obstacles (chairs, bollards, street trees), moving ones (people, cyclists, dogs) and hospital items (wheelchairs, beds) marked. You can build AI that lets delivery, guide and logistics robots steer around obstacles.",
+ "detail_ko": "자율주행 로봇 시점 주행 영상 600시간(일반 500h, 서비스 특수 상황 100h, 그중 10h는 3D 스캔, 구축량 72.6만)으로, 영상·이미지(mp4/jpg), JSON(장애물 바운딩박스, 클래스, 상황 구분), 일부 3D 포인트 클라우드(pcd)로 구성됩니다. 장애물은 고정형(의자, 볼라드, 가로수, 표지판), 변동형(사람, 자전거 탄 사람, 개), 의료 시설(휠체어, 환자용 침대, 물품이송 카트) 등입니다. 기준 성능은 기록에서 확인되지 않습니다. 전체 약 4.8TB입니다.",
+ "detail_en": "600 hours of robot-view driving video (500 h general, 100 h special service situations, of which 10 h include 3D scans; 726k built items), with mp4/jpg, JSON obstacle boxes, classes and situation labels, and some 3D point clouds (pcd). Obstacles include fixed ones (chairs, bollards, street trees, signs), moving ones (people, cyclists, dogs) and medical items (wheelchairs, patient beds, supply carts). No baseline is visible in the record. Total size is about 4.8 TB.",
+ "amount_ko": "영상 600시간",
+ "amount_en": "600 hours of video",
+ "labels_ko": "장애물 위치 상자와 종류, 상황 구분, 일부 입체 점 데이터",
+ "labels_en": "boxes and classes for obstacles, situation, some 3D point clouds",
+ "status": "full-run-2026-11-02"
+}

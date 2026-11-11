@@ -1,0 +1,29 @@
+{
+ "dataset_id": "71466",
+ "title_en": "Korean learners' foreign-language speech data for education (other than English, Chinese, Japanese)",
+ "summary_ko": "한국인 학습자가 독일어·스페인어·프랑스어·러시아어로 말한 음성 1,072시간에 전사(받아쓰기), 학습자 수준 평가, 언어학적 분석 메타데이터가 붙은 데이터입니다. 외국어 발음·말하기 자동 평가와 음성 인식에 쓸 수 있습니다.",
+ "summary_en": "1,072 hours of German, Spanish, French and Russian speech by Korean learners with transcripts, learner level ratings and linguistic analysis metadata. For automatic pronunciation and speaking assessment and speech recognition.",
+ "contents_ko": "외국어 발화 음성(wav) + JSON(전사, 학습자 수준·평가, 태깅).",
+ "contents_en": "Foreign-language speech (wav) + JSON (transcript, learner level and scores, tags).",
+ "modalities": ["audio", "text"],
+ "tasks": ["speech_recognition", "audio_classification"],
+ "topics": [{"ko": "외국어 교육", "en": "Foreign language education"}, {"ko": "음성 인식", "en": "Speech recognition"}],
+ "keywords_ko": ["독일어", "스페인어", "프랑스어", "러시아어", "발음 평가", "한국인 학습자"],
+ "keywords_en": ["German", "Spanish", "French", "Russian", "pronunciation assessment", "Korean learners"],
+ "labels": ["transcript", "proficiency rating", "linguistic tags"],
+ "file_formats": ["wav", "json"],
+ "scale_ko": "음성 1,072시간, 언어 4종, 말하기 문항 주제 10종",
+ "classes_example": ["독일어", "스페인어", "프랑스어", "러시아어"],
+ "baseline": [{"task": "speech recognition (German)", "model": "RNN-Transducer", "metric": "CER", "value": "8.7%"}, {"task": "speech recognition (Spanish)", "model": "RNN-Transducer", "metric": "CER", "value": "8.1%"}, {"task": "speech recognition (French)", "model": "RNN-Transducer", "metric": "CER", "value": "14.2%"}, {"task": "speech recognition (Russian)", "model": "RNN-Transducer", "metric": "CER", "value": "14%"}, {"task": "pronunciation assessment (German)", "model": "wav2vec 2.0 + MLP", "metric": "Pearson correlation", "value": "0.67"}, {"task": "pronunciation assessment (Spanish)", "model": "wav2vec 2.0 + MLP", "metric": "Pearson correlation", "value": "0.61"}],
+ "difficulty": "intermediate",
+ "difficulty_note_ko": "음성 데이터라 처리가 필요하지만 약 82GB로 다룰 만합니다. 한 언어만 골라 시작하세요.",
+ "skills_needed_ko": ["파이썬", "음성 처리", "사전학습 음성 모델 미세조정"],
+ "caveats_ko": ["언어별 시간 비율이 팩 앞부분에 없음", "영어(71463)·중일(71464) 버전과 같은 구조"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "스페인어 발음 점수 예측", "title_en": "Spanish pronunciation scoring", "desc_ko": "음성 특징으로 스페인어 발음 점수를 예측합니다.", "desc_en": "Predict Spanish pronunciation scores from speech."},
+  {"level": "capstone", "title_ko": "제2외국어 말하기 연습 앱", "title_en": "Second-language speaking app", "desc_ko": "독일어·프랑스어 등 발화를 받아쓰고 발음 피드백을 주는 앱을 만듭니다.", "desc_en": "App that transcribes and gives feedback for German, French and more."},
+  {"level": "research", "title_ko": "언어 간 발음 평가 전이", "title_en": "Cross-language assessment transfer", "desc_ko": "한 언어에서 학습한 발음 평가 모델을 다른 언어에 옮기는 방법을 연구합니다.", "desc_en": "Transfer a pronunciation scorer from one language to another."}
+ ],
+ "doc_used": true,
+ "uncertain": ["포함 언어가 4종뿐인지(성능표 기준으로 판단)", "학습자 수준 등급 체계"]
+}

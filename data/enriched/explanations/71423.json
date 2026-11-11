@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71423",
+ "easy_ko": "여러 CCTV에 찍힌 사람 사진에 같은 사람 번호, 가려짐, 걷는 방향, 날씨·밤낮·적외선 촬영 정보를 붙인 데이터로, 예전 데이터에 새 사진을 더해 늘렸습니다. 다른 카메라에 찍힌 같은 사람을 다시 찾아내는 AI를 만들어 실종자 찾기에 쓸 수 있지만, 사생활 침해에 주의해야 합니다.",
+ "easy_en": "Photos of people captured by many CCTV cameras, labelled with a person ID, occlusion, walking direction, and weather, day/night and infrared info, expanding an earlier dataset with new photos. You can build AI that finds the same person on different cameras, for example to search for missing people, but privacy must be taken seriously.",
+ "detail_ko": "기존 한국인 재식별 데이터(2020년분 4,824,468장)에 날씨·야간·IR 촬영과 가려짐·방향 정보를 더한 2022년분 2,173,417장(500명 이상, CCTV 10대 이상)을 합친 사람 이미지 6,997,885장(png, RGB·IR)에 사람 ID, 카메라, 가려짐, 방향, 촬영 환경(실내/실외, 맑음/흐림/우천, 주간/야간)을 XML로 붙였습니다. 기준 성능은 MGN RGB 재식별 Top-1 정확도 99.03%, IR+RGB 재식별 Top-10 정확도 92.76%입니다. 사람 이미지라 개인정보 이용 조건을 꼭 확인해야 하고, 2020년 기존 데이터(84번)와 중복될 수 있으며, IR 이미지는 2022년분에만 있습니다.",
+ "detail_en": "6,997,885 person images (png, RGB and IR): 4,824,468 from the earlier 2020 Korean re-ID dataset plus 2,173,417 new 2022 images (500+ people, 10+ CCTV cameras) adding weather, night and IR capture with occlusion and direction info, labelled in XML with person ID, camera, occlusion, direction and setting (indoor/outdoor, clear/cloudy/rain, day/night). Baselines: MGN RGB re-ID top-1 accuracy 99.03%, IR+RGB re-ID top-10 accuracy 92.76%. These are images of people, so check privacy terms; it may overlap with the earlier dataset (84); IR exists only in the 2022 part.",
+ "amount_ko": "사람 사진 약 700만 장",
+ "amount_en": "about 7M person images",
+ "labels_ko": "같은 사람 번호, 가려짐, 걷는 방향, 카메라, 촬영 환경",
+ "labels_en": "person ID, occlusion, direction, camera, capture setting",
+ "status": "full-run-2026-11-02"
+}

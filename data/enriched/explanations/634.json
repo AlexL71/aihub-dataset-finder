@@ -1,0 +1,12 @@
+{
+ "dataset_id": "634",
+ "easy_ko": "제주의 옥수수, 감자, 메밀과 겨울 무, 당근, 양배추, 마늘 같은 주요 작물을 비행기·위성·드론으로 찍은 사진에, 밭마다 어떤 작물이 자라는지 색으로 칠해 둔 데이터입니다. 어느 밭에 무엇을 심었는지 자동으로 알아내 재배 면적을 계산하는 AI를 만들 수 있습니다.",
+ "easy_en": "Aerial, satellite and drone images of Jeju's main crops, such as maize, potato and buckwheat and winter crops like radish, carrot, cabbage and garlic, with each field coloured by the crop growing there. You can build AI that works out what is planted in each field and calculates the growing area.",
+ "detail_ko": "제주 주요 작물 15종(식량작물 5종: 옥수수, 감자, 메밀 등; 월동작물 10종: 월동무, 당근, 양배추, 마늘 등)을 항공·위성·드론(일반·다중분광·초분광) 영상에서 필지별로 분할한 라벨 약 200만 개(XML)와 드론 스냅샷 약 45만 장으로 구성됩니다. 기준 성능은 Xception 작물 분류 F1 RGB 0.9851, 다중분광 0.9386, 초분광 0.9583입니다. 전체 약 404GB이며 제주 지역만 포함되고, 영상 파일 형식이 기록에 XML로만 적혀 있습니다.",
+ "detail_en": "About 2M field-level segmentation labels (XML) for 15 Jeju crops (5 food crops such as maize, potato and buckwheat; 10 winter crops such as winter radish, carrot, cabbage and garlic) from aerial, satellite and drone imagery (RGB, multispectral, hyperspectral), with about 450k drone snapshots. Baselines: Xception crop classification F1 0.9851 (RGB), 0.9386 (multispectral), 0.9583 (hyperspectral). Total size is about 404 GB; only Jeju is covered; image formats are listed only as XML.",
+ "amount_ko": "라벨 약 200만 개, 작물 15종, 드론 사진 약 45만 장",
+ "amount_en": "about 2M labels, 15 crops, about 450k drone images",
+ "labels_ko": "밭 영역(색칠), 작물 종류",
+ "labels_en": "field masks, crop class",
+ "status": "full-run-2026-11-02"
+}

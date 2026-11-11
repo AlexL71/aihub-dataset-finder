@@ -1,0 +1,29 @@
+{
+ "dataset_id": "469",
+ "title_en": "Face images of Koreans wearing masks",
+ "summary_ko": "마스크를 쓴 한국인 얼굴 사진 105.8만 장(스튜디오 촬영 37.8만, 실제 상황 51.8만 등)으로, 마스크로 가려지지 않은 부분의 얼굴 특징점이 표시되어 있습니다. 마스크를 써도 본인을 알아보는 얼굴 인증이나 가려진 얼굴 추정 연구에 쓸 수 있습니다.",
+ "summary_en": "1.058 million face photos of Koreans wearing masks (378,000 studio, 518,000 real-life and more), with facial keypoints on the visible parts. For face authentication that works with masks on, or research on estimating occluded faces.",
+ "contents_ko": "얼굴 사진(jpg) + JSON(얼굴 키포인트, 마스크 종류, 촬영 환경).",
+ "contents_en": "Face photo (jpg) + JSON (facial keypoints, mask type, shooting conditions).",
+ "modalities": ["image"],
+ "tasks": ["keypoint_pose", "retrieval_recommendation", "image_generation"],
+ "topics": [{"ko": "보안·인증", "en": "Security and authentication"}, {"ko": "사람 얼굴", "en": "Human faces"}, {"ko": "보건·감염병", "en": "Public health"}],
+ "keywords_ko": ["마스크 얼굴 인식", "안면 인증", "얼굴 특징점", "가려진 얼굴", "코로나19"],
+ "keywords_en": ["masked face recognition", "face authentication", "facial landmarks", "occluded face", "COVID-19"],
+ "labels": ["facial keypoints", "mask type"],
+ "file_formats": ["jpg", "json"],
+ "scale_ko": "105만 8천 건(스튜디오 37.8만, 실제 상황 51.8만 등)",
+ "classes_example": ["인물 ID(동일인 1명 = 1클래스)", "마스크 착용", "마스크 미착용", "마스크 부분착용"],
+ "baseline": [],
+ "difficulty": "intermediate",
+ "difficulty_note_ko": "얼굴 특징점·인식 실습이 가능하지만 전체 약 1.2TB이고 개인정보에 민감합니다.",
+ "skills_needed_ko": ["파이썬", "얼굴 랜드마크 모델", "얼굴 임베딩(ArcFace)"],
+ "caveats_ko": ["실제 얼굴 데이터라 이용 약관과 개인정보 보호를 반드시 확인", "성능 지표가 팩 앞부분에 없음"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "마스크 얼굴 특징점 찾기", "title_en": "Keypoints on masked faces", "desc_ko": "마스크를 쓴 얼굴에서 눈·눈썹 특징점을 찾는 모델을 학습합니다.", "desc_en": "Train a model that finds eye and brow keypoints on masked faces."},
+  {"level": "capstone", "title_ko": "마스크 착용 출입 인증 데모", "title_en": "Masked-face entry check demo", "desc_ko": "마스크를 쓴 채로 등록된 사람인지 확인하는 데모를 만듭니다.", "desc_en": "Verify registered people while they wear masks."},
+  {"level": "research", "title_ko": "가려진 얼굴 복원", "title_en": "Reconstructing occluded faces", "desc_ko": "마스크로 가려진 아래 얼굴을 생성 모델로 추정하는 방법과 윤리 문제를 연구합니다.", "desc_en": "Study generative reconstruction of the lower face and its ethics."}
+ ],
+ "doc_used": true,
+ "uncertain": []
+}

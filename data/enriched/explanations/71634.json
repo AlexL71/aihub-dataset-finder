@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71634",
+ "easy_ko": "프로 핸드볼 경기 영상에 선수 위치와 움직임, 팀 기록, 공격과 수비 작전 상황을 표시한 데이터입니다. 경기 영상을 분석하고 어떤 작전을 썼는지 알아내는 AI에 쓸 수 있습니다.",
+ "easy_en": "Professional handball match video marking player positions and movement, team stats, and attacking and defending tactics. You can use it to build AI that analyses match video and works out which tactics were used.",
+ "detail_ko": "프로 핸드볼 경기 영상(mp4)과 프레임 이미지(jpg)로 만든 이미지 분석 데이터 38,890건(전체 39,490건)에 선수 상자·추적, 팀 스탯 이벤트, 전술 상황(예: 크로스, 스크린, 속공시도, 미들포, 페인팅 어시스트, 건너뛰기 패스, 9m 내 수비 인원, 심판 판정 일반파울·옐로카드·2분퇴장·블루카드·레드카드)을 JSON으로 붙였습니다. 기준 성능은 R3D 전술 상황 분류 정확도 70.49%, 팀 스탯 분류 정확도 69.46%, YOLO v5 선수 탐지 F1 0.8877입니다. 성능표에는 정확도가 0.7049%처럼 적혀 있어 표기 오류로 보입니다. 핸드볼 약 150경기이고, 축구(71482)와 같은 구조입니다.",
+ "detail_en": "38,890 image-analysis items (39,490 in total) from professional handball match video (mp4) and frames (jpg), with JSON player boxes and tracking, team stat events and tactical situations (such as cross, screen, fast-break attempt, middle four, feint assist, skip pass, number of defenders inside 9 m, referee decisions such as foul, yellow card, 2-minute suspension, blue card, red card). Baselines: tactical classification with R3D, accuracy 70.49%; team stat classification, accuracy 69.46%; player detection with YOLO v5, F1 0.8877. The metrics table writes the accuracy as 0.7049%, which looks like a typo. It covers about 150 handball matches and has the same structure as the football set 71482.",
+ "amount_ko": "전체 39,490건(이미지 분석 38,890건)",
+ "amount_en": "39,490 items (38,890 image-analysis items)",
+ "labels_ko": "선수 위치 상자와 추적, 작전 상황, 팀 기록",
+ "labels_en": "player boxes and tracking, tactic class, stat events",
+ "status": "full-run-2026-11-02"
+}

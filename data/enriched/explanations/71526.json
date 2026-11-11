@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71526",
+ "easy_ko": "청년부터 장년까지 500명이 평지, 비탈길, 계단을 오르내리며 걸을 때 찍은 사진과, 몸에 단 센서로 잰 움직임과 근육 신호, 발이 땅을 누르는 힘을 기록한 데이터입니다. 걷기를 돕는 입는 로봇을 움직이거나 걸음걸이를 분석하는 AI에 쓸 수 있습니다.",
+ "easy_en": "Photos and sensor recordings of 500 young and middle-aged adults walking on flat ground, slopes and stairs, capturing body movement, muscle signals and how hard the feet press on the ground. You can use it to control wearable walking-assist robots or build AI that analyses how people walk.",
+ "detail_ko": "19~64세 참여자 500명이 보행 환경 5종(평지보행, 경사로 오르기, 경사로 내려오기, 계단 오르기, 계단 내려오기, 각 10만 건)에서 걸은 보행 데이터 500,000건으로, 3면 촬영 이미지와 가속도·근전도·보행보조 로봇 관절 각도·동작분석·지면반력(force plate) 시계열(JSON)에 보행 단계 라벨이 붙어 있습니다. 기준 성능은 CNN 보행 환경 분류 정확도 92%입니다. 전체 약 166GB이고, 65세 이상 고령자와 보행 장애인은 포함되지 않으며, 이미지 형식은 'image'로만 적혀 있습니다.",
+ "detail_en": "500,000 walking records from 500 participants aged 19 to 64 in 5 walking environments (flat ground, up a slope, down a slope, up stairs, down stairs; 100,000 each), with images from three sides and JSON time series of acceleration, muscle signals (EMG), walking-assist robot joint angles, motion analysis and ground reaction force (force plate), labelled with gait phase. Baseline: walking-environment classification with a CNN, accuracy 92%. Total size is about 166 GB. People aged 65 and over and people with walking disabilities are not included, and the image format is listed only as 'image'.",
+ "amount_ko": "보행 데이터 500,000건, 참여자 500명, 보행 환경 5종",
+ "amount_en": "500,000 walking records, 500 participants, 5 walking environments",
+ "labels_ko": "걸음 단계, 걷는 환경",
+ "labels_en": "gait phase, walking environment",
+ "status": "full-run-2026-11-02"
+}

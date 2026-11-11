@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71763",
+ "easy_ko": "스마트 돼지 축사와 실험실에서 모은 돼지 숨쉬기와 바닥 사진에 돼지 위치와 몸 부위 점을 표시하고, 온도, 습도, 가스 농도, 체중, 체온 같은 측정값을 함께 담은 데이터입니다. 축사 환경을 자동으로 조절하고 에너지 사용을 예측하는 AI에 쓸 수 있습니다.",
+ "easy_en": "Photos of pigs breathing and of barn floors from smart pig barns and test chambers, with pig positions and body points marked, plus measurements such as temperature, humidity, gas levels, body weight and body temperature. You can use it to build AI that controls barn conditions automatically and predicts energy use.",
+ "detail_ko": "스마트 돈사·챔버에서 모은 돼지 이미지 400,153장(png; 호흡 300,130, 바닥 표면 100,023)에 상자·키포인트를 JSON으로 붙이고, 온도·습도·CO2·NH3 센서, 호흡량·증발량, 현열·잠열, 체중·체온 측정 등 텍스트 데이터 1,067,808건(csv; 센서 702,720 등)을 함께 제공합니다. 페이지에 성능 점수 표가 없고(HRNet 등 모델 소개만 있음), 2023년 2차년도 데이터라 다른 연도판과 함께 보면 좋습니다. 측정 항목별 건수 차이가 커서(현열 37,440 vs 센서 175,680) 시간 맞추기가 필요합니다.",
+ "detail_en": "400,153 pig images (png; 300,130 breathing, 100,023 floor surface) from smart barns and chambers with JSON boxes and keypoints, plus 1,067,808 text records (csv; 702,720 sensor records and more) such as temperature, humidity, CO2 and NH3 sensors, respiration and evaporation, sensible and latent heat, and body weight and temperature. There is no score table (only HRNet and other models are described). This is second-year (2023) data, best used with the other editions, and record counts differ widely by item (37,440 sensible heat vs. 175,680 sensor), so time alignment is needed.",
+ "amount_ko": "이미지 400,153장(호흡 300,130, 바닥 100,023), 텍스트 1,067,808건",
+ "amount_en": "400,153 images (300,130 breathing, 100,023 floor), 1,067,808 text records",
+ "labels_ko": "돼지 위치 상자, 몸 부위 점, 센서 측정값",
+ "labels_en": "bounding box, keypoints, sensor values",
+ "status": "full-run-2026-11-02"
+}

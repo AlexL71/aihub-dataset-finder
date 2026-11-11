@@ -1,0 +1,29 @@
+{
+ "dataset_id": "71925",
+ "title_en": "NEW synthetic financial transaction and user pattern data for anomaly detection",
+ "summary_ko": "실제 금융거래 패턴(금융결제원 전자금융공동망, 카드사 2021~2024년 데이터)을 반영해 민감정보 없이 만든 합성 거래 데이터 7,096,642건으로, 전자금융공동망 4,926,785건(이상거래 19,084건)과 카드거래 2,169,857건(이상거래 80,009건)입니다. 이상거래(사기) 탐지 AI 학습·검증에 쓸 수 있습니다.",
+ "summary_en": "7,096,642 synthetic transactions with no personal data, modelled on real 2021–2024 patterns (interbank e-payment network and card transactions): 4,926,785 e-payment records (19,084 anomalies) and 2,169,857 card records (80,009 anomalies). For training and validating fraud detection.",
+ "contents_ko": "거래 시계열 표(csv: 거래 정보, 사용자 패턴, 정상·이상 라벨).",
+ "contents_en": "Transaction time-series table (csv: transaction info, user patterns, normal/anomaly label).",
+ "modalities": ["tabular"],
+ "tasks": ["anomaly_detection", "tabular_prediction"],
+ "topics": [{"ko": "금융 보안", "en": "Financial security"}, {"ko": "합성 데이터", "en": "Synthetic data"}],
+ "keywords_ko": ["이상거래 탐지", "사기 탐지", "합성 데이터", "카드거래", "전자금융", "SMOTE"],
+ "keywords_en": ["anomaly detection", "fraud detection", "synthetic data", "card transactions", "electronic payments", "SMOTE"],
+ "labels": ["normal/anomaly label"],
+ "file_formats": ["csv"],
+ "scale_ko": "합성 7,096,642건(이상거래 99,093건), 원천 12,302,694건",
+ "classes_example": ["정상거래", "이상거래"],
+ "baseline": [],
+ "difficulty": "intermediate",
+ "difficulty_note_ko": "약 100MB로 가볍지만 이상거래가 약 1.4%뿐이라 불균형 처리가 핵심입니다.",
+ "skills_needed_ko": ["파이썬", "pandas", "불균형 분류(SMOTE, XGBoost)", "그래프 특징 기초"],
+ "caveats_ko": ["페이지에 성능 점수 표가 없음(그래프 특징 + SMOTE 모델 소개만 있음)", "전자금융 이상거래 비율이 약 0.39%로 매우 적음", "합성 데이터라 실제 사기 수법과 차이가 있을 수 있음", "합성 이상거래 수가 원천보다 많아(카드 80,009 vs 60,121) 증강된 것으로 보임"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "이상거래 패턴 분석", "title_en": "Fraud pattern analysis", "desc_ko": "정상·이상 거래의 시간대와 금액 차이를 그래프로 비교합니다.", "desc_en": "Compare time and amount of normal vs fraud transactions."},
+  {"level": "capstone", "title_ko": "카드 사기 탐지기", "title_en": "Card fraud detector", "desc_ko": "XGBoost로 이상거래를 찾고 정밀도·재현율로 평가합니다.", "desc_en": "Detect fraud with XGBoost and evaluate precision/recall."},
+  {"level": "research", "title_ko": "합성→실제 성능 검증", "title_en": "Synthetic-to-real validity", "desc_ko": "합성 데이터로 학습한 모델이 실제 거래에서도 통하는지 검증 방법을 연구합니다.", "desc_en": "Study whether synthetic-trained models hold on real data."}
+ ],
+ "doc_used": true,
+ "uncertain": []
+}

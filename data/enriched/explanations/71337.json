@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71337",
+ "easy_ko": "전국에서 모은 건설용 모래를 찍은 사진에 알갱이 크기 등급(안정·위험·불가), 모래 출처(육지·강·바다), 젖은 정도를 표시하고, 현미경 사진에는 위험한 광물 영역을 칠한 데이터입니다. 사진만으로 건설용 모래의 품질을 빠르게 판정하는 AI를 만들 수 있습니다.",
+ "easy_en": "Photos of construction sand collected across Korea, labelled with grain-size grade (stable, risky, unusable), origin (land, river, sea) and moisture, plus microscope images with harmful minerals coloured in. You can build AI that quickly judges construction sand quality from photos.",
+ "detail_ko": "전국 80개 지역 420개 모래 시료를 촬영한 입자 크기 이미지 약 51만 장(안정·위험·불가 등급, 육상·하천·바다 출처, 건조 상태)과 고배율 현미경 위험 광물 이미지 약 11만 장(분할)으로, 총 약 61만 장(png)과 JSON 라벨입니다. 기준 성능은 Inception-ResNet 모래 품질 등급 분류 정확도 96.16%입니다. 전체 약 1.8TB이며, 시료가 420개뿐이라 같은 시료 이미지가 학습·검증에 섞이지 않게 나눠야 하고(데이터 누수 주의), 바다·산림 출처 모래는 적습니다.",
+ "detail_en": "About 610k images (png): about 510k grain-size images of 420 sand samples from 80 regions (graded stable, risky or unusable; origin land, river or sea; moisture state) and about 110k high-magnification images of harmful minerals with segmentation, all with JSON labels. Baseline: Inception-ResNet sand-grade classification accuracy 96.16%. Total size is about 1.8 TB; with only 420 samples, split by sample to avoid leakage between train and validation; sea and forest sand is scarce.",
+ "amount_ko": "사진 약 61만 장(알갱이 51만, 광물 11만), 시료 420개",
+ "amount_en": "about 610k images (510k grain, 110k mineral), 420 samples",
+ "labels_ko": "알갱이 크기 등급, 모래 출처, 젖은 정도, 광물 영역",
+ "labels_en": "grain-size grade, origin, moisture, mineral masks",
+ "status": "full-run-2026-11-02"
+}

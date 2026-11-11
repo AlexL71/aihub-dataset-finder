@@ -1,0 +1,32 @@
+{
+ "dataset_id": "597",
+ "title_en": "Traffic accident video data",
+ "summary_ko": "블랙박스·CCTV 교통사고 영상 약 2.2만 건과 이미지 약 328만 장에 차량·사람 등 상자와 사고 장소(직선 도로·교차로·횡단보도 등), 사고 유형(차대차·차대보행자·차대자전거) 정보를 붙인 데이터입니다. 사고 상황을 분류하고 과실 비율을 추정하는 AI에 쓸 수 있습니다.",
+ "summary_en": "About 22,000 dashcam and CCTV traffic accident videos and about 3.28 million images, with boxes for vehicles and people, accident location (straight road, intersections, crosswalks and more) and accident type (car-car, car-pedestrian, car-bicycle). For AI that classifies accident situations and estimates fault ratios.",
+ "contents_ko": "사고 영상(mp4)·이미지(png) + JSON(상자, 사고 장소·유형, 과실 정보).",
+ "contents_en": "Accident videos (mp4) and images (png) + JSON (boxes, accident location and type, fault information).",
+ "modalities": ["video", "image"],
+ "tasks": ["action_recognition", "object_detection"],
+ "topics": [{"ko": "교통 안전", "en": "Traffic safety"}, {"ko": "자동차 보험", "en": "Car insurance"}],
+ "keywords_ko": ["교통사고", "블랙박스", "과실 비율", "CCTV", "자동차 보험"],
+ "keywords_en": ["traffic accidents", "dashcam", "fault ratio", "CCTV", "car insurance"],
+ "labels": ["bounding box", "accident location", "accident type", "fault ratio"],
+ "file_formats": ["mp4", "png", "json"],
+ "scale_ko": "영상 약 2.2만 건, 이미지 약 328만 장",
+ "classes_example": ["직선 도로", "사거리교차로(신호등 있음)", "T자형 교차로", "회전교차로", "횡단보도(신호등 없음)", "주차장"],
+ "baseline": [
+  {"task": "fault-situation video classification", "model": "VTN", "metric": "F1", "value": "0.7591"},
+  {"task": "object detection", "model": "DetectoRS", "metric": "mAP", "value": "83.4%"}
+ ],
+ "difficulty": "advanced",
+ "difficulty_note_ko": "전체 약 3.9TB로 매우 크고 영상 분류 모델이 필요합니다.",
+ "skills_needed_ko": ["파이썬", "영상 분류 모델", "YOLO 탐지"],
+ "caveats_ko": ["전체 약 3.9TB", "번호판·사람이 보일 수 있음", "차대차 직선 도로가 42%로 치우치고 보행자 사고는 적음", "과실 비율 라벨 형식은 팩 앞부분에서 확인 안 됨"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "사고 장소 분류", "title_en": "Accident location classifier", "desc_ko": "사고 영상 첫 장면으로 사고 장소 종류를 분류합니다.", "desc_en": "Classify accident location type from a video frame."},
+  {"level": "capstone", "title_ko": "블랙박스 과실 비율 추정기", "title_en": "Dashcam fault estimator", "desc_ko": "사고 영상을 올리면 상황과 예상 과실 비율을 보여줍니다.", "desc_en": "Upload a crash video and get the situation and estimated fault ratio."},
+  {"level": "research", "title_ko": "드문 사고 유형 학습", "title_en": "Learning rare accident types", "desc_ko": "보행자·자전거 사고처럼 적은 유형의 분류 성능을 높이는 방법을 연구합니다.", "desc_en": "Improve classification of rare types such as pedestrian and bicycle crashes."}
+ ],
+ "doc_used": true,
+ "uncertain": ["fault-ratio label format"]
+}

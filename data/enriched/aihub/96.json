@@ -1,0 +1,32 @@
+{
+ "dataset_id": "96",
+ "title_en": "Command speech (adults)",
+ "summary_ko": "일반 성인 남녀가 AI 비서·로봇·키오스크에 말하는 명령어 음성 4,000시간과 전사문입니다. 음성 명령을 알아듣는 한국어 음성 인식과 명령 이해 기술 개발에 쓸 수 있습니다.",
+ "summary_en": "4,000 hours of voice commands from adult men and women to AI assistants, robots and kiosks, with transcripts. For Korean speech recognition and command understanding.",
+ "contents_ko": "음성(wav) + 전사 텍스트 + JSON 메타정보(화자 성별·연령대, 녹음 환경, 명령어 분야).",
+ "contents_en": "Audio (wav) + transcript + JSON metadata (speaker sex and age group, recording environment, command category).",
+ "modalities": ["audio", "text"],
+ "tasks": ["speech_recognition", "text_classification"],
+ "topics": [{"ko": "음성 비서", "en": "Voice assistants"}, {"ko": "음성", "en": "Speech"}, {"ko": "스마트 기기", "en": "Smart devices"}],
+ "keywords_ko": ["음성 명령", "음성 인식", "AI 비서", "키오스크", "스마트홈", "전사"],
+ "keywords_en": ["voice commands", "speech recognition", "AI assistant", "kiosk", "smart home", "transcription"],
+ "labels": ["transcript", "speaker attributes", "command category"],
+ "file_formats": ["wav", "json"],
+ "scale_ko": "음성 4,000시간(구축량 576만)",
+ "classes_example": [],
+ "baseline": [
+  {"task": "speech recognition", "model": "Kaldi", "metric": "CER", "value": "1.87%"},
+  {"task": "speech recognition", "model": "Kaldi", "metric": "WER", "value": "11.82%"}
+ ],
+ "difficulty": "intermediate",
+ "difficulty_note_ko": "음성 인식 미세조정 실습용으로 좋지만 전체 약 620GB라 일부만 받아 쓰세요.",
+ "skills_needed_ko": ["파이썬", "오디오 처리", "음성 인식 모델 미세조정"],
+ "caveats_ko": ["전체 약 620GB"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "명령어 의도 분류기", "title_en": "Command intent classifier", "desc_ko": "전사문으로 조명 켜기·음악 재생 같은 명령 의도를 분류합니다.", "desc_en": "Classify intents such as lights on or play music from transcripts."},
+  {"level": "capstone", "title_ko": "음성으로 조작하는 스마트홈 데모", "title_en": "Voice-controlled smart home demo", "desc_ko": "음성 인식과 의도 분류를 이어 가상 기기를 조작하는 데모를 만듭니다.", "desc_en": "Chain speech recognition and intent classification to control virtual devices."},
+  {"level": "research", "title_ko": "소음 환경 명령어 인식", "title_en": "Command recognition in noise", "desc_ko": "녹음 환경별 오류를 분석하고 잡음 증강으로 성능을 높이는 방법을 연구합니다.", "desc_en": "Analyse errors by environment and improve with noise augmentation."}
+ ],
+ "doc_used": true,
+ "uncertain": ["클래스 목록을 페이지와 설명서에서 찾지 못함"]
+}

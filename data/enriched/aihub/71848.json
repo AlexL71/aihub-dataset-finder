@@ -1,0 +1,29 @@
+{
+ "dataset_id": "71848",
+ "title_en": "Criminal law LLM pretraining and instruction-tuning data",
+ "summary_ko": "형사법 법령·판결문·해석례·결정례 305만 문장과, 이를 바탕으로 만든 질의응답 59,292건·요약 40,708건(총 10만 건)의 지시 학습 데이터입니다. 형사법 상담 챗봇이나 법률 LLM 미세조정에 쓸 수 있습니다.",
+ "summary_en": "3.05 million sentences from criminal-law statutes, rulings, interpretations and decisions, plus 100,000 instruction items (59,292 QA, 40,708 summaries). For criminal-law chatbots and legal LLM fine-tuning.",
+ "contents_ko": "법률 원문 문장(csv) + 라벨(JSON: 질의응답, 요약).",
+ "contents_en": "Legal source sentences (csv) + labels (JSON: QA, summaries).",
+ "modalities": ["text"],
+ "tasks": ["question_answering", "summarization", "dialogue"],
+ "topics": [{"ko": "법률", "en": "Law"}, {"ko": "형사법", "en": "Criminal law"}],
+ "keywords_ko": ["형사법", "판결문", "해석례", "Instruction tuning", "질의응답", "LLM"],
+ "keywords_en": ["criminal law", "court rulings", "legal interpretations", "instruction tuning", "question answering", "LLM"],
+ "labels": ["question-answer", "summary"],
+ "file_formats": ["csv", "json"],
+ "scale_ko": "원천 3,050,000문장, 지시 학습 데이터 100,000건(질의응답 59,292·요약 40,708)",
+ "classes_example": ["법령", "판결문", "해석례", "결정례"],
+ "baseline": [],
+ "difficulty": "intermediate",
+ "difficulty_note_ko": "약 0.22GB 텍스트입니다. LLM 미세조정에는 GPU가 필요합니다.",
+ "skills_needed_ko": ["파이썬", "Hugging Face", "LLM 미세조정(LoRA)"],
+ "caveats_ko": ["판결문이 83%로 많고 결정례는 거의 없음(133건)", "모델 성능 수치가 팩에 없음", "71847 행정법 데이터와 같은 기관·구조"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "형사 판결 요약", "title_en": "Criminal ruling summariser", "desc_ko": "형사 판결문을 짧게 요약하는 모델을 미세조정합니다.", "desc_en": "Fine-tune a model to summarise criminal rulings."},
+  {"level": "capstone", "title_ko": "형사 절차 안내 챗봇", "title_en": "Criminal procedure chatbot", "desc_ko": "고소·수사 절차 질문에 법령과 판례를 근거로 쉽게 답하는 챗봇을 만듭니다.", "desc_en": "Explain criminal procedure with cited law and cases."},
+  {"level": "research", "title_ko": "법률 답변 환각 측정", "title_en": "Measuring legal hallucination", "desc_ko": "미세조정 전후로 LLM이 없는 법 조항을 지어내는 비율을 비교합니다.", "desc_en": "Compare invented-statute rates before and after tuning."}
+ ],
+ "doc_used": true,
+ "uncertain": []
+}

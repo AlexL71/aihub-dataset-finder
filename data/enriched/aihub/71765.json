@@ -1,0 +1,29 @@
+{
+ "dataset_id": "71765",
+ "title_en": "Virtual indoor space 3D synthetic data",
+ "summary_ko": "Unity 3D 등으로 직접 만든 가상 실내 공간 데이터로, 2D·3D 에셋이 배치된 3D 공간 모델 200건과 그 안에서 뽑은 실사풍 2D 이미지 4,000장이 있습니다. 3D 객체 큐보이드 200건, 2D 파놉틱 분할 4,000건, 7종 렌더링 이미지 32,000장이 라벨로 있어 실내 3D 모델링·디지털 트윈·XR AI에 쓸 수 있습니다.",
+ "summary_en": "Virtual indoor spaces built with tools such as Unity 3D: 200 3D space models with 2D/3D assets and 4,000 photo-like 2D images rendered from them. Labels: 200 3D cuboid sets, 4,000 panoptic segmentations and 32,000 renderings of 7 kinds. For indoor 3D modelling, digital twins and XR.",
+ "contents_ko": "3D 공간 모델(fbx) + 2D 이미지(jpg) + JSON(큐보이드, 파놉틱 분할) + 렌더링 이미지(jpg).",
+ "contents_en": "3D space model (fbx) + 2D image (jpg) + JSON (cuboids, panoptic segmentation) + rendered images (jpg).",
+ "modalities": ["3d", "image"],
+ "tasks": ["segmentation", "object_detection", "3d_reconstruction", "depth_estimation"],
+ "topics": [{"ko": "디지털 트윈", "en": "Digital twins"}, {"ko": "실내 3D 모델링", "en": "Indoor 3D modelling"}],
+ "keywords_ko": ["가상 실내 공간", "합성 데이터", "3D 에셋", "파놉틱 분할", "디지털 트윈", "TR3D"],
+ "keywords_en": ["virtual indoor space", "synthetic data", "3D assets", "panoptic segmentation", "digital twin", "TR3D"],
+ "labels": ["3D cuboid", "panoptic segmentation", "rendering"],
+ "file_formats": ["fbx", "jpg", "json"],
+ "scale_ko": "3D 공간 200건(공간당 에셋 30개 이상), 2D 이미지 4,000장, 렌더링 32,000장",
+ "classes_example": ["일반가구 > 소파, 의자, 책상, 침대", "주방가구 > 주방세트, 식탁, 후드", "욕실가구 > 세면대, 양변기, 욕조", "일반가전 > TV, 냉장고, 세탁기&건조기&스타일러", "인테리어가구 > 시계, 액자&장식패널, 쿠션"],
+ "baseline": [],
+ "difficulty": "advanced",
+ "difficulty_note_ko": "약 49GB이지만 3D 데이터(fbx, 점군) 처리 지식이 필요합니다. 2D 분할부터 시작하세요.",
+ "skills_needed_ko": ["파이썬", "분할 모델", "3D 점군·메시 처리", "Unity·Blender 기초"],
+ "caveats_ko": ["페이지에 성능 점수 표가 없음(TR3D 목표 mAP@0.25 65%·mAP@0.5 50%만 소개)", "합성 데이터라 실제 실내 사진과 차이가 있을 수 있음", "렌더링 7종 이름은 팩 앞부분에 없음"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "실내 이미지 분할", "title_en": "Indoor image segmentation", "desc_ko": "2D 이미지에서 가구·벽·바닥을 분할합니다.", "desc_en": "Segment furniture, walls and floors in 2D images."},
+  {"level": "capstone", "title_ko": "가구 3D 위치 찾기", "title_en": "3D furniture detection", "desc_ko": "3D 공간 모델에서 가구 큐보이드를 찾는 모델을 만듭니다.", "desc_en": "Detect furniture cuboids in 3D space models."},
+  {"level": "research", "title_ko": "합성→실제 전이", "title_en": "Synthetic-to-real transfer", "desc_ko": "합성 실내 데이터로 학습한 모델이 실제 사진에서도 잘 되게 하는 방법을 연구합니다.", "desc_en": "Study making models trained on synthetic rooms work on real photos."}
+ ],
+ "doc_used": true,
+ "uncertain": []
+}

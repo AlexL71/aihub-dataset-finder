@@ -1,0 +1,29 @@
+{
+ "dataset_id": "71814",
+ "title_en": "Survey question generation data",
+ "summary_ko": "전문 리서처가 만든 키워드 기반 설문 원천 데이터 11,372건과 개체·관계 라벨 97,957건으로 된 한국어 설문 문항 생성용 데이터입니다. 리서치 비전문가도 키워드만 넣으면 설문을 만들어 주는 AI에 쓸 수 있습니다.",
+ "summary_en": "11,372 keyword-based Korean survey source items written by professional researchers, with 97,957 entity and relation labels. For AI that generates survey questions from keywords so non-experts can build surveys.",
+ "contents_ko": "JSON(설문 문항, 키워드, 개체·관계).",
+ "contents_en": "JSON (survey questions, keywords, entities and relations).",
+ "modalities": ["text"],
+ "tasks": ["text_generation", "information_extraction"],
+ "topics": [{"ko": "설문·리서치", "en": "Survey research"}, {"ko": "생성형 AI", "en": "Generative AI"}],
+ "keywords_ko": ["설문 생성", "문항", "키워드", "개체명", "관계 추출", "리서치"],
+ "keywords_en": ["survey generation", "questionnaire", "keywords", "entities", "relation extraction", "market research"],
+ "labels": ["entity", "relation"],
+ "file_formats": ["json"],
+ "scale_ko": "원천 11,372건, 라벨 97,957건",
+ "classes_example": [],
+ "baseline": [],
+ "difficulty": "beginner",
+ "difficulty_note_ko": "약 0.1GB의 작은 텍스트라 노트북으로도 바로 실습할 수 있습니다.",
+ "skills_needed_ko": ["파이썬", "트랜스포머", "텍스트 생성"],
+ "caveats_ko": ["개체·관계 종류와 성능 지표가 팩 앞부분에 없음"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "키워드로 설문 문항 만들기", "title_en": "Questions from keywords", "desc_ko": "키워드를 넣으면 설문 문항을 생성합니다.", "desc_en": "Generate survey questions from keywords."},
+  {"level": "capstone", "title_ko": "설문지 자동 작성 도구", "title_en": "Survey builder tool", "desc_ko": "주제를 입력하면 문항과 보기를 갖춘 설문지를 만들어 줍니다.", "desc_en": "Build a full questionnaire from a topic."},
+  {"level": "research", "title_ko": "편향 없는 문항 생성", "title_en": "Unbiased question generation", "desc_ko": "유도 질문을 피하는 설문 문항 생성 방법을 연구합니다.", "desc_en": "Generate questions that avoid leading wording."}
+ ],
+ "doc_used": true,
+ "uncertain": ["개체·관계 종류", "설문 주제 분포"]
+}

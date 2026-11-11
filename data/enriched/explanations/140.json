@@ -1,0 +1,12 @@
+{
+ "dataset_id": "140",
+ "easy_ko": "가구, 종이, 플라스틱, 유리병, 캔, 페트병, 형광등 같은 생활 쓰레기를 휴대폰으로 여러 각도에서 찍고, 사진마다 쓰레기 위치와 종류, 망가진 정도를 표시한 데이터입니다. 쓰레기를 자동으로 분리수거해 주는 기계나 앱을 만들 수 있습니다.",
+ "easy_en": "Phone photos of household waste such as furniture, paper, plastic, glass bottles, cans, PET bottles and fluorescent lamps from several angles, each marked with where the item is, what it is and how damaged it is. You can build machines or apps that sort recycling automatically.",
+ "detail_ko": "생활 폐기물 15종 × 1만 건, 총 15만 건으로 1건당 사진 5~7장(원거리·정면·위·아래 등), 약 75만 장(jpg)입니다. JSON 라벨에는 바운딩박스·폴리곤, 종류, 세부 품목, 훼손 정도·색·형태·투명도, 주/야간, 실내/실외, 카메라 정보가 있습니다. 성능 지표 표는 페이지에 없으며 설명에는 YOLOv4 사용이 언급됩니다. 전체 약 330GB라 일부 종류만 받는 것이 좋고, 라벨에 촬영 GPS 좌표가 들어 있습니다.",
+ "detail_en": "150k items of household waste in 15 types (10k each), 5–7 phone photos per item (far, front, top, bottom and more), about 750k jpg photos. JSON labels give boxes and polygons, type, sub-item, damage, colour, shape, transparency, day/night, indoor/outdoor and camera info. No performance table on the page, though YOLOv4 is mentioned. Total size is about 330 GB, so download only some types; labels include GPS coordinates.",
+ "amount_ko": "사진 약 75만 장, 폐기물 15만 건, 15종",
+ "amount_en": "about 750k photos, 150k items, 15 types",
+ "labels_ko": "쓰레기 위치 상자·윤곽, 종류, 망가진 정도·색·모양",
+ "labels_en": "boxes and outlines around waste, type, damage, colour, shape",
+ "status": "full-run-2026-11-02"
+}

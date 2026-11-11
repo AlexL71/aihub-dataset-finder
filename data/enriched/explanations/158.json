@@ -1,0 +1,12 @@
+{
+ "dataset_id": "158",
+ "easy_ko": "한우 등심, 돼지 삼겹살의 자른 면, 닭고기 겉모습, 달걀 겉모습과 신선도를 찍은 사진마다 품질 등급을 붙인 데이터입니다. 사진만으로 고기와 달걀의 등급을 자동으로 매겨 주는 품질 검사 AI를 만들 수 있습니다.",
+ "easy_en": "Photos of cut surfaces of Korean beef sirloin and pork belly, whole chicken carcasses, and eggs (outside and freshness), each with a quality grade. You can build quality-check AI that grades meat and eggs automatically from photos.",
+ "detail_ko": "축산물 이미지 16만 건(한우 6만, 육우 1만, 돼지 1만, 닭 4만, 달걀 4만, jpg)에 품질 등급, 성별, 부위, 신선도 값(호우 유닛)을 JSON으로 붙였습니다. 기준 성능은 ResNeXt 소 도체 등급 정확도 97.97%, 적대적 오토인코더 + ResNet50 닭 도체 등급 macro F1 0.83입니다. 결과를 해석하려면 마블링 같은 등급 기준을 이해해야 합니다.",
+ "detail_en": "160k livestock-product images (Korean beef 60k, dairy beef 10k, pork 10k, chicken 40k, eggs 40k; jpg) with JSON quality grade, sex, cut and freshness value (Haugh unit). Baselines: ResNeXt beef carcass grade accuracy 97.97%, adversarial autoencoder + ResNet50 chicken carcass grade macro F1 0.83. Interpreting results requires understanding the grading rules, such as marbling.",
+ "amount_ko": "사진 16만 건",
+ "amount_en": "160k photos",
+ "labels_ko": "품질 등급, 성별, 부위, 신선도 값",
+ "labels_en": "quality grade, sex, cut, freshness value",
+ "status": "full-run-2026-11-02"
+}

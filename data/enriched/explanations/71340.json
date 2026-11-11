@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71340",
+ "easy_ko": "바다 밑바닥에 가라앉은 그물, 통발, 유리, 금속, 플라스틱, 나무, 밧줄, 타이어 같은 쓰레기 사진마다 위치와 영역, 물이 얼마나 맑은지와 찍은 거리를 표시한 데이터입니다. 바닷속 쓰레기가 얼마나 있는지 자동으로 파악하는 AI를 만들 수 있습니다.",
+ "easy_en": "Photos of rubbish lying on the sea floor, such as nets, traps, glass, metal, plastic, wood, ropes and tyres, each marked with position and area, water clarity and camera distance. You can build AI that automatically measures how much rubbish lies under the sea.",
+ "detail_ko": "해저 침적 쓰레기 9종(어망, 통발, 유리, 금속, 플라스틱, 나무, 로프, 타이어, 고무) 이미지 약 11만 장(jpg)에 객체 약 27만 개의 바운딩박스·분할, 종류, 투명도, 촬영 거리를 JSON으로 붙였습니다. 기준 성능은 YOLOv7 탐지 mAP 93.3%, Swin-L 분할 mIoU 84.2%입니다. 전체 약 241GB이며, 로프류가 많아 종류별로 치우쳐 있고, 71293·71328번 수중 데이터와 관련됩니다.",
+ "detail_en": "About 110k underwater images (jpg) of 9 types of sunken marine waste (nets, traps, glass, metal, plastic, wood, ropes, tyres, rubber), with JSON boxes and segmentation for about 270k objects, type, water clarity and camera distance. Baselines: YOLOv7 detection mAP 93.3%, Swin-L segmentation mIoU 84.2%. Total size is about 241 GB; ropes dominate; related to underwater datasets 71293 and 71328.",
+ "amount_ko": "물속 사진 약 11만 장, 쓰레기 약 27만 개, 9종",
+ "amount_en": "about 110k underwater images, about 270k objects, 9 types",
+ "labels_ko": "쓰레기 위치 상자·영역, 종류, 물 맑기, 찍은 거리",
+ "labels_en": "boxes and masks around waste, type, water clarity, distance",
+ "status": "full-run-2026-11-02"
+}

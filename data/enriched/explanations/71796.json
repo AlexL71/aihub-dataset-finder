@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71796",
+ "easy_ko": "어린이 보호구역에서 학교에 오가는 어린이와 시설물을 찍은 영상으로 만든 데이터 210만여 건에 어린이, 차량, 시설물 위치와 걷는 모습, 장소, 시간을 표시했습니다. 스쿨존의 위험한 걸음을 알아채고 어린이 사고를 막는 AI에 쓸 수 있습니다.",
+ "easy_en": "Over 2.1 million items made from video of children walking to and from school and of facilities in school zones, marking children, vehicles and facilities, how the children are walking, and the place and time. You can use it to build AI that spots risky walking in school zones and helps prevent accidents involving children.",
+ "detail_ko": "어린이 보호구역 등하교 영상 프레임 이미지(jpg) 2,103,741건에 어린이·차량·시설물 상자와 분할, 보행 유형, 위치·시간 정보를 JSON으로 붙였습니다. 전체 약 764GB이고, 어린이가 나오는 영상이라 개인정보·이용 조건을 꼭 확인해야 하며, 클래스·보행 유형 목록과 성능 지표는 팩 앞부분에 없습니다.",
+ "detail_en": "2,103,741 video-frame images (jpg) of children commuting and facilities in school zones, with JSON boxes and segmentation for children, vehicles and facilities, walking type, and location and time. Total size is about 764 GB. Children appear in the footage, so be sure to check personal-data terms; the class and walking-type lists and any metrics are not in the pack.",
+ "amount_ko": "2,103,741건",
+ "amount_en": "2,103,741 items",
+ "labels_ko": "어린이·차량·시설물 위치 상자와 영역, 걷는 모습",
+ "labels_en": "bounding box, segmentation, walking type",
+ "status": "full-run-2026-11-02"
+}

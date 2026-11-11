@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71359",
+ "easy_ko": "전라남도 가정과 상가·기업의 시간별 전기 사용량에, 가족 수·맞벌이 여부·집 형태·넓이 같은 가구 조사 정보와 날씨를 붙인 표 데이터입니다. 집마다 전기를 어떻게 쓰는지 분석해 알맞은 요금제를 추천하는 AI를 만들 수 있지만, 생활 모습이 드러날 수 있어 조심해야 합니다.",
+ "easy_en": "Hourly electricity use of homes, shops and businesses in South Jeolla, combined with household survey information such as family size, dual-income status, housing type and floor area, and weather. You can build AI that analyses how each home uses power and recommends a suitable rate plan, but daily routines can be revealed, so care is needed.",
+ "detail_ko": "전라남도 가정 3,800곳과 상가·기업 400곳(숙박/음식점, 제조업 등)의 시간별 전력 사용량 약 1.9억 개 값에 가구원 수·맞벌이 여부·주거 형태·면적·지역 등 유형 조사 정보와 날씨 데이터를 붙인 표(csv)입니다. 성능 지표 표는 비어 있습니다. 가정 전력 데이터라 개인 생활 패턴이 드러날 수 있어 주의가 필요하며, 전라남도 지역만 있습니다.",
+ "detail_en": "About 190M hourly electricity readings (csv) from 3,800 homes and 400 shops and businesses (lodging and restaurants, manufacturing and more) in South Jeolla, with survey attributes (household size, dual income, housing type, floor area, region) and weather data. The performance table is empty. Household power data can reveal daily routines, so handle it carefully; only South Jeolla is covered.",
+ "amount_ko": "가정 3,800곳 + 기업 400곳, 전력 값 약 1.9억 개",
+ "amount_en": "3,800 homes + 400 businesses, about 190M readings",
+ "labels_ko": "가구·기업 특성(가족 수, 집 형태, 업종 등)",
+ "labels_en": "household and business attributes (size, housing type, sector and more)",
+ "status": "full-run-2026-11-02"
+}

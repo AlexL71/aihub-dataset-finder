@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71380",
+ "easy_ko": "풍경, 사람, 물건 사진과 애니메이션 그림, 유명한 서양 그림을 화가들이 한국 전통 수묵화로 직접 다시 그린 작품과 그리는 과정 영상을 모은 데이터로, 그리는 기법과 종이 종류가 표시되어 있습니다. 사진이나 그림을 수묵화 느낌으로 바꿔 주는 AI를 만들 수 있습니다.",
+ "easy_en": "Korean traditional ink paintings that artists painted from photos of landscapes, people and objects, animation images and famous Western paintings, plus videos of the painting process, labelled with brush technique and paper type. You can build AI that turns photos or pictures into ink-painting style.",
+ "detail_ko": "화가들이 풍경·인물·사물 사진, 애니메이션 이미지, 유명 서양화를 한국 전통 수묵화로 그린 작품 이미지 7,325장(jpg, 300 DPI)과 제작 과정 영상 200건(mp4)에 대상, 원본 유형, 표현 기법(백묘법, 구륵법, 몰골법-발묵·파묵 등 9종), 난이도, 종이 재질(화선지, 순지 등) 태그를 JSON으로 붙였습니다. 기준 성능은 CycleGAN 화풍 변환 AMT 점수 46.93%, DCGAN 이미지 생성 Inception Score 2.21입니다. 전체 약 1.3TB로 대부분 영상이며, 원본 사진과 수묵화가 짝으로 제공되는지 불분명하고, 분포 표가 두 개이며 하나는 1,035건 기준에 기법 이름도 다릅니다.",
+ "detail_en": "7,325 ink-painting images (jpg, 300 DPI) that artists made from photos of landscapes, people and objects, animation images and famous Western paintings, plus 200 process videos (mp4), with JSON tags for subject, source type, technique (9 kinds such as outline, contour and boneless washes), difficulty and paper type. Baselines: CycleGAN style transfer AMT score 46.93%, DCGAN generation Inception Score 2.21. Total size is about 1.3 TB, mostly video; whether source photos are paired with paintings is unclear; there are two distribution tables, one based on 1,035 items with different technique names.",
+ "amount_ko": "수묵화 7,325장, 그리는 과정 영상 200건",
+ "amount_en": "7,325 ink paintings, 200 process videos",
+ "labels_ko": "그린 대상, 원본 종류, 그리는 기법, 난이도, 종이 종류",
+ "labels_en": "subject, source type, technique, difficulty, paper type",
+ "status": "full-run-2026-11-02"
+}

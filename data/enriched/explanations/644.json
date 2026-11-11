@@ -1,0 +1,12 @@
+{
+ "dataset_id": "644",
+ "easy_ko": "자연, 무기, 사람, 동물, 알람, 물건, 악기, 군용 운송수단, 생활, 기계·공구에서 나는 말이 아닌 소리를 녹음하고, 소리 종류와 계절·날씨·시간대·거리 정보를 붙인 데이터입니다. 소리만 듣고 사건이나 사고를 알아채거나 소음을 감시하는 AI를 만들 수 있습니다.",
+ "easy_en": "Recordings of non-speech sounds from nature, weapons, people, animals, alarms, objects, musical instruments, military vehicles, daily life and machines and tools, labelled with the sound type and the season, weather, time of day and distance. You can build AI that detects incidents from sound alone or monitors noise.",
+ "detail_ko": "말이 아닌 소리 약 4.5만 클립(mp3)에 대분류 10종(자연, 무기, 사람, 동물, 알람, 물체, 악기, 군부대 운송수단, 생활, 기계 및 공구)·중분류 28종·소분류 125종의 3단계 종류와 계절·날씨·시간대·거리 정보를 JSON으로 붙였습니다. 기준 성능은 ResNet 소리 분류 F1 0.6642로 낮습니다. 가을 녹음이 88%로 계절이 치우쳐 있고, 일부는 라이선스를 구매한 음원이라 사용 조건 확인이 필요합니다.",
+ "detail_en": "About 45k non-speech sound clips (mp3) labelled in JSON with a three-level scheme (10 main classes: nature, weapons, people, animals, alarms, objects, instruments, military transport, daily life, machines and tools; 28 middle and 125 fine classes) plus season, weather, time of day and distance. Baseline: ResNet sound classification F1 0.6642, which is low. 88% were recorded in autumn; some clips are licensed purchases, so check usage terms.",
+ "amount_ko": "소리 약 4.5만 클립, 세부 종류 125종",
+ "amount_en": "about 45k sound clips, 125 fine classes",
+ "labels_ko": "소리 종류(큰·중간·세부 분류), 계절·날씨·시간대·거리",
+ "labels_en": "sound class (three levels), season, weather, time of day, distance",
+ "status": "full-run-2026-11-02"
+}

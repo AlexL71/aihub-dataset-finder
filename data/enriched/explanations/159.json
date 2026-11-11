@@ -1,0 +1,12 @@
+{
+ "dataset_id": "159",
+ "easy_ko": "걷는 사람의 눈높이에서 인도, 골목, 건물 안을 찍은 영상에, 길을 막는 기둥(볼라드), 킥보드, 계단 같은 장애물 위치를 상자로 표시한 데이터입니다. 시각장애인이나 어르신의 길 안내 앱, 배달 로봇을 만들 수 있습니다.",
+ "easy_en": "Videos filmed at walking eye level on sidewalks, alleys and indoors, with obstacles such as bollards, scooters and stairs boxed. You can build walking-guide apps for blind or elderly people, or delivery robots.",
+ "detail_ko": "1인칭 보행 시점 영상 300시간(mp4)과 클립당 1~100장씩 뽑은 이미지 757,653장(png)으로, 바운딩박스 라벨 클립 18,680개(210시간)에 장애물 상자, 시점, 장소가 JSON으로 있습니다. 기준 성능은 YOLOv4 보행 장애물 탐지 mAP 68.62%입니다. 전체 약 1.6TB이며 거리의 사람 얼굴이 찍혔을 수 있어 비식별 여부 확인이 필요합니다.",
+ "detail_en": "300 hours of first-person walking video (mp4) and 757,653 images (png, 1–100 per clip), with 18,680 box-labelled clips (210 hours) carrying JSON obstacle boxes, viewpoint and place. Baseline: YOLOv4 walking-obstacle detection mAP 68.62%. Total size is about 1.6 TB; passers-by may be visible, so check de-identification.",
+ "amount_ko": "영상 300시간, 이미지 약 75.8만 장",
+ "amount_en": "300 hours of video, about 758k images",
+ "labels_ko": "장애물 위치 상자와 종류",
+ "labels_en": "boxes around obstacles, obstacle class",
+ "status": "full-run-2026-11-02"
+}

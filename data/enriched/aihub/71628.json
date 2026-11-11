@@ -1,0 +1,29 @@
+{
+ "dataset_id": "71628",
+ "title_en": "Rule-based situation awareness and action prediction image data",
+ "summary_ko": "지하철역 같은 공공장소에서 안내·배송·서빙 로봇이 주행하는 상황을 찍은 이미지 100,000장(1920×1080)에 객체·사람 다각형과 '어떤 상황이면 어떻게 행동해야 하는지' 같은 지식 기반 규칙 라벨이 붙은 데이터입니다. 판단 과정을 설명할 수 있는 로봇 자율주행 AI에 쓸 수 있습니다.",
+ "summary_en": "100,000 images (1920x1080) of guide, delivery and serving robots moving in public places such as subway stations, with object and person polygons and knowledge-based rule labels about what the robot should do in each situation. For explainable robot navigation AI.",
+ "contents_ko": "이미지(jpg) + JSON(객체·사람 다각형, 상황 규칙, 행동 라벨).",
+ "contents_en": "Image (jpg) + JSON (object and person polygons, situation rules, action labels).",
+ "modalities": ["image"],
+ "tasks": ["segmentation", "object_detection", "image_classification"],
+ "topics": [{"ko": "서비스 로봇", "en": "Service robots"}, {"ko": "설명 가능한 AI", "en": "Explainable AI"}],
+ "keywords_ko": ["안내 로봇", "상황 인지", "행동 예측", "규칙 기반 추론", "지하철", "그래프 신경망"],
+ "keywords_en": ["guide robot", "situation awareness", "action prediction", "rule-based reasoning", "subway", "graph neural network"],
+ "labels": ["polygon", "knowledge-based rule", "action"],
+ "file_formats": ["jpg", "json"],
+ "scale_ko": "이미지 100,000장",
+ "classes_example": ["주행 > 직진_일반, 좌회전_고속, 우회전_저속", "장애물 회피 > 정지 장애물 회피_좌회전_일반", "접근 장애물 회피_직진_고속", "정지"],
+ "baseline": [{"task": "object detection", "model": "AttNet (ResNet-50)", "metric": "Accuracy", "value": "71%"}, {"task": "rule-based situation recognition", "model": "GCN + MLP + HGP-SL", "metric": "Accuracy", "value": "97%"}],
+ "difficulty": "advanced",
+ "difficulty_note_ko": "약 36GB로 크지 않지만 객체 인식 결과를 그래프로 바꿔 규칙을 추론해야 해서 어렵습니다.",
+ "skills_needed_ko": ["파이썬", "분할 모델", "그래프 신경망"],
+ "caveats_ko": ["객체 클래스 목록이 팩 앞부분에 없음"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "역 안 사람·장애물 분할", "title_en": "People and obstacle segmentation", "desc_ko": "로봇 시점 이미지에서 사람과 장애물을 칠합니다.", "desc_en": "Segment people and obstacles in robot-view images."},
+  {"level": "capstone", "title_ko": "로봇 행동 추천", "title_en": "Robot action recommender", "desc_ko": "장면을 보고 '멈춤·우회·진행' 같은 행동을 추천하는 데모를 만듭니다.", "desc_en": "Recommend stop, detour or go from a scene."},
+  {"level": "research", "title_ko": "설명 가능한 로봇 판단", "title_en": "Explainable robot decisions", "desc_ko": "인식 결과와 규칙 추론을 나눠 판단 이유를 설명하는 방법을 연구합니다.", "desc_en": "Separate perception and rule reasoning to explain decisions."}
+ ],
+ "doc_used": true,
+ "uncertain": []
+}

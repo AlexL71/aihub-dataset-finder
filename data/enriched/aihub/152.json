@@ -1,0 +1,29 @@
+{
+ "dataset_id": "152",
+ "title_en": "Drone images of farmland (hyperspectral)",
+ "summary_ko": "드론에 단 초분광 카메라(150개 파장대)로 농경지를 찍고 현지 조사로 재배 작물 5종을 확인해 칠한 데이터 121만 건입니다. 작물별 재배 면적을 자동으로 계산하는 농업 생산 통계 AI에 쓸 수 있습니다.",
+ "summary_en": "1.21 million samples of farmland captured by a drone hyperspectral camera (150 wavelength bands), with 5 main crops painted after on-site surveys. For AI that calculates crop area automatically for agricultural statistics.",
+ "contents_ko": "초분광 영상 패치(128×128×150밴드) + JSON 분할 라벨(작물 종류).",
+ "contents_en": "Hyperspectral patch (128×128×150 bands) + JSON segmentation label (crop type).",
+ "modalities": ["image", "sensor"],
+ "tasks": ["segmentation", "image_classification"],
+ "topics": [{"ko": "농업·스마트팜", "en": "Agriculture and smart farming"}, {"ko": "드론·원격탐사", "en": "Drones and remote sensing"}, {"ko": "농업 통계", "en": "Agricultural statistics"}],
+ "keywords_ko": ["초분광", "드론", "농경지", "재배 면적", "작물 분류", "원격탐사"],
+ "keywords_en": ["hyperspectral", "drone", "farmland", "crop area", "crop classification", "remote sensing"],
+ "labels": ["segmentation mask (5 crops)"],
+ "file_formats": ["tif", "json"],
+ "scale_ko": "라벨링 데이터 1,214,578건, 작물 5종",
+ "classes_example": [],
+ "baseline": [{"task": "crop segmentation", "model": "DeepLabV3+", "metric": "pixel accuracy", "value": "88%"}],
+ "difficulty": "advanced",
+ "difficulty_note_ko": "150개 밴드 초분광 영상은 일반 RGB와 달라 전처리가 어렵고, 전체 약 6TB입니다.",
+ "skills_needed_ko": ["파이썬", "다중 밴드 영상 처리", "분할 모델", "차원 축소(PCA)"],
+ "caveats_ko": ["전체 약 6TB"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "작물별 반사 스펙트럼 비교", "title_en": "Spectral signatures by crop", "desc_ko": "작물마다 파장별 평균 반사값을 그래프로 비교합니다.", "desc_en": "Plot average reflectance per band for each crop."},
+  {"level": "capstone", "title_ko": "드론 사진으로 재배 면적 계산", "title_en": "Crop area from drone images", "desc_ko": "분할 결과로 작물별 면적을 계산해 지도로 보여줍니다.", "desc_en": "Compute and map crop area from segmentation results."},
+  {"level": "research", "title_ko": "필요한 밴드만 고르기", "title_en": "Selecting the most useful bands", "desc_ko": "150개 밴드 중 적은 수만 써도 분류 정확도를 유지할 수 있는지 연구합니다.", "desc_en": "Study whether a few selected bands keep classification accuracy."}
+ ],
+ "doc_used": true,
+ "uncertain": ["클래스 목록을 페이지와 설명서에서 찾지 못함"]
+}

@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71573",
+ "easy_ko": "안양, 판교, 대구 도로의 CCTV에서 뽑은 사진 약 200만 장에 자동차 번호판 글자와 차 종류, 모델 이름, 연식을 상자로 표시한 데이터입니다. CCTV로 차량을 알아보고 교통 흐름을 재는 AI에 쓸 수 있습니다.",
+ "easy_en": "About 2 million CCTV images from roads in Anyang, Pangyo and Daegu, with boxes marking licence-plate text and each vehicle's type, model name and year. You can use it to build AI that identifies vehicles from CCTV and measures traffic flow.",
+ "detail_ko": "안양·판교·대구 31개소 68개 CCTV 지점(교차로, 접근로, 이면도로)의 이미지 2,008,876장(jpg, UHD·FHD, 비식별; 번호판 인식 1,001,657 + 차종외관 인식 1,007,219)에 번호판 상자·문자, 차량 상자·차종(승용/승합, 버스, 소형·중형·대형화물차, 이륜차, 기타)·모델명·연식을 JSON으로 붙였습니다. 기준 성능은 YOLOv4 번호판 OCR 정확도 91.44%, 번호판 탐지 mAP 85.2%, TransFG 차종/모델/연식 분류 F1 0.901입니다. 전체 약 2.3TB이고, 승용/승합이 84.9%로 매우 많고 대형화물차는 0.1%뿐이며, 번호판은 개인정보에 가까워 사용 조건을 확인해야 합니다.",
+ "detail_en": "2,008,876 CCTV images (jpg, UHD/FHD, de-identified; 1,001,657 for plate recognition + 1,007,219 for vehicle appearance) from 68 cameras at 31 sites (intersections, approaches, side streets) in Anyang, Pangyo and Daegu, with JSON plate boxes and text, vehicle boxes, type (car/van, bus, small/medium/large truck, motorcycle, other), model name and year. Baselines: plate OCR with YOLOv4, accuracy 91.44%; plate detection mAP 85.2%; type/model/year classification with TransFG, F1 0.901. Total size is about 2.3 TB. Cars/vans make up 84.9% while large trucks are only 0.1%, and plates are close to personal data, so check the terms of use.",
+ "amount_ko": "이미지 2,008,876장(번호판 1,001,657 + 차종외관 1,007,219), CCTV 68곳",
+ "amount_en": "2,008,876 images (1,001,657 plate + 1,007,219 appearance), 68 CCTV cameras",
+ "labels_ko": "번호판 위치와 글자, 차량 위치, 차 종류, 모델 이름, 연식",
+ "labels_en": "bounding boxes, plate text, vehicle type, model name, model year",
+ "status": "full-run-2026-11-02"
+}

@@ -1,0 +1,33 @@
+{
+ "dataset_id": "574",
+ "title_en": "Smart barn (dairy cow) data",
+ "summary_ko": "스마트 축사에서 CCTV·카메라로 찍은 젖소 이미지에 사육 단계(포유기~경산우)별 걷기·서기·휴식·섭식·수면 같은 행동을 상자(약 68만 건)와 관절 키포인트(약 10만 건)로 표시하고, 젖소 소리 1,260건을 더한 데이터입니다. 젖소 행동·발정·건강을 자동으로 살피는 AI에 쓸 수 있습니다.",
+ "summary_en": "Images of dairy cows from CCTV and cameras in smart barns, with behaviours such as walking, standing, resting, eating and sleeping by growth stage marked with boxes (about 680,000) and body keypoints (about 100,000), plus 1,260 cow sound clips. For AI that watches cow behaviour, heat (oestrus) and health automatically.",
+ "contents_ko": "젖소·유방 이미지(png) + 소리(wav) + JSON(상자, 키포인트, 행동, 사육 단계).",
+ "contents_en": "Cow and udder images (png) + sound (wav) + JSON (boxes, keypoints, behaviour, growth stage).",
+ "modalities": ["image", "audio"],
+ "tasks": ["object_detection", "keypoint_pose", "action_recognition", "audio_classification"],
+ "topics": [{"ko": "축산", "en": "Livestock farming"}, {"ko": "동물 행동", "en": "Animal behaviour"}],
+ "keywords_ko": ["젖소", "스마트 축사", "행동 인식", "발정", "축산", "젖소 유방"],
+ "keywords_en": ["dairy cows", "smart barn", "behaviour recognition", "oestrus", "livestock", "udder"],
+ "labels": ["bounding box", "keypoint", "behaviour class", "growth stage", "sound label"],
+ "file_formats": ["png", "wav", "json"],
+ "scale_ko": "상자 약 68만 건, 키포인트 약 10만 건, 음성 1,260건",
+ "classes_example": ["걷기", "서기", "휴식", "섭식", "수면", "털손질", "머리흔듦"],
+ "baseline": [
+  {"task": "behaviour recognition", "model": "DetectoRS / PoseC3D / custom CNN", "metric": "accuracy", "value": "97.21%"},
+  {"task": "sound recognition", "model": "custom CNN", "metric": "accuracy", "value": "94.45%"},
+  {"task": "cow detection", "model": "DetectoRS", "metric": "mAP", "value": "97.32%"}
+ ],
+ "difficulty": "advanced",
+ "difficulty_note_ko": "전체 약 5.2TB로 매우 크고 이미지·키포인트·소리가 섞여 있습니다.",
+ "skills_needed_ko": ["파이썬", "YOLO 탐지", "자세 추정", "오디오 분류"],
+ "caveats_ko": ["전체 약 5.2TB", "575번 닭 축사 데이터와 같은 구축 기관·구조", "최근 2025-07에 수정됨"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "젖소 행동 분류", "title_en": "Cow behaviour classifier", "desc_ko": "젖소 사진으로 서기·휴식·섭식 등을 분류합니다.", "desc_en": "Classify standing, resting, eating and more from cow photos."},
+  {"level": "capstone", "title_ko": "발정 감지 알림", "title_en": "Heat-detection alert", "desc_ko": "행동 변화로 발정 의심 소를 찾아 농장주에게 알립니다.", "desc_en": "Flag cows likely in heat from behaviour changes and alert the farmer."},
+  {"level": "research", "title_ko": "영상+소리 결합 건강 진단", "title_en": "Video plus sound health check", "desc_ko": "행동과 울음소리를 함께 써서 이상 상태를 찾는 방법을 연구합니다.", "desc_en": "Combine behaviour and vocalisation to detect abnormal states."}
+ ],
+ "doc_used": true,
+ "uncertain": []
+}

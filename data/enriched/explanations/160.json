@@ -1,0 +1,12 @@
+{
+ "dataset_id": "160",
+ "easy_ko": "지하철역 CCTV 여러 대에 걸쳐 휠체어 이용자, 시각장애인, 유모차 이용자, 어린이 같은 교통약자를 계속 따라가며 표시한 영상 데이터입니다. 역 안에서 도움이 필요한 사람을 자동으로 찾아 안전을 지키는 CCTV AI를 만들 수 있습니다.",
+ "easy_en": "Subway-station CCTV video in which people who need extra help, such as wheelchair users, blind people, people with strollers and children, are followed across several cameras. You can build CCTV AI that spots people who need help in stations and keeps them safe.",
+ "detail_ko": "대전 도시철도 역사 CCTV 영상 500시간 이상(휠체어 160h, 시각장애인 80h, 유모차 60h, 아동 110h 등, 대상 6종, mp4)에 사람 바운딩박스, 추적 ID, 대상 종류를 JSON/XML로 붙였습니다. 기준 성능은 YOLOv5 + 추적기 다중 객체 추적 MOTA 65.79%입니다. 재식별 정확도가 10%로 적혀 있어 입력 오류로 보이며, 실제 승객 영상이라 이용 약관·개인정보 확인이 필요합니다.",
+ "detail_en": "500+ hours of CCTV video (mp4) from Daejeon subway stations (wheelchair users 160 h, blind people 80 h, stroller users 60 h, children 110 h and more; 6 target types), with JSON/XML person bounding boxes, tracking IDs and target type. Baseline: YOLOv5 + tracker MOTA 65.79%. A re-identification accuracy of 10% looks like an input error; these are real passengers, so check terms and privacy.",
+ "amount_ko": "영상 500시간 이상, 대상 6종",
+ "amount_en": "500+ hours of video, 6 target types",
+ "labels_ko": "사람 위치 상자, 같은 사람 번호(추적), 교통약자 종류",
+ "labels_en": "boxes around people, tracking ID, target type",
+ "status": "full-run-2026-11-02"
+}

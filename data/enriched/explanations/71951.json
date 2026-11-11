@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71951",
+ "easy_ko": "유럽연합(EU)의 개인정보 보호 규정(GDPR)과 AI 규정 관련 원문 글을 많이 모으고, 학습용 질문과 답 1만 건과 실력 확인용 객관식 문제 2,000건을 만든 데이터입니다. EU 규정을 이해하고 지키는 AI를 학습시키고 평가하는 데 쓸 수 있습니다.",
+ "easy_en": "A large collection of original EU texts on personal-data protection (GDPR) and AI rules, plus 10,000 training questions and answers and 2,000 four-option test questions. You can use it to train and evaluate AI that understands and follows EU regulations.",
+ "detail_ko": "EUR-Lex·EDPB 등 공개 문서와 구매한 심결례·보고서에서 모은 EU 개인정보(GDPR)·AI 규정 관련 원문 약 45,108,355토큰(JSON; 분류: 공식 규범 문서, 적용 및 해석 사례 문서, 정책, 실무, 교육 문서)을 바탕으로 학습용 질의응답 10,000건과 검증용 4지선다 벤치마크 2,000건을 만들었습니다. '병렬 코퍼스'라고 되어 있으나 어떤 언어 쌍인지 팩 앞부분에 없고, 구매한 비공개 자료가 포함되어 이용 조건을 확인해야 하며, 성능 지표 값은 팩 앞부분에 없습니다.",
+ "detail_en": "About 45,108,355 tokens of source text (JSON) on EU personal-data (GDPR) and AI regulations from public documents such as EUR-Lex and EDPB and purchased decisions and reports (types: official normative documents, application and interpretation cases, policy, practice and education documents), used to build 10,000 training question-answer pairs and a 2,000-item four-option benchmark. It is called a 'parallel corpus' but the language pair is not in the pack; purchased non-public material is included, so check the terms of use; no metric values are given.",
+ "amount_ko": "원천 약 45,108,355토큰, 질의응답 10,000건, 벤치마크 2,000건",
+ "amount_en": "about 45,108,355 source tokens, 10,000 QA pairs, 2,000 benchmark items",
+ "labels_ko": "질문과 답, 4지선다 시험 문제",
+ "labels_en": "question-answer, multiple-choice benchmark",
+ "status": "full-run-2026-11-02"
+}

@@ -1,0 +1,29 @@
+{
+ "dataset_id": "71417",
+ "title_en": "Speech recognition data in extreme noise",
+ "summary_ko": "공장·공사장·교통수단·공연장 같은 아주 시끄러운 환경(76dB 이상)에서 말한 음성 약 2,083시간과 전사입니다. 소음을 걸러 내고 음성을 또렷하게 만든 뒤 알아듣는 음성 인식 AI, 시끄러운 현장용 AI 스피커에 쓸 수 있습니다.",
+ "summary_en": "About 2,083 hours of speech with transcripts recorded in very loud places (76 dB+) such as factories, construction sites, transport and concert halls. For speech enhancement and noise-robust speech recognition.",
+ "contents_ko": "음성(wav) + JSON(전사, 소음 환경, 소음 크기).",
+ "contents_en": "Speech audio (wav) + JSON (transcript, noise environment, noise level).",
+ "modalities": ["audio"],
+ "tasks": ["speech_recognition"],
+ "topics": [{"ko": "음성 비서", "en": "Voice assistants"}, {"ko": "산업 현장 안전", "en": "Industrial workplace safety"}],
+ "keywords_ko": ["극한 소음", "음성 인식", "음성 향상", "잡음 제거", "공장", "공사장"],
+ "keywords_en": ["extreme noise", "speech recognition", "speech enhancement", "denoising", "factory", "construction site"],
+ "labels": ["transcription", "noise environment"],
+ "file_formats": ["wav", "json"],
+ "scale_ko": "약 2,083시간(교통수단 512.9·공사장 423.3·공장 512.9·시설류 325.2·기타 140.5·복합소음 168.1시간)",
+ "classes_example": ["교통수단", "공사장", "공장", "시설류", "기타", "복합소음"],
+ "baseline": [{"task": "speech intelligibility (96 dB+)", "model": "TSCN + ESPnet", "metric": "ESTOI", "value": "0.86"}, {"task": "ASR improvement (76-85 dB)", "model": "TSCN + ESPnet", "metric": "F1-score", "value": "0.24"}, {"task": "ASR improvement (96 dB+)", "model": "TSCN + ESPnet", "metric": "F1-score", "value": "0.15"}],
+ "difficulty": "advanced",
+ "difficulty_note_ko": "음성 향상과 인식을 함께 다뤄야 하고 전체 약 966GB입니다. 한 소음 환경만 받아 쓰세요.",
+ "skills_needed_ko": ["파이썬", "음성 인식 모델(Whisper·ESPnet)", "음성 향상·잡음 제거"],
+ "caveats_ko": ["전체 약 966GB", "ESTOI 기준값은 0.4~0.6 %, 측정값은 85 %로 단위 표기가 섞여 있음", "F1 '성능 향상도'가 무엇을 기준으로 한 향상인지 불분명", "71376 극한 소음 소리 데이터와 같은 기관·소음 분류"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "소음 크기별 인식률", "title_en": "Recognition accuracy by noise level", "desc_ko": "공개 음성 인식 모델의 오류율을 소음 크기 구간별로 비교합니다.", "desc_en": "Compare an open ASR model's error rate by noise level."},
+  {"level": "capstone", "title_ko": "공장 음성 명령 시스템", "title_en": "Factory voice command system", "desc_ko": "잡음 제거 후 음성 인식을 붙여 시끄러운 공장에서 명령을 알아듣게 합니다.", "desc_en": "Combine denoising and ASR so commands work in a loud factory."},
+  {"level": "research", "title_ko": "잡음 제거 전처리 효과", "title_en": "Effect of denoising front-ends", "desc_ko": "음성 향상 모델을 앞에 붙이면 인식 성능이 실제로 오르는지 소음 종류별로 연구합니다.", "desc_en": "Study whether enhancement front-ends improve ASR per noise type."}
+ ],
+ "doc_used": true,
+ "uncertain": []
+}

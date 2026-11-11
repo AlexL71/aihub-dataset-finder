@@ -1,0 +1,29 @@
+{
+ "dataset_id": "71806",
+ "title_en": "Psychological counselling data",
+ "summary_ko": "우울증·불안장애·중독 등 정신질환 내담자와 구조화된 상담 프로토콜로 진행한 심리상담 1,661건(약 1,661시간)의 음성을 전사한 텍스트(40만 토큰 이상)에 상담 내용 평가 라벨이 붙은 데이터입니다. 상담 대화 분석·요약과 정신건강 상담 지원 도구 연구에 쓸 수 있습니다.",
+ "summary_en": "1,661 structured counselling sessions (about 1,661 hours) with clients with depression, anxiety disorders or addiction, transcribed into 400,000+ tokens with content-evaluation labels. For counselling conversation analysis, summarisation and mental-health support tool research.",
+ "contents_ko": "상담 음성(mp3) + 전사(txt) + JSON(상담 내용 평가).",
+ "contents_en": "Counselling audio (mp3) + transcript (txt) + JSON (content evaluation).",
+ "modalities": ["text", "audio"],
+ "tasks": ["text_classification", "summarization", "sentiment_emotion"],
+ "topics": [{"ko": "정신 건강", "en": "Mental health"}, {"ko": "상담", "en": "Counselling"}],
+ "keywords_ko": ["심리상담", "우울증", "불안장애", "중독", "상담 요약", "정신건강"],
+ "keywords_en": ["psychological counselling", "depression", "anxiety disorder", "addiction", "session summary", "mental health"],
+ "labels": ["content evaluation", "transcript"],
+ "file_formats": ["mp3", "txt", "json"],
+ "scale_ko": "상담 1,661건(약 1,661시간), 전사 40만 토큰 이상",
+ "classes_example": ["우울증", "불안장애", "중독"],
+ "baseline": [],
+ "difficulty": "intermediate",
+ "difficulty_note_ko": "공개 텍스트는 약 70MB로 작지만 매우 민감한 정신건강 데이터라 윤리 검토가 먼저입니다.",
+ "skills_needed_ko": ["파이썬", "한국어 자연어 처리", "연구 윤리 이해"],
+ "caveats_ko": ["정신질환 상담 내용이라 이용 조건과 연구 윤리 승인을 꼭 확인해야 함", "AI 판단을 실제 진단에 바로 쓰면 안 됨", "파일 크기(약 0.07GB)로 보아 음성이 아닌 텍스트 위주로 공개된 것으로 보임", "성능 지표 값이 팩에 없음"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "상담 대화 주제 분류", "title_en": "Session topic classifier", "desc_ko": "상담 발화가 어떤 주제를 다루는지 분류합니다.", "desc_en": "Classify the topic of counselling utterances."},
+  {"level": "capstone", "title_ko": "상담 기록 요약 도우미", "title_en": "Session note summariser", "desc_ko": "상담 전사를 상담사용 요약 노트로 정리해 줍니다.", "desc_en": "Turn transcripts into summary notes for counsellors."},
+  {"level": "research", "title_ko": "상담 대화 패턴 분석", "title_en": "Counselling dialogue patterns", "desc_ko": "질환 유형별 상담 대화의 특징을 신중히 분석합니다.", "desc_en": "Carefully analyse dialogue features by condition type."}
+ ],
+ "doc_used": true,
+ "uncertain": ["음성 파일 공개 여부", "평가 라벨 항목"]
+}

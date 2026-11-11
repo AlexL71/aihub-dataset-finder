@@ -1,0 +1,29 @@
+{
+ "dataset_id": "71812",
+ "title_en": "Visualisation question answering data",
+ "summary_ko": "공공데이터포털·정책브리핑 등 공개 문서 10,000건에서 뽑은 차트·그래프 등 시각화 자료 이미지 40,774장에 캡션과 질의응답 150,000쌍이 붙은 데이터입니다. 차트를 읽고 질문에 답하거나 요약하는 AI에 쓸 수 있습니다.",
+ "summary_en": "40,774 chart and graph images taken from 10,000 open public documents, with captions and 150,000 question-answer pairs. For AI that reads charts, answers questions about them and summarises them.",
+ "contents_ko": "문서(pdf) + 시각화 이미지(png) + 텍스트 + JSON(질의응답·캡션).",
+ "contents_en": "Documents (pdf) + chart images (png) + text + JSON (QA, captions).",
+ "modalities": ["image", "text"],
+ "tasks": ["visual_qa", "image_captioning", "summarization"],
+ "topics": [{"ko": "문서 AI", "en": "Document AI"}, {"ko": "공공 문서", "en": "Public documents"}],
+ "keywords_ko": ["차트 질의응답", "그래프", "시각화", "캡션", "문서 요약", "공공행정"],
+ "keywords_en": ["chart QA", "graphs", "visualisation", "captions", "document summary", "public administration"],
+ "labels": ["question-answer", "caption"],
+ "file_formats": ["pdf", "png", "json", "txt"],
+ "scale_ko": "문서 10,000건, 시각화 이미지 40,774장, 질의응답 150,000쌍",
+ "classes_example": ["공공행정"],
+ "baseline": [],
+ "difficulty": "intermediate",
+ "difficulty_note_ko": "약 14GB이며, 이미지와 텍스트를 함께 다루는 멀티모달 모델이 필요합니다.",
+ "skills_needed_ko": ["파이썬", "멀티모달 모델", "트랜스포머"],
+ "caveats_ko": ["데이터 개요 설명이 팩에 비어 있음", "분야별 구성비와 성능 지표가 팩 앞부분에 다 나오지 않음"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "차트 종류 분류", "title_en": "Chart type classifier", "desc_ko": "시각화 이미지가 막대·선·원 그래프인지 분류합니다.", "desc_en": "Classify chart images by type."},
+  {"level": "capstone", "title_ko": "차트 질문 답변 봇", "title_en": "Chart Q&A bot", "desc_ko": "보고서 속 차트에 대해 질문하면 답해 주는 도구를 만듭니다.", "desc_en": "Answer questions about charts in reports."},
+  {"level": "research", "title_ko": "차트 수치 추론 정확도", "title_en": "Numeric reasoning on charts", "desc_ko": "차트에서 숫자를 정확히 읽고 계산하는 능력을 높이는 방법을 연구합니다.", "desc_en": "Improve exact number reading and reasoning on charts."}
+ ],
+ "doc_used": true,
+ "uncertain": ["분야 전체 목록", "시각화 종류 분포"]
+}

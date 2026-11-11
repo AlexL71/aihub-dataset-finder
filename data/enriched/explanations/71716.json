@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71716",
+ "easy_ko": "초등학생 서술형 수학 문제와 모범답안, 그리고 학생들이 손으로 쓴 풀이를 찍은 사진에, 문제 글자와 풀이 위치, 채점 결과를 붙인 데이터입니다. 학생이 쓴 풀이를 읽고 자동으로 채점하거나 풀이 과정을 보여 주는 AI 수학 선생님을 만들 수 있습니다.",
+ "easy_en": "Elementary-school written math problems with model answers, plus photos of students' handwritten solutions, marked with the problem text, where the solution is and how it was graded. You can build an AI math tutor that grades handwritten work or shows solution steps.",
+ "detail_ko": "초등 3~6학년 서술형 수학 문항·모범답안 이미지 34,392건과 학생 손글씨 풀이 이미지 183,085건(png·jpeg)에 문항 메타정보, OCR 텍스트, 풀이 영역 바운딩박스, 채점 라벨, 이미지 설명(6,638건)이 JSON으로 제공됩니다. 수식 표기 방식은 원문 확인이 필요하며, 성능 수치는 확인되지 않았습니다. AI 디지털 교과서의 자동 채점과 풀이 생성에 적합합니다.",
+ "detail_en": "34,392 problem and model-answer images and 183,085 handwritten student solutions (png/jpeg) for grades 3–6, with JSON item metadata, OCR text, solution-area boxes, grading labels and 6,638 image captions. Check how formulas are encoded; no performance values were found. Suited to automatic grading and solution generation for AI digital textbooks.",
+ "amount_ko": "문제 약 3.4만 건, 손글씨 풀이 약 18만 건",
+ "amount_en": "about 34k problems, about 183k handwritten solutions",
+ "labels_ko": "문제 글자, 풀이 위치 상자, 채점 결과, 그림 설명",
+ "labels_en": "problem text, box around the solution, grading result, picture description",
+ "status": "sample-2026-11-02"
+}

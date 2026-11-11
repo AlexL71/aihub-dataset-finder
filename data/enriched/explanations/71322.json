@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71322",
+ "easy_ko": "소와 돼지 농장에서 쓰는 축사 자재, 설비, 기계를 입체 모형으로 만들고, 각 모형을 여러 방향에서 찍은 사진에 기자재 종류를 붙인 데이터입니다. 컴퓨터 속에 축사를 똑같이 만들거나 축사 기자재를 자동으로 분류하는 AI를 만들 수 있습니다.",
+ "easy_en": "3D models of building materials, equipment and machines used in cattle and pig barns, plus photos of each model from many directions labelled with the equipment type. You can build digital copies of barns or AI that sorts barn equipment automatically.",
+ "detail_ko": "3개 도 50곳 이상의 소·돼지 농가에서 모은 축사 기자재 3D 모델 1,011개와 각 모델을 20방향에서 캡처한 2D 이미지 약 2만 장에 기자재 분류 16종(C01~C16 코드)을 JSON·csv로 붙였습니다. 기준 성능은 EfficientNet-B0 2D 기자재 분류 F1 0.9339입니다. 클래스가 코드로만 표기되어 뜻은 설명서 확인이 필요하고, C06·C07이 56%로 치우쳐 있으며, 3D 원본 형식이 기록에 csv로만 적혀 있고 파일 트리 용량(0.09GB)이 3D 데이터치고 매우 작습니다.",
+ "detail_en": "1,011 3D models of barn equipment collected from 50+ cattle and pig farms in 3 provinces, plus about 20k 2D captures (20 views per model), labelled with 16 equipment classes (codes C01–C16) in JSON and csv. Baseline: EfficientNet-B0 2D equipment classification F1 0.9339. Classes appear only as codes, so check the manual for their meaning; C06 and C07 make up 56%; the 3D format is listed only as csv, and the file tree (0.09 GB) is very small for 3D data.",
+ "amount_ko": "입체 모형 1,011개, 사진 약 2만 장, 16종",
+ "amount_en": "1,011 3D models, about 20k images, 16 classes",
+ "labels_ko": "기자재 종류(코드)",
+ "labels_en": "equipment class (code)",
+ "status": "full-run-2026-11-02"
+}

@@ -1,0 +1,33 @@
+{
+ "dataset_id": "629",
+ "title_en": "Robust sensor-fusion object recognition autonomous driving data",
+ "summary_ko": "자율주행차에 단 카메라 이미지 36만 장과 라이다(LiDAR, 레이저로 거리를 재는 센서) 36만 프레임에 차량·보행자 등 2D 상자·다각형과 3D 상자를 표시한 데이터입니다. 서로 다른 센서를 합쳐 물체를 더 튼튼하게 인식하는 자율주행 AI에 쓸 수 있습니다.",
+ "summary_en": "360,000 camera images and 360,000 LiDAR (laser distance sensor) frames from a self-driving car, with 2D boxes, polygons and 3D boxes for vehicles, pedestrians and more. For self-driving AI that recognises objects more robustly by fusing different sensors.",
+ "contents_ko": "카메라 이미지 + 라이다 포인트클라우드 + 센서 정보(txt) + JSON(2D 상자, 다각형, 3D 큐보이드).",
+ "contents_en": "Camera images + LiDAR point clouds + sensor info (txt) + JSON (2D boxes, polygons, 3D cuboids).",
+ "modalities": ["image", "3d"],
+ "tasks": ["object_detection", "segmentation"],
+ "topics": [{"ko": "자율주행", "en": "Autonomous driving"}, {"ko": "센서 융합", "en": "Sensor fusion"}],
+ "keywords_ko": ["자율주행", "라이다", "센서 융합", "3D 탐지", "포인트클라우드"],
+ "keywords_en": ["autonomous driving", "LiDAR", "sensor fusion", "3D detection", "point cloud"],
+ "labels": ["2D bounding box", "2D polygon", "3D cuboid"],
+ "file_formats": ["txt", "json"],
+ "scale_ko": "카메라 이미지 36만 장, 라이다 36만 프레임",
+ "classes_example": ["승용차(car)", "트럭(truck)", "버스(bus)", "기타 차량(other vehicles)", "보행자(pedestrian)", "오토바이(motorcycle)", "자전거(bicycle)", "무시 영역(dontcare)"],
+ "baseline": [
+  {"task": "3D detection (360° LiDAR)", "model": "SECOND", "metric": "mAP", "value": "76.6%"},
+  {"task": "3D detection (front/side LiDAR)", "model": "SECOND", "metric": "mAP", "value": "81.2%"},
+  {"task": "2D detection (camera)", "model": "YOLOv5", "metric": "mAP", "value": "82.8%"}
+ ],
+ "difficulty": "advanced",
+ "difficulty_note_ko": "카메라와 라이다를 함께 다뤄야 하고 전체 약 546GB입니다.",
+ "skills_needed_ko": ["파이썬", "YOLO 탐지", "포인트클라우드 3D 탐지", "센서 보정"],
+ "caveats_ko": ["전체 약 546GB", "이미지·포인트클라우드 파일 형식이 팩에 txt로만 적혀 있음", "630번 기상 주행 데이터와 같은 구축 기관"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "카메라 차량·보행자 탐지", "title_en": "Camera car and pedestrian detection", "desc_ko": "카메라 이미지에서 YOLO로 차량·보행자를 찾습니다.", "desc_en": "Detect cars and pedestrians in camera images with YOLO."},
+  {"level": "capstone", "title_ko": "라이다 3D 탐지 시각화", "title_en": "LiDAR 3D detection viewer", "desc_ko": "포인트클라우드에서 3D 상자를 예측해 화면에 보여줍니다.", "desc_en": "Predict 3D boxes from point clouds and visualise them."},
+  {"level": "research", "title_ko": "카메라+라이다 융합", "title_en": "Camera-LiDAR fusion", "desc_ko": "두 센서를 합치면 3D 탐지가 얼마나 좋아지는지 연구합니다.", "desc_en": "Study how fusing camera and LiDAR improves 3D detection."}
+ ],
+ "doc_used": true,
+ "uncertain": ["image and point-cloud file formats"]
+}

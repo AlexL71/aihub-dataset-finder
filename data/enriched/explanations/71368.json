@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71368",
+ "easy_ko": "실내외에서 사람들이 붐비는 모습을 CCTV와 연출 상황으로 찍은 사진마다 사람 머리 위치와 상자, 같은 사람 번호를 표시한 데이터입니다. 붐비는 곳에 사람이 몇 명 있고 어디로 움직이는지 예측해 압사 같은 사고를 막는 AI를 만들 수 있습니다.",
+ "easy_en": "Photos of indoor and outdoor crowds from CCTV and staged scenarios, with each person's head position, a box and an ID number marked. You can build AI that counts people in crowded places and predicts where they will move, to prevent crushes and similar accidents.",
+ "detail_ko": "CCTV와 연출 시나리오로 촬영한 실내외 군중 이미지 약 23만 장(jpg)과 원본 영상(mp4)에 사람 객체 약 470만 개의 헤드포인트, 바운딩박스, 추적 ID를 JSON으로 붙였습니다. 기준 성능은 PECNet 군중 이동 방향 예측 ADE 0.76, IIM 인원 수 추정 MAE 5.68입니다. 사람이 찍힌 CCTV라 개인정보·감시 윤리에 주의해야 하며, 시나리오 라벨은 영상 단위 JSON(184개)으로 묶여 있습니다.",
+ "detail_en": "About 230k crowd images (jpg) and source videos (mp4) from CCTV and staged scenarios indoors and outdoors, with JSON head points, boxes and track IDs for about 4.7M people. Baselines: PECNet crowd-direction prediction ADE 0.76, IIM crowd counting MAE 5.68. This is CCTV of real people, so mind privacy and surveillance ethics; scenario labels are grouped into 184 video-level JSON files.",
+ "amount_ko": "사진 약 23만 장, 사람 약 470만 명",
+ "amount_en": "about 230k images, about 4.7M people",
+ "labels_ko": "사람 머리 위치, 사람 상자, 같은 사람 번호",
+ "labels_en": "head points, person boxes, track IDs",
+ "status": "full-run-2026-11-02"
+}

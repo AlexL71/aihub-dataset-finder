@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71520",
+ "easy_ko": "동물병원과 보호센터, 훈련소에서 모은 강아지와 고양이 건강 기록 12만여 건으로, 사진과 함께 품종, 몸 치수, 먹이 관리, 병원 기록, 맥박 같은 정보가 있습니다. 반려동물이 살쪘는지 확인하는 등 건강 관리 AI에 쓸 수 있습니다.",
+ "easy_en": "Over 120,000 health records of dogs and cats from animal hospitals, shelters and training centres, with photos plus breed, body measurements, feeding care, medical records and vital signs such as pulse. You can use it to build pet health AI, for example to check whether a pet is overweight.",
+ "detail_ko": "동물병원·보호센터·훈련소에서 모은 반려견·반려묘 건강정보 120,365건과 메타데이터 4,000건으로, 사진(jpg)과 상자, 기본정보, 신체계측, 사양관리, 의학정보, 활력징후가 JSON으로 있습니다. 비만도는 BCS 1~3 저체중, 4~5 정상, 6~9 과체중으로 나뉩니다. 기준 성능은 ResNet, EfficientNet 비만도 분류 가중 F1 0.77입니다. 전체 약 357GB이고, 반려묘 데이터가 약 1,200건으로 매우 적으며, 타입(A·B·C)마다 들어 있는 항목이 다릅니다.",
+ "detail_en": "120,365 health records plus 4,000 metadata records of dogs and cats from animal hospitals, shelters and training centres, with photos (jpg) and JSON boxes, basic information, body measurements, feeding care, medical information and vital signs. Body condition is graded BCS 1-3 thin, 4-5 ideal and 6-9 heavy. Baseline: obesity classification with ResNet and EfficientNet, weighted F1 0.77. Total size is about 357 GB. Cat data is very small (about 1,200 records), and types A, B and C contain different fields.",
+ "amount_ko": "건강정보 120,365건, 메타데이터 4,000건(반려묘 약 1,200건)",
+ "amount_en": "120,365 health records, 4,000 metadata records (about 1,200 cats)",
+ "labels_ko": "동물 위치 상자, 비만도, 건강 기록 항목",
+ "labels_en": "bounding boxes, body condition score, health record fields",
+ "status": "full-run-2026-11-02"
+}

@@ -1,0 +1,29 @@
+{
+ "dataset_id": "487",
+ "title_en": "Videos for automatic inpainting",
+ "summary_ko": "운동·업무·여행·여가 등 일상을 찍은 영상 프레임 51.6만 장에 전경(사람·물체)과 배경을 분리한 마스크와 정답 배경 3,447장을 붙인 데이터입니다. 영상 속 불필요한 사람이나 물체를 지우고 자연스럽게 채우는 영상 편집 AI(인페인팅)에 쓸 수 있습니다.",
+ "summary_en": "516,000 video frames of everyday activities (exercise, work, travel, leisure) with foreground (people, objects) and background separated by masks, plus 3,447 ground-truth background frames. For video-editing AI that removes unwanted people or objects and fills the gap naturally (inpainting).",
+ "contents_ko": "영상 프레임(jpg/png) + 전경·배경 분할 마스크(JSON) + 정답 배경 프레임.",
+ "contents_en": "Video frames (jpg/png) + foreground/background masks (JSON) + ground-truth background frames.",
+ "modalities": ["image", "video"],
+ "tasks": ["segmentation", "image_generation"],
+ "topics": [{"ko": "영상 편집", "en": "Video editing"}, {"ko": "영상 콘텐츠 제작", "en": "Video content production"}],
+ "keywords_ko": ["인페인팅", "객체 제거", "전경 분리", "영상 편집", "배경 복원"],
+ "keywords_en": ["inpainting", "object removal", "foreground segmentation", "video editing", "background restoration"],
+ "labels": ["foreground/background mask", "ground-truth background"],
+ "file_formats": ["jpg", "png", "json"],
+ "scale_ko": "프레임 516,705장, 정답 배경 3,447장(전경 크기 10% 미만~30% 이상)",
+ "classes_example": ["운동", "업무", "여행", "여가"],
+ "baseline": [],
+ "difficulty": "advanced",
+ "difficulty_note_ko": "영상 인페인팅은 생성 모델과 시간 일관성을 다뤄야 해 어렵습니다. 약 540GB입니다.",
+ "skills_needed_ko": ["파이썬", "분할 모델", "영상 인페인팅 모델(E2FGVI 등)"],
+ "caveats_ko": ["정답 배경이 3,447장으로 적음", "성능 지표가 팩 앞부분에 없음"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "영상 속 사람 분할", "title_en": "Person segmentation in video", "desc_ko": "프레임에서 전경 사람 영역을 칠하는 분할 모델을 학습합니다.", "desc_en": "Train a model that paints foreground people in frames."},
+  {"level": "capstone", "title_ko": "여행 영상 지나가는 사람 지우기", "title_en": "Remove passers-by from travel videos", "desc_ko": "분할과 인페인팅을 이어 영상 속 행인을 지우는 데모를 만듭니다.", "desc_en": "Chain segmentation and inpainting to erase passers-by."},
+  {"level": "research", "title_ko": "전경 크기와 복원 품질", "title_en": "Foreground size and restoration quality", "desc_ko": "지울 물체 크기에 따라 인페인팅 품질이 어떻게 변하는지 분석합니다.", "desc_en": "Analyse how inpainting quality changes with object size."}
+ ],
+ "doc_used": true,
+ "uncertain": []
+}

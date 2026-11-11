@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71743",
+ "easy_ko": "컴퓨터 속 실내 공간에서 '집어서 놓기', '씻어서 놓기', '데워서 놓기', '살펴보기' 같은 일을 시키는 한국어 명령문 23만 개와 그 일을 하는 장면 사진을 모은 데이터입니다. 말로 시키면 순서대로 움직이는 로봇에 쓸 수 있습니다.",
+ "easy_en": "230,000 Korean instructions for tasks in virtual indoor spaces, such as 'pick up and place', 'wash and place', 'heat and place' and 'examine', with images of the scenes. You can use it to build robots that carry out spoken instructions step by step.",
+ "detail_ko": "가상 실내 공간에서 임무를 수행하는 한국어 명령어 230,000건(txt)과 수행 장면 이미지(png)에 임무 유형 8종 이상(Pick&Place, PickTwo&Place, Stack&Place, Cut&Place, Clean&Place, Heat&Place, Cool&Place, Examine), 의미·개체 분할, 깊이를 JSON으로 붙였습니다(ALFRED 방식). 페이지에 성능 점수 표가 없고(MOCHA 목표 Unseen SR 30%만 소개), 가장 작은 파일도 약 3GB이며, 가상 환경 데이터라 실제 로봇 적용에는 추가 검증이 필요합니다.",
+ "detail_en": "230,000 Korean task instructions (txt) for virtual indoor spaces with scene images (png) and JSON task type (8+ types: pick and place, pick two and place, stack and place, cut and place, clean and place, heat and place, cool and place, examine), semantic and instance segmentation and depth, in ALFRED style. There is no score table (only a MOCHA target of 30% unseen success rate), even the smallest file is about 3 GB, and since the environment is virtual, real robots need extra testing.",
+ "amount_ko": "명령어 230,000건, 임무 유형 8종 이상",
+ "amount_en": "230,000 instructions, 8+ task types",
+ "labels_ko": "임무 종류, 물체 영역, 깊이",
+ "labels_en": "task type, semantic segmentation, instance segmentation, depth",
+ "status": "full-run-2026-11-02"
+}

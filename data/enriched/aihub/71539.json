@@ -1,0 +1,29 @@
+{
+ "dataset_id": "71539",
+ "title_en": "Korean face 3D scanning data",
+ "summary_ko": "한국인 남녀 각 265명의 얼굴을 26가지 표정으로 3D 스캔한 데이터입니다. 얼굴 3D 모델(메시+텍스처), 2D 이미지, 얼굴 키포인트가 있어 사진 한 장으로 3D 얼굴을 만드는 AI나 가상 아바타 제작에 쓸 수 있습니다.",
+ "summary_en": "3D scans of 265 Korean men and 265 women each with 26 facial expressions: 3D face meshes with texture, 2D images and face keypoints. For single-photo 3D face reconstruction and avatars.",
+ "contents_ko": "얼굴 3D 모델(obj, gltf, 텍스처 png) + 2D 이미지 + JSON(키포인트, 성별·연령대·체형 정보).",
+ "contents_en": "Face 3D model (obj, gltf, png texture) + 2D image + JSON (keypoints, sex, age group, body type).",
+ "modalities": ["3d", "image"],
+ "tasks": ["3d_reconstruction", "keypoint_pose"],
+ "topics": [{"ko": "3D 얼굴·아바타", "en": "3D faces and avatars"}, {"ko": "메타버스", "en": "Metaverse"}],
+ "keywords_ko": ["3D 얼굴", "얼굴 표정", "3D 스캐닝", "아바타", "한국인"],
+ "keywords_en": ["3D face", "facial expressions", "3D scanning", "avatar", "Korean"],
+ "labels": ["keypoints", "expression", "sex", "age group", "BMI group"],
+ "file_formats": ["obj", "gltf", "png", "jpg", "json"],
+ "scale_ko": "얼굴 3D 데이터 13,780세트 (2D 원시 이미지 551,200장), 530명 × 26가지 표정",
+ "classes_example": ["표정 26종(A~Z, 0=무표정)", "BMI 등급", "연령대", "성별"],
+ "baseline": [{"task": "3D face reconstruction", "model": "DECA", "metric": "Reconstruction error", "value": "2.66"}],
+ "difficulty": "advanced",
+ "difficulty_note_ko": "3D 메시와 얼굴 모델(FLAME 등)을 다뤄야 하고 파일 하나가 9GB 이상으로 큽니다.",
+ "skills_needed_ko": ["파이썬", "3D 메시 다루기", "얼굴 3D 복원 모델"],
+ "caveats_ko": ["전체 약 372GB, 가장 작은 파일도 약 9GB", "얼굴 생체정보라 사용 조건을 꼭 확인", "재구성 오차 단위가 '단위없음'으로 적혀 있음"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "얼굴 3D 모델 시각화", "title_en": "Visualise face 3D models", "desc_ko": "3D 얼굴 메시를 불러와 표정별로 비교해 봅니다.", "desc_en": "Load face meshes and compare expressions."},
+  {"level": "capstone", "title_ko": "사진 한 장으로 아바타 만들기", "title_en": "Avatar from one photo", "desc_ko": "DECA 같은 모델을 미세조정해 사진에서 3D 얼굴을 만듭니다.", "desc_en": "Fine-tune a model like DECA to build a 3D face from a photo."},
+  {"level": "research", "title_ko": "표정 변화 3D 모델링", "title_en": "3D expression modelling", "desc_ko": "26가지 표정 데이터로 표정에 따른 얼굴 변형을 모델링합니다.", "desc_en": "Model face deformation across 26 expressions."}
+ ],
+ "doc_used": true,
+ "uncertain": ["26가지 표정 이름은 무표정 외에 찾지 못함 (얼굴 랜드마크는 68개)"]
+}

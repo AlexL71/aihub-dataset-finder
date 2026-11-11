@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71916",
+ "easy_ko": "세제, 섬유 세탁제, 접착제, 방향제 같은 생활 화학 제품 주성분이 몸에 얼마나 해로운지 모은 자료 10만 건과 이를 바탕으로 만든 질문과 답 20만 건입니다. 생활 화학 제품 안전 정보 챗봇이나 규제 대응을 돕는 AI에 쓸 수 있습니다.",
+ "easy_en": "100,000 records on how harmful the main ingredients of household chemical products are, such as cleaners, laundry products, adhesives and air fresheners, plus 200,000 questions and answers built from them. You can use it to build safety-information chatbots for household chemicals or AI that helps with regulations.",
+ "detail_ko": "켐토피아 DB, 공공기관 누리집, 물질안전보건자료(MSDS), 해외 DB(ECHA, PubChem 등)에서 모은 생활화학제품 주성분 유해성 원천 100,000건(JSON: 성분, 유해성, GHS 분류)과 이를 바탕으로 만든 질의응답 200,000건(원천 1건당 2쌍)으로, 제품 분류는 세정, 세탁, 코팅, 접착·접합, 방향·탈취, 염색·도색, 자동차 전용 제품입니다. 페이지에 성능 점수 표가 없고, 자동차 전용 제품이 0.5%로 적으며, 규제·독성 정보는 갱신될 수 있어 최신 출처를 확인해야 합니다.",
+ "detail_en": "100,000 source records (JSON: ingredient, hazard, GHS classification) on the main ingredients of household chemical products, collected from the Chemtopia DB, public-agency websites, safety data sheets (MSDS) and overseas databases (ECHA, PubChem and others), plus 200,000 question-answer pairs (2 per record), across cleaning, laundry, coating, adhesive, air-freshener/deodoriser, dye/paint and car-only products. There is no score table; car-only products are 0.5%; and regulatory and toxicity information can change, so check the latest sources.",
+ "amount_ko": "원천 100,000건, 질의응답 200,000건",
+ "amount_en": "100,000 source records, 200,000 QA pairs",
+ "labels_ko": "질문과 답",
+ "labels_en": "question-answer",
+ "status": "full-run-2026-11-02"
+}

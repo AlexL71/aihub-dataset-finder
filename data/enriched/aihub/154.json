@@ -1,0 +1,32 @@
+{
+ "dataset_id": "154",
+ "title_en": "Farmed fish individual images",
+ "summary_ko": "넙치·조피볼락·참돔·감성돔·돌돔 등 주요 양식 어종 5종의 개체 사진 50만 장과 수질 측정 데이터 80만 건입니다. 어종, 성장 단계(치어·준성어·성어), 어병 유무가 표시되어 있어 스마트 양식장의 물고기 관리 AI에 쓸 수 있습니다.",
+ "summary_en": "500,000 photos of individual fish from 5 major farmed species (olive flounder, rockfish, red sea bream, black sea bream, striped beakfish) plus 800,000 water-quality records. Species, growth stage (fry, juvenile, adult) and disease presence are labelled, for fish-management AI in smart fish farms.",
+ "contents_ko": "어류 사진 + JSON(어종, 성장 단계, 어병 유무, 상자) + 수질 측정 JSON(수온, 용존산소 등).",
+ "contents_en": "Fish photo + JSON (species, growth stage, disease yes/no, box) + water-quality JSON (temperature, dissolved oxygen and so on).",
+ "modalities": ["image", "sensor"],
+ "tasks": ["image_classification", "object_detection"],
+ "topics": [{"ko": "수산·양식", "en": "Fisheries and aquaculture"}, {"ko": "물고기", "en": "Fish"}, {"ko": "동물 건강", "en": "Animal health"}],
+ "keywords_ko": ["양식", "넙치", "참돔", "어종 분류", "어병", "성장 단계", "스마트 양식"],
+ "keywords_en": ["aquaculture", "flounder", "sea bream", "fish species", "fish disease", "growth stage", "smart fish farm"],
+ "labels": ["class (species, growth stage, disease)", "bounding box"],
+ "file_formats": ["jpg", "json"],
+ "scale_ko": "어류 이미지 502,000개(5종 각 약 10만), 수질 데이터 797,259개",
+ "classes_example": ["넙치", "조피볼락", "참돔", "감성돔", "돌돔", "치어", "준성어", "성어"],
+ "baseline": [
+  {"task": "species recognition", "model": "EfficientDet D2", "metric": "Top-1 accuracy", "value": "99.66%"},
+  {"task": "growth stage classification", "model": "EfficientNet B0", "metric": "Top-1 accuracy", "value": "93.21%"}
+ ],
+ "difficulty": "beginner",
+ "difficulty_note_ko": "약 89GB로 다룰 만하고 클래스가 단순해 첫 분류 실습에 좋습니다.",
+ "skills_needed_ko": ["파이썬 기초", "전이학습 이미지 분류"],
+ "caveats_ko": ["기준 정확도가 매우 높아 쉬운 과제일 수 있음(촬영 조건이 일정)"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "양식 어종 분류기", "title_en": "Farmed fish species classifier", "desc_ko": "사진으로 5개 어종을 분류합니다.", "desc_en": "Classify the 5 species from photos."},
+  {"level": "capstone", "title_ko": "어병 의심 개체 알림", "title_en": "Sick-fish alert", "desc_ko": "어병 유무 분류와 수질 데이터를 합쳐 양식장 관리 대시보드를 만듭니다.", "desc_en": "Combine disease classification with water data in a farm dashboard."},
+  {"level": "research", "title_ko": "수질과 어병 발생의 관계", "title_en": "Water quality and fish disease", "desc_ko": "수질 변화가 어병 발생과 어떤 관계가 있는지 분석합니다.", "desc_en": "Analyse how water-quality changes relate to disease outbreaks."}
+ ],
+ "doc_used": true,
+ "uncertain": []
+}

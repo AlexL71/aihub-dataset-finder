@@ -1,0 +1,29 @@
+{
+ "dataset_id": "71390",
+ "title_en": "Site exploration data for underground greenhouse-gas storage",
+ "summary_ko": "경상권(장기분지 등)의 지질도·시추 기록·지구물리 탐사·지질 단면도를 표준화한 이미지 약 8.8만 장입니다. 땅속 지층 구조를 추정하고 이산화탄소를 땅속에 저장하기 좋은 장소를 예측하는 AI에 쓸 수 있습니다.",
+ "summary_en": "About 88k standardised images of geological maps, borehole logs, geophysical surveys and cross-sections from the Gyeongsang region. For AI that infers underground layers and predicts good sites for storing CO2 underground.",
+ "contents_ko": "지질 이미지(tif) + 라벨(tif 분할 영상, JSON; 지층·암상, 저장 적지 정답).",
+ "contents_en": "Geology image (tif) + labels (tif masks, JSON; rock units, storage-site ground truth).",
+ "modalities": ["image"],
+ "tasks": ["segmentation", "image_generation"],
+ "topics": [{"ko": "탄소중립·기후", "en": "Carbon neutrality and climate"}, {"ko": "지질·지구과학", "en": "Geology and earth science"}],
+ "keywords_ko": ["온실가스", "이산화탄소 저장", "지질도", "시추", "지질 단면", "지층"],
+ "keywords_en": ["greenhouse gas", "CO2 storage", "geological map", "borehole", "cross-section", "strata"],
+ "labels": ["segmentation mask", "rock unit"],
+ "file_formats": ["tif", "json"],
+ "scale_ko": "이미지 87,771장(지질도 24,800·시추 48,000·물리탐사 4,855·단면도 5,058·적지 정답 5,058 등)",
+ "classes_example": ["경상누층군 신동층군 낙동층", "경상누층군 신동층군 진주층", "경상누층군 신동층군 하산동층", "경상누층군 유천층군 다대포층"],
+ "baseline": [{"task": "geological cross-section generation", "model": "NeRF", "metric": "pixel accuracy", "value": "82.95%"}, {"task": "storage site prediction", "model": "U-Net", "metric": "pixel accuracy", "value": "77.5%"}],
+ "difficulty": "advanced",
+ "difficulty_note_ko": "용량은 약 11GB로 작지만 지질학 배경지식이 필요합니다. 지구과학·자원공학 전공자와 함께하면 좋습니다.",
+ "skills_needed_ko": ["파이썬", "분할 모델(U-Net)", "tif·지리 데이터 처리", "지질학 기초"],
+ "caveats_ko": ["실제 AI 모델에 쓴 이미지는 일부(예: 지질도 30장)뿐임", "원본 자료는 지오빅데이터 오픈플랫폼에서 가져온 것", "경상권 한 지역만 대상"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "지질도 암상 시각화", "title_en": "Geological map visualisation", "desc_ko": "지질도 tif를 읽어 암상별로 색을 입히고 면적 비율을 계산합니다.", "desc_en": "Load geology tifs, colour rock units and compute area shares."},
+  {"level": "capstone", "title_ko": "CO2 저장 적지 예측 지도", "title_en": "CO2 storage suitability map", "desc_ko": "U-Net으로 단면도에서 저장 적지 영역을 예측해 지도에 표시합니다.", "desc_en": "Predict storage-suitable zones on cross-sections with U-Net and map them."},
+  {"level": "research", "title_ko": "시추 자료로 단면 생성", "title_en": "Cross-sections from boreholes", "desc_ko": "드문드문 있는 시추 자료로 연속된 지질 단면을 생성하는 방법을 연구합니다.", "desc_en": "Study generating continuous cross-sections from sparse borehole data."}
+ ],
+ "doc_used": true,
+ "uncertain": ["단면 생성에 NeRF를 썼다고 표기되어 있으나 방법 세부는 페이지에 없음"]
+}

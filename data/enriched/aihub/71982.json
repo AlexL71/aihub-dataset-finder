@@ -1,0 +1,29 @@
+{
+ "dataset_id": "71982",
+ "title_en": "Nail and pedicure data",
+ "summary_ko": "직접 촬영하거나 네일아트 협력사에서 구매한 손발 포즈 이미지 80,000장(분할 라벨 2,000건)과 네일 디자인 이미지 20,058장(폴리곤 라벨 374,008건), 총 100,058장으로 된 데이터입니다. 라운드·오벌·스퀘어 등 손톱 모양별로 구성되며, 네일·페디큐어 가상 피팅과 맞춤 디자인 추천에 쓸 수 있습니다.",
+ "summary_en": "100,058 images: 80,000 hand and foot pose images (2,000 segmentation labels) and 20,058 nail design images (374,008 polygon labels), shot in-house or bought from nail-art partners. Nail shapes include rounded, oval and square. For virtual nail and pedicure try-on and personalised design recommendation.",
+ "contents_ko": "이미지(png) + 분할·폴리곤 라벨.",
+ "contents_en": "Images (png) + segmentation and polygon labels.",
+ "modalities": ["image", "3d"],
+ "tasks": ["segmentation", "image_classification", "retrieval_recommendation"],
+ "topics": [{"ko": "뷰티", "en": "Beauty"}, {"ko": "가상 피팅", "en": "Virtual try-on"}],
+ "keywords_ko": ["네일아트", "페디큐어", "손톱 분할", "가상 피팅", "디자인 추천", "손톱 모양"],
+ "keywords_en": ["nail art", "pedicure", "nail segmentation", "virtual try-on", "design recommendation", "nail shape"],
+ "labels": ["segmentation", "polygon"],
+ "file_formats": ["png"],
+ "scale_ko": "원천 100,058장(손발 포즈 80,000장, 디자인 20,058장), 라벨 분할 2,000건·폴리곤 374,008건",
+ "classes_example": ["Rounded", "Oval", "Square", "Almond", "Ballerina"],
+ "baseline": [],
+ "difficulty": "intermediate",
+ "difficulty_note_ko": "약 230GB로 크지만 디자인 데이터만 따로 받아 실습할 수 있습니다.",
+ "skills_needed_ko": ["파이썬", "분할 모델", "PyTorch"],
+ "caveats_ko": ["손발 포즈 이미지 80,000장 중 분할 라벨은 2,000건뿐임", "데이터 개요 설명이 팩에 비어 있음", "데이터 유형에 3D가 있으나 3D 파일 형식이 팩 앞부분에 없음", "성능 지표 값이 팩 앞부분에 없음"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "손톱 모양 분류", "title_en": "Nail shape classifier", "desc_ko": "디자인 이미지의 손톱 모양을 분류합니다.", "desc_en": "Classify nail shapes in design images."},
+  {"level": "capstone", "title_ko": "네일 가상 피팅 앱", "title_en": "Virtual nail try-on app", "desc_ko": "손 사진의 손톱을 분할하고 디자인을 입혀 보여 줍니다.", "desc_en": "Segment nails in a hand photo and apply designs."},
+  {"level": "research", "title_ko": "적은 라벨로 손톱 분할", "title_en": "Label-efficient nail segmentation", "desc_ko": "라벨 없는 포즈 이미지를 활용해 분할 성능을 높이는 방법을 연구합니다.", "desc_en": "Use unlabelled pose images to boost segmentation."}
+ ],
+ "doc_used": true,
+ "uncertain": ["3D 데이터 포함 여부", "디자인 라벨 항목"]
+}

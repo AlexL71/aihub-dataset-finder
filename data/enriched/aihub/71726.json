@@ -1,0 +1,29 @@
+{
+ "dataset_id": "71726",
+ "title_en": "Baseball key rule judgement video data",
+ "summary_ko": "KBO와 독립리그·대학·고교 경기, 자체 경기 영상에서 뽑은 이미지 약 20만 장으로, 스트라이크/볼, 파울/페어, 세이프/아웃, 파울/헛스윙 판정 장면이 상자와 다각형으로 표시되어 있습니다. 공 궤적 영상·데이터 6,600세트도 있어 AI 심판(로봇 심판) 판정 모델에 쓸 수 있습니다.",
+ "summary_en": "About 200k images from KBO, independent-league, college, high-school and own games, with strike/ball, foul/fair, safe/out and foul/swinging-strike scenes marked by boxes and polygons, plus 6,600 sets of ball-trajectory video and data. For AI umpire judgement models.",
+ "contents_ko": "경기 이미지(jpg) + JSON(상자, 다각형, 판정 종류) + 공 궤적 영상(mp4·avi)·궤적 데이터(txt).",
+ "contents_en": "Game image (jpg) + JSON (boxes, polygons, call type) + ball-trajectory video (mp4, avi) and data (txt).",
+ "modalities": ["image", "video", "text"],
+ "tasks": ["object_detection", "image_classification", "object_tracking"],
+ "topics": [{"ko": "스포츠 판정", "en": "Sports officiating"}, {"ko": "야구 분석", "en": "Baseball analytics"}],
+ "keywords_ko": ["야구", "로봇 심판", "스트라이크 존", "공 궤적", "판정", "객체 탐지"],
+ "keywords_en": ["baseball", "robot umpire", "strike zone", "ball trajectory", "officiating", "object detection"],
+ "labels": ["bounding box", "polygon", "call type", "trajectory"],
+ "file_formats": ["jpg", "json", "mp4", "avi", "txt"],
+ "scale_ko": "판정 이미지 199,530장, 공 궤적 6,600세트",
+ "classes_example": ["스트라이크", "볼", "파울", "페어", "세이프", "아웃", "헛스윙"],
+ "baseline": [],
+ "difficulty": "advanced",
+ "difficulty_note_ko": "판정은 공 궤적·타자 자세를 함께 봐야 하고 전체 약 1.6TB입니다. 세이프/아웃 이미지부터 시작하세요.",
+ "skills_needed_ko": ["파이썬", "YOLO 탐지", "이미지 분류", "3D 궤적 계산 기초"],
+ "caveats_ko": ["전체 약 1.6TB", "페이지에 성능 점수 표가 없음(ResNet-50 변형 모델 소개만 있음)", "볼(75,000)과 스트라이크(57,000)가 대부분이고 파울/헛스윙은 각 약 4,000"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "세이프/아웃 분류", "title_en": "Safe/out classifier", "desc_ko": "베이스 장면 이미지를 세이프와 아웃으로 분류합니다.", "desc_en": "Classify base-play images as safe or out."},
+  {"level": "capstone", "title_ko": "사회인 야구 판정 보조", "title_en": "Amateur league call assistant", "desc_ko": "영상에서 판정 장면을 찾아 AI 판정과 근거 화면을 보여 주는 도구를 만듭니다.", "desc_en": "Find call moments in video and show AI calls with evidence frames."},
+  {"level": "research", "title_ko": "궤적 기반 스트라이크 판정", "title_en": "Trajectory-based strike calls", "desc_ko": "공 궤적과 타자 자세로 스트라이크 존 판정 정확도를 높이는 방법을 연구합니다.", "desc_en": "Study strike calls from ball trajectory and batter pose."}
+ ],
+ "doc_used": true,
+ "uncertain": []
+}

@@ -1,0 +1,96 @@
+{
+ "dataset_id": "150",
+ "title_en": "Agriculture knowledge base",
+ "summary_ko": "시설 원예작물인 토마토·장미의 정상 및 병해충 감염 사진 3만 장과, 농업경영체·지원사업·상담 사례에서 뽑은 농업 용어 1만 개 사전으로 이루어진 지식베이스입니다. 병해충 진단과 귀농인·농업인 맞춤 지원사업 안내 챗봇에 쓸 수 있습니다.",
+ "summary_en": "A knowledge base with 30,000 photos of healthy and pest/disease-infected tomatoes and roses grown in greenhouses, plus a 10,000-term agriculture dictionary built from farm-business, subsidy and consultation records. For pest and disease diagnosis and chatbots that guide new and existing farmers to support programmes.",
+ "contents_ko": "토마토·장미 사진 + 병해충 라벨, 농업 용어 사전(표제어·관련어), 지원사업 정보.",
+ "contents_en": "Tomato and rose photos + pest/disease labels, agriculture term dictionary (headwords and related terms), support-programme information.",
+ "modalities": [
+  "image",
+  "text"
+ ],
+ "tasks": [
+  "image_classification",
+  "question_answering",
+  "retrieval_recommendation"
+ ],
+ "topics": [
+  {
+   "ko": "농업·스마트팜",
+   "en": "Agriculture and smart farming"
+  },
+  {
+   "ko": "식물 병해",
+   "en": "Plant disease"
+  },
+  {
+   "ko": "귀농·농업 정책",
+   "en": "Farming policy and new farmers"
+  }
+ ],
+ "keywords_ko": [
+  "농업 지식베이스",
+  "토마토",
+  "장미",
+  "병해충",
+  "농업 용어",
+  "귀농",
+  "지원사업"
+ ],
+ "keywords_en": [
+  "agriculture knowledge base",
+  "tomato",
+  "rose",
+  "pests and diseases",
+  "farming terms",
+  "new farmers",
+  "subsidies"
+ ],
+ "labels": [
+  "class (pest/disease)",
+  "term dictionary"
+ ],
+ "file_formats": [
+  "jpg",
+  "json"
+ ],
+ "scale_ko": "병해충 이미지 3만 장, 농업 용어 1만 개(구축량 8.6만)",
+ "classes_example": ["토마토 > 정상", "토마토 > 잎곰팡이병", "토마토 > 점무늬병", "장미 > 정상", "장미 > 병해충 감염"],
+ "baseline": [],
+ "difficulty": "intermediate",
+ "difficulty_note_ko": "이미지 분류는 쉽지만 전체 약 540GB로 크고, 지식베이스 부분은 구조를 이해해야 합니다.",
+ "skills_needed_ko": [
+  "파이썬",
+  "이미지 분류",
+  "검색·질의응답 기초"
+ ],
+ "caveats_ko": [
+  "2018년 구축으로 지원사업 정보가 오래됨",
+  "전체 약 540GB"
+ ],
+ "project_ideas": [
+  {
+   "level": "beginner",
+   "title_ko": "토마토 병해충 분류",
+   "title_en": "Tomato pest and disease classifier",
+   "desc_ko": "토마토 사진으로 정상과 병해충 감염을 분류합니다.",
+   "desc_en": "Classify tomato photos as healthy or infected."
+  },
+  {
+   "level": "capstone",
+   "title_ko": "귀농인 지원사업 안내 챗봇",
+   "title_en": "Support-programme chatbot for new farmers",
+   "desc_ko": "농업 용어 사전으로 질문을 이해해 관련 지원사업을 찾아주는 챗봇을 만듭니다.",
+   "desc_en": "Use the term dictionary to understand questions and find support programmes."
+  },
+  {
+   "level": "research",
+   "title_ko": "농업 용어 정규화와 검색",
+   "title_en": "Farming term normalisation for search",
+   "desc_ko": "사투리·관용 표현을 표준 농업 용어로 바꿔 검색 성능을 높이는 방법을 연구합니다.",
+   "desc_en": "Map colloquial farming words to standard terms to improve search."
+  }
+ ],
+ "doc_used": false,
+ "uncertain": []
+}

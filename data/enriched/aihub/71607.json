@@ -1,0 +1,29 @@
+{
+ "dataset_id": "71607",
+ "title_en": "Tourism KVQA data (eastern region)",
+ "summary_ko": "동부권 관광지·음식점·숙박 등 장소(POI) 140,681곳의 정보와 지식 트리플, 이미지 703,405장과 설명 문장, 질문-답변 2,813,620건을 묶은 지식 기반 시각 질의응답(KVQA) 데이터입니다. 사진과 지식을 함께 보고 관광 질문에 답하는 챗봇·추천 AI에 쓸 수 있습니다.",
+ "summary_en": "Knowledge-aware visual QA data for Korea's eastern region: 140,681 places (POIs) with knowledge triples, 703,405 images with captions and 2,813,620 question-answer pairs. For tourism chatbots and recommenders.",
+ "contents_ko": "장소 정보(csv) + 이미지(png) + JSON(트리플, 이미지 캡션, 질문-답변).",
+ "contents_en": "Place info (csv) + images (png) + JSON (triples, image captions, question-answer pairs).",
+ "modalities": ["image", "text"],
+ "tasks": ["visual_qa", "image_captioning", "retrieval_recommendation"],
+ "topics": [{"ko": "관광·여행", "en": "Tourism and travel"}, {"ko": "챗봇·질의응답", "en": "Chatbots and question answering"}],
+ "keywords_ko": ["KVQA", "관광 챗봇", "지식 그래프", "이미지 캡션", "질의응답", "동부권"],
+ "keywords_en": ["KVQA", "tourism chatbot", "knowledge graph", "image captioning", "question answering", "eastern region"],
+ "labels": ["triples", "image captions", "question-answer pairs"],
+ "file_formats": ["csv", "png", "json"],
+ "scale_ko": "POI 140,681건, 이미지 703,405장, 질문-답변 2,813,620건",
+ "classes_example": ["관광지", "문화시설", "음식점", "레포츠", "숙박", "쇼핑"],
+ "baseline": [{"task": "5-choice knowledge VQA", "model": "ZS-F-VQA + KGE fusion", "metric": "Accuracy", "value": "88.86%"}],
+ "difficulty": "advanced",
+ "difficulty_note_ko": "이미지·지식 그래프·질의응답을 함께 다뤄야 하고 전체 약 6.6TB입니다. 텍스트부터 시작하세요.",
+ "skills_needed_ko": ["파이썬", "비전-언어 모델", "지식 그래프 기초", "Hugging Face"],
+ "caveats_ko": ["전체 약 6.6TB로 매우 큼", "페이지에 트리플 수가 '??건'으로 비어 있음", "POI 원본 일부는 외부 기업 제공 자료", "71598·71605·71608과 같은 구성"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "관광지 질문 유형 분석", "title_en": "Tourism question type analysis", "desc_ko": "질문-답변을 유형별로 세고 장소 타입별 자주 묻는 질문을 정리합니다.", "desc_en": "Count question types and frequent questions by place type."},
+  {"level": "capstone", "title_ko": "동부권 여행 챗봇", "title_en": "Eastern-region travel chatbot", "desc_ko": "장소 사진과 트리플로 관광 질문에 답하고 장소를 추천하는 챗봇을 만듭니다.", "desc_en": "Answer travel questions and recommend places from photos and triples."},
+  {"level": "research", "title_ko": "권역 간 KVQA 일반화", "title_en": "Cross-region KVQA generalisation", "desc_ko": "한 권역으로 학습한 KVQA 모델이 다른 권역에서도 통하는지 연구합니다.", "desc_en": "Study whether KVQA models transfer across regions."}
+ ],
+ "doc_used": true,
+ "uncertain": []
+}

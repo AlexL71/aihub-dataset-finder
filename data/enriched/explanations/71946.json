@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71946",
+ "easy_ko": "예전 화질 변환 영상 데이터를 다시 다듬어, 여러 해상도의 사진 2만 장에 장면 속 요소 사이의 의미 관계를 담은 설명을 붙인 데이터입니다. 영상 화질을 평가하거나 화질이 나빠 잘 못 알아볼 위험을 알려 주는 AI에 쓸 수 있습니다.",
+ "easy_en": "20,000 images at several resolutions reworked from older video quality-conversion data, each with a description of the meaning relations between elements in the scene. You can use it for AI that rates video quality or warns when low quality makes recognition risky.",
+ "detail_ko": "2022년 AI 허브 화질변환 영상 데이터를 다시 가공(업사이클링)해 중복 이미지를 빼고, 이미지 20,000건(jpg)에 요소 사이의 의미 관계를 담은 이미지-텍스트 설명(JSON)을 붙였습니다. 온톨로지·검색 기반 생성(RAG)과 사람 검수로 정확도를 높였습니다. 구성: 해상도별 약 14.2%씩(예: 320*240, 1280*720). 영상 품질 평가와 저화질 인식 위험 경고에 쓰도록 만들었습니다. 해상도 표기에 '340*480'처럼 흔하지 않은 값이 있어 확인이 필요하고, 페이지에 성능 점수 표가 없고, 원본 데이터와 이미지가 겹칠 수 있습니다.",
+ "detail_en": "20,000 images (jpg) taken from AI Hub's 2022 video quality conversion data after removing duplicates, with JSON image-text descriptions of the meaning relations between elements, made more accurate using an ontology, retrieval-augmented generation (RAG) and human review. Composition: about 14.2% per resolution (such as 320×240, 1280×720). It is meant for video quality assessment and warnings about low-quality recognition risk. Some resolutions are unusual (such as '340*480') and need checking. There is no score table, and images may overlap with the original dataset.",
+ "amount_ko": "20,000건",
+ "amount_en": "20,000 items",
+ "labels_ko": "사진 설명, 요소 사이 관계",
+ "labels_en": "image-text description",
+ "status": "full-run-2026-11-02"
+}

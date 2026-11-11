@@ -1,0 +1,29 @@
+{
+ "dataset_id": "71878",
+ "title_en": "Dog gait video-based health management data",
+ "summary_ko": "중소형 반려견 1,000마리 이상의 앞·뒤·옆 방향 보행 동영상 2,094건과 다리별 보행 압력 센서 데이터, 키포인트 라벨 이미지 126,092건으로, 정상과 슬개골 탈구 1~4기 중증도가 표시되어 있습니다. 반려견 걸음걸이로 슬개골 질환을 예측하는 AI에 쓸 수 있습니다.",
+ "summary_en": "2,094 gait videos of 1,000+ small and medium dogs filmed from front, back and sides, plus per-leg pressure sensor data and 126,092 keypoint-labelled images, graded as normal or patellar luxation stage 1–4. For predicting patellar disease from dog gait.",
+ "contents_ko": "보행 영상(avi) + 압력 센서(csv) + JSON(키포인트, 중증도).",
+ "contents_en": "Gait video (avi) + pressure sensor (csv) + JSON (keypoints, severity).",
+ "modalities": ["video", "image", "sensor"],
+ "tasks": ["keypoint_pose", "action_recognition", "image_classification"],
+ "topics": [{"ko": "반려동물 헬스케어", "en": "Pet healthcare"}, {"ko": "수의학", "en": "Veterinary medicine"}],
+ "keywords_ko": ["반려견", "보행 분석", "슬개골 탈구", "파행", "키포인트", "ConvLSTM"],
+ "keywords_en": ["dog", "gait analysis", "patellar luxation", "lameness", "keypoints", "ConvLSTM"],
+ "labels": ["keypoints", "severity stage"],
+ "file_formats": ["avi", "csv", "json"],
+ "scale_ko": "보행 영상 2,094건, 키포인트 이미지 126,092건",
+ "classes_example": ["정상", "1기", "2기", "3기", "4기"],
+ "baseline": [],
+ "difficulty": "intermediate",
+ "difficulty_note_ko": "약 50GB이며 YOLO 자세 추정 실습에 좋습니다. 중증도 분류는 영상 시계열 모델이 필요합니다.",
+ "skills_needed_ko": ["파이썬", "YOLOv8 자세 추정", "영상 시계열 모델(ConvLSTM)", "센서 데이터 처리"],
+ "caveats_ko": ["페이지에 성능 점수 표가 없음(YOLOv8 목표 PCK@0.5 0.8, ConvLSTM 목표 정확도 80%만 소개)", "정상이 56%이고 4기는 3%로 적음", "같은 개의 프레임이 여러 세트에 들어가지 않게 개체 단위로 나눠야 함"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "반려견 관절 키포인트 탐지", "title_en": "Dog joint keypoints", "desc_ko": "보행 이미지에서 다리 관절 위치를 YOLO로 찾습니다.", "desc_en": "Detect dog leg joints in gait images with YOLO."},
+  {"level": "capstone", "title_ko": "슬개골 질환 선별 앱", "title_en": "Patella screening app", "desc_ko": "스마트폰 보행 영상으로 정상·이상을 판별하는 데모를 만듭니다.", "desc_en": "Screen normal vs abnormal gait from phone video."},
+  {"level": "research", "title_ko": "영상+압력 융합 중증도 예측", "title_en": "Video-pressure fusion grading", "desc_ko": "영상 키포인트와 압력 센서를 함께 써서 1~4기를 예측하는 방법을 연구합니다.", "desc_en": "Study grading stages 1–4 by fusing keypoints and pressure."}
+ ],
+ "doc_used": true,
+ "uncertain": []
+}

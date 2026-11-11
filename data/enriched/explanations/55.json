@@ -1,0 +1,12 @@
+{
+ "dataset_id": "55",
+ "easy_ko": "한국인 얼굴을 찍은 진짜 영상과, AI로 얼굴을 바꿔치기한 가짜 영상(딥페이크)을 모으고 영상마다 진짜인지 가짜인지 표시한 데이터입니다. 인터넷에 퍼지는 가짜 얼굴 영상을 찾아내는 AI를 만들 수 있습니다.",
+ "easy_en": "Real videos of Korean faces and fake videos in which AI swapped the face (deepfakes), each marked as real or fake. You can build AI that spots fake face videos spreading online.",
+ "detail_ko": "정면 얼굴 원본 영상 1,500시간 이상(6만 개 이상, 1인당 90초 이상, 1920×1080, 30fps)과 5종 이상의 딥페이크 모델로 만든 변조 영상 625시간 이상(15만 개 이상, 15초 이상)으로 구성됩니다. 라벨(JSON)에는 진짜/가짜, 변조 모델, 탐지를 피하도록 손본 '탐지 방해' 여부가 있으며 폴더도 원본·변조·탐지방해로 나뉩니다. 기준 탐지 모델은 FaceForensics++ 기준 정확도 95.14%, DFDC 기준 log loss 16.2%로 적혀 있으나 모델 이름은 공개되지 않았습니다. 전체 약 2.8TB이며 실제 얼굴 영상이라 이용 약관을 꼭 확인하고 변조 기술을 악용하지 않아야 합니다.",
+ "detail_en": "Over 1,500 hours of real frontal-face video (60k+ videos, 90+ s per person, 1920×1080, 30 fps) and over 625 hours of manipulated video (150k+ videos, 15+ s) made with 5+ deepfake models. JSON labels give real/fake, the manipulation model and whether the video was altered to evade detection; folders are split into original, manipulated and anti-detection. The unnamed baseline detector reports 95.14% accuracy on FaceForensics++ and log loss 16.2% on DFDC. Total size is about 2.8 TB; these are real faces, so read the terms carefully and never misuse the manipulation methods.",
+ "amount_ko": "원본 영상 1,500시간 이상, 변조 영상 625시간 이상",
+ "amount_en": "1,500+ hours real video, 625+ hours manipulated video",
+ "labels_ko": "진짜/가짜 구분, 변조 방법, 탐지 방해 여부",
+ "labels_en": "real or fake, manipulation method, anti-detection flag",
+ "status": "full-run-2026-11-02"
+}

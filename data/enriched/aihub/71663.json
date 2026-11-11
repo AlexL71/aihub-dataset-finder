@@ -1,0 +1,29 @@
+{
+ "dataset_id": "71663",
+ "title_en": "Public speaking practice and evaluation data",
+ "summary_ko": "중학생부터 성인까지의 발표 영상·음성, 발표 자료 텍스트, 전문가 발표 평가로 이루어진 데이터로, 언어적 요소 800건과 몸짓 등 비언어적 요소(이미지 288,000건, 키포인트 라벨 28,800건)를 담고 있습니다. 발표 실력 자동 평가와 부정적 제스처 인식 AI에 쓸 수 있습니다.",
+ "summary_en": "Presentation video and audio from middle-schoolers to adults, slide text and expert ratings: 800 verbal items and non-verbal data (288,000 images, 28,800 keypoint labels). For automatic public-speaking assessment and negative-gesture recognition AI.",
+ "contents_ko": "발표 영상(mp4) + 이미지(jpg) + JSON(발표 평가, 키포인트).",
+ "contents_en": "Presentation video (mp4) + image (jpg) + JSON (speech evaluation, keypoints).",
+ "modalities": ["video", "audio", "image", "text"],
+ "tasks": ["keypoint_pose", "action_recognition", "text_classification"],
+ "topics": [{"ko": "말하기 교육", "en": "Speaking education"}, {"ko": "발표 평가", "en": "Presentation assessment"}],
+ "keywords_ko": ["공적 말하기", "발표 평가", "제스처", "키포인트", "비언어적 표현", "교육"],
+ "keywords_en": ["public speaking", "presentation assessment", "gestures", "keypoints", "non-verbal cues", "education"],
+ "labels": ["presentation score", "keypoints", "gesture class"],
+ "file_formats": ["mp4", "jpg", "json"],
+ "scale_ko": "언어적 800건, 비언어적 원천 288,000건·라벨 28,800건",
+ "classes_example": ["중학생 3학년", "고등학생", "20대", "30대", "40대"],
+ "baseline": [],
+ "difficulty": "intermediate",
+ "difficulty_note_ko": "자세 추정으로 제스처를 분류하는 실습에 좋지만 언어적 평가 데이터는 800건으로 적습니다. 전체 약 196GB입니다.",
+ "skills_needed_ko": ["파이썬", "자세 추정", "음성·텍스트 처리"],
+ "caveats_ko": ["언어적 평가 데이터가 800건뿐임", "부정적 제스처 종류 목록과 성능 지표가 팩에 없음", "얼굴이 나오는 영상이라 이용 조건 확인 필요"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "발표 자세 키포인트 추정", "title_en": "Speaker pose estimation", "desc_ko": "발표자 사진에서 몸 관절 위치를 찾습니다.", "desc_en": "Find body joints of a speaker."},
+  {"level": "capstone", "title_ko": "발표 연습 코치 앱", "title_en": "Presentation practice coach", "desc_ko": "발표 영상을 보고 팔짱·뒤돌기 같은 나쁜 습관을 알려 줍니다.", "desc_en": "Point out bad gestures in a practice video."},
+  {"level": "research", "title_ko": "멀티모달 발표 점수 예측", "title_en": "Multimodal speech scoring", "desc_ko": "말 내용·목소리·몸짓을 합쳐 발표 점수를 예측하는 방법을 연구합니다.", "desc_en": "Combine content, voice and gestures to score speeches."}
+ ],
+ "doc_used": true,
+ "uncertain": ["부정적 제스처 클래스", "평가 항목 구성"]
+}

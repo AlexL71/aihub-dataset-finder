@@ -1,0 +1,12 @@
+{
+ "dataset_id": "643",
+ "easy_ko": "제주 지역을 비행기와 위성으로 내려다본 사진에 건물, 주차장, 도로, 가로수, 비닐하우스, 밭, 숲, 빈 땅이 어디인지 색으로 칠한 데이터입니다. 땅을 어떻게 쓰고 있는지 지도를 자동으로 만들고 그 변화를 찾는 AI를 만들 수 있습니다.",
+ "easy_en": "Aerial and satellite images of the Jeju region with buildings, parking lots, roads, street trees, greenhouses, fields, forests and bare land coloured in. You can build AI that automatically maps how land is used and finds changes over time.",
+ "detail_ko": "제주 지역 항공사진(0.25m) 약 2.5만 장에 8종(건물, 주차장, 도로, 가로수, 비닐하우스, 밭, 산림, 나지), Sentinel-2 위성영상(10m) 1,000장에 4종(건물, 도로, 농경지, 산림) 토지 피복 세그멘테이션 마스크(TIF)와 JSON을 붙였습니다. 기준 성능은 U-Net 픽셀 정확도 항공 95.24%, 위성 95.95%입니다. 제주 지역만 포함되고, 다른 지역판과 달리 '논' 대신 '비닐하우스' 클래스가 있으며 641·642번과 구조가 같습니다.",
+ "detail_en": "About 25k aerial images (0.25 m) of the Jeju region with 8 land-cover classes (building, parking lot, road, street tree, greenhouses, fields, forest, bare land) and 1,000 Sentinel-2 satellite images (10 m) with 4 classes (building, road, farmland, forest), as segmentation masks (TIF) with JSON. Baselines: U-Net pixel accuracy 95.24% (aerial) and 95.95% (satellite). Only the Jeju region is covered; unlike the other regions, it has a greenhouse class instead of rice paddy; same structure as 641 and 642.",
+ "amount_ko": "이미지 약 2.6만 장(항공 약 2.5만 장, 위성 1,000장)",
+ "amount_en": "about 26k images (About 25k aerial, 1,000 satellite)",
+ "labels_ko": "땅 쓰임새별 영역(색칠)",
+ "labels_en": "land-cover masks",
+ "status": "full-run-2026-11-02"
+}

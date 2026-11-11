@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71922",
+ "easy_ko": "회계 실무 해설서, 회계 상담 자료, 회계 기준 문서 1만여 건과 이를 바탕으로 만든 회계 처리 질문과 답 5만여 쌍을 모은 데이터입니다. 기업 회계 상담을 돕는 AI에 쓸 수 있습니다.",
+ "easy_en": "Over 10,000 accounting practice guides, accounting advice records and accounting-standard documents, plus over 50,000 accounting questions and answers built from them. You can use it to build AI that helps with corporate accounting advice.",
+ "detail_ko": "실무해설서, 전문 회계상담 자료, 한국회계기준원 공개 회계기준 문서를 정제한 원천 문서 10,139건과 회계처리 질의응답 50,695쌍(JSON)으로, K-IFRS 분류(자산, 손익항목, 특수회계처리, 부채, 재무제표, 자본, 회계기준전환)가 붙어 있습니다. 페이지에 성능 점수 표가 없고(Qwen3 미세조정 모델 소개만 있음), 회계기준전환(0.47%) 등 일부 분류가 적으며, 회계기준 개정 시 답변이 바뀔 수 있습니다.",
+ "detail_en": "10,139 cleaned source documents (practice guides, professional accounting advice and published standards from the Korea Accounting Standards Board) and 50,695 accounting question-answer pairs (JSON), classified by K-IFRS area (assets, profit and loss, special accounting, liabilities, financial statements, equity, transition to standards). There is no score table (only a fine-tuned Qwen3 is mentioned); some classes are small (transition 0.47%); and answers may change when standards are revised.",
+ "amount_ko": "원천 문서 10,139건, 질의응답 50,695쌍",
+ "amount_en": "10,139 source documents, 50,695 QA pairs",
+ "labels_ko": "질문과 답, 회계 분류",
+ "labels_en": "question-answer, category",
+ "status": "full-run-2026-11-02"
+}

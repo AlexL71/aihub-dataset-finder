@@ -1,0 +1,29 @@
+{
+ "dataset_id": "71757",
+ "title_en": "Special road driving data (enhanced): unpaved road driving data",
+ "summary_ko": "국내 산악·농경·해안 비포장도로에서 찍은 주행 이미지 150,120장으로, 흙·자갈·잔디 같은 노면과 차량·사람·바위·전봇대·웅덩이 같은 객체가 상자와 분할 영역으로 표시되어 있고 좌·우·후방 이미지, 라이다, GPS, IMU가 참조 데이터로 함께 있습니다. 비포장도로 자율주행 AI에 쓸 수 있습니다.",
+ "summary_en": "150,120 driving images from Korean unpaved roads (mountain, farm, coast), with surfaces (dirt, gravel, grass) and objects (vehicles, people, rocks, poles, puddles) as boxes and segmentation, plus side/rear images, lidar, GPS and IMU as reference data. For off-road autonomous driving.",
+ "contents_ko": "전방 이미지(png) + JSON(상자, 분할, 서브라벨) + 참조(좌·우·후방 이미지, 라이다, GPS, IMU).",
+ "contents_en": "Front image (png) + JSON (boxes, segmentation, sub-labels) + reference (side/rear images, lidar, GPS, IMU).",
+ "modalities": ["image", "3d", "sensor"],
+ "tasks": ["object_detection", "segmentation"],
+ "topics": [{"ko": "자율주행", "en": "Autonomous driving"}, {"ko": "비포장 노면 인식", "en": "Unpaved surface perception"}],
+ "keywords_ko": ["비포장도로", "오프로드", "노면 분할", "자율주행", "라이다", "InternImage"],
+ "keywords_en": ["unpaved road", "off-road", "surface segmentation", "autonomous driving", "lidar", "InternImage"],
+ "labels": ["bounding box", "segmentation", "sub-labels"],
+ "file_formats": ["png", "json"],
+ "scale_ko": "원천·라벨 각 150,120장, 서브라벨 15,000장",
+ "classes_example": ["흙/진흙", "자갈", "잔디", "시멘트", "차량", "사람", "바위", "전봇대", "웅덩이", "논밭"],
+ "baseline": [],
+ "difficulty": "advanced",
+ "difficulty_note_ko": "전체 약 1.87TB로 매우 큽니다. 전방 이미지 일부만 받아 분할 실습부터 하세요.",
+ "skills_needed_ko": ["파이썬", "YOLO 탐지", "분할 모델", "대용량 데이터 관리"],
+ "caveats_ko": ["페이지에 성능 점수 표가 없음(InternImage 소개만 있음)", "날씨·도로 유형 비율이 표에서 정확히 읽히지 않음", "이륜차(702)·교통표지판(1,258)이 매우 적음"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "비포장 노면 종류 분류", "title_en": "Unpaved surface classifier", "desc_ko": "이미지 속 노면이 흙·자갈·잔디 중 무엇인지 분류합니다.", "desc_en": "Classify the road surface as dirt, gravel or grass."},
+  {"level": "capstone", "title_ko": "주행 가능 영역 분할", "title_en": "Drivable area segmentation", "desc_ko": "비포장도로에서 차가 갈 수 있는 영역과 웅덩이·바위를 분할합니다.", "desc_en": "Segment drivable area, puddles and rocks on unpaved roads."},
+  {"level": "research", "title_ko": "야간 오프로드 인식", "title_en": "Night off-road perception", "desc_ko": "야간(41%) 이미지에서 성능 저하를 줄이는 방법을 연구합니다.", "desc_en": "Study reducing performance drops on night images."}
+ ],
+ "doc_used": true,
+ "uncertain": []
+}

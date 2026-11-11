@@ -1,0 +1,33 @@
+{
+ "dataset_id": "71325",
+ "title_en": "Crustacean seed production data",
+ "summary_ko": "종묘장에서 키우는 어미 꽃게(알 성숙 4단계) 이미지 약 5.4만 장과 꽃게 종자(조에아 1~4기·메갈로파·치게 1~3기 8단계) 이미지 약 10.7만 장에 상자·폴리라인을 표시하고, 수질 환경·사육 관리 데이터를 함께 담은 데이터입니다. 꽃게 종자 성장 단계와 질병을 관리하는 AI에 쓸 수 있습니다.",
+ "summary_en": "About 54,000 images of brood blue crabs (4 egg-maturity stages) and about 107,000 images of crab seed (8 stages from zoea 1-4 through megalopa to juvenile 1-3) from hatcheries, with boxes and polylines, plus water-quality and rearing records. For AI that manages crab seed growth stages and disease.",
+ "contents_ko": "꽃게 이미지(jpg) + JSON(상자, 폴리라인, 성장 단계) + 수질·사육 데이터.",
+ "contents_en": "Crab images (jpg) + JSON (boxes, polylines, growth stage) + water-quality and rearing data.",
+ "modalities": ["image", "sensor"],
+ "tasks": ["object_detection", "image_classification", "anomaly_detection"],
+ "topics": [{"ko": "수산 양식", "en": "Aquaculture"}, {"ko": "해양 생물", "en": "Marine life"}],
+ "keywords_ko": ["꽃게", "종자 생산", "조에아", "갑각류", "수산자원 회복"],
+ "keywords_en": ["blue crab", "seed production", "zoea", "crustaceans", "fishery resource recovery"],
+ "labels": ["bounding box", "polyline", "growth stage", "disease status"],
+ "file_formats": ["jpg", "json"],
+ "scale_ko": "이미지 약 16만 장(어미 5.4만, 종자 10.7만), 수질 데이터 약 25.7만 건",
+ "classes_example": ["포란 1단계", "포란 4단계", "조에아1기", "조에아4기", "메갈로파", "치게1기", "치게3기"],
+ "baseline": [
+  {"task": "zoea stage classification", "model": "EfficientNet", "metric": "accuracy", "value": "93.8%"},
+  {"task": "juvenile crab disease classification", "model": "EfficientNet", "metric": "accuracy", "value": "93.1%"},
+  {"task": "brood crab detection", "model": "YOLOv4", "metric": "mAP", "value": "95.39%"}
+ ],
+ "difficulty": "intermediate",
+ "difficulty_note_ko": "약 94GB이고 작은 유생 이미지를 다뤄야 합니다.",
+ "skills_needed_ko": ["파이썬", "CNN 이미지 분류", "YOLO 탐지"],
+ "caveats_ko": ["현미경·확대 사진이라 전문 지식이 필요할 수 있음", "꽃게 한 종만 있음"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "꽃게 유생 단계 분류", "title_en": "Crab larval stage classifier", "desc_ko": "유생 사진으로 8가지 성장 단계를 분류합니다.", "desc_en": "Classify 8 larval growth stages from images."},
+  {"level": "capstone", "title_ko": "종묘장 성장 모니터", "title_en": "Hatchery growth monitor", "desc_ko": "단계별 비율과 수질을 함께 보여주는 대시보드를 만듭니다.", "desc_en": "Dashboard of stage proportions alongside water quality."},
+  {"level": "research", "title_ko": "수질과 성장 관계", "title_en": "Water quality vs growth", "desc_ko": "수온·염도가 유생 성장 속도에 주는 영향을 분석합니다.", "desc_en": "Analyse how temperature and salinity affect larval growth."}
+ ],
+ "doc_used": true,
+ "uncertain": []
+}

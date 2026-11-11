@@ -1,0 +1,29 @@
+{
+ "dataset_id": "71526",
+ "title_en": "Walking-assist wearable robot motion data",
+ "summary_ko": "청·중·장년 500명이 평지·경사로·계단을 오르내리며 걸을 때의 보행 데이터 50만 건으로, 3면 촬영 이미지와 가속도·근전도·보행보조 로봇 관절 각도·동작분석·지면반력(force plate) 시계열에 보행 단계가 라벨링되어 있습니다. 하지 착용형 로봇 제어와 보행 분석 AI에 쓸 수 있습니다.",
+ "summary_en": "500,000 gait records from 500 adults walking on flat ground, slopes and stairs, with three-view images and time series of acceleration, EMG, wearable-robot joint angles, motion capture and force plates, labelled by gait phase. For controlling lower-limb wearable robots and gait analysis.",
+ "contents_ko": "보행 이미지 + JSON(가속도·근전도·로봇 각도·동작분석·지면반력 시계열, 보행 단계 라벨).",
+ "contents_en": "Gait images + JSON (acceleration, EMG, robot angle, motion capture, force-plate time series, gait-phase labels).",
+ "modalities": ["sensor", "image"],
+ "tasks": ["action_recognition", "tabular_prediction"],
+ "topics": [{"ko": "로봇·피지컬 AI", "en": "Robotics and physical AI"}, {"ko": "재활·헬스케어", "en": "Rehabilitation and healthcare"}],
+ "keywords_ko": ["보행보조 로봇", "착용형 로봇", "보행 단계", "근전도", "지면반력", "계단 보행"],
+ "keywords_en": ["walking-assist robot", "wearable robot", "gait phase", "EMG", "force plate", "stair walking"],
+ "labels": ["gait phase", "walking environment"],
+ "file_formats": ["json"],
+ "scale_ko": "500,000건, 참여자 500명, 보행 환경 5종(각 10만 건)",
+ "classes_example": ["평지보행", "경사로 오르기", "경사로 내려오기", "계단 오르기", "계단 내려오기"],
+ "baseline": [{"task": "walking environment classification", "model": "CNN", "metric": "Accuracy", "value": "92%"}],
+ "difficulty": "advanced",
+ "difficulty_note_ko": "여러 센서 시계열을 맞춰 다뤄야 하고 생체역학 지식이 도움이 됩니다. 약 166GB입니다.",
+ "skills_needed_ko": ["파이썬", "시계열 신호 처리", "1D CNN·LSTM", "생체역학 기초"],
+ "caveats_ko": ["전체 약 166GB", "65세 이상 고령자와 보행 장애인은 포함되지 않음(참여자 19~64세)", "이미지 형식이 'image'로만 적혀 있음"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "보행 환경 분류", "title_en": "Walking environment classification", "desc_ko": "센서 신호로 평지·경사로·계단 중 어디를 걷는지 분류합니다.", "desc_en": "Classify flat, slope or stairs from sensor signals."},
+  {"level": "capstone", "title_ko": "보행 단계 실시간 인식", "title_en": "Real-time gait-phase recognition", "desc_ko": "가속도 신호로 발 디딤·들림 단계를 실시간으로 알아보는 모델을 만듭니다.", "desc_en": "Recognise stance and swing phases in real time."},
+  {"level": "research", "title_ko": "연령별 보행 패턴", "title_en": "Gait patterns by age", "desc_ko": "근전도·지면반력으로 연령대별 보행 차이를 분석합니다.", "desc_en": "Analyse age differences in gait from EMG and force data."}
+ ],
+ "doc_used": true,
+ "uncertain": ["보행 단계 클래스의 세부 구성이 팩 앞부분에 없음"]
+}

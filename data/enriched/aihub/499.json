@@ -1,0 +1,29 @@
+{
+ "dataset_id": "499",
+ "title_en": "Pet disease diagnosis images (chest)",
+ "summary_ko": "동물병원에서 찍은 반려동물 흉부 엑스레이 영상 15.7만 건으로, 심비대·기관허탈·종격동변위·흉강종양·기흉·횡경막탈장 등 흉부 질환과 정상이 상자·다각형·선으로 표시되어 있습니다. 반려동물 흉부 질환 진단을 돕는 AI에 쓸 수 있습니다.",
+ "summary_en": "157,000 chest X-ray images of pets from animal hospitals, labelled normal or with chest diseases (enlarged heart, tracheal collapse, mediastinal shift, thoracic tumour, pneumothorax, diaphragmatic hernia and more) using boxes, polygons and lines. For AI that helps diagnose pet chest diseases.",
+ "contents_ko": "흉부 영상(jpg) + JSON(질환 코드, 병변 상자·다각형·선, 동물 정보).",
+ "contents_en": "Chest image (jpg) + JSON (disease code, lesion box/polygon/line, animal info).",
+ "modalities": ["image"],
+ "tasks": ["image_classification", "object_detection", "segmentation"],
+ "topics": [{"ko": "반려동물", "en": "Pets"}, {"ko": "수의학·동물 의료", "en": "Veterinary medicine"}, {"ko": "의료 영상", "en": "Medical imaging"}],
+ "keywords_ko": ["반려동물", "흉부 엑스레이", "심비대", "기흉", "수의 영상", "질병 진단"],
+ "keywords_en": ["pets", "chest X-ray", "enlarged heart", "pneumothorax", "veterinary imaging", "diagnosis"],
+ "labels": ["class (disease)", "bounding box", "polygon", "line"],
+ "file_formats": ["jpg", "json"],
+ "scale_ko": "156,942건(흉강종양 3.2만, 횡경막탈장 3.4만 등), 질환 비율은 대부분 1~38%",
+ "classes_example": ["심비대", "기관허탈", "종격동변위", "흉강종양", "기흉", "횡경막탈장"],
+ "baseline": [],
+ "difficulty": "intermediate",
+ "difficulty_note_ko": "약 34GB로 다룰 만하지만 질환 사진이 적은 불균형 데이터입니다. 심비대(38%)부터 시작하면 쉽습니다.",
+ "skills_needed_ko": ["파이썬", "의료 영상 분류", "불균형 데이터 처리"],
+ "caveats_ko": ["질환 비율이 1% 미만인 클래스도 있음", "수의사 진단을 대신하면 안 됨"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "심비대 분류", "title_en": "Enlarged-heart classifier", "desc_ko": "흉부 엑스레이에서 심비대 유무를 분류합니다.", "desc_en": "Classify chest X-rays for an enlarged heart."},
+  {"level": "capstone", "title_ko": "심장 크기 자동 측정", "title_en": "Automatic heart-size measurement", "desc_ko": "선 라벨로 심장 크기 지표를 자동 계산하는 도구를 만듭니다.", "desc_en": "Compute heart-size indices from line labels automatically."},
+  {"level": "research", "title_ko": "복부·흉부 데이터 함께 학습", "title_en": "Joint chest and abdomen training", "desc_ko": "복부 데이터(498번)와 함께 사전학습했을 때 성능이 오르는지 연구합니다.", "desc_en": "Study whether pre-training with the abdomen set (498) helps."}
+ ],
+ "doc_used": true,
+ "uncertain": []
+}

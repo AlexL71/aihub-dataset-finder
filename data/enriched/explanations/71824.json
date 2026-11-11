@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71824",
+ "easy_ko": "가전, 가구, 생활용품, 자동차 같은 큰 물건 800개를 여러 각도에서 찍은 사진과 입체 모형, 설명 문장을 모은 데이터입니다. 사진으로 입체 모형을 만들거나 증강현실 가구 배치, 디지털 트윈에 쓸 수 있습니다.",
+ "easy_en": "Photos from many angles, three-dimensional models and descriptions of 800 medium and large objects such as appliances, furniture, household goods and cars. You can use it to rebuild three-dimensional models from photos, place furniture in augmented reality, or build digital twins.",
+ "detail_ko": "가전, 가구, 생활용품, 잡화, 자동차 등 중대형 물체 800개의 다각도 2D 이미지 43,200장(jpg), 포인트 클라우드(pcd), 3D 모델 800개(fbx), 텍스처 800개와 캡션·메타 정보 통합 라벨 800건(JSON)입니다. 전체 약 3TB이고, 물체가 800개뿐이라 일반화에 한계가 있으며, 품질 점수는 라벨 정확도이고 모델 성능 수치는 팩에 없습니다. 태그에 모션캡처 등 관계없어 보이는 항목이 섞여 있습니다.",
+ "detail_en": "800 medium and large objects (appliances, furniture, household goods, miscellaneous, cars): 43,200 multi-angle 2D images (jpg), point clouds (pcd), 800 3D models (fbx), 800 textures and 800 combined JSON labels with captions and metadata. Total size is about 3 TB. With only 800 objects, generalisation is limited; quality scores describe label accuracy, and no model scores are in the pack. The tags include unrelated-looking items such as motion capture.",
+ "amount_ko": "2D 이미지 43,200장, 3D 에셋 800개, 텍스처 800개, 통합 라벨 800건",
+ "amount_en": "43,200 2D images, 800 3D assets, 800 textures, 800 combined labels",
+ "labels_ko": "설명 문장",
+ "labels_en": "caption",
+ "status": "full-run-2026-11-02"
+}

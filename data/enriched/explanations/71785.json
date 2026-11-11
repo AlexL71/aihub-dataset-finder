@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71785",
+ "easy_ko": "직접 찍은 얼굴 사진 52,500장과 같은 수의 입체 얼굴 모형에 눈, 코, 입 같은 얼굴 주요 점을 표시한 데이터로, 조명 밝기를 고르게 나눠 찍었습니다. 얼굴 주요 점을 찾는 AI나 입체 얼굴 콘텐츠 제작에 쓸 수 있습니다.",
+ "easy_en": "52,500 face photos taken for the project and the same number of three-dimensional face models, with key face points such as the eyes, nose and mouth marked, shot evenly across light levels. You can use it to build AI that finds facial landmarks or to create three-dimensional face content.",
+ "detail_ko": "직접 촬영한 얼굴 이미지 52,500장(png)과 3D 얼굴 모델 52,500개(obj)에 얼굴 랜드마크와 조명 밝기(high, middle, low) 등 촬영 정보를 JSON으로 붙였습니다. 얼굴 데이터라 개인정보·이용 조건을 확인해야 하고, 랜드마크 점 개수, 촬영 인원 수, 성능 지표는 팩 앞부분에 없습니다.",
+ "detail_en": "52,500 face images (png) and 52,500 3D face models (obj) shot for the project, with JSON facial landmarks and capture information such as light level (high, middle, low). These are faces, so check personal-data terms; the number of landmark points, the number of people and any metrics are not in the pack.",
+ "amount_ko": "이미지 52,500장, 3D 데이터 52,500개",
+ "amount_en": "52,500 images, 52,500 3D models",
+ "labels_ko": "얼굴 주요 점, 조명 밝기",
+ "labels_en": "facial landmarks, lighting condition",
+ "status": "full-run-2026-11-02"
+}

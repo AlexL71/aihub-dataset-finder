@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71875",
+ "easy_ko": "논문, 의료 정보 사이트, 진료 지침, 의학 교과서 같은 곳에서 모은 의학 글을 아주 많이 모으고, 의사가 함께 만든 의학 질문과 답 1만 9천여 쌍을 붙인 데이터입니다. 산부인과, 소아과, 응급의학과, 내과 같은 필수 의료 분야의 의료 특화 AI를 학습시키고 평가하는 데 쓸 수 있습니다.",
+ "easy_en": "A very large amount of medical text from papers, health websites, clinical guidelines and textbooks, plus over 19,000 medical questions and answers made with doctors. You can use it to train and evaluate medical AI for essential care such as obstetrics, paediatrics, emergency medicine and internal medicine.",
+ "detail_ko": "학술 논문, 의료 정보 사이트, 정부·학회·국제기관 가이드라인, 의학 교과서, 동의서 등에서 모은 원천 텍스트 101,400,003토큰과 의학 질의응답 19,201쌍(JSON: 진료과, 질문 유형, 답변)으로, 진료과는 산부인과, 소아청소년과, 응급의학과, 내과(질문 유형: 객관식 15,600, 단답형 1,814, 서술형) 등입니다. 페이지에 성능 점수 표가 없고(KorMedMCQA로 테스트한다는 소개만 있음), 내과가 12,781쌍으로 대부분이고 응급의학과는 815쌍이며, 객관식이 약 81%로 서술형이 적고, 의료 답변을 실제 진료에 그대로 쓰면 안 됩니다.",
+ "detail_en": "101,400,003 tokens of source text from papers, health-information sites, government, society and international guidelines, medical textbooks and consent forms, plus 19,201 medical question-answer pairs (JSON: specialty, question type, answer), covering specialties such as obstetrics and gynaecology, paediatrics, emergency medicine and internal medicine (question types: 15,600 multiple choice, 1,814 short answer, plus essay). There is no score table (only that KorMedMCQA is used for testing); internal medicine has 12,781 pairs while emergency medicine has 815, and about 81% are multiple choice, so essay questions are few. The answers must not be used as real medical care.",
+ "amount_ko": "원천 101,400,003토큰, 질의응답 19,201쌍",
+ "amount_en": "101,400,003 tokens of source text, 19,201 QA pairs",
+ "labels_ko": "질문과 답, 진료과, 질문 유형",
+ "labels_en": "question-answer, specialty, question type",
+ "status": "full-run-2026-11-02"
+}

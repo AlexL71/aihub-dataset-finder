@@ -1,0 +1,29 @@
+{
+ "dataset_id": "71473",
+ "title_en": "Traditional fermented food fusion data",
+ "summary_ko": "김치류 7종, 고추장·된장·간장, 탁주 등 한국 전통 발효식품 12개 품목이 1~5단계로 발효되는 모습을 찍은 이미지 약 14만 장과 온도·색도 등 환경 기록 141,780건, 상자·분할 라벨 69,988건을 묶은 데이터입니다. 사진으로 발효 단계와 품질을 예측하는 AI에 쓸 수 있습니다.",
+ "summary_en": "About 140,000 images of 12 Korean fermented foods (7 kimchi types, gochujang, doenjang, soy sauce, makgeolli) at fermentation stages 1-5, with 141,780 environment and colour records and 69,988 box and segmentation labels. For AI that predicts fermentation stage and quality from photos.",
+ "contents_ko": "발효식품 이미지(jpg) + CSV(온도·색도 등 환경 정보) + JSON(상자, 분할, 발효 단계).",
+ "contents_en": "Fermented food image (jpg) + CSV (temperature, colour and other conditions) + JSON (box, segmentation, fermentation stage).",
+ "modalities": ["image", "tabular"],
+ "tasks": ["object_detection", "segmentation", "image_classification"],
+ "topics": [{"ko": "식품·발효", "en": "Food and fermentation"}, {"ko": "품질 관리", "en": "Quality control"}],
+ "keywords_ko": ["발효식품", "김치", "된장", "탁주", "발효 단계", "식품 품질"],
+ "keywords_en": ["fermented food", "kimchi", "doenjang", "makgeolli", "fermentation stage", "food quality"],
+ "labels": ["bounding box", "segmentation", "fermentation stage", "environment data"],
+ "file_formats": ["jpg", "csv", "json"],
+ "scale_ko": "이미지 139,979장, 텍스트 141,780건, 라벨 69,988건, 품목 12종, 발효 단계 5단계",
+ "classes_example": ["김치류", "고추장", "된장", "간장", "탁주"],
+ "baseline": [{"task": "traditional food detection", "model": "YOLO v7", "metric": "mAP", "value": "99%"}],
+ "difficulty": "beginner",
+ "difficulty_note_ko": "약 49GB이고 클래스 구조가 단순해 분류·탐지 입문에 좋습니다.",
+ "skills_needed_ko": ["파이썬", "이미지 분류", "YOLO 탐지"],
+ "caveats_ko": ["이미지 수가 139,989장과 139,979장으로 다르게 적혀 있음", "동영상이 374,169시간으로 적혀 있지만 용량이 없어 제공 여부가 불분명함", "같은 발효 과정을 연속 촬영해 비슷한 이미지가 많음"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "김치 발효 단계 분류", "title_en": "Kimchi fermentation stage classifier", "desc_ko": "김치 사진을 보고 발효 1~5단계를 분류합니다.", "desc_en": "Classify kimchi photos into stages 1-5."},
+  {"level": "capstone", "title_ko": "냉장고 김치 익음 알림", "title_en": "Kimchi ripeness alert", "desc_ko": "사진과 온도로 김치가 언제 먹기 좋은지 알려 주는 앱을 만듭니다.", "desc_en": "App that tells when kimchi is ready from a photo and temperature."},
+  {"level": "research", "title_ko": "이미지+환경 멀티모달 예측", "title_en": "Image + sensor fusion", "desc_ko": "이미지와 온도·색도 기록을 합쳐 발효 단계 예측을 높이는 방법을 연구합니다.", "desc_en": "Fuse images with temperature and colour data for stage prediction."}
+ ],
+ "doc_used": true,
+ "uncertain": ["동영상 제공 여부", "12개 품목의 정확한 이름"]
+}

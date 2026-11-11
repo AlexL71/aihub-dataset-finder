@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71473",
+ "easy_ko": "김치, 고추장, 된장, 간장, 막걸리 같은 전통 발효 음식이 익어 가는 모습을 단계별로 찍은 사진 약 14만 장과 온도, 색 같은 기록을 묶은 데이터입니다. 사진만 보고 발효가 얼마나 진행됐는지와 품질을 알아내는 AI에 쓸 수 있습니다.",
+ "easy_en": "About 140,000 photos of traditional fermented foods such as kimchi, red pepper paste, soybean paste, soy sauce and rice wine taken at each stage of fermentation, with records such as temperature and colour. You can use it to build AI that judges how far fermentation has gone and its quality from a photo alone.",
+ "detail_ko": "김치류 7종, 고추장·된장·간장, 탁주 등 12개 품목이 1~5단계로 발효되는 모습을 찍은 이미지 139,979장(jpg), 온도·색도 등 환경 기록 141,780건(CSV), 상자·분할·발효 단계 라벨 69,988건(JSON)입니다. 기준 성능은 YOLO v7 전통식품 탐지 mAP 99%입니다. 이미지 수가 139,989장과 139,979장으로 다르게 적혀 있고, 동영상이 374,169시간으로 적혀 있지만 용량이 없어 제공 여부가 불분명합니다. 같은 발효 과정을 연속 촬영해 비슷한 이미지가 많습니다.",
+ "detail_en": "139,979 images (jpg) of 12 traditional fermented foods (7 kinds of kimchi, red pepper paste, soybean paste, soy sauce, makgeolli and others) at fermentation stages 1 to 5, with 141,780 environment records such as temperature and colour (CSV) and 69,988 labels with boxes, segmentation and fermentation stage (JSON). Baseline: food detection with YOLO v7, mAP 99%. The image count is given as both 139,989 and 139,979, and video is listed as 374,169 hours but with no size, so it is unclear whether it is provided. The same fermentation runs were photographed continuously, so many images look alike.",
+ "amount_ko": "이미지 139,979장, 환경 기록 141,780건, 라벨 69,988건, 품목 12종",
+ "amount_en": "139,979 images, 141,780 environment records, 69,988 labels, 12 food items",
+ "labels_ko": "음식 위치 상자와 영역, 발효 단계, 온도·색 기록",
+ "labels_en": "boxes, segmentation, fermentation stage, environment data",
+ "status": "full-run-2026-11-02"
+}

@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71571",
+ "easy_ko": "실제로 손님을 태우고 다니는 자율주행차가 밤 시간 자동차 전용도로를 달리며 카메라 여러 대와 레이저 센서(라이다)로 모은 데이터입니다. 사진 속 도로와 물체 영역, 레이저 점 속 물체의 입체 상자가 표시되어 있어 자율주행차가 주변을 알아보는 AI에 쓸 수 있습니다.",
+ "easy_en": "Data collected by a commercial self-driving car in real service, driving expressways at night with several cameras and a laser sensor (lidar). Road and object areas are painted in the photos and objects are boxed in the laser point clouds, so you can build AI that helps self-driving cars see their surroundings.",
+ "detail_ko": "상용 자율주행차가 밤 시간 자동차 전용도로에서 5개 카메라와 3D 라이다로 수집한 이미지 401,200장(jpg), 점군 80,240건(pcd), 분할 마스크 80,240장(png), 장면 약 2,006개로, 전방 카메라 이미지 분할과 라이다 3D 큐보이드, 센서·차량 판단·제어 정보를 JSON으로 붙였습니다. 객체는 동적객체, 정적객체, 도로객체로 나뉩니다. 기준 성능은 PointPillars 3D 객체 탐지 mAP 77.785%, Swin Transformer + UperNet 2D 분할 mIoU 72.75%입니다. 분할은 전방 카메라 이미지에만 제공되고, 센서 데이터 161,480개가 점군 수의 2배(160,480)와 맞지 않습니다. 71570 주간판과 같은 구조입니다.",
+ "detail_en": "Collected by a commercial self-driving car on expressways at night with 5 cameras and a 3D lidar: 401,200 images (jpg), 80,240 point clouds (pcd), 80,240 segmentation masks (png), about 2,006 scenes, with JSON segmentation of front-camera images, lidar 3D cuboids, and sensor, vehicle decision and control data. Objects are grouped as dynamic, static and road objects. Baselines: 3D object detection with PointPillars, mAP 77.785%; 2D segmentation with Swin Transformer + UperNet, mIoU 72.75%. Segmentation is provided only for front-camera images, and the 161,480 sensor files do not match twice the point-cloud count (160,480). Same structure as the daytime set 71570.",
+ "amount_ko": "이미지 401,200장, 점군 80,240건, 분할 마스크 80,240장, 장면 약 2,006개",
+ "amount_en": "401,200 images, 80,240 point clouds, 80,240 masks, about 2,006 scenes",
+ "labels_ko": "도로·물체 영역(전방 카메라), 물체 입체 상자, 센서·주행 정보",
+ "labels_en": "segmentation (front camera), 3D cuboids, sensor and driving data",
+ "status": "full-run-2026-11-02"
+}

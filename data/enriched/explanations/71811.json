@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71811",
+ "easy_ko": "공공 사이트에서 모은 사무 문서 PDF 1만여 개와 그 페이지 그림에 표, 그림, 글 같은 요소의 위치와 설명을 붙인 데이터입니다. 문서 구조를 이해하고 문서 작성을 돕는 AI에 쓸 수 있습니다.",
+ "easy_en": "Over 10,000 office-document PDFs from public websites and their page images, with the positions and descriptions of elements such as tables, figures and text. You can use it to build AI that understands document layout and helps write documents.",
+ "detail_ko": "공공데이터포털·정책브리핑 등 공개 자료의 오피스 문서 PDF 10,261개와 페이지 이미지 47,072장(jpg)에 시각요소·텍스트요소 바운딩박스와 설명문 캡션 라벨 300,477건(JSON)을 붙였습니다. 데이터 개요 설명이 팩에 비어 있고, 요소 세부 클래스와 성능 지표는 팩 앞부분에 없습니다.",
+ "detail_en": "10,261 office-document PDFs and 47,072 page images (jpg) from public sources such as the Public Data Portal and Korea.kr policy briefings, with 300,477 JSON labels: bounding boxes for visual and text elements and descriptive captions. The dataset overview is empty in the pack, and element sub-classes and any metrics are not given.",
+ "amount_ko": "PDF 10,261개, 이미지 47,072장, 라벨 300,477건",
+ "amount_en": "10,261 PDFs, 47,072 images, 300,477 labels",
+ "labels_ko": "문서 요소 위치 상자, 설명 문장",
+ "labels_en": "bounding box, caption",
+ "status": "full-run-2026-11-02"
+}

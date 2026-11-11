@@ -1,0 +1,29 @@
+{
+ "dataset_id": "71475",
+ "title_en": "Machine translation quality verification data",
+ "summary_ko": "한국어↔영어 기계번역 결과를 사람이 고친 사후교정(MTPE) 310,000건과, 어절·문장·문서 수준으로 번역 품질을 평가한 품질예측(QE) 310,002건으로 이루어진 텍스트 데이터입니다. 번역 품질 자동 평가와 번역문 자동 교정 AI에 쓸 수 있습니다.",
+ "summary_en": "310,000 Korean-English machine translation post-edits (MTPE) and 310,002 quality estimation (QE) annotations at word, sentence and document level. For automatic translation quality scoring and post-editing AI.",
+ "contents_ko": "JSON(원문, 기계번역문, 사후교정문, 어절·문장·문서 품질 주석).",
+ "contents_en": "JSON (source, machine translation, post-edit, word/sentence/document quality annotations).",
+ "modalities": ["text"],
+ "tasks": ["translation", "text_generation", "text_classification"],
+ "topics": [{"ko": "번역·통역", "en": "Translation and interpretation"}, {"ko": "언어모델 평가", "en": "Language model evaluation"}],
+ "keywords_ko": ["기계번역", "품질 예측", "사후교정", "MQM", "한영 번역", "번역 평가"],
+ "keywords_en": ["machine translation", "quality estimation", "post-editing", "MQM", "Korean-English", "translation evaluation"],
+ "labels": ["post-edit", "quality score", "error class"],
+ "file_formats": ["json"],
+ "scale_ko": "620,002건(MTPE 310,000, QE 310,002), 주제 4종",
+ "classes_example": ["CA", "ES", "SH", "ST"],
+ "baseline": [{"task": "document-level QE (MQM, en-ko)", "model": "COMET22 + COMET-KIWI", "metric": "Kendall correlation", "value": "0.293"}, {"task": "document-level QE (MQM, ko-en)", "model": "COMET22 + COMET-KIWI", "metric": "Kendall correlation", "value": "0.333"}, {"task": "sentence-level QE (en-ko)", "model": "COMET22 + COMET-KIWI", "metric": "Kendall correlation", "value": "0.344"}, {"task": "word-level QE (en-ko)", "model": "COMET22 + COMET-KIWI", "metric": "Precision", "value": "70.4%"}],
+ "difficulty": "intermediate",
+ "difficulty_note_ko": "약 0.7GB로 작아 다루기 쉽지만 번역 품질 평가 개념을 먼저 이해해야 합니다.",
+ "skills_needed_ko": ["파이썬", "트랜스포머", "번역 평가 지표 이해"],
+ "caveats_ko": ["주제 약어(CA·ES·SH·ST)의 뜻이 팩에 설명되어 있지 않음", "품질 예측 상관계수(약 0.3)가 낮은 편임"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "번역 품질 좋고 나쁨 분류", "title_en": "Good vs bad translation", "desc_ko": "문장 품질 점수로 좋은 번역과 나쁜 번역을 분류합니다.", "desc_en": "Classify translations as good or bad from quality scores."},
+  {"level": "capstone", "title_ko": "번역 검수 도우미", "title_en": "Translation review helper", "desc_ko": "기계번역 결과에서 고쳐야 할 어절을 표시해 주는 도구를 만듭니다.", "desc_en": "Highlight words that need fixing in machine translations."},
+  {"level": "research", "title_ko": "자동 사후교정", "title_en": "Automatic post-editing", "desc_ko": "기계번역문을 사람 교정문처럼 자동으로 고치는 모델을 연구합니다.", "desc_en": "Model that post-edits machine translations like humans."}
+ ],
+ "doc_used": true,
+ "uncertain": ["주제 약어의 뜻"]
+}

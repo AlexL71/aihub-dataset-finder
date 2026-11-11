@@ -1,0 +1,33 @@
+{
+ "dataset_id": "71294",
+ "title_en": "OCR data (old-book Chinese characters)",
+ "summary_ko": "조선시대 고서 원문 약 5.4만 면에 들어 있는 한자 약 1,037만 자 하나하나에 상자와 유니코드 한자를 표시한 데이터입니다. 해서·행서·초서 등 서체와 경부·사부·자부·집부 주제가 다양합니다. 옛 문헌의 한자를 디지털 글자로 읽어내는 OCR AI에 쓸 수 있습니다.",
+ "summary_en": "About 54,000 page images of Joseon-era old books with about 10.37 million individual Chinese characters (Hanja), each boxed with its Unicode character, covering several scripts (regular, running, cursive) and the four classical subject groups (classics, history, philosophy, literature). For OCR AI that turns old documents into digital text.",
+ "contents_ko": "고서 페이지 이미지(jpg) + JSON(글자별 상자, 유니코드 한자).",
+ "contents_en": "Old-book page images (jpg) + JSON (per-character box, Unicode Hanja).",
+ "modalities": ["image", "text"],
+ "tasks": ["ocr", "object_detection"],
+ "topics": [{"ko": "역사·고문헌", "en": "History and old documents"}, {"ko": "문화유산 디지털화", "en": "Cultural heritage digitisation"}],
+ "keywords_ko": ["고서", "한자", "OCR", "조선시대", "고문헌", "서체"],
+ "keywords_en": ["old books", "Chinese characters", "OCR", "Joseon dynasty", "historical documents", "calligraphy styles"],
+ "labels": ["character bounding box", "Unicode character"],
+ "file_formats": ["jpg", "json"],
+ "scale_ko": "한자 약 1,037만 자, 이미지 약 5.4만 면, 서체 5종",
+ "classes_example": ["해서", "행서", "초서", "전서", "예서"],
+ "baseline": [
+  {"task": "character recognition (average)", "model": "HRCenterNet", "metric": "F1", "value": "0.9031"},
+  {"task": "character recognition (regular script)", "model": "HRCenterNet", "metric": "F1", "value": "0.952"},
+  {"task": "character recognition (running script)", "model": "HRCenterNet", "metric": "F1", "value": "0.8526"}
+ ],
+ "difficulty": "advanced",
+ "difficulty_note_ko": "약 129GB이고 한자 종류가 수천 개라 인식이 어렵습니다. 글자 위치 탐지부터 시작하세요.",
+ "skills_needed_ko": ["파이썬", "객체 탐지", "OCR 모델", "한자 기초"],
+ "caveats_ko": ["603번 고서 한자 OCR 데이터와 설명이 거의 같은 후속 데이터 — 함께 쓰면 중복 페이지 확인 필요", "해서체가 65%로 치우침", "파일이 1,580개로 많음"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "서체 분류", "title_en": "Script-style classifier", "desc_ko": "고서 페이지가 해서·행서·초서 중 무엇인지 분류합니다.", "desc_en": "Classify pages as regular, running or cursive script."},
+  {"level": "capstone", "title_ko": "고서 검색 시스템", "title_en": "Old-book search system", "desc_ko": "OCR 결과로 고서 페이지를 한자로 검색할 수 있게 합니다.", "desc_en": "Make old-book pages searchable by Hanja via OCR."},
+  {"level": "research", "title_ko": "603번과 합친 학습 효과", "title_en": "Combining with dataset 603", "desc_ko": "두 고서 OCR 데이터를 합치면 드문 한자 인식이 좋아지는지 연구합니다.", "desc_en": "Test whether merging with dataset 603 helps rare characters."}
+ ],
+ "doc_used": true,
+ "uncertain": ["overlap with dataset 603"]
+}

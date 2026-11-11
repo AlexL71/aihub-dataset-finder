@@ -1,0 +1,12 @@
+{
+ "dataset_id": "174",
+ "easy_ko": "지하철역 CCTV에서 에스컬레이터나 계단에서 넘어짐, 쓰러짐, 몰래 촬영 같은 이상행동과 평소 행동을 찍은 장면에 어떤 행동인지와 사람 위치를 표시한 데이터입니다. 역이나 쇼핑몰처럼 사람이 많은 실내에서 사고와 범죄를 알아채는 CCTV AI를 만들 수 있습니다.",
+ "easy_en": "Subway-station CCTV scenes of abnormal behaviour, such as falls on escalators or stairs, fainting and secret filming, as well as normal behaviour, marked with the behaviour type and person position. You can build CCTV AI that spots accidents and crimes in crowded indoor places like stations and malls.",
+ "detail_ko": "대전 도시철도 역사 CCTV에서 이상행동 13종(에스컬레이터 전도, 계단 전도, 실신, 몰카 등)과 정상 행동을 담은 7,030개 클립의 이미지 100만 장 이상(jpg)으로, JSON/XML에 이상행동 종류, 사람 바운딩박스, 구간이 있습니다. 기준 성능과 13종 전체 목록은 기록에서 확인되지 않습니다. 실제 역사 CCTV라 이용 약관·개인정보 확인이 필요합니다.",
+ "detail_en": "1M+ jpg images from 7,030 clips of Daejeon subway CCTV covering 13 abnormal behaviours (escalator falls, stair falls, fainting, hidden-camera filming and more) and normal behaviour, with JSON/XML behaviour class, person bounding boxes and time segments. The baseline and full list of 13 classes are not visible in the record. This is real station CCTV, so check terms and privacy.",
+ "amount_ko": "클립 7,030개, 이미지 100만 장 이상",
+ "amount_en": "7,030 clips, 1M+ images",
+ "labels_ko": "이상행동 종류, 사람 위치 상자, 시간 구간",
+ "labels_en": "abnormal-behaviour class, box around the person, time segment",
+ "status": "full-run-2026-11-02"
+}

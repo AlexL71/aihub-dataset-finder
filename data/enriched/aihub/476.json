@@ -1,0 +1,29 @@
+{
+ "dataset_id": "476",
+ "title_en": "Images for small object detection",
+ "summary_ko": "고해상도(2800×2100) 사진 속 200×200 픽셀 이하의 작은 물체 712종을 분할 라벨로 표시한 이미지 76만 장입니다. 새·돈·문구·공구·육아용품 등 35개 상위 분류가 있어 작은 물체 탐지 성능을 높이는 연구에 쓸 수 있습니다.",
+ "summary_en": "762,000 high-resolution (2800×2100) images where small objects of 712 types (200×200 pixels or smaller) are segmented. 35 super-classes such as birds, money, stationery, tools and baby goods support research on improving small-object detection.",
+ "contents_ko": "이미지(jpg) + JSON(작은 물체 분할 다각형, 클래스, 슈퍼클래스).",
+ "contents_en": "Image (jpg) + JSON (small-object segmentation polygons, class, super-class).",
+ "modalities": ["image"],
+ "tasks": ["object_detection", "segmentation"],
+ "topics": [{"ko": "컴퓨터 비전 연구", "en": "Computer vision research"}, {"ko": "생활용품", "en": "Everyday objects"}],
+ "keywords_ko": ["소형 객체", "작은 물체 탐지", "분할", "고해상도", "컴퓨터비전"],
+ "keywords_en": ["small objects", "small object detection", "segmentation", "high resolution", "computer vision"],
+ "labels": ["polygon", "class (712)", "super-class (35)"],
+ "file_formats": ["jpg", "json"],
+ "scale_ko": "761,822장, 객체 712종, 슈퍼클래스 35종",
+ "classes_example": ["조류", "돈", "문구류", "공구", "육아용품", "비행객체"],
+ "baseline": [],
+ "difficulty": "advanced",
+ "difficulty_note_ko": "작은 물체가 많고 클래스도 712종이라 어렵습니다. 전체 약 2.5TB입니다.",
+ "skills_needed_ko": ["파이썬", "인스턴스 분할(Mask R-CNN)", "고해상도 타일링"],
+ "caveats_ko": ["전체 약 2.5TB", "성능 지표가 팩 앞부분에 없음"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "작은 동전 탐지", "title_en": "Small coin detection", "desc_ko": "돈 슈퍼클래스만 골라 작은 동전·지폐를 탐지합니다.", "desc_en": "Detect small coins and notes in the money super-class."},
+  {"level": "capstone", "title_ko": "책상 위 물건 정리 도우미", "title_en": "Desk object finder", "desc_ko": "고해상도 사진에서 작은 문구·공구를 찾아 목록을 만들어 줍니다.", "desc_en": "Find small stationery and tools in high-resolution photos and list them."},
+  {"level": "research", "title_ko": "타일링·초해상도의 효과", "title_en": "Tiling and super-resolution effects", "desc_ko": "이미지 타일링과 초해상화가 작은 물체 탐지에 주는 효과를 비교합니다.", "desc_en": "Compare tiling and super-resolution for small-object detection."}
+ ],
+ "doc_used": true,
+ "uncertain": []
+}

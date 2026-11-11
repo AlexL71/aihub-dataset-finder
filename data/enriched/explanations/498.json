@@ -1,0 +1,12 @@
+{
+ "dataset_id": "498",
+ "easy_ko": "동물병원에서 찍은 강아지·고양이 배 부분의 엑스레이와 초음파 사진으로, 간이 커진 병, 신장 병, 종양, 결석, 장이 막힌 병 같은 이상이 있는 곳이 표시되어 있습니다. 수의사가 반려동물의 병을 더 빨리 찾도록 돕는 AI를 만들 수 있습니다.",
+ "easy_en": "X-ray and ultrasound images of dogs' and cats' bellies from animal hospitals, with problems such as an enlarged liver, kidney disease, tumours, stones and blocked intestines marked. You can build AI that helps vets find pet illnesses sooner.",
+ "detail_ko": "동물병원에서 수집한 반려동물 복부 X-ray·초음파 영상 302,949건(jpg)에 질환 코드와 병변 바운딩박스·다각형·라인이 JSON으로 라벨링되어 있습니다. 질환 클래스는 간비대, 소간증, 거대신장, 복부종양, 비뇨기결석, 장폐색, 거대결장 등과 정상입니다. 질환 비율이 1~2%인 클래스가 많아 불균형 처리가 필요하며, 수의사 진단을 대체해서는 안 됩니다. 흉부·근골격계 데이터가 따로 있습니다.",
+ "detail_en": "302,949 abdominal X-ray and ultrasound images (jpg) of pets from animal hospitals, labelled in JSON with a disease code and lesion boxes, polygons and lines. Classes include hepatomegaly, microhepatica, renomegaly, abdominal tumour, urolithiasis, ileus, megacolon and normal. Many classes are only 1–2% of the data, so class imbalance must be handled; not a substitute for a vet's diagnosis. Separate chest and musculoskeletal sets exist.",
+ "amount_ko": "엑스레이·초음파 영상 약 30만 건",
+ "amount_en": "about 303k X-ray and ultrasound images",
+ "labels_ko": "병 이름, 이상 부위 상자·윤곽·선",
+ "labels_en": "disease name, box, outline or line on the affected area",
+ "status": "sample-2026-11-02"
+}

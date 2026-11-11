@@ -1,0 +1,12 @@
+{
+ "dataset_id": "74",
+ "easy_ko": "한국 사람이 자주 먹는 한식과 외식 메뉴를 사진으로 찍고, 사진마다 어떤 음식인지와 음식이 놓인 위치를 표시한 데이터입니다. 일부 사진은 음식 양을 다섯 단계로 나눠 찍어서, 사진만 보고 무슨 음식을 얼마나 먹었는지 알아내는 식단 관리 앱을 만들 수 있습니다.",
+ "easy_en": "Photos of Korean dishes and popular restaurant food, each marked with what the food is and where it sits in the picture. Some photos show the same dish in five portion sizes, so you can build a diet app that recognises a meal and estimates how much was eaten.",
+ "detail_ko": "한국인 다빈도 섭취 메뉴 400종의 일반 음식 이미지 80만 장과, 무게를 측정해 양을 5단계로 나눈 정밀 촬영 이미지 4.2만 장으로 구성됩니다. 라벨은 음식 클래스와 바운딩박스(txt·xml)이며, 정밀 촬영분에는 양 단계가 추가됩니다. 기준 성능은 음식 인식 YOLOv3 정확도 90.46%, 양 추정 ResNet 정확도 89.5%입니다. 칼로리·나트륨 같은 영양 정보 표의 포함 여부는 원문 확인이 필요합니다.",
+ "detail_en": "800k images of 400 frequently eaten Korean dishes plus 42k precisely photographed images where each dish was weighed and grouped into five portion levels. Labels are dish class and bounding box (txt/xml), with a portion level for the precise set. Baselines: food recognition with YOLOv3, 90.46% accuracy; portion estimation with ResNet, 89.5%. Whether a nutrition table (calories, sodium) is included should be checked in the original documents.",
+ "amount_ko": "음식 사진 80만 장(400종) + 양 측정 사진 4.2만 장",
+ "amount_en": "800k food photos (400 dishes) + 42k portion-measured photos",
+ "labels_ko": "음식 종류, 음식 위치 상자, 양 단계(5단계)",
+ "labels_en": "dish name, box around the food, portion level (1-5)",
+ "status": "sample-2026-11-02"
+}

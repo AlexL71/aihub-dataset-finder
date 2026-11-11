@@ -1,0 +1,29 @@
+{
+ "dataset_id": "71859",
+ "title_en": "Mathematics problem-solving process data",
+ "summary_ko": "2022 개정 교육과정 성취기준과 연결된 수학 문제·풀이·정답 세트 20,319개를 이미지와 상자·다각형·이미지 설명으로 정리한 데이터입니다. 난이도(상·중·하)가 표시되어 있어 풀이 정오답 판단이나 유사 문제 생성에 쓸 수 있습니다.",
+ "summary_en": "20,319 math problem-solution-answer sets linked to the 2022 curriculum standards, as images with boxes, polygons and captions, tagged by difficulty (high, mid, low). For checking solutions and generating similar problems.",
+ "contents_ko": "문제·풀이 이미지(png) + JSON(상자, 다각형, 문항·풀이·정답·해설, 이미지 설명, 난이도).",
+ "contents_en": "Problem and solution images (png) + JSON (boxes, polygons, question, solution, answer, explanation, caption, difficulty).",
+ "modalities": ["image", "text"],
+ "tasks": ["question_answering", "visual_qa", "ocr", "text_generation"],
+ "topics": [{"ko": "수학 교육", "en": "Math education"}, {"ko": "에듀테크", "en": "Edtech"}],
+ "keywords_ko": ["수학", "풀이 과정", "정오답 판단", "유사 문제 생성", "난이도", "교육과정"],
+ "keywords_en": ["mathematics", "solution steps", "answer checking", "similar problem generation", "difficulty", "curriculum"],
+ "labels": ["bounding box", "polygon", "caption", "question-answer"],
+ "file_formats": ["png", "json"],
+ "scale_ko": "문제 20,319세트, 난이도 3단계(상 814·중 6,606·하 12,899)",
+ "classes_example": ["상", "중", "하"],
+ "baseline": [],
+ "difficulty": "intermediate",
+ "difficulty_note_ko": "약 0.85GB로 가볍지만 수식 이미지를 다루려면 OCR·비전-언어 모델이 필요합니다.",
+ "skills_needed_ko": ["파이썬", "수식 OCR", "비전-언어 모델(LLaVA 등)"],
+ "caveats_ko": ["난이도 '하'가 약 63%로 치우침", "출판사 저작물 기반이라 이용 조건 확인 필요", "품질 점수는 라벨 정확도이며 모델 성능 수치는 팩에 없음", "71716·71718 대교 수학 데이터와 목적이 비슷함"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "수학 문제 난이도 분류", "title_en": "Math difficulty classifier", "desc_ko": "문제 텍스트로 상·중·하 난이도를 예측합니다.", "desc_en": "Predict difficulty from problem text."},
+  {"level": "capstone", "title_ko": "풀이 채점 도우미", "title_en": "Solution checker", "desc_ko": "학생 풀이를 정답 풀이와 비교해 맞았는지 틀렸는지 알려 줍니다.", "desc_en": "Check a student's solution against the reference."},
+  {"level": "research", "title_ko": "유사 문제 자동 생성", "title_en": "Similar-problem generation", "desc_ko": "성취기준과 난이도를 유지하면서 새 문제를 만드는 방법을 연구합니다.", "desc_en": "Study generating new problems at the same standard and difficulty."}
+ ],
+ "doc_used": true,
+ "uncertain": ["학년 분포 확인 필요"]
+}

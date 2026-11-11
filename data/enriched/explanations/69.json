@@ -1,0 +1,12 @@
+{
+ "dataset_id": "69",
+ "easy_ko": "전시장, 마트, 공항 같은 실내에서 레이저 거리 측정 장비와 카메라를 함께 써서 사람들이 걸어 다니는 모습을 기록하고, 사람마다 위치를 상자로 표시한 데이터입니다. 매장 손님이 어떻게 움직이는지 분석하거나 실내에서 사람을 따라가며 찾는 AI를 만들 수 있습니다.",
+ "easy_en": "Recordings of people walking around indoor places such as exhibition halls, supermarkets and an airport, made with a laser distance scanner and cameras together, with a box around each person. You can build AI that tracks people indoors or analyses how shoppers move through a store.",
+ "detail_ko": "킨텍스·코엑스·마트·제주공항 등 실내에서 라이다-카메라 융합 센서로 305시간 수집했으며, 학습 세트 108,203개(전방향 72,178, 단방향 36,025)와 카메라 사진 약 39.7만 장으로 구성됩니다. 한 세트는 라이다 점구름(bin), 3D 바운딩박스(txt), 카메라 사진(png, 전방향은 5장), 2D 바운딩박스(txt), 통합 JSON입니다. 기준 성능은 PointPillars / PV-RCNN 보행자 탐지 AP 50.06%, 희소 객체 mAP 5.4%로 낮습니다. 전체 약 756GB이며 실내 사람 영상이라 이용 약관 확인이 필요합니다.",
+ "detail_en": "305 hours collected indoors (KINTEX, COEX, supermarkets, Jeju Airport) with a fused lidar–camera sensor: 108,203 training sets (72,178 omnidirectional, 36,025 single-direction) and about 397k camera images. Each set has a lidar point cloud (bin), 3D boxes (txt), camera images (png, 5 for omnidirectional), 2D boxes (txt) and a combined JSON. Baselines are weak: PointPillars / PV-RCNN pedestrian AP 50.06%, rare-object mAP 5.4%. Total size is about 756 GB; people are recorded indoors, so check the terms of use.",
+ "amount_ko": "학습 세트 약 10.8만 개, 카메라 사진 약 39.7만 장",
+ "amount_en": "about 108k training sets, about 397k camera images",
+ "labels_ko": "사람 위치 상자(입체·평면)",
+ "labels_en": "boxes around pedestrians (3D and 2D)",
+ "status": "full-run-2026-11-02"
+}

@@ -1,0 +1,29 @@
+{
+ "dataset_id": "547",
+ "title_en": "Automatic industry classification of patents",
+ "summary_ko": "한국표준산업분류(KSIC) 세세분류 563개마다 특허 1,000건씩, 총 56만 건의 특허를 산업 분야와 정확하게 연결한 데이터입니다. 특허 내용을 읽고 해당 산업 분야를 자동으로 분류하거나 산업별 특허 동향을 분석하는 AI에 쓸 수 있습니다.",
+ "summary_en": "563,000 patents mapped accurately to Korean Standard Industrial Classification (KSIC) sub-classes, 1,000 per class across 563 classes. For AI that reads a patent and assigns its industry, or analyses patent trends by industry.",
+ "contents_ko": "특허 텍스트(요약·청구항 등) + JSON(KSIC 산업분류 코드, 기술요소).",
+ "contents_en": "Patent text (abstract, claims and more) + JSON (KSIC industry code, technical elements).",
+ "modalities": ["text"],
+ "tasks": ["text_classification", "information_extraction"],
+ "topics": [{"ko": "특허·지식재산", "en": "Patents and intellectual property"}, {"ko": "산업·경제", "en": "Industry and economy"}],
+ "keywords_ko": ["특허 분류", "KSIC", "산업분류", "기술 동향", "KIPRIS"],
+ "keywords_en": ["patent classification", "KSIC", "industry classification", "technology trends", "KIPRIS"],
+ "labels": ["class (KSIC code)", "technical elements"],
+ "file_formats": ["txt", "json"],
+ "scale_ko": "특허 563,000건, KSIC 세세분류 563~564개",
+ "classes_example": ["KSIC 대분류 21개 > 세세분류 563개", "농업, 임업 및 어업 > 곡물 및 기타 식량작물 재배업", "농업, 임업 및 어업 > 채소작물 재배업", "농업, 임업 및 어업 > 화훼작물 재배업", "농업, 임업 및 어업 > 종자 및 묘목 생산업"],
+ "baseline": [],
+ "difficulty": "intermediate",
+ "difficulty_note_ko": "약 0.27GB로 가볍지만 클래스가 560여 개라 분류가 쉽지 않습니다.",
+ "skills_needed_ko": ["파이썬", "한국어 텍스트 분류(BERT)", "클래스가 많은 분류 평가"],
+ "caveats_ko": ["라벨링 유형이 '내용요약'으로 적혀 있지만 실제는 분류 라벨", "성능 지표가 팩 앞부분에 없음"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "대분류 산업 맞히기", "title_en": "Top-level industry classifier", "desc_ko": "KSIC 대분류 수준으로 묶어 특허를 분류합니다.", "desc_en": "Group to top-level KSIC and classify patents."},
+  {"level": "capstone", "title_ko": "산업별 특허 동향 대시보드", "title_en": "Patent trends by industry", "desc_ko": "분류 결과로 산업별 특허 수 변화를 보여주는 대시보드를 만듭니다.", "desc_en": "Show patent counts over time by industry."},
+  {"level": "research", "title_ko": "계층 분류로 정확도 높이기", "title_en": "Hierarchical classification", "desc_ko": "KSIC 계층 구조를 이용한 분류가 평면 분류보다 나은지 연구합니다.", "desc_en": "Test whether hierarchical classification beats flat classification."}
+ ],
+ "doc_used": true,
+ "uncertain": []
+}

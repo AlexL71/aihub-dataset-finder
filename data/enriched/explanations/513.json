@@ -1,0 +1,12 @@
+{
+ "dataset_id": "513",
+ "easy_ko": "인도에 있는 볼라드, 울타리, 맨홀, 벤치, 표지판 같은 시설물을 종류별로 찍고, 사진마다 상태가 괜찮은지 망가졌는지와 위치를 표시한 데이터입니다. 망가진 길거리 시설을 자동으로 찾아 고치도록 돕는 AI를 만들 수 있습니다.",
+ "easy_en": "Photos of sidewalk facilities such as bollards, fences, manholes, benches and signs, grouped by type and each marked as in good or bad condition, with its position. You can build AI that finds broken street facilities so they can be repaired.",
+ "detail_ko": "보행로 안전·관리·환경·편의 시설물 30종을 양호·불량 상태로 나눠 촬영한 이미지 100만 장 이상(일부 양호 상태 포함, jpg)에 시설물 종류, 상태, 바운딩박스·분할을 JSON으로 붙였습니다. 구축량은 상세 페이지 기준이며 기준 성능은 기록에서 확인되지 않습니다. 전체 약 3.6TB이며 노후 시설물 데이터(166번)와 비슷합니다.",
+ "detail_en": "1M+ jpg images of 30 types of sidewalk safety, management, environment and convenience facilities in good or defective condition, with JSON facility type, condition, and boxes and segmentation. The count comes from the detail page; no baseline is visible in the record. Total size is about 3.6 TB; similar to the aged-facility dataset (166).",
+ "amount_ko": "이미지 100만 장 이상, 시설물 30종",
+ "amount_en": "1M+ images, 30 facility types",
+ "labels_ko": "시설물 종류, 좋음·망가짐 상태, 위치 상자·영역",
+ "labels_en": "facility type, good or defective, boxes and masks",
+ "status": "full-run-2026-11-02"
+}

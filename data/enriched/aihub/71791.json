@@ -1,0 +1,29 @@
+{
+ "dataset_id": "71791",
+ "title_en": "Career sentence completion test text data",
+ "summary_ko": "청소년이 진로문장완성검사에 쓴 응답 40,422건에 전문가의 문항별 해석 글과 진로성숙도(상·중·하) 분류가 붙은 텍스트 데이터입니다. 진로 검사 결과를 자동으로 해석하고 진로 상담을 돕는 AI에 쓸 수 있습니다.",
+ "summary_en": "40,422 teenage responses to a career sentence-completion test, with expert interpretations per item and career maturity ratings (high, medium, low). For AI that interprets career test results and supports career counselling.",
+ "contents_ko": "JSON(학생 응답, 문항별 전문가 해석, 진로성숙도).",
+ "contents_en": "JSON (student responses, expert interpretation per item, career maturity).",
+ "modalities": ["text"],
+ "tasks": ["text_classification", "text_generation"],
+ "topics": [{"ko": "진로·교육 상담", "en": "Career and education counselling"}, {"ko": "청소년", "en": "Adolescents"}],
+ "keywords_ko": ["진로 검사", "문장완성검사", "진로성숙도", "전문가 해석", "청소년 상담", "교육"],
+ "keywords_en": ["career test", "sentence completion test", "career maturity", "expert interpretation", "youth counselling", "education"],
+ "labels": ["career maturity level", "expert interpretation"],
+ "file_formats": ["json"],
+ "scale_ko": "응답 40,422건, 진로성숙도 3단계",
+ "classes_example": ["상", "중", "하"],
+ "baseline": [],
+ "difficulty": "beginner",
+ "difficulty_note_ko": "약 50MB로 작아 한국어 텍스트 분류·생성 입문에 좋습니다.",
+ "skills_needed_ko": ["파이썬", "한국어 자연어 처리", "텍스트 분류"],
+ "caveats_ko": ["청소년 응답이라 이용 조건과 연구 윤리 확인 필요", "특정 기관 검사 도구 기반임", "성능 지표 값이 팩에 없음"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "진로성숙도 분류", "title_en": "Career maturity classifier", "desc_ko": "학생 응답으로 진로성숙도 상·중·하를 분류합니다.", "desc_en": "Classify career maturity from responses."},
+  {"level": "capstone", "title_ko": "진로 검사 해석 도우미", "title_en": "Career test interpreter", "desc_ko": "응답을 넣으면 전문가식 해석 초안을 써 주는 상담 도구를 만듭니다.", "desc_en": "Draft expert-style interpretations for counsellors."},
+  {"level": "research", "title_ko": "해석 생성 품질 평가", "title_en": "Evaluating generated interpretations", "desc_ko": "AI 해석이 전문가 해석과 얼마나 비슷한지 평가하는 방법을 연구합니다.", "desc_en": "Measure how close AI interpretations are to experts'."}
+ ],
+ "doc_used": true,
+ "uncertain": ["문항 수"]
+}

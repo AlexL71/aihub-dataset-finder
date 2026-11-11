@@ -1,0 +1,29 @@
+{
+ "dataset_id": "71796",
+ "title_en": "School zone commute and facility video data",
+ "summary_ko": "어린이 보호구역(스쿨존)에서 등하교 어린이와 시설물을 찍은 영상에서 만든 데이터 2,103,741건으로, 어린이·차량·시설물이 상자·분할로 표시되고 보행 유형·위치·시간 정보가 붙어 있습니다. 스쿨존 위험 보행 감지와 어린이 사고 예방 AI에 쓸 수 있습니다.",
+ "summary_en": "2,103,741 items from school-zone video of children commuting and zone facilities, with children, vehicles and facilities marked by boxes and segmentation, plus walking pattern, location and time info. For detecting risky walking in school zones and preventing child accidents.",
+ "contents_ko": "영상 프레임 이미지(jpg) + JSON(상자, 분할, 보행 유형, 위치·시간).",
+ "contents_en": "Video frame image (jpg) + JSON (boxes, segmentation, walking type, location and time).",
+ "modalities": ["video", "image"],
+ "tasks": ["object_detection", "segmentation", "action_recognition", "object_tracking"],
+ "topics": [{"ko": "교통 안전", "en": "Traffic safety"}, {"ko": "어린이 보호", "en": "Child safety"}],
+ "keywords_ko": ["스쿨존", "어린이 보호구역", "보행 패턴", "등하교", "교통 안전", "CCTV"],
+ "keywords_en": ["school zone", "child protection zone", "walking patterns", "school commute", "traffic safety", "CCTV"],
+ "labels": ["bounding box", "segmentation", "walking type"],
+ "file_formats": ["jpg", "json"],
+ "scale_ko": "2,103,741건",
+ "classes_example": [],
+ "baseline": [],
+ "difficulty": "advanced",
+ "difficulty_note_ko": "보행 패턴 분석까지 다루면 어렵고 전체가 약 764GB입니다. 어린이 탐지부터 시작하세요.",
+ "skills_needed_ko": ["파이썬", "YOLO 탐지", "객체 추적"],
+ "caveats_ko": ["전체 약 764GB", "어린이가 나오는 영상이라 개인정보·이용 조건을 꼭 확인해야 함", "클래스·보행 유형 목록과 성능 지표가 팩 앞부분에 없음"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "스쿨존 어린이 탐지", "title_en": "Child detection in school zones", "desc_ko": "영상 프레임에서 어린이와 차량을 상자로 찾습니다.", "desc_en": "Box children and vehicles in frames."},
+  {"level": "capstone", "title_ko": "무단횡단 경고 시스템", "title_en": "Jaywalking warning", "desc_ko": "어린이가 차도로 뛰어드는 위험 보행을 감지해 알립니다.", "desc_en": "Detect children darting into the road and warn."},
+  {"level": "research", "title_ko": "시간대별 위험 분석", "title_en": "Risk by time of day", "desc_ko": "등하교 시간대별 위험 보행 패턴을 분석하는 방법을 연구합니다.", "desc_en": "Analyse risky walking patterns by commute time."}
+ ],
+ "doc_used": true,
+ "uncertain": ["2,103,741건의 구성(이미지 수 vs 라벨 수)", "영상 파일 제공 여부", "클래스 목록을 페이지와 설명서에서 찾지 못함"]
+}

@@ -1,0 +1,29 @@
+{
+ "dataset_id": "507",
+ "title_en": "Real-time video data from work-at-height sites",
+ "summary_ko": "고소작업 현장을 CCTV·안전모 부착 카메라·액션캠으로 찍은 영상 371시간(이미지 68.8만 장)으로, 안전장구 착용, 안전고리 체결 여부, 과적, 난간에 기대기, 신호수 위험 같은 위험 상황이 상자와 키포인트로 표시되어 있습니다. 높은 곳 작업자의 추락 사고를 막는 안전 관리 AI에 쓸 수 있습니다.",
+ "summary_en": "371 hours of video (688,000 images) of work-at-height sites from CCTV, helmet-mounted cameras and action cams, with boxes and keypoints for safety gear, harness clipping, overloading, leaning on railings and signaller danger. For safety AI that prevents falls among workers at height.",
+ "contents_ko": "현장 이미지(jpg) + JSON(작업자·장구 상자, 키포인트, 위험 상황 클래스).",
+ "contents_en": "Site image (jpg) + JSON (worker and gear boxes, keypoints, danger class).",
+ "modalities": ["image", "video"],
+ "tasks": ["object_detection", "keypoint_pose", "action_recognition"],
+ "topics": [{"ko": "건설·산업 안전", "en": "Construction and industrial safety"}, {"ko": "노동·작업 환경", "en": "Work environment"}],
+ "keywords_ko": ["고소작업", "추락 방지", "안전고리", "안전모", "건설 안전", "위험 행동"],
+ "keywords_en": ["work at height", "fall prevention", "safety harness", "helmet", "construction safety", "unsafe behaviour"],
+ "labels": ["bounding box", "keypoints", "danger class"],
+ "file_formats": ["jpg", "json"],
+ "scale_ko": "영상 371시간, 이미지 687,895장",
+ "classes_example": ["안전모", "안전고리 체결", "과적", "난간 기대기", "신호수"],
+ "baseline": [],
+ "difficulty": "intermediate",
+ "difficulty_note_ko": "보호구 탐지는 쉽고 위험 행동 인식은 중급입니다. 약 507GB입니다.",
+ "skills_needed_ko": ["파이썬", "YOLO 탐지", "자세 추정"],
+ "caveats_ko": ["위험 상황은 연출 시나리오", "성능 지표가 팩 앞부분에 없음"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "안전고리 체결 확인", "title_en": "Harness clipping check", "desc_ko": "이미지에서 안전고리가 체결되었는지 분류합니다.", "desc_en": "Classify whether the safety hook is clipped."},
+  {"level": "capstone", "title_ko": "고소작업 실시간 위험 알림", "title_en": "Real-time work-at-height alerts", "desc_ko": "난간 기대기·미체결을 감지해 관리자에게 알리는 대시보드를 만듭니다.", "desc_en": "Alert supervisors when workers lean on railings or are unclipped."},
+  {"level": "research", "title_ko": "1인칭 카메라 위험 인지", "title_en": "Danger awareness from helmet cameras", "desc_ko": "안전모 카메라 영상만으로 위험 상황을 인식하는 방법을 연구합니다.", "desc_en": "Recognise danger from helmet-camera video alone."}
+ ],
+ "doc_used": true,
+ "uncertain": []
+}

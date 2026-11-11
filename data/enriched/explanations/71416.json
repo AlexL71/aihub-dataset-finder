@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71416",
+ "easy_ko": "CCTV에 많이 쓰는 적외선 카메라로 실내와 실외(햇빛·역광)에서 찍은 얼굴 사진에 얼굴 위치와 주요 점, 누구인지를 표시한 데이터입니다. 밤이나 어두운 곳에서도 얼굴을 찾고 알아보는 AI를 만들 수 있지만, 실제 얼굴이라 개인정보에 주의해야 합니다.",
+ "easy_en": "Face photos taken with the infrared cameras often used in CCTV, indoors and outdoors (direct sunlight and backlight), with face position, key points and identity marked. You can build AI that finds and recognises faces at night or in the dark, but these are real faces, so privacy matters.",
+ "detail_ko": "IR 카메라로 실내·실외(직광·역광)에서 촬영한 얼굴 이미지 240,712장(png; 인식용 3,001명×72장=216,072장, 검출용 308팀×80장=24,640장)에 얼굴 바운딩박스, 키포인트, 신원, 촬영 환경, 성별·연령대를 JSON으로 붙였습니다. 기준 성능은 얼굴 인식 정확도 94.93%, 얼굴 검출 mAP 97.86%인데 모델 이름(RetinaFace·ArcFace)이 서로 바뀌어 적힌 것으로 보입니다. 실제 얼굴이라 개인정보·초상권 이용 조건을 꼭 확인해야 하고, 같은 사람 72장이 있어 사람 단위로 나눠야 합니다.",
+ "detail_en": "240,712 IR face images (png) taken indoors and outdoors (direct light, backlight): 216,072 for recognition (3,001 people × 72) and 24,640 for detection (308 groups × 80), with JSON face boxes, keypoints, identity, capture setting, sex and age group. Baselines: recognition accuracy 94.93% and detection mAP 97.86%, though the model names (RetinaFace, ArcFace) appear swapped. These are real faces, so check privacy and portrait rights; each person has 72 images, so split by person.",
+ "amount_ko": "적외선 얼굴 사진 240,712장",
+ "amount_en": "240,712 IR face images",
+ "labels_ko": "얼굴 위치 상자, 얼굴 주요 점, 누구인지, 촬영 환경",
+ "labels_en": "face boxes, key points, identity, capture setting",
+ "status": "full-run-2026-11-02"
+}

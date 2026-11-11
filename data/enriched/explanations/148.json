@@ -1,0 +1,12 @@
+{
+ "dataset_id": "148",
+ "easy_ko": "배추흰나비, 나방, 노린재, 진딧물 같은 밭 작물 해충과 건강한 작물을 찍은 사진마다 해충의 위치와 종류를 표시한 데이터입니다. 밭에서 해충을 찾아내고 약을 뿌릴 때를 알려 주는 AI를 만들 수 있습니다.",
+ "easy_en": "Photos of field-crop pests such as cabbage white butterflies, moths, stink bugs and aphids, plus healthy crops, each marked with where the pest is and what it is. You can build AI that spots pests in the field and tells farmers when to spray.",
+ "detail_ko": "노지 작물 12종의 학습 데이터 502,530건(정상 약 8.4만, 해충 원본 2만 + 증강 20만, jpg)으로 해충 19종(배추좀나방, 배추흰나비, 담배거세미나방, 먹노린재, 복숭아혹진딧물 등)의 종류, 바운딩박스, 작물 정보가 JSON으로 있습니다. 기준 성능 지표는 없습니다. 전체 약 900GB이고, 증강본이 많아 원본 기준으로 데이터를 나눠야 하며, 페이지 표 제목이 '노지 작물 질병'으로 잘못 적혀 있습니다.",
+ "detail_en": "502,530 training items for 12 open-field crops (about 84k healthy; 20k original pest photos plus 200k augmentations; jpg), with JSON pest type for 19 pests (diamondback moth, cabbage white, armyworm, stink bug, green peach aphid and more), bounding boxes and crop info. No baseline is published. Total size is about 900 GB; many images are augmentations, so split by original; the page table is mislabelled as crop diseases.",
+ "amount_ko": "학습 데이터 약 50.3만 건, 해충 19종",
+ "amount_en": "about 503k training items, 19 pests",
+ "labels_ko": "해충 위치 상자, 해충 종류, 작물 정보",
+ "labels_en": "box around the pest, pest type, crop info",
+ "status": "full-run-2026-11-02"
+}

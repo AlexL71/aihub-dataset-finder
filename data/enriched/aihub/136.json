@@ -1,0 +1,32 @@
+{
+ "dataset_id": "136",
+ "title_en": "Forest tree species images (Seoul metropolitan area)",
+ "summary_ko": "수도권 지역 항공사진(25cm 해상도) 6만 장과 위성 모사영상(5m)에 소나무·낙엽송·기타 침엽수·활엽수 4종 산림 영역을 칠한 데이터입니다. 도시 주변 숲의 수종 지도를 만들고 녹지 변화를 감시하는 AI에 쓸 수 있습니다.",
+ "summary_en": "60,000 aerial photos (25 cm resolution) and simulated satellite images (5 m) of the Seoul metropolitan area with forest areas painted as pine, larch, other conifers and broadleaf. For mapping tree species around cities and monitoring green-space change.",
+ "contents_ko": "512×512 또는 1024×1024 영상 패치(TIFF) + JSON 분할 라벨(정밀 또는 대략 라벨).",
+ "contents_en": "512×512 or 1024×1024 image patches (TIFF) + JSON segmentation labels (fine or coarse).",
+ "modalities": ["image"],
+ "tasks": ["segmentation"],
+ "topics": [{"ko": "산림·숲", "en": "Forests"}, {"ko": "위성·항공 영상", "en": "Satellite and aerial imagery"}, {"ko": "도시 녹지", "en": "Urban green space"}],
+ "keywords_ko": ["산림수종", "항공사진", "수도권", "도시 숲", "녹지", "환경 변화"],
+ "keywords_en": ["tree species", "aerial photo", "Seoul area", "urban forest", "green space", "environmental change"],
+ "labels": ["segmentation mask (4 species)", "fine/coarse annotation"],
+ "file_formats": ["tif", "json"],
+ "scale_ko": "항공사진 60,392장(정밀 22,807, 대략 37,585), 모사영상 500장",
+ "classes_example": ["소나무", "낙엽송", "기타 침엽수", "활엽수"],
+ "baseline": [
+  {"task": "tree species segmentation (aerial)", "model": "DeepLab v3+", "metric": "pixel accuracy", "value": "88%"},
+  {"task": "conifer/broadleaf segmentation (aerial)", "model": "DeepLab v3+", "metric": "pixel accuracy", "value": "89%"}
+ ],
+ "difficulty": "beginner",
+ "difficulty_note_ko": "약 21GB로 작고 클래스가 4개뿐이라 첫 이미지 분할 프로젝트로 좋습니다.",
+ "skills_needed_ko": ["파이썬", "이미지 분할 모델(U-Net, DeepLab)", "TIFF 영상 읽기"],
+ "caveats_ko": ["대략(Coarse) 라벨은 경계가 거칠어 평가는 정밀 라벨로 하는 것이 좋음"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "도시 숲 수종 분할", "title_en": "Urban forest species segmentation", "desc_ko": "수도권 항공사진에서 수종 4종을 칠하는 모델을 학습합니다.", "desc_en": "Train a model that paints 4 species in aerial photos."},
+  {"level": "capstone", "title_ko": "구별 녹지 비율 대시보드", "title_en": "Green-space share by district", "desc_ko": "분할 결과로 구별 숲 면적과 수종 비율을 보여주는 대시보드를 만듭니다.", "desc_en": "Show forest area and species share by district on a dashboard."},
+  {"level": "research", "title_ko": "지역이 바뀌어도 통하는 모델", "title_en": "Generalising across regions", "desc_ko": "수도권으로 학습한 모델을 강원·충청 데이터(135번)에 적용해 성능 차이를 분석합니다.", "desc_en": "Apply a model trained here to the Gangwon/Chungcheong set and analyse the gap."}
+ ],
+ "doc_used": true,
+ "uncertain": []
+}

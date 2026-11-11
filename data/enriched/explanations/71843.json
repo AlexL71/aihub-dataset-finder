@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71843",
+ "easy_ko": "특허, 상표 같은 지식재산권법의 판결문, 법령, 해석 같은 문서와 이를 바탕으로 만든 법률 상담 질문과 답, 요약을 모은 데이터로, 모두 10만여 건입니다. 일반인도 이해하기 쉬운 법률 상담 챗봇이나 비슷한 사례 찾기 AI에 쓸 수 있습니다.",
+ "easy_en": "Documents such as court rulings, statutes and official interpretations in intellectual property law such as patents and trademarks, plus legal-advice questions and answers and summaries built from them, about 100,000 items in total. You can use it to build legal-advice chatbots that ordinary people can understand, or AI that finds similar cases.",
+ "detail_ko": "지식재산권법 심결문 85,180건, 판결문 9,820건 등 판결문·법령·심결례·심결문·유권해석 문서와, 이를 바탕으로 만든 법률 상담 질의응답과 요약 5,500건(JSON)으로 전체 100,700건입니다. 심결문이 대부분이라 판결문·법령은 적고, Context Precision 55% 이상은 목표값이며 실제 결과는 팩에 없습니다. 71841 민사법 데이터와 같은 기관·구조입니다.",
+ "detail_en": "Intellectual-property-law documents including 85,180 tribunal decisions and 9,820 court rulings plus statutes, decision precedents and official interpretations, and legal-advice question-answer pairs and 5,500 summaries built from them (JSON), 100,700 items in total. Tribunal decisions dominate, so rulings and statutes are few; context precision of 55% or more is a target, not a result. Same builder and structure as the civil-law set 71841.",
+ "amount_ko": "전체 100,700건(심결문 85,180, 판결문 9,820 등), 요약 5,500건",
+ "amount_en": "100,700 items (85,180 tribunal decisions, 9,820 rulings and others), 5,500 summaries",
+ "labels_ko": "질문과 답, 요약",
+ "labels_en": "question-answer, summary",
+ "status": "full-run-2026-11-02"
+}

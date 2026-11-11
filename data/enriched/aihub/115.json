@@ -1,0 +1,29 @@
+{
+ "dataset_id": "115",
+ "title_en": "Korean lecture speech",
+ "summary_ko": "EBS TV·라디오와 온라인 강의 4,000시간 분량의 한국어 강의 음성과 전사문입니다. 초·중·고 국어·수학·사회·과학·역사부터 자격증·IT·인문 성인 강의까지 있어 강의 영상 자동 자막, 강의 내용 검색·요약에 쓸 수 있습니다.",
+ "summary_en": "4,000 hours of Korean lecture speech with transcripts from EBS TV, radio and online courses. It covers school subjects (Korean, maths, social studies, science, history) from elementary to high school, plus adult courses in certificates, IT and humanities, for automatic lecture subtitles and lecture search or summaries.",
+ "contents_ko": "강의 음성(wav) + 전사(txt) + 메타정보(json: 강사 성별·연령, 과목·학년, 방송 날짜, 장소).",
+ "contents_en": "Lecture audio (wav) + transcript (txt) + metadata (json: lecturer sex and age, subject and grade, broadcast date, place).",
+ "modalities": ["audio", "text"],
+ "tasks": ["speech_recognition", "summarization"],
+ "topics": [{"ko": "교육·강의", "en": "Education and lectures"}, {"ko": "음성", "en": "Speech"}, {"ko": "자막·접근성", "en": "Subtitles and accessibility"}],
+ "keywords_ko": ["강의 음성", "자동 자막", "EBS", "음성 인식", "온라인 강의", "교육"],
+ "keywords_en": ["lecture speech", "automatic subtitles", "EBS", "speech recognition", "online lectures", "education"],
+ "labels": ["transcript", "subject", "grade level", "lecturer info"],
+ "file_formats": ["wav", "txt", "json"],
+ "scale_ko": "4,000시간(초 960h, 중 750h, 고 1,340h, 직업/자격증 530h, 성인 420h)",
+ "classes_example": ["국어", "수학", "사회", "과학", "역사", "IT", "금융", "인문"],
+ "baseline": [],
+ "difficulty": "intermediate",
+ "difficulty_note_ko": "음성 인식 미세조정이나 전사문 분석으로 시작할 수 있지만 전체 약 360GB입니다.",
+ "skills_needed_ko": ["파이썬", "오디오 처리", "음성 인식 모델 사용·미세조정"],
+ "caveats_ko": ["약 360GB", "EBS 방송 콘텐츠 이용 조건 확인 필요"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "과목별 강의 핵심어 분석", "title_en": "Key terms by subject", "desc_ko": "전사문에서 과목·학년별 핵심어를 뽑아 비교합니다.", "desc_en": "Extract and compare key terms by subject and grade."},
+  {"level": "capstone", "title_ko": "강의 영상 자동 자막·요약", "title_en": "Auto subtitles and summaries for lectures", "desc_ko": "강의 음성을 받아쓰고 단원별 요약을 만들어 주는 도구를 만듭니다.", "desc_en": "Transcribe lectures and produce per-section summaries."},
+  {"level": "research", "title_ko": "전문 용어가 많은 강의 음성 인식", "title_en": "ASR for term-heavy lectures", "desc_ko": "수학·과학 용어에서 인식 오류를 분석하고 과목별 언어모델 적응을 연구합니다.", "desc_en": "Analyse errors on maths and science terms and study subject-specific adaptation."}
+ ],
+ "doc_used": true,
+ "uncertain": ["성능 지표가 팩에서 잘려 확인하지 못함"]
+}

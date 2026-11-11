@@ -1,0 +1,12 @@
+{
+ "dataset_id": "551",
+ "easy_ko": "유리컵, 병, 플라스틱 그릇 같은 투명한 물건을 거리까지 재는 카메라로 찍고, 물건 위치와 테두리, 입체 상자, 거리 정보, 그리고 물건의 정밀한 입체 모형을 만든 데이터입니다. 투명해서 잘 안 보이는 물건도 정확히 집는 로봇을 만들 수 있습니다.",
+ "easy_en": "Photos of see-through objects such as glasses, bottles and plastic containers taken with a depth-sensing camera, with each object's position, outline, 3D box and depth recorded, plus detailed 3D models of the objects. You can build robots that pick up transparent objects accurately even though they are hard to see.",
+ "detail_ko": "일상 투명 물체(병류, 그릇류, 1회용 포장류, 계량용기, 꽃병 등)를 RGB-D 카메라로 촬영한 이미지 20만 장(png)과 깊이(pcd), 물체 500개의 고품질 3D 모델(점구름 ply, 메시 obj)로, 투명체·비투명체·배경·깊이 정보와 바운딩박스·폴리곤·3D 큐보이드 라벨이 있습니다. 기준 성능은 기록에서 확인되지 않습니다. 전체 약 5.6TB로 매우 큽니다.",
+ "detail_en": "200k RGB images (png) of everyday transparent objects (bottles, bowls, disposable packaging, measuring containers, vases and more) from an RGB-D camera, with depth (pcd) and high-quality 3D models of 500 objects (ply point clouds, obj meshes), plus transparent/opaque/background/depth info and box, polygon and 3D-cuboid labels. No baseline is visible in the record. Total size is very large (about 5.6 TB).",
+ "amount_ko": "이미지 20만 장, 입체 모형 500개",
+ "amount_en": "200k images, 500 3D models",
+ "labels_ko": "물건 위치 상자·테두리·입체 상자, 거리 정보, 투명·불투명 구분",
+ "labels_en": "boxes, outlines and 3D cuboids around objects, depth, transparent or opaque",
+ "status": "full-run-2026-11-02"
+}

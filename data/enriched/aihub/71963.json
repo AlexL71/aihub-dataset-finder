@@ -1,0 +1,29 @@
+{
+ "dataset_id": "71963",
+ "title_en": "Global multi-ethnic skin tone data",
+ "summary_ko": "인종·지역·연령·환경 정보가 담긴 다인종 얼굴 정면(전안) 이미지 10,100장, 피부색 측색값 2,525건, 피부색·메이크업 질의응답 10,245쌍으로 된 데이터입니다. 동북아·동남아·유럽·북미·중동 등 권역별로 구성되며, 해외 시장에 맞춘 메이크업 색상 개발과 상품 추천에 쓸 수 있습니다.",
+ "summary_en": "10,100 frontal face images of people of many ethnicities with ethnicity, region, age and environment information, 2,525 measured skin-colour values and 10,245 Q&A pairs on skin tone and makeup. Regions include Northeast Asia, Southeast Asia, Europe, North America and the Middle East. For developing makeup shades for overseas markets and product recommendation.",
+ "contents_ko": "얼굴 이미지(jpg) + 피부색 측색값(xlsx) + 질의응답(json).",
+ "contents_en": "Face images (jpg) + skin-colour measurements (xlsx) + Q&A (json).",
+ "modalities": ["image", "text", "tabular"],
+ "tasks": ["question_answering", "image_classification", "retrieval_recommendation"],
+ "topics": [{"ko": "뷰티", "en": "Beauty"}, {"ko": "피부색", "en": "Skin tone"}],
+ "keywords_ko": ["피부색", "다인종", "메이크업", "쉐이드", "측색", "상품 추천"],
+ "keywords_en": ["skin tone", "multi-ethnic", "makeup", "shade", "colour measurement", "product recommendation"],
+ "labels": ["question-answer", "skin colour value", "demographic metadata"],
+ "file_formats": ["jpg", "xlsx", "json"],
+ "scale_ko": "얼굴 이미지 10,100장, 측색값 2,525건, 질의응답 10,245쌍",
+ "classes_example": ["동북아권", "동남아권", "유럽권", "북미권", "중동권"],
+ "baseline": [],
+ "difficulty": "intermediate",
+ "difficulty_note_ko": "약 19GB이며, 이미지와 색 측정값, 텍스트를 함께 다뤄야 합니다.",
+ "skills_needed_ko": ["파이썬", "색 공간(Lab 등) 처리", "이미지 분류"],
+ "caveats_ko": ["얼굴 이미지라 초상권·이용 조건 확인 필요", "권역 분포가 고르지 않음(중동 2.35%, 북미 3.98%)", "인종 정보로 모델을 만들 때 편향에 주의해야 함", "성능 지표 값이 팩 앞부분에 없음"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "얼굴 사진 피부색 추정", "title_en": "Skin tone from photo", "desc_ko": "얼굴 이미지에서 피부 영역 평균 색을 구해 측색값과 비교합니다.", "desc_en": "Estimate skin colour and compare with measurements."},
+  {"level": "capstone", "title_ko": "파운데이션 쉐이드 추천", "title_en": "Foundation shade recommender", "desc_ko": "사진으로 피부색을 추정해 맞는 쉐이드를 추천합니다.", "desc_en": "Recommend shades from an estimated skin tone."},
+  {"level": "research", "title_ko": "조명에 강한 피부색 측정", "title_en": "Lighting-robust skin tone", "desc_ko": "촬영 환경이 달라도 피부색을 정확히 재는 방법을 연구합니다.", "desc_en": "Measure skin tone robustly across lighting."}
+ ],
+ "doc_used": true,
+ "uncertain": ["측색값과 이미지의 대응 관계"]
+}

@@ -1,0 +1,29 @@
+{
+ "dataset_id": "635",
+ "title_en": "High-quality fruit crop integrated data",
+ "summary_ko": "제주 감귤·키위 병충해 사진 4만 장(감귤 궤양병·귤응애·진딧물, 키위 점무늬병·총채벌레·과실무름병, 정상)과 초분광 이미지 10만 세트, 기상 환경 데이터 38.5만 건을 담은 데이터입니다. 병충해를 사진으로 진단하거나 과일 품질을 예측하는 AI에 쓸 수 있습니다.",
+ "summary_en": "40,000 photos of Jeju citrus and kiwi pests and diseases (citrus canker, citrus red mite, aphids; kiwi leaf spot, thrips, fruit rot; healthy), plus 100,000 hyperspectral image sets and 385,000 weather records. For AI that diagnoses pests and diseases from photos or predicts fruit quality.",
+ "contents_ko": "병충해 이미지(jpg) + 초분광 이미지(hdr) + 기상 데이터(csv) + JSON(분류, 다각형).",
+ "contents_en": "Pest/disease images (jpg) + hyperspectral images (hdr) + weather data (csv) + JSON (class, polygon).",
+ "modalities": ["image", "sensor", "tabular"],
+ "tasks": ["image_classification", "segmentation", "tabular_prediction"],
+ "topics": [{"ko": "과수 병충해", "en": "Fruit-tree pests and diseases"}, {"ko": "농업", "en": "Agriculture"}],
+ "keywords_ko": ["감귤", "키위", "병충해", "초분광", "제주", "스마트팜"],
+ "keywords_en": ["citrus", "kiwi", "pests and diseases", "hyperspectral", "Jeju", "smart farm"],
+ "labels": ["disease/pest class", "polygon"],
+ "file_formats": ["jpg", "hdr", "csv", "json"],
+ "scale_ko": "병충해 이미지 4만 장, 초분광 10만 세트, 기상 38.5만 건, 병충해 6종+정상",
+ "classes_example": ["정상", "궤양병", "귤응애", "진딧물", "점무늬병", "총채벌레", "과실무름병"],
+ "baseline": [{"task": "pest/disease classification", "model": "ResNet / DenseNet", "metric": "F1", "value": "0.9845"}],
+ "difficulty": "intermediate",
+ "difficulty_note_ko": "병충해 사진 분류는 쉽지만 전체가 약 967GB로 초분광 데이터가 대부분입니다. 사진만 받아 쓰세요.",
+ "skills_needed_ko": ["파이썬", "CNN 이미지 분류", "초분광 영상 처리(선택)"],
+ "caveats_ko": ["전체 약 967GB", "병충해 클래스 수 차이가 큼(궤양병 1.1만 vs 귤응애 1.8천)", "제주 지역만 있음"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "감귤 병충해 분류", "title_en": "Citrus disease classifier", "desc_ko": "감귤 사진으로 궤양병·응애·진딧물·정상을 분류합니다.", "desc_en": "Classify citrus canker, mites, aphids or healthy."},
+  {"level": "capstone", "title_ko": "과수원 병충해 진단 앱", "title_en": "Orchard diagnosis app", "desc_ko": "농민이 사진을 찍으면 병충해와 방제 방법을 알려줍니다.", "desc_en": "Farmers snap a photo and get the pest/disease and treatment."},
+  {"level": "research", "title_ko": "초분광으로 조기 진단", "title_en": "Early detection with hyperspectral", "desc_ko": "눈에 보이기 전 초분광 신호로 병을 찾는 방법을 연구합니다.", "desc_en": "Detect disease from hyperspectral signals before visible symptoms."}
+ ],
+ "doc_used": true,
+ "uncertain": []
+}

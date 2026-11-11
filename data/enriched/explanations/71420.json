@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71420",
+ "easy_ko": "서울 지하상가와 지하철역 통로에서 스마트폰 앱으로 와이파이 신호와 땅의 자기장 값을 모으고, 모은 자리의 위치를 붙인 데이터입니다. 위성 위치 신호가 잘 안 잡히는 지하에서도 지금 어디 있는지 알려 주는 길 안내 AI를 만들 수 있습니다.",
+ "easy_en": "Wi-Fi signals and Earth's magnetic-field readings collected with a smartphone app in Seoul's underground shopping arcades and subway passages, each tagged with the exact spot where it was measured. You can build navigation AI that tells you where you are even underground, where GPS signals are weak.",
+ "detail_ko": "서울 지하상가 23곳과 연결된 지하철역 7곳, 총 30곳의 수집 지점 64,298곳에서 모은 센서 기록 16,074,500건(JSON: 수집 지점 위치, 와이파이 신호 세기, 지자기 값; 을지로·종로·명동·강남·터미널·영등포 권역)입니다. 기준 성능은 Automatic Self-Reconstruction Model 위치 인식 정확도 85.99%, 위치 오차 RMSE 1.87m입니다. 수집된 장소에서만 쓸 수 있다고 명시되어 있고, 와이파이 신호는 시간이 지나면 바뀌며, 성능 표의 AI TASK가 Object Detection으로 잘못 적혀 있습니다.",
+ "detail_en": "16,074,500 sensor records (JSON: location, Wi-Fi signal strength, geomagnetic values) from 64,298 points in 30 places (23 underground shopping arcades and 7 connected subway stations in Seoul; Euljiro, Jongno, Myeongdong, Gangnam, Terminal and Yeongdeungpo areas). Baselines: Automatic Self-Reconstruction Model location recognition accuracy 85.99%, position RMSE 1.87 m. It is stated to work only at the collected sites; Wi-Fi signals change over time; the AI task is mislabelled as object detection.",
+ "amount_ko": "센서 기록 약 1,607만 건, 장소 30곳",
+ "amount_en": "about 16.07M sensor records, 30 places",
+ "labels_ko": "모은 자리의 위치, 와이파이 신호 세기, 자기장 값",
+ "labels_en": "location, Wi-Fi signal strength, geomagnetic values",
+ "status": "full-run-2026-11-02"
+}

@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71649",
+ "easy_ko": "어린이 동화와 소설 단락 10만여 개에 내용을 잘 이해했는지 묻는 질문과 답, 짧은 요약을 붙인 글 데이터입니다. 아이에게 낼 질문을 만들거나 책 읽기를 돕는 챗봇, AI 오디오북에 쓸 수 있습니다.",
+ "easy_en": "Over 100,000 passages from children's stories and novels, each with comprehension questions and answers and short summaries. You can use it to build AI that writes questions for children, reading-help chatbots or AI audiobooks.",
+ "detail_ko": "어린이용 동화·소설 단락 100,054건을 바탕으로 이해도 테스트용 질문-답변 쌍, 3문장 추출 요약 52,384건, 1문장 생성 요약 100,054건과 분류 정보를 JSON으로 만들었습니다. 원문이 출판 도서라 이용 조건을 확인해야 하고, 성능 지표 값은 팩에 없습니다.",
+ "detail_en": "100,054 passages from children's stories and novels, with JSON comprehension question-answer pairs, 52,384 three-sentence extractive summaries, 100,054 one-sentence abstractive summaries and classification information. The source texts are published books, so check the terms of use; no metric values are in the pack.",
+ "amount_ko": "단락 100,054건, 추출 요약 52,384건, 생성 요약 100,054건",
+ "amount_en": "100,054 passages, 52,384 extractive summaries, 100,054 abstractive summaries",
+ "labels_ko": "질문과 답, 요약",
+ "labels_en": "question-answer pairs, summaries",
+ "status": "full-run-2026-11-02"
+}

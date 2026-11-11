@@ -1,0 +1,33 @@
+{
+ "dataset_id": "59",
+ "title_en": "Pet animal videos for identifying pets and their behaviour",
+ "summary_ko": "개와 고양이의 행동을 찍은 영상 514시간에서 뽑은 이미지 750만 장으로, 동물 위치 상자와 관절 15개 위치, 행동 종류가 표시되어 있습니다. 반려동물이 무엇을 하는지 알아보는 돌봄 카메라나 펫 앱을 만들 수 있습니다.",
+ "summary_en": "7.5 million frames from 514 hours of dog and cat videos, with a box around the animal, 15 joint positions and the behaviour type. Useful for pet-care cameras or apps that recognise what a pet is doing.",
+ "contents_ko": "영상 프레임 이미지 + JSON(동물 상자, 관절 키포인트 15개, 종(개/고양이), 행동 분류). 개·고양이 폴더가 따로 있음.",
+ "contents_en": "Video frames + JSON (animal box, 15 joint keypoints, species dog/cat, behaviour class). Dogs and cats are in separate folders.",
+ "modalities": ["image", "video"],
+ "tasks": ["object_detection", "keypoint_pose", "action_recognition"],
+ "topics": [{"ko": "반려동물", "en": "Pets"}, {"ko": "동물 행동", "en": "Animal behaviour"}, {"ko": "동물 복지·돌봄", "en": "Animal welfare and care"}],
+ "keywords_ko": ["반려동물", "개", "고양이", "행동 인식", "관절 키포인트", "펫캠"],
+ "keywords_en": ["pets", "dog", "cat", "behaviour recognition", "joint keypoints", "pet camera"],
+ "labels": ["bounding box", "keypoints (15 joints)", "action class"],
+ "file_formats": ["jpg", "json"],
+ "scale_ko": "영상 514시간, 상자·키포인트 각 7,569,422장, 개·고양이 2종",
+ "classes_example": ["DOG", "CAT"],
+ "baseline": [
+  {"task": "behaviour classification (dog)", "model": "ST-GCN", "metric": "Top-5 accuracy", "value": "70.26%"},
+  {"task": "behaviour classification (cat)", "model": "ST-GCN", "metric": "Top-5 accuracy", "value": "70.08%"},
+  {"task": "animal detection", "model": "CNN", "metric": "mAP", "value": "98%"}
+ ],
+ "difficulty": "beginner",
+ "difficulty_note_ko": "개·고양이 탐지는 쉬운 첫 프로젝트이고, 관절로 행동을 분류하는 것은 중급입니다. 전체 약 109GB입니다.",
+ "skills_needed_ko": ["파이썬 기초", "YOLO로 객체 탐지", "관절 시계열 다루기(행동 분류 시)"],
+ "caveats_ko": ["행동 종류 목록이 팩 앞부분에 없어 원문 확인 필요", "행동 분류 기준 정확도가 Top-5 약 70%로 높지 않음"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "개·고양이 탐지기", "title_en": "Dog and cat detector", "desc_ko": "사진 속 개와 고양이를 찾아 상자로 표시하는 YOLO 모델을 학습합니다.", "desc_en": "Train a YOLO model that boxes dogs and cats."},
+  {"level": "capstone", "title_ko": "혼자 있는 반려동물 행동 기록 앱", "title_en": "Pet activity log app", "desc_ko": "펫캠 영상에서 행동을 인식해 하루 동안 무엇을 했는지 요약해 보여줍니다.", "desc_en": "Recognise behaviours in pet-cam video and summarise the day."},
+  {"level": "research", "title_ko": "관절 정보로 이상 행동 찾기", "title_en": "Abnormal behaviour from joints", "desc_ko": "관절 시계열로 평소와 다른 움직임(아픔·스트레스 신호)을 찾는 방법을 연구합니다.", "desc_en": "Detect unusual movement patterns that may signal pain or stress from joint sequences."}
+ ],
+ "doc_used": true,
+ "uncertain": ["행동 클래스 이름과 개수를 팩에서 찾지 못함"]
+}

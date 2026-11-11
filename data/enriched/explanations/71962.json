@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71962",
+ "easy_ko": "공개된 독성 시험 자료에서 고른 화학 물질 5,000개에 분자 구조 정보와 특징, 그리고 사람 세포에 독이 되는지를 차근차근 설명하는 한국어 글을 붙인 데이터입니다. 분자 구조만 보고 독성을 따져 보는 화학 특화 언어 AI에 쓸 수 있습니다.",
+ "easy_en": "5,000 chemicals chosen from public toxicity-test data, with molecular structure information and features, plus Korean text explaining step by step whether each is toxic to human cells. You can use it to build chemistry-focused language AI that reasons about toxicity from molecular structure.",
+ "detail_ko": "Tox21 공개 데이터(사람 세포 대상 생물검정)에서 고른 화합물 5,000개에 SMILES·RDKit 분자 특징과 중요도, 세포독성 여부, 단계적 사고과정(CoT) 한국어 설명문을 JSON으로 붙였고, 세포주는 HepG2(간) 1,951, MCF-7(유방암) 1,177, HEK293(신장) 463, HeLa(자궁경부암) 등입니다. Tox21 원본에서 가공한 것이라 원본과 겹치고, 독성·비독성 비율과 성능 지표 값은 팩 앞부분에 없습니다.",
+ "detail_en": "5,000 compounds selected from public Tox21 data (bioassays on human cells), with JSON SMILES, RDKit molecular features and importance, cytotoxicity outcome and Korean chain-of-thought (CoT) explanations, by cell line: HepG2 (liver) 1,951, MCF-7 (breast cancer) 1,177, HEK293 (kidney) 463, HeLa (cervical cancer) and others. It is derived from Tox21, so it overlaps with the original, and the toxic/non-toxic ratio and any metrics are not in the pack.",
+ "amount_ko": "원천 5,000개, CoT 라벨 5,000개",
+ "amount_en": "5,000 source compounds, 5,000 CoT labels",
+ "labels_ko": "독성 여부, 특징 중요도, 생각 과정 설명",
+ "labels_en": "toxicity, feature importance, chain-of-thought text",
+ "status": "full-run-2026-11-02"
+}

@@ -1,0 +1,33 @@
+{
+ "dataset_id": "71311",
+ "title_en": "Common-sense sentence generation evaluation data",
+ "summary_ko": "사람과 AI 모델(KoGPT2·KoBART·mBART-50·T5 등)이 쓴 상식 문장 약 107만 개에 문법성·사실성·유창성·다양성을 3점 척도로 채점한 데이터입니다. AI가 만든 문장의 품질을 AI가 자동으로 평가하는 모델에 쓸 수 있습니다.",
+ "summary_en": "About 1.07 million common-sense sentences written by people and by AI models (KoGPT2, KoBART, mBART-50, T5 and more), each scored on a 3-point scale for grammar, factuality, fluency and diversity. For models that automatically judge the quality of AI-written text.",
+ "contents_ko": "생성 문장(txt) + 채점 결과(csv).",
+ "contents_en": "Generated sentences (txt) + scores (csv).",
+ "modalities": ["text"],
+ "tasks": ["text_classification"],
+ "topics": [{"ko": "AI 평가", "en": "AI evaluation"}, {"ko": "상식 추론", "en": "Commonsense reasoning"}],
+ "keywords_ko": ["문장 평가", "생성 AI 평가", "문법성", "사실성", "유창성"],
+ "keywords_en": ["sentence evaluation", "generative AI evaluation", "grammaticality", "factuality", "fluency"],
+ "labels": ["grammar score", "factuality score", "fluency score", "diversity score", "generator"],
+ "file_formats": ["txt", "csv"],
+ "scale_ko": "문장 약 107만 개, 생성자 6종(사람 + AI 5종), 평가 기준 4가지",
+ "classes_example": ["human", "KoGPT2", "KoBART", "mBART-50", "KoLANG-T5", "PKO-T5"],
+ "baseline": [
+  {"task": "grammaticality scoring", "model": "ELECTRA-based", "metric": "accuracy", "value": "93%"},
+  {"task": "factuality scoring", "model": "ELECTRA-based", "metric": "accuracy", "value": "93%"},
+  {"task": "fluency scoring", "model": "ELECTRA-based", "metric": "accuracy", "value": "80%"}
+ ],
+ "difficulty": "beginner",
+ "difficulty_note_ko": "약 0.13GB로 작아 문장 분류 실습에 좋습니다.",
+ "skills_needed_ko": ["파이썬", "텍스트 분류(BERT·ELECTRA 등)"],
+ "caveats_ko": ["71308·71309번과 이어지는 3단계 연작의 마지막 데이터", "개요는 5가지 기준, 본문은 4가지 기준으로 숫자가 다름"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "사람 vs AI 문장 구별", "title_en": "Human vs AI sentence detector", "desc_ko": "문장이 사람이 쓴 것인지 AI가 쓴 것인지 분류합니다.", "desc_en": "Classify whether a sentence was written by a person or AI."},
+  {"level": "capstone", "title_ko": "AI 글 품질 채점기", "title_en": "AI text quality scorer", "desc_ko": "챗봇 답변의 문법·사실·유창성을 자동 채점하는 도구를 만듭니다.", "desc_en": "Auto-score chatbot replies for grammar, facts and fluency."},
+  {"level": "research", "title_ko": "자동 평가 vs 사람 평가", "title_en": "Automatic vs human judgement", "desc_ko": "자동 평가 모델이 사람 채점과 얼마나 일치하는지 연구합니다.", "desc_en": "Measure how well automatic scorers agree with human ratings."}
+ ],
+ "doc_used": true,
+ "uncertain": []
+}

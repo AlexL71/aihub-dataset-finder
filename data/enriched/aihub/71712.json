@@ -1,0 +1,29 @@
+{
+ "dataset_id": "71712",
+ "title_en": "Regional vegetation carbon capture identification data",
+ "summary_ko": "경상도·전라도·제주도 산림을 10cm·25cm 해상도로 찍은 항공·드론 이미지와 근적외선(NIR) 이미지 약 6.7만 장에 수종 분류와 탄소량이 영역 분할로 표시되어 있습니다. 숲의 나무 종류를 구분하고 탄소 흡수량을 계산하는 AI에 쓸 수 있습니다.",
+ "summary_en": "About 67,000 aerial/drone and near-infrared (NIR) forest images at 10 cm and 25 cm resolution from Gyeongsang, Jeolla and Jeju, with tree-species classes and carbon amounts as segmentation. For AI that identifies tree species and estimates carbon capture.",
+ "contents_ko": "항공·NIR 이미지(TIF) + 라벨(TIF 마스크, JSON: 수종 클래스, 탄소량).",
+ "contents_en": "Aerial and NIR images (TIF) + labels (TIF mask, JSON: species class, carbon amount).",
+ "modalities": ["image"],
+ "tasks": ["segmentation", "image_classification"],
+ "topics": [{"ko": "기후변화·탄소", "en": "Climate change and carbon"}, {"ko": "산림", "en": "Forestry"}],
+ "keywords_ko": ["탄소 포집", "수종 판별", "항공영상", "근적외선", "산림", "드론"],
+ "keywords_en": ["carbon capture", "tree species", "aerial imagery", "near-infrared", "forest", "drone"],
+ "labels": ["segmentation mask", "species class", "carbon amount"],
+ "file_formats": ["tif", "json"],
+ "scale_ko": "이미지 67,212장(경상도 65.5%, 전라도 32.3%, 제주도 2.2%), 클래스·탄소량 라벨 각각",
+ "classes_example": ["소나무", "낙엽송", "기타침엽수", "기타활엽수", "상록활엽수"],
+ "baseline": [],
+ "difficulty": "intermediate",
+ "difficulty_note_ko": "전체 약 55GB로 다룰 만하지만, 항공·NIR TIF 영상 처리에 익숙해야 합니다.",
+ "skills_needed_ko": ["파이썬", "rasterio 등 영상 처리", "분할 모델"],
+ "caveats_ko": ["경상도에 데이터가 몰려 있어 지역 불균형", "성능 지표가 팩 앞부분에 없음", "71710 탄소흡수원 시계열 데이터와 같은 기관"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "NIR로 식생 지수 계산", "title_en": "Vegetation index from NIR", "desc_ko": "근적외선과 RGB로 식생 지수(NDVI 등)를 계산해 지도로 그립니다.", "desc_en": "Compute a vegetation index like NDVI and map it."},
+  {"level": "capstone", "title_ko": "숲 수종 분할 지도", "title_en": "Forest species map", "desc_ko": "항공 이미지에서 나무 종류별 영역을 칠하는 분할 모델을 만듭니다.", "desc_en": "Segment tree species in aerial images."},
+  {"level": "research", "title_ko": "이미지로 탄소량 추정", "title_en": "Carbon estimation from imagery", "desc_ko": "분할 결과와 해상도 차이가 탄소량 추정 정확도에 주는 영향을 연구합니다.", "desc_en": "Study how segmentation and resolution affect carbon estimates."}
+ ],
+ "doc_used": true,
+ "uncertain": []
+}

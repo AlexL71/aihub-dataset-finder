@@ -1,0 +1,12 @@
+{
+ "dataset_id": "86",
+ "easy_ko": "기쁨, 슬픔, 분노, 불안처럼 여러 감정이 담긴 대화를 사람들이 직접 만들고, 각 대화에 어떤 감정인지와 말한 사람의 나이대를 표시한 데이터입니다. 마음을 알아주고 공감해 주는 상담 챗봇이나 감정 분석 AI를 만들 수 있습니다.",
+ "easy_en": "Conversations written by ordinary people to express emotions such as joy, sadness, anger and anxiety, each marked with the emotion and the speaker's age group. You can build a caring counselling chatbot or AI that recognises feelings in text.",
+ "detail_ko": "일반인 1,500명이 참여해 구축한 감성 대화 말뭉치 27만 문장과 음성 약 1만 문장으로, 감정 대분류 6종·세부 감정 60종, 청소년·청장년·노년 연령대와 상황 라벨이 있습니다. 우울증 관련 대화 시나리오가 포함됩니다. 기준 성능은 ALBERT 감정 분류 F1 0.809입니다. 음성은 일부만 포함되었을 수 있으며, 실제 상담을 대체하는 용도로는 적합하지 않습니다.",
+ "detail_en": "270k sentences of emotional dialogue and about 10k spoken sentences created by 1,500 participants, labelled with 6 main and 60 detailed emotions, age group (teen, adult, senior) and situation, including depression-related scenarios. Baseline: ALBERT emotion classification, F1 0.809. The audio part may be only partly included; not a substitute for real counselling.",
+ "amount_ko": "대화 문장 27만 개, 음성 약 1만 문장",
+ "amount_en": "270k dialogue sentences, about 10k spoken sentences",
+ "labels_ko": "감정(6종, 세부 60종), 나이대, 상황",
+ "labels_en": "emotion (6 main, 60 detailed), age group, situation",
+ "status": "sample-2026-11-02"
+}

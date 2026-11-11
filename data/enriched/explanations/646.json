@@ -1,0 +1,12 @@
+{
+ "dataset_id": "646",
+ "easy_ko": "아파트와 빌딩 안팎을 다니는 배달 로봇의 눈높이에서 찍은 영상에 사람, 동물, 탈것, 문, 엘리베이터 버튼, 주소판 같은 물체 위치와 영역, 상황 설명을 붙인 데이터입니다. 건물 안에서 택배를 나르는 배달 로봇이 길을 찾고 장애물을 피하는 AI를 만들 수 있습니다.",
+ "easy_en": "Videos from the eye level of delivery robots moving in and around apartments and office buildings, marked with people, animals, vehicles, doors, elevator buttons, address plates and more, with scene descriptions. You can build AI that helps delivery robots find their way and avoid obstacles inside buildings.",
+ "detail_ko": "실내외 6구역에서 배송 로봇 시점으로 촬영한 주행 영상 약 150시간(363개, mp4)과 이미지 약 30만 장(jpg)에 바운딩박스·분할(사람, 동물, 이동수단, 바퀴달린 객체, 움직일 수 있는 객체, 정적 객체, 자동문, 여닫이 문, 엘리베이터 문, 주소현판, 간판, 엘리베이터 층 버튼)을 JSON으로, 시나리오 설명을 txt로 붙였습니다. 성능 지표 표는 비어 있습니다. 전체 약 1.1TB이며 사람이 찍힌 영상이고, 647번 드론 데이터와 같은 구축 기관입니다.",
+ "detail_en": "About 150 hours (363 videos, mp4) of delivery-robot-view driving in 6 indoor and outdoor zones and about 300k images (jpg), with JSON boxes and segmentation (person, animal, vehicle, wheeled object, movable object, fixed object, automatic door, hinged door, elevator door, address plate, sign, elevator floor button) and txt scenario notes. The performance table is empty. Total size is about 1.1 TB; people are filmed; built by the same organisation as dataset 647.",
+ "amount_ko": "영상 약 150시간, 사진 약 30만 장",
+ "amount_en": "about 150 hours of video, about 300k images",
+ "labels_ko": "물체 위치 상자·영역, 물체 종류, 상황 설명",
+ "labels_en": "boxes and masks around objects, object class, scenario notes",
+ "status": "full-run-2026-11-02"
+}

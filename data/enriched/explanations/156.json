@@ -1,0 +1,12 @@
+{
+ "dataset_id": "156",
+ "easy_ko": "제주도에서 겨울에 키우는 무, 배추, 마늘, 양파, 당근, 브로콜리 밭을 드론과 비행기로 찍고 작물 종류대로 땅을 색칠한 데이터입니다. 작물마다 얼마나 심었는지 자동으로 계산해 수확량과 가격 변동을 미리 예측하는 AI를 만들 수 있습니다.",
+ "easy_en": "Drone and aerial photos of Jeju fields growing winter radish, cabbage, garlic, onion, carrot and broccoli, with each field coloured by crop. You can build AI that calculates how much of each crop is planted, to predict harvests and price changes.",
+ "detail_ko": "제주 월동작물 6종(월동무·배추·마늘·양파·당근·브로콜리) 재배지를 촬영한 정사영상 타일 학습 이미지 150만 장(2018 항공 10.6만, 2019 드론 10.6만, 2020 드론 128.9만, 작업 블록 10,098개)에 작물 6종 + 배경 세그멘테이션 라벨이 있습니다. 기준 성능은 DeepLab V3+ (ResNet101) mIoU 82.95%입니다. 제주 지역 작물만 포함되며, 파일 형식(png/json)은 기록에서 확인되지 않은 추정입니다.",
+ "detail_en": "1.5M orthophoto tiles of Jeju winter-crop fields (2018 aerial 106k, 2019 drone 106k, 2020 drone 1.289M; 10,098 work blocks) with segmentation labels for 6 crops (winter radish, cabbage, garlic, onion, carrot, broccoli) plus background. Baseline: DeepLab V3+ (ResNet101) mIoU 82.95%. Only Jeju crops are included, and file formats (png/json) are not confirmed.",
+ "amount_ko": "이미지 150만 장, 작물 6종",
+ "amount_en": "1.5M images, 6 crops",
+ "labels_ko": "작물 종류별 영역(색칠)",
+ "labels_en": "crop-type regions (colour masks)",
+ "status": "full-run-2026-11-02"
+}

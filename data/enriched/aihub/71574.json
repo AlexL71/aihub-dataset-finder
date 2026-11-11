@@ -1,0 +1,29 @@
+{
+ "dataset_id": "71574",
+ "title_en": "Autonomous delivery data inside and around large facilities",
+ "summary_ko": "배송 로봇이 대형 건물 실내와 주변 공원 같은 실외를 오가며 맑음·흐림·비, 아침·낮·저녁 환경에서 카메라·라이다·IMU로 기록한 주행 데이터입니다. 영상 분할과 라이다 큐보이드(입체 상자)가 있고 위치 추정용 데이터와 지도도 있어 로봇의 사물 인식, 위치 인식(SLAM), 경로 계획 연구에 쓸 수 있습니다.",
+ "summary_en": "Delivery-robot driving data inside large buildings and nearby outdoor areas in sunny, cloudy and rainy weather at different times of day, from camera, LiDAR and IMU. With image segmentation, LiDAR cuboids, localisation data and maps; for robot object recognition, SLAM and path planning.",
+ "contents_ko": "영상(png, 비식별) + 라이다 점군(pcd) + JSON(분할, 큐보이드) + 메타데이터(캘리브레이션 txt, csv, 지도 png·yaml).",
+ "contents_en": "Image (png, anonymised) + LiDAR point cloud (pcd) + JSON (segmentation, cuboids) + metadata (calibration txt, csv, map png/yaml).",
+ "modalities": ["image", "3d", "sensor"],
+ "tasks": ["segmentation", "object_detection", "depth_estimation"],
+ "topics": [{"ko": "배송 로봇", "en": "Delivery robots"}, {"ko": "로봇 위치 인식·SLAM", "en": "Robot localisation and SLAM"}],
+ "keywords_ko": ["배송 로봇", "실내외 주행", "라이다", "SLAM", "경로 계획", "IMU"],
+ "keywords_en": ["delivery robot", "indoor-outdoor driving", "LiDAR", "SLAM", "path planning", "IMU"],
+ "labels": ["segmentation", "cuboid", "robot pose", "map"],
+ "file_formats": ["png", "pcd", "json", "txt", "csv", "yaml"],
+ "scale_ko": "객체 인식용 166,070장(영상 83,035 + 라이다 83,035, 실내 40,079·실외 42,956), 위치 추정용 264,114장, 시나리오 80개(객체 인식 69 + 위치 추정 11)",
+ "classes_example": ["Driving Area", "Parking Line", "Wall", "Pillar", "Sign", "Traffic Cone", "Fire Extinguisher", "Vehicle", "Two-wheeled Vehicle", "Wheelchair", "Shopping Cart", "Human"],
+ "baseline": [],
+ "difficulty": "advanced",
+ "difficulty_note_ko": "카메라·라이다·IMU를 함께 다루고 SLAM 지식이 필요합니다. 전체 약 655GB입니다.",
+ "skills_needed_ko": ["파이썬", "ROS", "점군 처리", "SLAM", "분할 모델"],
+ "caveats_ko": ["팩에 성능 지표 표가 없음", "데이터 유형이 '이미지'로 적혀 있지만 라이다·IMU도 포함", "71576 실내 자율주차 데이터와 같은 기관·비슷한 구조"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "로봇 시점 실내외 분할", "title_en": "Robot-view segmentation", "desc_ko": "로봇 카메라 영상에서 길·사람·장애물 영역을 분할합니다.", "desc_en": "Segment paths, people and obstacles in robot camera images."},
+  {"level": "capstone", "title_ko": "라이다 SLAM으로 건물 지도 만들기", "title_en": "Building map with LiDAR SLAM", "desc_ko": "위치 추정용 라이다 데이터로 지도를 만들고 제공된 지도와 비교합니다.", "desc_en": "Build a map from LiDAR and compare with the provided map."},
+  {"level": "research", "title_ko": "실내↔실외 전환 구간 인지", "title_en": "Indoor-outdoor transition perception", "desc_ko": "문을 지나 실내외가 바뀔 때 인식·위치 추정이 흔들리는 문제를 연구합니다.", "desc_en": "Study perception and localisation drops at indoor-outdoor transitions."}
+ ],
+ "doc_used": true,
+ "uncertain": ["'이벤트'(문 개폐, 혼잡도) 라벨 형태가 팩에서 확인되지 않음"]
+}

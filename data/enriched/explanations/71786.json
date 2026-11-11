@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71786",
+ "easy_ko": "전국 고속도로, 국도, 지방도를 달리며 찍은 사진 22만 장에 시선 유도봉, 조명, 중앙분리대 같은 도로 시설물 34가지를 표시하고 위치 정보를 붙인 데이터입니다. 도로 시설물을 관리하거나 자율주행차가 도로를 알아보는 AI에 쓸 수 있습니다.",
+ "easy_en": "220,000 photos taken while driving highways, national roads and local roads across Korea, marking 34 kinds of road facilities such as delineators, lights and median barriers, with location information. You can use it to manage road facilities or build AI that helps self-driving cars understand the road.",
+ "detail_ko": "전국 고속도로·국도·지방도 약 4.5만 km를 주행하며 찍은 이미지 220,000건(jpg)에 도로안전시설물 16종, 도로관리시설물 8종, 교통관리시설물 8종 등 34종 시설물(예: 시선유도표지, 시선유도봉, 조명시설, 중앙분리대)의 상자, 분할, 종류·상태, 위치(JSON)와 캡션(txt)을 붙였습니다. 전체 약 1,718GB이고, 34종 전체 목록과 성능 지표는 팩 앞부분에 없습니다. 71444(터널 시설물)와 같은 기관입니다.",
+ "detail_en": "220,000 images (jpg) from driving about 45,000 km of highways, national and local roads, with JSON boxes, segmentation, type, condition and location for 34 facility types (16 road-safety, 8 road-management, 8 traffic-management and others; such as delineator signs, delineator posts, lighting, median barriers) and text captions (txt). Total size is about 1,718 GB, and the full list of 34 types and any metrics are not in the pack. Same builder as the tunnel facility set 71444.",
+ "amount_ko": "이미지 220,000건, 시설물 34종",
+ "amount_en": "220,000 images, 34 facility types",
+ "labels_ko": "시설물 위치 상자와 영역, 종류·상태, 사진 설명, 위치",
+ "labels_en": "bounding box, segmentation, caption, location",
+ "status": "full-run-2026-11-02"
+}

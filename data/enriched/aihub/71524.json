@@ -1,0 +1,35 @@
+{
+ "dataset_id": "71524",
+ "title_en": "Multilingual interpretation and translation read-speech data",
+ "summary_ko": "도서를 낭독한 한국어·영어·일본어·스페인어 음성 약 4,107시간에 전사 글이 붙은 데이터로, 한국어판 LibriSpeech(음성 인식 표준 평가 데이터) 구축을 목표로 했습니다. 음성 인식, 음성 합성, 한국어-다국어 기계번역·통역에 쓸 수 있습니다.",
+ "summary_en": "About 4,107 hours of read book speech in Korean, English, Japanese and Spanish with transcripts, built as a Korean-version LibriSpeech benchmark. For speech recognition, speech synthesis and Korean–multilingual translation and interpretation.",
+ "contents_ko": "음성(wav) + JSON(전사, 대응 번역문, 화자 정보).",
+ "contents_en": "Audio (wav) + JSON (transcripts, aligned translations, speaker info).",
+ "modalities": ["audio", "text"],
+ "tasks": ["speech_recognition", "speech_synthesis", "translation"],
+ "topics": [{"ko": "음성 인식·합성", "en": "Speech recognition and synthesis"}, {"ko": "기계번역", "en": "Machine translation"}],
+ "keywords_ko": ["낭독체", "LibriSpeech", "음성 인식", "음성 합성", "통번역", "다국어"],
+ "keywords_en": ["read speech", "LibriSpeech", "speech recognition", "speech synthesis", "interpretation", "multilingual"],
+ "labels": ["transcript", "translation"],
+ "file_formats": ["wav", "json"],
+ "scale_ko": "음성 4,107시간 (한국어 1,001, 영어 1,016, 일본어 1,029, 스페인어 1,062시간)",
+ "classes_example": [],
+ "baseline": [
+  {"task": "Korean-English translation", "model": "Transformer", "metric": "BLEU", "value": "0.2031"},
+  {"task": "Korean-Japanese translation", "model": "Transformer", "metric": "BLEU", "value": "0.571"},
+  {"task": "Korean speech synthesis", "model": "VITS", "metric": "MOS", "value": "4.12"},
+  {"task": "Japanese speech recognition", "model": "Wav2vec2.0-XLS-R-300m", "metric": "WER", "value": "4.47%"},
+  {"task": "Spanish speech recognition", "model": "Wav2vec2.0-XLS-R-300m", "metric": "WER", "value": "5.4%"}
+ ],
+ "difficulty": "advanced",
+ "difficulty_note_ko": "전체 약 920GB로 매우 크고 음성 모델 학습에 큰 GPU가 필요합니다. 한 언어만 골라 쓰세요.",
+ "skills_needed_ko": ["파이썬", "음성 인식(Wav2vec2)", "음성 합성(VITS)", "번역 모델"],
+ "caveats_ko": ["전체 약 920GB", "번역문이 음성과 어떻게 짝지어져 있는지 팩 앞부분에 자세히 없음", "주제 번호(1~4)의 의미가 팩에 설명되지 않음"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "한국어 낭독 받아쓰기", "title_en": "Korean read-speech transcription", "desc_ko": "한국어 낭독 음성으로 음성 인식 모델을 미세조정합니다.", "desc_en": "Fine-tune speech recognition on Korean read speech."},
+  {"level": "capstone", "title_ko": "음성 통역 데모", "title_en": "Speech interpretation demo", "desc_ko": "한국어 음성을 인식→번역→합성해 외국어 음성으로 들려줍니다.", "desc_en": "Recognise, translate and synthesise speech end to end."},
+  {"level": "research", "title_ko": "한국어 음성 인식 벤치마크", "title_en": "Korean ASR benchmark", "desc_ko": "여러 음성 인식 모델을 같은 평가셋으로 비교합니다.", "desc_en": "Compare ASR models on a common Korean test set."}
+ ],
+ "doc_used": true,
+ "uncertain": []
+}

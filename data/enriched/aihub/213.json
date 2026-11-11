@@ -1,0 +1,29 @@
+{
+ "dataset_id": "213",
+ "title_en": "Thermal camera body temperature information",
+ "summary_ko": "고성능·중성능·저성능 열화상 카메라로 찍은 사람 이미지 46만 장과, 같은 사람을 실제 체온계 값이나 고성능 카메라와 짝지은 데이터 2.5만 쌍입니다. 성별·연령·외형·옷차림 정보도 있어 값싼 열화상 카메라의 체온 측정 오차를 AI로 보정하는 데 쓸 수 있습니다.",
+ "summary_en": "460,000 images of people taken with high-, mid- and low-grade thermal cameras, plus 25,000 pairs matching the same person to a real thermometer reading or a high-grade camera. Sex, age, appearance and clothing are recorded, for AI that corrects temperature errors of cheap thermal cameras.",
+ "contents_ko": "열화상 이미지 + JSON(얼굴·사람 상자, 측정 온도, 실측 체온 또는 고성능 카메라 값, 성별·연령·외형).",
+ "contents_en": "Thermal image + JSON (face and person box, measured temperature, true or high-grade reference temperature, sex, age, appearance).",
+ "modalities": ["image", "sensor", "tabular"],
+ "tasks": ["tabular_prediction", "object_detection"],
+ "topics": [{"ko": "보건·감염병", "en": "Public health and infectious disease"}, {"ko": "센서·카메라", "en": "Sensors and cameras"}],
+ "keywords_ko": ["열화상", "체온 측정", "발열 감지", "온도 보정", "코로나19", "센서 보정"],
+ "keywords_en": ["thermal imaging", "body temperature", "fever screening", "temperature calibration", "COVID-19", "sensor calibration"],
+ "labels": ["bounding box", "temperature values", "attributes"],
+ "file_formats": ["jpg", "json"],
+ "scale_ko": "열화상 이미지 461,318장(고성능 35.8만, 중성능 7.4만, 저성능 2.9만), 짝 데이터 24,669쌍",
+ "classes_example": ["고성능", "중성능", "저성능"],
+ "baseline": [{"task": "temperature regression (high-grade)", "model": "CNN + DNN", "metric": "RMSE", "value": "0.483"}],
+ "difficulty": "beginner",
+ "difficulty_note_ko": "약 14GB로 작고, 온도 보정은 표 데이터 회귀로 시작할 수 있습니다.",
+ "skills_needed_ko": ["파이썬", "회귀 모델(Random Forest)", "이미지 기초 처리"],
+ "caveats_ko": ["성능 표의 단위(mm)와 과제명(Object Detection)이 잘못 적혀 있음", "구축량 4.8만은 짝 데이터 기준으로 보임"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "카메라 등급별 오차 분석", "title_en": "Error by camera grade", "desc_ko": "저·중·고성능 카메라 측정값과 실측치의 차이를 그래프로 비교합니다.", "desc_en": "Compare measurement error of low-, mid- and high-grade cameras."},
+  {"level": "capstone", "title_ko": "저가 열화상 카메라 보정기", "title_en": "Low-cost thermal camera corrector", "desc_ko": "회귀 모델로 저성능 카메라 값을 보정하는 웹 도구를 만듭니다.", "desc_en": "Build a tool that corrects low-grade camera readings with regression."},
+  {"level": "research", "title_ko": "외형·환경이 측정에 주는 영향", "title_en": "Effects of appearance on measurement", "desc_ko": "마스크·모자·나이 등이 체온 측정 오차에 주는 영향을 분석합니다.", "desc_en": "Analyse how masks, hats and age affect temperature error."}
+ ],
+ "doc_used": true,
+ "uncertain": ["구축량 표기(4.8만)와 통계(48.6만)가 다름"]
+}

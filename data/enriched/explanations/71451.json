@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71451",
+ "easy_ko": "비닐하우스에서 키운 딸기 사진 약 19만 장에 건강한 딸기와 병든 딸기, 잎끝이 마르거나 누렇게 변한 딸기를 상자로 표시한 데이터입니다. 딸기 농가에서 병을 일찍 찾아내는 AI에 쓸 수 있습니다.",
+ "easy_en": "About 190,000 photos of greenhouse strawberries, with boxes marking healthy plants, diseased ones and plants whose leaf tips are drying or turning yellow. You can use it to build AI that spots disease early on strawberry farms.",
+ "detail_ko": "시설 재배 딸기(설향) 이미지 191,149장(jpg)에 상자와 상태 클래스 5종(정상 74,290장, 역병, 시들음병, 잎끝마름, 황화)을 JSON으로 붙였습니다. 기준 성능은 YOLO v3 질병 탐지 mAP 78.13%입니다. 전체 약 219GB이고, 품종이 설향 하나뿐입니다. 정상이 약 39%로 가장 많고 황화는 약 8%로 적습니다.",
+ "detail_en": "191,149 images (jpg) of greenhouse strawberries (Seolhyang variety) with JSON boxes and 5 condition classes (74,290 normal, Phytophthora rot, Fusarium wilt, leaf-tip burn, yellowing). Baseline: disease detection with YOLO v3, mAP 78.13%. Total size is about 219 GB, and only one variety (Seolhyang) is covered. Normal is the largest class at about 39%; yellowing is small at about 8%.",
+ "amount_ko": "이미지 191,149장, 클래스 5종",
+ "amount_en": "191,149 images, 5 classes",
+ "labels_ko": "딸기 위치 상자, 상태 종류(정상·병·생리장애)",
+ "labels_en": "boxes, condition class (normal, disease, disorder)",
+ "status": "full-run-2026-11-02"
+}

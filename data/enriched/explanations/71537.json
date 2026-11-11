@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71537",
+ "easy_ko": "물건이 다른 물건에 일부 가려진 장면을 직접 찍은 사진 약 200만 장으로, 카메라나 가리는 물건이 움직이는 경우와 가만히 있는 경우를 나누어 물건 위치를 표시했습니다. 반쯤 가려진 물건도 잘 찾아내는 AI에 쓸 수 있습니다.",
+ "easy_en": "About 2 million photos of objects partly hidden behind other things, split into cases where the camera or the blocking object moves and cases where everything stays still, with each object's position marked. You can use it to build AI that still finds objects when they are half hidden.",
+ "detail_ko": "대상 물체가 다른 물체에 일부 가려진(폐색) 장면을 12종 장소에서 직접 촬영한 이미지 2,007,759장(jpg, 비식별; 영상 클립 41,713개)으로, 유동적 폐색 1,506,395장에는 상자를, 일정한 폐색 501,364장에는 분할을 폐색 비율과 함께 JSON으로 붙였습니다. 전체 약 1.5TB이고, 팩에 성능 지표 표가 없으며 분포 표의 비율 합계가 100%를 넘습니다(100.39%, 100.28%).",
+ "detail_en": "2,007,759 images (jpg, de-identified; from 41,713 video clips) of objects partly hidden (occluded) by other objects, shot in 12 kinds of places: 1,506,395 'moving occlusion' images with boxes and 501,364 'fixed occlusion' images with segmentation, plus occlusion ratio, in JSON. Total size is about 1.5 TB. The pack has no metrics table, and the distribution table's shares add up to more than 100% (100.39%, 100.28%).",
+ "amount_ko": "이미지 2,007,759장(유동적 폐색 1,506,395, 일정한 폐색 501,364), 영상 클립 41,713개",
+ "amount_en": "2,007,759 images (1,506,395 moving occlusion, 501,364 fixed occlusion), 41,713 video clips",
+ "labels_ko": "물건 위치 상자 또는 영역, 가려진 비율",
+ "labels_en": "bounding boxes or segmentation, occlusion ratio",
+ "status": "full-run-2026-11-02"
+}

@@ -1,0 +1,12 @@
+{
+ "dataset_id": "100",
+ "easy_ko": "교육·금융·통신판매 상담센터의 실제 사례를 바탕으로 만든 대본을 녹음한 상담 대화 소리와, 그 말을 받아 적은 글을 짝지은 데이터입니다. 전화 상담을 알아듣고 돕는 AI 상담사나 AI 콜센터를 만들 수 있습니다.",
+ "easy_en": "Recorded counselling calls, based on scripts made from real cases at education, finance and mail-order call centres, paired with written transcripts. You can build AI counsellors or AI call centres that understand phone consultations.",
+ "detail_ko": "실제 상담 사례 기반 시나리오로 녹음한 상담 음성 3,000시간(교육·금융·통신판매 각 1,000시간)으로, wav 음성, txt 전사, JSON 메타정보(도메인, 대화 주제, 화자, 음성 품질)로 구성됩니다. 기준 성능은 Jasper 음성 인식 CER 10.14%, WER 27.02%입니다. 가상 시나리오 녹음이라 실제 상담보다 정돈되어 있을 수 있습니다.",
+ "detail_en": "3,000 hours of counselling speech recorded from scenarios based on real cases (1,000 hours each for education, finance and mail order), with wav audio, txt transcripts and JSON metadata (domain, topic, speaker, audio quality). Baselines: Jasper speech recognition CER 10.14%, WER 27.02%. Scripted recordings may be cleaner than real calls.",
+ "amount_ko": "음성 3,000시간",
+ "amount_en": "3,000 hours of speech",
+ "labels_ko": "말소리를 받아 적은 글(전사), 상담 분야·주제, 화자 정보",
+ "labels_en": "transcripts, domain and topic, speaker info",
+ "status": "full-run-2026-11-02"
+}

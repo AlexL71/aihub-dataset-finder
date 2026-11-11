@@ -1,0 +1,29 @@
+{
+ "dataset_id": "71354",
+ "title_en": "Virtual-space environmental sound matching data",
+ "summary_ko": "현실 공간·가상 공간·인공 시나리오 3가지, 121개 소분류의 환경음(공간 분위기 소리) 약 3.9만 개(약 800시간)를 현장 녹음과 폴리·신시사이저 합성으로 만든 데이터입니다. 메타버스·게임·영상에 장면에 맞는 배경 소리를 자동으로 찾아 붙이는 AI에 쓸 수 있습니다.",
+ "summary_en": "About 39,000 ambient sound clips (about 800 hours) in 3 groups (real spaces, virtual spaces, artificial scenarios) and 121 sub-classes, made by field recording and Foley/synthesiser production. For AI that finds and adds matching background sound to metaverse, game and video scenes.",
+ "contents_ko": "환경음(mp3, wav) + JSON(소리 분류).",
+ "contents_en": "Ambient audio (mp3, wav) + JSON (sound class).",
+ "modalities": ["audio"],
+ "tasks": ["audio_classification", "retrieval_recommendation"],
+ "topics": [{"ko": "게임·메타버스", "en": "Games and metaverse"}, {"ko": "소리·음향", "en": "Sound and acoustics"}],
+ "keywords_ko": ["환경음", "효과음", "메타버스", "게임 사운드", "음향 검색"],
+ "keywords_en": ["ambient sound", "sound effects", "metaverse", "game audio", "sound search"],
+ "labels": ["sound class (3 levels)"],
+ "file_formats": ["mp3", "wav", "json"],
+ "scale_ko": "소리 약 3.9만 개, 약 800시간, 소분류 121종",
+ "classes_example": ["현실 공간/환경", "가상 공간/환경", "인공적 시나리오"],
+ "baseline": [{"task": "ambient sound classification", "model": "PaSST", "metric": "mAP", "value": "60.45%"}],
+ "difficulty": "intermediate",
+ "difficulty_note_ko": "전체 약 1.5TB로 크지만 소분류별로 일부만 받아 쓸 수 있습니다.",
+ "skills_needed_ko": ["파이썬", "오디오 분류", "임베딩 검색"],
+ "caveats_ko": ["전체 약 1.5TB", "합성 소리가 많아 실제 녹음과 차이가 있음", "121개 소분류 이름이 팩 앞부분에 없음"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "공간 소리 분류", "title_en": "Ambience classifier", "desc_ko": "소리를 듣고 현실·가상·인공 시나리오 중 무엇인지 분류합니다.", "desc_en": "Classify sounds as real, virtual or artificial scenes."},
+  {"level": "capstone", "title_ko": "영상 배경음 추천기", "title_en": "Background-sound recommender", "desc_ko": "장면 설명을 넣으면 어울리는 환경음을 찾아 줍니다.", "desc_en": "Suggest matching ambience from a scene description."},
+  {"level": "research", "title_ko": "텍스트-소리 검색", "title_en": "Text-to-audio retrieval", "desc_ko": "글로 소리를 찾는 공통 임베딩(CLAP 등)을 연구합니다.", "desc_en": "Study shared text-audio embeddings such as CLAP."}
+ ],
+ "doc_used": true,
+ "uncertain": ["sub-class list"]
+}

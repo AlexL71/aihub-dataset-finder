@@ -1,0 +1,29 @@
+{
+ "dataset_id": "71768",
+ "title_en": "Emergency voice/sound (enhanced): 119 intelligent report-intake speech recognition data",
+ "summary_ko": "서울·인천·광주 소방 신고 접수 통화 음성 약 3,064시간과 1:1로 맞춘 전사 텍스트 158,973건으로, 구급·구조·화재·기타 4종(세부 16종) 신고 종류와 성별·긴급도·감정 상태 태그가 붙어 있습니다. 119 신고 자동 접수, 긴급도 판단 AI에 쓸 수 있습니다.",
+ "summary_en": "About 3,064 hours of 119 emergency call audio (Seoul, Incheon, Gwangju fire services) with 158,973 matched transcripts, tagged by report type (emergency medical, rescue, fire, other; 16 subtypes), gender, urgency and emotional state. For automated 119 call intake and urgency assessment.",
+ "contents_ko": "통화 음성(wav) + JSON(전사, 신고 종류, 성별, 긴급도, 감정 상태).",
+ "contents_en": "Call audio (wav) + JSON (transcript, report type, gender, urgency, emotion).",
+ "modalities": ["audio", "text"],
+ "tasks": ["speech_recognition", "text_classification", "sentiment_emotion"],
+ "topics": [{"ko": "재난·응급 대응", "en": "Disaster and emergency response"}, {"ko": "음성 인식", "en": "Speech recognition"}],
+ "keywords_ko": ["119 신고", "긴급 통화", "음성 인식", "긴급도", "감정 분류", "KcELECTRA"],
+ "keywords_en": ["119 call", "emergency call", "speech recognition", "urgency", "emotion classification", "KcELECTRA"],
+ "labels": ["transcript", "report type", "gender", "urgency", "emotion"],
+ "file_formats": ["wav", "json"],
+ "scale_ko": "음성 3,064시간, 전사 158,973건, 신고 종류 4종(세부 16종)",
+ "classes_example": ["구급", "구조", "화재", "기타", "심정지", "부상", "안전사고"],
+ "baseline": [],
+ "difficulty": "intermediate",
+ "difficulty_note_ko": "약 88GB입니다. 전사 텍스트로 신고 분류부터 하면 쉽고, 음성 인식은 GPU가 필요합니다.",
+ "skills_needed_ko": ["파이썬", "Hugging Face 텍스트 분류(KcELECTRA)", "음성 인식(Whisper 등) 기초"],
+ "caveats_ko": ["페이지에 성능 점수 표가 없음(KcELECTRA 구급/비구급 분류 소개만 있음)", "구급 질병(중증 외)이 46.97%로 많고 임산부·약물중독은 0.2% 이하", "실제 신고 통화라 개인정보 비식별 처리 여부를 확인하고 써야 함"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "신고 종류 분류", "title_en": "Report type classifier", "desc_ko": "전사 텍스트로 구급·구조·화재·기타를 분류합니다.", "desc_en": "Classify transcripts as medical, rescue, fire or other."},
+  {"level": "capstone", "title_ko": "119 신고 요약 도우미", "title_en": "119 call assistant", "desc_ko": "통화를 받아 적고 신고 종류와 긴급도를 바로 보여주는 데모를 만듭니다.", "desc_en": "Transcribe calls and show report type and urgency live."},
+  {"level": "research", "title_ko": "긴박한 음성 인식 개선", "title_en": "Stressed speech recognition", "desc_ko": "울음·소음이 섞인 긴급 통화에서 음성 인식 오류를 줄이는 방법을 연구합니다.", "desc_en": "Study reducing errors on noisy, stressed emergency speech."}
+ ],
+ "doc_used": true,
+ "uncertain": []
+}

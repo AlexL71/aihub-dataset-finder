@@ -1,0 +1,29 @@
+{
+ "dataset_id": "71751",
+ "title_en": "Fire prediction video (enhanced): video-based fire monitoring and location detection",
+ "summary_ko": "소방청·소방본부·방재시험연구원의 실제 화재와 화재 실험 영상에서 모은 초기·중기 화재 데이터로, 12초 동영상 클립 5,304개, 화재 현상 이미지 1,909,440장, 화재 현장 주요 객체 이미지 472,500장(총 약 238만 장)입니다. 불꽃·연기 등이 상자로 표시되어 있어 CCTV 실시간 화재 감지 AI에 쓸 수 있습니다.",
+ "summary_en": "Early and mid-stage fire data from real fires and fire tests (National Fire Agency, fire HQs, a fire-safety lab): 5,304 12-second clips, 1,909,440 fire-phenomenon images and 472,500 key-object images (about 2.38M total), with boxes. For real-time CCTV fire detection.",
+ "contents_ko": "화재 영상(mp4) + 이미지(jpg) + JSON(상자, 화재 단계, 장소, 객체 종류).",
+ "contents_en": "Fire video (mp4) + images (jpg) + JSON (boxes, fire stage, location, object type).",
+ "modalities": ["video", "image"],
+ "tasks": ["object_detection", "action_recognition", "anomaly_detection"],
+ "topics": [{"ko": "재난·화재 안전", "en": "Disaster and fire safety"}, {"ko": "CCTV 감시", "en": "CCTV monitoring"}],
+ "keywords_ko": ["화재 감지", "불꽃", "연기", "CCTV", "조기 경보", "SlowFast"],
+ "keywords_en": ["fire detection", "flame", "smoke", "CCTV", "early warning", "SlowFast"],
+ "labels": ["bounding box", "fire stage", "object class"],
+ "file_formats": ["mp4", "jpg", "json"],
+ "scale_ko": "동영상 클립 5,304개, 이미지 약 2,381,940장, 장소 8종, 주요 객체 15종",
+ "classes_example": ["불꽃", "연기", "초기 화재", "중기 화재"],
+ "baseline": [],
+ "difficulty": "intermediate",
+ "difficulty_note_ko": "불꽃·연기 탐지는 YOLO 실습에 좋지만 전체 약 1TB입니다. 이미지 일부만 받아 쓰세요.",
+ "skills_needed_ko": ["파이썬", "YOLO 탐지", "영상 분류(SlowFast)"],
+ "caveats_ko": ["페이지에 성능 점수 표가 없음(SlowFast 목표 Top-1 90%만 소개)", "화재 실험 영상이 섞여 있어 실제 현장과 차이가 있을 수 있음", "클래스 이름(15종 객체)은 팩 앞부분에 없음"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "불꽃·연기 탐지", "title_en": "Flame and smoke detection", "desc_ko": "이미지에서 불꽃과 연기를 YOLO로 찾습니다.", "desc_en": "Detect flames and smoke in images with YOLO."},
+  {"level": "capstone", "title_ko": "CCTV 화재 경보 시스템", "title_en": "CCTV fire alarm", "desc_ko": "실시간 영상에서 화재를 감지하면 위치와 함께 알림을 보내는 데모를 만듭니다.", "desc_en": "Send location alerts when fire appears in live video."},
+  {"level": "research", "title_ko": "초기 화재 오경보 줄이기", "title_en": "Reducing early-fire false alarms", "desc_ko": "조명·수증기처럼 화재와 비슷한 장면의 오경보를 줄이는 방법을 연구합니다.", "desc_en": "Study cutting false alarms from fire-like scenes."}
+ ],
+ "doc_used": true,
+ "uncertain": []
+}

@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71815",
+ "easy_ko": "사람이 자연스럽게 말하는 영상과 목소리, 얼굴 표정과 몸 움직임을 기록한 자료, 얼굴과 몸 입체 모형에 설명을 붙인 데이터입니다. 말하는 사람의 얼굴과 몸 동작을 입체 애니메이션으로 만들어 주는 AI에 쓸 수 있습니다.",
+ "easy_en": "Videos and audio of people speaking naturally, recordings of their facial expressions and body movements, and three-dimensional face and body models, with descriptions. You can use it to build AI that turns a speaking person's face and body movements into three-dimensional animation.",
+ "detail_ko": "자연 발화 영상 232,094건(mp4), 음성 124,094건(wav), 얼굴 표정·몸 동작 모션캡처 각 12,000건과 얼굴·포즈 3D 모델(fbx)에 영상·음성 설명 캡션과 감정(예: anger, 세부 감정 삐뚤어지다) 정보를 JSON으로 붙였습니다(라벨 232,094건). 3D 모델 수량이 '438.766건'처럼 소수점으로 적혀 있어 확인이 필요하고, 사람 얼굴이 담겨 있어 초상권·이용 조건을 확인해야 하며, 성능 지표 값은 팩 앞부분에 없습니다.",
+ "detail_en": "232,094 natural-speech videos (mp4), 124,094 audio clips (wav), 12,000 facial-expression and 12,000 body-motion captures, and face and pose 3D models (fbx), with JSON video and audio captions and emotion labels (such as anger, with fine-grained sub-emotions); 232,094 labels. The 3D model count is written with a decimal point ('438.766'), so check it; faces are included, so check portrait rights and terms of use; no metric values are in the pack.",
+ "amount_ko": "영상 232,094건, 음성 124,094건, 모션캡처 얼굴·포즈 각 12,000건",
+ "amount_en": "232,094 videos, 124,094 audio clips, 12,000 face and 12,000 pose motion captures",
+ "labels_ko": "영상·음성 설명, 몸 움직임 기록, 입체 모형",
+ "labels_en": "video/audio caption, motion capture, 3D model",
+ "status": "full-run-2026-11-02"
+}

@@ -1,0 +1,12 @@
+{
+ "dataset_id": "483",
+ "easy_ko": "눈, 비, 안개, 황사, 어두움 때문에 흐려진 영상과 같은 장소를 깨끗하게 찍은 영상을 짝지은 데이터입니다. 날씨가 나빠도 CCTV 화면을 선명하게 되살려 주는 AI를 만들 수 있습니다.",
+ "easy_en": "Videos blurred by snow, rain, fog, yellow dust or darkness, paired with clean videos of the same places. You can build AI that restores clear CCTV pictures even in bad weather.",
+ "detail_ko": "눈·비·안개·황사/미세먼지·저조도 노이즈 영상 829시간과 같은 장소의 깨끗한 정답 영상 88시간, 총 917시간에서 뽑은 프레임 1,009,662장(jpg)으로, JSON에 잡음 종류, 계절, 실내외, 분할 정보가 있습니다. 기준 성능은 기록에서 확인되지 않습니다. 전체 약 1.6TB입니다.",
+ "detail_en": "1,009,662 frames (jpg) from 917 hours of video: 829 hours with noise (snow, rain, fog, yellow dust/fine dust, low light) and 88 hours of clean ground truth from the same places, with JSON noise type, season, indoor/outdoor and segmentation info. No baseline is visible in the record. Total size is about 1.6 TB.",
+ "amount_ko": "프레임 약 101만 장, 영상 917시간",
+ "amount_en": "about 1.01M frames, 917 hours of video",
+ "labels_ko": "깨끗한 영상·흐린 영상 짝, 잡음 종류, 계절·실내외",
+ "labels_en": "clean/noisy pairs, noise type, season, indoor/outdoor",
+ "status": "full-run-2026-11-02"
+}

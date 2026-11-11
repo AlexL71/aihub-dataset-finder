@@ -1,0 +1,49 @@
+# Project settings. Paths are relative to the project root.
+
+paths:
+  data_dir: data            # raw/, parsed/, manifest.csv live here (not in git)
+
+http:
+  # Contact email is read from .env (CONTACT_EMAIL) and appended to the User-Agent if set.
+  user_agent: "AIHubDatasetFinder/0.1 (student research project, Korea University Sejong)"
+  delay_sec_min: 3.0        # pause between requests to the same host (random in [min, max])
+  delay_sec_max: 5.0
+  timeout_sec: 60
+  max_retries: 4            # for timeouts, 429 and 5xx
+  backoff_base_sec: 10      # wait = base * 2^attempt (+ jitter)
+  max_requests_per_run: 1500
+  stop_on_status: [401, 403]  # hard stop: save state and exit
+  # Text that means "we are blocked / challenged" -> hard stop
+  block_markers: ["captcha", "Request Blocked", "비정상적인 접근", "접근이 차단"]
+  # Optional run window in Korea time, e.g. "01:00-07:00". null = no restriction.
+  run_window_kst: null
+
+aihub:
+  base_url: "https://www.aihub.or.kr"
+  api_base_url: "https://api.aihub.or.kr"
+  dataset_list_path: "/info/dataset.do"
+  filetree_path: "/info/{id}.do"
+  page_path: "/aihubdata/data/view.do?currMenu=115&topMenu=100&aihubDataSe=data&dataSetSn={id}"
+  # Document link types to download. aiModelFileSn (AI model files) is skipped on purpose.
+  doc_types:
+    dataMnlFileSn: data_manual          # 데이터 설명서
+    cnstcPrcuseFileSn: build_guide      # 구축활용가이드
+  sample_size: 20
+  sample_seed: 42
+
+university:
+  base_url: "https://sejong.korea.ac.kr"
+  departments_file: config/departments_ku_sejong.yaml
+  # Menu labels used to find the pages we need on each department site (first match wins)
+  menu_keywords:
+    curriculum: ["교육과정", "교과과정", "커리큘럼", "교과목", "전공체계", "이수체계", "로드맵", "Curriculum", "Graduation"]
+    careers: ["졸업후진로", "진로", "취업", "Career"]
+    research: ["연구분야", "연구실", "연구소", "실험실", "Lab", "Research"]
+    goals: ["교육목표", "인재상", "비전", "목표", "Goal", "Vision"]
+    intro: ["학과소개", "학부소개", "전공소개", "대학소개", "개요", "소개", "인사말", "연혁", "About", "History"]
+  # Labels never collected (people lists, boards, admin pages)
+  menu_exclude: ["교수", "교원", "직원", "조교", "공지", "게시", "자료실", "갤러리", "앨범", "행사", "뉴스",
+                 "소식", "입학", "모집", "오시는", "찾아오", "사이트맵", "로그인", "FAQ", "Q&A", "학생회", "동문", "장학",
+                 "People", "Professor", "Lecturer", "Staff", "Admission", "Scholarship", "Notice", "News",
+                 "Board", "Student", "Contact", "Facility", "Community"]
+  max_pages_per_site: 10

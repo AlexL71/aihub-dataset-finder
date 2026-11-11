@@ -1,0 +1,29 @@
+{
+ "dataset_id": "604",
+ "title_en": "Dance movement data across genres",
+ "summary_ko": "발레·재즈·뮤지컬·힙합·스트릿·라인·탭·댄스스포츠·민속무용·현대무용·한국무용·방송댄스 등 12개 장르 춤 동작을 스튜디오에서 카메라 8대로 동시에 찍은 동작 클립 약 35.6만 개(이미지 약 1.95억 장, 약 1,800시간)에 몸 관절 키포인트와 동작 정보를 붙인 데이터입니다. 춤 동작 분류나 따라 하기 평가 AI에 쓸 수 있습니다.",
+ "summary_en": "About 356,000 motion clips (about 195 million frames, about 1,800 hours) of dance in 12 genres (ballet, jazz, musical, hip-hop, street, line, tap, dancesport, folk, contemporary, Korean dance, K-pop style) filmed by 8 cameras at once in a studio, with body keypoints and movement information. For AI that classifies dance moves or scores how well a learner copies them.",
+ "contents_ko": "동작 영상(mp4)·프레임 이미지(jpg) + 키포인트 CSV + JSON(동작·신체 정보).",
+ "contents_en": "Motion videos (mp4) and frames (jpg) + keypoint CSV + JSON (movement and body information).",
+ "modalities": ["video", "image"],
+ "tasks": ["keypoint_pose", "action_recognition"],
+ "topics": [{"ko": "춤·공연예술", "en": "Dance and performing arts"}, {"ko": "동작 분석", "en": "Motion analysis"}],
+ "keywords_ko": ["춤", "댄스", "발레", "힙합", "자세 추정", "동작 인식"],
+ "keywords_en": ["dance", "ballet", "hip-hop", "pose estimation", "action recognition", "multi-view"],
+ "labels": ["keypoint", "movement class", "body information"],
+ "file_formats": ["mp4", "jpg", "csv", "json"],
+ "scale_ko": "동작 클립 약 35.6만 개, 이미지 약 1.95억 장, 장르 12종, 약 1,800시간",
+ "classes_example": ["발레", "재즈댄스", "힙합", "스트릿댄스", "탭댄스", "한국무용", "방송댄스"],
+ "baseline": [{"task": "dance move classification", "model": "PoseC3D", "metric": "top-2 accuracy", "value": "96.99%"}],
+ "difficulty": "advanced",
+ "difficulty_note_ko": "전체 약 24.8TB로 매우 크고 가장 작은 파일도 46GB입니다. 키포인트 CSV만 받는 것을 권합니다.",
+ "skills_needed_ko": ["파이썬", "자세 추정", "동작 인식(PoseC3D 등)"],
+ "caveats_ko": ["전체 약 24.8TB, 파일 하나가 최소 46GB", "무용수 얼굴이 보일 수 있음", "고용량 정밀영상은 별도 신청·오프라인 제공", "592번 택견 데이터와 같은 구축 기관·구조"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "춤 장르 분류", "title_en": "Dance genre classifier", "desc_ko": "키포인트 시퀀스로 12개 장르를 분류합니다.", "desc_en": "Classify 12 genres from keypoint sequences."},
+  {"level": "capstone", "title_ko": "춤 따라 하기 채점 앱", "title_en": "Dance-along scoring app", "desc_ko": "웹캠 자세를 기준 동작과 비교해 점수를 매깁니다.", "desc_en": "Score a webcam dancer against a reference move."},
+  {"level": "research", "title_ko": "음악 없이 춤 동작 생성", "title_en": "Dance motion generation", "desc_ko": "장르를 지정하면 키포인트 동작을 생성하는 모델을 연구합니다.", "desc_en": "Generate keypoint dance motion for a chosen genre."}
+ ],
+ "doc_used": true,
+ "uncertain": []
+}

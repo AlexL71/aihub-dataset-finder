@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71441",
+ "easy_ko": "모자, 안경테, 선글라스, 목걸이, 귀걸이를 착용한 사진마다 액세서리 영역을 테두리로 칠하고 색상과 소재 같은 제품 정보를 붙인 데이터입니다. 액세서리를 가상으로 착용해 보는 앱이나 비슷한 패션 상품을 찾아 주는 AI를 만들 수 있습니다.",
+ "easy_en": "Photos of people wearing hats, glasses frames, sunglasses, necklaces and earrings, with each accessory outlined and product details such as colour and material attached. You can build virtual try-on apps for accessories or AI that finds similar fashion items.",
+ "detail_ko": "액세서리 5종(모자, 안경테, 선글라스, 목걸이, 귀걸이; 종류별 약 8만 장) 착용 이미지 약 40만 장에 2D 다각형 분할과 액세서리 종류·색상·소재 등 제품 정보를 JSON으로 붙였습니다. 성능 지표 값은 페이지에 없습니다. 전체 약 437GB이며, 통계표 합계가 40,000으로 적혀 있어 각 종류 합(약 40만)과 맞지 않고, 데이터 형식이 txt로 적혀 있어 이미지 형식이 불분명합니다.",
+ "detail_en": "About 400k images of people wearing 5 accessory types (hat, glasses frame, sunglasses, necklace, earring; about 80k each), with JSON 2D polygon segmentation and product info such as type, colour and material. No performance values are on the page. Total size is about 437 GB; the statistics total reads 40,000, which does not match the per-type sum (about 400k); the format is listed as txt, so the image format is unclear.",
+ "amount_ko": "사진 약 40만 장, 액세서리 5종",
+ "amount_en": "about 400k images, 5 accessory types",
+ "labels_ko": "액세서리 영역(테두리), 종류, 색상, 소재",
+ "labels_en": "accessory outlines, type, colour, material",
+ "status": "full-run-2026-11-02"
+}

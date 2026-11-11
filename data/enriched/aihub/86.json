@@ -1,0 +1,32 @@
+{
+ "dataset_id": "86",
+ "title_en": "Emotional dialogue corpus",
+ "summary_ko": "일반인 1,500명이 참여해 만든 감성 대화 말뭉치 27만 문장과 음성 약 1만 문장으로, 60가지 세부 감정과 청소년·청장년·노년 세대 구분이 있습니다. 우울증 관련 대화 시나리오도 들어 있어 공감하는 상담 챗봇이나 감정 분류에 쓸 수 있습니다.",
+ "summary_en": "An emotional conversation corpus of 270,000 sentences and about 10,000 spoken sentences from 1,500 people, with 60 detailed emotions and generation groups (teens, adults, older adults). It includes depression-related conversation scenarios, for empathetic counselling chatbots or emotion classification.",
+ "contents_ko": "대화 세션(사람 발화 + 시스템 응답) + 라벨(감정 대분류·세부 감정, 연령대, 상황) + 일부 음성 파일.",
+ "contents_en": "Conversation sessions (user turns + system replies) + labels (main and detailed emotion, age group, situation) + some audio.",
+ "modalities": ["text", "audio"],
+ "tasks": ["sentiment_emotion", "dialogue", "text_classification"],
+ "topics": [{"ko": "감정·심리", "en": "Emotion and psychology"}, {"ko": "정신 건강·상담", "en": "Mental health and counselling"}, {"ko": "한국어 대화", "en": "Korean conversation"}],
+ "keywords_ko": ["감성 대화", "감정 분류", "챗봇", "우울증", "상담", "공감", "세대별"],
+ "keywords_en": ["emotional dialogue", "emotion classification", "chatbot", "depression", "counselling", "empathy", "generations"],
+ "labels": ["emotion (6 main, 60 detailed)", "age group", "situation"],
+ "file_formats": ["json", "xlsx", "wav"],
+ "scale_ko": "코퍼스 27만 문장, 음성 약 1만 문장, 참여자 1,500명, 세부 감정 60종",
+ "classes_example": ["기쁨", "슬픔", "분노", "불안", "상처", "당황"],
+ "baseline": [
+  {"task": "6-emotion classification", "model": "ALBERT", "metric": "F1-score", "value": "0.809"},
+  {"task": "session-level emotion", "model": "ALBERT", "metric": "F1-score", "value": "0.783"}
+ ],
+ "difficulty": "beginner",
+ "difficulty_note_ko": "용량이 0.02GB로 아주 작아 노트북에서 바로 텍스트 감정 분류를 해볼 수 있습니다.",
+ "skills_needed_ko": ["파이썬 기초", "pandas", "한국어 텍스트 분류(BERT 계열)"],
+ "caveats_ko": ["음성 부분은 일부 파일만 포함되었을 수 있음(전체 용량이 매우 작음)", "우울증 관련 내용은 실제 상담 대체용으로 쓰면 안 됨"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "문장 감정 분류기", "title_en": "Sentence emotion classifier", "desc_ko": "문장을 6가지 감정으로 분류하는 모델을 만들고 세대별 차이를 봅니다.", "desc_en": "Classify sentences into 6 emotions and compare generations."},
+  {"level": "capstone", "title_ko": "공감형 상담 챗봇", "title_en": "Empathetic support chatbot", "desc_ko": "사용자 감정을 분류한 뒤 공감 응답을 생성하는 챗봇 프로토타입을 만듭니다.", "desc_en": "Classify the user's emotion and reply empathetically."},
+  {"level": "research", "title_ko": "대화 흐름 속 감정 변화 예측", "title_en": "Emotion shifts in dialogue", "desc_ko": "대화 세션에서 감정이 어떻게 바뀌는지 모델링하고 우울 위험 신호를 찾는 방법을 연구합니다.", "desc_en": "Model emotion changes across a session and look for depression-risk signals."}
+ ],
+ "doc_used": true,
+ "uncertain": ["파일 형식(json/xlsx)은 팩 앞부분에서 확인하지 못해 추정"]
+}

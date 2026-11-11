@@ -1,0 +1,45 @@
+{
+ "id": "german",
+ "name_ko": "글로벌학부(독일학전공)",
+ "name_en": "German Studies (School of Global Studies)",
+ "college": "글로벌비즈니스대학",
+ "summary_ko": "독일어 실력을 바탕으로 독일어권(독일, 오스트리아, 스위스)의 문화, 문학, 정치, 경제, 사회를 배우는 지역학 중심 전공입니다. 문화기획·콘텐츠, 독일 기업 마케팅, 복지·환경 정책, 독일 IT 4.0 같은 응용 과목과 교환학생·해외 인턴십이 있습니다.",
+ "summary_en": "A regional-studies major built on German language skills, covering the culture, literature, politics, economy and society of Germany, Austria and Switzerland. Applied courses include cultural planning and content, German company marketing, welfare and environmental policy and Germany's Industry 4.0, plus exchange and overseas internships.",
+ "key_topics": ["독일어(회화, 문법, 번역, ZD 자격)", "독일 지역학과 EU", "독일 문학·연극·대중문화", "독일 정치·복지·환경 정책", "독일 기업·강소기업·마케팅", "문화산업·콘텐츠", "한독 문화 비교", "독일 IT 4.0"],
+ "course_keywords": ["기초독일어", "독일어기초회화", "중급독일어", "독한번역연습", "ZD Deutsch", "시사독일어", "독문강독 및 연습", "독일 지역학", "독일과 유럽연합", "독일의 대중매체", "예술로 본 독일사", "독일정치와 문화", "독일의 강소기업", "독일의 복지제도", "독일의 스포츠 산업", "독일의 친환경정책", "독일 기업의 마케팅 전략", "독일 공연예술과 콘텐츠산업", "문화이론", "독문학개론", "독어학개론", "세계의 문화산업", "화용론", "한독문화비교", "독일의 대중문화", "독일 사이버 문화", "독일문학과 스토리텔링", "언어치유", "독일 IT 4.0과 한국의 미래산업", "독일의 환경산업과 동아시아의 생태적 미래"],
+ "curriculum_by_year": {
+  "1": ["기초독일어", "독일어기초회화", "독일 지역학", "독일의언어문화"],
+  "2": ["중급독일어", "독한번역연습", "독일과 유럽연합", "독일의 대중매체", "문화이론", "독문학개론", "독일문화학", "독어학개론", "독문학사"],
+  "3": ["ZD Deutsch", "시사독일어", "독문강독 및 연습", "예술로 본 독일사", "독일정치와 문화", "독일의 강소기업", "독일의 복지제도", "독일의 스포츠 산업", "세계의 문화산업", "독일연극의이해", "화용론", "한독문화비교", "독일의 인문정신"],
+  "4": ["독일의 친환경정책", "독일 기업의 마케팅 전략", "독일 공연예술과 콘텐츠산업", "독일 사이버 문화", "독일문학과 스토리텔링", "언어치유", "독일문화융합콘텐츠", "유럽복지사회와 한국의 미래", "독일 IT 4.0과 한국의 미래산업"]
+ },
+ "careers": ["독일계·독일어권 외국계 기업", "무역·중개", "언론·출판·문화 분야", "독일어 통·번역", "공무원(국정원, 한국관광공사 등 독일어 응시)", "문화기획·콘텐츠 창작", "독일 유학·대학원 진학"],
+ "research_areas": [],
+ "data_interests": [
+  {"topic_ko": "번역과 다국어", "topic_en": "Translation and multilingual text", "keywords": ["독한 번역", "다국어 말뭉치", "기계번역"]},
+  {"topic_ko": "문화 콘텐츠", "topic_en": "Cultural content", "keywords": ["공연", "전시", "영화"]},
+  {"topic_ko": "복지와 사회 정책", "topic_en": "Welfare and social policy", "keywords": ["복지 통계", "정책 문서"]},
+  {"topic_ko": "환경과 에너지 전환", "topic_en": "Environment and energy transition", "keywords": ["친환경 정책", "재생에너지"]},
+  {"topic_ko": "제조업과 스마트 공장", "topic_en": "Manufacturing and smart factories", "keywords": ["인더스트리 4.0", "제조 데이터"]},
+  {"topic_ko": "관광", "topic_en": "Tourism", "keywords": ["외국인 관광", "관광 안내"]},
+  {"topic_ko": "스포츠 산업", "topic_en": "Sports industry", "keywords": ["축구", "스포츠 마케팅"]}
+ ],
+ "interest_questions": [
+  {"q_ko": "독일과 관련해 무엇이 궁금한가요?", "q_en": "What interests you about Germany?",
+   "options": [{"ko": "언어·번역", "en": "Language and translation"}, {"ko": "문화·예술·콘텐츠", "en": "Culture, arts and content"}, {"ko": "기업·경제", "en": "Companies and economy"}, {"ko": "복지·환경 정책", "en": "Welfare and environmental policy"}, {"ko": "스포츠", "en": "Sports"}]},
+  {"q_ko": "다뤄보고 싶은 자료는?", "q_en": "What data would you like to use?",
+   "options": [{"ko": "번역 문장", "en": "Translated sentences"}, {"ko": "정책·뉴스 텍스트", "en": "Policy and news text"}, {"ko": "공연·관광 정보", "en": "Performance and tourism info"}, {"ko": "경제·에너지 통계", "en": "Economic and energy statistics"}]}
+ ],
+ "project_themes": ["독한 번역 결과 비교 분석", "한국과 독일 복지 정책 문서 비교", "외국인 관광 안내 다국어 번역", "재생에너지 통계 시각화"],
+ "data_skill_level": "low",
+ "data_skill_note": "데이터·프로그래밍 과목은 교양(정보적사고) 정도입니다. 번역·텍스트 데이터를 생성형 AI와 노코드 도구로 다뤄보는 것부터 시작하는 것이 좋습니다.",
+ "sources": [
+  {"kind": "page", "label": "학과소개", "url": "https://sejong.korea.ac.kr/german/8085/subview.do"},
+  {"kind": "page", "label": "졸업 후 진로", "url": "https://sejong.korea.ac.kr/german/8086/subview.do"},
+  {"kind": "page", "label": "전공체계도", "url": "https://sejong.korea.ac.kr/german/8098/subview.do"}
+ ],
+ "inferred_fields": ["data_interests", "interest_questions", "project_themes"],
+ "gaps": ["The course table on the site is from 2021; the curriculum map page was used for course names."],
+ "version": 1,
+ "created": "2026-10-29"
+}

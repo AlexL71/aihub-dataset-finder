@@ -1,0 +1,29 @@
+{
+ "dataset_id": "71790",
+ "title_en": "Turfgrass growth environment multispectral image data",
+ "summary_ko": "드론·고정 감시장치·이동 장치로 골프장 그린·티잉 그라운드·페어웨이 등의 잔디를 찍은 이미지와 다분광 영상 402,687세트에 병해·충해·잡초 영역이 분할로 칠해진 데이터입니다. 잔디 생육 예측과 병해충 식별 AI에 쓸 수 있습니다.",
+ "summary_en": "402,687 sets of RGB and multispectral turf images of golf-course greens, tees and fairways from drones, fixed cameras and mobile rigs, with disease, pest damage and weeds segmented. For turf growth prediction and pest identification AI.",
+ "contents_ko": "잔디 이미지(jpg) + 다분광 영상(tif) + JSON(분할, 생육·환경 정보).",
+ "contents_en": "Turf image (jpg) + multispectral image (tif) + JSON (segmentation, growth and environment info).",
+ "modalities": ["image"],
+ "tasks": ["segmentation", "anomaly_detection"],
+ "topics": [{"ko": "스마트 농업·조경", "en": "Smart farming and landscaping"}, {"ko": "드론 원격탐사", "en": "Drone remote sensing"}],
+ "keywords_ko": ["잔디", "골프장", "잡초", "병해충", "다분광", "식생지수"],
+ "keywords_en": ["turfgrass", "golf course", "weeds", "pests and disease", "multispectral", "vegetation index"],
+ "labels": ["segmentation", "class"],
+ "file_formats": ["jpg", "tif", "json"],
+ "scale_ko": "402,687세트",
+ "classes_example": ["병해", "충해", "잡초"],
+ "baseline": [],
+ "difficulty": "advanced",
+ "difficulty_note_ko": "전체가 약 9.7TB로 매우 큽니다. 한 코스 구역의 RGB 이미지 일부로 시작하세요.",
+ "skills_needed_ko": ["파이썬", "분할 모델", "다분광 영상 처리"],
+ "caveats_ko": ["전체 약 9,720GB로 매우 큼", "클래스 전체 목록과 성능 지표가 팩 앞부분에 없음"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "잔디 속 잡초 분할", "title_en": "Weed segmentation in turf", "desc_ko": "잔디 근접 사진에서 잡초 영역을 칠합니다.", "desc_en": "Segment weeds in close-up turf photos."},
+  {"level": "capstone", "title_ko": "골프장 잔디 상태 지도", "title_en": "Golf course turf map", "desc_ko": "드론 영상으로 코스별 병해·잡초 지도를 만듭니다.", "desc_en": "Map disease and weeds per course area from drone images."},
+  {"level": "research", "title_ko": "식생지수로 생육 예측", "title_en": "Growth prediction from vegetation index", "desc_ko": "다분광 식생지수로 잔디 생육 상태를 예측하는 방법을 연구합니다.", "desc_en": "Predict turf condition from multispectral indices."}
+ ],
+ "doc_used": true,
+ "uncertain": ["세트 구성(이미지 몇 장이 한 세트인지)"]
+}

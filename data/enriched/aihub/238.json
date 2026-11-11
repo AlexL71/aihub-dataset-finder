@@ -1,0 +1,29 @@
+{
+ "dataset_id": "238",
+ "title_en": "Machine fault prediction sensor data",
+ "summary_ko": "대전 도시철도 역사의 실제 전동기(모터)에서 측정한 진동·전류 센서 데이터 233만 개로, 정상과 베어링 불량·회전체 불평형·축정렬 불량·벨트 느슨함 4가지 고장이 구분되어 있습니다. 기계 고장을 미리 알아채는 예지 정비 AI에 쓸 수 있습니다.",
+ "summary_en": "2.33 million vibration and current sensor records from real electric motors in Daejeon subway stations, labelled normal or one of 4 faults (bearing defect, rotor imbalance, shaft misalignment, loose belt). For predictive-maintenance AI that spots machine faults early.",
+ "contents_ko": "진동·전류 시계열 데이터(CSV) + 라벨(정상/고장 종류, 설비 정보).",
+ "contents_en": "Vibration and current time series (CSV) + label (normal or fault type, equipment info).",
+ "modalities": ["sensor", "tabular"],
+ "tasks": ["anomaly_detection", "tabular_prediction"],
+ "topics": [{"ko": "제조·설비 관리", "en": "Manufacturing and equipment maintenance"}, {"ko": "센서·IoT", "en": "Sensors and IoT"}],
+ "keywords_ko": ["예지 정비", "전동기", "진동", "전류", "고장 진단", "베어링"],
+ "keywords_en": ["predictive maintenance", "electric motor", "vibration", "current", "fault diagnosis", "bearing"],
+ "labels": ["class (normal + 4 faults)"],
+ "file_formats": ["csv"],
+ "scale_ko": "233만 3,172개(정상 109.8만, 고장 123.5만: 베어링 36.8만, 불평형 22.4만, 축정렬 33.1만, 벨트 31.3만)",
+ "classes_example": ["정상", "베어링 불량", "회전체 불평형", "축정렬 불량", "벨트 느슨함"],
+ "baseline": [{"task": "fault classification (vibration)", "model": "XGBoost", "metric": "accuracy", "value": "99.99%"}],
+ "difficulty": "beginner",
+ "difficulty_note_ko": "표 형태 센서 데이터라 XGBoost 같은 기본 모델로 바로 분류할 수 있습니다. 다만 파일이 3GB 이상 덩어리입니다.",
+ "skills_needed_ko": ["파이썬", "pandas", "시계열 특징 추출", "XGBoost"],
+ "caveats_ko": ["기준 정확도가 거의 100%라 과제가 쉬운 편일 수 있음", "최소 파일 3GB", "성능 표의 과제명(Image Classification)이 잘못 적혀 있음"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "모터 고장 분류", "title_en": "Motor fault classifier", "desc_ko": "진동 데이터로 정상과 고장 4종을 분류합니다.", "desc_en": "Classify normal and 4 fault types from vibration data."},
+  {"level": "capstone", "title_ko": "설비 상태 대시보드", "title_en": "Equipment health dashboard", "desc_ko": "센서 데이터를 실시간처럼 흘려 고장 위험을 표시하는 대시보드를 만듭니다.", "desc_en": "Stream sensor data and display fault risk on a dashboard."},
+  {"level": "research", "title_ko": "다른 설비로의 일반화", "title_en": "Generalising to other machines", "desc_ko": "한 모터로 학습한 모델이 다른 모터에서 얼마나 통하는지 분석합니다.", "desc_en": "Study how a model trained on one motor transfers to others."}
+ ],
+ "doc_used": true,
+ "uncertain": []
+}

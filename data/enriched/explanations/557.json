@@ -1,0 +1,12 @@
+{
+ "dataset_id": "557",
+ "easy_ko": "부산 사상구 도로를 달리며 찍은 사진마다 도로 갈라짐, 팬 구멍, 경계석, 배수로, 맨홀, 중앙분리대, 방호벽 위치를 표시한 데이터입니다. 시청이나 구청이 고쳐야 할 도로를 자동으로 찾아내는 AI를 만들 수 있습니다.",
+ "easy_en": "Photos taken while driving on roads in Sasang-gu, Busan, marked with road cracks, potholes, kerbstones, gutters, manholes, median barriers and safety barriers. You can build AI that helps local governments find roads that need repair automatically.",
+ "detail_ko": "부산 사상구 도로 주행 영상에서 뽑은 이미지 100만 장(jpg, 비식별)에 클래스 8종(도로균열, 도로홀, 경계석, 측구, 맨홀, 중앙분리대, PE방호벽, 임시안전방호벽)의 바운딩박스, 분할 폴리곤·폴리라인을 JSON으로 붙였습니다. 기준 성능은 기록에서 확인되지 않습니다. 전체 약 4TB이며, 도로 데이터(178·179번)와 비슷합니다.",
+ "detail_en": "1M de-identified jpg images from driving video in Sasang-gu, Busan, with JSON boxes, segmentation polygons and polylines for 8 classes (road crack, pothole, kerbstone, gutter, manhole, median barrier, PE barrier, temporary safety barrier). No baseline is visible in the record. Total size is about 4 TB; similar to the road datasets 178 and 179.",
+ "amount_ko": "이미지 100만 장, 대상 8종",
+ "amount_en": "1M images, 8 classes",
+ "labels_ko": "도로 문제·시설 위치 상자·테두리·선, 종류",
+ "labels_en": "boxes, outlines and lines for road defects and facilities, class",
+ "status": "full-run-2026-11-02"
+}

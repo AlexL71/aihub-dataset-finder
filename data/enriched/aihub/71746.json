@@ -1,0 +1,29 @@
+{
+ "dataset_id": "71746",
+ "title_en": "Major flower quality data, 2023",
+ "summary_ko": "주요 화훼류 10품목 50품종을 유통 환경에서 정면·위·옆 3방향으로 찍은 정상 이미지 506,829장과 중결점(심한 결함) 이미지 854,319장, 유통 환경 모니터링 데이터 20만 세트 이상입니다. 꽃의 품질 등급(특·상·중) 판정과 결함 탐지 AI에 쓸 수 있습니다.",
+ "summary_en": "506,829 normal and 854,319 major-defect images of 50 varieties in 10 flower types, shot from front, top and side in distribution settings, plus 200k+ sets of distribution-environment monitoring data. For flower quality grading (premium, high, medium) and defect detection.",
+ "contents_ko": "꽃 이미지(jpg) + JSON(상자, 품질 등급, 중결점 유형) + 유통 환경 데이터(csv, json).",
+ "contents_en": "Flower image (jpg) + JSON (boxes, quality grade, defect type) + distribution environment data (csv, json).",
+ "modalities": ["image", "sensor"],
+ "tasks": ["image_classification", "object_detection", "anomaly_detection"],
+ "topics": [{"ko": "농업·화훼 유통", "en": "Agriculture and flower distribution"}, {"ko": "품질 검사", "en": "Quality inspection"}],
+ "keywords_ko": ["화훼", "꽃 품질", "등급 판정", "결점 탐지", "유통 환경", "농산물"],
+ "keywords_en": ["flowers", "flower quality", "grading", "defect detection", "distribution environment", "produce"],
+ "labels": ["bounding box", "quality grade", "defect type"],
+ "file_formats": ["jpg", "json", "csv"],
+ "scale_ko": "정상 이미지 506,829장, 중결점 이미지 854,319장, 환경 데이터 20만 세트 이상, 50품종",
+ "classes_example": ["특", "상", "중", "정면뷰", "탑뷰", "측면뷰"],
+ "baseline": [],
+ "difficulty": "intermediate",
+ "difficulty_note_ko": "분류·탐지 실습에 좋지만 약 263GB입니다. 한 품종만 골라 시작하세요.",
+ "skills_needed_ko": ["파이썬", "이미지 분류", "YOLO 탐지"],
+ "caveats_ko": ["페이지에 성능 점수 표가 없음(품종별 모델 100개 개발만 소개)", "10품목·50품종 이름과 중결점 지표 이름은 팩 앞부분에 없음", "같은 꽃을 3방향으로 찍어 분할 시 같은 꽃이 섞이지 않게 주의"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "꽃 품질 등급 분류", "title_en": "Flower grade classifier", "desc_ko": "한 품종 꽃 사진을 특·상·중으로 분류합니다.", "desc_en": "Classify one variety's photos into three grades."},
+  {"level": "capstone", "title_ko": "화훼 경매 검수 도우미", "title_en": "Flower auction inspection helper", "desc_ko": "꽃 사진에서 결점을 찾아 등급과 함께 보여 주는 검수 도구를 만듭니다.", "desc_en": "Find defects and show a grade for auction inspection."},
+  {"level": "research", "title_ko": "유통 환경과 품질 변화", "title_en": "Distribution conditions vs quality", "desc_ko": "온도·습도 같은 유통 환경이 꽃 결점 발생에 주는 영향을 분석합니다.", "desc_en": "Analyse how temperature and humidity affect flower defects."}
+ ],
+ "doc_used": true,
+ "uncertain": []
+}

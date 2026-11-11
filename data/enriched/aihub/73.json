@@ -1,0 +1,34 @@
+{
+ "dataset_id": "73",
+ "title_en": "Satellite image object interpretation",
+ "summary_ko": "아리랑 위성의 광학·레이더 영상으로 만든 5가지 데이터입니다: 차량·선박·비행기 등 15종 물체 위치, 건물 윤곽, 도로 윤곽, 구름(두꺼운·얇은·그림자), 레이더 영상의 물(수계) 영역. 재난·환경·도시 분석처럼 하늘에서 본 땅을 분석하는 AI에 쓸 수 있습니다.",
+ "summary_en": "Five datasets from KOMPSAT (Arirang) optical and radar satellite images: positions of 15 object types such as cars, ships and planes; building outlines; road outlines; clouds (thick, thin, shadow); and water areas in radar images. For AI that analyses the ground from above for disaster, environment or urban studies.",
+ "contents_ko": "위성 영상 패치(1024×1024 등) + 라벨(회전 상자로 물체 위치, 건물·도로·구름·수계 분할 마스크 또는 다각형).",
+ "contents_en": "Satellite image patches (e.g. 1024×1024) + labels (rotated boxes for objects; segmentation masks or polygons for buildings, roads, clouds and water).",
+ "modalities": ["image"],
+ "tasks": ["object_detection", "segmentation"],
+ "topics": [{"ko": "위성·항공 영상", "en": "Satellite and aerial imagery"}, {"ko": "도시·국토", "en": "Cities and land"}, {"ko": "재난·환경", "en": "Disaster and environment"}, {"ko": "기상·구름", "en": "Weather and clouds"}],
+ "keywords_ko": ["위성영상", "아리랑", "건물 윤곽", "도로 추출", "구름", "수계", "레이더(SAR)", "선박 탐지"],
+ "keywords_en": ["satellite image", "KOMPSAT", "building footprint", "road extraction", "cloud", "water body", "SAR", "ship detection"],
+ "labels": ["rotated bounding box", "segmentation mask", "polygon", "class"],
+ "file_formats": ["tif", "png", "json"],
+ "scale_ko": "객체 50만 건 이상(15종), 건물 20만 건 이상, 도로 6,000km 이상, 구름 패치 4,000장 이상, 수계 패치 2,400장 이상",
+ "classes_example": ["차량", "선박", "비행기", "기차", "두꺼운 구름", "얇은 구름", "구름 그림자"],
+ "baseline": [
+  {"task": "object detection", "model": "RoI Transformer", "metric": "mAP", "value": "50%"},
+  {"task": "building segmentation (binary)", "model": "FCN-ResNet101", "metric": "mIoU", "value": "62%"},
+  {"task": "road segmentation (binary)", "model": "NL-LinkNet", "metric": "mIoU", "value": "81%"},
+  {"task": "water segmentation (radar)", "model": "HRNet v2", "metric": "mIoU", "value": "82.23%"}
+ ],
+ "difficulty": "intermediate",
+ "difficulty_note_ko": "전체 약 84GB로 다룰 만하고, 5가지 중 하나만 골라 쓸 수 있습니다. 위성 영상 형식(GeoTIFF)에 익숙해져야 합니다.",
+ "skills_needed_ko": ["파이썬", "이미지 분할 모델(U-Net 등)", "위성 영상 파일(rasterio) 다루기"],
+ "caveats_ko": ["파일 형식은 팩에 명시되지 않아 tif/png는 추정", "회전 상자 탐지는 일반 YOLO보다 어려움"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "위성사진 속 구름 찾기", "title_en": "Find clouds in satellite images", "desc_ko": "구름 패치로 구름·그림자·맑음을 칠하는 분할 모델을 학습합니다.", "desc_en": "Train a segmentation model for cloud, shadow and clear areas."},
+  {"level": "capstone", "title_ko": "도시 건물·도로 지도 자동 생성", "title_en": "Automatic building and road map", "desc_ko": "건물·도로 분할 결과를 합쳐 도시 지도를 그리고 면적 통계를 냅니다.", "desc_en": "Combine building and road masks into a city map with area statistics."},
+  {"level": "research", "title_ko": "레이더 영상으로 홍수 지역 탐지", "title_en": "Flood mapping from radar", "desc_ko": "구름이 있어도 보이는 레이더 영상으로 물 영역을 추출하고 홍수 전후 변화를 분석합니다.", "desc_en": "Extract water from radar images that see through clouds and analyse change before and after floods."}
+ ],
+ "doc_used": true,
+ "uncertain": ["파일 형식(tif/png/json)은 팩에서 확인하지 못해 추정"]
+}

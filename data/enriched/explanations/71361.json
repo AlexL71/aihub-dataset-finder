@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71361",
+ "easy_ko": "수도권을 비행기와 위성으로 내려다본 사진에 건물, 주차장, 도로, 가로수, 논, 비닐하우스, 밭, 활엽수림, 침엽수림, 빈 땅, 물 같은 땅 쓰임새를 색으로 칠한 데이터입니다. 국토가 어떻게 바뀌는지 자동으로 살피는 토지 지도 AI를 만들 수 있습니다.",
+ "easy_en": "Aerial and satellite images of the Seoul capital region with land uses coloured in: buildings, parking lots, roads, street trees, rice paddies, greenhouses, fields, broadleaf and conifer forests, bare land and water. You can build land-mapping AI that tracks how the land changes automatically.",
+ "detail_ko": "수도권 항공사진(25cm 5만 장, 12cm 1,000장)에 11종(건물, 주차장, 도로, 가로수, 논, 비닐하우스, 밭, 활엽수림, 침엽수림, 나지, 수역), Sentinel-2 위성영상 900장에 6종 토지 피복 세그멘테이션 마스크(TIF)와 JSON을 붙였으며, 총 약 5.7만 장입니다. 기준 성능은 U-Net 픽셀 정확도 항공 25cm 93.45%, 12cm 90.12%, 위성 89.44%입니다. 수도권 지역만 있고, 641·642·643번 지역판보다 클래스가 많습니다(11종).",
+ "detail_en": "About 57k images: capital-region aerial photos (50k at 25 cm, 1,000 at 12 cm) with 11 land-cover classes (building, parking lot, road, street tree, paddy, greenhouse, field, broadleaf forest, conifer forest, bare land, water) and 900 Sentinel-2 images with 6 classes, as segmentation masks (TIF) with JSON. Baselines: U-Net pixel accuracy 93.45% (25 cm aerial), 90.12% (12 cm), 89.44% (satellite). Only the capital region is covered; it has more classes (11) than the regional sets 641–643.",
+ "amount_ko": "이미지 약 5.7만 장, 11종(항공)·6종(위성)",
+ "amount_en": "about 57k images, 11 classes (aerial), 6 (satellite)",
+ "labels_ko": "땅 쓰임새별 영역(색칠)",
+ "labels_en": "land-cover masks",
+ "status": "full-run-2026-11-02"
+}

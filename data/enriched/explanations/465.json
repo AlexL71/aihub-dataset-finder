@@ -1,0 +1,12 @@
+{
+ "dataset_id": "465",
+ "easy_ko": "가수들이 발라드, 록·팝, 트로트 노래를 부른 녹음과, 그 노래의 악보 정보(미디)와 가사를 맞춰 둔 데이터입니다. 가수 목소리를 배워 새 노래를 부르게 하는 가상 가수 AI를 만들 수 있지만, 목소리 흉내를 악용하지 않도록 조심해야 합니다.",
+ "easy_en": "Recordings of singers performing ballads, rock and pop, and trot songs, aligned with the songs' musical notes (MIDI) and lyrics. You can build virtual-singer AI that learns a singer's voice and sings new songs, but care is needed so voice imitation is not misused.",
+ "detail_ko": "발라드/R&B·록/팝·트로트 1,500곡을 가수 18명이 나눠 부른 노래 음성 4,681개(wav, 장르별 약 1,560)와 미디, JSON(가사, 음표·박자 정렬, 가수 성별·연령, 장르)으로 구성됩니다. 기준 성능은 가창 합성 모델 MOS(사람 평가) 4.52입니다. 저작권이 있는 곡의 미디·가사를 구매해 만든 데이터라 이용 조건을 꼭 확인해야 하며, 가수 목소리를 흉내 내는 기술이라 악용에 주의해야 합니다.",
+ "detail_en": "4,681 song recordings (wav; about 1,560 per genre) of 1,500 ballad/R&B, rock/pop and trot songs sung by 18 singers, with MIDI files and JSON (lyrics, note and beat alignment, singer sex and age, genre). Baseline: singing-voice synthesis MOS (human rating) 4.52. MIDI and lyrics were bought for copyrighted songs, so check the usage terms; the technology imitates singers' voices, so beware of misuse.",
+ "amount_ko": "노래 녹음 4,681개, 가수 18명",
+ "amount_en": "4,681 song recordings, 18 singers",
+ "labels_ko": "가사, 음표·박자 맞춤(미디), 가수 성별·나이, 장르",
+ "labels_en": "lyrics, note and beat alignment (MIDI), singer sex and age, genre",
+ "status": "full-run-2026-11-02"
+}

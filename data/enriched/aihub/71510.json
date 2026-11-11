@@ -1,0 +1,108 @@
+{
+ "dataset_id": "71510",
+ "title_en": "Instance-level recognition (ILR) data",
+ "summary_ko": "소스·유제품·주류·과자 같은 대분류 300종 이상 아래 세부 상품 1만 종 이상(예: 케첩 > 오뚜기 토마토케챂 65g)을 찍은 이미지 12만여 장에 상자가 표시되어 있습니다. 단일 물체 사진과 여러 물체 사진이 반반이며, 대분류-중분류-상품 계층 구조를 가집니다. 무인계산대나 상품 분류 로봇처럼 세부 상품까지 구분하는 AI에 쓸 수 있습니다.",
+ "summary_en": "About 121,000 images of over 10,000 retail products (e.g. ketchup > a specific 65 g bottle) under 300+ top categories such as sauces, dairy, drinks and snacks, with boxes. Half single-object and half multi-object photos, in a category > subcategory > product hierarchy. For AI that tells exact products apart, such as self-checkout or sorting robots.",
+ "contents_ko": "이미지(JPG) + JSON(상자, 대분류·세부분류 계층 클래스).",
+ "contents_en": "Images (JPG) + JSON (boxes, hierarchical category labels).",
+ "modalities": [
+  "image"
+ ],
+ "tasks": [
+  "object_detection",
+  "image_classification",
+  "retrieval_recommendation"
+ ],
+ "topics": [
+  {
+   "ko": "유통·물류",
+   "en": "Retail and logistics"
+  },
+  {
+   "ko": "물체 인식",
+   "en": "Object recognition"
+  }
+ ],
+ "keywords_ko": [
+  "상품 인식",
+  "세부 분류",
+  "계층 구조",
+  "무인계산대",
+  "스마트 매장",
+  "리테일"
+ ],
+ "keywords_en": [
+  "instance recognition",
+  "product recognition",
+  "fine-grained classification",
+  "hierarchy",
+  "self-checkout",
+  "smart store"
+ ],
+ "labels": [
+  "bounding box",
+  "hierarchical class"
+ ],
+ "file_formats": [
+  "jpg",
+  "json"
+ ],
+ "scale_ko": "이미지 121,631장(단일객체 60,647장, 다중객체 60,984장), 대분류 300종 이상, 개체 1만 종 이상",
+ "classes_example": [
+  "드레싱/소스 > 케첩",
+  "마요네즈",
+  "우유",
+  "연유/유산균음료",
+  "유가공품 > 버터",
+  "요거트",
+  "아이스크림",
+  "주류 > 맥주",
+  "과자류 > 쿠키류"
+ ],
+ "baseline": [
+  {
+   "task": "바운딩박스 탐지",
+   "model": "YOLOX",
+   "metric": "mAP@IoU 0.5",
+   "value": "48.23%"
+  }
+ ],
+ "difficulty": "advanced",
+ "difficulty_note_ko": "클래스가 1만 종 이상이고 종류당 사진이 적어 일반 분류보다 어렵습니다. 약 90GB입니다.",
+ "skills_needed_ko": [
+  "파이썬",
+  "YOLO 탐지",
+  "임베딩·유사도 검색",
+  "미세 분류"
+ ],
+ "caveats_ko": [
+  "상품당 이미지가 약 11~16장으로 적음(페이지 분포표)",
+  "같은 기관의 71508(유사 객체) 데이터와 연관",
+  "설명서를 읽을 수 없어 페이지 정보만 사용"
+ ],
+ "project_ideas": [
+  {
+   "level": "beginner",
+   "title_ko": "상품 대분류 분류",
+   "title_en": "Product super-category classification",
+   "desc_ko": "사진 속 상품이 어떤 대분류(음료·과자 등)인지 분류합니다.",
+   "desc_en": "Classify product photos into super-categories."
+  },
+  {
+   "level": "capstone",
+   "title_ko": "상품 사진 검색기",
+   "title_en": "Product photo search",
+   "desc_ko": "사진을 올리면 가장 비슷한 세부 상품을 찾아 주는 FAISS 검색기를 만듭니다.",
+   "desc_en": "Build a FAISS search returning the closest specific product."
+  },
+  {
+   "level": "research",
+   "title_ko": "계층 정보 활용 인식",
+   "title_en": "Hierarchy-aware recognition",
+   "desc_ko": "대분류 정보를 함께 학습하면 세부 상품 인식이 좋아지는지 연구합니다.",
+   "desc_en": "Study whether super-category labels improve instance recognition."
+  }
+ ],
+ "doc_used": false,
+ "uncertain": []
+}

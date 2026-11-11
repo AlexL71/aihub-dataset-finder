@@ -1,0 +1,29 @@
+{
+ "dataset_id": "535",
+ "title_en": "Intelligent smart farm integrated data (paprika)",
+ "summary_ko": "파프리카 농가 6곳에서 찍은 이미지 20.7만 장(개체 다각형·상자)과 온실 환경 시계열 20.2만 건, 생육지표 측정 9,800건입니다. 파프리카 생육 진단과 온실 환경 관리를 돕는 스마트팜 AI에 쓸 수 있습니다.",
+ "summary_en": "207,000 images from 6 paprika farms (plant polygons and boxes), 202,000 greenhouse environment time-series records and 9,800 growth measurements. For smart-farm AI that diagnoses paprika growth and helps manage the greenhouse.",
+ "contents_ko": "파프리카 이미지(png) + JSON(개체 다각형·상자) + 온실 환경 시계열(엑셀/텍스트) + 생육지표.",
+ "contents_en": "Paprika images (png) + JSON (polygons and boxes) + greenhouse environment time series (Excel/text) + growth measurements.",
+ "modalities": ["image", "sensor", "tabular"],
+ "tasks": ["object_detection", "segmentation", "forecasting"],
+ "topics": [{"ko": "농업·스마트팜", "en": "Agriculture and smart farming"}, {"ko": "시설원예", "en": "Greenhouse horticulture"}, {"ko": "파프리카", "en": "Paprika"}],
+ "keywords_ko": ["파프리카", "스마트팜", "온실 환경", "생육 진단", "시계열"],
+ "keywords_en": ["paprika", "smart farm", "greenhouse environment", "growth diagnosis", "time series"],
+ "labels": ["polygon", "bounding box", "growth measurements"],
+ "file_formats": ["png", "json", "xlsx"],
+ "scale_ko": "이미지 207,000건, 환경 시계열 201,600건, 생육지표 9,800건",
+ "classes_example": ["생장 길이", "화방 높이", "줄기 두께", "엽장·엽폭", "꽃", "열매", "만개꽃"],
+ "baseline": [{"task": "image reading model", "model": "not named", "metric": "classification rate", "value": "95%"}],
+ "difficulty": "beginner",
+ "difficulty_note_ko": "이미지 탐지와 표 데이터 분석을 각각 쉽게 시작할 수 있습니다. 약 146GB입니다.",
+ "skills_needed_ko": ["파이썬", "YOLO 탐지", "pandas 시계열"],
+ "caveats_ko": ["달성율이 1000%로 잘못 적힌 항목이 있음", "토마토 데이터(534번)와 구조가 같음"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "파프리카 숙도 분류", "title_en": "Paprika ripeness classifier", "desc_ko": "열매 색으로 익은 정도를 분류합니다.", "desc_en": "Classify ripeness from fruit colour."},
+  {"level": "capstone", "title_ko": "수확 예정량 예측 대시보드", "title_en": "Harvest forecast dashboard", "desc_ko": "열매 수와 환경 추이로 다음 주 수확량을 예측해 보여줍니다.", "desc_en": "Forecast next week's harvest from fruit counts and environment."},
+  {"level": "research", "title_ko": "작물 간 모델 전이", "title_en": "Transfer between crops", "desc_ko": "토마토로 학습한 모델이 파프리카에 얼마나 통하는지 연구합니다.", "desc_en": "Study how a tomato-trained model transfers to paprika."}
+ ],
+ "doc_used": true,
+ "uncertain": []
+}

@@ -1,0 +1,12 @@
+{
+ "dataset_id": "130",
+ "easy_ko": "직접 녹음한 일상 대화와 지역 방송의 시사 프로그램 소리를 모아, 말한 내용을 받아 적고 말한 사람의 성별·지역·나이와 주제를 붙인 데이터입니다. 멀리서 말하거나 시끄럽거나 여러 명이 동시에 말해도 알아듣는 자막·회의록 AI를 만들 수 있습니다.",
+ "easy_en": "Everyday conversations recorded for this project plus current-affairs radio and TV audio, transcribed and tagged with the speaker's gender, region, age and topic. You can build subtitle or meeting-notes AI that works even when people speak from far away, in noise or at the same time.",
+ "detail_ko": "직접 녹음한 대화 음성 2,000시간과 춘천MBC·EBS 시사 방송 음원 2,000시간, 총 4,000시간(구축량 595만)으로 연령·원거리·소음·다자 발화 환경을 담았습니다. JSON에는 파일 위치, 발화 시작·끝 시간, 전사, 화자 성별·지역·연령, 주제어, 형태소·개체 정보가 있습니다. 기준 성능은 LSTM 음성 인식 정확도 86%입니다. 방송 음원이 포함되어 이용 조건 확인이 필요합니다.",
+ "detail_en": "4,000 hours of speech (5.95M built items): 2,000 hours of recorded conversation and 2,000 hours of Chuncheon MBC and EBS current-affairs broadcasts, covering different ages, far-field audio, noise and overlapping speakers. JSON gives file location, utterance start and end times, transcript, speaker sex, region and age, topic words, and morpheme and entity info. Baseline: LSTM speech recognition accuracy 86%. Broadcast audio is included, so check the usage terms.",
+ "amount_ko": "음성 4,000시간(대화 2,000시간 + 방송 2,000시간)",
+ "amount_en": "4,000 hours of speech (2,000 conversation + 2,000 broadcast)",
+ "labels_ko": "말소리를 받아 적은 글(시간 표시), 화자 성별·지역·나이, 주제어",
+ "labels_en": "timestamped transcripts, speaker sex, region and age, topic words",
+ "status": "full-run-2026-11-02"
+}

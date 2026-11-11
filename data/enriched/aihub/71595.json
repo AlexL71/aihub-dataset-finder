@@ -1,0 +1,29 @@
+{
+ "dataset_id": "71595",
+ "title_en": "Autonomous-driving data from a high-fidelity physics-based virtual environment",
+ "summary_ko": "실제 도로(성남대로·테헤란로 등)를 본뜬 물리 기반 주행 시뮬레이터에서 카메라·라이다·레이더 출력을 만들어 낸 약 1,529만 세트의 합성 데이터입니다. 차량·보행자·신호등·표지판·차선·구조물이 2D 상자·다각형·선·3D 상자로 자동 표시되어 있어 위험 상황을 포함한 자율주행 인식 학습에 쓸 수 있습니다.",
+ "summary_en": "About 15.29 million synthetic sets of camera, lidar and radar output from a physics-based driving simulator modelled on real roads. Vehicles, pedestrians, traffic lights, signs, lanes and structures are auto-labelled with 2D boxes, polygons, polylines and 3D boxes, for perception training including dangerous scenarios.",
+ "contents_ko": "카메라(png) + 라이다(pcd) + 레이더(txt) + JSON(2D 상자, 다각형, 폴리라인, 라이다 분할, 3D 상자).",
+ "contents_en": "Camera (png) + lidar (pcd) + radar (txt) + JSON (2D boxes, polygons, polylines, lidar segmentation, 3D cuboids).",
+ "modalities": ["image", "3d", "sensor"],
+ "tasks": ["object_detection", "segmentation"],
+ "topics": [{"ko": "자율주행", "en": "Autonomous driving"}, {"ko": "시뮬레이션·합성 데이터", "en": "Simulation and synthetic data"}],
+ "keywords_ko": ["자율주행", "시뮬레이션", "합성 데이터", "라이다", "레이더", "3D 객체 탐지"],
+ "keywords_en": ["autonomous driving", "simulation", "synthetic data", "lidar", "radar", "3D object detection"],
+ "labels": ["2D bounding box", "polygon", "polyline", "lidar segmentation", "3D cuboid"],
+ "file_formats": ["png", "pcd", "txt", "json"],
+ "scale_ko": "원천·라벨 15,288,475세트(Car 약 795만·Other 약 733만), 3D 객체 약 10억 개",
+ "classes_example": ["Vehicles", "Pedestrians", "TrafficLight", "RoadSign", "Polyline", "Structure"],
+ "baseline": [],
+ "difficulty": "advanced",
+ "difficulty_note_ko": "원 데이터가 수십 TB(페이지 기준 Car 21TB 등)로 매우 크고 다중 센서를 다뤄야 합니다. 한 지도·한 센서만 골라 쓰세요.",
+ "skills_needed_ko": ["파이썬", "YOLO 탐지", "3D 점군 처리", "도메인 적응(합성→실제)"],
+ "caveats_ko": ["시뮬레이터 합성 데이터라 실제 도로 영상과 차이가 있음", "파일 트리 약 1.1TB와 페이지 표 용량(수십 TB)이 다름", "페이지에 성능 지표 표가 없음", "보행자 객체가 약 1%로 적음"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "합성 이미지 차량 탐지", "title_en": "Vehicle detection on synthetic images", "desc_ko": "시뮬레이터 카메라 이미지로 차량·신호등 탐지 모델을 학습합니다.", "desc_en": "Train vehicle and traffic-light detection on simulator images."},
+  {"level": "capstone", "title_ko": "위험 상황 탐지 데모", "title_en": "Hazard scenario demo", "desc_ko": "시뮬레이션 위험 장면에서 보행자 돌발 출현을 감지하는 데모를 만듭니다.", "desc_en": "Detect sudden pedestrian appearances in simulated hazards."},
+  {"level": "research", "title_ko": "합성→실제 전이", "title_en": "Sim-to-real transfer", "desc_ko": "합성 데이터로 사전학습 후 실제 주행 데이터(71577 등)로 미세조정할 때 효과를 연구합니다.", "desc_en": "Study pre-training on synthetic data then fine-tuning on real driving data (e.g. 71577)."}
+ ],
+ "doc_used": true,
+ "uncertain": []
+}

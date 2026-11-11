@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71967",
+ "easy_ko": "방송 영상에서 얼굴, 차 번호판, 글자, 문신 같은 개인을 알아볼 수 있는 것과 로고, 간판 같은 상업적인 것이 나오는 장면을 골라, 그 부분 영역과 한국어, 영어 설명을 붙인 데이터입니다. 방송 영상의 개인 정보를 자동으로 가리는 AI에 쓸 수 있습니다.",
+ "easy_en": "Scenes from TV programmes showing things that can identify people, such as faces, licence plates, text and tattoos, or commercial items such as logos and signs, with those areas painted in and Korean and English descriptions. You can use it to build AI that hides personal details in broadcast footage automatically.",
+ "detail_ko": "드라마·예능·뉴스 등 방송 영상(mp4, 각 5분 이상)과 이미지(jpg)에서 개인식별 요소(얼굴, 자동차번호판, 텍스트정보, 문신)와 상업적 요소(로고, 간판)가 나오는 장면을 골라, 객체 단위 분할 마스크, 한글·영어 캡션, 속성 메타정보를 붙인 데이터 25,810건(JSON; 로고 1,196, 텍스트 962, 얼굴 643건 등)입니다. 방송 저작물이라 이용 조건을 확인해야 하고, 문신(28건)처럼 매우 적은 클래스가 있으며, 71959(K-콘텐츠 클린본)와 설명이 같아 데이터가 겹칠 수 있습니다.",
+ "detail_en": "25,810 items (JSON; such as 1,196 logos, 962 text items, 643 faces) of scenes from broadcast videos (mp4, each 5+ minutes) and images (jpg) of dramas, variety shows and news containing identifying elements (faces, licence plates, text, tattoos) or commercial elements (logos, signboards), with object-level segmentation masks, Korean and English captions and attribute metadata. These are broadcast works, so check the terms of use; some classes are tiny (28 tattoos); and the description matches 71959 (K-content clean version), so the data may overlap.",
+ "amount_ko": "25,810건(로고 1,196, 텍스트 962, 얼굴 643건 등)",
+ "amount_en": "25,810 items (1,196 logos, 962 text, 643 faces and others)",
+ "labels_ko": "가릴 부분 영역, 한국어·영어 설명, 속성 정보",
+ "labels_en": "segmentation mask, caption (Korean, English), attribute metadata",
+ "status": "full-run-2026-11-02"
+}

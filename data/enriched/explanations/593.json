@@ -1,0 +1,12 @@
+{
+ "dataset_id": "593",
+ "easy_ko": "촬영 상자 안에서 찍은 가리비 사진마다 가리비 위치와 테두리, 그리고 따개비나 갯지렁이 같은 생물이 붙어 있는지를 표시하고, 바닷물 온도 같은 환경 기록을 함께 담은 데이터입니다. 가리비를 자동으로 골라내거나 자람을 예측하는 양식장 AI를 만들 수 있습니다.",
+ "easy_en": "Photos of scallops taken inside a camera box, each marked with the shellfish's position and outline and whether barnacles or tube worms are attached, plus sea-environment records such as water temperature. You can build fish-farm AI that sorts scallops automatically or predicts their growth.",
+ "detail_ko": "촬영 박스로 찍은 가리비 이미지 약 12만 장(jpg)에 개체 바운딩박스·폴리곤과 부착 생물(정상, 따개비, 다모류)을 JSON으로 붙이고, 수온 등 해양 환경 데이터 12만 세트를 함께 제공합니다. 기준 성능은 상자 탐지 mAP 87.07%(모델 이름은 'General (A1)'로만 적힘), HRNet 분할 mIoU 98.85%입니다. 정상 개체가 약 5%뿐이라 크게 치우쳐 있으며, 594번 데이터와 같은 구축 기관·구조입니다.",
+ "detail_en": "About 120k jpg images of scallops taken in a camera box, with JSON boxes, polygons and fouling type (clean, barnacles, polychaete worms), plus 120k sets of sea-environment data such as water temperature. Baselines: box detection mAP 87.07% (model only named 'General (A1)'), HRNet segmentation mIoU 98.85%. Only about 5% are clean, so classes are heavily skewed. Same organisation and structure as dataset 594.",
+ "amount_ko": "이미지 약 12만 장, 환경 기록 12만 세트",
+ "amount_en": "about 120k images, 120k environment sets",
+ "labels_ko": "조개 위치 상자·테두리, 붙어 있는 생물 종류, 바다 환경 값",
+ "labels_en": "boxes and outlines around shellfish, fouling type, sea-environment values",
+ "status": "full-run-2026-11-02"
+}

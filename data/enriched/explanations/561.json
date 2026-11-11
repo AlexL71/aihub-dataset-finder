@@ -1,0 +1,12 @@
+{
+ "dataset_id": "561",
+ "easy_ko": "동물병원에서 모은 반려견과 반려묘의 피부 사진마다 어떤 증상이나 병이 있는지와 그 위치를 표시한 데이터입니다. 사진으로 반려동물의 피부병을 찾아 수의사를 돕는 AI를 만들 수 있지만, 수의사 진단을 대신할 수는 없습니다.",
+ "easy_en": "Skin photos of dogs and cats collected at animal hospitals, each marked with which symptoms or diseases are present and where. You can build AI that helps vets spot skin diseases from photos, but it cannot replace a vet's diagnosis.",
+ "detail_ko": "반려견·반려묘 피부 사진과 현미경 세포 사진 약 50만 장(질환 이미지 25만 장 이상, jpg)에 증상(반려견 6종: 구진·플라크, 비듬·각질·상피성잔고리, 태선화·과다색소침착, 농포·여드름, 미란·궤양, 결절·종괴; 반려묘 3종 + 감염성 피부염)의 유·무와 바운딩박스·분할 영역을 JSON으로 붙였습니다. 전체 약 382GB이며, 562번 데이터와 같은 구축 기관이 만들었습니다. 파일 하나가 최소 21GB이고, 여러 번 수정되었습니다(최근 2024-04). 기준 성능은 기록에서 확인되지 않으며, 수의사 진단을 대신하면 안 됩니다.",
+ "detail_en": "About 500k skin photos and microscope cell images of dogs and cats (250k+ showing disease; jpg), with JSON symptom presence and boxes and masks for 6 dog symptoms (papules/plaques, dandruff/scaling/epidermal collarettes, lichenification/hyperpigmentation, pustules/acne, erosion/ulcer, nodules/masses) and 3 cat symptoms plus infectious dermatitis. Total size is about 382GB; built by the same organisation as dataset 562. Each file is at least 21 GB, and the data has been revised several times (latest April 2024). No baseline is visible in the record, and it must not replace a vet's diagnosis.",
+ "amount_ko": "사진 약 50만 장, 증상 9종 + 감염성 피부염",
+ "amount_en": "about 500k images, 9 symptoms + infectious dermatitis",
+ "labels_ko": "증상 종류와 유무, 증상 위치 상자·영역",
+ "labels_en": "symptom type and presence, boxes and masks around symptoms",
+ "status": "full-run-2026-11-02"
+}

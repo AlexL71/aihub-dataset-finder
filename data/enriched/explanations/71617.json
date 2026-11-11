@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71617",
+ "easy_ko": "자율주행차에 단 최신 영상 레이더와 카메라, 레이저 센서로 고속도로와 도심을 달리며 모은 데이터 약 106만 장에 승용차, 버스, 트럭, 오토바이, 사람, 자전거 같은 움직이는 물체를 입체 상자로 표시했습니다. 궂은 날씨 장면도 있어 레이더로 물체를 알아보는 자율주행 AI에 쓸 수 있습니다.",
+ "easy_en": "About 1.06 million frames recorded on highways and in cities by a self-driving car with an imaging radar, cameras and a laser sensor, with moving objects such as cars, buses, trucks, motorbikes, pedestrians and bicycles marked with 3D boxes. It includes bad-weather scenes, so you can build self-driving AI that recognises objects with radar.",
+ "detail_ko": "자율주행차에 단 4D 이미징 레이다(txt), 카메라(png), 라이다(pcd)로 고속도로·도심을 달리며 모은 1,060,700프레임에 동적 객체 7종(승용차, 버스, 트럭, 오토바이, 보행자, 특수목적차량, 자전거) 3D 상자, 투영 2D 상자, 카메라 가시성, 날씨를 JSON으로 붙였습니다(맑음 48%, 야간 32%, 우천·안개·미세먼지 포함). 기준 성능은 객체 탐지 mAP 카메라(CenterNet 등) 48.91%, 라이다(CenterPoint) 71.6%, 레이다(CenterPoint) 51.34%, 악천후 융합(CenterFusion) 55.13%입니다. 전체 약 4.3TB이고 센서 융합 지식이 필요하며, 설명서는 스캔 이미지라 페이지 정보만 사용했습니다. 71619(주행환경 객체)와 같은 기관·센서 구성입니다.",
+ "detail_en": "1,060,700 frames recorded on highways and city roads by a self-driving car with a 4D imaging radar (txt), cameras (png) and lidar (pcd), with JSON 3D boxes for 7 moving-object classes (car, bus, truck, motorcycle, pedestrian, special vehicle, bicycle), projected 2D boxes, camera visibility and weather (48% clear, 32% night, plus rain, fog and fine dust). Baselines, object detection mAP: camera (CenterNet and others) 48.91%, lidar (CenterPoint) 71.6%, radar (CenterPoint) 51.34%, bad-weather fusion (CenterFusion) 55.13%. Total size is about 4.3 TB, and sensor-fusion know-how is needed. The manual is a scanned image, so only page information was used. Same builder and sensors as 71619 (driving-environment objects).",
+ "amount_ko": "1,060,700프레임, 동적 객체 7종",
+ "amount_en": "1,060,700 frames, 7 moving-object classes",
+ "labels_ko": "움직이는 물체 입체 상자, 물체 종류, 사진 속 상자, 날씨",
+ "labels_en": "3D bounding boxes, object class, projected 2D boxes, camera visibility",
+ "status": "full-run-2026-11-02"
+}

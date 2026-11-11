@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71528",
+ "easy_ko": "두 사람이 함께 건배하거나 그림을 그리는 것 같은 동작을 여러 카메라로 찍은 영상과 사진에 몸 관절 점을 표시하고, 입체 움직임 파일과 사람 입체 모형도 담은 데이터입니다. 두 사람의 함께하는 동작을 알아보거나 몸의 입체 자세를 추정하는 AI에 쓸 수 있습니다.",
+ "easy_en": "Videos and photos from several cameras of two people doing things together, such as clinking glasses or drawing, with body joint points marked, plus 3D motion files and 3D body models. You can use it to build AI that recognises shared actions or estimates body pose in depth.",
+ "detail_ko": "두 사람의 상호작용 동작 80가지(대분류: 필수 시간, 의무 시간, 여가 시간, 행동 반응 시간; 예: 건배, 그림 그리기)를 여러 카메라로 찍은 영상 39,000개(MP4)와 이미지 248,177장(JPG)에 몸 키포인트(JSON)를 붙이고, 3D 모션 FBX 4,803개와 사람 3D 메시 96세트(OBJ·MTL)를 함께 제공합니다. 기준 성능은 YOWO 상호작용 동작 분류 mAP 80.64%, TCMR 3D 자세 추정 MPJPE 68.05mm입니다. 전체 약 625GB이고, 동작 80가지의 전체 이름은 팩에 없습니다.",
+ "detail_en": "39,000 videos (MP4) and 248,177 images (JPG) of 80 two-person interaction actions (main groups: necessary time, obligatory time, leisure time, reaction time; for example toasting and drawing) filmed by several cameras, with JSON body keypoints, plus 4,803 3D motion files (FBX) and 96 3D human mesh sets (OBJ, MTL). Baselines: interaction classification with YOWO, mAP 80.64%; 3D pose estimation with TCMR, MPJPE 68.05 mm. Total size is about 625 GB. The full names of the 80 actions are not in the pack.",
+ "amount_ko": "영상 39,000개, 이미지 248,177장, FBX 4,803개, 3D 메시 96세트",
+ "amount_en": "39,000 videos, 248,177 images, 4,803 FBX files, 96 3D mesh sets",
+ "labels_ko": "몸 관절 점, 동작 종류, 입체 움직임",
+ "labels_en": "keypoints, action class, 3D motion",
+ "status": "full-run-2026-11-02"
+}

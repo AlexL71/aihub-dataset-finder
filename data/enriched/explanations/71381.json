@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71381",
+ "easy_ko": "가구, 가전, 주방용품, 화장품 같은 여러 제품 사진마다 금속, 반짝이는 플라스틱, 가죽, 나뭇결 같은 재료와 겉면 느낌, 그리고 광택·투명도·거칠기를 표시한 데이터입니다. 제품 사진만 보고 어떤 재료와 마감인지 알려 주는 디자인 도우미 AI를 만들 수 있습니다.",
+ "easy_en": "Photos of products such as furniture, appliances, kitchenware and cosmetics, each labelled with the material and surface feel, such as metal, glossy plastic, leather or wood grain, plus gloss, transparency and roughness. You can build design-assistant AI that tells the material and finish from a product photo.",
+ "detail_ko": "17개 품목군 제품 1,263개를 촬영한 이미지 189,450장(jpg, jpeg)에 바운딩박스, CMF(색·소재·마감) 분류 약 32종(거울광택 금속, 금속 헤어라인, 고광택 플라스틱, 투명, 가죽, 원목무늬, 카본 패턴 느낌 등), 광택도, 투명도, 표면조도, 실내외를 JSON으로 붙였습니다. 기준 성능은 Swin Transformer CMF 분류 Top-1 정확도 75.86%, Top-5 97.21%입니다. 전체 약 715GB이며, 클래스 비율 차이가 크고(약 1~14%), 같은 제품을 여러 장 찍었으므로 분할 시 같은 제품이 섞이지 않게 주의해야 하며, 클래스 번호에 빠진 번호가 있습니다.",
+ "detail_en": "189,450 images (jpg, jpeg) of 1,263 products in 17 categories, with JSON boxes, about 32 CMF (colour, material, finish) classes (mirror-polished metal, brushed metal, high-gloss plastic, transparent, leather, wood grain, carbon pattern and more), gloss, transparency, surface roughness and indoor/outdoor. Baselines: Swin Transformer CMF classification top-1 accuracy 75.86%, top-5 97.21%. Total size is about 715 GB; class shares vary widely (about 1–14%); the same product appears in many photos, so split by product; some class numbers are missing.",
+ "amount_ko": "사진 189,450장, 제품 1,263개",
+ "amount_en": "189,450 images, 1,263 products",
+ "labels_ko": "제품 위치 상자, 재료·마감 느낌, 광택·투명도·거칠기",
+ "labels_en": "product boxes, material and finish class, gloss, transparency, roughness",
+ "status": "full-run-2026-11-02"
+}

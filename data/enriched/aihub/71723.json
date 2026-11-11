@@ -1,0 +1,29 @@
+{
+ "dataset_id": "71723",
+ "title_en": "Legal/regulatory text analysis data for generative AI (advanced): situational case-law data",
+ "summary_ko": "대법원 등 공공 법률정보에서 모은 판례·심결례 약 25만 건 가운데 6만 건 이상을 민사·형사 등 10개 상황별 카테고리로 나누고, 핵심 문장 추출 요약 66,511건과 질의응답 90,944건을 만든 데이터입니다. 판결 요약, 판결 예측, 유사 판례 추천에 쓸 수 있습니다.",
+ "summary_en": "About 250,000 court rulings and tribunal decisions from public legal services, with 60,000+ grouped into 10 situational categories such as civil and criminal, 66,511 extractive summaries and 90,944 QA pairs. For ruling summarisation, outcome prediction and similar-case search.",
+ "contents_ko": "판례 원문(txt) + JSON(사건 정보, 카테고리, 추출 요약, 질의응답, 용어 키워드).",
+ "contents_en": "Ruling text (txt) + JSON (case info, category, extractive summary, QA, keywords).",
+ "modalities": ["text"],
+ "tasks": ["summarization", "question_answering", "text_classification", "retrieval_recommendation"],
+ "topics": [{"ko": "법률", "en": "Law"}, {"ko": "판례 분석", "en": "Case-law analysis"}],
+ "keywords_ko": ["판례", "심결례", "추출 요약", "질의응답", "판결 예측", "유사 판례"],
+ "keywords_en": ["case law", "tribunal decisions", "extractive summary", "question answering", "outcome prediction", "similar cases"],
+ "labels": ["extractive summary", "question-answer", "keyword", "category"],
+ "file_formats": ["txt", "json"],
+ "scale_ko": "판례 203,809건·심결례 48,137건, 추출 요약 66,511건, 질의응답 90,944건, 카테고리 10종",
+ "classes_example": ["민사", "형사A(생활형)", "형사B(일반형)"],
+ "baseline": [],
+ "difficulty": "intermediate",
+ "difficulty_note_ko": "약 0.5GB 텍스트지만 판례가 길어 요약·질의응답 모델 학습에 GPU가 필요합니다.",
+ "skills_needed_ko": ["파이썬", "Hugging Face", "BART·BERT 계열 모델"],
+ "caveats_ko": ["원문 사건명 등에 사람 이름이 섞여 있을 수 있어 활용 시 주의", "성능 수치가 팩에 없음", "10개 카테고리 전체 이름 확인 필요"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "판례 카테고리 분류", "title_en": "Case category classification", "desc_ko": "판례 본문이 민사·형사 등 어떤 상황인지 분류합니다.", "desc_en": "Classify rulings into situational categories."},
+  {"level": "capstone", "title_ko": "판례 요약·질의응답 도우미", "title_en": "Case summary and QA assistant", "desc_ko": "판례를 넣으면 핵심 문장을 뽑고 질문에 답하는 도우미를 만듭니다.", "desc_en": "Summarise a ruling and answer questions about it."},
+  {"level": "research", "title_ko": "판결 결과 예측", "title_en": "Ruling outcome prediction", "desc_ko": "사실관계만 보고 판결 방향을 예측할 수 있는지, 편향은 없는지 연구합니다.", "desc_en": "Study predicting outcomes from facts and checking bias."}
+ ],
+ "doc_used": true,
+ "uncertain": ["'6만 건 이상'과 원문 약 25만 건의 관계(라벨링 대상 범위) 확인 필요"]
+}

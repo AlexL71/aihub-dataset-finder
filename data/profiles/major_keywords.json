@@ -1,0 +1,7116 @@
+{
+ "about": "Suggested search keywords per major (ko/en), each tested with a real search for that major. Built by processing/major_keywords.py.",
+ "built": "2026-11-02",
+ "majors": {
+  "pharm": {
+   "ko": [
+    {
+     "keyword": "알약 이미지",
+     "source": "profile",
+     "top_score": 10.0,
+     "top_ids": [
+      "576",
+      "633",
+      "151",
+      "476",
+      "519"
+     ]
+    },
+    {
+     "keyword": "의료 음성",
+     "source": "datasets",
+     "top_score": 9.3,
+     "top_ids": [
+      "208",
+      "608",
+      "94",
+      "107",
+      "95"
+     ]
+    },
+    {
+     "keyword": "식물 이미지",
+     "source": "profile",
+     "top_score": 8.7,
+     "top_ids": [
+      "519",
+      "612",
+      "151",
+      "525",
+      "71705"
+     ]
+    },
+    {
+     "keyword": "처방 통계",
+     "source": "profile",
+     "top_score": 8.4,
+     "top_ids": [
+      "576",
+      "151",
+      "612",
+      "71962",
+      "71886"
+     ]
+    },
+    {
+     "keyword": "건강기능식품과 화장품",
+     "source": "profile",
+     "top_score": 7.5,
+     "top_ids": [
+      "633",
+      "71886",
+      "71916",
+      "71262",
+      "71645"
+     ]
+    },
+    {
+     "keyword": "독성학과 안전성",
+     "source": "profile",
+     "top_score": 7.4,
+     "top_ids": [
+      "71962",
+      "71642",
+      "71916",
+      "612",
+      "71816"
+     ]
+    },
+    {
+     "keyword": "의학 질의응답",
+     "source": "datasets",
+     "top_score": 6.9,
+     "top_ids": [
+      "71874",
+      "71762",
+      "71875",
+      "71961",
+      "151"
+     ]
+    }
+   ],
+   "en": [
+    {
+     "keyword": "medical speech",
+     "source": "datasets",
+     "top_score": 8.2,
+     "top_ids": [
+      "208",
+      "608",
+      "71487",
+      "71762",
+      "71874"
+     ]
+    },
+    {
+     "keyword": "Donguibogam",
+     "source": "datasets",
+     "top_score": 8.0,
+     "top_ids": [
+      "151",
+      "612",
+      "519",
+      "576",
+      "71319"
+     ]
+    },
+    {
+     "keyword": "toxicity prediction",
+     "source": "datasets",
+     "top_score": 7.6,
+     "top_ids": [
+      "71962",
+      "71642",
+      "71916",
+      "71816",
+      "612"
+     ]
+    },
+    {
+     "keyword": "healthcare chatbot",
+     "source": "datasets",
+     "top_score": 6.9,
+     "top_ids": [
+      "71762",
+      "208",
+      "544",
+      "71305",
+      "71694"
+     ]
+    },
+    {
+     "keyword": "pills",
+     "source": "datasets",
+     "top_score": 6.6,
+     "top_ids": [
+      "576",
+      "633",
+      "71442",
+      "71962",
+      "71508"
+     ]
+    }
+   ]
+  },
+  "smartcity": {
+   "ko": [
+    {
+     "keyword": "토지피복",
+     "source": "profile",
+     "top_score": 9.0,
+     "top_ids": [
+      "143",
+      "142",
+      "71361",
+      "642",
+      "643"
+     ]
+    },
+    {
+     "keyword": "도시 3D·디지털트윈",
+     "source": "profile",
+     "top_score": 9.0,
+     "top_ids": [
+      "474",
+      "71559",
+      "71561",
+      "71586",
+      "71765"
+     ]
+    },
+    {
+     "keyword": "균열 탐지",
+     "source": "profile",
+     "top_score": 8.6,
+     "top_ids": [
+      "71769",
+      "162",
+      "567",
+      "139",
+      "71676"
+     ]
+    },
+    {
+     "keyword": "건물 탐지",
+     "source": "profile",
+     "top_score": 8.3,
+     "top_ids": [
+      "491",
+      "162",
+      "194",
+      "71769",
+      "73"
+     ]
+    },
+    {
+     "keyword": "드론 영상",
+     "source": "profile",
+     "top_score": 8.2,
+     "top_ids": [
+      "190",
+      "183",
+      "182",
+      "647",
+      "152"
+     ]
+    },
+    {
+     "keyword": "재난·홍수·열섬 리스크",
+     "source": "profile",
+     "top_score": 8.2,
+     "top_ids": [
+      "71793",
+      "556",
+      "71329",
+      "71943",
+      "555"
+     ]
+    },
+    {
+     "keyword": "건설 현장 안전",
+     "source": "profile",
+     "top_score": 8.1,
+     "top_ids": [
+      "71407",
+      "163",
+      "507",
+      "71771",
+      "71388"
+     ]
+    },
+    {
+     "keyword": "교통계획·스마트교통",
+     "source": "profile",
+     "top_score": 8.0,
+     "top_ids": [
+      "71572",
+      "522",
+      "71530",
+      "71573",
+      "71545"
+     ]
+    },
+    {
+     "keyword": "도시공간정보",
+     "source": "profile",
+     "top_score": 7.9,
+     "top_ids": [
+      "474",
+      "71420",
+      "491",
+      "71586",
+      "166"
+     ]
+    },
+    {
+     "keyword": "도시 빅데이터",
+     "source": "profile",
+     "top_score": 7.8,
+     "top_ids": [
+      "474",
+      "71530",
+      "585",
+      "489",
+      "491"
+     ]
+    }
+   ],
+   "en": [
+    {
+     "keyword": "City 3D and digital twins",
+     "source": "profile",
+     "top_score": 7.4,
+     "top_ids": [
+      "474",
+      "71559",
+      "71561",
+      "71586",
+      "71765"
+     ]
+    },
+    {
+     "keyword": "autonomous drone",
+     "source": "datasets",
+     "top_score": 7.8,
+     "top_ids": [
+      "190",
+      "647",
+      "182",
+      "183",
+      "71954"
+     ]
+    },
+    {
+     "keyword": "crack detection",
+     "source": "datasets",
+     "top_score": 7.6,
+     "top_ids": [
+      "71769",
+      "162",
+      "567",
+      "139",
+      "71676"
+     ]
+    },
+    {
+     "keyword": "smart intersection",
+     "source": "datasets",
+     "top_score": 7.6,
+     "top_ids": [
+      "522",
+      "71572",
+      "188",
+      "71958",
+      "71573"
+     ]
+    },
+    {
+     "keyword": "indoor positioning",
+     "source": "datasets",
+     "top_score": 7.5,
+     "top_ids": [
+      "71420",
+      "69",
+      "550",
+      "71574",
+      "194"
+     ]
+    },
+    {
+     "keyword": "Traffic and mobility",
+     "source": "profile",
+     "top_score": 6.9,
+     "top_ids": [
+      "71530",
+      "71572",
+      "165",
+      "522",
+      "614"
+     ]
+    },
+    {
+     "keyword": "road facilities",
+     "source": "datasets",
+     "top_score": 6.9,
+     "top_ids": [
+      "71786",
+      "71559",
+      "513",
+      "71306",
+      "71781"
+     ]
+    },
+    {
+     "keyword": "land cover",
+     "source": "datasets",
+     "top_score": 6.9,
+     "top_ids": [
+      "71361",
+      "643",
+      "642",
+      "143",
+      "142"
+     ]
+    },
+    {
+     "keyword": "Construction site safety",
+     "source": "profile",
+     "top_score": 6.1,
+     "top_ids": [
+      "71407",
+      "163",
+      "507",
+      "71771",
+      "71388"
+     ]
+    },
+    {
+     "keyword": "city model",
+     "source": "datasets",
+     "top_score": 6.6,
+     "top_ids": [
+      "474",
+      "71559",
+      "71793",
+      "567",
+      "491"
+     ]
+    }
+   ]
+  },
+  "culc": {
+   "ko": [
+    {
+     "keyword": "만화 이미지",
+     "source": "profile",
+     "top_score": 8.2,
+     "top_ids": [
+      "71719",
+      "71717",
+      "71695",
+      "570",
+      "71969"
+     ]
+    },
+    {
+     "keyword": "영상 요약",
+     "source": "datasets",
+     "top_score": 8.5,
+     "top_ids": [
+      "60",
+      "616",
+      "71702",
+      "591",
+      "467"
+     ]
+    },
+    {
+     "keyword": "스토리 생성",
+     "source": "profile",
+     "top_score": 7.8,
+     "top_ids": [
+      "71562",
+      "71696",
+      "71836",
+      "71703",
+      "71695"
+     ]
+    },
+    {
+     "keyword": "비식별화",
+     "source": "datasets",
+     "top_score": 8.3,
+     "top_ids": [
+      "71967",
+      "71959",
+      "71968",
+      "182",
+      "117"
+     ]
+    },
+    {
+     "keyword": "텍스트-이미지",
+     "source": "datasets",
+     "top_score": 8.3,
+     "top_ids": [
+      "71969",
+      "71709",
+      "71866",
+      "615",
+      "71725"
+     ]
+    },
+    {
+     "keyword": "효과음",
+     "source": "profile",
+     "top_score": 7.7,
+     "top_ids": [
+      "71602",
+      "71354",
+      "644",
+      "71296",
+      "71376"
+     ]
+    },
+    {
+     "keyword": "영상 장면",
+     "source": "profile",
+     "top_score": 7.5,
+     "top_ids": [
+      "76",
+      "71",
+      "71960",
+      "71495",
+      "60"
+     ]
+    },
+    {
+     "keyword": "문화콘텐츠 기획",
+     "source": "profile",
+     "top_score": 7.5,
+     "top_ids": [
+      "71562",
+      "71614",
+      "71969",
+      "71734",
+      "71920"
+     ]
+    },
+    {
+     "keyword": "영상과 방송",
+     "source": "profile",
+     "top_score": 7.4,
+     "top_ids": [
+      "71",
+      "76",
+      "72",
+      "71967",
+      "71959"
+     ]
+    },
+    {
+     "keyword": "게임·웹툰",
+     "source": "profile",
+     "top_score": 7.4,
+     "top_ids": [
+      "71717",
+      "71719",
+      "71614",
+      "71668",
+      "71562"
+     ]
+    }
+   ],
+   "en": [
+    {
+     "keyword": "image-sound matching",
+     "source": "datasets",
+     "top_score": 8.6,
+     "top_ids": [
+      "71602",
+      "71354",
+      "71699",
+      "538",
+      "539"
+     ]
+    },
+    {
+     "keyword": "video summarisation",
+     "source": "datasets",
+     "top_score": 7.8,
+     "top_ids": [
+      "60",
+      "616",
+      "71492",
+      "467",
+      "71702"
+     ]
+    },
+    {
+     "keyword": "text-to-image retrieval",
+     "source": "datasets",
+     "top_score": 7.5,
+     "top_ids": [
+      "71969",
+      "71813",
+      "71866",
+      "71721",
+      "71725"
+     ]
+    },
+    {
+     "keyword": "text-to-image",
+     "source": "datasets",
+     "top_score": 7.4,
+     "top_ids": [
+      "71717",
+      "71734",
+      "71920",
+      "71969",
+      "71719"
+     ]
+    },
+    {
+     "keyword": "story generation",
+     "source": "datasets",
+     "top_score": 7.4,
+     "top_ids": [
+      "71562",
+      "71696",
+      "71836",
+      "71703",
+      "71695"
+     ]
+    },
+    {
+     "keyword": "sound search",
+     "source": "datasets",
+     "top_score": 7.3,
+     "top_ids": [
+      "71602",
+      "71354",
+      "644",
+      "71544",
+      "71702"
+     ]
+    },
+    {
+     "keyword": "Video and broadcasting",
+     "source": "profile",
+     "top_score": 6.7,
+     "top_ids": [
+      "71",
+      "76",
+      "71967",
+      "71959",
+      "72"
+     ]
+    },
+    {
+     "keyword": "de-identification",
+     "source": "datasets",
+     "top_score": 7.1,
+     "top_ids": [
+      "71967",
+      "71968",
+      "71959",
+      "71818",
+      "117"
+     ]
+    },
+    {
+     "keyword": "background footage",
+     "source": "datasets",
+     "top_score": 7.1,
+     "top_ids": [
+      "71849",
+      "71960",
+      "487",
+      "483",
+      "71"
+     ]
+    },
+    {
+     "keyword": "term extraction",
+     "source": "datasets",
+     "top_score": 7.1,
+     "top_ids": [
+      "71614",
+      "71613",
+      "110",
+      "71729",
+      "71532"
+     ]
+    }
+   ]
+  },
+  "aisemi": {
+   "ko": [
+    {
+     "keyword": "불량 검사 이미지",
+     "source": "profile",
+     "top_score": 8.9,
+     "top_ids": [
+      "578",
+      "71687",
+      "579",
+      "71900",
+      "71447"
+     ]
+    },
+    {
+     "keyword": "공정 센서 데이터",
+     "source": "profile",
+     "top_score": 8.4,
+     "top_ids": [
+      "71900",
+      "238",
+      "239",
+      "71802",
+      "71937"
+     ]
+    },
+    {
+     "keyword": "로봇 파지",
+     "source": "datasets",
+     "top_score": 8.7,
+     "top_ids": [
+      "71692",
+      "71713",
+      "71924",
+      "71599",
+      "71601"
+     ]
+    },
+    {
+     "keyword": "센서 융합",
+     "source": "profile",
+     "top_score": 7.7,
+     "top_ids": [
+      "71948",
+      "629",
+      "472",
+      "71617",
+      "71267"
+     ]
+    },
+    {
+     "keyword": "열화상",
+     "source": "datasets",
+     "top_score": 8.2,
+     "top_ids": [
+      "235",
+      "213",
+      "71691",
+      "514",
+      "497"
+     ]
+    },
+    {
+     "keyword": "용접 불량",
+     "source": "datasets",
+     "top_score": 8.1,
+     "top_ids": [
+      "71761",
+      "71900",
+      "71901",
+      "579",
+      "71939"
+     ]
+    },
+    {
+     "keyword": "부품 인식",
+     "source": "profile",
+     "top_score": 7.5,
+     "top_ids": [
+      "579",
+      "578",
+      "71443",
+      "71927",
+      "71403"
+     ]
+    },
+    {
+     "keyword": "PCB 이미지",
+     "source": "profile",
+     "top_score": 7.2,
+     "top_ids": [
+      "71900",
+      "71687",
+      "71443",
+      "495",
+      "71457"
+     ]
+    },
+    {
+     "keyword": "품질 검사",
+     "source": "datasets",
+     "top_score": 7.7,
+     "top_ids": [
+      "578",
+      "71690",
+      "158",
+      "579",
+      "635"
+     ]
+    },
+    {
+     "keyword": "해양플랜트",
+     "source": "datasets",
+     "top_score": 7.5,
+     "top_ids": [
+      "579",
+      "71443",
+      "71690",
+      "71770",
+      "71708"
+     ]
+    }
+   ],
+   "en": [
+    {
+     "keyword": "robot grasping",
+     "source": "datasets",
+     "top_score": 7.7,
+     "top_ids": [
+      "71692",
+      "71713",
+      "71924",
+      "71599",
+      "71825"
+     ]
+    },
+    {
+     "keyword": "predictive maintenance",
+     "source": "datasets",
+     "top_score": 7.4,
+     "top_ids": [
+      "71802",
+      "238",
+      "71810",
+      "71682",
+      "239"
+     ]
+    },
+    {
+     "keyword": "weld defects",
+     "source": "datasets",
+     "top_score": 7.2,
+     "top_ids": [
+      "71761",
+      "71939",
+      "71901",
+      "71900",
+      "579"
+     ]
+    },
+    {
+     "keyword": "ship parts",
+     "source": "datasets",
+     "top_score": 7.2,
+     "top_ids": [
+      "579",
+      "71447",
+      "71690",
+      "71443",
+      "199"
+     ]
+    },
+    {
+     "keyword": "battery defects",
+     "source": "datasets",
+     "top_score": 7.1,
+     "top_ids": [
+      "71687",
+      "71347",
+      "71918",
+      "71900",
+      "71869"
+     ]
+    },
+    {
+     "keyword": "solder defects",
+     "source": "datasets",
+     "top_score": 7.1,
+     "top_ids": [
+      "71900",
+      "71761",
+      "71687",
+      "71923",
+      "71447"
+     ]
+    },
+    {
+     "keyword": "motion prediction",
+     "source": "datasets",
+     "top_score": 6.8,
+     "top_ids": [
+      "472",
+      "71368",
+      "71628",
+      "620",
+      "539"
+     ]
+    },
+    {
+     "keyword": "visual inspection",
+     "source": "datasets",
+     "top_score": 6.6,
+     "top_ids": [
+      "578",
+      "579",
+      "71690",
+      "71923",
+      "71927"
+     ]
+    },
+    {
+     "keyword": "smart factory",
+     "source": "datasets",
+     "top_score": 6.5,
+     "top_ids": [
+      "71679",
+      "71900",
+      "71802",
+      "71937",
+      "239"
+     ]
+    },
+    {
+     "keyword": "vibration",
+     "source": "datasets",
+     "top_score": 6.5,
+     "top_ids": [
+      "238",
+      "71347",
+      "71443",
+      "71966",
+      "71770"
+     ]
+    }
+   ]
+  },
+  "am": {
+   "ko": [
+    {
+     "keyword": "자율주행 인지",
+     "source": "profile",
+     "top_score": 9.3,
+     "top_ids": [
+      "195",
+      "192",
+      "71928",
+      "71621",
+      "71579"
+     ]
+    },
+    {
+     "keyword": "CCTV 교통 영상",
+     "source": "profile",
+     "top_score": 9.3,
+     "top_ids": [
+      "165",
+      "164",
+      "71566",
+      "71573",
+      "241"
+     ]
+    },
+    {
+     "keyword": "도로 주행 영상",
+     "source": "profile",
+     "top_score": 9.2,
+     "top_ids": [
+      "180",
+      "179",
+      "654",
+      "178",
+      "71566"
+     ]
+    },
+    {
+     "keyword": "차선·신호등·보행자 인식",
+     "source": "profile",
+     "top_score": 9.1,
+     "top_ids": [
+      "197",
+      "71579",
+      "180",
+      "196",
+      "71784"
+     ]
+    },
+    {
+     "keyword": "실내 주행",
+     "source": "profile",
+     "top_score": 8.6,
+     "top_ids": [
+      "71574",
+      "71755",
+      "71576",
+      "69",
+      "184"
+     ]
+    },
+    {
+     "keyword": "사고 위험",
+     "source": "profile",
+     "top_score": 8.3,
+     "top_ids": [
+      "71851",
+      "71407",
+      "71854",
+      "597",
+      "71758"
+     ]
+    },
+    {
+     "keyword": "도로 노면 상태",
+     "source": "profile",
+     "top_score": 8.3,
+     "top_ids": [
+      "71781",
+      "181",
+      "71554",
+      "178",
+      "71258"
+     ]
+    },
+    {
+     "keyword": "위험 운전 행동",
+     "source": "profile",
+     "top_score": 8.2,
+     "top_ids": [
+      "71851",
+      "651",
+      "71854",
+      "169",
+      "71566"
+     ]
+    },
+    {
+     "keyword": "자율주행",
+     "source": "datasets",
+     "top_score": 8.7,
+     "top_ids": [
+      "180",
+      "71623",
+      "191",
+      "71570",
+      "71621"
+     ]
+    },
+    {
+     "keyword": "드론 영상",
+     "source": "profile",
+     "top_score": 8.1,
+     "top_ids": [
+      "190",
+      "183",
+      "182",
+      "647",
+      "152"
+     ]
+    }
+   ],
+   "en": [
+    {
+     "keyword": "indoor-outdoor driving",
+     "source": "datasets",
+     "top_score": 8.0,
+     "top_ids": [
+      "71574",
+      "630",
+      "71604",
+      "194",
+      "71576"
+     ]
+    },
+    {
+     "keyword": "driver monitoring",
+     "source": "datasets",
+     "top_score": 7.7,
+     "top_ids": [
+      "651",
+      "173",
+      "71851",
+      "650",
+      "71421"
+     ]
+    },
+    {
+     "keyword": "indoor robot",
+     "source": "datasets",
+     "top_score": 7.7,
+     "top_ids": [
+      "71574",
+      "71755",
+      "71810",
+      "71604",
+      "646"
+     ]
+    },
+    {
+     "keyword": "autonomous drone",
+     "source": "datasets",
+     "top_score": 7.7,
+     "top_ids": [
+      "190",
+      "647",
+      "182",
+      "183",
+      "71954"
+     ]
+    },
+    {
+     "keyword": "moving-object recognition",
+     "source": "datasets",
+     "top_score": 7.5,
+     "top_ids": [
+      "192",
+      "195",
+      "471",
+      "71467",
+      "71617"
+     ]
+    },
+    {
+     "keyword": "autonomous driving",
+     "source": "datasets",
+     "top_score": 7.4,
+     "top_ids": [
+      "180",
+      "71623",
+      "71570",
+      "71595",
+      "71590"
+     ]
+    },
+    {
+     "keyword": "lane detection",
+     "source": "datasets",
+     "top_score": 7.4,
+     "top_ids": [
+      "197",
+      "196",
+      "180",
+      "628",
+      "71583"
+     ]
+    },
+    {
+     "keyword": "pedestrian detection",
+     "source": "datasets",
+     "top_score": 7.3,
+     "top_ids": [
+      "71784",
+      "159",
+      "522",
+      "630",
+      "629"
+     ]
+    },
+    {
+     "keyword": "accident risk",
+     "source": "datasets",
+     "top_score": 7.2,
+     "top_ids": [
+      "71851",
+      "71958",
+      "597",
+      "71854",
+      "71758"
+     ]
+    },
+    {
+     "keyword": "vehicle type",
+     "source": "datasets",
+     "top_score": 7.2,
+     "top_ids": [
+      "553",
+      "71573",
+      "554",
+      "71958",
+      "172"
+     ]
+    }
+   ]
+  },
+  "amchem": {
+   "ko": [
+    {
+     "keyword": "이차전지",
+     "source": "profile",
+     "top_score": 8.6,
+     "top_ids": [
+      "71869",
+      "71687",
+      "71918",
+      "71347",
+      "71802"
+     ]
+    },
+    {
+     "keyword": "실험·분석 데이터",
+     "source": "profile",
+     "top_score": 8.6,
+     "top_ids": [
+      "71339",
+      "71918",
+      "71869",
+      "71642",
+      "71962"
+     ]
+    },
+    {
+     "keyword": "분자 데이터",
+     "source": "profile",
+     "top_score": 8.5,
+     "top_ids": [
+      "71962",
+      "71816",
+      "71642",
+      "71916",
+      "71316"
+     ]
+    },
+    {
+     "keyword": "결함 이미지",
+     "source": "profile",
+     "top_score": 8.5,
+     "top_ids": [
+      "71687",
+      "139",
+      "71900",
+      "162",
+      "71761"
+     ]
+    },
+    {
+     "keyword": "공정 데이터",
+     "source": "profile",
+     "top_score": 8.2,
+     "top_ids": [
+      "71900",
+      "71690",
+      "71937",
+      "141",
+      "239"
+     ]
+    },
+    {
+     "keyword": "위험물",
+     "source": "profile",
+     "top_score": 7.5,
+     "top_ids": [
+      "71816",
+      "572",
+      "233",
+      "71916",
+      "71407"
+     ]
+    },
+    {
+     "keyword": "태양광 발전",
+     "source": "profile",
+     "top_score": 7.2,
+     "top_ids": [
+      "71348",
+      "71923",
+      "71359",
+      "71918",
+      "514"
+     ]
+    },
+    {
+     "keyword": "디스플레이·반도체 소재 불량",
+     "source": "profile",
+     "top_score": 7.2,
+     "top_ids": [
+      "71900",
+      "71687",
+      "71339",
+      "71690",
+      "578"
+     ]
+    },
+    {
+     "keyword": "에너지 효율",
+     "source": "datasets",
+     "top_score": 6.5,
+     "top_ids": [
+      "239",
+      "71685",
+      "71359",
+      "71918",
+      "71408"
+     ]
+    }
+   ],
+   "en": [
+    {
+     "keyword": "materials prediction",
+     "source": "datasets",
+     "top_score": 8.1,
+     "top_ids": [
+      "71339",
+      "71869",
+      "71816",
+      "71476",
+      "71381"
+     ]
+    },
+    {
+     "keyword": "power usage pattern",
+     "source": "datasets",
+     "top_score": 7.5,
+     "top_ids": [
+      "71685",
+      "71359",
+      "239",
+      "71682",
+      "71388"
+     ]
+    },
+    {
+     "keyword": "Chemical safety",
+     "source": "profile",
+     "top_score": 6.8,
+     "top_ids": [
+      "71816",
+      "71916",
+      "71642",
+      "71962",
+      "71771"
+     ]
+    },
+    {
+     "keyword": "predictive maintenance",
+     "source": "datasets",
+     "top_score": 7.2,
+     "top_ids": [
+      "71802",
+      "238",
+      "71682",
+      "71810",
+      "239"
+     ]
+    },
+    {
+     "keyword": "lithium-ion battery",
+     "source": "datasets",
+     "top_score": 7.2,
+     "top_ids": [
+      "71869",
+      "71918",
+      "71687",
+      "71347",
+      "71919"
+     ]
+    },
+    {
+     "keyword": "thermal runaway",
+     "source": "datasets",
+     "top_score": 6.8,
+     "top_ids": [
+      "71918",
+      "71802",
+      "235",
+      "71677",
+      "71816"
+     ]
+    },
+    {
+     "keyword": "Lab and instrument data",
+     "source": "profile",
+     "top_score": 6.2,
+     "top_ids": [
+      "239",
+      "71473",
+      "71574",
+      "71339",
+      "71388"
+     ]
+    },
+    {
+     "keyword": "solder defects",
+     "source": "datasets",
+     "top_score": 6.7,
+     "top_ids": [
+      "71900",
+      "71761",
+      "71687",
+      "71923",
+      "71447"
+     ]
+    }
+   ]
+  },
+  "ba": {
+   "ko": [
+    {
+     "keyword": "회계·세무 문서",
+     "source": "profile",
+     "top_score": 8.6,
+     "top_ids": [
+      "71922",
+      "71782",
+      "71610",
+      "71301",
+      "71811"
+     ]
+    },
+    {
+     "keyword": "상품 이미지",
+     "source": "profile",
+     "top_score": 8.5,
+     "top_ids": [
+      "64",
+      "71431",
+      "71285",
+      "144",
+      "71508"
+     ]
+    },
+    {
+     "keyword": "구매 행동",
+     "source": "profile",
+     "top_score": 8.4,
+     "top_ids": [
+      "71549",
+      "71550",
+      "71692",
+      "71827",
+      "71713"
+     ]
+    },
+    {
+     "keyword": "감성 분석",
+     "source": "profile",
+     "top_score": 8.1,
+     "top_ids": [
+      "71603",
+      "86",
+      "82",
+      "625",
+      "71631"
+     ]
+    },
+    {
+     "keyword": "상담 대화",
+     "source": "profile",
+     "top_score": 7.9,
+     "top_ids": [
+      "100",
+      "544",
+      "71926",
+      "71618",
+      "71844"
+     ]
+    },
+    {
+     "keyword": "회계·세무",
+     "source": "profile",
+     "top_score": 7.9,
+     "top_ids": [
+      "71922",
+      "71782",
+      "547",
+      "71792",
+      "71917"
+     ]
+    },
+    {
+     "keyword": "영수증·문서 인식",
+     "source": "profile",
+     "top_score": 7.5,
+     "top_ids": [
+      "71301",
+      "632",
+      "71811",
+      "91",
+      "88"
+     ]
+    },
+    {
+     "keyword": "금융 상담",
+     "source": "datasets",
+     "top_score": 7.9,
+     "top_ids": [
+      "71926",
+      "100",
+      "71938",
+      "71792",
+      "71782"
+     ]
+    },
+    {
+     "keyword": "상품 분류",
+     "source": "profile",
+     "top_score": 7.3,
+     "top_ids": [
+      "64",
+      "71431",
+      "71510",
+      "71861",
+      "71603"
+     ]
+    },
+    {
+     "keyword": "콜센터",
+     "source": "datasets",
+     "top_score": 7.8,
+     "top_ids": [
+      "71970",
+      "98",
+      "100",
+      "71926",
+      "470"
+     ]
+    }
+   ],
+   "en": [
+    {
+     "keyword": "financial translation",
+     "source": "datasets",
+     "top_score": 7.3,
+     "top_ids": [
+      "71782",
+      "125",
+      "71610",
+      "71922",
+      "71926"
+     ]
+    },
+    {
+     "keyword": "goal-oriented dialogue",
+     "source": "datasets",
+     "top_score": 7.1,
+     "top_ids": [
+      "544",
+      "116",
+      "71304",
+      "71302",
+      "71694"
+     ]
+    },
+    {
+     "keyword": "unmanned store",
+     "source": "datasets",
+     "top_score": 7.0,
+     "top_ids": [
+      "71549",
+      "71550",
+      "102",
+      "64",
+      "71431"
+     ]
+    },
+    {
+     "keyword": "product classification",
+     "source": "datasets",
+     "top_score": 6.8,
+     "top_ids": [
+      "64",
+      "71431",
+      "71381",
+      "71916",
+      "71510"
+     ]
+    },
+    {
+     "keyword": "purchase behaviour",
+     "source": "datasets",
+     "top_score": 6.7,
+     "top_ids": [
+      "71549",
+      "71550",
+      "71938",
+      "71446",
+      "71692"
+     ]
+    },
+    {
+     "keyword": "chatbot",
+     "source": "datasets",
+     "top_score": 6.4,
+     "top_ids": [
+      "544",
+      "116",
+      "102",
+      "71844",
+      "71970"
+     ]
+    },
+    {
+     "keyword": "counselling speech",
+     "source": "datasets",
+     "top_score": 6.4,
+     "top_ids": [
+      "100",
+      "71618",
+      "71806",
+      "470",
+      "71305"
+     ]
+    },
+    {
+     "keyword": "multilingual chatbot",
+     "source": "datasets",
+     "top_score": 6.4,
+     "top_ids": [
+      "71970",
+      "609",
+      "71782",
+      "71686",
+      "71730"
+     ]
+    },
+    {
+     "keyword": "call centre",
+     "source": "datasets",
+     "top_score": 6.2,
+     "top_ids": [
+      "71970",
+      "98",
+      "100",
+      "571",
+      "71844"
+     ]
+    }
+   ]
+  },
+  "bigdatascience": {
+   "ko": [
+    {
+     "keyword": "한국어 말뭉치",
+     "source": "profile",
+     "top_score": 9.4,
+     "top_ids": [
+      "653",
+      "624",
+      "71487",
+      "126",
+      "110"
+     ]
+    },
+    {
+     "keyword": "대형언어모델",
+     "source": "profile",
+     "top_score": 8.8,
+     "top_ids": [
+      "71748",
+      "71788",
+      "71760",
+      "624",
+      "653"
+     ]
+    },
+    {
+     "keyword": "보건의료 데이터",
+     "source": "profile",
+     "top_score": 8.7,
+     "top_ids": [
+      "71762",
+      "208",
+      "71966",
+      "71875",
+      "71552"
+     ]
+    },
+    {
+     "keyword": "공공·사회 통계",
+     "source": "profile",
+     "top_score": 8.0,
+     "top_ids": [
+      "71852",
+      "141",
+      "166",
+      "125",
+      "71299"
+     ]
+    },
+    {
+     "keyword": "거래 데이터",
+     "source": "profile",
+     "top_score": 7.9,
+     "top_ids": [
+      "71925",
+      "71834",
+      "71782",
+      "71792",
+      "71926"
+     ]
+    },
+    {
+     "keyword": "바이오 데이터",
+     "source": "profile",
+     "top_score": 7.9,
+     "top_ids": [
+      "71369",
+      "71316",
+      "71966",
+      "71962",
+      "71756"
+     ]
+    },
+    {
+     "keyword": "이상 거래",
+     "source": "profile",
+     "top_score": 7.8,
+     "top_ids": [
+      "71925",
+      "171",
+      "515",
+      "71550",
+      "174"
+     ]
+    },
+    {
+     "keyword": "시공간 데이터",
+     "source": "profile",
+     "top_score": 7.8,
+     "top_ids": [
+      "71420",
+      "71546",
+      "71741",
+      "522",
+      "550"
+     ]
+    },
+    {
+     "keyword": "의료 영상",
+     "source": "profile",
+     "top_score": 7.5,
+     "top_ids": [
+      "71552",
+      "71521",
+      "71597",
+      "71964",
+      "71756"
+     ]
+    },
+    {
+     "keyword": "머신러닝·딥러닝",
+     "source": "profile",
+     "top_score": 7.5,
+     "top_ids": [
+      "71966",
+      "71927",
+      "71487",
+      "71808",
+      "71715"
+     ]
+    }
+   ],
+   "en": [
+    {
+     "keyword": "medical speech",
+     "source": "datasets",
+     "top_score": 8.2,
+     "top_ids": [
+      "208",
+      "608",
+      "71487",
+      "71762",
+      "71874"
+     ]
+    },
+    {
+     "keyword": "indoor positioning",
+     "source": "datasets",
+     "top_score": 7.3,
+     "top_ids": [
+      "71420",
+      "69",
+      "550",
+      "71574",
+      "71576"
+     ]
+    },
+    {
+     "keyword": "Health care data",
+     "source": "profile",
+     "top_score": 6.6,
+     "top_ids": [
+      "71762",
+      "71520",
+      "208",
+      "71966",
+      "71521"
+     ]
+    },
+    {
+     "keyword": "Large language models",
+     "source": "profile",
+     "top_score": 6.6,
+     "top_ids": [
+      "71748",
+      "71788",
+      "71760",
+      "71848",
+      "71847"
+     ]
+    },
+    {
+     "keyword": "healthcare chatbot",
+     "source": "datasets",
+     "top_score": 7.1,
+     "top_ids": [
+      "71762",
+      "208",
+      "116",
+      "544",
+      "71694"
+     ]
+    },
+    {
+     "keyword": "fraud detection",
+     "source": "datasets",
+     "top_score": 6.9,
+     "top_ids": [
+      "71925",
+      "71338",
+      "161",
+      "71792",
+      "71850"
+     ]
+    },
+    {
+     "keyword": "anomaly detection",
+     "source": "datasets",
+     "top_score": 6.8,
+     "top_ids": [
+      "71925",
+      "515",
+      "71850",
+      "177",
+      "174"
+     ]
+    },
+    {
+     "keyword": "gait analysis",
+     "source": "datasets",
+     "top_score": 6.8,
+     "top_ids": [
+      "71966",
+      "71526",
+      "71878",
+      "159",
+      "71707"
+     ]
+    },
+    {
+     "keyword": "generative model",
+     "source": "datasets",
+     "top_score": 6.7,
+     "top_ids": [
+      "71728",
+      "71762",
+      "71748",
+      "71729",
+      "71773"
+     ]
+    },
+    {
+     "keyword": "pre-training",
+     "source": "datasets",
+     "top_score": 6.5,
+     "top_ids": [
+      "71748",
+      "71788",
+      "71852",
+      "71856",
+      "71592"
+     ]
+    }
+   ]
+  },
+  "biotechnology": {
+   "ko": [
+    {
+     "keyword": "양봉",
+     "source": "datasets",
+     "top_score": 8.5,
+     "top_ids": [
+      "71488",
+      "71667",
+      "71525",
+      "71701",
+      "564"
+     ]
+    },
+    {
+     "keyword": "바이오 데이터",
+     "source": "profile",
+     "top_score": 7.9,
+     "top_ids": [
+      "71369",
+      "71316",
+      "71962",
+      "71966",
+      "71408"
+     ]
+    },
+    {
+     "keyword": "발효",
+     "source": "profile",
+     "top_score": 7.9,
+     "top_ids": [
+      "71473",
+      "71777",
+      "71262",
+      "71756",
+      "71853"
+     ]
+    },
+    {
+     "keyword": "약물 정보",
+     "source": "profile",
+     "top_score": 7.7,
+     "top_ids": [
+      "576",
+      "71962",
+      "71642",
+      "633",
+      "151"
+     ]
+    },
+    {
+     "keyword": "동물과 가축 건강",
+     "source": "profile",
+     "top_score": 7.6,
+     "top_ids": [
+      "71520",
+      "145",
+      "71879",
+      "71471",
+      "71878"
+     ]
+    },
+    {
+     "keyword": "문헌 마이닝",
+     "source": "profile",
+     "top_score": 7.3,
+     "top_ids": [
+      "71369",
+      "71845",
+      "90",
+      "71487",
+      "71739"
+     ]
+    },
+    {
+     "keyword": "양돈",
+     "source": "datasets",
+     "top_score": 7.7,
+     "top_ids": [
+      "71763",
+      "622",
+      "71408",
+      "71471",
+      "71322"
+     ]
+    },
+    {
+     "keyword": "논문 요약",
+     "source": "datasets",
+     "top_score": 7.7,
+     "top_ids": [
+      "90",
+      "71532",
+      "71845",
+      "93",
+      "582"
+     ]
+    },
+    {
+     "keyword": "세포 이미지",
+     "source": "profile",
+     "top_score": 7.1,
+     "top_ids": [
+      "71756",
+      "71687",
+      "71522",
+      "71451",
+      "71830"
+     ]
+    },
+    {
+     "keyword": "세포·현미경 이미지",
+     "source": "profile",
+     "top_score": 6.9,
+     "top_ids": [
+      "71756",
+      "71673",
+      "71831",
+      "71341",
+      "71667"
+     ]
+    }
+   ],
+   "en": [
+    {
+     "keyword": "honeybee",
+     "source": "datasets",
+     "top_score": 7.3,
+     "top_ids": [
+      "71488",
+      "71667",
+      "71525",
+      "564",
+      "71701"
+     ]
+    },
+    {
+     "keyword": "paper summarisation",
+     "source": "datasets",
+     "top_score": 7.2,
+     "top_ids": [
+      "90",
+      "97",
+      "71532",
+      "71845",
+      "93"
+     ]
+    },
+    {
+     "keyword": "molecular toxicity",
+     "source": "datasets",
+     "top_score": 7.0,
+     "top_ids": [
+      "71962",
+      "71642",
+      "71916",
+      "71316",
+      "71816"
+     ]
+    },
+    {
+     "keyword": "embryo",
+     "source": "datasets",
+     "top_score": 6.9,
+     "top_ids": [
+      "71756",
+      "71341",
+      "71829",
+      "71673",
+      "498"
+     ]
+    },
+    {
+     "keyword": "plant genome",
+     "source": "datasets",
+     "top_score": 6.8,
+     "top_ids": [
+      "71316",
+      "519",
+      "520",
+      "71386",
+      "71705"
+     ]
+    },
+    {
+     "keyword": "patent summary",
+     "source": "datasets",
+     "top_score": 6.8,
+     "top_ids": [
+      "90",
+      "71739",
+      "71917",
+      "563",
+      "71919"
+     ]
+    },
+    {
+     "keyword": "Life science literature",
+     "source": "profile",
+     "top_score": 6.2,
+     "top_ids": [
+      "71369",
+      "485",
+      "71487",
+      "71531",
+      "71845"
+     ]
+    },
+    {
+     "keyword": "kimchi",
+     "source": "datasets",
+     "top_score": 6.7,
+     "top_ids": [
+      "71473",
+      "71777",
+      "79",
+      "71262",
+      "71553"
+     ]
+    },
+    {
+     "keyword": "fermentation stage",
+     "source": "datasets",
+     "top_score": 6.6,
+     "top_ids": [
+      "71473",
+      "71756",
+      "71504",
+      "71777",
+      "71763"
+     ]
+    },
+    {
+     "keyword": "pig respiration",
+     "source": "datasets",
+     "top_score": 6.5,
+     "top_ids": [
+      "71763",
+      "71408",
+      "71471",
+      "622",
+      "145"
+     ]
+    }
+   ]
+  },
+  "cuhc": {
+   "ko": [
+    {
+     "keyword": "문화유산 3D",
+     "source": "profile",
+     "top_score": 9.8,
+     "top_ids": [
+      "71353",
+      "71512",
+      "71965",
+      "71389",
+      "71733"
+     ]
+    },
+    {
+     "keyword": "한자 인식",
+     "source": "profile",
+     "top_score": 8.9,
+     "top_ids": [
+      "234",
+      "603",
+      "71294",
+      "504",
+      "91"
+     ]
+    },
+    {
+     "keyword": "유물·미술품 이미지",
+     "source": "profile",
+     "top_score": 8.8,
+     "top_ids": [
+      "71389",
+      "144",
+      "71809",
+      "71512",
+      "71920"
+     ]
+    },
+    {
+     "keyword": "3D 점군",
+     "source": "datasets",
+     "top_score": 8.2,
+     "top_ids": [
+      "71353",
+      "71586",
+      "550",
+      "71596",
+      "71561"
+     ]
+    },
+    {
+     "keyword": "전시 해설",
+     "source": "profile",
+     "top_score": 7.6,
+     "top_ids": [
+      "71323",
+      "71920",
+      "569",
+      "71725",
+      "71965"
+     ]
+    },
+    {
+     "keyword": "회화",
+     "source": "profile",
+     "top_score": 7.3,
+     "top_ids": [
+      "71920",
+      "71734",
+      "71380",
+      "71389",
+      "71323"
+     ]
+    },
+    {
+     "keyword": "관광지",
+     "source": "profile",
+     "top_score": 7.3,
+     "top_ids": [
+      "71596",
+      "71428",
+      "71608",
+      "71607",
+      "71600"
+     ]
+    },
+    {
+     "keyword": "유적과 지형",
+     "source": "profile",
+     "top_score": 6.8,
+     "top_ids": [
+      "71353",
+      "475",
+      "71600",
+      "144",
+      "71512"
+     ]
+    },
+    {
+     "keyword": "메타버스",
+     "source": "datasets",
+     "top_score": 7.0,
+     "top_ids": [
+      "71460",
+      "71512",
+      "71424",
+      "71332",
+      "71389"
+     ]
+    }
+   ],
+   "en": [
+    {
+     "keyword": "Heritage 3D data",
+     "source": "profile",
+     "top_score": 9.5,
+     "top_ids": [
+      "71353",
+      "71512",
+      "71965",
+      "71389",
+      "71733"
+     ]
+    },
+    {
+     "keyword": "K-Art",
+     "source": "datasets",
+     "top_score": 7.8,
+     "top_ids": [
+      "71389",
+      "71719",
+      "71734",
+      "71380",
+      "71920"
+     ]
+    },
+    {
+     "keyword": "docent",
+     "source": "datasets",
+     "top_score": 7.7,
+     "top_ids": [
+      "71323",
+      "71725",
+      "71828",
+      "71920",
+      "71855"
+     ]
+    },
+    {
+     "keyword": "dinosaur footprints",
+     "source": "datasets",
+     "top_score": 7.2,
+     "top_ids": [
+      "475",
+      "71353",
+      "71390",
+      "71966",
+      "71778"
+     ]
+    },
+    {
+     "keyword": "alleys",
+     "source": "datasets",
+     "top_score": 6.9,
+     "top_ids": [
+      "71586",
+      "189",
+      "71572",
+      "186",
+      "572"
+     ]
+    },
+    {
+     "keyword": "Old documents and scripts",
+     "source": "profile",
+     "top_score": 6.3,
+     "top_ids": [
+      "504",
+      "71295",
+      "234",
+      "71294",
+      "603"
+     ]
+    },
+    {
+     "keyword": "Korean products",
+     "source": "datasets",
+     "top_score": 6.7,
+     "top_ids": [
+      "144",
+      "71965",
+      "71473",
+      "71262",
+      "79"
+     ]
+    },
+    {
+     "keyword": "smart tourism",
+     "source": "datasets",
+     "top_score": 6.5,
+     "top_ids": [
+      "71725",
+      "71714",
+      "134",
+      "71608",
+      "71598"
+     ]
+    },
+    {
+     "keyword": "virtual tourism",
+     "source": "datasets",
+     "top_score": 6.5,
+     "top_ids": [
+      "71596",
+      "71586",
+      "71600",
+      "71714",
+      "71725"
+     ]
+    },
+    {
+     "keyword": "sauropod",
+     "source": "datasets",
+     "top_score": 6.1,
+     "top_ids": [
+      "475",
+      "71390",
+      "71534",
+      "71600",
+      "71322"
+     ]
+    }
+   ]
+  },
+  "cwms": {
+   "ko": [
+    {
+     "keyword": "한국어 말뭉치",
+     "source": "profile",
+     "top_score": 9.5,
+     "top_ids": [
+      "624",
+      "653",
+      "126",
+      "71382",
+      "625"
+     ]
+    },
+    {
+     "keyword": "이야기 생성",
+     "source": "profile",
+     "top_score": 8.7,
+     "top_ids": [
+      "71696",
+      "71562",
+      "71836",
+      "71649",
+      "71695"
+     ]
+    },
+    {
+     "keyword": "대화",
+     "source": "profile",
+     "top_score": 8.1,
+     "top_ids": [
+      "71302",
+      "71694",
+      "543",
+      "117",
+      "71304"
+     ]
+    },
+    {
+     "keyword": "문체 분석",
+     "source": "profile",
+     "top_score": 7.8,
+     "top_ids": [
+      "71486",
+      "71349",
+      "625",
+      "543",
+      "71562"
+     ]
+    },
+    {
+     "keyword": "감정 분류",
+     "source": "profile",
+     "top_score": 7.7,
+     "top_ids": [
+      "71305",
+      "82",
+      "58",
+      "86",
+      "71631"
+     ]
+    },
+    {
+     "keyword": "비식별화",
+     "source": "datasets",
+     "top_score": 8.2,
+     "top_ids": [
+      "71967",
+      "71968",
+      "71959",
+      "117",
+      "182"
+     ]
+    },
+    {
+     "keyword": "문체",
+     "source": "profile",
+     "top_score": 7.6,
+     "top_ids": [
+      "71486",
+      "71349",
+      "91",
+      "81",
+      "71411"
+     ]
+    },
+    {
+     "keyword": "글쓰기 채점",
+     "source": "datasets",
+     "top_score": 8.1,
+     "top_ids": [
+      "71817",
+      "71818",
+      "71819",
+      "545",
+      "71311"
+     ]
+    },
+    {
+     "keyword": "드라마 대본",
+     "source": "profile",
+     "top_score": 7.5,
+     "top_ids": [
+      "591",
+      "71562",
+      "71349",
+      "71557",
+      "71263"
+     ]
+    },
+    {
+     "keyword": "페르소나",
+     "source": "datasets",
+     "top_score": 7.9,
+     "top_ids": [
+      "71302",
+      "618",
+      "71630",
+      "71305",
+      "71675"
+     ]
+    }
+   ],
+   "en": [
+    {
+     "keyword": "Story generation",
+     "source": "profile",
+     "top_score": 7.6,
+     "top_ids": [
+      "71696",
+      "71562",
+      "71836",
+      "71703",
+      "71649"
+     ]
+    },
+    {
+     "keyword": "empathetic dialogue",
+     "source": "datasets",
+     "top_score": 8.0,
+     "top_ids": [
+      "71305",
+      "86",
+      "71302",
+      "71304",
+      "71694"
+     ]
+    },
+    {
+     "keyword": "text-to-image",
+     "source": "datasets",
+     "top_score": 7.3,
+     "top_ids": [
+      "71717",
+      "71734",
+      "71920",
+      "71969",
+      "71719"
+     ]
+    },
+    {
+     "keyword": "essay scoring",
+     "source": "datasets",
+     "top_score": 7.1,
+     "top_ids": [
+      "545",
+      "71817",
+      "71818",
+      "71819",
+      "71311"
+     ]
+    },
+    {
+     "keyword": "de-identification",
+     "source": "datasets",
+     "top_score": 7.0,
+     "top_ids": [
+      "71967",
+      "71968",
+      "71818",
+      "117",
+      "71959"
+     ]
+    },
+    {
+     "keyword": "multi-turn",
+     "source": "datasets",
+     "top_score": 6.9,
+     "top_ids": [
+      "71694",
+      "71860",
+      "71630",
+      "71674",
+      "71675"
+     ]
+    },
+    {
+     "keyword": "broadcast scripts",
+     "source": "datasets",
+     "top_score": 6.9,
+     "top_ids": [
+      "591",
+      "71314",
+      "71263",
+      "463",
+      "71382"
+     ]
+    },
+    {
+     "keyword": "everyday conversation",
+     "source": "datasets",
+     "top_score": 6.8,
+     "top_ids": [
+      "543",
+      "71678",
+      "117",
+      "71302",
+      "114"
+     ]
+    },
+    {
+     "keyword": "written Korean",
+     "source": "datasets",
+     "top_score": 6.7,
+     "top_ids": [
+      "81",
+      "91",
+      "653",
+      "605",
+      "105"
+     ]
+    },
+    {
+     "keyword": "persona",
+     "source": "datasets",
+     "top_score": 6.5,
+     "top_ids": [
+      "71302",
+      "618",
+      "71630",
+      "71305",
+      "71675"
+     ]
+    }
+   ]
+  },
+  "digb": {
+   "ko": [
+    {
+     "keyword": "상품 이미지",
+     "source": "profile",
+     "top_score": 8.7,
+     "top_ids": [
+      "64",
+      "71431",
+      "71285",
+      "71508",
+      "51"
+     ]
+    },
+    {
+     "keyword": "감성 분석",
+     "source": "profile",
+     "top_score": 8.2,
+     "top_ids": [
+      "71603",
+      "86",
+      "82",
+      "625",
+      "71631"
+     ]
+    },
+    {
+     "keyword": "관광 데이터",
+     "source": "datasets",
+     "top_score": 8.5,
+     "top_ids": [
+      "71778",
+      "71596",
+      "71714",
+      "71608",
+      "71428"
+     ]
+    },
+    {
+     "keyword": "상담 대화",
+     "source": "profile",
+     "top_score": 7.9,
+     "top_ids": [
+      "100",
+      "544",
+      "71926",
+      "71618",
+      "71844"
+     ]
+    },
+    {
+     "keyword": "무인점포",
+     "source": "datasets",
+     "top_score": 8.0,
+     "top_ids": [
+      "71549",
+      "71550",
+      "102",
+      "64",
+      "71431"
+     ]
+    },
+    {
+     "keyword": "소상공인",
+     "source": "datasets",
+     "top_score": 7.9,
+     "top_ids": [
+      "102",
+      "116",
+      "64",
+      "547",
+      "476"
+     ]
+    },
+    {
+     "keyword": "금융 상담",
+     "source": "datasets",
+     "top_score": 7.9,
+     "top_ids": [
+      "71926",
+      "71792",
+      "71938",
+      "100",
+      "71782"
+     ]
+    },
+    {
+     "keyword": "챗봇",
+     "source": "profile",
+     "top_score": 7.2,
+     "top_ids": [
+      "116",
+      "544",
+      "102",
+      "543",
+      "71678"
+     ]
+    },
+    {
+     "keyword": "고객과 구매",
+     "source": "profile",
+     "top_score": 6.8,
+     "top_ids": [
+      "71549",
+      "102",
+      "87",
+      "71529",
+      "544"
+     ]
+    },
+    {
+     "keyword": "리뷰와 SNS",
+     "source": "profile",
+     "top_score": 6.7,
+     "top_ids": [
+      "71603",
+      "71343",
+      "114",
+      "102",
+      "98"
+     ]
+    }
+   ],
+   "en": [
+    {
+     "keyword": "synthetic financial data",
+     "source": "datasets",
+     "top_score": 9.1,
+     "top_ids": [
+      "71792",
+      "71925",
+      "71938",
+      "71922",
+      "71926"
+     ]
+    },
+    {
+     "keyword": "Korean dialogue",
+     "source": "datasets",
+     "top_score": 7.5,
+     "top_ids": [
+      "116",
+      "71302",
+      "71694",
+      "71304",
+      "117"
+     ]
+    },
+    {
+     "keyword": "unmanned store",
+     "source": "datasets",
+     "top_score": 7.1,
+     "top_ids": [
+      "71549",
+      "71550",
+      "102",
+      "64",
+      "71431"
+     ]
+    },
+    {
+     "keyword": "product recognition",
+     "source": "datasets",
+     "top_score": 7.1,
+     "top_ids": [
+      "71431",
+      "64",
+      "71510",
+      "71508",
+      "71290"
+     ]
+    },
+    {
+     "keyword": "purchase behaviour",
+     "source": "datasets",
+     "top_score": 6.8,
+     "top_ids": [
+      "71549",
+      "71550",
+      "71938",
+      "71446",
+      "71692"
+     ]
+    },
+    {
+     "keyword": "chatbot",
+     "source": "datasets",
+     "top_score": 6.5,
+     "top_ids": [
+      "116",
+      "544",
+      "102",
+      "71844",
+      "71970"
+     ]
+    },
+    {
+     "keyword": "counselling speech",
+     "source": "datasets",
+     "top_score": 6.4,
+     "top_ids": [
+      "100",
+      "71618",
+      "71806",
+      "470",
+      "71305"
+     ]
+    },
+    {
+     "keyword": "call centre",
+     "source": "datasets",
+     "top_score": 6.3,
+     "top_ids": [
+      "71970",
+      "98",
+      "100",
+      "571",
+      "71844"
+     ]
+    },
+    {
+     "keyword": "fashion",
+     "source": "datasets",
+     "top_score": 6.1,
+     "top_ids": [
+      "71446",
+      "71441",
+      "51",
+      "71535",
+      "71445"
+     ]
+    }
+   ]
+  },
+  "dsphy": {
+   "ko": [
+    {
+     "keyword": "공정 센서 데이터",
+     "source": "profile",
+     "top_score": 8.3,
+     "top_ids": [
+      "71900",
+      "239",
+      "238",
+      "71802",
+      "71937"
+     ]
+    },
+    {
+     "keyword": "패널 결함 이미지",
+     "source": "profile",
+     "top_score": 7.7,
+     "top_ids": [
+      "71687",
+      "71900",
+      "71923",
+      "139",
+      "71447"
+     ]
+    },
+    {
+     "keyword": "에너지·태양광",
+     "source": "profile",
+     "top_score": 7.6,
+     "top_ids": [
+      "71348",
+      "239",
+      "71923",
+      "71359",
+      "71763"
+     ]
+    },
+    {
+     "keyword": "용접 불량",
+     "source": "datasets",
+     "top_score": 8.1,
+     "top_ids": [
+      "71761",
+      "71900",
+      "71901",
+      "579",
+      "71939"
+     ]
+    },
+    {
+     "keyword": "부품 인식",
+     "source": "profile",
+     "top_score": 7.4,
+     "top_ids": [
+      "579",
+      "578",
+      "71443",
+      "71403",
+      "71927"
+     ]
+    },
+    {
+     "keyword": "리튬이온 배터리",
+     "source": "datasets",
+     "top_score": 7.8,
+     "top_ids": [
+      "71869",
+      "71918",
+      "71687",
+      "71347",
+      "71919"
+     ]
+    },
+    {
+     "keyword": "골재",
+     "source": "datasets",
+     "top_score": 7.8,
+     "top_ids": [
+      "71772",
+      "71337",
+      "71753",
+      "137",
+      "71388"
+     ]
+    },
+    {
+     "keyword": "인공지능 소자",
+     "source": "profile",
+     "top_score": 7.2,
+     "top_ids": [
+      "71900",
+      "239",
+      "71339",
+      "71966",
+      "71682"
+     ]
+    },
+    {
+     "keyword": "품질 검사",
+     "source": "datasets",
+     "top_score": 7.6,
+     "top_ids": [
+      "578",
+      "71690",
+      "158",
+      "579",
+      "635"
+     ]
+    },
+    {
+     "keyword": "머신비전",
+     "source": "datasets",
+     "top_score": 7.3,
+     "top_ids": [
+      "71927",
+      "578",
+      "71476",
+      "71802",
+      "71452"
+     ]
+    }
+   ],
+   "en": [
+    {
+     "keyword": "materials prediction",
+     "source": "datasets",
+     "top_score": 8.3,
+     "top_ids": [
+      "71339",
+      "71869",
+      "71816",
+      "71476",
+      "71381"
+     ]
+    },
+    {
+     "keyword": "power usage pattern",
+     "source": "datasets",
+     "top_score": 7.6,
+     "top_ids": [
+      "71685",
+      "71359",
+      "239",
+      "71682",
+      "484"
+     ]
+    },
+    {
+     "keyword": "Process sensor data",
+     "source": "profile",
+     "top_score": 6.9,
+     "top_ids": [
+      "71900",
+      "71948",
+      "71802",
+      "239",
+      "71626"
+     ]
+    },
+    {
+     "keyword": "predictive maintenance",
+     "source": "datasets",
+     "top_score": 7.4,
+     "top_ids": [
+      "71802",
+      "238",
+      "71682",
+      "239",
+      "71810"
+     ]
+    },
+    {
+     "keyword": "weld defects",
+     "source": "datasets",
+     "top_score": 7.2,
+     "top_ids": [
+      "71761",
+      "71901",
+      "71900",
+      "579",
+      "71939"
+     ]
+    },
+    {
+     "keyword": "battery defects",
+     "source": "datasets",
+     "top_score": 7.1,
+     "top_ids": [
+      "71687",
+      "71347",
+      "71918",
+      "71869",
+      "71900"
+     ]
+    },
+    {
+     "keyword": "ship parts",
+     "source": "datasets",
+     "top_score": 7.1,
+     "top_ids": [
+      "579",
+      "71447",
+      "71690",
+      "71443",
+      "199"
+     ]
+    },
+    {
+     "keyword": "solder defects",
+     "source": "datasets",
+     "top_score": 7.0,
+     "top_ids": [
+      "71900",
+      "71761",
+      "71687",
+      "71923",
+      "71447"
+     ]
+    },
+    {
+     "keyword": "gravel",
+     "source": "datasets",
+     "top_score": 6.8,
+     "top_ids": [
+      "71772",
+      "71757",
+      "71337",
+      "71676",
+      "71753"
+     ]
+    },
+    {
+     "keyword": "air fitting",
+     "source": "datasets",
+     "top_score": 6.7,
+     "top_ids": [
+      "71927",
+      "71443",
+      "71805",
+      "71737",
+      "71690"
+     ]
+    }
+   ]
+  },
+  "economics": {
+   "ko": [
+    {
+     "keyword": "금융 상담",
+     "source": "datasets",
+     "top_score": 8.0,
+     "top_ids": [
+      "71926",
+      "71938",
+      "100",
+      "71792",
+      "71610"
+     ]
+    },
+    {
+     "keyword": "금융 문서",
+     "source": "datasets",
+     "top_score": 7.9,
+     "top_ids": [
+      "632",
+      "71782",
+      "71610",
+      "71938",
+      "71301"
+     ]
+    },
+    {
+     "keyword": "뉴스 감성",
+     "source": "profile",
+     "top_score": 7.3,
+     "top_ids": [
+      "71338",
+      "577",
+      "71557",
+      "71729",
+      "624"
+     ]
+    },
+    {
+     "keyword": "에너지 소비",
+     "source": "profile",
+     "top_score": 7.2,
+     "top_ids": [
+      "71359",
+      "239",
+      "71685",
+      "71763",
+      "71408"
+     ]
+    },
+    {
+     "keyword": "콜센터",
+     "source": "datasets",
+     "top_score": 7.7,
+     "top_ids": [
+      "98",
+      "71970",
+      "100",
+      "470",
+      "71926"
+     ]
+    },
+    {
+     "keyword": "소상공인",
+     "source": "datasets",
+     "top_score": 7.6,
+     "top_ids": [
+      "102",
+      "116",
+      "547",
+      "64",
+      "71922"
+     ]
+    },
+    {
+     "keyword": "정책 텍스트",
+     "source": "profile",
+     "top_score": 7.0,
+     "top_ids": [
+      "569",
+      "580",
+      "71794",
+      "71951",
+      "71811"
+     ]
+    },
+    {
+     "keyword": "민원 상담",
+     "source": "datasets",
+     "top_score": 7.5,
+     "top_ids": [
+      "71852",
+      "71844",
+      "98",
+      "619",
+      "470"
+     ]
+    },
+    {
+     "keyword": "상권",
+     "source": "profile",
+     "top_score": 6.7,
+     "top_ids": [
+      "102",
+      "489",
+      "71298",
+      "116",
+      "71420"
+     ]
+    },
+    {
+     "keyword": "챗봇",
+     "source": "datasets",
+     "top_score": 7.2,
+     "top_ids": [
+      "116",
+      "544",
+      "543",
+      "102",
+      "71675"
+     ]
+    }
+   ],
+   "en": [
+    {
+     "keyword": "power usage pattern",
+     "source": "datasets",
+     "top_score": 7.5,
+     "top_ids": [
+      "71359",
+      "71685",
+      "239",
+      "484",
+      "71682"
+     ]
+    },
+    {
+     "keyword": "headline-body mismatch",
+     "source": "datasets",
+     "top_score": 7.4,
+     "top_ids": [
+      "71338",
+      "71620",
+      "624",
+      "577",
+      "71782"
+     ]
+    },
+    {
+     "keyword": "Korean dialogue",
+     "source": "datasets",
+     "top_score": 7.4,
+     "top_ids": [
+      "116",
+      "71302",
+      "71304",
+      "117",
+      "71694"
+     ]
+    },
+    {
+     "keyword": "financial translation",
+     "source": "datasets",
+     "top_score": 7.3,
+     "top_ids": [
+      "71782",
+      "71610",
+      "125",
+      "71926",
+      "71922"
+     ]
+    },
+    {
+     "keyword": "clickbait",
+     "source": "datasets",
+     "top_score": 7.2,
+     "top_ids": [
+      "71338",
+      "577",
+      "71699",
+      "71304",
+      "89"
+     ]
+    },
+    {
+     "keyword": "chatbot",
+     "source": "datasets",
+     "top_score": 6.4,
+     "top_ids": [
+      "116",
+      "544",
+      "102",
+      "619",
+      "71844"
+     ]
+    },
+    {
+     "keyword": "public sector",
+     "source": "datasets",
+     "top_score": 6.4,
+     "top_ids": [
+      "71852",
+      "71299",
+      "166",
+      "569",
+      "88"
+     ]
+    },
+    {
+     "keyword": "legal tech",
+     "source": "datasets",
+     "top_score": 6.2,
+     "top_ids": [
+      "580",
+      "71835",
+      "71794",
+      "99",
+      "71834"
+     ]
+    }
+   ]
+  },
+  "ell": {
+   "ko": [
+    {
+     "keyword": "번역과 병렬 말뭉치",
+     "source": "profile",
+     "top_score": 9.1,
+     "top_ids": [
+      "126",
+      "71265",
+      "71411",
+      "71266",
+      "609"
+     ]
+    },
+    {
+     "keyword": "번역 말뭉치",
+     "source": "datasets",
+     "top_score": 9.4,
+     "top_ids": [
+      "125",
+      "126",
+      "124",
+      "71749",
+      "71373"
+     ]
+    },
+    {
+     "keyword": "기계번역",
+     "source": "profile",
+     "top_score": 8.8,
+     "top_ids": [
+      "71475",
+      "71593",
+      "71411",
+      "71749",
+      "71646"
+     ]
+    },
+    {
+     "keyword": "학습자 말뭉치",
+     "source": "profile",
+     "top_score": 8.7,
+     "top_ids": [
+      "71463",
+      "126",
+      "71418",
+      "625",
+      "71466"
+     ]
+    },
+    {
+     "keyword": "발음 평가",
+     "source": "profile",
+     "top_score": 8.3,
+     "top_ids": [
+      "71463",
+      "71469",
+      "71466",
+      "71489",
+      "71663"
+     ]
+    },
+    {
+     "keyword": "음성 인식",
+     "source": "profile",
+     "top_score": 8.0,
+     "top_ids": [
+      "96",
+      "71405",
+      "71466",
+      "568",
+      "71314"
+     ]
+    },
+    {
+     "keyword": "문체 분석",
+     "source": "profile",
+     "top_score": 7.8,
+     "top_ids": [
+      "71349",
+      "71486",
+      "625",
+      "71411",
+      "71817"
+     ]
+    },
+    {
+     "keyword": "자막 번역",
+     "source": "profile",
+     "top_score": 7.7,
+     "top_ids": [
+      "71382",
+      "71379",
+      "71373",
+      "71384",
+      "71668"
+     ]
+    },
+    {
+     "keyword": "영어와 AI",
+     "source": "profile",
+     "top_score": 7.7,
+     "top_ids": [
+      "71418",
+      "111",
+      "71668",
+      "71463",
+      "71260"
+     ]
+    },
+    {
+     "keyword": "글쓰기 채점",
+     "source": "datasets",
+     "top_score": 8.2,
+     "top_ids": [
+      "71817",
+      "71818",
+      "71819",
+      "545",
+      "71311"
+     ]
+    }
+   ],
+   "en": [
+    {
+     "keyword": "parallel corpus",
+     "source": "datasets",
+     "top_score": 8.2,
+     "top_ids": [
+      "71865",
+      "546",
+      "126",
+      "71411",
+      "71735"
+     ]
+    },
+    {
+     "keyword": "machine translation",
+     "source": "datasets",
+     "top_score": 7.8,
+     "top_ids": [
+      "71749",
+      "71411",
+      "71593",
+      "71475",
+      "609"
+     ]
+    },
+    {
+     "keyword": "Korean-English",
+     "source": "datasets",
+     "top_score": 7.8,
+     "top_ids": [
+      "126",
+      "124",
+      "71265",
+      "125",
+      "71382"
+     ]
+    },
+    {
+     "keyword": "Korean-Japanese",
+     "source": "datasets",
+     "top_score": 7.8,
+     "top_ids": [
+      "127",
+      "71671",
+      "71464",
+      "546",
+      "71263"
+     ]
+    },
+    {
+     "keyword": "essay scoring",
+     "source": "datasets",
+     "top_score": 7.3,
+     "top_ids": [
+      "545",
+      "71817",
+      "71818",
+      "71819",
+      "71663"
+     ]
+    },
+    {
+     "keyword": "speaking assessment",
+     "source": "datasets",
+     "top_score": 7.3,
+     "top_ids": [
+      "71418",
+      "71663",
+      "71469",
+      "71463",
+      "71466"
+     ]
+    },
+    {
+     "keyword": "speech synthesis",
+     "source": "datasets",
+     "top_score": 7.3,
+     "top_ids": [
+      "542",
+      "466",
+      "71349",
+      "71524",
+      "485"
+     ]
+    },
+    {
+     "keyword": "Korean-Chinese",
+     "source": "datasets",
+     "top_score": 7.2,
+     "top_ids": [
+      "128",
+      "129",
+      "71261",
+      "546",
+      "71490"
+     ]
+    },
+    {
+     "keyword": "broadcast subtitles",
+     "source": "datasets",
+     "top_score": 7.2,
+     "top_ids": [
+      "71379",
+      "71263",
+      "463",
+      "71384",
+      "71382"
+     ]
+    },
+    {
+     "keyword": "multi-speaker",
+     "source": "datasets",
+     "top_score": 7.0,
+     "top_ids": [
+      "542",
+      "464",
+      "71524",
+      "537",
+      "71698"
+     ]
+    }
+   ]
+  },
+  "emse": {
+   "ko": [
+    {
+     "keyword": "설비 고장 예측",
+     "source": "profile",
+     "top_score": 9.0,
+     "top_ids": [
+      "238",
+      "239",
+      "71802",
+      "71810",
+      "71682"
+     ]
+    },
+    {
+     "keyword": "부품 결함 이미지",
+     "source": "profile",
+     "top_score": 8.8,
+     "top_ids": [
+      "578",
+      "579",
+      "71687",
+      "71900",
+      "71690"
+     ]
+    },
+    {
+     "keyword": "자율주행·차량 센서",
+     "source": "profile",
+     "top_score": 8.6,
+     "top_ids": [
+      "629",
+      "71448",
+      "472",
+      "71619",
+      "71617"
+     ]
+    },
+    {
+     "keyword": "물체 잡기",
+     "source": "profile",
+     "top_score": 8.3,
+     "top_ids": [
+      "71599",
+      "71647",
+      "71692",
+      "71825",
+      "71713"
+     ]
+    },
+    {
+     "keyword": "로봇 동작과 비전",
+     "source": "profile",
+     "top_score": 8.0,
+     "top_ids": [
+      "71825",
+      "184",
+      "71713",
+      "71937",
+      "71924"
+     ]
+    },
+    {
+     "keyword": "드론",
+     "source": "profile",
+     "top_score": 8.0,
+     "top_ids": [
+      "647",
+      "182",
+      "190",
+      "183",
+      "71954"
+     ]
+    },
+    {
+     "keyword": "자율주행",
+     "source": "datasets",
+     "top_score": 8.5,
+     "top_ids": [
+      "180",
+      "71623",
+      "191",
+      "71570",
+      "71567"
+     ]
+    },
+    {
+     "keyword": "에너지 설비",
+     "source": "profile",
+     "top_score": 7.9,
+     "top_ids": [
+      "239",
+      "514",
+      "71685",
+      "71763",
+      "71923"
+     ]
+    },
+    {
+     "keyword": "4D 레이다",
+     "source": "datasets",
+     "top_score": 8.3,
+     "top_ids": [
+      "71617",
+      "71619",
+      "71532",
+      "71595",
+      "198"
+     ]
+    },
+    {
+     "keyword": "차량 신호",
+     "source": "profile",
+     "top_score": 7.7,
+     "top_ids": [
+      "71579",
+      "522",
+      "71572",
+      "496",
+      "188"
+     ]
+    }
+   ],
+   "en": [
+    {
+     "keyword": "Machine fault prediction",
+     "source": "profile",
+     "top_score": 8.1,
+     "top_ids": [
+      "238",
+      "71347",
+      "71802",
+      "71810",
+      "239"
+     ]
+    },
+    {
+     "keyword": "4D radar",
+     "source": "datasets",
+     "top_score": 8.0,
+     "top_ids": [
+      "71617",
+      "71619",
+      "71595",
+      "71327",
+      "472"
+     ]
+    },
+    {
+     "keyword": "robot grasping",
+     "source": "datasets",
+     "top_score": 7.8,
+     "top_ids": [
+      "71692",
+      "71713",
+      "71924",
+      "71599",
+      "71825"
+     ]
+    },
+    {
+     "keyword": "hand-object interaction",
+     "source": "datasets",
+     "top_score": 7.8,
+     "top_ids": [
+      "71647",
+      "71601",
+      "71599",
+      "494",
+      "71383"
+     ]
+    },
+    {
+     "keyword": "Robot motion and vision",
+     "source": "profile",
+     "top_score": 7.0,
+     "top_ids": [
+      "184",
+      "71755",
+      "71924",
+      "646",
+      "71825"
+     ]
+    },
+    {
+     "keyword": "Manufacturing inspection",
+     "source": "profile",
+     "top_score": 6.8,
+     "top_ids": [
+      "578",
+      "71927",
+      "579",
+      "71690",
+      "71687"
+     ]
+    },
+    {
+     "keyword": "autonomous driving",
+     "source": "datasets",
+     "top_score": 7.2,
+     "top_ids": [
+      "180",
+      "71623",
+      "71570",
+      "71595",
+      "71590"
+     ]
+    },
+    {
+     "keyword": "delivery robot",
+     "source": "datasets",
+     "top_score": 7.2,
+     "top_ids": [
+      "71574",
+      "646",
+      "71604",
+      "71934",
+      "184"
+     ]
+    },
+    {
+     "keyword": "ship parts",
+     "source": "datasets",
+     "top_score": 7.1,
+     "top_ids": [
+      "579",
+      "71447",
+      "71690",
+      "71443",
+      "199"
+     ]
+    },
+    {
+     "keyword": "driving environment",
+     "source": "datasets",
+     "top_score": 7.1,
+     "top_ids": [
+      "71851",
+      "71619",
+      "71621",
+      "71626",
+      "71623"
+     ]
+    }
+   ]
+  },
+  "env": {
+   "ko": [
+    {
+     "keyword": "쓰레기 분류 이미지",
+     "source": "profile",
+     "top_score": 9.8,
+     "top_ids": [
+      "140",
+      "495",
+      "71385",
+      "137",
+      "71362"
+     ]
+    },
+    {
+     "keyword": "환경 데이터·AI",
+     "source": "profile",
+     "top_score": 9.2,
+     "top_ids": [
+      "141",
+      "71352",
+      "71805",
+      "71370",
+      "71449"
+     ]
+    },
+    {
+     "keyword": "자연재해",
+     "source": "datasets",
+     "top_score": 8.2,
+     "top_ids": [
+      "555",
+      "71943",
+      "556",
+      "636",
+      "71921"
+     ]
+    },
+    {
+     "keyword": "기상",
+     "source": "profile",
+     "top_score": 7.6,
+     "top_ids": [
+      "478",
+      "630",
+      "468",
+      "71370",
+      "71329"
+     ]
+    },
+    {
+     "keyword": "해양 쓰레기",
+     "source": "datasets",
+     "top_score": 8.0,
+     "top_ids": [
+      "236",
+      "71340",
+      "506",
+      "71293",
+      "71594"
+     ]
+    },
+    {
+     "keyword": "탄소흡수원",
+     "source": "datasets",
+     "top_score": 7.8,
+     "top_ids": [
+      "71710",
+      "71712",
+      "71804",
+      "71449",
+      "71352"
+     ]
+    },
+    {
+     "keyword": "홍수",
+     "source": "profile",
+     "top_score": 7.0,
+     "top_ids": [
+      "71494",
+      "556",
+      "71793",
+      "71644",
+      "71643"
+     ]
+    }
+   ],
+   "en": [
+    {
+     "keyword": "water quality forecasting",
+     "source": "datasets",
+     "top_score": 7.7,
+     "top_ids": [
+      "141",
+      "71352",
+      "71370",
+      "71681",
+      "71494"
+     ]
+    },
+    {
+     "keyword": "underwater images",
+     "source": "datasets",
+     "top_score": 7.5,
+     "top_ids": [
+      "71293",
+      "236",
+      "71340",
+      "71328",
+      "71708"
+     ]
+    },
+    {
+     "keyword": "waste plastic",
+     "source": "datasets",
+     "top_score": 7.2,
+     "top_ids": [
+      "495",
+      "71594",
+      "140",
+      "71340",
+      "137"
+     ]
+    },
+    {
+     "keyword": "facility damage",
+     "source": "datasets",
+     "top_score": 7.1,
+     "top_ids": [
+      "555",
+      "71943",
+      "166",
+      "71306",
+      "556"
+     ]
+    },
+    {
+     "keyword": "damage prediction",
+     "source": "datasets",
+     "top_score": 7.0,
+     "top_ids": [
+      "555",
+      "556",
+      "71329",
+      "581",
+      "162"
+     ]
+    },
+    {
+     "keyword": "Landsat",
+     "source": "datasets",
+     "top_score": 6.9,
+     "top_ids": [
+      "71710",
+      "71363",
+      "71361",
+      "641",
+      "142"
+     ]
+    },
+    {
+     "keyword": "fog",
+     "source": "datasets",
+     "top_score": 6.7,
+     "top_ids": [
+      "468",
+      "71578",
+      "483",
+      "630",
+      "71587"
+     ]
+    },
+    {
+     "keyword": "pollution source",
+     "source": "datasets",
+     "top_score": 6.5,
+     "top_ids": [
+      "71766",
+      "71805",
+      "141",
+      "506",
+      "71594"
+     ]
+    },
+    {
+     "keyword": "hazardous weather",
+     "source": "datasets",
+     "top_score": 6.1,
+     "top_ids": [
+      "478",
+      "630",
+      "556",
+      "555",
+      "71933"
+     ]
+    }
+   ]
+  },
+  "gchina": {
+   "ko": [
+    {
+     "keyword": "병렬 말뭉치",
+     "source": "profile",
+     "top_score": 9.4,
+     "top_ids": [
+      "71411",
+      "71265",
+      "546",
+      "71266",
+      "609"
+     ]
+    },
+    {
+     "keyword": "한자 인식",
+     "source": "profile",
+     "top_score": 8.9,
+     "top_ids": [
+      "234",
+      "603",
+      "71294",
+      "504",
+      "91"
+     ]
+    },
+    {
+     "keyword": "기계번역",
+     "source": "profile",
+     "top_score": 8.7,
+     "top_ids": [
+      "71475",
+      "71593",
+      "71411",
+      "71749",
+      "71646"
+     ]
+    },
+    {
+     "keyword": "번역 말뭉치",
+     "source": "datasets",
+     "top_score": 9.2,
+     "top_ids": [
+      "125",
+      "126",
+      "71749",
+      "124",
+      "71498"
+     ]
+    },
+    {
+     "keyword": "한중 번역",
+     "source": "profile",
+     "top_score": 8.3,
+     "top_ids": [
+      "129",
+      "128",
+      "71670",
+      "71749",
+      "71263"
+     ]
+    },
+    {
+     "keyword": "다국어 번역",
+     "source": "datasets",
+     "top_score": 8.2,
+     "top_ids": [
+      "609",
+      "71646",
+      "71496",
+      "71373",
+      "71498"
+     ]
+    },
+    {
+     "keyword": "관광지",
+     "source": "profile",
+     "top_score": 7.6,
+     "top_ids": [
+      "71428",
+      "71596",
+      "71608",
+      "71607",
+      "71600"
+     ]
+    },
+    {
+     "keyword": "다국어 안내",
+     "source": "profile",
+     "top_score": 7.6,
+     "top_ids": [
+      "71428",
+      "71730",
+      "609",
+      "71720",
+      "71686"
+     ]
+    },
+    {
+     "keyword": "자동 통역",
+     "source": "datasets",
+     "top_score": 8.0,
+     "top_ids": [
+      "71379",
+      "71384",
+      "71668",
+      "71462",
+      "71686"
+     ]
+    },
+    {
+     "keyword": "중국어 음성과 회화",
+     "source": "profile",
+     "top_score": 7.4,
+     "top_ids": [
+      "71464",
+      "71670",
+      "71261",
+      "71490",
+      "71462"
+     ]
+    }
+   ],
+   "en": [
+    {
+     "keyword": "translation corpus",
+     "source": "datasets",
+     "top_score": 8.6,
+     "top_ids": [
+      "71749",
+      "71593",
+      "71382",
+      "71373",
+      "71265"
+     ]
+    },
+    {
+     "keyword": "parallel corpus",
+     "source": "datasets",
+     "top_score": 8.1,
+     "top_ids": [
+      "71865",
+      "546",
+      "71411",
+      "71735",
+      "71263"
+     ]
+    },
+    {
+     "keyword": "tourism translation",
+     "source": "datasets",
+     "top_score": 8.1,
+     "top_ids": [
+      "71428",
+      "609",
+      "71553",
+      "71714",
+      "71725"
+     ]
+    },
+    {
+     "keyword": "machine translation",
+     "source": "datasets",
+     "top_score": 7.8,
+     "top_ids": [
+      "71749",
+      "71411",
+      "71593",
+      "71475",
+      "609"
+     ]
+    },
+    {
+     "keyword": "Korean-Japanese",
+     "source": "datasets",
+     "top_score": 7.7,
+     "top_ids": [
+      "127",
+      "71464",
+      "71671",
+      "546",
+      "71789"
+     ]
+    },
+    {
+     "keyword": "Korean-English",
+     "source": "datasets",
+     "top_score": 7.6,
+     "top_ids": [
+      "126",
+      "124",
+      "125",
+      "71265",
+      "71382"
+     ]
+    },
+    {
+     "keyword": "multilingual translation",
+     "source": "datasets",
+     "top_score": 7.5,
+     "top_ids": [
+      "71646",
+      "609",
+      "71496",
+      "71498",
+      "71411"
+     ]
+    },
+    {
+     "keyword": "Korean-Chinese",
+     "source": "datasets",
+     "top_score": 7.4,
+     "top_ids": [
+      "128",
+      "129",
+      "71464",
+      "71670",
+      "546"
+     ]
+    },
+    {
+     "keyword": "text recognition",
+     "source": "datasets",
+     "top_score": 7.2,
+     "top_ids": [
+      "71730",
+      "91",
+      "234",
+      "504",
+      "605"
+     ]
+    },
+    {
+     "keyword": "speaking assessment",
+     "source": "datasets",
+     "top_score": 7.1,
+     "top_ids": [
+      "71418",
+      "71663",
+      "71469",
+      "71466",
+      "71463"
+     ]
+    }
+   ]
+  },
+  "german": {
+   "ko": [
+    {
+     "keyword": "다국어 말뭉치",
+     "source": "profile",
+     "top_score": 9.7,
+     "top_ids": [
+      "609",
+      "71373",
+      "71646",
+      "71411",
+      "71782"
+     ]
+    },
+    {
+     "keyword": "병렬 말뭉치",
+     "source": "datasets",
+     "top_score": 9.4,
+     "top_ids": [
+      "609",
+      "71266",
+      "71411",
+      "71265",
+      "546"
+     ]
+    },
+    {
+     "keyword": "기계번역",
+     "source": "profile",
+     "top_score": 8.7,
+     "top_ids": [
+      "71475",
+      "71593",
+      "71411",
+      "71749",
+      "71646"
+     ]
+    },
+    {
+     "keyword": "독한 번역",
+     "source": "profile",
+     "top_score": 7.8,
+     "top_ids": [
+      "71373",
+      "609",
+      "126",
+      "71384",
+      "71262"
+     ]
+    },
+    {
+     "keyword": "한중 번역",
+     "source": "datasets",
+     "top_score": 8.2,
+     "top_ids": [
+      "129",
+      "128",
+      "71670",
+      "71263",
+      "71749"
+     ]
+    },
+    {
+     "keyword": "한영 번역",
+     "source": "datasets",
+     "top_score": 8.1,
+     "top_ids": [
+      "126",
+      "125",
+      "111",
+      "124",
+      "71265"
+     ]
+    },
+    {
+     "keyword": "한일 번역",
+     "source": "datasets",
+     "top_score": 8.0,
+     "top_ids": [
+      "127",
+      "71263",
+      "546",
+      "71671",
+      "71735"
+     ]
+    },
+    {
+     "keyword": "관광 안내",
+     "source": "profile",
+     "top_score": 7.4,
+     "top_ids": [
+      "71428",
+      "71608",
+      "71725",
+      "71596",
+      "71598"
+     ]
+    },
+    {
+     "keyword": "방송 자막",
+     "source": "datasets",
+     "top_score": 7.7,
+     "top_ids": [
+      "71373",
+      "71263",
+      "71384",
+      "71379",
+      "71382"
+     ]
+    },
+    {
+     "keyword": "통번역",
+     "source": "datasets",
+     "top_score": 7.6,
+     "top_ids": [
+      "71693",
+      "71384",
+      "71379",
+      "71668",
+      "71686"
+     ]
+    }
+   ],
+   "en": [
+    {
+     "keyword": "parallel corpus",
+     "source": "datasets",
+     "top_score": 8.2,
+     "top_ids": [
+      "71865",
+      "546",
+      "71411",
+      "71735",
+      "126"
+     ]
+    },
+    {
+     "keyword": "tourism translation",
+     "source": "datasets",
+     "top_score": 8.1,
+     "top_ids": [
+      "71428",
+      "609",
+      "71553",
+      "71714",
+      "71725"
+     ]
+    },
+    {
+     "keyword": "Korean-Japanese",
+     "source": "datasets",
+     "top_score": 7.8,
+     "top_ids": [
+      "127",
+      "71671",
+      "546",
+      "71464",
+      "71789"
+     ]
+    },
+    {
+     "keyword": "machine translation",
+     "source": "datasets",
+     "top_score": 7.7,
+     "top_ids": [
+      "71749",
+      "71411",
+      "71593",
+      "609",
+      "71475"
+     ]
+    },
+    {
+     "keyword": "Korean-English",
+     "source": "datasets",
+     "top_score": 7.6,
+     "top_ids": [
+      "126",
+      "124",
+      "125",
+      "71265",
+      "71382"
+     ]
+    },
+    {
+     "keyword": "multilingual translation",
+     "source": "datasets",
+     "top_score": 7.3,
+     "top_ids": [
+      "71646",
+      "609",
+      "71496",
+      "71498",
+      "71411"
+     ]
+    },
+    {
+     "keyword": "Korean-Chinese",
+     "source": "datasets",
+     "top_score": 7.2,
+     "top_ids": [
+      "128",
+      "129",
+      "546",
+      "71261",
+      "71670"
+     ]
+    },
+    {
+     "keyword": "tourism chatbot",
+     "source": "datasets",
+     "top_score": 7.1,
+     "top_ids": [
+      "71607",
+      "71608",
+      "71725",
+      "71789",
+      "71605"
+     ]
+    },
+    {
+     "keyword": "multilingual",
+     "source": "datasets",
+     "top_score": 6.9,
+     "top_ids": [
+      "609",
+      "71730",
+      "71524",
+      "71428",
+      "71646"
+     ]
+    },
+    {
+     "keyword": "academic translation",
+     "source": "datasets",
+     "top_score": 6.7,
+     "top_ids": [
+      "71693",
+      "71266",
+      "71496",
+      "125",
+      "71498"
+     ]
+    }
+   ]
+  },
+  "ids": {
+   "ko": [
+    {
+     "keyword": "3D 공간",
+     "source": "datasets",
+     "top_score": 8.4,
+     "top_ids": [
+      "71546",
+      "71741",
+      "550",
+      "71765",
+      "493"
+     ]
+    },
+    {
+     "keyword": "3D 물체",
+     "source": "datasets",
+     "top_score": 8.4,
+     "top_ids": [
+      "71548",
+      "493",
+      "71742",
+      "551",
+      "71542"
+     ]
+    },
+    {
+     "keyword": "로봇",
+     "source": "profile",
+     "top_score": 7.7,
+     "top_ids": [
+      "71937",
+      "71810",
+      "184",
+      "71924",
+      "71713"
+     ]
+    },
+    {
+     "keyword": "일상 사진",
+     "source": "profile",
+     "top_score": 7.6,
+     "top_ids": [
+      "648",
+      "71965",
+      "101",
+      "71548",
+      "71546"
+     ]
+    },
+    {
+     "keyword": "쉬운 텍스트 분석",
+     "source": "profile",
+     "top_score": 7.3,
+     "top_ids": [
+      "543",
+      "580",
+      "71486",
+      "71791",
+      "625"
+     ]
+    },
+    {
+     "keyword": "로봇 에이전트",
+     "source": "datasets",
+     "top_score": 7.1,
+     "top_ids": [
+      "71741",
+      "71825",
+      "71547",
+      "71937",
+      "71548"
+     ]
+    }
+   ],
+   "en": [
+    {
+     "keyword": "3D spaces",
+     "source": "datasets",
+     "top_score": 7.8,
+     "top_ids": [
+      "71546",
+      "71741",
+      "550",
+      "71765",
+      "493"
+     ]
+    },
+    {
+     "keyword": "Korean commands",
+     "source": "datasets",
+     "top_score": 7.2,
+     "top_ids": [
+      "71547",
+      "96",
+      "71743",
+      "95",
+      "71405"
+     ]
+    },
+    {
+     "keyword": "robot teaching",
+     "source": "datasets",
+     "top_score": 7.1,
+     "top_ids": [
+      "71937",
+      "71924",
+      "184",
+      "71692",
+      "71713"
+     ]
+    },
+    {
+     "keyword": "household items",
+     "source": "datasets",
+     "top_score": 6.8,
+     "top_ids": [
+      "71548",
+      "71742",
+      "140",
+      "71821",
+      "476"
+     ]
+    },
+    {
+     "keyword": "lifelogging",
+     "source": "datasets",
+     "top_score": 6.7,
+     "top_ids": [
+      "648",
+      "226",
+      "71703",
+      "71778",
+      "71741"
+     ]
+    },
+    {
+     "keyword": "everyday conversation",
+     "source": "datasets",
+     "top_score": 6.7,
+     "top_ids": [
+      "543",
+      "71678",
+      "117",
+      "71302",
+      "114"
+     ]
+    },
+    {
+     "keyword": "topic dialogue",
+     "source": "datasets",
+     "top_score": 6.7,
+     "top_ids": [
+      "543",
+      "71304",
+      "117",
+      "71694",
+      "71343"
+     ]
+    },
+    {
+     "keyword": "daily activities",
+     "source": "datasets",
+     "top_score": 6.6,
+     "top_ids": [
+      "648",
+      "71548",
+      "71743",
+      "71742",
+      "71546"
+     ]
+    },
+    {
+     "keyword": "manufacturing automation",
+     "source": "datasets",
+     "top_score": 6.5,
+     "top_ids": [
+      "71937",
+      "71820",
+      "71679",
+      "71439",
+      "71802"
+     ]
+    }
+   ]
+  },
+  "imath": {
+   "ko": [
+    {
+     "keyword": "손글씨 수식 인식",
+     "source": "profile",
+     "top_score": 9.2,
+     "top_ids": [
+      "479",
+      "71716",
+      "605",
+      "71300",
+      "91"
+     ]
+    },
+    {
+     "keyword": "수학 문제와 교육",
+     "source": "profile",
+     "top_score": 7.9,
+     "top_ids": [
+      "71718",
+      "71859",
+      "71716",
+      "479",
+      "133"
+     ]
+    },
+    {
+     "keyword": "기계독해",
+     "source": "datasets",
+     "top_score": 8.4,
+     "top_ids": [
+      "71568",
+      "89",
+      "71533",
+      "92",
+      "577"
+     ]
+    },
+    {
+     "keyword": "금융 문서",
+     "source": "datasets",
+     "top_score": 7.9,
+     "top_ids": [
+      "632",
+      "71782",
+      "71610",
+      "71792",
+      "71301"
+     ]
+    },
+    {
+     "keyword": "금융 상담",
+     "source": "datasets",
+     "top_score": 7.9,
+     "top_ids": [
+      "71926",
+      "71792",
+      "71938",
+      "100",
+      "71610"
+     ]
+    },
+    {
+     "keyword": "이미지의 형태 분석",
+     "source": "profile",
+     "top_score": 7.3,
+     "top_ids": [
+      "479",
+      "71290",
+      "471",
+      "632",
+      "71431"
+     ]
+    }
+   ],
+   "en": [
+    {
+     "keyword": "synthetic financial data",
+     "source": "datasets",
+     "top_score": 9.0,
+     "top_ids": [
+      "71792",
+      "71925",
+      "71938",
+      "71922",
+      "71926"
+     ]
+    },
+    {
+     "keyword": "problem generation",
+     "source": "datasets",
+     "top_score": 7.3,
+     "top_ids": [
+      "71718",
+      "71859",
+      "71808",
+      "71716",
+      "71814"
+     ]
+    },
+    {
+     "keyword": "diagram recognition",
+     "source": "datasets",
+     "top_score": 7.2,
+     "top_ids": [
+      "479",
+      "71443",
+      "71465",
+      "71813",
+      "617"
+     ]
+    },
+    {
+     "keyword": "machine reading",
+     "source": "datasets",
+     "top_score": 7.2,
+     "top_ids": [
+      "71568",
+      "92",
+      "89",
+      "71533",
+      "577"
+     ]
+    },
+    {
+     "keyword": "numerical reasoning",
+     "source": "datasets",
+     "top_score": 7.1,
+     "top_ids": [
+      "71568",
+      "71718",
+      "71957",
+      "133",
+      "71288"
+     ]
+    },
+    {
+     "keyword": "auto grading",
+     "source": "datasets",
+     "top_score": 6.5,
+     "top_ids": [
+      "71716",
+      "71337",
+      "71626",
+      "71818",
+      "581"
+     ]
+    }
+   ]
+  },
+  "kfbt": {
+   "ko": [
+    {
+     "keyword": "농산물 품질",
+     "source": "profile",
+     "top_score": 8.9,
+     "top_ids": [
+      "149",
+      "158",
+      "71777",
+      "157",
+      "71746"
+     ]
+    },
+    {
+     "keyword": "음식 이미지",
+     "source": "profile",
+     "top_score": 8.7,
+     "top_ids": [
+      "242",
+      "79",
+      "74",
+      "71564",
+      "71736"
+     ]
+    },
+    {
+     "keyword": "축산물",
+     "source": "profile",
+     "top_score": 8.4,
+     "top_ids": [
+      "158",
+      "145",
+      "71262",
+      "71322",
+      "559"
+     ]
+    },
+    {
+     "keyword": "스마트팜",
+     "source": "datasets",
+     "top_score": 8.8,
+     "top_ids": [
+      "71523",
+      "534",
+      "480",
+      "535",
+      "71344"
+     ]
+    },
+    {
+     "keyword": "수직농장",
+     "source": "datasets",
+     "top_score": 8.3,
+     "top_ids": [
+      "595",
+      "596",
+      "71853",
+      "71829",
+      "524"
+     ]
+    },
+    {
+     "keyword": "발효식품과 미생물",
+     "source": "profile",
+     "top_score": 7.7,
+     "top_ids": [
+      "71473",
+      "71777",
+      "71262",
+      "71504",
+      "79"
+     ]
+    },
+    {
+     "keyword": "농산물",
+     "source": "datasets",
+     "top_score": 8.2,
+     "top_ids": [
+      "149",
+      "157",
+      "634",
+      "524",
+      "71262"
+     ]
+    },
+    {
+     "keyword": "품종 분류",
+     "source": "datasets",
+     "top_score": 8.1,
+     "top_ids": [
+      "71826",
+      "71386",
+      "71500",
+      "524",
+      "71746"
+     ]
+    },
+    {
+     "keyword": "곤충 사육",
+     "source": "datasets",
+     "top_score": 8.0,
+     "top_ids": [
+      "71701",
+      "564",
+      "71525",
+      "71488",
+      "71325"
+     ]
+    },
+    {
+     "keyword": "품질 검사",
+     "source": "datasets",
+     "top_score": 8.0,
+     "top_ids": [
+      "158",
+      "578",
+      "635",
+      "71690",
+      "149"
+     ]
+    }
+   ],
+   "en": [
+    {
+     "keyword": "Food images",
+     "source": "profile",
+     "top_score": 7.9,
+     "top_ids": [
+      "242",
+      "74",
+      "71564",
+      "79",
+      "71736"
+     ]
+    },
+    {
+     "keyword": "variety traits",
+     "source": "datasets",
+     "top_score": 7.7,
+     "top_ids": [
+      "71826",
+      "71386",
+      "490",
+      "524",
+      "520"
+     ]
+    },
+    {
+     "keyword": "smart farm",
+     "source": "datasets",
+     "top_score": 7.3,
+     "top_ids": [
+      "480",
+      "71523",
+      "534",
+      "622",
+      "71344"
+     ]
+    },
+    {
+     "keyword": "produce quality",
+     "source": "datasets",
+     "top_score": 7.3,
+     "top_ids": [
+      "149",
+      "71777",
+      "158",
+      "157",
+      "71746"
+     ]
+    },
+    {
+     "keyword": "vertical farm",
+     "source": "datasets",
+     "top_score": 7.3,
+     "top_ids": [
+      "595",
+      "596",
+      "71853",
+      "71523",
+      "534"
+     ]
+    },
+    {
+     "keyword": "yield prediction",
+     "source": "datasets",
+     "top_score": 7.1,
+     "top_ids": [
+      "157",
+      "71829",
+      "71484",
+      "595",
+      "71511"
+     ]
+    },
+    {
+     "keyword": "kimchi",
+     "source": "datasets",
+     "top_score": 7.0,
+     "top_ids": [
+      "71473",
+      "71777",
+      "79",
+      "71262",
+      "71553"
+     ]
+    },
+    {
+     "keyword": "insect farming",
+     "source": "datasets",
+     "top_score": 7.0,
+     "top_ids": [
+      "564",
+      "71701",
+      "71525",
+      "71527",
+      "71488"
+     ]
+    },
+    {
+     "keyword": "strawberry",
+     "source": "datasets",
+     "top_score": 6.9,
+     "top_ids": [
+      "71451",
+      "596",
+      "71523",
+      "490",
+      "480"
+     ]
+    },
+    {
+     "keyword": "pest trap",
+     "source": "datasets",
+     "top_score": 6.9,
+     "top_ids": [
+      "71527",
+      "71750",
+      "148",
+      "71523",
+      "635"
+     ]
+    }
+   ]
+  },
+  "koreanstudies": {
+   "ko": [
+    {
+     "keyword": "한국어 말뭉치",
+     "source": "profile",
+     "top_score": 9.7,
+     "top_ids": [
+      "653",
+      "624",
+      "126",
+      "625",
+      "71382"
+     ]
+    },
+    {
+     "keyword": "한국어 학습자 데이터",
+     "source": "profile",
+     "top_score": 9.3,
+     "top_ids": [
+      "71479",
+      "71490",
+      "71489",
+      "71469",
+      "71466"
+     ]
+    },
+    {
+     "keyword": "고전·문학 텍스트",
+     "source": "profile",
+     "top_score": 9.1,
+     "top_ids": [
+      "71836",
+      "653",
+      "234",
+      "504",
+      "71294"
+     ]
+    },
+    {
+     "keyword": "한글 인식",
+     "source": "datasets",
+     "top_score": 9.0,
+     "top_ids": [
+      "91",
+      "504",
+      "81",
+      "71295",
+      "105"
+     ]
+    },
+    {
+     "keyword": "방언",
+     "source": "profile",
+     "top_score": 8.1,
+     "top_ids": [
+      "120",
+      "122",
+      "118",
+      "71558",
+      "121"
+     ]
+    },
+    {
+     "keyword": "한자",
+     "source": "profile",
+     "top_score": 8.0,
+     "top_ids": [
+      "234",
+      "603",
+      "71294",
+      "81",
+      "91"
+     ]
+    },
+    {
+     "keyword": "일상대화",
+     "source": "datasets",
+     "top_score": 8.4,
+     "top_ids": [
+      "543",
+      "117",
+      "71678",
+      "71302",
+      "114"
+     ]
+    },
+    {
+     "keyword": "맞춤법 교정",
+     "source": "datasets",
+     "top_score": 8.4,
+     "top_ids": [
+      "71477",
+      "71560",
+      "71308",
+      "71620",
+      "71475"
+     ]
+    },
+    {
+     "keyword": "고전 소설",
+     "source": "profile",
+     "top_score": 7.8,
+     "top_ids": [
+      "71836",
+      "71562",
+      "71696",
+      "234",
+      "485"
+     ]
+    },
+    {
+     "keyword": "대화 생성",
+     "source": "datasets",
+     "top_score": 8.3,
+     "top_ids": [
+      "71694",
+      "71678",
+      "71302",
+      "71674",
+      "71675"
+     ]
+    }
+   ],
+   "en": [
+    {
+     "keyword": "Korean learner data",
+     "source": "profile",
+     "top_score": 9.3,
+     "top_ids": [
+      "71479",
+      "71489",
+      "71490",
+      "71466",
+      "71469"
+     ]
+    },
+    {
+     "keyword": "Korean corpora",
+     "source": "profile",
+     "top_score": 8.5,
+     "top_ids": [
+      "624",
+      "653",
+      "126",
+      "625",
+      "71748"
+     ]
+    },
+    {
+     "keyword": "Korean text recognition",
+     "source": "datasets",
+     "top_score": 8.6,
+     "top_ids": [
+      "81",
+      "91",
+      "105",
+      "504",
+      "71295"
+     ]
+    },
+    {
+     "keyword": "dialogue summarisation",
+     "source": "datasets",
+     "top_score": 7.8,
+     "top_ids": [
+      "117",
+      "591",
+      "71694",
+      "97",
+      "71630"
+     ]
+    },
+    {
+     "keyword": "dialogue generation",
+     "source": "datasets",
+     "top_score": 7.5,
+     "top_ids": [
+      "71694",
+      "71302",
+      "543",
+      "71304",
+      "71630"
+     ]
+    },
+    {
+     "keyword": "story generation",
+     "source": "datasets",
+     "top_score": 7.3,
+     "top_ids": [
+      "71696",
+      "71562",
+      "71836",
+      "71703",
+      "71649"
+     ]
+    },
+    {
+     "keyword": "dialect",
+     "source": "datasets",
+     "top_score": 7.3,
+     "top_ids": [
+      "120",
+      "118",
+      "119",
+      "122",
+      "121"
+     ]
+    },
+    {
+     "keyword": "speech recognition errors",
+     "source": "datasets",
+     "top_score": 7.2,
+     "top_ids": [
+      "71560",
+      "71260",
+      "131",
+      "505",
+      "464"
+     ]
+    },
+    {
+     "keyword": "multi-turn",
+     "source": "datasets",
+     "top_score": 7.0,
+     "top_ids": [
+      "71694",
+      "71860",
+      "71630",
+      "71674",
+      "71675"
+     ]
+    },
+    {
+     "keyword": "everyday conversation",
+     "source": "datasets",
+     "top_score": 6.9,
+     "top_ids": [
+      "543",
+      "71678",
+      "117",
+      "114",
+      "71302"
+     ]
+    }
+   ]
+  },
+  "kuds": {
+   "ko": [
+    {
+     "keyword": "다국어 말뭉치",
+     "source": "profile",
+     "top_score": 9.3,
+     "top_ids": [
+      "609",
+      "71498",
+      "71382",
+      "71782",
+      "71646"
+     ]
+    },
+    {
+     "keyword": "병렬 말뭉치",
+     "source": "datasets",
+     "top_score": 9.4,
+     "top_ids": [
+      "71266",
+      "71265",
+      "71411",
+      "546",
+      "126"
+     ]
+    },
+    {
+     "keyword": "번역 말뭉치",
+     "source": "datasets",
+     "top_score": 9.4,
+     "top_ids": [
+      "125",
+      "126",
+      "124",
+      "71749",
+      "71498"
+     ]
+    },
+    {
+     "keyword": "가짜 뉴스",
+     "source": "profile",
+     "top_score": 7.2,
+     "top_ids": [
+      "71338",
+      "71557",
+      "577",
+      "55",
+      "71620"
+     ]
+    },
+    {
+     "keyword": "사회",
+     "source": "profile",
+     "top_score": 7.2,
+     "top_ids": [
+      "125",
+      "71675",
+      "129",
+      "71343",
+      "71338"
+     ]
+    },
+    {
+     "keyword": "민원 상담",
+     "source": "datasets",
+     "top_score": 7.6,
+     "top_ids": [
+      "71852",
+      "98",
+      "619",
+      "71844",
+      "116"
+     ]
+    },
+    {
+     "keyword": "전문 번역",
+     "source": "datasets",
+     "top_score": 7.6,
+     "top_ids": [
+      "111",
+      "71693",
+      "71262",
+      "71593",
+      "126"
+     ]
+    },
+    {
+     "keyword": "외교 문서 번역",
+     "source": "profile",
+     "top_score": 6.8,
+     "top_ids": [
+      "71720",
+      "125",
+      "71498",
+      "71266",
+      "71693"
+     ]
+    },
+    {
+     "keyword": "공공기관",
+     "source": "datasets",
+     "top_score": 7.3,
+     "top_ids": [
+      "71852",
+      "88",
+      "569",
+      "71299",
+      "71788"
+     ]
+    },
+    {
+     "keyword": "챗봇",
+     "source": "datasets",
+     "top_score": 7.2,
+     "top_ids": [
+      "116",
+      "543",
+      "71675",
+      "544",
+      "71678"
+     ]
+    }
+   ],
+   "en": [
+    {
+     "keyword": "translation corpus",
+     "source": "datasets",
+     "top_score": 8.4,
+     "top_ids": [
+      "71749",
+      "71382",
+      "71593",
+      "71373",
+      "71265"
+     ]
+    },
+    {
+     "keyword": "parallel corpus",
+     "source": "datasets",
+     "top_score": 8.1,
+     "top_ids": [
+      "71865",
+      "546",
+      "126",
+      "71735",
+      "71411"
+     ]
+    },
+    {
+     "keyword": "Korean-Japanese",
+     "source": "datasets",
+     "top_score": 7.8,
+     "top_ids": [
+      "127",
+      "71671",
+      "546",
+      "71464",
+      "71493"
+     ]
+    },
+    {
+     "keyword": "Multilingual translation",
+     "source": "profile",
+     "top_score": 7.2,
+     "top_ids": [
+      "71646",
+      "609",
+      "71496",
+      "71498",
+      "71593"
+     ]
+    },
+    {
+     "keyword": "Korean-English",
+     "source": "datasets",
+     "top_score": 7.7,
+     "top_ids": [
+      "126",
+      "125",
+      "124",
+      "71265",
+      "71382"
+     ]
+    },
+    {
+     "keyword": "machine translation",
+     "source": "datasets",
+     "top_score": 7.6,
+     "top_ids": [
+      "71749",
+      "71411",
+      "71593",
+      "71475",
+      "609"
+     ]
+    },
+    {
+     "keyword": "headline-body mismatch",
+     "source": "datasets",
+     "top_score": 7.5,
+     "top_ids": [
+      "71338",
+      "71620",
+      "577",
+      "126",
+      "624"
+     ]
+    },
+    {
+     "keyword": "Korean dialogue",
+     "source": "datasets",
+     "top_score": 7.4,
+     "top_ids": [
+      "116",
+      "71302",
+      "71694",
+      "126",
+      "71304"
+     ]
+    },
+    {
+     "keyword": "clickbait",
+     "source": "datasets",
+     "top_score": 7.3,
+     "top_ids": [
+      "71338",
+      "577",
+      "71699",
+      "71304",
+      "625"
+     ]
+    },
+    {
+     "keyword": "Korean-Chinese",
+     "source": "datasets",
+     "top_score": 7.1,
+     "top_ids": [
+      "128",
+      "129",
+      "71261",
+      "546",
+      "71464"
+     ]
+    }
+   ]
+  },
+  "kueie": {
+   "ko": [
+    {
+     "keyword": "자율주행·로봇",
+     "source": "profile",
+     "top_score": 8.4,
+     "top_ids": [
+      "184",
+      "71574",
+      "71604",
+      "71755",
+      "646"
+     ]
+    },
+    {
+     "keyword": "로봇 파지",
+     "source": "datasets",
+     "top_score": 8.7,
+     "top_ids": [
+      "71692",
+      "71713",
+      "71924",
+      "71599",
+      "71601"
+     ]
+    },
+    {
+     "keyword": "실내 공간",
+     "source": "datasets",
+     "top_score": 8.4,
+     "top_ids": [
+      "550",
+      "71741",
+      "71765",
+      "71546",
+      "71810"
+     ]
+    },
+    {
+     "keyword": "4D 레이다",
+     "source": "datasets",
+     "top_score": 8.3,
+     "top_ids": [
+      "71617",
+      "71619",
+      "71532",
+      "71595",
+      "198"
+     ]
+    },
+    {
+     "keyword": "신호처리·영상처리",
+     "source": "profile",
+     "top_score": 7.4,
+     "top_ids": [
+      "71954",
+      "483",
+      "71579",
+      "496",
+      "71543"
+     ]
+    },
+    {
+     "keyword": "무선 신호",
+     "source": "profile",
+     "top_score": 7.3,
+     "top_ids": [
+      "71954",
+      "71420",
+      "71889",
+      "71966",
+      "71572"
+     ]
+    },
+    {
+     "keyword": "생체 신호와 헬스케어",
+     "source": "profile",
+     "top_score": 7.2,
+     "top_ids": [
+      "71966",
+      "71803",
+      "71526",
+      "71762",
+      "226"
+     ]
+    },
+    {
+     "keyword": "영상과 컴퓨터 비전",
+     "source": "profile",
+     "top_score": 6.9,
+     "top_ids": [
+      "71491",
+      "71866",
+      "483",
+      "76",
+      "71461"
+     ]
+    },
+    {
+     "keyword": "로봇 에이전트",
+     "source": "datasets",
+     "top_score": 7.3,
+     "top_ids": [
+      "71741",
+      "71825",
+      "71547",
+      "71937",
+      "71743"
+     ]
+    },
+    {
+     "keyword": "시뮬레이션",
+     "source": "datasets",
+     "top_score": 6.6,
+     "top_ids": [
+      "71448",
+      "71854",
+      "71958",
+      "71595",
+      "71936"
+     ]
+    }
+   ],
+   "en": [
+    {
+     "keyword": "4D radar",
+     "source": "datasets",
+     "top_score": 8.0,
+     "top_ids": [
+      "71617",
+      "71619",
+      "71327",
+      "71595",
+      "198"
+     ]
+    },
+    {
+     "keyword": "indoor 3D",
+     "source": "datasets",
+     "top_score": 8.0,
+     "top_ids": [
+      "550",
+      "71542",
+      "69",
+      "71765",
+      "71574"
+     ]
+    },
+    {
+     "keyword": "indoor-outdoor driving",
+     "source": "datasets",
+     "top_score": 7.9,
+     "top_ids": [
+      "71574",
+      "630",
+      "71604",
+      "71576",
+      "194"
+     ]
+    },
+    {
+     "keyword": "robot grasping",
+     "source": "datasets",
+     "top_score": 7.6,
+     "top_ids": [
+      "71692",
+      "71713",
+      "71924",
+      "71599",
+      "71825"
+     ]
+    },
+    {
+     "keyword": "Self-driving and robots",
+     "source": "profile",
+     "top_score": 6.8,
+     "top_ids": [
+      "71574",
+      "184",
+      "71604",
+      "646",
+      "71755"
+     ]
+    },
+    {
+     "keyword": "drone detection",
+     "source": "datasets",
+     "top_score": 7.1,
+     "top_ids": [
+      "71954",
+      "182",
+      "183",
+      "647",
+      "71856"
+     ]
+    },
+    {
+     "keyword": "driving environment",
+     "source": "datasets",
+     "top_score": 7.0,
+     "top_ids": [
+      "71851",
+      "71619",
+      "71621",
+      "71757",
+      "71623"
+     ]
+    },
+    {
+     "keyword": "gait analysis",
+     "source": "datasets",
+     "top_score": 6.8,
+     "top_ids": [
+      "71526",
+      "71966",
+      "71878",
+      "159",
+      "62"
+     ]
+    },
+    {
+     "keyword": "smart insole",
+     "source": "datasets",
+     "top_score": 6.6,
+     "top_ids": [
+      "71966",
+      "71526",
+      "71803",
+      "71737",
+      "71741"
+     ]
+    },
+    {
+     "keyword": "virtual sensors",
+     "source": "datasets",
+     "top_score": 6.1,
+     "top_ids": [
+      "71448",
+      "71936",
+      "71803",
+      "239",
+      "71595"
+     ]
+    }
+   ]
+  },
+  "pubs": {
+   "ko": [
+    {
+     "keyword": "민원 텍스트",
+     "source": "profile",
+     "top_score": 8.3,
+     "top_ids": [
+      "619",
+      "71852",
+      "98",
+      "492",
+      "71844"
+     ]
+    },
+    {
+     "keyword": "상담 기록",
+     "source": "profile",
+     "top_score": 8.0,
+     "top_ids": [
+      "71680",
+      "470",
+      "71806",
+      "71618",
+      "71803"
+     ]
+    },
+    {
+     "keyword": "상담 대화",
+     "source": "profile",
+     "top_score": 7.7,
+     "top_ids": [
+      "470",
+      "100",
+      "71618",
+      "71305",
+      "544"
+     ]
+    },
+    {
+     "keyword": "콜센터",
+     "source": "datasets",
+     "top_score": 7.8,
+     "top_ids": [
+      "98",
+      "470",
+      "71970",
+      "100",
+      "71844"
+     ]
+    },
+    {
+     "keyword": "노인 돌봄",
+     "source": "profile",
+     "top_score": 7.2,
+     "top_ids": [
+      "71803",
+      "167",
+      "71703",
+      "107",
+      "226"
+     ]
+    },
+    {
+     "keyword": "복지 서비스",
+     "source": "profile",
+     "top_score": 7.1,
+     "top_ids": [
+      "470",
+      "71803",
+      "71267",
+      "71966",
+      "167"
+     ]
+    },
+    {
+     "keyword": "공공기관",
+     "source": "datasets",
+     "top_score": 7.4,
+     "top_ids": [
+      "71852",
+      "88",
+      "569",
+      "71299",
+      "166"
+     ]
+    },
+    {
+     "keyword": "범죄와 안전",
+     "source": "profile",
+     "top_score": 6.7,
+     "top_ids": [
+      "515",
+      "171",
+      "71953",
+      "170",
+      "174"
+     ]
+    },
+    {
+     "keyword": "주거",
+     "source": "profile",
+     "top_score": 6.6,
+     "top_ids": [
+      "515",
+      "567",
+      "101",
+      "71803",
+      "71546"
+     ]
+    },
+    {
+     "keyword": "챗봇",
+     "source": "datasets",
+     "top_score": 7.1,
+     "top_ids": [
+      "116",
+      "71675",
+      "544",
+      "543",
+      "71343"
+     ]
+    }
+   ],
+   "en": [
+    {
+     "keyword": "Korean dialogue",
+     "source": "datasets",
+     "top_score": 7.3,
+     "top_ids": [
+      "116",
+      "71302",
+      "71694",
+      "71304",
+      "71305"
+     ]
+    },
+    {
+     "keyword": "welfare counselling",
+     "source": "datasets",
+     "top_score": 7.0,
+     "top_ids": [
+      "470",
+      "71806",
+      "71680",
+      "71618",
+      "71803"
+     ]
+    },
+    {
+     "keyword": "social science",
+     "source": "datasets",
+     "top_score": 6.9,
+     "top_ids": [
+      "71675",
+      "125",
+      "129",
+      "71343",
+      "71845"
+     ]
+    },
+    {
+     "keyword": "abnormal behaviour",
+     "source": "datasets",
+     "top_score": 6.7,
+     "top_ids": [
+      "515",
+      "171",
+      "174",
+      "71550",
+      "167"
+     ]
+    },
+    {
+     "keyword": "public sector",
+     "source": "datasets",
+     "top_score": 6.7,
+     "top_ids": [
+      "71852",
+      "166",
+      "88",
+      "569",
+      "619"
+     ]
+    },
+    {
+     "keyword": "chatbot",
+     "source": "datasets",
+     "top_score": 6.3,
+     "top_ids": [
+      "116",
+      "544",
+      "619",
+      "102",
+      "71304"
+     ]
+    },
+    {
+     "keyword": "elderly living alone",
+     "source": "datasets",
+     "top_score": 6.3,
+     "top_ids": [
+      "71803",
+      "167",
+      "159",
+      "107",
+      "71641"
+     ]
+    }
+   ]
+  },
+  "sfa_business": {
+   "ko": [
+    {
+     "keyword": "스포츠 데이터",
+     "source": "profile",
+     "top_score": 8.8,
+     "top_ids": [
+      "488",
+      "71942",
+      "66",
+      "65",
+      "549"
+     ]
+    },
+    {
+     "keyword": "영상 이해",
+     "source": "datasets",
+     "top_score": 8.7,
+     "top_ids": [
+      "71",
+      "71866",
+      "76",
+      "467",
+      "72"
+     ]
+    },
+    {
+     "keyword": "영상 요약",
+     "source": "datasets",
+     "top_score": 8.6,
+     "top_ids": [
+      "60",
+      "616",
+      "71702",
+      "467",
+      "591"
+     ]
+    },
+    {
+     "keyword": "경기 영상",
+     "source": "profile",
+     "top_score": 7.7,
+     "top_ids": [
+      "71482",
+      "71635",
+      "549",
+      "71634",
+      "71738"
+     ]
+    },
+    {
+     "keyword": "핸드볼",
+     "source": "datasets",
+     "top_score": 8.2,
+     "top_ids": [
+      "71634",
+      "71941",
+      "549",
+      "71942",
+      "71435"
+     ]
+    },
+    {
+     "keyword": "축구",
+     "source": "datasets",
+     "top_score": 8.0,
+     "top_ids": [
+      "71406",
+      "67",
+      "71482",
+      "71435",
+      "71634"
+     ]
+    },
+    {
+     "keyword": "공 궤적",
+     "source": "datasets",
+     "top_score": 7.7,
+     "top_ids": [
+      "71406",
+      "71726",
+      "66",
+      "67",
+      "71958"
+     ]
+    },
+    {
+     "keyword": "스윙",
+     "source": "datasets",
+     "top_score": 7.4,
+     "top_ids": [
+      "65",
+      "71726",
+      "71612",
+      "71611",
+      "488"
+     ]
+    },
+    {
+     "keyword": "자세 교정",
+     "source": "datasets",
+     "top_score": 6.7,
+     "top_ids": [
+      "231",
+      "71312",
+      "71439",
+      "71422",
+      "209"
+     ]
+    }
+   ],
+   "en": [
+    {
+     "keyword": "video understanding",
+     "source": "datasets",
+     "top_score": 8.0,
+     "top_ids": [
+      "71",
+      "71866",
+      "467",
+      "71495",
+      "71492"
+     ]
+    },
+    {
+     "keyword": "video summarisation",
+     "source": "datasets",
+     "top_score": 7.9,
+     "top_ids": [
+      "60",
+      "616",
+      "71492",
+      "467",
+      "71702"
+     ]
+    },
+    {
+     "keyword": "kick motion",
+     "source": "datasets",
+     "top_score": 7.9,
+     "top_ids": [
+      "71406",
+      "67",
+      "71424",
+      "71482",
+      "71315"
+     ]
+    },
+    {
+     "keyword": "robot umpire",
+     "source": "datasets",
+     "top_score": 7.2,
+     "top_ids": [
+      "71726",
+      "488",
+      "71937",
+      "71612",
+      "71634"
+     ]
+    },
+    {
+     "keyword": "Pilates",
+     "source": "datasets",
+     "top_score": 7.2,
+     "top_ids": [
+      "71312",
+      "231",
+      "71422",
+      "71313",
+      "71315"
+     ]
+    },
+    {
+     "keyword": "baseball",
+     "source": "datasets",
+     "top_score": 7.1,
+     "top_ids": [
+      "488",
+      "71726",
+      "549",
+      "71435",
+      "66"
+     ]
+    },
+    {
+     "keyword": "handball",
+     "source": "datasets",
+     "top_score": 7.1,
+     "top_ids": [
+      "71634",
+      "71941",
+      "549",
+      "71435",
+      "71942"
+     ]
+    },
+    {
+     "keyword": "broadcast video",
+     "source": "datasets",
+     "top_score": 7.0,
+     "top_ids": [
+      "71",
+      "76",
+      "71967",
+      "72",
+      "71959"
+     ]
+    },
+    {
+     "keyword": "tactical analysis",
+     "source": "datasets",
+     "top_score": 7.0,
+     "top_ids": [
+      "71482",
+      "71635",
+      "71634",
+      "71941",
+      "71259"
+     ]
+    },
+    {
+     "keyword": "golf",
+     "source": "datasets",
+     "top_score": 6.9,
+     "top_ids": [
+      "65",
+      "71790",
+      "71612",
+      "488",
+      "71406"
+     ]
+    }
+   ]
+  },
+  "sfa_science": {
+   "ko": [
+    {
+     "keyword": "3D 자세",
+     "source": "datasets",
+     "top_score": 8.9,
+     "top_ids": [
+      "209",
+      "61",
+      "71541",
+      "71534",
+      "71528"
+     ]
+    },
+    {
+     "keyword": "동작 인식",
+     "source": "datasets",
+     "top_score": 8.6,
+     "top_ids": [
+      "62",
+      "71422",
+      "61",
+      "71468",
+      "71738"
+     ]
+    },
+    {
+     "keyword": "체형 추정",
+     "source": "datasets",
+     "top_score": 8.6,
+     "top_ids": [
+      "560",
+      "71541",
+      "71704",
+      "209",
+      "71535"
+     ]
+    },
+    {
+     "keyword": "운동 영상",
+     "source": "profile",
+     "top_score": 8.0,
+     "top_ids": [
+      "231",
+      "71422",
+      "62",
+      "71312",
+      "592"
+     ]
+    },
+    {
+     "keyword": "관절 키포인트",
+     "source": "profile",
+     "top_score": 7.6,
+     "top_ids": [
+      "231",
+      "71461",
+      "71406",
+      "71966",
+      "71317"
+     ]
+    },
+    {
+     "keyword": "경기 영상",
+     "source": "profile",
+     "top_score": 7.5,
+     "top_ids": [
+      "71482",
+      "71635",
+      "549",
+      "71738",
+      "71634"
+     ]
+    },
+    {
+     "keyword": "축구",
+     "source": "datasets",
+     "top_score": 8.0,
+     "top_ids": [
+      "71406",
+      "67",
+      "71482",
+      "71435",
+      "71634"
+     ]
+    },
+    {
+     "keyword": "야구",
+     "source": "datasets",
+     "top_score": 8.0,
+     "top_ids": [
+      "71726",
+      "488",
+      "71942",
+      "71435",
+      "549"
+     ]
+    },
+    {
+     "keyword": "핸드볼",
+     "source": "datasets",
+     "top_score": 8.0,
+     "top_ids": [
+      "71634",
+      "71941",
+      "549",
+      "66",
+      "71942"
+     ]
+    },
+    {
+     "keyword": "웨어러블과 생체 신호",
+     "source": "profile",
+     "top_score": 7.3,
+     "top_ids": [
+      "71966",
+      "226",
+      "71803",
+      "71526",
+      "62"
+     ]
+    }
+   ],
+   "en": [
+    {
+     "keyword": "Korean anthropometry",
+     "source": "datasets",
+     "top_score": 8.7,
+     "top_ids": [
+      "560",
+      "71541",
+      "71704",
+      "61",
+      "71539"
+     ]
+    },
+    {
+     "keyword": "multi-person motion",
+     "source": "datasets",
+     "top_score": 8.3,
+     "top_ids": [
+      "71534",
+      "61",
+      "71528",
+      "620",
+      "71536"
+     ]
+    },
+    {
+     "keyword": "kick motion",
+     "source": "datasets",
+     "top_score": 8.0,
+     "top_ids": [
+      "71406",
+      "67",
+      "71424",
+      "71482",
+      "71526"
+     ]
+    },
+    {
+     "keyword": "3D pose",
+     "source": "datasets",
+     "top_score": 7.8,
+     "top_ids": [
+      "209",
+      "71534",
+      "71815",
+      "61",
+      "71541"
+     ]
+    },
+    {
+     "keyword": "Movement analysis",
+     "source": "profile",
+     "top_score": 7.1,
+     "top_ids": [
+      "71422",
+      "71315",
+      "71312",
+      "604",
+      "71635"
+     ]
+    },
+    {
+     "keyword": "sports motion",
+     "source": "datasets",
+     "top_score": 7.4,
+     "top_ids": [
+      "65",
+      "592",
+      "66",
+      "67",
+      "71468"
+     ]
+    },
+    {
+     "keyword": "Wearables and biosignals",
+     "source": "profile",
+     "top_score": 6.5,
+     "top_ids": [
+      "71966",
+      "226",
+      "71526",
+      "71803",
+      "71641"
+     ]
+    },
+    {
+     "keyword": "baseball",
+     "source": "datasets",
+     "top_score": 7.0,
+     "top_ids": [
+      "488",
+      "71726",
+      "549",
+      "71435",
+      "66"
+     ]
+    },
+    {
+     "keyword": "handball",
+     "source": "datasets",
+     "top_score": 7.0,
+     "top_ids": [
+      "71634",
+      "71941",
+      "71647",
+      "549",
+      "71435"
+     ]
+    },
+    {
+     "keyword": "robot umpire",
+     "source": "datasets",
+     "top_score": 7.0,
+     "top_ids": [
+      "71726",
+      "488",
+      "71937",
+      "71612",
+      "71634"
+     ]
+    }
+   ]
+  },
+  "software": {
+   "ko": [
+    {
+     "keyword": "거대언어모델",
+     "source": "profile",
+     "top_score": 8.6,
+     "top_ids": [
+      "71748",
+      "71788",
+      "71760",
+      "624",
+      "653"
+     ]
+    },
+    {
+     "keyword": "자율주행",
+     "source": "profile",
+     "top_score": 8.5,
+     "top_ids": [
+      "180",
+      "71623",
+      "191",
+      "71570",
+      "71621"
+     ]
+    },
+    {
+     "keyword": "주행 영상",
+     "source": "profile",
+     "top_score": 8.3,
+     "top_ids": [
+      "180",
+      "71566",
+      "184",
+      "654",
+      "195"
+     ]
+    },
+    {
+     "keyword": "한국형 비전",
+     "source": "datasets",
+     "top_score": 8.5,
+     "top_ids": [
+      "71452",
+      "71454",
+      "71456",
+      "71453",
+      "71461"
+     ]
+    },
+    {
+     "keyword": "농축산 스마트팜",
+     "source": "profile",
+     "top_score": 7.9,
+     "top_ids": [
+      "71523",
+      "574",
+      "71763",
+      "575",
+      "622"
+     ]
+    },
+    {
+     "keyword": "운전자 모니터링",
+     "source": "datasets",
+     "top_score": 8.4,
+     "top_ids": [
+      "651",
+      "173",
+      "650",
+      "71851",
+      "71421"
+     ]
+    },
+    {
+     "keyword": "4D 레이다",
+     "source": "datasets",
+     "top_score": 8.2,
+     "top_ids": [
+      "71617",
+      "71619",
+      "71532",
+      "472",
+      "71595"
+     ]
+    },
+    {
+     "keyword": "사고 위험",
+     "source": "datasets",
+     "top_score": 8.1,
+     "top_ids": [
+      "71851",
+      "71407",
+      "71758",
+      "71854",
+      "71958"
+     ]
+    },
+    {
+     "keyword": "언어 모델과 챗봇",
+     "source": "profile",
+     "top_score": 7.4,
+     "top_ids": [
+      "71748",
+      "543",
+      "71630",
+      "71343",
+      "71302"
+     ]
+    },
+    {
+     "keyword": "센서 융합",
+     "source": "datasets",
+     "top_score": 7.8,
+     "top_ids": [
+      "629",
+      "71948",
+      "472",
+      "71617",
+      "71267"
+     ]
+    }
+   ],
+   "en": [
+    {
+     "keyword": "4D radar",
+     "source": "datasets",
+     "top_score": 7.9,
+     "top_ids": [
+      "71617",
+      "71619",
+      "71327",
+      "71595",
+      "472"
+     ]
+    },
+    {
+     "keyword": "driver monitoring",
+     "source": "datasets",
+     "top_score": 7.5,
+     "top_ids": [
+      "651",
+      "173",
+      "71851",
+      "650",
+      "71421"
+     ]
+    },
+    {
+     "keyword": "Smart farming",
+     "source": "profile",
+     "top_score": 6.8,
+     "top_ids": [
+      "71523",
+      "480",
+      "534",
+      "595",
+      "71344"
+     ]
+    },
+    {
+     "keyword": "dialogue generation",
+     "source": "datasets",
+     "top_score": 7.3,
+     "top_ids": [
+      "71694",
+      "71302",
+      "543",
+      "71304",
+      "71630"
+     ]
+    },
+    {
+     "keyword": "autonomous driving",
+     "source": "datasets",
+     "top_score": 7.2,
+     "top_ids": [
+      "180",
+      "71623",
+      "71570",
+      "71595",
+      "71590"
+     ]
+    },
+    {
+     "keyword": "driving environment",
+     "source": "datasets",
+     "top_score": 7.1,
+     "top_ids": [
+      "71851",
+      "71621",
+      "71619",
+      "71258",
+      "71623"
+     ]
+    },
+    {
+     "keyword": "accident risk",
+     "source": "datasets",
+     "top_score": 7.0,
+     "top_ids": [
+      "71851",
+      "71958",
+      "71758",
+      "597",
+      "71854"
+     ]
+    },
+    {
+     "keyword": "sensor fusion",
+     "source": "datasets",
+     "top_score": 6.9,
+     "top_ids": [
+      "629",
+      "472",
+      "71617",
+      "71691",
+      "71948"
+     ]
+    },
+    {
+     "keyword": "everyday conversation",
+     "source": "datasets",
+     "top_score": 6.8,
+     "top_ids": [
+      "543",
+      "71678",
+      "117",
+      "114",
+      "71302"
+     ]
+    },
+    {
+     "keyword": "driving video",
+     "source": "datasets",
+     "top_score": 6.8,
+     "top_ids": [
+      "180",
+      "71851",
+      "651",
+      "654",
+      "195"
+     ]
+    }
+   ]
+  },
+  "spa": {
+   "ko": [
+    {
+     "keyword": "공공 데이터와 통계",
+     "source": "profile",
+     "top_score": 8.8,
+     "top_ids": [
+      "71852",
+      "71299",
+      "88",
+      "619",
+      "166"
+     ]
+    },
+    {
+     "keyword": "민원 분류",
+     "source": "profile",
+     "top_score": 8.4,
+     "top_ids": [
+      "619",
+      "492",
+      "71852",
+      "98",
+      "71844"
+     ]
+    },
+    {
+     "keyword": "이상행동",
+     "source": "datasets",
+     "top_score": 8.1,
+     "top_ids": [
+      "171",
+      "515",
+      "71550",
+      "174",
+      "651"
+     ]
+    },
+    {
+     "keyword": "지능형 관제",
+     "source": "datasets",
+     "top_score": 7.9,
+     "top_ids": [
+      "71850",
+      "71530",
+      "522",
+      "71573",
+      "71572"
+     ]
+    },
+    {
+     "keyword": "법령과 판례",
+     "source": "profile",
+     "top_score": 7.3,
+     "top_ids": [
+      "580",
+      "71723",
+      "99",
+      "71841",
+      "71722"
+     ]
+    },
+    {
+     "keyword": "헌법·행정법·민법·형법",
+     "source": "profile",
+     "top_score": 6.9,
+     "top_ids": [
+      "71847",
+      "71848",
+      "580",
+      "71487",
+      "71841"
+     ]
+    },
+    {
+     "keyword": "도시 문제",
+     "source": "profile",
+     "top_score": 6.7,
+     "top_ids": [
+      "492",
+      "166",
+      "491",
+      "585",
+      "567"
+     ]
+    },
+    {
+     "keyword": "법률 상담",
+     "source": "datasets",
+     "top_score": 7.2,
+     "top_ids": [
+      "99",
+      "71843",
+      "71841",
+      "71835",
+      "71720"
+     ]
+    },
+    {
+     "keyword": "CCTV",
+     "source": "profile",
+     "top_score": 6.6,
+     "top_ids": [
+      "171",
+      "174",
+      "71850",
+      "477",
+      "160"
+     ]
+    },
+    {
+     "keyword": "규제정책",
+     "source": "profile",
+     "top_score": 6.5,
+     "top_ids": [
+      "71807",
+      "71889",
+      "71951",
+      "569",
+      "71952"
+     ]
+    }
+   ],
+   "en": [
+    {
+     "keyword": "crowd density",
+     "source": "datasets",
+     "top_score": 7.0,
+     "top_ids": [
+      "71368",
+      "241",
+      "489",
+      "71420",
+      "71850"
+     ]
+    },
+    {
+     "keyword": "abnormal behaviour",
+     "source": "datasets",
+     "top_score": 6.7,
+     "top_ids": [
+      "515",
+      "171",
+      "174",
+      "71550",
+      "651"
+     ]
+    },
+    {
+     "keyword": "public sector",
+     "source": "datasets",
+     "top_score": 6.7,
+     "top_ids": [
+      "71852",
+      "88",
+      "166",
+      "569",
+      "619"
+     ]
+    },
+    {
+     "keyword": "everyday law",
+     "source": "datasets",
+     "top_score": 6.7,
+     "top_ids": [
+      "99",
+      "71841",
+      "71847",
+      "71835",
+      "580"
+     ]
+    },
+    {
+     "keyword": "smart surveillance",
+     "source": "datasets",
+     "top_score": 6.5,
+     "top_ids": [
+      "71850",
+      "71953",
+      "71858",
+      "171",
+      "71679"
+     ]
+    },
+    {
+     "keyword": "chatbot",
+     "source": "datasets",
+     "top_score": 6.2,
+     "top_ids": [
+      "116",
+      "619",
+      "544",
+      "102",
+      "71773"
+     ]
+    }
+   ]
+  },
+  "sti": {
+   "ko": [
+    {
+     "keyword": "특허 분류",
+     "source": "profile",
+     "top_score": 9.3,
+     "top_ids": [
+      "71531",
+      "547",
+      "71739",
+      "563",
+      "71917"
+     ]
+    },
+    {
+     "keyword": "유사 특허 검색",
+     "source": "profile",
+     "top_score": 8.7,
+     "top_ids": [
+      "113",
+      "71285",
+      "563",
+      "71764",
+      "71919"
+     ]
+    },
+    {
+     "keyword": "특허 문서",
+     "source": "profile",
+     "top_score": 8.3,
+     "top_ids": [
+      "71919",
+      "71739",
+      "71917",
+      "113",
+      "71735"
+     ]
+    },
+    {
+     "keyword": "지재권 판례",
+     "source": "profile",
+     "top_score": 8.2,
+     "top_ids": [
+      "71843",
+      "71298",
+      "71723",
+      "71968",
+      "63"
+     ]
+    },
+    {
+     "keyword": "AI와 지식재산",
+     "source": "profile",
+     "top_score": 8.2,
+     "top_ids": [
+      "71843",
+      "71919",
+      "71298",
+      "563",
+      "71290"
+     ]
+    },
+    {
+     "keyword": "상표와 디자인",
+     "source": "profile",
+     "top_score": 8.0,
+     "top_ids": [
+      "63",
+      "71290",
+      "71298",
+      "71285",
+      "71440"
+     ]
+    },
+    {
+     "keyword": "유사 이미지 검색",
+     "source": "datasets",
+     "top_score": 8.2,
+     "top_ids": [
+      "71764",
+      "71285",
+      "71279",
+      "71290",
+      "71414"
+     ]
+    },
+    {
+     "keyword": "법률 텍스트",
+     "source": "profile",
+     "top_score": 7.5,
+     "top_ids": [
+      "71843",
+      "580",
+      "71794",
+      "71835",
+      "110"
+     ]
+    },
+    {
+     "keyword": "법률 질의응답",
+     "source": "profile",
+     "top_score": 7.4,
+     "top_ids": [
+      "71843",
+      "71610",
+      "99",
+      "71848",
+      "71841"
+     ]
+    },
+    {
+     "keyword": "리걸테크",
+     "source": "datasets",
+     "top_score": 7.9,
+     "top_ids": [
+      "71835",
+      "71968",
+      "99",
+      "580",
+      "71722"
+     ]
+    }
+   ],
+   "en": [
+    {
+     "keyword": "patent classification",
+     "source": "datasets",
+     "top_score": 8.6,
+     "top_ids": [
+      "547",
+      "71739",
+      "71531",
+      "563",
+      "71917"
+     ]
+    },
+    {
+     "keyword": "Vienna code",
+     "source": "datasets",
+     "top_score": 7.8,
+     "top_ids": [
+      "71764",
+      "63",
+      "71285",
+      "71290",
+      "71298"
+     ]
+    },
+    {
+     "keyword": "parallel corpus",
+     "source": "datasets",
+     "top_score": 7.5,
+     "top_ids": [
+      "71735",
+      "71865",
+      "546",
+      "71411",
+      "126"
+     ]
+    },
+    {
+     "keyword": "patent drawings",
+     "source": "datasets",
+     "top_score": 7.4,
+     "top_ids": [
+      "71919",
+      "71531",
+      "113",
+      "71290",
+      "563"
+     ]
+    },
+    {
+     "keyword": "de-identification",
+     "source": "datasets",
+     "top_score": 6.9,
+     "top_ids": [
+      "71968",
+      "71967",
+      "71818",
+      "117",
+      "71307"
+     ]
+    },
+    {
+     "keyword": "Legal text",
+     "source": "profile",
+     "top_score": 6.3,
+     "top_ids": [
+      "580",
+      "71843",
+      "71835",
+      "99",
+      "71951"
+     ]
+    },
+    {
+     "keyword": "text classification",
+     "source": "datasets",
+     "top_score": 6.5,
+     "top_ids": [
+      "71807",
+      "71486",
+      "102",
+      "63",
+      "547"
+     ]
+    },
+    {
+     "keyword": "intellectual property",
+     "source": "datasets",
+     "top_score": 6.4,
+     "top_ids": [
+      "71843",
+      "71298",
+      "113",
+      "71919",
+      "71917"
+     ]
+    }
+   ]
+  }
+ }
+}

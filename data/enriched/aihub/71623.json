@@ -1,0 +1,29 @@
+{
+ "dataset_id": "71623",
+ "title_en": "Passenger autonomous car daytime expressway data",
+ "summary_ko": "레벨 4 자율주행 센서를 단 승용차가 낮에 자동차 전용도로를 정기 주행하며 모은 카메라 이미지와 라이다 점군 161,600세트로, 2D 분할·상자와 3D 상자, 위치·인지·판단·제어 데이터가 함께 있습니다. 고속 주행 환경의 자율주행 인지 AI에 쓸 수 있습니다.",
+ "summary_en": "161,600 sets of camera images and LiDAR point clouds from a level-4 sensor car regularly driving daytime expressways, with 2D segmentation and boxes, 3D boxes, and position, perception, decision and control data. For self-driving perception on high-speed roads.",
+ "contents_ko": "카메라 이미지(jpg) + 라이다(pcd) + JSON(2D 분할·상자, 3D 상자, 위치·제어 정보).",
+ "contents_en": "Camera image (jpg) + LiDAR (pcd) + JSON (2D segmentation and boxes, 3D boxes, position and control info).",
+ "modalities": ["image", "3d"],
+ "tasks": ["segmentation", "object_detection"],
+ "topics": [{"ko": "자율주행", "en": "Autonomous driving"}, {"ko": "고속도로 교통", "en": "Expressway traffic"}],
+ "keywords_ko": ["자율주행", "자동차 전용도로", "라이다", "의미 분할", "3D 탐지", "주간"],
+ "keywords_en": ["autonomous driving", "expressway", "LiDAR", "semantic segmentation", "3D detection", "daytime"],
+ "labels": ["segmentation", "2D bounding box", "3D bounding box", "class"],
+ "file_formats": ["jpg", "pcd", "json"],
+ "scale_ko": "161,600세트(2D 분할 161,600, 2D/3D 161,600)",
+ "classes_example": ["fense", "freespace", "background", "eogVehicle", "bus", "policeCar", "ambulance"],
+ "baseline": [{"task": "3D object detection", "model": "PV-RCNN", "metric": "mAP", "value": "78.09%"}, {"task": "2D semantic segmentation", "model": "ConvNeXt", "metric": "mIoU", "value": "86.27%"}],
+ "difficulty": "advanced",
+ "difficulty_note_ko": "2D 분할은 시작하기 쉽지만 라이다 3D 탐지는 어렵고 전체가 약 268GB입니다.",
+ "skills_needed_ko": ["파이썬", "분할 모델", "포인트 클라우드 3D 탐지"],
+ "caveats_ko": ["전체 약 268GB", "방호벽(fense)이 분할 객체의 약 28%이고 자전거·보행자는 매우 적음", "성능표 1번 항목이 페이지에 없음"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "고속도로 차선·방호벽 분할", "title_en": "Expressway lane and barrier segmentation", "desc_ko": "이미지에서 주행 영역과 방호벽을 칠합니다.", "desc_en": "Segment drivable area and barriers."},
+  {"level": "capstone", "title_ko": "긴급차량 탐지 알림", "title_en": "Emergency vehicle alert", "desc_ko": "구급차·경찰차를 찾아 운전자에게 알리는 데모를 만듭니다.", "desc_en": "Detect ambulances and police cars and alert the driver."},
+  {"level": "research", "title_ko": "원거리 차량 3D 탐지", "title_en": "Long-range 3D detection", "desc_ko": "고속 주행에 필요한 먼 거리 차량 탐지를 개선하는 방법을 연구합니다.", "desc_en": "Improve detection of distant vehicles at high speed."}
+ ],
+ "doc_used": true,
+ "uncertain": ["3D 탐지 대상 클래스 목록"]
+}

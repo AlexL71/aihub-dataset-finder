@@ -1,0 +1,12 @@
+{
+ "dataset_id": "90",
+ "easy_ko": "한국어 학술 논문과 특허 문서마다 사람이 쓴 전체 요약과 부분별 요약을 붙인 데이터입니다. 길고 어려운 논문이나 특허를 짧게 정리해 주는 요약 AI나 연구 자료 챗봇을 만들 수 있습니다.",
+ "easy_en": "Korean research papers and patent documents, each with a human-written overall summary and section-by-section summaries. You can build AI that turns long, difficult papers or patents into short summaries, or a research-help chatbot.",
+ "detail_ko": "오픈액세스(KCI) 기반 한국어 학술논문 18만 건과 특허명세서 17만 건에 전체 요약문과 섹션별 요약문을 각각 붙여 요약 총 70만 건을 JSON으로 제공합니다. 메타정보로 분야, 저자·출원인, 날짜가 있습니다. Transformer 요약 모델이 소개되어 있으나 성능 지표 값은 기록에서 확인되지 않습니다.",
+ "detail_en": "180k Korean research papers (open-access, KCI) and 170k patent specifications, each with a full summary and section summaries, 700k summaries in total, in JSON with metadata (field, authors or applicants, dates). A Transformer summariser is mentioned, but its scores are not visible in the record.",
+ "amount_ko": "논문 18만 건, 특허 17만 건, 요약 70만 건",
+ "amount_en": "180k papers, 170k patents, 700k summaries",
+ "labels_ko": "전체 요약문, 부분별 요약문, 분야·저자 정보",
+ "labels_en": "full summary, section summaries, field and author info",
+ "status": "full-run-2026-11-02"
+}

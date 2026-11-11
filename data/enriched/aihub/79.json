@@ -1,0 +1,29 @@
+{
+ "dataset_id": "79",
+ "title_en": "Korean images (food)",
+ "summary_ko": "한식재단 분류를 참고해 고른 한국 음식 150종을 종류마다 약 1,000장씩 모은 사진 15만 장입니다. 구이·김치·국·면·밥 등으로 나뉘어 있고 일부 영역 정보도 있어 한식 사진 분류 첫 프로젝트에 알맞습니다.",
+ "summary_en": "150,000 photos of 150 Korean dishes (about 1,000 each), chosen using the Korean Food Foundation classification. Grouped into grilled dishes, kimchi, soups, noodles, rice and more, with some segment information; a good first Korean-food classification project.",
+ "contents_ko": "음식 사진 + 분류(대분류·소분류 음식 ID) + 일부 영역(세그먼트) 정보. 16GB 파일 하나로 제공.",
+ "contents_en": "Food photos + class (major and minor dish ID) + some segment info. Delivered as a single 16 GB file.",
+ "modalities": ["image"],
+ "tasks": ["image_classification", "segmentation"],
+ "topics": [{"ko": "음식·한식", "en": "Food and Korean cuisine"}, {"ko": "한국 문화", "en": "Korean culture"}],
+ "keywords_ko": ["한식", "음식 사진", "음식 분류", "김치", "비빔밥", "불고기"],
+ "keywords_en": ["Korean food", "food photos", "food classification", "kimchi", "bibimbap", "bulgogi"],
+ "labels": ["class (150 dishes)", "segmentation (partial)"],
+ "file_formats": ["jpg"],
+ "scale_ko": "150종 × 약 1,000장 = 15만 장",
+ "classes_example": ["불고기", "삼겹살", "배추김치", "깍두기", "미역국", "육개장", "물냉면", "잔치국수", "김밥", "잡채"],
+ "baseline": [],
+ "difficulty": "beginner",
+ "difficulty_note_ko": "16GB로 작고 클래스별로 정리되어 있어 노트북에서도 전이학습 분류를 해볼 수 있습니다.",
+ "skills_needed_ko": ["파이썬 기초", "전이학습으로 이미지 분류"],
+ "caveats_ko": ["16GB 파일 하나라 일부만 받을 수 없음", "2018년 구축, 성능 지표 없음"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "한식 150종 분류기", "title_en": "150-class Korean food classifier", "desc_ko": "사전학습 모델로 한식 사진을 분류하고 헷갈리는 음식 쌍을 분석합니다.", "desc_en": "Classify Korean dishes with a pretrained model and analyse confused pairs."},
+  {"level": "capstone", "title_ko": "외국인용 한식 메뉴 안내 앱", "title_en": "Korean menu guide for visitors", "desc_ko": "음식 사진을 찍으면 이름·재료·영문 설명을 보여주는 앱을 만듭니다.", "desc_en": "Snap a dish to see its name, ingredients and English description."},
+  {"level": "research", "title_ko": "비슷한 한식 구분하기", "title_en": "Separating look-alike dishes", "desc_ko": "물냉면·비빔냉면처럼 비슷한 음식을 구분하는 세밀 분류 방법을 비교합니다.", "desc_en": "Compare fine-grained methods for look-alike dishes such as two kinds of cold noodles."}
+ ],
+ "doc_used": true,
+ "uncertain": []
+}

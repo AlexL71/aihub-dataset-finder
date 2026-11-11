@@ -1,0 +1,47 @@
+{
+ "id": "digb",
+ "name_ko": "융합경영학부(디지털경영전공)",
+ "name_en": "Digital Business (School of Convergence Business)",
+ "college": "글로벌비즈니스대학",
+ "summary_ko": "경영학에 빅데이터와 인공지능을 결합해 데이터로 비즈니스 문제를 푸는 법을 배우는 전공입니다. 문과 출신도 따라올 수 있도록 1학년부터 프로그래밍·통계를 차근차근 배우고, 머신러닝, 딥러닝, 추천시스템, 디지털 마케팅, 디지털 창업으로 이어집니다.",
+ "summary_en": "Combines business with big data and AI to solve business problems with data. Programming and statistics start gently in year 1 so humanities students can follow, then move to machine learning, deep learning, recommender systems, digital marketing and digital start-ups.",
+ "key_topics": ["비즈니스 데이터 분석", "머신러닝·딥러닝", "추천시스템과 개인화", "디지털 마케팅", "경영과학·시뮬레이션", "데이터베이스와 정보시스템", "핀테크·알고리즘 투자", "디지털 창업"],
+ "course_keywords": ["디지털경영수학", "경영통계", "스프레드시트활용", "비즈니스프로그래밍", "인공지능과경영", "회계정보의이해", "경영계량분석", "디지털비즈니스의이해", "파이썬을활용한 비즈니스 데이터 애널리틱스", "디지털마케팅", "자료구조와알고리즘", "경영과학", "디지털 디자인 사고", "응용경영통계:R을 활용한 다변량분석", "머신러닝", "데이터베이스 설계", "디지털창업", "의사결정자를 위한 딥러닝", "시뮬레이션", "마케터를 위한 데이터분석", "디지털플랫폼과 창업", "모바일마케팅", "오퍼레이션즈 어낼리틱스", "알고리즘 투자전략", "데이터기반 개인화전략과 추천시스템", "시스템 분석 및 설계", "핀테크", "디지털비즈니스 캡스톤디자인"],
+ "curriculum_by_year": {
+  "1": ["디지털경영수학", "경영통계", "스프레드시트활용", "비즈니스프로그래밍", "인공지능과경영", "회계정보의이해", "생산운영관리"],
+  "2": ["경영계량분석", "디지털비즈니스의이해", "파이썬을활용한 비즈니스 데이터 애널리틱스", "디지털마케팅", "자료구조와알고리즘", "경영과학", "디지털 디자인 사고", "재무관리"],
+  "3": ["응용경영통계(R 다변량분석)", "머신러닝", "데이터베이스 설계", "디지털창업", "조직행동론", "의사결정자를 위한 딥러닝", "시뮬레이션", "마케터를 위한 데이터분석", "디지털플랫폼과 창업", "모바일마케팅"],
+  "4": ["오퍼레이션즈 어낼리틱스", "알고리즘 투자전략", "디지털비즈니스 캡스톤디자인", "데이터기반 개인화전략과 추천시스템", "시스템 분석 및 설계", "핀테크"]
+ },
+ "careers": ["데이터 분석가(Data Analyst)", "데이터 사이언티스트", "데이터 엔지니어", "금융 데이터 분석가", "비즈니스 애널리스트", "시장조사 분석가", "시스템 분석가", "공공기관 전산·행정직"],
+ "research_areas": ["e-비즈니스", "인터넷 무역", "EC(전자상거래) 시스템"],
+ "data_interests": [
+  {"topic_ko": "고객과 구매", "topic_en": "Customers and purchases", "keywords": ["구매 기록", "고객 세분화", "추천"]},
+  {"topic_ko": "리뷰와 SNS", "topic_en": "Reviews and social media", "keywords": ["상품 리뷰", "감성 분석", "SNS 반응"]},
+  {"topic_ko": "금융과 투자", "topic_en": "Finance and investment", "keywords": ["주가", "알고리즘 투자", "신용"]},
+  {"topic_ko": "전자상거래 상품", "topic_en": "E-commerce products", "keywords": ["상품 이미지", "상품 정보", "카테고리 분류"]},
+  {"topic_ko": "고객 상담", "topic_en": "Customer service", "keywords": ["상담 대화", "챗봇", "문의 분류"]},
+  {"topic_ko": "운영과 물류", "topic_en": "Operations and logistics", "keywords": ["수요 예측", "재고", "배송"]},
+  {"topic_ko": "광고 효과", "topic_en": "Advertising performance", "keywords": ["광고 클릭", "마케팅 캠페인"]}
+ ],
+ "interest_questions": [
+  {"q_ko": "데이터로 어떤 경영 문제를 풀고 싶나요?", "q_en": "Which business problem do you want to solve with data?",
+   "options": [{"ko": "고객 맞춤 추천", "en": "Personal recommendations"}, {"ko": "마케팅 효과 분석", "en": "Marketing analysis"}, {"ko": "투자·금융", "en": "Investment and finance"}, {"ko": "고객 상담 자동화", "en": "Customer service automation"}, {"ko": "수요·재고 예측", "en": "Demand and stock forecasting"}]},
+  {"q_ko": "다뤄보고 싶은 자료는?", "q_en": "What data would you like to use?",
+   "options": [{"ko": "구매·판매 기록", "en": "Purchase and sales records"}, {"ko": "리뷰·대화 텍스트", "en": "Reviews and chat text"}, {"ko": "상품 이미지", "en": "Product images"}, {"ko": "금융 시계열", "en": "Financial time series"}]}
+ ],
+ "project_themes": ["쇼핑 데이터로 상품 추천시스템 만들기", "리뷰 감성 분석으로 브랜드 평판 측정", "상담 대화 의도 분류 챗봇", "상품 이미지 자동 카테고리 분류", "판매량 수요 예측"],
+ "data_skill_level": "high",
+ "data_skill_note": "1학년부터 비즈니스프로그래밍과 경영통계를 배우고 파이썬 데이터 분석, 머신러닝, 딥러닝, 추천시스템 과목이 이어집니다.",
+ "sources": [
+  {"kind": "page", "label": "학과소개", "url": "https://sejong.korea.ac.kr/digb/4219/subview.do"},
+  {"kind": "page", "label": "취업 및 진로", "url": "https://sejong.korea.ac.kr/digb/4222/subview.do"},
+  {"kind": "page", "label": "교육과정 2024", "url": "https://sejong.korea.ac.kr/digb/4242/subview.do"},
+  {"kind": "image", "label": "교육목적", "url": "https://sejong.korea.ac.kr/sites/digb/images/con_digb_03.jpg"},
+  {"kind": "image", "label": "이수체계도", "url": "https://sejong.korea.ac.kr/sites/digb/images/con_digb_04.jpg"}
+ ],
+ "inferred_fields": ["data_interests", "interest_questions", "project_themes"],
+ "gaps": [],
+ "version": 1,
+ "created": "2026-10-29"
+}

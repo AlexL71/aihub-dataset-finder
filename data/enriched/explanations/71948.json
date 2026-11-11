@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71948",
+ "easy_ko": "예전 여러 센서 물체 추적 데이터를 다시 다듬어, 시나리오 20가지의 도로 사진 2만 장에 물체 사이의 의미 관계를 담은 설명을 붙인 데이터입니다. 여러 센서 자료를 해석하고 물체 움직임을 예측하는 AI에 쓸 수 있습니다.",
+ "easy_en": "20,000 road images from 20 scenarios, reworked from older multi-sensor object-tracking data, each with a description of the meaning relations between objects. You can use it for AI that interprets combined sensor data and predicts how objects will move.",
+ "detail_ko": "2021년 AI 허브 융합센서 다중객체 추적 데이터를 다시 가공(업사이클링)해 중복 이미지를 빼고, 이미지 20,000건(jpg)에 요소 사이의 의미 관계를 담은 이미지-텍스트 설명(JSON)을 붙였습니다. 온톨로지·검색 기반 생성(RAG)과 사람 검수로 정확도를 높였습니다. 구성: 시나리오 20개, 각 5%. 복합센서 해석과 객체 움직임 예측에 쓰도록 만들었습니다. 이미지·텍스트로 재가공되어 원본 라이다 등 센서 값이 포함되는지 불분명하고, 페이지에 성능 점수 표가 없고, 원본 데이터와 이미지가 겹칠 수 있습니다.",
+ "detail_en": "20,000 images (jpg) taken from AI Hub's 2021 fusion-sensor multi-object tracking data after removing duplicates, with JSON image-text descriptions of the meaning relations between elements, made more accurate using an ontology, retrieval-augmented generation (RAG) and human review. Composition: 20 scenarios, 5% each. It is meant for multi-sensor interpretation and object-motion prediction. It has been turned into images and text, so it is unclear whether the original lidar and other sensor values are included. There is no score table, and images may overlap with the original dataset.",
+ "amount_ko": "20,000건",
+ "amount_en": "20,000 items",
+ "labels_ko": "사진 설명, 요소 사이 관계",
+ "labels_en": "image-text description",
+ "status": "full-run-2026-11-02"
+}

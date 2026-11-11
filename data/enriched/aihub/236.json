@@ -1,0 +1,29 @@
+{
+ "dataset_id": "236",
+ "title_en": "Sunken marine debris images",
+ "summary_ko": "바다 밑에 가라앉은 쓰레기를 찾기 위한 소나(음파) 조사 이미지 4.7만 장과 수중 촬영 이미지 1.9만 장으로, 타이어·로프·나무·통발·어망이 표시되어 있습니다. 해양 침적 쓰레기 조사·수거를 돕는 AI에 쓸 수 있습니다.",
+ "summary_en": "47,000 sonar survey images and 19,000 underwater photos for finding debris sunk on the seabed, with tyres, ropes, wood, fish traps and fishing nets labelled. For AI that supports marine-debris surveys and clean-up.",
+ "contents_ko": "소나 또는 수중 이미지 + 라벨(쓰레기 종류, 위치 상자).",
+ "contents_en": "Sonar or underwater image + label (debris type, box).",
+ "modalities": ["image", "sensor"],
+ "tasks": ["object_detection", "image_classification"],
+ "topics": [{"ko": "해양 환경", "en": "Marine environment"}, {"ko": "쓰레기·재활용", "en": "Waste and recycling"}, {"ko": "수산", "en": "Fisheries"}],
+ "keywords_ko": ["해양 쓰레기", "침적 쓰레기", "소나", "수중 영상", "폐어망", "환경 조사"],
+ "keywords_en": ["marine debris", "sunken waste", "sonar", "underwater images", "ghost nets", "environmental survey"],
+ "labels": ["bounding box", "class (5 debris types)"],
+ "file_formats": ["jpg", "json"],
+ "scale_ko": "소나 이미지 46,688장(대조구 28,619 포함), 수중 이미지 18,930장",
+ "classes_example": ["타이어", "로프", "나무", "통발", "어망"],
+ "baseline": [],
+ "difficulty": "beginner",
+ "difficulty_note_ko": "약 6GB로 작아 노트북에서 탐지 실습을 바로 할 수 있습니다.",
+ "skills_needed_ko": ["파이썬 기초", "YOLO 탐지"],
+ "caveats_ko": ["성능 지표 표가 비어 있음", "소나 영상은 일반 사진과 모양이 달라 해석이 어려움"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "수중 쓰레기 종류 분류", "title_en": "Underwater debris classifier", "desc_ko": "수중 사진으로 타이어·어망·통발 등을 분류합니다.", "desc_en": "Classify tyres, nets and traps in underwater photos."},
+  {"level": "capstone", "title_ko": "침적 쓰레기 분포 지도", "title_en": "Sunken debris map", "desc_ko": "소나 조사 결과로 쓰레기 위치와 종류를 지도에 표시합니다.", "desc_en": "Map debris positions and types from sonar surveys."},
+  {"level": "research", "title_ko": "소나와 수중 사진 결합", "title_en": "Combining sonar and underwater photos", "desc_ko": "두 영상 종류를 함께 쓸 때 탐지 정확도가 오르는지 연구합니다.", "desc_en": "Study whether combining sonar and photos improves detection."}
+ ],
+ "doc_used": true,
+ "uncertain": []
+}

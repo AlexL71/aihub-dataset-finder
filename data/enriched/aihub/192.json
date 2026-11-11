@@ -1,0 +1,29 @@
+{
+ "dataset_id": "192",
+ "title_en": "Moving-object recognition images in parking lots",
+ "summary_ko": "자율주행 모사 차량으로 실내외 주차장을 330시간 촬영한 영상의 이미지 110만 장으로, 주차 중 움직이는 사람·차량 같은 이동체가 표시되어 있습니다. 자동 주차·주차 보조 시스템이 움직이는 장애물을 피하도록 하는 AI에 쓸 수 있습니다.",
+ "summary_en": "1.1 million images from 330 hours of video recorded by an autonomous test vehicle in indoor and outdoor parking lots, with moving objects such as people and vehicles labelled. For AI that helps automatic parking and parking-assist systems avoid moving obstacles.",
+ "contents_ko": "주차장 이미지(사람·번호판 비식별) + JSON(이동체 상자·다각형, 클래스).",
+ "contents_en": "Parking-lot images (faces and plates masked) + JSON (moving-object boxes and polygons, class).",
+ "modalities": ["image"],
+ "tasks": ["object_detection", "segmentation"],
+ "topics": [{"ko": "자율주행", "en": "Self-driving"}, {"ko": "주차", "en": "Parking"}],
+ "keywords_ko": ["주차장", "자동 주차", "이동체 인지", "주차 보조", "자율주행"],
+ "keywords_en": ["parking lot", "automatic parking", "moving-object recognition", "parking assist", "self-driving"],
+ "labels": ["bounding box", "polygon", "class"],
+ "file_formats": ["jpg", "json"],
+ "scale_ko": "영상 330시간, 이미지 110만 장",
+ "classes_example": ["자동차", "보행자", "자전거", "카트"],
+ "baseline": [],
+ "difficulty": "intermediate",
+ "difficulty_note_ko": "탐지 실습은 쉽지만 전체 약 2TB입니다. 일부만 받아 쓰세요.",
+ "skills_needed_ko": ["파이썬", "YOLO 탐지·분할"],
+ "caveats_ko": ["전체 약 2TB", "주차장애물 데이터(193번)와 설명이 거의 같음", "성능 지표가 팩에 없음"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "주차장 보행자 탐지", "title_en": "Pedestrian detection in parking lots", "desc_ko": "주차장 이미지에서 사람을 탐지합니다.", "desc_en": "Detect people in parking-lot images."},
+  {"level": "capstone", "title_ko": "후진 주차 경고", "title_en": "Reversing warning", "desc_ko": "차 뒤로 사람·차가 지나가면 경고하는 데모를 만듭니다.", "desc_en": "Warn when a person or car passes behind while reversing."},
+  {"level": "research", "title_ko": "어두운 지하주차장 인식", "title_en": "Recognition in dark car parks", "desc_ko": "조명이 어두운 실내 주차장에서 성능 저하를 분석하고 개선합니다.", "desc_en": "Analyse and improve performance in dim indoor car parks."}
+ ],
+ "doc_used": true,
+ "uncertain": ["이동체 34종 중 4종(자동차, 보행자, 자전거, 카트) 이름만 확인됨"]
+}

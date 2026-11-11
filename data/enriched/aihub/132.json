@@ -1,0 +1,32 @@
+{
+ "dataset_id": "132",
+ "title_en": "Meeting speech",
+ "summary_ko": "교육·문화예술·가족·교양·시사·토크·금융·IT 분야의 회의·토론 방송 음성 3,000시간과 전사문입니다. 회의 영상 자동 자막, 회의록 자동 작성, 토론 내용 요약에 쓸 수 있습니다.",
+ "summary_en": "3,000 hours of meeting and debate speech from broadcasts in education, arts, family, culture, current affairs, talk shows, finance and IT, with transcripts. For automatic meeting subtitles, minutes and debate summaries.",
+ "contents_ko": "회의 음성(wav) + 전사(txt) + 메타정보(json: 장르, 발화자 성별, 방송 날짜).",
+ "contents_en": "Meeting audio (wav) + transcript (txt) + metadata (json: genre, speaker sex, broadcast date).",
+ "modalities": ["audio", "text"],
+ "tasks": ["speech_recognition", "summarization"],
+ "topics": [{"ko": "회의·토론", "en": "Meetings and debates"}, {"ko": "음성", "en": "Speech"}, {"ko": "업무 자동화", "en": "Office automation"}],
+ "keywords_ko": ["회의 음성", "회의록", "자동 자막", "토론", "음성 인식", "요약"],
+ "keywords_en": ["meeting speech", "minutes", "automatic subtitles", "debate", "speech recognition", "summary"],
+ "labels": ["transcript", "genre", "speaker sex"],
+ "file_formats": ["wav", "txt", "json"],
+ "scale_ko": "음성 3,000시간(교육·문화예술·가족 각 400h, 교양·시사 각 550h, 토크 300h, 금융·IT 각 200h)",
+ "classes_example": ["교육", "문화예술", "가족", "교양", "시사", "토크", "금융", "IT"],
+ "baseline": [
+  {"task": "speech recognition", "model": "Jasper", "metric": "CER", "value": "12.79%"},
+  {"task": "speech recognition", "model": "Jasper", "metric": "WER", "value": "31.51%"}
+ ],
+ "difficulty": "intermediate",
+ "difficulty_note_ko": "음성 인식과 요약을 이어 붙이는 실습에 좋습니다. 전체 약 250GB입니다.",
+ "skills_needed_ko": ["파이썬", "음성 인식 모델 사용", "텍스트 요약 모델"],
+ "caveats_ko": ["방송 회의·토론이라 실제 사내 회의와 분위기가 다를 수 있음", "성능 표 이름이 '강의 학습 성능'으로 잘못 적혀 있음"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "분야별 회의 핵심어", "title_en": "Key terms by meeting genre", "desc_ko": "전사문에서 장르별 자주 나오는 단어를 비교합니다.", "desc_en": "Compare frequent words by genre in transcripts."},
+  {"level": "capstone", "title_ko": "회의록 자동 작성기", "title_en": "Automatic meeting minutes", "desc_ko": "녹음을 받아쓰고 발언 요지와 결정 사항을 요약해 주는 도구를 만듭니다.", "desc_en": "Transcribe recordings and summarise points and decisions."},
+  {"level": "research", "title_ko": "토론 발화 요약의 정확성", "title_en": "Faithful debate summaries", "desc_ko": "음성 인식 오류가 요약 품질에 주는 영향을 분석합니다.", "desc_en": "Analyse how recognition errors affect summary quality."}
+ ],
+ "doc_used": true,
+ "uncertain": []
+}

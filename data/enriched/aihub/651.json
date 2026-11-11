@@ -1,0 +1,29 @@
+{
+ "dataset_id": "651",
+ "title_en": "Driver and passenger state and abnormal behaviour monitoring data",
+ "summary_ko": "차량 앞·뒷좌석을 찍은 영상 약 50만 건(이미지 250만 장)에 졸음운전·음주운전·물건 찾기·통화·휴대폰 조작·차량 제어·운전자 폭행 7가지 이상행동과 기쁨·분노·놀람·슬픔·중립 5가지 감정, 탑승자 센서 정보를 붙인 데이터입니다. 위험한 운전 행동을 감지하는 AI에 쓸 수 있습니다.",
+ "summary_en": "About 500,000 videos (2.5 million images) of front and rear car seats labelled with 7 abnormal behaviours (drowsy driving, drunk driving, searching for objects, phone call, phone use, vehicle control, assaulting the driver), 5 emotions and passenger sensor data. For AI that detects dangerous driving behaviour.",
+ "contents_ko": "차내 영상(mp4)·이미지(jpg) + JSON(상자, 행동, 감정, 센서 데이터).",
+ "contents_en": "In-car videos (mp4) and images (jpg) + JSON (boxes, behaviour, emotion, sensor data).",
+ "modalities": ["video", "image", "sensor"],
+ "tasks": ["action_recognition", "object_detection", "sentiment_emotion"],
+ "topics": [{"ko": "운전 안전", "en": "Driving safety"}, {"ko": "모빌리티", "en": "Mobility"}],
+ "keywords_ko": ["졸음운전", "운전자 모니터링", "이상행동", "휴대폰 사용", "감정 인식"],
+ "keywords_en": ["drowsy driving", "driver monitoring", "abnormal behaviour", "phone use", "emotion recognition"],
+ "labels": ["bounding box", "behaviour class", "emotion", "sensor data"],
+ "file_formats": ["mp4", "jpg", "json"],
+ "scale_ko": "영상 약 50만 건, 이미지 250만 장, 이상행동 7종, 감정 5종",
+ "classes_example": ["졸음운전", "음주운전", "물건찾기", "통화", "휴대폰 조작", "차량 제어", "운전자 폭행"],
+ "baseline": [{"task": "abnormal behaviour classification", "model": "TSN (ResNet)", "metric": "F1", "value": "0.9892"}],
+ "difficulty": "advanced",
+ "difficulty_note_ko": "전체 약 798GB이고 영상 분류 모델이 필요합니다.",
+ "skills_needed_ko": ["파이썬", "영상 분류 모델", "객체 탐지"],
+ "caveats_ko": ["전체 약 798GB", "탑승자 얼굴이 보이는 영상", "연기로 재현한 행동이라 실제 상황과 다를 수 있음", "650번 인터페이스 데이터와 같은 구축 기관"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "휴대폰 사용 감지", "title_en": "Phone-use detection", "desc_ko": "운전자가 휴대폰을 쓰는지 분류합니다.", "desc_en": "Classify whether the driver is using a phone."},
+  {"level": "capstone", "title_ko": "졸음운전 경보기", "title_en": "Drowsiness alarm", "desc_ko": "차내 카메라로 졸음 징후를 감지해 경고음을 냅니다.", "desc_en": "Sound an alarm when the in-car camera sees drowsiness."},
+  {"level": "research", "title_ko": "영상+생체 센서 결합", "title_en": "Video plus biosignals", "desc_ko": "영상과 탑승자 센서를 합쳐 음주·졸음 판단을 높이는 방법을 연구합니다.", "desc_en": "Combine video and body sensors to better detect drunk or drowsy drivers."}
+ ],
+ "doc_used": true,
+ "uncertain": []
+}

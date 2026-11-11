@@ -1,0 +1,57 @@
+# Search index settings (step 3: chunks, embeddings, FAISS, BM25). Paths are relative to the project root.
+
+paths:
+  index_dir: data/index                         # chunks, cards, FAISS files, BM25 tokens (not in git)
+  embedding_cache: data/index/embedding_cache.sqlite
+
+chunk:
+  target_chars: 1200     # a chunk is closed once it reaches this size (Korean: roughly 500-800 tokens)
+  max_chars: 2000        # hard limit; longer tables are split by rows (header row repeated)
+  min_chars: 80          # smaller leftovers are merged into the previous chunk of the same source
+  overlap_lines: 1       # last line(s) of a chunk repeated at the start of the next (not for tables)
+
+embedding:
+  provider: gemini                 # only provider for now; processing/embed.py is the one place to change it
+  model: gemini-embedding-001
+  output_dim: 768                  # smaller than the default 3072; vectors are L2-normalized in code
+  batch_size: 50                   # texts per API request (keep <= 100)
+  api_key_env: GEMINI_API_KEY      # read from the environment or from .env; never printed or logged
+
+api:
+  timeout_s: 60
+  max_retries: 5                   # on 429 / 5xx / network errors
+  backoff_base_s: 2.0              # wait = base * 2^attempt (+ jitter), capped below
+  backoff_max_s: 60.0
+  min_interval_s: 0.5              # minimum gap between two API calls
+
+bm25:
+  # Words that say what the student wants, not what the data is about. Dropped from BM25 tokens
+  # (documents and queries); the meaning search still sees the full text.
+  stopwords_en: [i, me, my, we, you, a, an, the, and, or, of, to, in, on, for, with, about, from, is, are, am,
+                 be, it, this, that, some, any, like, want, wanna, would, need, love, interested, work, working,
+                 use, using, make, build, do, can, could, something, things, thing, data, dataset, datasets]
+  stopwords_ko: [좋아하, 싶, 하, 되, 있, 없, 만들, 원하, 관심, 것, 수, 거, 데이터, 데이터셋]
+  fold_plural_en: true     # "dogs" -> "dog", "images" -> "image" (simple rule: drop a final "s", not "ss")
+
+search:
+  top_k: 10              # datasets returned
+  candidates: 100        # hits taken from each of the 4 lists before fusion
+  rrf_k: 20              # reciprocal rank fusion: score = sum weight / (rrf_k + rank); 20 beat 60 on the dev set
+  weights:               # how much each ranked list counts in the fusion
+    card_vec: 1.0
+    chunk_vec: 1.0
+    card_bm25: 0.3       # chosen on eval/queries_dev_v0.csv (0.0-0.3 tie; small keyword share kept for exact terms)
+    chunk_bm25: 0.3
+
+match_label:             # per-result label from the card cosine (no yes/no "no match" verdict; decided 2026-11-02)
+  # PROVISIONAL, read from eval/queries_test_v1.csv (docs/PHASE0_FINDINGS.md §19). Korean queries score higher overall.
+  korean:  {strong: 0.72, partial: 0.67}   # >= strong -> strong match, >= partial -> partial, else weak
+  english: {strong: 0.68, partial: 0.62}
+
+other_sites:             # "Not what you need?" links shown under every result list ({q} = URL-encoded query)
+  - {name: Kaggle,                url: "https://www.kaggle.com/datasets?search={q}"}
+  - {name: Hugging Face,          url: "https://huggingface.co/datasets?search={q}"}
+  - {name: Roboflow Universe,     url: "https://universe.roboflow.com/search?q={q}"}
+  - {name: GitHub,                url: "https://github.com/search?q={q}+dataset&type=repositories"}
+  - {name: Google Dataset Search, url: "https://datasetsearch.research.google.com/search?query={q}"}
+  - {name: 공공데이터포털,          url: "https://www.data.go.kr/tcs/dss/selectDataSetList.do?keyword={q}"}

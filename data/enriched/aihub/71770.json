@@ -1,0 +1,29 @@
+{
+ "dataset_id": "71770",
+ "title_en": "Ship and offshore plant smart yard safety data",
+ "summary_ko": "조선소와 건축 현장에서 찍은 작업 안전 이미지 336,655건으로, 지게차·고소·보온·중장비·용접 작업 공정 이미지 167,815건, 충돌·추락·낙하·화재 사고 유형 이미지 83,322건, 안전장비 이미지 85,518건이 상자·키포인트·분할로 표시되어 있습니다. 조선소 위험성 평가와 안전관리 AI에 쓸 수 있습니다.",
+ "summary_en": "336,655 work-safety images from shipyards and construction sites: 167,815 work-process images (forklift, work at height, insulation, heavy equipment, welding), 83,322 accident-type images (collision, fall, falling object, fire) and 85,518 safety-equipment images, with boxes, keypoints and segmentation. For shipyard risk assessment and safety management.",
+ "contents_ko": "현장 이미지(jpg) + JSON(상자, 키포인트, 분할, 작업·사고 유형).",
+ "contents_en": "Site image (jpg) + JSON (boxes, keypoints, segmentation, work and accident type).",
+ "modalities": ["image"],
+ "tasks": ["object_detection", "keypoint_pose", "segmentation", "action_recognition"],
+ "topics": [{"ko": "산업 안전", "en": "Industrial safety"}, {"ko": "조선·해양플랜트", "en": "Shipbuilding and offshore plants"}],
+ "keywords_ko": ["조선소", "산업재해", "추락", "안전장비", "위험성 평가", "YOLOv8-pose"],
+ "keywords_en": ["shipyard", "industrial accident", "fall", "safety equipment", "risk assessment", "YOLOv8-pose"],
+ "labels": ["bounding box", "keypoints", "segmentation", "work/accident class"],
+ "file_formats": ["jpg", "json"],
+ "scale_ko": "336,655건(작업 공정 167,815·사고 유형 83,322·안전장비 85,518)",
+ "classes_example": ["지게차작업", "고소작업", "보온작업", "중장비작업", "용접작업", "충돌", "추락", "낙하", "화재"],
+ "baseline": [],
+ "difficulty": "intermediate",
+ "difficulty_note_ko": "약 23GB로 가볍고 YOLO 탐지·자세 추정 실습에 좋습니다.",
+ "skills_needed_ko": ["파이썬", "YOLO 탐지·분할·자세 추정", "행동 분류(DD-Net) 기초"],
+ "caveats_ko": ["페이지에 성능 점수 표가 없음(YOLOv8-seg·LightGBM·YOLOv8-pose·DD-Net 소개만 있음)", "사고 유형이 N/P(예: 추락-FN·FP)로 나뉘어 있으나 뜻이 팩에 설명되지 않음", "사고 이미지는 연출·재현일 수 있음"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "안전모·안전장비 탐지", "title_en": "Safety gear detection", "desc_ko": "작업자 이미지에서 안전장비 착용 여부를 YOLO로 찾습니다.", "desc_en": "Detect safety gear on workers with YOLO."},
+  {"level": "capstone", "title_ko": "조선소 위험 알림", "title_en": "Shipyard hazard alert", "desc_ko": "작업 종류와 사고 위험을 판단해 경고하는 현장 모니터링 데모를 만듭니다.", "desc_en": "Monitor work type and warn of accident risk."},
+  {"level": "research", "title_ko": "자세 기반 추락 예측", "title_en": "Pose-based fall prediction", "desc_ko": "작업자 키포인트로 추락 직전 자세를 미리 찾는 방법을 연구합니다.", "desc_en": "Study predicting falls from worker keypoints."}
+ ],
+ "doc_used": true,
+ "uncertain": ["사고 유형의 N/P 표기 의미(예: 정상/위험으로 추정)"]
+}

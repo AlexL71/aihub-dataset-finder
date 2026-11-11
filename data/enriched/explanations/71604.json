@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71604",
+ "easy_ko": "배달 로봇이 인도, 골목, 공원, 사무실, 식당처럼 찻길이 아닌 곳을 다닐 때 찍은 사진과 레이저 점 데이터로, 다닐 수 있는 영역과 움직이는 장애물이 표시되어 있습니다. 배달 로봇이 스스로 길을 찾아 다니게 하는 AI에 쓸 수 있습니다.",
+ "easy_en": "Photos and laser point data recorded by delivery robots moving through places that are not roads, such as pavements, alleys, parks, offices and restaurants, with drivable areas and moving obstacles marked. You can use it to build AI that lets delivery robots find their own way.",
+ "detail_ko": "배송 로봇이 비도로(인도, 골목, 공원, 사무실, 식당, 전시공간)를 다닐 때 찍은 2D 이미지 400,000장(jpg; 실제 160,000, 가상 240,000)과 3D 라이다 점군 105,151개(pcd; 실제 45,151, 가상 60,000)에 2D 주행 가능 영역 분할과 3D 동적 장애물 상자를 JSON으로 붙였습니다. 2D의 60%, 3D의 57%가 가상(시뮬레이션) 데이터이고, 실내 사무실 데이터는 대부분 가상입니다. 페이지에 성능 지표 표는 없습니다.",
+ "detail_en": "400,000 2D images (jpg; 160,000 real, 240,000 virtual) and 105,151 3D lidar point clouds (pcd; 45,151 real, 60,000 virtual) from delivery robots moving off-road (pavements, alleys, parks, offices, restaurants, exhibition spaces), with JSON 2D drivable-area segmentation and 3D boxes for moving obstacles. 60% of the 2D data and 57% of the 3D data are virtual (simulated), and indoor office data is mostly virtual. There is no metrics table on the page.",
+ "amount_ko": "2D 이미지 400,000장(실제 160,000, 가상 240,000), 3D 라이다 105,151개(실제 45,151, 가상 60,000)",
+ "amount_en": "400,000 2D images (160,000 real, 240,000 virtual), 105,151 3D lidar scans (45,151 real, 60,000 virtual)",
+ "labels_ko": "다닐 수 있는 영역, 움직이는 장애물 입체 상자",
+ "labels_en": "2D segmentation, 3D cuboids",
+ "status": "full-run-2026-11-02"
+}

@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71766",
+ "easy_ko": "4대강 유역과 새만금 일대에서 드론 등으로 찍은 사진 10만 장에 강으로 오염 물질이 흘러들 수 있는 논밭과 축사 같은 곳을 테두리로 표시한 데이터입니다. 강으로 흘러드는 오염원을 함께 감시하는 AI에 쓸 수 있습니다.",
+ "easy_en": "100,000 drone and other images of the four major river basins and the Saemangeum area, with farmland, livestock barns and other places that can wash pollution into rivers outlined. You can use it to build AI that monitors pollution sources flowing into rivers.",
+ "detail_ko": "4대강 유역과 새만금 일대 비점오염원 관리지역 이미지 100,000장(tiff; 농업계 약 6.6만, 축산계 약 4.4만)에 오염원 다각형과 비점 환경 속성(약 2천 세트)을 JSON으로 붙였습니다. 페이지에 성능 점수 표가 없고(U-Net·YOLOv8 등 소개만 있음), 세부 오염원 클래스 목록은 팩 앞부분에 없으며, 같은 지역 이미지가 많아 지역 단위로 학습·평가를 나누는 것이 좋습니다.",
+ "detail_en": "100,000 images (tiff; about 66,000 agricultural, about 44,000 livestock) of non-point pollution management areas in the four major river basins and Saemangeum, with JSON polygons for pollution sources and about 2,000 sets of environmental attributes. There is no score table (only U-Net, YOLOv8 and others are mentioned), the detailed source classes are not in the pack, and many images show the same areas, so split train and test by area.",
+ "amount_ko": "원천·라벨 각 100,000장(농업계 약 6.6만, 축산계 약 4.4만), 환경 속성 약 2천 세트",
+ "amount_en": "100,000 images and labels (about 66,000 agricultural, 44,000 livestock), about 2,000 attribute sets",
+ "labels_ko": "오염원 테두리, 환경 속성",
+ "labels_en": "polygon, environmental attributes",
+ "status": "full-run-2026-11-02"
+}

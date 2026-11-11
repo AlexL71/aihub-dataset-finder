@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71642",
+ "easy_ko": "여러 화학물질이 생물의 유전자에 해를 끼치는지 실험한 결과를 모으고, 각 물질의 분자 구조 그림을 함께 넣은 데이터입니다. 실험을 하지 않고도 분자 구조만 보고 위험한 물질을 미리 걸러 내는 AI를 만들 수 있습니다.",
+ "easy_en": "Results of experiments on whether chemicals damage genes, collected together with a drawing of each chemical's molecular structure. You can build AI that flags risky chemicals from their structure alone, before any lab test.",
+ "detail_ko": "PubChem·eChemPortal·Tox21 등 공개 자료에서 수집한 화학물질 유전독성 실험 정보 200,017건(InChI 식별자, 실험 수준·조건, 결과, 근거, JSON)과 화학물질 2D 구조 이미지 10,319장(png)으로 구성됩니다. 실험 수준은 동물·동물 세포주·세균·생식세포·단백질로 나뉘며, 단백질 수준이 약 63%로 치우쳐 있습니다. 같은 물질에 여러 실험이 있으므로 물질 단위로 학습·평가를 나눠야 데이터 누수를 막을 수 있습니다.",
+ "detail_en": "200,017 genotoxicity test records gathered from PubChem, eChemPortal, Tox21 and others (InChI identifier, test level and conditions, result, evidence; JSON) plus 10,319 2D structure images (png). Test levels are animal, animal cell line, bacteria, germ cell and protein; about 63% are protein-level. Several tests exist per substance, so split training and evaluation by substance to avoid leakage.",
+ "amount_ko": "실험 기록 약 20만 건, 분자 구조 그림 약 1만 장",
+ "amount_en": "about 200k test records, about 10k structure images",
+ "labels_ko": "유전독성 결과, 실험 종류, 근거",
+ "labels_en": "genotoxicity result, test type, evidence",
+ "status": "sample-2026-11-02"
+}

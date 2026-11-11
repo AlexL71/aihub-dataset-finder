@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71756",
+ "easy_ko": "병원 다섯 곳의 실제 배아(수정란이 자란 것) 사진을 바탕으로 AI가 만든 가짜 배아 사진 6만여 장에 배양 단계를 표시한 데이터입니다. 의료 교육 자료나 배아 등급을 자동으로 나누는 연구에 쓸 수 있습니다.",
+ "easy_en": "Over 60,000 fake embryo images made by AI from real embryo photos at five hospitals, each marked with its culture stage. You can use it as medical teaching material or for research on grading embryos automatically.",
+ "detail_ko": "참여병원 5곳의 실제 배아 이미지(현미경 3일차·5일차, 타임랩스 2cell·4cell·8cell·포배기)를 바탕으로 생성 모델로 만든 합성 배아 이미지 61,133건(jpg, png)에 배양 단계 범주 라벨을 JSON으로 붙였습니다. 페이지에 성능 점수 표가 없고(Latent Diffusion·분류 모델 소개만 있음), 표의 원천 약 2.6만 건+합성 6만 건과 구축량 61,133건이 맞지 않습니다. 합성 이미지라 실제 진료 판단에 바로 쓰면 안 됩니다.",
+ "detail_en": "61,133 synthetic embryo images (jpg, png) made by a generative model from real embryo images at 5 hospitals (microscope day 3 and day 5; time-lapse 2-cell, 4-cell, 8-cell and blastocyst), with JSON stage labels. There is no score table (only Latent Diffusion and classification models are described), and the table's roughly 26,000 source plus 60,000 synthetic items do not match the 61,133 build amount. These are synthetic, so do not use them directly for clinical decisions.",
+ "amount_ko": "61,133건",
+ "amount_en": "61,133 images",
+ "labels_ko": "배양 단계",
+ "labels_en": "image category (culture stage)",
+ "status": "full-run-2026-11-02"
+}

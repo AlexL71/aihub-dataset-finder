@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71543",
+ "easy_ko": "카메라 렌즈가 흔들리거나 먼지, 긁힘, 지문이 묻어 흐려진 사진과, 깨끗한 사진을 일부러 흐리게 만든 사진 약 112만 장에 물체 위치를 표시한 데이터입니다. 흐린 사진을 선명하게 되살리거나 흐린 영상 속 물체를 찾는 AI에 쓸 수 있습니다.",
+ "easy_en": "About 1.12 million photos blurred by camera shake or by dust, scratches and fingerprints on the lens, plus clean photos blurred on purpose, with object positions marked. You can use it to build AI that makes blurry images sharp again or finds objects in blurry video.",
+ "detail_ko": "렌즈 훼손으로 생긴 실제 블러 10종(전방포커스, 후방포커스, 좌우흔들림, 위아래흔들림, 렌즈이물질, 먼지, 스크래치, 지문얼룩, 좌측번짐, 우측번짐)과 원본에 인위적으로 만든 합성 블러 10종의 이미지 1,116,417장(jpg, 블러 이미지 + 원본 GT, 비식별; 영상 클립 10,840개)에 객체 80종 상자와 블러 종류를 JSON으로 붙였습니다. 기준 성능은 YOLOv5 객체 탐지 mAP 65.93%, Restormer 디블러링 PSNR 29.09dB, SSIM 0.94입니다. 전체 약 209GB이고, 실제 블러는 약 2만 장으로 합성 블러보다 훨씬 적으며, 합성 블러 10종의 이름은 팩에 일부만 나옵니다.",
+ "detail_en": "1,116,417 images (jpg, blurred images plus clean ground truth, de-identified; from 10,840 video clips) covering 10 real blur types from lens damage (front focus, back focus, horizontal shake, vertical shake, foreign matter, dust, scratch, fingerprint smudge, left smear, right smear) and 10 synthetic blur types made from clean originals, with JSON boxes for 80 object classes and blur type. Baselines: object detection with YOLOv5, mAP 65.93%; deblurring with Restormer, PSNR 29.09 dB and SSIM 0.94. Total size is about 209 GB. Real blur is only about 20,000 images, far fewer than synthetic, and only some synthetic blur names appear in the pack.",
+ "amount_ko": "이미지 1,116,417장, 블러 20종(실제 10 + 합성 10), 객체 80종",
+ "amount_en": "1,116,417 images, 20 blur types (10 real + 10 synthetic), 80 object classes",
+ "labels_ko": "물체 위치 상자, 흐림 종류",
+ "labels_en": "bounding boxes, blur type",
+ "status": "full-run-2026-11-02"
+}

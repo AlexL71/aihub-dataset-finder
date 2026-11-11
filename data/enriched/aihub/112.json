@@ -1,0 +1,32 @@
+{
+ "dataset_id": "112",
+ "title_en": "In-car conversation and command speech",
+ "summary_ko": "차 안에서 말하는 대화와 '에어컨 켜줘', '길 안내해줘' 같은 명령어 음성 3,200시간과 전사문입니다. 차량용 AI 음성 비서, 자율주행차 음성 제어, 홈투카 서비스용 음성 인식에 쓸 수 있습니다.",
+ "summary_en": "3,200 hours of in-car conversation and voice commands (such as turning on the air conditioner or asking for directions) with transcripts. For car voice assistants, voice control in self-driving cars and home-to-car services.",
+ "contents_ko": "음성(wav) + 전사 텍스트 + 메타정보(명령 카테고리, 화자, 녹음 환경; 파일명에 정보 포함).",
+ "contents_en": "Audio (wav) + transcript + metadata (command category, speaker, recording environment; also encoded in file names).",
+ "modalities": ["audio", "text"],
+ "tasks": ["speech_recognition", "text_classification"],
+ "topics": [{"ko": "자동차·모빌리티", "en": "Cars and mobility"}, {"ko": "음성 비서", "en": "Voice assistants"}],
+ "keywords_ko": ["차량 음성", "음성 명령", "AI 비서", "스마트카", "자율주행", "음성 인식"],
+ "keywords_en": ["in-car speech", "voice commands", "AI assistant", "smart car", "self-driving", "speech recognition"],
+ "labels": ["transcript", "command category", "speaker info"],
+ "file_formats": ["wav", "json"],
+ "scale_ko": "음성 3,200시간(구축량 460.8만)",
+ "classes_example": [],
+ "baseline": [
+  {"task": "speech recognition", "model": "Kaldi", "metric": "CER", "value": "6.62%"},
+  {"task": "speech recognition", "model": "Kaldi", "metric": "WER", "value": "13.37%"}
+ ],
+ "difficulty": "intermediate",
+ "difficulty_note_ko": "음성 인식·명령 분류 실습에 좋지만 약 460GB라 일부만 받아 쓰세요.",
+ "skills_needed_ko": ["파이썬", "오디오 처리", "음성 인식·텍스트 분류"],
+ "caveats_ko": ["실제 주행 중 차량이 아니라 크라우드 워커가 스마트폰 등으로 녹음한 데이터"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "차량 명령어 의도 분류", "title_en": "In-car command intent", "desc_ko": "전사문으로 공조·내비·음악 같은 명령 종류를 분류합니다.", "desc_en": "Classify climate, navigation and music commands from transcripts."},
+  {"level": "capstone", "title_ko": "차량 음성 비서 데모", "title_en": "Car voice assistant demo", "desc_ko": "음성을 인식해 가상 차량 기능을 조작하는 데모를 만듭니다.", "desc_en": "Recognise speech and control virtual car functions."},
+  {"level": "research", "title_ko": "주행 소음 속 명령어 인식", "title_en": "Commands under driving noise", "desc_ko": "주행 소음을 합성해 인식 성능 변화를 분석하고 강인한 학습 방법을 연구합니다.", "desc_en": "Add synthetic driving noise and study robust training."}
+ ],
+ "doc_used": true,
+ "uncertain": ["클래스 목록을 페이지와 설명서에서 찾지 못함"]
+}

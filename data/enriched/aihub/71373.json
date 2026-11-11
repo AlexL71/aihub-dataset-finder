@@ -1,0 +1,33 @@
+{
+ "dataset_id": "71373",
+ "title_en": "Broadcast content Korean-European language translation corpus",
+ "summary_ko": "방송사와 저작권 계약을 맺은 한국 방송 콘텐츠 대사를 독일어·프랑스어·이탈리아어로 번역한 문장 쌍 약 196만 개입니다. 신조어·약어·관용 표현과 말투까지 담겨 있어 K-콘텐츠 유럽어 자막 자동 생성이나 통역기에 쓸 수 있습니다.",
+ "summary_en": "About 1.96 million sentence pairs of Korean broadcast dialogue (licensed from broadcasters) translated into German, French and Italian, including slang, abbreviations, idioms and tone. For automatic European-language subtitles for K-content or interpreters.",
+ "contents_ko": "문장 쌍 텍스트(txt) + JSON(원문, 번역, 언어, 장르).",
+ "contents_en": "Sentence pair text (txt) + JSON (source, translation, language, genre).",
+ "modalities": ["text"],
+ "tasks": ["translation"],
+ "topics": [{"ko": "번역·외국어", "en": "Translation and foreign languages"}, {"ko": "방송·미디어", "en": "Broadcasting and media"}],
+ "keywords_ko": ["방송 자막", "독일어", "프랑스어", "이탈리아어", "K-콘텐츠"],
+ "keywords_en": ["TV subtitles", "German", "French", "Italian", "K-content"],
+ "labels": ["translation", "language", "genre"],
+ "file_formats": ["txt", "json"],
+ "scale_ko": "문장 쌍 약 196만 개, 언어 3종(독·불·이)",
+ "classes_example": ["한-독", "한-불", "한-이"],
+ "baseline": [
+  {"task": "translation (ko→de)", "model": "Transformer", "metric": "BLEU", "value": "0.3892"},
+  {"task": "translation (ko→fr)", "model": "Transformer", "metric": "BLEU", "value": "0.4459"},
+  {"task": "translation (ko→it)", "model": "Transformer", "metric": "BLEU", "value": "0.4142"}
+ ],
+ "difficulty": "beginner",
+ "difficulty_note_ko": "약 1.3GB로 받기 쉽고 번역 모델 미세조정 실습에 좋습니다.",
+ "skills_needed_ko": ["파이썬", "Hugging Face", "번역 모델"],
+ "caveats_ko": ["방송 대사 저작권 때문에 사용 범위 확인 필요", "BLEU 값이 0~1 단위로 표기됨", "음성 pair 언급이 있지만 팩 앞부분에서 음성 파일은 확인 안 됨"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "한-불 드라마 번역기", "title_en": "Korean-French drama translator", "desc_ko": "드라마 대사로 한-불 번역 모델을 학습합니다.", "desc_en": "Train a Korean-French model on drama lines."},
+  {"level": "capstone", "title_ko": "K-콘텐츠 유럽어 자막 도구", "title_en": "European subtitle tool for K-content", "desc_ko": "한국어 자막 파일을 3개 유럽어로 바꿔 줍니다.", "desc_en": "Convert Korean subtitle files into 3 European languages."},
+  {"level": "research", "title_ko": "문화 표현 번역", "title_en": "Translating culture-specific terms", "desc_ko": "한국 고유 표현을 자연스럽게 옮기는 방법을 연구합니다.", "desc_en": "Study natural translation of Korea-specific expressions."}
+ ],
+ "doc_used": true,
+ "uncertain": ["whether audio pairs are included"]
+}

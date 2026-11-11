@@ -1,0 +1,29 @@
+{
+ "dataset_id": "209",
+ "title_en": "Human body and pose 3D",
+ "summary_ko": "배우 24명이 70가지 동작을 하는 모습을 여러 카메라로 찍은 2D 이미지 200만 장과 3D 모델 50만 건입니다. 2D·3D 관절 좌표, 3D 체형, 3D 스캔 점구름, 카메라 보정 정보가 있어 사진 한 장에서 사람의 3D 자세와 체형을 복원하는 AI에 쓸 수 있습니다.",
+ "summary_en": "2 million 2D images and 500,000 3D models of 24 actors performing 70 actions, filmed with multiple cameras. 2D and 3D joint coordinates, 3D body shapes, 3D scan point clouds and camera calibration support AI that reconstructs 3D pose and body shape from a single photo.",
+ "contents_ko": "이미지(jpg) + 2D 자세 JSON + 3D 자세 JSON(관절 x·y·z, 회전) + 3D 형태(obj) + 점구름(ply) + 카메라 보정 + 액터별 체형 파라미터.",
+ "contents_en": "Images (jpg) + 2D pose JSON + 3D pose JSON (joint x, y, z and rotation) + 3D shape (obj) + point clouds (ply) + camera calibration + per-actor shape parameters.",
+ "modalities": ["image", "3d"],
+ "tasks": ["keypoint_pose", "3d_reconstruction"],
+ "topics": [{"ko": "사람 동작", "en": "Human motion"}, {"ko": "체형·몸", "en": "Body shape"}, {"ko": "가상·증강현실", "en": "Virtual and augmented reality"}],
+ "keywords_ko": ["3D 자세", "체형 추정", "SMPL", "키포인트", "3D 스캔", "모션"],
+ "keywords_en": ["3D pose", "body shape estimation", "SMPL", "keypoints", "3D scan", "motion"],
+ "labels": ["keypoints 2D", "keypoints 3D", "3D mesh", "camera calibration"],
+ "file_formats": ["jpg", "json", "obj", "ply"],
+ "scale_ko": "2D 이미지 200만 장, 3D 모델 50만 건, 점구름 2.5만, 배우 24명, 동작 70종",
+ "classes_example": ["기본 동작 > 걷기", "기본 동작 > 손흔들기", "운동 > 홈트레이닝", "운동 > 요가", "운동 > 스트레칭", "재활 > BBS(균형 검사) 동작"],
+ "baseline": [],
+ "difficulty": "advanced",
+ "difficulty_note_ko": "3D 인체 모델과 카메라 기하학을 다뤄야 하고 전체 약 4TB입니다.",
+ "skills_needed_ko": ["파이썬", "3D 인체 모델(SMPL)", "카메라 기하학", "자세 추정"],
+ "caveats_ko": ["전체 약 4TB", "배우가 24명뿐이라 체형 다양성이 제한적"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "동작별 2D 관절 시각화", "title_en": "Visualise 2D joints by action", "desc_ko": "동작 몇 가지의 관절 좌표를 그려 비교합니다.", "desc_en": "Plot and compare joints for several actions."},
+  {"level": "capstone", "title_ko": "사진으로 3D 아바타 자세 만들기", "title_en": "3D avatar pose from a photo", "desc_ko": "사진 속 사람 자세를 3D 아바타에 옮기는 데모를 만듭니다.", "desc_en": "Transfer a person's pose in a photo to a 3D avatar."},
+  {"level": "research", "title_ko": "적은 배우로 일반화하기", "title_en": "Generalising from few actors", "desc_ko": "배우 수가 적을 때 새로운 체형에 대한 3D 복원 오차를 분석합니다.", "desc_en": "Analyse 3D reconstruction errors on unseen body shapes."}
+ ],
+ "doc_used": true,
+ "uncertain": []
+}

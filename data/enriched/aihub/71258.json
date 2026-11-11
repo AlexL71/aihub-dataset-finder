@@ -1,0 +1,33 @@
+{
+ "dataset_id": "71258",
+ "title_en": "Driving data in unusual road environments",
+ "summary_ko": "터널·교량·좁은 길 같은 국내 특이 도로 18종(77개 세부 유형)에서 찍은 카메라 이미지 36만 장과 라이다 포인트클라우드에, 자동차·이륜차·보행자 3D 상자와 신호등·표지판 2D 상자, 정지선·횡단보도 분할, 차선 폴리라인을 표시한 데이터입니다. 특이한 도로에서도 동작하는 자율주행 AI에 쓸 수 있습니다.",
+ "summary_en": "360,000 camera images and LiDAR point clouds from 18 types (77 sub-types) of unusual Korean roads, with 3D boxes for cars, two-wheelers and pedestrians, 2D boxes for traffic lights and signs, segmentation for stop lines and crosswalks, and lane polylines. For self-driving AI that works on unusual roads.",
+ "contents_ko": "카메라 이미지 + 라이다 포인트클라우드 + JSON(2D 상자, 분할, 폴리라인, 3D 큐보이드, 도로 유형).",
+ "contents_en": "Camera images + LiDAR point clouds + JSON (2D boxes, segmentation, polylines, 3D cuboids, road type).",
+ "modalities": ["image", "3d"],
+ "tasks": ["object_detection", "segmentation"],
+ "topics": [{"ko": "자율주행", "en": "Autonomous driving"}, {"ko": "센서 융합", "en": "Sensor fusion"}],
+ "keywords_ko": ["특이 도로", "자율주행", "라이다", "3D 탐지", "터널", "교량"],
+ "keywords_en": ["unusual roads", "autonomous driving", "LiDAR", "3D detection", "tunnels", "bridges"],
+ "labels": ["2D bounding box", "segmentation", "polyline", "3D cuboid", "road type"],
+ "file_formats": ["json"],
+ "scale_ko": "카메라 이미지 36만 장, 라이다 36만 프레임(3D 라벨 12만 장 이상), 특이 도로 18종",
+ "classes_example": ["자동차", "이륜차", "보행자", "신호등", "정지선", "횡단보도", "차선"],
+ "baseline": [
+  {"task": "3D detection (car)", "model": "PointPillars", "metric": "AP", "value": "79%"},
+  {"task": "3D detection (pedestrian)", "model": "PointPillars", "metric": "AP", "value": "45.38%"},
+  {"task": "3D detection (cyclist)", "model": "PointPillars", "metric": "AP", "value": "69.9%"}
+ ],
+ "difficulty": "advanced",
+ "difficulty_note_ko": "전체 약 1TB이고 카메라·라이다를 함께 다뤄야 합니다.",
+ "skills_needed_ko": ["파이썬", "포인트클라우드 3D 탐지", "YOLO 탐지", "센서 보정"],
+ "caveats_ko": ["전체 약 1TB", "보행자 3D 탐지 성능이 낮음(AP 45%)", "특이 도로 18종 목록이 팩 앞부분에 없음", "654번 노면표시 데이터와 같은 구축 기관"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "신호등·표지판 탐지", "title_en": "Traffic light and sign detection", "desc_ko": "카메라 이미지에서 신호등과 표지판을 찾습니다.", "desc_en": "Detect traffic lights and signs in camera images."},
+  {"level": "capstone", "title_ko": "터널 구간 주행 보조", "title_en": "Tunnel driving assistant", "desc_ko": "어두운 터널에서 차량·보행자를 라이다로 탐지해 경고합니다.", "desc_en": "Detect vehicles and pedestrians in tunnels with LiDAR and warn the driver."},
+  {"level": "research", "title_ko": "도로 유형별 성능 분석", "title_en": "Performance by road type", "desc_ko": "특이 도로 종류마다 3D 탐지 성능이 어떻게 다른지 연구합니다.", "desc_en": "Study how 3D detection varies across unusual road types."}
+ ],
+ "doc_used": true,
+ "uncertain": ["list of the 18 road types", "image file format"]
+}

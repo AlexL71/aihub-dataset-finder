@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71375",
+ "easy_ko": "전복 새끼를 키우는 수조에서 찍은 전복 유생, 먹이가 되는 규조류, 어린 전복 사진에 위치와 얼마나 빽빽한지를 표시하고, 수조 환경 기록을 함께 모은 데이터입니다. 전복을 언제 옮기고 먹이를 얼마나 주며 언제 내다 팔지 예측하는 양식 AI를 만들 수 있습니다.",
+ "easy_en": "Photos from abalone nursery tanks of abalone larvae, the diatoms they feed on and young abalone, with positions and density marked, plus tank-environment records. You can build aquaculture AI that predicts when to move young abalone, how much to feed them and when to sell.",
+ "detail_ko": "전남 해양수산과학원과 어가 수조 10개에서 모은 전복 유생(4만), 부착 규조류(3만), 치패(5만) 이미지 약 12만 장(png, jpg)에 개체·밀도 바운딩박스·다각형을 JSON으로 붙이고 수조 환경 시계열 약 12만 건(csv)을 더했습니다. 성능 지표 표는 비어 있습니다. 전체 약 460GB이며 수조 10개 데이터뿐입니다.",
+ "detail_en": "About 120k images (png, jpg) of abalone larvae (40k), attached diatoms (30k) and spat (50k) from 10 tanks at the Jeonnam Ocean and Fisheries Science Institute and farms, with JSON boxes, polygons and density, plus about 120k tank-environment time-series records (csv). The performance table is empty. Total size is about 460 GB; data comes from only 10 tanks.",
+ "amount_ko": "사진 약 12만 장, 환경 기록 약 12만 건",
+ "amount_en": "about 120k images, about 120k environment records",
+ "labels_ko": "전복·규조류 위치 상자·테두리, 빽빽한 정도, 수조 환경 값",
+ "labels_en": "boxes and outlines around abalone and diatoms, density, tank values",
+ "status": "full-run-2026-11-02"
+}

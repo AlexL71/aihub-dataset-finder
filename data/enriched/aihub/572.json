@@ -1,0 +1,29 @@
+{
+ "dataset_id": "572",
+ "title_en": "Two-wheeler safety hazard facility data",
+ "summary_ko": "골목길·이면도로 같은 생활도로에서 찍은 이미지 약 42만 장에 일방통행·속도제한·어린이보호구역 노면표시, 과속방지턱, 맨홀, 시선유도봉, 방치물 등 오토바이 운전에 위험한 시설물을 상자·다각형·선으로 표시한 데이터입니다. 배달 라이더에게 위험을 알려주는 AI에 쓸 수 있습니다.",
+ "summary_en": "About 420,000 images of alleys and side streets with hazards for motorbike riders marked by boxes, polygons and lines: road markings (one-way, speed limits, school zones), speed bumps, manholes, delineator posts, left objects and more. For AI that warns delivery riders about road risks.",
+ "contents_ko": "도로 이미지(png/jpg) + JSON(상자, 다각형, 폴리라인, 시설물 종류).",
+ "contents_en": "Road images (png/jpg) + JSON (boxes, polygons, polylines, facility class).",
+ "modalities": ["image"],
+ "tasks": ["object_detection", "segmentation"],
+ "topics": [{"ko": "교통 안전", "en": "Traffic safety"}, {"ko": "배달·이륜차", "en": "Delivery and motorbikes"}],
+ "keywords_ko": ["이륜차", "배달 라이더", "생활도로", "노면표시", "과속방지턱", "교통사고 예방"],
+ "keywords_en": ["motorbikes", "delivery riders", "local roads", "road markings", "speed bumps", "accident prevention"],
+ "labels": ["bounding box", "polygon", "polyline", "segmentation", "class"],
+ "file_formats": ["png", "jpg", "json"],
+ "scale_ko": "이미지 약 42만 장, 시설물·위험물 소분류 다수",
+ "classes_example": ["일방통행(표식)", "속도표시 제한(문자)", "어린이보호구역(문자)", "과속방지턱", "맨홀", "시선 유도봉", "공사안내 표지판"],
+ "baseline": [],
+ "difficulty": "intermediate",
+ "difficulty_note_ko": "탐지 실습에 좋지만 전체 약 1.1TB입니다. 일부 클래스만 받아 쓰세요.",
+ "skills_needed_ko": ["파이썬", "YOLO 탐지", "분할 모델"],
+ "caveats_ko": ["전체 약 1.1TB", "메타데이터는 png, 통계표는 JPG로 형식 표기가 다름", "거리 사진에 사람·번호판이 보일 수 있음", "성능 지표가 팩 앞부분에 없음"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "과속방지턱 탐지", "title_en": "Speed bump detection", "desc_ko": "도로 사진에서 과속방지턱을 찾습니다.", "desc_en": "Detect speed bumps in road photos."},
+  {"level": "capstone", "title_ko": "라이더 위험 알림 앱", "title_en": "Rider hazard alert app", "desc_ko": "블랙박스 영상에서 위험 시설물을 찾아 음성으로 알려줍니다.", "desc_en": "Spot hazards in dashcam video and warn the rider by voice."},
+  {"level": "research", "title_ko": "노면 글자 인식 결합", "title_en": "Road-text reading", "desc_ko": "노면 글자(속도·보호구역)를 탐지와 OCR로 읽어 규칙을 파악합니다.", "desc_en": "Read road text (speed, zones) with detection plus OCR to infer rules."}
+ ],
+ "doc_used": true,
+ "uncertain": ["exact image format (png vs jpg)"]
+}

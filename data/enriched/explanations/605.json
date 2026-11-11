@@ -1,0 +1,12 @@
+{
+ "dataset_id": "605",
+ "easy_ko": "여러 나이대의 사람들이 종이와 태블릿에 직접 쓴 한글 손글씨 사진마다 글자와 단어 위치, 정답 글자를 표시한 데이터입니다. 신청서 같은 손글씨 문서를 읽어 컴퓨터 글자로 바꿔 주는 AI를 만들 수 있습니다.",
+ "easy_en": "Photos of Korean handwriting written on paper and tablets by people of many ages, with the position of each character and word and the correct text marked. You can build AI that reads handwritten documents such as application forms and turns them into typed text.",
+ "detail_ko": "크라우드워커가 종이(82%)와 태블릿(18%)에 쓴 한글 손글씨 이미지 약 10.7만 장(png, 장당 40단어 이상)에 글자·단어 바운딩박스, 정답 텍스트, 작성자 성별·연령(10대 미만~50대 이상)을 JSON으로 붙였습니다. 기준 성능은 CRAFT 글자 탐지 F1 0.8604입니다. 전체 약 231GB이며, '정보제공' 손글씨에 개인정보처럼 보이는 내용이 있을 수 있어 가상 정보인지 확인이 필요합니다. 603번 고서 한자 OCR과 같은 구축 기관입니다.",
+ "detail_en": "About 107k handwriting images (png; 40+ words each) written by crowd workers on paper (82%) and tablets (18%), with JSON character and word boxes, ground-truth text, and writer sex and age (under 10 to 50+). Baseline: CRAFT text detection F1 0.8604. Total size is about 231 GB; 'information' handwriting may contain what looks like personal data, so check that it is fictional. Built by the same organisation as dataset 603.",
+ "amount_ko": "손글씨 사진 약 10.7만 장",
+ "amount_en": "about 107k handwriting images",
+ "labels_ko": "글자·단어 위치 상자, 정답 글자, 쓴 사람 성별·나이",
+ "labels_en": "boxes around characters and words, correct text, writer sex and age",
+ "status": "full-run-2026-11-02"
+}

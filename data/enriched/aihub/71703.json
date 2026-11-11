@@ -1,0 +1,29 @@
+{
+ "dataset_id": "71703",
+ "title_en": "Older adults' oral life-story data on modern Korean history",
+ "summary_ko": "60세 이상 고령자가 감정·사물·장소·관계/사건 등 5개 분류의 단어 50개를 보고 떠오르는 기억을 말한 음성 약 10,529시간(143,630건)과 받아쓴 글입니다. 기억의 구체성·감정·감각 요소가 표시되어 있어, 고령자 인지 기능이나 치매 위험을 살피는 AI에 쓸 수 있습니다.",
+ "summary_en": "About 10,529 hours (143,630 items) of speech and transcripts from adults over 60 recalling memories about 50 cue words in 5 categories (emotions, objects, places, relationships/events). Tagged with memory specificity, emotion and sensory details, for AI that assesses cognition or dementia risk in older adults.",
+ "contents_ko": "구술 음성(wav) + 전사 텍스트(txt) + 라벨(JSON: 구술자 정보, 기억 구체성, 감정, 감각 요소).",
+ "contents_en": "Oral speech (wav) + transcript (txt) + labels (JSON: speaker info, memory specificity, emotion, sensory elements).",
+ "modalities": ["audio", "text"],
+ "tasks": ["speech_recognition", "text_classification", "sentiment_emotion"],
+ "topics": [{"ko": "고령자 건강·치매", "en": "Older adults' health and dementia"}, {"ko": "근현대 생활사", "en": "Modern life history"}],
+ "keywords_ko": ["고령자", "구술", "자서전적 기억", "치매", "인지 기능", "회상"],
+ "keywords_en": ["older adults", "oral history", "autobiographical memory", "dementia", "cognition", "reminiscence"],
+ "labels": ["transcript", "memory specificity", "emotion", "sensory elements", "speaker metadata"],
+ "file_formats": ["wav", "txt", "json"],
+ "scale_ko": "음성·텍스트·라벨 각 143,630건, 음성 10,529시간, 단어 50개(5개 분류)",
+ "classes_example": ["감정-긍정/중립", "감정-부정", "사물", "장소", "관계/사건"],
+ "baseline": [],
+ "difficulty": "intermediate",
+ "difficulty_note_ko": "텍스트·라벨만 쓰면 가볍지만(약 0.65GB), 음성까지 받으면 전체 약 2.5TB입니다.",
+ "skills_needed_ko": ["파이썬", "한국어 언어 모델", "음성 인식"],
+ "caveats_ko": ["음성 포함 시 전체 약 2.5TB", "치매 진단 라벨이 아니라 기억 구체성 태그라 의료 판단에 바로 쓰면 안 됨", "성능 지표가 팩 앞부분에 없음"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "구술 감정 분류", "title_en": "Emotion in oral stories", "desc_ko": "받아쓴 글을 보고 긍정·부정 감정을 분류합니다.", "desc_en": "Classify positive or negative emotion from transcripts."},
+  {"level": "capstone", "title_ko": "기억 구체성 점수기", "title_en": "Memory specificity scorer", "desc_ko": "구술 글에서 기억이 얼마나 구체적인지 점수를 매기는 모델을 만듭니다.", "desc_en": "Build a model that scores how specific a recalled memory is."},
+  {"level": "research", "title_ko": "말투로 인지 저하 신호 찾기", "title_en": "Speech cues of cognitive decline", "desc_ko": "말 속도·멈춤 같은 음성 특징이 기억 구체성과 어떤 관계인지 연구합니다.", "desc_en": "Study how speech rate and pauses relate to memory specificity."}
+ ],
+ "doc_used": true,
+ "uncertain": ["원천 3.81TB(통계)와 파일 트리 약 2.5TB가 다름"]
+}

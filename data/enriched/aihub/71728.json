@@ -1,0 +1,29 @@
+{
+ "dataset_id": "71728",
+ "title_en": "Generative AI knowledge-graph-to-text data",
+ "summary_ko": "MBN·매일경제 뉴스, 매거진, 도서(역사·의료·사회·경제·국제·문화·IT) 원문 237,294건에서 주어-술어-목적어 지식 트리플을 뽑고, 트리플에서 다시 자연스러운 문장을 만드는 학습 데이터 300,178건입니다. 지식그래프로 문장을 생성하는 AI, 질의응답·챗봇에 쓸 수 있습니다.",
+ "summary_en": "300,178 training items from 237,294 news, magazine and book texts (history, medicine, society, economy, international, culture, IT): subject-predicate-object triples extracted and paired with natural sentences. For generating text from knowledge graphs, QA and chatbots.",
+ "contents_ko": "원문 텍스트(csv) + JSON(주어·술어·목적어 트리플, 대응 문장).",
+ "contents_en": "Source text (csv) + JSON (subject-predicate-object triples, matching sentences).",
+ "modalities": ["text"],
+ "tasks": ["text_generation", "information_extraction"],
+ "topics": [{"ko": "언어·생성 AI", "en": "Language and generative AI"}, {"ko": "지식그래프", "en": "Knowledge graphs"}],
+ "keywords_ko": ["지식그래프", "트리플", "문장 생성", "BART", "뉴스", "정보 추출"],
+ "keywords_en": ["knowledge graph", "triples", "text generation", "BART", "news", "information extraction"],
+ "labels": ["subject-predicate-object triples", "target sentence"],
+ "file_formats": ["csv", "json"],
+ "scale_ko": "원문 237,294건, 가공 300,178건, 토큰 약 5,885만 개",
+ "classes_example": ["역사", "의료", "사회", "경제", "국제", "문화", "IT"],
+ "baseline": [],
+ "difficulty": "intermediate",
+ "difficulty_note_ko": "약 0.4GB 텍스트라 가볍습니다. BART 같은 생성 모델 미세조정 경험이 있으면 좋습니다.",
+ "skills_needed_ko": ["파이썬", "Hugging Face 생성 모델(KoBART)", "BLEU 평가"],
+ "caveats_ko": ["페이지에 성능 점수 표가 없음(BART 미세조정 계획만 있음)", "뉴스가 약 90%라 문체가 치우침", "71729와 같은 기관·원문 구성"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "트리플 통계 살펴보기", "title_en": "Triple statistics", "desc_ko": "분야별로 자주 나오는 술어(관계)를 세어 정리합니다.", "desc_en": "Count the most common predicates by domain."},
+  {"level": "capstone", "title_ko": "트리플→뉴스 문장 생성기", "title_en": "Triple-to-sentence generator", "desc_ko": "KoBART를 미세조정해 트리플을 넣으면 기사체 문장을 만들어 줍니다.", "desc_en": "Fine-tune KoBART to turn triples into news-style sentences."},
+  {"level": "research", "title_ko": "생성 문장 사실성 검증", "title_en": "Factuality of generated text", "desc_ko": "생성 문장이 입력 트리플과 다른 내용을 말하는 오류를 줄이는 방법을 연구합니다.", "desc_en": "Study reducing generated statements that contradict input triples."}
+ ],
+ "doc_used": true,
+ "uncertain": []
+}

@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71982",
+ "easy_ko": "손과 발 자세 사진과 네일 디자인 사진 10만여 장에 손톱 영역을 칠하고, 둥근형, 타원형, 사각형 같은 손톱 모양별로 나눈 데이터입니다. 손톱과 발톱 네일을 가상으로 칠해 보거나 맞춤 디자인을 추천하는 데 쓸 수 있습니다.",
+ "easy_en": "Over 100,000 photos of hand and foot poses and nail designs, with nail areas painted in and sorted by nail shape such as round, oval and square. You can use it for virtual try-on of manicures and pedicures or to recommend personalised nail designs.",
+ "detail_ko": "직접 촬영하거나 네일아트 협력사에서 구매한 손발 포즈 이미지 80,000장(분할 라벨 2,000건)과 네일 디자인 이미지 20,058장(폴리곤 라벨 374,008건), 총 100,058장(png)으로, 손톱 모양은 Rounded, Oval, Square, Almond, Ballerina 등입니다. 손발 포즈 이미지 80,000장 중 분할 라벨은 2,000건뿐이고, 데이터 개요 설명이 팩에 비어 있으며, 데이터 유형에 3D가 있으나 3D 파일 형식은 팩 앞부분에 없습니다. 성능 지표 값은 팩 앞부분에 없습니다.",
+ "detail_en": "100,058 images (png): 80,000 hand and foot pose images (2,000 with segmentation labels) and 20,058 nail-design images (374,008 polygon labels), shot for the project or bought from nail-art partners, by nail shape (rounded, oval, square, almond, ballerina and others). Only 2,000 of the 80,000 pose images are segmented; the overview is empty; 3D is listed as a data type but no 3D file format appears in the pack; and no metric values are given.",
+ "amount_ko": "원천 100,058장(손발 포즈 80,000, 디자인 20,058), 분할 라벨 2,000건, 폴리곤 라벨 374,008건",
+ "amount_en": "100,058 images (80,000 pose, 20,058 design), 2,000 segmentation labels, 374,008 polygon labels",
+ "labels_ko": "손톱 영역, 손톱 테두리, 손톱 모양",
+ "labels_en": "segmentation, polygon, nail shape",
+ "status": "full-run-2026-11-02"
+}

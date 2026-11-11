@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71261",
+ "easy_ko": "같은 뜻의 한국어와 영어 문장, 한국어와 중국어 문장을 각각 소리 내어 읽은 녹음을 짝지은 데이터로, 다큐멘터리·애니메이션·드라마와 일상·전문 분야 문장이 들어 있습니다. 한 나라 말을 바로 다른 나라 말로 옮겨 주는 음성 통역 AI를 만들 수 있습니다.",
+ "easy_en": "Recordings of Korean–English and Korean–Chinese sentence pairs with the same meaning, each read aloud, covering documentary, animation and drama lines as well as everyday and specialist topics. You can build speech-interpretation AI that turns speech in one language directly into another.",
+ "detail_ko": "한-영, 한-중 병렬 음성 약 5,200시간(pcm)과 JSON(전사, 대응 번역, 분야: 다큐멘터리, 애니메이션, 영화드라마, 여행, 음식, 의료/의학 등)으로 구성됩니다. 기준 성능은 Transformer 음성 번역 BLEU 0.5095입니다. 전체 약 767GB이며, pcm 원시 음성이라 샘플링 정보 확인이 필요하고, 71260번 한영 혼합 데이터와 같은 구축 기관입니다.",
+ "detail_en": "About 5,200 hours of parallel speech (pcm) in Korean–English and Korean–Chinese pairs, with JSON transcripts, paired translations and topics (documentary, animation, film and drama, travel, food, medicine and more). Baseline: Transformer speech translation BLEU 0.5095. Total size is about 767 GB; raw pcm audio needs its sampling details checked; built by the same organisation as dataset 71260.",
+ "amount_ko": "음성 약 5,200시간, 언어 쌍 2종",
+ "amount_en": "about 5,200 hours of speech, 2 language pairs",
+ "labels_ko": "말소리를 받아 적은 글(전사), 짝이 되는 번역, 분야",
+ "labels_en": "transcripts, paired translation, topic",
+ "status": "full-run-2026-11-02"
+}

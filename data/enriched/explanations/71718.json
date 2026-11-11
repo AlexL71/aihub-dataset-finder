@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71718",
+ "easy_ko": "문제은행에서 뽑은 초등학생과 중학교 1학년의 수학 문제와 모범 답안 그림 8만여 개에 문제 글자, 영역 위치, 그림 설명을 붙인 데이터입니다. 학년과 유형에 맞는 새 수학 문제를 만들어 주는 AI 교과서에 쓸 수 있습니다.",
+ "easy_en": "Over 80,000 images of maths problems and model answers from a question bank, from primary school (grade 3 up) to the first year of middle school, with the problem text, area boxes and picture descriptions. You can use it to build AI textbooks that create new maths problems for each grade and type.",
+ "detail_ko": "문제은행에서 뽑은 초·중등 수학(초등 3~6학년, 중등 1학년) 문제·모범답안 이미지 84,203건(png)에 문항 메타정보, OCR 텍스트, 영역 상자, 이미지 설명 13,776건을 JSON으로 붙였습니다. 성능 수치는 팩에 없고, 71716 수학 자동 풀이 데이터와 같은 기관·구조이며, 수식 표기 방식을 확인해야 합니다.",
+ "detail_en": "84,203 problem and model-answer images (png) of primary and middle-school maths (grades 3 to 6 and middle-school year 1) from a question bank, with JSON item metadata, OCR text, area boxes and 13,776 image descriptions. No scores are in the pack. Same builder and structure as the maths auto-solving set 71716; check how formulas are written.",
+ "amount_ko": "문항 84,203건, 이미지 설명 13,776건",
+ "amount_en": "84,203 items, 13,776 image descriptions",
+ "labels_ko": "영역 위치 상자, 문제 글자, 그림 설명",
+ "labels_en": "bounding box, OCR text, caption",
+ "status": "full-run-2026-11-02"
+}

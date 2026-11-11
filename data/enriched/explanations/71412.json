@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71412",
+ "easy_ko": "문구, 주방용품, 공구, 장난감, 작은 전자제품 같은 물건의 입체 모형과, 그 모형을 여러 방향에서 그려 낸 색·거리·영역·표면 방향 사진을 짝지은 데이터입니다. 사진 몇 장으로 물건을 입체로 되살리거나 새 각도의 모습을 만들어 내는 AI를 만들 수 있습니다.",
+ "easy_en": "3D models of objects such as stationery, kitchenware, tools, toys and small electronics, paired with renderings from many viewpoints showing colour, depth, object area and surface direction. You can build AI that rebuilds objects in 3D from a few photos or creates views from new angles.",
+ "detail_ko": "사물 3D 에셋 10,000개(fbx, obj, mtl; 문구, 주방용품, 용기, 공구, 장난감, 화장품/미용, 소형 전자제품, 과일/음식, 악기)와 여러 카메라 시점 렌더링 이미지 960,000장(png; RGB·깊이·마스크·노멀 각 240,000장), 에셋 정보·카메라 속성 JSON으로 구성됩니다. 기준 성능은 새 시점 합성 PSNR 28.8dB, SSIM 0.96입니다(모델 칸에 CUDA·드라이버 버전이 적혀 있음). 파일 트리 용량(약 126GB)과 페이지 표 용량이 다르고, 렌더링 이미지라 실제 사진과 차이가 있습니다.",
+ "detail_en": "10,000 3D object assets (fbx, obj, mtl; stationery, kitchenware, containers, tools, toys, cosmetics, small electronics, fruit and food, instruments) and 960,000 multi-view renderings (png; 240,000 each of RGB, depth, mask and normal), with JSON asset info and camera parameters. Baselines: novel-view synthesis PSNR 28.8 dB, SSIM 0.96 (the model field lists CUDA and driver versions instead of a name). The file tree (about 126 GB) and the page's size table differ; rendered images differ from real photos.",
+ "amount_ko": "입체 모형 10,000개, 그린 사진 96만 장",
+ "amount_en": "10,000 3D assets, 960k rendered images",
+ "labels_ko": "카메라 정보, 거리(깊이)·영역·표면 방향 그림, 물건 정보",
+ "labels_en": "camera parameters, depth, mask and normal maps, asset info",
+ "status": "full-run-2026-11-02"
+}

@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71730",
+ "easy_ko": "한국어와 영어, 중국어, 일본어가 함께 쓰인 간판, 안내문, 공공 표지, 동영상 화면 사진 40만여 장에 글자 영역과 글자 내용을 표시한 데이터입니다. 한국어와 외국어가 섞인 글자를 읽는 AI나 외국인 관광 안내에 쓸 수 있습니다.",
+ "easy_en": "Over 400,000 photos of signs, notices, public signage and video screens where Korean appears together with English, Chinese or Japanese, with text areas and contents marked. You can use it to build AI that reads mixed Korean and foreign text, or tourist guides for foreigners.",
+ "detail_ko": "한국어와 외국어가 병기된 이미지 400,864장(jpeg, png; 한-영 247,900, 한-중 92,346, 한-일 60,618; 주제 생활·문화·공공·동영상)에 글자 영역 다각형, 글자 내용, 언어 라벨을 붙였습니다. 페이지에 성능 점수 표가 없고, 라벨링 형식이 '이미지'로 적혀 있어 실제 라벨 파일 형식을 확인해야 하며, 한-영이 약 62%로 많습니다.",
+ "detail_en": "400,864 images (jpeg, png; 247,900 Korean-English, 92,346 Korean-Chinese, 60,618 Korean-Japanese; topics: daily life, culture, public, video) with text-area polygons, transcriptions and language labels. There is no score table, the label format is listed as 'image', so check the actual label file format, and Korean-English makes up about 62%.",
+ "amount_ko": "이미지 400,864장(한-영 247,900, 한-중 92,346, 한-일 60,618)",
+ "amount_en": "400,864 images (247,900 ko-en, 92,346 ko-zh, 60,618 ko-ja)",
+ "labels_ko": "글자 영역 테두리, 글자 내용, 언어",
+ "labels_en": "polygon, text transcription, language",
+ "status": "full-run-2026-11-02"
+}

@@ -1,0 +1,29 @@
+{
+ "dataset_id": "71917",
+ "title_en": "NEW CoT-Fabric based technology valuation data",
+ "summary_ko": "한국 특허 공보, 특허평가정보, 기업·재무정보, 기술가치평가정보를 바탕으로 기술가치평가 결과와 그 근거(경제적 수명, 할인율, 로열티율 등)를 단계적 사고(CoT)로 적은 질의응답 60,000건으로, 반도체·디스플레이, 이차전지, 인공지능, 수소, 사이버 보안 같은 첨단 기술 분야별로 나뉩니다. 기술가치평가 AI 에이전트와 기술 사업화 분석에 쓸 수 있습니다.",
+ "summary_en": "60,000 QA items with chain-of-thought explaining technology valuation results and their basis (economic life, discount rate, royalty rate and more), built from Korean patent gazettes, patent evaluations, company/financial data and valuation data, across advanced fields (semiconductors/displays, batteries, AI, hydrogen, cybersecurity and more). For valuation agents and technology commercialization analysis.",
+ "contents_ko": "질의응답 JSON(특허·재무 입력, CoT 추론, 평가 결과).",
+ "contents_en": "QA JSON (patent and financial inputs, CoT reasoning, valuation result).",
+ "modalities": ["text"],
+ "tasks": ["question_answering", "text_generation", "tabular_prediction"],
+ "topics": [{"ko": "지식재산·특허", "en": "Intellectual property and patents"}, {"ko": "기술 금융", "en": "Technology finance"}],
+ "keywords_ko": ["기술가치평가", "특허", "CoT", "로열티율", "할인율", "LLM"],
+ "keywords_en": ["technology valuation", "patents", "chain-of-thought", "royalty rate", "discount rate", "LLM"],
+ "labels": ["question-answer", "CoT"],
+ "file_formats": ["json"],
+ "scale_ko": "질의응답 60,000건",
+ "classes_example": ["반도체·디스플레이", "사이버 보안", "수소", "양자", "우주항공·해양", "이차전지", "인공지능", "차세대 원자력", "차세대 통신"],
+ "baseline": [],
+ "difficulty": "intermediate",
+ "difficulty_note_ko": "약 300MB로 가볍지만 가치평가 개념(할인율 등)을 알아야 결과를 이해할 수 있습니다.",
+ "skills_needed_ko": ["파이썬", "LLM 미세조정(LoRA)", "재무·가치평가 기초"],
+ "caveats_ko": ["페이지에 성능 점수 표가 없음(CoT 질의응답 모델 소개만 있음)", "양자 분야가 1.17%(700건)로 적음", "평가 결과는 실제 투자 판단에 그대로 쓰면 안 됨"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "분야별 로열티율 비교", "title_en": "Royalty rates by field", "desc_ko": "기술 분야별 로열티율과 할인율 분포를 그래프로 비교합니다.", "desc_en": "Compare royalty and discount rates by technology field."},
+  {"level": "capstone", "title_ko": "특허 가치평가 도우미", "title_en": "Patent valuation assistant", "desc_ko": "특허 정보를 넣으면 평가 근거를 단계별로 설명하는 LLM 데모를 만듭니다.", "desc_en": "Explain valuation steps for a given patent with an LLM."},
+  {"level": "research", "title_ko": "추론 숫자 정확도 검증", "title_en": "Checking numeric reasoning", "desc_ko": "LLM이 CoT 속 계산을 틀리지 않게 하는 방법을 연구합니다.", "desc_en": "Study keeping LLM calculations correct inside CoT."}
+ ],
+ "doc_used": true,
+ "uncertain": []
+}

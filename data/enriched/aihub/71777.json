@@ -1,0 +1,29 @@
+{
+ "dataset_id": "71777",
+ "title_en": "Dataset for non-destructive quality inspection by kimchi production stage",
+ "summary_ko": "김치 생산 단계별(배추 원물, 절임배추, 종균김치) RGB 이미지 약 9만 장과 초분광 이미지 약 18만 장에 영역 분할과 품질 등급이 붙은 데이터입니다. 김치 원료를 자르지 않고 품질 등급을 예측하는 AI에 쓸 수 있습니다.",
+ "summary_en": "About 90,000 RGB and 180,000 hyperspectral images across kimchi production stages (raw cabbage, salted cabbage, starter-culture kimchi), with segmentation and quality grades. For AI that predicts quality grades without cutting the ingredients.",
+ "contents_ko": "RGB 이미지(jpg) + 초분광 영상(hsi·img + hdr, npz) + JSON(분할, 품질 등급).",
+ "contents_en": "RGB image (jpg) + hyperspectral cube (hsi/img + hdr, npz) + JSON (segmentation, quality grade).",
+ "modalities": ["image"],
+ "tasks": ["segmentation", "image_classification", "tabular_prediction"],
+ "topics": [{"ko": "식품 제조·품질", "en": "Food manufacturing and quality"}, {"ko": "농산물", "en": "Agricultural produce"}],
+ "keywords_ko": ["김치", "배추", "초분광", "비파괴 검사", "품질 등급", "식품 공정"],
+ "keywords_en": ["kimchi", "napa cabbage", "hyperspectral", "non-destructive testing", "quality grade", "food process"],
+ "labels": ["segmentation", "quality grade"],
+ "file_formats": ["jpg", "hdr", "npz", "json"],
+ "scale_ko": "RGB 약 90,728장, 초분광 약 181,456장(배추 원물·절임배추·종균김치)",
+ "classes_example": ["배추원물", "절임배추", "종균김치"],
+ "baseline": [],
+ "difficulty": "advanced",
+ "difficulty_note_ko": "초분광 데이터는 다루기 어렵고 전체가 약 5TB입니다. RGB 이미지부터 시작하세요.",
+ "skills_needed_ko": ["파이썬", "분할 모델", "초분광 영상 처리"],
+ "caveats_ko": ["전체 약 5,030GB로 매우 큼", "품질 등급 기준이 팩 앞부분에 없음", "성능 지표 값이 팩에 없음"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "배추 품질 등급 분류", "title_en": "Cabbage grade classifier", "desc_ko": "RGB 사진으로 배추 원물 품질 등급을 분류합니다.", "desc_en": "Classify raw cabbage grades from RGB photos."},
+  {"level": "capstone", "title_ko": "절임 상태 검사기", "title_en": "Salting inspector", "desc_ko": "절임배추 사진으로 절임 품질을 판정하는 공정 도구를 만듭니다.", "desc_en": "Judge salted-cabbage quality on the line."},
+  {"level": "research", "title_ko": "RGB vs 초분광 비교", "title_en": "RGB vs hyperspectral", "desc_ko": "초분광이 RGB보다 품질 예측을 얼마나 높이는지 연구합니다.", "desc_en": "Measure how much hyperspectral improves over RGB."}
+ ],
+ "doc_used": true,
+ "uncertain": ["품질 등급 단계 수"]
+}

@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71879",
+ "easy_ko": "반려견이 자라는 시기별로 성장과 병 관리를 다룬 기본 글과, 보호자 질문과 수의사 답변 2만 4천여 건을 내과, 피부과, 안과, 외과, 치과로 나눈 글 데이터입니다. 반려견 건강 상담 챗봇에 쓸 수 있습니다.",
+ "easy_en": "Text on dog growth and disease care at each life stage, plus over 24,000 owner questions and vet answers sorted into internal medicine, dermatology, ophthalmology, surgery and dentistry. You can use it to build dog-health advice chatbots.",
+ "detail_ko": "반려견 생애주기별 성장·질병 관리를 위한 기본정보 텍스트 265건(txt, 1,066,794토큰)과 보호자 질문·수의사 답변 질의응답 24,006건(JSON; 질의 1,735,201토큰, 답변 1,975,328토큰)으로, 진료과는 내과, 피부과, 안과, 외과, 치과입니다. 페이지에 성능 점수 표가 없고(Llama 8B 목표 Perplexity 10% 감소만 소개), 목표값 표기 '정확도 80% (BLUE 40 기준)'은 지표가 섞여 뜻이 불분명하며, 내과가 51%로 많고 치과·안과는 5% 이하입니다.",
+ "detail_en": "265 basic-information texts (txt, 1,066,794 tokens) on dog growth and disease care by life stage, plus 24,006 owner-question and vet-answer pairs (JSON; 1,735,201 question tokens, 1,975,328 answer tokens) in internal medicine, dermatology, ophthalmology, surgery and dentistry. There is no score table (only a Llama 8B target of a 10% perplexity drop); the target 'accuracy 80% (BLUE 40)' mixes metrics, so its meaning is unclear; internal medicine is 51% while dentistry and ophthalmology are 5% or less.",
+ "amount_ko": "기본정보 1,066,794토큰(265건), 질의응답 24,006건",
+ "amount_en": "1,066,794 tokens of basic information (265 texts), 24,006 QA pairs",
+ "labels_ko": "질문과 답, 진료과",
+ "labels_en": "question-answer, department",
+ "status": "full-run-2026-11-02"
+}

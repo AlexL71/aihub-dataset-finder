@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71691",
+ "easy_ko": "일반 카메라, 열을 보는 열화상 카메라, 레이저 센서로 같은 장면을 함께 찍은 주행 데이터에 보행자, 차량, 신호등 같은 물체 영역과 입체 상자를 표시했습니다. 밤이나 안개처럼 잘 안 보이는 상황에서도 물체를 알아보는 자율주행 AI에 쓸 수 있습니다.",
+ "easy_en": "Driving data in which an ordinary camera, a heat-sensing thermal camera and a laser sensor capture each scene together, with objects such as pedestrians, vehicles and traffic lights painted in and boxed in 3D. You can use it to build self-driving AI that still recognises objects at night or in fog.",
+ "detail_ko": "220시간이 넘는 주행에서 뽑은 장면마다 전방 RGB 이미지, 전방 열화상 이미지(jpg), 360도 라이다 점군(PCD)이 각 86,601장 있고, 객체(예: 보행자, 차량, 신호등) 2D 분할과 3D 큐보이드 라벨 각 86,601개(JSON), 이미지 캡션 10,000개, GNSS/INS 위치 데이터가 있습니다. 전체 약 355GB이고, 전체 클래스 목록과 성능 지표는 팩 앞부분에 없습니다.",
+ "detail_en": "Scenes taken from more than 220 hours of driving, each with a front RGB image and a front thermal image (jpg) and a 360-degree lidar point cloud (PCD), 86,601 of each, with 86,601 JSON labels each for 2D segmentation and 3D cuboids of objects (such as pedestrians, vehicles, traffic lights), 10,000 image captions and GNSS/INS position data. Total size is about 355 GB, and the full class list and metrics are not in the pack.",
+ "amount_ko": "RGB·열화상·라이다 각 86,601장, 이미지 캡션 10,000개",
+ "amount_en": "86,601 each of RGB, thermal and lidar frames; 10,000 image captions",
+ "labels_ko": "물체 영역, 물체 입체 상자, 사진 설명",
+ "labels_en": "polygons, 3D cuboids, captions",
+ "status": "full-run-2026-11-02"
+}

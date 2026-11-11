@@ -1,0 +1,12 @@
+{
+ "dataset_id": "175",
+ "easy_ko": "배가 바다를 다니며 찍은 영상에서 뽑은 사진마다 다른 배, 해상 풍력발전기, 부표, 등대, 떠다니는 물건의 위치와 바다·하늘·섬·수평선·해안선 영역을 표시한 데이터입니다. 사람 없이 스스로 다니는 배나 바다 안전을 지키는 AI를 만들 수 있습니다.",
+ "easy_en": "Images from videos filmed while ships sail, marked with other ships, offshore wind turbines, buoys, lighthouses and floating objects, plus areas of sea, sky, islands, the horizon and coastline. You can build AI for self-navigating ships or for safety at sea.",
+ "detail_ko": "선박 운항 중 촬영한 영상 1,500시간에서 뽑은 이미지 540만 장(jpg)으로, JSON에 물체 바운딩박스(선박 100만 등)와 환경 폴리곤·폴리라인(바다·하늘 각 30만 등)이 있습니다. 클래스는 선박, 해상풍력, 부표, 어망부표, 등대, 기타 부유물, 섬, 수평선 등입니다. 기준 성능은 FCN / R-CNN mIoU 62.8%로, 탐지 지표가 mIoU로 적혀 있습니다. 전체 약 4.5TB입니다.",
+ "detail_en": "5.4M jpg images from 1,500 hours of video filmed on sailing ships, with JSON bounding boxes (1M ships and more) and environment polygons and polylines (300k each for sea and sky and more). Classes include ship, offshore wind turbine, buoy, fishing-net buoy, lighthouse, other floating objects, island and horizon. Baseline: FCN / R-CNN mIoU 62.8% (a detection task reported as mIoU). Total size is about 4.5 TB.",
+ "amount_ko": "이미지 540만 장, 영상 1,500시간",
+ "amount_en": "5.4M images, 1,500 hours of video",
+ "labels_ko": "바다 위 물체 위치 상자, 바다·하늘·섬 영역, 수평선·해안선",
+ "labels_en": "boxes around sea objects, sea, sky and island regions, horizon and coastline lines",
+ "status": "full-run-2026-11-02"
+}

@@ -1,0 +1,12 @@
+{
+ "dataset_id": "592",
+ "easy_ko": "우리 전통 무예 택견의 여러 동작을 스튜디오에서 여러 대의 카메라로 동시에 찍고, 몸의 주요 점 위치와 동작 이름을 붙인 데이터입니다. 택견 동작을 알아보거나 따라 한 동작이 얼마나 정확한지 평가해 주는 AI를 만들 수 있습니다.",
+ "easy_en": "Moves of taekkyeon, a traditional Korean martial art, filmed in a studio by several cameras at once, with key body points and the name of each move. You can build AI that recognises taekkyeon moves or scores how well someone copies them.",
+ "detail_ko": "전통무예 택견의 36가지 동작을 스튜디오에서 카메라 8대로 동시에 촬영한 동작 클립 약 11.8만 개(약 900시간, 이미지 약 1억 장; mp4/jpg)에 키포인트(CSV)와 동작 정보(JSON; 개별구·동작구·응용동작, 품밟기·활개질·딴죽·차기·손질 등)를 붙였습니다. 기준 성능은 PoseC3D 동작 분류 top-1 정확도 78.13%입니다. 전체 약 11.8TB로 매우 크고, 시연자 얼굴이 보일 수 있으며, 36개 세부 동작 이름 전체는 기록에서 확인되지 않습니다.",
+ "detail_en": "About 118k clips (about 900 hours, about 100M frames; mp4/jpg) of 36 taekkyeon moves filmed by 8 studio cameras at once, with keypoints (CSV) and move info (JSON; single, combined and applied moves, such as footwork, arm swings, trips, kicks and hand strikes). Baseline: PoseC3D move classification top-1 accuracy 78.13%. Total size is very large (about 11.8 TB); performers' faces may be visible; the full list of 36 move names is not in the record.",
+ "amount_ko": "동작 클립 약 11.8만 개, 이미지 약 1억 장, 동작 36종",
+ "amount_en": "about 118k clips, about 100M frames, 36 moves",
+ "labels_ko": "몸의 주요 점(키포인트), 동작 이름",
+ "labels_en": "body key points, move class",
+ "status": "full-run-2026-11-02"
+}

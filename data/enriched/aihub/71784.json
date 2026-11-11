@@ -1,0 +1,29 @@
+{
+ "dataset_id": "71784",
+ "title_en": "Residential road object recognition autonomous driving data",
+ "summary_ko": "보행자 사고가 잦은 골목길·생활도로에서 가시광 카메라 40만 장, 열화상 카메라 10만 장, 라이다 10만 장을 모으고 보행자·이륜차·전동킥보드·차량 등을 상자·키포인트·분할로 표시한 데이터입니다. 교통약자와 돌발 상황까지 고려한 자율주행 인지 AI에 쓸 수 있습니다.",
+ "summary_en": "400,000 visible-light, 100,000 thermal and 100,000 LiDAR frames from alleys and residential roads where pedestrian accidents are common, with pedestrians, motorbikes, e-scooters and vehicles marked by boxes, keypoints and segmentation. For self-driving perception that handles vulnerable road users and edge cases.",
+ "contents_ko": "가시광·열화상 이미지(png) + 라이다(pcd) + JSON(상자, 키포인트, 분할).",
+ "contents_en": "Visible and thermal images (png) + LiDAR (pcd) + JSON (boxes, keypoints, segmentation).",
+ "modalities": ["image", "3d"],
+ "tasks": ["object_detection", "keypoint_pose", "segmentation"],
+ "topics": [{"ko": "자율주행", "en": "Autonomous driving"}, {"ko": "보행자 안전", "en": "Pedestrian safety"}],
+ "keywords_ko": ["생활도로", "골목길", "보행자", "전동킥보드", "열화상", "라이다"],
+ "keywords_en": ["residential roads", "alleys", "pedestrians", "e-scooters", "thermal imaging", "LiDAR"],
+ "labels": ["bounding box", "keypoints", "instance segmentation"],
+ "file_formats": ["png", "pcd", "json"],
+ "scale_ko": "가시광 40만 장, 열화상 10만 장, 라이다 10만 장",
+ "classes_example": ["보행자", "차량", "킥보드", "자전거"],
+ "baseline": [],
+ "difficulty": "advanced",
+ "difficulty_note_ko": "센서 3종을 다루고 전체가 약 1.2TB입니다. 가시광 이미지의 보행자 탐지부터 시작하세요.",
+ "skills_needed_ko": ["파이썬", "YOLO 탐지", "포인트 클라우드 처리"],
+ "caveats_ko": ["전체 약 1,227GB", "엣지케이스 시나리오 일부는 연출일 수 있음", "클래스 전체 목록과 성능 지표가 팩 앞부분에 없음"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "골목길 보행자 탐지", "title_en": "Alley pedestrian detection", "desc_ko": "가시광 이미지에서 보행자와 킥보드를 찾습니다.", "desc_en": "Detect pedestrians and e-scooters in visible images."},
+  {"level": "capstone", "title_ko": "야간 열화상 보행자 경고", "title_en": "Night thermal pedestrian warning", "desc_ko": "열화상으로 어두운 골목의 보행자를 찾아 경고합니다.", "desc_en": "Warn about pedestrians in dark alleys using thermal images."},
+  {"level": "research", "title_ko": "보행자 자세로 돌발 예측", "title_en": "Predicting sudden crossings", "desc_ko": "키포인트로 보행자가 갑자기 뛰어들지 예측하는 방법을 연구합니다.", "desc_en": "Predict sudden road entry from pedestrian keypoints."}
+ ],
+ "doc_used": true,
+ "uncertain": ["라벨 총 수량", "클래스 목록"]
+}

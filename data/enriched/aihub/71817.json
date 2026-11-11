@@ -1,0 +1,29 @@
+{
+ "dataset_id": "71817",
+ "title_en": "Topic-based writing evaluation data",
+ "summary_ko": "대중 수요가 높은 주제별로 쓴 글 20,000건에 2인 이상의 전문가가 매긴 채점 점수와 피드백이 붙은 데이터입니다. 글쓰기를 자동으로 채점하고 고칠 점을 알려 주는 교육용 AI에 쓸 수 있습니다.",
+ "summary_en": "20,000 essays on popular writing topics, each scored with feedback by two or more experts. For educational AI that automatically grades writing and suggests improvements.",
+ "contents_ko": "글(txt) + JSON(채점·피드백).",
+ "contents_en": "Essays (txt) + JSON (scores, feedback).",
+ "modalities": ["text"],
+ "tasks": ["text_classification", "text_generation"],
+ "topics": [{"ko": "교육·이러닝", "en": "Education and e-learning"}, {"ko": "글쓰기 평가", "en": "Writing assessment"}],
+ "keywords_ko": ["글쓰기 채점", "자동 평가", "피드백", "작문", "주제별 글쓰기", "교육"],
+ "keywords_en": ["essay scoring", "automated assessment", "feedback", "composition", "topic writing", "education"],
+ "labels": ["writing score", "feedback"],
+ "file_formats": ["txt", "json"],
+ "scale_ko": "원천·라벨 각 20,000건",
+ "classes_example": ["에세이 목적 > 설명, 설득, 친교 및 정서", "주제 > 인문, 사회, 역사, 과학, 문화", "난이도 > 상, 중, 하"],
+ "baseline": [],
+ "difficulty": "beginner",
+ "difficulty_note_ko": "약 0.13GB의 작은 텍스트라 바로 실습할 수 있습니다.",
+ "skills_needed_ko": ["파이썬", "트랜스포머", "회귀·분류 모델"],
+ "caveats_ko": ["채점 항목과 점수 척도가 팩 앞부분에 없음", "성능 지표 값이 팩 앞부분에 없음"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "글 점수 예측", "title_en": "Essay score prediction", "desc_ko": "글을 넣으면 전문가 점수를 예측합니다.", "desc_en": "Predict expert scores for an essay."},
+  {"level": "capstone", "title_ko": "글쓰기 첨삭 도우미", "title_en": "Writing feedback assistant", "desc_ko": "점수와 함께 고칠 점을 알려 주는 첨삭 앱을 만듭니다.", "desc_en": "App giving scores and improvement tips."},
+  {"level": "research", "title_ko": "채점자 간 차이 모델링", "title_en": "Rater disagreement modelling", "desc_ko": "전문가 사이 점수 차이를 반영한 공정한 채점 방법을 연구합니다.", "desc_en": "Fair scoring that accounts for rater disagreement."}
+ ],
+ "doc_used": true,
+ "uncertain": ["채점 항목"]
+}

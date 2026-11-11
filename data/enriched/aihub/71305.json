@@ -1,0 +1,32 @@
+{
+ "dataset_id": "71305",
+ "title_en": "Empathetic dialogue data",
+ "summary_ko": "한 사람은 주어진 감정과 상황에 처한 화자, 다른 사람은 적절히 공감하는 화자 역할을 맡아 나눈 한국어 대화 약 3.2만 세션(발화 약 47만 개)입니다. 부모·자녀·친구·연인 등 다양한 관계가 설정되어 있습니다. 사용자의 감정에 공감하는 심리 상담 챗봇에 쓸 수 있습니다.",
+ "summary_en": "About 32,000 Korean dialogue sessions (about 470,000 utterances) where one speaker is in a given emotion and situation and the other responds with empathy, across relationships such as parent-child, friends and partners. For counselling chatbots that respond with empathy.",
+ "contents_ko": "대화 텍스트(tsv, json) + 감정·상황·화자 관계 라벨.",
+ "contents_en": "Dialogue text (tsv, json) + emotion, situation and relationship labels.",
+ "modalities": ["text"],
+ "tasks": ["dialogue", "sentiment_emotion", "text_generation"],
+ "topics": [{"ko": "심리·정신건강", "en": "Psychology and mental health"}, {"ko": "챗봇", "en": "Chatbots"}],
+ "keywords_ko": ["공감 대화", "감정", "심리 상담", "챗봇", "자살 예방"],
+ "keywords_en": ["empathetic dialogue", "emotion", "counselling", "chatbot", "suicide prevention"],
+ "labels": ["emotion", "situation", "speaker relationship", "dialogue features"],
+ "file_formats": ["tsv", "json"],
+ "scale_ko": "대화 약 3.2만 세션, 발화 약 47만 개",
+ "classes_example": ["부모자녀", "조손", "친구", "연인", "직장 동료"],
+ "baseline": [
+  {"task": "next-utterance generation", "model": "KoGPT2", "metric": "BLEU", "value": "0.0801"},
+  {"task": "empathetic dialogue classification", "model": "KLUE RoBERTa-base", "metric": "BLEU (as reported)", "value": "0.057"}
+ ],
+ "difficulty": "beginner",
+ "difficulty_note_ko": "약 0.1GB로 작아 공감 챗봇 실습에 좋습니다. 생성 품질 평가는 어렵습니다.",
+ "skills_needed_ko": ["파이썬", "Hugging Face", "대화 모델 미세조정"],
+ "caveats_ko": ["연기한 대화라 실제 상담과 다름 — 실제 위기 상담에 그대로 쓰면 안 됨", "분류 성능을 BLEU로 표기한 AI Hub 오류로 보임", "71302·71304번 대화 데이터와 같은 구축 기관"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "감정 분류", "title_en": "Emotion classifier", "desc_ko": "화자의 발화에서 감정을 분류합니다.", "desc_en": "Classify the speaker's emotion from utterances."},
+  {"level": "capstone", "title_ko": "공감 일기 챗봇", "title_en": "Empathetic journaling bot", "desc_ko": "하루 일기를 쓰면 공감하는 답장을 주는 챗봇을 만듭니다.", "desc_en": "A bot that replies empathetically to daily journal entries."},
+  {"level": "research", "title_ko": "공감 품질 자동 평가", "title_en": "Automatic empathy scoring", "desc_ko": "BLEU 대신 공감 정도를 평가하는 지표를 연구합니다.", "desc_en": "Develop metrics that score empathy instead of BLEU."}
+ ],
+ "doc_used": true,
+ "uncertain": ["emotion class list"]
+}

@@ -1,0 +1,12 @@
+{
+ "dataset_id": "621",
+ "easy_ko": "여러 농장에서 찍은 한우 사진마다 송아지·육성우·번식우·비육우 같은 자라는 단계별로 동물 위치와 테두리, 몸의 주요 점을 표시한 데이터입니다. 한우의 건강이나 상태를 자동으로 살피는 스마트 축사 AI를 만들 수 있습니다.",
+ "easy_en": "Photos of Hanwoo cattle from many farms, marking each animal's position, outline and key body points by growth stage, such as calves, growing cattle, breeding cows and fattening cattle. You can build smart-barn AI that checks the health and condition of Hanwoo cattle automatically.",
+ "detail_ko": "여러 한우 농장에서 촬영한 원천 이미지 약 33만 장(jpg)에 성장 단계(송아지·육성우·번식우·비육우 등)별 바운딩박스·폴리곤·키포인트와 농장 정보를 XML로 붙였습니다. 라벨 XML이 약 650개로 이미지 수보다 훨씬 적어 한 파일에 여러 이미지가 묶인 것으로 보이며, 성능 지표 표는 비어 있습니다. 전체 약 1.9TB입니다. 오디오 유형으로 표기됐지만 소리 데이터 설명은 기록에서 확인되지 않으며, 559번 한우 BCS 데이터와 주제가 겹칩니다.",
+ "detail_en": "About 330k raw images (jpg) from several Hanwoo cattle farms, with XML boxes, polygons, keypoints and farm info by growth stage (calves, growing cattle, breeding cows and fattening cattle and more). There are only about 650 label XML files, far fewer than images, so each file likely covers many images; the performance table is empty. Total size is about 1.9TB. It is tagged as audio, but no sound data is described in the record; the topic overlaps with dataset 559 (Hanwoo body condition).",
+ "amount_ko": "사진 약 33만 장",
+ "amount_en": "About 330k images",
+ "labels_ko": "동물 위치 상자·테두리, 몸의 주요 점, 자라는 단계, 농장 정보",
+ "labels_en": "boxes and outlines around animals, body key points, growth stage, farm info",
+ "status": "full-run-2026-11-02"
+}

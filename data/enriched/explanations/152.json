@@ -1,0 +1,12 @@
+{
+ "dataset_id": "152",
+ "easy_ko": "드론에 단 특수 카메라로 사람 눈보다 훨씬 많은 색 정보를 담아 논밭을 찍고, 현장에서 확인한 작물 종류대로 땅을 색칠한 데이터입니다. 작물마다 얼마나 넓게 심었는지 자동으로 계산하는 농업 통계 AI를 만들 수 있습니다.",
+ "easy_en": "Farmland photographed by a special drone camera that captures far more colour information than the human eye, with each area coloured by the crop confirmed on the ground. You can build farm-statistics AI that automatically calculates how much land each crop covers.",
+ "detail_ko": "드론 탑재 초분광 카메라(150개 파장대)로 농경지를 촬영하고 현지 조사로 확인한 작물 5종을 칠한 라벨링 데이터 1,214,578건으로, 128×128×150밴드 영상 패치(tif)와 JSON 세그멘테이션 라벨로 구성됩니다. 기준 성능은 DeepLabV3+ 작물 분할 픽셀 정확도 88%입니다. 전체 약 6TB로 매우 큽니다.",
+ "detail_en": "1,214,578 labelled items of farmland captured with a drone-mounted hyperspectral camera (150 bands), with 5 crop types confirmed by field survey, as 128×128×150-band patches (tif) with JSON segmentation labels. Baseline: DeepLabV3+ crop segmentation pixel accuracy 88%. Total size is very large (about 6 TB).",
+ "amount_ko": "라벨 데이터 약 121만 건, 작물 5종",
+ "amount_en": "about 1.21M labelled items, 5 crops",
+ "labels_ko": "작물 종류별 영역(색칠)",
+ "labels_en": "crop-type regions (colour masks)",
+ "status": "full-run-2026-11-02"
+}

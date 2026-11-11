@@ -1,0 +1,29 @@
+{
+ "dataset_id": "71419",
+ "title_en": "Conversation and presentation motion capture data",
+ "summary_ko": "10대부터 60대까지 연기자가 대화·발표 상황을 연기하며 찍은 모션캡처 데이터입니다. 영상 1,352건과 골격 동작(bvh) 2,408건, 발화 대본이 있고 동작 구간이 태깅되어 있어 메타버스 아바타·게임 캐릭터의 자연스러운 몸짓 생성 AI에 쓸 수 있습니다.",
+ "summary_en": "Motion capture of actors aged teens to 60s acting out conversations and presentations: 1,352 videos, 2,408 skeleton motion files (bvh) and speech scripts, with tagged action segments. For generating natural gestures for avatars and game characters.",
+ "contents_ko": "정면 영상(mp4) + 골격 동작(bvh, fbx, qtm) + 발화·시나리오 대본(txt) + JSON(동작 구간 태깅, 메타정보).",
+ "contents_en": "Front video (mp4) + skeleton motion (bvh, fbx, qtm) + speech and scenario scripts (txt) + JSON (action segment tags, metadata).",
+ "modalities": ["video", "3d", "text"],
+ "tasks": ["action_recognition", "keypoint_pose"],
+ "topics": [{"ko": "메타버스·게임", "en": "Metaverse and games"}, {"ko": "온라인 교육·발표", "en": "Online education and presentations"}],
+ "keywords_ko": ["모션캡처", "제스처 생성", "발표", "대화", "아바타", "bvh"],
+ "keywords_en": ["motion capture", "gesture generation", "presentation", "conversation", "avatar", "bvh"],
+ "labels": ["action segment tags", "metadata"],
+ "file_formats": ["bvh", "mp4", "jpg", "txt", "fbx", "json"],
+ "scale_ko": "영상 1,352건, 골격 동작 2,408건, 시나리오 14종",
+ "classes_example": ["발표(PT)", "대화(TA)", "혼성", "여자 동성", "남자 동성"],
+ "baseline": [{"task": "motion generation", "model": "Action2Motion", "metric": "FID", "value": "1.35"}],
+ "difficulty": "advanced",
+ "difficulty_note_ko": "약 65GB로 가볍지만 bvh 골격 데이터와 동작 생성 모델을 다뤄야 합니다.",
+ "skills_needed_ko": ["파이썬", "모션 데이터(bvh) 처리", "시퀀스 생성 모델", "Blender 등 3D 도구"],
+ "caveats_ko": ["건수가 1,352~2,408건으로 적어 큰 모델 학습에는 부족할 수 있음", "FID는 낮을수록 좋은 지표", "동작 종류(action category) 전체 목록은 팩 앞부분에 없음"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "모션 데이터 시각화", "title_en": "Motion data viewer", "desc_ko": "bvh 파일을 읽어 골격 움직임을 애니메이션으로 보여 줍니다.", "desc_en": "Load bvh files and animate the skeleton."},
+  {"level": "capstone", "title_ko": "발표 아바타", "title_en": "Presentation avatar", "desc_ko": "발표 대본에 맞춰 아바타가 손짓하며 발표하는 데모를 만듭니다.", "desc_en": "Build an avatar that gestures along with a presentation script."},
+  {"level": "research", "title_ko": "말에서 몸짓 생성", "title_en": "Speech-to-gesture generation", "desc_ko": "발화 내용과 동작을 연결해 말에 맞는 몸짓을 생성하는 모델을 연구합니다.", "desc_en": "Study generating gestures that match speech content."}
+ ],
+ "doc_used": true,
+ "uncertain": []
+}

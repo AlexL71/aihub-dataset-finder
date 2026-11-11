@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71302",
+ "easy_ko": "성별, 나이, 직업, 성격, 취향을 정한 가상 인물 설정을 받은 사람들이 '이 사람인 것처럼' 나눈 한국어 대화를 모은 데이터입니다. 늘 같은 성격과 말투를 지키며 대화하는 챗봇을 만들 수 있습니다.",
+ "easy_en": "Korean conversations in which speakers each played a given persona (sex, age, job, personality, tastes). You can build chatbots that keep a consistent personality and way of speaking.",
+ "detail_ko": "페르소나 한국어 대화 약 3.2만 세션(발화 약 58만 개, 페르소나 1,366개, 주제 20종)(tsv, json)에 대화 특성 라벨을 붙였습니다. 기준 성능은 KoGPT2 다음 발화 예측 HR@1 22.3%, KLUE RoBERTa-base 페르소나 대화 분류 HR@1 84.7%입니다. 주제는 일/직장, 연애/결혼, 여행/레저, 건강/의학, 반려동물, 쇼핑/상품 등이며, 연기한 대화라 실제 대화와 다를 수 있습니다. 71302·71304·71305번 대화 데이터는 같은 구축 기관입니다.",
+ "detail_en": "About 32k sessions (about 580k utterances, 1,366 personas, 20 topics) Korean persona-based dialogues (tsv, json) with dialogue-feature labels. Baselines: KoGPT2 next-utterance prediction HR@1 22.3%, KLUE RoBERTa-base persona dialogue classification HR@1 84.7%. Topics include work, dating and marriage, travel and leisure, health, pets and shopping; the dialogues are acted, so they may differ from real ones. Datasets 71302, 71304 and 71305 come from the same organisation.",
+ "amount_ko": "대화 약 3.2만 세션",
+ "amount_en": "about 32k sessions of dialogue",
+ "labels_ko": "가상 인물 설정, 대화 주제, 대화 특성",
+ "labels_en": "persona, topic, dialogue features",
+ "status": "full-run-2026-11-02"
+}

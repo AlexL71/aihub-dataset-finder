@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71549",
+ "easy_ko": "무인 편의점과 가게에서 손님이 돌아다니고, 물건을 고르고, 사고, 돌려놓고, 비교하는 모습을 찍은 영상 6,200개에 사람 위치와 몸 관절 점을 표시한 데이터입니다. 무인 가게에서 손님의 구매 행동과 이동 경로를 분석하는 AI에 쓸 수 있습니다.",
+ "easy_en": "6,200 video clips from unmanned convenience stores and shops showing customers walking around, choosing, buying, returning and comparing items, with each person's position and body joints marked. You can use it to build AI that analyses shopping behaviour and paths in unmanned stores.",
+ "detail_ko": "무인 편의점·매장 영상 6,200클립(mp4)에 사람 상자, 키포인트, 구매행동 6종(매장이동, 선택, 시험, 구매, 반품, 비교; 각 약 1,000건)을 XML로 붙였습니다. 기준 성능은 Bi-LSTM 구매 행동 인식 F1 0.7684, YOLOv4 객체 탐지 mAP 90.2%, DeepSORT 매장 내 추적 MOTA 85.83%입니다. 전체 약 926GB이고, 페이지 안 두 표의 성능 값이 서로 다르며(YOLOv4 79.74% vs 90.2%, DeepSORT 85.89% vs 85.83%), 라벨이 XML 형식입니다.",
+ "detail_en": "6,200 video clips (mp4) from unmanned convenience stores and shops, with XML person boxes, keypoints and 6 purchase behaviours (moving, choosing, trying, buying, returning, comparing; about 1,000 each). Baselines: purchase-behaviour recognition with Bi-LSTM, F1 0.7684; object detection with YOLOv4, mAP 90.2%; in-store tracking with DeepSORT, MOTA 85.83%. Total size is about 926 GB. Two tables on the page give different values (YOLOv4 79.74% vs. 90.2%, DeepSORT 85.89% vs. 85.83%), and labels are in XML.",
+ "amount_ko": "영상 6,200클립, 구매행동 6종",
+ "amount_en": "6,200 video clips, 6 purchase behaviours",
+ "labels_ko": "사람 위치 상자, 관절 점, 구매 행동 종류",
+ "labels_en": "bounding boxes, keypoints, behaviour class",
+ "status": "full-run-2026-11-02"
+}

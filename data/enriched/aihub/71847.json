@@ -1,0 +1,29 @@
+{
+ "dataset_id": "71847",
+ "title_en": "Administrative law LLM pretraining and instruction-tuning data",
+ "summary_ko": "행정법 법령·판결문·해석례·결정례 305만 문장과, 이를 바탕으로 만든 질의응답 67,487건·요약 32,513건(총 10만 건)의 지시 학습 데이터입니다. 행정법 상담 챗봇이나 법률 LLM 미세조정에 쓸 수 있습니다.",
+ "summary_en": "3.05 million sentences from administrative-law statutes, rulings, interpretations and decisions, plus 100,000 instruction items (67,487 QA, 32,513 summaries). For administrative-law chatbots and legal LLM fine-tuning.",
+ "contents_ko": "법률 원문 문장(csv) + 라벨(JSON: 질의응답, 요약).",
+ "contents_en": "Legal source sentences (csv) + labels (JSON: QA, summaries).",
+ "modalities": ["text"],
+ "tasks": ["question_answering", "summarization", "dialogue"],
+ "topics": [{"ko": "법률", "en": "Law"}, {"ko": "행정법", "en": "Administrative law"}],
+ "keywords_ko": ["행정법", "판결문", "해석례", "Instruction tuning", "질의응답", "LLM"],
+ "keywords_en": ["administrative law", "court rulings", "legal interpretations", "instruction tuning", "question answering", "LLM"],
+ "labels": ["question-answer", "summary"],
+ "file_formats": ["csv", "json"],
+ "scale_ko": "원천 3,050,000문장, 지시 학습 데이터 100,000건(질의응답 67,487·요약 32,513)",
+ "classes_example": ["법령", "판결문", "해석례", "결정례"],
+ "baseline": [],
+ "difficulty": "intermediate",
+ "difficulty_note_ko": "약 0.24GB 텍스트입니다. LLM 미세조정에는 GPU가 필요합니다.",
+ "skills_needed_ko": ["파이썬", "Hugging Face", "LLM 미세조정(LoRA)"],
+ "caveats_ko": ["모델 성능 수치가 팩에 없음", "71848 형사법 데이터와 같은 기관·구조"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "행정 판결 요약", "title_en": "Administrative ruling summariser", "desc_ko": "행정법 판결문을 짧게 요약하는 모델을 미세조정합니다.", "desc_en": "Fine-tune a model to summarise administrative rulings."},
+  {"level": "capstone", "title_ko": "행정 민원 법률 챗봇", "title_en": "Administrative law chatbot", "desc_ko": "인허가·처분 관련 질문에 법령과 해석례를 근거로 답하는 챗봇을 만듭니다.", "desc_en": "Answer permit and disposition questions citing law."},
+  {"level": "research", "title_ko": "법 분야별 LLM 비교", "title_en": "Per-field legal LLM comparison", "desc_ko": "행정법·형사법 데이터로 각각 학습한 모델의 차이를 연구합니다.", "desc_en": "Compare LLMs tuned on administrative vs criminal law."}
+ ],
+ "doc_used": true,
+ "uncertain": []
+}

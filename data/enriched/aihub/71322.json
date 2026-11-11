@@ -1,0 +1,29 @@
+{
+ "dataset_id": "71322",
+ "title_en": "Livestock equipment (cattle, pigs) 3D data",
+ "summary_ko": "3개 도 50곳 이상의 소·돼지 농가에서 모은 축사 기자재(건축자재·설비·기기 등) 3D 모델 1,011개와, 각 모델을 20방향에서 캡처한 2D 이미지 약 2만 장에 16가지 기자재 분류를 붙인 데이터입니다. 스마트 축사 디지털트윈이나 기자재 자동 분류 AI에 쓸 수 있습니다.",
+ "summary_en": "1,011 3D models of barn equipment (building materials, fixtures, devices and more) from 50+ cattle and pig farms in 3+ provinces, plus about 20,000 2D captures (20 views per model) labelled into 16 equipment classes. For smart-barn digital twins or AI that classifies farm equipment.",
+ "contents_ko": "기자재 3D 모델 + 20방향 2D 캡처 이미지 + JSON(분류 라벨) + csv.",
+ "contents_en": "Equipment 3D models + 20-view 2D captures + JSON (class labels) + csv.",
+ "modalities": ["3d", "image"],
+ "tasks": ["image_classification"],
+ "topics": [{"ko": "축산", "en": "Livestock farming"}, {"ko": "디지털트윈", "en": "Digital twins"}],
+ "keywords_ko": ["축사 기자재", "3D 모델", "디지털트윈", "스마트 축사", "객체 분류"],
+ "keywords_en": ["barn equipment", "3D models", "digital twin", "smart barn", "object classification"],
+ "labels": ["equipment class"],
+ "file_formats": ["csv", "json"],
+ "scale_ko": "3D 모델 1,011개, 2D 이미지 약 2만 장, 클래스 16종",
+ "classes_example": ["C02", "C06", "C07", "C15"],
+ "baseline": [{"task": "2D equipment classification", "model": "EfficientNet-B0", "metric": "F1", "value": "0.9339"}],
+ "difficulty": "beginner",
+ "difficulty_note_ko": "내려받기 목록이 약 0.1GB로 작아 분류 실습이 쉽습니다. 클래스 이름이 코드(C01~C16)로만 되어 있습니다.",
+ "skills_needed_ko": ["파이썬", "CNN 이미지 분류"],
+ "caveats_ko": ["클래스가 C01~C16 코드로만 표기되어 뜻은 설명서 확인 필요", "C06·C07이 56%로 치우침", "3D 원본 형식이 팩에 csv로만 적혀 있음", "파일 트리 용량(0.09GB)이 3D 데이터치고 매우 작음"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "기자재 이미지 분류", "title_en": "Equipment image classifier", "desc_ko": "2D 캡처 이미지로 16가지 기자재를 분류합니다.", "desc_en": "Classify 16 equipment types from 2D captures."},
+  {"level": "capstone", "title_ko": "축사 디지털트윈 데모", "title_en": "Barn digital-twin demo", "desc_ko": "3D 기자재 모델로 가상 축사를 배치해 봅니다.", "desc_en": "Lay out a virtual barn with the 3D equipment models."},
+  {"level": "research", "title_ko": "다중 시점 분류", "title_en": "Multi-view classification", "desc_ko": "20방향 이미지를 합쳐 3D 물체를 분류하는 방법을 연구합니다.", "desc_en": "Combine 20 views to classify 3D objects."}
+ ],
+ "doc_used": true,
+ "uncertain": ["meaning of class codes C01-C16", "3D file format"]
+}

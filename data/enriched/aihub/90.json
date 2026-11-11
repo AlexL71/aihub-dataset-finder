@@ -1,0 +1,29 @@
+{
+ "dataset_id": "90",
+ "title_en": "Academic paper and patent summarisation",
+ "summary_ko": "한국어 학술논문 18만 건과 특허명세서 17만 건에 사람이 쓴 전체 요약문과 섹션별 요약문(총 70만 건)을 붙인 데이터입니다. 긴 논문이나 특허를 짧게 요약해 주는 AI나 연구 자료 챗봇을 만들 수 있습니다.",
+ "summary_en": "180,000 Korean academic papers and 170,000 patent specifications with human-written full summaries and section summaries (700,000 in total). For AI that shortens long papers or patents, or research-assistant chatbots.",
+ "contents_ko": "논문·특허 원문(또는 섹션) + 전체 요약 + 섹션 요약 + 메타정보(분야, 저자·출원인, 날짜).",
+ "contents_en": "Paper or patent text (or sections) + full summary + section summary + metadata (field, authors or applicant, date).",
+ "modalities": ["text"],
+ "tasks": ["summarization", "text_generation"],
+ "topics": [{"ko": "학술 연구", "en": "Academic research"}, {"ko": "특허·지식재산", "en": "Patents and intellectual property"}, {"ko": "문서 요약", "en": "Document summarisation"}],
+ "keywords_ko": ["요약", "논문 요약", "특허 요약", "생성 요약", "섹션 요약", "연구 챗봇"],
+ "keywords_en": ["summarisation", "paper summary", "patent summary", "abstractive summary", "section summary", "research chatbot"],
+ "labels": ["full summary", "section summary", "metadata"],
+ "file_formats": ["json"],
+ "scale_ko": "논문 18만 건(전체·섹션 요약 각 18만), 특허 17만 건(각 17만), 요약 총 70만 건",
+ "classes_example": [],
+ "baseline": [{"task": "summarisation", "model": "Transformer", "metric": "not shown", "value": "not shown"}],
+ "difficulty": "intermediate",
+ "difficulty_note_ko": "약 1.4GB로 가볍지만 요약 모델 학습에는 GPU와 언어모델 미세조정 경험이 필요합니다.",
+ "skills_needed_ko": ["파이썬", "Hugging Face로 요약 모델(KoBART 등) 미세조정", "ROUGE 평가"],
+ "caveats_ko": ["성능 지표 값이 팩에서 잘려 보이지 않음", "논문은 오픈액세스(KCI) 자료 기반"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "분야별 논문 요약 길이 분석", "title_en": "Summary length by field", "desc_ko": "분야별 원문과 요약문 길이 비율을 비교합니다.", "desc_en": "Compare original-to-summary length ratios by field."},
+  {"level": "capstone", "title_ko": "내 전공 논문 요약기", "title_en": "Summariser for papers in my major", "desc_ko": "KoBART를 미세조정해 논문 PDF를 넣으면 3줄 요약을 주는 웹을 만듭니다.", "desc_en": "Fine-tune KoBART and build a site that gives a 3-line summary of a paper."},
+  {"level": "research", "title_ko": "섹션 요약을 합친 긴 문서 요약", "title_en": "Long-document summarisation from sections", "desc_ko": "섹션별 요약을 합쳐 전체 요약을 만드는 방식이 한 번에 요약하는 방식보다 나은지 연구합니다.", "desc_en": "Test whether combining section summaries beats summarising the whole text at once."}
+ ],
+ "doc_used": true,
+ "uncertain": ["성능 지표 값이 잘려서 확인하지 못함"]
+}

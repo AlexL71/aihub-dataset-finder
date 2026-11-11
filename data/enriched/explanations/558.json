@@ -1,0 +1,12 @@
+{
+ "dataset_id": "558",
+ "easy_ko": "사람들이 만든 대화 문장마다 나쁜 말인지 아닌지, 비난·혐오·차별·성적·욕설·폭력·범죄 중 어떤 종류인지, 얼마나 심한지를 표시한 데이터입니다. 챗봇이 나쁜 말을 하거나 받아들이지 않도록 걸러내는 AI를 만들 수 있습니다.",
+ "easy_en": "Sentences from conversations written by crowd workers, each marked as harmful or not, the type of harm (blame, hate, discrimination, sexual, abuse, violence, crime) and how severe it is. You can build AI that filters harmful language so chatbots do not say or accept it.",
+ "detail_ko": "크라우드워커가 만든 대화세트 약 13만 건(문장 약 45만 개, 비윤리 약 25만)에 문장별 비윤리 여부, 유형 7종(CENSURE, HATE, DISCRIMINATION, SEXUAL, ABUSE, VIOLENCE, CRIME), 강도 투표를 JSON으로 붙이고, 문형·어휘단위 사전을 함께 제공합니다. 기준 성능은 기록에서 확인되지 않습니다. 불쾌한 표현이 많이 들어 있고, 유형이 비난(CENSURE)에 크게 치우쳐 있습니다.",
+ "detail_en": "About 130k dialogue sets (about 450k sentences, about 250k unethical) written by crowd workers, with JSON per-sentence unethical flag, 7 types (censure, hate, discrimination, sexual, abuse, violence, crime) and intensity votes, plus sentence-frame and lexical-unit dictionaries. No baseline is visible in the record. Contains much offensive language, and types are heavily skewed toward censure.",
+ "amount_ko": "대화 약 13만 세트, 문장 약 45만 개",
+ "amount_en": "about 130k dialogue sets, about 450k sentences",
+ "labels_ko": "나쁜 말 여부, 나쁜 말 종류, 심한 정도",
+ "labels_en": "unethical or not, harm type, intensity",
+ "status": "full-run-2026-11-02"
+}

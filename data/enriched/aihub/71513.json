@@ -1,0 +1,32 @@
+{
+ "dataset_id": "71513",
+ "title_en": "Intelligent smart fish farm (trout, masu salmon) data",
+ "summary_ko": "양식장 송어·산천어의 무리 이미지 14만 2천여 건과 개체 이미지 약 3천 건에 물고기 상자와 입술·지느러미 등 키포인트가 표시되어 있고, 수질환경 100만여 건과 사육관리 기록도 있습니다. 물고기 성장 측정·예측과 양식장 자동 관리 AI에 쓸 수 있습니다.",
+ "summary_en": "About 142,900 school images and 3,000 individual images of farmed trout and masu salmon with fish boxes and key points (lips, fins, etc.), plus about 1 million water-quality records and rearing logs. For fish growth measurement, prediction and automated farm management.",
+ "contents_ko": "물고기 이미지(jpg) + JSON(상자, 키포인트, 성장 단계) + 수질환경·사육관리 데이터.",
+ "contents_en": "Fish images (jpg) + JSON (boxes, key points, growth stage) + water-quality and rearing data.",
+ "modalities": ["image", "sensor", "tabular"],
+ "tasks": ["object_detection", "keypoint_pose", "forecasting"],
+ "topics": [{"ko": "수산·양식", "en": "Fisheries and aquaculture"}, {"ko": "스마트팜", "en": "Smart farming"}],
+ "keywords_ko": ["송어", "산천어", "스마트 양식", "키포인트", "수질", "성장 예측"],
+ "keywords_en": ["trout", "masu salmon", "smart aquaculture", "keypoints", "water quality", "growth prediction"],
+ "labels": ["bounding box", "keypoint", "species", "growth stage"],
+ "file_formats": ["jpg", "json"],
+ "scale_ko": "군집 이미지 142,871건, 개체 이미지 2,984건, 수질환경 1,008,981건, 사육관리 4,590건",
+ "classes_example": ["송어", "산천어", "치어", "중성어", "성어"],
+ "baseline": [
+  {"task": "fish detection", "model": "EfficientDet D2", "metric": "mAP", "value": "85.62%"},
+  {"task": "fish keypoint detection", "model": "HRNet", "metric": "OKS", "value": "82.31%"}
+ ],
+ "difficulty": "intermediate",
+ "difficulty_note_ko": "탐지·키포인트 실습에 좋고 약 73GB입니다. 수중 사진이라 물고기가 겹쳐 있어 어렵습니다.",
+ "skills_needed_ko": ["파이썬", "객체 탐지", "키포인트 모델(HRNet)", "시계열 데이터 처리"],
+ "caveats_ko": ["전체 약 73GB", "개체 이미지는 약 3천 건으로 적음", "수질·사육관리 데이터의 파일 형식이 팩에 자세히 없음"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "송어·산천어 탐지", "title_en": "Trout and masu salmon detection", "desc_ko": "양식장 사진에서 물고기를 찾아 종류를 구분합니다.", "desc_en": "Detect fish and tell the species apart."},
+  {"level": "capstone", "title_ko": "물고기 크기 자동 측정", "title_en": "Automatic fish size measurement", "desc_ko": "키포인트로 몸길이를 재고 성장 단계를 추정하는 도구를 만듭니다.", "desc_en": "Measure body length from key points and estimate growth stage."},
+  {"level": "research", "title_ko": "수질과 성장 관계", "title_en": "Water quality and growth", "desc_ko": "수질 기록과 성장 데이터로 성장 속도를 예측하는 모델을 연구합니다.", "desc_en": "Predict growth rate from water-quality records."}
+ ],
+ "doc_used": true,
+ "uncertain": []
+}

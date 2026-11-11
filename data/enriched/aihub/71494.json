@@ -1,0 +1,33 @@
+{
+ "dataset_id": "71494",
+ "title_en": "Water level measurement data",
+ "summary_ko": "하천 수위표(목자판)를 촬영한 영상·CCTV 이미지 38만 5천여 장에 수위표와 수면 위치가 상자로 표시되고 실제 수위값이 붙어 있습니다. 카메라로 수위를 자동으로 읽어 홍수 피해를 막는 AI에 쓸 수 있습니다.",
+ "summary_en": "About 385,000 camera and CCTV images of river water-level gauges, with boxes for the gauge and water surface and the true water-level value. For AI that reads water levels from cameras to prevent flood damage.",
+ "contents_ko": "이미지(jpg) + JSON(수위표·수면 상자, 수위 참값, 날씨·장비 정보).",
+ "contents_en": "Images (jpg) + JSON (gauge and water-surface boxes, true level, weather and device info).",
+ "modalities": ["image"],
+ "tasks": ["object_detection", "image_classification"],
+ "topics": [{"ko": "재난·안전", "en": "Disaster and safety"}, {"ko": "하천·수자원", "en": "Rivers and water resources"}],
+ "keywords_ko": ["수위", "목자판", "홍수", "CCTV", "하천", "재난안전"],
+ "keywords_en": ["water level", "staff gauge", "flood", "CCTV", "river", "disaster safety"],
+ "labels": ["bounding box", "water level value", "weather", "device type"],
+ "file_formats": ["jpg", "json"],
+ "scale_ko": "이미지 385,095장",
+ "classes_example": [],
+ "baseline": [
+  {"task": "true water-level classification", "model": "Keras CNN", "metric": "Accuracy", "value": "90.56%"},
+  {"task": "staff gauge detection", "model": "YOLOv4", "metric": "mAP", "value": "91.32%"},
+  {"task": "water level detection", "model": "YOLOv4", "metric": "mAP", "value": "95.31%"}
+ ],
+ "difficulty": "beginner",
+ "difficulty_note_ko": "탐지 대상이 단순해 YOLO 실습에 좋습니다. 전체 약 130GB라 일부만 받아도 됩니다.",
+ "skills_needed_ko": ["파이썬", "YOLO 탐지", "이미지 분류"],
+ "caveats_ko": ["전체 약 130GB", "날씨 정보가 비어 있는(null) 이미지가 약 41%", "비·흐림 이미지가 적음(약 7%)"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "수위표 탐지", "title_en": "Staff gauge detection", "desc_ko": "CCTV 사진에서 수위표와 수면 위치를 YOLO로 찾습니다.", "desc_en": "Detect the gauge and water surface with YOLO."},
+  {"level": "capstone", "title_ko": "하천 수위 알림 대시보드", "title_en": "River level alert dashboard", "desc_ko": "카메라 사진으로 수위를 읽어 위험 수위에 알림을 보내는 대시보드를 만듭니다.", "desc_en": "Read levels from cameras and alert at danger levels."},
+  {"level": "research", "title_ko": "악천후 수위 인식", "title_en": "Water level reading in bad weather", "desc_ko": "비·흐림·야간 같은 어려운 조건에서 성능이 떨어지는 원인을 분석합니다.", "desc_en": "Analyse why accuracy drops in rain, cloud or night."}
+ ],
+ "doc_used": true,
+ "uncertain": ["수위 참값 분류의 클래스 구간이 팩 앞부분에 없음", "클래스 목록을 페이지와 설명서에서 찾지 못함"]
+}

@@ -1,0 +1,29 @@
+{
+ "dataset_id": "477",
+ "title_en": "Park facility and illegal behaviour CCTV videos",
+ "summary_ko": "공원 10곳 이상에서 CCTV 각도로 연출해 찍은 영상과 이미지로, 흡연·낚시·쓰레기 무단투기·월담 같은 불법행위 270시간과, 쓰레기봉투·좌판·노점상 같은 불법 물체 3.6만 장이 표시되어 있습니다. 공원 관제 CCTV가 불법행위를 자동으로 찾는 AI에 쓸 수 있습니다.",
+ "summary_en": "Staged CCTV-angle video and images from 10+ parks: 270 hours of illegal behaviour (smoking, fishing, littering, climbing fences and more) and 36,000 images of illegal objects (rubbish bags, stalls, street vendors). For park CCTV that detects illegal activity automatically.",
+ "contents_ko": "행위 클립(mp4) + 객체 이미지(jpg) + JSON(상자, 행위/객체 클래스, 촬영 시간·날씨).",
+ "contents_en": "Behaviour clips (mp4) + object images (jpg) + JSON (boxes, behaviour/object class, time, weather).",
+ "modalities": ["video", "image"],
+ "tasks": ["action_recognition", "object_detection"],
+ "topics": [{"ko": "공원·공공장소", "en": "Parks and public spaces"}, {"ko": "CCTV·보안", "en": "CCTV and security"}, {"ko": "환경·쓰레기", "en": "Environment and litter"}],
+ "keywords_ko": ["공원", "불법행위", "흡연", "쓰레기 투기", "노점상", "CCTV"],
+ "keywords_en": ["park", "illegal behaviour", "smoking", "littering", "street vendor", "CCTV"],
+ "labels": ["bounding box", "behaviour class", "object class"],
+ "file_formats": ["mp4", "jpg", "json"],
+ "scale_ko": "불법행위 270시간, 정상행위 10시간, 불법객체 3.6만 장, 정상객체 2.16만 장",
+ "classes_example": ["흡연", "낚시", "쓰레기무단투기", "쓰레기봉투", "좌판", "노점상"],
+ "baseline": [],
+ "difficulty": "intermediate",
+ "difficulty_note_ko": "물체 탐지는 쉽고 행위 인식은 중급입니다. 약 243GB입니다.",
+ "skills_needed_ko": ["파이썬", "YOLO 탐지", "영상 동작 분류"],
+ "caveats_ko": ["연출된 장면이라 실제 상황과 다를 수 있음", "성능 지표가 팩 앞부분에 없음"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "공원 쓰레기봉투 탐지", "title_en": "Rubbish bag detection in parks", "desc_ko": "공원 이미지에서 버려진 쓰레기봉투를 탐지합니다.", "desc_en": "Detect dumped rubbish bags in park images."},
+  {"level": "capstone", "title_ko": "공원 관리 알림 시스템", "title_en": "Park management alerts", "desc_ko": "흡연·투기 행위를 감지하면 관리자에게 알리는 데모를 만듭니다.", "desc_en": "Alert managers when smoking or littering is detected."},
+  {"level": "research", "title_ko": "정상 행동이 적은 불균형 학습", "title_en": "Imbalance with few normal clips", "desc_ko": "정상 행위 데이터가 적을 때 오탐을 줄이는 방법을 연구합니다.", "desc_en": "Reduce false alarms when normal-behaviour data is scarce."}
+ ],
+ "doc_used": true,
+ "uncertain": []
+}

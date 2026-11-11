@@ -1,0 +1,29 @@
+{
+ "dataset_id": "71594",
+ "title_en": "River waste flowing into the Saemangeum seawall (Jeonbuk)",
+ "summary_ko": "전북 새만금 방조제로 흘러드는 하천에서 찍은 쓰레기 이미지 207,586장으로, 플라스틱·스티로폼·비닐·종이·금속·유리·섬유·목재·고무 등 10종이 상자와 다각형으로 표시되어 있습니다. 하천 쓰레기를 자동으로 찾고 흐름을 추적해 수거를 돕는 AI에 쓸 수 있습니다.",
+ "summary_en": "207,586 images of waste in rivers flowing into the Saemangeum seawall, with 10 types (plastic, styrofoam, vinyl, paper, metal, glass, fabric, wood, rubber, other) marked by boxes and polygons. For detecting and tracking river waste to support clean-up.",
+ "contents_ko": "하천 이미지(jpg) + JSON(상자, 다각형 분할, 쓰레기 종류).",
+ "contents_en": "River image (jpg) + JSON (boxes, polygon masks, waste type).",
+ "modalities": ["image"],
+ "tasks": ["object_detection", "segmentation"],
+ "topics": [{"ko": "환경·해양 쓰레기", "en": "Environment and marine litter"}, {"ko": "하천 관리", "en": "River management"}],
+ "keywords_ko": ["하천 쓰레기", "새만금", "플라스틱", "스티로폼", "객체 탐지", "환경 보전"],
+ "keywords_en": ["river waste", "Saemangeum", "plastic", "styrofoam", "object detection", "environmental protection"],
+ "labels": ["bounding box", "polygon", "waste type"],
+ "file_formats": ["jpg", "json"],
+ "scale_ko": "이미지 207,586장, 객체 약 74.8만 개, 쓰레기 10종",
+ "classes_example": ["플라스틱류", "스티로폼류", "비닐류", "종이류", "금속류", "유리류", "섬유류", "목재류", "고무류"],
+ "baseline": [{"task": "waste detection", "model": "YOLOv4 (Darknet)", "metric": "mAP@0.5", "value": "71.53%"}, {"task": "waste segmentation", "model": "Mask R-CNN (ResNet-50)", "metric": "mIoU", "value": "51.29%"}],
+ "difficulty": "intermediate",
+ "difficulty_note_ko": "YOLO 탐지 실습에 좋지만 전체 약 1.7TB입니다. 일부만 받아 쓰세요.",
+ "skills_needed_ko": ["파이썬", "YOLO 탐지", "분할 모델"],
+ "caveats_ko": ["전체 약 1.7TB", "플라스틱류가 약 38%로 많고 고무류는 약 1%로 불균형", "객체 수 합계(약 74.8만)는 클래스별 구축 실적을 더한 값"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "하천 쓰레기 탐지", "title_en": "River waste detection", "desc_ko": "하천 사진에서 플라스틱·스티로폼을 YOLO로 찾습니다.", "desc_en": "Detect plastic and styrofoam in river photos with YOLO."},
+  {"level": "capstone", "title_ko": "쓰레기 집중 구간 지도", "title_en": "Waste hotspot map", "desc_ko": "탐지 결과를 촬영 위치별로 모아 수거가 필요한 구간을 지도에 표시합니다.", "desc_en": "Map stretches needing clean-up from detections."},
+  {"level": "research", "title_ko": "물 위 반사·가림 대응", "title_en": "Handling water glare and occlusion", "desc_ko": "물 반사와 수초 가림이 있을 때 탐지 성능을 높이는 방법을 연구합니다.", "desc_en": "Study detection under water glare and vegetation occlusion."}
+ ],
+ "doc_used": true,
+ "uncertain": []
+}

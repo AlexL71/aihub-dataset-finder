@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71387",
+ "easy_ko": "충남 아산시 강가 땅을 하늘에서 찍은 선명한 사진에 물, 자동차, 도로, 밭, 비닐하우스, 임시 건물, 볏짚 뭉치, 천막, 쓰레기 영역을 칠해 둔 데이터입니다. 강가 땅을 허락 없이 차지해 쓰는 곳을 자동으로 찾아내는 AI를 만들 수 있습니다.",
+ "easy_en": "High-resolution overhead photos of riverside land in Asan, South Chungcheong, with water, cars, roads, farmland, greenhouses, temporary buildings, wrapped hay bales, tents and rubbish coloured in. You can build AI that finds riverside land being used without permission.",
+ "detail_ko": "충남 아산시 하천부지 상공 촬영 이미지 200,023장(tif)에 클래스 9종(물, 자동차, 도로, 경작지, 비닐하우스, 가건물, 곤포 사일리지, 천막, 쓰레기) 객체 728,053개의 분할 영역과 날씨·촬영 각도를 JSON으로 붙였습니다. 기준 성능은 DeepLabv3+ 점유물 분할 mAP 97.21%(분할 모델인데 mAP로 표기)입니다. 전체 약 646GB이며, 아산시 한 지역만 촬영해 다른 지역 일반화가 불확실합니다.",
+ "detail_en": "200,023 overhead images (tif) of river land in Asan, with JSON segmentation for 728,053 objects in 9 classes (water, car, road, farmland, greenhouse, temporary building, wrapped silage bale, tent, rubbish) plus weather and camera angle. Baseline: DeepLabv3+ occupancy segmentation 'mAP' 97.21% (a segmentation model reported with mAP). Total size is about 646 GB; only Asan is covered, so generalisation to other areas is uncertain.",
+ "amount_ko": "사진 200,023장, 물체 약 72.8만 개, 9종",
+ "amount_en": "200,023 images, about 728k objects, 9 classes",
+ "labels_ko": "점유물 영역(색칠), 종류, 날씨·촬영 각도",
+ "labels_en": "occupancy masks, class, weather, camera angle",
+ "status": "full-run-2026-11-02"
+}

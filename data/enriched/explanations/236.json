@@ -1,0 +1,12 @@
+{
+ "dataset_id": "236",
+ "easy_ko": "바다 밑에 가라앉은 쓰레기를 소리(음파) 장비와 물속 카메라로 찍고, 타이어·밧줄·나무·통발·그물이 어디 있는지 표시한 데이터입니다. 바닷속 쓰레기를 찾아 치우는 일을 돕는 AI를 만들 수 있습니다.",
+ "easy_en": "Images of rubbish lying on the sea floor, taken with sound-based (sonar) equipment and underwater cameras, with tyres, ropes, wood, fish traps and nets marked. You can build AI that helps find and remove marine debris.",
+ "detail_ko": "해양 침적 쓰레기 소나 이미지 46,688장(대조구 28,619 포함)과 수중 촬영 이미지 18,930장(jpg)에 쓰레기 5종(타이어, 로프, 나무, 통발, 어망)의 바운딩박스를 JSON으로 붙였습니다. 성능 지표 표가 비어 있습니다. 소나 영상은 일반 사진과 모양이 달라 해석이 어렵습니다.",
+ "detail_en": "46,688 sonar images (including 28,619 control images) and 18,930 underwater photos (jpg) of sunken marine debris, with JSON bounding boxes for 5 types: tyre, rope, wood, fish trap and fishing net. The performance table is empty. Sonar images look very different from photos and are harder to interpret.",
+ "amount_ko": "소나 이미지 약 4.7만 장, 물속 사진 약 1.9만 장",
+ "amount_en": "about 47k sonar images, about 19k underwater photos",
+ "labels_ko": "쓰레기 위치 상자, 쓰레기 종류",
+ "labels_en": "boxes around debris, debris type",
+ "status": "full-run-2026-11-02"
+}

@@ -1,0 +1,48 @@
+{
+ "id": "spa",
+ "name_ko": "정부행정학부",
+ "name_en": "Government and Public Administration",
+ "college": "공공정책대학",
+ "summary_ko": "정부와 공공기관의 조직, 인사, 재정, 정책, 법을 배우는 '정부 경영학' 학부로, 행정중심도시 세종에 있어 공직 진출에 강합니다. 정책 분석·평가, 성과관리, 전자정부, 경찰행정·범죄수사 과목이 있고, 빅데이터사이언스학부·공공사회학과 함께 AI공공행정·사회데이터분석 융합전공을 운영합니다.",
+ "summary_en": "Teaches the 'management of government': organisation, personnel, public finance, policy and law of public institutions. Located in the administrative capital Sejong, it is strong at placing students in public service. Courses include policy analysis and evaluation, performance management, e-government, police administration and criminal investigation, plus an AI Public Administration and Social Data Analytics joint major.",
+ "key_topics": ["행정학과 공공관리", "공공정책·정책분석·평가", "인사·재무·조직 관리", "헌법·행정법·민법·형법", "지방정부·도시행정", "전자정부·AI 거버넌스", "규제정책", "경찰행정·범죄수사", "정부 성과관리", "갈등관리와 협상"],
+ "course_keywords": ["행정학의이해", "행정학개론", "공공인적자원관리론", "공공정책론", "재무행정론", "정부조직관리론", "헌법", "민법총칙", "형법", "한국정치의이해", "도시행정론", "정부조직진단론", "정책설계론", "공공선택론", "AI거버넌스", "공공관리론", "공공성과측정의이해", "전자정부론", "공기업론", "행정법", "지방정부론", "규제정책론", "정책분석론", "정책평가론", "조사방법론", "형사소송법", "경찰행정론", "범죄수사학", "행정계량분석", "환경행정론", "정부성과관리론", "공공감사론", "갈등관리와협상", "기초파이썬프로그래밍", "공공데이터활용"],
+ "curriculum_by_year": {
+  "1": ["행정학의이해", "행정학개론", "한국경제의이해", "빅데이터사이언스입문", "디지털리터러시입문"],
+  "2": ["공공인적자원관리론", "공공정책론", "재무행정론", "정부조직관리론", "헌법", "민법총칙", "형법", "한국정치의이해", "도시행정론", "정부조직진단론", "정책설계론", "공공선택론", "AI거버넌스"],
+  "3": ["공공관리론", "공공성과측정의이해", "전자정부론", "공기업론", "행정법", "지방정부론", "정책과법", "규제정책론", "정책분석론", "정책평가론", "조사방법론", "형사소송법", "경찰행정론", "범죄수사학", "행정계량분석", "환경행정론"],
+  "4": ["정부성과관리론", "행정현장연습", "정책사례연구", "정책과철학", "공공감사론", "갈등관리와협상"]
+ },
+ "careers": ["행정고시·입법고시 등 국가·지방 공무원", "경찰·치안 분야", "공기업·공공기관", "국책연구기관", "정당·국회", "민간기업 기획·관리", "대학원 진학(행정학·정책학)"],
+ "research_areas": ["공공관리", "정책분석·평가", "정부성과관리", "국가위기관리", "미래도시과학정책"],
+ "data_interests": [
+  {"topic_ko": "민원과 행정 문서", "topic_en": "Complaints and administrative documents", "keywords": ["민원 분류", "공문서 요약", "질의응답"]},
+  {"topic_ko": "법령과 판례", "topic_en": "Laws and court cases", "keywords": ["법률 질의응답", "판례 요약", "조문 검색"]},
+  {"topic_ko": "공공 데이터와 통계", "topic_en": "Public data and statistics", "keywords": ["국가 통계", "예산", "지역 지표"]},
+  {"topic_ko": "범죄와 치안", "topic_en": "Crime and public safety", "keywords": ["범죄 발생", "CCTV", "112 신고"]},
+  {"topic_ko": "도시와 지방정부", "topic_en": "Cities and local government", "keywords": ["도시 문제", "교통", "주민 참여"]},
+  {"topic_ko": "재난과 위기관리", "topic_en": "Disaster and crisis management", "keywords": ["재난 대응", "안전 사고"]},
+  {"topic_ko": "정책 여론", "topic_en": "Policy opinion", "keywords": ["뉴스", "SNS 여론", "국민 청원"]}
+ ],
+ "interest_questions": [
+  {"q_ko": "행정에서 어떤 분야가 궁금한가요?", "q_en": "Which area of public administration interests you?",
+   "options": [{"ko": "민원·대국민 서비스", "en": "Citizen services and complaints"}, {"ko": "법과 정책", "en": "Law and policy"}, {"ko": "경찰·치안", "en": "Police and public safety"}, {"ko": "도시·지방행정", "en": "City and local administration"}, {"ko": "재난·위기관리", "en": "Disaster and crisis management"}]},
+  {"q_ko": "다뤄보고 싶은 자료는?", "q_en": "What data would you like to use?",
+   "options": [{"ko": "민원·공문서 텍스트", "en": "Complaint and document text"}, {"ko": "법령·판례", "en": "Laws and court cases"}, {"ko": "공공 통계", "en": "Public statistics"}, {"ko": "CCTV·안전 영상", "en": "CCTV and safety video"}]}
+ ],
+ "project_themes": ["민원 텍스트 자동 분류와 담당 부서 추천", "법령 질의응답 챗봇", "지역별 범죄 통계 시각화", "정책 뉴스 여론 분석"],
+ "data_skill_level": "medium",
+ "data_skill_note": "조사방법론, 행정계량분석이 있고 AI공공행정·사회데이터분석 융합전공에서 파이썬, 머신러닝, 공공데이터활용을 배울 수 있습니다.",
+ "sources": [
+  {"kind": "page", "label": "학부소개", "url": "https://sejong.korea.ac.kr/spa/4467/subview.do"},
+  {"kind": "page", "label": "교육과정", "url": "https://sejong.korea.ac.kr/spa/4490/subview.do"},
+  {"kind": "page", "label": "교과과정표", "url": "https://sejong.korea.ac.kr/spa/4496/subview.do"},
+  {"kind": "page", "label": "전공체계도", "url": "https://sejong.korea.ac.kr/spa/4502/subview.do"},
+  {"kind": "page", "label": "AI공공행정·사회데이터분석 융합전공", "url": "https://sejong.korea.ac.kr/spa/13947/subview.do"},
+  {"kind": "pdf", "label": "전공능력기반 교육과정", "url": "https://sejong.korea.ac.kr/pdfView/spa/18/30/fileDownload.do"}
+ ],
+ "inferred_fields": ["data_interests", "interest_questions", "project_themes"],
+ "gaps": ["No separate careers page; careers from the intro page."],
+ "version": 1,
+ "created": "2026-10-29"
+}

@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71594",
+ "easy_ko": "새만금 방조제로 흘러드는 강에서 찍은 쓰레기 사진 20만여 장에 플라스틱, 스티로폼, 비닐, 종이, 금속, 유리 같은 쓰레기 종류와 위치를 표시한 데이터입니다. 강물 위 쓰레기를 자동으로 찾아 수거를 돕는 AI에 쓸 수 있습니다.",
+ "easy_en": "Over 200,000 photos of rubbish in rivers flowing into the Saemangeum seawall, marking the type and position of items such as plastic, styrofoam, plastic bags, paper, metal and glass. You can use it to build AI that finds floating rubbish automatically to help clean it up.",
+ "detail_ko": "전북 새만금 방조제 유입 하천에서 찍은 이미지 207,586장(jpg)에 쓰레기 10종(예: 플라스틱류, 스티로폼류, 비닐류, 종이류, 금속류, 유리류, 섬유류, 목재류, 고무류) 객체 약 74.8만 개를 상자와 다각형으로 JSON에 표시했습니다. 기준 성능은 YOLOv4(Darknet) 쓰레기 탐지 mAP@0.5 71.53%, Mask R-CNN(ResNet-50) 분할 mIoU 51.29%입니다. 전체 약 1.7TB이고, 플라스틱류가 약 38%로 많고 고무류는 약 1%로 불균형합니다.",
+ "detail_en": "207,586 images (jpg) of rivers flowing into the Saemangeum seawall in North Jeolla, with about 748,000 JSON objects as boxes and polygons in 10 waste types (such as plastic, styrofoam, plastic film, paper, metal, glass, textile, wood, rubber). Baselines: waste detection with YOLOv4 (Darknet), mAP@0.5 71.53%; segmentation with Mask R-CNN (ResNet-50), mIoU 51.29%. Total size is about 1.7 TB. Plastic is about 38% and rubber about 1%, so classes are imbalanced.",
+ "amount_ko": "이미지 207,586장, 객체 약 74.8만 개, 쓰레기 10종",
+ "amount_en": "207,586 images, about 748,000 objects, 10 waste types",
+ "labels_ko": "쓰레기 위치 상자와 테두리, 쓰레기 종류",
+ "labels_en": "bounding boxes, polygons, waste type",
+ "status": "full-run-2026-11-02"
+}

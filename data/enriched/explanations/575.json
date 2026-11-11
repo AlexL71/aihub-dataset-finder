@@ -1,0 +1,12 @@
+{
+ "dataset_id": "575",
+ "easy_ko": "스마트 축사에서 찍은 닭 사진마다 서 있기·먹기·물 마시기·날개 펴기·죽음·깃털 쪼기 같은 행동을 상자와 몸의 주요 점으로 표시하고, 닭 울음소리도 함께 모은 데이터입니다. 닭의 건강이나 이상 행동을 자동으로 살피는 축사 AI를 만들 수 있습니다.",
+ "easy_en": "Photos of chickens in smart barns, with behaviours such as standing, eating, drinking, wing-spreading, death and feather-pecking marked by boxes and key body points, plus recordings of their sounds. You can build barn AI that automatically watches chickens for health problems or unusual behaviour.",
+ "detail_ko": "스마트 축사 CCTV·카메라로 촬영한 닭 이미지(png)에 육계·산란계 생애 단계별 서있기·섭식·급수·날개펴기·폐사·군집·깃털 쪼기 등 행동 바운딩박스 약 108만건과 관절 키포인트 약 18만건, 소리(wav) 4,800건을 JSON으로 라벨링했습니다. 기준 성능은 DetectoRS / PoseC3D / 자체 CNN 행동 인식 정확도 93.69%, 자체 CNN 소리 인식 91.83%입니다. 전체 약 2TB이며 574번 데이터와 같은 구축 기관·구조입니다.",
+ "detail_en": "Chickens images (png) from smart-barn CCTV and cameras, with JSON labels for about 1.08M behaviour boxes (standing, eating, drinking, wing-spreading, death, clustering, feather-pecking and more, by life stage for broilers and laying hens), about 180k keypoint sets, and 4,800 sound clips (wav). Baselines: DetectoRS / PoseC3D / custom CNN behaviour recognition accuracy 93.69%, custom CNN sound recognition 91.83%. Total size is about 2TB; same organisation and structure as dataset 574.",
+ "amount_ko": "행동 상자 약 108만건, 몸의 주요 점 약 18만건, 소리 4,800건",
+ "amount_en": "about 1.08M behaviour boxes, about 180k keypoint sets, 4,800 sounds",
+ "labels_ko": "동물 위치 상자, 몸의 주요 점(키포인트), 행동 종류, 자라는 단계, 소리 종류",
+ "labels_en": "boxes around animals, body key points, behaviour class, life stage, sound label",
+ "status": "full-run-2026-11-02"
+}

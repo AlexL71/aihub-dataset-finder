@@ -1,0 +1,12 @@
+{
+ "dataset_id": "115",
+ "easy_ko": "EBS 방송과 온라인 강의의 선생님 목소리를 녹음하고, 그 말을 받아 적은 글을 짝지은 데이터로, 초·중·고 과목부터 자격증·IT 같은 어른 강의까지 들어 있습니다. 강의 영상에 자막을 자동으로 달거나 강의 내용을 찾아 주는 AI를 만들 수 있습니다.",
+ "easy_en": "Recordings of teachers from EBS broadcasts and online lectures, paired with written transcripts, covering school subjects as well as adult courses such as certifications and IT. You can build AI that adds subtitles to lecture videos automatically or searches lecture content.",
+ "detail_ko": "EBS TV·라디오와 온라인 강의 4,000시간(초 960h, 중 750h, 고 1,340h, 직업/자격증 530h, 성인 420h)의 강의 음성(wav), 전사(txt), JSON 메타정보(강사 성별·연령, 과목·학년, 방송 날짜, 장소)로 구성됩니다. 과목은 국어·수학·사회·과학·역사·IT·금융·인문 등입니다. 기준 성능 지표는 없습니다. 약 360GB이며 EBS 방송 콘텐츠 이용 조건 확인이 필요합니다.",
+ "detail_en": "4,000 hours of EBS TV, radio and online lectures (elementary 960 h, middle 750 h, high 1,340 h, vocational 530 h, adult 420 h) with wav audio, txt transcripts and JSON metadata (lecturer sex and age, subject and grade, broadcast date, place). Subjects include Korean, maths, social studies, science, history, IT, finance and humanities. No baseline is published. About 360 GB; check EBS content usage terms.",
+ "amount_ko": "강의 음성 4,000시간",
+ "amount_en": "4,000 hours of lecture speech",
+ "labels_ko": "말소리를 받아 적은 글(전사), 과목·학년, 강사 정보",
+ "labels_en": "transcripts, subject and grade, lecturer info",
+ "status": "full-run-2026-11-02"
+}

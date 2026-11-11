@@ -1,0 +1,29 @@
+{
+ "dataset_id": "71306",
+ "title_en": "Local-government road accessory facility damage data",
+ "summary_ko": "부산·경남 도로 주행 영상에서 뽑은 이미지 약 42만 장에 PE 드럼·PE 방호벽·PE 안내봉·라바콘·시선유도봉·제설함·PE 입간판·PE 휀스 8종 도로 시설물의 정상·파손 상태(16개 클래스)를 다각형으로 표시한 데이터입니다. 지자체가 고장 난 도로 시설물을 자동으로 찾는 AI에 쓸 수 있습니다.",
+ "summary_en": "About 420,000 images from driving video in Busan and South Gyeongsang, with 8 road accessories (PE drums, PE barriers, PE guide posts, traffic cones, delineator posts, snow-salt boxes, PE stand signs, PE fences) marked by polygons as normal or damaged (16 classes). For local governments' AI that finds broken road facilities automatically.",
+ "contents_ko": "주행 이미지(jpg) + JSON(다각형, 시설물 종류, 정상·파손).",
+ "contents_en": "Driving images (jpg) + JSON (polygons, facility type, normal/damaged).",
+ "modalities": ["image"],
+ "tasks": ["segmentation", "object_detection", "anomaly_detection"],
+ "topics": [{"ko": "도로 관리·안전", "en": "Road maintenance and safety"}, {"ko": "도시 행정", "en": "Urban administration"}],
+ "keywords_ko": ["도로 시설물", "라바콘", "시선유도봉", "파손 탐지", "지자체"],
+ "keywords_en": ["road facilities", "traffic cones", "delineator posts", "damage detection", "local government"],
+ "labels": ["polygon", "facility type", "normal/damaged"],
+ "file_formats": ["jpg", "json"],
+ "scale_ko": "이미지 약 42만 장, 시설물 8종(정상·파손 16개 클래스)",
+ "classes_example": ["PE 드럼", "PE 방호벽", "PE 안내봉", "라바콘", "시선유도봉", "제설함", "PE 휀스"],
+ "baseline": [],
+ "difficulty": "intermediate",
+ "difficulty_note_ko": "분할 실습에 좋지만 전체 약 706GB입니다.",
+ "skills_needed_ko": ["파이썬", "YOLO 탐지·분할"],
+ "caveats_ko": ["전체 약 706GB", "부산·경남 지역만 있음", "성능 지표 표가 팩에서 비어 있음", "557번 지자체 도로 정비 데이터와 주제가 이어짐"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "라바콘 파손 분류", "title_en": "Cone damage classifier", "desc_ko": "라바콘이 정상인지 파손인지 분류합니다.", "desc_en": "Classify traffic cones as normal or damaged."},
+  {"level": "capstone", "title_ko": "도로 시설물 점검 지도", "title_en": "Road-facility inspection map", "desc_ko": "주행 영상에서 파손 시설물을 찾아 위치를 지도에 표시합니다.", "desc_en": "Find damaged facilities in driving video and map them."},
+  {"level": "research", "title_ko": "정상→파손 이상 탐지", "title_en": "Damage as anomaly", "desc_ko": "정상 이미지만으로 파손을 찾는 이상 탐지 방법을 연구합니다.", "desc_en": "Detect damage using anomaly detection trained on normal items."}
+ ],
+ "doc_used": true,
+ "uncertain": ["baseline values"]
+}

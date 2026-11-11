@@ -1,0 +1,29 @@
+{
+ "dataset_id": "71743",
+ "title_en": "Daily-life task and command execution data (task commands), 2023",
+ "summary_ko": "가상 실내 공간에서 '집어서 놓기·씻어서 놓기·가열해서 놓기·살펴보기' 같은 임무를 수행하는 한국어 명령어 230,000건과 수행 장면 이미지입니다. 분할·깊이 정보가 함께 있어 말로 지시하면 순서대로 행동하는 로봇·AI 에이전트(ALFRED 방식)에 쓸 수 있습니다.",
+ "summary_en": "230,000 Korean task commands with scene images in virtual indoor spaces, covering tasks such as pick and place, clean and place, heat and place, and examine, with segmentation and depth. For language-guided robots and agents (ALFRED-style).",
+ "contents_ko": "명령어 텍스트(txt) + 장면 이미지(png) + JSON(임무 유형, 분할, 깊이).",
+ "contents_en": "Command text (txt) + scene images (png) + JSON (task type, segmentation, depth).",
+ "modalities": ["text", "image", "3d"],
+ "tasks": ["visual_qa", "segmentation", "action_recognition"],
+ "topics": [{"ko": "로봇·AI 에이전트", "en": "Robots and AI agents"}, {"ko": "언어-행동 연결", "en": "Language-to-action"}],
+ "keywords_ko": ["명령어 수행", "로봇 에이전트", "ALFRED", "임베디드 AI", "한국어 명령", "집어서 놓기"],
+ "keywords_en": ["instruction following", "robot agent", "ALFRED", "embodied AI", "Korean commands", "pick and place"],
+ "labels": ["task type", "semantic segmentation", "instance segmentation", "depth"],
+ "file_formats": ["txt", "png", "json"],
+ "scale_ko": "명령어 230,000건, 임무 유형 8종 이상",
+ "classes_example": ["Pick&Place", "PickTwo&Place", "Stack&Place", "Cut&Place", "Clean&Place", "Heat&Place", "Cool&Place", "Examine"],
+ "baseline": [],
+ "difficulty": "advanced",
+ "difficulty_note_ko": "언어 명령과 3D 시뮬레이션을 함께 다뤄야 하고 약 381GB이며 가장 작은 파일도 약 3GB입니다.",
+ "skills_needed_ko": ["파이썬", "비전-언어 모델", "강화학습·모방학습 기초", "3D 시뮬레이터"],
+ "caveats_ko": ["페이지에 성능 점수 표가 없음(MOCHA 목표 Unseen SR 30%만 소개)", "가장 작은 파일도 약 3GB", "가상 환경 데이터라 실제 로봇 적용에는 추가 검증 필요"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "명령어 임무 유형 분류", "title_en": "Command type classifier", "desc_ko": "한국어 명령 문장이 어떤 임무 유형인지 분류합니다.", "desc_en": "Classify which task type a Korean command describes."},
+  {"level": "capstone", "title_ko": "말로 시키는 가상 로봇", "title_en": "Voice-commanded virtual robot", "desc_ko": "명령을 행동 단계로 나눠 가상 공간에서 수행하는 데모를 만듭니다.", "desc_en": "Split commands into steps and run them in a virtual space."},
+  {"level": "research", "title_ko": "처음 보는 공간 일반화", "title_en": "Generalising to unseen rooms", "desc_ko": "학습에 없던 공간에서 명령 수행 성공률을 높이는 방법을 연구합니다.", "desc_en": "Study improving success in unseen spaces."}
+ ],
+ "doc_used": true,
+ "uncertain": ["tasks는 명령 수행(언어+시각) 성격을 반영해 visual_qa·action_recognition으로 근사함"]
+}

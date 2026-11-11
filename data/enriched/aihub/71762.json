@@ -1,0 +1,29 @@
+{
+ "dataset_id": "71762",
+ "title_en": "Generative AI large-scale healthcare question-answer data",
+ "summary_ko": "의료 문서(온라인 기사)와 자체 수집 자료로 만든 헬스케어 질의응답 말뭉치로, 라벨 기준 약 2억 4,287만 어절입니다. 호흡기·순환기·뇌신경정신·소화기·피부 등 19개 질환 분류별 질문과 의료진 답변이 있어 의료용 챗봇과 의료 특화 대형 언어모델 학습에 쓸 수 있습니다.",
+ "summary_en": "Healthcare question-answer corpus from medical documents (online articles) and own collection, about 242.87M words (eojeol). Questions and clinician answers across 19 disease groups (respiratory, cardiovascular, neuro/psychiatric, digestive, skin and more), for medical chatbots and medical LLM training.",
+ "contents_ko": "질문·답변 텍스트(txt) + JSON(질환 분류, 질의응답).",
+ "contents_en": "Question-answer text (txt) + JSON (disease group, QA pairs).",
+ "modalities": ["text"],
+ "tasks": ["question_answering", "dialogue", "text_generation"],
+ "topics": [{"ko": "의료 챗봇", "en": "Medical chatbots"}, {"ko": "생성 AI", "en": "Generative AI"}],
+ "keywords_ko": ["의료 질의응답", "헬스케어 챗봇", "LLM", "질환 분류", "T5", "ROUGE"],
+ "keywords_en": ["medical QA", "healthcare chatbot", "LLM", "disease groups", "T5", "ROUGE"],
+ "labels": ["question-answer", "disease group"],
+ "file_formats": ["txt", "json"],
+ "scale_ko": "약 242,870,922어절(질문 약 1,284만 어절), 질환 분류 19종",
+ "classes_example": ["호흡기질환", "순환기질환", "뇌신경정신질환", "소화기질환", "피부질환", "치과질환", "여성질환", "소아청소년질환"],
+ "baseline": [],
+ "difficulty": "intermediate",
+ "difficulty_note_ko": "약 4.7GB 텍스트입니다. 작은 한국어 모델 미세조정 실습에 좋지만 의료 답변 검증은 어렵습니다.",
+ "skills_needed_ko": ["파이썬", "Hugging Face 미세조정(T5 등)", "ROUGE 평가"],
+ "caveats_ko": ["페이지에 성능 점수 표가 없음(ETRI T5 목표 ROUGE-1 ≥ 0.18, ROUGE-2 ≥ 0.025만 소개)", "'최종 증강 데이터'라 증강된 질문이 섞여 있음", "의료 답변이라 실제 진료 조언으로 쓰면 안 됨"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "질문 질환 분류기", "title_en": "Question disease-group classifier", "desc_ko": "건강 질문이 어느 질환 분류에 속하는지 맞히는 모델을 만듭니다.", "desc_en": "Predict the disease group of a health question."},
+  {"level": "capstone", "title_ko": "한국어 건강 상담 챗봇", "title_en": "Korean health chatbot", "desc_ko": "질의응답으로 T5를 미세조정해 간단한 건강 상담 챗봇을 만듭니다.", "desc_en": "Fine-tune T5 into a simple health Q&A chatbot."},
+  {"level": "research", "title_ko": "의료 답변 근거 검색", "title_en": "Grounded medical answers", "desc_ko": "검색 기반 생성(RAG)으로 답변 오류를 줄이는 방법을 연구합니다.", "desc_en": "Study retrieval-augmented generation to reduce wrong answers."}
+ ],
+ "doc_used": true,
+ "uncertain": []
+}

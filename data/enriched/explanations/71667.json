@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71667",
+ "easy_ko": "벌통 안 꿀벌 애벌레와 어른 벌 사진 31만여 장에 건강한 벌과 응애, 부저병, 석고병 같은 병을 상자와 설명으로 표시하고, 벌통 안 온도와 습도 기록을 함께 담은 데이터입니다. 꿀벌 병을 일찍 찾아내는 AI에 쓸 수 있습니다.",
+ "easy_en": "Over 310,000 photos of honeybee larvae and adult bees in hives, marking healthy bees and diseases such as varroa mites, foulbrood and chalkbrood with boxes and descriptions, plus hive temperature and humidity records. You can use it to build AI that diagnoses bee disease early.",
+ "detail_ko": "벌통 소비·소문·플레이트 촬영기로 찍은 꿀벌 이미지 312,000장(jpg; 유충 224,220, 성충 87,780)에 정상과 질병(응애, 부저병, 석고병, 날개불구바이러스감염증) 상자, 설명문, 벌통 안 온도·습도·이산화탄소 기록을 JSON으로 붙였습니다. 전체 약 259GB(최소 파일 2GB)이고, 성충 응애는 5,100장으로 적으며, 성능 지표 값은 팩에 없습니다.",
+ "detail_en": "312,000 bee images (jpg; 224,220 larvae, 87,780 adults) taken at hive frames, entrances and with a plate camera, with JSON boxes for normal and diseased bees (varroa mite, foulbrood, chalkbrood, deformed wing virus), captions, and in-hive temperature, humidity and CO2 records. Total size is about 259 GB (smallest file 2 GB). Adult varroa images are few (5,100), and no metric values are in the pack.",
+ "amount_ko": "이미지 312,000장(유충 224,220, 성충 87,780)",
+ "amount_en": "312,000 images (224,220 larvae, 87,780 adults)",
+ "labels_ko": "벌 위치 상자, 병 종류, 설명 문장, 벌통 환경",
+ "labels_en": "bounding boxes, disease class, caption",
+ "status": "full-run-2026-11-02"
+}

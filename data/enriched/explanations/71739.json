@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71739",
+ "easy_ko": "특허 문서 60만여 건을 생명, 보건의료 같은 나라의 중점 기술 분류에 맞춰 큰 분류부터 작은 분류까지 표시한 데이터입니다. 특허를 기술 분야별로 자동으로 나눠 기술 흐름이나 새 사업을 분석하는 AI에 쓸 수 있습니다.",
+ "easy_en": "Over 600,000 patents labelled with the national strategic technology classification, such as life sciences and healthcare, from broad to narrow categories. You can use it to build AI that sorts patents by technology field automatically to analyse technology trends or new business areas.",
+ "detail_ko": "특허 문서 619,844건(JSON: 제목, 요약 등)에 국가중점기술 대·중·소분류(예: 유전체정보를이용한질환원인규명기술, 유전자치료기술, 줄기세포활용기술, 맞춤형신약개발기술, 바이오마커기술)를 JSON으로 붙였습니다. 페이지에 성능 점수 표가 없고(KoBERT 선택 이유만 소개), 대분류 전체 목록은 팩 앞부분에 없으며(생명·보건의료만 확인), 특허 원문 언어를 확인해야 합니다.",
+ "detail_en": "619,844 patent documents (JSON: title, abstract and more) with JSON labels for the 3-level national strategic technology classification (such as disease-cause identification using genomic data, gene therapy, stem-cell use, personalised drug development, biomarkers). There is no score table (only the reason for choosing KoBERT), the full list of top-level categories is not in the pack (only life sciences/healthcare is visible), and the language of the patent texts should be checked.",
+ "amount_ko": "특허 619,844건, 3단계 분류",
+ "amount_en": "619,844 patents, 3-level classification",
+ "labels_ko": "기술 분류(대·중·소)",
+ "labels_en": "technology category (3 levels)",
+ "status": "full-run-2026-11-02"
+}

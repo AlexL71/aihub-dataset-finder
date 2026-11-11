@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71961",
+ "easy_ko": "여드름, 지루성 피부염, 주사, 민감성 같은 문제성 피부 종류별 화장 지식 문서 9,000여 건과 질문과 답 1만여 쌍을 모은 데이터입니다. 피부 고민에 맞는 화장법과 상품을 추천하는 챗봇에 쓸 수 있습니다.",
+ "easy_en": "Over 9,000 makeup-knowledge documents for problem skin types such as acne, seborrhoeic dermatitis, rosacea and sensitive skin, plus over 10,000 questions and answers. You can use it to build chatbots that recommend makeup methods and products for each skin concern.",
+ "detail_ko": "여드름(화농성), 지루성 피부염, 주사, 민감성 등 문제성 피부 유형별 메이크업 지식 문서 9,377건(doc, json; 50,120,919토큰)과 질의응답 10,043쌍(JSON)입니다. 피부 질환 관련 답변을 의료 조언으로 쓰면 안 되고, 성능 지표 값은 팩 앞부분에 없습니다. 가리는 화장에서 치유하는 화장으로 바꾸려는 목적으로 만들었습니다.",
+ "detail_en": "9,377 makeup-knowledge documents (doc, json; 50,120,919 tokens) by problem-skin type (inflamed acne, seborrhoeic dermatitis, rosacea, sensitive skin and more) and 10,043 question-answer pairs (JSON), built to shift problem-skin makeup from covering up towards healing. Answers about skin conditions must not be used as medical advice, and no metric values are in the pack.",
+ "amount_ko": "지식 문서 9,377건(50,120,919토큰), 질의응답 10,043쌍",
+ "amount_en": "9,377 knowledge documents (50,120,919 tokens), 10,043 QA pairs",
+ "labels_ko": "질문과 답",
+ "labels_en": "question-answer",
+ "status": "full-run-2026-11-02"
+}

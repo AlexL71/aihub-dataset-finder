@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71804",
+ "easy_ko": "레이더와 광학 위성 영상, 드론 영상 4만여 장에 내륙 습지 영역을 칠하고, 비, 기온, 물 높이 기록을 함께 담은 데이터입니다. 장마철과 가뭄철에 습지 넓이가 어떻게 바뀌는지와 탄소를 흡수하는 땅이 어디인지 추정하는 AI에 쓸 수 있습니다.",
+ "easy_en": "Over 40,000 radar and optical satellite images and drone images with inland wetland areas painted in, plus rainfall, temperature and water-level records. You can use it to build AI that estimates how wetland area changes between wet and dry seasons and where carbon-absorbing land is.",
+ "detail_ko": "Sentinel-1 레이더 10,041장, Sentinel-2 광학 10,014장, 드론 21,303장, 총 41,358장의 영상(tif)에 습지 분할(예: 초본우점, 목본우점, 수역, 나지, 수체, 비수체)을 JSON으로 붙이고, 강수량·기온·수위 관측 자료 60,165건을 함께 제공합니다. 성능 지표와 습지 위치 범위는 팩 앞부분에 없습니다.",
+ "detail_en": "41,358 images (tif): 10,041 Sentinel-1 radar, 10,014 Sentinel-2 optical and 21,303 drone, with JSON wetland segmentation (such as herb-dominated, woody-dominated, open water, bare ground, water, non-water), plus 60,165 rainfall, temperature and water-level records. The metrics and the wetland locations are not in the pack.",
+ "amount_ko": "영상 41,358장(Sentinel-1 10,041, Sentinel-2 10,014, 드론 21,303), 관측 자료 60,165건",
+ "amount_en": "41,358 images (10,041 Sentinel-1, 10,014 Sentinel-2, 21,303 drone), 60,165 observation records",
+ "labels_ko": "습지 영역",
+ "labels_en": "segmentation",
+ "status": "full-run-2026-11-02"
+}

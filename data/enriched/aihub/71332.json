@@ -1,0 +1,29 @@
+{
+ "dataset_id": "71332",
+ "title_en": "Firefighting facility and equipment 3D scanning data",
+ "summary_ko": "소방 시설·장비 187종(417건)을 3D 스캔해 정리한 3D 객체(fbx)와, 이를 렌더링한 이미지에 상자와 장비 이름을 붙인 데이터 약 47만 건입니다. 메타버스 소방 교육 콘텐츠나 소방 장비를 알아보는 AI에 쓸 수 있습니다.",
+ "summary_en": "About 470,000 items: 3D objects (fbx) from scanning 187 types (417 items) of firefighting facilities and equipment, plus rendered images with boxes and equipment names. For metaverse firefighting training content or AI that recognises firefighting equipment.",
+ "contents_ko": "3D 객체(fbx) + 렌더링 이미지(png, jpg) + JSON·XML(상자, 장비 분류).",
+ "contents_en": "3D objects (fbx) + rendered images (png, jpg) + JSON/XML (boxes, equipment class).",
+ "modalities": ["3d", "image"],
+ "tasks": ["object_detection", "image_classification", "3d_reconstruction"],
+ "topics": [{"ko": "소방·재난 대응", "en": "Firefighting and emergency response"}, {"ko": "3D 콘텐츠", "en": "3D content"}],
+ "keywords_ko": ["소방 장비", "3D 스캔", "메타버스", "소방 교육", "객체 분류"],
+ "keywords_en": ["firefighting equipment", "3D scanning", "metaverse", "fire safety training", "object classification"],
+ "labels": ["bounding box", "equipment class"],
+ "file_formats": ["fbx", "png", "jpg", "json", "xml", "txt"],
+ "scale_ko": "약 47만 건, 소방 시설·장비 187종(417건)",
+ "classes_example": ["기동장비 > 소방펌프차", "기동장비 > 사다리차", "화재 진압 장비 > 소방호스", "화재 진압 장비 > 방화복", "구조대 장비 > 하강기", "구급대 장비 > 혈압계", "정보 통신 장비 > 노트북", "소방시설 > 소화기", "소방시설 > 옥내소화전", "소방시설 > 감지기", "소방시설 > 유도등"],
+ "baseline": [{"task": "3D equipment classification (rendered images)", "model": "ResNet-152", "metric": "accuracy", "value": "94.94%"}],
+ "difficulty": "intermediate",
+ "difficulty_note_ko": "약 80GB이고 가장 작은 파일이 7GB입니다. 3D 도구 사용 경험이 있으면 좋습니다.",
+ "skills_needed_ko": ["파이썬", "CNN 이미지 분류", "3D 도구 기초"],
+ "caveats_ko": ["실제 제품과 형태·로고가 다른 창작 3D 모델", "전기자동차 등 일부 모델은 상업적 사용 불가(교육·보도·개인 용도만)"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "소방 장비 분류", "title_en": "Fire equipment classifier", "desc_ko": "렌더링 이미지로 소방 장비 종류를 분류합니다.", "desc_en": "Classify firefighting equipment from rendered images."},
+  {"level": "capstone", "title_ko": "메타버스 소방 교실", "title_en": "Metaverse fire-safety class", "desc_ko": "3D 장비를 클릭하면 사용법을 알려주는 가상 교실을 만듭니다.", "desc_en": "A virtual classroom where clicking 3D equipment explains its use."},
+  {"level": "research", "title_ko": "렌더링→실사 인식", "title_en": "Rendered-to-real recognition", "desc_ko": "렌더링 이미지로 학습한 모델이 실제 장비 사진에서 통하는지 연구합니다.", "desc_en": "Test rendered-image models on real equipment photos."}
+ ],
+ "doc_used": true,
+ "uncertain": []
+}

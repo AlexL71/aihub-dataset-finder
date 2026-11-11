@@ -1,0 +1,29 @@
+{
+ "dataset_id": "71588",
+ "title_en": "High-precision collection vehicle night-time expressway data",
+ "summary_ko": "카메라·라이다·레이더·GNSS/INS를 동기화해 단 수집 차량으로 밤 시간 자동차 전용도로를 달리며 모은 데이터로, 전방 카메라 이미지 10만 장과 라이다 점군 10만 개가 있습니다. 판옵틱 분할과 3D 상자가 있어 야간 고속 주행 인식 연구에 쓸 수 있습니다.",
+ "summary_en": "Night-time expressway driving data from a vehicle with synchronised camera, lidar, radar and GNSS/INS: 100k front images and 100k lidar point clouds with panoptic segmentation and 3D boxes, for night highway perception.",
+ "contents_ko": "카메라 이미지(jpg) + 라이다 점군(pcd) + JSON(2D 판옵틱 분할, 3D 상자) + GNSS/INS 위치 정보.",
+ "contents_en": "Camera image (jpg) + lidar point cloud (pcd) + JSON (2D panoptic segmentation, 3D cuboids) + GNSS/INS pose.",
+ "modalities": ["image", "3d", "sensor"],
+ "tasks": ["segmentation", "object_detection"],
+ "topics": [{"ko": "자율주행", "en": "Autonomous driving"}, {"ko": "야간 주행 안전", "en": "Night driving safety"}],
+ "keywords_ko": ["자율주행", "야간", "자동차 전용도로", "라이다", "판옵틱 분할", "3D 객체 탐지"],
+ "keywords_en": ["autonomous driving", "night", "expressway", "lidar", "panoptic segmentation", "3D object detection"],
+ "labels": ["panoptic segmentation", "3D cuboid"],
+ "file_formats": ["jpg", "pcd", "json"],
+ "scale_ko": "전방 카메라 이미지 100,000장, 라이다 점군 100,000개, 주행 장면 500개 이상",
+ "classes_example": ["맑음", "흐림", "비/눈", "평일", "휴일"],
+ "baseline": [{"task": "3D object detection", "model": "Voxel R-CNN", "metric": "mAP", "value": "74.31%"}, {"task": "panoptic segmentation", "model": "EfficientPS", "metric": "PQ", "value": "50.77%"}],
+ "difficulty": "advanced",
+ "difficulty_note_ko": "카메라·라이다를 함께 다뤄야 하고 전체 약 268GB입니다. 카메라 분할부터 시작하세요.",
+ "skills_needed_ko": ["파이썬", "분할 모델", "3D 점군 처리(Open3D·OpenPCDet)", "센서 좌표 변환"],
+ "caveats_ko": ["물체 클래스 목록은 팩 앞부분에 없음", "날씨 분포는 다른 시리즈 데이터와 같은 표 구조로 보이나 이 데이터 값은 확인 안 함", "71590 주간 전용도로 데이터와 같은 구성"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "야간 고속도로 분할", "title_en": "Night expressway segmentation", "desc_ko": "어두운 전방 이미지에서 차선·차량 영역을 분할합니다.", "desc_en": "Segment lanes and vehicles in dark expressway images."},
+  {"level": "capstone", "title_ko": "야간 차간 거리 경고", "title_en": "Night following-distance warning", "desc_ko": "라이다로 앞차 거리를 재 너무 가까우면 경고하는 데모를 만듭니다.", "desc_en": "Warn when the lidar-measured gap to the car ahead is too small."},
+  {"level": "research", "title_ko": "주간·야간 도메인 적응", "title_en": "Day-night domain adaptation", "desc_ko": "주간 데이터(71590)로 학습한 모델을 야간에 맞추는 방법을 연구합니다.", "desc_en": "Study adapting day-trained models (71590) to night."}
+ ],
+ "doc_used": true,
+ "uncertain": []
+}

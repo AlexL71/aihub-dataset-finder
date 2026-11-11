@@ -1,0 +1,29 @@
+{
+ "dataset_id": "71721",
+ "title_en": "Korean text-to-3D object pair data",
+ "summary_ko": "전통 물건·국내산 식재료·바위·가구 등 한국형 물체 6,000개를 3D 모델로 만들고, 각 모델에 설명 문장(캡션)과 분류 태그를 붙인 데이터입니다. 여러 각도 이미지와 깊이 이미지도 함께 있어, 문장으로 3D 물체를 만드는 AI(Text to 3D)에 쓸 수 있습니다.",
+ "summary_en": "6,000 Korean-style objects (traditional items, local produce, rocks, furniture and more) as 3D models with captions and category tags, plus multi-view and depth images. For text-to-3D object generation.",
+ "contents_ko": "3D 메시(LOD 포함)·텍스처 이미지, 시점별 이미지·깊이 이미지 + JSON(분류 태그, 캡션, 인공물/자연물 구분).",
+ "contents_en": "3D meshes (with LODs) and textures, multi-view and depth images + JSON (category tags, captions, artificial/natural flag).",
+ "modalities": ["3d", "image", "text"],
+ "tasks": ["3d_reconstruction", "image_generation", "image_captioning", "image_classification"],
+ "topics": [{"ko": "3D 콘텐츠·그래픽스", "en": "3D content and graphics"}, {"ko": "문화유산 디지털화", "en": "Cultural heritage digitisation"}],
+ "keywords_ko": ["텍스트-3D 생성", "3D 메시", "한국형 객체", "전통 객체", "깊이 이미지", "멀티뷰"],
+ "keywords_en": ["text-to-3D", "3D mesh", "Korean objects", "traditional objects", "depth images", "multi-view"],
+ "labels": ["caption", "category tag"],
+ "file_formats": ["json"],
+ "scale_ko": "3D 객체·캡션 6,000쌍, 시점·깊이 이미지 각 750,000건(목표 기준)",
+ "classes_example": ["바위류", "과일류", "야채류", "생활용품", "가구류", "전통특화객체"],
+ "baseline": [],
+ "difficulty": "advanced",
+ "difficulty_note_ko": "전체 약 958GB이고 3D 생성 모델은 GPU 메모리를 많이 씁니다. 일부 객체만 받아 시작하세요.",
+ "skills_needed_ko": ["파이썬", "3D 메시 처리(Open3D·trimesh)", "확산 모델·NeRF"],
+ "caveats_ko": ["전체 약 958GB", "통계 표의 일부 수치는 목표값이라 실제 구축량 확인 필요", "3D 파일 확장자가 팩에 명확하지 않음", "성능 수치가 팩에 없음"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "3D 객체 분류", "title_en": "3D object classification", "desc_ko": "시점 이미지로 객체가 인공물인지 자연물인지, 어떤 종류인지 분류합니다.", "desc_en": "Classify object type from multi-view images."},
+  {"level": "capstone", "title_ko": "문장으로 3D 소품 만들기", "title_en": "Text-to-3D props", "desc_ko": "설명 문장을 넣으면 한국 전통 소품 3D 모델을 만드는 시스템을 만듭니다.", "desc_en": "Generate Korean traditional 3D props from text."},
+  {"level": "research", "title_ko": "한국형 객체 3D 생성 품질", "title_en": "Quality of Korean-object 3D generation", "desc_ko": "기존 3D 생성 모델이 한국형 객체를 얼마나 잘 만드는지, 미세조정 효과를 연구합니다.", "desc_en": "Study how fine-tuning improves 3D generation of Korean objects."}
+ ],
+ "doc_used": true,
+ "uncertain": ["3D 파일 형식(obj·glb 등) 확인 필요"]
+}

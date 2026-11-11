@@ -1,0 +1,12 @@
+{
+ "dataset_id": "574",
+ "easy_ko": "스마트 축사에서 찍은 젖소 사진마다 걷기·서기·쉬기·먹기·잠자기 같은 행동을 상자와 몸의 주요 점으로 표시하고, 젖소 울음소리도 함께 모은 데이터입니다. 젖소의 건강이나 이상 행동을 자동으로 살피는 축사 AI를 만들 수 있습니다.",
+ "easy_en": "Photos of dairy cows in smart barns, with behaviours such as walking, standing, resting, eating and sleeping marked by boxes and key body points, plus recordings of their sounds. You can build barn AI that automatically watches dairy cows for health problems or unusual behaviour.",
+ "detail_ko": "스마트 축사 CCTV·카메라로 촬영한 젖소 이미지(png)에 사육 단계(포유기~경산우)별 걷기·서기·휴식·섭식·수면·털손질·머리흔듦 등 행동 바운딩박스 약 68만건과 관절 키포인트 약 10만건, 소리(wav) 1,260건을 JSON으로 라벨링했습니다. 기준 성능은 DetectoRS / PoseC3D / 자체 CNN 행동 인식 정확도 97.21%, 자체 CNN 소리 인식 94.45%, DetectoRS 젖소 탐지 mAP 97.32%입니다. 전체 약 5.2TB이며 575번 데이터와 같은 구축 기관·구조입니다. 최근 2025-07에 수정되었습니다.",
+ "detail_en": "Dairy cows images (png) from smart-barn CCTV and cameras, with JSON labels for about 680k behaviour boxes (walking, standing, resting, eating, sleeping, grooming, head-shaking and more, by growth stage from calf to multiparous cow), about 100k keypoint sets, and 1,260 sound clips (wav). Baselines: DetectoRS / PoseC3D / custom CNN behaviour recognition accuracy 97.21%, custom CNN sound recognition 94.45%, DetectoRS cow detection mAP 97.32%. Total size is about 5.2TB; same organisation and structure as dataset 575. It was last revised in July 2025.",
+ "amount_ko": "행동 상자 약 68만건, 몸의 주요 점 약 10만건, 소리 1,260건",
+ "amount_en": "about 680k behaviour boxes, about 100k keypoint sets, 1,260 sounds",
+ "labels_ko": "동물 위치 상자, 몸의 주요 점(키포인트), 행동 종류, 자라는 단계, 소리 종류",
+ "labels_en": "boxes around animals, body key points, behaviour class, life stage, sound label",
+ "status": "full-run-2026-11-02"
+}

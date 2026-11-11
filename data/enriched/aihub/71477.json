@@ -1,0 +1,29 @@
+{
+ "dataset_id": "71477",
+ "title_en": "Over-correction verification data for NLP post-processing",
+ "summary_ko": "한국어 철자·문법 교정 데이터 100만 건, 음성인식 결과를 바로잡는 병렬 말뭉치 약 100만 건, 원래 맞는 문장을 잘못 고치는 '과교정'을 검증하는 데이터 20만 건으로 이루어진 텍스트 데이터입니다. 한국어 맞춤법 교정기와 음성인식 후처리 AI에 쓸 수 있습니다.",
+ "summary_en": "1 million Korean spelling and grammar correction pairs, about 1 million speech-recognition post-correction pairs and 200,000 over-correction checks (correct sentences wrongly changed). For Korean spell checkers and speech-recognition post-processing.",
+ "contents_ko": "JSON(오류 문장, 교정 문장, 오류 분류).",
+ "contents_en": "JSON (erroneous sentence, corrected sentence, error class).",
+ "modalities": ["text"],
+ "tasks": ["text_generation", "text_classification"],
+ "topics": [{"ko": "한국어 교정", "en": "Korean text correction"}, {"ko": "음성인식 후처리", "en": "Speech recognition post-processing"}],
+ "keywords_ko": ["맞춤법 교정", "문법 오류", "과교정", "음성인식 후처리", "병렬 말뭉치", "한국어"],
+ "keywords_en": ["spelling correction", "grammar errors", "over-correction", "ASR post-processing", "parallel corpus", "Korean"],
+ "labels": ["corrected text", "error class"],
+ "file_formats": ["json"],
+ "scale_ko": "2,201,601건(철자·문법 1,000,001, 음성인식 후처리 1,001,600, 과교정 200,000), 주제 4종",
+ "classes_example": ["CA", "ES", "SH", "ST"],
+ "baseline": [{"task": "spelling correction classification", "model": "COMET22 + COMET-KIWI", "metric": "Accuracy", "value": "84%"}, {"task": "ASR post-correction classification", "model": "COMET22 + COMET-KIWI", "metric": "Accuracy", "value": "91%"}, {"task": "over-correction classification", "model": "COMET22 + COMET-KIWI", "metric": "Accuracy", "value": "98%"}, {"task": "spelling correction", "model": "Transformer encoder-decoder (Fairseq)", "metric": "BLEU", "value": "0.924"}, {"task": "ASR post-correction", "model": "Transformer encoder-decoder (Fairseq)", "metric": "BLEU", "value": "0.6751"}],
+ "difficulty": "intermediate",
+ "difficulty_note_ko": "텍스트라 다루기 쉽지만 전체 약 112GB입니다. 하위 데이터셋 하나만 받아 시작하세요.",
+ "skills_needed_ko": ["파이썬", "트랜스포머", "한국어 자연어 처리"],
+ "caveats_ko": ["주제 약어(CA·ES·SH·ST)의 뜻이 팩에 설명되어 있지 않음", "텍스트인데 용량이 약 112GB로 커서 구성 확인 필요"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "오류 문장 찾기", "title_en": "Error sentence detector", "desc_ko": "문장에 맞춤법 오류가 있는지 분류합니다.", "desc_en": "Classify whether a sentence has spelling errors."},
+  {"level": "capstone", "title_ko": "과제용 맞춤법 교정기", "title_en": "Spell checker for reports", "desc_ko": "리포트 문장을 고치되 맞는 문장은 그대로 두는 교정기를 만듭니다.", "desc_en": "Corrector that fixes errors but leaves correct sentences alone."},
+  {"level": "research", "title_ko": "과교정 줄이기", "title_en": "Reducing over-correction", "desc_ko": "교정 모델이 맞는 문장을 바꾸는 실수를 줄이는 방법을 연구합니다.", "desc_en": "Stop correction models from changing correct sentences."}
+ ],
+ "doc_used": true,
+ "uncertain": ["주제 약어의 뜻"]
+}

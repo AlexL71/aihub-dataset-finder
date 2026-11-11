@@ -1,0 +1,32 @@
+{
+ "dataset_id": "71313",
+ "title_en": "Yoga movement data",
+ "summary_ko": "요가 대표 동작 50개를 초·중·고급 시연자 120명이 하는 모습을 카메라 8대로 동시에 찍은 영상 약 1.7만 클립에 2D·3D 관절 키포인트와 동작 정보를 붙인 데이터입니다. 연령이 20대부터 60대 이상까지 다양합니다. 요가 자세 교정이나 동작 분류 AI에 쓸 수 있습니다.",
+ "summary_en": "About 17,000 clips of 50 representative yoga poses performed by 120 beginner to advanced practitioners (ages 20s to 60+), filmed by 8 cameras at once, with 2D and 3D joint keypoints and movement info. For yoga posture-correction or pose classification AI.",
+ "contents_ko": "멀티뷰 동작 영상(mp4) + JSON·CSV(2D·3D 키포인트, 동작 정보).",
+ "contents_en": "Multi-view movement videos (mp4) + JSON/CSV (2D and 3D keypoints, movement info).",
+ "modalities": ["video", "3d"],
+ "tasks": ["keypoint_pose", "action_recognition"],
+ "topics": [{"ko": "운동·피트니스", "en": "Exercise and fitness"}, {"ko": "동작 분석", "en": "Motion analysis"}],
+ "keywords_ko": ["요가", "자세 교정", "자세 추정", "홈트레이닝", "멀티뷰"],
+ "keywords_en": ["yoga", "posture correction", "pose estimation", "home workout", "multi-view"],
+ "labels": ["2D keypoint", "3D keypoint", "movement class", "skill level"],
+ "file_formats": ["mp4", "json", "csv"],
+ "scale_ko": "영상 약 1.7만 클립, 동작 50종, 시연자 120명",
+ "classes_example": ["초급", "중급", "고급"],
+ "baseline": [
+  {"task": "pose classification", "model": "PoseC3D", "metric": "top-3 accuracy", "value": "98.58%"},
+  {"task": "pose similarity", "model": "BPE", "metric": "AUC-ROC", "value": "0.9751"}
+ ],
+ "difficulty": "advanced",
+ "difficulty_note_ko": "전체 약 14TB로 매우 큽니다. 키포인트만 받아 쓰세요.",
+ "skills_needed_ko": ["파이썬", "자세 추정", "동작 분류(PoseC3D 등)"],
+ "caveats_ko": ["전체 약 14TB", "여성 시연자가 89%로 치우침", "시연자 얼굴이 보임", "71312번 필라테스 데이터와 같은 구축 기관·구조", "50개 요가 동작 이름이 팩 앞부분에 없음"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "요가 자세 분류", "title_en": "Yoga pose classifier", "desc_ko": "키포인트로 50개 요가 자세를 분류합니다.", "desc_en": "Classify 50 yoga poses from keypoints."},
+  {"level": "capstone", "title_ko": "요가 자세 피드백 앱", "title_en": "Yoga feedback app", "desc_ko": "웹캠 자세의 관절 각도를 기준과 비교해 교정 피드백을 줍니다.", "desc_en": "Compare joint angles with references and give feedback."},
+  {"level": "research", "title_ko": "단일 카메라로 3D 자세 추정", "title_en": "Monocular 3D pose", "desc_ko": "멀티뷰 3D 정답으로 한 대 카메라 3D 추정 모델을 학습합니다.", "desc_en": "Train single-camera 3D pose models using multi-view 3D labels."}
+ ],
+ "doc_used": true,
+ "uncertain": ["names of the 50 poses"]
+}

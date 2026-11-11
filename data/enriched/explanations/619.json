@@ -1,0 +1,12 @@
+{
+ "dataset_id": "619",
+ "easy_ko": "시청 콜센터와 국민신문고에 들어온 민원 글마다 무엇을 원하는지(요청·문의 등), 중요한 단어, 담당 부서를 표시하고, 비슷한 문장을 만들어 양을 늘린 데이터입니다. 민원 내용을 이해해 알맞은 부서로 자동으로 보내 주는 챗봇을 만들 수 있습니다.",
+ "easy_en": "Public complaints sent to a city call centre and the national e-petition site, each marked with what the person wants (request, question and so on), key words and the department in charge, plus extra similar sentences generated to enlarge the set. You can build chatbots that understand complaints and send them to the right department automatically.",
+ "detail_ko": "창원시 콜센터와 국민신문고 민원 원문 20만 건에 의도(요청/개선, 문의 등), 개체명, 담당 부서(18개 분야), 키워드를 붙이고 유사 문장 80만 건을 생성해 총 100만 건(JSON)으로 만들었습니다. 기준 성능은 ELECTRA 의도 분류 정확도 98.68%, BERT 개체명 인식 F1 0.908입니다. 80%가 자동 생성 문장이라 실제보다 쉬울 수 있고, 자동차 분야가 37%로 치우쳐 있으며, 창원시 민원만 포함됩니다.",
+ "detail_en": "1M items (JSON): 200k original complaints from the Changwon City call centre and the national e-petition portal, labelled with intent (request/improvement, inquiry and more), named entities, department (18 areas) and keywords, plus 800k generated paraphrases. Baselines: ELECTRA intent classification accuracy 98.68%, BERT NER F1 0.908. With 80% generated text, the task may look easier than reality; the car domain makes up 37%; only Changwon complaints are included.",
+ "amount_ko": "민원 문장 100만 건(원문 20만)",
+ "amount_en": "1M complaint sentences (200k original)",
+ "labels_ko": "민원 의도, 중요한 단어(개체명), 담당 부서, 키워드",
+ "labels_en": "intent, named entities, department, keywords",
+ "status": "full-run-2026-11-02"
+}

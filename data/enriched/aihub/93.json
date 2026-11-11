@@ -1,0 +1,29 @@
+{
+ "dataset_id": "93",
+ "title_en": "Book summarisation",
+ "summary_ko": "사회과학·기술과학·철학·법학 등 다양한 분야 한국어 도서 원문에 사람이 쓴 요약문을 붙인 데이터 20만 건입니다. 긴 글의 핵심을 짧게 정리하는 요약 AI를 학습하는 데 쓸 수 있습니다.",
+ "summary_en": "200,000 Korean book passages from social science, technology, philosophy, law and more, each with a human-written summary. For training summarisation AI that condenses long text.",
+ "contents_ko": "JSON: 원문 ID·분야, 원문 텍스트, 생성 요약문(일부 추출 요약 포함).",
+ "contents_en": "JSON: passage ID and field, passage text, abstractive summary (some extractive summaries).",
+ "modalities": ["text"],
+ "tasks": ["summarization"],
+ "topics": [{"ko": "도서·출판", "en": "Books and publishing"}, {"ko": "문서 요약", "en": "Document summarisation"}],
+ "keywords_ko": ["요약", "도서 요약", "생성 요약", "추출 요약", "한국어"],
+ "keywords_en": ["summarisation", "book summary", "abstractive summary", "extractive summary", "Korean"],
+ "labels": ["summary text", "category"],
+ "file_formats": ["json"],
+ "scale_ko": "원문-요약 20만 건",
+ "classes_example": ["사회과학", "기술과학", "철학", "법학"],
+ "baseline": [],
+ "difficulty": "intermediate",
+ "difficulty_note_ko": "약 0.2GB로 작지만 요약 모델 미세조정에는 GPU가 필요합니다.",
+ "skills_needed_ko": ["파이썬", "KoBART 같은 요약 모델 미세조정", "ROUGE 평가"],
+ "caveats_ko": ["성능 지표가 페이지에 없음"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "분야별 요약 비율 분석", "title_en": "Summary ratio by field", "desc_ko": "분야별로 원문 대비 요약문 길이와 자주 쓰는 단어를 비교합니다.", "desc_en": "Compare summary length ratio and key words by field."},
+  {"level": "capstone", "title_ko": "책 내용 3줄 요약기", "title_en": "3-line book summariser", "desc_ko": "요약 모델을 미세조정해 긴 글을 넣으면 3줄로 요약하는 웹을 만듭니다.", "desc_en": "Fine-tune a model and build a site that gives 3-line summaries."},
+  {"level": "research", "title_ko": "요약의 사실 일치성 평가", "title_en": "Factual consistency of summaries", "desc_ko": "생성된 요약이 원문과 다른 내용을 만드는지 검사하는 방법을 연구합니다.", "desc_en": "Study methods that check whether summaries contradict the source."}
+ ],
+ "doc_used": true,
+ "uncertain": []
+}

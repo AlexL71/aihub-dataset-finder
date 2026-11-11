@@ -1,0 +1,12 @@
+{
+ "dataset_id": "80",
+ "easy_ko": "국산 자동차 여러 종류를 빙 둘러 여러 방향과 높이에서, 아침·오후·저녁·실내 조명으로 찍은 사진이며, 사진마다 제조사·모델·연식이 적혀 있습니다. 사진 속 차가 어떤 차종인지 알아보거나 주차장에서 특정 차를 찾는 AI를 만들 수 있습니다.",
+ "easy_en": "Photos of Korean-made car models taken from all around at many angles and heights, under morning, afternoon, evening and indoor lighting, each named with the maker, model and year. You can build AI that recognises the car model in a photo or finds a specific car in a parking lot.",
+ "detail_ko": "국산 차량 100종을 수평 24방향 × 수직 5방향(120개 시점)과 4~5가지 조명에서 촬영한 사진 약 5만 장(jpg, 차종당 약 500장)입니다. 별도 라벨 파일 없이 파일 이름(제조사_모델_연식_조명_시점)에 정보가 들어 있습니다. 63GB 파일 하나로만 제공되어 일부만 받을 수 없고, 2018년 구축이라 최신 차종이 없으며 기준 성능 지표도 없습니다. 스튜디오성 촬영이라 실제 도로 사진과 다를 수 있고, 페이지 태그에 '헬스케어 서비스'가 잘못 붙어 있습니다.",
+ "detail_en": "About 50k jpg photos of 100 Korean car models (about 500 each), taken from 120 viewpoints (24 horizontal × 5 vertical) under 4–5 lighting conditions. There is no separate label file: the file name encodes maker_model_year_lighting_viewpoint. It ships as one 63 GB file, dates from 2018 (no recent models) and has no baseline. Studio-like shots may differ from real road photos, and the page is wrongly tagged as a healthcare service.",
+ "amount_ko": "사진 약 5만 장, 차종 100종, 촬영 방향 120개",
+ "amount_en": "about 50k photos, 100 car models, 120 viewpoints",
+ "labels_ko": "제조사·모델·연식(파일 이름), 조명, 촬영 방향",
+ "labels_en": "maker, model and year (in the file name), lighting, viewpoint",
+ "status": "full-run-2026-11-02"
+}

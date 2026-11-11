@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71712",
+ "easy_ko": "경상도, 전라도, 제주도 숲을 비행기와 드론으로 찍은 사진과 근적외선 사진 약 6.7만 장에 나무 종류와 탄소량을 칠해 표시한 데이터입니다. 숲의 나무 종류를 나누고 숲이 탄소를 얼마나 품는지 계산하는 AI에 쓸 수 있습니다.",
+ "easy_en": "About 67,000 aerial and drone photos and near-infrared images of forests in Gyeongsang, Jeolla and Jeju, with tree species and carbon amounts painted in. You can use it to build AI that tells tree species apart and calculates how much carbon a forest holds.",
+ "detail_ko": "경상도(65.5%)·전라도(32.3%)·제주도(2.2%) 산림을 10cm·25cm 해상도로 찍은 항공·드론 이미지와 근적외선(NIR) 이미지 67,212장(TIF)에 수종 클래스(소나무, 낙엽송, 기타침엽수, 기타활엽수, 상록활엽수)와 탄소량 분할 마스크(TIF, JSON)를 붙였습니다. 경상도에 데이터가 몰려 지역이 불균형하고, 성능 지표는 팩 앞부분에 없습니다. 71710 탄소흡수원 시계열 데이터와 같은 기관입니다.",
+ "detail_en": "67,212 aerial, drone and near-infrared (NIR) images (TIF) at 10 cm and 25 cm resolution of forests in Gyeongsang (65.5%), Jeolla (32.3%) and Jeju (2.2%), with segmentation masks (TIF, JSON) for tree species (pine, larch, other conifers, other broadleaf, evergreen broadleaf) and carbon amount. Data is concentrated in Gyeongsang, so regions are imbalanced, and no metrics are in the pack. Same builder as the carbon-sink time series 71710.",
+ "amount_ko": "이미지 67,212장(경상도 65.5%, 전라도 32.3%, 제주도 2.2%)",
+ "amount_en": "67,212 images (Gyeongsang 65.5%, Jeolla 32.3%, Jeju 2.2%)",
+ "labels_ko": "나무 종류 영역, 탄소량",
+ "labels_en": "segmentation mask, species class, carbon amount",
+ "status": "full-run-2026-11-02"
+}

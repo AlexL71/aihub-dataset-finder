@@ -1,0 +1,12 @@
+{
+ "dataset_id": "79",
+ "easy_ko": "불고기·김치·미역국·냉면·김밥 같은 한국 음식 사진을 종류별로 모으고, 사진마다 어떤 음식인지 이름을 붙인 데이터입니다. 음식 사진을 찍으면 무슨 요리인지 알려 주는 앱을 처음 만들어 보기에 알맞습니다.",
+ "easy_en": "Photos of Korean dishes such as bulgogi, kimchi, seaweed soup, cold noodles and gimbap, grouped by dish and each labelled with the dish name. It is a good first project for an app that tells you which dish is in a photo.",
+ "detail_ko": "한식재단 분류를 참고한 한국 음식 150종 × 약 1,000장, 총 15만 장(jpg)으로, 대분류·소분류 음식 ID와 일부 세그멘테이션 정보가 있습니다. 구이·김치·국·면·밥 등으로 분류됩니다. 16GB 파일 하나로만 제공되어 일부만 받을 수 없으며, 2018년 구축으로 기준 성능 지표가 없습니다.",
+ "detail_en": "150 Korean dishes × about 1,000 photos each, 150k jpg images in total, labelled with main and sub-category dish IDs and partial segmentation; categories follow the Korean Food Foundation (grilled dishes, kimchi, soups, noodles, rice and more). It ships as a single 16 GB file, so partial download is not possible. Built in 2018; no baseline is published.",
+ "amount_ko": "사진 15만 장, 음식 150종",
+ "amount_en": "150k photos, 150 dishes",
+ "labels_ko": "음식 이름(종류), 일부 음식 영역",
+ "labels_en": "dish name (class), some food regions",
+ "status": "full-run-2026-11-02"
+}

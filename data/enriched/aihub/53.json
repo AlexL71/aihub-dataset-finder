@@ -1,0 +1,29 @@
+{
+ "dataset_id": "53",
+ "title_en": "High-resolution light-field camera images",
+ "summary_ko": "직접 만든 고해상도 라이트필드(여러 카메라를 묶은) 카메라로 카페·서점·공원·거실 등 17곳 이상의 일상 장면을 찍은 이미지 75만 장입니다. 여러 시점 사진 사이의 차이로 초점 바꾸기, 깊이 추출, 자유 시점 영상을 만들 수 있고, 물체 상자와 32가지 동작 구분도 들어 있습니다.",
+ "summary_en": "750,000 images of everyday scenes (cafe, bookstore, park, living room and more, 17+ places) shot with a custom high-resolution light-field camera made of many synchronised cameras. Differences between views allow refocusing, depth extraction and free-viewpoint video; object boxes, some segmentation and 32 action classes are included.",
+ "contents_ko": "한 장면의 다시점 PNG 이미지 묶음 + 라벨(물체 상자, 일부 분할, 클립별 동작 분류) + 카메라 메타정보.",
+ "contents_en": "A set of multi-view PNG images per scene + labels (object boxes, some segmentation, action class per clip) + camera metadata.",
+ "modalities": ["image", "video", "3d"],
+ "tasks": ["depth_estimation", "3d_reconstruction", "object_detection", "action_recognition"],
+ "topics": [{"ko": "카메라·영상 기술", "en": "Camera and imaging technology"}, {"ko": "가상·증강현실", "en": "Virtual and augmented reality"}, {"ko": "영상 콘텐츠 제작", "en": "Video content production"}],
+ "keywords_ko": ["라이트필드", "다시점", "재초점", "깊이 정보", "자유 시점", "동작 인식", "실감 콘텐츠"],
+ "keywords_en": ["light field", "multi-view", "refocusing", "depth", "free viewpoint", "action recognition", "immersive content"],
+ "labels": ["bounding box", "segmentation (partial)", "action class"],
+ "file_formats": ["png", "json"],
+ "scale_ko": "PNG 이미지 약 75만 장(구축량 14.4만 건), 장소 17곳 이상, 동작 32종",
+ "classes_example": ["cafe", "bookStore", "park", "basketballCourt", "livingRoom", "kitchen", "office"],
+ "baseline": [{"task": "action recognition", "model": "YOWO", "metric": "accuracy", "value": "93%"}],
+ "difficulty": "advanced",
+ "difficulty_note_ko": "라이트필드라는 특수 영상이고 전체 약 1.6TB라 영상 기술 연구 수준입니다.",
+ "skills_needed_ko": ["파이썬", "다시점 기하학·시차(disparity)", "3D 비전 모델"],
+ "caveats_ko": ["전체 약 1.6TB", "성능 표의 '동작인식'이 Object Detection으로 적혀 있음"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "사진 초점 바꾸기 체험", "title_en": "Try digital refocusing", "desc_ko": "여러 시점 이미지를 이동·평균해 초점이 바뀌는 효과를 직접 만들어 봅니다.", "desc_en": "Shift and average views to create a refocus effect yourself."},
+  {"level": "capstone", "title_ko": "시차로 깊이 지도 만들기", "title_en": "Depth maps from disparity", "desc_ko": "스테레오 매칭으로 깊이 지도를 만들고 장소별 품질을 비교합니다.", "desc_en": "Build depth maps with stereo matching and compare quality across places."},
+  {"level": "research", "title_ko": "자유 시점 영상 합성", "title_en": "Free-viewpoint synthesis", "desc_ko": "NeRF 계열로 카메라 사이의 새 시점 영상을 만들고 움직이는 사람이 있을 때의 오류를 분석합니다.", "desc_en": "Synthesise in-between views with NeRF-style methods and analyse errors with moving people."}
+ ],
+ "doc_used": true,
+ "uncertain": []
+}

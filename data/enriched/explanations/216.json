@@ -1,0 +1,12 @@
+{
+ "dataset_id": "216",
+ "easy_ko": "두피를 확대해 찍은 사진마다 각질, 기름기, 붉어짐, 염증, 비듬, 탈모 같은 증상이 있는지와 얼마나 심한지를 표시한 데이터입니다. 두피 상태를 알려 주고 맞는 샴푸를 추천하는 미용 앱을 만들 수 있지만, 병원 진단을 대신할 수는 없습니다.",
+ "easy_en": "Close-up photos of the scalp, each marked with whether symptoms such as flaking, oiliness, redness, inflammation, dandruff or hair loss are present and how severe they are. You can build beauty apps that describe scalp condition and recommend a shampoo, but they cannot replace a doctor's diagnosis.",
+ "detail_ko": "두피 확대 이미지 101,027건(jpg)에 6가지 증상(미세각질, 피지과다, 모낭사이홍반, 모낭홍반/농포, 비듬, 탈모)별 정도 등급을 JSON으로 붙였습니다(피지과다 8만, 모낭사이홍반 6.7만, 비듬 4만, 탈모 2.6만, 미세각질 1.7만 등, 중복 포함). 기준 성능은 CNN 비듬 분류 정확도 95.2%, 피지과다 분류 90.5%입니다. '양호' 이미지가 811건뿐이라 정상 판별이 어렵고, 의료 진단을 대신하면 안 됩니다.",
+ "detail_en": "101,027 close-up scalp images (jpg) with JSON severity grades for 6 symptoms: fine scaling, excess sebum, interfollicular erythema, follicular erythema/pustules, dandruff and hair loss (excess sebum 80k, interfollicular erythema 67k, dandruff 40k, hair loss 26k, fine scaling 17k and more, overlapping). Baselines: CNN dandruff classification accuracy 95.2%, excess sebum 90.5%. Only 811 images are labelled healthy, so normal-vs-abnormal is hard; it must not replace medical diagnosis.",
+ "amount_ko": "두피 사진 약 10.1만 건, 증상 6종",
+ "amount_en": "about 101k scalp images, 6 symptoms",
+ "labels_ko": "두피 증상 종류와 심한 정도",
+ "labels_en": "scalp symptom type and severity grade",
+ "status": "full-run-2026-11-02"
+}

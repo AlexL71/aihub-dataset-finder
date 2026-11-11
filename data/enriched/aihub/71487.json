@@ -1,0 +1,33 @@
+{
+ "dataset_id": "71487",
+ "title_en": "Medical and legal specialized book corpus",
+ "summary_ko": "이용 허락을 받은 의료·법률 전문 도서와 의료 특허, 법원 판결문에서 모은 약 1억 어절의 한국어 말뭉치입니다. 의료·법률 분야 언어 모델 학습, 질의응답·상담, 판례 요약 등에 쓸 수 있습니다.",
+ "summary_en": "About 100 million words of Korean text from licensed medical and legal books, medical patents and court rulings. For training medical/legal language models, Q&A, consultation and case summarisation.",
+ "contents_ko": "원문 텍스트(txt) + JSON(문서 정보).",
+ "contents_en": "Raw text (txt) + JSON (document info).",
+ "modalities": ["text"],
+ "tasks": ["text_generation", "information_extraction", "question_answering"],
+ "topics": [{"ko": "의료·헬스케어", "en": "Medicine and healthcare"}, {"ko": "법률", "en": "Law"}],
+ "keywords_ko": ["의료", "법률", "말뭉치", "판결문", "특허", "언어 모델"],
+ "keywords_en": ["medical", "legal", "corpus", "court rulings", "patents", "language model"],
+ "labels": ["document metadata"],
+ "file_formats": ["txt", "json"],
+ "scale_ko": "126,513건, 102,300,332어절(의료 46,883건 약 4,922만 어절, 법률 79,630건 약 5,308만 어절)",
+ "classes_example": ["의료", "법률"],
+ "baseline": [
+  {"task": "medical NER fine-tuning (KM-BERT)", "model": "BERT", "metric": "F1-score", "value": "0.78"},
+  {"task": "legal NER fine-tuning (KL-BERT)", "model": "BERT", "metric": "F1-score", "value": "0.89"},
+  {"task": "medical language model (KM-BERT)", "model": "BERT", "metric": "Perplexity", "value": "153.72"}
+ ],
+ "difficulty": "intermediate",
+ "difficulty_note_ko": "라벨이 거의 없는 원문 말뭉치라 언어 모델 사전학습이나 직접 만든 과제에 써야 합니다.",
+ "skills_needed_ko": ["파이썬", "텍스트 전처리", "BERT 사전학습·미세조정"],
+ "caveats_ko": ["질의응답·요약용 정답 라벨은 팩에서 확인되지 않음", "성능표의 AI 과제가 'Text Generation'으로 적혀 있지만 실제 지표는 개체명 인식 F1"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "의료·법률 문서 분류", "title_en": "Medical vs legal document classifier", "desc_ko": "문단이 의료 분야인지 법률 분야인지 분류합니다.", "desc_en": "Classify paragraphs as medical or legal."},
+  {"level": "capstone", "title_ko": "판결문 검색 도우미", "title_en": "Court-ruling search helper", "desc_ko": "판결문을 임베딩해 비슷한 판례를 찾아 주는 검색기를 만듭니다.", "desc_en": "Embed rulings and build a similar-case search tool."},
+  {"level": "research", "title_ko": "전문 분야 언어 모델 비교", "title_en": "Domain language model comparison", "desc_ko": "일반 BERT와 의료·법률 사전학습 BERT의 성능 차이를 비교합니다.", "desc_en": "Compare general BERT with domain-pretrained BERT."}
+ ],
+ "doc_used": true,
+ "uncertain": ["JSON 라벨에 어떤 항목이 들어 있는지 팩 앞부분에 자세히 없음"]
+}

@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71373",
+ "easy_ko": "한국 방송 프로그램 대사를 독일어, 프랑스어, 이탈리아어로 번역한 문장을 짝지은 데이터로, 신조어, 줄임말, 관용 표현과 말투까지 담겨 있습니다. 한국 드라마나 예능의 유럽어 자막을 자동으로 만드는 번역기를 만들 수 있습니다.",
+ "easy_en": "Lines from Korean TV programmes paired with German, French and Italian translations, including slang, abbreviations, idioms and tone. You can build translators that automatically make European-language subtitles for Korean dramas and variety shows.",
+ "detail_ko": "방송사와 저작권 계약을 맺은 한국 방송 콘텐츠 대사의 한-독, 한-불, 한-이 번역 문장 쌍 약 196만 개(txt, JSON: 원문, 번역, 언어, 장르)입니다. 기준 성능은 Transformer BLEU 한→독 0.3892, 한→불 0.4459, 한→이 0.4142입니다. 방송 대사 저작권 때문에 사용 범위 확인이 필요하고, BLEU 값이 0~1 단위로 적혀 있으며, 음성 쌍 언급이 있지만 음성 파일은 기록에서 확인되지 않습니다.",
+ "detail_en": "About 1.96M sentence pairs (txt, JSON: source, translation, language, genre) translating licensed Korean broadcast dialogue into German, French and Italian. Baselines: Transformer BLEU 0.3892 (ko→de), 0.4459 (ko→fr), 0.4142 (ko→it). Broadcast copyright limits use; BLEU is on a 0–1 scale; speech pairs are mentioned, but no audio files are visible in the record.",
+ "amount_ko": "번역 문장 쌍 약 196만 개, 언어 3종",
+ "amount_en": "about 1.96M sentence pairs, 3 languages",
+ "labels_ko": "번역 문장 짝, 언어, 방송 장르",
+ "labels_en": "sentence pairs, language, genre",
+ "status": "full-run-2026-11-02"
+}

@@ -1,0 +1,29 @@
+{
+ "dataset_id": "71736",
+ "title_en": "Food 3D data",
+ "summary_ko": "베이커리·중식 등 여러 나라 음식 443종을 촬영한 이미지 약 262만 장과 음식 3D 모델 24,001개(텍스처 포함)입니다. 3D 분할과 이미지 캡션이 붙어 있어 음식 종류 인식, 3D 음식 모델 생성, 무인 주문·서빙 로봇에 쓸 수 있습니다.",
+ "summary_en": "About 2.62 million photos of 443 dishes from many cuisines (bakery, Chinese, etc.) and 24,001 textured 3D food models with 3D segmentation and captions. For food recognition, 3D food model generation and ordering or serving robots.",
+ "contents_ko": "촬영 이미지(jpg) + 3D 모델(obj, mtl, 텍스처 jpg) + CSV·JSON(3D 분할, 이미지 캡션).",
+ "contents_en": "Photos (jpg) + 3D models (obj, mtl, texture jpg) + CSV/JSON (3D segmentation, captions).",
+ "modalities": ["image", "3d", "text"],
+ "tasks": ["3d_reconstruction", "image_classification", "image_captioning"],
+ "topics": [{"ko": "음식·외식 산업", "en": "Food and restaurants"}, {"ko": "3D 콘텐츠", "en": "3D content"}],
+ "keywords_ko": ["음식", "3D 모델", "NeRF", "음식 인식", "서빙 로봇", "이미지 캡션"],
+ "keywords_en": ["food", "3D models", "NeRF", "food recognition", "serving robot", "image captioning"],
+ "labels": ["3D segmentation", "image caption", "food class"],
+ "file_formats": ["jpg", "obj", "mtl", "csv", "json"],
+ "scale_ko": "촬영 이미지 2,616,111장, 3D 모델 24,001개, 음식 443종",
+ "classes_example": ["베이커리", "중식", "기타"],
+ "baseline": [],
+ "difficulty": "advanced",
+ "difficulty_note_ko": "3D 형태 추정(NeRF)은 어렵고 전체 약 486GB입니다. 이미지 분류부터 시작하세요.",
+ "skills_needed_ko": ["파이썬", "이미지 분류", "NeRF·3D 복원", "3D 도구(Blender)"],
+ "caveats_ko": ["페이지에 성능 점수 표가 없음(NeRF 목표 SSIM 0.65만 소개)", "443종 음식 이름과 전체 분류는 팩 앞부분에 없음", "같은 음식 여러 각도 사진이라 음식 단위로 분할해야 함"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "음식 종류 분류", "title_en": "Food type classifier", "desc_ko": "음식 사진을 보고 어떤 음식인지 분류합니다.", "desc_en": "Classify which dish a photo shows."},
+  {"level": "capstone", "title_ko": "3D 메뉴판", "title_en": "3D menu viewer", "desc_ko": "음식 3D 모델을 돌려 볼 수 있는 웹 메뉴판을 만듭니다.", "desc_en": "Build a web menu where diners rotate 3D dishes."},
+  {"level": "research", "title_ko": "사진으로 음식 3D 복원", "title_en": "3D food from photos", "desc_ko": "여러 각도 사진으로 음식 3D 형태를 복원하는 NeRF 성능을 연구합니다.", "desc_en": "Study NeRF reconstruction of food from multi-view photos."}
+ ],
+ "doc_used": true,
+ "uncertain": []
+}

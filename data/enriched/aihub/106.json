@@ -1,0 +1,97 @@
+{
+ "dataset_id": "106",
+ "title_en": "General knowledge base (Korean Wikipedia)",
+ "summary_ko": "한국어 위키백과 주요 문서 15만 개에서 뽑은 '대상-속성-값' 형태 지식 75만 개, 위키 본문 질문-답, 생략된 문장 성분 복원, 같은 대상을 가리키는 표현 연결(상호참조) 데이터입니다. 상식 질의응답 챗봇이나 지식 그래프 만들기에 쓸 수 있습니다.",
+ "summary_en": "750,000 knowledge triples (entity-attribute-value) extracted from 150,000 key Korean Wikipedia articles, plus Wikipedia question-answer pairs, restoration of omitted sentence parts, and coreference links. For general-knowledge Q&A chatbots or building knowledge graphs.",
+ "contents_ko": "트리플(개체, 속성, 값) 파일 + 위키 본문 질문-정답 쌍 + 생략 복원·상호참조 태깅 데이터.",
+ "contents_en": "Triple files (entity, attribute, value) + Wikipedia QA pairs + omission-restoration and coreference tagging data.",
+ "modalities": [
+  "text"
+ ],
+ "tasks": [
+  "question_answering",
+  "information_extraction"
+ ],
+ "topics": [
+  {
+   "ko": "일반 상식·백과사전",
+   "en": "General knowledge and encyclopedia"
+  },
+  {
+   "ko": "한국어 질의응답",
+   "en": "Korean question answering"
+  },
+  {
+   "ko": "지식 그래프",
+   "en": "Knowledge graphs"
+  }
+ ],
+ "keywords_ko": [
+  "위키백과",
+  "지식베이스",
+  "트리플",
+  "질의응답",
+  "상호참조",
+  "생략 복원"
+ ],
+ "keywords_en": [
+  "Wikipedia",
+  "knowledge base",
+  "triples",
+  "question answering",
+  "coreference",
+  "ellipsis restoration"
+ ],
+ "labels": [
+  "knowledge triples",
+  "QA pairs",
+  "coreference links",
+  "ellipsis tags"
+ ],
+ "file_formats": [
+  "json",
+  "txt"
+ ],
+ "scale_ko": "위키 문서 15만 개, 트리플 75만 개",
+ "classes_example": [],
+ "baseline": [],
+ "difficulty": "beginner",
+ "difficulty_note_ko": "약 0.05GB로 매우 작고 표 형태 지식이라 검색·질의응답 실습에 좋습니다.",
+ "skills_needed_ko": [
+  "파이썬",
+  "pandas",
+  "간단한 검색 또는 질의응답 모델"
+ ],
+ "caveats_ko": [
+  "2017년 위키백과 기준이라 오래된 정보가 있음",
+  "개요 설명에 법률 분야 문구가 잘못 섞여 있음",
+  "파일 형식은 팩에서 확인하지 못해 추정"
+ ],
+ "project_ideas": [
+  {
+   "level": "beginner",
+   "title_ko": "상식 퀴즈 생성기",
+   "title_en": "General knowledge quiz maker",
+   "desc_ko": "트리플로 '○○의 수도는?' 같은 퀴즈 문제를 자동으로 만듭니다.",
+   "desc_en": "Generate quiz questions automatically from triples."
+  },
+  {
+   "level": "capstone",
+   "title_ko": "지식 그래프 시각화 탐색기",
+   "title_en": "Knowledge graph explorer",
+   "desc_ko": "트리플을 그래프로 만들어 대상 사이 관계를 탐색하는 웹을 만듭니다.",
+   "desc_en": "Turn triples into a graph and browse relations between entities."
+  },
+  {
+   "level": "research",
+   "title_ko": "지식베이스를 쓰는 챗봇의 정확도",
+   "title_en": "Knowledge-grounded chatbot accuracy",
+   "desc_ko": "언어모델 답변에 트리플 지식을 넣었을 때 틀린 답(환각)이 줄어드는지 연구합니다.",
+   "desc_en": "Test whether adding triples reduces wrong answers from a language model."
+  }
+ ],
+ "doc_used": false,
+ "uncertain": [
+  "파일 형식이 팩에 명시되지 않음"
+ ]
+}

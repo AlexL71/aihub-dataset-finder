@@ -1,0 +1,32 @@
+{
+ "dataset_id": "75",
+ "title_en": "3D images for virtual clothing try-on",
+ "summary_ko": "온라인 쇼핑의 '가상 피팅'을 위해 사람 몸(얼굴·손·발·상체·하체)과 옷·신발·모자·액세서리를 직접 촬영한 사진 데이터입니다. 2D 사진에는 몸과 상품 영역이 다각형으로 표시되어 있고, 360도로 찍은 3D용 다시점 사진도 있습니다.",
+ "summary_en": "Photos of human body parts (face, hands, feet, upper and lower body) and of clothes, shoes, hats and accessories, taken in a studio for online 'virtual try-on'. The 2D photos have the body and product areas outlined, and there are 360-degree multi-view photos for 3D.",
+ "contents_ko": "사진 1장(4000×6000) + JSON 라벨(신체 부위 또는 상품 종류의 다각형 영역, 성별·나이대·사이즈 속성). 3D는 한 대상을 360도로 찍은 사진 160장 이상 묶음.",
+ "contents_en": "One photo (4000×6000) + a JSON label (polygon area of a body part or product type, with sex, age group and size). 3D items are sets of 160+ photos of one subject taken all around.",
+ "modalities": ["image", "3d"],
+ "tasks": ["segmentation", "object_detection", "image_classification", "3d_reconstruction"],
+ "topics": [{"ko": "패션·의류", "en": "Fashion and clothing"}, {"ko": "온라인 쇼핑", "en": "Online shopping"}, {"ko": "사람 신체", "en": "Human body"}, {"ko": "가상 피팅·AR", "en": "Virtual try-on and AR"}],
+ "keywords_ko": ["가상 피팅", "의류", "신발", "액세서리", "신체 부위", "폴리곤", "3D 스캔", "이커머스"],
+ "keywords_en": ["virtual try-on", "clothing", "shoes", "accessories", "body parts", "polygon", "3D scan", "e-commerce"],
+ "labels": ["polygon", "bounding box", "class", "attributes (sex, age, size)"],
+ "file_formats": ["jpg", "json", "xml"],
+ "scale_ko": "원천 사진 약 419만 장(2D 신체 101만, 2D 상품 180만, 3D 신체 51만, 3D 상품 86만), 학습용 2D 세트 약 282만 개",
+ "classes_example": ["face", "hands", "feet", "upper body", "lower body", "shirt", "jeans", "mini skirt", "sneakers", "boots", "beanie", "watch", "necklace"],
+ "baseline": [
+  {"task": "segmentation (body)", "model": "Mask R-CNN", "metric": "mIoU", "value": "77.6%"},
+  {"task": "segmentation (products, not worn)", "model": "Mask R-CNN", "metric": "mIoU", "value": "88%"}
+ ],
+ "difficulty": "advanced",
+ "difficulty_note_ko": "전체 용량이 약 9TB로 매우 크고 3D 복원까지 하려면 전문 지식이 필요합니다. 2D 상품 사진 일부만 내려받아 분류하는 것은 중급 수준으로 가능합니다.",
+ "skills_needed_ko": ["파이썬 기초", "이미지 분할 모델(Mask R-CNN, YOLO-seg) 사용 경험", "대용량 데이터 일부만 골라 쓰는 방법"],
+ "caveats_ko": ["전체 약 9TB로 매우 큼: 작은 파일 일부만 받아서 시작", "얼굴은 흐림 처리됨", "성능 표에서 분할 과제가 'Object Detection/Image Classification'으로 적혀 있음"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "옷 종류 자동 분류기", "title_en": "Clothing type classifier", "desc_ko": "상품 사진 일부로 상의·하의·신발·모자 같은 종류를 맞히는 분류 모델을 만듭니다.", "desc_en": "Train a model on a subset of product photos to tell tops, bottoms, shoes and hats apart."},
+  {"level": "capstone", "title_ko": "사진 속 옷만 잘라내 코디 추천", "title_en": "Cut out clothes and suggest outfits", "desc_ko": "분할 모델로 옷 영역만 잘라낸 뒤 색·종류를 기준으로 어울리는 조합을 추천하는 웹 데모를 만듭니다.", "desc_en": "Use a segmentation model to cut out each item, then build a web demo that suggests matching outfits by colour and type."},
+  {"level": "research", "title_ko": "다시점 사진으로 3D 신체 복원", "title_en": "3D body reconstruction from multi-view photos", "desc_ko": "360도 사진 묶음으로 3D 형태를 복원하고, 적은 수의 사진으로도 복원 품질을 유지하는 방법을 비교합니다.", "desc_en": "Reconstruct 3D shapes from the 360-degree photo sets and compare methods that keep quality with fewer views."}
+ ],
+ "doc_used": true,
+ "uncertain": ["총 용량 9TB는 파일 목록 합계이며 중복 추가분이 포함됐을 수 있음"]
+}

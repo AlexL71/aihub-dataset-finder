@@ -1,0 +1,29 @@
+{
+ "dataset_id": "71423",
+ "title_en": "Korean person re-identification image dataset (enhanced)",
+ "summary_ko": "기존 한국인 재식별 데이터(2020년)에 날씨·야간·IR(적외선) 촬영과 가려짐·방향 정보를 더한 사람 이미지 약 700만 장입니다. 여러 CCTV에 찍힌 같은 사람을 다시 찾아내는 재식별(Re-ID) AI, 실종자 찾기 서비스에 쓸 수 있습니다.",
+ "summary_en": "About 7 million person images extending the 2020 Korean re-identification set with weather, night and infrared (IR) footage plus occlusion and direction labels. For person re-identification across CCTV cameras, e.g. finding missing people.",
+ "contents_ko": "사람 잘라낸 이미지(png, RGB·IR) + XML(사람 ID, 카메라, 가려짐, 방향, 촬영 환경).",
+ "contents_en": "Cropped person image (png, RGB and IR) + XML (person ID, camera, occlusion, direction, capture setting).",
+ "modalities": ["image"],
+ "tasks": ["retrieval_recommendation", "image_classification", "object_tracking"],
+ "topics": [{"ko": "보안·감시", "en": "Security and surveillance"}, {"ko": "공공안전·실종자 찾기", "en": "Public safety and missing persons"}],
+ "keywords_ko": ["사람 재식별", "Re-ID", "CCTV", "적외선", "실종자 찾기", "가려짐"],
+ "keywords_en": ["person re-identification", "Re-ID", "CCTV", "infrared", "missing persons", "occlusion"],
+ "labels": ["person ID", "occlusion", "direction", "camera", "capture setting"],
+ "file_formats": ["png", "xml"],
+ "scale_ko": "이미지 6,997,885장(2020년분 4,824,468 + 2022년분 2,173,417), 2022년분 500명 이상, CCTV 10대 이상",
+ "classes_example": ["실내", "실외", "맑음", "흐림", "우천", "주간", "야간", "RGB", "IR"],
+ "baseline": [{"task": "RGB person re-identification", "model": "Multiple Granularity Network", "metric": "Top-1 accuracy", "value": "99.03%"}, {"task": "IR+RGB person re-identification", "model": "Joint Set-level and Instance-level Alignment Re-ID", "metric": "Top-10 accuracy", "value": "92.76%"}],
+ "difficulty": "advanced",
+ "difficulty_note_ko": "임베딩 학습과 검색 평가 개념이 필요하고 약 190GB이며 가장 작은 파일도 약 0.49GB입니다.",
+ "skills_needed_ko": ["파이썬", "임베딩 학습(metric learning)", "FAISS 검색", "Re-ID 평가(mAP·Rank-k)"],
+ "caveats_ko": ["사람 이미지라 개인정보 이용 조건을 꼭 확인", "2020년 기존 데이터가 포함되어 있어 이전 재식별 데이터와 중복 가능", "IR 이미지는 2022년분에만 있음", "성능표 AI TASK가 Object Detection으로 적혀 있으나 실제는 재식별"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "같은 사람 찾기 데모", "title_en": "Same-person search demo", "desc_ko": "공개 Re-ID 모델로 사람 사진을 넣으면 비슷한 사진을 찾아 보여 줍니다.", "desc_en": "Query a person photo with an open Re-ID model and show matches."},
+  {"level": "capstone", "title_ko": "캠퍼스 CCTV 실종자 검색", "title_en": "Campus missing-person search", "desc_ko": "FAISS로 여러 카메라 이미지에서 특정 인물을 빠르게 찾는 시스템을 만듭니다.", "desc_en": "Build a FAISS search that finds a person across cameras."},
+  {"level": "research", "title_ko": "주간 RGB→야간 IR 재식별", "title_en": "Day RGB to night IR Re-ID", "desc_ko": "낮 컬러 영상과 밤 적외선 영상 사이에서 같은 사람을 찾는 방법을 연구합니다.", "desc_en": "Study matching people between daytime RGB and night IR."}
+ ],
+ "doc_used": true,
+ "uncertain": []
+}

@@ -1,0 +1,29 @@
+{
+ "dataset_id": "71769",
+ "title_en": "Building crack detection images (enhanced): SOC facility crack pattern image data",
+ "summary_ko": "전국 40개 시·군·구의 도로·철도 교량, 댐 벽체, 옹벽, 터널, 지하철, 수로터널 같은 사회기반(SOC) 시설물에서 찍은 이미지 525,000장으로, 균열·망상균열·박리·박락·백태·누수·철근노출·재료분리·들뜸·파손 10종 결함이 폴리라인·다각형으로 표시되고 이미지 캡션 1만 건이 있습니다. 시설물 안전 점검·균열 진단 AI에 쓸 수 있습니다.",
+ "summary_en": "525,000 images of infrastructure (road and rail bridges, dam walls, retaining walls, tunnels, subways, water tunnels) across 40 districts, with 10 defect types (crack, map cracking, delamination, spalling, efflorescence, leakage, exposed rebar, segregation, lifting, breakage) as polylines and polygons, plus 10,000 captions. For facility inspection and crack diagnosis.",
+ "contents_ko": "시설물 이미지(jpg) + JSON(폴리라인, 다각형, 결함 종류, 캡션).",
+ "contents_en": "Facility image (jpg) + JSON (polylines, polygons, defect type, captions).",
+ "modalities": ["image", "text"],
+ "tasks": ["segmentation", "image_classification", "image_captioning"],
+ "topics": [{"ko": "시설물 안전 점검", "en": "Infrastructure inspection"}, {"ko": "건설·토목", "en": "Civil engineering"}],
+ "keywords_ko": ["균열 탐지", "교량", "터널", "백태", "철근노출", "CvT"],
+ "keywords_en": ["crack detection", "bridge", "tunnel", "efflorescence", "exposed rebar", "CvT"],
+ "labels": ["polyline", "polygon", "defect class", "caption"],
+ "file_formats": ["jpg", "json"],
+ "scale_ko": "원천·라벨 각 525,000건, 이미지 캡션 10,000건, 결함 10종",
+ "classes_example": ["균열", "망상균열", "박리", "박락", "백태", "누수", "철근노출", "재료분리", "들뜸", "파손"],
+ "baseline": [],
+ "difficulty": "intermediate",
+ "difficulty_note_ko": "약 118GB입니다. 얇은 균열 분할은 해상도 관리가 중요합니다.",
+ "skills_needed_ko": ["파이썬", "이미지 분류(CvT 등)", "분할 모델", "고해상도 이미지 타일 처리"],
+ "caveats_ko": ["페이지에 성능 점수 표가 없음(CvT 등 모델 소개만 있음)", "철도교량 교각(1.25%) 등 시설 유형별 양 차이가 큼", "원시데이터는 개방되지 않음"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "결함 종류 분류", "title_en": "Defect type classifier", "desc_ko": "시설물 사진의 결함이 균열·백태·누수 중 무엇인지 분류합니다.", "desc_en": "Classify defects as crack, efflorescence, leakage and more."},
+  {"level": "capstone", "title_ko": "교량 점검 보고서 자동화", "title_en": "Bridge inspection report", "desc_ko": "사진에서 결함을 분할하고 위치·종류를 표로 정리해줍니다.", "desc_en": "Segment defects and tabulate location and type."},
+  {"level": "research", "title_ko": "균열 폭 측정", "title_en": "Crack width measurement", "desc_ko": "분할된 균열로 폭과 길이를 자동 측정하는 방법을 연구합니다.", "desc_en": "Study measuring crack width and length from masks."}
+ ],
+ "doc_used": true,
+ "uncertain": []
+}

@@ -1,0 +1,29 @@
+{
+ "dataset_id": "71631",
+ "title_en": "Emotion-tagged free conversation (adults)",
+ "summary_ko": "성인 두 사람이 앱으로 대본 없이 여러 주제에 대해 통화한 음성에 전사(받아쓰기)와 감정 상태·유형·정도·대상 태그가 붙은 데이터입니다. 한국어 음성 인식, 감정 인식, 화자 인식 AI에 쓸 수 있습니다.",
+ "summary_en": "Unscripted phone conversations between two adults on many topics, with transcripts and emotion tags (state, type, intensity, target). For Korean speech recognition, emotion recognition and speaker recognition AI.",
+ "contents_ko": "통화 음성(wav) + JSON(전사, 감정 태그, 화자 정보).",
+ "contents_en": "Call audio (wav) + JSON (transcript, emotion tags, speaker info).",
+ "modalities": ["audio", "text"],
+ "tasks": ["speech_recognition", "sentiment_emotion", "audio_classification"],
+ "topics": [{"ko": "감정 인식", "en": "Emotion recognition"}, {"ko": "일상 대화", "en": "Everyday conversation"}],
+ "keywords_ko": ["자유대화", "감정 태깅", "음성 인식", "화자 인식", "성인", "통화"],
+ "keywords_en": ["free conversation", "emotion tagging", "speech recognition", "speaker recognition", "adults", "phone call"],
+ "labels": ["transcript", "emotion state", "emotion type", "emotion intensity"],
+ "file_formats": ["wav", "json"],
+ "scale_ko": "성인 음성 3,000시간(메타데이터에는 6,000시간으로 적힘)",
+ "classes_example": ["기쁨", "사랑스러움", "두려움", "화남", "슬픔", "놀라움", "없음", "감정 유형 > 긍정/부정/중립", "감정 정도 > 약함/보통/강함"],
+ "baseline": [{"task": "emotion recognition", "model": "CNN", "metric": "Accuracy", "value": "91.37%"}, {"task": "speech recognition", "model": "Transformer", "metric": "CER", "value": "6.8%"}, {"task": "speaker recognition", "model": "x-vector", "metric": "EER", "value": "3.174%"}, {"task": "speech recognition", "model": "ESPnet", "metric": "WER", "value": "13.3%"}],
+ "difficulty": "intermediate",
+ "difficulty_note_ko": "음성 감정 인식 실습에 좋지만 전체가 약 302GB입니다. 일부 화자만 받아 시작하세요.",
+ "skills_needed_ko": ["파이썬", "음성 처리", "오디오 분류"],
+ "caveats_ko": ["전체 약 302GB", "구축량이 6,000시간과 3,000시간(성인)으로 다르게 적혀 있음", "남성 화자가 약 20%로 적음"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "음성 감정 분류", "title_en": "Speech emotion classifier", "desc_ko": "짧은 음성 구간의 감정을 분류합니다.", "desc_en": "Classify the emotion of short speech clips."},
+  {"level": "capstone", "title_ko": "상담 통화 감정 분석", "title_en": "Call emotion dashboard", "desc_ko": "통화를 받아쓰고 감정 변화를 그래프로 보여 주는 도구를 만듭니다.", "desc_en": "Transcribe calls and chart emotion changes."},
+  {"level": "research", "title_ko": "음성+텍스트 감정 인식", "title_en": "Audio-text emotion fusion", "desc_ko": "음성과 전사 텍스트를 합쳐 감정 인식을 높이는 방법을 연구합니다.", "desc_en": "Combine audio and transcripts for emotion recognition."}
+ ],
+ "doc_used": true,
+ "uncertain": ["실제 제공 시간(3,000 vs 6,000시간)"]
+}

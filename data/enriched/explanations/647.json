@@ -1,0 +1,12 @@
+{
+ "dataset_id": "647",
+ "easy_ko": "배송 드론의 눈으로 이륙, 비행, 착륙, 갑작스러운 상황, 배송할 수 없는 상황을 찍은 영상에 건물·전선 같은 움직이지 않는 것과 새·다른 드론 같은 움직이는 것을 표시하고, 비행 센서 기록도 함께 담은 데이터입니다. 드론이 스스로 위치를 알아내며 안전하게 나는 AI를 만들 수 있습니다.",
+ "easy_en": "Videos from a delivery drone's view during take-off, flight, landing, sudden events and undeliverable situations, marking still things (buildings, power lines) and moving things (birds, other drones), plus flight sensor records. You can build AI that lets drones work out where they are and fly safely on their own.",
+ "detail_ko": "배송 드론 시점의 5가지 시나리오(이륙, 비행, 착륙, 돌발상황, 배송불가) 영상 150시간(mp4)과 이미지 36만 장(jpg)에 정적 객체 폴리곤과 동적 객체 바운딩박스를 JSON으로 붙이고, 비행 센서(FC, csv)와 포인트클라우드(pcd)를 함께 제공합니다. 성능 지표 표는 비어 있고 객체 클래스 목록은 기록에서 확인되지 않습니다. 646번 배송 로봇 데이터와 같은 구축 기관입니다.",
+ "detail_en": "150 hours of video (mp4) and 360k images (jpg) from a delivery drone's view across 5 scenarios (take-off, flight, landing, emergency, undeliverable), with JSON polygons for static objects and boxes for dynamic objects, plus flight-controller sensor data (csv) and point clouds (pcd). The performance table is empty, and the object class list is not visible in the record. Built by the same organisation as dataset 646.",
+ "amount_ko": "영상 150시간, 사진 36만 장, 상황 5종",
+ "amount_en": "150 hours of video, 360k images, 5 scenarios",
+ "labels_ko": "움직이지 않는 물체 테두리, 움직이는 물체 상자, 비행 상황, 비행 센서 값",
+ "labels_en": "polygons for static objects, boxes for moving objects, scenario, flight sensor values",
+ "status": "full-run-2026-11-02"
+}

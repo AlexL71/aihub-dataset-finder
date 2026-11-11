@@ -1,0 +1,12 @@
+{
+ "dataset_id": "76",
+ "easy_ko": "방송 영상에 나오는 물건 위치를 상자로 표시하고, 등장인물이 누구인지, 요리·축구·피아노 연주처럼 어떤 장면인지를 표시한 데이터입니다. 방송 영상에서 장면과 출연자를 자동으로 찾아 영상 검색이나 영상 정보 자동 정리에 쓸 수 있습니다.",
+ "easy_en": "Broadcast video where objects are boxed, the people on screen are identified, and each clip is labelled with the kind of scene, such as cooking, soccer or playing piano. You can build AI that finds scenes and cast members automatically, for video search or automatic video tagging.",
+ "detail_ko": "OBS·YTN·EBS 등 방송 영상에 객체 바운딩박스 약 800만 개, 인물 241명 라벨 14만 개(인물 ID, 얼굴 상자), 장면 29종 라벨 21만 개(구축량 93.6만)를 붙였습니다. mp4 클립과 jpg 프레임, 객체·인물·장면 JSON으로 구성됩니다. 기준 성능은 ResNet50 인물 인식 정확도 87.5%(기준값 90%보다 낮음), EfficientDet-D7 객체 탐지 mAP 51.41%입니다. 전체 약 4.2TB이며 실존 인물 얼굴 인식이라 이용 약관과 초상권을 반드시 확인해야 합니다.",
+ "detail_en": "Broadcast video (OBS, YTN, EBS and others) with about 8M object bounding boxes, 140k person labels for 241 people (identity, face box) and 210k scene labels in 29 classes (936k built items). Data comes as mp4 clips, jpg frames and object, person and scene JSON. Baselines: ResNet50 person recognition accuracy 87.5% (below the 90% target), EfficientDet-D7 object detection mAP 51.41%. Total size is about 4.2 TB; it identifies real people, so the terms of use and portrait rights must be checked.",
+ "amount_ko": "물체 상자 약 800만 개, 인물 241명, 장면 29종",
+ "amount_en": "about 8M object boxes, 241 people, 29 scene types",
+ "labels_ko": "물체 위치 상자와 이름, 등장인물 이름과 얼굴 상자, 장면 종류",
+ "labels_en": "boxes and names for objects, person identity and face box, scene class",
+ "status": "full-run-2026-11-02"
+}

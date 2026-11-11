@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71560",
+ "easy_ko": "컴퓨터 자판, 스마트폰 자판, 음성 인식기에서 자주 생기는 오타, 맞춤법, 띄어쓰기 실수가 있는 문장과 바르게 고친 문장 약 29만 쌍을 모은 데이터입니다. 한국어 맞춤법을 자동으로 고쳐 주는 AI를 만드는 데 쓸 수 있습니다.",
+ "easy_en": "About 290,000 pairs of sentences with common typing, spelling and spacing mistakes from computer keyboards, phone keyboards and speech recognisers, each with a corrected version. You can use it to build AI that fixes Korean spelling automatically.",
+ "detail_ko": "PC 쿼티, 모바일 쿼티·천지인 자판, 음성 인식기(STT)에서 생긴 오류 문장과 교정 문장 290,500쌍(JSON/CSV; 오탈자 110,000, 맞춤법 60,000, 음성인식 오류 30,000, 자동 생성 30,000, 띄어쓰기·문장부호 60,000, 자주 틀리는 맞춤법 500)에 오류 유형, 입력 방식, 출처(자유게시판, 질문게시판, SNS 등), 연령대를 붙였습니다. 기준 성능은 BART 문법 오류 교정 F0.5 0.5907, 사전학습 BART 0.7863입니다. 일부 원문은 AI Hub 한국어 SNS 데이터셋에서 가져왔고, 자동 생성 오류 3만 건은 사람이 낸 실제 오류가 아닙니다.",
+ "detail_en": "290,500 pairs of erroneous and corrected sentences (JSON/CSV: 110,000 typos, 60,000 spelling, 30,000 speech-recognition errors, 30,000 auto-generated, 60,000 spacing/punctuation, 500 commonly misspelled) from PC QWERTY, mobile QWERTY and Cheonjiin keyboards and speech-to-text engines, with error type, input method, source (free boards, Q&A boards, social media) and age group. Baselines: grammatical error correction with BART, F0.5 0.5907, and 0.7863 with a pre-trained BART. Some source text comes from AI Hub's Korean social-media dataset, and the 30,000 auto-generated errors are not real human mistakes.",
+ "amount_ko": "문장 쌍 290,500건",
+ "amount_en": "290,500 sentence pairs",
+ "labels_ko": "고친 문장, 오류 종류, 입력 방식",
+ "labels_en": "corrected sentence, error type, input interface",
+ "status": "full-run-2026-11-02"
+}

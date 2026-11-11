@@ -1,0 +1,29 @@
+{
+ "dataset_id": "622",
+ "title_en": "Smart barn integrated data (pigs)",
+ "summary_ko": "여러 양돈 농장에서 직접 찍은 이미지 약 119만 장에 이유자돈·육성돈·비육돈·분만돈·임신돈 등 성장 단계별로 돼지를 상자·다각형·키포인트로 표시한 데이터입니다. 돈방별 돼지 상태를 진단하고 출하를 관리하는 스마트 축사 AI에 쓸 수 있습니다.",
+ "summary_en": "About 1.19 million images taken at several pig farms, with pigs marked by boxes, polygons and keypoints by growth stage (weaners, growers, finishers, farrowing and pregnant sows). For smart-barn AI that diagnoses pig condition per pen and manages shipping.",
+ "contents_ko": "돼지 이미지(jpg) + XML 라벨(상자, 다각형, 키포인트, 농장·성장 단계 정보).",
+ "contents_en": "Pig images (jpg) + XML labels (boxes, polygons, keypoints, farm and growth stage).",
+ "modalities": ["image", "audio"],
+ "tasks": ["object_detection", "segmentation", "keypoint_pose", "action_recognition"],
+ "topics": [{"ko": "축산", "en": "Livestock farming"}, {"ko": "동물 행동", "en": "Animal behaviour"}],
+ "keywords_ko": ["양돈", "돼지", "스마트 축사", "개체 인식", "출하 관리"],
+ "keywords_en": ["pig farming", "pigs", "smart barn", "individual identification", "shipping management"],
+ "labels": ["bounding box", "polygon", "keypoint", "growth stage"],
+ "file_formats": ["jpg", "xml"],
+ "scale_ko": "원천 이미지 약 119만 장, 라벨 XML 약 2,600개",
+ "classes_example": ["이유자돈 전기", "이유자돈 후기", "육성돈", "비육돈", "분만돈", "임신돈", "환돈"],
+ "baseline": [],
+ "difficulty": "advanced",
+ "difficulty_note_ko": "전체 약 4TB로 매우 크고 돼지가 많이 겹쳐 있어 탐지가 어렵습니다.",
+ "skills_needed_ko": ["파이썬", "YOLO 탐지", "자세 추정", "XML 처리"],
+ "caveats_ko": ["전체 약 4TB", "라벨 파일 수(2,606)가 이미지 수보다 훨씬 적어 한 XML에 여러 이미지가 묶인 것으로 보임", "이유자돈이 많아 단계별로 치우침", "성능 지표 표가 팩에서 비어 있음", "621번 한우 데이터와 같은 구축 기관·구조"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "돈방 돼지 수 세기", "title_en": "Pig counting per pen", "desc_ko": "돈방 사진에서 돼지 수를 셉니다.", "desc_en": "Count pigs in pen photos."},
+  {"level": "capstone", "title_ko": "돼지 이상 행동 알림", "title_en": "Abnormal pig behaviour alert", "desc_ko": "누워만 있거나 무리에서 떨어진 돼지를 찾아 알립니다.", "desc_en": "Flag pigs that lie still too long or stay apart from the group."},
+  {"level": "research", "title_ko": "사진으로 체중 추정", "title_en": "Weight from images", "desc_ko": "다각형 면적·키포인트로 돼지 체중을 추정하는 방법을 연구합니다.", "desc_en": "Estimate pig weight from polygon area and keypoints."}
+ ],
+ "doc_used": true,
+ "uncertain": ["whether audio data is included", "label-file structure", "baseline values"]
+}

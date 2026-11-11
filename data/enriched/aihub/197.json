@@ -1,0 +1,29 @@
+{
+ "dataset_id": "197",
+ "title_en": "Lane and crosswalk recognition images (capital area)",
+ "summary_ko": "수도권 도로 주행 영상에서 뽑은 이미지 약 85만 장으로, 차선(점선/실선, 백·황·청색), 정지선, 횡단보도 위치가 선과 다각형으로 표시되어 있습니다. 차선 인식, 운전자 보조, 정밀 지도 제작에 쓸 수 있습니다.",
+ "summary_en": "About 850,000 images from driving in the Seoul capital area, with lanes (dashed or solid; white, yellow, blue), stop lines and crosswalks marked as lines and polygons. For lane recognition, driver assistance and HD map making.",
+ "contents_ko": "주행 이미지 + JSON(차선·정지선 폴리라인, 횡단보도 다각형, 차선 속성).",
+ "contents_en": "Driving image + JSON (lane and stop-line polylines, crosswalk polygons, lane attributes).",
+ "modalities": ["image"],
+ "tasks": ["segmentation", "object_detection"],
+ "topics": [{"ko": "자율주행", "en": "Self-driving"}, {"ko": "도로 표시", "en": "Road markings"}],
+ "keywords_ko": ["차선 인식", "횡단보도", "정지선", "수도권", "자율주행"],
+ "keywords_en": ["lane detection", "crosswalk", "stop line", "Seoul area", "self-driving"],
+ "labels": ["polyline (lanes, stop lines)", "polygon (crosswalks)", "lane attributes"],
+ "file_formats": ["jpg", "json"],
+ "scale_ko": "이미지 845,571장(지방 데이터 196번과 합쳐 차선 약 1,091만, 횡단보도 85만, 정지선 63만 개)",
+ "classes_example": ["백색 실선", "백색 점선", "황색 실선", "청색 차선", "정지선", "횡단보도"],
+ "baseline": [{"task": "lane/crosswalk area detection", "model": "FCN ResNet50", "metric": "F1-score", "value": "0.8972"}],
+ "difficulty": "intermediate",
+ "difficulty_note_ko": "차선 분할은 공개 예제가 많아 실습하기 좋습니다. 약 545GB입니다.",
+ "skills_needed_ko": ["파이썬", "분할 모델", "폴리라인 라벨을 마스크로 바꾸기"],
+ "caveats_ko": ["객체 수는 지방 데이터와 합친 값"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "차선 색·종류 분류", "title_en": "Lane colour and type classifier", "desc_ko": "차선을 백색·황색, 실선·점선으로 분류합니다.", "desc_en": "Classify lanes by colour and dashed/solid."},
+  {"level": "capstone", "title_ko": "버스전용차로 진입 경고", "title_en": "Bus-lane entry warning", "desc_ko": "청색 차선을 인식해 버스전용차로 진입 시 경고합니다.", "desc_en": "Recognise blue lanes and warn on bus-lane entry."},
+  {"level": "research", "title_ko": "지역 간 차선 인식 일반화", "title_en": "Lane detection across regions", "desc_ko": "수도권으로 학습한 모델을 지방 도로(196번)에 적용해 차이를 분석합니다.", "desc_en": "Apply the model to non-capital roads (dataset 196) and analyse the gap."}
+ ],
+ "doc_used": true,
+ "uncertain": []
+}

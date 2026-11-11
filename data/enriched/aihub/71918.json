@@ -1,0 +1,29 @@
+{
+ "dataset_id": "71918",
+ "title_en": "NEW battery thermal runaway control multimodal data",
+ "summary_ko": "리튬이온 배터리 6종의 열폭주(배터리가 과열돼 불이 나는 현상) 시험에서 찍은 열화상 이미지 242,580장과 전압·전류·압력·온도·가스 5종 센서 시계열 242,580세트로, 열폭주 진행이 1~6단계로 표시되어 있습니다. ESS 같은 에너지 저장장치 화재를 미리 찾고 단계를 예측하는 AI에 쓸 수 있습니다.",
+ "summary_en": "242,580 thermal images and 242,580 sets of 5 sensor time series (voltage, current, pressure, temperature, gas) from thermal runaway tests on 6 lithium-ion battery types, with runaway progress labelled as stages 1–6. For early detection and stage prediction of fires in energy storage systems (ESS).",
+ "contents_ko": "열화상 이미지(png) + 센서 시계열(json) + JSON(열폭주 단계, 이상 이벤트).",
+ "contents_en": "Thermal image (png) + sensor series (json) + JSON (runaway stage, anomaly events).",
+ "modalities": ["image", "sensor"],
+ "tasks": ["image_classification", "anomaly_detection", "forecasting"],
+ "topics": [{"ko": "배터리 안전", "en": "Battery safety"}, {"ko": "에너지 저장장치", "en": "Energy storage systems"}],
+ "keywords_ko": ["열폭주", "리튬이온 배터리", "열화상", "ESS 화재", "멀티모달", "트랜스포머"],
+ "keywords_en": ["thermal runaway", "lithium-ion battery", "thermal imaging", "ESS fire", "multimodal", "transformer"],
+ "labels": ["runaway stage", "anomaly events"],
+ "file_formats": ["png", "json"],
+ "scale_ko": "열화상 242,580장 + 센서 242,580세트, 열폭주 단계 6단계",
+ "classes_example": ["1단계", "2단계", "3단계", "4단계", "5단계", "6단계", "가열", "과충전"],
+ "baseline": [],
+ "difficulty": "intermediate",
+ "difficulty_note_ko": "약 13GB로 다루기 쉽습니다. 이미지와 시계열을 함께 쓰는 멀티모달 실습에 좋습니다.",
+ "skills_needed_ko": ["파이썬", "이미지 분류", "시계열 모델(트랜스포머·LSTM)", "멀티모달 결합 기초"],
+ "caveats_ko": ["페이지에 성능 점수 표가 없음(트랜스포머 기반 멀티모달 분류 모델 소개만 있음)", "배터리 종류·용량·충전율·유도유형 조합별 수량 차이가 큼", "일부 조합(예: 과충전)은 표에 수량이 비어 있음"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "열화상 단계 분류", "title_en": "Thermal image stage classifier", "desc_ko": "열화상 이미지만으로 열폭주 단계를 분류합니다.", "desc_en": "Classify runaway stage from thermal images only."},
+  {"level": "capstone", "title_ko": "ESS 조기 경보", "title_en": "ESS early warning", "desc_ko": "센서 시계열에서 이상 이벤트를 감지해 열폭주 전에 경고합니다.", "desc_en": "Warn before runaway by detecting sensor anomalies."},
+  {"level": "research", "title_ko": "이미지+센서 융합 예측", "title_en": "Image-sensor fusion prediction", "desc_ko": "두 데이터를 합쳐 다음 단계까지 남은 시간을 예측하는 방법을 연구합니다.", "desc_en": "Study predicting time to the next stage by fusing both inputs."}
+ ],
+ "doc_used": true,
+ "uncertain": ["배터리 6종의 정확한 종류(팩에는 각형만 보임)"]
+}

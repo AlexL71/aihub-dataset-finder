@@ -1,0 +1,29 @@
+{
+ "dataset_id": "71921",
+ "title_en": "NEW wildfire spread risk response reasoning data",
+ "summary_ko": "산불 확산 위험 상황에서 대응방안을 추론하도록 만든 질의응답 274,204건(약 148만 어절)으로, 생각의 나무(ToT, 여러 선택지를 가지처럼 펼쳐 비교하는 추론 방식) 형식이며 대형·중형·소형 산불과 강원·경상·전라·충청·경기 지역별로 나뉩니다. 산불 대응 의사결정을 돕는 LLM 서비스에 쓸 수 있습니다.",
+ "summary_en": "274,204 QA items (about 1.48M words) for reasoning about wildfire spread response, in Tree-of-Thought form (branching and comparing options), split by fire size (large, medium, small) and region (Gangwon, Gyeongsang, Jeolla, Chungcheong, Gyeonggi). For LLM services that support wildfire response decisions.",
+ "contents_ko": "질의응답 JSON(산불 상황, ToT 추론, 대응방안).",
+ "contents_en": "QA JSON (fire situation, ToT reasoning, response plan).",
+ "modalities": ["text"],
+ "tasks": ["question_answering", "text_generation"],
+ "topics": [{"ko": "재난 대응", "en": "Disaster response"}, {"ko": "산불", "en": "Wildfires"}],
+ "keywords_ko": ["산불", "확산 위험", "대응방안", "ToT", "의사결정 지원", "LLM"],
+ "keywords_en": ["wildfire", "spread risk", "response plan", "tree-of-thought", "decision support", "LLM"],
+ "labels": ["question-answer", "ToT reasoning"],
+ "file_formats": ["json"],
+ "scale_ko": "질의응답 274,204건, 라벨 총 1,477,814어절",
+ "classes_example": ["대형", "중형", "소형", "강원도", "경상도", "전라도", "충청도", "경기도"],
+ "baseline": [],
+ "difficulty": "intermediate",
+ "difficulty_note_ko": "약 1.9GB 텍스트입니다. LLM 미세조정에는 GPU가 필요합니다.",
+ "skills_needed_ko": ["파이썬", "LLM 미세조정(LoRA)", "프롬프트·추론 형식 이해"],
+ "caveats_ko": ["페이지에 성능 점수 표가 없음(LLM 미세조정 소개만 있음)", "자체 제작 데이터라 실제 산불 대응 기록과 다를 수 있음", "대형 경상도가 35%로 많고 대형 전라도·중형 경기도 등은 1%대"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "산불 규모 분류", "title_en": "Fire size classifier", "desc_ko": "상황 설명 글을 보고 대형·중형·소형 산불을 분류합니다.", "desc_en": "Classify fire size from situation text."},
+  {"level": "capstone", "title_ko": "산불 대응 도우미", "title_en": "Wildfire response assistant", "desc_ko": "상황을 입력하면 대응방안과 이유를 알려주는 LLM 데모를 만듭니다.", "desc_en": "Suggest response plans with reasons for a fire situation."},
+  {"level": "research", "title_ko": "ToT 추론 효과 비교", "title_en": "Comparing ToT reasoning", "desc_ko": "ToT 학습이 일반 답변 학습보다 판단을 잘하게 하는지 연구합니다.", "desc_en": "Study whether ToT training beats plain answer training."}
+ ],
+ "doc_used": true,
+ "uncertain": []
+}

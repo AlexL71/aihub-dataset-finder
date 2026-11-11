@@ -1,0 +1,29 @@
+{
+ "dataset_id": "62",
+ "title_en": "Human action videos",
+ "summary_ko": "국내 배우가 걷기·달리기·인사·쓰러짐·요가·태권도·골프 스윙·담배 피우기 등 50가지 동작을 하는 5~10초 영상 20만 클립입니다. 초당 3프레임 이미지에 2D 관절 위치가 표시되어 있고 2만 클립은 3D 관절도 있어, 낙상 감지나 홈트레이닝 자세 분석에 쓸 수 있습니다.",
+ "summary_en": "200,000 clips (5–10 s) of Korean actors doing 50 actions such as walking, running, greeting, falling, yoga, taekwondo, golf swings and smoking. Frames at 3 per second have 2D joint positions and 20,000 clips also have 3D joints, for fall detection or home-fitness posture analysis.",
+ "contents_ko": "동작 영상 클립 + 초당 3프레임 이미지 + 2D 관절 라벨(20만 클립) + 3D 관절 라벨(2만 클립) + 동작 번호(1~50).",
+ "contents_en": "Action video clips + frames at 3 fps + 2D joint labels (200k clips) + 3D joint labels (20k clips) + action ID (1–50).",
+ "modalities": ["video", "image", "3d"],
+ "tasks": ["action_recognition", "keypoint_pose"],
+ "topics": [{"ko": "사람 동작", "en": "Human motion"}, {"ko": "운동·피트니스", "en": "Exercise and fitness"}, {"ko": "돌봄·낙상 안전", "en": "Care and fall safety"}, {"ko": "스포츠", "en": "Sports"}],
+ "keywords_ko": ["동작 인식", "자세 추정", "낙상", "홈트레이닝", "요가", "스포츠 동작"],
+ "keywords_en": ["action recognition", "pose estimation", "fall", "home training", "yoga", "sports motion"],
+ "labels": ["keypoints 2D", "keypoints 3D", "action class"],
+ "file_formats": ["mp4", "jpg", "json"],
+ "scale_ko": "클립 20만 개(기초 동작 5만, 의미 동작 15만), 동작 50종, 3D 라벨 2만 클립",
+ "classes_example": ["걷기", "달리기", "앉기", "인사(악수)", "쓰러짐", "요가", "태권도", "골프(스윙)", "담배 피우기", "통화"],
+ "baseline": [],
+ "difficulty": "intermediate",
+ "difficulty_note_ko": "동작 클래스가 명확하고 짧은 클립이라 동작 인식 실습에 좋습니다. 다만 전체 약 2.5TB이고 가장 작은 파일도 0.55GB입니다.",
+ "skills_needed_ko": ["파이썬", "자세 추정 모델(MediaPipe 등)", "관절 시계열 분류"],
+ "caveats_ko": ["전체 약 2.5TB", "2019년 구축, 성능 지표 없음", "배우가 연출한 동작이라 실제 상황과 다를 수 있음"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "몇 가지 동작 분류기", "title_en": "Classify a few actions", "desc_ko": "걷기·달리기·앉기·쓰러짐 4종만 골라 관절 좌표로 분류합니다.", "desc_en": "Pick walking, running, sitting and falling and classify them from joints."},
+  {"level": "capstone", "title_ko": "어르신 낙상 알림 시스템", "title_en": "Fall alert for older adults", "desc_ko": "카메라 영상에서 쓰러짐을 감지해 보호자에게 알리는 데모를 만듭니다.", "desc_en": "Detect falls in camera video and notify a caregiver."},
+  {"level": "research", "title_ko": "2D 관절로 3D 자세 복원", "title_en": "Lifting 2D joints to 3D", "desc_ko": "3D 라벨이 있는 2만 클립으로 2D→3D 변환 모델을 학습하고 동작별 오차를 분석합니다.", "desc_en": "Train a 2D-to-3D lifting model on the 20k 3D clips and analyse error per action."}
+ ],
+ "doc_used": true,
+ "uncertain": []
+}

@@ -1,0 +1,29 @@
+{
+ "dataset_id": "71559",
+ "title_en": "Road traffic facility 3D scanning data",
+ "summary_ko": "신호등·표지판 같은 도로교통 시설 50종 438개를 12방향에서 찍은 사진(5,258장), 레이저 점군, 3D 모델, CityGML 데이터와 2D/3D 키포인트·마스크입니다. 사진으로 3D 시설물을 만드는 AI와 디지털 트윈 도시 구현에 쓸 수 있습니다.",
+ "summary_en": "50 types (438 objects) of road traffic facilities photographed from 12 directions (5,258 images), with point clouds, 3D models, CityGML data, 2D/3D keypoints and masks. For image-to-3D reconstruction and digital-twin cities.",
+ "contents_ko": "이미지(jpg) + 점군(las) + 3D 모델(obj, mtl, 텍스처 jpg) + CityGML(gml) + JSON(메타정보, 2D/3D 키포인트) + 마스크(png) + mat.",
+ "contents_en": "Image (jpg) + point cloud (las) + 3D model (obj, mtl, jpg texture) + CityGML (gml) + JSON (metadata, 2D/3D keypoints) + mask (png) + mat.",
+ "modalities": ["image", "3d", "sensor"],
+ "tasks": ["3d_reconstruction", "keypoint_pose", "segmentation"],
+ "topics": [{"ko": "디지털 트윈·도시", "en": "Digital twin and cities"}, {"ko": "도로 시설", "en": "Road facilities"}],
+ "keywords_ko": ["3D 스캐닝", "점군", "도로교통 시설", "디지털 트윈", "CityGML"],
+ "keywords_en": ["3D scanning", "point cloud", "road facilities", "digital twin", "CityGML"],
+ "labels": ["2D keypoints", "3D keypoints", "mask", "metadata"],
+ "file_formats": ["jpg", "las", "obj", "mtl", "gml", "json", "png", "mat"],
+ "scale_ko": "시설 50종 438개 객체, 이미지 5,258장, 점군 438건(객체 추출 1,079건), 3D 모델 1,084개",
+ "classes_example": ["교통관리시설 > 신호등, 표지판, 이정표", "도로부속시설 > CCTV, 우체통, 공중전화부스", "도로안전시설 > 가로등, 도로반사경, 방호울타리", "방호시설 > 옹벽, 낙석방지시설", "주차장 > 주차블럭, 자전거보관소", "버스/택시정류장"],
+ "baseline": [{"task": "3D object reconstruction", "model": "Mesh R-CNN", "metric": "meshAP", "value": "70.5%"}],
+ "difficulty": "advanced",
+ "difficulty_note_ko": "점군·3D 메시를 다뤄야 합니다. 객체 수(438개)는 적지만 전체 약 358GB입니다.",
+ "skills_needed_ko": ["파이썬", "점군 처리(Open3D)", "3D 복원 모델"],
+ "caveats_ko": ["전체 약 358GB", "객체가 438개로 적어 3D 복원 학습에 부족할 수 있음"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "점군 시각화와 객체 잘라내기", "title_en": "Point cloud viewing and cropping", "desc_ko": "Open3D로 점군을 열고 시설물 부분만 잘라냅니다.", "desc_en": "Open point clouds in Open3D and crop the facility."},
+  {"level": "capstone", "title_ko": "사진으로 시설물 3D 만들기", "title_en": "Facility 3D from photos", "desc_ko": "12방향 사진으로 3D 모델을 만들고 정답 모델과 비교합니다.", "desc_en": "Reconstruct 3D from 12-view photos and compare to ground truth."},
+  {"level": "research", "title_ko": "한 장 사진 3D 복원", "title_en": "Single-view 3D reconstruction", "desc_ko": "Mesh R-CNN처럼 사진 한 장으로 시설물 메시를 만드는 방법을 개선합니다.", "desc_en": "Improve single-image mesh reconstruction like Mesh R-CNN."}
+ ],
+ "doc_used": true,
+ "uncertain": ["mat 파일의 내용(카메라 파라미터 등)이 팩에서 확인되지 않음"]
+}

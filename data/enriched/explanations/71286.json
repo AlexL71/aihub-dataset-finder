@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71286",
+ "easy_ko": "여러 사진을 가공, 성장, 소모, 오염, 작동, 절단, 파손 같은 원인과 결과에 따라 묶고, '이 행동 다음에 올 결과 고르기' 같은 문제와 정답을 만든 데이터입니다. 사진을 보고 사람처럼 생각해서 답을 고르는 AI를 만들 수 있습니다.",
+ "easy_en": "Many photos grouped by cause-and-effect, such as processing, growth, wearing out, pollution, operation, cutting and breakage, with puzzles like 'pick what happens after this action' and their answers. You can build AI that looks at pictures and reasons like a person to pick the right answer.",
+ "detail_ko": "이미지 24만 장(jpg)를 원인과 결과 10종으로 묶고 선택형 시각 추론 문제 6만 개와 정답을 JSON으로 붙였습니다. 기준 성능은 ViT 이미지 분류 F1 0.918입니다. 전체 약 391GB이며, 스톡 이미지(게티이미지뱅크)가 포함되어 사용 조건 확인이 필요하고, 71279·71288·71291번 데이터와 같은 구축 기관·구조입니다.",
+ "detail_en": "240k images (jpg) grouped into 10 cause-and-effect classes, with 60k multiple-choice visual reasoning questions and answers in JSON. Baseline: ViT image classification F1 0.918. Total size is about 391GB; stock images (Getty Images Bank) are included, so check the usage terms; same organisation and structure as datasets 71279·71288·71291.",
+ "amount_ko": "사진 24만 장, 문제 6만 개, 유형 10종",
+ "amount_en": "240k images, 60k questions, 10 types",
+ "labels_ko": "원인과 결과 분류, 고르기 문제와 정답",
+ "labels_en": "cause-and-effect class, multiple-choice question and answer",
+ "status": "full-run-2026-11-02"
+}

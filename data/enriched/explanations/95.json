@@ -1,0 +1,12 @@
+{
+ "dataset_id": "95",
+ "easy_ko": "어린이들이 AI 비서나 로봇에게 말하는 명령어 녹음과 그 말을 받아 적은 글을 짝지은 데이터입니다. 아이 목소리를 잘 알아듣는 어린이용 AI 비서나 교육 로봇을 만들 수 있습니다.",
+ "easy_en": "Recordings of children giving commands to AI assistants and robots, paired with written transcripts. You can build AI assistants or educational robots that understand children's voices well.",
+ "detail_ko": "소아·유아 남녀 화자의 명령어 음성 3,000시간(구축량 432만)으로, wav 음성, 전사 텍스트, JSON 메타정보(화자 성별·나이, 녹음 환경, 명령어 분야)로 구성됩니다. 기준 성능은 Kaldi 음성 인식 CER 9.41%, WER 13.85%입니다. 전체 약 530GB이며 어린이 음성이므로 개인정보·이용 약관 확인이 필요합니다.",
+ "detail_en": "3,000 hours of command speech from boys and girls (4.32M built items), with wav audio, transcripts and JSON metadata (speaker sex and age, recording environment, command category). Baselines: Kaldi speech recognition CER 9.41%, WER 13.85%. Total size is about 530 GB; these are children's voices, so check privacy and terms of use.",
+ "amount_ko": "음성 3,000시간",
+ "amount_en": "3,000 hours of speech",
+ "labels_ko": "말소리를 받아 적은 글(전사), 화자 성별·나이, 명령 분야",
+ "labels_en": "transcripts, speaker sex and age, command category",
+ "status": "full-run-2026-11-02"
+}

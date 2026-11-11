@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71768",
+ "easy_ko": "119에 걸려 온 실제 신고 전화 목소리 약 3,000시간에 받아쓴 글과 구급, 구조, 화재 같은 신고 종류, 급한 정도, 감정 상태를 표시한 데이터입니다. 긴급 신고를 자동으로 받아 급한 정도를 판단하는 AI에 쓸 수 있습니다.",
+ "easy_en": "About 3,000 hours of real 119 emergency calls with transcripts, call type (ambulance, rescue, fire and others), urgency and the caller's emotional state. You can use it to build AI that takes emergency calls automatically and judges how urgent they are.",
+ "detail_ko": "서울·인천·광주 소방 신고 접수 통화 음성 3,064시간(wav)과 1:1 전사 158,973건(JSON)에 신고 종류 4종(구급, 구조, 화재, 기타; 세부 16종, 예: 심정지, 부상, 안전사고), 성별, 긴급도, 감정 상태를 붙였습니다. 페이지에 성능 점수 표가 없고(KcELECTRA 구급/비구급 분류 소개만 있음), 구급 질병(중증 외)이 46.97%로 많고 임산부·약물중독은 0.2% 이하입니다. 실제 신고 통화라 개인정보 비식별 처리 여부를 확인하고 써야 합니다.",
+ "detail_en": "3,064 hours of 119 report-intake call audio (wav) from Seoul, Incheon and Gwangju fire services with 158,973 matching JSON transcripts, labelled with 4 report types (ambulance, rescue, fire, other; 16 sub-types such as cardiac arrest, injury, safety accident), gender, urgency and emotional state. There is no score table (only KcELECTRA ambulance/non-ambulance classification is described); non-severe illness calls make up 46.97%, while pregnancy and poisoning are 0.2% or less. These are real emergency calls, so check how personal data was de-identified before use.",
+ "amount_ko": "음성 3,064시간, 전사 158,973건, 신고 종류 4종(세부 16종)",
+ "amount_en": "3,064 hours of audio, 158,973 transcripts, 4 report types (16 sub-types)",
+ "labels_ko": "받아쓴 글, 신고 종류, 성별, 급한 정도, 감정",
+ "labels_en": "transcript, report type, gender, urgency, emotion",
+ "status": "full-run-2026-11-02"
+}

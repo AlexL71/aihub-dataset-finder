@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71300",
+ "easy_ko": "초등학생부터 고등학생까지 학원, 학교, 공모전에서 쓴 손글씨 문서 사진마다 글자가 있는 곳과 정답 글자를 표시한 데이터입니다. 학생 손글씨를 읽어 답안지를 자동으로 채점하는 공부용 AI를 만들 수 있지만, 미성년자 글씨라 개인정보에 주의해야 합니다.",
+ "easy_en": "Photos of handwritten documents by students from elementary to high school, written at academies, schools and contests, with text areas and the correct text marked. You can build learning AI that reads students' handwriting and grades answer sheets, but these are minors' writing, so privacy matters.",
+ "detail_ko": "초1~고3, 12개 학년의 학생이 학원·학교·공모에서 쓴 손글씨 문서 이미지 약 12.9만 장(png)에 글자 영역, 텍스트, 학년을 JSON으로 붙였으며 학년별로 고르게 나뉘어 있습니다. 성능 지표 표는 비어 있습니다. 미성년자 손글씨라 개인정보에 주의해야 하며, 605번 대용량 손글씨 OCR과 함께 쓸 수 있습니다.",
+ "detail_en": "About 129k handwritten document images (png) by students in all 12 grades (elementary 1 to high school 3) from academies, schools and contests, with JSON text regions, transcription and grade, evenly spread across grades. The performance table is empty. These are minors' handwriting, so mind privacy; can be combined with dataset 605.",
+ "amount_ko": "손글씨 사진 약 12.9만 장, 학년 12단계",
+ "amount_en": "about 129k handwriting images, 12 grades",
+ "labels_ko": "글자 영역, 정답 글자, 학년",
+ "labels_en": "text regions, transcription, grade",
+ "status": "full-run-2026-11-02"
+}

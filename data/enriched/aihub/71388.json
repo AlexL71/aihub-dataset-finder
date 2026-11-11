@@ -1,0 +1,29 @@
+{
+ "dataset_id": "71388",
+ "title_en": "Construction site equipment monitoring and productivity data",
+ "summary_ko": "건설 현장 장비 20종의 위치 궤적 3,870일치, 자재 입출고 영상 312시간과 이미지, 건설 자재 이미지 101,459장(20종), 굴착기 이미지 100,406장으로 구성됩니다. 상자·키포인트·분할 영역과 작업 공정이 표시되어 있어 장비 작업 추적과 생산성 측정 AI에 쓸 수 있습니다.",
+ "summary_en": "3,870 days of location tracks from 20 types of construction equipment, 312 hours of material in/out video with images, 101,459 material images (20 types) and 100,406 excavator images, labelled with boxes, keypoints, masks and work type. For tracking equipment work and measuring productivity.",
+ "contents_ko": "위치 궤적(txt) + 영상(avi, mp4) + 이미지(jpg, jpeg) + JSON·CSV(상자, 굴착기 키포인트, 분할, 작업 공정, 요약).",
+ "contents_en": "Location tracks (txt) + video (avi, mp4) + images (jpg, jpeg) + JSON/CSV (boxes, excavator keypoints, masks, work type, summaries).",
+ "modalities": ["sensor", "image", "video", "text"],
+ "tasks": ["keypoint_pose", "object_detection", "segmentation", "action_recognition"],
+ "topics": [{"ko": "건설·안전", "en": "Construction and safety"}, {"ko": "생산성 관리", "en": "Productivity management"}],
+ "keywords_ko": ["건설 장비", "굴착기", "자세 추정", "위치 궤적", "건설 자재", "생산성"],
+ "keywords_en": ["construction equipment", "excavator", "pose estimation", "location tracking", "construction materials", "productivity"],
+ "labels": ["bounding box", "keypoints", "segmentation mask", "work type", "text summary"],
+ "file_formats": ["txt", "jpg", "jpeg", "avi", "mp4", "json", "csv"],
+ "scale_ko": "위치 궤적 3,870일, 입출고 영상 312시간·이미지 10,158장, 자재 이미지 101,459장(20종), 굴착기 이미지 100,406장, 총 약 1.58TB",
+ "classes_example": ["토공", "운송", "상차", "양중", "지면 천공", "점자블록", "벽돌", "맨홀"],
+ "baseline": [],
+ "difficulty": "advanced",
+ "difficulty_note_ko": "센서·영상·이미지가 섞여 있어 하위 데이터마다 다루는 법이 다릅니다. 자재 이미지나 굴착기 키포인트 하나만 골라 시작하세요.",
+ "skills_needed_ko": ["파이썬", "YOLO 탐지·포즈 모델", "시계열 위치 데이터 처리"],
+ "caveats_ko": ["파일 트리는 약 413GB, 페이지는 총 1.58TB로 적혀 있어 다름", "굴착기 키포인트 PCK 지표만 소개되고 성능 점수가 없음", "자재 클래스 표에 같은 이름(castIronCover)이 두 번 나옴"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "건설 자재 분류", "title_en": "Construction material classifier", "desc_ko": "벽돌·경계석·맨홀 뚜껑 등 자재 사진을 종류별로 분류합니다.", "desc_en": "Classify photos of bricks, curbstones, manhole covers and more."},
+  {"level": "capstone", "title_ko": "굴착기 작업 상태 모니터", "title_en": "Excavator activity monitor", "desc_ko": "굴착기 관절 키포인트로 작업 중·대기 상태를 판단해 가동률을 보여 줍니다.", "desc_en": "Use excavator keypoints to tell working from idle and show utilisation."},
+  {"level": "research", "title_ko": "위치 궤적으로 공정 추정", "title_en": "Work type from location tracks", "desc_ko": "장비 위치 궤적만으로 토공·운송·상차 같은 작업 공정을 맞힐 수 있는지 연구합니다.", "desc_en": "Study predicting work type such as earthwork or loading from location tracks."}
+ ],
+ "doc_used": true,
+ "uncertain": []
+}

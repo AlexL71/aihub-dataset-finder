@@ -1,0 +1,12 @@
+{
+ "dataset_id": "88",
+ "easy_ko": "시청에 보관된 오래된 행정 문서(허가 서류, 주민자치, 도시개발 등)를 스캔한 사진마다 단어 위치와 정답 글자를 표시한 데이터입니다. 손글씨·인쇄 글씨·타자기 글씨가 섞인 흐린 문서에서도 글자를 읽어 내는 AI를 만들 수 있습니다.",
+ "easy_en": "Scans of old city-hall administrative documents (permits, resident affairs, urban development and more), with each word's position and correct text marked. You can build AI that reads text from blurry documents mixing handwriting, print and typewriter text.",
+ "detail_ko": "김해시가 제공한 12개 업무 분야(인허가 약 37.8만 장으로 최다) 공공행정문서 이미지 90만 장(jpg)에 단어 2,500만 개의 바운딩박스 좌표와 텍스트, 문자 형태(수기·인쇄체·타자체), 업무 분류를 JSON으로 붙였습니다. 성능 지표 표가 비어 있어 기준 성능이 없습니다. 김해시 한 곳의 문서만 포함되며, 행정문서라 개인정보 비식별 상태를 확인해야 합니다.",
+ "detail_en": "900k jpg images of public administration documents from Gimhae City in 12 work categories (permits are the largest, about 378k pages), with JSON for 25M words: bounding box, text, character type (handwritten, printed, typewritten) and document category. The performance table is empty, so there is no baseline. Documents come from a single city, and personal-data de-identification should be checked.",
+ "amount_ko": "문서 이미지 90만 장, 단어 2,500만 개",
+ "amount_en": "900k document images, 25M words",
+ "labels_ko": "단어 위치 상자, 정답 글자, 글씨 형태, 문서 업무 분류",
+ "labels_en": "word boxes, correct text, writing type, document category",
+ "status": "full-run-2026-11-02"
+}

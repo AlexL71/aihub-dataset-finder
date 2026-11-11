@@ -1,0 +1,29 @@
+{
+ "dataset_id": "71428",
+ "title_en": "Multilingual translation data for tourist attraction descriptions",
+ "summary_ko": "관광지·음식점·숙박·쇼핑·레포츠 등 장소(POI) 39만 곳의 한국어 소개글을 영어·중국어(간체·번체)·일본어로 번역한 데이터입니다. 외국인 관광객용 다국어 관광 안내, 관광 분야 번역기 개발에 쓸 수 있습니다.",
+ "summary_en": "Korean descriptions of 390,000 places (POIs) such as attractions, restaurants, lodging, shopping and leisure, translated into English, Simplified and Traditional Chinese and Japanese. For multilingual tourist information and tourism translators.",
+ "contents_ko": "장소 소개 원문(csv) + 번역 JSON(영어, 중국어 간체·번체, 일본어, 관광 타입).",
+ "contents_en": "Place description source (csv) + translation JSON (English, Simplified/Traditional Chinese, Japanese, tourism type).",
+ "modalities": ["text"],
+ "tasks": ["translation", "retrieval_recommendation"],
+ "topics": [{"ko": "관광·여행", "en": "Tourism and travel"}, {"ko": "번역·언어", "en": "Translation and languages"}],
+ "keywords_ko": ["관광지", "POI", "다국어 번역", "중국어", "일본어", "외국인 관광객"],
+ "keywords_en": ["tourist attractions", "POI", "multilingual translation", "Chinese", "Japanese", "foreign tourists"],
+ "labels": ["translation", "tourism type"],
+ "file_formats": ["csv", "json"],
+ "scale_ko": "장소 390,000건, 언어쌍 4종(한-영, 한-중 간체, 한-중 번체, 한-일) 각 390,000건, 관광 타입 7종",
+ "classes_example": ["관광지", "문화", "음식점", "레포츠", "숙박", "쇼핑", "편의"],
+ "baseline": [{"task": "machine translation (ko>en)", "model": "Transformer", "metric": "BLEU", "value": "0.574"}, {"task": "machine translation (ko>zh-Hans)", "model": "Transformer", "metric": "BLEU", "value": "0.5702"}, {"task": "machine translation (ko>zh-Hant)", "model": "Transformer", "metric": "BLEU", "value": "0.5661"}, {"task": "machine translation (ko>ja)", "model": "Transformer", "metric": "BLEU", "value": "0.5766"}],
+ "difficulty": "beginner",
+ "difficulty_note_ko": "약 1.7GB 텍스트라 가볍고 번역 모델 미세조정 입문에 좋습니다.",
+ "skills_needed_ko": ["파이썬", "Hugging Face 번역 모델", "BLEU 평가"],
+ "caveats_ko": ["음식점(40%)과 편의시설(28.8%)이 대부분이고 문화시설은 1%", "개요에 이미지·질의응답 다중쌍이라고 적혀 있으나 구축량은 번역 텍스트만 명시됨", "POI 원본 일부는 외부 기업 제공 자료"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "관광 문장 번역 비교", "title_en": "Tourism translation comparison", "desc_ko": "공개 번역 모델로 관광지 소개를 번역해 언어별 BLEU를 비교합니다.", "desc_en": "Translate place descriptions with an open model and compare BLEU by language."},
+  {"level": "capstone", "title_ko": "외국인용 맛집 안내 챗봇", "title_en": "Restaurant guide for foreigners", "desc_ko": "음식점 소개를 원하는 언어로 바꿔 보여 주고 추천하는 웹 서비스를 만듭니다.", "desc_en": "Show and recommend restaurants in the visitor's language."},
+  {"level": "research", "title_ko": "간체·번체 번역 차이", "title_en": "Simplified vs Traditional Chinese", "desc_ko": "같은 문장의 간체·번체 번역에서 용어 차이와 오류를 분석합니다.", "desc_en": "Analyse term differences and errors between Simplified and Traditional outputs."}
+ ],
+ "doc_used": true,
+ "uncertain": []
+}

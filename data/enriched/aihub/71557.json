@@ -1,0 +1,29 @@
+{
+ "dataset_id": "71557",
+ "title_en": "News scripts and anchor speech data",
+ "summary_ko": "정치·경제·사회·문화·국제·지역·스포츠·IT과학 뉴스 기사를 전·현직 아나운서와 교육생이 읽은 음성 1,132시간(381,456건)과 대본 전사입니다. 아나운서처럼 또박또박 읽는 음성 합성(가상 아나운서)과 뉴스 읽어 주는 AI 스피커에 쓸 수 있습니다.",
+ "summary_en": "1,132 hours (381,456 clips) of news articles in 8 sections read by current and former announcers and trainees, with transcripts. For anchor-style speech synthesis and news-reading AI speakers.",
+ "contents_ko": "음성(wav) + JSON(뉴스 대본 전사, 분야, 화자 정보).",
+ "contents_en": "Audio (wav) + JSON (news script transcript, section, speaker info).",
+ "modalities": ["audio", "text"],
+ "tasks": ["speech_synthesis", "speech_recognition"],
+ "topics": [{"ko": "뉴스·방송", "en": "News and broadcasting"}, {"ko": "음성 합성", "en": "Speech synthesis"}],
+ "keywords_ko": ["뉴스", "아나운서", "음성 합성", "가상 아나운서", "낭독 음성"],
+ "keywords_en": ["news", "announcer", "speech synthesis", "virtual anchor", "read speech"],
+ "labels": ["transcript", "news section", "speaker info"],
+ "file_formats": ["wav", "json"],
+ "scale_ko": "음성 1,132시간, 381,456건, 뉴스 분야 8종 (남성 약 538시간, 여성 약 595시간)",
+ "classes_example": ["정치", "경제", "사회", "문화", "국제", "지역", "스포츠", "IT과학"],
+ "baseline": [{"task": "speech synthesis", "model": "VITS", "metric": "MOS", "value": "4.27"}],
+ "difficulty": "intermediate",
+ "difficulty_note_ko": "깨끗한 낭독 음성이라 음성 합성 입문에 좋지만 학습에 GPU 시간이 꽤 듭니다. 전체 약 227GB입니다.",
+ "skills_needed_ko": ["파이썬", "음성 합성 모델", "음성 전처리"],
+ "caveats_ko": ["구축 목적에 기계독해·질의응답이 적혀 있지만 실제 라벨은 음성 전사뿐", "성능 표의 AI TASK가 'Speech Recognition'으로 적혀 있지만 지표는 음성 합성 MOS", "여성 정치·사회 분야 시간이 목표의 약 1.5배로 분포가 고르지 않음"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "뉴스 분야 분류", "title_en": "News section classification", "desc_ko": "대본 전사 텍스트로 뉴스 분야 8종을 분류합니다.", "desc_en": "Classify the 8 news sections from transcripts."},
+  {"level": "capstone", "title_ko": "가상 아나운서 TTS", "title_en": "Virtual anchor TTS", "desc_ko": "VITS로 뉴스 기사를 아나운서 목소리로 읽는 음성 합성기를 만듭니다.", "desc_en": "Build a VITS model that reads news in an anchor voice."},
+  {"level": "research", "title_ko": "분야별 낭독 스타일 제어", "title_en": "Style control by news section", "desc_ko": "스포츠·정치 등 분야에 따라 억양을 바꾸는 음성 합성을 연구합니다.", "desc_en": "Study TTS that changes prosody by news section."}
+ ],
+ "doc_used": true,
+ "uncertain": ["화자 수가 팩 앞부분에 없음"]
+}

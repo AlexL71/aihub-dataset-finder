@@ -1,0 +1,29 @@
+{
+ "dataset_id": "71810",
+ "title_en": "Indoor maintenance service robot data",
+ "summary_ko": "실내 공간에 설치된 서비스 로봇이 대기·업무 중일 때 기록한 실시간 상태 데이터 1,173,930건에 정상·에러 상태 라벨이 붙은 데이터입니다. 로봇 고장을 미리 알아채는 예방정비 AI에 쓸 수 있습니다.",
+ "summary_en": "1,173,930 real-time status records from service robots installed indoors, captured while idle and working, labelled as normal or error. For predictive-maintenance AI that spots robot faults early.",
+ "contents_ko": "로봇 상태 기록(json) + 정상·에러 라벨(json).",
+ "contents_en": "Robot status records (json) + normal/error labels (json).",
+ "modalities": ["sensor", "tabular"],
+ "tasks": ["anomaly_detection", "tabular_prediction"],
+ "topics": [{"ko": "로봇", "en": "Robotics"}, {"ko": "예지정비", "en": "Predictive maintenance"}],
+ "keywords_ko": ["서비스 로봇", "예방정비", "고장 탐지", "로봇 상태", "실내", "이상 탐지"],
+ "keywords_en": ["service robot", "preventive maintenance", "fault detection", "robot status", "indoor", "anomaly detection"],
+ "labels": ["normal/error status"],
+ "file_formats": ["json"],
+ "scale_ko": "원천·라벨 각 1,173,930건",
+ "classes_example": ["정상", "에러"],
+ "baseline": [],
+ "difficulty": "beginner",
+ "difficulty_note_ko": "약 4GB의 표 형태 기록이라 일반 PC로 충분히 다룰 수 있습니다.",
+ "skills_needed_ko": ["파이썬", "판다스", "이상 탐지"],
+ "caveats_ko": ["에러 상태가 정상보다 훨씬 적을 수 있어 클래스 불균형 확인 필요", "상태 항목 목록과 성능 지표가 팩 앞부분에 없음"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "로봇 에러 상태 분류", "title_en": "Robot error classifier", "desc_ko": "상태 기록으로 정상과 에러를 구분합니다.", "desc_en": "Classify normal vs error from status records."},
+  {"level": "capstone", "title_ko": "로봇 상태 모니터링 대시보드", "title_en": "Robot health dashboard", "desc_ko": "로봇 상태를 실시간으로 보여 주고 이상 시 알림을 줍니다.", "desc_en": "Live robot status with anomaly alerts."},
+  {"level": "research", "title_ko": "고장 사전 예측", "title_en": "Early fault prediction", "desc_ko": "에러가 나기 전 징후로 고장을 미리 예측하는 방법을 연구합니다.", "desc_en": "Predict faults from signs before errors occur."}
+ ],
+ "doc_used": true,
+ "uncertain": ["상태 기록 항목", "사이트 수"]
+}

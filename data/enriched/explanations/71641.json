@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71641",
+ "easy_ko": "병원, 요양병원, 집에서 걸려 넘어지거나 부딪혀 넘어지는 위험한 동작을 여러 방향에서 찍은 영상과 사진에, 몸에 단 센서 기록과 몸 관절 점, 사람 위치를 함께 담은 데이터입니다. 넘어짐을 알아채고 막는 AI에 쓸 수 있습니다.",
+ "easy_en": "Videos and photos from many angles of risky falls, such as tripping or bumping into something, in hospitals, care homes and homes, together with body-worn sensor records, body joint points and person boxes. You can use it to build AI that detects and helps prevent falls.",
+ "detail_ko": "병원·요양병원·가정의 낙상 위험 동작(예: 걸려 넘어짐, 부딪혀 넘어짐)을 8개 각도에서 찍은 영상 22,672클립(mp4)과 이미지 226,720장(jpg)에 시간을 맞춘 착용 센서 시계열(csv)과 키포인트, 상자, 낙상 유형(JSON)을 붙였습니다. 전체 약 491GB이고, 연기자가 재연한 낙상일 가능성을 확인해야 하며, 성능 지표와 낙상 유형 전체 목록은 팩에 없습니다.",
+ "detail_en": "22,672 video clips (mp4) and 226,720 images (jpg) of fall-risk motions (such as tripping and falling after bumping into something) in hospitals, care homes and homes, filmed from 8 angles, with time-aligned body-worn sensor series (csv) and JSON keypoints, boxes and fall type. Total size is about 491 GB. Check whether the falls were acted out, and note that metrics and the full list of fall types are not in the pack.",
+ "amount_ko": "영상 22,672클립, 이미지 226,720장, 촬영 각도 8종",
+ "amount_en": "22,672 video clips, 226,720 images, 8 camera angles",
+ "labels_ko": "몸 관절 점, 사람 위치 상자, 넘어짐 종류",
+ "labels_en": "keypoints, bounding boxes, fall type",
+ "status": "full-run-2026-11-02"
+}

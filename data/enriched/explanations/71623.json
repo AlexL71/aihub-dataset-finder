@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71623",
+ "easy_ko": "자율주행 승용차가 낮에 자동차 전용도로를 달리며 카메라와 레이저 센서(라이다)로 모은 데이터입니다. 사진 속 도로와 물체 영역, 물체 위치 상자와 입체 상자가 표시되어 있어 한국 도로에 맞는 자율주행 인지 AI에 쓸 수 있습니다.",
+ "easy_en": "Data collected by a self-driving passenger car driving expressways in the daytime with cameras and a laser sensor (lidar). Road and object areas, object boxes and 3D boxes are marked, so you can build self-driving perception AI suited to Korean roads.",
+ "detail_ko": "승용 자율주행차가 낮에 자동차 전용도로에서 모은 카메라 이미지(jpg)와 라이다 점군(pcd) 161,600세트(2D 분할 161,600, 2D/3D 161,600)에 2D 분할·상자, 3D 상자, 위치·인지·판단·제어 정보를 JSON으로 붙였습니다. 클래스 예: fense, freespace, background, eogVehicle, bus, policeCar, ambulance. 기준 성능은 PV-RCNN 3D 객체 탐지 mAP 78.09%, ConvNeXt 2D 분할 mIoU 86.27%입니다. 레벨 4 자율주행 센서를 단 차량이 정기 주행하며 모았고, 전체 약 268GB입니다. 방호벽(fense)이 분할 객체의 약 28%이고 자전거·보행자는 매우 적습니다. 성능표 1번 항목은 페이지에 없습니다.",
+ "detail_en": "Camera images (jpg) and lidar point clouds (pcd) collected by a self-driving passenger car on expressways in the daytime: 161,600 sets (161,600 2D segmentation, 161,600 2D/3D), with JSON 2D segmentation and boxes, 3D boxes, and localisation, perception, decision and control data. Example classes: fence, free space, background, ego vehicle, bus, police car, ambulance. Baselines: 3D object detection with PV-RCNN, mAP 78.09%; 2D segmentation with ConvNeXt, mIoU 86.27%. It was collected on regular runs by a car with Level 4 self-driving sensors; total size is about 268 GB. Fences make up about 28% of segmented objects, while bicycles and pedestrians are very rare. Item 1 of the metrics table is missing from the page.",
+ "amount_ko": "161,600세트(2D 분할 161,600, 2D/3D 161,600)",
+ "amount_en": "161,600 sets (161,600 2D segmentation, 161,600 2D/3D)",
+ "labels_ko": "도로·물체 영역, 물체 위치 상자(평면·입체), 물체 종류",
+ "labels_en": "segmentation, 2D and 3D boxes, class",
+ "status": "full-run-2026-11-02"
+}

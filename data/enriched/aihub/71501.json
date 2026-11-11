@@ -1,0 +1,29 @@
+{
+ "dataset_id": "71501",
+ "title_en": "Integrated clothing data (worn images, sizes and fabric info)",
+ "summary_ko": "블라우스·코트·셔츠·티셔츠·하의·원피스 등 12종 의류의 상품 이미지와 착용 이미지 55만여 장에 옷 영역이 다각형으로 표시되어 있고, 옷 치수·원단 정보와 착용자 신체 정보가 연결되어 있습니다. 가상 피팅, 옷 분할, 비대면 세탁 서비스 AI에 쓸 수 있습니다.",
+ "summary_en": "About 550,000 product and worn images of 12 clothing types (blouse, coat, shirt, T-shirt, bottoms, dresses, etc.) with clothing outlined by polygons, linked to garment sizes, fabric info and wearer body info. For virtual fitting, clothing segmentation and laundry services.",
+ "contents_ko": "의류·착용 이미지 + JSON(2D 다각형 분할, 의류 종류, 치수, 원단, 착용자 신체 정보).",
+ "contents_en": "Clothing and worn images + JSON (2D polygon segmentation, type, size, fabric, body info).",
+ "modalities": ["image", "tabular"],
+ "tasks": ["segmentation", "image_classification"],
+ "topics": [{"ko": "패션·의류", "en": "Fashion and clothing"}, {"ko": "가상 피팅", "en": "Virtual fitting"}],
+ "keywords_ko": ["의류", "가상 피팅", "의류 분할", "치수", "원단", "착용 이미지"],
+ "keywords_en": ["clothing", "virtual fitting", "clothing segmentation", "size", "fabric", "worn images"],
+ "labels": ["polygon", "clothing category", "size", "fabric info", "body info"],
+ "file_formats": ["json"],
+ "scale_ko": "이미지 550,634장, 의류 카테고리 12종",
+ "classes_example": ["blouse", "cardigan", "coat", "jacket", "jumper", "shirt", "sweater", "t-shirt", "vest", "bottom", "onepiece(dress)", "onepiece(jumpsuit)"],
+ "baseline": [{"task": "clothing segmentation", "model": "Mask R-CNN", "metric": "AP", "value": "80%"}],
+ "difficulty": "intermediate",
+ "difficulty_note_ko": "분할 실습에 좋지만 전체 약 330GB입니다. 카테고리 몇 개만 받아 쓰세요.",
+ "skills_needed_ko": ["파이썬", "분할 모델(Mask R-CNN)", "표 데이터 처리"],
+ "caveats_ko": ["전체 약 330GB", "페이지의 데이터 형식이 'txt'로만 적혀 있어 이미지 형식이 불분명", "점프수트 카테고리는 1,585장으로 매우 적음"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "의류 종류 분류", "title_en": "Clothing type classification", "desc_ko": "상품 사진이 12개 의류 종류 중 무엇인지 분류합니다.", "desc_en": "Classify product photos into 12 clothing types."},
+  {"level": "capstone", "title_ko": "착용 사진 옷 분리기", "title_en": "Garment extractor from worn photos", "desc_ko": "착용 사진에서 옷만 분할해 배경과 몸을 지우는 도구를 만듭니다.", "desc_en": "Segment only the garment from worn photos."},
+  {"level": "research", "title_ko": "신체 치수 기반 사이즈 추천", "title_en": "Body-measurement size recommendation", "desc_ko": "착용자 신체 정보와 옷 치수로 맞는 사이즈를 예측하는 방법을 연구합니다.", "desc_en": "Predict fitting size from body info and garment sizes."}
+ ],
+ "doc_used": true,
+ "uncertain": ["치수·원단·신체 정보의 세부 항목이 팩 앞부분에 없음"]
+}

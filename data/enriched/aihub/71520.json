@@ -1,0 +1,29 @@
+{
+ "dataset_id": "71520",
+ "title_en": "Dog and cat health information data",
+ "summary_ko": "동물병원·보호센터·훈련소에서 모은 반려견·반려묘 건강정보 12만여 건으로, 사진과 함께 품종·신체계측·사양관리·의학정보·활력징후 데이터가 있습니다. 사진에는 상자가 표시되어 있어 비만도 확인 등 반려동물 건강관리 AI에 쓸 수 있습니다.",
+ "summary_en": "About 120,000 dog and cat health records from vet clinics, shelters and training centres, with photos plus breed, body measurements, feeding management, medical info and vital signs. Photos have boxes; for pet health AI such as obesity checks.",
+ "contents_ko": "사진(jpg) + JSON(상자, 기본정보, 신체계측, 사양관리, 의학정보, 활력징후).",
+ "contents_en": "Photos (jpg) + JSON (boxes, basic info, body measurements, feeding, medical, vital signs).",
+ "modalities": ["image", "tabular"],
+ "tasks": ["image_classification", "object_detection", "tabular_prediction"],
+ "topics": [{"ko": "반려동물·수의", "en": "Pets and veterinary"}, {"ko": "헬스케어", "en": "Healthcare"}],
+ "keywords_ko": ["반려견", "반려묘", "비만도", "건강정보", "신체계측", "활력징후"],
+ "keywords_en": ["dogs", "cats", "obesity score", "health information", "body measurements", "vital signs"],
+ "labels": ["bounding box", "body condition", "health record fields"],
+ "file_formats": ["jpg", "json"],
+ "scale_ko": "건강정보 120,365건 + 메타데이터 4,000건 (반려견이 대부분, 반려묘 약 1,200건)",
+ "classes_example": ["BCS 1~3 저체중(Thin)", "BCS 4~5 정상(Ideal)", "BCS 6~9 과체중(Heavy)", "반려견 품종 > 비숑프리제, 치와와, 비글 등", "반려묘 품종 > 코리안숏헤어, 페르시안, 스코티시폴드 등"],
+ "baseline": [{"task": "obesity classification", "model": "ResNet, EfficientNet", "metric": "F1-score (weighted)", "value": "0.77"}],
+ "difficulty": "intermediate",
+ "difficulty_note_ko": "사진 분류와 표 데이터 분석을 함께 연습할 수 있지만 전체 약 357GB입니다.",
+ "skills_needed_ko": ["파이썬", "이미지 분류(CNN)", "표 데이터 처리"],
+ "caveats_ko": ["전체 약 357GB", "반려묘 데이터가 약 1,200건으로 매우 적음", "타입(A·B·C)마다 들어 있는 항목이 다름"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "반려견 비만도 분류", "title_en": "Dog obesity classification", "desc_ko": "반려견 사진으로 비만 정도를 분류합니다.", "desc_en": "Classify dog obesity level from photos."},
+  {"level": "capstone", "title_ko": "반려동물 건강 체크 앱", "title_en": "Pet health check app", "desc_ko": "사진과 기본 정보로 비만도와 관리 팁을 알려주는 앱을 만듭니다.", "desc_en": "Give obesity level and care tips from photo and info."},
+  {"level": "research", "title_ko": "품종별 호발 질병 분석", "title_en": "Breed-specific disease analysis", "desc_ko": "의학정보로 품종별로 잘 걸리는 질병 패턴을 분석합니다.", "desc_en": "Analyse common diseases by breed."}
+ ],
+ "doc_used": true,
+ "uncertain": []
+}

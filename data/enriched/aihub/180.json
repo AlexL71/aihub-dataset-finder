@@ -1,0 +1,29 @@
+{
+ "dataset_id": "180",
+ "title_en": "Road driving videos for autonomous driving",
+ "summary_ko": "자율주행 모사 차량으로 70개 이상 주행 상황(Use-case)에 따라 실제 도로를 달리며 찍은 영상과 라이다·DGPS·차량 신호 데이터입니다. 차량·보행자 상자, 차선 스플라인, 다각형, 주행 가능 공간이 표시되어 있어 자율주행 인지 AI 학습에 쓸 수 있습니다.",
+ "summary_en": "Real-road driving video recorded by an autonomous test vehicle across 70+ driving use cases, synchronised with lidar, DGPS and in-vehicle network data. Boxes for vehicles and pedestrians, lane splines, polygons and free-space areas support perception AI for self-driving.",
+ "contents_ko": "주행 영상 프레임(번호판·얼굴 마스킹) + JSON(상자, 스플라인, 다각형, 주행 가능 공간) + 동기화 센서 데이터.",
+ "contents_en": "Driving frames (plates and faces masked) + JSON (boxes, splines, polygons, free space) + synchronised sensor data.",
+ "modalities": ["image", "video", "sensor"],
+ "tasks": ["object_detection", "segmentation"],
+ "topics": [{"ko": "자율주행", "en": "Self-driving"}, {"ko": "교통·도로", "en": "Traffic and roads"}],
+ "keywords_ko": ["자율주행", "주행 영상", "차선", "라이다", "주행 가능 영역", "Use-case"],
+ "keywords_en": ["autonomous driving", "driving video", "lanes", "lidar", "drivable area", "use cases"],
+ "labels": ["bounding box", "spline (lanes)", "polygon", "free space"],
+ "file_formats": ["jpg", "json"],
+ "scale_ko": "원천 175TB 이상, 라벨 프레임 각 20만 이상(상자·스플라인·다각형), 주행 공간 5천 프레임, 공개 파일 약 278GB",
+ "classes_example": ["배경", "자동차 > 일반자동차", "자동차 > 버스", "자동차 > 이륜차", "자동차 > 기타자동차", "보행자"],
+ "baseline": [],
+ "difficulty": "advanced",
+ "difficulty_note_ko": "여러 센서와 라벨 형식을 다루는 자율주행 연구 수준입니다. 공개 파일은 약 278GB입니다.",
+ "skills_needed_ko": ["파이썬", "객체 탐지·차선 인식", "센서 데이터 동기화"],
+ "caveats_ko": ["성능 지표가 비어 있음", "원천 175TB 중 일부만 공개된 것으로 보임"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "주행 영상 차량 탐지", "title_en": "Vehicle detection in driving video", "desc_ko": "주행 프레임에서 차량·보행자를 탐지합니다.", "desc_en": "Detect vehicles and pedestrians in driving frames."},
+  {"level": "capstone", "title_ko": "차선 인식 데모", "title_en": "Lane detection demo", "desc_ko": "스플라인 라벨로 차선 인식 모델을 학습해 영상에 그려 보여줍니다.", "desc_en": "Train lane detection from splines and draw lanes on video."},
+  {"level": "research", "title_ko": "Use-case별 인지 성능 분석", "title_en": "Perception by use case", "desc_ko": "주행 상황(교차로·합류 등)별로 인지 모델이 어디서 실패하는지 분석합니다.", "desc_en": "Analyse where perception fails by driving situation."}
+ ],
+ "doc_used": true,
+ "uncertain": ["실제 다운로드 가능한 양(278GB)과 원천 175TB의 관계가 불명확"]
+}

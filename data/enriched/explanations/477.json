@@ -1,0 +1,12 @@
+{
+ "dataset_id": "477",
+ "easy_ko": "공원 CCTV에서 보이는 것처럼 담배 피우기, 낚시, 쓰레기 버리기, 담 넘기 같은 불법 행동을 연출해 찍고, 쓰레기봉투·좌판·노점 같은 불법 물건 위치도 표시한 데이터입니다. 공원 CCTV가 규칙 위반을 자동으로 찾아내는 AI를 만들 수 있습니다.",
+ "easy_en": "Staged videos, filmed as a park CCTV would see them, of rule-breaking such as smoking, fishing, dumping rubbish and climbing fences, plus images marking illegal objects such as rubbish bags, street stalls and vendors. You can build AI that helps park CCTV spot rule-breaking automatically.",
+ "detail_ko": "공원 10곳 이상에서 CCTV 각도로 연출 촬영한 불법행위 270시간, 정상행위 10시간 클립(mp4)과 불법객체 3.6만 장, 정상객체 2.16만 장 이미지(jpg)로, JSON에 바운딩박스, 행위/객체 클래스(흡연, 낚시, 쓰레기무단투기, 쓰레기봉투, 좌판, 노점상 등), 촬영 시간·날씨가 있습니다. 연출 장면이라 실제 상황과 다를 수 있으며 기준 성능은 기록에서 확인되지 않습니다.",
+ "detail_en": "Staged CCTV-angle footage from 10+ parks: 270 hours of illegal behaviour and 10 hours of normal behaviour (mp4), plus 36k illegal-object and 21.6k normal-object images (jpg), with JSON boxes, behaviour or object class (smoking, fishing, illegal dumping, rubbish bag, street stall, vendor and more), and capture time and weather. Scenes are staged, so they may differ from reality; no baseline is visible in the record.",
+ "amount_ko": "불법행위 영상 270시간, 물체 사진 약 5.8만 장",
+ "amount_en": "270 hours of rule-breaking video, about 58k object images",
+ "labels_ko": "사람·물건 위치 상자, 불법 행동 종류, 불법 물건 종류",
+ "labels_en": "boxes around people and objects, behaviour class, object class",
+ "status": "full-run-2026-11-02"
+}

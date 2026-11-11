@@ -1,0 +1,29 @@
+{
+ "dataset_id": "71844",
+ "title_en": "Private-sector customer complaint counselling LLM pretraining and instruction-tuning data",
+ "summary_ko": "카드사·통신사 등 민간 기업의 고객 상담 대화 12,303건(평균 약 38턴)을 바탕으로 분류·요약·질의응답 형식의 지시 학습 데이터 132,401건을 만든 데이터입니다. 고객센터 챗봇이나 상담원을 돕는 AI에 쓸 수 있습니다.",
+ "summary_en": "12,303 customer-service dialogues (about 38 turns on average) from private companies such as a card issuer and a telecom, turned into 132,401 instruction items for classification, summarisation and QA. For call-centre chatbots and agent-assist AI.",
+ "contents_ko": "상담 대화 원문(JSON) + 라벨(JSON: 분류, 요약, 질의응답).",
+ "contents_en": "Counselling dialogue (JSON) + labels (JSON: classification, summary, QA).",
+ "modalities": ["text"],
+ "tasks": ["dialogue", "text_classification", "summarization", "question_answering"],
+ "topics": [{"ko": "고객 상담", "en": "Customer service"}, {"ko": "챗봇", "en": "Chatbots"}],
+ "keywords_ko": ["고객 상담", "민원", "콜센터", "Instruction tuning", "대화 요약", "챗봇"],
+ "keywords_en": ["customer service", "complaints", "call centre", "instruction tuning", "dialogue summarisation", "chatbot"],
+ "labels": ["class", "summary", "question-answer"],
+ "file_formats": ["json"],
+ "scale_ko": "상담 대화 12,303건(3,580,857어절), 지시 학습 데이터 132,401건",
+ "classes_example": ["상품 및 서비스 일반", "주문/결제/입금 확인", "취소/반품/교환/환불/AS", "회원 관리", "배송 문의", "이벤트/할인", "콘텐츠", "제휴", "기타", "단일 요건 민원", "다수 요건 민원"],
+ "baseline": [],
+ "difficulty": "beginner",
+ "difficulty_note_ko": "약 0.2GB로 작아 노트북에서 분류·요약 실습을 바로 할 수 있습니다.",
+ "skills_needed_ko": ["파이썬", "Hugging Face", "LLM 미세조정(LoRA)"],
+ "caveats_ko": ["특정 기업(카드·통신) 상담 위주라 다른 업종에 바로 쓰기 어려울 수 있음", "모델 성능 수치가 팩에 없음"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "상담 주제 분류", "title_en": "Inquiry topic classifier", "desc_ko": "상담 대화가 어떤 주제인지 분류합니다.", "desc_en": "Classify the topic of a customer dialogue."},
+  {"level": "capstone", "title_ko": "상담 요약 도우미", "title_en": "Call summary assistant", "desc_ko": "긴 상담 대화를 상담원이 기록하기 쉬운 요약으로 만들어 줍니다.", "desc_en": "Summarise long calls for agent notes."},
+  {"level": "research", "title_ko": "긴 대화 요약 품질", "title_en": "Long-dialogue summarisation", "desc_ko": "수십 턴의 긴 상담에서 핵심을 놓치지 않는 요약 방법을 연구합니다.", "desc_en": "Study summarising very long multi-turn dialogues."}
+ ],
+ "doc_used": true,
+ "uncertain": ["출처별 건수 표가 원천이 아닌 가공데이터 기준(132,401건)으로 보임"]
+}

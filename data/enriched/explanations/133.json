@@ -1,0 +1,12 @@
+{
+ "dataset_id": "133",
+ "easy_ko": "초등학교부터 중학교까지 학생들이 수학 문제를 맞혔는지 틀렸는지 기록하고, 문제마다 얼마나 어려운지와 어떤 수학 개념과 연결되는지를 함께 정리한 데이터입니다. 학생이 약한 개념을 찾아 다음에 풀 문제를 추천해 주는 맞춤 학습 AI를 만들 수 있습니다.",
+ "easy_en": "Records of whether elementary and middle-school students got maths questions right or wrong, together with how hard each question is and which maths concepts it is linked to. You can build personalised-learning AI that finds a student's weak concepts and recommends the next questions.",
+ "detail_ko": "초1~중3 학습자 10만 명 이상의 수학 문항 정오답 기록 226만 건 이상, 문항 2,140개 이상의 IRT 정보(난이도·변별도·추측도), 학습자 IRT 정보(이해력·진점수), 수학 개념 약 3,000개의 지식체계(단위개념과 선후 관계)를 JSON으로 제공합니다. 기준 성능은 Deep Knowledge Tracing 정오답 예측 AUC-ROC 0.83입니다. 학생 학습 기록이므로 개인정보·이용 약관 확인이 필요합니다.",
+ "detail_en": "2.26M+ maths answer records from 100k+ learners in grades 1–9, IRT parameters for 2,140+ items (difficulty, discrimination, guessing), learner IRT info (ability, true score) and a knowledge map of about 3,000 maths concepts with prerequisite links, in JSON. Baseline: Deep Knowledge Tracing correctness prediction AUC-ROC 0.83. These are student records, so check privacy and terms of use.",
+ "amount_ko": "정오답 기록 226만 건 이상, 학생 10만 명 이상, 수학 개념 약 3,000개",
+ "amount_en": "2.26M+ answer records, 100k+ students, about 3,000 maths concepts",
+ "labels_ko": "맞음·틀림, 문제 난이도 정보, 학생 이해도, 수학 개념 연결 지도",
+ "labels_en": "right or wrong, item difficulty parameters, learner ability, concept map",
+ "status": "full-run-2026-11-02"
+}

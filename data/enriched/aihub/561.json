@@ -1,0 +1,29 @@
+{
+ "dataset_id": "561",
+ "title_en": "Companion animal skin disease data",
+ "summary_ko": "동물병원에서 모은 반려견·반려묘 피부 사진 약 50만 장(질환 이미지 25만 장 이상)에 구진·비듬·태선화·농포·미란·결절 등 증상 유무와 위치를 상자·영역으로 표시한 데이터입니다. 현미경 세포 사진도 일부 있습니다. 사진으로 피부병을 찾는 AI에 쓸 수 있습니다.",
+ "summary_en": "About 500,000 skin photos of dogs and cats from animal hospitals (over 250,000 with disease), with symptoms such as papules, scaling, lichenification, pustules, erosions and nodules marked by boxes and areas, plus some microscope cytology images. For AI that spots skin disease from photos.",
+ "contents_ko": "피부 사진·현미경 사진(jpg) + JSON(상자, 분할 영역, 증상, 유·무증상).",
+ "contents_en": "Skin and microscope photos (jpg) + JSON (boxes, segmentation, symptom, with or without symptom).",
+ "modalities": ["image"],
+ "tasks": ["image_classification", "object_detection", "segmentation"],
+ "topics": [{"ko": "반려동물 건강", "en": "Pet health"}, {"ko": "수의학", "en": "Veterinary medicine"}],
+ "keywords_ko": ["반려견", "반려묘", "피부질환", "펫헬스케어", "동물병원"],
+ "keywords_en": ["dogs", "cats", "skin disease", "pet healthcare", "animal hospital"],
+ "labels": ["bounding box", "segmentation", "symptom class", "symptom present"],
+ "file_formats": ["jpg", "json"],
+ "scale_ko": "이미지 약 50만 장, 반려견 증상 6종·반려묘 3종 + 감염성 피부염",
+ "classes_example": ["구진,플라크", "비듬,각질,상피성잔고리", "태선화,과다색소침착", "농포,여드름", "미란,궤양", "결절,종괴"],
+ "baseline": [],
+ "difficulty": "intermediate",
+ "difficulty_note_ko": "분류·탐지 실습에 좋지만 전체 약 382GB이고 가장 작은 파일도 21GB입니다.",
+ "skills_needed_ko": ["파이썬", "CNN 이미지 분류", "YOLO 탐지"],
+ "caveats_ko": ["전체 약 382GB, 파일 하나가 최소 21GB", "여러 번 수정됨(최근 2024-04)", "562번 안구 질환 데이터와 같은 구축 기관", "성능 지표가 팩 앞부분에 없음"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "피부 증상 유무 분류", "title_en": "Symptom yes/no classifier", "desc_ko": "피부 사진에 증상이 있는지 없는지 분류합니다.", "desc_en": "Classify whether a skin photo shows a symptom."},
+  {"level": "capstone", "title_ko": "보호자용 피부 체크 앱", "title_en": "Owner skin-check app", "desc_ko": "사진을 찍으면 의심 증상과 병원 방문 필요성을 알려주는 앱을 만듭니다.", "desc_en": "Build an app that flags likely symptoms and whether to visit a vet."},
+  {"level": "research", "title_ko": "개→고양이 전이학습", "title_en": "Dog-to-cat transfer learning", "desc_ko": "데이터가 많은 반려견 모델을 반려묘에 옮겨 쓰는 효과를 연구합니다.", "desc_en": "Study transferring a dog-trained model to cats with less data."}
+ ],
+ "doc_used": true,
+ "uncertain": []
+}

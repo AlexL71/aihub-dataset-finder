@@ -1,0 +1,12 @@
+{
+ "dataset_id": "632",
+ "easy_ko": "은행·보험 서류 양식에 직접 써서 찍은 문서 사진마다 글자가 있는 위치와 정답 글자를 표시한 데이터입니다. 금융 서류를 자동으로 읽어 컴퓨터에 입력해 주는 업무 자동화 AI를 만들 수 있습니다.",
+ "easy_en": "Photos of bank and insurance forms filled in by hand and photographed, each with the position of every piece of text and the correct text marked. You can build AI that reads financial paperwork and enters it into computer systems automatically.",
+ "detail_ko": "은행·보험 문서 양식에 직접 작성한 뒤 촬영한 문서 이미지 5만 장(은행 2.5만, 보험 2.5만; jpg, png)에 인쇄 글씨와 손글씨 영역(4점 다각형·바운딩박스), 텍스트, 인쇄/손글씨 구분을 JSON으로 붙였습니다. 기준 성능은 Mask R-CNN 기반 자체 모델 인쇄 글씨 OCR F1 0.9667, 손글씨 OCR F1 0.7219입니다. 전체 약 151GB이며, 작성 내용이 가상 정보인지 확인이 필요하고 통계표는 기록에 없습니다. 최근 2026-10에 수정되었습니다.",
+ "detail_en": "50k document images (25k bank, 25k insurance; jpg, png) of forms filled in and photographed, with JSON text regions (4-point polygons and boxes), transcription and printed/handwritten flag. Baselines: custom Mask R-CNN-based OCR F1 0.9667 (printed) and 0.7219 (handwritten). Total size is about 151 GB; check that the written content is fictional; the statistics table is not in the record. Last revised in October 2026.",
+ "amount_ko": "문서 사진 5만 장(은행 2.5만, 보험 2.5만)",
+ "amount_en": "50k document images (25k bank, 25k insurance)",
+ "labels_ko": "글자 위치 테두리·상자, 정답 글자, 인쇄·손글씨 구분",
+ "labels_en": "text polygons and boxes, transcription, printed or handwritten",
+ "status": "full-run-2026-11-02"
+}

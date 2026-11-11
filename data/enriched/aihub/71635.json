@@ -1,0 +1,29 @@
+{
+ "dataset_id": "71635",
+ "title_en": "Tactical judgement video data (basketball)",
+ "summary_ko": "여자프로농구·대학남자농구 경기 영상과 이미지 분석 데이터 77,157건으로, 선수 상자·추적, 팀 스탯 이벤트, 공격·수비 전술 상황이 라벨링되어 있습니다. 농구 경기 영상 분석과 전술 분석 AI에 쓸 수 있습니다.",
+ "summary_en": "Women's pro and men's college basketball match video with 77,157 image-analysis items, including player boxes and tracking, team stat events and attacking/defending tactical situations. For basketball match and tactics analysis AI.",
+ "contents_ko": "경기 영상(mp4) + 프레임 이미지(jpg) + JSON(선수 상자·추적, 스탯 이벤트, 전술 상황).",
+ "contents_en": "Match video (mp4) + frame images (jpg) + JSON (player boxes and tracks, stat events, tactical situation).",
+ "modalities": ["video", "image"],
+ "tasks": ["object_detection", "object_tracking", "action_recognition"],
+ "topics": [{"ko": "스포츠 분석", "en": "Sports analytics"}, {"ko": "농구", "en": "Basketball"}],
+ "keywords_ko": ["농구", "전술 분석", "선수 추적", "팀 스탯", "여자프로농구", "경기 영상"],
+ "keywords_en": ["basketball", "tactics analysis", "player tracking", "team stats", "women's pro basketball", "match video"],
+ "labels": ["bounding box", "tracking", "tactic class", "stat event"],
+ "file_formats": ["mp4", "jpg", "json"],
+ "scale_ko": "전체 78,357건(이미지 분석 77,157건)",
+ "classes_example": ["공격 전술 > 속공(Fast Break), 포스트업(Post Up)", "컷인(Cut In)", "캐치 앤 슛", "픽앤롤(Pick and Roll)", "픽앤팝(Pick and Pop)", "수비 전술 > 대인방어(Man to Man)", "지역방어 2-3(2-1-2)", "지역방어 3-2(1-2-2)"],
+ "baseline": [{"task": "tactical situation classification", "model": "R3D", "metric": "Accuracy", "value": "66.78%"}, {"task": "team stat classification", "model": "R3D", "metric": "Accuracy", "value": "93.51%"}, {"task": "player detection", "model": "YOLO v5", "metric": "F1-score", "value": "0.9725"}],
+ "difficulty": "advanced",
+ "difficulty_note_ko": "선수 탐지는 쉽지만 전술 분류는 영상 행동 인식이라 어렵습니다. 전체 약 214GB입니다.",
+ "skills_needed_ko": ["파이썬", "YOLO 탐지", "영상 행동 인식"],
+ "caveats_ko": ["성능표 정확도가 0.6678%처럼 적혀 있어 66.78%의 표기 오류로 보임", "축구(71482)·핸드볼(71634)과 같은 구조"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "농구 선수 탐지", "title_en": "Basketball player detection", "desc_ko": "경기 프레임에서 선수를 상자로 찾습니다.", "desc_en": "Box players in match frames."},
+  {"level": "capstone", "title_ko": "자동 경기 기록지", "title_en": "Automatic box score", "desc_ko": "영상에서 슛·리바운드 같은 스탯 이벤트를 찾아 기록지를 만듭니다.", "desc_en": "Detect stat events like shots and rebounds to fill a box score."},
+  {"level": "research", "title_ko": "전술 상황 인식 개선", "title_en": "Better tactic recognition", "desc_ko": "선수 위치 궤적을 함께 써 전술 분류 정확도를 높이는 방법을 연구합니다.", "desc_en": "Use player trajectories to improve tactic classification."}
+ ],
+ "doc_used": true,
+ "uncertain": ["경기 수"]
+}

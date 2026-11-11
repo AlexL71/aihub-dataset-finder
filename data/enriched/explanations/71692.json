@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71692",
+ "easy_ko": "물류 상품 100가지를 손가락 모양 집게와 빨판 집게로 잡는 로봇 팔 데이터로, 상품의 입체 점 데이터와 사진, 깊이 사진, 로봇 팔 동작 사진에 상품 위치와 영역, 관절 점을 표시했습니다. 물류 창고에서 로봇이 물건을 집게 하는 AI에 쓸 수 있습니다.",
+ "easy_en": "Data of a robot arm grabbing 100 kinds of warehouse products with a finger-style gripper and a suction gripper, with product point clouds, colour and depth photos and robot-arm action photos marked with product position, areas and joint points. You can use it to build AI that lets warehouse robots pick things up.",
+ "detail_ko": "물류 상품 100종(예: 강아지공룡알장난감, 귀리분말, 누전차단기, 양말)을 핑거·흡착 그리퍼로 잡는 데이터로, 상품 3D 점군 156,766건(PCD; 핑거 125,745, 흡착 31,021), RGB(jpg)·깊이(png) 이미지 각 156,766장, 로봇팔 행동 이미지 약 10만 장(jpg)에 3D 큐보이드, 분할, 키포인트, 파지 성공/실패, 로봇 행동(이송 위치로 이동, 상품 파지, 상품 이송, 상품 하역)을 JSON으로 붙였습니다. 전체 약 1.3TB이고, 메타데이터 구조표 수량과 통계표 수량이 조금 다르며, 성능 지표는 팩 앞부분에 없습니다.",
+ "detail_en": "A robot arm grasping 100 logistics products (such as a dinosaur-egg dog toy, oat powder, a circuit breaker, socks) with finger and suction grippers: 156,766 product 3D point clouds (PCD; 125,745 finger, 31,021 suction), 156,766 each of RGB (jpg) and depth (png) images, and about 100,000 robot-arm action images (jpg), with JSON 3D cuboids, segmentation, keypoints, grasp success/failure and robot actions (move to transfer point, grasp, transfer, unload). Total size is about 1.3 TB, counts differ slightly between the metadata table and the statistics table, and no metrics are in the pack.",
+ "amount_ko": "상품 100종, 3D 점군 156,766건, RGB·깊이 이미지 각 156,766장, 로봇팔 행동 이미지 약 10만 장",
+ "amount_en": "100 products, 156,766 3D point clouds, 156,766 RGB and depth images each, about 100,000 robot-arm images",
+ "labels_ko": "상품 입체 상자, 영역, 관절 점, 잡기 성공 여부, 로봇 동작",
+ "labels_en": "3D cuboids, polygons, keypoints, grasp result, robot action",
+ "status": "full-run-2026-11-02"
+}

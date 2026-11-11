@@ -1,0 +1,29 @@
+{
+ "dataset_id": "71958",
+ "title_en": "Traffic accident simulation data",
+ "summary_ko": "실제 교통사고를 재현한 시뮬레이션 500건과 이를 바탕으로 합성한 사고 시뮬레이션 300건, 3D 에셋 300건으로 된 데이터입니다. PC-Crash 시뮬레이션과 OpenDRIVE(도로 구조)·OpenSCENARIO(차량 움직임) 형식으로 저장되어, 일반 데이터로는 얻기 어려운 사고 엣지 시나리오에 대한 자율주행 AI 대응력을 높이는 데 쓸 수 있습니다.",
+ "summary_en": "500 simulations reconstructing real traffic accidents, 300 synthetic accident simulations built from them and 300 3D assets. Stored as PC-Crash simulations with OpenDRIVE (road layout) and OpenSCENARIO (vehicle motion) files. For training autonomous-driving AI on rare edge-case crash scenarios.",
+ "contents_ko": "3D 에셋(obj) + 사고 시뮬레이션(pro) + 도로·시나리오(xodr, xosc).",
+ "contents_en": "3D assets (obj) + crash simulations (pro) + road and scenario files (xodr, xosc).",
+ "modalities": ["3d", "text"],
+ "tasks": ["forecasting", "anomaly_detection"],
+ "topics": [{"ko": "자율주행", "en": "Autonomous driving"}, {"ko": "교통안전", "en": "Traffic safety"}],
+ "keywords_ko": ["교통사고", "시뮬레이션", "OpenSCENARIO", "OpenDRIVE", "엣지 시나리오", "PC-Crash"],
+ "keywords_en": ["traffic accident", "simulation", "OpenSCENARIO", "OpenDRIVE", "edge case", "PC-Crash"],
+ "labels": ["accident simulation", "static object mapping", "dynamic scenario mapping"],
+ "file_formats": ["obj", "pro", "xodr", "xosc"],
+ "scale_ko": "3D 에셋 300건(파일 1,370개), 실제 사고 모사 500건(파일 1,500개), 합성 사고 모사 300건(파일 900개)",
+ "classes_example": ["객체 모델 > 차량모델, 보행자모델, PM모델, 환경모델, 시설물모델", "객체 카테고리 > car, truck, bus, pedestrian, motorbike, bicycle, train, pole"],
+ "baseline": [],
+ "difficulty": "advanced",
+ "difficulty_note_ko": "약 2.3GB로 작지만 CARLA 같은 시뮬레이터와 OpenSCENARIO 형식을 다룰 줄 알아야 합니다.",
+ "skills_needed_ko": ["파이썬", "주행 시뮬레이터(CARLA 등)", "OpenSCENARIO·OpenDRIVE"],
+ "caveats_ko": ["'.pro' 파일은 PC-Crash 전용 형식이라 상용 소프트웨어가 필요할 수 있음", "사고 유형 분포가 팩 앞부분에 없음(사고 유형은 숫자 코드로만 적힘)"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "사고 시나리오 시각화", "title_en": "Visualise crash scenarios", "desc_ko": "OpenSCENARIO 파일을 읽어 차량 궤적을 그려 봅니다.", "desc_en": "Plot vehicle paths from OpenSCENARIO files."},
+  {"level": "capstone", "title_ko": "사고 시나리오 자율주행 테스트", "title_en": "AV crash-scenario testing", "desc_ko": "시뮬레이터에서 사고 시나리오로 주행 알고리즘을 시험합니다.", "desc_en": "Test driving algorithms on crash scenarios in a simulator."},
+  {"level": "research", "title_ko": "엣지 시나리오 자동 생성", "title_en": "Edge-case scenario generation", "desc_ko": "실제 사고를 바탕으로 새로운 위험 시나리오를 생성하는 방법을 연구합니다.", "desc_en": "Generate new risky scenarios from real crashes."}
+ ],
+ "doc_used": true,
+ "uncertain": ["사고 유형 구성"]
+}

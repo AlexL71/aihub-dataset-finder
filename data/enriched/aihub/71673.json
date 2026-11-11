@@ -1,0 +1,29 @@
+{
+ "dataset_id": "71673",
+ "title_en": "Jellyfish early larva data",
+ "summary_ko": "국내 연안과 실험실에서 채집한 해파리 초기 유생(에피라) 5종과 동물플랑크톤 21종의 현미경 이미지 134,869장에 개체 영역이 분할로 칠해진 데이터입니다. 발전소 취수구 막힘·어업 피해·쏘임 사고를 일으키는 해파리를 초기에 찾아내는 AI에 쓸 수 있습니다.",
+ "summary_en": "134,869 microscope images of 5 jellyfish early larva (ephyra) species and 21 zooplankton types collected from Korean coasts and labs, with each organism segmented. For AI that spots problem jellyfish early, before they clog power-plant intakes, harm fisheries or sting swimmers.",
+ "contents_ko": "현미경 이미지(jpg) + JSON(개체 분할, 종 클래스, 채집 지역).",
+ "contents_en": "Microscope image (jpg) + JSON (organism segmentation, species class, sampling region).",
+ "modalities": ["image"],
+ "tasks": ["segmentation", "image_classification"],
+ "topics": [{"ko": "해양 생태·환경", "en": "Marine ecology and environment"}, {"ko": "수산업", "en": "Fisheries"}],
+ "keywords_ko": ["해파리", "유생", "에피라", "동물플랑크톤", "현미경 이미지", "해양 생태"],
+ "keywords_en": ["jellyfish", "larvae", "ephyra", "zooplankton", "microscope images", "marine ecology"],
+ "labels": ["segmentation", "species class"],
+ "file_formats": ["jpg", "json"],
+ "scale_ko": "이미지 134,869장, 해파리 유생 5종·동물플랑크톤 21종",
+ "classes_example": ["보름달물해파리 에피라", "커튼원양해파리 에피라", "유령해파리 에피라"],
+ "baseline": [],
+ "difficulty": "intermediate",
+ "difficulty_note_ko": "분할·분류 실습에 좋지만 비슷하게 생긴 플랑크톤 구분이 어렵습니다. 약 165GB입니다.",
+ "skills_needed_ko": ["파이썬", "분할 모델", "이미지 분류"],
+ "caveats_ko": ["자연채집·실험실·혼합 이미지가 섞여 있어 출처별 성능 차이 확인 필요", "성능 지표 값이 팩에 없음"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "해파리 유생 vs 플랑크톤", "title_en": "Jellyfish larva vs plankton", "desc_ko": "현미경 사진이 해파리 유생인지 다른 플랑크톤인지 분류합니다.", "desc_en": "Classify jellyfish larvae vs other plankton."},
+  {"level": "capstone", "title_ko": "해파리 조기 경보", "title_en": "Jellyfish early warning", "desc_ko": "채집 시료 사진에서 유생 수를 세어 지역별 위험도를 보여 줍니다.", "desc_en": "Count larvae in samples and show regional risk."},
+  {"level": "research", "title_ko": "실험실→자연 일반화", "title_en": "Lab-to-field generalisation", "desc_ko": "실험실 사진으로 학습한 모델이 자연 채집 사진에서도 되는지 연구합니다.", "desc_en": "Test lab-trained models on field samples."}
+ ],
+ "doc_used": true,
+ "uncertain": ["동물플랑크톤 21종 목록"]
+}

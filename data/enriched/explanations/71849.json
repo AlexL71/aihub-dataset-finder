@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71849",
+ "easy_ko": "한국의 자연, 시가지, 건물을 시대별로 담은 배경 영상 1만여 개에 장면과 상황을 자세히 설명하는 문장을 붙인 데이터입니다. 방송과 미디어용 영상 검색이나 영상 설명을 만드는 AI에 쓸 수 있습니다.",
+ "easy_en": "Over 10,000 background video clips of Korean nature, city streets and buildings from different eras, each with detailed sentences describing the scene and its context. You can use it for video search in broadcasting and media, or AI that writes video descriptions.",
+ "detail_ko": "한국의 자연·시가지·건축물을 시대별(1990년 이전, 1990~2010년, 2010년 이후)로 담은 배경 영상 클립 10,701건(mp4)에 장면과 맥락을 설명하는 문장(JSON, 1,477,814어절)을 붙였습니다(배경 3종 × 시대 3종). 전체 약 330GB이고, 품질 점수는 라벨 정확도이며 모델 성능 수치는 팩에 없고, 영상 저작권·이용 조건을 확인해야 합니다.",
+ "detail_en": "10,701 background video clips (mp4) of Korean nature, city streets and buildings from three eras (before 1990, 1990 to 2010, after 2010), with JSON descriptions of the scene and context (1,477,814 words), in 3 backgrounds × 3 eras. Total size is about 330 GB. Quality scores describe label accuracy and no model scores are in the pack; check the video copyright and terms of use.",
+ "amount_ko": "영상 클립 10,701건, 설명문 1,477,814어절",
+ "amount_en": "10,701 video clips, 1,477,814 words of description",
+ "labels_ko": "장면 설명 문장, 배경·시대 분류",
+ "labels_en": "description, class",
+ "status": "full-run-2026-11-02"
+}

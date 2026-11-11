@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71296",
+ "easy_ko": "윗집 발소리, 망치질, 가구 끄는 소리 같은 층간소음과 공사장, 사업장, 교통 소음을 녹음하고, 소리 종류와 시작·끝 시간을 표시한 데이터입니다. 층간소음 같은 생활 소음을 자동으로 구분해 민원 처리를 돕는 AI를 만들 수 있습니다.",
+ "easy_en": "Recordings of noise between apartment floors (footsteps, hammering, furniture dragging) and from construction sites, workplaces and traffic, labelled with the noise type and start and end times. You can build AI that identifies everyday noise such as neighbour noise and helps handle complaints.",
+ "detail_ko": "층간소음(어른·아이 발걸음, 망치질, 가구 끄는 소리, 강아지 짖는 소리 등)·공사장(굴착기 등)·사업장·교통 소음 소분류 38종 약 3.9만 건의 음원(wav)과 스펙트로그램 이미지(jpg)에 3단계 소음 종류와 시작·끝 시간을 JSON으로 붙였습니다. 기준 성능은 ResNet-50 소음 분류 정확도 97.21%입니다. 데이터 영역이 '한국어'로 잘못 표기되어 있고, 585번 도시 소리 데이터와 소음 종류가 일부 겹칩니다.",
+ "detail_en": "About 39k noise recordings (wav) and spectrogram images (jpg) in 38 fine classes covering floor noise (adult and child footsteps, hammering, furniture dragging, dog barking and more), construction (excavators and more), workplaces and traffic, with JSON three-level class and start and end times. Baseline: ResNet-50 noise classification accuracy 97.21%. The data field is wrongly listed as Korean language; noise types partly overlap with dataset 585.",
+ "amount_ko": "소음 약 3.9만 건, 세부 종류 38종",
+ "amount_en": "about 39k noise clips, 38 fine classes",
+ "labels_ko": "소음 종류(큰·중간·세부 분류), 시작·끝 시간",
+ "labels_en": "noise class (three levels), start and end time",
+ "status": "full-run-2026-11-02"
+}

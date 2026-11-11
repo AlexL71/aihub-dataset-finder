@@ -1,0 +1,29 @@
+{
+ "dataset_id": "71564",
+ "title_en": "Food images and descriptive text data (vision)",
+ "summary_ko": "특수외식·일반외식·배달·끼니대체(빵·떡·죽·수프)·음료 등 800종 음식 이미지 약 23만 장에 음식 위치 상자와 영양정보가 붙어 있습니다. 기존 한식 중심 음식 데이터를 확장한 것으로, 사진으로 음식을 알아보고 영양을 계산하는 식단 관리 앱에 쓸 수 있습니다.",
+ "summary_en": "About 232,000 images of 800 foods (special dining, everyday and delivery meals, meal substitutes like bread, rice cakes and soups, drinks) with food boxes and nutrition info. Extends earlier Korean-food datasets; for diet-tracking apps.",
+ "contents_ko": "음식 이미지(jpg) + JSON(상자, 음식명, 영양정보).",
+ "contents_en": "Food image (jpg) + JSON (boxes, food name, nutrition info).",
+ "modalities": ["image", "text"],
+ "tasks": ["object_detection", "image_classification"],
+ "topics": [{"ko": "음식·영양", "en": "Food and nutrition"}, {"ko": "헬스케어", "en": "Healthcare"}],
+ "keywords_ko": ["음식 인식", "영양정보", "식단 관리", "외식 메뉴", "음료"],
+ "keywords_en": ["food recognition", "nutrition", "diet tracking", "restaurant menu", "drinks"],
+ "labels": ["bounding box", "food class", "nutrition info"],
+ "file_formats": ["jpg", "json"],
+ "scale_ko": "이미지 232,087장, 음식 800종 (특수외식 200, 일반외식·배달 300, 끼니대체 200, 음료·차 100)",
+ "classes_example": ["특수외식메뉴", "일반외식·배달메뉴", "끼니대체메뉴", "음료 및 차류"],
+ "baseline": [{"task": "food detection", "model": "Faster R-CNN (Swin Transformer)", "metric": "mAP", "value": "74.58%"}],
+ "difficulty": "intermediate",
+ "difficulty_note_ko": "음식 분류·탐지 실습에 좋지만 800종이라 클래스가 많고 전체 약 829GB입니다.",
+ "skills_needed_ko": ["파이썬", "탐지 모델", "이미지 분류"],
+ "caveats_ko": ["전체 약 829GB", "음료·차류는 9,057장으로 다른 분류보다 적음", "구축 목적에 '양 인식'이 있지만 양 라벨 형태가 팩 앞부분에 없음"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "음식 대분류 분류", "title_en": "Food category classification", "desc_ko": "사진이 외식·배달·끼니대체·음료 중 무엇인지 분류합니다.", "desc_en": "Classify a photo into the 4 food categories."},
+  {"level": "capstone", "title_ko": "사진 식단 기록 앱", "title_en": "Photo diet logger", "desc_ko": "음식 사진을 찍으면 메뉴를 탐지하고 영양정보를 합산해 보여 줍니다.", "desc_en": "Detect dishes in a photo and sum their nutrition."},
+  {"level": "research", "title_ko": "800종 롱테일 음식 인식", "title_en": "Long-tail food recognition", "desc_ko": "비슷한 음식이 많은 800종에서 헷갈리는 클래스 성능을 높이는 방법을 연구합니다.", "desc_en": "Improve accuracy on confusable classes among 800 foods."}
+ ],
+ "doc_used": true,
+ "uncertain": ["영양정보 항목(칼로리 등)의 정확한 필드가 팩 앞부분에 없음"]
+}

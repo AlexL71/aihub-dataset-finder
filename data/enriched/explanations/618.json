@@ -1,0 +1,12 @@
+{
+ "dataset_id": "618",
+ "easy_ko": "실제로 없는 가상 인물의 얼굴 사진과, 그 얼굴을 보고 그린 스케치, 말로 된 설명만 듣고 그린 몽타주를 짝지어 둔 데이터입니다. 몽타주 그림으로 비슷한 얼굴 사진을 찾는 AI를 연구할 수 있지만, 얼굴 인식 기술은 오용될 수 있어 조심해야 합니다.",
+ "easy_en": "Photos of virtual people who do not exist, paired with sketches drawn while looking at them and composite sketches drawn only from spoken descriptions. You can study AI that finds a matching face photo from a sketch, but face-recognition technology can be misused, so care is needed.",
+ "detail_ko": "실존하지 않는 한국인 가상 인물 이미지 약 1만 장과, 관찰 스케치 약 1만 장, 설명 기반 몽타주 스케치 약 3만 장 등 전체 약 8만 장(jpg)에 인물 ID, 바운딩박스, 얼굴 설명문을 JSON으로 붙였습니다. 기준 성능은 ArcFace 스케치-사진 신원 인식 top-5 정확도 81.9%입니다. 통계표가 비어 있고, 페이지 구축량(10,088)과 개요(8만여 장)의 숫자가 다릅니다.",
+ "detail_en": "About 80k images (jpg): about 10k photos of virtual Korean people who do not exist, about 10k sketches drawn from observation and about 30k composite sketches drawn from verbal descriptions, with JSON identity, bounding box and face description. Baseline: ArcFace sketch-to-photo identity recognition top-5 accuracy 81.9%. The statistics table is empty, and the page's build count (10,088) differs from the overview (about 80k images).",
+ "amount_ko": "이미지 약 8만 장(가상 인물 약 1만)",
+ "amount_en": "about 80k images (about 10k virtual people)",
+ "labels_ko": "인물 번호, 얼굴 위치 상자, 얼굴 설명 글",
+ "labels_en": "identity, face box, face description",
+ "status": "full-run-2026-11-02"
+}

@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71500",
+ "easy_ko": "장미, 국화, 백합, 난초, 고무나무 같은 꽃과 화분 식물을 농가와 꽃 가게에서 찍은 사진 149만여 장에, 상태가 좋은 꽃과 흠이 있는 곳을 표시한 데이터입니다. 꽃의 품질 등급을 매기고 흠을 찾아내는 AI에 쓸 수 있습니다.",
+ "easy_en": "Over 1.49 million photos of flowers and potted plants, such as roses, chrysanthemums, lilies, orchids and rubber plants, taken at farms and flower shops, marking healthy flowers and flaws. You can use it to build AI that grades flower quality and finds defects.",
+ "detail_ko": "장미·국화·백합·거베라·접목선인장·심비디움·호접란·스킨답서스·고무나무 9개 품목을 농가·유통센터·도소매점에서 찍은 이미지 1,491,441장(JPG, 정상 575,379장, 중결점 916,062장)에 정상 상자, 중결점 다각형, 품질 등급, 유통환경 정보를 JSON으로 붙였습니다. 기준 성능은 ResNet18 F1 정상 꽃 품질 등급 분류 0.9716, 중결점 유무 0.8677입니다. 전체 약 220GB이고, 성능표의 AI 과제가 'Text Classification'으로 적혀 있지만 실제는 이미지 분류입니다. 유통환경 모니터링 데이터의 형식은 팩에 자세히 없습니다.",
+ "detail_en": "1,491,441 images (JPG: 575,379 normal, 916,062 with major defects) of 9 items (rose, chrysanthemum, lily, gerbera, grafted cactus, cymbidium, moth orchid, pothos, rubber plant) taken at farms, distribution centres and shops, with JSON boxes for normal flowers, polygons for major defects, quality grade and distribution-environment data. Baselines with ResNet18, F1: quality-grade classification of normal flowers 0.9716, major-defect presence 0.8677. Total size is about 220 GB. The metrics table lists the task as 'Text Classification' although it is image classification, and the format of the distribution-environment monitoring data is not detailed in the pack.",
+ "amount_ko": "이미지 1,491,441장(정상 575,379, 중결점 916,062), 품목 9종",
+ "amount_en": "1,491,441 images (575,379 normal, 916,062 major defect), 9 items",
+ "labels_ko": "정상 꽃 위치 상자, 흠 테두리, 품질 등급",
+ "labels_en": "boxes (normal), polygons (major defects), quality grade, class",
+ "status": "full-run-2026-11-02"
+}

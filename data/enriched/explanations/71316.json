@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71316",
+ "easy_ko": "우리나라 자생 식물의 유전자 정보와 식물 속 화학 물질 구조에, 어느 부위에서 유전자가 작동하는지, 어떤 효소 기능이 있는지, 항산화·항염증 같은 몸에 좋은 효과가 있는지를 표시한 데이터입니다. 쓸모 있는 식물 자원이나 건강에 좋은 물질을 찾아내는 AI를 만들 수 있습니다.",
+ "easy_en": "Gene sequences of plants native to Korea and chemical structures of plant compounds, labelled with where genes are active, what enzyme function they have, and health effects such as antioxidant or anti-inflammatory activity. You can build AI that finds useful plant resources or health-promoting compounds.",
+ "detail_ko": "국내 자생식물의 유전자 염기서열·아미노산 서열과 대사체 화학 구조(SMILES) 원천 약 3.6억 건(csv)에 조직별 유전자 발현 여부(680만), 효소 기능 EC 번호(769만), 생리활성(항산화능, 신경세포 독성, 항염증 및 면역 등; 360건) 라벨 약 1,450만 건을 JSON으로 붙였습니다. 기준 성능은 생리활성 분류 AUC-ROC 0.7419(fingerprint + MLP), 유전자 발현 분류 F1 0.6096, EC 번호 분류 F1 0.8519(1D CNN + MLP)입니다. 생리활성 데이터는 360건으로 매우 적고, 발현·효소 라벨이 크게 치우쳐 있으며(미발현 84%, 비효소 75%), 도메인 전문 지식이 필요합니다.",
+ "detail_en": "About 360M raw records (csv) of gene and amino-acid sequences and metabolite structures (SMILES) from plants native to Korea, with about 14.5M JSON labels: tissue-level gene expression (6.8M), enzyme EC numbers (7.69M) and bioactivity (antioxidant, neurotoxicity, anti-inflammatory and immune and more; only 360). Baselines: bioactivity classification AUC-ROC 0.7419 (fingerprint + MLP), gene-expression F1 0.6096 and EC-number F1 0.8519 (1D CNN + MLP). Bioactivity data is very small; expression and enzyme labels are skewed (84% not expressed, 75% non-enzyme); domain expertise is needed.",
+ "amount_ko": "원천 기록 약 3.6억 건, 라벨 약 1,450만 건",
+ "amount_en": "about 360M raw records, about 14.5M labels",
+ "labels_ko": "유전자 작동 여부, 효소 기능 번호, 몸에 좋은 효과",
+ "labels_en": "gene expression, EC number, bioactivity",
+ "status": "full-run-2026-11-02"
+}

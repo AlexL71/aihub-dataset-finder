@@ -1,0 +1,29 @@
+{
+ "dataset_id": "71375",
+ "title_en": "Shellfish seed production (abalone) data",
+ "summary_ko": "전남 해양수산과학원과 어가 수조에서 모은 전복 유생·부착 규조류·치패(어린 전복) 이미지 약 12만 장에 개체와 밀도를 상자·다각형으로 표시하고, 수조 환경 시계열 데이터 약 12만 건을 더한 데이터입니다. 전복 채묘 시기, 사료량, 출하 시기를 예측하는 스마트 양식 AI에 쓸 수 있습니다.",
+ "summary_en": "About 120,000 images of abalone larvae, attached diatoms and young abalone from research-institute and farm tanks in South Jeolla, with individuals and density marked by boxes and polygons, plus about 120,000 tank environment time-series records. For smart-aquaculture AI that predicts settlement timing, feed amounts and shipping time.",
+ "contents_ko": "전복·규조류 이미지(png, jpg) + JSON(상자, 다각형) + 환경 시계열(csv).",
+ "contents_en": "Abalone and diatom images (png, jpg) + JSON (boxes, polygons) + environment time series (csv).",
+ "modalities": ["image", "sensor"],
+ "tasks": ["object_detection", "segmentation", "forecasting"],
+ "topics": [{"ko": "수산 양식", "en": "Aquaculture"}, {"ko": "해양 생물", "en": "Marine life"}],
+ "keywords_ko": ["전복", "치패", "종자 생산", "규조류", "스마트 양식"],
+ "keywords_en": ["abalone", "juvenile shellfish", "seed production", "diatoms", "smart aquaculture"],
+ "labels": ["bounding box", "polygon", "density"],
+ "file_formats": ["png", "jpg", "csv", "json"],
+ "scale_ko": "이미지 약 12만 장(유생 4만, 규조류 3만, 치패 5만), 시계열 약 12만 건",
+ "classes_example": ["전복 유생", "부착 규조류", "치패"],
+ "baseline": [],
+ "difficulty": "intermediate",
+ "difficulty_note_ko": "약 460GB로 크고 작은 개체를 세는 밀도 추정이 필요합니다.",
+ "skills_needed_ko": ["파이썬", "객체 탐지", "시계열 예측"],
+ "caveats_ko": ["전체 약 460GB", "성능 지표 표가 팩에서 비어 있음", "수조 10개 데이터뿐"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "치패 개체 세기", "title_en": "Juvenile abalone counter", "desc_ko": "수조 사진에서 어린 전복 수를 셉니다.", "desc_en": "Count young abalone in tank photos."},
+  {"level": "capstone", "title_ko": "전복 사료 투입 도우미", "title_en": "Abalone feeding assistant", "desc_ko": "밀도와 환경 데이터로 사료 투입량을 추천합니다.", "desc_en": "Suggest feed amounts from density and environment data."},
+  {"level": "research", "title_ko": "채묘 시기 예측", "title_en": "Settlement timing prediction", "desc_ko": "유생 밀도와 수온으로 최적 채묘 시기를 예측합니다.", "desc_en": "Predict best settlement timing from larval density and temperature."}
+ ],
+ "doc_used": true,
+ "uncertain": ["baseline values"]
+}

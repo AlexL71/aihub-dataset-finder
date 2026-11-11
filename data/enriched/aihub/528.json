@@ -1,0 +1,32 @@
+{
+ "dataset_id": "528",
+ "title_en": "Face images with known family relationships",
+ "summary_ko": "1,000가계 3,000명 이상의 가족사진, 각도별 개인 사진, 나이대별 사진 12만 장으로, 얼굴 상자와 특징점, 가족 관계와 나이 정보가 있습니다. 얼굴로 가족 관계를 확인하거나 나이를 예측하는 AI 연구에 쓸 수 있습니다.",
+ "summary_en": "120,000 photos of 3,000+ people from 1,000 families (family photos, individual photos from several angles, photos at different ages), with face boxes, keypoints, family relationships and ages. For research on verifying kinship or predicting age from faces.",
+ "contents_ko": "얼굴 사진(jpg) + JSON(얼굴 상자, 특징점, 가족 ID·관계, 나이).",
+ "contents_en": "Face photo (jpg) + JSON (face box, keypoints, family ID and relation, age).",
+ "modalities": ["image"],
+ "tasks": ["retrieval_recommendation", "keypoint_pose", "tabular_prediction"],
+ "topics": [{"ko": "사람 얼굴", "en": "Human faces"}, {"ko": "가족", "en": "Family"}],
+ "keywords_ko": ["가족 관계", "친족 확인", "나이 예측", "얼굴 인식", "얼굴 특징점"],
+ "keywords_en": ["family relationships", "kinship verification", "age prediction", "face recognition", "facial landmarks"],
+ "labels": ["bounding box", "keypoints", "family relation", "age"],
+ "file_formats": ["jpg", "json"],
+ "scale_ko": "이미지 120,836장(가족사진 6,900, 각도별 개인 49,800, 기간별 나이 24,000 등), 1,000가계 3,000명 이상",
+ "classes_example": ["할아버지(GF)", "할머니(GM)", "아버지(F)", "어머니(M)", "아들(S)", "딸(D)", "나이대 a(0~6세) ~ h(67~80세)"],
+ "baseline": [
+  {"task": "kinship verification", "model": "ArcFace", "metric": "accuracy", "value": "70.66%"},
+  {"task": "age prediction", "model": "ArcFace", "metric": "MAE", "value": "3.11 years"}
+ ],
+ "difficulty": "intermediate",
+ "difficulty_note_ko": "약 266GB이고 얼굴 임베딩 모델이 필요합니다. 개인정보에 매우 민감한 데이터입니다.",
+ "skills_needed_ko": ["파이썬", "얼굴 임베딩(ArcFace)", "회귀 평가"],
+ "caveats_ko": ["실제 가족 얼굴 데이터라 이용 약관과 개인정보 보호를 반드시 확인", "가족 관계 추정은 오용 위험이 있음"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "얼굴 나이 예측", "title_en": "Age from faces", "desc_ko": "얼굴 사진으로 나이를 예측하는 회귀 모델을 만듭니다.", "desc_en": "Train a regression model that predicts age from faces."},
+  {"level": "capstone", "title_ko": "가족 닮은꼴 점수", "title_en": "Family resemblance score", "desc_ko": "두 얼굴의 닮은 정도를 점수로 보여주는 데모를 만듭니다(동의한 사진만).", "desc_en": "Show a resemblance score between two consented faces."},
+  {"level": "research", "title_ko": "나이 변화에 강한 얼굴 인식", "title_en": "Age-invariant face recognition", "desc_ko": "기간별 사진으로 나이가 바뀌어도 같은 사람을 알아보는 방법을 연구합니다.", "desc_en": "Recognise the same person across ages using time-series photos."}
+ ],
+ "doc_used": true,
+ "uncertain": []
+}

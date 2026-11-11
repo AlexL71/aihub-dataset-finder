@@ -1,0 +1,29 @@
+{
+ "dataset_id": "71602",
+ "title_en": "Image-sound matching data",
+ "summary_ko": "요리·교통·생활가전·농기계·전통·운동 6개 분야에서 직접 찍은 이미지 10만 장과 직접 녹음한 소리 1만 개로, 썰기·튀기기·차량 주행 같은 장면과 그 소리가 짝지어져 있습니다. 사진으로 어울리는 소리를 찾거나 소리로 사진을 찾는 교차 검색 AI에 쓸 수 있습니다.",
+ "summary_en": "100,000 photos and 10,000 recorded sounds in 6 areas (cooking, traffic, home appliances, farm machines, traditional, sports), pairing scenes like chopping, frying or driving with their sounds. For cross-modal search: finding sounds from images and images from sounds.",
+ "contents_ko": "이미지(jpg) + 소리(wav) + JSON(이미지 상자, 소리 분류 라벨).",
+ "contents_en": "Image (jpg) + sound (wav) + JSON (image boxes, sound class labels).",
+ "modalities": ["image", "audio"],
+ "tasks": ["retrieval_recommendation", "image_classification", "audio_classification"],
+ "topics": [{"ko": "멀티미디어 콘텐츠", "en": "Multimedia content"}, {"ko": "영상 효과음 제작", "en": "Sound effects production"}],
+ "keywords_ko": ["이미지-사운드 매칭", "교차 검색", "멀티모달", "효과음", "소리 분류", "대조 학습"],
+ "keywords_en": ["image-sound matching", "cross-modal retrieval", "multimodal", "sound effects", "sound classification", "contrastive learning"],
+ "labels": ["bounding box", "sound class"],
+ "file_formats": ["jpg", "wav", "json"],
+ "scale_ko": "이미지 100,000장, 소리 10,000개, 분야 6종",
+ "classes_example": ["요리", "교통", "생활·가전", "농기계", "전통", "운동", "썰기", "튀기기"],
+ "baseline": [{"task": "image classification", "model": "Inception V3", "metric": "Top-1 accuracy", "value": "99.33%"}, {"task": "sound classification", "model": "YAMNet", "metric": "Top-1 accuracy", "value": "87.35%"}, {"task": "image-to-sound retrieval", "model": "Inception V3 + YAMNet (contrastive)", "metric": "Recall@5", "value": "99.3%"}, {"task": "sound-to-image retrieval", "model": "Inception V3 + YAMNet (contrastive)", "metric": "Recall@5", "value": "86.34%"}],
+ "difficulty": "intermediate",
+ "difficulty_note_ko": "약 228GB이고 분류는 쉽지만 교차 검색에는 임베딩 학습 개념이 필요합니다.",
+ "skills_needed_ko": ["파이썬", "이미지·오디오 분류", "임베딩 학습", "FAISS 검색"],
+ "caveats_ko": ["요리 분야가 36%로 많고 운동은 4%뿐", "이미지 10장에 소리 1개 비율이라 같은 소리가 여러 이미지에 쓰임", "이미지 분류 99%는 매우 높아 같은 장면 중복 여부 확인 필요"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "요리 소리 분류", "title_en": "Cooking sound classifier", "desc_ko": "썰기·튀기기·끓이기 소리를 분류합니다.", "desc_en": "Classify chopping, frying and boiling sounds."},
+  {"level": "capstone", "title_ko": "사진에 맞는 효과음 추천", "title_en": "Sound effect recommender", "desc_ko": "영상 장면을 넣으면 어울리는 효과음을 찾아 주는 도구를 만듭니다.", "desc_en": "Suggest fitting sound effects for a video scene."},
+  {"level": "research", "title_ko": "소리→이미지 검색 개선", "title_en": "Improving sound-to-image search", "desc_ko": "소리로 이미지를 찾는 방향의 성능이 낮은 이유와 개선 방법을 연구합니다.", "desc_en": "Study why sound-to-image retrieval is weaker and how to improve it."}
+ ],
+ "doc_used": true,
+ "uncertain": []
+}

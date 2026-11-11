@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71426",
+ "easy_ko": "캐낸 인삼을 찍은 사진마다 머리·몸통·다리 부위 위치와 몇 년 자란 인삼인지(년근), 크기 등급(대·중·소)을 표시한 데이터입니다. 인삼 나이와 등급을 자동으로 가려내 가짜 유통을 막고 품질 검사를 돕는 AI를 만들 수 있습니다.",
+ "easy_en": "Photos of freshly harvested ginseng roots with the head, body and leg parts boxed, plus how many years the root grew and its size grade (large, medium, small). You can build AI that checks ginseng age and grade automatically, helping quality checks and stopping fraud.",
+ "detail_ko": "수삼 이미지 207,822장(jpg)에 부위 4종(머리, 몸통, 다리, 전신) 바운딩박스, 년근 3종(4·5·6년), 등급 3종(대·중·소), 재배 방식, 세척 여부를 JSON으로 붙였습니다. 기준 성능은 YOLOv5s 년근·등급 탐지 F1-score 99.35, 부위 탐지 mAP 98.9%입니다. 전체 약 603GB이며, 직파삼 99.5%·세척 전 사진 99.8%로 치우쳐 있고, 성능이 매우 높아 같은 인삼 사진이 학습·평가에 섞였는지 확인이 필요합니다.",
+ "detail_en": "207,822 images (jpg) of fresh ginseng roots with JSON boxes for 4 parts (head, body, legs, whole), age (4, 5 or 6 years), grade (large, medium, small), cultivation method and washed or not. Baselines: YOLOv5s age and grade detection F1-score 99.35, part detection mAP 98.9%. Total size is about 603 GB; 99.5% are direct-seeded and 99.8% unwashed; scores are so high that you should check whether the same roots appear in both training and evaluation.",
+ "amount_ko": "인삼 사진 207,822장",
+ "amount_en": "207,822 ginseng images",
+ "labels_ko": "부위 위치 상자, 몇 년 자랐는지, 크기 등급",
+ "labels_en": "boxes around parts, age in years, size grade",
+ "status": "full-run-2026-11-02"
+}

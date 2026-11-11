@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71504",
+ "easy_ko": "계란 판을 빛에 비춰 찍은 흑백 사진과 컬러 사진, 오래 보관한 계란 사진에 계란마다 정상, 금 감, 핏자국, 색 빠짐, 모양 이상 같은 상태를 표시한 데이터입니다. 계란 품질을 검사하고 신선도와 등급을 판정하는 AI에 쓸 수 있습니다.",
+ "easy_en": "Black-and-white and colour photos of egg trays lit from behind, plus photos of eggs kept for a long time, marking each egg as normal, cracked, blood-spotted, discoloured or misshapen. You can use it to build AI that checks egg quality and judges freshness and grade.",
+ "detail_ko": "계란 판 이미지 약 15만 건(jpg; MONO 69,616, COLOR 53,933, 보관기간 1~50일·세척/비세척 28,807)에 계란 낱개 약 138만 개의 상자, 상태 클래스(정상, 크랙, 혈반, 탈색, 이물질, 기형, 외형이상), 보관기간을 XML로 붙였습니다. 기준 성능은 MONO 상태 탐지 Faster R-CNN(ResNet-50 + FPN) mAP 0.53이며, 페이지 표가 아니라 설명서에만 있습니다. 전체 약 92GB이고, 라벨이 XML이라 YOLO용 변환이 필요하며, 구축량 표기(150만·140만·약 138만 건)가 곳마다 다릅니다.",
+ "detail_en": "About 150,000 egg-tray images (jpg: 69,616 MONO, 53,933 COLOR, 28,807 storage-period images covering 1 to 50 days, washed and unwashed) with XML boxes for about 1.38 million individual eggs, condition classes (normal, crack, blood spot, discolouration, foreign matter, deformity, abnormal shape) and storage period. Baseline: MONO condition detection with Faster R-CNN (ResNet-50 + FPN), mAP 0.53, given only in the manual, not the page table. Total size is about 92 GB. Labels are XML, so converting them for YOLO is needed, and the build amount is given differently in different places (1.5 million, 1.4 million, about 1.38 million).",
+ "amount_ko": "판 이미지 약 15만 건, 계란 낱개 약 138만 개",
+ "amount_en": "about 150,000 tray images, about 1.38 million individual eggs",
+ "labels_ko": "계란 위치 상자, 상태 종류, 보관 기간",
+ "labels_en": "bounding boxes, condition class, storage period",
+ "status": "full-run-2026-11-02"
+}

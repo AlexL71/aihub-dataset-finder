@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71313",
+ "easy_ko": "20대부터 60대 이상까지 여러 수준의 시연자들이 요가 동작을 하는 모습을 여러 대의 카메라로 동시에 찍고, 몸의 주요 점 위치(평면·입체)와 동작 이름을 붙인 데이터입니다. 집에서도 요가 자세를 바로잡아 주거나 동작을 알아보는 AI를 만들 수 있습니다.",
+ "easy_en": "Performers aged 20s to 60s+ at several skill levels performing yoga moves, filmed by several cameras at once, with key body points (flat and in depth) and the move names labelled. You can build AI that recognises yoga moves or corrects your form, even at home.",
+ "detail_ko": "요가 동작 50종을 시연자 120명이 하는 모습을 카메라 8대로 동시에 촬영한 영상 약 1.7만 클립(mp4)에 2D·3D 키포인트와 동작 정보(초급·중급·고급)를 JSON·CSV로 붙였습니다. 기준 성능은 PoseC3D 자세 분류 top-3 정확도 98.58%, BPE 자세 유사도 AUC-ROC 0.9751입니다. 전체 약 14TB이며 시연자 얼굴이 보입니다. 여성 시연자가 89%로 치우쳐 있고, 50개 요가 동작 이름은 기록에서 확인되지 않으며, 71312번 필라테스 데이터와 같은 구축 기관·구조입니다.",
+ "detail_en": "About 17k multi-view videos (mp4) of 120 performers doing 50 yoga moves, filmed by 8 cameras at once, with JSON/CSV 2D and 3D keypoints and move info (beginner, intermediate, advanced). Baselines: PoseC3D pose classification top-3 accuracy 98.58%, BPE pose similarity AUC-ROC 0.9751. Total size is about 14TB; performers' faces are visible. Women make up 89% of performers; the 50 pose names are not in the record; same organisation and structure as dataset 71312.",
+ "amount_ko": "영상 약 1.7만 클립, 동작 50종, 시연자 120명",
+ "amount_en": "about 17k clips, 50 moves, 120 performers",
+ "labels_ko": "몸의 주요 점(평면·입체), 동작 이름, 실력 수준",
+ "labels_en": "2D and 3D body key points, move class, skill level",
+ "status": "full-run-2026-11-02"
+}

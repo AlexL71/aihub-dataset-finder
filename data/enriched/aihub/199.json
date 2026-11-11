@@ -1,0 +1,29 @@
+{
+ "dataset_id": "199",
+ "title_en": "Port structure images",
+ "summary_ko": "항만 구조물(항로표지·부두 시설) 85만 장, 항만 인근 선박 등 해상 물체 220만 장, 충돌 방지 가상 시나리오 51만 장(총 356만 장)의 이미지입니다. 자율운항 선박이 항만 시설과 다른 배를 알아보고 충돌을 피하는 AI에 쓸 수 있습니다.",
+ "summary_en": "3.56 million images: 850,000 of port structures (navigation aids, quay facilities), 2.2 million of ships and other maritime objects near ports, and 510,000 from virtual collision-avoidance scenarios. For AI that helps autonomous ships recognise port facilities and other vessels and avoid collisions.",
+ "contents_ko": "항만·해상 이미지(비식별) + JSON(구조물·선박 상자 또는 다각형, 클래스, 시나리오).",
+ "contents_en": "Port and sea images (anonymised) + JSON (structure and vessel boxes or polygons, class, scenario).",
+ "modalities": ["image"],
+ "tasks": ["object_detection", "segmentation"],
+ "topics": [{"ko": "해양·선박", "en": "Sea and ships"}, {"ko": "항만·물류", "en": "Ports and logistics"}, {"ko": "자율운항", "en": "Autonomous navigation"}],
+ "keywords_ko": ["항만", "항로표지", "선박 탐지", "자율운항", "충돌 방지", "해양 안전"],
+ "keywords_en": ["port", "navigation aids", "ship detection", "autonomous ships", "collision avoidance", "maritime safety"],
+ "labels": ["bounding box", "polygon", "class"],
+ "file_formats": ["jpg", "json"],
+ "scale_ko": "이미지 약 357만 장(항만구조물 851,727, 선박 2,207,273, 충돌방지 511,128)",
+ "classes_example": ["항로표지", "부두", "선박"],
+ "baseline": [],
+ "difficulty": "intermediate",
+ "difficulty_note_ko": "선박·구조물 탐지 실습에 좋지만 전체 약 2.3TB입니다.",
+ "skills_needed_ko": ["파이썬", "YOLO 탐지"],
+ "caveats_ko": ["전체 약 2.3TB", "충돌 방지 이미지는 가상 시나리오", "클래스 목록과 성능 지표가 팩에 없음"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "항만 선박 탐지", "title_en": "Ship detection in ports", "desc_ko": "항만 이미지에서 선박을 탐지합니다.", "desc_en": "Detect ships in port images."},
+  {"level": "capstone", "title_ko": "입항 선박 모니터링", "title_en": "Port arrival monitor", "desc_ko": "항만 카메라로 들어오는 배를 세고 기록하는 대시보드를 만듭니다.", "desc_en": "Count and log incoming ships from port cameras."},
+  {"level": "research", "title_ko": "가상 시나리오의 학습 효과", "title_en": "Value of virtual scenarios", "desc_ko": "가상 충돌 시나리오 이미지가 실제 탐지 성능을 높이는지 연구합니다.", "desc_en": "Study whether virtual collision scenarios improve real detection."}
+ ],
+ "doc_used": true,
+ "uncertain": []
+}

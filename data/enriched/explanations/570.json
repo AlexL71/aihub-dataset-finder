@@ -1,0 +1,12 @@
+{
+ "dataset_id": "570",
+ "easy_ko": "구름빵, 라바 같은 우리나라 애니메이션 장면마다 캐릭터 얼굴 위치와 얼굴 영역, 그리고 기쁨·슬픔·화남 같은 감정을 표시한 데이터입니다. 캐릭터 표정을 만들거나 사람 얼굴을 만화 캐릭터 얼굴로 바꾸는 AI를 만들 수 있습니다.",
+ "easy_en": "Scenes from Korean animations such as Cloudbread and Larva, with each character's face position, face area and emotion (joy, sadness, anger and more) marked. You can build AI that creates character expressions or turns a person's face into a cartoon character's face.",
+ "detail_ko": "국산 애니메이션 6개 작품, 캐릭터 58명의 프레임 이미지 약 42만 장(jpg)에 얼굴 바운딩박스, 얼굴 분할, 감정 7종(놀라움, 두려움, 분노, 슬픔, 중립, 행복, 혐오), 캐릭터를 JSON으로 붙였습니다. 기준 성능은 기록에서 확인되지 않습니다. 전체 약 224GB이며, 감정이 불균형하고(혐오가 매우 적음) 작품 저작권 때문에 사용 범위 확인이 필요합니다. 제목에 '랜드마크'가 있지만 라벨은 상자와 분할입니다.",
+ "detail_en": "About 420k frames (jpg) from 6 Korean animation series with 58 characters, with JSON face boxes, face segmentation, 7 emotions (surprise, fear, anger, sadness, neutral, happiness, disgust) and character. No baseline is visible in the record. Total size is about 224 GB; emotions are imbalanced (very little disgust), and copyright limits use. Despite 'landmark' in the title, the labels are boxes and masks.",
+ "amount_ko": "이미지 약 42만 장, 캐릭터 58명, 감정 7종",
+ "amount_en": "about 420k images, 58 characters, 7 emotions",
+ "labels_ko": "캐릭터 얼굴 위치 상자·영역, 감정, 캐릭터 이름",
+ "labels_en": "face boxes and masks, emotion, character",
+ "status": "full-run-2026-11-02"
+}

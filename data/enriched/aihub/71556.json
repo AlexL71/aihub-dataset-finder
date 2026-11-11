@@ -1,0 +1,29 @@
+{
+ "dataset_id": "71556",
+ "title_en": "Address speech data",
+ "summary_ko": "사람들이 공공·교통·약속·주문 같은 상황에서 주소를 말하는 음성 약 50만 쌍과 전사, 그리고 주소 줄임말·동의어 1,100건입니다. 내비게이션이나 고객센터, 긴급 신고에서 말로 한 주소를 정확히 알아듣는 음성 인식 AI에 쓸 수 있습니다.",
+ "summary_en": "About 500,000 recordings of people saying addresses in situations like public services, transport, appointments and orders, with transcripts, plus 1,100 address synonyms and abbreviations. For speech recognition of spoken addresses in navigation, call centres and emergency calls.",
+ "contents_ko": "음성(wav) + 전사 CSV/JSON(주소 문장, 화자 정보, 상황) + 주소 동의어 JSON.",
+ "contents_en": "Audio (wav) + transcript CSV/JSON (address sentence, speaker info, situation) + address synonym JSON.",
+ "modalities": ["audio", "text"],
+ "tasks": ["speech_recognition"],
+ "topics": [{"ko": "주소·내비게이션", "en": "Addresses and navigation"}, {"ko": "긴급 신고", "en": "Emergency calls"}],
+ "keywords_ko": ["주소 음성", "음성 인식", "내비게이션", "주소 약어", "긴급신고"],
+ "keywords_en": ["address speech", "speech recognition", "navigation", "address abbreviations", "emergency calls"],
+ "labels": ["transcript", "speaker info", "situation"],
+ "file_formats": ["wav", "csv", "json"],
+ "scale_ko": "주소 음성 500,874쌍, 주소 동의어 1,100건",
+ "classes_example": ["공공", "교통", "안내", "약속", "일상", "주문"],
+ "baseline": [{"task": "speech recognition", "model": "Jasper", "metric": "CER", "value": "7.79%"}],
+ "difficulty": "intermediate",
+ "difficulty_note_ko": "음성 인식 미세조정 실습에 좋고 전체 약 119GB입니다. 일부만 받아 시작하세요.",
+ "skills_needed_ko": ["파이썬", "음성 인식 모델", "음성 전처리"],
+ "caveats_ko": ["60대 이상 화자가 2.5%로 적음", "화자 성별 건수 합계(약 100만)가 전체 50만 쌍과 맞지 않음", "메타데이터의 데이터 형식·라벨링 유형 칸이 비어 있음"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "주소 음성 받아쓰기", "title_en": "Address dictation", "desc_ko": "Whisper 같은 모델로 주소 음성을 받아쓰고 오류율을 잽니다.", "desc_en": "Transcribe address speech with a model like Whisper and measure errors."},
+  {"level": "capstone", "title_ko": "말로 주소 입력하는 배송 폼", "title_en": "Voice address input form", "desc_ko": "말한 주소를 인식하고 동의어 사전으로 표준 주소로 바꿔 입력해 줍니다.", "desc_en": "Recognise a spoken address and normalise it with the synonym list."},
+  {"level": "research", "title_ko": "줄임말 주소 정규화", "title_en": "Normalising abbreviated addresses", "desc_ko": "'강남역 2번 출구' 같은 표현형 주소를 정식 주소로 바꾸는 방법을 연구합니다.", "desc_en": "Study mapping casual address expressions to formal addresses."}
+ ],
+ "doc_used": true,
+ "uncertain": ["음성 파일 형식은 예시 파일명(.wav)으로만 확인"]
+}

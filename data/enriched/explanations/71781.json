@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71781",
+ "easy_ko": "고속도로와 일반 도로의 바닥을 앞쪽과 바로 위에서 아주 선명하게 찍은 사진 26만여 장에 포장 파손, 보수 자국, 시설 파손을 표시한 데이터입니다. 차를 막지 않고 도로 바닥을 자동으로 점검하는 AI에 쓸 수 있습니다.",
+ "easy_en": "Over 260,000 very sharp photos of highway and ordinary road surfaces taken from the front and straight down, marking pavement damage, repairs and damaged facilities. You can use it to build AI that inspects road surfaces automatically without closing lanes.",
+ "detail_ko": "고속도로와 일반도로 노면을 전방(108,556장)과 수직 아래(153,501장)로 찍은 고해상도(2048×2048 이상) 이미지 262,057장(jpg)에 포장 파손·보수·시설 파손 상자와 주의 관찰 대상 분할, 결함 유형(예: 균열, 차선)을 JSON으로 붙였습니다. 일부(50,000장)는 한국도로공사 제공 데이터이고, 결함 클래스 전체 목록과 성능 지표는 팩 앞부분에 없습니다.",
+ "detail_en": "262,057 high-resolution (2048×2048 or larger) images (jpg) of highway and ordinary road surfaces, 108,556 taken facing forward and 153,501 looking straight down, with JSON boxes for pavement damage, repairs and facility damage, segmentation of items to watch, and defect type (such as crack, lane marking). 50,000 images come from the Korea Expressway Corporation, and the full defect class list and any metrics are not in the pack.",
+ "amount_ko": "이미지 262,057장(전방 108,556, 노면수직 153,501)",
+ "amount_en": "262,057 images (108,556 forward, 153,501 top-down)",
+ "labels_ko": "파손 위치 상자, 영역, 결함 종류",
+ "labels_en": "bounding box, segmentation, defect type",
+ "status": "full-run-2026-11-02"
+}

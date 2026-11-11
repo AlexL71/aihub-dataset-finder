@@ -1,0 +1,29 @@
+{
+ "dataset_id": "71441",
+ "title_en": "Fashion accessory wearing data",
+ "summary_ko": "모자·안경테·선글라스·목걸이·귀걸이를 착용한 이미지 약 40만 장으로, 액세서리 영역이 다각형으로 칠해져 있고 색상·소재 등 제품 정보가 연결되어 있습니다. 액세서리 가상 피팅이나 패션 검색 AI에 쓸 수 있습니다.",
+ "summary_en": "About 400,000 images of people wearing hats, glasses frames, sunglasses, necklaces and earrings, with accessory areas outlined by polygons and linked product info such as colour and material. For virtual try-on and fashion search AI.",
+ "contents_ko": "착용 이미지 + JSON(2D 다각형 분할, 액세서리 종류·색상·소재 등 제품 정보).",
+ "contents_en": "Wearing image + JSON (2D polygon segmentation, accessory type, colour, material and other product info).",
+ "modalities": ["image"],
+ "tasks": ["segmentation", "image_classification", "retrieval_recommendation"],
+ "topics": [{"ko": "패션·쇼핑", "en": "Fashion and shopping"}, {"ko": "가상 피팅", "en": "Virtual try-on"}],
+ "keywords_ko": ["액세서리", "가상 피팅", "모자", "안경", "목걸이", "귀걸이"],
+ "keywords_en": ["accessories", "virtual try-on", "hats", "glasses", "necklaces", "earrings"],
+ "labels": ["polygon", "accessory type", "colour", "material"],
+ "file_formats": ["json"],
+ "scale_ko": "이미지 약 40만 장, 액세서리 5종(종류별 약 8만 장)",
+ "classes_example": ["모자", "안경테", "선글라스", "목걸이", "귀걸이"],
+ "baseline": [],
+ "difficulty": "intermediate",
+ "difficulty_note_ko": "분할 실습에 좋지만 전체 약 437GB로 매우 큽니다. 한 종류만 받아 쓰세요.",
+ "skills_needed_ko": ["파이썬", "분할 모델", "이미지 처리"],
+ "caveats_ko": ["전체 약 437GB", "통계표 합계가 40,000으로 적혀 있어 각 종류 합(약 40만)과 맞지 않음", "데이터 형식이 txt로 적혀 있어 이미지 형식이 불분명함", "성능 지표 값이 페이지에 없음"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "액세서리 종류 분류", "title_en": "Accessory type classification", "desc_ko": "사진 속 액세서리가 모자·안경·목걸이 중 무엇인지 분류합니다.", "desc_en": "Classify which accessory is worn in a photo."},
+  {"level": "capstone", "title_ko": "비슷한 액세서리 추천", "title_en": "Similar accessory recommender", "desc_ko": "착용 사진에서 액세서리를 잘라 색상·소재가 비슷한 상품을 찾아 줍니다.", "desc_en": "Cut out the accessory and find products with similar colour and material."},
+  {"level": "research", "title_ko": "작은 액세서리 분할", "title_en": "Small accessory segmentation", "desc_ko": "귀걸이처럼 작은 물체의 분할 정확도를 높이는 방법을 연구합니다.", "desc_en": "Improve segmentation of tiny items like earrings."}
+ ],
+ "doc_used": true,
+ "uncertain": ["이미지 파일 형식", "총 이미지 수(40만 vs 표 합계 4만)"]
+}

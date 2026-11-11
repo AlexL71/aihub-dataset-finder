@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71829",
+ "easy_ko": "실내 육묘장에서 키운 고추, 토마토, 배추, 파프리카, 상추, 양배추 모종 사진 27만여 장에 떡잎, 본잎 몇 장 같은 자라는 단계와 모종 영역을 표시한 데이터입니다. 모종 키우는 환경을 맞추고 얼마나 빨리 자랄지 예측하는 AI에 쓸 수 있습니다.",
+ "easy_en": "Over 270,000 photos of pepper, tomato, Chinese cabbage, paprika, lettuce and cabbage seedlings grown in an indoor nursery, marked with growth stage (such as seed leaves or a given number of true leaves) and seedling areas. You can use it to build AI that tunes nursery conditions and predicts how fast seedlings grow.",
+ "detail_ko": "실내 육묘장에서 키운 작물 6종(각 약 45,000건)의 모종 이미지 271,906건(jpg)에 상자, 분할 다각형, 생장 단계(떡잎, 본엽2매, 본엽4매, 본엽4매~8매, 화방발생, 분지발생), 환경 정보를 JSON으로 붙였습니다. mAP·mIoU·MAPE로 평가한다고 하나 수치는 팩에 없고, 실내 육묘장 환경이라 노지와 다를 수 있습니다. 71826 신품종 종자 데이터와 같은 기관입니다.",
+ "detail_en": "271,906 seedling images (jpg) of 6 crops (about 45,000 each) grown in an indoor nursery, with JSON boxes, polygons, growth stage (cotyledon, 2 true leaves, 4 true leaves, 4 to 8 true leaves, flower cluster, branching) and environment data. mAP, mIoU and MAPE are said to be the metrics, but no values are in the pack, and indoor conditions may differ from fields. Same builder as the breeding set 71826.",
+ "amount_ko": "이미지 271,906건, 작물 6종",
+ "amount_en": "271,906 images, 6 crops",
+ "labels_ko": "모종 위치 상자와 테두리, 자라는 단계",
+ "labels_en": "bounding box, polygon, growth stage",
+ "status": "full-run-2026-11-02"
+}

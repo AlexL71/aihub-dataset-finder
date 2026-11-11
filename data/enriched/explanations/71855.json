@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71855",
+ "easy_ko": "교과서와 참고서에서 모은 교과 글과 그림 87만여 건을 교육과정 성취 기준과 연결하고, 그림 영역, 질문과 답, 그림 설명을 붙인 데이터입니다. 국어, 영어, 수학, 과학 같은 과목 내용을 묻고 답하는 AI에 쓸 수 있습니다.",
+ "easy_en": "Over 870,000 text and image items from textbooks and study guides, linked to curriculum achievement standards, with figure areas, questions and answers and image descriptions. You can use it to build AI that answers questions about subjects such as Korean, English, maths and science.",
+ "detail_ko": "교과서·참고서에서 모은 교과 텍스트 562,489건과 이미지 310,748건(png), 총 873,237건을 2022 개정 교육과정 성취기준과 연결하고 그림 영역 상자, 질의응답, 이미지 설명을 JSON으로 붙였습니다. 과목은 국어, 영어, 수학, 사회, 과학, 정보, 사회문화, 기술가정, 도덕 9종입니다. 출판사 저작물 기반이라 이용 조건을 확인해야 하고, 품질 점수(F1 99.4 등)는 라벨 정확도이며 모델 성능 수치는 팩에 없습니다.",
+ "detail_en": "873,237 items (562,489 texts and 310,748 images, png) from textbooks and study guides, linked to the 2022 revised national curriculum standards, with JSON figure boxes, question-answer pairs and image captions, across 9 subjects (Korean, English, maths, social studies, science, informatics, society and culture, technology and home economics, ethics). It is based on publishers' works, so check the terms of use; quality scores (such as F1 99.4) describe label accuracy, and no model scores are in the pack.",
+ "amount_ko": "총 873,237건(텍스트 562,489, 이미지 310,748), 과목 9종",
+ "amount_en": "873,237 items (562,489 texts, 310,748 images), 9 subjects",
+ "labels_ko": "그림 위치 상자, 질문과 답, 그림 설명",
+ "labels_en": "bounding box, question-answer, caption",
+ "status": "full-run-2026-11-02"
+}

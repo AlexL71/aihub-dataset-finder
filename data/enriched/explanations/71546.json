@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71546",
+ "easy_ko": "아파트, 주택, 빌라 같은 실제 한국 집과 모델하우스를 찍어 만든 입체 공간 모형 2,000개에 공간 종류와 영역을 표시한 데이터입니다. 로봇이나 AI 도우미가 집 안을 이해하고 말로 한 명령을 따르는 연구에 쓸 수 있습니다.",
+ "easy_en": "2,000 three-dimensional models of real Korean homes such as apartments, houses and villas, plus show homes, with space types and areas marked. You can use it for research on robots or AI assistants that understand a home and follow spoken commands.",
+ "detail_ko": "아파트·주택·빌라·오피스텔·타운하우스 등 실제 한국 생활 공간과 모델하우스를 촬영해 만든 3D 공간 2,000개(주거용 1,627개 포함; FBX/OBJ, 텍스처 PNG)에 공간 분류와 분할을 JSON으로 붙였습니다. 데이터 통계 표가 연어·명태 수중 이미지 데이터로 잘못 올라가 있고, 페이지 형식은 FBX, 설명서는 OBJ로 적혀 있으며, 데이터 유형이 '텍스트'로 적혀 있지만 실제는 3D입니다. 성능 지표는 없고, 71547 명령어·71548 물체 데이터와 함께 쓰는 세트입니다.",
+ "detail_en": "2,000 3D spaces (including 1,627 residential; FBX/OBJ with PNG textures) built from real Korean homes (apartments, houses, villas, officetels, townhouses) and show homes, with JSON space type and segmentation. The statistics table on the page wrongly shows an underwater salmon/pollock image dataset, the page says FBX while the manual says OBJ, and the data type is listed as 'text' although it is 3D. There are no metrics. It is meant to be used with the command set 71547 and the object set 71548.",
+ "amount_ko": "3D 공간 2,000개(주거용 1,627개)",
+ "amount_en": "2,000 3D spaces (1,627 residential)",
+ "labels_ko": "공간 종류, 공간 영역",
+ "labels_en": "space type, segmentation",
+ "status": "full-run-2026-11-02"
+}

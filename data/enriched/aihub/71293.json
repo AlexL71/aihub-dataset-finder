@@ -1,0 +1,29 @@
+{
+ "dataset_id": "71293",
+ "title_en": "Underwater household waste image data in rivers and ports",
+ "summary_ko": "부산항·울산항·평택항·한강·낙동강·거제·사천 물속에서 직접 찍은 이미지 약 74만 장에 루어·낚시추·유리병·음료수 캔·통조림 캔·페트병·장갑·의류·고철·마스크 10종 쓰레기 약 82만 개를 분할 영역으로 표시한 데이터입니다. 수중 쓰레기를 찾아 수거하는 로봇·모니터링 AI에 쓸 수 있습니다.",
+ "summary_en": "About 740,000 underwater images from Busan, Ulsan and Pyeongtaek ports, the Han and Nakdong rivers, Geoje and Sacheon, with about 820,000 pieces of waste in 10 classes (fishing lures, sinkers, glass bottles, drink cans, food cans, PET bottles, gloves, clothes, scrap metal, masks) marked by segmentation. For robots and monitoring AI that find and collect underwater waste.",
+ "contents_ko": "수중 이미지(png) + JSON(분할 영역, 쓰레기 종류, 수집 지역).",
+ "contents_en": "Underwater images (png) + JSON (segmentation, waste class, location).",
+ "modalities": ["image"],
+ "tasks": ["segmentation", "object_detection"],
+ "topics": [{"ko": "해양·하천 환경", "en": "Marine and river environment"}, {"ko": "쓰레기·재활용", "en": "Waste and recycling"}],
+ "keywords_ko": ["수중 쓰레기", "해양 오염", "폐어구", "수중 로봇", "환경 모니터링"],
+ "keywords_en": ["underwater waste", "marine pollution", "fishing gear", "underwater robot", "environmental monitoring"],
+ "labels": ["segmentation", "waste class", "location"],
+ "file_formats": ["png", "json"],
+ "scale_ko": "이미지 약 74만 장, 쓰레기 객체 약 82만 개, 10종, 수집 지역 7곳",
+ "classes_example": ["루어", "낚시추", "유리병", "음료수 캔", "페트병", "장갑", "마스크"],
+ "baseline": [],
+ "difficulty": "intermediate",
+ "difficulty_note_ko": "분할 실습에 좋지만 전체 약 837GB이고 물속이라 흐리고 어둡습니다.",
+ "skills_needed_ko": ["파이썬", "분할 모델", "YOLO 탐지"],
+ "caveats_ko": ["전체 약 837GB", "수중 탁도 때문에 화질이 낮음", "성능 지표 표가 팩에서 비어 있음", "데이터 영역이 '한국어'로 잘못 표기됨(AI Hub 오류)"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "수중 페트병·캔 탐지", "title_en": "Underwater bottle and can detection", "desc_ko": "물속 사진에서 페트병과 캔을 찾습니다.", "desc_en": "Detect PET bottles and cans in underwater photos."},
+  {"level": "capstone", "title_ko": "항만 쓰레기 지도", "title_en": "Port waste map", "desc_ko": "지역별 탐지 결과로 쓰레기 종류·밀도 지도를 만듭니다.", "desc_en": "Map waste type and density by location."},
+  {"level": "research", "title_ko": "탁한 물 영상 개선", "title_en": "Murky-water enhancement", "desc_ko": "영상 복원으로 흐린 수중 사진의 탐지 성능을 높이는 방법을 연구합니다.", "desc_en": "Improve detection in murky water with image enhancement."}
+ ],
+ "doc_used": true,
+ "uncertain": ["baseline values"]
+}

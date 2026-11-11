@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71307",
+ "easy_ko": "수능 시험의 필적 확인 문구를 디지털펜으로 직접 쓴 글씨와, 그 글씨체를 흉내 내어 쓴 가짜 글씨를 모으고 필압·쓰는 속도 같은 정보를 붙인 데이터입니다. 서명이나 글씨가 진짜 본인 것인지 가려내는 필적 감정 AI를 만들 수 있습니다.",
+ "easy_en": "Handwriting of the identity-check phrases used in Korea's college entrance exam, written with a digital pen, plus imitations of each person's handwriting, with details such as pen pressure and writing speed. You can build handwriting-forensics AI that tells whether a signature or writing really belongs to a person.",
+ "detail_ko": "수능·모의평가 필적 확인 문구 30개를 디지털펜으로 쓴 자필과 모사 필기 이미지 약 1,300만 장(8.7만 세트, 자필·모사 반반, png)에 자필/모사 구분과 필압·필기 속도 등 필기 속성 24종을 JSON으로 붙였습니다. 기준 성능은 Siamese network(CNN-LSTM) 자필·모사 판별 EER 18%로 아직 어려운 문제입니다. 개인 필체라 생체정보 성격이 있어 사용 조건 확인이 필요하며, 라벨의 날씨 정보는 의미가 불분명합니다.",
+ "detail_en": "About 13M handwriting images (87k sets, half genuine and half forged; png) of 30 exam identity-check phrases written with a digital pen, with JSON genuine/forged label and 24 writing attributes such as pen pressure and speed. Baseline: Siamese network (CNN-LSTM) verification EER 18%, so the task remains hard. Personal handwriting is biometric-like data, so check usage terms; the weather field in the labels is unclear.",
+ "amount_ko": "글씨 사진 약 1,300만 장, 8.7만 세트",
+ "amount_en": "about 13M handwriting images, 87k sets",
+ "labels_ko": "진짜·흉내 낸 글씨 구분, 필압·속도 등 쓰기 정보, 문구",
+ "labels_en": "genuine or forged, writing attributes such as pressure and speed, phrase",
+ "status": "full-run-2026-11-02"
+}

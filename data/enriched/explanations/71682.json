@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71682",
+ "easy_ko": "전력 설비 9가지에서 잰 '부분 방전'(전기가 조금씩 새는 현상) 신호 그림 30만 장과 같은 때의 신호 기록에 방전 종류와 잡음, 온도와 습도를 표시한 데이터입니다. 전기 화재의 주요 원인인 부분 방전을 미리 진단하는 AI에 쓸 수 있습니다.",
+ "easy_en": "300,000 signal images of 'partial discharge' (small electrical leaks) measured on 9 kinds of power equipment, with matching signal recordings labelled by discharge type, noise, temperature and humidity. You can use it to build AI that diagnoses partial discharge, a major cause of electrical fires, before it causes trouble.",
+ "detail_ko": "전력 설비 9종에서 측정한 부분방전 PRPD 이미지(png)와 같은 시점의 시계열 신호(csv) 300,000건(학습 239,980, 검증 30,010, 테스트 30,010)에 방전 유형(예: 표면방전, 노이즈), 설비 종류, 온도·습도 등 환경 정보를 JSON으로 붙였습니다. 노이즈가 약 20%(60,000개) 포함되고, 방전 유형 전체 목록과 성능 지표는 팩 앞부분에 없으며, 실험실 획득 데이터일 가능성을 확인해야 합니다.",
+ "detail_en": "300,000 records (239,980 train, 30,010 validation, 30,010 test) of partial-discharge PRPD images (png) and simultaneous time-series signals (csv) from 9 kinds of power equipment, with JSON discharge type (such as surface discharge, noise), equipment type and environment data such as temperature and humidity. About 20% (60,000) are noise, the full list of discharge types and any metrics are not in the pack, and the data may have been collected in a lab.",
+ "amount_ko": "300,000건(학습 239,980, 검증 30,010, 테스트 30,010), 설비 9종",
+ "amount_en": "300,000 records (239,980 train, 30,010 validation, 30,010 test), 9 equipment types",
+ "labels_ko": "방전 종류, 설비 종류, 온도·습도",
+ "labels_en": "discharge type, equipment type, environment data",
+ "status": "full-run-2026-11-02"
+}

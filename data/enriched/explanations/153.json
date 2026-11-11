@@ -1,0 +1,12 @@
+{
+ "dataset_id": "153",
+ "easy_ko": "가지·고추·딸기·상추·수박·오이·참외·토마토 같은 비닐하우스 작물의 잎과 열매 사진마다 건강한지, 흰가루병·잿빛곰팡이병 같은 어떤 병에 걸렸는지 표시한 데이터입니다. 하우스 농가에서 작물 병을 빨리 찾아 주는 진단 앱을 만들 수 있습니다.",
+ "easy_en": "Photos of leaves and fruit of greenhouse crops such as eggplant, chili pepper, strawberry, lettuce, watermelon, cucumber, oriental melon and tomato, each marked as healthy or with a disease such as powdery mildew or grey mould. You can build diagnosis apps that help greenhouse farmers spot diseases early.",
+ "detail_ko": "시설 작물 12종의 학습 데이터 약 46만 건(정상 약 20.5만, 질병 원본 2만 + 증강 20만, jpg)으로, JSON에 작물, 질병 코드(20여 종), 촬영 부위, 피해 정도, 관심 영역 바운딩박스가 있습니다. 기준 성능 지표는 없습니다. 전체 약 830GB이고, 증강본이 많아 원본 기준으로 데이터를 나눠야 합니다.",
+ "detail_en": "About 460k training items for 12 greenhouse crops (about 205k healthy; 20k original disease photos plus 200k augmentations; jpg), with JSON crop, disease code (20+ diseases), plant part, damage level and region-of-interest box. No baseline is published. Total size is about 830 GB; many images are augmentations, so split by original image.",
+ "amount_ko": "학습 데이터 약 46만 건, 작물 12종",
+ "amount_en": "about 460k training items, 12 crops",
+ "labels_ko": "작물·병 종류, 병든 부위 상자, 촬영 부위, 피해 정도",
+ "labels_en": "crop and disease class, box around the affected area, plant part, damage level",
+ "status": "full-run-2026-11-02"
+}

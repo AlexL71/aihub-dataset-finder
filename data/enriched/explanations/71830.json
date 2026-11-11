@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71830",
+ "easy_ko": "여러 대학병원의 위암 조직 슬라이드를 바탕으로 AI가 만든 가짜 병리 사진 1만 장에 세포핵 영역과 판독문을 붙인 데이터입니다. 병리 진단을 돕는 AI 연구에 쓸 수 있습니다.",
+ "easy_en": "10,000 fake pathology image patches made by AI from gastric cancer tissue slides at several university hospitals, with cell-nucleus areas and pathology reports. You can use it for research on AI that supports pathology diagnosis.",
+ "detail_ko": "여러 대학병원의 위암 병리 슬라이드를 바탕으로 만든 합성 병리 패치 이미지 10,000건(png)에 세포핵 분할, 유형(위염, 장형선암, 미만형선암, 혼합형선암; 4종 각 2,500건), 판독문을 JSON으로 붙였습니다. 실제가 아닌 합성 이미지라 실제 진단 성능은 따로 검증해야 하고, 성능 수치는 팩에 없으며, 의료 데이터라 이용 신청 조건을 확인해야 합니다. 71831 유방암 합성데이터과 같은 구조입니다.",
+ "detail_en": "10,000 synthetic pathology patch images (png) based on gastric cancer slides from several university hospitals, with JSON nucleus segmentation, type (gastritis, intestinal-type, diffuse-type and mixed-type adenocarcinoma; 4 types × 2,500) and report text. These are synthetic, so real diagnostic performance must be checked separately; no scores are in the pack, and as medical data the access conditions should be checked. Same structure as the breast cancer set 71831.",
+ "amount_ko": "합성 이미지 10,000건, 유형 4종 각 2,500건",
+ "amount_en": "10,000 synthetic images, types 4 types × 2,500",
+ "labels_ko": "세포핵 영역, 유형, 판독문",
+ "labels_en": "segmentation mask, class, report text",
+ "status": "full-run-2026-11-02"
+}

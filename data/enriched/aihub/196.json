@@ -1,0 +1,29 @@
+{
+ "dataset_id": "196",
+ "title_en": "Lane and crosswalk recognition images (outside the capital area)",
+ "summary_ko": "광역시·고속도로·국도 주행 영상에서 뽑은 이미지 약 85만 장으로, 차선(점선/실선, 백·황·청색), 정지선, 횡단보도 위치가 선과 다각형으로 표시되어 있습니다. 자율주행 차선 인식과 정밀 지도 자동 제작에 쓸 수 있습니다.",
+ "summary_en": "About 850,000 images from driving on metropolitan roads, expressways and national roads, with lanes (dashed or solid; white, yellow, blue), stop lines and crosswalks marked as lines and polygons. For self-driving lane recognition and automatic HD map making.",
+ "contents_ko": "주행 이미지 + JSON(차선·정지선 폴리라인, 횡단보도 다각형, 차선 속성).",
+ "contents_en": "Driving image + JSON (lane and stop-line polylines, crosswalk polygons, lane attributes).",
+ "modalities": ["image"],
+ "tasks": ["segmentation", "object_detection"],
+ "topics": [{"ko": "자율주행", "en": "Self-driving"}, {"ko": "도로 표시", "en": "Road markings"}],
+ "keywords_ko": ["차선 인식", "횡단보도", "정지선", "자율주행", "정밀지도"],
+ "keywords_en": ["lane detection", "crosswalk", "stop line", "self-driving", "HD map"],
+ "labels": ["polyline (lanes, stop lines)", "polygon (crosswalks)", "lane attributes"],
+ "file_formats": ["jpg", "json"],
+ "scale_ko": "이미지 850,407장(수도권 데이터 197번과 합쳐 차선 약 1,091만, 횡단보도 85만, 정지선 63만 개)",
+ "classes_example": ["백색 실선", "백색 점선", "황색 실선", "청색 차선", "정지선", "횡단보도"],
+ "baseline": [{"task": "lane/crosswalk area detection", "model": "FCN ResNet50", "metric": "F1-score", "value": "0.8972"}],
+ "difficulty": "intermediate",
+ "difficulty_note_ko": "차선 분할은 공개 예제가 많아 실습하기 좋습니다. 약 600GB입니다.",
+ "skills_needed_ko": ["파이썬", "분할 모델", "폴리라인 라벨을 마스크로 바꾸기"],
+ "caveats_ko": ["객체 수는 수도권 데이터와 합친 값"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "횡단보도 분할", "title_en": "Crosswalk segmentation", "desc_ko": "주행 이미지에서 횡단보도를 칠하는 모델을 학습합니다.", "desc_en": "Train a model that paints crosswalks."},
+  {"level": "capstone", "title_ko": "차선 이탈 경고", "title_en": "Lane departure warning", "desc_ko": "차선을 인식해 차가 선을 벗어나면 경고하는 데모를 만듭니다.", "desc_en": "Detect lanes and warn when the car drifts out."},
+  {"level": "research", "title_ko": "희미한 차선 인식", "title_en": "Recognising faded lanes", "desc_ko": "지워진 차선·야간 영상에서 인식을 개선하는 방법을 연구합니다.", "desc_en": "Improve recognition of faded lanes and night images."}
+ ],
+ "doc_used": true,
+ "uncertain": []
+}

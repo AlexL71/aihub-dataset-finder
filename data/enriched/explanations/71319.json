@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71319",
+ "easy_ko": "진안 홍삼 가공 업체 저장고의 홍삼을 엑스레이로 찍은 사진마다 속이 빈 곳과 하얗게 된 곳의 위치, 품질 등급(상·중·하·최하)을 표시한 데이터입니다. 홍삼을 자르지 않고도 속 품질을 자동으로 판정하는 AI를 만들 수 있습니다.",
+ "easy_en": "X-ray images of red ginseng roots stored at a processing company in Jinan, each marked with hollow and whitened spots inside and a quality grade (top, middle, low, lowest). You can build AI that judges the inner quality of red ginseng without cutting it.",
+ "detail_ko": "진안 홍삼 가공업체 저장고의 홍삼 약 18만 개를 X-ray로 두 방향씩 촬영한 이미지 약 36만 장(jpg)에 내공·내백 바운딩박스와 품질 등급 4종(상, 중, 하, 최하)을 JSON으로 붙이고 메타 정보(csv)를 함께 제공합니다. 기준 성능은 YOLOv5 품질 분류 F1 69.5로 높지 않습니다. 등급이 크게 치우쳐 있고(상 3.6%, 최하 70%) 진안 지역 홍삼만 있습니다.",
+ "detail_en": "About 360k X-ray images (jpg) of about 180k red ginseng roots, two views each, from a Jinan processor's storage, with JSON boxes for internal hollows and white cores, quality grade (top, middle, low, lowest) and metadata (csv). Baseline: YOLOv5 quality classification F1 69.5, which is modest. Grades are skewed (top 3.6%, lowest 70%); only Jinan ginseng is included.",
+ "amount_ko": "엑스레이 사진 약 36만 장, 등급 4종",
+ "amount_en": "about 360k X-ray images, 4 grades",
+ "labels_ko": "속 빈 곳·흰 곳 위치 상자, 품질 등급",
+ "labels_en": "boxes around hollow and white areas, quality grade",
+ "status": "full-run-2026-11-02"
+}

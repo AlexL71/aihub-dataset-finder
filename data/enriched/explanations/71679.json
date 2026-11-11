@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71679",
+ "easy_ko": "스마트 공장의 일반 CCTV와 열화상 CCTV 영상, 여기서 뽑은 사진 40만 장에 울타리 넘기 같은 침입, 사람이 다치는 사고, 불을 표시하고 장면 설명도 붙인 데이터입니다. 공장 안전을 지켜보며 위험 상황을 자동으로 알아채는 AI에 쓸 수 있습니다.",
+ "easy_en": "Ordinary and thermal CCTV videos from smart factories and 400,000 images taken from them, marking intrusions such as climbing fences, accidents where people get hurt, and fire, with scene descriptions. You can use it to build AI that watches over factory safety and detects danger automatically.",
+ "detail_ko": "스마트 공장 일반·열화상 CCTV 영상 20,000개(mp4; 침입탐지 10,000, 인명사고 9,000, 화재감시 1,000)와 이미지 400,000장(png)에 상황 클래스(미침입, 펜스 월장, 펜스 훼손, 인명사고, 화재) 상자·분할과 이미지 설명문 10,020개를 JSON으로 붙였습니다(라벨 420,000개). 전체 약 1,518GB이고, 화재감시 영상이 1,000개로 적으며, 재연된 상황일 가능성을 확인해야 합니다. 성능 지표 값은 팩에 없고, 무인 플랜트(71677)와 같은 기관·구조입니다.",
+ "detail_en": "20,000 visible and thermal CCTV videos (mp4; 10,000 intrusion, 9,000 injury accident, 1,000 fire) from smart factories and 400,000 images (png), with JSON boxes and segmentation for situation classes (no intrusion, fence climbing, fence damage, injury accident, fire) and 10,020 image captions (420,000 labels). Total size is about 1,518 GB. Fire videos are few (1,000), and situations may be staged. No metric values are in the pack; same builder and structure as the unmanned-plant set 71677.",
+ "amount_ko": "영상 20,000개, 이미지 400,000장, 라벨 420,000개",
+ "amount_en": "20,000 videos, 400,000 images, 420,000 labels",
+ "labels_ko": "위험 상황 위치 상자와 영역, 상황 종류, 장면 설명",
+ "labels_en": "bounding boxes, segmentation, situation class, caption",
+ "status": "full-run-2026-11-02"
+}

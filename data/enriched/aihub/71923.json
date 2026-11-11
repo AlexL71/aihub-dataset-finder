@@ -1,0 +1,29 @@
+{
+ "dataset_id": "71923",
+ "title_en": "NEW renewable energy generation facility defect diagnosis multimodal data",
+ "summary_ko": "드론으로 찍은 풍력 발전기(80,906장)와 태양광 패널(19,710장)의 RGB·열화상 이미지 100,616장으로, 결함 75,459장과 정상 25,157장이 분할 영역과 시각 질의응답으로 표시되어 있습니다. 오염·페인트 손상·라미네이트 노출·본드 크랙·리셉터 결함·열점 등 결함을 자동으로 찾고 설명하는 발전 설비 점검 AI에 쓸 수 있습니다.",
+ "summary_en": "100,616 drone RGB and thermal images of wind turbines (80,906) and solar panels (19,710): 75,459 defect and 25,157 normal, with segmentation and visual QA. For inspection AI that finds and explains defects such as contamination, paint damage, exposed or damaged laminate, bond cracks, receptor faults and hot spots.",
+ "contents_ko": "RGB·열화상 이미지(jpg) + JSON(결함 분할, 질의응답).",
+ "contents_en": "RGB and thermal image (jpg) + JSON (defect segmentation, QA).",
+ "modalities": ["image", "text"],
+ "tasks": ["segmentation", "visual_qa", "anomaly_detection"],
+ "topics": [{"ko": "신재생 에너지", "en": "Renewable energy"}, {"ko": "설비 점검", "en": "Facility inspection"}],
+ "keywords_ko": ["풍력 발전기", "태양광 패널", "드론 점검", "열화상", "결함 탐지", "VQA"],
+ "keywords_en": ["wind turbine", "solar panel", "drone inspection", "thermal imaging", "defect detection", "VQA"],
+ "labels": ["segmentation", "question-answer"],
+ "file_formats": ["jpg", "json"],
+ "scale_ko": "이미지 100,616장(풍력 80,906·태양광 19,710, 결함 75,459·정상 25,157)",
+ "classes_example": ["정상 날개", "정상 패널", "오염", "페인트 데미지", "라미네이트 노출", "라미네이트 데미지", "본드 크랙", "리셉터 결함", "레인카라 결함", "와류발전기 결함", "열점 결함"],
+ "baseline": [],
+ "difficulty": "advanced",
+ "difficulty_note_ko": "전체 약 668GB로 큽니다. 일부 이미지로 결함 분할부터 시작하세요.",
+ "skills_needed_ko": ["파이썬", "분할 모델(YOLO-seg 등)", "비전-언어 모델(VLM) 기초", "열화상 이미지 처리"],
+ "caveats_ko": ["페이지에 성능 점수 표가 없음(결함 탐지·질의응답 모델 소개만 있음)", "결함이 '10종'이라 쓰였지만 나열된 이름은 9개", "풍력이 약 80%로 태양광보다 훨씬 많음"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "정상·결함 분류", "title_en": "Normal vs defect", "desc_ko": "날개·패널 이미지가 정상인지 결함인지 분류합니다.", "desc_en": "Classify blade or panel images as normal or defective."},
+  {"level": "capstone", "title_ko": "드론 점검 보고서", "title_en": "Drone inspection report", "desc_ko": "결함 영역을 분할하고 종류와 조치를 글로 정리해주는 도구를 만듭니다.", "desc_en": "Segment defects and write a short action report."},
+  {"level": "research", "title_ko": "RGB+열화상 융합", "title_en": "RGB-thermal fusion", "desc_ko": "두 이미지를 함께 써서 열점 결함 탐지를 개선하는 방법을 연구합니다.", "desc_en": "Study fusing RGB and thermal for better hot-spot detection."}
+ ],
+ "doc_used": true,
+ "uncertain": ["결함 클래스 수(10종 vs 9개 이름)"]
+}

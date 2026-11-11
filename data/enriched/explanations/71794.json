@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71794",
+ "easy_ko": "국회에 공개된 법률안 검토 보고서 5만 건을 바탕으로 3만 건 넘는 보고서 요약을 만든 데이터입니다. 법을 새로 만들거나 고치는 보고서를 쉽게 요약해 주는 AI에 쓸 수 있습니다.",
+ "easy_en": "Over 30,000 summaries of bill review reports, made from 50,000 reports published by the National Assembly. You can use it to build AI that summarises reports on new or amended laws in plain terms.",
+ "detail_ko": "국회 의안정보시스템에 공개된 법률안 검토보고서(원시 5만 건)를 바탕으로 만든 보고서 요약 라벨 3만 건 이상(txt, JSON)입니다. 정확한 라벨 수가 '3만 건 이상'으로만 적혀 있고, 성능 지표 값은 팩에 없습니다. 71795(국회 회의록)와 같은 기관입니다.",
+ "detail_en": "30,000+ summary labels (txt, JSON) made from bill review reports published in the National Assembly bill information system (50,000 raw reports). The exact label count is given only as '30,000 or more', and no metric values are in the pack. Same builder as the Assembly minutes set 71795.",
+ "amount_ko": "원시 5만 건, 요약 라벨 3만 건 이상",
+ "amount_en": "50,000 raw reports, 30,000+ summary labels",
+ "labels_ko": "보고서 요약",
+ "labels_en": "summary",
+ "status": "full-run-2026-11-02"
+}

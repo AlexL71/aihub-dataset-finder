@@ -1,0 +1,29 @@
+{
+ "dataset_id": "71753",
+ "title_en": "Rock mass grade classification data from bedrock drill cores",
+ "summary_ko": "기반암 시추 시료(코어) 이미지 약 66만 장으로, 화성암·변성암·퇴적암 같은 암종 분류 이미지 550,080장과 절리·단층을 다각형으로 표시한 이미지 111,345장, 30여 개 메타 정보가 있습니다. 시추 시료의 암종과 암반 등급을 자동으로 판정하는 AI에 쓸 수 있습니다.",
+ "summary_en": "About 660k bedrock drill-core images: 550,080 for rock-type classification (igneous, metamorphic, sedimentary) and 111,345 with joints and faults marked by polygons, plus about 30 metadata fields. For automatic rock-type and rock-mass grading of cores.",
+ "contents_ko": "시추 코어 이미지(jpg) + JSON(암종 분류, 절리·단층 다각형, 메타 정보).",
+ "contents_en": "Drill-core image (jpg) + JSON (rock type, joint/fault polygons, metadata).",
+ "modalities": ["image"],
+ "tasks": ["image_classification", "segmentation"],
+ "topics": [{"ko": "지질·건설 지반", "en": "Geology and ground engineering"}, {"ko": "자원 탐사", "en": "Resource exploration"}],
+ "keywords_ko": ["시추 코어", "암종 분류", "절리", "단층", "암반 등급", "지질"],
+ "keywords_en": ["drill core", "rock type classification", "joints", "faults", "rock mass rating", "geology"],
+ "labels": ["rock type", "polygon", "metadata"],
+ "file_formats": ["jpg", "json"],
+ "scale_ko": "이미지 661,425장(암종 분류 550,080·절리 탐지 111,345)",
+ "classes_example": ["화성암", "변성암", "퇴적암", "절리", "단층"],
+ "baseline": [],
+ "difficulty": "intermediate",
+ "difficulty_note_ko": "분류·분할 실습에 좋고 약 291GB입니다. 지질 기초 지식이 있으면 더 좋습니다.",
+ "skills_needed_ko": ["파이썬", "이미지 분류(ResNet)", "분할 모델(DeepLabV3)"],
+ "caveats_ko": ["페이지에 성능 점수 표가 없음(ResNet·DeepLabV3 사용 소개만 있음)", "퇴적암이 12.5%로 적음", "같은 시추공 코어가 연속 이미지라 시추공 단위로 분할해야 함"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "암종 3분류", "title_en": "Three-way rock classifier", "desc_ko": "코어 사진을 화성암·변성암·퇴적암으로 분류합니다.", "desc_en": "Classify core photos as igneous, metamorphic or sedimentary."},
+  {"level": "capstone", "title_ko": "코어 상자 자동 기록", "title_en": "Core box auto-logging", "desc_ko": "코어 상자 사진에서 암종과 절리 위치를 자동으로 기록표로 만듭니다.", "desc_en": "Turn core-box photos into logs of rock type and joints."},
+  {"level": "research", "title_ko": "절리 분할로 암반 등급 추정", "title_en": "Rock grade from joint segmentation", "desc_ko": "분할된 절리 간격으로 암반 등급(RQD 등)을 자동 계산하는 방법을 연구합니다.", "desc_en": "Study computing rock-quality indices from segmented joints."}
+ ],
+ "doc_used": true,
+ "uncertain": []
+}

@@ -1,0 +1,32 @@
+{
+ "dataset_id": "87",
+ "title_en": "Customer service speech",
+ "summary_ko": "키오스크·매장에서 주문, 예약, 생활 문의를 하는 상황을 연기한 한국어 음성 3,000시간과 전사문입니다. 구매·예약·생활 3개 분야로 나뉘어 있어 음성으로 주문받는 키오스크나 고객 응대 음성 챗봇을 만들 수 있습니다.",
+ "summary_en": "3,000 hours of Korean speech with transcripts, acting out ordering, booking and everyday enquiries at kiosks and shops. Split into purchase, reservation and daily-life domains, for voice-ordering kiosks or customer-service voice bots.",
+ "contents_ko": "음성(wav) + 전사(txt) + 메타정보(json: 화자, 도메인, 대화 주제, 음성 품질).",
+ "contents_en": "Audio (wav) + transcript (txt) + metadata (json: speaker, domain, topic, audio quality).",
+ "modalities": ["audio", "text"],
+ "tasks": ["speech_recognition", "dialogue", "text_classification"],
+ "topics": [{"ko": "고객 서비스", "en": "Customer service"}, {"ko": "음성", "en": "Speech"}, {"ko": "매장·주문", "en": "Shops and ordering"}],
+ "keywords_ko": ["음성 인식", "키오스크", "음성 주문", "예약", "고객 응대", "보이스봇"],
+ "keywords_en": ["speech recognition", "kiosk", "voice ordering", "reservation", "customer service", "voice bot"],
+ "labels": ["transcript", "domain", "topic", "speaker info"],
+ "file_formats": ["wav", "txt", "json"],
+ "scale_ko": "음성 3,000시간(구매·예약·생활 각 1,000시간), 구축량 432만",
+ "classes_example": ["구매", "예약", "생활"],
+ "baseline": [
+  {"task": "speech recognition", "model": "Jasper", "metric": "CER", "value": "10.32%"},
+  {"task": "speech recognition", "model": "Jasper", "metric": "WER", "value": "29.88%"}
+ ],
+ "difficulty": "intermediate",
+ "difficulty_note_ko": "Whisper 같은 공개 음성 인식 모델로 바로 실습할 수 있습니다. 전체 약 250GB라 한 분야만 받아 시작하세요.",
+ "skills_needed_ko": ["파이썬", "오디오 다루기(librosa)", "음성 인식 모델 미세조정"],
+ "caveats_ko": ["가상 시나리오로 연기한 음성이라 실제 매장 소음과 다를 수 있음"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "주문 문장 의도 분류", "title_en": "Order intent classifier", "desc_ko": "전사문으로 주문·예약·문의 같은 의도를 분류합니다.", "desc_en": "Classify intents such as order, booking or enquiry from transcripts."},
+  {"level": "capstone", "title_ko": "카페 음성 주문 키오스크", "title_en": "Voice-ordering cafe kiosk", "desc_ko": "음성을 인식해 메뉴·수량을 뽑아 주문서를 만드는 데모를 만듭니다.", "desc_en": "Recognise speech and extract menu items and quantities into an order."},
+  {"level": "research", "title_ko": "어르신 음성 인식 개선", "title_en": "Speech recognition for older users", "desc_ko": "연령대별 인식 오류를 분석하고 키오스크 접근성을 높이는 미세조정을 연구합니다.", "desc_en": "Analyse errors by age group and fine-tune for kiosk accessibility."}
+ ],
+ "doc_used": true,
+ "uncertain": []
+}

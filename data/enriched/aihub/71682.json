@@ -1,0 +1,29 @@
+{
+ "dataset_id": "71682",
+ "title_en": "Partial discharge data for preventing electrical fires in industrial equipment",
+ "summary_ko": "9종 전력 설비에서 측정한 부분방전 PRPD 이미지 300,000장과 같은 시점의 시계열 신호에, 부분방전 유형(표면방전 등)과 노이즈, 온도·습도 같은 환경 정보가 라벨로 붙은 데이터입니다. 전기 화재의 주요 원인인 부분방전을 진단·예측하는 AI에 쓸 수 있습니다.",
+ "summary_en": "300,000 partial-discharge PRPD images and matching time-series signals from 9 types of power equipment, labelled with discharge type (e.g. surface discharge) or noise plus temperature and humidity. For AI that diagnoses and predicts partial discharge, a major cause of electrical fires.",
+ "contents_ko": "PRPD 이미지(png) + 부분방전 시계열(csv) + JSON(방전 유형, 설비, 환경 정보).",
+ "contents_en": "PRPD image (png) + partial-discharge time series (csv) + JSON (discharge type, equipment, environment).",
+ "modalities": ["image", "sensor"],
+ "tasks": ["image_classification", "anomaly_detection"],
+ "topics": [{"ko": "전기 안전", "en": "Electrical safety"}, {"ko": "설비 진단", "en": "Equipment diagnosis"}],
+ "keywords_ko": ["부분방전", "PRPD", "전기 화재", "전력 설비", "예지 보전", "시계열"],
+ "keywords_en": ["partial discharge", "PRPD", "electrical fire", "power equipment", "predictive maintenance", "time series"],
+ "labels": ["discharge type", "equipment type", "environment data"],
+ "file_formats": ["png", "csv", "json"],
+ "scale_ko": "300,000건(학습 239,980, 검증 30,010, 테스트 30,010), 전력 설비 9종",
+ "classes_example": ["표면방전", "노이즈"],
+ "baseline": [],
+ "difficulty": "intermediate",
+ "difficulty_note_ko": "약 36GB이고 이미지 분류로 시작할 수 있지만 전기 공학 지식이 있으면 해석이 쉽습니다.",
+ "skills_needed_ko": ["파이썬", "이미지 분류", "시계열 신호 처리"],
+ "caveats_ko": ["노이즈가 약 20%(60,000개) 포함됨", "방전 유형 전체 목록과 성능 지표가 팩 앞부분에 없음", "실험실 획득 데이터일 가능성 확인 필요"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "방전 vs 노이즈 분류", "title_en": "Discharge vs noise", "desc_ko": "PRPD 이미지가 실제 부분방전인지 노이즈인지 분류합니다.", "desc_en": "Classify PRPD images as discharge or noise."},
+  {"level": "capstone", "title_ko": "변전 설비 진단 대시보드", "title_en": "Substation diagnosis dashboard", "desc_ko": "측정 결과로 방전 유형과 위험도를 보여 주는 화면을 만듭니다.", "desc_en": "Show discharge type and risk from measurements."},
+  {"level": "research", "title_ko": "이미지+시계열 결합 진단", "title_en": "Image-time series fusion", "desc_ko": "PRPD 이미지와 원시 신호를 합쳐 진단 정확도를 높이는 방법을 연구합니다.", "desc_en": "Combine PRPD images and raw signals for diagnosis."}
+ ],
+ "doc_used": true,
+ "uncertain": ["방전 유형 목록", "설비 9종 목록"]
+}

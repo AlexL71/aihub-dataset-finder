@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71301",
+ "easy_ko": "은행·증권·보험 서류에 손으로 쓴 문서와, 수출입에 쓰는 선적 서류(선하증권, 포장명세서, 송장, 원산지증명서) 사진마다 단어가 있는 곳과 정답 글자를 표시한 데이터입니다. 금융·물류 서류를 자동으로 읽어 컴퓨터에 입력해 주는 업무 자동화 AI를 만들 수 있습니다.",
+ "easy_en": "Photos of handwritten bank, securities and insurance forms, and of shipping documents used in trade (bills of lading, packing lists, invoices, certificates of origin), with each word's position and correct text marked. You can build office-automation AI that reads finance and logistics paperwork and enters it into computer systems.",
+ "detail_ko": "은행·증권·보험 서식에 손으로 쓴 금융 문서 5만 장과 물류 선적 서류(선하증권, 포장명세서, 상업송장, 원산지증명서) 약 10.8만 장, 총 약 15.8만 장(png/jpg)에 단어·어절 영역 4점 다각형, 텍스트, 서식 종류를 JSON으로 붙였습니다. 성능 지표 표는 비어 있습니다. 작성 내용이 가상 정보인지 확인이 필요하며, 632번 금융 문서 OCR과 주제가 겹칩니다.",
+ "detail_en": "About 158k document images (png/jpg): 50k handwritten bank, securities and insurance forms and about 108k shipping documents (bills of lading, packing lists, commercial invoices, certificates of origin), with JSON 4-point polygons for words, transcription and form type. The performance table is empty. Check that contents are fictional; overlaps with dataset 632.",
+ "amount_ko": "문서 사진 약 15.8만 장(금융 5만, 물류 약 10.8만)",
+ "amount_en": "about 158k document images (50k finance, about 108k logistics)",
+ "labels_ko": "단어 위치 테두리, 정답 글자, 서류 종류",
+ "labels_en": "word polygons, transcription, form type",
+ "status": "full-run-2026-11-02"
+}

@@ -1,0 +1,29 @@
+{
+ "dataset_id": "564",
+ "title_en": "Smart insect farming data",
+ "summary_ko": "상업용 곤충 농장에서 찍은 동애등에·흰점박이꽃무지·갈색거저리·누에의 알·애벌레·번데기·성충·감염 개체 사진(일반·열화상)에 다각형 영역을 표시하고, 온습도 센서와 길이·무게·사료 등 관리 기록을 함께 담은 데이터입니다. 곤충 사육장을 자동으로 관리하는 AI에 쓸 수 있습니다.",
+ "summary_en": "RGB and thermal photos of black soldier flies, white-spotted flower chafers, mealworms and silkworms at commercial insect farms (eggs, larvae, pupae, adults, infected insects) marked with polygons, plus environment sensor data and records of length, weight and feed. For AI that manages insect farms automatically.",
+ "contents_ko": "곤충 RGB·열화상 이미지(jpg) + JSON(다각형, 종, 생육 단계) + 센서·관리 데이터.",
+ "contents_en": "Insect RGB and thermal images (jpg) + JSON (polygons, species, growth stage) + sensor and farm-management data.",
+ "modalities": ["image", "sensor", "tabular"],
+ "tasks": ["segmentation", "object_detection", "anomaly_detection", "tabular_prediction"],
+ "topics": [{"ko": "곤충 사육·스마트팜", "en": "Insect farming and smart farms"}, {"ko": "농업", "en": "Agriculture"}],
+ "keywords_ko": ["곤충 사육", "동애등에", "갈색거저리", "누에", "열화상", "스마트팜"],
+ "keywords_en": ["insect farming", "black soldier fly", "mealworm", "silkworm", "thermal imaging", "smart farm"],
+ "labels": ["polygon", "species", "growth stage", "infection status"],
+ "file_formats": ["jpg", "json"],
+ "scale_ko": "RGB 영상 12만 건 이상, 열화상 6.2만 건, 센서 18.2만 건, 관리 1만 건, 곤충 4종",
+ "classes_example": ["알", "애벌레", "번데기", "성충", "감염곤충"],
+ "baseline": [],
+ "difficulty": "intermediate",
+ "difficulty_note_ko": "약 70GB로 중간 크기이며 이미지와 센서 데이터를 함께 다룹니다.",
+ "skills_needed_ko": ["파이썬", "이미지 분할", "센서 데이터 분석"],
+ "caveats_ko": ["종·단계별 수량 차이가 큼(알은 500장뿐)", "성능 지표가 팩 앞부분에 없음"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "곤충 생육 단계 분류", "title_en": "Insect growth-stage classifier", "desc_ko": "사진으로 애벌레·번데기·성충을 구분합니다.", "desc_en": "Tell larvae, pupae and adults apart from photos."},
+  {"level": "capstone", "title_ko": "감염 개체 경보 시스템", "title_en": "Infected-insect alarm", "desc_ko": "사육장 사진에서 감염 곤충을 찾아 알림을 보냅니다.", "desc_en": "Find infected insects in farm photos and send alerts."},
+  {"level": "research", "title_ko": "환경-성장 관계 분석", "title_en": "Environment vs growth", "desc_ko": "온습도·사료량이 곤충 크기·무게에 주는 영향을 모델링합니다.", "desc_en": "Model how temperature, humidity and feed affect insect size and weight."}
+ ],
+ "doc_used": true,
+ "uncertain": []
+}

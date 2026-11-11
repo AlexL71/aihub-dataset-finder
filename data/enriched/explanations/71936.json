@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71936",
+ "easy_ko": "실제 도로를 본뜬 가상 도로에서 날씨, 시간, 차 종류를 바꿔 가며 만든 자율주행 가상 카메라 사진과 레이저 점 데이터로, 예전 데이터에서 중복을 덜어 낸 판입니다. 정답 표시는 없어, 실제로 만들기 어려운 돌발 상황 시험이나 미리 학습시키기에 쓸 수 있습니다.",
+ "easy_en": "Virtual camera images and laser point data for self-driving cars, generated on a copy of real roads while changing weather, time and vehicle type; this version removes duplicates from the older dataset. It has no labels, so it suits testing rare emergency situations or pre-training rather than supervised learning.",
+ "detail_ko": "디지털 트윈 도로 환경에서 날씨·시간·차량(승용차, 트럭, 버스) 조건을 바꿔 만든 자율주행 가상센서 시뮬레이션 데이터로, 가상 카메라 이미지 38,400,000장(png)과 가상 라이다 점군 38,400,000건(pcd)입니다(SSD 단위 180만 건씩). 기존 데이터를 중복 제거·경량화한 업사이클링판이며 라벨이 없어 지도학습 탐지에 바로 쓸 수 없습니다. 페이지에 성능 점수 표와 모델 설명이 없고, 가상 데이터라 실제 센서와 차이가 있으며, '경량화'판인데도 약 8TB입니다.",
+ "detail_en": "Virtual-sensor simulation data from a digital-twin road environment with varied weather, time and vehicles (cars, trucks, buses): 38,400,000 virtual camera images (png) and 38,400,000 virtual lidar point clouds (pcd), shipped 1.8 million per SSD. It is an upcycled version with duplicates removed and size reduced, and it has no labels, so it cannot be used directly for supervised detection. There is no score table or model description, simulated data differs from real sensors, and even this 'lightweight' version is about 8 TB.",
+ "amount_ko": "이미지 38,400,000장, PCD 38,400,000건",
+ "amount_en": "38,400,000 images, 38,400,000 point clouds",
+ "labels_ko": "정답 표시 없음(센서 원본만 있음)",
+ "labels_en": "none (unlabelled raw sensor data)",
+ "status": "full-run-2026-11-02"
+}

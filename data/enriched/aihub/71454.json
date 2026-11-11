@@ -1,0 +1,29 @@
+{
+ "dataset_id": "71454",
+ "title_en": "Korean-style vision data for image captioning",
+ "summary_ko": "한국에서 찍은 이미지 약 300만 장마다 한글·영문 설명문을 각 10개씩 붙인 대규모 이미지 설명 데이터입니다. 사진을 문장으로 설명하는 AI(시각장애인 화면 설명, 전시 해설 등)에 쓸 수 있습니다.",
+ "summary_en": "About 3 million images taken in Korea, each with 10 Korean and 10 English captions. For AI that describes pictures in sentences, e.g. screen descriptions for blind users or exhibition guides.",
+ "contents_ko": "이미지(jpg) + JSON(한글·영문 설명문 각 10개).",
+ "contents_en": "Image (jpg) + JSON (10 Korean and 10 English captions).",
+ "modalities": ["image", "text"],
+ "tasks": ["image_captioning", "retrieval_recommendation"],
+ "topics": [{"ko": "이미지 설명", "en": "Image description"}, {"ko": "접근성", "en": "Accessibility"}],
+ "keywords_ko": ["이미지 캡셔닝", "설명문", "한국어", "영어", "시각장애인", "멀티모달"],
+ "keywords_en": ["image captioning", "captions", "Korean", "English", "visually impaired", "multimodal"],
+ "labels": ["caption (Korean)", "caption (English)"],
+ "file_formats": ["jpg", "json"],
+ "scale_ko": "이미지 약 300만 장, 이미지당 한글·영문 설명문 각 10개",
+ "classes_example": [],
+ "baseline": [],
+ "difficulty": "advanced",
+ "difficulty_note_ko": "설명문 생성 모델은 학습이 무겁고 전체가 약 1.46TB입니다. 일부 카테고리로 작은 모델부터 시작하세요.",
+ "skills_needed_ko": ["파이썬", "트랜스포머", "멀티모달 모델"],
+ "caveats_ko": ["전체 약 1,463GB", "같은 300만 장 이미지가 탐지(71452)·분할(71453)·관계성(71456) 데이터와 공유됨", "성능 지표가 팩에 없음"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "사진으로 문장 검색", "title_en": "Caption-based photo search", "desc_ko": "설명문을 이용해 글로 사진을 찾는 검색 데모를 만듭니다.", "desc_en": "Search photos by text using the captions."},
+  {"level": "capstone", "title_ko": "시각장애인 사진 설명 앱", "title_en": "Photo describer for blind users", "desc_ko": "사진을 찍으면 한국어 설명을 읽어 주는 앱을 만듭니다.", "desc_en": "App that reads a Korean description of a photo aloud."},
+  {"level": "research", "title_ko": "한·영 설명문 비교", "title_en": "Korean vs English captioning", "desc_ko": "같은 이미지의 한글·영문 설명 생성 성능 차이를 연구합니다.", "desc_en": "Compare caption quality in Korean and English for the same images."}
+ ],
+ "doc_used": true,
+ "uncertain": []
+}

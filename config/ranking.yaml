@@ -1,0 +1,83 @@
+# Recommendation scoring (step after search). Used by processing/recommend.py.
+# The score answers one question: is this dataset related to this student? (decided 2026-11-02)
+#   interest   how well the dataset matches the student's free text and/or picked interest chips   (0..1)
+#   major      whether the dataset's domains are core/related domains of the student's major          (0..1)
+# score (0..10) = 10 * weighted mean of the parts the student gave (a part with no input is skipped).
+# Size, difficulty and the project idea are shown with each result as facts; they do not change the score.
+# The 0-10 scale is meant to be compared later with students' own 0-10 ratings in the pilot survey.
+
+weights:
+  # Student typed what they want: the request leads, the major breaks ties between similar matches.
+  # Chosen on the dev set, each question run with all 31 majors (868 runs): right dataset first
+  # 0.6/0.4 -> 35%, 0.7/0.3 -> 67%, 0.8/0.2 -> 91%, 0.9/0.1 -> 99.3%, 1.0/0.0 -> 100%.
+  with_text:
+    interest: 0.9
+    major: 0.1
+  # Only interest chips: the major counts more.
+  no_text:
+    interest: 0.6
+    major: 0.4
+
+candidates:
+  from_search: 150           # datasets taken from the search when the student typed text
+
+interest:
+  # Free text: best cosine (card or chunk) mapped linearly from [sim_low, sim_high] to [0, 1],
+  # mixed with the fused search rank (rrf score / best rrf score).
+  sim_low: 0.55
+  sim_high: 0.80
+  sim_share: 0.7             # 0.7 * similarity + 0.3 * fused rank
+  # Interest chips (domains the student picked)
+  chip_main: 1.0             # the chip is the dataset's main (first) domain
+  chip_other: 0.6            # the chip is one of its other domains
+  text_share: 0.7            # when both text and chips are given: 0.7 * text + 0.3 * chips
+
+major:
+  # major score = (1 - profile_share) * domain fit + profile_share * profile similarity
+  core_main: 1.0             # domain fit: dataset's main domain is a core domain of the major
+  core_other: 0.8            # another of its domains is core
+  related_main: 0.6
+  related_other: 0.5
+  # Profile similarity: the major profile text (summary, topics, data interests, project themes) is embedded
+  # once and compared with every dataset card, then scaled per major: its median dataset -> 0, its most
+  # similar dataset -> 1. This ranks datasets inside the major's own field.
+  # Result with 0.5 (major only, no text): datasets in the major's field score 4-10, the best one outside
+  # the field about 3.5; top-20 scores spread over ~2.7 points (percentile scaling gave 0.5 points).
+  profile_share: 0.5
+
+diversity:
+  # MMR: pick the next dataset by lambda * score - (1 - lambda) * (max card similarity to the ones already picked),
+  # so 8 regional versions of the same dataset do not fill the list.
+  mmr_lambda: 0.75
+
+# Project idea shown first, by purpose (record ideas have levels beginner / capstone / research)
+idea_for_purpose: {class: beginner, self_study: beginner, capstone: capstone, competition: capstone, thesis: research}
+
+reason_min: 0.5              # a part at or above this gives a "why recommended" line
+
+# Suggested search keywords for a student who types nothing (processing/major_keywords.py).
+# Candidates come from the major profile (data interests, key topics) and from the keywords of the major's
+# top datasets; each candidate is tried as a real search for that major and kept only if it finds good data.
+keywords:
+  per_major: 10              # keywords kept per major and language
+  top_datasets: 30           # dataset keywords are taken from this many top datasets of the major (no text)
+  dataset_keyword_min: 2     # a dataset keyword must appear in at least this many of them
+  min_interest: 0.6          # the keyword's best result must match the keyword itself this well (0-1)...
+  min_major: 0.6             # ...and fit the major this well (0-1); the total score alone let weak words through
+  max_overlap: 0.4           # skip a keyword whose top-5 datasets overlap an already chosen one more than this (Jaccard)
+  profile_bonus: 0.5         # added to profile-based candidates (plain student words) when ranking candidates
+  # Method or benchmark words: they describe how, not what about, so they are not offered to students
+  stopwords: [멀티모달, 합성 데이터, LLM, 객체 인식, 객체 탐지, 이미지 캡션, 질의응답, 말뭉치, 분류, 세그멘테이션,
+              multimodal, synthetic data, object recognition, object detection, image captioning, question answering,
+              corpus, classification, segmentation, speech recognition, 음성인식, action recognition, OCR, VQA, RAG,
+              instruction tuning, chain of thought, chain-of-thought, CoT, ontology, 온톨로지, Tox21, KorMedMCQA,
+              diffusion model, 확산 모델, transformer, YOLO, LLM evaluation, 생성형 AI, generative AI, 3D object detection,
+              의도 분류, intent classification, 개체명 인식, named entity recognition, named entities, relation extraction,
+              topic classification, document classification, action classification, 동작 분류, pose estimation,
+              scene recognition, scene understanding, pixel segmentation, defect segmentation, multi-object tracking,
+              3D detection, 캡션, caption, 형태, 시계열, time series, rubric, abstractive summary, sentence type,
+              dialogue state tracking, embodied AI, machine tending, specialised domain, on-device AI, scanned documents,
+              language model, book corpus, translation memory, 번역 메모리,
+              서부권, 동부권, 수도권, 제주, 도서지역, Chungcheong, Gangwon, Gyeongsang, Jeolla, Jeju, Khmer, 크메르어]
+  # Dataset-derived words that look like codes are dropped too: runs of capitals (SLAM, KSIC), CamelCase (OpenNMT),
+  # digits other than 2D/3D/4D (YOLOv8, Sentinel-2), & or /. Words from the major profile are not filtered this way.

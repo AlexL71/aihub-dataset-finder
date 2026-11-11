@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71721",
+ "easy_ko": "전통 물건, 국내산 식재료, 바위, 가구 같은 한국 물건 6,000개를 입체 모형으로 만들고, 모형마다 설명 문장과 분류를 붙인 데이터입니다. 여러 방향 사진과 깊이 사진도 있어 문장으로 입체 물건을 만들어 주는 AI에 쓸 수 있습니다.",
+ "easy_en": "6,000 Korean objects, such as traditional items, local ingredients, rocks and furniture, turned into three-dimensional models, each with a description and category. Images from many angles and depth images are included, so you can build AI that creates three-dimensional objects from text.",
+ "detail_ko": "한국형 물체 6,000개(바위류, 과일류, 야채류, 생활용품, 가구류, 전통특화객체)의 3D 메시(LOD 포함)·텍스처와 시점별 이미지·깊이 이미지(각 750,000건, 목표 기준)에 분류 태그, 캡션, 인공물/자연물 구분을 JSON으로 붙였습니다. 전체 약 958GB이고, 통계 표의 일부 수치는 목표값이라 실제 구축량을 확인해야 하며, 3D 파일 확장자와 성능 수치는 팩에 없습니다.",
+ "detail_en": "6,000 Korean 3D object-caption pairs (rocks, fruit, vegetables, household goods, furniture, traditional objects): 3D meshes (with LOD) and textures plus multi-view and depth images (750,000 each, target figure), with JSON category tags, captions and artificial/natural flags. Total size is about 958 GB. Some figures in the statistics table are targets, so check the actual amounts; the 3D file extension and any scores are not in the pack.",
+ "amount_ko": "3D 객체·캡션 6,000쌍, 시점·깊이 이미지 각 750,000건(목표 기준)",
+ "amount_en": "6,000 3D object-caption pairs, 750,000 multi-view and depth images each (target)",
+ "labels_ko": "설명 문장, 분류",
+ "labels_en": "caption, category tag",
+ "status": "full-run-2026-11-02"
+}

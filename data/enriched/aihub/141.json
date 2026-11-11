@@ -1,0 +1,29 @@
+{
+ "dataset_id": "141",
+ "title_en": "Water quality measurement and pollution sources",
+ "summary_ko": "전국 수질측정망, 하수·폐수 방류 수질(TMS), 녹조 모니터링, 하천 수위·강우량, 기상 관측과 인구·축산·토지·양식장·산업 폐수 같은 오염원 조사 자료를 모은 약 7.6억 건의 표·센서 데이터입니다. 수질 변화 예측이나 녹조 발생 예측, 오염원 영향 분석에 쓸 수 있습니다.",
+ "summary_en": "About 761 million table and sensor records combining national water-quality monitoring, sewage and wastewater discharge quality (TMS), algae-bloom monitoring, river level and rainfall, weather observations, and pollution-source surveys (population, livestock, land, fish farms, industrial wastewater). For forecasting water quality or algae blooms and analysing pollution sources.",
+ "contents_ko": "측정소·시간별 수질 측정값(수소이온농도 등), 기상·수문 자료, 오염원 통계 표(CSV 등).",
+ "contents_en": "Water-quality values by station and time (pH and others), weather and hydrology data, pollution-source statistics tables (CSV and similar).",
+ "modalities": ["tabular", "sensor"],
+ "tasks": ["forecasting", "tabular_prediction", "anomaly_detection"],
+ "topics": [{"ko": "수질·하천", "en": "Water quality and rivers"}, {"ko": "환경 오염", "en": "Environmental pollution"}, {"ko": "기상·기후", "en": "Weather and climate"}, {"ko": "축산·농업", "en": "Livestock and farming"}],
+ "keywords_ko": ["수질", "녹조", "오염원", "하천", "환경 예측", "시계열", "기상"],
+ "keywords_en": ["water quality", "algae bloom", "pollution source", "river", "environmental forecasting", "time series", "weather"],
+ "labels": ["measurement values", "station and time metadata"],
+ "file_formats": ["csv"],
+ "scale_ko": "약 7억 6,122만 건(물환경측정망 2.7억, 수리·수문·기상 2.2억, 오염원 1.5억, 수질TMS 8,944만 등)",
+ "classes_example": [],
+ "baseline": [],
+ "difficulty": "intermediate",
+ "difficulty_note_ko": "표 데이터지만 출처가 여러 개라 시간·장소 기준으로 합치는 전처리가 필요합니다. 전체 약 48GB입니다.",
+ "skills_needed_ko": ["파이썬", "pandas로 큰 표 다루기", "시계열 예측(LightGBM, LSTM)"],
+ "caveats_ko": ["원천 공공데이터를 모은 것이라 출처별 단위·형식이 다를 수 있음", "성능 지표가 팩에서 잘림", "파일 형식은 추정"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "강 수질 변화 시각화", "title_en": "River water-quality trends", "desc_ko": "한 측정소의 수질 값을 계절별로 그래프로 그립니다.", "desc_en": "Plot seasonal water-quality values at one station."},
+  {"level": "capstone", "title_ko": "녹조 발생 예측 알림", "title_en": "Algae-bloom early warning", "desc_ko": "기상·수온·수질로 다음 주 녹조 가능성을 예측하는 대시보드를 만듭니다.", "desc_en": "Forecast next week's algae-bloom risk from weather and water data."},
+  {"level": "research", "title_ko": "오염원과 수질의 관계 분석", "title_en": "Pollution sources versus water quality", "desc_ko": "축산·산업 오염원 분포가 하류 수질에 주는 영향을 통계 모델로 분석합니다.", "desc_en": "Model how livestock and industrial sources affect downstream water quality."}
+ ],
+ "doc_used": true,
+ "uncertain": ["파일 형식이 팩에 명시되지 않음", "클래스 목록을 페이지와 설명서에서 찾지 못함"]
+}

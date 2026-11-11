@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71341",
+ "easy_ko": "연구소 배양장에서 키우는 새조개와 바지락의 알, 어린 유생, 어린 조개를 현미경으로 찍은 사진에 영역을 칠하고, 수조 센서 기록과 손으로 쓴 관리 기록을 함께 모은 데이터입니다. 조개 새끼를 안정적으로 키우도록 자람과 수조 환경을 관리하는 AI를 만들 수 있습니다.",
+ "easy_en": "Microscope photos of eggs, larvae and young shells of egg cockles and Manila clams grown at a research hatchery, with their areas coloured in, plus tank sensor records and handwritten care records. You can build AI that manages growth and tank conditions so clam seed can be produced reliably.",
+ "detail_ko": "충남수산자원연구소 배양장의 새조개·바지락 수정란·유생·치패 현미경 이미지 약 13만 장(jpg, 분할)과 수조 센서 데이터 약 137만 건, 수기 관리 기록(csv)으로 구성되며, 성장 단계 3종 × 조개 2종 라벨이 있습니다. 기준 성능은 U-Net 종자 분할 mIoU 새조개 99.55%, 바지락 99.54%로 매우 높아 실제 현장과 차이가 있을 수 있습니다. 한 연구소 배양장 데이터만 있습니다.",
+ "detail_en": "About 130k microscope images (jpg, segmented) of fertilised eggs, larvae and spat of egg cockles and Manila clams from the Chungnam fisheries research hatchery, about 1.37M tank sensor records and handwritten husbandry logs (csv), labelled with 3 growth stages × 2 species. Baselines are very high (U-Net seed segmentation mIoU 99.55% for egg cockle, 99.54% for Manila clam), so field results may differ. Data comes from one hatchery only.",
+ "amount_ko": "현미경 사진 약 13만 장, 센서 기록 약 137만 건",
+ "amount_en": "about 130k microscope images, about 1.37M sensor records",
+ "labels_ko": "조개 새끼 영역(색칠), 자라는 단계, 조개 종류, 수조 센서 값",
+ "labels_en": "seed masks, growth stage, species, tank sensor values",
+ "status": "full-run-2026-11-02"
+}

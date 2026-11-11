@@ -1,0 +1,29 @@
+{
+ "dataset_id": "126",
+ "title_en": "Korean-English parallel corpus (general)",
+ "summary_ko": "뉴스 80만, 정부·지자체 웹사이트 10만, 행정규칙·조례 10만, 한국 역사·문화 10만, 구어체 40만, 상황별 대화 10만 문장 등 한국어-영어 번역 문장 160만 쌍입니다. 일반 번역기 학습이나 조례·문화 콘텐츠 번역에 쓸 수 있습니다.",
+ "summary_en": "1.6 million Korean-English sentence pairs: 800k news, 100k government websites and publications, 100k administrative rules and local ordinances, 100k Korean history and culture, 400k colloquial and 100k situational dialogue sentences. For general translation models or translating ordinances and cultural content.",
+ "contents_ko": "한국어 문장 + 영어 번역 + 분야 라벨.",
+ "contents_en": "Korean sentence + English translation + domain label.",
+ "modalities": ["text"],
+ "tasks": ["translation"],
+ "topics": [{"ko": "번역·외국어", "en": "Translation and foreign languages"}, {"ko": "뉴스·언론", "en": "News"}, {"ko": "한국 문화·역사", "en": "Korean culture and history"}],
+ "keywords_ko": ["한영 번역", "병렬 말뭉치", "뉴스 번역", "구어체", "조례", "한국 문화"],
+ "keywords_en": ["Korean-English translation", "parallel corpus", "news translation", "colloquial", "ordinances", "Korean culture"],
+ "labels": ["parallel sentence pairs", "domain"],
+ "file_formats": ["xlsx"],
+ "scale_ko": "병렬 문장 160만 쌍",
+ "classes_example": ["뉴스", "정부 웹사이트/저널", "법률", "한국문화", "구어체", "대화체"],
+ "baseline": [{"task": "machine translation (ordinances)", "model": "GNMT", "metric": "BLEU", "value": "0.488"}],
+ "difficulty": "beginner",
+ "difficulty_note_ko": "약 0.26GB로 작아 노트북에서 번역 실습을 시작할 수 있습니다.",
+ "skills_needed_ko": ["파이썬", "Hugging Face 번역 모델", "BLEU 평가"],
+ "caveats_ko": ["2019년 구축", "파일 형식은 팩에서 확인하지 못해 추정"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "구어체 vs 문어체 번역 비교", "title_en": "Colloquial vs formal translation", "desc_ko": "구어체와 뉴스 문장에서 번역기 품질 차이를 비교합니다.", "desc_en": "Compare translator quality on colloquial versus news sentences."},
+  {"level": "capstone", "title_ko": "한국 문화 소개 번역 도구", "title_en": "Korean culture translation tool", "desc_ko": "역사·문화 문장으로 미세조정한 번역기로 박물관 안내문을 번역합니다.", "desc_en": "Fine-tune on culture sentences to translate museum notices."},
+  {"level": "research", "title_ko": "적은 데이터 분야의 번역 향상", "title_en": "Low-resource domain translation", "desc_ko": "조례처럼 데이터가 적은 분야에 데이터 증강·전이학습 효과를 연구합니다.", "desc_en": "Study augmentation and transfer for small domains such as ordinances."}
+ ],
+ "doc_used": true,
+ "uncertain": ["파일 형식이 팩에 명시되지 않음"]
+}

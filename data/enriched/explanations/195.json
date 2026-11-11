@@ -1,0 +1,12 @@
+{
+ "dataset_id": "195",
+ "easy_ko": "교차로나 인도 옆 도로처럼 사고가 나기 쉬운 곳을 자율주행을 흉내 낸 차로 달리며 찍은 사진마다 사람, 자동차, 오토바이처럼 움직이는 것의 위치를 표시한 데이터입니다. 자율주행차가 갑자기 나타나는 사람과 차를 알아채 사고를 막는 AI를 만들 수 있습니다.",
+ "easy_en": "Photos taken by a car imitating a self-driving vehicle at accident-prone spots such as intersections and roads next to sidewalks, marking moving people, cars and motorcycles. You can build AI that helps self-driving cars notice people and vehicles that suddenly appear and avoid accidents.",
+ "detail_ko": "교차로·인도 인접 도로 등 사고 다발 지역을 자율주행 모사 차량으로 360시간 촬영한 이미지 120만 장(jpg, 사람·번호판 비식별)에 이동체(사람, 차량, 이륜차) 바운딩박스·폴리곤과 클래스를 JSON으로 붙였습니다. 기준 성능은 기록에서 확인되지 않습니다. 전체 약 2.2TB입니다.",
+ "detail_en": "1.2M jpg images (people and plates de-identified) from 360 hours of driving at accident-prone locations such as intersections and roads beside sidewalks, in a vehicle imitating a self-driving car, with JSON boxes, polygons and classes for moving objects (person, vehicle, two-wheeler). No baseline is visible in the record. Total size is about 2.2 TB.",
+ "amount_ko": "이미지 120만 장, 영상 360시간",
+ "amount_en": "1.2M images, 360 hours of video",
+ "labels_ko": "사람·차·오토바이 위치 상자·윤곽",
+ "labels_en": "boxes and outlines around people, vehicles and two-wheelers",
+ "status": "full-run-2026-11-02"
+}

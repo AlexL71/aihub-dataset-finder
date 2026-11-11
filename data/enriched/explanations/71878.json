@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71878",
+ "easy_ko": "작은 반려견 1,000마리 이상이 걷는 모습을 앞, 뒤, 옆에서 찍은 영상과 다리마다 잰 발 누르는 힘, 관절 점을 표시한 사진에 무릎뼈 빠짐(슬개골 탈구)의 단계를 붙인 데이터입니다. 강아지 걸음걸이로 무릎 병을 미리 알아채는 AI에 쓸 수 있습니다.",
+ "easy_en": "Videos of more than 1,000 small and medium dogs walking, filmed from the front, back and side, with paw-pressure readings for each leg and photos marked with joint points, labelled with the stage of kneecap dislocation (patellar luxation). You can use it to build AI that spots knee problems from how a dog walks.",
+ "detail_ko": "중소형 반려견 1,000마리 이상의 앞·뒤·옆 방향 보행 동영상 2,094건(avi)과 다리별 보행 압력 센서 데이터(csv), 키포인트 라벨 이미지 126,092건(JSON)에 정상과 슬개골 탈구 1~4기 중증도를 표시했습니다. 페이지에 성능 점수 표가 없고(YOLOv8 목표 PCK@0.5 0.8, ConvLSTM 목표 정확도 80%만 소개), 정상이 56%이고 4기는 3%로 적습니다. 같은 개의 프레임이 여러 세트에 들어가지 않게 개체 단위로 나눠야 합니다.",
+ "detail_en": "2,094 walking videos (avi) of more than 1,000 small and medium dogs filmed from the front, back and side, with per-leg gait-pressure sensor data (csv) and 126,092 keypoint-labelled images (JSON), marked normal or patellar luxation grade 1 to 4. There is no score table (only targets of PCK@0.5 0.8 for YOLOv8 and 80% accuracy for ConvLSTM); 56% are normal and grade 4 is only 3%. Split by dog so frames from the same animal do not land in both training and test sets.",
+ "amount_ko": "보행 영상 2,094건, 키포인트 이미지 126,092건",
+ "amount_en": "2,094 walking videos, 126,092 keypoint images",
+ "labels_ko": "관절 점, 무릎 병 단계",
+ "labels_en": "keypoints, severity stage",
+ "status": "full-run-2026-11-02"
+}

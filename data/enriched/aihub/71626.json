@@ -1,0 +1,29 @@
+{
+ "dataset_id": "71626",
+ "title_en": "Passenger autonomous car bad-weather data",
+ "summary_ko": "눈·비·안개 같은 악천후와 시간대별 조도 조건에서 승용 자율주행차가 모은 카메라 이미지 160,000장과 라이다 점군, 레이더 등 센서 정보로, 2D 분할·상자와 3D 상자가 붙어 있습니다. 맑은 날 위주인 기존 데이터의 빈틈을 채우는 악천후 자율주행 인지 AI에 쓸 수 있습니다.",
+ "summary_en": "160,000 camera images plus LiDAR point clouds and radar/sensor info collected by a passenger autonomous car in snow, rain, fog and different light levels, with 2D segmentation and boxes and 3D boxes. For bad-weather self-driving perception, filling gaps in clear-weather datasets.",
+ "contents_ko": "카메라 이미지(jpg) + 라이다(pcd) + JSON(센서 정보, 2D 분할·상자, 3D 상자).",
+ "contents_en": "Camera image (jpg) + LiDAR (pcd) + JSON (sensor info, 2D segmentation and boxes, 3D boxes).",
+ "modalities": ["image", "3d", "sensor"],
+ "tasks": ["segmentation", "object_detection"],
+ "topics": [{"ko": "자율주행", "en": "Autonomous driving"}, {"ko": "악천후", "en": "Bad weather"}],
+ "keywords_ko": ["자율주행", "악천후", "눈", "비", "안개", "라이다"],
+ "keywords_en": ["autonomous driving", "bad weather", "snow", "rain", "fog", "LiDAR"],
+ "labels": ["segmentation", "2D bounding box", "3D bounding box", "class"],
+ "file_formats": ["jpg", "pcd", "json"],
+ "scale_ko": "이미지 160,000장(2D 분할 160,000, 2D/3D 160,000)",
+ "classes_example": ["background", "crossWalk", "fense", "curb", "freespace", "bus", "bicycle"],
+ "baseline": [{"task": "3D object detection", "model": "PV-RCNN", "metric": "mAP", "value": "66.73%"}, {"task": "2D semantic segmentation", "model": "ConvNeXt", "metric": "mIoU", "value": "76.61%"}],
+ "difficulty": "advanced",
+ "difficulty_note_ko": "악천후 조건과 3D 탐지를 함께 다뤄 어렵고 전체가 약 277GB입니다.",
+ "skills_needed_ko": ["파이썬", "분할 모델", "포인트 클라우드 3D 탐지"],
+ "caveats_ko": ["전체 약 277GB", "날씨별(눈·비·안개) 수량이 팩 앞부분에 없음", "성능표 1번 항목이 페이지에 없음"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "날씨 분류", "title_en": "Weather classifier", "desc_ko": "주행 이미지가 맑음·비·눈·안개 중 무엇인지 분류합니다.", "desc_en": "Classify driving images by weather."},
+  {"level": "capstone", "title_ko": "날씨별 인지 성능 리포트", "title_en": "Perception by weather report", "desc_ko": "날씨에 따라 분할·탐지 성능이 어떻게 바뀌는지 분석합니다.", "desc_en": "Analyse how segmentation and detection change with weather."},
+  {"level": "research", "title_ko": "악천후 강건 탐지", "title_en": "Weather-robust detection", "desc_ko": "카메라가 약할 때 라이다·레이더로 보완하는 탐지 방법을 연구합니다.", "desc_en": "Use LiDAR and radar to back up cameras in bad weather."}
+ ],
+ "doc_used": true,
+ "uncertain": ["레이더 데이터 포함 여부와 형식"]
+}

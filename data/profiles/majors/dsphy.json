@@ -1,0 +1,46 @@
+{
+ "id": "dsphy",
+ "name_ko": "디스플레이ㆍ반도체물리학부",
+ "name_en": "Display and Semiconductor Physics",
+ "college": "과학기술대학",
+ "summary_ko": "물리학(전자기학, 양자역학, 고체물리) 기초 위에 반도체 소자와 디스플레이(TFT, OLED, LCD) 기술을 배우는 학부입니다. 반도체물리전공과 디스플레이융합전공이 있으며, 졸업생 대부분이 반도체·디스플레이 기업과 장비업체로 진출합니다.",
+ "summary_en": "Builds semiconductor device and display technology (TFT, OLED, LCD) on a physics foundation of electromagnetism, quantum mechanics and solid-state physics. It has a semiconductor physics track and a display convergence track; most graduates join chip and display companies or equipment makers.",
+ "key_topics": ["응집물리·고체물리", "반도체 소자와 공정", "디스플레이(TFT, OLED, LCD)", "메모리·스핀트로닉스", "센서 소재·소자", "광전자·태양전지", "인공지능 소자", "양자정보", "컬러·영상처리"],
+ "course_keywords": ["수리물리학", "고전역학", "전자기학", "양자역학", "현대물리학", "고체물리학", "열및통계물리학", "전기회로", "전자회로", "컴퓨터기초", "전자재료물성", "반도체물리", "반도체공정 및 실습 캡스톤디자인", "인공지능소자개론", "인공지능소자수치해석", "인공지능형반도체소자", "나노전자소자", "메모리소자", "반도체집적회로설계", "양자정보개론", "자성물리학", "디스플레이공학", "유기물 반도체", "TFT 공정 및 캡스톤디자인", "컬러 및 영상처리", "CAE개론및응용", "AMOLED소자및공정실험", "디스플레이구동", "센서 소재, 소자 및 실험", "광전자 에너지 공학", "인공지능융합디바이스기술"],
+ "curriculum_by_year": {
+  "1": ["수학없는물리학", "수리과학입문", "일반물리학", "미적분학", "일반화학", "디지털리터러시입문"],
+  "2": ["수리물리학", "고전역학", "현대물리학", "전기회로", "전자기학 I", "컴퓨터기초", "전자재료물성", "반도체물리", "디스플레이공학"],
+  "3": ["양자역학", "전자기학 II", "고체물리학 I", "전자회로", "가속기물리", "광학", "인공지능소자개론", "인공지능소자수치해석", "반도체공정 및 실습", "TFT 공정", "컬러 및 영상처리"],
+  "4": ["열및통계물리학", "고체물리학 II", "인공지능형반도체소자", "나노전자소자", "메모리소자", "반도체집적회로설계", "양자정보개론", "AMOLED소자및공정실험", "디스플레이구동", "현장실습"]
+ },
+ "careers": ["디스플레이 R&D 엔지니어(패널·회로 설계, 검사장비)", "반도체 설계·제조 엔지니어", "반도체·디스플레이 장비업체(계측·검사)", "LED·카메라 모듈 품질관리", "전기·전자 공기업(한국전력 등)", "대학원 진학(물리, 재료, 전자공학)"],
+ "research_areas": ["스핀트로닉스·자기메모리(MRAM)", "반도체 광소자·스핀 논리소자", "차세대 디스플레이 TFT", "초전도체 의료용 소자", "방사선 의료용 디스플레이 소자", "차세대 태양전지", "양자정보이론"],
+ "data_interests": [
+  {"topic_ko": "디스플레이·반도체 불량 검사", "topic_en": "Display and chip defect inspection", "keywords": ["패널 결함 이미지", "웨이퍼 결함", "검사 장비"]},
+  {"topic_ko": "공정 센서 데이터", "topic_en": "Process sensor data", "keywords": ["공정 시계열", "장비 이상 감지"]},
+  {"topic_ko": "영상과 색", "topic_en": "Image and colour", "keywords": ["영상 화질", "색 보정", "이미지 처리"]},
+  {"topic_ko": "에너지·태양광", "topic_en": "Energy and solar", "keywords": ["태양광 발전량", "에너지 효율"]},
+  {"topic_ko": "의료 영상 장치", "topic_en": "Medical imaging devices", "keywords": ["X-ray", "의료 영상"]},
+  {"topic_ko": "전자 부품", "topic_en": "Electronic parts", "keywords": ["PCB", "부품 인식"]}
+ ],
+ "interest_questions": [
+  {"q_ko": "어떤 분야가 더 끌리나요?", "q_en": "Which area pulls you more?",
+   "options": [{"ko": "반도체 소자", "en": "Semiconductor devices"}, {"ko": "디스플레이", "en": "Displays"}, {"ko": "불량 검사 자동화", "en": "Automated defect inspection"}, {"ko": "에너지·태양전지", "en": "Energy and solar cells"}, {"ko": "양자·이론 물리", "en": "Quantum and theory"}]},
+  {"q_ko": "다뤄보고 싶은 자료는?", "q_en": "What data would you like to use?",
+   "options": [{"ko": "검사 이미지", "en": "Inspection images"}, {"ko": "센서 측정값", "en": "Sensor measurements"}, {"ko": "영상·색 데이터", "en": "Image and colour data"}, {"ko": "의료 영상", "en": "Medical images"}]}
+ ],
+ "project_themes": ["디스플레이 패널 결함 이미지 분류", "공정 센서 데이터로 장비 이상 감지", "태양광 발전량 예측", "X-ray 영상 화질 개선"],
+ "data_skill_level": "medium",
+ "data_skill_note": "컴퓨터기초, 인공지능소자수치해석, 컬러 및 영상처리, CAE 과목이 있어 수치 계산과 기초 프로그래밍 경험이 있습니다. 머신러닝 과목은 따로 없습니다.",
+ "sources": [
+  {"kind": "page", "label": "학과소개", "url": "https://sejong.korea.ac.kr/dsphy/2632/subview.do"},
+  {"kind": "page", "label": "졸업후진로", "url": "https://sejong.korea.ac.kr/dsphy/2634/subview.do"},
+  {"kind": "page", "label": "전공체계도", "url": "https://sejong.korea.ac.kr/dsphy/2683/subview.do"},
+  {"kind": "page", "label": "연구실", "url": "https://sejong.korea.ac.kr/dsphy/2653/subview.do"},
+  {"kind": "pdf", "label": "전공역량기반교육과정(디스플레이융합)", "url": "https://sejong.korea.ac.kr/pdfView/dsphy/46/58/fileDownload.do"}
+ ],
+ "inferred_fields": ["data_interests", "interest_questions", "project_themes"],
+ "gaps": [],
+ "version": 1,
+ "created": "2026-10-29"
+}

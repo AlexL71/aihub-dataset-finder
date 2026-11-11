@@ -1,0 +1,32 @@
+{
+ "dataset_id": "596",
+ "title_en": "Smart vertical farm integrated data (strawberries)",
+ "summary_ko": "수직농장에서 딸기(설향·금실)가 자라는 모습을 일정 시간마다 찍은 이미지 약 17만 장에 상자와 생육 단계(정식기·출뢰기·개화기·과실비대기·수확기)를 표시하고, 재배 환경 센서 데이터 약 20만 건을 함께 담은 데이터입니다. 딸기 생육 단계와 열매 무게를 예측하는 AI에 쓸 수 있습니다.",
+ "summary_en": "About 170,000 time-lapse images of strawberries (Seolhyang and Geumsil varieties) growing in vertical farms, with boxes and growth stage (transplant, budding, flowering, fruit enlargement, harvest), plus about 200,000 environment sensor records. For AI that predicts strawberry growth stage and fruit weight.",
+ "contents_ko": "딸기 이미지(jpg) + JSON(상자, 생육 단계) + 재배 환경 센서 데이터.",
+ "contents_en": "Strawberry images (jpg) + JSON (boxes, growth stage) + growing-environment sensor data.",
+ "modalities": ["image", "sensor"],
+ "tasks": ["object_detection", "forecasting", "tabular_prediction"],
+ "topics": [{"ko": "스마트팜", "en": "Smart farming"}, {"ko": "농업", "en": "Agriculture"}],
+ "keywords_ko": ["딸기", "수직농장", "생육 단계", "설향", "스마트팜"],
+ "keywords_en": ["strawberries", "vertical farm", "growth stage", "Seolhyang", "smart farm"],
+ "labels": ["bounding box", "growth stage", "fruit weight"],
+ "file_formats": ["jpg", "json"],
+ "scale_ko": "이미지 약 17만 장(설향 약 13.8만, 금실 약 3만), 센서 약 20만 건, 생육 단계 5종",
+ "classes_example": ["정식기", "출뢰기", "개화기", "과실비대기", "수확기"],
+ "baseline": [
+  {"task": "strawberry detection", "model": "YOLOv5", "metric": "mAP", "value": "97.37%"},
+  {"task": "fruit weight prediction", "model": "LSTM", "metric": "RMSE", "value": "0.056"}
+ ],
+ "difficulty": "intermediate",
+ "difficulty_note_ko": "전체 약 335GB이며 이미지와 센서 시계열을 함께 다룹니다.",
+ "skills_needed_ko": ["파이썬", "YOLO 탐지", "시계열 예측(LSTM)"],
+ "caveats_ko": ["전체 약 335GB", "설향 품종이 82%로 치우침", "595번 엽채류 데이터와 같은 구축 기관·구조"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "딸기 꽃·열매 탐지", "title_en": "Flower and fruit detection", "desc_ko": "사진에서 딸기 꽃과 열매를 찾아 셉니다.", "desc_en": "Detect and count strawberry flowers and fruit."},
+  {"level": "capstone", "title_ko": "딸기 수확량 예측 대시보드", "title_en": "Strawberry yield dashboard", "desc_ko": "열매 수와 생육 단계로 주간 수확량을 예측해 보여줍니다.", "desc_en": "Forecast weekly yield from fruit count and stage."},
+  {"level": "research", "title_ko": "품종 간 일반화", "title_en": "Cross-variety generalisation", "desc_ko": "설향으로 학습한 모델이 금실에도 통하는지 연구합니다.", "desc_en": "Test whether a Seolhyang-trained model works on Geumsil."}
+ ],
+ "doc_used": true,
+ "uncertain": []
+}

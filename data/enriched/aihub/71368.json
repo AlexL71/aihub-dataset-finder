@@ -1,0 +1,32 @@
+{
+ "dataset_id": "71368",
+ "title_en": "Indoor and outdoor crowd characteristics data",
+ "summary_ko": "CCTV와 연출 시나리오로 찍은 실내외 군중 이미지 약 23만 장에 사람 머리 위치(헤드포인트)와 상자, 사람 ID를 표시한 데이터입니다. 사람 수가 약 470만 명분 표시되어 있습니다. 혼잡한 곳의 인원 수와 이동 방향을 예측해 압사 같은 사고를 막는 AI에 쓸 수 있습니다.",
+ "summary_en": "About 230,000 indoor and outdoor crowd images from CCTV and staged scenarios, with head points, boxes and person IDs for about 4.7 million people. For AI that estimates crowd size and movement direction to prevent crowd-crush accidents.",
+ "contents_ko": "군중 이미지(jpg) + 원본 영상(mp4) + JSON(헤드포인트, 상자, 추적 ID).",
+ "contents_en": "Crowd images (jpg) + source videos (mp4) + JSON (head points, boxes, track IDs).",
+ "modalities": ["image", "video"],
+ "tasks": ["object_detection", "object_tracking", "forecasting"],
+ "topics": [{"ko": "공공 안전·감시", "en": "Public safety and surveillance"}, {"ko": "군중 분석", "en": "Crowd analysis"}],
+ "keywords_ko": ["군중 계수", "혼잡도", "인파 사고 예방", "CCTV", "이동 방향 예측"],
+ "keywords_en": ["crowd counting", "congestion", "crowd-crush prevention", "CCTV", "trajectory prediction"],
+ "labels": ["head point", "bounding box", "track ID"],
+ "file_formats": ["jpg", "mp4", "json"],
+ "scale_ko": "이미지 약 23만 장, 사람 객체 약 470만 개",
+ "classes_example": ["사람"],
+ "baseline": [
+  {"task": "crowd movement direction prediction", "model": "PECNet", "metric": "ADE", "value": "0.76"},
+  {"task": "crowd counting", "model": "IIM crowd localisation", "metric": "MAE", "value": "5.68"}
+ ],
+ "difficulty": "intermediate",
+ "difficulty_note_ko": "약 38GB로 받을 만하고 군중 계수 입문에 좋습니다.",
+ "skills_needed_ko": ["파이썬", "객체 탐지", "군중 계수 모델", "궤적 예측"],
+ "caveats_ko": ["사람이 찍힌 CCTV 영상이라 개인정보·감시 윤리 주의", "시나리오 라벨은 영상 단위 JSON(184개)으로 묶여 있음"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "사진 속 사람 수 세기", "title_en": "Crowd counter", "desc_ko": "군중 사진에서 사람 수를 추정합니다.", "desc_en": "Estimate the number of people in a crowd photo."},
+  {"level": "capstone", "title_ko": "혼잡도 경보 대시보드", "title_en": "Congestion alert dashboard", "desc_ko": "CCTV 인원 수가 기준을 넘으면 경보를 띄웁니다.", "desc_en": "Raise an alert when CCTV crowd counts exceed a limit."},
+  {"level": "research", "title_ko": "군중 흐름 예측", "title_en": "Crowd flow forecasting", "desc_ko": "사람들의 이동 궤적으로 병목 지점을 미리 찾는 방법을 연구합니다.", "desc_en": "Predict bottlenecks from pedestrian trajectories."}
+ ],
+ "doc_used": true,
+ "uncertain": []
+}

@@ -1,0 +1,29 @@
+{
+ "dataset_id": "71601",
+ "title_en": "Hand-arm coordinated grasp and manipulation motion data",
+ "summary_ko": "가정용 물품(파지 30품목, 조작 100품목)을 사람이 손으로 잡고 다루는 동작을 10단계 조명에서 촬영한 이미지 데이터 500만 건입니다. 물체 상자, 잡을 수 있는 지점, 손 관절, 상체 관절이 표시되어 있어 로봇에게 사람 손동작을 가르치는 AI에 쓸 수 있습니다.",
+ "summary_en": "5 million image records of people grasping and handling household items (30 for grasping, 100 for manipulation) under 10 lighting levels, with object boxes, graspable points, hand joints and upper-body joints. For teaching robots human hand skills.",
+ "contents_ko": "이미지 + JSON(물체 2D 상자, 파지 지점, 손 관절, 상체 관절, 조명 단계).",
+ "contents_en": "Images + JSON (object 2D boxes, grasp points, hand joints, upper-body joints, lighting level).",
+ "modalities": ["image"],
+ "tasks": ["keypoint_pose", "object_detection", "action_recognition"],
+ "topics": [{"ko": "로봇 조작", "en": "Robot manipulation"}, {"ko": "가사 지원 로봇", "en": "Household robots"}],
+ "keywords_ko": ["손 관절", "파지", "조작 동작", "가사 로봇", "모방 학습", "피지컬 AI"],
+ "keywords_en": ["hand joints", "grasping", "manipulation", "household robot", "imitation learning", "physical AI"],
+ "labels": ["2D bounding box", "grasp points", "hand keypoints", "upper-body keypoints"],
+ "file_formats": ["jpg", "json"],
+ "scale_ko": "5,000,000건(조명 10단계×50만), 파지 30품목, 조작 100품목",
+ "classes_example": ["파지", "조작", "조명 0~9단계"],
+ "baseline": [{"task": "grasp-manipulation action classification", "model": "ST-GCN", "metric": "Top-5 accuracy", "value": "95.87%"}, {"task": "graspable point detection", "model": "unspecified", "metric": "mAP", "value": "75.6%"}],
+ "difficulty": "advanced",
+ "difficulty_note_ko": "손 관절·동작 시퀀스를 다뤄야 하고 전체 약 2TB입니다. 조명 한 단계만 받아 시작하세요.",
+ "skills_needed_ko": ["파이썬", "손 키포인트 모델(MediaPipe 등)", "그래프 동작 분류(ST-GCN)"],
+ "caveats_ko": ["전체 약 2TB", "성능표 일부 학습모델이 '알수없음'으로 적혀 있음", "이미지 형식이 'image'로만 적혀 있음", "같은 동작을 조명만 바꿔 반복 촬영해 분할 시 주의"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "손 관절 찾기", "title_en": "Hand keypoint detection", "desc_ko": "사진에서 손 관절 위치를 찾아 그립니다.", "desc_en": "Find and draw hand joints in photos."},
+  {"level": "capstone", "title_ko": "가사 동작 인식기", "title_en": "Household action recogniser", "desc_ko": "손·상체 관절 시퀀스로 컵 들기·문 열기 같은 동작을 분류합니다.", "desc_en": "Classify actions like lifting a cup from joint sequences."},
+  {"level": "research", "title_ko": "조명 변화 강건성", "title_en": "Robustness to lighting", "desc_ko": "어두운 조명 단계에서 손 관절 추정이 얼마나 나빠지는지 연구합니다.", "desc_en": "Study how hand-pose estimation degrades in dim lighting."}
+ ],
+ "doc_used": true,
+ "uncertain": ["이미지 확장자가 페이지에 명시되지 않아 jpg로 추정"]
+}

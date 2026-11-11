@@ -1,0 +1,12 @@
+{
+ "dataset_id": "559",
+ "easy_ko": "도축장에서 위와 뒤에서 찍은 한우 사진마다 목·앞·가운데·뒤 부위 영역과 소가 얼마나 살쪘는지를 나타내는 등급을 표시한 데이터입니다. 사진만 보고 소의 살찐 정도를 판정하는 AI를 만들 수 있습니다.",
+ "easy_en": "Photos of Hanwoo (Korean beef) cattle taken from above and behind at slaughterhouses, with body areas (neck, front, middle, rear) marked and a grade for how well-fleshed the animal is. You can build AI that judges a cow's body condition just from photos.",
+ "detail_ko": "도축장 2곳에서 위·뒤 카메라로 촬영한 한우 이미지 약 122만 장(1,224,720컷, 그레이스케일·깊이 포함, jpg)에 부위(목·전구·중구·후구) 분할 좌표, 바운딩박스, 신체충실지수(BCS) 5~9등급을 JSON으로 붙였습니다. ResNet 등급 분류 모델이 소개되어 있으나 성능 값은 기록에서 확인되지 않습니다. 전체 약 300GB이며 등급 불균형이 심합니다(9등급 59%, 5등급 1%).",
+ "detail_en": "About 1.22M images (1,224,720 shots, including grayscale and depth; jpg) of Hanwoo cattle taken from above and behind at 2 slaughterhouses, with JSON segmentation of body regions (neck, forequarter, middle, hindquarter), bounding boxes and body condition score (BCS) grades 5–9. A ResNet grade classifier is mentioned, but its scores are not visible. Total size is about 300 GB; grades are highly imbalanced (grade 9 59%, grade 5 1%).",
+ "amount_ko": "이미지 약 122만 장, 등급 5단계",
+ "amount_en": "about 1.22M images, 5 grades",
+ "labels_ko": "소 부위 영역, 소 위치 상자, 살찐 정도 등급",
+ "labels_en": "body-region masks, box around the cow, body condition grade",
+ "status": "full-run-2026-11-02"
+}

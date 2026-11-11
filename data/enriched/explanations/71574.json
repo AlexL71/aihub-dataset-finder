@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71574",
+ "easy_ko": "배달 로봇이 큰 건물 안과 주변 공원을 오가며 맑은 날, 흐린 날, 비 오는 날에 카메라와 레이저 센서로 기록한 주행 데이터입니다. 물체 영역과 입체 상자, 지도도 있어 로봇이 주변을 알아보고 자기 위치를 찾고 길을 정하는 연구에 쓸 수 있습니다.",
+ "easy_en": "Driving data recorded by a delivery robot moving between the inside of large buildings and nearby parks in sunny, cloudy and rainy weather, using cameras and a laser sensor. With object areas, 3D boxes and maps, it supports research on robots that see their surroundings, locate themselves and plan routes.",
+ "detail_ko": "배송 로봇이 대형 건물 실내와 주변 실외를 오가며 맑음·흐림·비, 아침·낮·저녁 환경에서 카메라·라이다·IMU로 기록한 데이터로, 객체 인식용 166,070장(영상 83,035 png + 라이다 83,035 pcd; 실내 40,079·실외 42,956)에 분할과 큐보이드(JSON)를, 위치 추정용 264,114장에 로봇 자세와 지도(png, yaml)를 제공합니다(시나리오 80개). 클래스 예: Driving Area, Parking Line, Wall, Pillar, Sign, Traffic Cone, Fire Extinguisher, Vehicle, Two-wheeled Vehicle, Wheelchair, Shopping Cart, Human. 팩에 성능 지표 표가 없고, 데이터 유형이 '이미지'로 적혀 있지만 라이다·IMU도 포함됩니다. 71576 실내 자율주차 데이터와 같은 기관·비슷한 구조입니다.",
+ "detail_en": "Data recorded by a delivery robot moving between large indoor facilities and nearby outdoor areas in sunny, cloudy and rainy weather, morning to evening, with camera, lidar and IMU: 166,070 frames for object recognition (83,035 images, png + 83,035 lidar scans, pcd; 40,079 indoor, 42,956 outdoor) with JSON segmentation and cuboids, and 264,114 frames for localisation with robot poses and maps (png, yaml), across 80 scenarios. Example classes: driving area, parking line, wall, pillar, sign, traffic cone, fire extinguisher, vehicle, two-wheeler, wheelchair, shopping cart, human. There is no metrics table in the pack, and although the data type says 'image', lidar and IMU are included. Same builder and similar structure as the indoor parking set 71576.",
+ "amount_ko": "객체 인식용 166,070장(영상 83,035 + 라이다 83,035), 위치 추정용 264,114장, 시나리오 80개",
+ "amount_en": "166,070 recognition frames (83,035 images + 83,035 lidar), 264,114 localisation frames, 80 scenarios",
+ "labels_ko": "물체 영역, 물체 입체 상자, 로봇 위치, 지도",
+ "labels_en": "segmentation, cuboids, robot pose, map",
+ "status": "full-run-2026-11-02"
+}

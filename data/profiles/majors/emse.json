@@ -1,0 +1,40 @@
+{
+ "id": "emse",
+ "name_ko": "전자ㆍ기계융합공학과",
+ "name_en": "Electro-Mechanical Systems Engineering",
+ "college": "과학기술대학",
+ "summary_ko": "전기전자, 컴퓨터, 기계공학을 함께 배워 센서, 로봇, 자동차·모빌리티, 메카트로닉스, 자동제어 시스템을 만드는 융합 공학과입니다. 계측·제어·임베디드 실험과 캡스톤디자인이 많고, 반도체·자동차·로봇 기업 취업률이 높습니다.",
+ "summary_en": "Combines electrical and electronic engineering, computing and mechanical engineering to build sensors, robots, vehicles, mechatronics and automatic control systems. There are many measurement, control and embedded-system labs plus capstone design; graduates often join chip, automotive and robotics companies.",
+ "key_topics": ["회로·전자회로", "자동제어·디지털제어", "센서와 계측", "로봇공학·메카트로닉스", "임베디드 시스템·마이크로프로세서", "역학(고체, 동역학, 열유체, 진동)", "자동차공학", "인공지능 시스템", "신호처리"],
+ "course_keywords": ["기초공업수학", "기초역학", "컴퓨터언어및실습", "전산프로그래밍언어및실습", "회로이론", "디지털시스템", "마이크로프로세서", "반도체소자공학", "공업수학", "전기자기학및연습", "고체역학", "전자회로및연습", "동역학", "열유체역학", "진동공학", "신호및시스템", "자동제어", "계측공학", "센서전자공학", "센서신호처리및네트워크", "유공압제어", "디지털제어", "인공지능시스템개론", "시스템모델링", "메카트로닉스", "선형대수및시스템", "기전응용임베디드시스템", "로봇공학", "자동차공학개론", "생체공학개론", "CAD", "확률시스템해석", "전자·기계융합 Capstone Design"],
+ "careers": ["IT·반도체·디스플레이 R&D 엔지니어(삼성전자, LG 등)", "자동차·전장 엔지니어(현대자동차, 현대모비스 등)", "로봇·자동화·머신비전 엔지니어", "반도체 장비 기업(ASML, Applied Materials, 램리서치 등)", "센서·계측·제어 엔지니어", "국방·중공업·플랜트", "공기업 엔지니어", "대학원 진학"],
+ "research_areas": [],
+ "data_interests": [
+  {"topic_ko": "로봇 동작과 비전", "topic_en": "Robot motion and vision", "keywords": ["로봇 팔", "물체 잡기", "머신비전"]},
+  {"topic_ko": "자율주행·차량 센서", "topic_en": "Self-driving and vehicle sensors", "keywords": ["카메라", "라이다", "차량 신호"]},
+  {"topic_ko": "설비 고장 예측", "topic_en": "Machine fault prediction", "keywords": ["진동", "모터 전류", "예지보전"]},
+  {"topic_ko": "제조 품질 검사", "topic_en": "Manufacturing inspection", "keywords": ["부품 결함 이미지", "공정 센서"]},
+  {"topic_ko": "드론", "topic_en": "Drones", "keywords": ["드론 영상", "비행 데이터"]},
+  {"topic_ko": "생체 신호", "topic_en": "Biosignals", "keywords": ["심전도", "근전도", "웨어러블"]},
+  {"topic_ko": "에너지 설비", "topic_en": "Energy systems", "keywords": ["태양광", "공조 설비", "전력"]}
+ ],
+ "interest_questions": [
+  {"q_ko": "무엇을 만들어 보고 싶나요?", "q_en": "What would you like to build?",
+   "options": [{"ko": "로봇", "en": "Robots"}, {"ko": "자동차·드론", "en": "Cars and drones"}, {"ko": "스마트 공장", "en": "Smart factories"}, {"ko": "센서·IoT 기기", "en": "Sensors and IoT devices"}, {"ko": "의료·생체 기기", "en": "Medical and bio devices"}]},
+  {"q_ko": "다뤄보고 싶은 자료는?", "q_en": "What data would you like to use?",
+   "options": [{"ko": "카메라 영상", "en": "Camera video"}, {"ko": "진동·전류 센서 값", "en": "Vibration and current signals"}, {"ko": "로봇 동작 기록", "en": "Robot motion logs"}, {"ko": "생체 신호", "en": "Biosignals"}]}
+ ],
+ "project_themes": ["모터 진동 데이터로 고장 예측", "부품 결함 이미지 검사", "로봇 팔 물체 인식", "드론 영상으로 시설물 점검"],
+ "data_skill_level": "medium",
+ "data_skill_note": "컴퓨터언어, 임베디드 프로그래밍, 신호처리, 확률시스템해석, 인공지능시스템개론 과목이 있어 센서 데이터 처리와 기초 AI가 가능합니다.",
+ "sources": [
+  {"kind": "page", "label": "학과소개", "url": "https://sejong.korea.ac.kr/emse/3227/subview.do"},
+  {"kind": "page", "label": "졸업 후 진로", "url": "https://sejong.korea.ac.kr/emse/3228/subview.do"},
+  {"kind": "page", "label": "2025학번 교육과정표", "url": "https://sejong.korea.ac.kr/emse/12639/subview.do"},
+  {"kind": "pdf", "label": "전공역량기반 교육과정", "url": "https://sejong.korea.ac.kr/pdfView/emse/13/67/fileDownload.do"}
+ ],
+ "inferred_fields": ["data_interests", "interest_questions", "project_themes"],
+ "gaps": ["No research lab page collected; no year-by-year course map (course list comes from the competency PDF)."],
+ "version": 1,
+ "created": "2026-10-29"
+}

@@ -1,0 +1,29 @@
+{
+ "dataset_id": "71387",
+ "title_en": "Asan river-site occupancy data",
+ "summary_ko": "충남 아산시 하천부지를 위에서 찍은 고해상도 이미지 200,023장으로, 물·자동차·도로·경작지·비닐하우스·가건물·곤포 사일리지·천막·쓰레기 9종이 영역으로 칠해져 있습니다. 하천부지 무단 점유를 찾아내는 AI에 쓸 수 있습니다.",
+ "summary_en": "200,023 high-resolution overhead images of river-side land in Asan, with 9 classes (water, cars, roads, farmland, greenhouses, temporary buildings, silage bales, tents, waste) segmented. For AI that finds unauthorised use of river land.",
+ "contents_ko": "상공 촬영 이미지(tif) + JSON(분할 영역, 점유물 종류, 날씨·촬영 각도).",
+ "contents_en": "Overhead image (tif) + JSON (segmentation masks, occupancy class, weather, camera angle).",
+ "modalities": ["image"],
+ "tasks": ["segmentation", "object_detection"],
+ "topics": [{"ko": "국토·하천 관리", "en": "Land and river management"}, {"ko": "도시 행정", "en": "Urban administration"}],
+ "keywords_ko": ["하천부지", "무단 점유", "항공 이미지", "분할", "비닐하우스", "공간정보"],
+ "keywords_en": ["river land", "illegal occupation", "aerial images", "segmentation", "greenhouses", "geospatial"],
+ "labels": ["segmentation mask", "class"],
+ "file_formats": ["tif", "json"],
+ "scale_ko": "이미지 200,023장, 객체 728,053개, 클래스 9종",
+ "classes_example": ["물", "자동차", "도로", "경작지", "비닐하우스", "가건물", "곤포 사일리지", "천막", "쓰레기"],
+ "baseline": [{"task": "occupancy segmentation", "model": "DeepLabv3+", "metric": "mAP", "value": "97.21%"}],
+ "difficulty": "intermediate",
+ "difficulty_note_ko": "분할 실습에 좋지만 tif 이미지라 용량이 크고 전체 약 646GB입니다. 일부만 받아 쓰세요.",
+ "skills_needed_ko": ["파이썬", "분할 모델(DeepLab·U-Net)", "tif 이미지 처리"],
+ "caveats_ko": ["전체 약 646GB", "아산시 한 지역만 촬영해 다른 지역 일반화가 불확실", "분할 모델(DeepLabv3+)인데 지표를 mAP로 표기"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "하천부지 토지 피복 분할", "title_en": "River-land cover segmentation", "desc_ko": "이미지에서 물·도로·경작지 영역을 분할합니다.", "desc_en": "Segment water, roads and farmland in images."},
+  {"level": "capstone", "title_ko": "무단 점유 의심지 지도", "title_en": "Suspected illegal-use map", "desc_ko": "가건물·천막·쓰레기가 탐지된 곳을 지도에 표시해 단속 우선순위를 보여 줍니다.", "desc_en": "Map detected sheds, tents and waste to prioritise inspections."},
+  {"level": "research", "title_ko": "촬영 각도·날씨 영향", "title_en": "Effect of angle and weather", "desc_ko": "촬영 각도(70~90도)와 날씨가 분할 성능에 주는 영향을 분석합니다.", "desc_en": "Analyse how camera angle (70-90 degrees) and weather affect segmentation."}
+ ],
+ "doc_used": true,
+ "uncertain": []
+}

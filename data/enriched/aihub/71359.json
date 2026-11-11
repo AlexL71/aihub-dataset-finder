@@ -1,0 +1,29 @@
+{
+ "dataset_id": "71359",
+ "title_en": "Jeollanam-do household power consumption pattern data",
+ "summary_ko": "전라남도 가정 3,800곳과 상가·기업 400곳의 시간별 전력 사용량 약 1.9억 개 값에, 가구원 수·맞벌이 여부·주거 형태·면적·지역 같은 유형 조사 정보와 날씨 데이터를 붙인 표 데이터입니다. 가구 유형별 전력 소비 패턴 분석이나 맞춤 요금제 추천 AI에 쓸 수 있습니다.",
+ "summary_en": "About 190 million hourly power readings from 3,800 households and 400 shops and businesses in Jeollanam-do, with survey info (household size, dual income, housing type, floor area, region) and weather data. For analysing consumption patterns by household type or recommending tailored electricity plans.",
+ "contents_ko": "전력 사용량·가구 조사·날씨 표(csv).",
+ "contents_en": "Power usage, household survey and weather tables (csv).",
+ "modalities": ["tabular"],
+ "tasks": ["forecasting", "tabular_prediction"],
+ "topics": [{"ko": "에너지·전력", "en": "Energy and electricity"}, {"ko": "생활 데이터", "en": "Household data"}],
+ "keywords_ko": ["전력 소비", "가구 유형", "요금제", "탄소 저감", "에너지 효율"],
+ "keywords_en": ["power consumption", "household types", "electricity plans", "carbon reduction", "energy efficiency"],
+ "labels": ["household attributes", "business attributes"],
+ "file_formats": ["csv"],
+ "scale_ko": "가정 3,800 + 기업 400곳, 전력 값 약 1.9억 개",
+ "classes_example": ["가구(가정)", "기업(상가)", "숙박/음식점", "제조업"],
+ "baseline": [],
+ "difficulty": "beginner",
+ "difficulty_note_ko": "약 0.2GB csv라 판다스로 바로 분석할 수 있습니다.",
+ "skills_needed_ko": ["파이썬", "판다스", "시계열 분석"],
+ "caveats_ko": ["가정 전력 데이터라 개인 생활 패턴이 드러날 수 있어 주의", "전라남도 지역만 있음", "성능 지표 표가 팩에서 비어 있음"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "가구 유형별 전력 패턴", "title_en": "Usage by household type", "desc_ko": "1인 가구와 다인 가구의 시간대별 사용량을 비교합니다.", "desc_en": "Compare hourly usage of single and multi-person households."},
+  {"level": "capstone", "title_ko": "맞춤 요금제 추천", "title_en": "Tariff recommender", "desc_ko": "사용 패턴으로 가장 저렴한 요금제를 추천합니다.", "desc_en": "Recommend the cheapest tariff from usage patterns."},
+  {"level": "research", "title_ko": "날씨 기반 전력 예측", "title_en": "Weather-aware load forecasting", "desc_ko": "기온·습도로 다음 날 가정 전력 사용량을 예측합니다.", "desc_en": "Forecast next-day household load from weather."}
+ ],
+ "doc_used": true,
+ "uncertain": ["baseline values"]
+}

@@ -1,0 +1,29 @@
+{
+ "dataset_id": "179",
+ "title_en": "Road obstacle and surface recognition images (capital area)",
+ "summary_ko": "수도권 도로에서 300시간 이상 촬영한 주행 영상의 이미지 100만 장으로, 갑자기 나타나는 동물·보행자, 낙하물·라바콘·공사표지판·낙석, 포트홀·맨홀·보수 포트홀, 도로 균열이 표시되어 있습니다. 자율주행 위험 인지와 도로 유지관리에 쓸 수 있습니다.",
+ "summary_en": "1 million images from 300+ hours of driving on roads in the Seoul capital area, labelled with sudden animals and pedestrians, fallen cargo, cones, construction signs, rocks, potholes, manholes, repaired potholes and road cracks. For self-driving hazard awareness and road maintenance.",
+ "contents_ko": "주행 영상 이미지 + JSON(물체 상자, 균열 분할 마스크, 클래스).",
+ "contents_en": "Driving image + JSON (object boxes, crack segmentation masks, class).",
+ "modalities": ["image"],
+ "tasks": ["object_detection", "segmentation", "anomaly_detection"],
+ "topics": [{"ko": "자율주행", "en": "Self-driving"}, {"ko": "도로 관리·안전", "en": "Road maintenance and safety"}],
+ "keywords_ko": ["포트홀", "도로 파손", "낙하물", "라바콘", "균열", "자율주행", "수도권"],
+ "keywords_en": ["pothole", "road damage", "fallen cargo", "traffic cone", "crack", "self-driving", "Seoul area"],
+ "labels": ["bounding box", "segmentation mask (cracks)", "class"],
+ "file_formats": ["jpg", "json"],
+ "scale_ko": "이미지 100만 장 이상(정적 객체 30만, 크랙 30만, 보수 포트홀 20만, 포트홀 10만, 동적 객체 5만 등)",
+ "classes_example": ["고라니", "보행자", "낙하물(상자)", "라바콘", "공사표지판", "포트홀", "맨홀", "크랙"],
+ "baseline": [{"task": "road surface segmentation", "model": "custom CNN", "metric": "pixel accuracy", "value": "99.15%"}],
+ "difficulty": "intermediate",
+ "difficulty_note_ko": "포트홀 탐지는 쉬운 편이지만 균열 분할은 어렵습니다. 전체 약 1TB입니다.",
+ "skills_needed_ko": ["파이썬", "YOLO 탐지", "분할 모델(U-Net)"],
+ "caveats_ko": ["전체 약 1TB", "수도권 외 데이터(178번)와 구성이 같아 지역 비교 연구 가능"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "라바콘·공사표지판 탐지", "title_en": "Cone and work-zone sign detection", "desc_ko": "도로 공사 구간 물체를 탐지하는 모델을 학습합니다.", "desc_en": "Train a detector for work-zone objects."},
+  {"level": "capstone", "title_ko": "운전자 도로 위험 경고", "title_en": "Driver road-hazard warning", "desc_ko": "블랙박스 영상에서 낙하물·포트홀을 감지해 경고하는 데모를 만듭니다.", "desc_en": "Warn drivers about fallen cargo or potholes from dash-cam video."},
+  {"level": "research", "title_ko": "지역 간 도로 데이터 일반화", "title_en": "Generalising across regions", "desc_ko": "수도권으로 학습한 모델을 지방 도로(178번)에 적용해 차이를 분석합니다.", "desc_en": "Apply the model to non-capital roads (dataset 178) and analyse the gap."}
+ ],
+ "doc_used": true,
+ "uncertain": []
+}

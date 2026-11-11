@@ -1,0 +1,12 @@
+{
+ "dataset_id": "138",
+ "easy_ko": "수도 계량기함과 밸브에 단 센서로 들은 소리를, 전문가가 현장에서 확인해 바깥 누수, 집 안 누수, 기계 소리, 주변 소리, 정상 소리로 나눠 둔 데이터입니다. 소리만 듣고 수도관에서 물이 새는 곳을 자동으로 찾아내는 AI를 만들 수 있습니다.",
+ "easy_en": "Sounds picked up by sensors on water meter boxes and valves, sorted by experts on site into outdoor leak, indoor leak, machine noise, environmental noise and normal sound. You can build AI that finds leaking water pipes just by listening.",
+ "detail_ko": "상수도 계량기함과 제수변 누수 감지 센서 데이터 5만 건(옥외 누수 1만, 옥내 누수 1만, 기계·전기음 5천, 환경음 5천, 정상음 2만)으로 5종 클래스와 위치 정보가 라벨링되어 있습니다. 원 소리 파일이 아니라 주파수 대역별 특징값 형태의 표 데이터일 가능성이 높고, 파일 형식(csv/json)은 추정입니다. 기준 성능은 XGBoost 5종 분류 정확도 90%입니다. 정상음이 가장 많아 클래스 불균형이 있습니다.",
+ "detail_en": "50k leak-sensor records from water meter boxes and valves (outdoor leak 10k, indoor leak 10k, machine/electrical noise 5k, environmental noise 5k, normal 20k), labelled with 5 classes and location. Records are likely frequency-band feature values rather than raw audio, and file formats (csv/json) are assumed. Baseline: XGBoost 5-class accuracy 90%. Normal sounds dominate, so classes are imbalanced.",
+ "amount_ko": "센서 기록 5만 건, 5종 분류",
+ "amount_en": "50k sensor records, 5 classes",
+ "labels_ko": "소리 종류(누수·잡음·정상), 위치 정보",
+ "labels_en": "sound class (leak, noise, normal), location",
+ "status": "full-run-2026-11-02"
+}

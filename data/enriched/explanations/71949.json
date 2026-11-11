@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71949",
+ "easy_ko": "예전 영상 이미지 데이터를 다시 다듬어, 사진 2만 장에 어떤 행동이 어떤 결과를 낳는지 묻는 질문과 답, 생각 과정을 붙인 데이터입니다. 원인과 결과를 따져 결정하고 예측하는 AI에 쓸 수 있습니다.",
+ "easy_en": "20,000 photos reworked from older video-image data, each with questions and answers about which action leads to which result, plus the reasoning steps. You can use it to build AI that reasons about cause and effect to make decisions and predictions.",
+ "detail_ko": "2022년 AI 허브 영상이미지 데이터를 다시 가공(업사이클링)해, 이미지 20,000건(jpg)에 질의응답(Q&A)과 사고과정(CoT, 답에 이르는 추론 단계) 라벨을 JSON으로 붙였습니다. 구성: 유형별 약 10%씩(예: 가공, 성과, 성장, 소모). sLLM 같은 멀티모달 추론형 AI의 인과관계 추론, 의사결정, 예측·분석에 쓰도록 만들었습니다. 유형 이름만으로는 뜻이 분명하지 않아 샘플을 확인해야 하고, 성능 지표 값은 팩 앞부분에 없습니다.",
+ "detail_en": "20,000 images (jpg) reworked (upcycled) from AI Hub's 2022 video image data, with JSON question-answer (Q&A) and chain-of-thought (CoT, the reasoning steps that lead to the answer) labels. Composition: about 10% per type (such as processing, outcome, growth, consumption). It is meant for multimodal reasoning AI such as small LLMs, for causal reasoning, decision-making, prediction and analysis. The type names alone are not clear, so check samples. No metric values are in the pack.",
+ "amount_ko": "20,000건",
+ "amount_en": "20,000 items",
+ "labels_ko": "질문과 답, 답에 이르는 추론 과정",
+ "labels_en": "question-answer, chain of thought",
+ "status": "full-run-2026-11-02"
+}

@@ -1,0 +1,29 @@
+{
+ "dataset_id": "612",
+ "title_en": "Donguibogam poisonous plant identification images",
+ "summary_ko": "약초로 잘못 알고 먹어 중독되기 쉬운 독초 60종과, 이와 닮은 식물 61종(총 121종)의 전초·잎·꽃·열매를 여러 방향에서 찍은 사진입니다. 식물분류학자와 한의학 전문가가 종을 검수했고, 독성 여부와 닮은 식물 정보가 함께 들어 있어 독초 판별 앱을 만들 수 있습니다.",
+ "summary_en": "Photos of 60 poisonous plants that are often mistaken for medicinal herbs and 61 look-alike plants (121 species), showing the whole plant, leaves, flowers and fruit from several sides. Species were checked by plant taxonomists and Korean-medicine experts, and each label says whether the plant is toxic and which plants it resembles, so it suits a poisonous-plant checker app.",
+ "contents_ko": "식물 부위 사진 1장 + JSON(식물 이름, 독초/유사식물 구분, 독성 여부, 닮은 식물 목록, 부위, 촬영 날짜·지역, 상자 또는 다각형 좌표).",
+ "contents_en": "One photo of a plant part + JSON (plant name, poisonous or look-alike, toxic yes/no, list of similar plants, plant part, shooting date and region, box or polygon coordinates).",
+ "modalities": ["image"],
+ "tasks": ["image_classification", "object_detection", "segmentation"],
+ "topics": [{"ko": "식물·약초", "en": "Plants and herbs"}, {"ko": "한의학·전통 의학", "en": "Korean traditional medicine"}, {"ko": "독성·안전", "en": "Toxicity and safety"}, {"ko": "자연·생물 다양성", "en": "Nature and biodiversity"}],
+ "keywords_ko": ["독초", "약초", "동의보감", "식물 분류", "유사 식물", "중독 사고", "꽃", "잎", "열매"],
+ "keywords_en": ["poisonous plants", "medicinal herbs", "Donguibogam", "plant classification", "look-alike plants", "poisoning", "flower", "leaf", "fruit"],
+ "labels": ["class", "bounding box", "polygon", "attributes (toxic, plant part, similar plants)"],
+ "file_formats": ["jpg", "json"],
+ "scale_ko": "원천 사진 약 88.6만 장, 학습용 약 80.7만 장, 121종 × 4부위(전초·잎·꽃·열매)",
+ "classes_example": ["가죽나무", "참죽나무", "감국", "산국", "곰취", "참취", "미나리", "까마중", "능소화", "개오동", "꽃개오동"],
+ "baseline": [{"task": "plant image classification (121 species)", "model": "Inception-v3 + triplet-loss metric learning", "metric": "Top-1 accuracy", "value": "69.96%"}],
+ "difficulty": "intermediate",
+ "difficulty_note_ko": "분류 자체는 익숙한 과제지만 121종이고 닮은 식물끼리 구분해야 해서 정확도를 올리기 어렵습니다. 전체 약 2.7TB이므로 일부 종만 골라 시작하세요.",
+ "skills_needed_ko": ["파이썬", "전이학습으로 이미지 분류", "클래스가 많은 분류 평가(혼동 행렬) 읽기"],
+ "caveats_ko": ["전체 약 2.7TB로 매우 큼", "기준 모델 정확도가 약 70%라 실제 독초 판별에 쓰려면 주의 문구와 전문가 확인이 필요", "일부 식물은 꽃·열매·잎 부위가 없음"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "독초 vs 닮은 식물 한 쌍 구분", "title_en": "Tell one poisonous plant from its look-alike", "desc_ko": "예: 곰취와 독초 한 쌍만 골라 잎 사진으로 구분하는 분류 모델을 만들고 어떤 특징을 보는지 시각화합니다.", "desc_en": "Pick one pair, such as an edible herb and its toxic look-alike, train a leaf classifier and visualise what it looks at."},
+  {"level": "capstone", "title_ko": "등산객용 독초 경고 앱", "title_en": "Poisonous-plant warning app for hikers", "desc_ko": "사진을 찍으면 상위 3개 후보 식물과 독성 여부, 닮은 식물을 함께 보여주는 모바일 앱을 만듭니다.", "desc_en": "A mobile app that shows the top-3 candidate plants, whether they are toxic and which plants they resemble."},
+  {"level": "research", "title_ko": "여러 부위 사진을 합친 식물 판별", "title_en": "Combining several plant-part photos", "desc_ko": "잎·꽃·열매 사진을 함께 넣는 다중 입력 모델이 한 장만 쓸 때보다 닮은 식물 구분을 얼마나 개선하는지 연구합니다.", "desc_en": "Study how much a multi-input model using leaf, flower and fruit photos together beats a single photo at separating look-alikes."}
+ ],
+ "doc_used": true,
+ "uncertain": ["설명서와 페이지의 학습 데이터 수(807,068 vs 807,968)가 조금 다름"]
+}

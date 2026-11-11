@@ -1,0 +1,29 @@
+{
+ "dataset_id": "504",
+ "title_en": "Old Hangul character recognition (OCR) data",
+ "summary_ko": "15세기~20세기 초 조선시대 고문헌·고문서(필사본·목판본·활자본)의 옛한글 이미지에서 1,200만 글자를 하나씩 분할해 표시한 데이터입니다. 문학·종교서·언해·조리서·편지(언간) 등이 있어 옛 문헌을 자동으로 읽어 주는 전사 서비스나 국어사 연구에 쓸 수 있습니다.",
+ "summary_en": "12 million characters segmented one by one from images of Joseon-era (15th to early 20th century) documents in Old Hangul (handwritten, woodblock and movable-type prints). Literature, religious texts, translations, cookbooks and letters support automatic transcription of old texts and Korean language history research.",
+ "contents_ko": "문헌 이미지(png) + JSON(글자별 분할 영역, 글자 값, 판본 종류, 문헌 분류).",
+ "contents_en": "Document image (png) + JSON (segmented area per character, character value, print type, document category).",
+ "modalities": ["image", "text"],
+ "tasks": ["ocr", "segmentation"],
+ "topics": [{"ko": "역사·고문헌", "en": "History and old documents"}, {"ko": "국어·한글", "en": "Korean language and Hangul"}, {"ko": "문화유산 디지털화", "en": "Heritage digitisation"}],
+ "keywords_ko": ["옛한글", "고문헌", "필사본", "목판본", "OCR", "국어사"],
+ "keywords_en": ["Old Hangul", "historical documents", "manuscripts", "woodblock prints", "OCR", "Korean language history"],
+ "labels": ["character segmentation", "character label", "print type", "document category"],
+ "file_formats": ["png", "json"],
+ "scale_ko": "12,003,864글자(필사본 67%, 목판본 18%, 활자본 15%; 문학류 74%)",
+ "classes_example": ["필사본", "목판본", "활자본", "문학류", "종교서류", "언해류", "음식조리서류"],
+ "baseline": [],
+ "difficulty": "intermediate",
+ "difficulty_note_ko": "약 81GB로 다룰 만하지만 필사체가 많고 옛 글자 종류가 많아 OCR이 쉽지 않습니다.",
+ "skills_needed_ko": ["파이썬", "글자 분할·인식", "클래스가 많은 분류"],
+ "caveats_ko": ["성능 지표가 팩 앞부분에 없음", "필사본 비율이 높아 글씨체 차이가 큼"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "판본 종류 분류", "title_en": "Print-type classifier", "desc_ko": "문헌 이미지가 필사본·목판본·활자본 중 무엇인지 분류합니다.", "desc_en": "Classify pages as manuscript, woodblock or movable type."},
+  {"level": "capstone", "title_ko": "옛한글 편지 읽어주기", "title_en": "Reading old Hangul letters", "desc_ko": "언간(한글 편지) 이미지를 글자 단위로 인식해 현대 한글로 보여줍니다.", "desc_en": "Recognise characters in old letters and show them in modern Hangul."},
+  {"level": "research", "title_ko": "필사체 OCR 개선", "title_en": "Better OCR for handwritten texts", "desc_ko": "다양한 필사체에서 인식 오류를 분석하고 글씨체 적응 방법을 연구합니다.", "desc_en": "Analyse errors across handwriting styles and study adaptation."}
+ ],
+ "doc_used": true,
+ "uncertain": []
+}

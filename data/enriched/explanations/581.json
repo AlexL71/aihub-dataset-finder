@@ -1,0 +1,12 @@
+{
+ "dataset_id": "581",
+ "easy_ko": "사고 난 자동차 사진마다 긁힘, 찌그러짐, 깨짐, 틈 벌어짐 같은 손상 종류와 범퍼·펜더·램프·바퀴 같은 부위를 칠해 표시하고, 수리비 견적 정보도 함께 붙인 데이터입니다. 사진만으로 차가 얼마나 망가졌는지와 수리비를 추정하는 AI를 만들 수 있습니다.",
+ "easy_en": "Photos of damaged cars with the damage type (scratch, dent, breakage, gap) and the car part (bumper, fender, lamp, wheel and more) coloured in, plus repair-cost estimates. You can build AI that estimates how badly a car is damaged and what repairs will cost from photos.",
+ "detail_ko": "카셰어링 업체와 정비소에서 모은 사고 차량 이미지 약 50만 장(jpg)에 손상 영역 약 200만 건의 분할 폴리곤(손상 종류: 스크래치, 찌그러짐, 파손, 이격; 차량 부위: 앞뒤 범퍼·펜더·램프, 타이어·휠 등)을 JSON으로 붙이고, 수리 견적 약 12.5만 건(xls)을 함께 제공합니다. 기준 성능은 U-Net 차량 부위 분할 mIoU 69.35%, 손상 종류 분할 65.55%로 높지 않습니다. 사진에 번호판이 보일 수 있고, 중형차와 흰색·회색 차가 많아 치우쳐 있습니다.",
+ "detail_en": "About 500k jpg images of damaged cars from car-sharing firms and repair shops, with JSON segmentation polygons for about 2M damage areas (types: scratch, dent, breakage, separation; parts: front and rear bumpers, fenders, lamps, tyres and wheels and more), plus about 125k repair estimates (xls). Baselines are modest: U-Net part segmentation mIoU 69.35%, damage-type segmentation 65.55%. Licence plates may be visible, and mid-size and white or grey cars dominate.",
+ "amount_ko": "사진 약 50만 장, 손상 영역 약 200만 건, 견적 약 12.5만 건",
+ "amount_en": "about 500k images, about 2M damage areas, about 125k estimates",
+ "labels_ko": "손상 종류와 부위 영역(색칠), 수리비 견적",
+ "labels_en": "damage-type and car-part masks, repair estimates",
+ "status": "full-run-2026-11-02"
+}

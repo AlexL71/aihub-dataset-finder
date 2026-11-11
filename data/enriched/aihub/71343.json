@@ -1,0 +1,29 @@
+{
+ "dataset_id": "71343",
+ "title_en": "Enhanced SNS (social media) data",
+ "summary_ko": "기존 AI Hub 한국어 SNS 데이터(2020)와 주제별 일상 대화 데이터(2021) 약 190만 건에 건강·취미·관계·인물 등 대화 주제를 1~3개씩 여러 개 붙인(멀티라벨) 데이터입니다. 대화 주제를 알아보는 챗봇·일상 대화 AI에 쓸 수 있습니다.",
+ "summary_en": "About 1.9 million items from earlier AI Hub Korean SNS data (2020) and topic-based everyday dialogue data (2021), each re-labelled with 1-3 conversation topics (health, hobbies, relationships, people and more). For chatbots and everyday-conversation AI that recognise conversation topics.",
+ "contents_ko": "대화 텍스트 JSON + 주제 멀티라벨.",
+ "contents_en": "Dialogue text JSON + multi-label topics.",
+ "modalities": ["text"],
+ "tasks": ["text_classification", "dialogue"],
+ "topics": [{"ko": "챗봇", "en": "Chatbots"}, {"ko": "일상 대화", "en": "Everyday conversation"}],
+ "keywords_ko": ["SNS 대화", "멀티라벨", "주제 분류", "일상 대화", "챗봇"],
+ "keywords_en": ["social media chat", "multi-label", "topic classification", "everyday conversation", "chatbot"],
+ "labels": ["topic (multi-label)"],
+ "file_formats": ["txt", "json"],
+ "scale_ko": "대화 약 190만 건, 주제 여러 종(대·중·소분류)",
+ "classes_example": ["건강/미용", "취미/여가_게임", "취미/여가_여행", "관계_가족", "관계_연인", "인물정보공유"],
+ "baseline": [],
+ "difficulty": "beginner",
+ "difficulty_note_ko": "약 3.4GB 텍스트로 다루기 쉽고 멀티라벨 분류 입문에 좋습니다.",
+ "skills_needed_ko": ["파이썬", "텍스트 분류(BERT 등)", "멀티라벨 학습"],
+ "caveats_ko": ["기존 AI Hub 데이터를 다시 라벨링한 것", "SNS 원문이라 개인정보·비속어가 남아 있을 수 있음", "성능 지표 표가 팩에서 비어 있음"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "대화 주제 태깅", "title_en": "Topic tagging", "desc_ko": "대화에 맞는 주제를 1~3개 붙이는 멀티라벨 분류를 합니다.", "desc_en": "Tag each dialogue with 1-3 topics."},
+  {"level": "capstone", "title_ko": "주제 맞춤 챗봇 라우터", "title_en": "Topic-aware chatbot router", "desc_ko": "대화 주제를 파악해 알맞은 답변 모듈로 보내는 챗봇을 만듭니다.", "desc_en": "Route chats to the right reply module by topic."},
+  {"level": "research", "title_ko": "주제 계층 활용 분류", "title_en": "Hierarchical topic classification", "desc_ko": "대·중·소 주제 구조를 이용해 분류 정확도를 높이는 방법을 연구합니다.", "desc_en": "Use the topic hierarchy to improve classification."}
+ ],
+ "doc_used": true,
+ "uncertain": ["baseline values"]
+}

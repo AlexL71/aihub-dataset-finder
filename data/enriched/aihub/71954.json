@@ -1,0 +1,98 @@
+{
+ "dataset_id": "71954",
+ "title_en": "UAV flight signal data",
+ "summary_ko": "드론(UAV)이 날 때 나오는 RF(무선) 신호를 스펙트로그램(신호를 시간-주파수 그림으로 바꾼 것)으로 기록하고 신호 영역에 바운딩박스를 표시한 데이터로, 비행 제어 데이터와 비행 상황 데이터가 각 201,600건(약 28시간)입니다. 근처 드론을 감지하고 기종을 구분하는 AI에 쓸 수 있습니다.",
+ "summary_en": "RF signals from flying drones (UAVs) stored as spectrograms (time-frequency pictures of the signal) with bounding boxes on signal regions: 201,600 flight-control and 201,600 flight-situation items (about 28 hours each). For AI that detects nearby drones and identifies their model.",
+ "contents_ko": "RF 신호 배열(npy) + 라벨(json, png 바운딩박스).",
+ "contents_en": "RF signal arrays (npy) + labels (json, png bounding boxes).",
+ "modalities": [
+  "sensor",
+  "image"
+ ],
+ "tasks": [
+  "object_detection",
+  "image_classification"
+ ],
+ "topics": [
+  {
+   "ko": "드론·UAV",
+   "en": "Drones and UAVs"
+  },
+  {
+   "ko": "무선 신호",
+   "en": "Radio signals"
+  }
+ ],
+ "keywords_ko": [
+  "드론 감지",
+  "RF 신호",
+  "스펙트로그램",
+  "기종 분류",
+  "전자파",
+  "바운딩박스"
+ ],
+ "keywords_en": [
+  "drone detection",
+  "RF signal",
+  "spectrogram",
+  "model identification",
+  "electromagnetic",
+  "bounding box"
+ ],
+ "labels": [
+  "bounding box"
+ ],
+ "file_formats": [
+  "npy",
+  "json",
+  "png"
+ ],
+ "scale_ko": "비행 제어 201,600건(약 28시간), 비행 상황 201,600건(약 28시간)",
+ "classes_example": [
+  "Mavic 3 Classic",
+  "Phantom3 SE",
+  "Air 2S",
+  "HS210",
+  "H235"
+ ],
+ "baseline": [],
+ "difficulty": "advanced",
+ "difficulty_note_ko": "약 2,737GB(2.7TB)로 매우 크고 RF 신호 처리 지식이 필요합니다.",
+ "skills_needed_ko": [
+  "파이썬",
+  "신호 처리",
+  "객체 탐지"
+ ],
+ "caveats_ko": [
+  "기종별 비율이 각 7.14%로 약 14개 기종으로 보이나 전체 목록 확인 필요",
+  "성능 지표 값이 팩 앞부분에 없음"
+ ],
+ "project_ideas": [
+  {
+   "level": "beginner",
+   "title_ko": "드론 기종 분류",
+   "title_en": "Drone model classifier",
+   "desc_ko": "스펙트로그램으로 드론 기종을 분류합니다.",
+   "desc_en": "Classify drone models from spectrograms."
+  },
+  {
+   "level": "capstone",
+   "title_ko": "불법 드론 감지 시스템",
+   "title_en": "Rogue drone detector",
+   "desc_ko": "RF 신호로 근처 드론을 찾아 알림을 주는 시스템을 만듭니다.",
+   "desc_en": "Detect nearby drones from RF and raise alerts."
+  },
+  {
+   "level": "research",
+   "title_ko": "처음 보는 기종 감지",
+   "title_en": "Unknown drone detection",
+   "desc_ko": "학습에 없던 기종의 신호를 구분하는 방법을 연구합니다.",
+   "desc_en": "Recognise signals from unseen drone models."
+  }
+ ],
+ "doc_used": true,
+ "uncertain": [
+  "기종 전체 목록",
+  "비행 상황 데이터 가공 수량"
+ ]
+}

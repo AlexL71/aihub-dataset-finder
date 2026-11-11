@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71527",
+ "easy_ko": "끈끈이나 냄새, 불빛으로 벌레를 모으는 디지털 덫에 잡힌 해충 사진 13만여 장에 해충 부분을 칠하고 종류를 표시한 데이터입니다. 농사에 피해를 주는 해충을 자동으로 찾고 세는 AI에 쓸 수 있습니다.",
+ "easy_en": "Over 130,000 photos of pests caught in digital traps that lure insects with glue, scent or light, with each pest painted in and its species marked. You can use it to build AI that finds and counts crop pests automatically.",
+ "detail_ko": "끈끈이형·페로몬형·유아등형 디지털 트랩 이미지 137,203장(png)에 해충 7종(갈색날개매미충, 미국선녀벌레, 썩덩나무노린재, 작은뿌리파리, 흰점도둑나방, 톱다리개미허리노린재, 담배거세미나방) 분할 어노테이션 140,208건과 환경 데이터를 JSON으로 붙였습니다. 기준 성능은 Detectron2 해충 인스턴스 분할 mAP 98.631%, RandomForest 생육환경 분석 MAE 0.695입니다. 전체 약 670GB이고, 종별 수량 차이가 큽니다(갈색날개매미충 148장, 작은뿌리파리 62,305장).",
+ "detail_en": "137,203 images (png) from sticky, pheromone and light digital traps, with 140,208 JSON segmentation annotations for 7 pest species (brown-winged planthopper, citrus flatid planthopper, brown marmorated stink bug, fungus gnat, white-spotted moth, bean bug, tobacco cutworm) and environment data. Baselines: pest instance segmentation with Detectron2, mAP 98.631%; growth-environment analysis with RandomForest, MAE 0.695. Total size is about 670 GB. Counts vary hugely by species (148 brown-winged planthopper vs. 62,305 fungus gnat images).",
+ "amount_ko": "이미지 137,203장, 어노테이션 140,208건, 해충 7종",
+ "amount_en": "137,203 images, 140,208 annotations, 7 pest species",
+ "labels_ko": "해충 영역, 해충 종류, 환경 정보",
+ "labels_en": "segmentation, pest species, environment data",
+ "status": "full-run-2026-11-02"
+}

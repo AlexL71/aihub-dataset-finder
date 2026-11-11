@@ -1,0 +1,29 @@
+{
+ "dataset_id": "71442",
+ "title_en": "X-ray multi-object recognition data",
+ "summary_ko": "보안 검색용 X-ray 이미지 541,260장으로, 기내 반입금지 위해물품·정보 저장 매체·일반 물품 등 317개 클래스의 물체가 표시되어 있습니다. 공항·보안 검색대의 X-ray 자동 판독 AI에 쓸 수 있습니다.",
+ "summary_en": "541,260 security X-ray images with objects from 317 classes: items banned on planes, data-storage devices and everyday items. For automatic X-ray screening AI at airports and security checkpoints.",
+ "contents_ko": "X-ray 이미지(png) + JSON(물체 영역 표시, 클래스).",
+ "contents_en": "X-ray image (png) + JSON (object regions, class).",
+ "modalities": ["image"],
+ "tasks": ["object_detection", "segmentation"],
+ "topics": [{"ko": "보안 검색", "en": "Security screening"}, {"ko": "공공 안전", "en": "Public safety"}],
+ "keywords_ko": ["X-ray", "보안 검색", "위해물품", "기내 반입금지", "정보 저장 매체", "다중 객체"],
+ "keywords_en": ["X-ray", "security screening", "dangerous items", "prohibited cabin items", "storage media", "multi-object"],
+ "labels": ["segmentation", "bounding box", "class"],
+ "file_formats": ["png", "json"],
+ "scale_ko": "X-ray 이미지 541,260장, 클래스 317종",
+ "classes_example": ["위해물품", "정보저장매체", "일반물품", "노트북", "USB"],
+ "baseline": [{"task": "object detection", "model": "YOLOv5", "metric": "mAP", "value": "75%"}, {"task": "object detection", "model": "Swin Transformer", "metric": "mAP", "value": "66.8%"}],
+ "difficulty": "intermediate",
+ "difficulty_note_ko": "YOLO 탐지 실습에 좋지만 전체 약 812GB입니다. 대분류 하나만 받아 쓰세요.",
+ "skills_needed_ko": ["파이썬", "YOLO 탐지", "이미지 처리"],
+ "caveats_ko": ["전체 약 812GB", "대분류별 수량과 설명이 표마다 엇갈림(일반물품·정보저장매체 수량이 뒤바뀐 것으로 보임)", "라벨 유형이 세그멘테이션으로 적혀 있지만 성능은 탐지로 측정함", "클래스 317종이라 클래스당 데이터 불균형 가능"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "위해물품 탐지", "title_en": "Dangerous item detection", "desc_ko": "X-ray 사진에서 칼·가위 같은 위해물품을 찾아 상자로 표시합니다.", "desc_en": "Box dangerous items such as knives and scissors in X-ray images."},
+  {"level": "capstone", "title_ko": "보안 검색 보조 화면", "title_en": "Screening assistant screen", "desc_ko": "가방 X-ray에서 위험 물품을 강조해 검색 요원에게 보여 주는 도구를 만듭니다.", "desc_en": "Highlight risky items in bag X-rays for screeners."},
+  {"level": "research", "title_ko": "겹친 물체 탐지 개선", "title_en": "Overlapping object detection", "desc_ko": "X-ray에서 겹쳐 보이는 물체를 더 잘 구분하는 방법을 연구합니다.", "desc_en": "Better separate overlapping objects in X-ray images."}
+ ],
+ "doc_used": true,
+ "uncertain": ["라벨이 다각형인지 상자인지", "대분류별 정확한 수량"]
+}

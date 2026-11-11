@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71329",
+ "easy_ko": "높은 건물 사이에 생기는 강한 바람(빌딩풍)을 센서 측정과 컴퓨터 바람 흐름 계산으로 분석한 결과 그림에 바람 방향과 세기를 붙인 데이터입니다. 지역별 빌딩풍을 예측해 바람 피해 위험을 알려 주는 AI를 만들 수 있습니다.",
+ "easy_en": "Images of the strong winds that form between tall buildings, analysed with sensor readings and computer airflow simulation, labelled with wind direction and speed. You can build AI that predicts these winds by area and warns of wind-damage risk.",
+ "detail_ko": "빌딩풍을 센서 데이터와 전산유체역학(CFD)으로 해석한 결과 이미지 약 35만 개(png)와 풍향·풍속 라벨 약 35만 개(csv, json)로 구성됩니다. 기준 성능은 ConvLSTM 빌딩풍 예측 RMSE 0.19입니다. 시뮬레이션 결과라 실제 측정과 다를 수 있고, 지역·건물 정보는 기록에 자세히 없으며, AI Hub 데이터 유형은 이미지지만 실제로는 예측 과제입니다.",
+ "detail_en": "About 350k CFD (computational fluid dynamics) result images (png) of building-induced winds, analysed with sensor data, and about 350k wind direction and speed labels (csv, json). Baseline: ConvLSTM building-wind prediction RMSE 0.19. Simulation results may differ from real measurements; area and building details are sparse in the record; it is listed as image data but is really a forecasting task.",
+ "amount_ko": "바람 분석 그림 약 35만 개, 라벨 약 35만 개",
+ "amount_en": "about 350k CFD images, about 350k labels",
+ "labels_ko": "바람 방향, 바람 세기",
+ "labels_en": "wind direction, wind speed",
+ "status": "full-run-2026-11-02"
+}

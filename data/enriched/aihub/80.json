@@ -1,0 +1,29 @@
+{
+ "dataset_id": "80",
+ "title_en": "Korean images (vehicles)",
+ "summary_ko": "국산 차량 100종을 수평 24방향 × 수직 5방향(120개 시점)과 오전·오후·저녁·실내 조명에서 찍은 사진 5만 장입니다. 파일 이름에 제조사·모델·연식이 들어 있어 차종 인식, 주차 차량 검색, 차량 추적 연구에 쓸 수 있습니다.",
+ "summary_en": "50,000 photos of 100 Korean car models, each shot from 120 viewpoints (24 horizontal × 5 vertical) under morning, afternoon, evening and indoor lighting. File names hold maker, model and year, for car-model recognition, parked-car search or vehicle tracking research.",
+ "contents_ko": "차량 사진 1장(파일명 = 제조사_모델_연식_조명_시점). 63GB 파일 하나로 제공.",
+ "contents_en": "One car photo (file name = maker_model_year_lighting_view). Delivered as one 63 GB file.",
+ "modalities": ["image"],
+ "tasks": ["image_classification", "retrieval_recommendation"],
+ "topics": [{"ko": "자동차", "en": "Cars"}, {"ko": "교통·보안", "en": "Traffic and security"}],
+ "keywords_ko": ["차량 이미지", "차종 인식", "국산차", "다시점", "조명", "차량 검색"],
+ "keywords_en": ["car images", "car model recognition", "Korean cars", "multi-view", "lighting", "vehicle search"],
+ "labels": ["class (maker_model_year)", "lighting", "viewpoint"],
+ "file_formats": ["jpg"],
+ "scale_ko": "100종 × 약 500장 = 5만 장, 시점 120개, 조명 4~5종",
+ "classes_example": ["현대 > 차종·연식", "기아 > 차종·연식", "쉐보레 > 차종·연식", "쌍용 > 차종·연식", "르노삼성 > 차종·연식"],
+ "baseline": [],
+ "difficulty": "beginner",
+ "difficulty_note_ko": "라벨이 파일 이름에 있어 바로 분류 실습을 할 수 있습니다. 다만 63GB 파일 하나로만 받을 수 있습니다.",
+ "skills_needed_ko": ["파이썬 기초", "전이학습으로 이미지 분류"],
+ "caveats_ko": ["63GB 파일 하나라 일부만 받을 수 없음", "2018년 구축이라 최신 차종이 없음", "스튜디오성 촬영이라 실제 도로 사진과 다를 수 있음", "태그에 '헬스케어 서비스'가 잘못 붙어 있음"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "국산 차종 분류기", "title_en": "Korean car model classifier", "desc_ko": "사진으로 차종을 맞히는 모델을 만들고 각도에 따른 정확도를 비교합니다.", "desc_en": "Classify car models and compare accuracy by viewing angle."},
+  {"level": "capstone", "title_ko": "주차장 내 차 찾기 도우미", "title_en": "Find my car in a parking lot", "desc_ko": "차량 사진 임베딩으로 비슷한 차를 검색하는 데모를 만듭니다.", "desc_en": "Search similar cars with image embeddings."},
+  {"level": "research", "title_ko": "시점·조명 변화에 강한 차량 인식", "title_en": "Car recognition robust to view and light", "desc_ko": "특정 시점·조명을 빼고 학습했을 때 보지 못한 조건에서 성능이 얼마나 떨어지는지 분석합니다.", "desc_en": "Hold out views or lighting in training and measure the drop on unseen conditions."}
+ ],
+ "doc_used": true,
+ "uncertain": []
+}

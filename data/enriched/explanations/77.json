@@ -1,0 +1,12 @@
+{
+ "dataset_id": "77",
+ "easy_ko": "농산물·음식·옷·기계·건물 같은 일상 물건을 아주 선명하게 찍은 사진과, 같은 장면을 흐리게 만든 사진을 짝지어 둔 데이터입니다. 흐릿한 저화질 사진이나 영상을 선명한 고화질로 바꿔 주는 AI를 만들 수 있습니다.",
+ "easy_en": "Very sharp photos of everyday things such as farm products, food, clothes, machines and buildings, each paired with a low-quality version of the same scene. You can build AI that turns blurry, low-quality photos or video into sharp high-quality ones.",
+ "detail_ko": "대분류 8개, 소분류 600개 이상의 일상 객체를 촬영한 고해상도(HR) 이미지 413,119장과 짝을 이루는 저해상도(LR) 이미지 413,119장, 총 826,238장(PNG/JPEG)과 분류·물체 정보 JSON으로 구성됩니다. 기준 성능은 EDSR MOS(사람 평가) 3.59, RCAN PSNR 34.18dB이며 RCAN PSNR은 목표값보다 낮게 적혀 있습니다. 성능 표의 과제명이 'Image Classification'으로 잘못 적혀 있습니다. 전체 약 7.3TB로 매우 큽니다.",
+ "detail_en": "413,119 high-resolution (HR) images of everyday objects (8 main categories, 600+ sub-categories) paired with 413,119 low-resolution (LR) versions, 826,238 images in total (PNG/JPEG), with category and object JSON. Baselines: EDSR MOS (human rating) 3.59, RCAN PSNR 34.18 dB (below the stated target). The performance table wrongly lists the task as image classification. Total size is very large (about 7.3 TB).",
+ "amount_ko": "이미지 약 82.6만 장(고화질·저화질 쌍 41.3만 개)",
+ "amount_en": "about 826k images (413k high/low-resolution pairs)",
+ "labels_ko": "고화질·저화질 사진 짝, 물건 분류",
+ "labels_en": "high/low-resolution image pairs, object category",
+ "status": "full-run-2026-11-02"
+}

@@ -1,0 +1,29 @@
+{
+ "dataset_id": "168",
+ "title_en": "Face recognition anti-spoofing videos (RGB)",
+ "summary_ko": "3,040명이 스마트폰·태블릿·GoPro로 찍은 실제 얼굴 영상과, 사진 출력물·화면 재생·3D 마스크로 흉내 낸 위조 영상 5.5만 개(이미지 165만 장)입니다. 일반 카메라만으로 얼굴 인증의 위조를 막는 AI에 쓸 수 있습니다.",
+ "summary_en": "55,000 videos (1.65 million images) of 3,040 real faces recorded on phones, tablets and GoPro, plus spoof attacks (printed photos, screen replays, 3D masks). For AI that blocks spoofing in face authentication using ordinary RGB cameras.",
+ "contents_ko": "동영상(mp4) + 추출 이미지(jpg) + 얼굴 마스크 이미지 + 라벨(실제/공격 종류, 조명, 기기).",
+ "contents_en": "Videos (mp4) + extracted images (jpg) + face mask images + labels (live or attack type, lighting, device).",
+ "modalities": ["video", "image"],
+ "tasks": ["image_classification", "anomaly_detection", "segmentation"],
+ "topics": [{"ko": "보안·인증", "en": "Security and authentication"}, {"ko": "사람 얼굴", "en": "Human faces"}, {"ko": "모바일 보안", "en": "Mobile security"}],
+ "keywords_ko": ["안면인식", "위변조 감지", "안티 스푸핑", "라이브니스", "스마트폰 인증"],
+ "keywords_en": ["face recognition", "spoof detection", "anti-spoofing", "liveness", "phone authentication"],
+ "labels": ["class (live / print / replay / 3D mask)", "face segmentation mask"],
+ "file_formats": ["mp4", "jpg", "json"],
+ "scale_ko": "인원 3,040명, 영상 54,870개, 이미지 1,646,100장",
+ "classes_example": ["Live", "Print", "Replay", "3D Mask"],
+ "baseline": [],
+ "difficulty": "intermediate",
+ "difficulty_note_ko": "RGB만 쓰므로 161번보다 다루기 쉽지만 전체 약 360GB입니다.",
+ "skills_needed_ko": ["파이썬", "얼굴 검출·자르기", "이미지 분류"],
+ "caveats_ko": ["실제 얼굴 데이터라 이용 약관과 개인정보 보호를 반드시 확인", "3D 마스크 영상은 150개로 적음"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "화면 재생 공격 구분", "title_en": "Detect screen replay attacks", "desc_ko": "실제 얼굴과 휴대폰 화면 속 얼굴을 분류합니다.", "desc_en": "Classify real faces versus faces on a phone screen."},
+  {"level": "capstone", "title_ko": "모바일 본인 확인 데모", "title_en": "Mobile identity check demo", "desc_ko": "얼굴 인증 전에 라이브니스 검사를 하는 앱 프로토타입을 만듭니다.", "desc_en": "Prototype an app that runs liveness checks before face login."},
+  {"level": "research", "title_ko": "기기가 바뀌어도 통하는 탐지", "title_en": "Cross-device spoof detection", "desc_ko": "한 기기로 학습한 모델이 다른 카메라에서 얼마나 통하는지 분석합니다.", "desc_en": "Study how a model trained on one device transfers to others."}
+ ],
+ "doc_used": true,
+ "uncertain": []
+}

@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71858",
+ "easy_ko": "백령도와 연평도 해안에서 찍은 실제 감시 사진 10만여 장에 어선, 상선, 군함, 사람, 새 같은 물체 위치와 설명을 붙인 데이터입니다. 낮과 밤 해안 경계 감시에서 물체를 더 잘 찾아내는 AI에 쓸 수 있습니다.",
+ "easy_en": "Over 100,000 real surveillance photos from the coasts of Baengnyeong and Yeonpyeong islands, with objects such as fishing boats, merchant ships, warships, people and birds boxed and described. You can use it to build AI that detects objects better in day and night coastal surveillance.",
+ "detail_ko": "백령도·연평도 해안의 실제 감시 이미지 105,643장(jpg)에 객체 129,026개의 상자(클래스 5종: 어선, 상선, 군함, 사람, 유조류)와 이미지 설명(JSON), 촬영 메타데이터(csv)를 붙였습니다. 어선이 약 61%로 클래스가 불균형하고, 밤 이미지가 약 15%로 적으며, 데이터 개요가 비어 있고, 모델 성능 수치는 팩에 없습니다. 군 데이터라 이용 조건을 확인해야 합니다.",
+ "detail_en": "105,643 real surveillance images (jpg) from the coasts of Baengnyeong and Yeonpyeong islands, with JSON boxes for 129,026 objects in 5 classes (fishing boat, merchant ship, warship, person, bird) and image captions, plus capture metadata (csv). Fishing boats make up about 61%, so classes are imbalanced; night images are only about 15%; the overview is empty; and no model scores are in the pack. It is military data, so check the terms of use.",
+ "amount_ko": "이미지 105,643장, 객체 129,026개, 클래스 5종",
+ "amount_en": "105,643 images, 129,026 objects, 5 classes",
+ "labels_ko": "물체 위치 상자, 사진 설명",
+ "labels_en": "bounding box, caption",
+ "status": "full-run-2026-11-02"
+}

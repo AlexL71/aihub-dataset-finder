@@ -1,0 +1,12 @@
+{
+ "dataset_id": "169",
+ "easy_ko": "어린이 보호구역 CCTV와 자동차 블랙박스로 찍은 영상에, 무단횡단, 차도로 걷기, 갑자기 튀어나오기, 킥보드 타기, 넘어짐 같은 어린이의 위험한 행동을 표시한 데이터입니다. 스쿨존에서 운전자와 아이에게 위험을 미리 알려 주는 AI를 만들 수 있습니다.",
+ "easy_en": "School-zone CCTV and car dashcam videos marked with children's risky behaviour such as jaywalking, walking in the road, suddenly darting out, riding scooters and falling. You can build AI that warns drivers and children of danger in school zones.",
+ "detail_ko": "어린이 보호구역 CCTV(1,124건)와 차량 블랙박스(443건)로 촬영한 영상 300시간, 1,200클립, 이미지 100만 장으로, 위험행동 10종(jay_walk, driveway_walk, suddenlyappear, ride_cycle, ride_kick, fall_down, fighting, with_dog 등), 사람 바운딩박스, 구간 라벨이 있습니다. 기준 성능은 Res3D / I3D 행동 분류 정확도 86.6%입니다. 전체 약 6TB이며 어린이 영상이라 개인정보·이용 약관 확인이 필요합니다.",
+ "detail_en": "300 hours of video in 1,200 clips and 1M images from school-zone CCTV (1,124 cases) and dashcams (443 cases), labelled with 10 risky behaviours (jaywalking, walking in the road, suddenly appearing, cycling, riding a scooter, falling, fighting, walking a dog and more), person bounding boxes and time segments. Baseline: Res3D / I3D behaviour classification accuracy 86.6%. Total size is about 6 TB; children are filmed, so check privacy and terms of use.",
+ "amount_ko": "영상 300시간, 이미지 100만 장, 위험행동 10종",
+ "amount_en": "300 hours of video, 1M images, 10 risky behaviours",
+ "labels_ko": "위험행동 종류, 사람 위치 상자, 행동 시간 구간",
+ "labels_en": "risky-behaviour class, box around the person, time segment",
+ "status": "full-run-2026-11-02"
+}

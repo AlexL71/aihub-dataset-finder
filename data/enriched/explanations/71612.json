@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71612",
+ "easy_ko": "실업팀, 대학, 주니어 선수의 테니스 대회와 훈련 영상에서 뽑은 사진 19만여 장에 선수, 심판, 코트, 네트 위치와 선수 몸 관절 점을 표시한 데이터입니다. 경기 영상을 분석하거나 선수 자세를 분석해 코칭하는 AI에 쓸 수 있습니다.",
+ "easy_en": "About 192,000 images from tennis competition and training videos of professional-team, university and junior players, marking players, umpires, the court and the net, plus players' body joints. You can use it to build AI that analyses match video or coaches players on their posture.",
+ "detail_ko": "실업·대학·주니어 선수의 테니스 대회·훈련 영상(mp4)에서 뽑은 이미지 192,000장(jpg; 단식·복식·혼합)에 선수·심판·코트·네트 상자와 다각형, 선수 관절 키포인트, 경기·동작 정보를 JSON으로 붙였습니다. 기준 성능은 Faster R-CNN 객체 탐지 mAP@0.5 81.29%, HRNet 선수 키포인트 MPJPE 44.08mm, PCK 97.56%입니다. 전문 선수 데이터가 약 90%라 일반인 자세와 다를 수 있고, 같은 경기에서 뽑은 연속 프레임이 많아 경기 단위로 나눠야 합니다. 코트·네트 분할 성능이 기준 65%에 측정 10%로 적혀 있어 오기일 수 있습니다. 71611 배드민턴 데이터와 같은 구성입니다.",
+ "detail_en": "192,000 images (jpg; singles, doubles, mixed) from tennis competition and training videos (mp4) of professional-team, university and junior players, with JSON boxes and polygons for players, umpires, court and net, player keypoints, and match and motion information. Baselines: object detection with Faster R-CNN, mAP@0.5 81.29%; player keypoints with HRNet, MPJPE 44.08 mm and PCK 97.56%. About 90% of the data is from elite players, so poses may differ from amateurs', and many consecutive frames come from the same match, so split by match. Court and net segmentation is listed as 10% against a 65% target, which may be a typo. Same layout as the badminton set 71611.",
+ "amount_ko": "이미지 192,000장",
+ "amount_en": "192,000 images",
+ "labels_ko": "선수·심판·코트·네트 위치 상자와 테두리, 몸 관절 점, 경기 정보",
+ "labels_en": "bounding boxes, polygons, keypoints, match info",
+ "status": "full-run-2026-11-02"
+}

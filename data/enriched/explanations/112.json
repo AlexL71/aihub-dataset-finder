@@ -1,0 +1,12 @@
+{
+ "dataset_id": "112",
+ "easy_ko": "자동차 안에서 하는 대화와 '에어컨 켜 줘', '길 안내해 줘' 같은 명령을 녹음하고, 그 말을 받아 적은 글을 짝지은 데이터입니다. 운전 중에 말로 차를 조작하는 차량용 음성 비서를 만들 수 있습니다.",
+ "easy_en": "Recordings of conversations and commands spoken in a car, such as 'turn on the air conditioning' or 'start navigation', paired with written transcripts. You can build in-car voice assistants that let drivers control the car by speaking.",
+ "detail_ko": "차량 내 대화 및 명령어 음성 3,200시간(구축량 460.8만)으로, wav 음성, 전사 텍스트, JSON 메타정보(명령 카테고리, 화자, 녹음 환경; 파일명에도 정보 포함)로 구성됩니다. 기준 성능은 Kaldi 음성 인식 CER 6.62%, WER 13.37%입니다. 실제 주행 중 차량이 아니라 크라우드 워커가 스마트폰 등으로 녹음한 데이터라 실제 차량 소음과 다를 수 있습니다.",
+ "detail_en": "3,200 hours of in-car conversation and command speech (4.608M built items), with wav audio, transcripts and JSON metadata (command category, speaker, recording environment; also encoded in file names). Baselines: Kaldi speech recognition CER 6.62%, WER 13.37%. It was recorded by crowd workers on smartphones rather than in moving cars, so real car noise may differ.",
+ "amount_ko": "음성 3,200시간",
+ "amount_en": "3,200 hours of speech",
+ "labels_ko": "말소리를 받아 적은 글(전사), 명령 종류, 화자 정보",
+ "labels_en": "transcripts, command category, speaker info",
+ "status": "full-run-2026-11-02"
+}

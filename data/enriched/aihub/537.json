@@ -1,0 +1,29 @@
+{
+ "dataset_id": "537",
+ "title_en": "Speech data for speaker recognition",
+ "summary_ko": "화자 3,000명이 호출어 100개(5가지 발화 스타일로 3회씩), 공통 문장, 무작위 문장을 스튜디오·무소음·잡음 환경에서 녹음한 음성 7,000시간(734만 개)입니다. 목소리로 누가 말하는지 알아보는 화자 인식과 맞춤형 음성 비서에 쓸 수 있습니다.",
+ "summary_en": "7,000 hours (7.35 million clips) recorded by 3,000 speakers: 100 wake words (3 times in 5 speaking styles), shared sentences and random sentences, in studio, quiet and noisy environments. For speaker recognition that tells who is speaking, and personalised voice assistants.",
+ "contents_ko": "음성(wav) + JSON(전사, 화자 ID, 성별·연령대·지역, 녹음 환경, 발화 스타일).",
+ "contents_en": "Audio (wav) + JSON (transcript, speaker ID, sex, age group, region, recording environment, speaking style).",
+ "modalities": ["audio", "text"],
+ "tasks": ["audio_classification", "speech_recognition"],
+ "topics": [{"ko": "음성", "en": "Speech"}, {"ko": "보안·인증", "en": "Security and authentication"}, {"ko": "음성 비서", "en": "Voice assistants"}],
+ "keywords_ko": ["화자 인식", "목소리 인증", "호출어", "음성 비서", "화자 분리"],
+ "keywords_en": ["speaker recognition", "voice authentication", "wake word", "voice assistant", "speaker verification"],
+ "labels": ["speaker ID", "transcript", "speaker attributes", "environment", "style"],
+ "file_formats": ["wav", "json"],
+ "scale_ko": "7,345,994개, 약 7,000시간, 화자 3,000명",
+ "classes_example": ["스튜디오", "무소음", "잡음"],
+ "baseline": [],
+ "difficulty": "intermediate",
+ "difficulty_note_ko": "화자 임베딩(x-vector, ECAPA) 실습에 좋지만 전체 약 560GB입니다.",
+ "skills_needed_ko": ["파이썬", "오디오 특징 추출", "화자 임베딩 모델"],
+ "caveats_ko": ["목소리는 생체정보라 이용 약관과 개인정보 확인 필요", "성능 지표가 팩 앞부분에 없음"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "목소리로 성별·연령대 분류", "title_en": "Sex and age group from voice", "desc_ko": "음성으로 화자의 성별과 연령대를 분류합니다.", "desc_en": "Classify speaker sex and age group from voice."},
+  {"level": "capstone", "title_ko": "가족 구성원별 음성 비서", "title_en": "Per-member voice assistant", "desc_ko": "호출어로 누가 말했는지 구분해 맞춤 응답하는 데모를 만듭니다.", "desc_en": "Identify who said the wake word and answer personally."},
+  {"level": "research", "title_ko": "잡음 환경 화자 인증", "title_en": "Speaker verification in noise", "desc_ko": "잡음 환경에서 화자 인증 오류를 분석하고 개선합니다.", "desc_en": "Analyse and reduce speaker-verification errors in noise."}
+ ],
+ "doc_used": true,
+ "uncertain": []
+}

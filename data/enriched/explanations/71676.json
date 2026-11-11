@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71676",
+ "easy_ko": "옹벽, 다리, 터널, 건물 같은 콘크리트 시설을 땅속 레이더(GPR) 장비로 찍은 사진 30만여 장에 안쪽 철근과 겉면 균열 신호를 상자로 표시하고 정상과 불량을 나눈 데이터입니다. 콘크리트 구조물이 안전한지 진단하는 AI에 쓸 수 있습니다.",
+ "easy_en": "Over 300,000 ground-penetrating radar (GPR) images of concrete structures such as retaining walls, bridges, tunnels and buildings, with boxes marking signals from internal rebar and surface cracks, and each sorted into good or defective. You can use it to build AI that checks whether concrete structures are safe.",
+ "detail_ko": "옹벽 81,289장, 교량 78,520장, 터널 60,257장, 건축물 81,014장, 총 301,080장의 GPR 이미지(png)를 장비 3종(C-Thrue, Hi-mod, NM)으로 찍고, 철근·균열 신호 상자와 양품·불량 구분을 JSON으로 붙였습니다. 장비마다 영상 특성이 다를 수 있고, 성능 지표 값은 팩에 없습니다.",
+ "detail_en": "301,080 GPR images (png) of concrete facilities (81,289 retaining walls, 78,520 bridges, 60,257 tunnels, 81,014 buildings) taken with 3 devices (C-Thrue, Hi-mod, NM), with JSON boxes for rebar and crack signals and a good/defective label. Image characteristics may differ by device, and no metric values are in the pack.",
+ "amount_ko": "이미지 301,080장(옹벽 81,289, 교량 78,520, 터널 60,257, 건축물 81,014)",
+ "amount_en": "301,080 images (81,289 retaining wall, 78,520 bridge, 60,257 tunnel, 81,014 building)",
+ "labels_ko": "철근·균열 신호 위치 상자, 정상·불량",
+ "labels_en": "bounding boxes, good/defective",
+ "status": "full-run-2026-11-02"
+}

@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71632",
+ "easy_ko": "청소년이 두 명씩 앱으로 통화하며 대본 없이 나눈 일상 대화 목소리에 받아쓴 글과, 문장마다 기쁨, 슬픔, 화남 같은 감정과 그 세기를 표시한 데이터입니다. 음성 인식, 감정 인식, 대화 챗봇에 쓸 수 있습니다.",
+ "easy_en": "Unscripted everyday phone conversations between pairs of teenagers using an app, with written transcripts and each sentence marked with an emotion such as joy, sadness or anger and how strong it is. You can use it for speech recognition, emotion recognition and chatbots.",
+ "detail_ko": "청소년 4,433명(여성 64%)이 두 명씩 앱으로 통화한 대화 11,702건, 음성 3,000시간(스테레오 wav, 16kHz, 화자별 1채널)에 화자 성별·연령대·지역, 실내/실외 소음, 대화 주제(10~11개), 문장별 전사와 시작·끝 시간, 감정 상태(기쁨, 놀라움, 두려움, 사랑스러움, 슬픔, 화남, 없음)·유형·세기·대상과 검수자 감정 라벨을 JSON으로 붙였습니다. 기준 성능은 CNN 감정 인식 정확도 80.21%, Transformer 음성 인식 CER 6.4%, x-vector 화자 인식 EER 4.474%, ESPnet WER 12.1%입니다. '기쁨'이 51%로 불균형하고, 화자 79%가 수도권 거주이며, 청소년 음성이라 개인정보·이용 약관을 확인해야 합니다. 성인 대화는 별도 데이터셋(71631)입니다.",
+ "detail_en": "11,702 app-based phone conversations between pairs of 4,433 teenagers (64% female), 3,000 hours of stereo audio (wav, 16 kHz, one channel per speaker), with JSON speaker gender, age band and region, indoor/outdoor noise, topic (10 to 11 topics), per-sentence transcripts with start and end times, emotion state (joy, surprise, fear, love, sadness, anger, none), sentiment, intensity, target and reviewer emotion labels. Baselines: emotion recognition with CNN, accuracy 80.21%; speech recognition with Transformer, CER 6.4%; speaker recognition with x-vector, EER 4.474%; ESPnet WER 12.1%. 'Joy' makes up 51%, so emotions are imbalanced; 79% of speakers live in the capital region; this is teenagers' speech, so check the personal-data terms. Adult conversations are a separate dataset (71631).",
+ "amount_ko": "음성 3,000시간, 화자 4,433명, 대화 11,702건",
+ "amount_en": "3,000 hours of speech, 4,433 speakers, 11,702 conversations",
+ "labels_ko": "받아쓴 글, 감정 종류, 긍정·부정, 감정 세기, 말한 사람 정보",
+ "labels_en": "transcripts, emotion (7 classes), sentiment, emotion intensity, speaker attributes",
+ "status": "full-run-2026-11-02"
+}

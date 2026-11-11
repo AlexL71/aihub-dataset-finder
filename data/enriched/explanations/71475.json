@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71475",
+ "easy_ko": "번역기가 옮긴 한국어와 영어 문장을 사람이 고친 결과와, 번역이 얼마나 잘됐는지 단어, 문장, 문서 단위로 평가한 결과를 모은 글 데이터입니다. 번역 품질을 자동으로 채점하거나 번역문을 자동으로 다듬는 AI에 쓸 수 있습니다.",
+ "easy_en": "Text data with machine translations between Korean and English that people corrected, plus ratings of how good each translation is at the word, sentence and document level. You can use it to build AI that scores translation quality or polishes translations automatically.",
+ "detail_ko": "한국어↔영어 기계번역 결과를 사람이 고친 사후교정(MTPE) 310,000건과, 어절·문장·문서 수준 품질예측(QE) 주석 310,002건, 총 620,002건(JSON, 주제 4종: CA, ES, SH, ST)입니다. 기준 성능은 COMET22 + COMET-KIWI로 문서 수준 QE(MQM) Kendall 상관 영-한 0.293, 한-영 0.333, 문장 수준 QE(영-한) 0.344, 어절 수준 QE(영-한) 정밀도 70.4%입니다. 주제 약어의 뜻은 팩에 설명되어 있지 않고, 품질 예측 상관계수(약 0.3)가 낮은 편입니다.",
+ "detail_en": "620,002 items (JSON) for Korean↔English: 310,000 human post-edits of machine translation (MTPE) and 310,002 quality-estimation (QE) annotations at word, sentence and document level, in 4 topics (CA, ES, SH, ST). Baselines with COMET22 + COMET-KIWI: document-level QE (MQM) Kendall correlation 0.293 (en-ko) and 0.333 (ko-en), sentence-level QE (en-ko) 0.344, word-level QE (en-ko) precision 70.4%. The topic abbreviations are not explained in the pack, and the QE correlations (about 0.3) are low.",
+ "amount_ko": "620,002건(사후교정 310,000, 품질예측 310,002), 주제 4종",
+ "amount_en": "620,002 items (310,000 post-edits, 310,002 quality estimates), 4 topics",
+ "labels_ko": "사람이 고친 번역문, 품질 점수, 오류 종류",
+ "labels_en": "post-edited translations, quality scores, error classes",
+ "status": "full-run-2026-11-02"
+}

@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71917",
+ "easy_ko": "특허, 기업 재무 정보, 기술 가치 평가 자료를 바탕으로 기술의 가치를 매긴 결과와 그 근거를 차근차근 적은 질문과 답 6만 건으로, 반도체, 배터리, 인공지능 같은 첨단 기술 분야로 나뉩니다. 기술 가치 평가를 돕는 AI와 기술 사업화 분석에 쓸 수 있습니다.",
+ "easy_en": "60,000 questions and answers that value technologies from patents, company financials and valuation records, writing out the reasoning step by step, grouped into advanced fields such as semiconductors, batteries and AI. You can use it to build AI that helps value technologies and analyse their commercial potential.",
+ "detail_ko": "한국 특허 공보, 특허평가정보, 기업·재무정보, 기술가치평가정보를 바탕으로 평가 결과와 근거(경제적 수명, 할인율, 로열티율 등)를 단계적 사고(CoT)로 적은 질의응답 60,000건(JSON)으로, 분야는 반도체·디스플레이, 사이버 보안, 수소, 양자, 우주항공·해양, 이차전지, 인공지능, 차세대 원자력, 차세대 통신입니다. 페이지에 성능 점수 표가 없고(CoT 질의응답 모델 소개만 있음), 양자 분야가 1.17%(700건)로 적으며, 평가 결과를 실제 투자 판단에 그대로 쓰면 안 됩니다.",
+ "detail_en": "60,000 question-answer items (JSON) built from Korean patent gazettes, patent evaluation data, company and financial data and technology-valuation records, giving valuation results and reasons (economic life, discount rate, royalty rate and more) as chain-of-thought (CoT), in fields such as semiconductors/displays, cybersecurity, hydrogen, quantum, aerospace/ocean, secondary batteries, AI, next-generation nuclear and next-generation telecom. There is no score table (only a CoT QA model is described); quantum is only 1.17% (700 items); and results must not be used directly for investment decisions.",
+ "amount_ko": "질의응답 60,000건",
+ "amount_en": "60,000 QA items",
+ "labels_ko": "질문과 답, 단계별 추론",
+ "labels_en": "question-answer, CoT",
+ "status": "full-run-2026-11-02"
+}

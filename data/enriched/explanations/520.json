@@ -1,0 +1,12 @@
+{
+ "dataset_id": "520",
+ "easy_ko": "벼, 콩, 밀, 배추 같은 작물을 여러 방향의 일반 카메라, 위에서 본 카메라, 열화상, 특수 색 카메라, 레이저 거리 측정 장비로 함께 찍고, 작물 위치를 표시한 데이터입니다. 키나 잎 수 같은 작물의 생김새를 자동으로 재서 새 품종 개발을 돕는 AI를 만들 수 있습니다.",
+ "easy_en": "Crops such as rice, soybean, wheat and napa cabbage recorded with ordinary cameras from many angles and from above, plus thermal cameras, special colour (spectral) cameras and laser scanners, with each plant's position marked. You can build AI that automatically measures crop traits such as height and leaf count to help breed new varieties.",
+ "detail_ko": "벼·콩·밀·배추 등 작물의 디지털 피노타이핑 데이터 79만 건(다각도 RGB 60만, 탑뷰 RGB 12만, 라이다 14만, 열화상 1.2만, 초분광 7천, 엽록소 형광 1천)으로, 이미지(png), 라이다(csv), JSON(개체 바운딩박스, 작물, 측정 지표)이 있습니다. 표현형 지표 목록과 기준 성능은 기록에서 확인되지 않습니다. 전체 약 1.6TB입니다.",
+ "detail_en": "790k digital-phenotyping records of crops such as rice, soybean, wheat and napa cabbage (multi-angle RGB 600k, top-view RGB 120k, lidar 140k, thermal 12k, hyperspectral 7k, chlorophyll fluorescence 1k), with images (png), lidar (csv) and JSON plant boxes, crop and trait measurements. The trait list and baseline are not visible in the record. Total size is about 1.6 TB.",
+ "amount_ko": "데이터 79만 건",
+ "amount_en": "790k records",
+ "labels_ko": "작물 위치 상자, 작물 종류, 생김새 측정값",
+ "labels_en": "boxes around plants, crop type, trait measurements",
+ "status": "full-run-2026-11-02"
+}

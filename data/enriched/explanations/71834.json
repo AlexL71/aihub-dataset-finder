@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71834",
+ "easy_ko": "계약서 서식 1만여 건을 모으고, 문서 종류와 각 항목의 형식, 내용, 위치를 표시한 데이터입니다. 계약서를 자동으로 분석하거나 새로 만들어 주는 AI에 쓸 수 있습니다.",
+ "easy_en": "Over 10,000 contract templates, with the document type and the format, content and position of each item marked. You can use it to build AI that analyses or drafts contracts automatically.",
+ "detail_ko": "계약서 서식 원문 10,215건(JSON)에 문서 분류(예: 비밀유지 계약서, 사업양수도 계약서, 제휴/협약 계약서, 국내 투자 계약서, 해외 투자 계약서)와 항목 형식·내용·위치 태그 612,868개를 JSON으로 붙였습니다. 문서 수 표기(10,215·10,216건, 612,868·612,899건)가 곳에 따라 다르고, 모델 성능 수치는 팩에 없고, 71835 계약 외 법률 문서 데이터과 같은 구조입니다.",
+ "detail_en": "10,215 contract templates (JSON) with JSON document categories (such as non-disclosure, business transfer, partnership/agreement, domestic investment and overseas investment contracts) and 612,868 tags for the format, content and position of each item. Counts differ between places (10,215 vs. 10,216 documents; 612,868 vs. 612,899 labels). No model scores are in the pack. Same structure as the non-contract legal document set 71835.",
+ "amount_ko": "문서 10,215건, 라벨 612,868개",
+ "amount_en": "10,215 documents, 612,868 labels",
+ "labels_ko": "문서 종류, 항목 형식·내용·위치",
+ "labels_en": "document category, clause/item tag",
+ "status": "full-run-2026-11-02"
+}

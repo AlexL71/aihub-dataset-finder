@@ -1,0 +1,29 @@
+{
+ "dataset_id": "621",
+ "title_en": "Smart barn integrated data (Hanwoo cattle)",
+ "summary_ko": "여러 한우 농장에서 직접 찍은 이미지 약 33만 장에 번식우·육성우·비육우·송아지 등 월령·성별별로 소를 상자·다각형·키포인트로 표시한 데이터입니다. 발정·건강 상태 같은 한우 상태를 진단하는 스마트 축사 AI에 쓸 수 있습니다.",
+ "summary_en": "About 330,000 images taken at several Hanwoo (Korean cattle) farms, with cattle marked by boxes, polygons and keypoints by age group and sex (breeding cows, growing cattle, fattening steers, calves). For smart-barn AI that diagnoses cattle condition such as heat and health.",
+ "contents_ko": "한우 이미지(jpg) + XML 라벨(상자, 다각형, 키포인트, 농장·월령 정보).",
+ "contents_en": "Cattle images (jpg) + XML labels (boxes, polygons, keypoints, farm and age info).",
+ "modalities": ["image", "audio"],
+ "tasks": ["object_detection", "segmentation", "keypoint_pose", "action_recognition"],
+ "topics": [{"ko": "축산", "en": "Livestock farming"}, {"ko": "동물 행동", "en": "Animal behaviour"}],
+ "keywords_ko": ["한우", "스마트 축사", "발정 감지", "개체 인식", "축산"],
+ "keywords_en": ["Hanwoo cattle", "smart barn", "heat detection", "individual identification", "livestock"],
+ "labels": ["bounding box", "polygon", "keypoint", "age group"],
+ "file_formats": ["jpg", "xml"],
+ "scale_ko": "원천 이미지 약 33만 장, 라벨 XML 약 650개",
+ "classes_example": ["임신분만우", "포유번식우", "육성우", "미경산우", "비육우", "송아지"],
+ "baseline": [],
+ "difficulty": "advanced",
+ "difficulty_note_ko": "전체 약 1.9TB로 크고 라벨이 XML 650개에 묶여 있어 처리가 번거롭습니다.",
+ "skills_needed_ko": ["파이썬", "YOLO 탐지", "자세 추정", "XML 처리"],
+ "caveats_ko": ["전체 약 1.9TB", "라벨 파일 수(649)가 이미지 수보다 훨씬 적어 한 XML에 여러 이미지가 묶인 것으로 보임", "오디오 유형으로 표기됐지만 팩 앞부분에 소리 데이터 설명이 없음", "성능 지표 표가 팩에서 비어 있음", "559번 한우 BCS 데이터와 주제가 겹침"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "축사 한우 탐지", "title_en": "Cattle detection in barns", "desc_ko": "축사 사진에서 한우를 찾아 셉니다.", "desc_en": "Detect and count cattle in barn photos."},
+  {"level": "capstone", "title_ko": "번식우 상태 모니터", "title_en": "Breeding-cow monitor", "desc_ko": "자세·행동 변화로 분만·발정 징후를 알려줍니다.", "desc_en": "Flag calving or heat signs from pose and behaviour changes."},
+  {"level": "research", "title_ko": "키포인트로 체형 추정", "title_en": "Body shape from keypoints", "desc_ko": "키포인트로 월령·체형을 추정하는 방법을 연구합니다.", "desc_en": "Estimate age and body shape from keypoints."}
+ ],
+ "doc_used": true,
+ "uncertain": ["whether audio data is included", "label-file structure", "baseline values"]
+}

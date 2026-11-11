@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71344",
+ "easy_ko": "참외 온실에서 심을 때, 열매 맺을 때, 거둘 때 찍은 사진마다 노균병·흰가루병과 그와 비슷해 보이는 증상, 건강한 잎을 상자로 표시하고 온도·습도 기록을 붙인 데이터입니다. 사진으로 참외 병을 일찍 알아내는 진단 AI를 만들 수 있습니다.",
+ "easy_en": "Photos from Korean melon greenhouses at planting, fruit-setting and harvest, with boxes marking downy mildew, powdery mildew, symptoms that look like them, and healthy leaves, plus temperature and humidity records. You can build diagnosis AI that spots melon diseases early from photos.",
+ "detail_ko": "참외 온실에서 정식·착과·수확 단계에 촬영한 이미지 약 23만 장(jpg, 야간 33% 포함)에 질병 5종(노균병, 노균병 유사, 흰가루병, 흰가루병 유사, 정상) 바운딩박스, 생육 단계, 주·야간을 JSON으로 붙이고 환경 데이터를 함께 제공합니다. 기준 성능은 ResNet-50 질병 분류 정확도 97.71%입니다. 참외 한 작물만 있습니다.",
+ "detail_en": "About 230k images (jpg; 33% at night) from Korean melon greenhouses at transplanting, fruit-setting and harvest, with JSON boxes for 5 classes (downy mildew, downy-mildew look-alike, powdery mildew, powdery-mildew look-alike, healthy), growth stage and day/night, plus environment data. Baseline: ResNet-50 disease classification accuracy 97.71%. Only one crop is covered.",
+ "amount_ko": "사진 약 23만 장, 질병 분류 5종",
+ "amount_en": "about 230k images, 5 disease classes",
+ "labels_ko": "병든 곳 위치 상자, 병 종류(비슷한 증상 포함), 자라는 단계, 낮·밤",
+ "labels_en": "boxes around symptoms, disease class (including look-alikes), growth stage, day or night",
+ "status": "full-run-2026-11-02"
+}

@@ -1,0 +1,33 @@
+{
+ "dataset_id": "71534",
+ "title_en": "3D person-to-person interaction data (three or more people)",
+ "summary_ko": "세 명 이상이 함께 하는 여가·의무 시간 등의 상호작용 동작을 여러 카메라로 촬영한 영상 30,843개와 이미지 20만 3천여 장에 몸 키포인트가 표시되어 있고, 3D 모션(FBX)도 있습니다. 10대~60대 이상, 다양한 체형을 포함합니다. 여러 사람 동작 분류와 3D 자세 추정 AI에 쓸 수 있습니다.",
+ "summary_en": "30,843 multi-camera videos and about 203,000 images of interactions among three or more people (leisure, obligatory activities, etc.) with body keypoints, plus 3D motion (FBX); ages from teens to 60+ and varied body types. For multi-person action classification and 3D pose estimation.",
+ "contents_ko": "영상(MP4) + 이미지(JPG) + 3D 모션(FBX) + JSON(키포인트).",
+ "contents_en": "Video (MP4) + images (JPG) + 3D motion (FBX) + JSON (keypoints).",
+ "modalities": ["video", "image", "3d"],
+ "tasks": ["keypoint_pose", "action_recognition"],
+ "topics": [{"ko": "동작 분석", "en": "Motion analysis"}, {"ko": "컴퓨터 비전", "en": "Computer vision"}],
+ "keywords_ko": ["다인 상호작용", "3D 자세 추정", "키포인트", "모션캡처", "다시점 영상", "동작 분류"],
+ "keywords_en": ["multi-person interaction", "3D pose estimation", "keypoints", "motion capture", "multi-view video", "action classification"],
+ "labels": ["keypoint", "action class", "3D motion"],
+ "file_formats": ["mp4", "jpg", "fbx", "json"],
+ "scale_ko": "영상 30,843개, 이미지 203,380장, FBX 3,601개",
+ "classes_example": ["여가 시간", "의무 시간"],
+ "baseline": [
+  {"task": "interaction action classification", "model": "PoseConv3D", "metric": "Accuracy", "value": "88.61%"},
+  {"task": "interaction action classification", "model": "PoseConv3D", "metric": "mAP", "value": "84.65%"},
+  {"task": "3D pose estimation", "model": "TCMR", "metric": "MPJPE", "value": "68.09 mm"}
+ ],
+ "difficulty": "advanced",
+ "difficulty_note_ko": "여러 사람의 3D 자세와 다시점 영상을 다뤄야 하고 전체 약 480GB입니다.",
+ "skills_needed_ko": ["파이썬", "자세 추정 모델", "3D 데이터 처리", "스켈레톤 기반 동작 인식"],
+ "caveats_ko": ["전체 약 480GB", "71528(2인) 데이터와 구조가 같음", "세부 동작 클래스 목록이 팩 앞부분에 없음"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "다인 키포인트 시각화", "title_en": "Multi-person keypoint visualisation", "desc_ko": "이미지 위에 여러 사람의 키포인트를 그려 동작을 확인합니다.", "desc_en": "Draw several people's keypoints on images."},
+  {"level": "capstone", "title_ko": "단체 활동 인식기", "title_en": "Group activity recogniser", "desc_ko": "스켈레톤으로 여러 사람이 함께 하는 활동을 분류하는 데모를 만듭니다.", "desc_en": "Classify group activities from skeletons."},
+  {"level": "research", "title_ko": "인원 수와 자세 추정 오차", "title_en": "Crowd size and pose error", "desc_ko": "사람 수가 늘수록 3D 자세 오차가 어떻게 변하는지 2인 데이터와 비교합니다.", "desc_en": "Compare pose error vs number of people with the 2-person set."}
+ ],
+ "doc_used": true,
+ "uncertain": []
+}

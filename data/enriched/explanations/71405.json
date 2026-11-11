@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71405",
+ "easy_ko": "식당, 카페, 기차역, 공항처럼 여러 사람이 떠드는 곳과 달리는 차 안에서 녹음한 명령어 말소리와 받아 적은 글을 짝지은 데이터입니다. 주변이 시끄러워도 말하는 사람의 명령을 잘 알아듣는 음성 비서나 차량용 음성 인식을 만들 수 있습니다.",
+ "easy_en": "Spoken commands recorded where many people are talking, such as restaurants, cafes, train stations and airports, and inside moving cars, paired with transcripts. You can build voice assistants or in-car speech recognition that understand the speaker's command even in noise.",
+ "detail_ko": "다화자 소음 장소 10종(식당, 카페, 편의점, 대형몰, 기차역, 공원, 헬스장, 공항, 병원 등) 2,905시간과 차량 주행 1,116시간, 총 약 4,021시간의 명령어 음성(wav)에 전사, 소음 환경, 화자 정보, 차량 조건을 JSON으로 붙였습니다. 기준 성능은 ESPnet 명령어 음성 인식 CER 9.2%입니다. 전체 약 677GB이며, 화자 출생지가 수도권 72%로 치우치고 여성 63%·남성 37%로 성비 차이가 있습니다.",
+ "detail_en": "About 4,021 hours of command speech (wav): 2,905 hours in 10 multi-talker noisy places (restaurant, cafe, convenience store, mall, train station, park, gym, airport, hospital and more) and 1,116 hours in moving cars, with JSON transcripts, noise setting, speaker info and vehicle conditions. Baseline: ESPnet command recognition CER 9.2%. Total size is about 677 GB; 72% of speakers were born in the capital region; 63% female, 37% male.",
+ "amount_ko": "음성 약 4,021시간",
+ "amount_en": "about 4,021 hours of speech",
+ "labels_ko": "말소리를 받아 적은 글(전사), 소음 환경, 화자 정보, 차량 조건",
+ "labels_en": "transcripts, noise setting, speaker info, vehicle conditions",
+ "status": "full-run-2026-11-02"
+}

@@ -1,0 +1,29 @@
+{
+ "dataset_id": "484",
+ "title_en": "Speech with numbers in patterned utterances",
+ "summary_ko": "한자어(일, 이, 삼), 고유어(하나, 둘), 외래어 숫자 읽기를 84가지 패턴(통계·날짜·시간·전화번호·금액 등)으로 녹음한 음성 13,342시간과 스크립트 15만 건입니다. 숫자를 정확히 알아듣는 AI 콜센터, AI 스피커 음성 인식에 쓸 수 있습니다.",
+ "summary_en": "13,342 hours of speech and 150,000 scripts covering 84 patterns of reading numbers in Sino-Korean, native Korean and loanword forms (statistics, dates, times, phone numbers, amounts and more). For speech recognition that gets numbers right in AI call centres and smart speakers.",
+ "contents_ko": "음성(pcm) + JSON(스크립트, 숫자 패턴 카테고리, 화자·환경 정보).",
+ "contents_en": "Audio (pcm) + JSON (script, number-pattern category, speaker and environment info).",
+ "modalities": ["audio", "text"],
+ "tasks": ["speech_recognition", "text_generation"],
+ "topics": [{"ko": "음성", "en": "Speech"}, {"ko": "고객 서비스·콜센터", "en": "Customer service and call centres"}, {"ko": "숫자·한국어 읽기", "en": "Number reading in Korean"}],
+ "keywords_ko": ["숫자 발화", "음성 인식", "한자어 숫자", "고유어 숫자", "AICC", "날짜·시간"],
+ "keywords_en": ["spoken numbers", "speech recognition", "Sino-Korean numbers", "native Korean numbers", "AI contact centre", "dates and times"],
+ "labels": ["script", "number-pattern category", "speaker and environment"],
+ "file_formats": ["pcm", "json"],
+ "scale_ko": "음성 13,342시간(묵음 제외 11,842시간), 스크립트 149,998건, 패턴 84종, 구축 환경 864가지",
+ "classes_example": ["통계/수치", "날짜/시간", "전화번호", "금액"],
+ "baseline": [],
+ "difficulty": "intermediate",
+ "difficulty_note_ko": "음성 인식 미세조정 실습에 좋지만 전체 약 1.1TB입니다.",
+ "skills_needed_ko": ["파이썬", "오디오 처리", "음성 인식 모델 미세조정", "텍스트 정규화"],
+ "caveats_ko": ["전체 약 1.1TB", "라벨링 유형이 '내용요약'으로 잘못 적혀 있음", "성능 지표가 팩 앞부분에 없음"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "숫자 읽기 규칙 분석", "title_en": "Number-reading rule analysis", "desc_ko": "스크립트로 패턴별 숫자를 한자어·고유어 중 어떻게 읽는지 정리합니다.", "desc_en": "Summarise how numbers are read per pattern from scripts."},
+  {"level": "capstone", "title_ko": "전화번호 받아쓰기 봇", "title_en": "Phone-number dictation bot", "desc_ko": "음성으로 말한 전화번호·금액을 정확히 숫자로 받아쓰는 데모를 만듭니다.", "desc_en": "Transcribe spoken phone numbers and amounts into digits."},
+  {"level": "research", "title_ko": "숫자 텍스트 정규화", "title_en": "Number text normalisation", "desc_ko": "'삼천오백 원'을 '3,500원'으로 바꾸는 역정규화 모델을 연구합니다.", "desc_en": "Study inverse normalisation that turns spoken numbers into digits."}
+ ],
+ "doc_used": true,
+ "uncertain": []
+}

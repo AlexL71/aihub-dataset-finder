@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71297",
+ "easy_ko": "해수욕장 CCTV 사진마다, 바닷가에서 먼바다 쪽으로 빠르게 빠져나가는 좁은 물살인 이안류가 어디 있는지 상자로 표시한 데이터입니다. 이안류를 미리 찾아 물놀이 사고를 막는 경보 AI를 만들 수 있습니다.",
+ "easy_en": "Beach CCTV images with boxes around rip currents, narrow, fast channels of water flowing from the shore out to sea. You can build warning AI that spots rip currents early to prevent swimming accidents.",
+ "detail_ko": "해운대·송정·대천·중문·낙산 해수욕장 5곳의 CCTV 12대 이미지 약 31만 장(jpg)에 이안류 바운딩박스, 카메라 ID, 관측 정보를 JSON으로 붙였습니다(클래스: 이안류, 비이안류). 기준 성능은 SCINet 이안류 예측 F1 0.9037, 멀티모달 모델 이안류 탐지 mAP 88.6%입니다. 이안류 이미지가 약 80%로 실제 바다보다 훨씬 많고, 해변의 사람들이 작게 찍혀 있을 수 있습니다.",
+ "detail_en": "About 310k CCTV images (jpg) from 12 cameras at 5 beaches (Haeundae, Songjeong, Daecheon, Jungmun, Naksan), with JSON rip-current boxes, camera ID and observation data (classes: rip current, no rip current). Baselines: SCINet rip-current prediction F1 0.9037, multimodal rip-current detection mAP 88.6%. About 80% of images contain rip currents, far more than in reality; beachgoers may appear small in the frame.",
+ "amount_ko": "사진 약 31만 장, 해수욕장 5곳, 카메라 12대",
+ "amount_en": "about 310k images, 5 beaches, 12 cameras",
+ "labels_ko": "이안류 위치 상자, 카메라 번호, 관측 정보",
+ "labels_en": "rip-current boxes, camera ID, observation data",
+ "status": "full-run-2026-11-02"
+}

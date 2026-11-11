@@ -1,0 +1,29 @@
+{
+ "dataset_id": "496",
+ "title_en": "Traffic hand-signal pattern videos",
+ "summary_ko": "교통경찰 수신호 6가지(우→좌, 좌→우 진행, 전방 정지, 후방 정지, 좌우 동시 정지, 전후 동시 정지)를 다양한 날씨·시간대에서 찍은 영상 1.2만 클립(이미지 180만 장)으로, 사람 상자와 2D 관절 정보가 표시되어 있습니다. 자율주행차가 경찰 수신호를 알아보는 AI에 쓸 수 있습니다.",
+ "summary_en": "12,000 clips (1.8 million images) of 6 traffic-police hand signals (proceed right-to-left, left-to-right, stop front, stop rear, stop both sides, stop front and rear) in various weather and times of day, with person boxes and 2D joints. For self-driving cars that understand police hand signals.",
+ "contents_ko": "영상 클립(mp4) + 초당 15프레임 이미지(jpg) + JSON(사람 상자, 2D 관절, 수신호 종류).",
+ "contents_en": "Video clips (mp4) + frames at 15 fps (jpg) + JSON (person box, 2D joints, signal type).",
+ "modalities": ["video", "image"],
+ "tasks": ["action_recognition", "keypoint_pose", "object_detection"],
+ "topics": [{"ko": "자율주행", "en": "Self-driving"}, {"ko": "교통 안전", "en": "Road safety"}, {"ko": "사람 동작", "en": "Human motion"}],
+ "keywords_ko": ["수신호", "교통경찰", "제스처 인식", "자율주행", "자세 추정"],
+ "keywords_en": ["hand signals", "traffic police", "gesture recognition", "self-driving", "pose estimation"],
+ "labels": ["bounding box", "keypoints 2D", "signal class (6)"],
+ "file_formats": ["mp4", "jpg", "json"],
+ "scale_ko": "영상 12,130클립, 이미지 1,801,574장, 수신호 6종",
+ "classes_example": ["우측에서 좌측으로", "좌측에서 우측으로", "전방정지", "후방정지", "좌우측방 동시정지", "전후방 동시정지"],
+ "baseline": [],
+ "difficulty": "intermediate",
+ "difficulty_note_ko": "클래스가 6개로 단순해 관절 시계열 분류 실습에 좋습니다. 전체 약 2.4TB입니다.",
+ "skills_needed_ko": ["파이썬", "자세 추정", "관절 시계열 분류"],
+ "caveats_ko": ["전체 약 2.4TB", "성능 지표가 팩 앞부분에 없음"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "수신호 6종 분류", "title_en": "Classify 6 hand signals", "desc_ko": "관절 좌표 시퀀스로 수신호 종류를 분류합니다.", "desc_en": "Classify hand signals from joint sequences."},
+  {"level": "capstone", "title_ko": "운전자 수신호 안내", "title_en": "Hand-signal guidance for drivers", "desc_ko": "블랙박스 영상에서 경찰 수신호를 인식해 운전자에게 알려줍니다.", "desc_en": "Recognise police signals in dash-cam video and inform the driver."},
+  {"level": "research", "title_ko": "날씨·야간에 강한 수신호 인식", "title_en": "Robust signal recognition at night and in rain", "desc_ko": "악천후·야간 영상에서 인식 성능 저하를 분석하고 개선합니다.", "desc_en": "Analyse and improve recognition at night and in bad weather."}
+ ],
+ "doc_used": true,
+ "uncertain": []
+}

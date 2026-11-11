@@ -1,0 +1,29 @@
+{
+ "dataset_id": "144",
+ "title_en": "Korean object images (heritage, landmarks, products)",
+ "summary_ko": "궁궐·가옥·탑·사찰·성곽 등 국가지정문화재 250만 장, 귀금속·화장품·시계·가방 등 국내 상품 80만 장, 동상·타워·대교·등대 등 도시 랜드마크 20만 장(총 350만 장)의 사진입니다. 외국인 관광 안내 AI나 쇼핑몰 상품 인식에 쓸 수 있습니다.",
+ "summary_en": "3.5 million photos: 2.5 million of national heritage sites (palaces, traditional houses, pagodas, temples, fortresses), 800,000 of Korean products (jewellery, cosmetics, watches, bags) and 200,000 of city landmarks (statues, towers, bridges, lighthouses). For AI tour guides for visitors or product recognition in online shops.",
+ "contents_ko": "사진 + 라벨(대상 이름·분류, 물체 상자).",
+ "contents_en": "Photo + label (object name and category, bounding box).",
+ "modalities": ["image"],
+ "tasks": ["object_detection", "image_classification", "retrieval_recommendation"],
+ "topics": [{"ko": "문화유산·역사", "en": "Cultural heritage and history"}, {"ko": "관광·명소", "en": "Tourism and sights"}, {"ko": "쇼핑·상품", "en": "Shopping and products"}],
+ "keywords_ko": ["문화재", "궁궐", "사찰", "랜드마크", "국내 상품", "스마트 관광", "스마트 스토어"],
+ "keywords_en": ["cultural heritage", "palace", "temple", "landmark", "Korean products", "smart tourism", "smart store"],
+ "labels": ["bounding box", "class"],
+ "file_formats": ["jpg", "json"],
+ "scale_ko": "350만 장(유적건조물 250만, 상품 80만, 랜드마크 20만)",
+ "classes_example": ["궁궐", "가옥", "탑", "사찰", "성곽", "화장품", "시계", "가방", "타워", "등대"],
+ "baseline": [{"task": "object detection", "model": "RetinaNet", "metric": "mAP", "value": "90%"}],
+ "difficulty": "intermediate",
+ "difficulty_note_ko": "분류는 쉽지만 전체 약 3.9TB이고 가장 작은 파일도 8GB라 받기 부담이 큽니다.",
+ "skills_needed_ko": ["파이썬", "객체 탐지·분류", "대용량 파일 다루기"],
+ "caveats_ko": ["전체 약 3.9TB, 파일 하나가 최소 8GB", "2019년 구축"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "문화재 종류 분류", "title_en": "Heritage type classifier", "desc_ko": "궁궐·탑·사찰 같은 문화재 종류를 사진으로 분류합니다.", "desc_en": "Classify heritage types such as palaces, pagodas and temples."},
+  {"level": "capstone", "title_ko": "문화재 사진 해설 앱", "title_en": "Heritage photo guide app", "desc_ko": "사진을 찍으면 문화재 이름과 역사 설명을 여러 언어로 보여줍니다.", "desc_en": "Snap a site to see its name and history in several languages."},
+  {"level": "research", "title_ko": "비슷한 전통 건축물 구분", "title_en": "Telling similar traditional buildings apart", "desc_ko": "건축 양식이 비슷한 문화재를 구분하는 세밀 분류 방법을 연구합니다.", "desc_en": "Study fine-grained recognition of similar traditional buildings."}
+ ],
+ "doc_used": true,
+ "uncertain": []
+}

@@ -1,0 +1,32 @@
+{
+ "dataset_id": "181",
+ "title_en": "Road environment panorama images",
+ "summary_ko": "서울시 주요 도로 3,400km를 찍은 파노라마 이미지 34만 장과 이를 8분할한 평면 이미지 271만 장으로, 교통안전표지판·신호등·횡단보도·노면 표시 등 정적 객체 약 140종이 표시되어 있습니다. 표지판 인식이나 정밀 도로지도 자동 갱신에 쓸 수 있습니다.",
+ "summary_en": "340,000 panorama images covering 3,400 km of major Seoul roads plus 2.71 million flat images cut from them, with about 140 types of static road objects labelled (traffic signs, signals, crosswalks, road markings). For sign recognition or automatic updating of HD road maps.",
+ "contents_ko": "파노라마 이미지 + 8분할 평면 이미지(jpg) + JSON(정적 객체 상자, 클래스).",
+ "contents_en": "Panorama images + 8 flat crops (jpg) + JSON (static object boxes, class).",
+ "modalities": ["image"],
+ "tasks": ["object_detection", "image_classification"],
+ "topics": [{"ko": "자율주행", "en": "Self-driving"}, {"ko": "교통 표지·도로 시설", "en": "Traffic signs and road facilities"}, {"ko": "지도·공간정보", "en": "Maps and spatial data"}],
+ "keywords_ko": ["교통안전표지판", "신호등", "횡단보도", "노면 표시", "파노라마", "정밀도로지도"],
+ "keywords_en": ["traffic signs", "traffic lights", "crosswalk", "road markings", "panorama", "HD map"],
+ "labels": ["bounding box", "class (~140 static objects)"],
+ "file_formats": ["jpg", "json"],
+ "scale_ko": "파노라마 338,910장, 평면 이미지 2,711,280장, 정적 객체 약 140종",
+ "classes_example": ["교통안전표지판", "신호등", "횡단보도", "노면 표시"],
+ "baseline": [
+  {"task": "roadside object detection", "model": "EfficientNet", "metric": "recall", "value": "91%"},
+  {"task": "HD map auto-update", "model": "RetinaNet", "metric": "recall", "value": "91.6%"}
+ ],
+ "difficulty": "intermediate",
+ "difficulty_note_ko": "표지판 탐지 실습에 좋지만 140종으로 많고 전체 약 3.1TB입니다. 평면 이미지 일부로 시작하세요.",
+ "skills_needed_ko": ["파이썬", "YOLO 탐지", "클래스가 많은 분류"],
+ "caveats_ko": ["전체 약 3.1TB", "서울 도로만 포함"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "교통 표지판 분류", "title_en": "Traffic sign classifier", "desc_ko": "표지판 상자를 잘라 종류를 분류합니다.", "desc_en": "Crop sign boxes and classify their type."},
+  {"level": "capstone", "title_ko": "도로 시설물 지도 갱신 도구", "title_en": "Road-facility map updater", "desc_ko": "새 사진에서 표지판·신호등을 찾아 기존 지도와 다른 부분을 표시합니다.", "desc_en": "Find signs and lights in new photos and flag changes from the map."},
+  {"level": "research", "title_ko": "파노라마 왜곡에 강한 탐지", "title_en": "Detection robust to panorama distortion", "desc_ko": "파노라마와 평면 이미지의 탐지 성능 차이를 분석합니다.", "desc_en": "Compare detection on panoramas versus flat crops."}
+ ],
+ "doc_used": true,
+ "uncertain": []
+}

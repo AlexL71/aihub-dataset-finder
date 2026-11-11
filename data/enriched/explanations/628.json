@@ -1,0 +1,12 @@
+{
+ "dataset_id": "628",
+ "easy_ko": "버스 바깥 카메라 등으로 찍은 도로 사진마다 차선과 차의 영역을 칠하고, 그 차가 차로를 위반했는지 표시한 데이터입니다. 버스전용차로를 달리거나 차선을 어기는 차를 자동으로 찾아내는 단속 AI를 만들 수 있습니다.",
+ "easy_en": "Road photos taken by cameras on the outside of buses and elsewhere, with lane markings and vehicles coloured in and each vehicle marked as breaking lane rules or not. You can build enforcement AI that spots cars driving in bus lanes or crossing lanes illegally.",
+ "detail_ko": "버스 외부 카메라 등으로 촬영한 도로 이미지 80만 장 이상(jpg)에 차선·차량 분할과 위반 여부를 JSON으로 붙였습니다. 기준 성능은 ResNet 위반 이미지 분류 F1 0.9633, Mask R-CNN 차량 분할 mAP 98.71%, 차선 분할 mAP 94.91%입니다. 전체 약 513GB이며 번호판이 보일 수 있고, 클래스별 분포는 기록에 없습니다.",
+ "detail_en": "800k+ road images (jpg) from external bus cameras and other sources, with JSON lane and vehicle segmentation and a violation flag. Baselines: ResNet violation classification F1 0.9633, Mask R-CNN vehicle segmentation mAP 98.71%, lane segmentation mAP 94.91%. Total size is about 513 GB; plates may be visible; class distribution is not in the record.",
+ "amount_ko": "도로 사진 80만 장 이상",
+ "amount_en": "800k+ road images",
+ "labels_ko": "차선·차 영역(색칠), 차로 위반 여부",
+ "labels_en": "lane and vehicle masks, violation flag",
+ "status": "full-run-2026-11-02"
+}

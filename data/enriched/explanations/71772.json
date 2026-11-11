@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71772",
+ "easy_ko": "콘크리트와 아스팔트에 쓰는 자갈 시료 사진 15만여 장에 돌 종류를 칠하고, 납작하거나 길쭉한 돌을 가려내기 위한 기울어진 상자를 표시한 데이터입니다. 건설용 자갈 품질 검사를 자동으로 하는 AI에 쓸 수 있습니다.",
+ "easy_en": "Over 150,000 photos of gravel samples used in concrete and asphalt, with rock types painted in and tilted boxes drawn to pick out flat or elongated stones. You can use it to build AI that checks construction gravel quality automatically.",
+ "detail_ko": "콘크리트·아스팔트용 굵은 골재(자갈) 시료 이미지 155,374장(png)에 암석 종류 6종(예: 안산암, 사암) 다각형 분할과 편장석 비율 분석용 회전 상자를 JSON으로 붙였습니다. 전체 약 477GB이고, 암석 6종 전체 목록과 성능 지표는 팩 앞부분에 없습니다.",
+ "detail_en": "155,374 images (png) of coarse aggregate (gravel) samples for concrete and asphalt, with JSON polygon segmentation for 6 rock types (such as andesite and sandstone) and rotated boxes for measuring the share of flat and elongated stones. Total size is about 477 GB, and the full list of 6 rock types and any metrics are not in the pack.",
+ "amount_ko": "이미지 155,374장, 암석 종류 6종",
+ "amount_en": "155,374 images, 6 rock types",
+ "labels_ko": "돌 종류 테두리, 기울어진 상자",
+ "labels_en": "polygon, rotated bounding box, rock type",
+ "status": "full-run-2026-11-02"
+}

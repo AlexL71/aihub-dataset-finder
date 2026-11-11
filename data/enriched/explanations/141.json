@@ -1,0 +1,12 @@
+{
+ "dataset_id": "141",
+ "easy_ko": "전국 강과 호수의 물 상태 측정값, 하수 처리장에서 내보내는 물의 상태, 녹조 관찰 기록, 강 수위와 비의 양, 날씨, 그리고 인구·가축·공장 같은 오염원 조사 자료를 모은 표 데이터입니다. 물이 언제 더러워지거나 녹조가 생길지 미리 예측하는 AI를 만들 수 있습니다.",
+ "easy_en": "Tables of water-quality readings from rivers and lakes across Korea, discharge quality from treatment plants, algal-bloom monitoring, river levels and rainfall, weather, and surveys of pollution sources such as population, livestock and factories. You can build AI that predicts when water will get polluted or when algal blooms will appear.",
+ "detail_ko": "전국 물환경측정망(2.7억), 수리·수문·기상(2.2억), 오염원 조사(1.5억), 하·폐수 방류 수질 TMS(8,944만) 등 공공 자료를 모은 약 7억 6,122만 건의 표·센서 데이터입니다. 측정소·시간별 수질 측정값, 기상·수문 자료, 인구·축산·토지·양식장·산업 폐수 등 오염원 통계가 포함됩니다. 원천 공공데이터를 모은 것이라 출처별 단위·형식이 다를 수 있으며, 기준 성능은 기록에서 확인되지 않고 파일 형식(csv)은 추정입니다.",
+ "detail_en": "About 761.22M tabular and sensor records gathered from public sources: the national water-environment monitoring network (270M), hydrology and weather (220M), pollution-source surveys (150M), wastewater discharge TMS (89.44M) and more. It includes station- and time-level water-quality values, weather and hydrology data, and statistics on population, livestock, land, fish farms and industrial wastewater. Units and formats may differ by source; no baseline is visible, and the file format (csv) is assumed.",
+ "amount_ko": "표·센서 기록 약 7.6억 건",
+ "amount_en": "about 761M table and sensor records",
+ "labels_ko": "측정값, 측정소·시간 정보",
+ "labels_en": "measurement values, station and time info",
+ "status": "full-run-2026-11-02"
+}

@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71938",
+ "easy_ko": "증권과 보험 상품 정보 3만 건과 가짜로 만든 소비자 특성 자료를 바탕으로, 상품을 설명하고 비교하고 추천하는 과정을 차근차근 적은 질문-생각 과정-답 1만 건을 만든 데이터입니다. 왜 그 상품을 추천했는지 설명하는 금융 상품 추천 AI에 쓸 수 있습니다.",
+ "easy_en": "10,000 question-reasoning-answer items that explain, compare and recommend products step by step, built from 30,000 securities and insurance product records and synthetic consumer profiles. You can use it to build financial-product recommendation AI that explains why it suggests something.",
+ "detail_ko": "증권·보험 상품 정보 원천 30,000건(json)과 합성 소비자 특성 데이터(csv)를 바탕으로, 상품 설명·비교·추천 과정을 단계적 사고(CoT)로 적은 질문-추론-답변 가공 데이터 10,000건(JSON; 질문 약 97만, CoT 약 262만, 답변 약 106만 토큰)을 만들었습니다. 페이지에 성능 점수 표가 없고(Qwen2.5-7B 미세조정 소개만 있음), 소비자 데이터는 합성이라 실제 고객 분포와 다를 수 있으며, 상품 정보는 스크래핑 시점 기준이라 바뀔 수 있습니다. 투자 권유로 쓰면 안 됩니다.",
+ "detail_en": "10,000 processed question-reasoning-answer items (JSON; about 0.97 million question, 2.62 million CoT and 1.06 million answer tokens) that explain, compare and recommend products with chain-of-thought (CoT), built from 30,000 securities and insurance product records (json) and synthetic consumer-profile data (csv). There is no score table (only Qwen2.5-7B fine-tuning is mentioned); consumer data is synthetic, so it may not match real customers; product information reflects the scraping date and may change. It must not be used as investment advice.",
+ "amount_ko": "원천 30,000건, 가공 10,000건",
+ "amount_en": "30,000 source records, 10,000 processed items",
+ "labels_ko": "질문-생각 과정-답, 소비자 특성",
+ "labels_en": "question-CoT-answer, consumer profile",
+ "status": "full-run-2026-11-02"
+}

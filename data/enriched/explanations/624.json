@@ -1,0 +1,12 @@
+{
+ "dataset_id": "624",
+ "easy_ko": "인터넷 신문 기사에서 모아 틀린 문장, 욕설, 개인정보를 정리한 아주 많은 한국어 글에, 사람·장소 같은 이름과 새로 생긴 말을 표시한 데이터입니다. 한국어를 잘 이해하는 언어 AI를 처음부터 학습시키거나 맞춤법 교정, 요약 AI를 만드는 데 쓸 수 있습니다.",
+ "easy_en": "A very large amount of Korean text from online news articles, cleaned of broken sentences, slurs and personal data, with names (people, places and more) and newly coined words marked. You can use it to pre-train Korean language AI from scratch or to build spell-checking and summarisation AI.",
+ "detail_ko": "뉴스1·뉴시스·머니투데이 등 인터넷 언론사 11곳의 기사에서 모아 비문·비속어·개인정보를 정제한 한국어 텍스트 10억 어절(JSON: 제목, 단락 제목, 본문, 분야)에 개체명과 신조어 태그를 붙였습니다. 기준 성능은 BERT / ELECTRA KLUE-STS F1 0.8117, KLUE-NER F1 0.8985입니다. 뉴스1·뉴시스가 59%로 출처가 치우쳐 있고, 기사 저작권 때문에 사용 범위 확인이 필요하며, 625번 구어체 말뭉치와 같은 구축 기관입니다.",
+ "detail_en": "1 billion words (eojeol) of Korean text from 11 online news outlets including News1, Newsis and Money Today, cleaned of ungrammatical text, slurs and personal data, in JSON (title, section title, body, category), with named-entity and new-word tags. Baselines: BERT / ELECTRA KLUE-STS F1 0.8117 and KLUE-NER F1 0.8985. News1 and Newsis make up 59%; article copyright limits use; built by the same organisation as dataset 625.",
+ "amount_ko": "글 10억 어절, 언론사 11곳",
+ "amount_en": "1 billion words, 11 news outlets",
+ "labels_ko": "이름(개체명), 새로 생긴 말, 기사 분야",
+ "labels_en": "named entities, new-word tags, category",
+ "status": "full-run-2026-11-02"
+}

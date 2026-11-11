@@ -1,0 +1,41 @@
+{
+ "id": "ba",
+ "name_ko": "융합경영학부(글로벌경영전공)",
+ "name_en": "Global Business (School of Convergence Business)",
+ "college": "글로벌비즈니스대학",
+ "summary_ko": "회계, 재무, 마케팅, 인사조직, 생산운영, 국제경영·무역을 폭넓게 배우는 경영 전공입니다. 해외 시장 진출과 창업, 핀테크, 데이터 기반 경영까지 다루며 기업, 금융, 회계사·세무사 같은 전문직으로 진출합니다.",
+ "summary_en": "A broad business major covering accounting, finance, marketing, HR and organisation, operations, and international business and trade. It also covers global market entry, start-ups, fintech and data-driven management; graduates go to companies, finance and licensed professions such as CPA or tax accountant.",
+ "key_topics": ["회계·세무", "재무·투자", "마케팅과 소비자 행동", "인사·조직", "생산운영·공급사슬", "국제경영·무역", "창업과 기업가정신", "핀테크·블록체인", "비즈니스 데이터 분석"],
+ "course_keywords": ["회계정보의이해", "IFRS중급회계", "세법개론", "세무회계", "회계감사", "재무관리", "기업재무", "투자이론과실제", "핀테크", "블록체인과디지털화폐", "마케팅", "마케팅조사론", "소비자행동의이해", "서비스마케팅의이해", "생산운영관리", "공급사슬관리", "품질경영", "경영통계", "경영계량분석", "비즈니스파이썬", "데이터사이언스개론", "비즈니스인텔리전스", "경영과학", "국제경영론", "국제마케팅", "무역학의이해", "국제금융론", "외환론", "인적자원관리", "조직행동론", "창업론", "글로벌 e-커머스 창업", "경영전략론"],
+ "careers": ["기업 인사·마케팅·기획·영업·재무 부서", "금융·증권·보험사(애널리스트, 펀드매니저, 위험관리)", "공인회계사·세무사·노무사·관세사", "해외영업·무역·종합상사", "컨설팅·광고·유통 기업", "공무원(세무·재경직)", "창업·벤처"],
+ "research_areas": ["회계·세법", "마케팅·국제마케팅", "인사조직", "생산운영·경영과학", "재무·ESG·AI금융", "기술혁신·디지털전환", "경영전략·환경경영"],
+ "data_interests": [
+  {"topic_ko": "소비자와 리뷰", "topic_en": "Consumers and reviews", "keywords": ["상품 리뷰", "감성 분석", "구매 행동"]},
+  {"topic_ko": "금융과 투자", "topic_en": "Finance and investment", "keywords": ["주가", "금융 문서", "신용 위험"]},
+  {"topic_ko": "회계·세무 문서", "topic_en": "Accounting and tax documents", "keywords": ["재무제표", "영수증·문서 인식", "세법 질의응답"]},
+  {"topic_ko": "유통·전자상거래", "topic_en": "Retail and e-commerce", "keywords": ["상품 이미지", "판매량", "상품 분류"]},
+  {"topic_ko": "고객 상담", "topic_en": "Customer service", "keywords": ["상담 대화", "챗봇", "민원 분류"]},
+  {"topic_ko": "물류·생산 운영", "topic_en": "Logistics and operations", "keywords": ["수요 예측", "재고", "배송"]},
+  {"topic_ko": "광고·마케팅 콘텐츠", "topic_en": "Ads and marketing content", "keywords": ["광고 문구", "SNS 게시물", "브랜드 이미지"]}
+ ],
+ "interest_questions": [
+  {"q_ko": "경영 분야 중 어디에 관심이 있나요?", "q_en": "Which business area interests you?",
+   "options": [{"ko": "마케팅·소비자", "en": "Marketing and consumers"}, {"ko": "금융·투자", "en": "Finance and investment"}, {"ko": "회계·세무", "en": "Accounting and tax"}, {"ko": "유통·물류", "en": "Retail and logistics"}, {"ko": "창업", "en": "Start-ups"}]},
+  {"q_ko": "다뤄보고 싶은 자료는?", "q_en": "What data would you like to use?",
+   "options": [{"ko": "고객 리뷰·대화", "en": "Customer reviews and chats"}, {"ko": "판매·금융 숫자", "en": "Sales and financial numbers"}, {"ko": "상품 사진", "en": "Product photos"}, {"ko": "문서·영수증", "en": "Documents and receipts"}]}
+ ],
+ "project_themes": ["상품 리뷰 감성 분석으로 개선점 찾기", "고객 상담 문의 자동 분류", "영수증·문서에서 금액 자동 추출", "상품 이미지로 카테고리 자동 분류", "판매 데이터로 수요 예측"],
+ "data_skill_level": "medium",
+ "data_skill_note": "경영통계, 경영계량분석, 비즈니스파이썬, 데이터사이언스개론, 비즈니스인텔리전스 과목이 있어 기초 데이터 분석 경험을 쌓을 수 있습니다.",
+ "sources": [
+  {"kind": "page", "label": "학부소개", "url": "https://sejong.korea.ac.kr/ba/4131/subview.do"},
+  {"kind": "page", "label": "취업 및 진로", "url": "https://sejong.korea.ac.kr/ba/4134/subview.do"},
+  {"kind": "page", "label": "학과소개(대학원)", "url": "https://sejong.korea.ac.kr/ba/4151/subview.do"},
+  {"kind": "pdf", "label": "전공능력기반 교육과정 설계", "url": "https://sejong.korea.ac.kr/pdfView/ba/17/130/fileDownload.do"},
+  {"kind": "pdf", "label": "전공체계도", "url": "https://sejong.korea.ac.kr/pdfView/ba/82/117/fileDownload.do"}
+ ],
+ "inferred_fields": ["data_interests", "interest_questions", "project_themes"],
+ "gaps": ["The curriculum map PDF lists courses by competency, but its year/semester layout is lost in text extraction."],
+ "version": 1,
+ "created": "2026-10-29"
+}

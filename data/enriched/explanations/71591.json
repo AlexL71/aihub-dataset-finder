@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71591",
+ "easy_ko": "방송 프로그램 대사에서 뽑은 한국어 문장 약 250만 개를 중국어, 일본어, 대만어, 몽골어, 힌디어로 번역해 짝지은 데이터입니다. 신조어와 관용 표현이 많은 방송 자막을 아시아 언어로 옮기는 번역기에 쓸 수 있습니다.",
+ "easy_en": "About 2.5 million Korean sentences from TV dialogue, each paired with a translation into Mandarin Chinese, Japanese, Taiwanese, Mongolian or Hindi. You can use it to build translators for TV subtitles full of slang and idioms into Asian languages.",
+ "detail_ko": "KBS 등 방송의 연예/공연, 영화/드라마, 다큐멘터리, 오락/예능, 교양 대사에서 뽑은 한국어 문장 2,503,365개(txt)를 번역해 대상 언어와 방송 카테고리를 JSON으로 붙였습니다(북경어 900,513, 일본어 701,426, 대만어 701,426, 몽골어 100,000, 힌디어 100,000). 페이지에 번역 성능 지표 표는 없고 음성인식 모델 설명만 있습니다. 몽골어·힌디어는 각 10만 문장으로 적고, 언어별 수량이 표마다 다릅니다(예: 북경어 900,513 vs 1,011,606).",
+ "detail_en": "2,503,365 Korean sentences (txt) from KBS and other broadcast dialogue (entertainment/performance, film/drama, documentary, variety, educational), with JSON translations, target language and broadcast category (900,513 Mandarin, 701,426 Japanese, 701,426 Taiwanese, 100,000 Mongolian, 100,000 Hindi). The page has no translation metrics table, only a speech-recognition model description. Mongolian and Hindi have only 100,000 sentences each, and per-language counts differ between tables (for example 900,513 vs. 1,011,606 for Mandarin).",
+ "amount_ko": "문장 2,503,365개(언어 5종)",
+ "amount_en": "2,503,365 sentences (5 languages)",
+ "labels_ko": "번역 문장, 방송 분야",
+ "labels_en": "translations, broadcast category",
+ "status": "full-run-2026-11-02"
+}

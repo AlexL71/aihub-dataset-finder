@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71461",
+ "easy_ko": "한국에서 찍은 사진 약 60만 장에 사람의 관절 위치와, 사람이 물건을 잡거나 차거나 의자에 앉는 것 같은 행동을 표시한 데이터입니다. 사람이 무엇을 하고 있는지 알아보는 똑똑한 CCTV 같은 AI에 쓸 수 있습니다.",
+ "easy_en": "About 600,000 photos taken in Korea, marking where people's joints are and what they are doing with objects, such as holding, kicking or sitting. You can use it to build AI that understands what people are doing, such as smart CCTV.",
+ "detail_ko": "한국에서 촬영한 이미지 603,452장(jpg)에 사람 관절 키포인트(17개 1세트, 60만 세트 이상)와 사람-물체 상호작용(HOI, 60만 개 이상, 예: 잡기 hold, 차기 kick, 앉기 sit) 및 상자를 JSON으로 붙였습니다. 카테고리 예: 사람, 탈것(자전거, 승용차, 경찰차), 동물, 액세서리, 스포츠. 메타데이터에는 300만 이미지로 적혀 있지만 통계표는 603,452건이고, 통계표 카테고리 수량은 300만 장 시리즈(71452 등) 것을 그대로 쓴 것으로 보입니다. 행동 종류 전체 목록과 성능 지표는 팩에 없고, 전체 약 177GB입니다.",
+ "detail_en": "603,452 images (jpg) shot in Korea with JSON 17-point body keypoints (over 600,000 sets), human-object interaction (HOI) labels (over 600,000, such as hold, kick, sit) and boxes. Example categories: person, vehicle (bicycle, car, police car), animal, accessory, sports. The metadata says 3 million images but the statistics table gives 603,452, and its category counts look copied from the 3-million-image series (71452 and others). The full list of actions and any metrics are not in the pack. Total size is about 177 GB.",
+ "amount_ko": "이미지 603,452장, 키포인트 60만 세트 이상, 상호작용 60만 개 이상",
+ "amount_en": "603,452 images, over 600,000 keypoint sets, over 600,000 interactions",
+ "labels_ko": "관절 위치 점, 사람-물체 행동, 위치 상자",
+ "labels_en": "17 body keypoints, human-object interactions, bounding boxes",
+ "status": "full-run-2026-11-02"
+}

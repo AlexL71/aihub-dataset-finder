@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71306",
+ "easy_ko": "부산·경남 도로를 달리며 찍은 사진마다 플라스틱 드럼, 방호벽, 안내봉, 라바콘, 시선유도봉, 제설함, 입간판, 울타리 같은 도로 시설물이 멀쩡한지 망가졌는지를 테두리로 표시한 데이터입니다. 망가진 도로 시설물을 자동으로 찾아 고치도록 돕는 AI를 만들 수 있습니다.",
+ "easy_en": "Photos taken while driving on roads in Busan and South Gyeongsang, with road equipment such as plastic drums, barriers, guide posts, traffic cones, delineators, de-icing boxes, signboards and fences outlined and marked as intact or damaged. You can build AI that finds damaged road equipment so it can be repaired.",
+ "detail_ko": "부산·경남 도로 주행 영상에서 뽑은 이미지 약 42만 장(jpg)에 도로 시설물 8종(PE 드럼, PE 방호벽, PE 안내봉, 라바콘, 시선유도봉, 제설함, PE 입간판, PE 휀스)의 정상·파손 상태(16개 클래스) 다각형을 JSON으로 붙였습니다. 성능 지표 표는 비어 있습니다. 전체 약 706GB이며 부산·경남 지역만 있고, 557번 지자체 도로 정비 데이터와 주제가 이어집니다.",
+ "detail_en": "About 420k jpg images from driving video in Busan and South Gyeongsang, with JSON polygons for 8 road-equipment types (PE drum, PE barrier, PE guide post, traffic cone, delineator, de-icing box, PE signboard, PE fence) in intact or damaged state (16 classes). The performance table is empty. Total size is about 706 GB; only Busan and South Gyeongsang are covered; continues the topic of dataset 557.",
+ "amount_ko": "사진 약 42만 장, 시설물 8종(16개 분류)",
+ "amount_en": "about 420k images, 8 equipment types (16 classes)",
+ "labels_ko": "시설물 테두리, 시설물 종류, 멀쩡함·망가짐",
+ "labels_en": "equipment outlines, equipment type, intact or damaged",
+ "status": "full-run-2026-11-02"
+}

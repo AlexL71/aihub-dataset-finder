@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71304",
+ "easy_ko": "한 사람은 궁금한 것을 묻고, 다른 사람은 인터넷에서 찾아보고 답하는 전문가 역할을 맡아 나눈 한국어 대화를 모은 데이터입니다. 필요한 지식을 찾아 답해 주는 챗봇이나 AI 비서를 만들 수 있습니다.",
+ "easy_en": "Korean conversations in which one person asks questions and the other plays an expert who looks up the answers online. You can build chatbots or AI assistants that look up knowledge to answer questions.",
+ "detail_ko": "지식검색 한국어 대화 약 1.8만 세션(발화 약 38만 개, 주제 10종)(tsv, json)에 대화 특성 라벨을 붙였습니다. 기준 성능은 KoLANG-T5 지식 기반 응답 생성 F1 0.3798, Knowledge F1 0.5899입니다. 주제는 가족과 주거, 경제 활동, 미용과 건강, 배움과 학문, 스포츠, 식음료 등이며, 검색한 원문 문서가 함께 있는지는 기록에서 확인되지 않습니다. 71302·71304·71305번 대화 데이터는 같은 구축 기관입니다.",
+ "detail_en": "About 18k sessions (about 380k utterances, 10 topics) Korean knowledge-search dialogues (tsv, json) with dialogue-feature labels. Baselines: KoLANG-T5 knowledge-grounded response generation F1 0.3798 and Knowledge F1 0.5899. Topics include family and housing, economic life, beauty and health, learning, sports, food and drink; whether the searched source documents are included is not visible in the record. Datasets 71302, 71304 and 71305 come from the same organisation.",
+ "amount_ko": "대화 약 1.8만 세션",
+ "amount_en": "about 18k sessions of dialogue",
+ "labels_ko": "대화 주제, 지식 출처 등 대화 특성",
+ "labels_en": "topic and dialogue features such as knowledge source",
+ "status": "full-run-2026-11-02"
+}

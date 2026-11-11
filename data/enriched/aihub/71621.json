@@ -1,0 +1,29 @@
+{
+ "dataset_id": "71621",
+ "title_en": "Passenger autonomous car daytime urban road data",
+ "summary_ko": "실제 운행하는 승용 자율주행차가 낮에 도심 도로(신호등·교차로·횡단보도·회전교차로 등)를 달리며 모은 카메라 이미지와 라이다 점군 160,000세트로, 2D 분할·상자와 3D 상자, 위치·인지·판단·제어 결과가 함께 있습니다. 한국 도심에 맞는 자율주행 인지 AI에 쓸 수 있습니다.",
+ "summary_en": "160,000 sets of camera images and LiDAR point clouds from a real passenger autonomous car driving on daytime urban roads (traffic lights, intersections, crosswalks, roundabouts), with 2D segmentation and boxes, 3D boxes, and position, perception, decision and control results. For Korean urban self-driving perception AI.",
+ "contents_ko": "카메라 이미지(jpg) + 라이다(pcd) + JSON(2D 분할·상자, 3D 상자, 위치·제어 정보).",
+ "contents_en": "Camera image (jpg) + LiDAR (pcd) + JSON (2D segmentation and boxes, 3D boxes, position and control info).",
+ "modalities": ["image", "3d"],
+ "tasks": ["segmentation", "object_detection"],
+ "topics": [{"ko": "자율주행", "en": "Autonomous driving"}, {"ko": "도심 교통", "en": "Urban traffic"}],
+ "keywords_ko": ["자율주행", "도심 도로", "라이다", "의미 분할", "3D 탐지", "주간"],
+ "keywords_en": ["autonomous driving", "urban roads", "LiDAR", "semantic segmentation", "3D detection", "daytime"],
+ "labels": ["segmentation", "2D bounding box", "3D bounding box", "class"],
+ "file_formats": ["jpg", "pcd", "json"],
+ "scale_ko": "160,000세트(2D 분할 160,000, 2D/3D 160,000)",
+ "classes_example": ["background", "freespace", "crossWalk", "curb", "bus", "pedestrian", "bicycle"],
+ "baseline": [{"task": "3D object detection", "model": "PV-RCNN", "metric": "mAP", "value": "71.92%"}, {"task": "2D semantic segmentation", "model": "ConvNeXt", "metric": "mIoU", "value": "81.73%"}],
+ "difficulty": "advanced",
+ "difficulty_note_ko": "2D 분할은 시작하기 쉽지만 라이다 3D 탐지는 어렵고 전체가 약 295GB입니다.",
+ "skills_needed_ko": ["파이썬", "분할 모델", "포인트 클라우드 3D 탐지"],
+ "caveats_ko": ["전체 약 295GB", "클래스별 수량 차이가 매우 큼", "성능표 1번 항목이 페이지에 없음", "주간 도심 외 조건은 71623·71624·71625·71626 참고"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "주행 가능 영역 분할", "title_en": "Drivable area segmentation", "desc_ko": "카메라 이미지에서 주행 가능 영역(freespace)을 칠합니다.", "desc_en": "Segment the drivable area in camera images."},
+  {"level": "capstone", "title_ko": "횡단보도·보행자 경고", "title_en": "Crosswalk and pedestrian warning", "desc_ko": "도심 주행 영상에서 횡단보도와 보행자를 찾아 경고하는 데모를 만듭니다.", "desc_en": "Warn about crosswalks and pedestrians in city driving."},
+  {"level": "research", "title_ko": "카메라·라이다 결합 탐지", "title_en": "Camera-LiDAR fusion detection", "desc_ko": "이미지와 점군을 합쳐 3D 탐지 성능을 높이는 방법을 연구합니다.", "desc_en": "Fuse images and point clouds for better 3D detection."}
+ ],
+ "doc_used": true,
+ "uncertain": ["3D 탐지 대상 클래스 목록"]
+}

@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71627",
+ "easy_ko": "인문, 사회, 교육, 공학, 예체능, 교양 분야의 한국어 대학 강의 목소리 약 4,800시간을 짧게 나누고 받아쓴 글을 붙인 데이터입니다. 강의 자동 자막이나 강의 음성 인식 AI에 쓸 수 있습니다.",
+ "easy_en": "About 4,800 hours of Korean university lectures in the humanities, social sciences, education, engineering, arts and sports, and general studies, cut into short pieces with written transcripts. You can use it for automatic lecture subtitles or lecture speech recognition.",
+ "detail_ko": "인문·사회·교육·공학·예체능·교양 6개 분야 한국어 대학 강의 음성 약 4,800시간(wav)을 2,120,832개 구간으로 나누고 전사를 JSON으로 붙였습니다. 기준 성능은 Conformer 음성 인식 CER 9.4%입니다. 전체 약 365GB이고, 일부 원천은 구입 자료라 이용 조건을 확인해야 합니다.",
+ "detail_en": "About 4,800 hours of Korean university lecture audio (wav) across 6 fields (humanities, social science, education, engineering, arts and sports, general studies), split into 2,120,832 segments with JSON transcripts. Baseline: speech recognition with Conformer, CER 9.4%. Total size is about 365 GB, and some source material was purchased, so check the terms of use.",
+ "amount_ko": "음성 약 4,800시간, 구간 2,120,832개, 분야 6종",
+ "amount_en": "about 4,800 hours of audio, 2,120,832 segments, 6 fields",
+ "labels_ko": "받아쓴 글",
+ "labels_en": "transcript",
+ "status": "full-run-2026-11-02"
+}

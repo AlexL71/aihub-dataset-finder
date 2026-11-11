@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71295",
+ "easy_ko": "국립중앙도서관 등이 공개한 옛한글 책과 문서 사진에서 글자 하나하나의 위치와 어떤 글자인지를 표시한 데이터로, 손으로 쓴 책과 인쇄한 책, 문학·신문·편지 등이 섞여 있습니다. 옛한글 자료를 자동으로 읽어 지금 글자로 옮겨 주는 AI를 만들 수 있습니다.",
+ "easy_en": "Images of old Hangul books and documents released by the National Library of Korea and others, with every character's position and identity marked, mixing handwritten and printed books and texts such as literature, newspapers and letters. You can build AI that reads old Hangul texts and turns them into modern digital text.",
+ "detail_ko": "국립중앙도서관·국립한글박물관 등이 공개한 옛한글 고문헌·고문서 이미지 약 4.6만 장(png/jpg)의 글자 약 1,009만 자에 글자별 바운딩박스와 글자 값을 JSON으로 붙였으며, 판본(목판본, 활자본, 필사본 67%)과 주제(문학류 70%, 언해류, 신문류, 언간류 등)가 다양합니다. 성능 지표 표는 비어 있습니다. 필사본과 문학류로 치우쳐 있고, 옛한글 글자 인코딩 방식 확인이 필요합니다.",
+ "detail_en": "About 10.09M characters on about 46k images (png/jpg) of old Hangul books and documents released by the National Library of Korea, the National Hangeul Museum and others, each with a bounding box and character label in JSON, across print types (woodblock, movable type, manuscript 67%) and subjects (literature 70%, translations, newspapers, letters and more). The performance table is empty. Manuscripts and literature dominate; check the encoding used for old Hangul characters.",
+ "amount_ko": "글자 약 1,009만 자, 사진 약 4.6만 장",
+ "amount_en": "about 10.09M characters, about 46k images",
+ "labels_ko": "글자 위치 상자, 정답 글자",
+ "labels_en": "boxes around characters, character label",
+ "status": "full-run-2026-11-02"
+}

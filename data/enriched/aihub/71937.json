@@ -1,0 +1,29 @@
+{
+ "dataset_id": "71937",
+ "title_en": "NEW robot teaching data for manufacturing process automation",
+ "summary_ko": "금속·공작기계 가공 셀의 로봇 머신텐딩(공작기계에 부품을 넣고 빼는 작업) 자동화를 위한 데이터로, 실제 작업 환경과 Gazebo 시뮬레이션의 3D CAD 원천 2,473개와 로봇 구동 로그 360개, 이를 URDF(로봇 구조 기술 형식)·JSON·단계적 사고(CoT)로 라벨링한 120개 공정 모델이 있습니다. 제조 로봇의 상황 판단과 의사결정 AI에 쓸 수 있습니다.",
+ "summary_en": "Data for automating robot machine tending (loading and unloading machine tools) in metal and machining cells: 2,473 3D CAD sources from real cells and Gazebo simulation, 360 robot run logs, and 120 process models labelled in URDF (a robot structure format), JSON and chain-of-thought. For decision-making AI in manufacturing robots.",
+ "contents_ko": "3D CAD(stl) + 로봇 상태 로그(csv) + URDF·JSON(구조 라벨, CoT).",
+ "contents_en": "3D CAD (stl) + robot state logs (csv) + URDF/JSON (structure labels, CoT).",
+ "modalities": ["3d", "sensor", "text"],
+ "tasks": ["anomaly_detection", "tabular_prediction"],
+ "topics": [{"ko": "제조 로봇", "en": "Manufacturing robots"}, {"ko": "피지컬 AI", "en": "Physical AI"}],
+ "keywords_ko": ["머신텐딩", "로봇 티칭", "URDF", "Gazebo", "CoT", "제조 자동화"],
+ "keywords_en": ["machine tending", "robot teaching", "URDF", "Gazebo", "chain-of-thought", "manufacturing automation"],
+ "labels": ["URDF structure", "CoT"],
+ "file_formats": ["stl", "csv", "urdf", "json"],
+ "scale_ko": "3D CAD 원천 2,473개, 로봇 상태 360개, 라벨 3D CAD 120개(URDF·JSON 각 120), 로봇 상태 라벨 360개",
+ "classes_example": ["정형 반복 핸들링", "비전 연계 투입", "이동로봇 협업 기반 이송", "검사 연계 제품 반출", "다중 로봇 협업 기반 공정 인터페이스"],
+ "baseline": [],
+ "difficulty": "advanced",
+ "difficulty_note_ko": "약 1GB로 작지만 ROS·URDF·로봇 제어 지식이 필요합니다.",
+ "skills_needed_ko": ["파이썬", "ROS·Gazebo", "URDF·3D CAD 처리", "시계열 로그 분석"],
+ "caveats_ko": ["페이지에 성능 점수 표가 없음(URDF 구조 인식 임무 소개만 있음)", "라벨 공정 모델이 120개로 적음", "작업 환경 중 '사출 금형 전자 제품 제조 환경'은 결과값이 비어 있음"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "로봇 로그 시각화", "title_en": "Robot log visualization", "desc_ko": "로봇 구동 로그로 관절 위치·속도 변화를 그래프로 그립니다.", "desc_en": "Plot joint position and speed from robot logs."},
+  {"level": "capstone", "title_ko": "작업 실패 감지", "title_en": "Task failure detection", "desc_ko": "구동 로그에서 위치 오차·파지 불안정 같은 이상을 찾는 모델을 만듭니다.", "desc_en": "Detect position errors or unstable grasps from logs."},
+  {"level": "research", "title_ko": "CoT 기반 로봇 계획", "title_en": "CoT-based robot planning", "desc_ko": "LLM의 단계적 추론으로 머신텐딩 작업 순서를 짜는 방법을 연구합니다.", "desc_en": "Study planning machine-tending steps with LLM reasoning."}
+ ],
+ "doc_used": true,
+ "uncertain": []
+}

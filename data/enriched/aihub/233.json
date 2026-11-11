@@ -1,0 +1,29 @@
+{
+ "dataset_id": "233",
+ "title_en": "X-ray images of dangerous items",
+ "summary_ko": "공항·항만 수하물 엑스레이 검색기로 찍은 위해물품 27종(칼·총기류 등)과 저장매체 7종(USB·SSD 등)의 엑스레이 이미지 48만 장입니다. 보안 요원 대신 가방 속 위험 물품을 자동으로 찾는 보안 검색 AI에 쓸 수 있습니다.",
+ "summary_en": "480,000 X-ray images from airport and port baggage scanners covering 27 kinds of dangerous items (knives, firearms and more) and 7 storage media (USB drives, SSDs and more). For security-screening AI that finds dangerous items in bags automatically.",
+ "contents_ko": "엑스레이 이미지 + 라벨(물품 종류, 위치 상자 또는 다각형).",
+ "contents_en": "X-ray image + label (item type, box or polygon).",
+ "modalities": ["image"],
+ "tasks": ["object_detection", "segmentation"],
+ "topics": [{"ko": "보안·검색", "en": "Security screening"}, {"ko": "공항·항만", "en": "Airports and ports"}],
+ "keywords_ko": ["엑스레이", "위해물품", "수하물 검색", "공항 보안", "저장매체", "자동 검출"],
+ "keywords_en": ["X-ray", "dangerous items", "baggage screening", "airport security", "storage media", "automatic detection"],
+ "labels": ["bounding box", "polygon", "class (34 items)"],
+ "file_formats": ["png", "json"],
+ "scale_ko": "482,650장(위해물품 27종 405,900장, 저장매체 7종 76,750장)",
+ "classes_example": ["칼", "가위", "총기", "USB", "SSD"],
+ "baseline": [],
+ "difficulty": "intermediate",
+ "difficulty_note_ko": "물체가 겹쳐 보이는 엑스레이 특성 때문에 일반 탐지보다 어렵습니다. 약 805GB입니다.",
+ "skills_needed_ko": ["파이썬", "YOLO 탐지", "엑스레이 영상 특성 이해"],
+ "caveats_ko": ["2019년 구축, 성능 지표 표가 비어 있음", "물품 클래스 이름은 팩에서 일부만 확인되어 예시는 추정"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "엑스레이 속 칼 탐지", "title_en": "Knife detection in X-rays", "desc_ko": "엑스레이 이미지에서 칼 종류를 탐지하는 모델을 학습합니다.", "desc_en": "Train a model that detects knives in X-ray images."},
+  {"level": "capstone", "title_ko": "보안 검색 보조 화면", "title_en": "Screening assistant display", "desc_ko": "위험 물품 후보를 엑스레이 화면에 표시해 주는 데모를 만듭니다.", "desc_en": "Highlight candidate dangerous items on the X-ray display."},
+  {"level": "research", "title_ko": "겹친 물품 탐지", "title_en": "Detecting overlapping items", "desc_ko": "다른 물건과 겹친 위해물품의 탐지 성능을 개선하는 방법을 연구합니다.", "desc_en": "Improve detection of dangerous items hidden behind other objects."}
+ ],
+ "doc_used": true,
+ "uncertain": ["물품 클래스 예시와 파일 형식은 추정"]
+}

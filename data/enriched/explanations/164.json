@@ -1,0 +1,12 @@
+{
+ "dataset_id": "164",
+ "easy_ko": "고속도로 CCTV 영상에서 뽑은 사진마다 승용차, 트럭, 버스의 위치를 상자나 윤곽으로 표시하고, 날씨·시간대·차로 수 같은 정보를 붙인 데이터입니다. 고속도로 교통량과 속도를 카메라로 자동으로 재는 AI를 만들 수 있습니다.",
+ "easy_en": "Images from highway CCTV, with cars, trucks and buses marked by boxes or outlines and details such as weather, time of day and number of lanes. You can build AI that measures highway traffic volume and speed from cameras automatically.",
+ "detail_ko": "고속도로 CCTV 50개 지점 영상 505시간에서 뽑은 이미지 50만 장(상자 30만, 분할 20만, jpg)으로, JSON에 차량 바운딩박스 또는 폴리곤, 차종(car, truck, bus), 날씨, 시간대, 차로 수, 교량/터널 등 도로 형태가 있습니다. 기준 성능은 기록에서 확인되지 않습니다. 전체 약 1.3TB이며 시내도로 데이터(165번)와 함께 쓰면 비교 연구가 가능합니다.",
+ "detail_en": "500k jpg images from 505 hours of video at 50 highway CCTV sites (300k with boxes, 200k with segmentation), with JSON vehicle boxes or polygons, class (car, truck, bus), weather, time of day, lane count and road type (bridge, tunnel). No baseline is visible in the record. Total size is about 1.3 TB; combine with the city-road set (165) for comparison studies.",
+ "amount_ko": "이미지 50만 장, CCTV 50곳",
+ "amount_en": "500k images, 50 CCTV sites",
+ "labels_ko": "차량 위치 상자·윤곽, 차 종류, 날씨·시간대·차로 수",
+ "labels_en": "boxes and outlines around vehicles, vehicle type, weather, time, lanes",
+ "status": "full-run-2026-11-02"
+}

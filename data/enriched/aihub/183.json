@@ -1,0 +1,29 @@
+{
+ "dataset_id": "183",
+ "title_en": "Drone moving-object recognition images (forward view, stereo)",
+ "summary_ko": "드론 앞쪽에 단 4K 스테레오(좌/우) 카메라로 농약 살포·도심 감시정찰·드론 택배 상황을 찍은 영상 300시간 이상과 가공 이미지 90만 장입니다. 이동체 상자와 거리 정보가 있어 드론이 앞의 장애물을 피하거나 물체까지 거리를 재는 AI에 쓸 수 있습니다.",
+ "summary_en": "300+ hours of 4K stereo (left/right) video from a forward-facing drone camera in crop spraying, urban surveillance and drone delivery scenarios, with 900,000 annotated images. Moving-object boxes and distance information support drone AI that avoids obstacles ahead or measures distance to objects.",
+ "contents_ko": "좌/우 스테레오 영상(mp4) + 이미지(jpg) + JSON(이동체 상자, 거리 정보, 서비스 구분).",
+ "contents_en": "Left/right stereo video (mp4) + images (jpg) + JSON (moving-object boxes, distance, scenario).",
+ "modalities": ["image", "video"],
+ "tasks": ["object_detection", "depth_estimation"],
+ "topics": [{"ko": "드론", "en": "Drones"}, {"ko": "물류·택배", "en": "Logistics and delivery"}, {"ko": "농업", "en": "Agriculture"}],
+ "keywords_ko": ["드론", "스테레오 카메라", "거리 추정", "드론 택배", "농약 살포", "장애물 회피"],
+ "keywords_en": ["drone", "stereo camera", "distance estimation", "drone delivery", "crop spraying", "obstacle avoidance"],
+ "labels": ["bounding box", "distance", "scenario"],
+ "file_formats": ["mp4", "jpg", "json"],
+ "scale_ko": "원시 4K 스테레오 영상 300시간 이상, 가공 이미지 약 90만~100만 장(서비스 3종)",
+ "classes_example": ["농약살포", "도심 감시정찰", "드론 택배"],
+ "baseline": [],
+ "difficulty": "advanced",
+ "difficulty_note_ko": "스테레오 거리 추정과 탐지를 함께 다뤄야 하고 전체 약 830GB입니다.",
+ "skills_needed_ko": ["파이썬", "스테레오 비전(OpenCV)", "객체 탐지"],
+ "caveats_ko": ["성능 지표가 팩에서 확인되지 않음"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "드론 전방 물체 탐지", "title_en": "Forward object detection", "desc_ko": "드론 전방 영상에서 이동체를 탐지합니다.", "desc_en": "Detect moving objects in forward drone video."},
+  {"level": "capstone", "title_ko": "스테레오 거리 측정 데모", "title_en": "Stereo distance demo", "desc_ko": "좌/우 영상으로 탐지된 물체까지의 거리를 계산해 화면에 표시합니다.", "desc_en": "Compute distance to detected objects from stereo pairs."},
+  {"level": "research", "title_ko": "드론 택배 장애물 회피", "title_en": "Obstacle avoidance for delivery drones", "desc_ko": "탐지·거리 정보로 충돌 위험을 판단하는 방법을 연구합니다.", "desc_en": "Study collision-risk estimation from detections and distance."}
+ ],
+ "doc_used": true,
+ "uncertain": []
+}

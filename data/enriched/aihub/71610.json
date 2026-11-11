@@ -1,0 +1,29 @@
+{
+ "dataset_id": "71610",
+ "title_en": "Machine reading comprehension data for finance and law documents",
+ "summary_ko": "한국은행·금융위원회·법제처 등 금융·법률 전문 문서를 지문으로 만든 지문-질문-답변 약 40만 건입니다. 답 구간 찾기, 예/아니오, 표에서 답 찾기, 다지선다, 절차 설명 5가지 질문 유형이 있어 금융·법률 질의응답 챗봇에 쓸 수 있습니다.",
+ "summary_en": "About 400k passage-question-answer sets built from finance and law documents (Bank of Korea, Financial Services Commission, Ministry of Legislation, etc.), in 5 question types: span extraction, yes/no, table answer, multiple choice and procedure. For finance and legal QA chatbots.",
+ "contents_ko": "지문 텍스트(txt) + JSON(질문, 답변, 질문 유형, 분야).",
+ "contents_en": "Passage text (txt) + JSON (question, answer, question type, domain).",
+ "modalities": ["text"],
+ "tasks": ["question_answering"],
+ "topics": [{"ko": "금융", "en": "Finance"}, {"ko": "법률", "en": "Law"}],
+ "keywords_ko": ["기계독해", "질의응답", "금융 문서", "법률 문서", "표 질의응답", "챗봇"],
+ "keywords_en": ["machine reading comprehension", "question answering", "finance documents", "legal documents", "table QA", "chatbot"],
+ "labels": ["question-answer pairs", "question type", "answer span"],
+ "file_formats": ["txt", "json"],
+ "scale_ko": "질문-답변 401,108건, 지문 140,226건, 질문 유형 5종",
+ "classes_example": ["정답경계추출형", "Yes/No 단문형", "Table정답추출형", "다지선다형", "절차(방법)"],
+ "baseline": [{"task": "machine reading comprehension", "model": "multi-task pretrained language model", "metric": "Accuracy", "value": "90.58%"}, {"task": "machine reading comprehension", "model": "multi-task pretrained language model", "metric": "F1-score", "value": "0.8564"}],
+ "difficulty": "intermediate",
+ "difficulty_note_ko": "약 0.12GB로 가볍습니다. KorQuAD 같은 기계독해 실습 경험이 있으면 좋습니다.",
+ "skills_needed_ko": ["파이썬", "Hugging Face 한국어 BERT·ELECTRA", "질의응답 모델"],
+ "caveats_ko": ["전문 용어가 많아 일반 한국어 모델은 성능이 낮을 수 있음", "표 정답형은 표 구조 처리가 필요", "법률 답변은 참고용이며 법률 자문을 대신할 수 없음"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "금융 문서 질의응답", "title_en": "Finance document QA", "desc_ko": "KoELECTRA로 지문에서 질문의 답 구간을 찾는 모델을 학습합니다.", "desc_en": "Train KoELECTRA to find answer spans in finance passages."},
+  {"level": "capstone", "title_ko": "법령 안내 챗봇", "title_en": "Law guide chatbot", "desc_ko": "법령 문서를 검색해 절차형 질문에 답하는 RAG 챗봇을 만듭니다.", "desc_en": "Build a RAG chatbot that answers procedure questions from law texts."},
+  {"level": "research", "title_ko": "표 질의응답 비교", "title_en": "Table QA comparison", "desc_ko": "표 정답형 질문에서 텍스트 모델과 표 전용 모델의 성능을 비교합니다.", "desc_en": "Compare text models and table-aware models on table questions."}
+ ],
+ "doc_used": true,
+ "uncertain": []
+}

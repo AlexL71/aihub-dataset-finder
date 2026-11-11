@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71467",
+ "easy_ko": "서로 다른 카메라 여러 대로 같은 장면을 동시에 찍은 사진 약 55만 장에, 사람이 쓰러지거나 차를 부수거나 몰래 들어오는 등의 상황과 같은 사람이 누구인지를 표시한 데이터입니다. 실종자를 찾거나 위험한 상황을 알아채는 CCTV AI에 쓸 수 있습니다.",
+ "easy_en": "About 550,000 images of the same scenes filmed at once by several different cameras, marking situations such as someone collapsing, a car being damaged or a break-in, and which person is the same across cameras. You can use it to build CCTV AI that finds missing people or notices danger.",
+ "detail_ko": "서로 다른 장비 3종 이상으로 같은 장면을 동시에 찍은 영상에서 뽑은 이미지 547,763장(jpg)에 상자, 상황 10종(예: 쓰러짐, 위험상황, 차량 손괴, 자전거 대 자전거 사고, 사람 대 킥보드 사고, 침입, 응급상황), 객체 재식별(re-id) ID를 JSON으로 붙였습니다(상황별 re-id 약 2만, 이상상황 약 3.4만). 기준 성능은 사람 재식별 ResNet50 Top-1 정확도 97%, 이상 상황 분류 MViTv2 Top-1 정확도 86.68%입니다. 전체 약 348GB이고, 연출 상황일 가능성과 얼굴 등 개인정보 처리 여부를 설명서에서 확인해야 합니다.",
+ "detail_en": "547,763 images (jpg) taken from videos of the same scene recorded at once by 3 or more different devices, with JSON boxes, 10 situation classes (such as collapse, danger, vehicle damage, bicycle-bicycle crash, person-scooter crash, intrusion, emergency) and person re-identification (re-id) IDs (about 20,000 re-id and about 34,000 abnormal-situation items per situation). Baselines: person re-identification with ResNet50, Top-1 accuracy 97%; abnormal-situation classification with MViTv2, Top-1 accuracy 86.68%. Total size is about 348 GB. Check the manual for whether scenes are staged and how faces and other personal data are handled.",
+ "amount_ko": "이미지 547,763장, 상황 10종",
+ "amount_en": "547,763 images, 10 situation classes",
+ "labels_ko": "위치 상자, 상황 종류, 같은 사람 번호(재식별)",
+ "labels_en": "bounding boxes, situation class, re-id",
+ "status": "full-run-2026-11-02"
+}

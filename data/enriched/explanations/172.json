@@ -1,0 +1,12 @@
+{
+ "dataset_id": "172",
+ "easy_ko": "CCTV와 주유소·주차장 카메라 영상에서 자동차와 번호판 부분을 잘라, 차마다 차 종류·색·제조사·연식을, 번호판마다 번호를 적어 둔 데이터입니다. 차 종류를 알아보거나 번호판을 읽는 AI를 만들 수 있지만, 번호판은 개인정보와 연결될 수 있어 조심해야 합니다.",
+ "easy_en": "Vehicle and licence-plate crops cut from CCTV, petrol-station and parking-lot camera footage, with each car's type, colour, maker and model year and each plate's number written down. You can build AI that recognises car types or reads plates, but plates can be linked to personal data, so take care.",
+ "detail_ko": "부천시 CCTV와 주유소·주차장 카메라 영상 약 2,189시간에서 잘라낸 차량 이미지 50만 장(차종, 색상, 제조사, 연식)과 번호판 이미지 10만 장(번호 값)을 JSON으로 라벨링했습니다. 기준 성능은 CRAFT + 4단계 STR 번호판 인식 정확도 99.75%입니다. 번호판은 개인정보와 연결될 수 있으므로 이용 약관과 사용 목적을 반드시 확인해야 합니다.",
+ "detail_en": "500k vehicle crops (type, colour, maker, model year) and 100k licence-plate crops (plate number) cut from about 2,189 hours of Bucheon CCTV and petrol-station and parking-lot footage, with JSON labels. Baseline: CRAFT + 4-stage STR plate recognition accuracy 99.75%. Plates can be linked to personal data, so check the terms of use and your purpose carefully.",
+ "amount_ko": "차량 이미지 50만 장, 번호판 이미지 10만 장",
+ "amount_en": "500k vehicle images, 100k plate images",
+ "labels_ko": "차 종류·색·제조사·연식, 번호판 번호",
+ "labels_en": "vehicle type, colour, maker, model year, plate number",
+ "status": "full-run-2026-11-02"
+}

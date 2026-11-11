@@ -1,0 +1,33 @@
+{
+ "dataset_id": "71361",
+ "title_en": "Land cover map aerial and satellite images (capital region)",
+ "summary_ko": "수도권 항공사진(25cm 5만 장, 12cm 1,000장)에 건물·주차장·도로·가로수·논·비닐하우스·밭·활엽수림·침엽수림·나지·수역 11종, Sentinel-2 위성영상 900장에 6종 토지 피복을 칠한 데이터입니다. 국토 환경 변화를 찾는 토지 피복 분할 AI에 쓸 수 있습니다.",
+ "summary_en": "Aerial photos of the Seoul capital region (50,000 at 25 cm, 1,000 at 12 cm) painted with 11 land-cover classes (buildings, parking, roads, street trees, paddy, greenhouses, fields, broadleaf and conifer forest, bare land, water) and 900 Sentinel-2 images with 6 classes. For land-cover segmentation AI that detects environmental change.",
+ "contents_ko": "항공·위성 영상(TIF) + 라벨 마스크(TIF) + JSON.",
+ "contents_en": "Aerial and satellite images (TIF) + label masks (TIF) + JSON.",
+ "modalities": ["image"],
+ "tasks": ["segmentation"],
+ "topics": [{"ko": "국토·환경 모니터링", "en": "Land and environment monitoring"}, {"ko": "원격탐사", "en": "Remote sensing"}],
+ "keywords_ko": ["토지 피복", "수도권", "항공사진", "Sentinel-2", "변화 탐지"],
+ "keywords_en": ["land cover", "capital region", "aerial photos", "Sentinel-2", "change detection"],
+ "labels": ["segmentation mask", "land-cover class"],
+ "file_formats": ["tif", "json"],
+ "scale_ko": "이미지 약 5.7만 장, 클래스 11종(항공)·6종(위성)",
+ "classes_example": ["건물", "주차장", "도로", "논", "비닐하우스", "침엽수림", "수역"],
+ "baseline": [
+  {"task": "land-cover segmentation (aerial 25 cm)", "model": "U-Net", "metric": "pixel accuracy", "value": "93.45%"},
+  {"task": "land-cover segmentation (aerial 12 cm)", "model": "U-Net", "metric": "pixel accuracy", "value": "90.12%"},
+  {"task": "land-cover segmentation (satellite 10 m)", "model": "U-Net", "metric": "pixel accuracy", "value": "89.44%"}
+ ],
+ "difficulty": "beginner",
+ "difficulty_note_ko": "약 37GB이고 512×512 타일이라 U-Net 분할 입문에 좋습니다.",
+ "skills_needed_ko": ["파이썬", "분할 모델(U-Net)", "TIFF·GIS 기초"],
+ "caveats_ko": ["수도권 지역만 있음", "641·642·643번 지역판보다 클래스가 많음(11종)"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "수역·산림 분할", "title_en": "Water and forest segmentation", "desc_ko": "항공사진에서 물과 숲 영역을 칠합니다.", "desc_en": "Segment water and forest in aerial photos."},
+  {"level": "capstone", "title_ko": "수도권 녹지 변화 지도", "title_en": "Capital-region green change map", "desc_ko": "연도별 녹지 면적 변화를 지도로 보여줍니다.", "desc_en": "Map changes in green space by year."},
+  {"level": "research", "title_ko": "해상도 간 일반화", "title_en": "Cross-resolution generalisation", "desc_ko": "25cm로 학습한 모델이 12cm·10m 영상에서도 통하는지 연구합니다.", "desc_en": "Test a 25 cm model on 12 cm and 10 m imagery."}
+ ],
+ "doc_used": true,
+ "uncertain": []
+}

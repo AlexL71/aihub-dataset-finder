@@ -1,0 +1,32 @@
+{
+ "dataset_id": "71330",
+ "title_en": "Large-scale AI database for local wildfire disaster prevention",
+ "summary_ko": "강릉시 산림에서 실제 불·연막탄·연기 발생기로 모의 발화한 영상과, 산 배경에 불·연기를 합성한 이미지 등 약 70만 장에 불꽃·연기 영역을 분할로 표시한 데이터입니다. CCTV·드론으로 산불 초기 발화를 자동 감지하는 AI에 쓸 수 있습니다.",
+ "summary_en": "About 700,000 images from staged fires in Gangneung forests (real fire, smoke bombs, smoke machines) and synthetic images with fire and smoke composited onto mountain backgrounds, with flame and smoke areas segmented. For AI that detects early wildfires from CCTV and drones.",
+ "contents_ko": "산림 이미지(jpg, 실제·합성) + JSON(불꽃·연기 분할, 촬영 위치).",
+ "contents_en": "Forest images (jpg, real and synthetic) + JSON (flame and smoke segmentation, location).",
+ "modalities": ["image"],
+ "tasks": ["segmentation", "object_detection"],
+ "topics": [{"ko": "산불·재난 안전", "en": "Wildfires and disaster safety"}, {"ko": "산림·환경", "en": "Forests and environment"}],
+ "keywords_ko": ["산불", "연기 탐지", "조기 감지", "CCTV", "드론", "합성 데이터"],
+ "keywords_en": ["wildfire", "smoke detection", "early warning", "CCTV", "drone", "synthetic data"],
+ "labels": ["segmentation", "fire/smoke class", "location"],
+ "file_formats": ["jpg", "json"],
+ "scale_ko": "이미지 약 70만 장(실제·합성)",
+ "classes_example": ["불꽃", "연기"],
+ "baseline": [
+  {"task": "wildfire detection (real images)", "model": "Swin Transformer", "metric": "mAP", "value": "54.3%"},
+  {"task": "wildfire detection (synthetic images)", "model": "Swin Transformer Mask R-CNN", "metric": "mAP", "value": "65.2%"}
+ ],
+ "difficulty": "intermediate",
+ "difficulty_note_ko": "약 663GB이고 실제 이미지 성능(mAP 54%)이 높지 않은 어려운 문제입니다.",
+ "skills_needed_ko": ["파이썬", "분할 모델", "YOLO 탐지"],
+ "caveats_ko": ["전체 약 663GB", "합성 이미지가 많아 실제 산불과 차이가 있을 수 있음", "강릉 지역 배경만 있음", "클래스 목록은 팩 앞부분에 없어 불꽃·연기로 추정"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "연기 영역 분할", "title_en": "Smoke segmentation", "desc_ko": "산 사진에서 연기 영역을 칠합니다.", "desc_en": "Segment smoke in mountain photos."},
+  {"level": "capstone", "title_ko": "산불 감시 CCTV 데모", "title_en": "Wildfire CCTV demo", "desc_ko": "실시간 영상에서 연기를 감지하면 알림을 보냅니다.", "desc_en": "Send an alert when smoke appears in live video."},
+  {"level": "research", "title_ko": "합성→실제 일반화", "title_en": "Synthetic-to-real generalisation", "desc_ko": "합성 이미지로 학습한 모델의 실제 산불 성능을 높이는 방법을 연구합니다.", "desc_en": "Improve real-fire accuracy of models trained on synthetic images."}
+ ],
+ "doc_used": true,
+ "uncertain": ["exact class list"]
+}

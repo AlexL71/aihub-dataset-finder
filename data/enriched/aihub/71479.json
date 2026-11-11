@@ -1,0 +1,29 @@
+{
+ "dataset_id": "71479",
+ "title_en": "Korean speech data by Asian-language speakers (excluding Chinese and Japanese) for education",
+ "summary_ko": "인도네시아·베트남·몽골·우즈베키스탄·카자흐스탄·태국·인도·미얀마 등 아시아권 외국인이 한국어로 말한 음성 1,500시간에 철자·발음 전사, 발음 오류 태깅(원인 포함), 말하기 평가 점수가 붙은 데이터입니다. 외국인 학습자용 한국어 말하기 자동 채점과 발음 피드백 AI에 쓸 수 있습니다.",
+ "summary_en": "1,500 hours of Korean speech by Asian learners (Indonesia, Vietnam, Mongolia, Uzbekistan, Kazakhstan, Thailand, India, Myanmar and others) with spelling and pronunciation transcripts, pronunciation error tags (with causes) and speaking scores. For automatic Korean speaking assessment and pronunciation feedback.",
+ "contents_ko": "한국어 발화 음성(wav) + JSON(철자·발음 전사, 오류 태그, 평가 점수, 화자 정보).",
+ "contents_en": "Korean speech (wav) + JSON (spelling and pronunciation transcripts, error tags, scores, speaker info).",
+ "modalities": ["audio", "text"],
+ "tasks": ["speech_recognition", "audio_classification"],
+ "topics": [{"ko": "한국어 교육", "en": "Korean language education"}, {"ko": "음성 인식", "en": "Speech recognition"}],
+ "keywords_ko": ["외국인 한국어", "발음 오류", "자동 채점", "말하기 평가", "아시아 학습자", "발음 전사"],
+ "keywords_en": ["Korean as a foreign language", "pronunciation errors", "automatic scoring", "speaking assessment", "Asian learners", "phonetic transcript"],
+ "labels": ["spelling transcript", "pronunciation transcript", "error tags", "assessment scores"],
+ "file_formats": ["wav", "json"],
+ "scale_ko": "음성 1,500시간",
+ "classes_example": ["인도네시아", "베트남", "몽골", "우즈베키스탄", "카자흐스탄", "태국", "인도", "미얀마"],
+ "baseline": [{"task": "speech recognition", "model": "Conformer-CTC small", "metric": "CER", "value": "11.18%"}, {"task": "pronunciation assessment", "model": "wav2vec 2.0", "metric": "Pearson correlation", "value": "0.81"}, {"task": "content and language-use scoring", "model": "LSTM", "metric": "QWK", "value": "0.86"}, {"task": "proficiency classification", "model": "KcELECTRA", "metric": "Weighted classification error", "value": "8.69%"}],
+ "difficulty": "intermediate",
+ "difficulty_note_ko": "라벨이 풍부해 여러 실습이 가능하지만 전체가 약 299GB입니다. 일부 화자만 받아 시작하세요.",
+ "skills_needed_ko": ["파이썬", "음성 처리", "사전학습 음성 모델 미세조정"],
+ "caveats_ko": ["전체 약 299GB", "출신 국가별 시간 비율이 팩에 없음", "영어 모국어 화자 버전(71469)과 같은 구조"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "발음 점수 예측", "title_en": "Pronunciation score prediction", "desc_ko": "음성으로 한국어 발음 평가 점수를 예측합니다.", "desc_en": "Predict Korean pronunciation scores from speech."},
+  {"level": "capstone", "title_ko": "유학생 한국어 말하기 튜터", "title_en": "Korean tutor for international students", "desc_ko": "아시아권 유학생의 발음 실수를 찾아 피드백하는 앱을 만듭니다.", "desc_en": "App that gives pronunciation feedback to Asian students."},
+  {"level": "research", "title_ko": "모국어별 오류 패턴 비교", "title_en": "Error patterns by first language", "desc_ko": "출신 국가에 따라 한국어 발음 오류가 어떻게 다른지 분석합니다.", "desc_en": "Compare Korean pronunciation errors by learners' first language."}
+ ],
+ "doc_used": true,
+ "uncertain": ["화자 수", "국가별 데이터 양"]
+}

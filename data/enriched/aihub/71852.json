@@ -1,0 +1,29 @@
+{
+ "dataset_id": "71852",
+ "title_en": "Public-sector civil complaint counselling LLM pretraining and instruction-tuning data",
+ "summary_ko": "중앙부처·지자체 등의 공공 민원 상담 텍스트 10,182건(단답형 약 7천·서술형 약 3천 쌍)을 바탕으로 분류·요약·질의응답 형식의 지시 학습 데이터 124,717건을 만든 데이터입니다. 공공기관 민원 챗봇이나 상담 도우미 AI에 쓸 수 있습니다.",
+ "summary_en": "10,182 public-sector complaint counselling texts from ministries and local governments (about 7,000 short-answer and 3,000 descriptive pairs), turned into 124,717 instruction items for classification, summarisation and QA. For government complaint chatbots and counselling assistants.",
+ "contents_ko": "민원 상담 원문(JSON) + 라벨(JSON: 분류, 요약, 질의응답).",
+ "contents_en": "Complaint counselling text (JSON) + labels (JSON: classification, summary, QA).",
+ "modalities": ["text"],
+ "tasks": ["dialogue", "text_classification", "summarization", "question_answering"],
+ "topics": [{"ko": "공공 민원", "en": "Public civil complaints"}, {"ko": "챗봇", "en": "Chatbots"}],
+ "keywords_ko": ["민원 상담", "공공기관", "지자체", "Instruction tuning", "질의응답", "챗봇"],
+ "keywords_en": ["civil complaints", "public sector", "local government", "instruction tuning", "question answering", "chatbot"],
+ "labels": ["class", "summary", "question-answer"],
+ "file_formats": ["json"],
+ "scale_ko": "민원 상담 10,182건(2,575,512어절), 지시 학습 데이터 124,717건",
+ "classes_example": ["교통", "환경", "안전", "복지", "문화", "경제", "주택/건설", "기타(국방/세무/방송통신/경찰 등)", "단일 요건 민원", "다수 요건 민원"],
+ "baseline": [],
+ "difficulty": "beginner",
+ "difficulty_note_ko": "약 0.19GB로 작아 노트북에서 분류·질의응답 실습을 바로 할 수 있습니다.",
+ "skills_needed_ko": ["파이썬", "Hugging Face", "LLM 미세조정(LoRA)"],
+ "caveats_ko": ["출처별 비율이 고르지 않고 일부 기관은 매우 적음", "출처별 건수 표가 가공데이터 기준으로 보임", "모델 성능 수치가 팩에 없음", "71844 민간 민원 상담 데이터와 같은 기관·구조"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "민원 유형 분류", "title_en": "Complaint type classifier", "desc_ko": "민원 글이 어떤 분야인지 분류합니다.", "desc_en": "Classify complaints by topic."},
+  {"level": "capstone", "title_ko": "구청 민원 챗봇", "title_en": "District complaint chatbot", "desc_ko": "자주 묻는 민원에 답하고 담당 부서를 안내하는 챗봇을 만듭니다.", "desc_en": "Answer common complaints and route to the right office."},
+  {"level": "research", "title_ko": "공공·민간 상담 비교", "title_en": "Public vs private counselling", "desc_ko": "공공·민간 상담 데이터를 섞어 학습할 때의 효과를 연구합니다.", "desc_en": "Study mixing public and private counselling data."}
+ ],
+ "doc_used": true,
+ "uncertain": []
+}

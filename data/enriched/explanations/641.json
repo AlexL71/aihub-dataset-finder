@@ -1,0 +1,12 @@
+{
+ "dataset_id": "641",
+ "easy_ko": "경상 지역을 비행기와 위성으로 내려다본 사진에 건물, 주차장, 도로, 가로수, 논, 밭, 숲, 빈 땅이 어디인지 색으로 칠한 데이터입니다. 땅을 어떻게 쓰고 있는지 지도를 자동으로 만들고 그 변화를 찾는 AI를 만들 수 있습니다.",
+ "easy_en": "Aerial and satellite images of the Gyeongsang region with buildings, parking lots, roads, street trees, rice paddies, fields, forests and bare land coloured in. You can build AI that automatically maps how land is used and finds changes over time.",
+ "detail_ko": "경상 지역 항공사진(0.25m) 약 10.4만 장에 8종(건물, 주차장, 도로, 가로수, 논, 밭, 산림, 나지), Sentinel-2 위성영상(10m) 1,500장에 4종(건물, 도로, 농경지, 산림) 토지 피복 세그멘테이션 마스크(TIF)와 JSON을 붙였습니다. 기준 성능은 U-Net 픽셀 정확도 항공 95.02%, 위성 95.79%입니다. 경상 지역만 포함되고, 절반 가까이가 거친(coarse) 라벨이며 위성 데이터는 1,500장으로 적습니다.",
+ "detail_en": "About 104k aerial images (0.25 m) of the Gyeongsang region with 8 land-cover classes (building, parking lot, road, street tree, rice paddies, fields, forest, bare land) and 1,500 Sentinel-2 satellite images (10 m) with 4 classes (building, road, farmland, forest), as segmentation masks (TIF) with JSON. Baselines: U-Net pixel accuracy 95.02% (aerial) and 95.79% (satellite). Only the Gyeongsang region is covered; nearly half the labels are coarse, and there are only 1,500 satellite images.",
+ "amount_ko": "이미지 약 10.6만 장(항공 약 10.4만 장, 위성 1,500장)",
+ "amount_en": "about 106k images (About 104k aerial, 1,500 satellite)",
+ "labels_ko": "땅 쓰임새별 영역(색칠)",
+ "labels_en": "land-cover masks",
+ "status": "full-run-2026-11-02"
+}

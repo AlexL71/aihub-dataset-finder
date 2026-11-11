@@ -1,0 +1,32 @@
+{
+ "dataset_id": "71340",
+ "title_en": "Enhanced marine sediment waste image data",
+ "summary_ko": "바닷속 바닥에 가라앉은 쓰레기 9종(어망·통발·유리·금속·플라스틱·나무·로프·타이어·고무)을 찍은 이미지 약 11만 장에 객체 약 27만 개를 상자·분할로 표시하고, 물 투명도·촬영 거리 정보를 붙인 데이터입니다. 해양 침적 쓰레기의 양을 자동으로 파악하는 AI에 쓸 수 있습니다.",
+ "summary_en": "About 110,000 images of waste sunk on the sea floor in 9 types (fishing nets, traps, glass, metal, plastic, wood, rope, tyres, rubber), with about 270,000 objects boxed and segmented plus water clarity and shooting distance. For AI that estimates how much waste lies on the sea floor.",
+ "contents_ko": "수중 이미지(jpg) + JSON(상자, 분할, 쓰레기 종류, 투명도, 촬영 거리).",
+ "contents_en": "Underwater images (jpg) + JSON (boxes, segmentation, waste type, clarity, distance).",
+ "modalities": ["image"],
+ "tasks": ["object_detection", "segmentation"],
+ "topics": [{"ko": "해양·하천 환경", "en": "Marine and river environment"}, {"ko": "쓰레기·재활용", "en": "Waste and recycling"}],
+ "keywords_ko": ["해양 쓰레기", "침적 쓰레기", "폐어망", "해양 오염", "수중 탐지"],
+ "keywords_en": ["marine debris", "seafloor waste", "ghost nets", "ocean pollution", "underwater detection"],
+ "labels": ["bounding box", "segmentation", "waste type", "water clarity", "distance"],
+ "file_formats": ["jpg", "json"],
+ "scale_ko": "이미지 약 11만 장, 객체 약 27만 개, 쓰레기 9종",
+ "classes_example": ["어망류", "통발류", "유리류", "금속류", "플라스틱류", "로프류", "고무류(타이어)"],
+ "baseline": [
+  {"task": "waste detection", "model": "YOLOv7", "metric": "mAP", "value": "93.3%"},
+  {"task": "waste segmentation", "model": "Swin-L", "metric": "mIoU", "value": "84.2%"}
+ ],
+ "difficulty": "intermediate",
+ "difficulty_note_ko": "탐지 실습에 좋지만 전체 약 241GB이고 물속이라 흐립니다.",
+ "skills_needed_ko": ["파이썬", "YOLO 탐지", "분할 모델"],
+ "caveats_ko": ["전체 약 241GB", "로프류 객체가 많아 종류별로 치우침", "71293번 수중 생활폐기물·71328번 해양생물 데이터와 관련됨"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "폐어망 탐지", "title_en": "Ghost-net detection", "desc_ko": "수중 사진에서 버려진 어망과 통발을 찾습니다.", "desc_en": "Find abandoned nets and traps in underwater photos."},
+  {"level": "capstone", "title_ko": "침적 쓰레기 현존량 추정", "title_en": "Seafloor debris estimate", "desc_ko": "탐지 결과로 해역별 쓰레기 양을 추정해 보여줍니다.", "desc_en": "Estimate debris amounts per area from detections."},
+  {"level": "research", "title_ko": "투명도별 성능 분석", "title_en": "Accuracy vs water clarity", "desc_ko": "물 투명도에 따라 탐지 성능이 어떻게 변하는지 연구합니다.", "desc_en": "Study how detection accuracy changes with water clarity."}
+ ],
+ "doc_used": true,
+ "uncertain": []
+}

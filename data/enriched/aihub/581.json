@@ -1,0 +1,32 @@
+{
+ "dataset_id": "581",
+ "title_en": "Vehicle damage image data",
+ "summary_ko": "카셰어링 업체와 정비소에서 모은 사고 차량 사진 약 50만 장에 손상 종류(스크래치·찌그러짐·파손·이격)와 차량 부위(범퍼·펜더·램프·옆면·바퀴 등)를 분할 영역으로 표시하고, 수리 견적 정보 12만 건을 더한 데이터입니다. 사진으로 차 손상과 수리비를 추정하는 AI에 쓸 수 있습니다.",
+ "summary_en": "About 500,000 photos of damaged cars from a car-sharing company and repair shops, with damage type (scratch, dent, breakage, separation) and car part (bumpers, fenders, lamps, sides, wheels and more) marked as segmentation areas, plus 125,000 repair estimates. For AI that estimates car damage and repair cost from photos.",
+ "contents_ko": "사고 차량 이미지(jpg) + JSON(손상 종류·부위 분할) + 수리 견적(xls).",
+ "contents_en": "Damaged car images (jpg) + JSON (damage type and part segmentation) + repair estimates (xls).",
+ "modalities": ["image", "tabular"],
+ "tasks": ["segmentation", "tabular_prediction"],
+ "topics": [{"ko": "자동차 보험·정비", "en": "Car insurance and repair"}, {"ko": "자동차", "en": "Automotive"}],
+ "keywords_ko": ["차량 파손", "사고 차량", "수리비 산출", "스크래치", "자동차 보험"],
+ "keywords_en": ["car damage", "accident vehicles", "repair cost estimation", "scratches", "car insurance"],
+ "labels": ["segmentation polygon", "damage type", "car part", "repair estimate"],
+ "file_formats": ["jpg", "json", "xls"],
+ "scale_ko": "이미지 약 50만 장, 손상 영역 약 200만 건, 견적 약 12.5만 건",
+ "classes_example": ["스크래치", "찌그러짐", "파손", "이격", "앞범퍼/앞펜더/전조등", "뒷범퍼/뒷펜더/후미등", "타이어/휠"],
+ "baseline": [
+  {"task": "car part segmentation", "model": "U-Net", "metric": "mIoU", "value": "69.35%"},
+  {"task": "damage type segmentation", "model": "U-Net", "metric": "mIoU", "value": "65.55%"}
+ ],
+ "difficulty": "intermediate",
+ "difficulty_note_ko": "약 48GB로 받을 만하고 분할 실습에 좋습니다. 손상 영역이 작아 정확도가 높지 않습니다.",
+ "skills_needed_ko": ["파이썬", "분할 모델(U-Net 등)"],
+ "caveats_ko": ["사진에 번호판이 보일 수 있음", "중형차·흰색/회색 차가 많아 치우침", "기준 성능(mIoU 약 66%)이 높지 않음"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "스크래치 영역 분할", "title_en": "Scratch segmentation", "desc_ko": "차 사진에서 스크래치 영역을 칠합니다.", "desc_en": "Segment scratch areas in car photos."},
+  {"level": "capstone", "title_ko": "사진 기반 수리비 추정", "title_en": "Photo-based repair estimate", "desc_ko": "손상 부위·크기로 견적 데이터를 이용해 수리비를 예측합니다.", "desc_en": "Predict repair cost from damaged part and size using the estimates."},
+  {"level": "research", "title_ko": "렌터카 반납 전후 비교", "title_en": "Before/after rental comparison", "desc_ko": "대여 전후 사진을 비교해 새 손상만 찾는 방법을 연구합니다.", "desc_en": "Find only new damage by comparing before and after photos."}
+ ],
+ "doc_used": true,
+ "uncertain": []
+}

@@ -1,0 +1,29 @@
+{
+ "dataset_id": "71620",
+ "title_en": "Factuality verification data for abstractive summaries",
+ "summary_ko": "신문 기사·기고문·법률 문서를 AI와 사람이 요약한 요약문 101,386건에 맞춤법·단어 선택·비문·불완전 문장·핵심 내용 오류·반복 6가지 오류를 표시하고 고친 데이터입니다. 요약문의 오류를 찾아 고치는 AI, 요약 모델 품질 검사에 쓸 수 있습니다.",
+ "summary_en": "101,386 AI and human summaries of news, op-eds and legal documents labelled with 6 error types (spelling, word choice, ungrammatical, incomplete, key-content error, repetition) and corrections. For detecting and fixing summary errors and checking summariser quality.",
+ "contents_ko": "JSON(원문, 요약문, 오류 위치·유형, 수정문).",
+ "contents_en": "JSON (source text, summary, error span and type, corrected text).",
+ "modalities": ["text"],
+ "tasks": ["text_classification", "text_generation", "summarization"],
+ "topics": [{"ko": "언어·요약", "en": "Language and summarisation"}, {"ko": "AI 품질 검증", "en": "AI quality checking"}],
+ "keywords_ko": ["요약", "사실성 검증", "오류 교정", "환각", "맞춤법", "KoBART"],
+ "keywords_en": ["summarisation", "factuality", "error correction", "hallucination", "spelling", "KoBART"],
+ "labels": ["error type", "error span", "correction"],
+ "file_formats": ["json"],
+ "scale_ko": "요약문 101,386건(기계 요약 90,248·사람 요약 11,138), 오류 유형 6종",
+ "classes_example": ["한글맞춤법·띄어쓰기 오류", "단어 선택 오류", "비문", "미완성 문장", "키워드·중요 내용 오류", "유사한 내용 반복"],
+ "baseline": [{"task": "summary error type classification", "model": "XLM-RoBERTa base", "metric": "Accuracy", "value": "73.45%"}, {"task": "summary error correction", "model": "KoBART", "metric": "F1-score", "value": "0.5374"}],
+ "difficulty": "intermediate",
+ "difficulty_note_ko": "약 0.31GB 텍스트라 가볍습니다. 오류 분류부터 시작하고 교정은 생성 모델 경험이 필요합니다.",
+ "skills_needed_ko": ["파이썬", "Hugging Face 한국어 모델(KoBART·RoBERTa)", "텍스트 분류·생성"],
+ "caveats_ko": ["단어 선택 오류 수가 페이지에 '110,48'로 잘려 있음", "기계 요약이 약 90%로 사람 요약은 적음", "원문 출처별 비율이 39/39/22%"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "요약 오류 유형 분류", "title_en": "Summary error classifier", "desc_ko": "요약 문장의 오류가 6가지 중 무엇인지 분류합니다.", "desc_en": "Classify which of 6 error types a summary sentence has."},
+  {"level": "capstone", "title_ko": "요약 검수 도우미", "title_en": "Summary review assistant", "desc_ko": "AI 요약문의 틀린 부분을 표시하고 고친 문장을 제안하는 도구를 만듭니다.", "desc_en": "Highlight errors in AI summaries and suggest fixes."},
+  {"level": "research", "title_ko": "요약 환각 탐지", "title_en": "Summary hallucination detection", "desc_ko": "원문과 다른 '핵심 내용 오류'를 자동으로 찾는 방법을 연구합니다.", "desc_en": "Study automatically detecting key-content errors versus the source."}
+ ],
+ "doc_used": true,
+ "uncertain": []
+}

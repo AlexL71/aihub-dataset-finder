@@ -1,0 +1,29 @@
+{
+ "dataset_id": "538",
+ "title_en": "Lip-reading speech recognition data",
+ "summary_ko": "여러 각도와 소음 환경에서 말하는 사람을 녹화한 영상 5,750시간과 음성 1,150시간으로, 전사문과 입 주변 상자가 표시되어 있습니다. 시끄러운 곳에서도 입모양으로 말을 알아듣는 음성 인식이나 청각장애인 발음 교정 서비스에 쓸 수 있습니다.",
+ "summary_en": "5,750 hours of video and 1,150 hours of audio of people speaking, recorded from several angles and in noisy conditions, with transcripts and mouth-area boxes. For speech recognition that reads lips in noisy places, or pronunciation-training services for deaf people.",
+ "contents_ko": "발화 영상(mp4) + 음성(wav) + JSON(전사, 입술 영역 상자, 촬영 각도, 소음 환경).",
+ "contents_en": "Speaking video (mp4) + audio (wav) + JSON (transcript, lip-area box, camera angle, noise condition).",
+ "modalities": ["video", "audio", "text"],
+ "tasks": ["speech_recognition", "object_detection"],
+ "topics": [{"ko": "입 모양·독순", "en": "Lip reading"}, {"ko": "음성", "en": "Speech"}, {"ko": "접근성·청각장애", "en": "Accessibility and hearing loss"}],
+ "keywords_ko": ["립리딩", "입모양", "음성 인식", "멀티모달", "소음 환경", "청각장애"],
+ "keywords_en": ["lip reading", "mouth shape", "speech recognition", "audio-visual", "noisy environment", "hearing loss"],
+ "labels": ["transcript", "bounding box (lips)", "angle", "noise condition"],
+ "file_formats": ["mp4", "wav", "json"],
+ "scale_ko": "영상 5,750시간, 음성 1,150시간, 라벨 6,620건",
+ "classes_example": [],
+ "baseline": [],
+ "difficulty": "advanced",
+ "difficulty_note_ko": "영상·음성 멀티모달 모델이 필요하고 전체 약 20TB로 매우 큽니다.",
+ "skills_needed_ko": ["파이썬", "오디오-비주얼 음성 인식(AV-HuBERT 등)", "대용량 영상 일부 사용"],
+ "caveats_ko": ["전체 약 20TB, 최소 파일 0.16GB", "얼굴 영상이라 이용 약관 확인 필요", "성능 지표가 팩 앞부분에 없음"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "입 영역 탐지", "title_en": "Mouth-region detection", "desc_ko": "발화 영상 프레임에서 입술 영역을 탐지합니다.", "desc_en": "Detect the lip region in speaking frames."},
+  {"level": "capstone", "title_ko": "시끄러운 곳 받아쓰기", "title_en": "Transcription in noise", "desc_ko": "음성과 입모양을 함께 써서 소음 속 받아쓰기 정확도를 높이는 데모를 만듭니다.", "desc_en": "Combine audio and lips to improve transcription in noise."},
+  {"level": "research", "title_ko": "각도에 강한 입모양 인식", "title_en": "Angle-robust lip reading", "desc_ko": "옆모습 영상에서 입모양 인식 성능을 분석하고 개선합니다.", "desc_en": "Analyse and improve lip reading from side views."}
+ ],
+ "doc_used": true,
+ "uncertain": ["클래스 목록을 페이지와 설명서에서 찾지 못함"]
+}

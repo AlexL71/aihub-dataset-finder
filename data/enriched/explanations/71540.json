@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71540",
+ "easy_ko": "같은 장면을 아주 흐린 화질부터 아주 선명한 화질까지 여러 단계로 찍은 사진 약 210만 장에, 사진 속 물체 영역을 칠해 표시한 데이터입니다. 흐린 사진을 선명하게 바꾸거나 오래된 CCTV 영상에서 물체를 알아보는 AI에 쓸 수 있습니다.",
+ "easy_en": "About 2.1 million photos of the same scenes taken at several quality levels, from very blurry to very sharp, with the objects in each photo painted in. You can use it to build AI that turns low-quality images into sharp ones or recognises objects in old CCTV footage.",
+ "detail_ko": "같은 장면을 해상도 7단계(320×240, 640×480, 1280×720, 1920×1080, 2560×1440, 3840×2160, 5120×2880; 단계별 300,609장)로 14종 장소에서 촬영한 이미지 2,104,263장(jpg, 비식별)에, 저화질은 시멘틱 분할, 고화질은 팬옵틱 분할과 해상도 단계, 장소, 카메라 각도를 JSON으로 붙였습니다. 전체 약 1.1TB이고, 팩에 성능 지표 표가 없으며 분할 클래스 목록도 팩 앞부분에 없습니다.",
+ "detail_en": "2,104,263 images (jpg, de-identified) of the same scenes at 7 resolutions (320×240, 640×480, 1280×720, 1920×1080, 2560×1440, 3840×2160, 5120×2880; 300,609 per level) in 14 kinds of places, with JSON semantic segmentation for low resolutions, panoptic segmentation for high ones, plus resolution level, place and camera angle. Total size is about 1.1 TB. The pack has no metrics table, and the segmentation class list is not in it.",
+ "amount_ko": "이미지 2,104,263장, 해상도 7단계, 장소 14종",
+ "amount_en": "2,104,263 images, 7 resolution levels, 14 places",
+ "labels_ko": "물체 영역(시멘틱·팬옵틱), 화질 단계, 장소, 카메라 각도",
+ "labels_en": "semantic and panoptic segmentation, resolution level, place, camera angle",
+ "status": "full-run-2026-11-02"
+}

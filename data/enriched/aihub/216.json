@@ -1,0 +1,32 @@
+{
+ "dataset_id": "216",
+ "title_en": "Scalp images by type",
+ "summary_ko": "두피 확대 사진 10만 장으로, 미세각질·피지과다·모낭사이홍반·모낭홍반/농포·비듬·탈모 6가지 증상과 그 정도가 표시되어 있습니다. 두피 상태를 진단해 맞춤 샴푸·세럼을 추천하는 뷰티·헬스케어 AI에 쓸 수 있습니다.",
+ "summary_en": "100,000 close-up scalp images labelled with 6 symptoms (fine scaling, excess sebum, interfollicular erythema, follicular erythema/pustules, dandruff, hair loss) and their severity. For beauty and healthcare AI that diagnoses scalp condition and recommends shampoos or serums.",
+ "contents_ko": "두피 이미지 + JSON(증상별 정도 등급).",
+ "contents_en": "Scalp image + JSON (severity grade per symptom).",
+ "modalities": ["image"],
+ "tasks": ["image_classification"],
+ "topics": [{"ko": "뷰티·미용", "en": "Beauty and hair"}, {"ko": "피부·두피 건강", "en": "Skin and scalp health"}],
+ "keywords_ko": ["두피", "탈모", "비듬", "피지", "두피 진단", "맞춤 화장품"],
+ "keywords_en": ["scalp", "hair loss", "dandruff", "sebum", "scalp diagnosis", "personalised cosmetics"],
+ "labels": ["class (6 symptoms)", "severity grade"],
+ "file_formats": ["jpg", "json"],
+ "scale_ko": "10만 1,027건(피지과다 8만, 모낭사이홍반 6.7만, 비듬 4만, 탈모 2.6만, 미세각질 1.7만 등, 중복 포함)",
+ "classes_example": ["미세각질", "피지과다", "모낭사이홍반", "모낭홍반/농포", "비듬", "탈모"],
+ "baseline": [
+  {"task": "dandruff classification", "model": "CNN", "metric": "accuracy", "value": "95.2%"},
+  {"task": "excess sebum classification", "model": "CNN", "metric": "accuracy", "value": "90.5%"}
+ ],
+ "difficulty": "beginner",
+ "difficulty_note_ko": "약 50GB로 다룰 만하고 증상별 분류는 첫 이미지 분류 프로젝트에 알맞습니다.",
+ "skills_needed_ko": ["파이썬 기초", "전이학습 이미지 분류"],
+ "caveats_ko": ["'양호' 이미지가 811건뿐이라 정상 판별은 어려움", "의료 진단을 대신하면 안 됨"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "비듬 정도 분류", "title_en": "Dandruff severity classifier", "desc_ko": "두피 사진으로 비듬 정도를 분류합니다.", "desc_en": "Classify dandruff severity from scalp photos."},
+  {"level": "capstone", "title_ko": "두피 진단·제품 추천 앱", "title_en": "Scalp check and product recommender", "desc_ko": "6가지 증상을 진단해 맞춤 관리법과 제품 유형을 추천합니다.", "desc_en": "Diagnose 6 symptoms and suggest care routines and product types."},
+  {"level": "research", "title_ko": "여러 증상 동시 진단", "title_en": "Multi-label scalp diagnosis", "desc_ko": "한 사진에 여러 증상이 함께 있을 때 다중 라벨 분류 성능을 비교합니다.", "desc_en": "Compare multi-label models when several symptoms appear together."}
+ ],
+ "doc_used": true,
+ "uncertain": []
+}

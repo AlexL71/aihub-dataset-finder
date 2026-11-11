@@ -1,0 +1,32 @@
+{
+ "dataset_id": "595",
+ "title_en": "Smart vertical farm integrated data (leafy vegetables)",
+ "summary_ko": "수직농장에서 겨자채·근대·상추·케일이 자라는 모습을 일정 시간마다 찍은 이미지 약 16만 장에 작물 상자와 생육 단계(정식기·생육기·수확기)를 표시하고, 같은 시간의 온습도 등 재배 환경 센서 데이터 약 20만 건을 함께 담은 데이터입니다. 작물 생육 단계와 무게를 예측하는 AI에 쓸 수 있습니다.",
+ "summary_en": "About 160,000 time-lapse images of mustard greens, chard, lettuce and kale growing in vertical farms, with crop boxes and growth stage (transplant, growing, harvest), plus about 200,000 environment sensor records taken at the same times. For AI that predicts crop growth stage and weight.",
+ "contents_ko": "작물 이미지(jpg) + JSON(상자, 생육 단계) + 재배 환경 센서 데이터.",
+ "contents_en": "Crop images (jpg) + JSON (boxes, growth stage) + growing-environment sensor data.",
+ "modalities": ["image", "sensor"],
+ "tasks": ["object_detection", "forecasting", "tabular_prediction"],
+ "topics": [{"ko": "스마트팜", "en": "Smart farming"}, {"ko": "농업", "en": "Agriculture"}],
+ "keywords_ko": ["수직농장", "상추", "케일", "생육 단계", "스마트팜"],
+ "keywords_en": ["vertical farm", "lettuce", "kale", "growth stage", "smart farm"],
+ "labels": ["bounding box", "growth stage", "fresh weight"],
+ "file_formats": ["jpg", "json"],
+ "scale_ko": "이미지 약 16만 장(작물 4종), 센서 약 20만 건",
+ "classes_example": ["겨자채", "근대", "상추", "케일", "정식기", "생육기", "수확기"],
+ "baseline": [
+  {"task": "crop detection", "model": "YOLOv5", "metric": "mAP", "value": "96.52%"},
+  {"task": "fresh weight prediction", "model": "LSTM", "metric": "RMSE", "value": "0.062"}
+ ],
+ "difficulty": "intermediate",
+ "difficulty_note_ko": "약 137GB이며 이미지와 센서 시계열을 함께 다룹니다.",
+ "skills_needed_ko": ["파이썬", "YOLO 탐지", "시계열 예측(LSTM)"],
+ "caveats_ko": ["전체 약 137GB", "페이지 수정일(2020-07)이 구축년도(2021)보다 앞서 AI Hub 표기 오류로 보임", "596번 딸기 데이터와 같은 구축 기관·구조"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "작물 종류·단계 탐지", "title_en": "Crop and stage detection", "desc_ko": "사진에서 작물을 찾고 생육 단계를 분류합니다.", "desc_en": "Detect crops and classify their growth stage."},
+  {"level": "capstone", "title_ko": "수확 시기 알림", "title_en": "Harvest-time alert", "desc_ko": "생육 단계 변화를 추적해 수확할 때를 알려줍니다.", "desc_en": "Track stage changes and alert when to harvest."},
+  {"level": "research", "title_ko": "이미지+환경으로 무게 예측", "title_en": "Weight from image plus environment", "desc_ko": "사진과 센서 데이터를 합쳐 작물 무게를 예측하는 방법을 연구합니다.", "desc_en": "Combine images and sensor data to predict crop weight."}
+ ],
+ "doc_used": true,
+ "uncertain": []
+}

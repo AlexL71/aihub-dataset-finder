@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71719",
+ "easy_ko": "시대별 대표 작가의 한국 만화와 웹툰 그림 5만여 장에 인물 위치와 장면 설명 문장을 붙인 데이터로, 시대를 세 시기로 나눴습니다. 특정 그림체로 인물이나 장면을 바꿔 그리는 AI에 쓸 수 있습니다.",
+ "easy_en": "Over 50,000 Korean comic and webtoon images by leading artists from different eras, with characters boxed and a sentence describing each scene, grouped into three periods. You can use it to build AI that redraws characters or scenes in a particular art style.",
+ "detail_ko": "시대별 대표 작가의 한국 만화·웹툰 이미지 53,623장(jpeg)에 인물 상자 56,141개와 장면 설명 문장, 시대(생성기, 증폭기, 전환기)를 JSON으로 붙였습니다. FID로 평가했다고 하나 수치는 팩에 없고, 71717 만화·웹툰 생성 데이터와 같은 기관이며, 이용 약관상 저작권 조건을 확인해야 합니다.",
+ "detail_en": "53,623 Korean comic and webtoon images (jpeg) by representative artists of each era, with 56,141 JSON character boxes, scene captions and era (formation, expansion, transition). FID was reportedly used but no value is in the pack. Same builder as the generation set 71717; check the copyright terms.",
+ "amount_ko": "이미지 53,623장, 상자 56,141개, 시대 3종",
+ "amount_en": "53,623 images, 56,141 boxes, 3 eras",
+ "labels_ko": "인물 위치 상자, 장면 설명, 시대",
+ "labels_en": "bounding box, caption, era",
+ "status": "full-run-2026-11-02"
+}

@@ -1,0 +1,29 @@
+{
+ "dataset_id": "71718",
+ "title_en": "Problem generation data for mathematics",
+ "summary_ko": "문제은행에서 뽑은 초·중등 수학 문제와 모범답안 이미지 84,203건에 문제 텍스트(OCR), 영역 상자, 이미지 설명이 붙어 있습니다. 학년·유형별 새 수학 문제를 만들어 주는 AI 디지털 교과서에 쓸 수 있습니다.",
+ "summary_en": "84,203 elementary and middle-school math problems and model answers from a question bank, as images with OCR text, region boxes and captions. For AI textbooks that generate new math problems by grade and type.",
+ "contents_ko": "문제·모범답안 이미지(png) + JSON(문항 메타정보, OCR 텍스트, 상자, 이미지 설명).",
+ "contents_en": "Problem and model-answer images (png) + JSON (item metadata, OCR text, boxes, captions).",
+ "modalities": ["image", "text"],
+ "tasks": ["ocr", "text_generation", "image_captioning", "object_detection"],
+ "topics": [{"ko": "수학 교육", "en": "Math education"}, {"ko": "에듀테크", "en": "Edtech"}],
+ "keywords_ko": ["수학", "문제 생성", "문제은행", "OCR", "학년별", "AI 디지털 교과서"],
+ "keywords_en": ["mathematics", "problem generation", "question bank", "OCR", "by grade", "AI digital textbook"],
+ "labels": ["bounding box", "OCR text", "caption"],
+ "file_formats": ["png", "json"],
+ "scale_ko": "문항 84,203건(문제·모범답안), 이미지 설명 13,776건",
+ "classes_example": ["초등 3학년", "초등 4학년", "초등 5학년", "초등 6학년", "중등 1학년"],
+ "baseline": [],
+ "difficulty": "intermediate",
+ "difficulty_note_ko": "약 3GB로 다루기 쉽지만, 문제 생성 품질 평가가 까다롭습니다.",
+ "skills_needed_ko": ["파이썬", "OCR", "언어 모델 미세조정"],
+ "caveats_ko": ["성능 수치가 팩에 없음", "71716 수학 자동 풀이 데이터와 같은 기관·구조", "수식 표기 방식 확인 필요"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "수학 문제 이미지 OCR", "title_en": "Math problem image OCR", "desc_ko": "문제 이미지를 텍스트로 바꿔 검색 가능한 문제은행을 만듭니다.", "desc_en": "Turn problem images into searchable text."},
+  {"level": "capstone", "title_ko": "유사 문제 생성기", "title_en": "Similar-problem generator", "desc_ko": "학년·단원을 입력하면 비슷한 새 문제와 풀이를 만들어 줍니다.", "desc_en": "Generate new similar problems and solutions by grade and unit."},
+  {"level": "research", "title_ko": "생성 문제 난이도 조절", "title_en": "Difficulty-controlled generation", "desc_ko": "언어 모델이 원하는 난이도의 문제를 만들도록 하는 방법을 연구합니다.", "desc_en": "Study controlling difficulty of generated math problems."}
+ ],
+ "doc_used": true,
+ "uncertain": ["중등 2·3학년 포함 여부 확인 필요"]
+}

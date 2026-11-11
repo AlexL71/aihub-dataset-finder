@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71735",
+ "easy_ko": "한국, 중국, 일본 특허 문서에서 뽑은 특허와 과학기술 문장을 한-중, 한-일 양쪽 방향으로 번역해 짝지은 문장 250만 쌍입니다. 전문 용어가 많은 특허 문서를 번역하는 AI나 특허 검색 서비스에 쓸 수 있습니다.",
+ "easy_en": "2.5 million sentence pairs from Korean, Chinese and Japanese patent documents in patent and science fields, translated in both directions between Korean and Chinese or Japanese. You can use it to build AI that translates patents full of technical terms, or patent search services.",
+ "detail_ko": "한국·중국·일본 특허공보에서 뽑은 특허·기술과학 분야 번역 문장 쌍 2,500,000개(원천 7,500,000건, csv)에 언어 방향 4종(한-중, 한-일, 중-한, 일-한)과 기술 분야를 JSON으로 붙였습니다. 페이지에 성능 점수 표가 없고(OpenNMT 학습 방법만 소개), 특허 문장은 길고 전문 용어가 많아 일반 번역기 성능이 낮을 수 있으며, 원천 750만 건과 라벨 250만 건의 관계는 확인이 필요합니다.",
+ "detail_en": "2,500,000 patent and science translation sentence pairs (from 7,500,000 source items, csv) taken from Korean, Chinese and Japanese patent gazettes, with JSON target language for 4 directions (ko-zh, ko-ja, zh-ko, ja-ko) and technical field. There is no score table (only OpenNMT training is described); patent sentences are long and full of jargon, so general translators may do poorly; and how the 7.5 million source items relate to the 2.5 million labels needs checking.",
+ "amount_ko": "번역 문장 쌍 2,500,000개(원천 7,500,000건), 언어 방향 4종",
+ "amount_en": "2,500,000 sentence pairs (7,500,000 source items), 4 language directions",
+ "labels_ko": "번역 문장, 기술 분야",
+ "labels_en": "translation, technical field",
+ "status": "full-run-2026-11-02"
+}

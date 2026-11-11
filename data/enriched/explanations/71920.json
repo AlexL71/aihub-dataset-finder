@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71920",
+ "easy_ko": "여러 박물관 자료와 직접 촬영으로 모은 한국 전통 민화 그림 9,000여 장에 한국어와 영어 설명, 그림 속 대상과 그리는 기법, 상징 정보를 붙인 데이터입니다. 민화 느낌의 그림을 만들어 주는 AI나 전통 디자인, 교육 자료에 쓸 수 있습니다.",
+ "easy_en": "Over 9,000 traditional Korean folk paintings (minhwa) from museum collections and project photography, with Korean and English descriptions and information on the subjects, painting techniques and symbolism. You can use it for AI that creates minhwa-style images, traditional design or teaching materials.",
+ "detail_ko": "가회민화박물관·국립민속박물관·국립중앙박물관 등 50개 소장처 자료와 직접 촬영으로 모은 민화 이미지 9,119장(jpg, 1080px 이상; 기본 3,779, 상세 묘사 5,340)에 한국어 캡션 28,872문장(514,558토큰), 영어 캡션 29,215문장(847,192토큰), 객체·표현 기법·상징성 메타데이터를 JSON으로 붙였습니다. 페이지에 성능 점수 표가 없고(text-to-image 모델 소개만 있음), 박물관 소장품이라 생성물 이용 시 저작권·이용 조건을 확인해야 하며, 민화 주제 분포는 팩 앞부분에 없습니다.",
+ "detail_en": "9,119 minhwa images (jpg, 1080 px or larger; 3,779 basic and 5,340 detail shots) from 50 collections including the Gahoe Minhwa Museum, the National Folk Museum and the National Museum of Korea plus project photography, with JSON Korean captions (28,872 sentences, 514,558 tokens), English captions (29,215 sentences, 847,192 tokens) and metadata on objects, techniques and symbolism. There is no score table (only a text-to-image model is mentioned); these are museum holdings, so check copyright and terms for generated output; and the distribution of themes is not in the pack.",
+ "amount_ko": "이미지 9,119장(기본 3,779, 상세 5,340), 한국어 캡션 28,872문장, 영어 캡션 29,215문장",
+ "amount_en": "9,119 images (3,779 basic, 5,340 detail), 28,872 Korean and 29,215 English caption sentences",
+ "labels_ko": "한국어·영어 설명, 대상·기법·상징 정보",
+ "labels_en": "caption (Korean/English), metadata",
+ "status": "full-run-2026-11-02"
+}

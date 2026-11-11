@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71457",
+ "easy_ko": "바닷가 매립지처럼 무른 땅에 놓인 도로를 땅속 레이더로 찍은 사진 약 31만 장에 수도관 같은 관로, 맨홀, 땅속 빈 구멍 등을 표시한 데이터입니다. 도로 밑 시설과 땅 꺼짐(싱크홀) 위험을 찾는 AI에 쓸 수 있습니다.",
+ "easy_en": "About 310,000 images from ground-penetrating radar scans of roads on soft ground, such as reclaimed coastal land, with pipes, manholes and empty holes underground marked. You can use it to build AI that finds what lies under roads and spots sinkhole risk.",
+ "detail_ko": "매립지·해안가 등 연약 지반 도로에서 다채널 지표투과레이더(GPR)로 얻은 단면 이미지 313,204장(jpg, 평단 108,329, 종단 103,809, 횡단 101,066)에 클래스 5종(관로, 박스, 맨홀, 패칭, 지하공동) 상자를 JSON으로 붙였습니다. 관로가 가장 많아 클래스 불균형이 있고, 지역이 부산 연약 지반으로 한정됩니다. 성능 지표 값은 페이지에 없습니다.",
+ "detail_en": "313,204 cross-section images (jpg: 108,329 plan, 103,809 longitudinal, 101,066 transverse) from multi-channel ground-penetrating radar (GPR) on soft-ground roads such as reclaimed and coastal land, with JSON boxes for 5 classes (pipe, box culvert, manhole, patching, underground cavity). Pipes dominate, so classes are imbalanced, and the area is limited to soft ground in Busan. No metric values are on the page.",
+ "amount_ko": "이미지 313,204장, 클래스 5종",
+ "amount_en": "313,204 images, 5 classes",
+ "labels_ko": "땅속 물체 위치 상자, 물체 종류",
+ "labels_en": "bounding boxes, underground object class",
+ "status": "full-run-2026-11-02"
+}

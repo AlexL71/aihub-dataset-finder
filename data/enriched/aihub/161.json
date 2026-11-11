@@ -1,0 +1,29 @@
+{
+ "dataset_id": "161",
+ "title_en": "Videos for face liveness detection",
+ "summary_ko": "3,007명의 실제 얼굴과, 사진 출력물·화면 재생·3D 마스크로 얼굴을 흉내 낸 위조 공격을 RGB·깊이·적외선 카메라로 찍은 영상 5.6만 개(이미지 443만 장)입니다. 얼굴 인증에서 가짜 얼굴을 걸러내는 '라이브니스 감지' AI에 쓸 수 있습니다.",
+ "summary_en": "56,000 videos (4.4 million images) of 3,007 real faces and spoofing attacks (printed photos, screen replays, 3D masks) recorded with RGB, depth and infrared cameras. For liveness-detection AI that rejects fake faces in face authentication.",
+ "contents_ko": "동영상(bag/mkv) + 추출 이미지(jpg, RGB·Depth·IR) + 얼굴 분할 마스크 + 라벨(실제/공격 종류, 조명, 카메라).",
+ "contents_en": "Videos (bag/mkv) + extracted images (jpg, RGB, depth, IR) + face masks + labels (live or attack type, lighting, camera).",
+ "modalities": ["video", "image", "sensor"],
+ "tasks": ["image_classification", "anomaly_detection", "segmentation"],
+ "topics": [{"ko": "보안·인증", "en": "Security and authentication"}, {"ko": "사람 얼굴", "en": "Human faces"}, {"ko": "금융 보안", "en": "Financial security"}],
+ "keywords_ko": ["라이브니스", "얼굴 위변조", "안티 스푸핑", "얼굴 인증", "깊이 카메라", "적외선"],
+ "keywords_en": ["liveness detection", "face spoofing", "anti-spoofing", "face authentication", "depth camera", "infrared"],
+ "labels": ["class (live / print / replay / 3D mask)", "face segmentation mask"],
+ "file_formats": ["bag", "mkv", "jpg", "json"],
+ "scale_ko": "인원 3,007명, 영상 56,349개, 이미지 4,436,910장, 카메라 3종",
+ "classes_example": ["Live", "Print", "Replay", "3D Mask"],
+ "baseline": [],
+ "difficulty": "intermediate",
+ "difficulty_note_ko": "실제/가짜 분류는 이해하기 쉽지만 깊이·적외선 데이터를 함께 다루면 어려워집니다. 전체 약 713GB입니다.",
+ "skills_needed_ko": ["파이썬", "이미지 분류", "다중 모달(RGB·Depth) 입력 처리"],
+ "caveats_ko": ["실제 얼굴 데이터라 이용 약관과 개인정보 보호를 반드시 확인", "성능 지표가 팩 앞부분에 없음"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "진짜 얼굴 vs 사진 구분", "title_en": "Real face vs printed photo", "desc_ko": "RGB 이미지로 실제 얼굴과 출력 사진 공격을 분류합니다.", "desc_en": "Classify real faces versus printed-photo attacks from RGB."},
+  {"level": "capstone", "title_ko": "얼굴 출석 체크 위조 방지", "title_en": "Spoof-proof face attendance", "desc_ko": "얼굴 출석 앱에 라이브니스 검사를 추가해 사진으로 대리 출석하는 것을 막습니다.", "desc_en": "Add liveness checks to a face attendance app to stop photo proxies."},
+  {"level": "research", "title_ko": "처음 보는 공격에 강한 탐지", "title_en": "Detecting unseen attack types", "desc_ko": "출력물 공격으로 학습해 3D 마스크 공격에서 성능이 얼마나 떨어지는지 분석하고 개선합니다.", "desc_en": "Train on print attacks and study the drop on 3D masks."}
+ ],
+ "doc_used": true,
+ "uncertain": []
+}

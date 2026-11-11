@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71607",
+ "easy_ko": "동부권의 관광지, 음식점, 숙소, 쇼핑 장소 정보와 장소 사진, 사진 설명, 그리고 관광에 관한 질문과 답을 함께 묶은 데이터입니다. 사진과 지식을 같이 보고 여행 질문에 답하는 챗봇이나 추천 AI에 쓸 수 있습니다.",
+ "easy_en": "Information on tourist sights, restaurants, places to stay and shops in the eastern region, together with photos of the places, photo descriptions, and questions and answers about travel. You can use it to build chatbots or recommendation AI that look at photos and facts together to answer travel questions.",
+ "detail_ko": "동부권 장소(POI) 140,681건의 정보(csv)와 지식 트리플(주어-관계-대상), 장소 이미지 703,405장(png)과 이미지 설명 문장, 질문-답변 2,813,620건(JSON)을 묶은 지식 기반 시각 질의응답(KVQA) 데이터입니다. 장소 분류는 관광지, 문화시설, 음식점, 레포츠, 숙박, 쇼핑입니다. 기준 성능은 ZS-F-VQA + KGE 융합 5지선다 지식 VQA 정확도 88.86%입니다. 전체 약 6.6TB로 매우 크고, 페이지에 트리플 수가 '??건'으로 비어 있습니다. 71598·71605·71608과 같은 구성입니다. POI 원본 일부는 외부 기업 제공 자료입니다.",
+ "detail_en": "Knowledge-based visual question answering (KVQA) data for the eastern region: information on 140,681 places (POIs, csv), knowledge triples (subject-relation-object), 703,405 place images (png) with captions, and 2,813,620 question-answer pairs (JSON). Place types are tourist sights, cultural facilities, restaurants, leisure sports, lodging and shopping. Baseline: 5-choice knowledge VQA with ZS-F-VQA + KGE fusion, accuracy 88.86%. Total size is about 6.6 TB, very large, and the page shows the triple count as '??'. Same layout as 71598, 71605 and 71608. Some POI source data comes from outside companies.",
+ "amount_ko": "POI 140,681건, 이미지 703,405장, 질문-답변 2,813,620건",
+ "amount_en": "140,681 POIs, 703,405 images, 2,813,620 QA pairs",
+ "labels_ko": "지식 트리플, 사진 설명 문장, 질문과 답",
+ "labels_en": "triples, image captions, question-answer pairs",
+ "status": "full-run-2026-11-02"
+}

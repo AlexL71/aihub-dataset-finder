@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71447",
+ "easy_ko": "배에 칠한 페인트 상태를 찍은 사진 20만여 장으로, 잘 칠해진 부분과 갈라짐, 부풀음, 긁힘 같은 불량을 나누어 표시한 데이터입니다. 배의 도장 품질을 자동으로 검사하는 AI에 쓸 수 있습니다.",
+ "easy_en": "Over 200,000 photos of paint on ships, sorting well-painted surfaces from defects such as cracks, blisters and scratches. You can use it to build AI that checks ship paint quality automatically.",
+ "detail_ko": "선박 도장 이미지 206,033장(jpg)을 양품 103,491장(갑판·외판·탱크 등 10개 부위), 도장 불량 41,673장(균열, 도막분리, 부풀음, 워터스포팅, 이물질포함, 핀홀, 흐름 7종), 도막 손상 60,869장(도막떨어짐, 스크래치, 용접손상 3종)으로 나누고, 품질 분류와 결함 영역 분할을 JSON으로 붙였습니다(라벨 객체 225,511개). 기준 성능은 DenseNet 121 품질 분류 Top-1 정확도 99.94%입니다. 전체 약 423GB이고, 정확도가 매우 높아 비슷한 사진이 학습·평가에 섞였을 가능성을 확인해야 합니다.",
+ "detail_en": "206,033 ship-painting images (jpg): 103,491 good (10 areas such as deck, shell and tank), 41,673 paint defects (7 types: crack, coating separation, blister, water spotting, foreign matter, pinhole, run) and 60,869 coating damage (3 types: peeling, scratch, weld damage), with JSON quality classes and defect segmentation (225,511 labelled objects). Baseline: quality classification with DenseNet 121, Top-1 accuracy 99.94%. Total size is about 423 GB. The very high accuracy suggests checking whether similar photos ended up in both training and test sets.",
+ "amount_ko": "이미지 206,033장, 라벨 객체 225,511개",
+ "amount_en": "206,033 images, 225,511 labelled objects",
+ "labels_ko": "품질 종류(양품·불량·손상), 결함 영역",
+ "labels_en": "quality class (good, defect, damage), defect masks",
+ "status": "full-run-2026-11-02"
+}

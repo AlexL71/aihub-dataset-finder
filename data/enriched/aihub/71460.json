@@ -1,0 +1,29 @@
+{
+ "dataset_id": "71460",
+ "title_en": "Traditional Korean house (hanok) data for metaverse use",
+ "summary_ko": "경상북도 23개 시·군의 전통 한옥 약 600곳을 찍은 이미지 323,197장으로, 지붕·기둥·창·벽·문·초석·기단 등 한옥 구성요소 10종이 상자로 표시되어 있습니다. 한옥 구조를 인식하거나 메타버스용 한옥을 설계하는 AI에 쓸 수 있습니다.",
+ "summary_en": "323,197 images of about 600 traditional hanok houses in 23 districts of Gyeongsangbuk-do, with 10 hanok parts (roof, column, window, wall, door, base stone, stylobate, etc.) marked by boxes. For AI that recognises hanok structure or designs hanok for the metaverse.",
+ "contents_ko": "한옥 이미지(jpg) + JSON(상자, 구성요소 대분류·소분류).",
+ "contents_en": "Hanok image (jpg) + JSON (box, part category and sub-category).",
+ "modalities": ["image"],
+ "tasks": ["object_detection", "image_classification"],
+ "topics": [{"ko": "전통문화·건축", "en": "Traditional culture and architecture"}, {"ko": "메타버스", "en": "Metaverse"}],
+ "keywords_ko": ["한옥", "전통 건축", "메타버스", "기둥", "지붕", "경상북도"],
+ "keywords_en": ["hanok", "traditional architecture", "metaverse", "column", "roof", "Gyeongsangbuk-do"],
+ "labels": ["bounding box", "class"],
+ "file_formats": ["jpg", "json"],
+ "scale_ko": "이미지 323,197장, 한옥 약 600곳, 구성요소 10종",
+ "classes_example": ["outer", "door", "roof", "column", "window", "wall", "floor", "railing", "basestone", "stylobate"],
+ "baseline": [],
+ "difficulty": "intermediate",
+ "difficulty_note_ko": "탐지 실습에 좋지만 전체 약 339GB입니다. 일부 구성요소만 받아 쓰세요.",
+ "skills_needed_ko": ["파이썬", "YOLO 탐지", "이미지 분류"],
+ "caveats_ko": ["전체 약 339GB", "구성요소별 비율 차이가 큼(outer·railing 0.9%, basestone 22.5%)", "개요는 30만 장, 구축량은 323,197장으로 다름", "성능 지표 값이 페이지에 없음"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "한옥 부재 분류", "title_en": "Hanok part classifier", "desc_ko": "사진 속 한옥 부재가 기둥·창·지붕 중 무엇인지 분류합니다.", "desc_en": "Classify hanok parts such as columns, windows and roofs."},
+  {"level": "capstone", "title_ko": "한옥 해설 앱", "title_en": "Hanok guide app", "desc_ko": "한옥 사진에서 부재를 찾아 이름과 설명을 보여 주는 관광 앱을 만듭니다.", "desc_en": "Tourist app that labels and explains hanok parts in photos."},
+  {"level": "research", "title_ko": "사진에서 한옥 3D 모델링", "title_en": "Hanok 3D modelling from photos", "desc_ko": "부재 탐지 결과로 메타버스용 한옥 구조를 자동 구성하는 방법을 연구합니다.", "desc_en": "Build metaverse hanok structures from detected parts."}
+ ],
+ "doc_used": true,
+ "uncertain": ["소분류 세부 항목"]
+}

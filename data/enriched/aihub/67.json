@@ -1,0 +1,32 @@
+{
+ "dataset_id": "67",
+ "title_en": "Sports human motion (soccer)",
+ "summary_ko": "협회 경기와 직접 찍은 축구 영상 200시간 이상에서 뽑은 이미지 400만 장으로, 선수·공·심판 위치와 몸 관절, 슛·패스·드리블·코너킥·프리킥·태클 등 동작이 표시되어 있습니다. 경기 분석, 선수 동작 통계, 하이라이트 자동 추출에 쓸 수 있습니다.",
+ "summary_en": "4 million frames from 200+ hours of soccer video (association matches and self-recorded), with players, ball and referees boxed, body joints, and actions such as shoot, pass, dribble, corner kick, free kick and sliding tackle. For match analysis, player statistics or automatic highlights.",
+ "contents_ko": "영상 프레임 이미지 + JSON(사람·공·심판 상자, 관절 키포인트, 동작 분류, 환경 정보). 협회·아마추어·일반, 동작별 폴더.",
+ "contents_en": "Frames + JSON (person, ball and referee boxes, joint keypoints, action class, environment). Folders by association/amateur/public and action.",
+ "modalities": ["video", "image"],
+ "tasks": ["action_recognition", "keypoint_pose", "object_detection"],
+ "topics": [{"ko": "스포츠", "en": "Sports"}, {"ko": "축구", "en": "Soccer"}, {"ko": "사람 동작", "en": "Human motion"}],
+ "keywords_ko": ["축구", "슛", "패스", "코너킥", "태클", "경기 분석", "자세 추정"],
+ "keywords_en": ["soccer", "football", "shoot", "pass", "corner kick", "tackle", "match analysis", "pose estimation"],
+ "labels": ["bounding box", "keypoints", "action class"],
+ "file_formats": ["jpg", "json"],
+ "scale_ko": "영상 200시간 이상, 이미지 400만 장 이상(구축량 28.8만)",
+ "classes_example": ["Shoot", "Pass", "Dribble", "Defense", "Cornerkick", "Freekick", "Slidingtackle", "Steal", "Foul"],
+ "baseline": [
+  {"task": "person detection", "model": "YOLOv4", "metric": "mAP", "value": "81.47%"},
+  {"task": "pose estimation (torso)", "model": "YOLOv4", "metric": "PCK", "value": "85.5%"}
+ ],
+ "difficulty": "intermediate",
+ "difficulty_note_ko": "동작별 폴더가 있어 분류 실습이 쉽지만, 전체 약 2.2TB라 일부 동작만 받아 쓰세요.",
+ "skills_needed_ko": ["파이썬", "객체 탐지·자세 추정", "영상 동작 분류"],
+ "caveats_ko": ["전체 약 2.2TB", "협회 경기 영상 포함으로 이용 조건 확인 필요", "폴더 이름 철자가 섞여 있음(Conerkick/Cornerkick)"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "축구 동작 분류기", "title_en": "Soccer action classifier", "desc_ko": "슛·패스·드리블 세 동작을 이미지나 관절로 분류합니다.", "desc_en": "Classify shoot, pass and dribble from images or joints."},
+  {"level": "capstone", "title_ko": "아마추어 경기 기록 앱", "title_en": "Amateur match stats app", "desc_ko": "경기 영상에서 슛·패스 횟수를 세어 선수별 기록표를 만들어 줍니다.", "desc_en": "Count shots and passes in match video and build per-player stats."},
+  {"level": "research", "title_ko": "프로·아마추어 영상 간 성능 차이", "title_en": "Pro vs amateur domain gap", "desc_ko": "협회 중계 영상으로 학습한 모델이 직접 찍은 아마추어 영상에서 얼마나 떨어지는지 분석합니다.", "desc_en": "Measure how a model trained on broadcast footage drops on self-filmed amateur video."}
+ ],
+ "doc_used": true,
+ "uncertain": []
+}

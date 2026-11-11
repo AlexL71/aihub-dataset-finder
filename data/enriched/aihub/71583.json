@@ -1,0 +1,29 @@
+{
+ "dataset_id": "71583",
+ "title_en": "Autonomous-vehicle static object recognition and map update data",
+ "summary_ko": "자율주행 실증 지구와 고속도로에서 라이다·카메라를 동기화해 찍은 데이터로, 카메라 이미지 25만 장에 차선·노면표시·표지판·도로공사·노면 손상이 선과 상자로 표시되어 있습니다. 정밀 지도를 자동으로 갱신하고 도로 시설물 변화를 찾는 AI에 쓸 수 있습니다.",
+ "summary_en": "Synchronised lidar-camera data from autonomous-driving test zones and highways: 250k camera images with lanes, road markings, signs, roadworks and road damage marked by polylines and boxes. For automatic HD-map updates and detecting road-facility changes.",
+ "contents_ko": "다중 카메라 이미지(jpg) + 라이다(pcd)·레이더 + JSON(차선 폴리라인, 표지판·공사 상자) + 위치 메타.",
+ "contents_en": "Multi-camera images (jpg) + lidar (pcd) and radar + JSON (lane polylines, sign and roadwork boxes) + pose metadata.",
+ "modalities": ["image", "3d", "sensor"],
+ "tasks": ["object_detection", "segmentation", "anomaly_detection"],
+ "topics": [{"ko": "자율주행·정밀 지도", "en": "Autonomous driving and HD maps"}, {"ko": "도로 시설물 관리", "en": "Road facility management"}],
+ "keywords_ko": ["정밀 지도", "차선 검출", "표지판", "도로공사", "노면 손상", "지도 갱신"],
+ "keywords_en": ["HD map", "lane detection", "traffic signs", "roadworks", "road damage", "map update"],
+ "labels": ["polyline", "bounding box", "class"],
+ "file_formats": ["jpg", "pcd", "json"],
+ "scale_ko": "카메라 이미지 250,000장, 라이다 50,000개, 레이더 100,000개, 객체 약 138만 개(폴리라인 77%)",
+ "classes_example": ["road_line", "instruction_line", "assistance_line", "regulatory_sign", "warning_sign", "construction", "damaged_road_line", "crack"],
+ "baseline": [{"task": "lane polyline detection", "model": "EfficientNet + FPN", "metric": "F1-score", "value": "0.8685"}, {"task": "object detection", "model": "YOLOv4", "metric": "mAP", "value": "79.85%"}],
+ "difficulty": "advanced",
+ "difficulty_note_ko": "차선(폴리라인) 검출은 일반 탐지보다 어렵고 전체 약 245GB입니다. 전방 카메라만 받아 시작하세요.",
+ "skills_needed_ko": ["파이썬", "YOLO 탐지", "차선 검출 모델", "다중 카메라 처리"],
+ "caveats_ko": ["road_line이 약 72%이고 균열(crack)은 0.05%로 매우 불균형", "카메라 5대 이상 시점이 섞여 있어 시점별 처리 필요", "같은 클립 100프레임이 연속이라 클립 단위로 분할해야 함"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "표지판 탐지", "title_en": "Traffic sign detection", "desc_ko": "도로 이미지에서 규제·경고 표지판을 YOLO로 찾습니다.", "desc_en": "Detect regulatory and warning signs with YOLO."},
+  {"level": "capstone", "title_ko": "차선 훼손 신고 지도", "title_en": "Faded-lane report map", "desc_ko": "훼손된 차선과 공사 구간을 찾아 위치와 함께 지도에 표시합니다.", "desc_en": "Map damaged lane markings and roadworks with location."},
+  {"level": "research", "title_ko": "지도 변화 자동 감지", "title_en": "Automatic map change detection", "desc_ko": "기존 정밀 지도와 새 인식 결과를 비교해 바뀐 시설물을 찾는 방법을 연구합니다.", "desc_en": "Compare HD maps with new detections to find changed facilities."}
+ ],
+ "doc_used": true,
+ "uncertain": []
+}

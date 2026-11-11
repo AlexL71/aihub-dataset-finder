@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71317",
+ "easy_ko": "실제 소방 교관이 화재 대응 훈련 동작을 하는 모습을 몸과 손가락까지 동작 기록 장비로 담은 입체 움직임 데이터와, 이를 가상 캐릭터로 여러 배경과 각도에서 보여 주는 영상에 몸의 주요 점을 붙인 데이터입니다. 소방 훈련용 콘텐츠를 만들거나 소방관의 동작을 알아보는 AI를 만들 수 있습니다.",
+ "easy_en": "3D motion data of real firefighting instructors performing fire-response training moves, captured down to their fingers with motion-capture equipment, plus videos showing the moves on virtual characters from many backgrounds and angles, with key body points marked. You can build firefighting training content or AI that recognises firefighters' movements.",
+ "detail_ko": "소방 교관이 화재 대응 훈련 교범에 따라 수행한 기본 동작 36종과 훈련 동작 305종, 총 341종의 전신·손가락 3D 모션캡처(fbx, mb)와, 3D 캐릭터·배경·각도별로 렌더링한 AI 학습용 영상 약 1.5만 개(mp4), 텍스처(png, jpg), 키포인트 JSON으로 구성됩니다. 기준 성능은 DD-Net 2D 소방관 동작 인식 정확도 98.44%입니다. 학습용 영상은 렌더링된 가상 캐릭터라 실제 영상과 다르며, mb 파일은 Maya 전용 형식입니다.",
+ "detail_en": "Full-body and finger 3D motion capture (fbx, mb) of 341 moves (36 basic, 305 training) performed by firefighting instructors following the fire-response training manual, plus about 15k AI-training videos (mp4) rendered with 3D characters, backgrounds and camera angles, textures (png, jpg) and keypoint JSON. Baseline: DD-Net 2D firefighter motion recognition accuracy 98.44%. The training videos show rendered virtual characters, not real footage; mb files need Maya.",
+ "amount_ko": "입체 동작 341종, 학습용 영상 약 1.5만 개",
+ "amount_en": "341 3D motions, about 15k training videos",
+ "labels_ko": "몸의 주요 점, 동작 종류",
+ "labels_en": "body key points, motion class",
+ "status": "full-run-2026-11-02"
+}

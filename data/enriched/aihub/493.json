@@ -1,0 +1,29 @@
+{
+ "dataset_id": "493",
+ "title_en": "Large-scale 3D object data",
+ "summary_ko": "RGB-D 카메라로 일상 속 물건들을 직접 찍은 3D 이미지 30만 장(이미지당 물체 평균 3개, 인스턴스 약 90만 개)으로, 물체마다 상자·다각형·3D 큐보이드와 조밀한 3D 정보가 있습니다. 실감 렌더링, 게임, AR용 3D 물체 인식 AI에 쓸 수 있습니다.",
+ "summary_en": "300,000 RGB-D images of everyday objects (about 3 objects per image, ~900,000 instances), each object labelled with a box, polygon and 3D cuboid plus dense 3D information. For 3D object recognition in realistic rendering, games and AR.",
+ "contents_ko": "RGB 이미지(png) + 깊이·3D 데이터(ply, obj) + 라벨(상자, 다각형, 큐보이드).",
+ "contents_en": "RGB image (png) + depth and 3D data (ply, obj) + labels (box, polygon, cuboid).",
+ "modalities": ["image", "3d"],
+ "tasks": ["object_detection", "segmentation", "3d_reconstruction"],
+ "topics": [{"ko": "생활용품", "en": "Everyday objects"}, {"ko": "가상·증강현실", "en": "Virtual and augmented reality"}, {"ko": "게임·그래픽스", "en": "Games and graphics"}],
+ "keywords_ko": ["3D 객체", "RGB-D", "큐보이드", "3D 분할", "피지컬 AI", "AR"],
+ "keywords_en": ["3D objects", "RGB-D", "cuboid", "3D segmentation", "physical AI", "AR"],
+ "labels": ["bounding box", "polygon", "3D cuboid"],
+ "file_formats": ["png", "ply", "obj", "json"],
+ "scale_ko": "3D 이미지 300,300건, 인스턴스 약 90만 개",
+ "classes_example": ["사람", "생활가전", "컴퓨터/주변기기", "디지털기기/용품", "신발", "모자", "스포츠용품", "레저/캠핑", "홈트레이닝", "과일", "야채", "제과/제빵"],
+ "baseline": [],
+ "difficulty": "advanced",
+ "difficulty_note_ko": "3D 상자·깊이 데이터를 다뤄야 하고 전체 약 3TB입니다.",
+ "skills_needed_ko": ["파이썬", "3D 비전(Open3D)", "3D 객체 탐지"],
+ "caveats_ko": ["전체 약 3TB", "성능 지표가 팩 앞부분에 없음"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "RGB-D 물체 시각화", "title_en": "Visualise RGB-D objects", "desc_ko": "깊이 데이터를 점구름으로 바꿔 물체를 3D로 봅니다.", "desc_en": "Convert depth to point clouds and view objects in 3D."},
+  {"level": "capstone", "title_ko": "AR 물체 크기 측정", "title_en": "AR object measurement", "desc_ko": "3D 큐보이드 예측으로 물체의 가로·세로·높이를 재는 데모를 만듭니다.", "desc_en": "Predict 3D cuboids to measure object dimensions."},
+  {"level": "research", "title_ko": "단일 RGB로 3D 상자 추정", "title_en": "3D boxes from a single RGB image", "desc_ko": "깊이 없이 사진 한 장으로 3D 상자를 추정하는 방법을 연구합니다.", "desc_en": "Estimate 3D boxes from a single RGB image without depth."}
+ ],
+ "doc_used": true,
+ "uncertain": []
+}

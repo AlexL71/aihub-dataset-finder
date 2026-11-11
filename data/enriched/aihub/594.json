@@ -1,0 +1,32 @@
+{
+ "dataset_id": "594",
+ "title_en": "Smart aquaculture farm integrated data (oysters)",
+ "summary_ko": "촬영 박스로 찍은 굴 이미지 약 12만 장에 개체 상자·다각형과 따개비·다모류 같은 부착 생물 여부를 표시하고, 수온 같은 해양 환경 데이터를 함께 담은 데이터입니다. 굴 선별이나 성장 예측 AI에 쓸 수 있습니다.",
+ "summary_en": "About 120,000 images of oysters taken in a measuring box, with boxes and polygons per oyster and whether fouling organisms (barnacles, polychaete worms) are attached, plus ocean environment data such as water temperature. For AI that sorts oysters or predicts their growth.",
+ "contents_ko": "굴 이미지(jpg) + JSON(상자, 다각형, 부착 생물) + 해양 환경 데이터.",
+ "contents_en": "Oyster images (jpg) + JSON (boxes, polygons, fouling organisms) + ocean environment data.",
+ "modalities": ["image", "sensor"],
+ "tasks": ["object_detection", "segmentation", "anomaly_detection", "forecasting"],
+ "topics": [{"ko": "수산 양식", "en": "Aquaculture"}, {"ko": "해양", "en": "Ocean"}],
+ "keywords_ko": ["굴", "스마트 양식", "부착 생물", "따개비", "수산업"],
+ "keywords_en": ["oysters", "smart aquaculture", "fouling organisms", "barnacles", "fisheries"],
+ "labels": ["bounding box", "polygon", "fouling type"],
+ "file_formats": ["jpg", "json"],
+ "scale_ko": "이미지 약 12만 장, 해양 환경 12만 세트",
+ "classes_example": ["정상", "따개비", "다모류"],
+ "baseline": [
+  {"task": "oyster detection", "model": "uncertain (\"General (A1)\")", "metric": "mAP", "value": "60.12%"},
+  {"task": "oyster segmentation", "model": "HRNet", "metric": "mIoU", "value": "98.9%"}
+ ],
+ "difficulty": "beginner",
+ "difficulty_note_ko": "약 12GB로 작고 배경이 단순한 촬영 박스 사진입니다. 굴 모양이 불규칙해 상자 탐지는 다소 어렵습니다.",
+ "skills_needed_ko": ["파이썬", "YOLO 탐지", "분할 모델"],
+ "caveats_ko": ["상자 탐지 기준 성능이 60%로 낮음", "593번 가리비 데이터와 같은 구축 기관·구조", "탐지 모델 이름이 'General (A1)'로만 적혀 있음"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "굴 개체 분할", "title_en": "Oyster segmentation", "desc_ko": "사진에서 굴 하나하나의 영역을 칠합니다.", "desc_en": "Segment each oyster in a photo."},
+  {"level": "capstone", "title_ko": "굴 크기 측정 도구", "title_en": "Oyster size measurer", "desc_ko": "분할 결과로 굴 크기를 재고 등급별로 셉니다.", "desc_en": "Measure oyster size from masks and count by grade."},
+  {"level": "research", "title_ko": "가리비→굴 전이학습", "title_en": "Scallop-to-oyster transfer", "desc_ko": "593번 가리비 모델을 굴에 옮겨 쓰는 효과를 연구합니다.", "desc_en": "Study transferring the dataset-593 scallop model to oysters."}
+ ],
+ "doc_used": true,
+ "uncertain": ["detection model name"]
+}

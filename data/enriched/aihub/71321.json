@@ -1,0 +1,32 @@
+{
+ "dataset_id": "71321",
+ "title_en": "Gangwon cold-water fish (salmon, pollock) smart aquaculture data",
+ "summary_ko": "강원도 양식장에서 CCTV·수중카메라로 찍은 연어 8만 장·명태 4만 장 이미지(분할 표시)와, 용존산소·수온·pH 등 센서 데이터 약 100만 세트, 수질·사육 관리 기록을 담은 데이터입니다. 연어·명태 성장을 예측하고 명태 생존에 중요한 수온을 예측하는 AI에 쓸 수 있습니다.",
+ "summary_en": "80,000 salmon and 40,000 pollock images from CCTV and underwater cameras at Gangwon fish farms, with segmentation, plus about 1 million sensor records (dissolved oxygen, temperature, pH and more) and water-quality and farm management records. For AI that predicts salmon and pollock growth and the water temperature critical to pollock survival.",
+ "contents_ko": "물고기 이미지(jpg) + JSON(분할) + 센서·관리 데이터(csv).",
+ "contents_en": "Fish images (jpg) + JSON (segmentation) + sensor and management data (csv).",
+ "modalities": ["image", "sensor", "tabular"],
+ "tasks": ["segmentation", "object_detection", "forecasting"],
+ "topics": [{"ko": "수산 양식", "en": "Aquaculture"}, {"ko": "스마트팜", "en": "Smart farming"}],
+ "keywords_ko": ["연어", "명태", "스마트 양식", "수온 예측", "강원도"],
+ "keywords_en": ["salmon", "pollock", "smart aquaculture", "water temperature forecasting", "Gangwon"],
+ "labels": ["segmentation", "species", "growth stage"],
+ "file_formats": ["jpg", "csv", "json"],
+ "scale_ko": "이미지 12만 장(연어 8만, 명태 4만), 센서 약 100만 세트",
+ "classes_example": ["연어 치어", "연어 성어", "명태 치어"],
+ "baseline": [
+  {"task": "salmon fry segmentation", "model": "Mask R-CNN", "metric": "mIoU", "value": "84.91%"},
+  {"task": "pollock fry segmentation", "model": "Mask R-CNN", "metric": "mIoU", "value": "81.97%"}
+ ],
+ "difficulty": "intermediate",
+ "difficulty_note_ko": "약 17GB로 받기 쉽고, 센서 데이터만으로도 시계열 예측 실습이 가능합니다.",
+ "skills_needed_ko": ["파이썬", "분할 모델", "시계열 예측"],
+ "caveats_ko": ["강원도 양식장 데이터만 있음", "640번 뱀장어 양식 데이터와 같은 구축 기관·구조"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "수온 예측", "title_en": "Water temperature forecast", "desc_ko": "과거 센서 데이터로 다음 날 수온을 예측합니다.", "desc_en": "Forecast next-day water temperature from sensor history."},
+  {"level": "capstone", "title_ko": "명태 양식 경보 시스템", "title_en": "Pollock farm alert", "desc_ko": "수온이 위험 수준으로 갈 것 같으면 미리 알립니다.", "desc_en": "Warn early when water temperature heads toward danger."},
+  {"level": "research", "title_ko": "이미지로 물고기 크기 추정", "title_en": "Fish size from images", "desc_ko": "분할 결과로 물고기 길이·무게를 추정하는 방법을 연구합니다.", "desc_en": "Estimate fish length and weight from segmentation masks."}
+ ],
+ "doc_used": true,
+ "uncertain": []
+}

@@ -1,0 +1,12 @@
+{
+ "dataset_id": "604",
+ "easy_ko": "발레, 재즈, 힙합, 탭댄스, 한국무용, 방송댄스 같은 여러 장르의 춤을 스튜디오에서 여러 대의 카메라로 동시에 찍고, 몸의 주요 점 위치와 동작 정보를 붙인 데이터입니다. 춤 동작을 알아보거나 따라 춘 동작이 얼마나 맞는지 평가하는 AI를 만들 수 있습니다.",
+ "easy_en": "Dances in many genres, such as ballet, jazz, hip-hop, tap, Korean traditional dance and K-pop style dance, filmed in a studio by several cameras at once, with key body points and movement info. You can build AI that recognises dance moves or scores how well someone copies them.",
+ "detail_ko": "12개 장르(발레, 재즈, 뮤지컬, 힙합, 스트릿, 라인, 탭, 댄스스포츠, 민속무용, 현대무용, 한국무용, 방송댄스) 춤 동작을 카메라 8대로 동시에 촬영한 동작 클립 약 35.6만 개(약 1,800시간, 이미지 약 1.95억 장; mp4/jpg)에 키포인트(CSV)와 동작·신체 정보(JSON)를 붙였습니다. 기준 성능은 PoseC3D 동작 분류 top-2 정확도 96.99%입니다. 전체 약 24.8TB(파일 하나가 최소 46GB)로 매우 크고, 고용량 정밀영상은 별도 신청·오프라인 제공이며, 무용수 얼굴이 보일 수 있습니다. 592번 택견 데이터와 같은 구축 기관·구조입니다.",
+ "detail_en": "About 356k clips (about 1,800 hours, about 195M frames; mp4/jpg) of dance moves in 12 genres (ballet, jazz, musical, hip-hop, street, line, tap, dancesport, folk, contemporary, Korean traditional, K-pop style) filmed by 8 cameras at once, with keypoints (CSV) and move and body info (JSON). Baseline: PoseC3D move classification top-2 accuracy 96.99%. Total size is very large (about 24.8 TB; each file at least 46 GB); high-resolution footage is provided offline on request; dancers' faces may be visible. Same organisation and structure as dataset 592.",
+ "amount_ko": "동작 클립 약 35.6만 개, 이미지 약 1.95억 장, 장르 12종",
+ "amount_en": "about 356k clips, about 195M frames, 12 genres",
+ "labels_ko": "몸의 주요 점(키포인트), 춤 동작 정보, 몸 정보",
+ "labels_en": "body key points, dance move class, body info",
+ "status": "full-run-2026-11-02"
+}

@@ -1,0 +1,29 @@
+{
+ "dataset_id": "71854",
+ "title_en": "Real-road hazard scenario simulation data",
+ "summary_ko": "실제 도로에서 겪은 위험 상황 100가지를 카메라·라이다·GNSS로 기록하고, 이를 자율주행 시뮬레이터용 시나리오(OpenSCENARIO)·도로(OpenDRIVE) 파일과 상황 설명 문장으로 만든 데이터입니다. 자율주행 위험 상황 시험과 분류에 쓸 수 있습니다.",
+ "summary_en": "100 real-road hazard situations recorded with camera, LiDAR and GNSS, turned into simulator scenario (OpenSCENARIO) and road (OpenDRIVE) files with situation captions. For testing and classifying hazards in autonomous driving.",
+ "contents_ko": "실주행 영상(mp4)·라이다(pcd)·GNSS(csv), 시나리오(xosc)·도로(xodr) 파일 + 상황 설명(JSON).",
+ "contents_en": "Real-drive video (mp4), LiDAR (pcd), GNSS (csv), scenario (xosc) and road (xodr) files + situation captions (JSON).",
+ "modalities": ["video", "sensor", "3d", "text"],
+ "tasks": ["image_captioning", "action_recognition"],
+ "topics": [{"ko": "자율주행", "en": "Autonomous driving"}, {"ko": "시뮬레이션", "en": "Simulation"}],
+ "keywords_ko": ["자율주행", "위험 시나리오", "OpenSCENARIO", "OpenDRIVE", "라이다", "시뮬레이션"],
+ "keywords_en": ["autonomous driving", "hazard scenarios", "OpenSCENARIO", "OpenDRIVE", "LiDAR", "simulation"],
+ "labels": ["caption", "scenario"],
+ "file_formats": ["mp4", "pcd", "csv", "xosc", "xodr", "json"],
+ "scale_ko": "위험 상황 시나리오 100건(영상·라이다·GNSS 각 100세트)",
+ "classes_example": ["공사 구간 주행에 의한 위험", "교차로 주행 위험상황", "그림자에 의한 인지오류", "날씨에 의한 위험상황", "도로 상태에 의한 위험", "보행자 주변 주행", "제어차량 차선변경에 의한 위험", "주변 차량 차선변경 또는 급제동에 의한 위험", "터널 진출입시 인지제한", "판단능력"],
+ "baseline": [],
+ "difficulty": "advanced",
+ "difficulty_note_ko": "약 90GB이고 CARLA 같은 자율주행 시뮬레이터 사용법을 알아야 합니다.",
+ "skills_needed_ko": ["파이썬", "자율주행 시뮬레이터(CARLA·esmini)", "라이다 처리"],
+ "caveats_ko": ["시나리오가 100건뿐이라 딥러닝 학습보다 시험·검증용에 가까움", "모델 성능 수치가 팩에 없음"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "시나리오 재생해 보기", "title_en": "Replay a scenario", "desc_ko": "OpenSCENARIO 파일을 시뮬레이터에서 실행해 위험 상황을 확인합니다.", "desc_en": "Run an OpenSCENARIO file in a simulator."},
+  {"level": "capstone", "title_ko": "위험 상황 변형 생성", "title_en": "Hazard scenario variations", "desc_ko": "속도·거리를 바꿔 시나리오 변형을 만들고 자율주행 알고리즘을 시험합니다.", "desc_en": "Vary speed and distance to stress-test a driving stack."},
+  {"level": "research", "title_ko": "실제-가상 차이 분석", "title_en": "Real vs simulated gap", "desc_ko": "실주행 센서와 시뮬레이션 결과가 얼마나 다른지 비교합니다.", "desc_en": "Compare real sensor logs with simulated runs."}
+ ],
+ "doc_used": true,
+ "uncertain": []
+}

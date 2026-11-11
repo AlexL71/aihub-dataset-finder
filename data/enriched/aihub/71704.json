@@ -1,0 +1,29 @@
+{
+ "dataset_id": "71704",
+ "title_en": "Korean full-body and pose data",
+ "summary_ko": "한국인 1,800명을 여러 방향에서 찍은 전신 이미지 43,200장과 고해상도 얼굴 이미지 1,800장에 관절 키포인트와 영역 분할이 표시되어 있고, 신체 치수·전신 3D 모델·의상 이미지도 추가로 있습니다. 한국인 체형의 디지털 휴먼·가상 의류 생성 모델을 미세조정하는 데 쓸 수 있습니다.",
+ "summary_en": "43,200 multi-view full-body images and 1,800 high-resolution face images of 1,800 Koreans with joint keypoints and segmentation, plus body measurements, full-body 3D models and clothing images. For fine-tuning digital-human and virtual-clothing generators on Korean body shapes.",
+ "contents_ko": "전신·얼굴 이미지(jpg) + JSON(키포인트, 분할 영역) + 신체 치수, 전신 3D 모델, 의상·액세서리 이미지.",
+ "contents_en": "Full-body and face images (jpg) + JSON (keypoints, segmentation) + body measurements, full-body 3D models, clothing and accessory images.",
+ "modalities": ["image", "3d"],
+ "tasks": ["keypoint_pose", "segmentation", "image_generation"],
+ "topics": [{"ko": "디지털 휴먼·메타버스", "en": "Digital humans and metaverse"}, {"ko": "패션", "en": "Fashion"}],
+ "keywords_ko": ["전신", "포즈", "한국인 체형", "디지털 휴먼", "가상 의류", "멀티뷰"],
+ "keywords_en": ["full body", "pose", "Korean body shape", "digital human", "virtual clothing", "multi-view"],
+ "labels": ["keypoints", "polygon"],
+ "file_formats": ["jpg", "json"],
+ "scale_ko": "1,800명, 전신 이미지 43,200장, 얼굴 이미지 1,800장(총 45,000개)",
+ "classes_example": [],
+ "baseline": [],
+ "difficulty": "intermediate",
+ "difficulty_note_ko": "포즈 추정 실습은 쉽지만 전체 약 3.8TB입니다. 일부 인물만 받아 쓰세요.",
+ "skills_needed_ko": ["파이썬", "포즈 추정 모델", "분할 모델", "생성 모델 미세조정"],
+ "caveats_ko": ["전체 약 3.8TB", "실제 인물 사진이라 초상권·이용 조건 확인 필요", "추가 데이터(3D·치수)의 수량이 팩 앞부분에 없음"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "한국인 포즈 추정 비교", "title_en": "Pose estimation on Korean bodies", "desc_ko": "기존 포즈 모델을 이 데이터로 평가하고 미세조정 전후를 비교합니다.", "desc_en": "Evaluate an existing pose model before and after fine-tuning."},
+  {"level": "capstone", "title_ko": "가상 옷 입히기", "title_en": "Virtual try-on", "desc_ko": "전신 분할 결과를 이용해 사람 사진에 의상 이미지를 입혀 봅니다.", "desc_en": "Use body segmentation to put clothing images on a person photo."},
+  {"level": "research", "title_ko": "멀티뷰로 3D 아바타 만들기", "title_en": "3D avatar from multi-view", "desc_ko": "여러 방향 사진으로 3D 전신 모델을 복원하는 방법을 연구합니다.", "desc_en": "Study reconstructing a 3D body from multi-view photos."}
+ ],
+ "doc_used": true,
+ "uncertain": ["키포인트 개수와 분할 부위 정의 확인 필요", "클래스 목록을 페이지와 설명서에서 찾지 못함"]
+}

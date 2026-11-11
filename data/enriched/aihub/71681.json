@@ -1,0 +1,29 @@
+{
+ "dataset_id": "71681",
+ "title_en": "Gyeongsangbuk-do fish (North Pacific salmon) intelligent aquaculture data",
+ "summary_ko": "경북 수산자원연구원 연어 양식 수조에서 찍은 수중 사진 216,000장에 연어 영역이 분할로 칠해져 있고, 개체 실측 사진 1,920건, 수질 센서 기록 702,720건, 생육 관리 기록 488건이 함께 있는 데이터입니다. 연어 성장 예측과 생체량 추정 AI에 쓸 수 있습니다.",
+ "summary_en": "216,000 underwater photos from salmon farming tanks at a Gyeongbuk research institute with salmon segmented, plus 1,920 measured-fish photos, 702,720 water-quality sensor records and 488 farm management records. For salmon growth prediction and biomass estimation AI.",
+ "contents_ko": "수중 사진(jpg) + 분할 마스크(png) + JSON + 수질·관리 기록(csv).",
+ "contents_en": "Underwater photo (jpg) + segmentation mask (png) + JSON + water-quality and management records (csv).",
+ "modalities": ["image", "sensor", "tabular"],
+ "tasks": ["segmentation", "forecasting", "tabular_prediction"],
+ "topics": [{"ko": "스마트 양식", "en": "Smart aquaculture"}, {"ko": "수산업", "en": "Fisheries"}],
+ "keywords_ko": ["연어", "양식", "수중 영상", "생체량 추정", "성장 예측", "수질 센서"],
+ "keywords_en": ["salmon", "aquaculture", "underwater imaging", "biomass estimation", "growth prediction", "water-quality sensors"],
+ "labels": ["segmentation", "fish measurements", "sensor time series"],
+ "file_formats": ["jpg", "png", "csv", "json"],
+ "scale_ko": "수중 사진 216,000장, 실측 1,920건, 수질 센서 702,720건, 관리 기록 488건",
+ "classes_example": [],
+ "baseline": [],
+ "difficulty": "intermediate",
+ "difficulty_note_ko": "약 33GB로 다룰 만하고 분할과 시계열 예측을 함께 연습할 수 있습니다.",
+ "skills_needed_ko": ["파이썬", "분할 모델", "시계열 예측"],
+ "caveats_ko": ["한 기관 수조에서만 촬영됨", "실측 데이터가 1,920건으로 적어 생체량 회귀가 어려울 수 있음", "성능 지표 값이 팩에 없음"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "수중 연어 분할", "title_en": "Underwater salmon segmentation", "desc_ko": "수조 사진에서 연어 영역을 칠합니다.", "desc_en": "Segment salmon in tank photos."},
+  {"level": "capstone", "title_ko": "수조 생체량 모니터", "title_en": "Tank biomass monitor", "desc_ko": "분할 결과로 연어 크기를 추정해 수조 전체 무게를 보여 줍니다.", "desc_en": "Estimate fish size and total tank biomass."},
+  {"level": "research", "title_ko": "수질로 성장 예측", "title_en": "Growth from water quality", "desc_ko": "수질 센서 기록으로 연어 성장 속도를 예측하는 방법을 연구합니다.", "desc_en": "Forecast salmon growth from water sensor data."}
+ ],
+ "doc_used": true,
+ "uncertain": ["분할 클래스 구성", "클래스 목록을 페이지와 설명서에서 찾지 못함"]
+}

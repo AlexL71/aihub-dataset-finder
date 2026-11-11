@@ -1,0 +1,29 @@
+{
+ "dataset_id": "514",
+ "title_en": "Industrial facility thermal CCTV data",
+ "summary_ko": "발전소·변전소·환경에너지 사업소·철도차량 4곳의 중요 부품 19종(고압전동기, 차단기, 변압기 접속부, 신재생 설비 등)을 열화상·실화상으로 찍은 이미지 45만 장으로, 부품 위치와 상태가 상자로 표시되어 있습니다. 전기·기계 설비의 과열·결함을 미리 찾는 예방 점검 AI에 쓸 수 있습니다.",
+ "summary_en": "450,000 thermal and visible images of 19 key components (high-voltage motors, circuit breakers, transformer joints, renewable-energy equipment and more) at a power plant, substation, environmental energy facility and railway vehicles, with component boxes and state. For preventive-inspection AI that spots overheating and defects in electrical and mechanical equipment.",
+ "contents_ko": "열화상·실화상 이미지(jpg) + JSON(부품 상자, 부품 종류, 온도·이상 상태).",
+ "contents_en": "Thermal and visible images (jpg) + JSON (component boxes, type, temperature and abnormal state).",
+ "modalities": ["image", "sensor"],
+ "tasks": ["object_detection", "anomaly_detection"],
+ "topics": [{"ko": "에너지·전력", "en": "Energy and electricity"}, {"ko": "산업 안전", "en": "Industrial safety"}, {"ko": "철도", "en": "Railways"}],
+ "keywords_ko": ["열화상", "변전소", "발전소", "설비 점검", "과열", "예지 정비"],
+ "keywords_en": ["thermal imaging", "substation", "power plant", "equipment inspection", "overheating", "predictive maintenance"],
+ "labels": ["bounding box", "component class (19)", "state"],
+ "file_formats": ["jpg", "json"],
+ "scale_ko": "열화상 이미지 452,788장, 부품 19종, 시설 4곳",
+ "classes_example": ["고압전동기", "차단기", "변압기 접속부", "신재생 설비", "단로기", "계기용변성기", "계기용 변압기"],
+ "baseline": [],
+ "difficulty": "intermediate",
+ "difficulty_note_ko": "부품 탐지는 쉽지만 열 이상 판단에는 온도 해석이 필요합니다. 전체 약 1.9TB입니다.",
+ "skills_needed_ko": ["파이썬", "YOLO 탐지", "열화상 데이터 해석"],
+ "caveats_ko": ["전체 약 1.9TB", "성능 지표가 팩 앞부분에 없음"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "설비 부품 탐지", "title_en": "Equipment component detection", "desc_ko": "열화상 이미지에서 차단기·변압기 같은 부품을 탐지합니다.", "desc_en": "Detect breakers, transformers and other parts in thermal images."},
+  {"level": "capstone", "title_ko": "변전소 과열 순찰 대시보드", "title_en": "Substation hotspot dashboard", "desc_ko": "부품별 온도를 추적해 과열 위험을 표시하는 대시보드를 만듭니다.", "desc_en": "Track component temperatures and flag overheating risk."},
+  {"level": "research", "title_ko": "열화상+실화상 결합 결함 탐지", "title_en": "Thermal plus visible fusion", "desc_ko": "두 영상을 함께 써서 결함 판별 정확도를 높이는 방법을 연구합니다.", "desc_en": "Study combining thermal and visible images for defect detection."}
+ ],
+ "doc_used": true,
+ "uncertain": []
+}

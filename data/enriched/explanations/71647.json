@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71647",
+ "easy_ko": "깊이 카메라 여러 대와 몸 움직임 기록 장비로, 바나나, 컵, 가위, 망치 같은 일상 물건 30가지를 여러 방식으로 잡고 다루는 손동작을 찍은 데이터입니다. 손가락 관절 위치와 물건 위치가 표시되어 있어 가상 세계 속 손 조작이나 로봇 손 AI에 쓸 수 있습니다.",
+ "easy_en": "Hand movements recorded with several depth cameras and motion-capture equipment while people grab and handle 30 everyday objects, such as bananas, mugs, scissors and hammers, in many ways. Finger joint positions and object positions are marked, so you can use it for hand control in virtual worlds or robot-hand AI.",
+ "detail_ko": "키넥트 카메라 4대와 3D 모션캡처로 일상 물체 30종(예: cracker_box, potted_meat_can, banana, apple, mug, bowl, scissors, hammer, spatula, smartphone, wine_glass)을 90가지 상호작용으로 다루는 손동작을 찍은 RGB·깊이 이미지 2,100,014장(jpg, png; 원시 영상 50시간, 70,000클립)에 손 키포인트(2D·3D, JSON)와 모션캡처 물체 자세(txt)를 붙였습니다. 전체 약 1,478GB이고, 실험실 촬영이라 실제 환경과 다를 수 있으며, 성능 지표 값은 팩에 없습니다.",
+ "detail_en": "2,100,014 RGB and depth images (jpg, png; 50 hours of raw video, 70,000 clips) recorded with 4 Kinect cameras and 3D motion capture while hands handle 30 everyday objects (such as cracker box, meat can, banana, apple, mug, bowl, scissors, hammer, spatula, smartphone, wine glass) in 90 interaction types, with JSON 2D and 3D hand keypoints and motion-capture object poses (txt). Total size is about 1,478 GB. Lab recording may differ from real settings, and no metric values are in the pack.",
+ "amount_ko": "이미지 2,100,014장, 원시 영상 50시간(70,000클립), 물체 30종, 상호작용 90종",
+ "amount_en": "2,100,014 images, 50 hours of raw video (70,000 clips), 30 objects, 90 interactions",
+ "labels_ko": "손가락 관절 점(평면·입체), 물건 자세",
+ "labels_en": "2D keypoints, 3D keypoints, object pose",
+ "status": "full-run-2026-11-02"
+}

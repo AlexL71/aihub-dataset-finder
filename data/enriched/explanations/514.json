@@ -1,0 +1,12 @@
+{
+ "dataset_id": "514",
+ "easy_ko": "발전소, 변전소, 에너지 시설, 철도 차량의 중요한 전기·기계 부품을 열화상 카메라와 일반 카메라로 찍고, 부품 위치와 과열 같은 이상 상태를 표시한 데이터입니다. 설비가 고장 나기 전에 뜨거워진 부품을 미리 찾아내는 점검 AI를 만들 수 있습니다.",
+ "easy_en": "Thermal and ordinary camera images of key electrical and mechanical parts at power plants, substations, energy facilities and railway vehicles, with each part's position and problems such as overheating marked. You can build inspection AI that finds overheating parts before equipment fails.",
+ "detail_ko": "발전소·변전소·환경에너지 사업소·철도차량 4곳의 중요 부품 19종(고압전동기, 차단기, 변압기 접속부, 신재생 설비, 단로기, 계기용변성기 등)을 열화상·실화상으로 촬영한 이미지 452,788장(jpg)에 부품 바운딩박스, 종류, 온도·이상 상태를 JSON으로 붙였습니다. 기준 성능은 기록에서 확인되지 않습니다. 전체 약 1.9TB입니다.",
+ "detail_en": "452,788 thermal and visible images (jpg) of 19 critical components (high-voltage motors, circuit breakers, transformer joints, renewable-energy equipment, disconnectors, instrument transformers and more) at 4 facility types (power plant, substation, environmental energy site, railway vehicles), with JSON component boxes, class and temperature or fault state. No baseline is visible in the record. Total size is about 1.9 TB.",
+ "amount_ko": "열화상 사진 약 45.3만 장, 부품 19종",
+ "amount_en": "about 453k thermal images, 19 component types",
+ "labels_ko": "부품 위치 상자, 부품 종류, 온도·이상 상태",
+ "labels_en": "boxes around components, component class, temperature or fault state",
+ "status": "full-run-2026-11-02"
+}

@@ -1,0 +1,29 @@
+{
+ "dataset_id": "71544",
+ "title_en": "Music similarity detection data",
+ "summary_ko": "발라드·댄스·힙합·R&B·록·트로트 6개 장르의 음원 2만 곡과 각 곡의 악보(MIDI, MusicXML), 설명 JSON입니다. 원곡과 편곡·장르 변경·악기·템포·음색을 바꾼 커버곡이 짝으로 있어 두 곡이 얼마나 비슷한지 판별하는 AI(표절 탐지, 음악 추천)에 쓸 수 있습니다.",
+ "summary_en": "20,000 songs in 6 genres (ballad, dance, hip-hop, R&B, rock, trot) with MIDI, MusicXML and JSON, including originals paired with covers changed in arrangement, genre, instrument, tempo or timbre. For music similarity, plagiarism detection and recommendation.",
+ "contents_ko": "음원(wav) + 악보(MIDI, MusicXML) + JSON(장르, 커버 종류 등).",
+ "contents_en": "Audio (wav) + score (MIDI, MusicXML) + JSON (genre, cover type, etc.).",
+ "modalities": ["audio"],
+ "tasks": ["audio_classification", "retrieval_recommendation"],
+ "topics": [{"ko": "음악", "en": "Music"}, {"ko": "저작권·표절", "en": "Copyright and plagiarism"}],
+ "keywords_ko": ["음악 유사성", "표절", "커버곡", "MIDI", "자동 채보", "음악 추천"],
+ "keywords_en": ["music similarity", "plagiarism", "cover songs", "MIDI", "music transcription", "music recommendation"],
+ "labels": ["MIDI transcription", "MusicXML score", "genre", "cover type"],
+ "file_formats": ["wav", "mid", "musicxml", "json"],
+ "scale_ko": "2만 곡, 장르 6종 (일반 원곡 + 유사곡 원곡·커버곡 세트)",
+ "classes_example": ["Ballade", "Dance", "Hiphop", "RnB", "Rock", "Trot", "Cover_Arrangement", "Cover_Genre", "Cover_Instrument", "Cover_Tempo"],
+ "baseline": [{"task": "music transcription", "model": "Omnizart", "metric": "F1-score", "value": "0.758"}, {"task": "melody similarity", "model": "MelodyShape", "metric": "F1-score", "value": "0.915"}, {"task": "rhythm similarity", "model": "GrooveToolbox", "metric": "F1-score", "value": "0.835"}, {"task": "source separation", "model": "Spleeter", "metric": "SDR", "value": "5.44"}],
+ "difficulty": "intermediate",
+ "difficulty_note_ko": "음원과 MIDI를 함께 다뤄야 합니다. 전체 약 315GB라 장르 일부만 받아 시작하세요.",
+ "skills_needed_ko": ["파이썬", "오디오 처리(librosa)", "MIDI 다루기"],
+ "caveats_ko": ["전체 약 315GB", "메타데이터의 라벨링 유형이 '전사(음성)'로 적혀 있지만 실제는 음악 채보", "크라우드 소싱 음원이라 상용 곡과 다를 수 있음"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "음악 장르 분류", "title_en": "Music genre classification", "desc_ko": "음원의 멜 스펙트로그램으로 6개 장르를 분류합니다.", "desc_en": "Classify 6 genres from mel spectrograms."},
+  {"level": "capstone", "title_ko": "표절 의심곡 찾기", "title_en": "Finding possible plagiarism", "desc_ko": "원곡과 커버곡의 멜로디 유사도를 계산해 비슷한 곡을 찾아 줍니다.", "desc_en": "Compute melody similarity to find songs similar to an original."},
+  {"level": "research", "title_ko": "설명 가능한 음악 유사도", "title_en": "Explainable music similarity", "desc_ko": "멜로디·리듬·음색 중 무엇 때문에 비슷한지 설명하는 모델을 연구합니다.", "desc_en": "Explain whether melody, rhythm or timbre makes songs similar."}
+ ],
+ "doc_used": true,
+ "uncertain": ["커버 종류 전체 목록과 곡별 수량이 표 깨짐으로 일부만 확인됨"]
+}

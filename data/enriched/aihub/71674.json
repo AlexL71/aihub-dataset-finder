@@ -1,0 +1,29 @@
+{
+ "dataset_id": "71674",
+ "title_en": "Generative AI expert-domain (technology and science) Korean multi-session data",
+ "summary_ko": "기술과학 분야 전문 문서 106,718건을 바탕으로 두 사람이 2~4번 이어서 나눈 멀티세션 대화 60,414건(세션 150,957건)으로, 대화에 쓴 문서 정보와 검색어가 태깅되어 있습니다. 전문 지식을 반영하고 지난 대화를 기억하는 한국어 챗봇에 쓸 수 있습니다.",
+ "summary_en": "60,414 multi-session dialogues (150,957 sessions over 2-4 sittings) based on 106,718 technology and science documents, tagged with the document info and search queries used. For Korean chatbots that use expert knowledge and remember past conversations.",
+ "contents_ko": "전문 문서(txt) + JSON(멀티세션 대화, 참고 문서, 검색어).",
+ "contents_en": "Expert documents (txt) + JSON (multi-session dialogue, referenced documents, search queries).",
+ "modalities": ["text"],
+ "tasks": ["dialogue", "question_answering", "retrieval_recommendation"],
+ "topics": [{"ko": "챗봇·대화", "en": "Chatbots and dialogue"}, {"ko": "과학기술", "en": "Science and technology"}],
+ "keywords_ko": ["멀티세션", "챗봇", "기술과학", "검색 증강 생성", "장기 기억", "한국어"],
+ "keywords_en": ["multi-session", "chatbot", "science and technology", "retrieval-augmented generation", "long-term memory", "Korean"],
+ "labels": ["dialogue", "document reference", "search query"],
+ "file_formats": ["txt", "json"],
+ "scale_ko": "멀티세션 60,414건(2세션 40,321, 3세션 10,057, 4세션 10,036), 전문 문서 106,718건",
+ "classes_example": ["2세션", "3세션", "4세션"],
+ "baseline": [],
+ "difficulty": "intermediate",
+ "difficulty_note_ko": "약 1.5GB 텍스트라 다루기 쉽고 RAG(검색 기반 답변) 챗봇 실습에 좋습니다.",
+ "skills_needed_ko": ["파이썬", "트랜스포머", "임베딩 검색"],
+ "caveats_ko": ["전문 문서 일부는 구매·라이선스 자료라 이용 조건 확인 필요", "성능 지표 값이 팩에 없음", "사회과학(71675)·일상대화(71678) 버전과 같은 구조"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "대화 속 검색어 예측", "title_en": "Search query prediction", "desc_ko": "대화 문맥에서 어떤 검색어가 필요한지 예측합니다.", "desc_en": "Predict the search query needed from dialogue context."},
+  {"level": "capstone", "title_ko": "과학 상담 RAG 챗봇", "title_en": "Science RAG chatbot", "desc_ko": "전문 문서를 검색해 답하고 지난 대화를 기억하는 챗봇을 만듭니다.", "desc_en": "Chatbot that retrieves documents and remembers past chats."},
+  {"level": "research", "title_ko": "세션 간 기억 요약", "title_en": "Cross-session memory", "desc_ko": "이전 세션 내용을 얼마나 요약해 저장해야 하는지 연구합니다.", "desc_en": "Study how to summarise and store past sessions."}
+ ],
+ "doc_used": true,
+ "uncertain": []
+}

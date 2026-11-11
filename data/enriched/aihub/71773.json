@@ -1,0 +1,29 @@
+{
+ "dataset_id": "71773",
+ "title_en": "Generative AI response quality evaluation data",
+ "summary_ko": "AI 대화 응답 1,001,428개(대화 56,819개)에 정확성·적절성·일관성·흥미성 같은 평가 지표별 판정과 요약, 원문 주석을 붙인 데이터입니다. 챗봇·AI 비서 응답 품질을 자동으로 평가하는 모델에 쓸 수 있습니다.",
+ "summary_en": "1,001,428 AI chatbot responses (56,819 conversations) labelled per evaluation criterion such as accuracy, appropriateness, consistency and engagement, plus summaries and source annotations. For models that automatically rate chatbot and AI assistant responses.",
+ "contents_ko": "대화 원문(tsv) + JSON(평가 지표별 분류·이진 판정, 요약, 주석).",
+ "contents_en": "Dialogue text (tsv) + JSON (per-criterion classification and binary labels, summaries, annotations).",
+ "modalities": ["text"],
+ "tasks": ["text_classification", "dialogue", "summarization"],
+ "topics": [{"ko": "생성형 AI 평가", "en": "Generative AI evaluation"}, {"ko": "챗봇·대화", "en": "Chatbots and dialogue"}],
+ "keywords_ko": ["응답 품질 평가", "챗봇", "평가 지표", "LLM 평가", "대화", "한국어"],
+ "keywords_en": ["response quality evaluation", "chatbot", "evaluation criteria", "LLM evaluation", "dialogue", "Korean"],
+ "labels": ["quality class", "binary judgement", "summary", "annotation"],
+ "file_formats": ["tsv", "json"],
+ "scale_ko": "발화 1,001,428개, 대화 세션 56,819개",
+ "classes_example": ["정확성", "적절성", "일관성", "흥미성"],
+ "baseline": [],
+ "difficulty": "intermediate",
+ "difficulty_note_ko": "약 0.25GB로 작아 다루기 쉽고, LLM 응답 평가 모델 실습에 좋습니다.",
+ "skills_needed_ko": ["파이썬", "트랜스포머", "텍스트 분류"],
+ "caveats_ko": ["통계표에 '1,001,428만'처럼 단위가 잘못 적혀 있음", "평가 지표 전체 목록과 성능 지표가 팩 앞부분에 없음"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "좋은 답변 판별기", "title_en": "Good-answer classifier", "desc_ko": "AI 응답이 적절한지 아닌지 이진 분류합니다.", "desc_en": "Classify whether an AI reply is appropriate."},
+  {"level": "capstone", "title_ko": "챗봇 품질 리포트 도구", "title_en": "Chatbot quality report", "desc_ko": "챗봇 대화 로그를 넣으면 지표별 점수를 보여 주는 도구를 만듭니다.", "desc_en": "Score chatbot logs per criterion."},
+  {"level": "research", "title_ko": "LLM 심판 신뢰도", "title_en": "LLM-as-judge reliability", "desc_ko": "LLM 평가가 사람 평가와 얼마나 일치하는지 이 데이터로 연구합니다.", "desc_en": "Compare LLM judges with human labels."}
+ ],
+ "doc_used": true,
+ "uncertain": ["평가 지표 목록"]
+}

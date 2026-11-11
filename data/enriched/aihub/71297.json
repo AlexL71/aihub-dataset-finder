@@ -1,0 +1,32 @@
+{
+ "dataset_id": "71297",
+ "title_en": "Rip current CCTV data",
+ "summary_ko": "해운대·송정·대천·중문·낙산 해수욕장 CCTV 이미지 약 31만 장에 이안류(해안에서 먼 바다로 빠르게 흐르는 좁은 물살) 위치를 상자로 표시하고 관측 데이터를 더한 데이터입니다. 해수욕객 사고를 막기 위해 이안류를 탐지·예측하는 AI에 쓸 수 있습니다.",
+ "summary_en": "About 310,000 CCTV images from Haeundae, Songjeong, Daecheon, Jungmun and Naksan beaches, with rip currents (narrow, fast flows from shore out to sea) boxed and observation data added. For AI that detects and predicts rip currents to prevent swimmer accidents.",
+ "contents_ko": "해변 CCTV 이미지(jpg) + JSON(이안류 상자, 카메라, 관측 정보).",
+ "contents_en": "Beach CCTV images (jpg) + JSON (rip-current box, camera, observation data).",
+ "modalities": ["image"],
+ "tasks": ["object_detection", "forecasting"],
+ "topics": [{"ko": "해양 안전", "en": "Ocean safety"}, {"ko": "재난 안전", "en": "Disaster safety"}],
+ "keywords_ko": ["이안류", "해수욕장", "CCTV", "해양 안전", "인명 사고"],
+ "keywords_en": ["rip currents", "beaches", "CCTV", "ocean safety", "drowning prevention"],
+ "labels": ["rip-current bounding box", "camera ID", "observation data"],
+ "file_formats": ["jpg", "json"],
+ "scale_ko": "이미지 약 31만 장, 해수욕장 5곳, 카메라 12대",
+ "classes_example": ["이안류", "비이안류"],
+ "baseline": [
+  {"task": "rip current prediction", "model": "SCINet", "metric": "F1", "value": "0.9037"},
+  {"task": "rip current detection", "model": "multi-modal model", "metric": "mAP", "value": "88.6%"}
+ ],
+ "difficulty": "beginner",
+ "difficulty_note_ko": "약 31GB로 받기 쉽고 탐지 입문에 좋습니다.",
+ "skills_needed_ko": ["파이썬", "YOLO 탐지"],
+ "caveats_ko": ["이안류 이미지가 약 80%로 실제 바다보다 훨씬 많음", "해변 사람들이 작게 보일 수 있음"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "이안류 탐지", "title_en": "Rip current detection", "desc_ko": "해변 CCTV 사진에서 이안류를 찾아 상자로 표시합니다.", "desc_en": "Box rip currents in beach CCTV images."},
+  {"level": "capstone", "title_ko": "해수욕장 위험 알림", "title_en": "Beach danger alert", "desc_ko": "이안류가 보이면 안전요원에게 알림을 보내는 시스템을 만듭니다.", "desc_en": "Alert lifeguards when a rip current appears."},
+  {"level": "research", "title_ko": "해변 간 일반화", "title_en": "Cross-beach generalisation", "desc_ko": "한 해수욕장으로 학습한 모델이 다른 해변에서도 통하는지 연구합니다.", "desc_en": "Test whether a model trained on one beach works on others."}
+ ],
+ "doc_used": true,
+ "uncertain": []
+}

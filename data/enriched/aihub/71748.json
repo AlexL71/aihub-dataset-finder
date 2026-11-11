@@ -1,0 +1,29 @@
+{
+ "dataset_id": "71748",
+ "title_en": "Generative AI data for a large Korean language model",
+ "summary_ko": "공유·공공 저작물, 저작권 만료 고전, CC 라이선스 유튜브 자막 등에서 모은 한국어 말뭉치 약 336만 건(약 22.9억 어절)과 RLHF(사람 피드백 강화학습) 데이터 약 7.7만 건(질의응답 SFT 1.3만, 응답 순위 RM 3.3만, PPO 질문 3.1만)입니다. 한국어 대형 언어모델(LLM) 사전학습과 챗봇 미세조정에 쓸 수 있습니다.",
+ "summary_en": "About 3.36 million Korean texts (about 2.29 billion words) from shared and public works, expired-copyright classics and CC-licensed YouTube, plus about 77k RLHF items (13k SFT QA, 33k reward-model rankings, 31k PPO prompts). For pre-training and fine-tuning Korean LLMs and chatbots.",
+ "contents_ko": "말뭉치 JSON(구어체·문어체, 주제) + SFT 질의응답 JSON + RM 응답 순위 JSON + PPO 질문 JSON.",
+ "contents_en": "Corpus JSON (spoken/written style, topic) + SFT QA JSON + reward-model ranking JSON + PPO prompt JSON.",
+ "modalities": ["text"],
+ "tasks": ["text_generation", "dialogue", "question_answering"],
+ "topics": [{"ko": "언어·생성 AI", "en": "Language and generative AI"}, {"ko": "챗봇", "en": "Chatbots"}],
+ "keywords_ko": ["LLM", "RLHF", "한국어 말뭉치", "사전학습", "SFT", "챗봇"],
+ "keywords_en": ["LLM", "RLHF", "Korean corpus", "pre-training", "SFT", "chatbot"],
+ "labels": ["question-answer pairs", "response rankings"],
+ "file_formats": ["json"],
+ "scale_ko": "말뭉치 3,361,406건(약 22.9억 어절), RLHF 약 77,000건(SFT 13,000·RM 33,000·PPO 31,000)",
+ "classes_example": ["구어체", "문어체", "공학", "보건", "사회", "인문", "자연"],
+ "baseline": [],
+ "difficulty": "advanced",
+ "difficulty_note_ko": "말뭉치는 약 16GB로 다룰 만하지만 LLM 학습에는 큰 GPU가 필요합니다. SFT·RM 데이터로 작은 모델 미세조정부터 시작하세요.",
+ "skills_needed_ko": ["파이썬", "Hugging Face Transformers", "LoRA 미세조정", "RLHF 기초"],
+ "caveats_ko": ["페이지에 성능 점수 표가 없음(LLaMA2 소개만 있음)", "개요의 20억 어절·310만 건과 분포 표의 22.9억 어절·336만 건이 다름", "말뭉치·PPO 데이터에는 라벨이 없음", "출처별 라이선스 조건 확인 필요"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "말뭉치 주제 분석", "title_en": "Corpus topic analysis", "desc_ko": "말뭉치의 주제·문체 분포와 자주 쓰는 단어를 정리합니다.", "desc_en": "Summarise topic, style and frequent words in the corpus."},
+  {"level": "capstone", "title_ko": "작은 한국어 챗봇 미세조정", "title_en": "Small Korean chatbot fine-tune", "desc_ko": "SFT 데이터로 소형 오픈 LLM을 LoRA 미세조정해 질의응답 챗봇을 만듭니다.", "desc_en": "LoRA-tune a small open LLM on SFT data for a QA chatbot."},
+  {"level": "research", "title_ko": "보상 모델 학습", "title_en": "Reward model training", "desc_ko": "응답 순위 데이터로 보상 모델을 학습해 답변 품질 평가에 쓰는 방법을 연구합니다.", "desc_en": "Train a reward model on rankings to score answer quality."}
+ ],
+ "doc_used": true,
+ "uncertain": []
+}

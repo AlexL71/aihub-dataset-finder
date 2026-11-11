@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71729",
+ "easy_ko": "스포츠, 연예, 증권, 산업, 생활 뉴스와 책 글에서 한 글 안에 있는 여러 사건과 그 사건의 주인공, 대상을 표시한 데이터입니다. 글에서 여러 사건을 따로따로 뽑아내는 AI나 검색, 자동 분류에 쓸 수 있습니다.",
+ "easy_en": "News and book texts on sports, entertainment, stocks, industry and lifestyle, marking the multiple events in each text and who did what to whom in each event. You can use it to build AI that pulls out several events from one text, or for search and automatic sorting.",
+ "detail_ko": "스포츠·연예·증권·산업·라이프 뉴스·도서 원문 230,837건(csv) 중 다중 이벤트 문서 7,216건에서 이벤트 17,625개의 유형, 주체·객체, 카테고리를 JSON으로 태깅했습니다. 페이지에 성능 점수 표가 없고(BERT+SpERT 계획만 있음), 라벨이 붙은 문서는 원문의 약 3%이며, 이벤트 수가 17,233과 17,625로 표마다 다릅니다. 71728과 같은 기관입니다.",
+ "detail_en": "230,837 news and book texts (csv) on sports, entertainment, stocks, industry and lifestyle, of which 7,216 multi-event documents carry JSON tags for 17,625 events (type, agent and object, category). There is no score table (only a BERT+SpERT plan); labelled documents are about 3% of the source, and the event count is given as both 17,233 and 17,625. Same builder as 71728.",
+ "amount_ko": "원문 230,837건, 다중 이벤트 문서 7,216건, 이벤트 17,625개",
+ "amount_en": "230,837 source texts, 7,216 multi-event documents, 17,625 events",
+ "labels_ko": "사건 종류, 사건 주인공·대상, 분야",
+ "labels_en": "event type, event arguments, category",
+ "status": "full-run-2026-11-02"
+}

@@ -1,0 +1,29 @@
+{
+ "dataset_id": "567",
+ "title_en": "Seoul aging-house crack data",
+ "summary_ko": "서울 25개 구의 20년 이상 된 주택 1,350여 동을 일반 카메라와 열화상으로 함께 찍은 이미지 약 81만 장에 균열·박리·철근 노출 등 7가지 노후 현상과 상태(우수·보통·불량)를 상자·다각형으로 표시한 데이터입니다. 낡은 건물의 위험도를 진단하는 AI에 쓸 수 있습니다.",
+ "summary_en": "About 810,000 paired RGB and thermal images of 1,350+ houses over 20 years old in Seoul's 25 districts, with 7 aging signs (cracks, spalling, exposed rebar and more) and condition (good, fair, poor) marked by boxes and polygons. For AI that assesses the risk of old buildings.",
+ "contents_ko": "RGB·열화상 이미지 쌍(jpg) + JSON(상자, 다각형, 점검 유형, 상태 등급).",
+ "contents_en": "Paired RGB and thermal images (jpg) + JSON (boxes, polygons, inspection type, condition grade).",
+ "modalities": ["image"],
+ "tasks": ["object_detection", "segmentation", "image_classification", "anomaly_detection"],
+ "topics": [{"ko": "건축물 안전 점검", "en": "Building safety inspection"}, {"ko": "도시 행정", "en": "Urban administration"}],
+ "keywords_ko": ["노후 주택", "균열", "박리", "철근 노출", "열화상", "건물 안전"],
+ "keywords_en": ["aging houses", "cracks", "spalling", "exposed rebar", "thermal imaging", "building safety"],
+ "labels": ["bounding box", "polygon", "inspection type", "condition grade"],
+ "file_formats": ["jpg", "json"],
+ "scale_ko": "이미지 약 81만 장(RGB·열화상 쌍), 점검 유형 7종, 상태 3등급",
+ "classes_example": ["균열", "박리,박락", "철근노출", "대지", "마감", "생활", "창호"],
+ "baseline": [],
+ "difficulty": "intermediate",
+ "difficulty_note_ko": "탐지·분류 실습에 좋지만 전체 약 430GB이고 '불량'이 대부분입니다.",
+ "skills_needed_ko": ["파이썬", "YOLO 탐지", "이미지 분할"],
+ "caveats_ko": ["전체 약 430GB", "상태 등급이 '불량'에 크게 치우침", "주택 외관에 주소 등 위치 정보가 보일 수 있음", "성능 지표가 팩 앞부분에 없음"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "벽 균열 탐지", "title_en": "Wall crack detection", "desc_ko": "주택 사진에서 균열을 찾아 상자로 표시합니다.", "desc_en": "Find and box cracks in house photos."},
+  {"level": "capstone", "title_ko": "노후 주택 점검 보고서 생성기", "title_en": "Aging-house inspection reporter", "desc_ko": "사진 여러 장의 탐지 결과로 건물별 상태 보고서를 만듭니다.", "desc_en": "Build per-building condition reports from detections on several photos."},
+  {"level": "research", "title_ko": "RGB+열화상 결합 진단", "title_en": "RGB plus thermal fusion", "desc_ko": "열화상을 더하면 내부 손상 판단이 얼마나 좋아지는지 연구합니다.", "desc_en": "Study how adding thermal images improves judging hidden damage."}
+ ],
+ "doc_used": true,
+ "uncertain": []
+}

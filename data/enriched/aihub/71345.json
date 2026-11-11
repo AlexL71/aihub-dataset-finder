@@ -1,0 +1,33 @@
+{
+ "dataset_id": "71345",
+ "title_en": "Olive flounder disease data",
+ "summary_ko": "제주 양식장 넙치의 질병 RGB 이미지 약 6.1만 장과 초분광 이미지 약 4.7만 장에 질병 부위를 상자·다각형으로 표시하고, 수질 환경 약 56만 건·사육 관리 기록을 함께 담은 데이터입니다. 넙치 질병을 빨리 진단하고 발생을 예측하는 스마트 양식 AI에 쓸 수 있습니다.",
+ "summary_en": "About 61,000 RGB and 47,000 hyperspectral images of diseased olive flounder from Jeju fish farms, with disease areas boxed and outlined, plus about 560,000 water-quality records and rearing logs. For smart-aquaculture AI that diagnoses flounder disease quickly and predicts outbreaks.",
+ "contents_ko": "넙치 RGB 이미지(jpg)·초분광 이미지(png, raw/hdr) + JSON(상자, 다각형, 질병) + 수질·사육 데이터.",
+ "contents_en": "Flounder RGB images (jpg) and hyperspectral images (png, raw/hdr) + JSON (boxes, polygons, disease) + water-quality and rearing data.",
+ "modalities": ["image", "sensor"],
+ "tasks": ["image_classification", "object_detection", "forecasting"],
+ "topics": [{"ko": "수산 양식", "en": "Aquaculture"}, {"ko": "어류 질병", "en": "Fish disease"}],
+ "keywords_ko": ["넙치", "광어", "어류 질병", "초분광", "제주 양식"],
+ "keywords_en": ["olive flounder", "fish disease", "hyperspectral imaging", "Jeju aquaculture", "smart fish farm"],
+ "labels": ["bounding box", "polygon", "disease class"],
+ "file_formats": ["jpg", "png", "hdr", "json"],
+ "scale_ko": "이미지 약 10.8만 장(RGB 6.1만, 초분광 4.7만), 수질 데이터 약 56만 건",
+ "classes_example": [],
+ "baseline": [
+  {"task": "disease outbreak prediction", "model": "Informer", "metric": "F1", "value": "0.9508"},
+  {"task": "RGB disease classification", "model": "VGG16", "metric": "F1", "value": "0.8115"},
+  {"task": "hyperspectral disease classification", "model": "VGG16", "metric": "F1", "value": "0.7806"}
+ ],
+ "difficulty": "advanced",
+ "difficulty_note_ko": "전체 약 855GB이고 초분광 이미지 처리가 필요합니다. RGB만 받아 쓰세요.",
+ "skills_needed_ko": ["파이썬", "CNN 이미지 분류", "시계열 예측", "초분광 영상 처리(선택)"],
+ "caveats_ko": ["전체 약 855GB", "질병 종류 목록이 팩 앞부분에 없음", "제주 양식장 데이터만 있음"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "넙치 질병 분류", "title_en": "Flounder disease classifier", "desc_ko": "RGB 사진으로 질병 종류를 분류합니다.", "desc_en": "Classify disease type from RGB photos."},
+  {"level": "capstone", "title_ko": "양식장 질병 조기 경보", "title_en": "Fish-farm disease early warning", "desc_ko": "수질 변화로 질병 발생 위험을 미리 알립니다.", "desc_en": "Warn of disease risk from water-quality changes."},
+  {"level": "research", "title_ko": "RGB vs 초분광 비교", "title_en": "RGB vs hyperspectral", "desc_ko": "어떤 영상이 질병을 더 일찍 찾는지 비교합니다.", "desc_en": "Compare which imaging finds disease earlier."}
+ ],
+ "doc_used": true,
+ "uncertain": ["disease class list", "클래스 목록을 페이지와 설명서에서 찾지 못함"]
+}

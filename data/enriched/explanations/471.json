@@ -1,0 +1,12 @@
+{
+ "dataset_id": "471",
+ "easy_ko": "철조망이나 유리창 같은 것에 가려진 물체 사진과, 같은 물체를 가리지 않고 찍은 사진을 짝지어 물체 영역을 표시한 데이터입니다. 무언가에 가려진 물체를 알아보거나 가려진 부분을 되살려 그리는 AI를 만들 수 있습니다.",
+ "easy_en": "Photos of objects partly hidden behind things such as wire fences or glass windows, paired with photos of the same objects unblocked, with the object area marked. You can build AI that recognises hidden objects or redraws the hidden parts.",
+ "detail_ko": "철조망·유리창 등 장애물에 가려진 물체와 가려지지 않은 같은 물체 사진을 200종 이상의 객체 카테고리별 2,000장 이상씩 모은 431,120건(jpg)으로, JSON에 물체 분할 마스크, 장애물 종류, 카테고리가 있습니다. 기준 성능과 카테고리 전체 목록은 기록에서 확인되지 않습니다.",
+ "detail_en": "431,120 jpg images of objects behind obstacles (wire fences, glass windows and more) and the same objects without obstacles, with 2,000+ images for each of 200+ object categories, and JSON segmentation masks, obstacle type and category. The baseline and full category list are not visible in the record.",
+ "amount_ko": "사진 약 43만 장, 물체 200종 이상",
+ "amount_en": "about 431k images, 200+ object categories",
+ "labels_ko": "물체 영역(색칠), 가린 장애물 종류, 물체 분류",
+ "labels_en": "object masks, obstacle type, object category",
+ "status": "full-run-2026-11-02"
+}

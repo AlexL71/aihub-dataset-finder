@@ -1,0 +1,29 @@
+{
+ "dataset_id": "468",
+ "title_en": "Sea fog CCTV data",
+ "summary_ko": "서해 연안·외해에 설치한 CCTV로 찍은 바다 안개(해무) 이미지 37만 장과 해양·기상 관측 자료로, 해무 정도와 황사·햇빛 반사·비·눈 같은 헷갈리는 현상이 태깅되어 있습니다. 인천 해역 도로·항만·공항의 가시거리 위험을 미리 알리는 해무 판별·예측 AI에 쓸 수 있습니다.",
+ "summary_en": "370,000 CCTV images of sea fog from cameras on the west coast and offshore, plus ocean and weather observations, tagged with fog level and confusing phenomena such as yellow dust, sun glare, rain and snow. For AI that detects and forecasts sea fog to warn about visibility risks for roads, ports and airports around Incheon.",
+ "contents_ko": "CCTV 이미지(jpg) + JSON(해무 등급 태그, 이상현상 태그, 관측 시각·지점, 기상·해양 관측값).",
+ "contents_en": "CCTV image (jpg) + JSON (fog-level tag, outlier-phenomenon tag, time and station, weather and ocean observations).",
+ "modalities": ["image", "tabular"],
+ "tasks": ["image_classification", "forecasting"],
+ "topics": [{"ko": "기상·날씨", "en": "Weather"}, {"ko": "해양·항만", "en": "Sea and ports"}, {"ko": "교통 안전", "en": "Transport safety"}],
+ "keywords_ko": ["해무", "바다 안개", "가시거리", "CCTV", "기상 예측", "인천"],
+ "keywords_en": ["sea fog", "marine fog", "visibility", "CCTV", "weather forecasting", "Incheon"],
+ "labels": ["fog level tag", "phenomenon tag", "observation values"],
+ "file_formats": ["jpg", "json"],
+ "scale_ko": "369,640건",
+ "classes_example": ["해무 없음", "해무", "황사", "태양반사광", "강우", "강설"],
+ "baseline": [],
+ "difficulty": "beginner",
+ "difficulty_note_ko": "약 46GB로 다룰 만하고 안개 정도 분류는 첫 분류 프로젝트에 좋습니다. 예측까지 하면 중급입니다.",
+ "skills_needed_ko": ["파이썬", "이미지 분류", "시계열 예측(선택)"],
+ "caveats_ko": ["성능 지표 표가 비어 있음", "해무 등급 구분 기준이 팩 앞부분에 없음"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "CCTV 안개 정도 분류", "title_en": "Fog level from CCTV", "desc_ko": "CCTV 이미지로 해무 유무와 정도를 분류합니다.", "desc_en": "Classify fog presence and level from CCTV images."},
+  {"level": "capstone", "title_ko": "인천대교 가시거리 알림", "title_en": "Visibility alert for coastal roads", "desc_ko": "해무 판별 결과로 도로·항만에 가시거리 경고를 보여주는 대시보드를 만듭니다.", "desc_en": "Show visibility warnings for roads and ports from fog detection."},
+  {"level": "research", "title_ko": "기상 관측으로 해무 예측", "title_en": "Forecasting sea fog from observations", "desc_ko": "기온·습도·수온 관측값과 이미지를 함께 써서 몇 시간 뒤 해무를 예측합니다.", "desc_en": "Forecast fog hours ahead from temperature, humidity, sea temperature and images."}
+ ],
+ "doc_used": true,
+ "uncertain": []
+}

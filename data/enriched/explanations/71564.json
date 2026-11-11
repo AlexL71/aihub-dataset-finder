@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71564",
+ "easy_ko": "외식 메뉴, 배달 음식, 빵이나 죽 같은 끼니 대신 음식, 음료 등 800가지 음식 사진 약 23만 장에 음식 위치와 영양 정보를 붙인 데이터입니다. 사진으로 음식을 알아보고 영양을 계산하는 식단 관리 앱에 쓸 수 있습니다.",
+ "easy_en": "About 230,000 photos of 800 kinds of food, including restaurant dishes, delivery food, meal substitutes such as bread or porridge, and drinks, with each dish's position and nutrition information. You can use it to build diet apps that recognise food in photos and work out its nutrition.",
+ "detail_ko": "특수외식(200종), 일반외식·배달(300종), 끼니대체(빵·떡·죽·수프, 200종), 음료·차(100종) 등 800종 음식 이미지 232,087장(jpg)에 음식 위치 상자, 음식명, 영양정보를 JSON으로 붙였으며, 기존 한식 중심 음식 데이터를 넓힌 것입니다. 기준 성능은 Faster R-CNN(Swin Transformer) 음식 탐지 mAP 74.58%입니다. 전체 약 829GB이고, 음료·차류는 9,057장으로 적습니다. 구축 목적에 '양 인식'이 있지만 양 라벨 형태는 팩 앞부분에 없습니다.",
+ "detail_en": "232,087 images (jpg) of 800 foods: special dining (200), regular dining and delivery (300), meal substitutes such as bread, rice cake, porridge and soup (200), and drinks and tea (100), with JSON boxes, food names and nutrition information, extending older Korean-food-focused datasets. Baseline: food detection with Faster R-CNN (Swin Transformer), mAP 74.58%. Total size is about 829 GB, and drinks and tea are few (9,057 images). The stated purpose mentions portion recognition, but the portion label format is not in the pack.",
+ "amount_ko": "이미지 232,087장, 음식 800종",
+ "amount_en": "232,087 images, 800 foods",
+ "labels_ko": "음식 위치 상자, 음식 이름, 영양 정보",
+ "labels_en": "bounding boxes, food class, nutrition info",
+ "status": "full-run-2026-11-02"
+}

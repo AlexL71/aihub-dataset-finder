@@ -1,0 +1,12 @@
+{
+ "dataset_id": "102",
+ "easy_ko": "백화점·홈쇼핑 콜센터와 음식점·가게·수리점 같은 작은 가게에서 손님이 한 질문과 직원의 답을 모으고, 질문의 목적과 상품 이름·가격 같은 중요한 단어, 말의 분위기를 표시한 데이터입니다. 작은 가게나 무인 상점에서 주문과 문의를 받아 주는 챗봇을 만들 수 있습니다.",
+ "easy_en": "Customer questions and staff answers from department-store and home-shopping call centres and small shops such as restaurants, stores and repair shops, marked with the purpose of each question, key words such as product names and prices, and the mood of the message. You can build chatbots that take orders and answer questions for small or unmanned shops.",
+ "detail_ko": "콜센터 400만 건과 약 20개 업종 가게 녹취 100만 건, 총 500만 건의 질문-답변 텍스트에 인텐트, 개체명(가격, 수량, 장소, 상품명, 날짜 등), 감성(긍정·중립·부정), 상점 업종 라벨을 붙였습니다. 기준 성능은 KoBERT 의도·개체명 분류 F1-score 0.82입니다. 파일 형식(json/csv)은 기록에서 확인되지 않은 추정입니다.",
+ "detail_en": "5M question–answer texts (4M from call centres, 1M recorded in shops of about 20 business types), labelled with intent, named entities (price, quantity, place, product, date and more), sentiment (positive, neutral, negative) and shop type. Baseline: KoBERT intent and entity classification F1-score 0.82. File formats (json/csv) are not confirmed in the record.",
+ "amount_ko": "질문-답 500만 건, 업종 약 20종",
+ "amount_en": "5M question–answer items, about 20 business types",
+ "labels_ko": "질문의 목적, 중요한 단어(상품·가격·날짜 등), 말의 분위기, 가게 종류",
+ "labels_en": "intent, key words (product, price, date and more), sentiment, shop type",
+ "status": "full-run-2026-11-02"
+}

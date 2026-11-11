@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71544",
+ "easy_ko": "발라드, 댄스, 힙합, 록, 트로트 같은 여러 장르의 노래 2만 곡과 악보 파일로, 원곡과 편곡, 장르, 악기, 빠르기를 바꾼 커버곡이 짝지어 있습니다. 두 곡이 얼마나 비슷한지 판단해 표절을 찾거나 음악을 추천하는 AI에 쓸 수 있습니다.",
+ "easy_en": "20,000 songs in genres such as ballad, dance, hip-hop, rock and trot, with sheet-music files, pairing originals with cover versions that change the arrangement, genre, instruments or tempo. You can use it to build AI that judges how similar two songs are, to catch plagiarism or recommend music.",
+ "detail_ko": "발라드·댄스·힙합·R&B·록·트로트 6개 장르의 음원 2만 곡(wav)과 악보(MIDI, MusicXML), 장르·커버 종류(Cover_Arrangement, Cover_Genre, Cover_Instrument, Cover_Tempo 등) JSON으로, 일반 원곡과 유사곡 원곡·커버곡 세트로 구성됩니다. 기준 성능은 Omnizart 채보 F1 0.758, MelodyShape 멜로디 유사도 F1 0.915, GrooveToolbox 리듬 유사도 F1 0.835, Spleeter 음원 분리 SDR 5.44입니다. 전체 약 315GB이고, 메타데이터의 라벨링 유형이 '전사(음성)'로 적혀 있지만 실제는 음악 채보이며, 크라우드 소싱 음원이라 상용 곡과 다를 수 있습니다.",
+ "detail_en": "20,000 songs (wav) in 6 genres (ballad, dance, hip-hop, R&B, rock, trot) with scores (MIDI, MusicXML) and JSON genre and cover type (arrangement, genre, instrument, tempo and others), organised as plain originals and sets of similar originals with their covers. Baselines: music transcription with Omnizart, F1 0.758; melody similarity with MelodyShape, F1 0.915; rhythm similarity with GrooveToolbox, F1 0.835; source separation with Spleeter, SDR 5.44. Total size is about 315 GB. The metadata lists the label type as 'speech transcription' although it is music transcription, and the songs were crowd-sourced, so they may differ from commercial music.",
+ "amount_ko": "2만 곡, 장르 6종",
+ "amount_en": "20,000 songs, 6 genres",
+ "labels_ko": "악보(MIDI·MusicXML), 장르, 커버곡 종류",
+ "labels_en": "MIDI transcription, MusicXML score, genre, cover type",
+ "status": "full-run-2026-11-02"
+}

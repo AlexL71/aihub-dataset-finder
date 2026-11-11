@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71525",
+ "easy_ko": "누에와 쌍별귀뚜라미를 알부터 어른벌레까지 정해진 간격으로 찍은 일반 사진과 열화상 사진 약 70만 장에 곤충 부분을 칠해 표시한 데이터입니다. 병에 걸린 곤충 사진도 있어, 곤충 농장에서 자라는 단계를 알아보고 키우는 기간을 예측하는 AI에 쓸 수 있습니다.",
+ "easy_en": "About 700,000 ordinary and thermal photos of silkworms and two-spotted crickets taken at set intervals from egg to adult, with each insect painted in. Photos of infected insects are included, so you can build AI for insect farms that recognises growth stages and predicts how long rearing will take.",
+ "detail_ko": "누에 4종(백견, 황견, 나용, 삼면잠)과 쌍별귀뚜라미의 RGB·열화상 이미지 약 700,000건(png)에 곤충 분할, 종, 성장 단계(알, 애벌레, 번데기, 약충, 성충), 감염 여부를 JSON으로 붙였습니다. 기준 성능은 Detectron2 성장 단계 탐지 mAP 누에(백견) 95.32%, 쌍별귀뚜라미 91.6%입니다. 전체 약 2.3TB이고, 누에 4종의 성능값이 95.32·96.32·97.32·98.32%로 1%씩 차이 나 표기를 확인해야 합니다. 열화상 이미지의 규모는 팩 앞부분에 없습니다.",
+ "detail_en": "About 700,000 RGB and thermal images (png) of 4 silkworm types (white cocoon, yellow cocoon, naked pupa, three-moult) and two-spotted crickets, with JSON insect segmentation, species, growth stage (egg, larva, pupa, nymph, adult) and infection status. Baselines: growth-stage detection with Detectron2, mAP 95.32% (silkworm, white cocoon) and 91.6% (cricket). Total size is about 2.3 TB. The 4 silkworm scores step up by exactly 1% (95.32, 96.32, 97.32, 98.32%), so check them. The number of thermal images is not in the pack.",
+ "amount_ko": "이미지 약 700,000건(누에 4종 + 쌍별귀뚜라미)",
+ "amount_en": "about 700,000 images (4 silkworm types + crickets)",
+ "labels_ko": "곤충 영역, 종류, 자라는 단계, 병 감염 여부",
+ "labels_en": "segmentation, species, growth stage, infection",
+ "status": "full-run-2026-11-02"
+}

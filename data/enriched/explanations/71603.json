@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71603",
+ "easy_ko": "패션, 화장품, 가전, IT 기기, 생활용품 쇼핑몰과 SNS 상품 후기 25만여 개에, 착용감, 디자인, 가격, 소재 같은 항목과 그 항목에 대한 좋다·나쁘다 감정을 표시한 데이터입니다. 후기를 항목별로 분석해 상품의 장단점을 정리하는 AI에 쓸 수 있습니다.",
+ "easy_en": "Over 250,000 product reviews from shopping sites and social media for fashion, cosmetics, appliances, IT devices and household goods, marking aspects such as fit, design, price and material and whether the reviewer felt good or bad about each. You can use it to build AI that sums up a product's pros and cons from reviews.",
+ "detail_ko": "패션·화장품·가전·IT기기·생활용품 5개 도메인(카테고리 20종)의 상품 리뷰 250,312건(txt; 쇼핑몰 225,300, SNS 25,012)에 속성(예: 착용감, 디자인, 가격, 기능, 소재, 활용성), 속성 표현 구간, 감정 극성(긍정/부정), 카테고리를 JSON으로 붙였습니다. 기준 성능은 BERT 속성 분류 F1 0.8018, 감정 분류 F1 0.8414입니다. 속성 종류 전체 목록은 팩 앞부분에 없고, 긍정 리뷰가 많을 수 있어 감정 비율을 확인해야 하며, SNS 리뷰는 10%뿐입니다.",
+ "detail_en": "250,312 product reviews (txt; 225,300 shopping-site, 25,012 social media) across 5 domains and 20 categories (fashion, cosmetics, appliances, IT devices, household goods), with JSON aspects (such as fit, design, price, function, material, usability), aspect spans, sentiment polarity (positive/negative) and category. Baselines with BERT: aspect classification F1 0.8018; sentiment classification F1 0.8414. The full aspect list is not in the pack, positive reviews may dominate, so check the sentiment balance, and social-media reviews are only 10%.",
+ "amount_ko": "리뷰 250,312건(쇼핑몰 225,300, SNS 25,012), 도메인 5종, 카테고리 20종",
+ "amount_en": "250,312 reviews (225,300 shopping-site, 25,012 social media), 5 domains, 20 categories",
+ "labels_ko": "후기 속 항목, 좋다·나쁘다 감정, 상품 분류",
+ "labels_en": "aspect, sentiment polarity, category",
+ "status": "full-run-2026-11-02"
+}

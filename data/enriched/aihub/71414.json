@@ -1,0 +1,29 @@
+{
+ "dataset_id": "71414",
+ "title_en": "3D asset and sketch pair data",
+ "summary_ko": "212개 사물 클래스의 3D 에셋 3,180개와, 이를 보고 전문가·일반인이 여러 시점에서 손으로 그린 스케치 175,587장, 렌더링 이미지 63,600장이 짝지어진 데이터입니다. 대충 그린 스케치로 원하는 3D 모델을 찾는 검색 AI나 스케치 분류에 쓸 수 있습니다.",
+ "summary_en": "3,180 3D assets in 212 object classes paired with 175,587 hand-drawn multi-view sketches by experts and non-experts and 63,600 renders. For sketch-based 3D model search and sketch classification.",
+ "contents_ko": "3D 모델(obj, blend, fbx, mtl) + 렌더링·스케치 이미지(png) + JSON(클래스, 시점, 그린 사람 숙련도).",
+ "contents_en": "3D model (obj, blend, fbx, mtl) + render and sketch images (png) + JSON (class, view, sketcher skill level).",
+ "modalities": ["image", "3d"],
+ "tasks": ["image_classification", "retrieval_recommendation"],
+ "topics": [{"ko": "메타버스·3D 콘텐츠", "en": "Metaverse and 3D content"}, {"ko": "디자인 도구", "en": "Design tools"}],
+ "keywords_ko": ["스케치", "3D 에셋", "스케치 검색", "다시점", "렌더링", "사물 분류"],
+ "keywords_en": ["sketch", "3D assets", "sketch-based retrieval", "multi-view", "rendering", "object classification"],
+ "labels": ["class", "view", "sketcher skill level"],
+ "file_formats": ["obj", "blend", "fbx", "mtl", "png", "json"],
+ "scale_ko": "3D 에셋 3,180개(212클래스×15개), 스케치 175,587장, 렌더링 63,600장",
+ "classes_example": ["숙련자 스케치", "일반인 스케치", "고난이도 클래스", "저난이도 클래스"],
+ "baseline": [{"task": "sketch classification", "model": "EfficientNetV2", "metric": "Top-1 accuracy", "value": "82.99%"}, {"task": "sketch classification", "model": "EfficientNetV2", "metric": "Top-5 accuracy", "value": "93.18%"}],
+ "difficulty": "intermediate",
+ "difficulty_note_ko": "스케치 분류는 쉬운 편이고 약 78GB입니다. 3D 검색까지 하려면 3D 처리 지식이 필요합니다.",
+ "skills_needed_ko": ["파이썬", "이미지 분류(CNN)", "임베딩 검색(FAISS)", "3D 도구 기초"],
+ "caveats_ko": ["212개 클래스 이름은 팩 앞부분에 없음(synset_id로 구분)", "클래스당 3D 에셋이 15개뿐이라 3D 쪽 다양성은 적음", "71412 3D 에셋 데이터와 같은 기관"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "스케치 사물 분류", "title_en": "Sketch object classifier", "desc_ko": "손 스케치를 보고 어떤 사물인지 맞히는 분류 모델을 학습합니다.", "desc_en": "Train a classifier that names the object in a sketch."},
+  {"level": "capstone", "title_ko": "스케치로 3D 모델 찾기", "title_en": "Find 3D models by sketch", "desc_ko": "스케치와 렌더링 이미지를 같은 임베딩 공간에 넣어 비슷한 3D 에셋을 검색합니다.", "desc_en": "Embed sketches and renders together to retrieve matching 3D assets."},
+  {"level": "research", "title_ko": "숙련도 차이 분석", "title_en": "Expert vs novice sketches", "desc_ko": "전문가와 일반인 스케치에서 검색·분류 성능이 어떻게 다른지 연구합니다.", "desc_en": "Study how retrieval and classification differ for expert and novice sketches."}
+ ],
+ "doc_used": true,
+ "uncertain": []
+}

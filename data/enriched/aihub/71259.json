@@ -1,0 +1,32 @@
+{
+ "dataset_id": "71259",
+ "title_en": "Goyang city taekwondo data",
+ "summary_ko": "남녀 선수 48명(유소년~장년, 선수급·일반 수련생)이 태극 1~8장 품새와 낱동작을 하는 모습을 120fps로 찍은 영상 500시간에서 뽑은 이미지 약 90만 장에 몸 키포인트 29개와 동작 이름을 붙인 데이터입니다. 태권도 동작 분류나 자세 정확도 평가 AI에 쓸 수 있습니다.",
+ "summary_en": "About 900,000 images from 500 hours of 120 fps video of 48 athletes (male and female, children to middle-aged, elite and regular trainees) performing Taegeuk 1-8 poomsae forms and single moves, with 29 body keypoints and move names. For AI that classifies taekwondo moves or scores posture accuracy.",
+ "contents_ko": "동작 이미지(jpg) + JSON(키포인트 29개, 동작 이름, 선수 정보).",
+ "contents_en": "Move images (jpg) + JSON (29 keypoints, move name, athlete information).",
+ "modalities": ["image", "video"],
+ "tasks": ["keypoint_pose", "action_recognition"],
+ "topics": [{"ko": "스포츠·무예", "en": "Sports and martial arts"}, {"ko": "동작 분석", "en": "Motion analysis"}],
+ "keywords_ko": ["태권도", "품새", "태극", "자세 추정", "동작 인식", "승급 심사"],
+ "keywords_en": ["taekwondo", "poomsae", "Taegeuk", "pose estimation", "action recognition", "belt grading"],
+ "labels": ["keypoint (29)", "move class", "athlete metadata"],
+ "file_formats": ["jpg", "json"],
+ "scale_ko": "이미지 약 90만 장, 동작 30만 개, 선수 48명, 품새 8종",
+ "classes_example": ["태극1장", "태극2장", "태극3장", "태극4장", "태극5장", "태극6장", "태극7장", "태극8장"],
+ "baseline": [
+  {"task": "move recognition", "model": "modified VGG16-BN", "metric": "accuracy", "value": "94.48%"},
+  {"task": "pose estimation", "model": "AlphaPose", "metric": "mAP", "value": "97.99%"}
+ ],
+ "difficulty": "intermediate",
+ "difficulty_note_ko": "약 329GB이지만 키포인트 JSON만으로도 동작 분류 실습이 가능합니다.",
+ "skills_needed_ko": ["파이썬", "자세 추정", "동작 분류"],
+ "caveats_ko": ["전체 약 329GB", "선수 얼굴이 보이고 미성년자가 포함됨", "선수급(A레벨)은 6명뿐", "592번 택견 데이터와 비슷한 주제"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "품새 동작 분류", "title_en": "Poomsae move classifier", "desc_ko": "키포인트로 어느 품새 동작인지 분류합니다.", "desc_en": "Classify poomsae moves from keypoints."},
+  {"level": "capstone", "title_ko": "승급 심사 연습 앱", "title_en": "Belt-test practice app", "desc_ko": "웹캠 자세를 표준 동작과 비교해 점수와 교정 포인트를 알려줍니다.", "desc_en": "Compare webcam pose with the standard and give a score and tips."},
+  {"level": "research", "title_ko": "선수급 vs 일반 수련생 차이", "title_en": "Elite vs regular trainees", "desc_ko": "키포인트로 숙련도를 구분하는 특징을 연구합니다.", "desc_en": "Find keypoint features that separate skill levels."}
+ ],
+ "doc_used": true,
+ "uncertain": []
+}

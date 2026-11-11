@@ -1,0 +1,32 @@
+{
+ "dataset_id": "165",
+ "title_en": "City-road CCTV traffic video for traffic problems",
+ "summary_ko": "대전·부천·안양 시내도로 CCTV 영상에서 뽑은 이미지로, 승용차·버스·트럭·오토바이·보행자 위치가 상자와 윤곽으로 표시되어 있습니다. 같은 차를 프레임마다 따라가는 추적용 이미지도 있어 교통량과 차량 속도를 자동으로 재는 AI를 만들 수 있습니다.",
+ "summary_en": "Images taken from city-road CCTV in Daejeon, Bucheon and Anyang, with cars, buses, trucks, motorcycles and pedestrians marked by boxes and outlines. There are also tracking images that follow the same vehicle frame by frame, for AI that counts traffic and measures vehicle speed automatically.",
+ "contents_ko": "CCTV 영상 프레임 이미지 + COCO 형식 JSON(차종 7종 상자·윤곽, 추적 ID, 날씨·시간대·CCTV 높이·차선 수 등 메타정보). 탐지용, 분할용, 추적용 폴더가 따로 있음.",
+ "contents_en": "CCTV frame images + COCO-format JSON (boxes and outlines for 7 road-user types, tracking IDs, and metadata such as weather, time of day, camera height and number of lanes). Detection, segmentation and tracking sets are in separate folders.",
+ "modalities": ["image", "video"],
+ "tasks": ["object_detection", "segmentation", "object_tracking"],
+ "topics": [{"ko": "교통·도로", "en": "Traffic and roads"}, {"ko": "CCTV·도시 안전", "en": "CCTV and city safety"}, {"ko": "차량", "en": "Vehicles"}],
+ "keywords_ko": ["CCTV", "교통량", "차량 속도", "차종 분류", "시내도로", "교차로", "보행자", "악천후"],
+ "keywords_en": ["CCTV", "traffic volume", "vehicle speed", "vehicle type", "city road", "intersection", "pedestrian", "bad weather"],
+ "labels": ["bounding box", "polygon", "tracking id", "class"],
+ "file_formats": ["jpg", "json (COCO)"],
+ "scale_ko": "영상 505시간에서 이미지 약 57만 장(탐지 18만, 추적 36만, 분할 3만), 차종 7종, 악천후 10% 이상",
+ "classes_example": ["승용차", "소형버스", "대형버스", "트럭", "대형트레일러", "오토바이(자전거)", "보행자"],
+ "baseline": [
+  {"task": "object detection", "model": "CenterNet", "metric": "mAP@0.5", "value": "84%"},
+  {"task": "segmentation", "model": "ASPP (DeepLab)", "metric": "mIoU", "value": "50.7%"}
+ ],
+ "difficulty": "intermediate",
+ "difficulty_note_ko": "COCO 형식이라 YOLO 등 널리 쓰는 도구로 바로 학습할 수 있습니다. 탐지는 쉬운 편이지만 추적과 속도 측정까지 하려면 영상 처리 경험이 필요합니다.",
+ "skills_needed_ko": ["파이썬 기초", "객체 탐지 모델(YOLO) 학습", "OpenCV로 영상 프레임 다루기"],
+ "caveats_ko": ["전체 약 340GB: 탐지용 폴더 일부로 시작 권장", "속도 측정용 실제 거리 정보는 없으므로 별도 보정이 필요함", "category_id가 목록 형태로 들어 있는 등 COCO 표준과 조금 다른 부분이 있음"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "교차로 차종별 교통량 세기", "title_en": "Count vehicles by type at an intersection", "desc_ko": "CCTV 이미지에서 승용차·버스·트럭을 탐지해 시간대별 교통량 그래프를 그립니다.", "desc_en": "Detect cars, buses and trucks in CCTV images and plot traffic volume by time of day."},
+  {"level": "capstone", "title_ko": "날씨별 도로 혼잡도 대시보드", "title_en": "Road congestion dashboard by weather", "desc_ko": "탐지와 추적으로 차량 수와 이동을 측정하고 맑음·비·눈 조건별 혼잡도를 비교하는 대시보드를 만듭니다.", "desc_en": "Measure vehicle counts and movement with detection and tracking, then compare congestion under clear, rain and snow."},
+  {"level": "research", "title_ko": "CCTV 영상만으로 차량 속도 추정", "title_en": "Estimating vehicle speed from CCTV alone", "desc_ko": "추적 결과와 차선 폭 같은 도로 정보로 카메라를 보정해 속도를 추정하고, CCTV 높이(6m·15m·20m)에 따른 오차를 분석합니다.", "desc_en": "Calibrate the camera from tracks and lane width to estimate speed, and analyse the error for camera heights of 6, 15 and 20 m."}
+ ],
+ "doc_used": true,
+ "uncertain": []
+}

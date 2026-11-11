@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71633",
+ "easy_ko": "뉴스, 위키, 특허, 논문 문장 150만 개에서 두 이름이나 개념 사이의 관계, 예를 들어 'A는 B의 한 종류다'나 'A 때문에 B가 생긴다'를 표시한 한국어 데이터입니다. 글에서 관계를 뽑아내 지식 지도를 만들거나 챗봇 검색에 쓸 수 있습니다.",
+ "easy_en": "1.5 million Korean sentences from news, wikis, patents and papers, marking the relationship between two names or ideas, such as 'A is a kind of B' or 'A is caused by B'. You can use it to pull relationships out of text to build knowledge graphs or power chatbot search.",
+ "detail_ko": "뉴스·위키·특허·논문 문장 1,500,000건(txt)에서 두 개체 사이의 관계를 삼중항(주어-관계-목적어)과 속성으로 JSON에 표시했습니다. 관계 예: isA, hasAttribute, isCausedBy, isMemberOf, inFavorOf, isOpponentOf, isParentOf. 기준 성능은 klue/roberta-large 관계 추출 F1 0.802입니다. 관계별 수량 차이가 큽니다(against 0.02%, isA 15%).",
+ "detail_en": "1,500,000 sentences (txt) from news, wikis, patents and papers, with JSON relation triples (subject-relation-object) between two entities and attributes. Example relations: isA, hasAttribute, isCausedBy, isMemberOf, inFavorOf, isOpponentOf, isParentOf. Baseline: relation extraction with klue/roberta-large, F1 0.802. Relation counts vary widely (against 0.02%, isA 15%).",
+ "amount_ko": "문장 1,500,000건",
+ "amount_en": "1,500,000 sentences",
+ "labels_ko": "이름·개념, 둘 사이 관계, 속성",
+ "labels_en": "entity, relation, attribute",
+ "status": "full-run-2026-11-02"
+}

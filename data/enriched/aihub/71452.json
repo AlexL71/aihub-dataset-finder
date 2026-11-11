@@ -1,0 +1,29 @@
+{
+ "dataset_id": "71452",
+ "title_en": "Korean-style vision data for object recognition",
+ "summary_ko": "한국에서 찍은 이미지 약 300만 장에 사람·탈것·동물·주방용품·과일·채소·한식 등 여러 상위 카테고리의 물체가 상자로 표시된 대규모 데이터입니다. 서양 중심 데이터의 편향을 줄인 한국형 물체 탐지·분류 AI에 쓸 수 있습니다.",
+ "summary_en": "About 3 million images taken in Korea with objects from many super-categories (people, vehicles, animals, kitchenware, fruit, vegetables, Asian food and more) marked by boxes. For Korean-context object detection and classification with less Western bias.",
+ "contents_ko": "이미지(jpg) + JSON(상자, 카테고리).",
+ "contents_en": "Image (jpg) + JSON (box, category).",
+ "modalities": ["image"],
+ "tasks": ["object_detection", "image_classification"],
+ "topics": [{"ko": "일반 물체 인식", "en": "General object recognition"}, {"ko": "한국 생활", "en": "Everyday life in Korea"}],
+ "keywords_ko": ["한국형 비전", "객체 탐지", "대규모 데이터", "지리적 편향", "음식 인식", "COCO형"],
+ "keywords_en": ["Korean vision", "object detection", "large-scale data", "geographic bias", "food recognition", "COCO-style"],
+ "labels": ["bounding box", "category"],
+ "file_formats": ["jpg", "json"],
+ "scale_ko": "이미지 약 300만 장, 라벨 약 300만 건",
+ "classes_example": ["사람", "탈것", "동물", "주방", "과일", "채소", "음식(동양)", "가구", "전자기기"],
+ "baseline": [],
+ "difficulty": "intermediate",
+ "difficulty_note_ko": "탐지 실습에 좋지만 전체 약 1.46TB로 매우 큽니다. 원하는 카테고리만 받아 쓰세요.",
+ "skills_needed_ko": ["파이썬", "YOLO 탐지", "대용량 데이터 관리"],
+ "caveats_ko": ["전체 약 1,459GB", "같은 300만 장 이미지가 분할(71453)·설명문(71454)·관계성(71456) 데이터와 공유됨", "카테고리별 수량 차이가 큼(사람 약 67만, 동물 약 5만)", "성능 지표가 팩에 없음"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "한식·과일 탐지", "title_en": "Korean food and fruit detection", "desc_ko": "음식·과일 카테고리만 골라 YOLO로 탐지 모델을 학습합니다.", "desc_en": "Train YOLO on only the food and fruit categories."},
+  {"level": "capstone", "title_ko": "식당 메뉴 인식 서비스", "title_en": "Restaurant dish recognition", "desc_ko": "식탁 사진에서 음식을 찾아 이름과 정보를 보여 주는 앱을 만듭니다.", "desc_en": "App that finds dishes on a table and shows their names."},
+  {"level": "research", "title_ko": "지리적 편향 비교", "title_en": "Geographic bias study", "desc_ko": "COCO로 학습한 모델과 이 데이터로 학습한 모델의 한국 사진 성능을 비교합니다.", "desc_en": "Compare COCO-trained and Korea-trained models on Korean photos."}
+ ],
+ "doc_used": true,
+ "uncertain": ["세부 클래스 수"]
+}

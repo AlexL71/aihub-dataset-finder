@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71376",
+ "easy_ko": "공장, 공사장, 교통수단, 공연장처럼 아주 시끄러운 곳에서 기침, 동물 소리, 전화벨, 사이렌 같은 소리를 녹음한 데이터입니다. 큰 소음 속에서도 특정 소리를 알아채 청각이 약한 사람에게 위험을 알려 주는 AI를 만들 수 있습니다.",
+ "easy_en": "Recordings of sounds such as coughs, animal noises, phone rings and sirens made in very loud places like factories, construction sites, vehicles and concert halls. You can build AI that picks out specific sounds even in heavy noise and warns people with weak hearing of danger.",
+ "detail_ko": "공장·공사장·교통수단·시설류·복합소음 등 극한 소음 환경 6개 대분류에서 녹음한 소리 약 1,053시간(약 10만 건, wav; 소리가 큰 파일과 소음이 큰 파일 두 종류)에 소음 환경, 소리 분류(사람의 비언어적 소리, 동물·자연물 소리, 전자제품·생활환경 소리 등), 녹음 환경 메타정보를 JSON으로 붙였습니다. ESResNet이 소개되지만 성능 점수는 페이지에 없습니다. 전체 약 477GB이며, 라벨링 유형이 '해당없음'으로 적혀 있어 소리 구간 표시 수준이 불분명합니다.",
+ "detail_en": "About 1,053 hours (about 100k recordings, wav; one version with louder target sound and one with louder noise) from 6 extreme-noise environments (transport, construction, factories, facilities, mixed noise and more), with JSON noise environment, sound class (non-speech human sounds, animal and nature sounds, electronics and household sounds and more) and recording metadata. ESResNet is mentioned, but no score is given. Total size is about 477 GB; the labelling type is listed as 'none', so the level of segment labelling is unclear.",
+ "amount_ko": "소리 약 1,053시간(약 10만 건)",
+ "amount_en": "about 1,053 hours of audio (about 100k recordings)",
+ "labels_ko": "소음 환경 종류, 소리 종류, 녹음 정보",
+ "labels_en": "noise environment, sound class, recording metadata",
+ "status": "full-run-2026-11-02"
+}

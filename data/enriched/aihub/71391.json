@@ -1,0 +1,29 @@
+{
+ "dataset_id": "71391",
+ "title_en": "Railway track condition recognition data",
+ "summary_ko": "도시철도·일반철도·고속철도·경전철 선로에서 특수 장비로 촬영한 레일·이음매·체결장치(볼트·클립·침목 등) 이미지 151,814세트입니다. 같은 부품도 정상과 파손·이완 같은 비정상을 구분해 상자와 영역으로 표시해 두어 철도 선로 자동 점검 AI에 쓸 수 있습니다.",
+ "summary_en": "151,814 sets of images of rails, joints and fastenings (bolts, clips, sleepers) shot with special rigs on urban, conventional, high-speed and light rail. Each part is marked normal or abnormal (broken, loose) with boxes and masks, for automatic track inspection.",
+ "contents_ko": "선로 시설물 이미지(jpg) + JSON(상자, 분할 영역, 시설물 종류, 정상·비정상).",
+ "contents_en": "Track component image (jpg) + JSON (boxes, masks, component type, normal/abnormal).",
+ "modalities": ["image"],
+ "tasks": ["object_detection", "segmentation", "anomaly_detection"],
+ "topics": [{"ko": "철도 안전 점검", "en": "Railway safety inspection"}, {"ko": "시설물 유지관리", "en": "Infrastructure maintenance"}],
+ "keywords_ko": ["철도 선로", "레일", "체결장치", "결함 탐지", "볼트·너트", "시설 점검"],
+ "keywords_en": ["railway track", "rail", "fastening", "defect detection", "bolts and nuts", "inspection"],
+ "labels": ["bounding box", "segmentation mask", "component type", "normal/abnormal"],
+ "file_formats": ["jpg", "json"],
+ "scale_ko": "151,814세트(도시철도 61,622·일반철도 43,964·고속철도 24,615·경전철 21,613), 시설물 15종",
+ "classes_example": ["레일", "도유기", "용접부", "이음매판", "볼트·너트", "팬드롤 e-clip", "침목", "fast clip"],
+ "baseline": [],
+ "difficulty": "intermediate",
+ "difficulty_note_ko": "탐지·분할 실습에 적당하고 약 74GB로 비교적 가볍습니다. 정상·비정상 비율을 먼저 확인하세요.",
+ "skills_needed_ko": ["파이썬", "YOLO 탐지", "분할 모델(Mask R-CNN)"],
+ "caveats_ko": ["성능 지표 표가 비어 있음(YOLOv5·Mask R-CNN 사용만 소개)", "비정상 데이터 일부는 인위적으로 파손·이완을 만들어 촬영함", "71403 전차선 애자 데이터와 같은 기관·구성"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "선로 부품 탐지", "title_en": "Track component detection", "desc_ko": "선로 사진에서 볼트·클립·침목을 YOLO로 찾습니다.", "desc_en": "Detect bolts, clips and sleepers in track photos with YOLO."},
+  {"level": "capstone", "title_ko": "선로 점검 보고서 자동화", "title_en": "Automated track inspection report", "desc_ko": "점검 영상에서 비정상 부품을 찾아 위치와 사진을 모은 보고서를 만듭니다.", "desc_en": "Find abnormal parts in inspection footage and compile a report."},
+  {"level": "research", "title_ko": "노선 간 결함 탐지 일반화", "title_en": "Defect detection across rail types", "desc_ko": "도시철도로 학습한 모델이 고속철도·경전철에서도 잘 되는지 연구합니다.", "desc_en": "Study whether urban-rail models generalise to high-speed and light rail."}
+ ],
+ "doc_used": true,
+ "uncertain": ["정상·비정상 개수 표의 숫자가 이 데이터 기준인지 철도 두 데이터 합계인지 불분명"]
+}

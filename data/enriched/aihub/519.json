@@ -1,0 +1,29 @@
+{
+ "dataset_id": "519",
+ "title_en": "Native plants for food and medicine analysis data (Jeju)",
+ "summary_ko": "제주의 식용·약용 자생식물 60종을 꽃·열매·잎 앞면·잎 뒷면으로 나눠 찍은 이미지 30만 장으로, 식물 영역이 다각형으로 표시되어 있습니다. 사진으로 자생식물을 알아보는 식물도감 앱에 쓸 수 있습니다.",
+ "summary_en": "300,000 images of 60 native plants of Jeju used for food and medicine, split into flowers, fruit, leaf front and leaf back, with plant regions outlined. For plant field-guide apps that identify native plants from photos.",
+ "contents_ko": "식물 부위 이미지 + JSON(다각형, 식물 종, 부위).",
+ "contents_en": "Plant-part image + JSON (polygon, species, part).",
+ "modalities": ["image", "text"],
+ "tasks": ["image_classification", "segmentation"],
+ "topics": [{"ko": "식물·약초", "en": "Plants and herbs"}, {"ko": "제주 지역", "en": "Jeju region"}, {"ko": "자연·생물 다양성", "en": "Nature and biodiversity"}],
+ "keywords_ko": ["자생식물", "약용식물", "식물도감", "제주", "잎", "열매"],
+ "keywords_en": ["native plants", "medicinal plants", "plant field guide", "Jeju", "leaf", "fruit"],
+ "labels": ["polygon (coarse)", "species", "plant part"],
+ "file_formats": ["jpg", "json"],
+ "scale_ko": "30만 장, 식물 60종(꽃 9,600, 열매 23,400, 잎 앞면 133,500 등)",
+ "classes_example": ["꽃", "열매", "잎-앞면", "잎-뒷면"],
+ "baseline": [],
+ "difficulty": "beginner",
+ "difficulty_note_ko": "종 분류는 첫 프로젝트에 알맞습니다. 전체 약 460GB이고 최소 파일이 0.1GB입니다.",
+ "skills_needed_ko": ["파이썬 기초", "전이학습 이미지 분류"],
+ "caveats_ko": ["식물 60종 이름과 성능 지표가 팩 앞부분에 없음", "부위별 수량이 크게 다름(꽃이 적음)"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "잎으로 식물 맞히기", "title_en": "Identify plants from leaves", "desc_ko": "잎 앞면 사진으로 60종을 분류합니다.", "desc_en": "Classify the 60 species from leaf photos."},
+  {"level": "capstone", "title_ko": "제주 올레길 식물도감 앱", "title_en": "Jeju trail plant guide app", "desc_ko": "사진을 찍으면 식물 이름과 식용·약용 정보를 보여주는 앱을 만듭니다.", "desc_en": "Show plant names and food/medicine info from a photo."},
+  {"level": "research", "title_ko": "여러 부위 결합 식물 인식", "title_en": "Multi-part plant recognition", "desc_ko": "잎·꽃·열매 사진을 함께 쓸 때 정확도가 오르는지 연구합니다.", "desc_en": "Test whether combining leaf, flower and fruit photos helps."}
+ ],
+ "doc_used": true,
+ "uncertain": []
+}

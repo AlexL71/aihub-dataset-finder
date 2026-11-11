@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71859",
+ "easy_ko": "교육과정 성취 기준과 연결된 수학 문제, 풀이, 정답 2만여 세트를 그림과 영역 표시, 그림 설명으로 정리한 데이터로, 문제마다 쉽고 어려운 정도가 표시되어 있습니다. 풀이가 맞았는지 판단하거나 비슷한 문제를 만들어 주는 AI에 쓸 수 있습니다.",
+ "easy_en": "Over 20,000 sets of maths problems, worked solutions and answers linked to curriculum standards, organised as images with marked areas and image descriptions, each tagged with difficulty. You can use it to build AI that checks whether a solution is right or creates similar problems.",
+ "detail_ko": "2022 개정 교육과정 성취기준과 연결된 수학 문제·풀이·정답 세트 20,319개를 이미지(png)와 상자, 다각형, 문항·풀이·정답·해설, 이미지 설명, 난이도(상 814, 중 6,606, 하 12,899)로 JSON에 정리했습니다. 난이도 '하'가 약 63%로 치우쳐 있고, 출판사 저작물 기반이라 이용 조건을 확인해야 하며, 품질 점수는 라벨 정확도이고 모델 성능 수치는 팩에 없습니다. 71716·71718 수학 데이터와 목적이 비슷합니다.",
+ "detail_en": "20,319 sets of maths problems, solutions and answers linked to the 2022 revised curriculum standards, as images (png) with JSON boxes, polygons, question, solution, answer and explanation, image captions and difficulty (814 hard, 6,606 medium, 12,899 easy). About 63% are easy, so difficulty is skewed; the material comes from publishers, so check the terms of use; quality scores describe label accuracy and no model scores are in the pack. Its purpose is similar to the maths sets 71716 and 71718.",
+ "amount_ko": "문제 20,319세트, 난이도 3단계(상 814, 중 6,606, 하 12,899)",
+ "amount_en": "20,319 problem sets, 3 difficulty levels (814 hard, 6,606 medium, 12,899 easy)",
+ "labels_ko": "영역 상자와 테두리, 문제·풀이·정답·해설, 그림 설명, 난이도",
+ "labels_en": "bounding box, polygon, caption, question-answer",
+ "status": "full-run-2026-11-02"
+}

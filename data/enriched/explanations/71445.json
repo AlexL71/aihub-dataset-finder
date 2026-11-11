@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71445",
+ "easy_ko": "윗옷과 아래옷 사진 약 41만 장에 옷 부분을 칠하고, 체크, 물방울, 줄무늬, 식물, 동물 같은 무늬 종류를 표시한 데이터입니다. 옷 무늬를 알아보거나 새로운 무늬를 만들어 내는 AI에 쓸 수 있습니다.",
+ "easy_en": "About 410,000 photos of tops and bottoms, with the garment area painted in and the pattern type marked, such as check, dots, stripes, plants or animals. You can use it to build AI that recognises clothing patterns or creates new ones.",
+ "detail_ko": "상의·하의 의류 이미지 약 41만 장에 옷 영역 2D 다각형 분할, 상의·하의 구분, 패턴 10종(animal, artifact, check, dot, etc, etcnature, geometric, plants, stripe, symbol)을 JSON으로 붙여 상의·하의 × 패턴 = 20개 클래스를 만들었습니다. 기준 성능은 패턴 분류 Mask R-CNN(mmdetection) Top-1 정확도 90.22%입니다. 총 수량이 415,038장과 415,033장으로 두 번 다르게 적혀 있고, 패턴별 수량 차이가 큽니다(하의 etcnature 288장, 하의 plants 65,640장). 'etc' 패턴은 범위가 넓어 경계가 모호할 수 있고, 이미지 파일 형식은 페이지에 명확하지 않습니다.",
+ "detail_en": "About 410,000 images of tops and bottoms, with JSON 2D polygon masks of the garment, a top/bottom tag and 10 pattern types (animal, artifact, check, dot, etc, etcnature, geometric, plants, stripe, symbol), giving 20 classes (top/bottom × pattern). Baseline: pattern classification with Mask R-CNN (mmdetection), Top-1 accuracy 90.22%. The total is given twice with different values (415,038 and 415,033), and pattern counts vary widely (288 bottom etcnature vs. 65,640 bottom plants). The broad 'etc' pattern may have fuzzy boundaries, and the image file format is not clear on the page.",
+ "amount_ko": "이미지 약 41만 장(415,038장), 클래스 20종",
+ "amount_en": "about 410,000 images (415,038), 20 classes",
+ "labels_ko": "옷 영역 다각형, 윗옷·아래옷 구분, 무늬 종류",
+ "labels_en": "garment polygon, top or bottom, pattern type",
+ "status": "full-run-2026-11-02"
+}

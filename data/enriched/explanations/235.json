@@ -1,0 +1,12 @@
+{
+ "dataset_id": "235",
+ "easy_ko": "산업단지의 저장탱크, 배관, 밸브, 배전반, 에어컨 실외기, 공장, 사람, 차, 배를 열화상 카메라로 찍고, 정상인지 아니면 새는 곳·합선·과열 같은 이상이 있는지 표시한 데이터입니다. 공장 단지에서 사고가 나기 전에 위험을 알아채는 안전 AI를 만들 수 있습니다.",
+ "easy_en": "Thermal-camera photos of storage tanks, pipes, valves, switchboards, outdoor AC units, factories, people, cars and ships in industrial complexes, each marked as normal or showing a problem such as a leak, short circuit or overheating. You can build safety AI that spots danger in industrial areas before an accident happens.",
+ "detail_ko": "산업단지 객체 10종(저장탱크, 이송배관, 밸브, 배전반, 에어컨 실외기, 공장 내외부, 사람, 자동차, 선박 등)의 열화상 이미지 1,034,629장(객체별 정상 약 7.6~7.9만 + 이상 약 2.5~2.9만, jpg)에 대상 객체, 상태(정상/누출/단락/고온), 영역을 JSON으로 붙였습니다. 이상 상황 일부는 연출된 것일 수 있으며, 기준 성능은 기록에서 확인되지 않습니다.",
+ "detail_en": "1,034,629 thermal images (jpg) of 10 industrial-complex object types (storage tanks, pipelines, valves, switchboards, outdoor AC units, factory interiors and exteriors, people, cars, ships), each with about 76–79k normal and 25–29k abnormal images, with JSON object, state (normal, leak, short circuit, high temperature) and region. Some abnormal situations may be staged; no baseline is visible in the record.",
+ "amount_ko": "열화상 사진 약 103만 장, 대상 10종",
+ "amount_en": "about 1.03M thermal images, 10 object types",
+ "labels_ko": "대상 종류, 정상·이상 상태(누출·합선·과열), 영역",
+ "labels_en": "object type, normal or abnormal state (leak, short, overheating), region",
+ "status": "full-run-2026-11-02"
+}

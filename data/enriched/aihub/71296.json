@@ -1,0 +1,29 @@
+{
+ "dataset_id": "71296",
+ "title_en": "Living-environment noise AI data and complaint management service",
+ "summary_ko": "층간소음(발걸음·망치질·가구 끄는 소리 등)·공사장·사업장·교통 소음 38종 약 3.9만 건의 음원과 스펙트로그램 이미지에 소음 종류와 시작·끝 시간을 붙인 데이터입니다. 층간소음 같은 생활 소음을 자동으로 구분하고 민원을 관리하는 AI에 쓸 수 있습니다.",
+ "summary_en": "About 39,000 recordings and spectrogram images of 38 noise types in 4 groups (between-floor noise such as footsteps, hammering and dragging furniture; construction; workplaces; traffic), with noise class and start/end times. For AI that identifies everyday noise such as between-floor noise and manages complaints.",
+ "contents_ko": "소음 음원(wav) + 스펙트로그램(jpg) + JSON(소음 종류, 시작·끝 시간).",
+ "contents_en": "Noise audio (wav) + spectrograms (jpg) + JSON (noise class, start/end time).",
+ "modalities": ["audio", "image"],
+ "tasks": ["audio_classification"],
+ "topics": [{"ko": "소음·음향", "en": "Noise and acoustics"}, {"ko": "생활 민원", "en": "Residential complaints"}],
+ "keywords_ko": ["층간소음", "생활소음", "공사장 소음", "소음 분류", "민원"],
+ "keywords_en": ["between-floor noise", "residential noise", "construction noise", "noise classification", "complaints"],
+ "labels": ["noise class (3 levels)", "start/end time"],
+ "file_formats": ["wav", "jpg", "json"],
+ "scale_ko": "소음 약 3.9만 건, 소분류 38종",
+ "classes_example": ["어른발걸음소리", "아이들발걸음소리", "망치질소리", "가구끄는소리", "강아지짓는소리", "굴착기의땅파는소리"],
+ "baseline": [{"task": "noise classification", "model": "ResNet-50", "metric": "accuracy", "value": "97.21%"}],
+ "difficulty": "beginner",
+ "difficulty_note_ko": "약 54GB이고 스펙트로그램 이미지가 함께 있어 이미지 분류처럼 바로 실습할 수 있습니다.",
+ "skills_needed_ko": ["파이썬", "CNN 이미지 분류", "오디오 기초"],
+ "caveats_ko": ["데이터 영역이 '한국어'로 잘못 표기됨(AI Hub 오류)", "585번 도시 소리 데이터와 소음 종류가 일부 겹침"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "층간소음 종류 분류", "title_en": "Between-floor noise classifier", "desc_ko": "스펙트로그램으로 발걸음·가구·망치 소리를 분류합니다.", "desc_en": "Classify footsteps, furniture and hammering from spectrograms."},
+  {"level": "capstone", "title_ko": "층간소음 증거 기록기", "title_en": "Floor-noise evidence logger", "desc_ko": "소음 종류와 시간을 자동 기록해 민원 자료를 만듭니다.", "desc_en": "Log noise type and time automatically as complaint evidence."},
+  {"level": "research", "title_ko": "원음 vs 스펙트로그램 입력", "title_en": "Raw audio vs spectrogram", "desc_ko": "원음 모델과 스펙트로그램 모델의 분류 성능을 비교합니다.", "desc_en": "Compare raw-audio and spectrogram models."}
+ ],
+ "doc_used": true,
+ "uncertain": []
+}

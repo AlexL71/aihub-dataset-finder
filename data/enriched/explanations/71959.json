@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71959",
+ "easy_ko": "드라마, 예능, 교양, 뉴스 같은 방송 영상에서 얼굴, 번호판, 로고, 자막이 나오는 장면을 골라, 그 부분 영역과 한국어, 영어 설명을 붙인 데이터입니다. 방송 영상을 다시 쓸 수 있게 자막을 지우고 개인 정보를 가리는 AI에 쓸 수 있습니다.",
+ "easy_en": "Scenes picked from TV dramas, variety shows, documentaries and news where faces, licence plates, logos or subtitles appear, with those areas painted in and Korean and English descriptions. You can use it to build AI that removes subtitles and hides personal details so broadcast footage can be reused.",
+ "detail_ko": "드라마·예능·교양·뉴스 등 방송 영상 15,000건에서 얼굴·번호판·로고 등 개인식별·상업적 요소와 자막이 담긴 장면을 골라, 클린본 영상·마스크 영상(mp4), 썸네일(jpg)과 객체 단위 분할 마스크 75,000장, 한글·영어 캡션, 객체 정보(JSON)를 만들었습니다(예능 13,070개, 교양 1,930개 등). 방송 저작물이라 이용 조건을 확인해야 하고, 예능 장르가 대부분이라 장르 불균형이 크며, 성능 지표 값은 팩 앞부분에 없습니다.",
+ "detail_en": "Scenes with faces, licence plates, logos and other identifying or commercial elements and subtitles, selected from 15,000 broadcast videos (dramas, variety, educational, news), with clean and mask videos (mp4), thumbnails (jpg), 75,000 object-level segmentation masks and JSON Korean and English captions and object information (such as 13,070 variety and 1,930 educational items). These are broadcast works, so check the terms of use; variety shows dominate, so genres are imbalanced; no metric values are in the pack.",
+ "amount_ko": "원천 15,000건, 라벨 75,000장",
+ "amount_en": "15,000 source videos, 75,000 labels",
+ "labels_ko": "가릴 부분 영역, 한국어·영어 설명, 물체 정보",
+ "labels_en": "segmentation mask, caption (Korean, English), object metadata",
+ "status": "full-run-2026-11-02"
+}

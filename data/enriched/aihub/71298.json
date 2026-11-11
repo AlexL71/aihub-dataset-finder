@@ -1,0 +1,29 @@
+{
+ "dataset_id": "71298",
+ "title_en": "Offline trademark image data for IP trademark protection",
+ "summary_ko": "서울·경기·인천 등 거리의 간판(88%), 의류·잡화, 종이 인쇄물에서 직접 찍은 상표 이미지 약 20만 장에 비엔나코드 기준으로 상표 객체 약 54만 개를 상자·다각형으로 표시한 데이터입니다. 실제 생활 속 상표 도용·유사 상표를 찾는 AI에 쓸 수 있습니다.",
+ "summary_en": "About 200,000 photos of trademarks taken offline on street signs (88%), clothing and accessories, and printed materials in Seoul, Gyeonggi, Incheon and elsewhere, with about 540,000 trademark objects boxed and outlined by Vienna Code. For AI that finds copied or similar trademarks in the real world.",
+ "contents_ko": "상표 사진(jpg) + JSON(상자, 다각형, 비엔나코드, 수집 장소).",
+ "contents_en": "Trademark photos (jpg) + JSON (boxes, polygons, Vienna Code, location).",
+ "modalities": ["image"],
+ "tasks": ["object_detection", "segmentation", "retrieval_recommendation"],
+ "topics": [{"ko": "특허·지식재산", "en": "Patents and intellectual property"}, {"ko": "브랜드·마케팅", "en": "Brands and marketing"}],
+ "keywords_ko": ["상표", "간판", "브랜드 도용", "유사 상표", "지식재산 보호"],
+ "keywords_en": ["trademarks", "shop signs", "brand infringement", "similar trademarks", "IP protection"],
+ "labels": ["bounding box", "polygon", "Vienna Code class", "source type"],
+ "file_formats": ["jpg", "json"],
+ "scale_ko": "사진 약 20만 장, 상표 객체 약 54만 개, 수집원 3종",
+ "classes_example": ["간판", "의류잡화", "종이인쇄물"],
+ "baseline": [],
+ "difficulty": "intermediate",
+ "difficulty_note_ko": "약 132GB이고 실제 거리 사진이라 배경이 복잡합니다.",
+ "skills_needed_ko": ["파이썬", "YOLO 탐지", "임베딩 검색(FAISS 등)"],
+ "caveats_ko": ["실제 상호·상표가 찍혀 있어 상업적 사용 주의", "간판 사진이 88%로 치우침", "성능 지표 표가 팩에서 비어 있음", "71285·71290번 상표 데이터와 같은 구축 기관"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "간판 로고 탐지", "title_en": "Shop-sign logo detection", "desc_ko": "거리 사진에서 간판 속 로고를 찾습니다.", "desc_en": "Detect logos on shop signs in street photos."},
+  {"level": "capstone", "title_ko": "짝퉁 의심 상표 탐지기", "title_en": "Counterfeit-logo spotter", "desc_ko": "찍은 로고와 등록 상표를 비교해 비슷하면 경고합니다.", "desc_en": "Compare a photographed logo with registered marks and flag look-alikes."},
+  {"level": "research", "title_ko": "온라인→오프라인 상표 인식", "title_en": "Online-to-offline logo recognition", "desc_ko": "깨끗한 상표 이미지로 학습한 모델을 거리 사진에 맞추는 방법을 연구합니다.", "desc_en": "Adapt models trained on clean logos to real street photos."}
+ ],
+ "doc_used": true,
+ "uncertain": ["baseline values"]
+}

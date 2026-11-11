@@ -1,0 +1,32 @@
+{
+ "dataset_id": "71500",
+ "title_en": "Major flower crop quality data",
+ "summary_ko": "장미·국화·백합·거베라·접목선인장·심비디움·호접란·스킨답서스·고무나무 9개 품목을 농가·유통센터·도소매점에서 찍은 정상·결점 이미지 149만여 장입니다. 정상 꽃은 상자로, 중결점은 다각형으로 표시되어 있고 유통환경 기록도 있습니다. 꽃 품질 등급 판정과 결점 검사 AI에 쓸 수 있습니다.",
+ "summary_en": "About 1.49 million images of 9 flower and plant items (rose, chrysanthemum, lily, gerbera, grafted cactus, cymbidium, phalaenopsis, pothos, rubber plant) from farms, distribution centres and shops; normal items boxed, major defects outlined by polygons, plus distribution-environment records. For flower quality grading and defect inspection.",
+ "contents_ko": "이미지(JPG) + JSON(정상 상자, 중결점 다각형, 품질 등급, 유통환경 정보).",
+ "contents_en": "Images (JPG) + JSON (normal boxes, defect polygons, quality grade, distribution info).",
+ "modalities": ["image", "sensor"],
+ "tasks": ["image_classification", "object_detection", "segmentation", "anomaly_detection"],
+ "topics": [{"ko": "농업·화훼", "en": "Agriculture and flowers"}, {"ko": "품질 검사·유통", "en": "Quality inspection and distribution"}],
+ "keywords_ko": ["화훼", "꽃 품질", "등급 판정", "중결점", "장미", "유통"],
+ "keywords_en": ["flowers", "flower quality", "grading", "major defects", "rose", "distribution"],
+ "labels": ["bounding box", "polygon", "quality grade", "class"],
+ "file_formats": ["jpg", "json"],
+ "scale_ko": "이미지 1,491,441장 (정상 575,379장, 중결점 916,062장), 품목 9종",
+ "classes_example": ["장미", "국화", "백합", "거베라", "접목선인장", "심비디움", "호접란", "스킨답서스", "고무나무"],
+ "baseline": [
+  {"task": "quality grade classification (normal flowers)", "model": "ResNet18", "metric": "F1-score", "value": "0.9716"},
+  {"task": "major defect presence", "model": "ResNet18", "metric": "F1-score", "value": "0.8677"}
+ ],
+ "difficulty": "intermediate",
+ "difficulty_note_ko": "분류 실습에 좋지만 전체 약 220GB입니다. 품목 하나만 골라 쓰세요.",
+ "skills_needed_ko": ["파이썬", "이미지 분류(ResNet)", "YOLO 탐지"],
+ "caveats_ko": ["전체 약 220GB", "성능표의 AI 과제가 'Text Classification'으로 적혀 있지만 실제는 이미지 분류", "유통환경모니터링 데이터의 형식이 팩에 자세히 없음"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "꽃 품목 분류", "title_en": "Flower item classification", "desc_ko": "사진 속 꽃이 9개 품목 중 무엇인지 분류합니다.", "desc_en": "Classify flowers into the 9 items."},
+  {"level": "capstone", "title_ko": "화훼 경매 등급 도우미", "title_en": "Flower auction grading assistant", "desc_ko": "꽃 사진으로 등급과 결점 위치를 보여주는 검사 앱을 만듭니다.", "desc_en": "Build an app showing grade and defect locations."},
+  {"level": "research", "title_ko": "유통 단계별 품질 변화", "title_en": "Quality change along distribution", "desc_ko": "농가에서 매장까지 결점 비율이 어떻게 변하는지 분석합니다.", "desc_en": "Analyse how defect rates change from farm to shop."}
+ ],
+ "doc_used": true,
+ "uncertain": ["개요는 120만 장 이상, 구축량은 1,491,441장으로 표기가 다름"]
+}

@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71533",
+ "easy_ko": "과학기술 문서의 글을 읽고 답하는 질문과 정답을 약 40만 개 모은 데이터로, 답 부분 찾기, 예·아니요, 표에서 답 찾기, 고르기, 순서 묻기처럼 여러 종류의 질문이 있습니다. 과학기술 분야 질문에 답하는 챗봇이나 똑똑한 검색에 쓸 수 있습니다.",
+ "easy_en": "About 400,000 questions and answers based on science and technology documents, with several question types: finding the answer span, yes/no, finding the answer in a table, multiple choice and step-by-step procedures. You can use it to build chatbots or smart search that answer science and technology questions.",
+ "detail_ko": "기술과학 문서 지문 22,616건(txt)에서 만든 지문-질문-답변 400,346건(JSON)으로, 질문 유형 5종(정답경계추출형, YesNo 단문형, 표 정답 추출형, 다지선다형, 절차형)과 동의 질문이 있으며 수식은 LaTeX, 표는 HTML로 적혀 있습니다. 기준 성능은 Longformer 장문 질의응답 EM 74.18%, F1 0.883, TAPEX 표 질의응답 EM 51.63%입니다. 수식·표 문법은 전처리가 필요하고, 같은 기관의 71532(요약) 데이터와 원천이 비슷합니다.",
+ "detail_en": "400,346 passage-question-answer items (JSON) built from 22,616 science and technology passages (txt), with 5 question types (answer-span extraction, short yes/no, table answer extraction, multiple choice, procedure) and paraphrased questions; formulas are in LaTeX and tables in HTML. Baselines: long-document QA with Longformer, EM 74.18% and F1 0.883; table QA with TAPEX, EM 51.63%. The LaTeX and HTML markup needs preprocessing, and the sources overlap with the same builder's summarisation set 71532.",
+ "amount_ko": "질의응답 400,346건, 지문 22,616건, 질문 유형 5종",
+ "amount_en": "400,346 question-answer items, 22,616 passages, 5 question types",
+ "labels_ko": "질문, 정답 부분, 질문 종류, 같은 뜻 질문",
+ "labels_en": "questions, answer spans, question type, paraphrases",
+ "status": "full-run-2026-11-02"
+}

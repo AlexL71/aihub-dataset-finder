@@ -1,0 +1,29 @@
+{
+ "dataset_id": "71759",
+ "title_en": "Korean mask dance (talchum) motion data",
+ "summary_ko": "국가무형문화재 탈춤 13개 종목을 전문가(전승자·숙련자)와 비전문가가 춘 동작을 4K로 찍은 이미지 126,728장과 2D 동영상 390클립, 3D 모션캡처 390개로, 사람과 무구(탈·소품)가 상자로, 몸 자세가 키포인트로 표시되어 있습니다. 탈춤 원격 교습·자세 교정·동작 인식 AI에 쓸 수 있습니다.",
+ "summary_en": "13 national-heritage mask dance styles performed by experts and non-experts: 126,728 4K images, 390 2D video clips and 390 3D motion-capture files, with boxes for people and props and body keypoints. For remote talchum teaching, posture correction and motion recognition.",
+ "contents_ko": "이미지(jpg, 3840×2160) + 동영상 + 3D 모션캡처(FBX, CSV) + JSON(상자, 키포인트).",
+ "contents_en": "Image (jpg, 3840×2160) + video + 3D motion capture (FBX, CSV) + JSON (boxes, keypoints).",
+ "modalities": ["image", "video", "3d"],
+ "tasks": ["keypoint_pose", "object_detection", "action_recognition"],
+ "topics": [{"ko": "전통문화", "en": "Traditional culture"}, {"ko": "동작 인식", "en": "Motion recognition"}],
+ "keywords_ko": ["탈춤", "무형문화재", "모션캡처", "자세 추정", "춤 동작", "YOLOv8"],
+ "keywords_en": ["mask dance", "intangible heritage", "motion capture", "pose estimation", "dance motion", "YOLOv8"],
+ "labels": ["bounding box", "keypoints"],
+ "file_formats": ["jpg", "json", "fbx", "csv"],
+ "scale_ko": "이미지·라벨 각 126,728개, 동영상 390클립, 3D 모션 390개, 서브라벨 12,000개, 13종목",
+ "classes_example": ["탈춤 13개 종목", "전문가", "비전문가"],
+ "baseline": [],
+ "difficulty": "advanced",
+ "difficulty_note_ko": "4K 이미지와 3D 모션이 있어 전체 약 5.4TB입니다. 이미지 일부로 자세 추정부터 해보세요.",
+ "skills_needed_ko": ["파이썬", "YOLO 자세 추정", "3D 모션 데이터(FBX) 기초"],
+ "caveats_ko": ["페이지에 성능 점수 표가 없음(YOLOv8s 등 소개만 있음)", "전문가:비전문가가 66.7:33.3 비율", "13개 종목 이름은 팩 앞부분에 없음"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "탈춤 자세 키포인트 시각화", "title_en": "Talchum pose visualization", "desc_ko": "이미지에서 몸 키포인트를 뽑아 동작을 그려봅니다.", "desc_en": "Extract and draw body keypoints from dance images."},
+  {"level": "capstone", "title_ko": "탈춤 자세 교정 앱", "title_en": "Talchum posture coach", "desc_ko": "사용자 자세를 전문가 자세와 비교해 점수를 주는 앱을 만듭니다.", "desc_en": "Score a user pose against expert poses."},
+  {"level": "research", "title_ko": "숙련도 자동 평가", "title_en": "Automatic skill assessment", "desc_ko": "동작 시계열로 전문가와 비전문가를 구분하는 방법을 연구합니다.", "desc_en": "Study separating experts from non-experts by motion sequences."}
+ ],
+ "doc_used": true,
+ "uncertain": []
+}

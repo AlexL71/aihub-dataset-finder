@@ -1,0 +1,12 @@
+{
+ "dataset_id": "653",
+ "easy_ko": "구입한 여러 분야의 책에서 모은 아주 많은 한국어 문장을 철학, 종교, 사회과학, 문학, 역사 같은 도서 분류별로 정리한 데이터입니다. 한국어를 잘 이해하는 언어 AI를 학습시키거나 음성 합성·인식용 문장 자료로 쓸 수 있습니다.",
+ "easy_en": "A very large set of Korean sentences collected from purchased books, organised by library subject such as philosophy, religion, social science, literature and history. You can use it to train Korean language AI or as sentence material for speech synthesis and recognition.",
+ "detail_ko": "구매 도서에서 모은 한국어 문장 10억 어절(txt, JSON: 문장, 도서 분류 정보)을 한국십진분류(총류, 철학, 종교, 사회과학, 자연과학, 문학, 역사 등) 분야별로 정리했습니다. 성능 지표 표는 비어 있고, 라벨이 문장 단위뿐이라 과제용 라벨은 없습니다. 도서 저작권 때문에 사용 범위 확인이 필요합니다.",
+ "detail_en": "1 billion words (eojeol) of Korean sentences from purchased books (txt and JSON: sentence, subject classification), organised by Korean Decimal Classification (general works, philosophy, religion, social sciences, natural sciences, literature, history and more). The performance table is empty, and labels are sentence-level only, with no task labels. Book copyright limits use.",
+ "amount_ko": "문장 10억 어절",
+ "amount_en": "1 billion words",
+ "labels_ko": "문장, 책 분야 분류",
+ "labels_en": "sentence, book subject class",
+ "status": "full-run-2026-11-02"
+}

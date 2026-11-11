@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71791",
+ "easy_ko": "청소년이 진로 문장 완성 검사에 쓴 답 4만여 건에 전문가가 문항마다 쓴 해석과 진로 성숙도(상, 중, 하)를 붙인 글 데이터입니다. 진로 검사 결과를 자동으로 풀이하고 진로 상담을 돕는 AI에 쓸 수 있습니다.",
+ "easy_en": "Over 40,000 answers written by teenagers on a career sentence-completion test, each with an expert's interpretation of every item and a career maturity level (high, middle, low). You can use it to build AI that interprets career test results and supports career counselling.",
+ "detail_ko": "청소년의 진로문장완성검사 응답 40,422건(JSON)에 문항별 전문가 해석 글과 진로성숙도 3단계(상, 중, 하)를 붙였습니다. 청소년 응답이라 이용 조건과 연구 윤리를 확인해야 하고, 특정 기관 검사 도구 기반이며, 성능 지표 값은 팩에 없습니다.",
+ "detail_en": "40,422 teenagers' responses (JSON) to a career sentence-completion test, with expert interpretations for each item and a 3-level career maturity rating (high, middle, low). These are minors' responses, so check the terms of use and research ethics; the test is one organisation's instrument, and no metric values are in the pack.",
+ "amount_ko": "응답 40,422건, 진로성숙도 3단계",
+ "amount_en": "40,422 responses, 3 career maturity levels",
+ "labels_ko": "진로 성숙도, 전문가 해석",
+ "labels_en": "career maturity level, expert interpretation",
+ "status": "full-run-2026-11-02"
+}

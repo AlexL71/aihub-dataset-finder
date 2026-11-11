@@ -1,0 +1,29 @@
+{
+ "dataset_id": "71766",
+ "title_en": "Agricultural and livestock non-point pollution source images flowing into rivers",
+ "summary_ko": "4대강 유역과 새만금 일대 비점오염원 관리지역을 드론 등으로 찍은 이미지 10만 장(농업계 약 6.6만·축산계 약 4.4만)과 비점 환경 속성 데이터로, 오염원이 될 수 있는 농경지·축사 등이 다각형으로 표시되어 있습니다. 하천으로 흘러드는 비점오염원 통합 모니터링 AI에 쓸 수 있습니다.",
+ "summary_en": "100,000 drone and aerial images (about 66k agricultural, 44k livestock) of non-point pollution areas in the four major river basins and Saemangeum, with polygons on fields, barns and other possible sources, plus environmental attribute data. For integrated monitoring of non-point pollution flowing into rivers.",
+ "contents_ko": "이미지(tiff) + JSON(다각형, 비점 환경 속성).",
+ "contents_en": "Image (tiff) + JSON (polygons, environmental attributes).",
+ "modalities": ["image"],
+ "tasks": ["segmentation", "object_detection"],
+ "topics": [{"ko": "수질 환경", "en": "Water quality"}, {"ko": "농축산 오염 관리", "en": "Farm pollution management"}],
+ "keywords_ko": ["비점오염원", "드론", "4대강", "축사", "농경지", "U-Net"],
+ "keywords_en": ["non-point pollution", "drone", "four major rivers", "livestock barn", "farmland", "U-Net"],
+ "labels": ["polygon", "environmental attributes"],
+ "file_formats": ["tiff", "json"],
+ "scale_ko": "원천·라벨 각 100,000장(농업계 약 6.6만·축산계 약 4.4만), 비점 환경 속성 약 2천 세트",
+ "classes_example": ["농업계", "축산계"],
+ "baseline": [],
+ "difficulty": "intermediate",
+ "difficulty_note_ko": "약 64GB이며 항공·드론 이미지 분할 실습에 좋습니다. tiff 다루는 법을 알아야 합니다.",
+ "skills_needed_ko": ["파이썬", "분할 모델(U-Net)", "GIS·tiff 이미지 처리"],
+ "caveats_ko": ["페이지에 성능 점수 표가 없음(U-Net·YOLOv8 등 소개만 있음)", "세부 오염원 클래스 목록은 팩 앞부분에 없음", "같은 지역 이미지가 많아 지역 단위로 학습·평가를 나누는 것이 좋음"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "농경지·축사 분할", "title_en": "Farmland and barn segmentation", "desc_ko": "드론 이미지에서 농경지와 축사 영역을 분할합니다.", "desc_en": "Segment farmland and barns in drone images."},
+  {"level": "capstone", "title_ko": "비점오염원 지도", "title_en": "Pollution source map", "desc_ko": "분할 결과를 GIS 지도에 올려 하천 주변 오염원 분포를 보여줍니다.", "desc_en": "Map segmented sources near rivers on GIS."},
+  {"level": "research", "title_ko": "시계열 변화 탐지", "title_en": "Temporal change detection", "desc_ko": "같은 지역의 시기별 이미지로 오염원 변화를 자동으로 찾는 방법을 연구합니다.", "desc_en": "Study detecting changes in pollution sources over time."}
+ ],
+ "doc_used": true,
+ "uncertain": ["드론 외 위성·항공 이미지 포함 여부"]
+}

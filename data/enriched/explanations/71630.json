@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71630",
+ "easy_ko": "두 사람이 정해진 성격과 주제를 받아 며칠 간격을 두고 여러 번 이어서 나눈 한국어 일상 대화 8만 개로, 대화마다 요약이 붙어 있습니다. 예전에 나눈 대화를 기억하는 한국어 챗봇에 쓸 수 있습니다.",
+ "easy_en": "80,000 Korean everyday conversations in which two people, each given a persona and topic, talk several times with gaps of days in between, with a summary for each session. You can use it to build Korean chatbots that remember earlier conversations.",
+ "detail_ko": "두 사람이 페르소나와 주제를 받아 시간 간격을 두고 이어서 나눈 한국어 대화 80,000건(JSON; 2세션 40,000, 3세션 20,000, 4세션 20,000, 전문대화 4,000건 포함)에 참여자·페르소나·주제·시간 간격 정보와 세션별 요약을 붙였습니다. 기준 성능은 T5 멀티세션 응답 생성 적절 생성률 78.65%, Likert 점수 4.09입니다. 성능이 사람 평가 위주라 재현이 어렵고, 전문대화(5%)는 2세션만 있습니다.",
+ "detail_en": "80,000 Korean conversations (JSON; 40,000 with 2 sessions, 20,000 with 3, 20,000 with 4, including 4,000 expert conversations) between two people given personas and topics, continued after time gaps, with participant, persona, topic and time-gap information and a summary for each session. Baselines: multi-session response generation with T5, appropriate-response rate 78.65% and Likert score 4.09. The scores rely on human ratings, so they are hard to reproduce, and expert conversations (5%) have only 2 sessions.",
+ "amount_ko": "대화 80,000건(2세션 40,000, 3세션 20,000, 4세션 20,000)",
+ "amount_en": "80,000 conversations (40,000 two-session, 20,000 three-session, 20,000 four-session)",
+ "labels_ko": "성격(페르소나), 주제, 대화 사이 시간 간격, 세션 요약",
+ "labels_en": "persona, topic, time gap, summary",
+ "status": "full-run-2026-11-02"
+}

@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71530",
+ "easy_ko": "서울과 큰 도시들, 경기도에서 차량 약 3,000대가 몇 달 동안 다닌 운행 기록에, 사람이 타고 내린 곳과 주변 시설 정보를 붙인 표 데이터입니다. 쇼핑몰이나 역 같은 시설 주변에서 시간대별로 차를 타려는 사람이 얼마나 될지 예측하는 AI에 쓸 수 있습니다.",
+ "easy_en": "Table data from the trip records of about 3,000 vehicles driving for several months in Seoul, other big cities and Gyeonggi Province, with where people got on and off and nearby facilities. You can use it to build AI that predicts how many people will want a ride near places such as malls or stations at each hour.",
+ "detail_ko": "서울·6대 광역시·경기도(8개 지역)에서 차량 약 3,000대가 3개월 이상 운행한 기록 원천 18,880,725건 중 410,313건에 위치, 시간, 승하차, 교통유발 시설물, 지역 라벨을 JSON으로 붙였습니다. 기준 성능은 TGNet 교통유발시설별 수요 예측 MAPE 9%입니다. 라벨링 유형이 '바운딩박스(텍스트)'로 적혀 있어 실제 라벨 의미를 확인해야 하고, 울산·부산 데이터 비율이 낮습니다.",
+ "detail_en": "Trip records from about 3,000 vehicles driven for 3+ months in Seoul, the 6 metropolitan cities and Gyeonggi Province (8 regions): 18,880,725 source records, of which 410,313 carry JSON labels for location, time, pick-up/drop-off, traffic-generating facility and region. Baseline: demand prediction per traffic-generating facility with TGNet, MAPE 9%. The label type is listed as 'bounding box (text)', so check what the labels really mean; Ulsan and Busan have small shares.",
+ "amount_ko": "원천 18,880,725건, 라벨 410,313건, 지역 8개",
+ "amount_en": "18,880,725 source records, 410,313 labelled, 8 regions",
+ "labels_ko": "타고 내린 곳, 주변 시설, 지역",
+ "labels_en": "pick-up/drop-off, facility, region",
+ "status": "full-run-2026-11-02"
+}

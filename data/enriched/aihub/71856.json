@@ -1,0 +1,29 @@
+{
+ "dataset_id": "71856",
+ "title_en": "Synthetic data for military perimeter-defence environments",
+ "summary_ko": "해안·경계 감시 상황을 합성한 가시광선(EO) 이미지 112,911장과 적외선(IR) 이미지 36,352장에 선박·항공기·드론·새·삐라·오물풍선 등의 상자와 이미지 설명을 붙인 데이터입니다. 실제로 드문 상황(엣지케이스)까지 탐지하는 경계 감시 AI에 쓸 수 있습니다.",
+ "summary_en": "112,911 synthetic visible-light (EO) and 36,352 infrared (IR) images of coastal and perimeter surveillance scenes, with boxes and captions for ships, aircraft, drones, birds, propaganda leaflets and trash balloons. For surveillance AI that also covers rare edge cases.",
+ "contents_ko": "합성 EO·IR 이미지(jpg) + JSON(상자, 이미지 설명), 씨드 데이터 500건.",
+ "contents_en": "Synthetic EO and IR images (jpg) + JSON (boxes, captions), 500 seed samples.",
+ "modalities": ["image", "text"],
+ "tasks": ["object_detection", "image_captioning", "image_generation"],
+ "topics": [{"ko": "국방·경계 감시", "en": "Defence and surveillance"}, {"ko": "합성 데이터", "en": "Synthetic data"}],
+ "keywords_ko": ["경계 감시", "합성 데이터", "적외선", "드론 탐지", "선박 탐지", "오물풍선"],
+ "keywords_en": ["perimeter surveillance", "synthetic data", "infrared", "drone detection", "ship detection", "trash balloons"],
+ "labels": ["bounding box", "caption"],
+ "file_formats": ["jpg", "json"],
+ "scale_ko": "이미지 149,263장(EO 112,911·IR 36,352), 객체 345,991개, 클래스 9종",
+ "classes_example": ["어선", "군함", "상선", "고정익 유인항공기", "회전익 유인항공기", "무인항공기", "새", "삐라", "오물폭탄"],
+ "baseline": [],
+ "difficulty": "intermediate",
+ "difficulty_note_ko": "약 82GB입니다. YOLO나 Grounding DINO로 탐지 실습에 쓰기 좋습니다.",
+ "skills_needed_ko": ["파이썬", "YOLO 탐지", "Grounding DINO"],
+ "caveats_ko": ["합성 이미지라 실제 감시 영상 성능은 따로 검증해야 함", "데이터 개요가 비어 있어 합성 방법 확인 필요", "모델 성능 수치가 팩에 없음", "71858 실제 경계 인식 데이터와 같은 기관"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "드론·새 구분", "title_en": "Drone vs bird", "desc_ko": "하늘의 작은 물체가 드론인지 새인지 탐지·분류합니다.", "desc_en": "Detect and tell drones from birds."},
+  {"level": "capstone", "title_ko": "주야간 해안 감시", "title_en": "Day-night coastal watch", "desc_ko": "EO·IR 이미지로 낮과 밤 모두 선박·항공기를 탐지하는 시스템을 만듭니다.", "desc_en": "Detect ships and aircraft day and night with EO and IR."},
+  {"level": "research", "title_ko": "합성→실제 탐지 일반화", "title_en": "Synthetic-to-real detection", "desc_ko": "합성 이미지를 실제 데이터(71858)에 더했을 때 탐지 성능 변화를 연구합니다.", "desc_en": "Study adding synthetic images to real data (71858)."}
+ ],
+ "doc_used": true,
+ "uncertain": []
+}

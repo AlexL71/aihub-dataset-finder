@@ -1,0 +1,29 @@
+{
+ "dataset_id": "71698",
+ "title_en": "Knowledge Q&A speech and environmental sound data in various noise conditions",
+ "summary_ko": "여러 소음 환경에서 녹음한 지식 질문·답변 대화 음성 약 2,025시간(41,503건)과, 이상소리 감지를 위한 환경 소리 약 510시간(61,258건)입니다. 시끄러운 곳에서도 말을 알아듣고 답하는 AI 스피커나 위험 소리 감지 AI에 쓸 수 있습니다.",
+ "summary_en": "About 2,025 hours (41,503 items) of knowledge Q&A conversation speech recorded in various noise conditions, plus about 510 hours (61,258 items) of environmental sounds for abnormal-sound detection. For AI speakers that understand speech in noise and AI that detects danger sounds.",
+ "contents_ko": "대화·환경 소리 음성(wav) + 전사·주제 라벨(JSON, SRT).",
+ "contents_en": "Conversation and environmental sound audio (wav) + transcripts and topic labels (JSON, SRT).",
+ "modalities": ["audio", "text"],
+ "tasks": ["speech_recognition", "audio_classification", "question_answering", "anomaly_detection"],
+ "topics": [{"ko": "음성 인식", "en": "Speech recognition"}, {"ko": "생활 안전", "en": "Everyday safety"}],
+ "keywords_ko": ["소음 환경", "음성 인식", "AI 스피커", "지식 질의응답", "이상소리 감지", "환경 소리"],
+ "keywords_en": ["noisy environment", "speech recognition", "AI speaker", "knowledge Q&A", "abnormal sound detection", "environmental sound"],
+ "labels": ["transcript", "topic class"],
+ "file_formats": ["wav", "json", "srt"],
+ "scale_ko": "총 2,534.75시간(102,761건): 대화 음성 2,024.89시간(41,503건), 환경 소리 509.87시간(61,258건)",
+ "classes_example": ["경제및산업", "사회및제도", "문화및라이프", "게임및과학", "건강및의학", "언론및보도"],
+ "baseline": [],
+ "difficulty": "intermediate",
+ "difficulty_note_ko": "음성 인식 실습에 좋지만 전체 약 882GB입니다. 일부 주제만 받아 쓰세요.",
+ "skills_needed_ko": ["파이썬", "음성 인식 모델(Whisper 등)", "오디오 분류"],
+ "caveats_ko": ["전체 약 882GB", "환경 소리 클래스 목록과 성능 지표 값이 팩 앞부분에 없음", "샘플 라벨에 WER 0.24~0.25 같은 값이 보이나 공식 성능인지 불명확"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "소음 속 받아쓰기 비교", "title_en": "Transcription in noise", "desc_ko": "Whisper로 소음 수준별 받아쓰기 오류율(WER)을 비교합니다.", "desc_en": "Compare Whisper's WER across noise levels."},
+  {"level": "capstone", "title_ko": "시끄러운 곳 AI 스피커", "title_en": "AI speaker for noisy places", "desc_ko": "음성 인식과 질문 답변 모델을 이어 소음 속 지식 답변 스피커를 만듭니다.", "desc_en": "Chain speech recognition and QA into a knowledge speaker for noisy places."},
+  {"level": "research", "title_ko": "이상소리 실시간 감지", "title_en": "Real-time abnormal sound detection", "desc_ko": "환경 소리에서 위험 상황 소리를 빠르게 찾는 가벼운 모델을 연구합니다.", "desc_en": "Study lightweight models that quickly detect danger sounds."}
+ ],
+ "doc_used": true,
+ "uncertain": ["환경 소리 종류(클래스) 확인 필요"]
+}

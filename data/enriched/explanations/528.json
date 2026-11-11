@@ -1,0 +1,12 @@
+{
+ "dataset_id": "528",
+ "easy_ko": "여러 가족의 가족사진, 여러 각도에서 찍은 개인 사진, 나이대별 사진에 얼굴 위치와 얼굴 주요 점, 가족 관계(할아버지·어머니·딸 등)와 나이를 표시한 데이터입니다. 얼굴로 가족인지 확인하거나 나이를 추정하는 AI를 연구할 수 있지만, 오용 위험이 있어 조심해야 합니다.",
+ "easy_en": "Family photos, individual photos from several angles and photos from different ages, marked with face position, facial key points, family relation (grandfather, mother, daughter and so on) and age. You can study AI that checks whether people are related or estimates age from a face, but it can be misused, so care is needed.",
+ "detail_ko": "1,000가계 3,000명 이상의 얼굴 이미지 120,836장(가족사진 6,900, 각도별 개인 49,800, 기간별 나이 24,000 등, jpg)에 얼굴 바운딩박스, 특징점, 가족 ID·관계(조부·조모·부·모·아들·딸), 나이대(0~6세부터 67~80세까지 8단계)를 JSON으로 붙였습니다. 기준 성능은 ArcFace 가족 관계 확인 정확도 70.66%, 나이 예측 MAE 3.11세입니다. 실제 가족 얼굴 데이터라 이용 약관과 개인정보 보호를 반드시 확인해야 하며, 가족 관계 추정은 오용 위험이 있습니다.",
+ "detail_en": "120,836 face images (jpg) of 3,000+ people from 1,000 families (6,900 family photos, 49,800 multi-angle individual photos, 24,000 age-series photos and more), with JSON face boxes, landmarks, family ID and relation (grandfather, grandmother, father, mother, son, daughter) and age group (8 bands from 0–6 to 67–80). Baselines: ArcFace kinship verification accuracy 70.66%, age prediction MAE 3.11 years. These are real family faces, so check terms and privacy; kinship inference can be misused.",
+ "amount_ko": "얼굴 사진 약 12만 장, 1,000가족",
+ "amount_en": "about 121k face images, 1,000 families",
+ "labels_ko": "얼굴 위치 상자, 얼굴 주요 점, 가족 관계, 나이대",
+ "labels_en": "face boxes, facial key points, family relation, age group",
+ "status": "full-run-2026-11-02"
+}

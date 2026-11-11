@@ -1,0 +1,32 @@
+{
+ "dataset_id": "632",
+ "title_en": "Finance-specific document OCR data",
+ "summary_ko": "은행·보험 문서 양식에 직접 작성한 뒤 촬영한 문서 이미지 5만 장(은행 2.5만, 보험 2.5만)에 인쇄 글씨와 손글씨 위치(4점 다각형·상자)와 내용을 표시한 데이터입니다. 금융 서류를 자동으로 읽어 업무 자동화(RPA)에 넣는 OCR AI에 쓸 수 있습니다.",
+ "summary_en": "50,000 photos of bank and insurance forms filled in by hand (25,000 bank, 25,000 insurance), with printed and handwritten text marked by 4-point polygons and boxes plus the text. For OCR AI that reads financial paperwork into office automation (RPA).",
+ "contents_ko": "문서 이미지(jpg, png) + JSON(글자 영역, 텍스트, 인쇄·손글씨 구분).",
+ "contents_en": "Document images (jpg, png) + JSON (text regions, text, printed or handwritten).",
+ "modalities": ["image", "text"],
+ "tasks": ["ocr"],
+ "topics": [{"ko": "금융·보험", "en": "Finance and insurance"}, {"ko": "문서 디지털화", "en": "Document digitisation"}],
+ "keywords_ko": ["금융 문서", "OCR", "손글씨", "은행 양식", "RPA"],
+ "keywords_en": ["financial documents", "OCR", "handwriting", "bank forms", "RPA"],
+ "labels": ["4-point polygon", "bounding box", "transcription", "printed/handwritten"],
+ "file_formats": ["jpg", "png", "json"],
+ "scale_ko": "문서 이미지 5만 장(은행 2.5만, 보험 2.5만)",
+ "classes_example": ["인쇄글씨", "손글씨"],
+ "baseline": [
+  {"task": "printed text OCR", "model": "custom (Mask R-CNN based)", "metric": "F1", "value": "0.9667"},
+  {"task": "handwritten text OCR", "model": "custom (Mask R-CNN based)", "metric": "F1", "value": "0.7219"}
+ ],
+ "difficulty": "intermediate",
+ "difficulty_note_ko": "약 151GB이고 인쇄·손글씨가 섞여 있어 손글씨 인식이 어렵습니다.",
+ "skills_needed_ko": ["파이썬", "OCR 모델(텍스트 탐지·인식)"],
+ "caveats_ko": ["전체 약 151GB", "작성 내용이 가상 정보인지 확인 필요", "통계표가 팩에 없음", "최근 2026-10에 수정됨"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "인쇄·손글씨 구분", "title_en": "Printed vs handwritten", "desc_ko": "글자 영역이 인쇄인지 손글씨인지 분류합니다.", "desc_en": "Classify text regions as printed or handwritten."},
+  {"level": "capstone", "title_ko": "은행 신청서 자동 입력", "title_en": "Bank form auto-entry", "desc_ko": "신청서 사진을 읽어 항목별로 표에 채웁니다.", "desc_en": "Read form photos and fill fields into a table."},
+  {"level": "research", "title_ko": "손글씨 인식 개선", "title_en": "Better handwriting OCR", "desc_ko": "605번 손글씨 데이터를 더해 금융 손글씨 인식을 높이는 방법을 연구합니다.", "desc_en": "Add dataset-605 handwriting to improve financial handwriting OCR."}
+ ],
+ "doc_used": true,
+ "uncertain": ["whether filled-in details are synthetic"]
+}

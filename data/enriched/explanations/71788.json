@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71788",
+ "easy_ko": "국가기록원 같은 정부 기관의 기록물과 간행물로 만든 글 약 3억 토큰과 질문-답 데이터, 그리고 혐오, 욕설, 폭력, 범죄 같은 해로운 질문을 종류별로 나눈 데이터입니다. 정부 문서에 답하는 언어 AI나 해로운 질문을 걸러내는 AI에 쓸 수 있습니다.",
+ "easy_en": "About 300 million tokens of text from records and publications of government bodies such as the National Archives, plus question-answer data and harmful questions (hate, swearing, violence, crime and more) sorted by type. You can use it to build language AI that answers questions on government documents, or AI that filters out harmful questions.",
+ "detail_ko": "국가기록원 등 정부 기관의 국가기록물·정부간행물로 만든 말뭉치 304,340,415토큰, 의문사형 질의응답 30,000건과 예/아니오 질의응답, 유해 질의(대분류 7종: 비난/혐오/차별, 선정, 욕설, 폭력, 범죄, 루머, 스팸 및 광고; 세분류 33종)와 페르소나 정보(JSON)입니다. 유해 질의 데이터에는 불쾌한 표현이 포함될 수 있고, 예/아니오 질의응답 수량은 팩에서 잘려 있으며, 성능 지표 값은 팩에 없습니다.",
+ "detail_en": "A corpus of 304,340,415 tokens from national records and government publications (National Archives and other bodies), plus 30,000 wh-question QA items, yes/no QA items and harmful queries in 7 main categories (blame/hate/discrimination, sexual content, swearing, violence, crime, rumours, spam and ads; 33 sub-categories) with persona information (JSON). The harmful-query data may contain offensive language, the yes/no QA count is cut off in the pack, and no metric values are given.",
+ "amount_ko": "말뭉치 304,340,415토큰, 의문사형 질의응답 30,000건, 유해 질의 세분류 33종",
+ "amount_en": "304,340,415 corpus tokens, 30,000 wh-question QA items, 33 harmful-query sub-categories",
+ "labels_ko": "질문과 답, 해로운 질문 종류",
+ "labels_en": "question-answer, harm category",
+ "status": "full-run-2026-11-02"
+}

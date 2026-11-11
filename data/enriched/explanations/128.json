@@ -1,0 +1,12 @@
+{
+ "dataset_id": "128",
+ "easy_ko": "IT·컴퓨터, 자동차·교통·소재, 의료, 특허 같은 기술 분야의 한국어 문장과 중국어 번역을 짝지은 데이터입니다. 기술 문서에 강한 한국어-중국어 번역기나 분야별 용어 사전을 만들 수 있습니다.",
+ "easy_en": "Korean sentences paired with Chinese translations in technical fields such as IT and computers, cars, transport and materials, medicine and patents. You can build Korean–Chinese translators that handle technical documents well, or field-specific term dictionaries.",
+ "detail_ko": "기술과학 4개 분야 한국어-중국어 병렬 문장 130만 쌍(IT 60만, 자동차·교통·소재 30만, 의료 25만, 특허 15만)으로, 한국어 원문은 평균 15어절이며 분야 라벨이 있습니다. 기준 성능 지표는 없습니다. 파일 형식(json/xlsx)은 확인되지 않은 추정입니다.",
+ "detail_en": "1.3M Korean–Chinese sentence pairs in 4 science and technology domains (IT 600k, cars/transport/materials 300k, medical 250k, patents 150k); Korean sentences average 15 words, with domain labels. No baseline is published. File formats (json/xlsx) are not confirmed.",
+ "amount_ko": "번역 문장 130만 쌍, 분야 4개",
+ "amount_en": "1.3M sentence pairs, 4 domains",
+ "labels_ko": "한국어-중국어 번역 짝, 분야",
+ "labels_en": "Korean–Chinese sentence pairs, domain",
+ "status": "full-run-2026-11-02"
+}

@@ -1,0 +1,29 @@
+{
+ "dataset_id": "71476",
+ "title_en": "Metal 3D printing spark image data",
+ "summary_ko": "금속 레이저 용융(PBF) 3D 프린터 4종으로 SUS·인코넬·마레이징 소재를 출력할 때 찍은 스파크 이미지 약 5,664만 건에, 장비·소재·공정 조건과 완성품의 기계적 물성이 연결된 데이터입니다. 공정 조건 추천과 출력 품질 이상 예측 AI에 쓸 수 있습니다.",
+ "summary_en": "About 56.6 million spark images from 4 metal laser powder-bed-fusion (PBF) 3D printers printing stainless steel, Inconel and maraging steel, linked to machine, material and process settings and the parts' mechanical properties. For process setting recommendation and print quality prediction AI.",
+ "contents_ko": "스파크 이미지(bmp) + 영상(avi) + 공정 파라미터(txt) + JSON(상자, 장비·소재·물성 정보).",
+ "contents_en": "Spark image (bmp) + video (avi) + process parameters (txt) + JSON (box, machine, material and property info).",
+ "modalities": ["image", "video", "tabular"],
+ "tasks": ["tabular_prediction", "anomaly_detection", "object_detection"],
+ "topics": [{"ko": "제조·3D 프린팅", "en": "Manufacturing and 3D printing"}, {"ko": "품질 예측", "en": "Quality prediction"}],
+ "keywords_ko": ["금속 3D 프린팅", "PBF", "스파크", "기계적 물성", "공정 최적화", "인코넬"],
+ "keywords_en": ["metal 3D printing", "PBF", "spark", "mechanical properties", "process optimisation", "Inconel"],
+ "labels": ["bounding box", "process parameters", "mechanical properties"],
+ "file_formats": ["bmp", "avi", "txt", "json"],
+ "scale_ko": "원천 56,639,642건, 라벨 51,268,832건, 프린터 4종, 소재 3종",
+ "classes_example": ["V200", "V300", "V500", "커스메디", "SUS", "Inconel", "Maraging"],
+ "baseline": [{"task": "mechanical property prediction", "model": "VSCNN", "metric": "Spearman correlation", "value": "0.866"}, {"task": "mechanical property prediction", "model": "VSCNN", "metric": "R2", "value": "0.763"}],
+ "difficulty": "advanced",
+ "difficulty_note_ko": "전체가 약 1.55TB이고 가장 작은 파일도 3GB입니다. 이미지와 공정 수치를 함께 다뤄야 해서 어렵습니다.",
+ "skills_needed_ko": ["파이썬", "CNN 회귀", "대용량 데이터 처리"],
+ "caveats_ko": ["전체 약 1,550GB(최소 파일 3GB)", "프린터별 구성비 표의 비율이 수량과 맞지 않음", "같은 출력물에서 나온 연속 이미지가 매우 많아 출력물 단위로 나눠야 함"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "소재별 스파크 분류", "title_en": "Spark image by material", "desc_ko": "스파크 이미지로 출력 소재(SUS·인코넬·마레이징)를 분류합니다.", "desc_en": "Classify the printing material from spark images."},
+  {"level": "capstone", "title_ko": "출력 품질 예측 대시보드", "title_en": "Print quality dashboard", "desc_ko": "출력 중 스파크 이미지로 완성품 강도를 예측해 보여 줍니다.", "desc_en": "Predict part strength from spark images during printing."},
+  {"level": "research", "title_ko": "공정 조건 최적화", "title_en": "Process setting optimisation", "desc_ko": "원하는 물성을 얻기 위한 레이저 출력·속도 조건을 추천하는 방법을 연구합니다.", "desc_en": "Recommend laser settings for target mechanical properties."}
+ ],
+ "doc_used": true,
+ "uncertain": ["상자 라벨이 무엇을 표시하는지(스파크 영역으로 추정)"]
+}

@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71449",
+ "easy_ko": "수도권의 숲과 도시를 비행기와 위성에서 찍은 사진에 나무 종류를 칠하고, 그곳에 탄소가 얼마나 저장돼 있는지 표시한 데이터입니다. 숲과 나무가 탄소를 얼마나 품고 있는지 지도로 추정하는 AI에 쓸 수 있습니다.",
+ "easy_en": "Aerial and satellite photos of forests and city areas around Seoul, with tree types painted in and the amount of carbon stored in each place marked. You can use it to build AI that maps how much carbon forests and trees hold.",
+ "detail_ko": "수도권 산림·도심 지역의 항공 이미지 45,000장, 근적외선(NIR) 이미지 20,000장, Sentinel-2 위성 영상 1,000장(tif, 총 66,000장)에 식생 클래스 분할(예: 소나무, 낙엽송, 기타침엽수)과 위성 라이다(GEDI) 기반 탄소량 라벨을 JSON으로 붙였습니다(라벨 파일 132,000개). 기준 성능은 Hybrid U-Net 탄소량 예측 상관계수 항공 0.876, NIR 0.909, 위성 0.826입니다. 위성 이미지는 1,000장뿐이고, 산림 지역이 약 82%로 도심보다 훨씬 많습니다. 탄소량 라벨은 실측이 아닌 위성 라이다 기반 추정값입니다.",
+ "detail_en": "Images of forest and urban areas around Seoul: 45,000 aerial, 20,000 near-infrared (NIR) and 1,000 Sentinel-2 satellite images (tif, 66,000 in total), with JSON vegetation-class masks (for example pine, larch, other conifers) and carbon labels based on satellite lidar (GEDI), 132,000 label files. Baselines: carbon prediction with Hybrid U-Net, correlation 0.876 (aerial), 0.909 (NIR) and 0.826 (satellite). There are only 1,000 satellite images, and forest areas make up about 82%, far more than urban ones. Carbon labels are estimates from satellite lidar, not field measurements.",
+ "amount_ko": "이미지 66,000장(항공 45,000, NIR 20,000, 위성 1,000), 라벨 파일 132,000개",
+ "amount_en": "66,000 images (45,000 aerial, 20,000 NIR, 1,000 satellite), 132,000 label files",
+ "labels_ko": "식생 종류 영역, 탄소량",
+ "labels_en": "vegetation class masks, carbon amount",
+ "status": "full-run-2026-11-02"
+}

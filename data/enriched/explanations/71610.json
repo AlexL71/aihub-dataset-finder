@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71610",
+ "easy_ko": "한국은행, 금융위원회, 법제처 같은 곳의 금융과 법률 문서를 읽고 답하는 질문과 답 약 40만 개로, 답 부분 찾기, 예·아니요, 표에서 답 찾기, 고르기, 방법 묻기 같은 질문이 있습니다. 금융·법률 질문에 답하는 챗봇에 쓸 수 있습니다.",
+ "easy_en": "About 400,000 questions and answers based on finance and law documents from bodies such as the Bank of Korea, the Financial Services Commission and the Ministry of Government Legislation, including answer-span, yes/no, table, multiple-choice and how-to questions. You can use it to build chatbots that answer finance and legal questions.",
+ "detail_ko": "한국은행·금융위원회·법제처 등 금융·법률 전문 문서 지문 140,226건(txt)에서 만든 질문-답변 401,108건(JSON)으로, 질문 유형 5종(정답경계추출형, Yes/No 단문형, Table정답추출형, 다지선다형, 절차(방법))과 정답 구간, 분야가 있습니다. 기준 성능은 멀티태스크 사전학습 언어모델 기계독해 정확도 90.58%, F1 0.8564입니다. 전문 용어가 많아 일반 한국어 모델은 성능이 낮을 수 있고, 표 정답형은 표 구조 처리가 필요합니다. 법률 답변은 참고용이며 법률 자문을 대신할 수 없습니다.",
+ "detail_en": "401,108 question-answer pairs (JSON) built from 140,226 passages (txt) of finance and law documents from the Bank of Korea, the Financial Services Commission, the Ministry of Government Legislation and others, with 5 question types (answer-span extraction, short yes/no, table answer extraction, multiple choice, procedure/method), answer spans and domain. Baselines: machine reading with a multi-task pretrained language model, accuracy 90.58% and F1 0.8564. Heavy jargon may lower general Korean models' scores, table questions need table-structure handling, and legal answers are for reference only, not legal advice.",
+ "amount_ko": "질문-답변 401,108건, 지문 140,226건, 질문 유형 5종",
+ "amount_en": "401,108 QA pairs, 140,226 passages, 5 question types",
+ "labels_ko": "질문과 답, 질문 종류, 정답 위치",
+ "labels_en": "question-answer pairs, question type, answer span",
+ "status": "full-run-2026-11-02"
+}

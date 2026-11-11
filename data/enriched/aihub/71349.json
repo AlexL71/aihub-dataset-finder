@@ -1,0 +1,29 @@
+{
+ "dataset_id": "71349",
+ "title_en": "Speech synthesis data considering both emotion and speaking style",
+ "summary_ko": "독백체·대화체·구연체·중계체·친절체·애니체·낭독체 7가지 말투와 기쁨·슬픔·분노·무감정 감정을 함께 담아 녹음한 한국어 음성 약 1,000시간과 대본을 담은 데이터입니다. 상황에 맞는 감정과 말투로 말하는 음성합성(TTS) AI에 쓸 수 있습니다.",
+ "summary_en": "About 1,000 hours of Korean speech recorded in 7 speaking styles (monologue, dialogue, storytelling, sports commentary, polite service, anime, reading aloud) combined with emotions (joy, sadness, anger, neutral), with scripts. For text-to-speech (TTS) AI that speaks with the right emotion and style.",
+ "contents_ko": "음성(wav) + 대본(txt) + JSON(말투, 감정, 화자 정보).",
+ "contents_en": "Audio (wav) + scripts (txt) + JSON (style, emotion, speaker info).",
+ "modalities": ["audio", "text"],
+ "tasks": ["speech_synthesis", "audio_classification"],
+ "topics": [{"ko": "음성합성", "en": "Speech synthesis"}, {"ko": "감정·표현", "en": "Emotion and expression"}],
+ "keywords_ko": ["음성합성", "TTS", "감정 음성", "발화 스타일", "성우"],
+ "keywords_en": ["speech synthesis", "TTS", "emotional speech", "speaking style", "voice acting"],
+ "labels": ["speaking style", "emotion", "transcript", "speaker"],
+ "file_formats": ["wav", "txt", "json"],
+ "scale_ko": "음성 약 1,000시간, 말투 7종, 감정 4종",
+ "classes_example": ["독백체", "대화체", "구연체", "중계체", "친절체", "애니체", "낭독체"],
+ "baseline": [{"task": "emotional speech synthesis", "model": "Transformer-GST", "metric": "MOS", "value": "3.74"}],
+ "difficulty": "advanced",
+ "difficulty_note_ko": "약 217GB이고 음성합성 모델 학습은 GPU 자원이 많이 듭니다.",
+ "skills_needed_ko": ["파이썬", "음성 처리", "TTS 모델(VITS 등)"],
+ "caveats_ko": ["성우 목소리라 음성 복제·사칭 악용 주의", "낭독체 데이터가 적음", "최근 2025-11에 수정됨"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "말투 분류", "title_en": "Speaking-style classifier", "desc_ko": "음성을 듣고 7가지 말투 중 무엇인지 분류합니다.", "desc_en": "Classify which of 7 speaking styles an audio clip uses."},
+  {"level": "capstone", "title_ko": "감정 동화 구연 TTS", "title_en": "Emotional storytelling TTS", "desc_ko": "동화 문장마다 감정을 넣어 읽어 주는 TTS를 만듭니다.", "desc_en": "Build TTS that reads children's stories with emotion."},
+  {"level": "research", "title_ko": "감정·말투 분리 제어", "title_en": "Disentangling emotion and style", "desc_ko": "감정과 말투를 따로 조절하는 음성합성 방법을 연구합니다.", "desc_en": "Control emotion and speaking style separately in TTS."}
+ ],
+ "doc_used": true,
+ "uncertain": []
+}

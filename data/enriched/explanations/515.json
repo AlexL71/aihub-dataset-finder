@@ -1,0 +1,12 @@
+{
+ "dataset_id": "515",
+ "easy_ko": "집과 공동 공간 CCTV에서 보이는 것처럼 도둑질, 집 침입, 아동 학대, 폭행 같은 이상행동과 그 전에 나타나는 수상한 낌새, 평소 행동을 찍고 사람 위치와 몸의 주요 점을 표시한 데이터입니다. 범죄를 미리 알아채는 생활 안전 CCTV AI를 만들 수 있지만, 민감한 내용이라 조심해서 써야 합니다.",
+ "easy_en": "CCTV-style videos of homes and shared spaces showing abnormal behaviour (theft, break-ins, child abuse, assault), the warning signs that come before it, and normal behaviour, with each person's position and key body points marked. You can build home-safety CCTV AI that notices crimes early, but the content is sensitive and must be used carefully.",
+ "detail_ko": "주거지·공용공간 CCTV 시점 영상 9,000건(아동학대 4,139, 폭행 3,664, 주거침입 953, 절도 244), 300시간(mp4)에 사람 바운딩박스, 키포인트, 분할, 행동 분류(정상행동, 32가지 전조현상, 이상행동)를 JSON으로 붙였습니다. 연출 영상으로 보이며 아동학대 등 민감한 내용이 있어 사용에 주의가 필요합니다. 기준 성능은 기록에서 확인되지 않습니다.",
+ "detail_en": "9,000 CCTV-view videos (300 hours, mp4) of residential and shared spaces (child abuse 4,139, assault 3,664, break-in 953, theft 244), with JSON person boxes, keypoints, segmentation and behaviour class (normal, 32 precursor behaviours, abnormal). Videos appear staged; the content (such as child abuse) is sensitive, so use it with care. No baseline is visible in the record.",
+ "amount_ko": "영상 9,000건(300시간)",
+ "amount_en": "9,000 videos (300 hours)",
+ "labels_ko": "사람 위치 상자, 몸의 주요 점, 영역, 행동 종류(정상·낌새·이상)",
+ "labels_en": "boxes around people, body key points, masks, behaviour class (normal, warning sign, abnormal)",
+ "status": "full-run-2026-11-02"
+}

@@ -1,0 +1,29 @@
+{
+ "dataset_id": "71845",
+ "title_en": "Academic paper understanding data",
+ "summary_ko": "한국어 학술논문 1만 편(PDF)과 학술 포스터 1만 건(PPTX)의 텍스트·그림 구조를 정리하고, 논문 1만 건에 요약 라벨을 붙인 데이터입니다. 사회과학·과학기술·인문예술 분야로 나뉘며, 논문 요약이나 논문 구조 이해 AI에 쓸 수 있습니다.",
+ "summary_en": "10,000 Korean academic papers (PDF) and 10,000 posters (PPTX) with text and figure structure, and summaries for the 10,000 papers, across social science, science and technology, and humanities and arts. For paper summarisation and document-structure understanding.",
+ "contents_ko": "논문(pdf)·포스터(pptx) + JSON(구조 정보, 요약).",
+ "contents_en": "Papers (pdf) and posters (pptx) + JSON (structure, summaries).",
+ "modalities": ["text", "image"],
+ "tasks": ["summarization", "information_extraction", "text_classification"],
+ "topics": [{"ko": "학술·연구", "en": "Academic research"}, {"ko": "문서 이해", "en": "Document understanding"}],
+ "keywords_ko": ["학술논문", "포스터", "논문 요약", "문서 구조", "멀티모달", "한국어"],
+ "keywords_en": ["academic papers", "posters", "paper summarisation", "document structure", "multimodal", "Korean"],
+ "labels": ["summary", "structure annotation"],
+ "file_formats": ["pdf", "pptx", "json"],
+ "scale_ko": "논문 10,000건, 포스터 10,000건, 어노테이션 약 60만 건, 라벨 10,000건",
+ "classes_example": ["사회과학", "과학기술", "인문학·예술·체육학"],
+ "baseline": [],
+ "difficulty": "intermediate",
+ "difficulty_note_ko": "약 24GB입니다. PDF·PPTX에서 텍스트와 그림을 뽑는 전처리가 필요합니다.",
+ "skills_needed_ko": ["파이썬", "PDF 파싱", "Hugging Face 요약 모델"],
+ "caveats_ko": ["논문 저작권·이용 조건 확인 필요", "논문과 포스터의 짝 관계 확인 필요", "모델 성능 수치가 팩에 없음"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "논문 분야 분류", "title_en": "Paper field classifier", "desc_ko": "논문 초록으로 사회과학·과학기술·인문 분야를 분류합니다.", "desc_en": "Classify papers into three fields from abstracts."},
+  {"level": "capstone", "title_ko": "논문 요약 도우미", "title_en": "Paper summary assistant", "desc_ko": "한국어 논문 PDF를 올리면 핵심 요약을 만들어 줍니다.", "desc_en": "Summarise uploaded Korean paper PDFs."},
+  {"level": "research", "title_ko": "논문→포스터 자동 생성", "title_en": "Paper-to-poster generation", "desc_ko": "논문 내용으로 포스터 구성을 자동으로 만드는 방법을 연구합니다.", "desc_en": "Study generating poster layouts from papers."}
+ ],
+ "doc_used": true,
+ "uncertain": ["원천 2만 건 중 라벨 1만 건의 대상(논문만인지) 확인 필요"]
+}

@@ -1,0 +1,12 @@
+{
+ "dataset_id": "62",
+ "easy_ko": "배우들이 걷기, 달리기, 인사, 넘어지기, 요가, 태권도 같은 여러 동작을 하는 짧은 영상을 찍고, 화면마다 팔·다리 같은 몸의 주요 점 위치와 동작 이름을 표시한 데이터입니다. 노인이 넘어졌는지 알려 주는 AI나 운동 자세를 봐 주는 홈트레이닝 앱을 만들 수 있습니다.",
+ "easy_en": "Short videos of actors walking, running, greeting, falling, doing yoga, taekwondo and other actions, with key body points and the action name marked in each frame. You can build AI that detects when an elderly person falls, or a home-workout app that checks your posture.",
+ "detail_ko": "국내 배우가 50가지 동작(기초 동작 5만, 의미 동작 15만)을 수행한 5~10초 영상 20만 클립으로, 초당 3프레임 이미지에 2D 키포인트(20만 클립)와 일부 3D 키포인트(2만 클립), 동작 번호(1~50)가 라벨링되어 있습니다. 2019년 구축으로 기준 성능 지표가 없습니다. 배우가 연출한 동작이라 실제 상황과 다를 수 있으며 전체 약 2.5TB입니다.",
+ "detail_en": "200k clips of 5–10 seconds in which Korean actors perform 50 actions (50k basic, 150k meaningful), with 2D keypoints on frames sampled at 3 fps (200k clips), 3D keypoints for 20k clips and an action number (1–50). Built in 2019; no baseline is published. Actions are staged, so they may differ from real situations. Total size is about 2.5 TB.",
+ "amount_ko": "영상 클립 20만 개, 동작 50종",
+ "amount_en": "200k clips, 50 actions",
+ "labels_ko": "몸의 주요 점(키포인트, 평면·일부 입체), 동작 종류",
+ "labels_en": "body key points (2D, some 3D), action class",
+ "status": "full-run-2026-11-02"
+}

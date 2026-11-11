@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71670",
+ "easy_ko": "일상, 여행, 게임, 교육, 라이브 커머스 같은 인터넷 생방송에서 한국어와 중국어로 말한 목소리와 받아쓴 글, 번역 문장을 모은 데이터입니다. 신조어와 말투까지 담겨 있어 생방송 자동 자막이나 한국어-중국어 통역 AI에 쓸 수 있습니다.",
+ "easy_en": "Speech in Korean and Chinese from live-streaming shows about daily life, travel, games, education, live shopping and more, with transcripts and translations. Slang and speaking styles are included, so you can build automatic live subtitles or Korean-Chinese interpreting AI.",
+ "detail_ko": "라이브 스트리밍 방송(분야 예: 일상·소통, 여행, 게임, 교육, 라이브커머스)의 한국어↔중국어 음성(wav)과 전사·번역 문장, 분야를 JSON으로 묶은 데이터로, 총 파일 4,945,638개, 서브라벨링 2,062건이며 신조어·은어·말투를 반영했습니다. 전체 약 734GB이고, 성능 지표 값은 팩에 없습니다. 영어(71668)·일본어(71671) 버전와 같은 구조입니다.",
+ "detail_en": "Korean↔Chinese speech (wav) from live-streaming shows (fields such as daily life, travel, games, education, live commerce) with JSON transcripts, translations and field, reflecting slang, jargon and speaking style: 4,945,638 files in total and 2,062 sub-labelled items. Total size is about 734 GB, and no metric values are in the pack. Same structure as the English (71668) and Japanese (71671) versions.",
+ "amount_ko": "총 파일 4,945,638개, 서브라벨링 2,062건",
+ "amount_en": "4,945,638 files in total, 2,062 sub-labelled items",
+ "labels_ko": "받아쓴 글, 번역 문장, 분야",
+ "labels_en": "transcript, translation, field",
+ "status": "full-run-2026-11-02"
+}

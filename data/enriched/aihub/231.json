@@ -1,0 +1,32 @@
+{
+ "dataset_id": "231",
+ "title_en": "Fitness posture images",
+ "summary_ko": "다양한 성별·체형·키의 사람이 30가지 운동을 바른 자세와 틀린 자세로 하는 모습을 5개 방향에서 찍은 영상 클립 20만 개입니다. COCO 17개 관절 위치와 운동 상태가 표시되어 있어 홈트레이닝 자세 교정이나 재활 운동 앱에 쓸 수 있습니다.",
+ "summary_en": "200,000 video clips of people of different sex, body type and height doing 30 exercises with correct and incorrect form, filmed from 5 directions. 17 COCO joint positions and exercise state are labelled, for home-training posture correction or rehabilitation apps.",
+ "contents_ko": "운동 영상 프레임 이미지 + JSON(17개 관절 키포인트, 운동 종류, 운동 상태(정자세/오류자세), 시점).",
+ "contents_en": "Exercise frames + JSON (17 keypoints, exercise type, state correct/incorrect, viewpoint).",
+ "modalities": ["image", "video"],
+ "tasks": ["keypoint_pose", "action_recognition"],
+ "topics": [{"ko": "운동·피트니스", "en": "Exercise and fitness"}, {"ko": "재활·건강", "en": "Rehabilitation and health"}, {"ko": "사람 동작", "en": "Human motion"}],
+ "keywords_ko": ["피트니스", "홈트레이닝", "자세 교정", "운동 자세", "키포인트", "재활"],
+ "keywords_en": ["fitness", "home training", "posture correction", "exercise form", "keypoints", "rehabilitation"],
+ "labels": ["keypoints (COCO 17)", "exercise type", "form correct/incorrect"],
+ "file_formats": ["jpg", "json"],
+ "scale_ko": "클립 20만 개(5개 시점), 운동 30종 × 운동 상태 5종",
+ "classes_example": ["정자세", "오류자세"],
+ "baseline": [
+  {"task": "exercise type recognition", "model": "ResNet + TSM", "metric": "mAP", "value": "95.89%"},
+  {"task": "exercise state recognition", "model": "ResNet + TSM", "metric": "mAP", "value": "80.43%"}
+ ],
+ "difficulty": "intermediate",
+ "difficulty_note_ko": "자세 추정 도구로 바로 실습할 수 있지만 전체 약 1TB라 일부 운동만 받아 쓰세요.",
+ "skills_needed_ko": ["파이썬", "자세 추정(MediaPipe)", "관절 시계열 분류"],
+ "caveats_ko": ["구축량이 '200,000만 클립'으로 잘못 적혀 있음(실제 20만 클립으로 보임)"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "스쿼트 바른 자세 판별", "title_en": "Squat form checker", "desc_ko": "관절 좌표로 스쿼트가 바른 자세인지 분류합니다.", "desc_en": "Classify squat form as correct or not from joints."},
+  {"level": "capstone", "title_ko": "홈트 자세 코칭 앱", "title_en": "Home workout coaching app", "desc_ko": "웹캠으로 운동 횟수를 세고 틀린 자세를 실시간으로 알려줍니다.", "desc_en": "Count reps by webcam and flag bad form in real time."},
+  {"level": "research", "title_ko": "시점이 달라도 통하는 자세 평가", "title_en": "View-invariant form assessment", "desc_ko": "카메라 방향이 바뀌어도 자세 평가 정확도를 유지하는 방법을 연구합니다.", "desc_en": "Study form assessment that works from any camera angle."}
+ ],
+ "doc_used": true,
+ "uncertain": ["구축량 단위 표기 오류(200,000만)"]
+}

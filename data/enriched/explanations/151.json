@@ -1,0 +1,12 @@
+{
+ "dataset_id": "151",
+ "easy_ko": "옛 의학책 동의보감에 나오는 약초와, 그 약초와 생김새가 아주 비슷한 다른 식물을 찍은 사진마다 식물 이름과 위치를 표시하고 약초 효능 설명을 붙인 데이터입니다. 사진으로 약초를 구별해 주는 앱을 만들 수 있지만, 실제로 먹을지는 반드시 전문가에게 확인해야 합니다.",
+ "easy_en": "Photos of medicinal herbs from the classic Korean medical book Donguibogam and of look-alike plants, each marked with the plant name and position, plus text on the herbs' uses. You can build an app that tells herbs apart from photos, but whether to actually take one must always be checked with an expert.",
+ "detail_ko": "동의보감 수록 약초 50종과 모양이 매우 비슷한 비교식물 78종(총 128종)을 촬영해 전문가가 검수한 사진으로, 수집 846,277장 중 정제 665,267장, 가공 661,369장입니다. JSON에는 식물 이름, 약초/비교식물 구분, 부위, 바운딩박스 또는 폴리곤이 있고 약초 효능 텍스트가 포함됩니다. 기준 성능 지표는 없습니다. 독초 판별 데이터(612번)와 함께 쓰기 좋으며, 앱 결과를 실제 복용 판단에 쓰면 안 됩니다.",
+ "detail_en": "Expert-checked photos of 50 Donguibogam medicinal herbs and 78 look-alike plants (128 classes): 846,277 collected, 665,267 cleaned, 661,369 labelled. JSON gives plant name, herb or look-alike flag, plant part, and box or polygon, plus herb-efficacy text. No baseline is published. Pairs well with the poisonous-plant dataset (612); results must never be used alone to decide whether to consume a plant.",
+ "amount_ko": "사진 약 66만 장, 약초 50종 + 비슷한 식물 78종",
+ "amount_en": "about 660k photos, 50 herbs + 78 look-alikes",
+ "labels_ko": "식물 이름, 약초·비슷한 식물 구분, 위치 상자·윤곽, 효능 설명",
+ "labels_en": "plant name, herb or look-alike flag, box or outline, efficacy text",
+ "status": "full-run-2026-11-02"
+}

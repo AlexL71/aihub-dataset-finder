@@ -1,0 +1,29 @@
+{
+ "dataset_id": "71598",
+ "title_en": "Tourism KVQA data (capital region)",
+ "summary_ko": "서울·인천·경기 관광지·음식점·숙박·쇼핑 등 장소(POI) 정보와 지식 트리플(주어-관계-대상), 장소 이미지와 설명 문장, 질문-답변 약 384만 건을 묶은 지식 기반 시각 질의응답(KVQA) 데이터입니다. 사진과 지식을 함께 보고 관광 질문에 답하는 챗봇·추천 AI에 쓸 수 있습니다.",
+ "summary_en": "Knowledge-aware visual question answering (KVQA) data for Seoul, Incheon and Gyeonggi: place (POI) info, knowledge triples, place images with captions and about 3.84 million question-answer pairs. For tourism chatbots and recommenders that answer using both photos and knowledge.",
+ "contents_ko": "장소 정보(csv) + 이미지(png) + JSON(트리플, 이미지 캡션, 질문-답변).",
+ "contents_en": "Place info (csv) + images (png) + JSON (triples, image captions, question-answer pairs).",
+ "modalities": ["image", "text"],
+ "tasks": ["visual_qa", "image_captioning", "retrieval_recommendation"],
+ "topics": [{"ko": "관광·여행", "en": "Tourism and travel"}, {"ko": "챗봇·질의응답", "en": "Chatbots and question answering"}],
+ "keywords_ko": ["KVQA", "관광 챗봇", "지식 그래프", "이미지 캡션", "질의응답", "POI"],
+ "keywords_en": ["KVQA", "tourism chatbot", "knowledge graph", "image captioning", "question answering", "POI"],
+ "labels": ["triples", "image captions", "question-answer pairs"],
+ "file_formats": ["csv", "png", "json"],
+ "scale_ko": "POI 191,788건, 이미지 958,940장, 트리플 2,233,284건, 질문-답변 3,835,760건",
+ "classes_example": ["관광지", "문화시설", "음식점", "레포츠", "숙박", "쇼핑", "서울", "인천", "경기"],
+ "baseline": [{"task": "5-choice knowledge VQA", "model": "ZS-F-VQA + KGE fusion", "metric": "Accuracy", "value": "78.28%"}],
+ "difficulty": "advanced",
+ "difficulty_note_ko": "이미지·지식 그래프·질의응답을 함께 다뤄야 하고 전체 약 9.4TB입니다. 텍스트(트리플·QA)부터 시작하세요.",
+ "skills_needed_ko": ["파이썬", "비전-언어 모델", "지식 그래프 기초", "Hugging Face"],
+ "caveats_ko": ["전체 약 9.4TB로 매우 큼", "표마다 수량이 다름(POI 161,500 vs 191,788, 트리플 299,781 vs 2,233,284)", "음식점 비중이 약 40%로 큼", "POI 원본 일부는 외부 기업 제공 자료"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "관광지 질문 유형 분석", "title_en": "Tourism question type analysis", "desc_ko": "질문-답변을 유형별로 세고 관광 타입별 자주 묻는 질문을 정리합니다.", "desc_en": "Count question types and common questions by place type."},
+  {"level": "capstone", "title_ko": "사진 보고 답하는 관광 챗봇", "title_en": "Photo-aware tourism chatbot", "desc_ko": "장소 사진과 지식 트리플로 '여기 주차 돼요?' 같은 질문에 답하는 챗봇을 만듭니다.", "desc_en": "Answer questions like 'Is there parking?' from photos and triples."},
+  {"level": "research", "title_ko": "지식 결합 VQA", "title_en": "Knowledge-fused VQA", "desc_ko": "지식 그래프를 넣었을 때 시각 질의응답 정확도가 얼마나 오르는지 연구합니다.", "desc_en": "Study how adding a knowledge graph improves VQA accuracy."}
+ ],
+ "doc_used": true,
+ "uncertain": []
+}

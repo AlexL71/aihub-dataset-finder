@@ -1,0 +1,32 @@
+{
+ "dataset_id": "71352",
+ "title_en": "Integrated drinking-water source water quality and algal bloom data",
+ "summary_ko": "전국 다목적댐·용수댐·호소·하천·취수원의 수위·수량·방류량과 수온·pH·용존산소·탁도·총인·총질소 같은 수질 측정값, 녹조 정보를 시간별로 모은 약 5억 건의 표 데이터입니다. 수돗물 원수 수질과 녹조 발생을 예측하는 AI에 쓸 수 있습니다.",
+ "summary_en": "About 500 million time-series records of water level, volume and discharge from multipurpose and water-supply dams, lakes, rivers and intakes across Korea, plus water quality (temperature, pH, dissolved oxygen, turbidity, phosphorus, nitrogen) and algal bloom data. For AI that forecasts raw drinking-water quality and algal blooms.",
+ "contents_ko": "수질·수량 측정 표(csv) + JSON.",
+ "contents_en": "Water quality and quantity tables (csv) + JSON.",
+ "modalities": ["tabular", "sensor"],
+ "tasks": ["forecasting", "tabular_prediction"],
+ "topics": [{"ko": "수질·수자원", "en": "Water quality and resources"}, {"ko": "환경 모니터링", "en": "Environmental monitoring"}],
+ "keywords_ko": ["수질", "녹조", "상수원", "댐", "수질 예측"],
+ "keywords_en": ["water quality", "algal bloom", "drinking-water source", "dams", "water quality forecasting"],
+ "labels": ["water quality values", "algal bloom level", "hydrological values"],
+ "file_formats": ["csv", "json"],
+ "scale_ko": "측정 데이터 약 5억 건, 댐 40여 곳·수질 측정 지점 100여 곳",
+ "classes_example": ["다목적댐", "용수전용댐", "호소 본류", "호소 지류", "하천"],
+ "baseline": [
+  {"task": "water quality forecasting (sensor)", "model": "DLinear", "metric": "MAPE", "value": "1.23%"},
+  {"task": "algal bloom forecasting", "model": "XGBoost", "metric": "MAPE", "value": "14.81%"}
+ ],
+ "difficulty": "intermediate",
+ "difficulty_note_ko": "압축 파일은 약 0.44GB지만 행이 5억 개라 판다스로 한 번에 열기 어렵습니다. 지점별로 나눠 쓰세요.",
+ "skills_needed_ko": ["파이썬", "판다스·시계열 처리", "시계열 예측 모델"],
+ "caveats_ko": ["행 수가 매우 많아 메모리 관리 필요", "측정 지점마다 항목이 달라 결측값이 많을 수 있음", "녹조 이미지는 팩 앞부분에서 확인 안 됨"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "댐 저수율 시각화", "title_en": "Dam storage dashboard", "desc_ko": "댐별 저수율 변화를 그래프로 보여줍니다.", "desc_en": "Plot reservoir storage over time per dam."},
+  {"level": "capstone", "title_ko": "녹조 경보 예측", "title_en": "Algal bloom warning", "desc_ko": "수온·영양염 변화로 일주일 뒤 녹조 위험을 예측합니다.", "desc_en": "Forecast algal bloom risk a week ahead from temperature and nutrients."},
+  {"level": "research", "title_ko": "상류-하류 연계 예측", "title_en": "Upstream-downstream forecasting", "desc_ko": "상류 댐 방류량으로 하류 취수원 수질을 예측하는 방법을 연구합니다.", "desc_en": "Predict downstream intake quality from upstream dam releases."}
+ ],
+ "doc_used": true,
+ "uncertain": ["whether algal bloom images are included"]
+}

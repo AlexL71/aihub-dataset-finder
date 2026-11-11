@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71427",
+ "easy_ko": "한국인 참여자들이 여러 가지 감정 표정과 말하는 모습을 연기하며 두 가지 얼굴 각도로 찍은 사진에, 표정, 얼굴 위치, 얼굴 기울기를 사람이 직접 표시한 데이터입니다. 가상 인간이나 아바타의 얼굴을 만들어 내는 AI를 만들 수 있지만, 가짜 얼굴 영상에 악용되지 않도록 조심해야 합니다.",
+ "easy_en": "Photos of Korean participants acting out several emotional expressions and speaking, from two face angles, with the expression, face position and head tilt marked by people. You can build AI that generates faces for virtual humans or avatars, but care is needed so it is not misused for fake face videos.",
+ "detail_ko": "한국인 2,001명이 7가지 감정 표정(A~G)과 발화 연기를 하며 얼굴 각도 2종으로 촬영한 이미지 1,011,675장(jpg, 1인당 약 504장)에 표정, 얼굴 바운딩박스, 얼굴 각도(yaw·roll·pitch), 성별·연령대(20대, 30대, 40대 이상)를 JSON으로 붙였습니다. 기준 성능은 Deceive-D(StyleGAN 기반) 얼굴 합성 FID 9.35, 표정 조건 합성 FID 10.33입니다. 실제 얼굴이라 개인정보·초상권 이용 조건을 꼭 확인해야 하고, 표정 7종이 A~G로만 표기되어 뜻은 설명서 확인이 필요하며, 40대 이상 비중이 약 22%로 낮습니다.",
+ "detail_en": "1,011,675 face images (jpg) of 2,001 Koreans (about 504 each) acting out 7 expressions (coded A–G) and speaking, from 2 head angles, with JSON expression, face box, head angle (yaw, roll, pitch), sex and age group (20s, 30s, 40s+). Baselines: Deceive-D (StyleGAN-based) face synthesis FID 9.35, expression-conditioned synthesis FID 10.33. These are real faces, so check privacy and portrait rights; the 7 expressions are coded only as A–G, so check the manual; people aged 40+ are only about 22%.",
+ "amount_ko": "얼굴 사진 약 101만 장, 2,001명",
+ "amount_en": "about 1.01M face images, 2,001 people",
+ "labels_ko": "표정, 얼굴 위치 상자, 얼굴 기울기, 성별·나이대",
+ "labels_en": "expression, face box, head angle, sex and age group",
+ "status": "full-run-2026-11-02"
+}

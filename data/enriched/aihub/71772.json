@@ -1,0 +1,29 @@
+{
+ "dataset_id": "71772",
+ "title_en": "Construction gravel quality control data",
+ "summary_ko": "콘크리트·아스팔트용 굵은 골재(자갈) 시료 이미지 155,374장으로, 암석 종류 6종이 다각형으로 분할되고 납작하거나 길쭉한 편장석 비율 분석을 위한 회전 상자가 표시되어 있습니다. 골재 품질검사를 자동화하는 AI에 쓸 수 있습니다.",
+ "summary_en": "155,374 images of coarse aggregate (gravel) samples for concrete and asphalt, with 6 rock types segmented by polygons and rotated boxes for measuring flat and elongated particles. For AI that automates aggregate quality inspection.",
+ "contents_ko": "자갈 이미지(png) + JSON(암석 종류 다각형, 회전 상자).",
+ "contents_en": "Gravel image (png) + JSON (rock-type polygons, rotated boxes).",
+ "modalities": ["image"],
+ "tasks": ["segmentation", "object_detection", "image_classification"],
+ "topics": [{"ko": "건설 자재 품질", "en": "Construction material quality"}, {"ko": "제조 검사", "en": "Manufacturing inspection"}],
+ "keywords_ko": ["골재", "자갈", "암석 분류", "편장석", "품질검사", "건설"],
+ "keywords_en": ["aggregate", "gravel", "rock classification", "flat and elongated particles", "quality inspection", "construction"],
+ "labels": ["polygon", "rotated bounding box", "rock type"],
+ "file_formats": ["png", "json"],
+ "scale_ko": "이미지 155,374장, 암석 종류 6종",
+ "classes_example": ["안산암", "사암"],
+ "baseline": [],
+ "difficulty": "intermediate",
+ "difficulty_note_ko": "분할·회전 상자 탐지 실습에 좋지만 전체가 약 477GB입니다. 일부만 받아 쓰세요.",
+ "skills_needed_ko": ["파이썬", "분할 모델", "회전 상자 탐지(OBB)"],
+ "caveats_ko": ["전체 약 477GB", "암석 6종 전체 목록과 성능 지표가 팩 앞부분에 없음"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "자갈 암석 분류", "title_en": "Gravel rock-type classifier", "desc_ko": "자갈 사진에서 암석 종류를 분류합니다.", "desc_en": "Classify rock types in gravel photos."},
+  {"level": "capstone", "title_ko": "편장석 비율 자동 계산", "title_en": "Automatic flat-particle ratio", "desc_ko": "회전 상자로 자갈 길이·폭을 재서 편장석 비율을 계산합니다.", "desc_en": "Measure particles with rotated boxes and compute the flat ratio."},
+  {"level": "research", "title_ko": "골재 품질 등급 예측", "title_en": "Aggregate grade prediction", "desc_ko": "이미지만으로 골재 품질 등급을 예측하는 방법을 연구합니다.", "desc_en": "Predict aggregate quality grade from images alone."}
+ ],
+ "doc_used": true,
+ "uncertain": ["암석 6종 목록"]
+}

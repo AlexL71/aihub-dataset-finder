@@ -1,0 +1,29 @@
+{
+ "dataset_id": "71547",
+ "title_en": "Daily-life task and command data (mission commands)",
+ "summary_ko": "가상 생활 공간에서 로봇이나 AI 에이전트가 수행할 수 있는 한국어 임무 명령어 20만 건입니다. '오른쪽으로 회전하기' 같은 이동 동작과 '집어서 놓기', '씻어서 놓기' 같은 상호작용 동작 단위로 나뉘어 있어 말로 지시하면 움직이는 로봇 연구에 쓸 수 있습니다.",
+ "summary_en": "200,000 Korean mission commands for robots or AI agents in virtual homes, split into movement actions (turn right, move forward) and interaction actions (pick and place, wash and place). For language-guided robot research.",
+ "contents_ko": "명령어 텍스트(txt) + JSON(수집 공간, 동작 단위 분할 등).",
+ "contents_en": "Command text (txt) + JSON (collection space, action-step segmentation, etc.).",
+ "modalities": ["text"],
+ "tasks": ["information_extraction", "text_classification"],
+ "topics": [{"ko": "로봇·AI 에이전트", "en": "Robots and AI agents"}, {"ko": "한국어 명령 이해", "en": "Korean command understanding"}],
+ "keywords_ko": ["로봇 명령어", "임무 수행", "AI 에이전트", "한국어", "동작 분해"],
+ "keywords_en": ["robot commands", "task execution", "AI agent", "Korean", "action decomposition"],
+ "labels": ["action segments", "collection space", "metadata"],
+ "file_formats": ["txt", "json"],
+ "scale_ko": "한국어 명령어 200,000건 (주거 160,000, 상업 30,000, 문교·사회 10,000)",
+ "classes_example": ["오른쪽으로 회전하기", "앞으로 이동하기", "집어서 놓기", "담아서 놓기", "잘라서 놓기", "씻어서 놓기"],
+ "baseline": [],
+ "difficulty": "intermediate",
+ "difficulty_note_ko": "텍스트 자체는 다루기 쉽지만, 실제로 로봇을 움직이려면 71546 공간 데이터와 가상 환경이 필요합니다.",
+ "skills_needed_ko": ["파이썬", "한국어 자연어 처리", "시퀀스 모델"],
+ "caveats_ko": ["팩에 성능 지표가 없음", "라벨링 유형 설명(해상도, 파일 크기 등)이 명령어 데이터와 잘 맞지 않음", "71546 공간 데이터와 함께 쓰는 세트"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "명령어 공간 분류", "title_en": "Command domain classification", "desc_ko": "명령어가 주거·상업·문교 중 어디에서 쓰이는지 분류합니다.", "desc_en": "Classify whether a command is for home, commercial or public spaces."},
+  {"level": "capstone", "title_ko": "명령어를 동작 단계로 쪼개기", "title_en": "Splitting commands into action steps", "desc_ko": "긴 명령을 '이동→집기→놓기' 같은 동작 순서로 바꾸는 모델을 만듭니다.", "desc_en": "Turn a command into a sequence of basic actions."},
+  {"level": "research", "title_ko": "한국어 지시 기반 로봇 계획", "title_en": "Korean instruction-based robot planning", "desc_ko": "언어 모델로 명령을 동작 계획으로 바꾸고 가상공간에서 성공률을 평가합니다.", "desc_en": "Use a language model to plan actions and test success in virtual spaces."}
+ ],
+ "doc_used": true,
+ "uncertain": ["동작 단위 라벨 전체 목록이 팩 앞부분에 일부만 나옴"]
+}

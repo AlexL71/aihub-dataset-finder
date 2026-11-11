@@ -1,0 +1,29 @@
+{
+ "dataset_id": "153",
+ "title_en": "Greenhouse crop disease diagnosis images",
+ "summary_ko": "가지·고추·단호박·딸기·상추·수박·애호박·오이·참외·토마토 등 시설(비닐하우스) 작물 12종의 잎·열매 사진 46만 건으로, 정상과 흰가루병·노균병·잿빛곰팡이병·바이러스병 등 20여 종 질병이 표시되어 있습니다. 하우스 농가용 병 진단·예찰 AI에 쓸 수 있습니다.",
+ "summary_en": "460,000 photos of 12 greenhouse crops (eggplant, chilli, squash, strawberry, lettuce, watermelon, zucchini, cucumber, melon, tomato and more), labelled healthy or one of about 20 diseases such as powdery mildew, downy mildew, grey mould and viruses. For disease diagnosis and surveillance AI for greenhouse farms.",
+ "contents_ko": "작물 사진 + JSON(작물, 질병 코드, 촬영 부위, 피해 정도, 관심 영역 상자). 질병 사진은 원본과 증강본이 있음.",
+ "contents_en": "Crop photo + JSON (crop, disease code, plant part, damage level, box around the area of interest). Disease photos come as originals plus augmented copies.",
+ "modalities": ["image"],
+ "tasks": ["image_classification", "object_detection"],
+ "topics": [{"ko": "농업·스마트팜", "en": "Agriculture and smart farming"}, {"ko": "식물 병해", "en": "Plant disease"}, {"ko": "시설원예", "en": "Greenhouse horticulture"}],
+ "keywords_ko": ["시설 작물", "비닐하우스", "작물 질병", "딸기", "토마토", "바이러스병", "스마트팜"],
+ "keywords_en": ["greenhouse crops", "crop disease", "strawberry", "tomato", "plant virus", "smart farm"],
+ "labels": ["class (crop and disease)", "bounding box", "attributes"],
+ "file_formats": ["jpg", "json"],
+ "scale_ko": "학습 데이터 약 46만 건(정상 약 20.5만, 질병 원본 2만 + 증강 20만), 작물 12종",
+ "classes_example": ["고추마일드모틀바이러스", "딸기잿빛곰팡이병", "딸기흰가루병", "상추균핵병", "상추노균병", "수박탄저병", "토마토잎곰팡이병"],
+ "baseline": [],
+ "difficulty": "beginner",
+ "difficulty_note_ko": "작물·질병별로 정리되어 첫 분류 프로젝트에 좋습니다. 전체 약 830GB라 몇 작물만 받아 쓰세요.",
+ "skills_needed_ko": ["파이썬 기초", "전이학습 이미지 분류"],
+ "caveats_ko": ["전체 약 830GB", "증강본이 많아 원본 기준으로 데이터 분할 필요"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "딸기 병 진단기", "title_en": "Strawberry disease checker", "desc_ko": "딸기 사진으로 정상·잿빛곰팡이병·흰가루병을 분류합니다.", "desc_en": "Classify strawberry photos as healthy, grey mould or powdery mildew."},
+  {"level": "capstone", "title_ko": "하우스 병해 순찰 카메라", "title_en": "Greenhouse disease patrol camera", "desc_ko": "하우스 카메라 사진에서 병든 잎을 찾아 위치를 알려주는 대시보드를 만듭니다.", "desc_en": "Find diseased leaves in greenhouse camera images and show their location."},
+  {"level": "research", "title_ko": "바이러스병 조기 발견", "title_en": "Early detection of viral disease", "desc_ko": "초기 단계 바이러스병 증상의 인식 성능을 분석하고 개선 방법을 연구합니다.", "desc_en": "Analyse and improve recognition of early-stage viral symptoms."}
+ ],
+ "doc_used": true,
+ "uncertain": []
+}

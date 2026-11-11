@@ -1,0 +1,29 @@
+{
+ "dataset_id": "71553",
+ "title_en": "Tourist restaurant menu board data",
+ "summary_ko": "전국 음식점 메뉴판 이미지 약 10만 장과 메뉴명 글자 위치(상자), 메뉴 지식정보, 영어·일본어·중국어(간체·번체) 번역문으로 구성된 데이터입니다. 메뉴판 글자 읽기(OCR)와 메뉴명 번역으로 외국인 관광객용 번역 앱을 만드는 데 쓸 수 있습니다.",
+ "summary_en": "About 100,000 restaurant menu images from across Korea with boxes on menu names, menu knowledge info and translations into English, Japanese and Chinese (simplified and traditional). For menu OCR and translation apps for tourists.",
+ "contents_ko": "메뉴판 이미지(jpg) + JSON(메뉴명 상자, 지식정보, 4개 언어 번역).",
+ "contents_en": "Menu image (jpg) + JSON (menu-name boxes, knowledge info, translations in 4 languages).",
+ "modalities": ["image", "text"],
+ "tasks": ["ocr", "translation", "object_detection"],
+ "topics": [{"ko": "관광·음식", "en": "Tourism and food"}, {"ko": "다국어 번역", "en": "Multilingual translation"}],
+ "keywords_ko": ["메뉴판", "OCR", "메뉴 번역", "관광", "다국어"],
+ "keywords_en": ["menu board", "OCR", "menu translation", "tourism", "multilingual"],
+ "labels": ["bounding box", "menu text", "knowledge info", "translation"],
+ "file_formats": ["jpg", "json"],
+ "scale_ko": "메뉴판 이미지 100,113장, 13개 지역, 번역 4개 언어(영어·일어·중국어 간체·번체)",
+ "classes_example": ["업종 > 한식", "업종 > 분식", "업종 > 경양식", "업종 > 식육", "업종 > 중국식", "업종 > 일식", "업종 > 횟집", "업종 > 통닭", "업종 > 외국", "업종 > 김밥", "업종 > 뷔페", "음식명 분류 예: 한식 > 탕"],
+ "baseline": [{"task": "menu translation (English)", "model": "OpenNMT", "metric": "BLEU", "value": "0.7245"}, {"task": "menu translation (Japanese)", "model": "OpenNMT", "metric": "BLEU", "value": "0.7041"}, {"task": "text recognition", "model": "TPS-VGG-BiLSTM-Attn", "metric": "CER", "value": "2.9%"}],
+ "difficulty": "intermediate",
+ "difficulty_note_ko": "OCR과 번역 두 단계를 이어야 합니다. 전체 약 254GB라 한 지역만 받아 시작하세요.",
+ "skills_needed_ko": ["파이썬", "OCR 모델", "기계 번역"],
+ "caveats_ko": ["전체 약 254GB", "메뉴명 단위 번역이라 긴 문장 번역에는 맞지 않음", "지역별 수량이 서울·경기에 몰려 있음"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "메뉴명 글자 인식", "title_en": "Menu text recognition", "desc_ko": "잘라낸 메뉴명 이미지에서 글자를 읽는 OCR 모델을 학습합니다.", "desc_en": "Train OCR on cropped menu-name images."},
+  {"level": "capstone", "title_ko": "관광객용 메뉴판 번역 앱", "title_en": "Menu translation app for tourists", "desc_ko": "사진을 찍으면 메뉴명을 찾아 읽고 영어·일어·중국어로 보여 주는 앱을 만듭니다.", "desc_en": "Snap a menu, detect and read names, show translations."},
+  {"level": "research", "title_ko": "음식명 번역 오류 분석", "title_en": "Food-name translation errors", "desc_ko": "음역·의역이 섞이는 음식명 번역에서 자주 틀리는 유형을 분석하고 개선합니다.", "desc_en": "Analyse and fix common errors in transliterated vs translated dish names."}
+ ],
+ "doc_used": true,
+ "uncertain": ["지식정보 항목(재료, 설명 등)의 정확한 필드가 팩 앞부분에 없음"]
+}

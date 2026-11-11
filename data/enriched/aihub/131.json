@@ -1,0 +1,32 @@
+{
+ "dataset_id": "131",
+ "title_en": "Korean speakers using loanwords",
+ "summary_ko": "한국인 2,000명 이상이 외래어(영어 등에서 온 말)를 섞어 말한 음성 약 4,000시간과 전사문입니다. '컴퓨터', '스마트폰'처럼 외래어가 많은 일상 발화를 정확히 받아쓰는 음성 인식과 AI 비서에 쓸 수 있습니다.",
+ "summary_en": "About 4,000 hours of speech from 2,000+ Korean speakers using loanwords (words borrowed from English and other languages), with transcripts. For speech recognition and AI assistants that correctly transcribe everyday speech full of loanwords.",
+ "contents_ko": "음성(wav) + 전사 텍스트 + 메타정보(화자 정보, 녹음 환경).",
+ "contents_en": "Audio (wav) + transcript + metadata (speaker info, recording environment).",
+ "modalities": ["audio", "text"],
+ "tasks": ["speech_recognition"],
+ "topics": [{"ko": "음성", "en": "Speech"}, {"ko": "외래어·언어 변화", "en": "Loanwords and language change"}],
+ "keywords_ko": ["외래어", "음성 인식", "한국어 발화", "전사", "AI 비서"],
+ "keywords_en": ["loanwords", "speech recognition", "Korean speech", "transcription", "AI assistant"],
+ "labels": ["transcript", "speaker attributes"],
+ "file_formats": ["wav", "json"],
+ "scale_ko": "음성 약 4,000시간, 화자 2,000명 이상(구축량 576만)",
+ "classes_example": [],
+ "baseline": [
+  {"task": "speech recognition (adapted)", "model": "CNN-BLSTM + statistical LM", "metric": "CER", "value": "1.89%"},
+  {"task": "speech recognition (adapted)", "model": "CNN-BLSTM + statistical LM", "metric": "WER", "value": "4.45%"}
+ ],
+ "difficulty": "intermediate",
+ "difficulty_note_ko": "음성 인식 미세조정 실습에 좋지만 약 400GB라 일부만 받아 쓰세요.",
+ "skills_needed_ko": ["파이썬", "오디오 처리", "음성 인식 모델 미세조정"],
+ "caveats_ko": ["외래어 표기(한글 vs 영어 철자) 방식을 전사 규칙에서 확인해야 함"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "자주 쓰는 외래어 순위", "title_en": "Most common loanwords", "desc_ko": "전사문에서 외래어를 찾아 분야별 사용 빈도를 집계합니다.", "desc_en": "Find loanwords in transcripts and count them by field."},
+  {"level": "capstone", "title_ko": "외래어 친화 받아쓰기 도구", "title_en": "Loanword-friendly transcription tool", "desc_ko": "외래어를 영어 철자로도 바꿔 보여주는 받아쓰기 도구를 만듭니다.", "desc_en": "Transcribe speech and optionally show loanwords in English spelling."},
+  {"level": "research", "title_ko": "외래어 인식 오류 분석", "title_en": "Errors on loanwords", "desc_ko": "일반 음성 인식기가 외래어에서 얼마나 틀리는지 분석하고 어휘 적응 효과를 연구합니다.", "desc_en": "Measure recogniser errors on loanwords and study vocabulary adaptation."}
+ ],
+ "doc_used": true,
+ "uncertain": []
+}

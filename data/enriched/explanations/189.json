@@ -1,0 +1,12 @@
+{
+ "dataset_id": "189",
+ "easy_ko": "인도를 걸으며 찍은 사진마다 자전거, 자동차, 사람, 개, 킥보드, 가로수, 기둥 같은 장애물 위치와, 보도블록·점자블록·자전거도로·망가진 바닥 같은 길바닥 상태를 색칠해 둔 데이터입니다. 장애인의 길 안내를 돕거나 인도를 다니는 로봇을 만들 수 있습니다.",
+ "easy_en": "Photos taken while walking on sidewalks, marking obstacles such as bicycles, cars, people, dogs, scooters, trees and poles, and colouring in the ground type: paving, tactile blocks, bike lanes and damaged surfaces. You can build walking aids for disabled people or sidewalk robots.",
+ "detail_ko": "인도 보행 영상 이미지 67만 장에 보행 장애물 29종(bicycle, car, person, dog, scooter, motorcycle, tree_trunk, pole 등)의 바운딩박스·폴리곤과 노면 상태(보도블록, 점자블록, 자전거도로, 파손 노면 등) 분할 폴리곤을 붙였습니다. 2019년 구축으로 기준 성능 지표가 없고, 최소 파일이 9GB이며, 파일 형식(jpg/xml)은 추정입니다.",
+ "detail_en": "670k sidewalk images with boxes and polygons for 29 obstacle types (bicycle, car, person, dog, scooter, motorcycle, tree trunk, pole and more) and segmentation polygons for surface types (paving, tactile blocks, bike lane, damaged surface and more). Built in 2019 with no baseline; the smallest file is 9 GB; file formats (jpg/xml) are assumed.",
+ "amount_ko": "이미지 67만 장, 장애물 29종",
+ "amount_en": "670k images, 29 obstacle types",
+ "labels_ko": "장애물 위치 상자·윤곽, 길바닥 종류 영역",
+ "labels_en": "boxes and outlines around obstacles, ground-surface regions",
+ "status": "full-run-2026-11-02"
+}

@@ -1,0 +1,29 @@
+{
+ "dataset_id": "71444",
+ "title_en": "Intelligent tunnel and underpass data",
+ "summary_ko": "터널·지하차도를 주행하며 모은 RGB 이미지 약 38만 장, 근적외선(NIR) 이미지 약 41만 장, 라이다 약 30만 건에 소화기구·옥내소화전·제연설비·표지판·유도표시등 등 시설물 8종이 상자·3D 큐보이드로 표시되어 있습니다. 터널 시설물 점검과 자율주행차의 터널 내 위치 파악 AI에 쓸 수 있습니다.",
+ "summary_en": "About 380,000 RGB images, 410,000 near-infrared images and 300,000 LiDAR scans from driving through tunnels and underpasses, with 8 kinds of facilities (extinguishers, hydrants, smoke control, signs, guide lights) marked by boxes and 3D cuboids. For tunnel facility inspection and in-tunnel positioning of self-driving cars.",
+ "contents_ko": "RGB·NIR 이미지(jpg) + 라이다(pcd) + JSON(2D 상자, 3D 큐보이드, 캘리브레이션) + 참조용 증강 이미지·터널 측위 GIS(shp).",
+ "contents_en": "RGB and NIR images (jpg) + LiDAR (pcd) + JSON (2D boxes, 3D cuboids, calibration) + reference augmented images and tunnel GIS (shp).",
+ "modalities": ["image", "3d"],
+ "tasks": ["object_detection"],
+ "topics": [{"ko": "도로 시설물 관리", "en": "Road facility management"}, {"ko": "자율주행", "en": "Autonomous driving"}],
+ "keywords_ko": ["터널", "지하차도", "라이다", "근적외선", "시설물 점검", "측위"],
+ "keywords_en": ["tunnel", "underpass", "LiDAR", "near-infrared", "facility inspection", "positioning"],
+ "labels": ["bounding box", "3D cuboid", "class", "calibration"],
+ "file_formats": ["jpg", "pcd", "json", "shp"],
+ "scale_ko": "RGB 384,994장, NIR 413,943장, 라이다 300,258건, 시설물 8종, 측위 데이터 30개 터널",
+ "classes_example": ["소화기구", "옥내소화전설비", "제연설비", "터널입구정보표지판", "진입차단표지판", "차로이용규제신호등", "거리유도표시등", "피난구유도표시"],
+ "baseline": [],
+ "difficulty": "advanced",
+ "difficulty_note_ko": "2D 탐지는 쉽게 시작할 수 있지만 라이다 3D 탐지는 어렵고, 전체가 약 1TB입니다.",
+ "skills_needed_ko": ["파이썬", "YOLO 탐지", "포인트 클라우드 처리"],
+ "caveats_ko": ["전체 약 1,079GB", "RGB 수량이 페이지에 384,9940건으로 오타가 있음(설명서는 384,994장)", "증강 이미지는 조명 끈 상태 참조용으로 품질 검사에서 제외됨", "성능 지표가 팩에서 잘려 보이지 않음"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "터널 소화기 탐지", "title_en": "Tunnel extinguisher detection", "desc_ko": "RGB 이미지에서 소화기구와 소화전을 찾아 상자로 표시합니다.", "desc_en": "Box extinguishers and hydrants in RGB images."},
+  {"level": "capstone", "title_ko": "주행 중 터널 설비 점검", "title_en": "Drive-through tunnel inspection", "desc_ko": "주행 영상에서 설비를 탐지해 빠졌거나 가려진 설비 목록을 만듭니다.", "desc_en": "Detect facilities while driving and list missing or blocked ones."},
+  {"level": "research", "title_ko": "RGB·NIR·라이다 결합 탐지", "title_en": "RGB-NIR-LiDAR fusion detection", "desc_ko": "세 센서를 합쳐 어두운 터널에서도 강건한 탐지 방법을 연구합니다.", "desc_en": "Fuse three sensors for robust detection in dark tunnels."}
+ ],
+ "doc_used": true,
+ "uncertain": ["기준 성능 모델과 점수"]
+}

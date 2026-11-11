@@ -1,0 +1,29 @@
+{
+ "dataset_id": "646",
+ "title_en": "Driving video data for delivery robot visual perception",
+ "summary_ko": "아파트·빌딩 같은 실내외 6구역에서 배송 로봇 눈높이로 찍은 주행 영상 약 150시간과 이미지 약 30만 장에 사람·장애물 등 상자와 분할 영역, 시나리오 설명을 붙인 데이터입니다. 건물 안에서 택배를 나르는 자율주행 로봇 AI에 쓸 수 있습니다.",
+ "summary_en": "About 150 hours of driving video and about 300,000 images shot at delivery-robot height in 6 indoor and outdoor areas such as apartments and office buildings, with boxes and segmentation for people, obstacles and more, plus scenario notes. For self-driving delivery robots inside buildings.",
+ "contents_ko": "주행 영상(mp4)·이미지(jpg) + JSON(상자, 분할) + 시나리오 주석(txt).",
+ "contents_en": "Driving videos (mp4) and images (jpg) + JSON (boxes, segmentation) + scenario notes (txt).",
+ "modalities": ["video", "image", "text"],
+ "tasks": ["object_detection", "segmentation"],
+ "topics": [{"ko": "로봇·자율주행", "en": "Robots and autonomous driving"}, {"ko": "물류·배송", "en": "Logistics and delivery"}],
+ "keywords_ko": ["배송 로봇", "자율주행 로봇", "실내 주행", "장애물 탐지", "라스트마일"],
+ "keywords_en": ["delivery robot", "autonomous robot", "indoor navigation", "obstacle detection", "last-mile delivery"],
+ "labels": ["bounding box", "segmentation", "scenario annotation"],
+ "file_formats": ["mp4", "jpg", "txt", "json"],
+ "scale_ko": "영상 약 150시간(363개), 이미지 약 30만 장",
+ "classes_example": ["사람(Person)", "동물(Animal)", "이동수단(Vehicle)", "바퀴달린 객체(Wheeled Object)", "움직일 수 있는 객체(Movable Object)", "정적 객체(Fixed Object)", "자동문(Automatic Door)", "여닫이 문(Hinger Door)", "엘리베이터 문(Elevator)", "주소현판(Address)", "간판(Sign)", "엘리베이터 층 버튼(Floor Button)"],
+ "baseline": [],
+ "difficulty": "advanced",
+ "difficulty_note_ko": "전체 약 1.1TB로 크고 라벨 JSON이 영상 단위(363개)로 묶여 있습니다.",
+ "skills_needed_ko": ["파이썬", "YOLO 탐지", "분할 모델", "로봇 주행 기초"],
+ "caveats_ko": ["전체 약 1.1TB", "사람이 찍힌 영상", "성능 지표 표가 팩에서 비어 있음", "647번 드론 데이터와 같은 구축 기관"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "복도 장애물 탐지", "title_en": "Corridor obstacle detection", "desc_ko": "로봇 시점 사진에서 사람과 장애물을 찾습니다.", "desc_en": "Detect people and obstacles from a robot's view."},
+  {"level": "capstone", "title_ko": "주행 가능 영역 표시", "title_en": "Drivable-area display", "desc_ko": "분할 결과로 로봇이 갈 수 있는 바닥 영역을 보여줍니다.", "desc_en": "Show floor areas the robot can drive on from segmentation."},
+  {"level": "research", "title_ko": "엘리베이터 탑승 판단", "title_en": "Elevator boarding decision", "desc_ko": "엘리베이터 안 사람 수·공간으로 탑승 여부를 판단하는 방법을 연구합니다.", "desc_en": "Decide whether to board an elevator from people count and free space."}
+ ],
+ "doc_used": true,
+ "uncertain": ["baseline values"]
+}

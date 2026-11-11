@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71629",
+ "easy_ko": "전국의 자전거 도로를 달리며 찍은 사진 100만여 장에 자전거, 사람 같은 움직이는 것과 장애물, 편의 시설을 표시한 데이터입니다. 자전거 도로 안전 점검이나 자전거, 전동 킥보드의 자율주행 AI에 쓸 수 있습니다.",
+ "easy_en": "Over 1 million photos taken while riding bike paths across Korea, marking moving things such as cyclists and pedestrians, obstacles and facilities. You can use it to check bike-path safety or build self-driving AI for bicycles and e-scooters.",
+ "detail_ko": "전국 자전거도로 4종(자전거 전용도로, 자전거 보행자 겸용도로, 자전거 전용차로, 자전거 우선도로)을 달리며 찍은 이미지 1,074,179장(jpg)에 이동 주체(자전거·보행자 등), 장애물, 편의시설 상자와 다각형, 도로 유형, 지역을 JSON으로 붙였습니다. 전체 약 633GB이고, 경기 지역이 53.5%로 치우쳐 있으며 겸용도로 비중이 높고 전용차로·우선도로는 각 3~4%입니다. 객체 클래스 목록과 성능 지표 값은 팩에 없고, 활용 서비스가 '동영상추천서비스'로 적혀 있어 오기로 보입니다.",
+ "detail_en": "1,074,179 images (jpg) taken while riding 4 kinds of bike paths across Korea (bike-only roads, shared bike-pedestrian paths, bike lanes, bike-priority roads), with JSON boxes and polygons for moving users (cyclists, pedestrians and others), obstacles and facilities, plus road type and region. Total size is about 633 GB. Gyeonggi makes up 53.5%, shared paths dominate, and bike lanes and priority roads are only 3 to 4% each. The object class list and metric values are not in the pack, and the use case is listed as 'video recommendation service', which looks like an error.",
+ "amount_ko": "이미지 1,074,179장, 자전거도로 유형 4종",
+ "amount_en": "1,074,179 images, 4 bike-path types",
+ "labels_ko": "이동하는 것·장애물·시설 위치 상자와 테두리, 도로 종류",
+ "labels_en": "bounding boxes, polygons, road type",
+ "status": "full-run-2026-11-02"
+}

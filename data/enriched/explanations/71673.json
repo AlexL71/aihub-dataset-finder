@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71673",
+ "easy_ko": "우리 바다와 실험실에서 모은 아주 어린 해파리와 작은 바다 동물(동물플랑크톤)의 현미경 사진 13만여 장에 생물 영역을 칠하고 종류를 표시한 데이터입니다. 발전소나 어장에 피해를 주는 해파리를 일찍 찾아내는 AI에 쓸 수 있습니다.",
+ "easy_en": "Over 130,000 microscope photos of very young jellyfish and tiny sea animals (zooplankton) collected from Korean coasts and labs, with each creature painted in and its species marked. You can use it to build AI that spots jellyfish early before they harm power plants or fisheries.",
+ "detail_ko": "국내 연안과 실험실에서 채집한 해파리 초기 유생(에피라) 5종(예: 보름달물해파리, 커튼원양해파리, 유령해파리)과 동물플랑크톤 21종의 현미경 이미지 134,869장(jpg)에 개체 분할, 종 클래스, 채집 지역을 JSON으로 붙였습니다. 자연채집·실험실·혼합 이미지가 섞여 있어 출처별 성능 차이를 확인해야 하고, 성능 지표 값은 팩에 없습니다.",
+ "detail_en": "134,869 microscope images (jpg) of 5 jellyfish early-larva (ephyra) species (such as moon jellyfish, curtain jellyfish, ghost jellyfish) and 21 zooplankton species collected from Korean coasts and labs, with JSON segmentation, species class and collection area. Field-collected, lab and mixed images are combined, so check performance by source; no metric values are in the pack.",
+ "amount_ko": "이미지 134,869장, 해파리 유생 5종, 동물플랑크톤 21종",
+ "amount_en": "134,869 images, 5 jellyfish larva species, 21 zooplankton species",
+ "labels_ko": "생물 영역, 종 이름",
+ "labels_en": "segmentation, species class",
+ "status": "full-run-2026-11-02"
+}

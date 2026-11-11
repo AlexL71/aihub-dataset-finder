@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71318",
+ "easy_ko": "우리나라 숲의 대표 나무들을 레이저 거리 측정 장비로 훑어 입체 점 데이터와 입체 모형으로 만들고, 나무 종류와 계절·지역·쓰임새 정보를 붙인 데이터입니다. 컴퓨터 속에 숲을 똑같이 만들어 관리하거나 입체 데이터로 나무 종류를 알아보는 AI를 만들 수 있습니다.",
+ "easy_en": "Laser scans of Korea's representative forest trees turned into 3D point data and models, labelled with species, season, region and use. You can build a digital copy of a forest for management, or AI that identifies tree species from this scan data.",
+ "detail_ko": "국내 대표 산림 수종 82종(침엽수 19, 활엽수 62, 죽림 1) 나무 2,500그루를 라이다로 스캔한 포인트클라우드(las)와 3D 객체 모델(fbx)에 수종, 계절, 지역, 크기, 용도(용재·조경·내화 등)를 JSON으로 붙였습니다. 기준 성능은 G3DNet18 + RepSurf 3D 수종 분류 정확도 91.6%입니다. 봄·겨울 데이터가 없고, 수종당 평균 약 30그루로 적으며, AI Hub 태그가 중복 표기되어 있습니다.",
+ "detail_en": "Lidar point clouds (las) and 3D object models (fbx) of 2,500 trees from 82 representative Korean forest species (19 conifers, 62 broadleaf, 1 bamboo), with JSON species, season, region, size and use type (timber, landscaping, fire-resistant and more). Baseline: G3DNet18 + RepSurf 3D species classification accuracy 91.6%. There is no spring or winter data; about 30 trees per species on average; AI Hub tags are duplicated.",
+ "amount_ko": "나무 2,500그루, 나무 종류 82종",
+ "amount_en": "2,500 trees, 82 species",
+ "labels_ko": "나무 종류, 입체 모형, 계절·지역·쓰임새",
+ "labels_en": "species, 3D model, season, region, use type",
+ "status": "full-run-2026-11-02"
+}

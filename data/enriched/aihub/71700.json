@@ -1,0 +1,29 @@
+{
+ "dataset_id": "71700",
+ "title_en": "Robot driving data in orchards (apple, pear)",
+ "summary_ko": "사과·배 과수원 농로와 노지를 실제로 주행하며 찍은 이미지 약 51만 장과 라이다 점군 약 32만 개에 사람·사다리·과수박스·사과·나무 등이 상자·3D 상자·영역 분할로 표시되어 있습니다. 과수원에서 길을 찾고 장애물을 피하는 수확·운반·방제 로봇 AI에 쓸 수 있습니다.",
+ "summary_en": "About 510,000 images and 320,000 LiDAR point clouds from driving through apple and pear orchards, with people, ladders, fruit boxes, apples, trees and more marked by boxes, 3D boxes and segmentation. For harvest, transport and spraying robots that find paths and avoid obstacles in orchards.",
+ "contents_ko": "주행 이미지(jpg) + 라이다 점군(pcd) + JSON(상자, 3D 큐보이드, 분할 영역, 클래스).",
+ "contents_en": "Driving image (jpg) + LiDAR point cloud (pcd) + JSON (boxes, 3D cuboids, segmentation, class).",
+ "modalities": ["image", "3d", "sensor"],
+ "tasks": ["object_detection", "segmentation"],
+ "topics": [{"ko": "농업 로봇", "en": "Agricultural robots"}, {"ko": "자율주행", "en": "Autonomous driving"}],
+ "keywords_ko": ["과수원", "농업 로봇", "사과", "배", "라이다", "경로 인식"],
+ "keywords_en": ["orchard", "agricultural robot", "apple", "pear", "LiDAR", "path detection"],
+ "labels": ["bounding box", "3D cuboid", "polygon", "class"],
+ "file_formats": ["jpg", "pcd", "json"],
+ "scale_ko": "이미지 505,581장(사과 253,851·배 251,730), 점군 318,832개, 2D 객체 1,128,548개, 2D 클래스 14종",
+ "classes_example": ["사람", "손수레", "운반차", "트럭", "방제기", "사다리", "과수박스", "사과", "배 봉지", "비포장"],
+ "baseline": [],
+ "difficulty": "advanced",
+ "difficulty_note_ko": "전체 약 4.8TB로 매우 큽니다. 2D 이미지 일부로 탐지 실습부터 시작하세요.",
+ "skills_needed_ko": ["파이썬", "YOLO 탐지", "분할 모델", "점군(PCD) 처리"],
+ "caveats_ko": ["전체 약 4.8TB", "사과(21%)·사람(17%) 객체가 많아 클래스 불균형", "성능 지표가 팩 앞부분에 없음", "71697 포도·감귤 과수원 데이터와 같은 구성"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "사과 탐지", "title_en": "Apple detection", "desc_ko": "과수원 사진에서 사과를 YOLO로 찾아 개수를 셉니다.", "desc_en": "Detect and count apples in orchard photos with YOLO."},
+  {"level": "capstone", "title_ko": "과수원 장애물 회피 지도", "title_en": "Orchard obstacle map", "desc_ko": "라이다 3D 상자로 사람·사다리 위치를 지도에 표시해 로봇 경로를 계획합니다.", "desc_en": "Map people and ladders from LiDAR 3D boxes to plan robot paths."},
+  {"level": "research", "title_ko": "카메라-라이다 융합 탐지", "title_en": "Camera-LiDAR fusion detection", "desc_ko": "이미지와 점군을 함께 써서 나무 사이 작은 장애물 탐지를 높이는 방법을 연구합니다.", "desc_en": "Study fusing images and point clouds to detect small obstacles between trees."}
+ ],
+ "doc_used": true,
+ "uncertain": []
+}

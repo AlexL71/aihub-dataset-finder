@@ -1,0 +1,12 @@
+{
+ "dataset_id": "166",
+ "easy_ko": "보도블록, 점자블록, 버스 정류장, 놀이터 그네·미끄럼틀, 운동기구, 벤치 같은 공공시설 사진마다 상태가 괜찮은지, 고쳐야 하는지, 바꿔야 하는지를 표시한 데이터입니다. 시청이나 구청이 낡은 시설을 자동으로 찾아 수리 계획을 세우는 AI를 만들 수 있습니다.",
+ "easy_en": "Photos of public facilities such as sidewalk blocks, tactile paving, bus shelters, playground swings and slides, exercise equipment and benches, each marked as fine, needing repair or needing replacement. You can build AI that helps city offices find worn-out facilities and plan repairs.",
+ "detail_ko": "통행·운동·녹지·보호·휴게 시설물 수십 종의 사진 80만 장(jpg)에 시설물 종류, 상태 등급(정상·수리 필요·교체/폐기), 바운딩박스 또는 영역을 JSON으로 붙였습니다. 기준 성능 지표는 없습니다. 전체 약 2.7TB이며, 시설물마다 수리·교체 클래스 수가 매우 불균형합니다.",
+ "detail_en": "800k jpg photos of dozens of public facility types (walkways, exercise, green space, protection, rest), with JSON facility type, condition grade (normal, needs repair, replace or discard) and box or region. No baseline is published. Total size is about 2.7 TB; repair and replace classes are highly imbalanced across facilities.",
+ "amount_ko": "사진 80만 장, 상태 3단계",
+ "amount_en": "800k photos, 3 condition grades",
+ "labels_ko": "시설물 종류, 상태 등급(정상·수리·교체), 위치 상자",
+ "labels_en": "facility type, condition grade (normal, repair, replace), boxes",
+ "status": "full-run-2026-11-02"
+}

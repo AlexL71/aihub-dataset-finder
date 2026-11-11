@@ -1,0 +1,29 @@
+{
+ "dataset_id": "71781",
+ "title_en": "High-resolution road surface image data",
+ "summary_ko": "고속도로와 일반도로의 노면을 앞쪽(108,556장)과 수직 아래(153,501장)로 찍은 고해상도(2048×2048 이상) 이미지 262,057장으로, 포장 파손·보수·시설 파손이 상자로, 주의 관찰 대상이 분할로 표시되어 있습니다. 차를 세우지 않는 도로 노면 자동 점검 AI에 쓸 수 있습니다.",
+ "summary_en": "262,057 high-resolution (2048x2048+) road surface images of expressways and local roads, taken forward-facing (108,556) and straight down (153,501), with pavement damage, repairs and facility damage boxed and watch-list areas segmented. For non-stop automatic road surface inspection AI.",
+ "contents_ko": "노면 이미지(jpg) + JSON(상자, 분할, 결함 유형).",
+ "contents_en": "Road surface image (jpg) + JSON (boxes, segmentation, defect type).",
+ "modalities": ["image"],
+ "tasks": ["object_detection", "segmentation", "anomaly_detection"],
+ "topics": [{"ko": "도로 관리·안전", "en": "Road maintenance and safety"}, {"ko": "교통 인프라", "en": "Transport infrastructure"}],
+ "keywords_ko": ["도로 노면", "포장 파손", "균열", "포트홀", "고해상도", "도로 점검"],
+ "keywords_en": ["road surface", "pavement damage", "cracks", "potholes", "high resolution", "road inspection"],
+ "labels": ["bounding box", "segmentation", "defect type"],
+ "file_formats": ["jpg", "json"],
+ "scale_ko": "이미지 262,057장(전방 108,556, 노면수직 153,501)",
+ "classes_example": ["균열", "차선"],
+ "baseline": [],
+ "difficulty": "intermediate",
+ "difficulty_note_ko": "탐지 실습에 좋지만 이미지가 커서 타일로 나눠 처리해야 하고 전체가 약 216GB입니다.",
+ "skills_needed_ko": ["파이썬", "YOLO 탐지", "큰 이미지 타일 처리"],
+ "caveats_ko": ["일부(50,000장)는 한국도로공사 제공 데이터임", "결함 클래스 전체 목록과 성능 지표가 팩 앞부분에 없음", "557번 지자체 도로 데이터와 비슷한 주제"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "노면 균열 탐지", "title_en": "Road crack detection", "desc_ko": "노면 수직 사진에서 균열을 상자로 찾습니다.", "desc_en": "Box cracks in top-down road photos."},
+  {"level": "capstone", "title_ko": "도로 파손 지도", "title_en": "Road damage map", "desc_ko": "탐지 결과를 위치별로 모아 보수 우선순위 지도를 만듭니다.", "desc_en": "Map damage by location for repair priority."},
+  {"level": "research", "title_ko": "전방 vs 수직 촬영 비교", "title_en": "Forward vs top-down views", "desc_ko": "두 촬영 방식 중 어떤 것이 파손 탐지에 더 좋은지 연구합니다.", "desc_en": "Compare forward and top-down views for damage detection."}
+ ],
+ "doc_used": true,
+ "uncertain": ["결함 클래스 목록"]
+}

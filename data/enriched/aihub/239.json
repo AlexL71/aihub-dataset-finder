@@ -1,0 +1,29 @@
+{
+ "dataset_id": "239",
+ "title_en": "Power equipment energy patterns and fault analysis sensor data",
+ "summary_ko": "63개 업체의 설비 461대에 휴대형 전력계를 달아 측정한 전력 품질 원천 데이터 7억 건과 AI 학습 데이터 168만 건입니다. 설비 10종의 전기 사용 패턴과 상태(SOH)를 분석해 에너지 효율화와 고장 진단에 쓸 수 있습니다.",
+ "summary_en": "708 million raw power-quality measurements and 1.68 million AI training records from portable energy meters on 461 machines at 63 companies. For analysing electricity-use patterns and equipment state of health (SOH) across 10 equipment types, for energy efficiency and fault diagnosis.",
+ "contents_ko": "설비별 전력 품질 시계열(전류·전압·역률·고조파 등) + 업체·설비 메타정보 + 사용 패턴·SOH 라벨.",
+ "contents_en": "Power-quality time series per machine (current, voltage, power factor, harmonics and so on) + company and equipment metadata + usage-pattern and SOH labels.",
+ "modalities": ["sensor", "tabular"],
+ "tasks": ["anomaly_detection", "forecasting", "tabular_prediction"],
+ "topics": [{"ko": "에너지·전력", "en": "Energy and electricity"}, {"ko": "제조·설비 관리", "en": "Manufacturing and equipment maintenance"}, {"ko": "스마트 팩토리", "en": "Smart factories"}],
+ "keywords_ko": ["전력 품질", "에너지 효율", "스마트 팩토리", "고장 진단", "SOH", "전력 사용 패턴"],
+ "keywords_en": ["power quality", "energy efficiency", "smart factory", "fault diagnosis", "state of health", "power usage pattern"],
+ "labels": ["usage pattern", "SOH state"],
+ "file_formats": ["csv", "json"],
+ "scale_ko": "원천 7.08억 건, AI 학습 데이터 168만 건, 업체 63개, 설비 461대(10종)",
+ "classes_example": ["사용패턴 > Loading", "사용패턴 > Unloading", "사용패턴 > Stop", "SOH 진단 > 정상", "SOH 진단 > 주의", "SOH 진단 > 경고"],
+ "baseline": [{"task": "equipment SOH diagnosis", "model": "LSTM + attention + autoencoder", "metric": "false positive rate", "value": "0.99–1.78%"}],
+ "difficulty": "intermediate",
+ "difficulty_note_ko": "시계열 이상 탐지와 예측을 다뤄야 합니다. 약 19GB로 크기는 적당합니다.",
+ "skills_needed_ko": ["파이썬", "시계열 분석", "LSTM·오토인코더 기초"],
+ "caveats_ko": ["설비 10종 이름이 팩 앞부분에 없음", "성능 표의 과제명이 'Image Classification'으로 적혀 있음"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "설비별 전력 사용 패턴 시각화", "title_en": "Power usage patterns by machine", "desc_ko": "설비 종류별 하루 전력 사용 곡선을 그려 비교합니다.", "desc_en": "Plot and compare daily power curves by equipment type."},
+  {"level": "capstone", "title_ko": "공장 에너지 절감 리포트", "title_en": "Factory energy-saving report", "desc_ko": "사용 패턴으로 낭비 구간을 찾아 절감 방안을 보여주는 대시보드를 만듭니다.", "desc_en": "Find wasteful periods and suggest savings on a dashboard."},
+  {"level": "research", "title_ko": "전력 신호로 설비 노후 예측", "title_en": "Predicting equipment ageing from power signals", "desc_ko": "고조파·역률 변화로 설비 상태 저하를 예측하는 방법을 연구합니다.", "desc_en": "Predict equipment degradation from harmonic and power-factor changes."}
+ ],
+ "doc_used": true,
+ "uncertain": ["파일 형식이 팩에 명시되지 않음"]
+}

@@ -1,0 +1,29 @@
+{
+ "dataset_id": "71874",
+ "title_en": "Specialized medical knowledge data",
+ "summary_ko": "학술 논문, 의료 정보 사이트, 정부·학회·국제기관 가이드라인, 의학 교과서, 동의서 등에서 모은 원천 텍스트 약 1억 2천만 토큰과 전문의가 참여해 만든 의학 질의응답 15,286쌍으로, 외과·정신건강의학과·신경과·피부과·안과 등 전문 분야별로 나뉩니다. 의료 특화 생성 AI 학습과 평가에 쓸 수 있습니다.",
+ "summary_en": "About 120M tokens of source text (papers, medical info sites, government/society/international guidelines, textbooks, consent forms) plus 15,286 specialist-built medical QA pairs across specialties such as surgery, psychiatry, neurology, dermatology and ophthalmology. For training and evaluating medical generative AI.",
+ "contents_ko": "원천 텍스트 + 질의응답 JSON(진료과, 질문 유형, 답변).",
+ "contents_en": "Source text + QA JSON (specialty, question type, answer).",
+ "modalities": ["text"],
+ "tasks": ["question_answering", "text_generation"],
+ "topics": [{"ko": "의료 생성 AI", "en": "Medical generative AI"}, {"ko": "의학 교육", "en": "Medical education"}],
+ "keywords_ko": ["의학 질의응답", "LLM", "전문의", "가이드라인", "KorMedMCQA", "진료과"],
+ "keywords_en": ["medical QA", "LLM", "specialists", "guidelines", "KorMedMCQA", "specialties"],
+ "labels": ["question-answer", "specialty", "question type"],
+ "file_formats": ["json"],
+ "scale_ko": "원천 120,673,006토큰, 질의응답 15,286쌍",
+ "classes_example": ["외과", "예방의학", "정신건강의학과", "신경과/신경외과", "피부과", "안과", "이비인후과"],
+ "baseline": [],
+ "difficulty": "intermediate",
+ "difficulty_note_ko": "약 190MB로 가볍지만, LLM 미세조정에는 GPU가 필요합니다.",
+ "skills_needed_ko": ["파이썬", "Hugging Face LLM 미세조정(LoRA)", "객관식 정답률 평가"],
+ "caveats_ko": ["페이지에 성능 점수 표가 없음(KorMedMCQA로 테스트한다는 소개만 있음)", "외과(3,731쌍)가 많고 피부과·예방의학은 700여 쌍으로 적음", "의료 답변을 실제 진료에 그대로 쓰면 안 됨"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "진료과 분류기", "title_en": "Specialty classifier", "desc_ko": "의학 질문이 어느 진료과에 속하는지 분류합니다.", "desc_en": "Classify which specialty a medical question belongs to."},
+  {"level": "capstone", "title_ko": "의학 퀴즈 LLM 미세조정", "title_en": "Medical quiz LLM", "desc_ko": "질의응답으로 작은 LLM을 미세조정하고 KorMedMCQA로 평가합니다.", "desc_en": "Fine-tune a small LLM and test on KorMedMCQA."},
+  {"level": "research", "title_ko": "가이드라인 근거 답변", "title_en": "Guideline-grounded answers", "desc_ko": "원천 가이드라인 검색을 붙여 답변 정확도를 높이는 방법을 연구합니다.", "desc_en": "Study retrieval over guidelines to improve answers."}
+ ],
+ "doc_used": true,
+ "uncertain": ["원천 텍스트가 함께 개방되는지 여부(파일 크기 190MB로 작음)"]
+}

@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71683",
+ "easy_ko": "전문 발화자 10명이 한국어 문장 5,000개를 읽은 목소리와, 그때 얼굴의 정면 사진과 입체 얼굴 모형을 모은 데이터입니다. 한국어 목소리를 넣으면 가상 인물의 입과 얼굴이 자연스럽게 움직이게 하는 AI에 쓸 수 있습니다.",
+ "easy_en": "Recordings of 10 professional speakers reading 5,000 Korean sentences, with matching front-facing face photos and three-dimensional face meshes. You can use it to build AI that makes a virtual human's mouth and face move naturally when given Korean speech.",
+ "detail_ko": "20~30대 남녀 전문 발화자 10명이 한국어 5,000문장을 읽은 음성 5,000건(wav)과 정면 2D 얼굴 이미지(png), 3D 얼굴 메쉬(obj), 랜드마크 포함 메타데이터(JSON) 각 578,242건, 텍스처 10건입니다. 기준 모델은 음성 기반 3D 얼굴 애니메이션 CodeTalker이지만 값은 팩 앞부분에 없습니다. 전체 약 1.9TB이고 가장 작은 파일도 약 23GB이며, 발화자가 10명뿐이라 다양한 얼굴로 일반화가 어려울 수 있습니다.",
+ "detail_en": "5,000 audio clips (wav) of 10 professional speakers (men and women in their 20s and 30s) reading 5,000 Korean sentences, with 578,242 each of front-facing 2D face images (png), 3D face meshes (obj) and JSON metadata with landmarks, plus 10 textures. The baseline model is CodeTalker for speech-driven 3D facial animation, but its score is not in the pack. Total size is about 1.9 TB, with even the smallest file about 23 GB. With only 10 speakers, it may not generalise well to other faces.",
+ "amount_ko": "음성 5,000건, 이미지·3D 메쉬·메타데이터 각 578,242건, 발화자 10명",
+ "amount_en": "5,000 audio clips, 578,242 each of images, 3D meshes and metadata, 10 speakers",
+ "labels_ko": "입체 얼굴 모형, 얼굴 특징 점",
+ "labels_en": "3D mesh, face landmarks",
+ "status": "full-run-2026-11-02"
+}

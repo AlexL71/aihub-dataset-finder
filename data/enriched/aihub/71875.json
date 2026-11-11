@@ -1,0 +1,29 @@
+{
+ "dataset_id": "71875",
+ "title_en": "Essential medical care knowledge data",
+ "summary_ko": "학술 논문, 의료 정보 사이트, 각종 가이드라인, 의학 교과서, 동의서 등에서 모은 원천 텍스트 약 1억 140만 토큰과 의학 질의응답 19,201쌍으로, 산부인과·소아청소년과·응급의학과·내과 같은 필수의료 분야를 다룹니다. 질문은 객관식·단답형·서술형으로 되어 있어 의료 LLM 학습과 평가에 쓸 수 있습니다.",
+ "summary_en": "About 101.4M tokens of source text (papers, medical sites, guidelines, textbooks, consent forms) plus 19,201 medical QA pairs in essential care fields (obstetrics/gynecology, pediatrics, emergency medicine, internal medicine), as multiple-choice, short-answer and essay questions. For medical LLM training and evaluation.",
+ "contents_ko": "원천 텍스트 + 질의응답 JSON(진료과, 질문 유형, 답변).",
+ "contents_en": "Source text + QA JSON (specialty, question type, answer).",
+ "modalities": ["text"],
+ "tasks": ["question_answering", "text_generation"],
+ "topics": [{"ko": "필수의료", "en": "Essential medical care"}, {"ko": "의료 생성 AI", "en": "Medical generative AI"}],
+ "keywords_ko": ["필수의료", "의학 질의응답", "내과", "소아청소년과", "응급의학", "KorMedMCQA"],
+ "keywords_en": ["essential care", "medical QA", "internal medicine", "pediatrics", "emergency medicine", "KorMedMCQA"],
+ "labels": ["question-answer", "specialty", "question type"],
+ "file_formats": ["json"],
+ "scale_ko": "원천 101,400,003토큰, 질의응답 19,201쌍(객관식 15,600·단답형 1,814 등)",
+ "classes_example": ["산부인과", "소아청소년과", "응급의학과", "내과", "객관식", "단답형", "서술형"],
+ "baseline": [],
+ "difficulty": "intermediate",
+ "difficulty_note_ko": "약 130MB로 가볍지만, LLM 미세조정에는 GPU가 필요합니다.",
+ "skills_needed_ko": ["파이썬", "Hugging Face LLM 미세조정(LoRA)", "객관식 정답률 평가"],
+ "caveats_ko": ["페이지에 성능 점수 표가 없음(KorMedMCQA로 테스트한다는 소개만 있음)", "내과가 12,781쌍으로 대부분이고 응급의학과는 815쌍", "객관식이 약 81%로 서술형이 적음", "의료 답변을 실제 진료에 그대로 쓰면 안 됨"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "공개 LLM 의학 객관식 평가", "title_en": "Medical MCQ test for LLMs", "desc_ko": "공개 한국어 모델에 객관식 문제를 풀게 해 정답률을 셉니다.", "desc_en": "Measure an open model's accuracy on the multiple-choice items."},
+  {"level": "capstone", "title_ko": "소아·응급 상담 챗봇", "title_en": "Pediatric and emergency chatbot", "desc_ko": "질의응답으로 미세조정한 의료 상담 챗봇 데모를 만듭니다.", "desc_en": "Build a fine-tuned medical Q&A chatbot demo."},
+  {"level": "research", "title_ko": "서술형 답변 자동 채점", "title_en": "Essay answer grading", "desc_ko": "LLM의 서술형 의학 답변을 자동으로 채점하는 방법을 연구합니다.", "desc_en": "Study automatic grading of essay-style medical answers."}
+ ],
+ "doc_used": true,
+ "uncertain": ["서술형 문항 수(팩에서 잘림)"]
+}

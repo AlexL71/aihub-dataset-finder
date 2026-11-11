@@ -1,0 +1,32 @@
+{
+ "dataset_id": "135",
+ "title_en": "Forest tree species images (Gangwon and Chungcheong)",
+ "summary_ko": "강원·충청 지역 항공사진(25cm 해상도) 10.6만 장과 위성 모사영상(5m)에 소나무·낙엽송·기타 침엽수·활엽수 4종 산림 영역을 칠한 데이터입니다. 항공사진으로 숲의 나무 종류 지도를 만들고 산림 변화를 감시하는 AI에 쓸 수 있습니다.",
+ "summary_en": "106,000 aerial photos (25 cm resolution) and simulated satellite images (5 m) of Gangwon and Chungcheong with forest areas painted as 4 types: pine, larch, other conifers and broadleaf. For AI that maps tree species from aerial images and monitors forest change.",
+ "contents_ko": "512×512 또는 1024×1024 영상 패치(TIFF) + JSON 분할 라벨(정밀 또는 대략 라벨).",
+ "contents_en": "512×512 or 1024×1024 image patches (TIFF) + JSON segmentation labels (fine or coarse).",
+ "modalities": ["image"],
+ "tasks": ["segmentation"],
+ "topics": [{"ko": "산림·숲", "en": "Forests"}, {"ko": "위성·항공 영상", "en": "Satellite and aerial imagery"}, {"ko": "환경 변화", "en": "Environmental change"}],
+ "keywords_ko": ["산림수종", "항공사진", "소나무", "활엽수", "임상도", "환경 변화"],
+ "keywords_en": ["tree species", "aerial photo", "pine", "broadleaf", "forest type map", "environmental change"],
+ "labels": ["segmentation mask (4 species)", "fine/coarse annotation"],
+ "file_formats": ["tif", "json"],
+ "scale_ko": "항공사진 105,700장(정밀 39,370, 대략 66,330), 모사영상 1,000장",
+ "classes_example": ["소나무", "낙엽송", "기타 침엽수", "활엽수"],
+ "baseline": [
+  {"task": "tree species segmentation (aerial)", "model": "DeepLab v3+", "metric": "pixel accuracy", "value": "82%"},
+  {"task": "conifer/broadleaf segmentation (aerial)", "model": "DeepLab v3+", "metric": "pixel accuracy", "value": "92%"}
+ ],
+ "difficulty": "beginner",
+ "difficulty_note_ko": "약 36GB로 다룰 만하고 클래스가 4개뿐이라 첫 이미지 분할 프로젝트로 좋습니다.",
+ "skills_needed_ko": ["파이썬", "이미지 분할 모델(U-Net, DeepLab)", "TIFF 영상 읽기"],
+ "caveats_ko": ["대략(Coarse) 라벨은 경계가 거칠어 평가는 정밀 라벨로 하는 것이 좋음"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "침엽수·활엽수 구분 지도", "title_en": "Conifer vs broadleaf map", "desc_ko": "항공사진을 침엽수·활엽수로 칠하는 분할 모델을 학습합니다.", "desc_en": "Train a model that paints conifer and broadleaf areas."},
+  {"level": "capstone", "title_ko": "우리 동네 숲 수종 지도", "title_en": "Tree species map of a local forest", "desc_ko": "분할 결과로 수종별 면적을 계산해 지도 웹으로 보여줍니다.", "desc_en": "Compute area by species and show it on a web map."},
+  {"level": "research", "title_ko": "대략 라벨로 학습해도 정확할까", "title_en": "Learning from coarse labels", "desc_ko": "정밀·대략 라벨 비율에 따른 분할 성능을 비교합니다.", "desc_en": "Compare segmentation quality for different shares of fine and coarse labels."}
+ ],
+ "doc_used": true,
+ "uncertain": []
+}

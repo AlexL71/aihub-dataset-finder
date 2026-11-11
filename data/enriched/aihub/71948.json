@@ -1,0 +1,29 @@
+{
+ "dataset_id": "71948",
+ "title_en": "Fusion sensor multi-object tracking and prediction data (upcycling)",
+ "summary_ko": "2021년 AI Hub 융합센서 다중객체 추적 데이터를 다시 가공해, 20개 시나리오의 도로 이미지와 객체 간 의미 관계를 담은 이미지·텍스트 데이터 20,000건을 만든 데이터입니다. 복합센서 해석과 객체 움직임 예측 AI에 쓸 수 있습니다.",
+ "summary_en": "20,000 image-text items re-processed from AI Hub's 2021 fusion-sensor multi-object tracking data, across 20 scenarios, describing relations between objects, refined with ontology, RAG and human review. For multi-sensor interpretation and object motion prediction.",
+ "contents_ko": "이미지(jpg) + JSON(이미지 설명·객체 관계).",
+ "contents_en": "Images (jpg) + JSON (descriptions, object relations).",
+ "modalities": ["image", "text"],
+ "tasks": ["visual_qa", "image_captioning"],
+ "topics": [{"ko": "자율주행", "en": "Autonomous driving"}, {"ko": "멀티모달 AI", "en": "Multimodal AI"}],
+ "keywords_ko": ["융합센서", "다중객체 추적", "움직임 예측", "시나리오", "온톨로지", "업사이클링"],
+ "keywords_en": ["sensor fusion", "multi-object tracking", "motion prediction", "scenarios", "ontology", "upcycling"],
+ "labels": ["image-text description"],
+ "file_formats": ["jpg", "json"],
+ "scale_ko": "20,000건(시나리오 20개, 각 5%)",
+ "classes_example": [],
+ "baseline": [],
+ "difficulty": "intermediate",
+ "difficulty_note_ko": "약 12GB이며, 이미지·텍스트 형태라 원본 센서 데이터 없이도 실습할 수 있습니다.",
+ "skills_needed_ko": ["파이썬", "멀티모달 모델", "트랜스포머"],
+ "caveats_ko": ["이미지·텍스트로 재가공되어 원본 라이다 등 센서 값이 포함되는지 불분명", "기존 AI Hub 데이터를 재가공한 것이라 원본 데이터와 겹칠 수 있음", "성능 지표 값이 팩 앞부분에 없음"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "도로 장면 설명 생성", "title_en": "Road scene captioning", "desc_ko": "도로 이미지 속 객체와 상황을 설명합니다.", "desc_en": "Describe objects and situations in road images."},
+  {"level": "capstone", "title_ko": "주행 상황 질의응답", "title_en": "Driving scene Q&A", "desc_ko": "주행 장면에 대해 질문하면 답해 주는 도구를 만듭니다.", "desc_en": "Answer questions about driving scenes."},
+  {"level": "research", "title_ko": "언어 기반 움직임 예측", "title_en": "Language-based motion forecasting", "desc_ko": "장면 설명을 활용해 객체 움직임을 예측하는 방법을 연구합니다.", "desc_en": "Use scene descriptions to forecast object motion."}
+ ],
+ "doc_used": true,
+ "uncertain": ["원본 센서 데이터 포함 여부", "시나리오 내용"]
+}

@@ -1,0 +1,29 @@
+{
+ "dataset_id": "485",
+ "title_en": "Literary recitation and reading speech (poems, novels, plays, scripts)",
+ "summary_ko": "성우·배우가 시·소설·희곡·시나리오를 감정을 담아 낭독한 음성 456시간으로, 철자·발음 전사와 기쁨·당황·슬픔·분노·불안·상처·무감정 같은 감정·스타일 투표가 들어 있습니다. 감정 있는 오디오북이나 표현력 있는 음성 합성에 쓸 수 있습니다.",
+ "summary_en": "456 hours of poems, novels, plays and screenplays read with emotion by voice actors and actors, with spelling and pronunciation transcripts and votes on emotion and style (joy, embarrassment, sadness, anger, anxiety, hurt, neutral). For expressive audiobooks or emotional text-to-speech.",
+ "contents_ko": "낭독 음성 + JSON(철자 전사, 발음 전사, 장르, 감정·스타일 동의 투표).",
+ "contents_en": "Recitation audio + JSON (spelling transcript, pronunciation transcript, genre, emotion and style votes).",
+ "modalities": ["audio", "text"],
+ "tasks": ["speech_synthesis", "sentiment_emotion", "speech_recognition"],
+ "topics": [{"ko": "문학·출판", "en": "Literature and publishing"}, {"ko": "오디오북", "en": "Audiobooks"}, {"ko": "감정", "en": "Emotion"}],
+ "keywords_ko": ["낭독", "오디오북", "시", "소설", "희곡", "감정 음성", "TTS"],
+ "keywords_en": ["recitation", "audiobook", "poetry", "novel", "drama", "emotional speech", "TTS"],
+ "labels": ["spelling transcript", "pronunciation transcript", "emotion and style votes"],
+ "file_formats": ["wav", "json"],
+ "scale_ko": "456.5시간(시 131.5h, 희곡/시나리오 166h, 소설 159h), 감정 대본 4,510개",
+ "classes_example": ["기쁨", "당황", "슬픔", "분노", "불안", "상처", "무감정"],
+ "baseline": [],
+ "difficulty": "advanced",
+ "difficulty_note_ko": "약 94GB로 크기는 적당하지만 감정 음성 합성은 전문 지식이 필요합니다. 감정 분류는 중급입니다.",
+ "skills_needed_ko": ["파이썬", "오디오 처리", "TTS 모델(VITS 등)"],
+ "caveats_ko": ["문학 작품 대본 저작권 관련 이용 조건 확인 필요", "성능 지표가 팩 앞부분에 없음"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "장르별 낭독 속도 비교", "title_en": "Reading speed by genre", "desc_ko": "시·소설·희곡 낭독의 말 빠르기와 쉼을 비교합니다.", "desc_en": "Compare speaking rate and pauses across genres."},
+  {"level": "capstone", "title_ko": "감정 오디오북 생성기", "title_en": "Emotional audiobook generator", "desc_ko": "문장 감정을 분류해 맞는 감정으로 읽어 주는 TTS 데모를 만듭니다.", "desc_en": "Classify sentence emotion and read it aloud with a matching voice."},
+  {"level": "research", "title_ko": "감정 라벨 투표의 불일치", "title_en": "Disagreement in emotion votes", "desc_ko": "평가자 간 감정 판단 차이가 감정 인식 학습에 주는 영향을 연구합니다.", "desc_en": "Study how disagreement among raters affects emotion learning."}
+ ],
+ "doc_used": true,
+ "uncertain": []
+}

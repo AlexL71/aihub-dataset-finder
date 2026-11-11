@@ -1,0 +1,29 @@
+{
+ "dataset_id": "71412",
+ "title_en": "3D asset and object-modelling image pair data",
+ "summary_ko": "문구·주방용품·공구·장난감·소형 전자제품 등 사물 3D 에셋 10,000개와, 이를 여러 카메라 시점에서 렌더링한 RGB·깊이·마스크·노멀(표면 방향) 이미지 96만 장입니다. 카메라 정보가 함께 있어 2D 사진으로 3D를 복원하거나 새 시점 이미지를 만드는 AI, 메타버스용 3D 생성에 쓸 수 있습니다.",
+ "summary_en": "10,000 3D assets of everyday objects (stationery, kitchenware, tools, toys, small electronics) and 960k renders from many camera views as RGB, depth, mask and normal images, with camera info. For 2D-to-3D reconstruction, novel view synthesis and 3D generation.",
+ "contents_ko": "3D 모델(fbx, obj, mtl) + 렌더링 이미지(png; RGB·깊이·마스크·노멀) + JSON(에셋 정보, 카메라 속성, 경로).",
+ "contents_en": "3D model (fbx, obj, mtl) + render images (png; RGB, depth, mask, normal) + JSON (asset info, camera parameters, path).",
+ "modalities": ["3d", "image"],
+ "tasks": ["3d_reconstruction", "depth_estimation", "image_generation"],
+ "topics": [{"ko": "메타버스·3D 콘텐츠", "en": "Metaverse and 3D content"}, {"ko": "로봇·디지털 트윈", "en": "Robotics and digital twins"}],
+ "keywords_ko": ["3D 에셋", "렌더링", "깊이 맵", "새 시점 합성", "NeRF", "디지털 트윈"],
+ "keywords_en": ["3D assets", "rendering", "depth map", "novel view synthesis", "NeRF", "digital twin"],
+ "labels": ["camera parameters", "asset info", "depth", "mask", "normal"],
+ "file_formats": ["fbx", "obj", "mtl", "png", "json"],
+ "scale_ko": "3D 에셋 10,000개, 렌더링 이미지 960,000장(RGB·깊이·마스크·노멀 각 240,000장)",
+ "classes_example": ["문구", "주방용품", "용기", "공구", "장난감", "화장품/미용", "소형 전자제품", "과일/음식", "악기"],
+ "baseline": [{"task": "novel view synthesis", "model": "unspecified", "metric": "PSNR", "value": "28.8 dB"}, {"task": "novel view synthesis", "model": "unspecified", "metric": "SSIM", "value": "0.96"}],
+ "difficulty": "advanced",
+ "difficulty_note_ko": "3D 그래픽스·카메라 기하 지식이 필요합니다. 파일 트리는 약 126GB지만 obj 메시만 약 435GB로 적혀 있어 일부만 받아 쓰세요.",
+ "skills_needed_ko": ["파이썬", "3D 도구(Blender·Open3D)", "NeRF·새 시점 합성", "카메라 좌표계"],
+ "caveats_ko": ["성능표의 학습모델 칸에 모델 이름 대신 CUDA·드라이버 버전이 적혀 있음", "파일 트리 용량(약 126GB)과 페이지 표 용량 합이 다름", "렌더링(합성) 이미지라 실제 사진과 차이가 있음"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "사물 마스크 분할", "title_en": "Object mask segmentation", "desc_ko": "RGB 렌더링과 마스크로 사물 영역 분할 모델을 학습합니다.", "desc_en": "Train object segmentation on RGB renders and masks."},
+  {"level": "capstone", "title_ko": "사진 몇 장으로 3D 만들기", "title_en": "3D from a few photos", "desc_ko": "여러 시점 이미지와 카메라 정보로 NeRF를 학습해 360도 뷰어를 만듭니다.", "desc_en": "Train NeRF from multi-view renders and build a 360-degree viewer."},
+  {"level": "research", "title_ko": "단일 이미지 깊이 추정", "title_en": "Single-image depth estimation", "desc_ko": "렌더링 깊이로 학습한 모델이 실제 사진에서 얼마나 정확한지 연구합니다.", "desc_en": "Study how render-trained depth models work on real photos."}
+ ],
+ "doc_used": true,
+ "uncertain": ["새 시점 합성 성능에 어떤 모델을 썼는지 페이지에 없음"]
+}

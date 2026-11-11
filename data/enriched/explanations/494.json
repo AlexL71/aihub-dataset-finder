@@ -1,0 +1,12 @@
+{
+ "dataset_id": "494",
+ "easy_ko": "내 눈으로 본 내 손과, 다른 사람이 본 손을 여러 가지 손동작으로 찍고, 손가락 마디 위치, 입체 손 모형, 손이 잡은 물건과 하는 행동을 표시한 데이터입니다. 가상현실이나 증강현실에서 손으로 화면을 조작하는 기능을 만들 수 있습니다.",
+ "easy_en": "Hands filmed doing many gestures from the owner's own eye view and from another person's view, with finger-joint positions, 3D hand models, and the objects held and actions marked. You can build hand-controlled interfaces for virtual or augmented reality.",
+ "detail_ko": "1인칭(자신의 손)과 3인칭(타인의 손) 시점에서 400가지 손동작을 촬영한 172.8만 건(2D 100.8만, 3D 72만: 상호작용 객체·행동)으로, 이미지(jpg/png), JSON(2D 키포인트, 바운딩박스), 3D 메시(obj), 깊이 이미지가 있습니다. 기준 성능은 기록에서 확인되지 않습니다. 전체 약 3.4TB입니다.",
+ "detail_en": "1.728M items of 400 hand actions filmed from first-person (own hand) and third-person (other's hand) views: 1.008M 2D and 720k 3D (interaction objects and actions), with images (jpg/png), JSON 2D keypoints and boxes, 3D meshes (obj) and depth images. No baseline is visible in the record. Total size is about 3.4 TB.",
+ "amount_ko": "데이터 약 172.8만 건, 손동작 400종",
+ "amount_en": "about 1.73M items, 400 hand actions",
+ "labels_ko": "손가락 마디 위치(평면), 입체 손 모형, 손 위치 상자, 손동작·잡은 물건",
+ "labels_en": "2D hand key points, 3D hand mesh, hand boxes, action and held object",
+ "status": "full-run-2026-11-02"
+}

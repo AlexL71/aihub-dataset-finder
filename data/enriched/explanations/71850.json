@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71850",
+ "easy_ko": "지자체와 공공기관의 실제 CCTV 영상 300개에 침입, 쓰러짐, 싸움, 사람 몰림, 물에 잠김 같은 안전사고 구간과 설명 문장을 표시한 데이터입니다. 위험한 상황을 자동으로 알려 주는 똑똑한 CCTV 관제에 쓸 수 있습니다.",
+ "easy_en": "300 real CCTV videos from local governments and public bodies, with safety incidents such as intrusion, falls, fights, crowding and flooding marked in time and described in sentences. You can use it for smart CCTV monitoring that raises alerts automatically.",
+ "detail_ko": "지자체·공공기관의 실제 CCTV 영상 300건(mp4)에 안전사고 6종(침입, 쓰러짐, 싸움, 군집, 인파밀집, 침수) 구간 태그와 캡션을 JSON으로 붙였습니다. 영상 수가 300건으로 적고, 실제 CCTV라 사람이 찍혀 있어 개인정보에 주의해야 하며, 품질 점수는 라벨 정확도이고 모델 성능 수치는 팩에 없습니다.",
+ "detail_en": "300 real CCTV videos (mp4) from local governments and public institutions, with JSON time-segment tags and captions for 6 incident types (intrusion, fall, fight, gathering, crowd crush risk, flooding). With only 300 videos the set is small; real CCTV shows people, so handle personal data with care; quality scores describe label accuracy and no model scores are in the pack.",
+ "amount_ko": "영상 300건, 사고 유형 6종",
+ "amount_en": "300 videos, 6 incident types",
+ "labels_ko": "사고 구간, 사고 종류, 설명 문장",
+ "labels_en": "temporal segment, caption, event class",
+ "status": "full-run-2026-11-02"
+}

@@ -1,0 +1,12 @@
+{
+ "dataset_id": "197",
+ "easy_ko": "수도권 도로를 달리며 찍은 사진마다 차선(실선·점선, 흰색·노란색·파란색), 정지선, 횡단보도 위치를 선과 영역으로 그려 둔 데이터입니다. 자율주행차가 차선을 따라가게 하거나 정밀 도로 지도를 자동으로 만드는 AI를 만들 수 있습니다.",
+ "easy_en": "Photos taken while driving on capital-area roads, with lane lines (solid or dashed; white, yellow or blue), stop lines and crosswalks drawn as lines and areas. You can build AI that keeps self-driving cars in their lane or makes detailed road maps automatically.",
+ "detail_ko": "수도권 도로 주행 영상에서 뽑은 이미지 845,571장(jpg)에 차선·정지선 폴리라인, 횡단보도 폴리곤, 차선 속성(백색 실선·점선, 황색 실선, 청색 차선)을 JSON으로 붙였습니다. 차선 약 1,091만, 횡단보도 85만, 정지선 63만 개는 196번 데이터와 합친 값입니다. 기준 성능은 FCN ResNet50 차선·횡단보도 영역 검출 F1-score 0.8972입니다.",
+ "detail_en": "845,571 jpg images from driving video on capital-area roads, with JSON polylines for lanes and stop lines, polygons for crosswalks and lane attributes (white solid, white dashed, yellow solid, blue). The counts of about 10.91M lanes, 850k crosswalks and 630k stop lines are combined with dataset 196. Baseline: FCN ResNet50 lane and crosswalk detection F1-score 0.8972.",
+ "amount_ko": "이미지 약 85만 장",
+ "amount_en": "about 850k images",
+ "labels_ko": "차선·정지선(선), 횡단보도(영역), 차선 색과 모양",
+ "labels_en": "lane and stop lines (polylines), crosswalks (polygons), lane colour and style",
+ "status": "full-run-2026-11-02"
+}

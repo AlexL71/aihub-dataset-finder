@@ -1,0 +1,29 @@
+{
+ "dataset_id": "71676",
+ "title_en": "GPR data for road above-ground facility safety management",
+ "summary_ko": "옹벽·교량·터널·건축물 같은 콘크리트 시설물을 GPR(지표투과레이더) 장비 3종으로 찍은 이미지 301,080장에 내부 철근과 표면 균열 신호가 상자로 표시되고, 양품·불량품이 구분된 데이터입니다. 콘크리트 구조물 안전 진단 AI에 쓸 수 있습니다.",
+ "summary_en": "301,080 GPR (ground-penetrating radar) images of concrete structures (retaining walls, bridges, tunnels, buildings) from 3 devices, with rebar and crack signals boxed and each sample marked good or defective. For concrete structure safety diagnosis AI.",
+ "contents_ko": "GPR 이미지(png) + JSON(상자, 철근·균열 신호, 양품·불량).",
+ "contents_en": "GPR image (png) + JSON (boxes, rebar and crack signals, good/defective).",
+ "modalities": ["image", "sensor"],
+ "tasks": ["object_detection", "anomaly_detection", "image_classification"],
+ "topics": [{"ko": "시설물 안전", "en": "Infrastructure safety"}, {"ko": "비파괴 검사", "en": "Non-destructive testing"}],
+ "keywords_ko": ["GPR", "콘크리트", "철근", "균열", "교량", "안전 진단"],
+ "keywords_en": ["GPR", "concrete", "rebar", "cracks", "bridges", "safety inspection"],
+ "labels": ["bounding box", "good/defective"],
+ "file_formats": ["png", "json"],
+ "scale_ko": "이미지 301,080장(옹벽 81,289, 교량 78,520, 터널 60,257, 건축물 81,014)",
+ "classes_example": ["철근", "균열", "양품", "불량"],
+ "baseline": [],
+ "difficulty": "intermediate",
+ "difficulty_note_ko": "약 18GB로 작아 탐지·분류 실습에 좋지만 GPR 신호 해석에 익숙해져야 합니다.",
+ "skills_needed_ko": ["파이썬", "YOLO 탐지", "신호·영상 처리"],
+ "caveats_ko": ["장비 3종(C-Thrue, Hi-mod, NM)마다 영상 특성이 다를 수 있음", "성능 지표 값이 팩에 없음"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "양품·불량 분류", "title_en": "Good vs defective classifier", "desc_ko": "GPR 이미지가 양품인지 불량인지 분류합니다.", "desc_en": "Classify GPR images as good or defective."},
+  {"level": "capstone", "title_ko": "교량 점검 보조 도구", "title_en": "Bridge inspection helper", "desc_ko": "GPR 이미지에서 철근·균열을 표시해 점검 보고서를 만들어 줍니다.", "desc_en": "Mark rebar and cracks and draft an inspection report."},
+  {"level": "research", "title_ko": "장비 간 일반화", "title_en": "Cross-device generalisation", "desc_ko": "한 장비로 학습한 모델이 다른 GPR 장비에서도 되는지 연구합니다.", "desc_en": "Test models across different GPR devices."}
+ ],
+ "doc_used": true,
+ "uncertain": ["불량 판정 기준"]
+}

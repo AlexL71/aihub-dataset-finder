@@ -1,0 +1,29 @@
+{
+ "dataset_id": "71667",
+ "title_en": "Honeybee disease diagnosis image data",
+ "summary_ko": "벌통 소비·소문·플레이트 촬영기로 찍은 꿀벌 유충·성충 이미지 312,000장에 정상과 응애·부저병·석고병·날개불구바이러스감염증 등 질병이 상자와 설명문으로 표시되고, 벌통 안 온도·습도·이산화탄소 기록이 짝지어진 데이터입니다. 꿀벌 질병 조기 진단 AI에 쓸 수 있습니다.",
+ "summary_en": "312,000 images of honeybee larvae and adults from comb, entrance and plate cameras, with healthy bees and diseases (varroa mites, foulbrood, chalkbrood, deformed wing virus) marked by boxes and captions, paired with hive temperature, humidity and CO2. For early bee disease diagnosis.",
+ "contents_ko": "꿀벌 이미지(jpg) + JSON(상자, 질병 클래스, 설명문, 벌통 환경 정보).",
+ "contents_en": "Bee image (jpg) + JSON (box, disease class, caption, hive environment).",
+ "modalities": ["image", "sensor"],
+ "tasks": ["object_detection", "image_classification", "image_captioning"],
+ "topics": [{"ko": "양봉·축산", "en": "Beekeeping and livestock"}, {"ko": "동물 질병", "en": "Animal disease"}],
+ "keywords_ko": ["꿀벌", "응애", "부저병", "석고병", "날개불구바이러스", "양봉"],
+ "keywords_en": ["honeybee", "varroa mite", "foulbrood", "chalkbrood", "deformed wing virus", "beekeeping"],
+ "labels": ["bounding box", "disease class", "caption"],
+ "file_formats": ["jpg", "json"],
+ "scale_ko": "이미지 312,000장(유충 224,220, 성충 87,780)",
+ "classes_example": ["정상", "응애", "부저병", "석고병", "날개불구바이러스감염증"],
+ "baseline": [],
+ "difficulty": "intermediate",
+ "difficulty_note_ko": "탐지 실습에 좋지만 전체 약 259GB이고 가장 작은 파일도 2GB입니다.",
+ "skills_needed_ko": ["파이썬", "YOLO 탐지", "이미지 분류"],
+ "caveats_ko": ["전체 약 259GB(최소 파일 2GB)", "성충 응애는 5,100장으로 적음", "성능 지표 값이 팩에 없음"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "유충 질병 분류", "title_en": "Larva disease classifier", "desc_ko": "유충 사진이 정상인지 어떤 병인지 분류합니다.", "desc_en": "Classify larva photos as healthy or by disease."},
+  {"level": "capstone", "title_ko": "스마트 벌통 모니터", "title_en": "Smart hive monitor", "desc_ko": "벌통 카메라와 환경 센서로 질병 위험을 알려 주는 대시보드를 만듭니다.", "desc_en": "Dashboard warning of disease risk from hive cameras and sensors."},
+  {"level": "research", "title_ko": "작은 응애 탐지", "title_en": "Tiny mite detection", "desc_ko": "꿀벌 몸에 붙은 작은 응애 탐지 성능을 높이는 방법을 연구합니다.", "desc_en": "Improve detection of tiny mites on bees."}
+ ],
+ "doc_used": true,
+ "uncertain": []
+}

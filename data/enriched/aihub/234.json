@@ -1,0 +1,29 @@
+{
+ "dataset_id": "234",
+ "title_en": "Classical Chinese character OCR for old books",
+ "summary_ko": "한자로 쓰인 고서·고문헌 원문 이미지 5.7만 장에서 한자 1,014만 자의 위치와 글자를 표시한 데이터입니다. 옛 문헌 속 한자를 자동으로 디지털 텍스트로 바꾸는 OCR에 쓸 수 있어 역사·국문학·한문학 연구에 도움이 됩니다.",
+ "summary_en": "57,000 page images of old books and documents written in Classical Chinese, with the position and identity of 10.14 million characters marked. For OCR that turns characters in old texts into digital text, useful for history, Korean literature and Classical Chinese studies.",
+ "contents_ko": "고서 원문 이미지(jpg) + JSON(한자별 상자와 글자) + 같은 한자 클러스터링 정보.",
+ "contents_en": "Old-book page image (jpg) + JSON (box and character for each glyph) + clustering of identical characters.",
+ "modalities": ["image", "text"],
+ "tasks": ["ocr", "object_detection"],
+ "topics": [{"ko": "역사·고문헌", "en": "History and old documents"}, {"ko": "한문·한자", "en": "Classical Chinese"}, {"ko": "문화유산 디지털화", "en": "Heritage digitisation"}],
+ "keywords_ko": ["고서", "한자", "한문", "OCR", "고문헌", "국가기록유산"],
+ "keywords_en": ["old books", "Chinese characters", "Classical Chinese", "OCR", "historical documents", "national records"],
+ "labels": ["character bounding box", "character label", "clusters"],
+ "file_formats": ["jpg", "json"],
+ "scale_ko": "원문 이미지 57,081장, 한자 10,142,816자",
+ "classes_example": [],
+ "baseline": [],
+ "difficulty": "intermediate",
+ "difficulty_note_ko": "약 20GB로 다룰 만하지만 한자 클래스가 수천 개라 OCR 학습이 쉽지 않습니다.",
+ "skills_needed_ko": ["파이썬", "글자 탐지·인식(OCR)", "클래스가 많은 분류"],
+ "caveats_ko": ["세로쓰기·이체자 등 고서 특성을 고려해야 함", "성능 지표가 팩에서 잘림"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "자주 나오는 한자 통계", "title_en": "Most frequent characters", "desc_ko": "라벨로 고서에 가장 많이 나오는 한자를 집계합니다.", "desc_en": "Count the most frequent characters in the old books."},
+  {"level": "capstone", "title_ko": "고서 페이지 텍스트 변환기", "title_en": "Old-book page to text", "desc_ko": "고서 이미지를 넣으면 한자를 읽어 세로쓰기 순서대로 텍스트로 바꿔 줍니다.", "desc_en": "Read characters from a page image and output text in vertical reading order."},
+  {"level": "research", "title_ko": "드문 한자 인식", "title_en": "Recognising rare characters", "desc_ko": "등장 횟수가 적은 한자의 인식 성능을 높이는 방법을 연구합니다.", "desc_en": "Study ways to recognise characters that appear rarely."}
+ ],
+ "doc_used": true,
+ "uncertain": ["클래스 목록을 페이지와 설명서에서 찾지 못함"]
+}

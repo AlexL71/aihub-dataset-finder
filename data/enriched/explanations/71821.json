@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71821",
+ "easy_ko": "가정에서 쓰는 물건 200가지를 입체로 스캔하고, 실제와 가상 환경에서 여러 각도로 찍은 사진에 물건 영역과 설명 문장을 붙인 데이터입니다. 사람이 말로 가리킨 물건을 로봇이 찾아내게 하는 AI에 쓸 수 있습니다.",
+ "easy_en": "200 kinds of objects used in the home, scanned in 3D and photographed from many angles in real and virtual settings, with object areas and description sentences. You can use it to build AI that lets robots find the object a person names out loud.",
+ "detail_ko": "가정 물체 200종(대분류 5종: 생활용품, 식품, 주방용품, 잡화, 욕실용품)의 3D CAD 스캔(obj, mtl, png)과 실제 10,000세트·가상 90,190세트, 총 100,190세트의 다각도 촬영 이미지(png)·깊이 등(npy)에 분할 영역과 캡션을 JSON으로 붙였습니다. 가상 이미지가 약 90%라 실제 환경 성능은 따로 확인해야 하고, 품질 지표(정확도 98~100)는 라벨 품질이며 모델 성능 수치는 팩에 없습니다. 71820 제조환경 데이터과 같은 구조입니다.",
+ "detail_en": "3D CAD scans (obj, mtl, png) of 200 objects from the home (5 groups: household goods, food, kitchenware, miscellaneous, bathroom items) and 100,190 sets of multi-angle images (png) and depth and other data (npy), 10,000 real and 90,190 virtual, with JSON segmentation masks and captions, for fine-tuning vision-language models (VLMs). About 90% of images are virtual, so check real-world performance separately; the quality figures (accuracy 98 to 100) describe label quality, and no model scores are in the pack. Same structure as the manufacturing set 71820.",
+ "amount_ko": "3D 물체 200종, 촬영 데이터 100,190세트(실제 10,000, 가상 90,190)",
+ "amount_en": "200 3D objects, 100,190 capture sets (10,000 real, 90,190 virtual)",
+ "labels_ko": "물건 영역, 설명 문장",
+ "labels_en": "segmentation mask, caption",
+ "status": "full-run-2026-11-02"
+}

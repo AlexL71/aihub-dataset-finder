@@ -1,0 +1,29 @@
+{
+ "dataset_id": "71552",
+ "title_en": "Synthetic medical images of major diseases (MRI)",
+ "summary_ko": "병원에서 모은 실제 뇌 MRI로 학습한 생성 모델이 만든 합성 뇌 MRI 이미지 1만 장입니다(정상 5,000 + 이상 5,000). 실제 환자 정보가 없어 누구나 비교적 자유롭게 쓸 수 있고, 정상/병변 분류 학습, 데이터 증강, 교육에 쓸 수 있습니다.",
+ "summary_en": "10,000 synthetic brain MRI images (5,000 normal, 5,000 abnormal) made by a generative model trained on real hospital MRI. Free of real patient data; for normal/lesion classification, augmentation and teaching.",
+ "contents_ko": "합성 MRI 이미지(png) + JSON(병변 유무, 병변명).",
+ "contents_en": "Synthetic MRI image (png) + JSON (lesion yes/no, lesion name).",
+ "modalities": ["image"],
+ "tasks": ["image_classification", "image_generation"],
+ "topics": [{"ko": "의료 영상", "en": "Medical imaging"}, {"ko": "합성 데이터", "en": "Synthetic data"}],
+ "keywords_ko": ["뇌 MRI", "합성 데이터", "의료 영상", "병변 분류", "생성 모델"],
+ "keywords_en": ["brain MRI", "synthetic data", "medical imaging", "lesion classification", "generative model"],
+ "labels": ["class tag (normal/abnormal, lesion name)"],
+ "file_formats": ["png", "json"],
+ "scale_ko": "합성 뇌 MRI 10,000장 (정상 5,000, 이상 5,000)",
+ "classes_example": ["Normal", "Abnormal"],
+ "baseline": [{"task": "image synthesis quality", "model": "Score SDE", "metric": "FID", "value": "1.6"}, {"task": "visual Turing test", "model": "VTT (radiologist reading)", "metric": "Accuracy", "value": "46% / 55%"}],
+ "difficulty": "beginner",
+ "difficulty_note_ko": "전체 약 0.19GB로 작고 정상/이상 2분류라 의료 영상 분류 입문에 좋습니다.",
+ "skills_needed_ko": ["파이썬", "이미지 분류(CNN)"],
+ "caveats_ko": ["실제 환자 영상이 아닌 합성 영상이라 실제 진단 성능을 보장하지 않음", "이상(Abnormal) 안의 병변 종류별 수량이 팩에 없음", "페이지 표에 '분류 모델의 유사도' 기준값 5%와 측정값 0.75%·0.2%가 있어 의미가 헷갈림"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "정상/이상 뇌 MRI 분류", "title_en": "Normal vs abnormal brain MRI", "desc_ko": "ResNet으로 합성 뇌 MRI를 정상과 이상으로 분류합니다.", "desc_en": "Classify synthetic brain MRI as normal or abnormal with ResNet."},
+  {"level": "capstone", "title_ko": "합성 데이터로 증강 효과 보기", "title_en": "Measuring synthetic augmentation", "desc_ko": "공개 실제 MRI에 이 합성 영상을 더했을 때 분류 성능이 오르는지 실험합니다.", "desc_en": "Test whether adding these images helps a classifier on real public MRI."},
+  {"level": "research", "title_ko": "합성 의료 영상의 개인정보 위험", "title_en": "Privacy risk in synthetic medical images", "desc_ko": "합성 영상이 학습에 쓰인 실제 영상을 얼마나 닮았는지(기억했는지) 분석합니다.", "desc_en": "Analyse how much synthetic images memorise real training images."}
+ ],
+ "doc_used": true,
+ "uncertain": ["병변명 목록이 팩 앞부분에 없음"]
+}

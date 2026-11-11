@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71548",
+ "easy_ko": "거울, 공구, 꽃병, 램프, 바구니처럼 실제 생활에서 쓰는 물건을 찍어 만든 입체 물건 모형 6만 개에 물건 종류와 정보를 붙인 데이터입니다. 로봇이나 AI 도우미가 가상의 집 안에서 물건을 알아보고 다루는 연구에 쓸 수 있습니다.",
+ "easy_en": "60,000 three-dimensional models of everyday objects, such as mirrors, tools, vases, lamps and baskets, made from real photos, with object type and details. You can use it for research on robots or AI assistants that recognise and handle objects in virtual homes.",
+ "detail_ko": "실생활 물건을 직접 촬영해 만든 한국형 3D 물체 60,000개(FBX, 텍스처 PNG)에 물체 클래스(예: 거울, 공, 공구, 꽃병, 램프, 문구류, 바구니, 박스, 샤워기, 세면대), 물체 정보, 분할을 JSON으로 붙였습니다. 전체 약 852GB이고, 데이터 유형이 '텍스트'로 적혀 있지만 실제는 3D이며, 팩에 성능 지표가 없습니다. 71546 공간, 71547 명령어 데이터와 한 세트입니다.",
+ "detail_en": "60,000 Korean 3D object models (FBX, PNG textures) made from real everyday items, with JSON object class (such as mirror, ball, tools, vase, lamp, stationery, basket, box, shower head, washbasin), object information and segmentation. Total size is about 852 GB. The data type is listed as 'text' although it is 3D, and there are no metrics in the pack. It forms a set with the space data 71546 and the commands 71547.",
+ "amount_ko": "3D 물체 60,000개",
+ "amount_en": "60,000 3D objects",
+ "labels_ko": "물건 종류, 물건 정보, 영역",
+ "labels_en": "object class, object info, segmentation",
+ "status": "full-run-2026-11-02"
+}

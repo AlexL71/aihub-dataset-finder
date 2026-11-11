@@ -1,0 +1,46 @@
+{
+ "id": "sti",
+ "name_ko": "표준·지식학과",
+ "name_en": "Standards and Intellectual Property",
+ "college": "글로벌비즈니스대학",
+ "summary_ko": "제품·서비스의 표준, 시험·인증과 특허·저작권 같은 지식재산(IP)을 함께 배우는 국내 최초의 표준·IP 특성화 학과입니다. 산업통상자원부 지원을 받으며, 표준 문서 작성, 국제통상과 기술장벽(TBT), 특허 전략, 인공지능과 지식재산 과목이 있습니다.",
+ "summary_en": "Korea's first department specialising in standards together with intellectual property: product and service standards, testing and certification, and patents and copyright. Supported by the Ministry of Trade, Industry and Energy, it covers writing standards documents, international trade and technical barriers to trade, patent strategy, and AI and IP.",
+ "key_topics": ["표준화(산업기술, 시스템, 서비스 표준)", "시험·인증과 신뢰성", "품질", "특허·저작권·지식재산", "국제통상과 무역기술장벽(TBT)", "표준 정책·전략", "지식 데이터 분석", "AI와 지식재산", "한류 문화콘텐츠 표준화"],
+ "course_keywords": ["표준과학", "지식과학", "측정표준분석", "표준계량분석", "표준개론", "표준과사회", "표준과기업", "지식개론", "표준과품질", "산업기술표준", "지식데이터개론", "시스템표준", "표준과혁신개발", "지식재산의이해", "지식데이터분석", "서비스표준", "표준과정책비교", "지식콘텐츠산업의이해", "지재권법", "표준산학프로젝트", "신기술과표준지식", "시험인증과신뢰성분석", "지식재산산업연구", "문화산업표준화", "IP캡스톤디자인", "표준문서작성", "국제통상과TBT", "특허콘텐츠전략", "인공지능과지식재산", "문화간커뮤니케이션과표준화", "표준화전략및정책", "표준및시험인증사례연구", "지식재산과기술창업", "한류문화콘텐츠와표준화"],
+ "curriculum_by_year": {
+  "1": ["표준과학", "지식과학", "측정표준분석", "표준계량분석", "표준개론", "표준과사회", "표준과기업", "지식개론", "디지털리터러시입문"],
+  "2": ["표준과품질", "산업기술표준", "지식데이터개론", "시스템표준", "표준과혁신개발", "지식재산의이해", "지식데이터분석"],
+  "3": ["서비스표준", "표준과정책비교", "지식콘텐츠산업의이해", "지재권법", "표준산학프로젝트", "신기술과표준지식", "시험인증과신뢰성분석", "지식재산산업연구", "문화산업표준화", "IP캡스톤디자인"],
+  "4": ["표준문서작성", "국제통상과TBT", "특허콘텐츠전략", "인공지능과지식재산", "문화간커뮤니케이션과표준화", "인턴십", "표준화전략및정책", "표준및시험인증사례연구", "지식재산과기술창업", "한류문화콘텐츠와표준화"]
+ },
+ "careers": ["정부·지자체 공무원", "한국표준협회·한국지식재산보호원 등 공공기관", "시험·인증 기관과 연구원", "기업 표준·품질·특허 부서", "특허 법무법인", "국제표준기구(ISO, IEC 등)"],
+ "research_areas": [],
+ "data_interests": [
+  {"topic_ko": "특허 문서", "topic_en": "Patent documents", "keywords": ["특허 분류", "유사 특허 검색", "청구항"]},
+  {"topic_ko": "표준과 기술 문서", "topic_en": "Standards and technical documents", "keywords": ["표준 문서", "규격", "기술 용어"]},
+  {"topic_ko": "상표와 디자인", "topic_en": "Trademarks and designs", "keywords": ["로고 이미지", "유사 상표"]},
+  {"topic_ko": "저작권과 콘텐츠", "topic_en": "Copyright and content", "keywords": ["콘텐츠 유사도", "표절 탐지"]},
+  {"topic_ko": "제품 품질과 인증", "topic_en": "Product quality and certification", "keywords": ["불량 검사", "시험 데이터"]},
+  {"topic_ko": "법률 텍스트", "topic_en": "Legal text", "keywords": ["지재권 판례", "법률 질의응답"]}
+ ],
+ "interest_questions": [
+  {"q_ko": "표준·지식재산에서 어떤 일이 끌리나요?", "q_en": "Which job in standards and IP appeals to you?",
+   "options": [{"ko": "특허 분석·전략", "en": "Patent analysis and strategy"}, {"ko": "표준 만들기", "en": "Writing standards"}, {"ko": "시험·인증·품질", "en": "Testing, certification and quality"}, {"ko": "저작권·콘텐츠 보호", "en": "Copyright and content protection"}, {"ko": "국제통상", "en": "International trade"}]},
+  {"q_ko": "다뤄보고 싶은 자료는?", "q_en": "What data would you like to use?",
+   "options": [{"ko": "특허 문서", "en": "Patent documents"}, {"ko": "상표·로고 이미지", "en": "Trademark and logo images"}, {"ko": "표준·기술 문서", "en": "Standards and technical documents"}, {"ko": "법률·판례 텍스트", "en": "Legal and case text"}]}
+ ],
+ "project_themes": ["특허 문서 자동 분류와 유사 특허 검색", "유사 상표 이미지 찾기", "표준 문서 핵심 요구사항 추출", "지재권 법률 질의응답 챗봇"],
+ "data_skill_level": "low",
+ "data_skill_note": "측정표준분석, 표준계량분석, 지식데이터개론·분석, 인공지능과지식재산 과목이 있어 기초 데이터 분석을 경험하지만 프로그래밍 비중은 낮습니다.",
+ "sources": [
+  {"kind": "page", "label": "학과소개", "url": "https://sejong.korea.ac.kr/sti/4300/subview.do"},
+  {"kind": "page", "label": "졸업 후 진로", "url": "https://sejong.korea.ac.kr/sti/4302/subview.do"},
+  {"kind": "page", "label": "교육과정표", "url": "https://sejong.korea.ac.kr/sti/12177/subview.do"},
+  {"kind": "image", "label": "교과과정", "url": "https://sejong.korea.ac.kr/sites/sti/images/con_sti_02_new.jpg"},
+  {"kind": "image", "label": "이수체계도", "url": "https://sejong.korea.ac.kr/sites/sti/images/con_sti_03_new.jpg"}
+ ],
+ "inferred_fields": ["data_interests", "interest_questions", "project_themes"],
+ "gaps": [],
+ "version": 1,
+ "created": "2026-10-29"
+}

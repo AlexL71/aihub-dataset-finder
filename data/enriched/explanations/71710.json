@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71710",
+ "easy_ko": "여러 해에 걸쳐 같은 땅을 찍은 위성 사진 약 10만 장에 숲, 논밭, 풀밭, 습지, 사람이 사는 곳 같은 땅 종류를 칠해 표시한 데이터입니다. 탄소를 흡수하는 땅이 어떻게 변하는지 살피고 땅 쓰임을 계획하는 AI에 쓸 수 있습니다.",
+ "easy_en": "About 100,000 satellite images of the same land taken over many years, with land types such as forest, farmland, grassland, wetland and built-up areas painted in. You can use it to build AI that tracks how carbon-absorbing land changes and helps plan land use.",
+ "detail_ko": "Landsat·Sentinel-2 다중 대역 위성영상을 5년 단위로 모은 전국 시계열 이미지(TIF, 256×256 타일)와 라벨(TIF 분할 마스크, JSON) 각 105,262장(Landsat 103,262, Sentinel-2 2,000)에 토지 피복 6종(산림지, 농경지, 초지, 습지, 정주지, 기타)을 표시했습니다. Sentinel-2가 2,000장뿐이라 Landsat에 치우쳐 있고, 성능 지표는 팩 앞부분에 없습니다. 71712 권역별 식생 탄소 포집량 데이터와 같은 기관입니다.",
+ "detail_en": "105,262 nationwide time-series satellite tiles (TIF, 256×256; 103,262 Landsat, 2,000 Sentinel-2) of multi-band imagery at 5-year intervals, with 105,262 labels (TIF segmentation masks, JSON) for 6 land-cover classes (forest, cropland, grassland, wetland, settlement, other). With only 2,000 Sentinel-2 tiles the data leans heavily on Landsat, and no metrics are in the pack. Same builder as the regional carbon set 71712.",
+ "amount_ko": "이미지·라벨 각 105,262장(Landsat 103,262, Sentinel-2 2,000), 클래스 6종",
+ "amount_en": "105,262 images and labels (103,262 Landsat, 2,000 Sentinel-2), 6 classes",
+ "labels_ko": "땅 종류 영역",
+ "labels_en": "segmentation mask, class",
+ "status": "full-run-2026-11-02"
+}

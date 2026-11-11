@@ -1,0 +1,32 @@
+{
+ "dataset_id": "110",
+ "title_en": "Specialised-domain corpus",
+ "summary_ko": "법령·판례·특허·논문 초록·국회 의안 등 전문 분야 문장 150만 건에 문장 분류와 전문 용어(개체명) 표시를 한 말뭉치입니다. 법률·특허·학술 문서에서 용어를 뽑거나 문장을 분류하는 AI, 전문 문서 검색에 쓸 수 있습니다.",
+ "summary_en": "1.5 million sentences from specialised documents (laws, court cases, patents, paper abstracts, National Assembly bills) labelled with sentence classes and domain terms (named entities). For AI that extracts terms or classifies sentences in legal, patent and academic documents, and for specialised search.",
+ "contents_ko": "문서·문장 텍스트 + 라벨(문장 분류, 개체명 유형과 위치).",
+ "contents_en": "Document and sentence text + labels (sentence class, entity type and position).",
+ "modalities": ["text"],
+ "tasks": ["information_extraction", "text_classification", "retrieval_recommendation"],
+ "topics": [{"ko": "법률·판례", "en": "Law and court cases"}, {"ko": "특허·지식재산", "en": "Patents and intellectual property"}, {"ko": "학술 연구", "en": "Academic research"}, {"ko": "입법·국회", "en": "Legislation"}],
+ "keywords_ko": ["전문분야", "말뭉치", "개체명 인식", "법령", "판례", "특허", "논문", "전문 용어"],
+ "keywords_en": ["specialised domain", "corpus", "named entity recognition", "laws", "court cases", "patents", "papers", "terminology"],
+ "labels": ["named entities", "sentence class"],
+ "file_formats": ["json"],
+ "scale_ko": "말뭉치 150만 건(특허 83만, 법령·규칙 30만, 논문 초록 30만, 의안 7만), 개체명 약 1,577만 개",
+ "classes_example": ["법령", "판례", "특허", "논문", "의안"],
+ "baseline": [
+  {"task": "domain sentence classification", "model": "BERT", "metric": "F1-score", "value": "0.93"},
+  {"task": "entity type recognition (laws)", "model": "BERT", "metric": "F1-score", "value": "0.99"}
+ ],
+ "difficulty": "intermediate",
+ "difficulty_note_ko": "약 14GB 텍스트로 다룰 만하며, 한국어 BERT로 개체명 인식을 실습할 수 있습니다.",
+ "skills_needed_ko": ["파이썬", "한국어 BERT로 개체명 인식(NER)", "JSON 다루기"],
+ "caveats_ko": ["성능 표에서 개체명 인식이 'Text Classification'으로 적혀 있음", "파일 형식은 팩에서 확인하지 못해 추정"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "문서 분야 분류기", "title_en": "Document domain classifier", "desc_ko": "문장이 법령·판례·특허·논문 중 어디서 왔는지 분류합니다.", "desc_en": "Classify whether a sentence comes from laws, cases, patents or papers."},
+  {"level": "capstone", "title_ko": "특허 핵심 용어 추출기", "title_en": "Patent key-term extractor", "desc_ko": "특허 문장에서 기술 용어를 뽑아 키워드 목록과 검색 색인을 만듭니다.", "desc_en": "Extract technical terms from patents into keyword lists and a search index."},
+  {"level": "research", "title_ko": "분야 간 개체명 인식 전이", "title_en": "NER transfer across domains", "desc_ko": "법령으로 학습한 개체명 모델이 판례·특허에서 얼마나 통하는지 연구합니다.", "desc_en": "Study how a law-trained NER model transfers to cases and patents."}
+ ],
+ "doc_used": true,
+ "uncertain": []
+}

@@ -1,0 +1,12 @@
+{
+ "dataset_id": "478",
+ "easy_ko": "기상청의 기상위성 사진, 비구름을 보는 레이더 영상, 자동 날씨 관측소 기록에 태풍·폭우·폭염·폭설 같은 특보 정보를 붙인 아주 큰 데이터입니다. 위험한 날씨를 미리 예측해 알려 주는 AI를 만들 수 있습니다.",
+ "easy_en": "A very large collection of weather-satellite images, rain radar images and automatic weather-station records from Korea's weather agency, labelled with warnings such as typhoons, heavy rain, heatwaves and heavy snow. You can build AI that predicts dangerous weather and warns people in advance.",
+ "detail_ko": "2014~2021년 기상청 천리안 1·2호 위성 영상(png, nc), 기상 레이더(png, uf), 자동기상관측(AWS·AMOS, csv) 자료와 기상특보 분석 어노테이션(JSON/GeoJSON)으로 구성된 61,344시간 세트, 파일 4,309만 개, 37.5TB(공개 파일 약 16.6TB)입니다. 위험기상 클래스(태풍, 호우, 폭염, 대설, 건조)는 기상특보 종류에서 추정한 것이며, 기준 성능은 기록에서 확인되지 않습니다.",
+ "detail_en": "61,344 hourly sets (43.09M files, 37.5 TB; about 16.6 TB publicly released) from 2014–2021: Chollian 1 and 2 satellite images (png, nc), weather radar (png, uf) and automatic weather-station data (AWS, AMOS; csv), with weather-warning annotations (JSON/GeoJSON). Hazard classes (typhoon, heavy rain, heatwave, heavy snow, dry weather) are inferred from warning types, and no baseline is visible in the record.",
+ "amount_ko": "61,344시간 분량, 파일 약 4,309만 개, 37.5TB",
+ "amount_en": "61,344 hourly sets, about 43M files, 37.5 TB",
+ "labels_ko": "기상특보 영역(태풍·호우·폭염 등)",
+ "labels_en": "weather-warning areas (typhoon, heavy rain, heatwave and more)",
+ "status": "full-run-2026-11-02"
+}

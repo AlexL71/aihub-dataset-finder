@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71701",
+ "easy_ko": "장수풍뎅이 애벌레, 갈색거저리, 메뚜기 같은 먹는 곤충 6가지를 연구 시설에서 찍은 일반 사진과 특수 카메라 사진 각 20만 장 이상에 정상과 이상 상태, 곤충 위치를 표시하고 사육 환경 기록을 함께 담은 데이터입니다. 곤충 사육 상태를 자동으로 살피는 AI에 쓸 수 있습니다.",
+ "easy_en": "Over 200,000 ordinary photos and as many special-camera photos of 6 edible insects, such as rhinoceros beetle larvae, mealworms and grasshoppers, taken at a research facility, with normal or abnormal status and insect positions marked, plus rearing-environment records. You can use it to build AI that monitors insect rearing automatically.",
+ "detail_ko": "곤충 사육 연구시설에서 식용곤충 6종(장수풍뎅이, 흰점박이꽃무지, 갈색거저리, 백강잠 유충, 메뚜기, 풀무치)을 찍은 RGB 이미지(jpg) 20만 장과 분광 이미지(png) 20만 장 이상, 사육 환경 데이터 20만 세트 이상(csv; 종마다 68,000건)에 상자, 분할 영역, 정상/비정상을 JSON으로 붙였습니다. 기준 모델은 YOLOv8 곤충 탐지이지만 값은 팩 앞부분에 없습니다. 한 연구시설에서만 촬영해 일반 농가 환경과 다를 수 있고, 정상·비정상 기준은 팩 앞부분에 없습니다.",
+ "detail_en": "Over 200,000 RGB images (jpg) and over 200,000 spectral images (png) of 6 edible insects (rhinoceros beetle, white-spotted flower chafer, mealworm, white muscardine silkworm larvae, grasshopper, migratory locust) from an insect-rearing research facility, plus over 200,000 sets of rearing-environment data (csv; 68,000 per species), with JSON boxes, segmentation and normal/abnormal status. The baseline model is YOLOv8 insect detection, but its score is not in the pack. Everything was shot at one facility, so it may differ from ordinary farms, and the normal/abnormal criteria are not in the pack.",
+ "amount_ko": "곤충 6종, RGB 이미지 20만 장, 분광 이미지 20만 장 이상, 환경 데이터 20만 세트 이상",
+ "amount_en": "6 insect species, 200,000 RGB images, 200,000+ spectral images, 200,000+ environment data sets",
+ "labels_ko": "곤충 위치 상자, 영역, 정상·이상 상태",
+ "labels_en": "bounding boxes, polygons, normal/abnormal",
+ "status": "full-run-2026-11-02"
+}

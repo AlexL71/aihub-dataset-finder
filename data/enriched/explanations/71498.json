@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71498",
+ "easy_ko": "역사, 정치, 경제, 철학 같은 인문학 분야의 책과 논문에서 뽑은 한국어 문장 약 30만 개를 영어, 중국어, 일본어로 번역해 짝지은 데이터입니다. 이 분야의 전문 용어가 많은 글을 옮기는 번역기를 만드는 데 쓸 수 있습니다.",
+ "easy_en": "About 300,000 Korean sentences from humanities such as history, politics, economics and philosophy books and papers, each paired with a translation into English, Chinese or Japanese. You can use it to build translators for texts full of technical terms in this field.",
+ "detail_ko": "역사/고고학, 정치/행정, 경제/경영, 철학/종교, 교육 분야 도서·논문·간행물에서 뽑은 한국어 문장 301,181건(영어 121,150, 중국어 90,014, 일본어 90,017)에 번역문과 분야 정보를 JSON으로 붙인 번역 말뭉치입니다. 기준 성능은 Transformer 번역 BLEU 한-영 0.3254, 한-중 0.4454, 한-일 0.6942입니다. 설명서 소개에 '기초과학 중분류'로 적힌 문구가 남아 있어 복사 오류로 보입니다. 같은 시리즈의 다른 분야 번역 말뭉치와 구조가 비슷합니다.",
+ "detail_en": "301,181 Korean sentences (121,150 English, 90,014 Chinese, 90,017 Japanese) from books, papers and publications in history/archaeology, politics/administration, economics/business, philosophy/religion and education, with translations and field tags in JSON. Baselines: Transformer translation BLEU 0.3254 (Korean-English), 0.4454 (Korean-Chinese), 0.6942 (Korean-Japanese). The manual's introduction still mentions 'basic science sub-categories', which looks like a copy error. It has a similar structure to the other field-specific translation corpora in the same series.",
+ "amount_ko": "문장 쌍 301,181건",
+ "amount_en": "301,181 sentence pairs",
+ "labels_ko": "번역 문장, 분야",
+ "labels_en": "translation pairs, field",
+ "status": "full-run-2026-11-02"
+}

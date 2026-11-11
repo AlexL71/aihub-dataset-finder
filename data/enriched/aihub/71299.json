@@ -1,0 +1,29 @@
+{
+ "dataset_id": "71299",
+ "title_en": "OCR data (public documents)",
+ "summary_ko": "창원시·김해시 공공문서와 외교사료관 문서를 스캔한 이미지 약 61.5만 장에 인쇄체·타자체·손글씨 글자 영역과 내용을 표시한 데이터입니다. 1980년대 이전부터 2010년대 문서까지 있고 건설·경제·환경 등 분야가 다양합니다. 오래되고 화질이 낮은 행정 문서를 읽는 OCR AI에 쓸 수 있습니다.",
+ "summary_en": "About 615,000 scanned pages of public documents from Changwon and Gimhae cities and the Diplomatic Archives, with printed, typewritten and handwritten text regions and content marked. Documents range from before the 1980s to the 2010s across construction, economy, environment and more. For OCR AI that reads old, low-quality administrative documents.",
+ "contents_ko": "문서 스캔 이미지(jpg) + JSON(글자 영역, 텍스트, 분야·연대).",
+ "contents_en": "Scanned document images (jpg) + JSON (text regions, text, field and decade).",
+ "modalities": ["image", "text"],
+ "tasks": ["ocr"],
+ "topics": [{"ko": "공공 행정", "en": "Public administration"}, {"ko": "문서 디지털화", "en": "Document digitisation"}],
+ "keywords_ko": ["공공문서", "OCR", "타자체", "행정 문서", "기록물 디지털화"],
+ "keywords_en": ["public documents", "OCR", "typewritten text", "administrative records", "archive digitisation"],
+ "labels": ["text region segmentation", "transcription", "field", "decade"],
+ "file_formats": ["jpg", "json"],
+ "scale_ko": "문서 이미지 약 61.5만 장, 분야 7종",
+ "classes_example": ["건설", "경제", "농림수산", "문화", "복지", "환경", "외교"],
+ "baseline": [],
+ "difficulty": "intermediate",
+ "difficulty_note_ko": "약 148GB이고 오래된 저화질 문서가 많아 인식이 어렵습니다.",
+ "skills_needed_ko": ["파이썬", "OCR 모델(텍스트 탐지·인식)"],
+ "caveats_ko": ["공공문서에 개인정보가 가려졌는지 확인 필요", "외교 문서는 2,549장으로 매우 적음", "성능 지표 표가 팩에서 비어 있음", "71300번 교육 OCR과 같은 구축 기관"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "문서 연대 분류", "title_en": "Document decade classifier", "desc_ko": "문서 이미지로 작성 연대를 맞힙니다.", "desc_en": "Predict the decade a document was written."},
+  {"level": "capstone", "title_ko": "옛 행정문서 검색기", "title_en": "Old public-record search", "desc_ko": "스캔 문서를 OCR해 키워드로 검색할 수 있게 합니다.", "desc_en": "OCR scanned records and make them keyword-searchable."},
+  {"level": "research", "title_ko": "타자체 인식 개선", "title_en": "Typewriter-text recognition", "desc_ko": "번지고 흐린 타자체 글자 인식을 높이는 방법을 연구합니다.", "desc_en": "Improve recognition of smudged typewritten text."}
+ ],
+ "doc_used": true,
+ "uncertain": ["baseline values"]
+}

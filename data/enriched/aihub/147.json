@@ -1,0 +1,29 @@
+{
+ "dataset_id": "147",
+ "title_en": "Open-field crop disease diagnosis images",
+ "summary_ko": "고추·무·배추·애호박·양배추·오이·콩·토마토·파·호박 등 노지 작물 10종의 잎·열매 사진 35만 건으로, 정상과 탄저병·흰가루병·노균병 등 질병 20여 종이 표시되어 있습니다. 농가용 작물 병 진단 앱이나 병해 예찰에 쓸 수 있습니다.",
+ "summary_en": "350,000 photos of 10 open-field crops (chilli, radish, cabbage, zucchini, kale/cabbage, cucumber, soybean, tomato, green onion, pumpkin), labelled as healthy or one of about 20 diseases such as anthracnose, powdery mildew and downy mildew. For crop-disease diagnosis apps and disease surveillance.",
+ "contents_ko": "작물 사진 + JSON(작물, 질병 코드, 촬영 부위, 피해 정도, 관심 영역 상자). 질병 사진은 원본과 10배 증강본이 있음.",
+ "contents_en": "Crop photo + JSON (crop, disease code, plant part, damage level, box around the area of interest). Disease photos come as originals plus a 10× augmented set.",
+ "modalities": ["image"],
+ "tasks": ["image_classification", "object_detection"],
+ "topics": [{"ko": "농업·스마트팜", "en": "Agriculture and smart farming"}, {"ko": "식물 병해", "en": "Plant disease"}, {"ko": "채소", "en": "Vegetables"}],
+ "keywords_ko": ["작물 질병", "노지 작물", "고추", "배추", "병해 진단", "스마트팜"],
+ "keywords_en": ["crop disease", "open-field crops", "chilli", "cabbage", "disease diagnosis", "smart farm"],
+ "labels": ["class (crop and disease)", "bounding box", "attributes (part, damage)"],
+ "file_formats": ["jpg", "json"],
+ "scale_ko": "학습 데이터 349,151건(정상 약 15.4만, 질병 원본 2만 + 증강 20만), 작물 10종",
+ "classes_example": ["고추탄저병", "고추흰가루병", "배추노균병", "오이노균병", "콩점무늬병", "파녹병", "토마토잎마름병"],
+ "baseline": [],
+ "difficulty": "beginner",
+ "difficulty_note_ko": "작물·질병별로 정리되어 첫 분류 프로젝트에 좋습니다. 전체 약 600GB라 몇 작물만 받아 쓰세요.",
+ "skills_needed_ko": ["파이썬 기초", "전이학습 이미지 분류"],
+ "caveats_ko": ["질병 사진 대부분이 증강본이라 같은 원본이 학습·검증에 섞이지 않게 나눠야 함", "페이지 표 제목이 '시설 작물 질병'으로 잘못 적혀 있음"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "고추 병 진단기", "title_en": "Chilli disease checker", "desc_ko": "고추 사진으로 정상·탄저병·흰가루병을 분류합니다.", "desc_en": "Classify chilli photos as healthy, anthracnose or powdery mildew."},
+  {"level": "capstone", "title_ko": "텃밭 작물 병 진단 앱", "title_en": "Home-garden disease app", "desc_ko": "작물을 고르고 사진을 찍으면 병과 대처법을 알려주는 앱을 만듭니다.", "desc_en": "Pick a crop, snap a photo and get the disease and advice."},
+  {"level": "research", "title_ko": "작물 간 병 인식 전이", "title_en": "Disease recognition across crops", "desc_ko": "같은 병(노균병 등)이 다른 작물에서도 인식되는지 전이 성능을 연구합니다.", "desc_en": "Study whether the same disease is recognised across different crops."}
+ ],
+ "doc_used": true,
+ "uncertain": []
+}

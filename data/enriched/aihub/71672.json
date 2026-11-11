@@ -1,0 +1,29 @@
+{
+ "dataset_id": "71672",
+ "title_en": "Generative AI Vietnamese corpus data",
+ "summary_ko": "베트남의 사회·정치·경제·문화·역사·의학·IT 등 여러 분야 베트남어 텍스트 242,473,248어절을 모으고 베트남어 질의응답 라벨을 붙인 말뭉치입니다. 베트남어 챗봇과 생성형 AI 학습에 쓸 수 있습니다.",
+ "summary_en": "A Vietnamese corpus of 242,473,248 words covering society, politics, economy, culture, history, health, IT and more, with Vietnamese question-answer labels. For Vietnamese chatbots and generative AI training.",
+ "contents_ko": "베트남어 원문(txt) + JSON(질의응답, 분야).",
+ "contents_en": "Vietnamese text (txt) + JSON (question-answer, category).",
+ "modalities": ["text"],
+ "tasks": ["text_generation", "question_answering", "dialogue"],
+ "topics": [{"ko": "다국어·해외 진출", "en": "Multilingual and overseas markets"}, {"ko": "생성형 AI", "en": "Generative AI"}],
+ "keywords_ko": ["베트남어", "말뭉치", "언어모델", "질의응답", "챗봇", "해외 진출"],
+ "keywords_en": ["Vietnamese", "corpus", "language model", "question answering", "chatbot", "overseas markets"],
+ "labels": ["question-answer", "category"],
+ "file_formats": ["txt", "json"],
+ "scale_ko": "242,473,248어절",
+ "classes_example": ["사회/정치/일반", "IT/과학", "지리/자연/국가", "건강/의학", "문화/역사/예술"],
+ "baseline": [],
+ "difficulty": "intermediate",
+ "difficulty_note_ko": "약 1.4GB 텍스트라 다루기 쉽지만 베트남어를 모르면 결과 확인이 어렵습니다.",
+ "skills_needed_ko": ["파이썬", "트랜스포머", "다국어 토크나이저"],
+ "caveats_ko": ["문화/역사/예술이 32.3%로 많음", "질의응답 쌍 수와 성능 지표가 팩에 없음"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "베트남어 분야 분류", "title_en": "Vietnamese topic classifier", "desc_ko": "베트남어 글을 분야별로 분류합니다.", "desc_en": "Classify Vietnamese texts by topic."},
+  {"level": "capstone", "title_ko": "유학생 생활 Q&A 봇", "title_en": "Q&A bot for Vietnamese students", "desc_ko": "베트남어 질의응답 데이터로 간단한 상담 챗봇을 만듭니다.", "desc_en": "Build a simple Vietnamese Q&A chatbot."},
+  {"level": "research", "title_ko": "저자원 언어 LLM 미세조정", "title_en": "LLM fine-tuning for Vietnamese", "desc_ko": "작은 언어모델을 베트남어에 맞게 미세조정하는 효율적인 방법을 연구합니다.", "desc_en": "Efficiently adapt small LLMs to Vietnamese."}
+ ],
+ "doc_used": true,
+ "uncertain": ["질의응답 쌍 수"]
+}

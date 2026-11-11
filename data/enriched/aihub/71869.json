@@ -1,0 +1,29 @@
+{
+ "dataset_id": "71869",
+ "title_en": "High-quality R&D lithium-ion secondary battery data",
+ "summary_ko": "소재과학 주요 저널 논문에서 뽑은 리튬이온 이차전지의 구조·물성, 합성법, 잔류 방전 용량을 합친 표 데이터 16,325,872건으로, NCM(67%)·NCA·LFP·기타 양극재로 나뉩니다. 배터리 잔류 용량과 성능 예측, 소재 개발 시뮬레이션 AI에 쓸 수 있습니다.",
+ "summary_en": "16,325,872 tabular records from materials-science journal papers combining lithium-ion battery structure/properties, synthesis and remaining discharge capacity, split by cathode type (NCM 67%, NCA, LFP, others). For predicting remaining capacity and battery performance and for materials simulation.",
+ "contents_ko": "표 데이터(csv: 구조·물성, 합성법, 방전 용량, 자동 분류 라벨).",
+ "contents_en": "Tabular data (csv: structure/properties, synthesis, discharge capacity, auto labels).",
+ "modalities": ["tabular", "text"],
+ "tasks": ["tabular_prediction", "information_extraction"],
+ "topics": [{"ko": "이차전지", "en": "Secondary batteries"}, {"ko": "소재 정보학", "en": "Materials informatics"}],
+ "keywords_ko": ["리튬이온 배터리", "양극재", "NCM", "방전 용량", "소재 예측", "논문 데이터"],
+ "keywords_en": ["lithium-ion battery", "cathode", "NCM", "discharge capacity", "materials prediction", "literature data"],
+ "labels": ["auto-labelled category", "discharge capacity"],
+ "file_formats": ["csv"],
+ "scale_ko": "16,325,872건(NCM 10,938,267·NCA 961,532·LFP 164,738·기타 4,261,335)",
+ "classes_example": ["NCM", "NCA", "LFP", "Others"],
+ "baseline": [],
+ "difficulty": "intermediate",
+ "difficulty_note_ko": "약 1.4GB csv지만 행이 1,600만 개라 메모리 관리가 필요합니다. 배터리 화학 기초가 있으면 좋습니다.",
+ "skills_needed_ko": ["파이썬", "pandas 대용량 처리", "회귀 모델(XGBoost 등)"],
+ "caveats_ko": ["페이지에 성능 점수 표가 없음(학습·검증·시험 분할 소개만 있음)", "LFP가 1%로 매우 적음", "오토 라벨링이라 논문 추출 오류가 섞였을 수 있음", "같은 논문의 행이 여러 세트에 나뉘면 정보가 새어나갈 수 있음"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "양극재별 용량 비교", "title_en": "Capacity by cathode type", "desc_ko": "NCM·NCA·LFP별 방전 용량 분포를 그래프로 비교합니다.", "desc_en": "Compare discharge capacity distributions by cathode type."},
+  {"level": "capstone", "title_ko": "잔류 용량 예측기", "title_en": "Remaining capacity predictor", "desc_ko": "합성 조건과 물성으로 잔류 방전 용량을 예측하는 모델을 만듭니다.", "desc_en": "Predict remaining capacity from synthesis and properties."},
+  {"level": "research", "title_ko": "새 양극재 조성 탐색", "title_en": "New cathode search", "desc_ko": "예측 모델로 용량이 높을 조성을 추천하는 방법을 연구합니다.", "desc_en": "Study recommending high-capacity compositions with the model."}
+ ],
+ "doc_used": true,
+ "uncertain": []
+}

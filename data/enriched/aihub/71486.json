@@ -1,0 +1,33 @@
+{
+ "dataset_id": "71486",
+ "title_en": "Sentence type (inference, prediction, etc.) classification data",
+ "summary_ko": "뉴스·매거진·도서·블로그·방송대본에서 모은 한국어 문장 16만 5천여 개에 문장 유형(사실형·추론형·예측형·대화형)과 극성(긍정/부정), 시제, 확실성이 라벨링되어 있습니다. 문장 분류와 사실 여부 판단 AI에 쓸 수 있습니다.",
+ "summary_en": "Over 165,000 Korean sentences from news, magazines, books, blogs and broadcast scripts, labelled with sentence type (fact, inference, prediction, dialogue), polarity, tense and certainty. For sentence classification and fact-checking AI.",
+ "contents_ko": "문장 텍스트(txt) + JSON·CSV(문장 유형, 극성, 시제, 확실성 라벨).",
+ "contents_en": "Sentence text (txt) + JSON/CSV (type, polarity, tense, certainty labels).",
+ "modalities": ["text"],
+ "tasks": ["text_classification", "sentiment_emotion"],
+ "topics": [{"ko": "한국어 자연어처리", "en": "Korean NLP"}, {"ko": "뉴스·미디어", "en": "News and media"}],
+ "keywords_ko": ["문장 유형", "추론", "예측", "극성", "시제", "확실성"],
+ "keywords_en": ["sentence type", "inference", "prediction", "polarity", "tense", "certainty"],
+ "labels": ["sentence type", "polarity", "tense", "certainty"],
+ "file_formats": ["json", "csv", "txt"],
+ "scale_ko": "문장 16만 5천 개 이상(문서 1만 건 이상)",
+ "classes_example": ["사실형", "추론형", "예측형", "대화형"],
+ "baseline": [
+  {"task": "sentence type classification", "model": "BERT", "metric": "F1-score", "value": "0.85"},
+  {"task": "polarity classification", "model": "BERT", "metric": "F1-score", "value": "0.92"},
+  {"task": "certainty classification", "model": "BERT", "metric": "F1-score", "value": "0.94"}
+ ],
+ "difficulty": "beginner",
+ "difficulty_note_ko": "용량이 작고(약 30MB) 문장 분류 실습에 바로 쓸 수 있습니다.",
+ "skills_needed_ko": ["파이썬", "BERT 미세조정"],
+ "caveats_ko": ["설명서 구축량(180,000)과 페이지(165,000)가 다름", "페이지의 라벨링 유형이 '내용요약'으로 적혀 있지만 실제는 문장 속성 분류"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "문장 유형 분류기", "title_en": "Sentence type classifier", "desc_ko": "문장이 사실·추론·예측·대화 중 무엇인지 분류합니다.", "desc_en": "Classify sentences as fact, inference, prediction or dialogue."},
+  {"level": "capstone", "title_ko": "뉴스 사실·의견 표시기", "title_en": "News fact/opinion highlighter", "desc_ko": "기사 문장마다 사실인지 추측인지 색으로 표시하는 웹 도구를 만듭니다.", "desc_en": "Build a web tool colouring each news sentence as fact or speculation."},
+  {"level": "research", "title_ko": "확실성 표현 분석", "title_en": "Certainty expression analysis", "desc_ko": "매체별로 불확실한 표현이 얼마나 쓰이는지 비교합니다.", "desc_en": "Compare how often uncertain expressions appear across media."}
+ ],
+ "doc_used": true,
+ "uncertain": []
+}

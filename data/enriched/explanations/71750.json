@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71750",
+ "easy_ko": "국내에서 키우는 애플망고, 백향과, 용과, 바나나, 레몬 같은 아열대 작물 8가지의 병해충 사진에 병해충 위치와 종류, 심한 정도, 재배 환경을 표시한 데이터입니다. 병해충을 진단하고 얼마나 심해질지 예측하는 AI에 쓸 수 있습니다.",
+ "easy_en": "Photos of pests and diseases on 8 subtropical crops grown in Korea, such as apple mango, passion fruit, dragon fruit, banana and lemon, marking where the pest or disease is, its type, how severe it is and the growing conditions. You can use it to build AI that diagnoses pests and diseases and predicts how bad they will get.",
+ "detail_ko": "국내 재배 아열대 작물 8종(애플망고, 백향과, 올리브, 용과, 바나나, 레몬, 무화과, 한라봉)의 병해충 22종 이미지(jpg)와 개체 정보, 재배 환경 데이터 274,000세트에 병해충 상자, 종류, 심각도를 JSON으로 붙였습니다. 페이지에 성능 점수 표가 없고, 22개 병해충 이름은 팩 앞부분에 없으며, 같은 나무·잎을 여러 번 찍었을 수 있어 개체 단위로 나눠야 합니다.",
+ "detail_en": "274,000 sets of images (jpg), object information and growing-environment data for 22 pests and diseases on 8 subtropical crops grown in Korea (apple mango, passion fruit, olive, dragon fruit, banana, lemon, fig, Hallabong), with JSON pest/disease boxes, type and severity. There is no score table, the 22 pest and disease names are not in the pack, and the same trees or leaves may have been photographed repeatedly, so split by plant.",
+ "amount_ko": "274,000세트, 작물 8종, 병해충 22종",
+ "amount_en": "274,000 sets, 8 crops, 22 pests and diseases",
+ "labels_ko": "병해충 위치 상자, 병해충 종류, 심한 정도, 재배 환경",
+ "labels_en": "bounding box, pest/disease class, severity, environment data",
+ "status": "full-run-2026-11-02"
+}

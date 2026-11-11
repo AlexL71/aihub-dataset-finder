@@ -1,0 +1,12 @@
+{
+ "dataset_id": "635",
+ "easy_ko": "제주 감귤과 키위가 병에 걸리거나 벌레 피해를 입은 모습과 건강한 모습을 찍은 사진, 특수 색 카메라 사진, 날씨 기록을 함께 모은 데이터입니다. 사진으로 과일나무의 병과 해충을 알려 주거나 과일 품질을 예측하는 AI를 만들 수 있습니다.",
+ "easy_en": "Photos of Jeju tangerines and kiwifruit that are healthy or affected by diseases and pests, plus special colour (hyperspectral) images and weather records. You can build AI that identifies fruit-tree diseases and pests from photos or predicts fruit quality.",
+ "detail_ko": "제주 감귤·키위 병충해 이미지 4만 장(jpg; 정상, 감귤 궤양병·귤응애·진딧물, 키위 점무늬병·총채벌레·과실무름병)에 분류와 다각형을 JSON으로 붙이고, 초분광 이미지 10만 세트(hdr)와 기상 환경 데이터 38.5만 건(csv)을 함께 제공합니다. 기준 성능은 ResNet / DenseNet 병충해 분류 F1 0.9845입니다. 전체 약 967GB이며 병충해 클래스 수 차이가 크고(궤양병 1.1만 vs 귤응애 1.8천) 제주 지역만 포함됩니다.",
+ "detail_en": "40k pest and disease images (jpg) of Jeju tangerines and kiwifruit (healthy; citrus canker, citrus red mite, aphids; kiwi leaf spot, thrips, fruit rot) with JSON class and polygons, plus 100k hyperspectral image sets (hdr) and 385k weather records (csv). Baseline: ResNet / DenseNet pest and disease classification F1 0.9845. Total size is about 967 GB; class sizes vary widely (canker 11k vs. red mite 1.8k); only Jeju is covered.",
+ "amount_ko": "병해충 사진 4만 장, 특수 색 사진 10만 세트, 날씨 기록 38.5만 건",
+ "amount_en": "40k pest/disease images, 100k hyperspectral sets, 385k weather records",
+ "labels_ko": "병·해충 종류(정상 포함), 병든 곳 테두리, 날씨 값",
+ "labels_en": "disease or pest class (including healthy), outlines, weather values",
+ "status": "full-run-2026-11-02"
+}

@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71954",
+ "easy_ko": "드론이 날 때 내보내는 무선 신호를 시간과 주파수 그림으로 바꿔 기록하고 신호가 있는 곳을 상자로 표시한 데이터로, 비행 조종 신호와 비행 상황 신호가 각각 약 28시간 분량입니다. 근처에 드론이 있는지 알아채고 어떤 기종인지 구별하는 AI에 쓸 수 있습니다.",
+ "easy_en": "Radio signals sent while drones fly, recorded as time-frequency pictures (spectrograms) with boxes marking where the signals are, about 28 hours each of flight-control and flight-situation signals. You can use it to build AI that detects nearby drones and tells which model they are.",
+ "detail_ko": "드론(UAV)이 비행할 때 나오는 RF 신호를 스펙트로그램(신호를 시간-주파수 그림으로 바꾼 것)으로 기록한 배열(npy)에 신호 영역 바운딩박스(json, png)를 붙인 데이터로, 비행 제어 데이터 201,600건(약 28시간)과 비행 상황 데이터 201,600건(약 28시간)입니다. 기종 예: Mavic 3 Classic, Phantom3 SE, Air 2S, HS210, H235. 기종별 비율이 각 7.14%로 약 14개 기종으로 보이나 전체 목록 확인이 필요하고, 성능 지표 값은 팩 앞부분에 없습니다.",
+ "detail_en": "RF signals emitted by flying drones (UAVs), recorded as spectrogram arrays (npy; time-frequency pictures of the signal) with bounding boxes for signal regions (json, png): 201,600 flight-control items (about 28 hours) and 201,600 flight-situation items (about 28 hours). Example models: Mavic 3 Classic, Phantom 3 SE, Air 2S, HS210, H235. Each model is 7.14%, suggesting about 14 models, but the full list needs checking; no metric values are in the pack.",
+ "amount_ko": "비행 제어 201,600건(약 28시간), 비행 상황 201,600건(약 28시간)",
+ "amount_en": "201,600 flight-control items (about 28 hours), 201,600 flight-situation items (about 28 hours)",
+ "labels_ko": "신호 위치 상자",
+ "labels_en": "bounding box",
+ "status": "full-run-2026-11-02"
+}

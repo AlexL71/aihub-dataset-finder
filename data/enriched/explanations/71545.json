@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71545",
+ "easy_ko": "스마트폰 센서로 기록한 이동 기록에 걷기, 자전거, 자동차, 버스, 지하철 같은 교통수단을 시간 구간마다 표시한 데이터입니다. 사람이 무엇을 타고 이동하는지 알아내거나 다음에 어디로 갈지 예측하는 AI에 쓸 수 있습니다.",
+ "easy_en": "Travel records from smartphone sensors, with the means of transport, such as walking, cycling, car, bus or subway, marked for each stretch of time. You can use it to build AI that works out how someone is travelling or predicts where they will go next.",
+ "detail_ko": "스마트폰 센서(AP, 기지국, GPS, IMU)로 기록한 이동 데이터 원천 684,534개와 라벨 311,694개(CSV, JSON)로, 시간 구간별 교통수단 6종(WALK, BIKE, CAR, BUS, SUBWAY, ETC)과 출발지-도착지 이동 궤적, 대중교통카드·공유 킥보드·차량 궤적 같은 연계 데이터가 있습니다. 기준 성능은 LightMove(Neural ODE) 다음 위치 예측 Top-10 정확도 61.6%, DenseNet 교통수단 분류 macro F1 0.785입니다. 메타데이터는 456.9GB, 파일 트리는 약 104GB로 크기가 다르고, 데이터 유형이 '텍스트'로 적혀 있지만 실제는 센서·표 데이터입니다. 위치 데이터라 개인정보 처리 조건을 확인해야 합니다.",
+ "detail_en": "684,534 source files and 311,694 label files (CSV, JSON) of travel recorded by smartphone sensors (Wi-Fi AP, cell tower, GPS, IMU), with transport mode per time segment (WALK, BIKE, CAR, BUS, SUBWAY, ETC), origin-destination trajectories and linked data such as transit-card, shared-scooter and vehicle trajectories. Baselines: next-location prediction with LightMove (Neural ODE), Top-10 accuracy 61.6%; transport-mode classification with DenseNet, macro F1 0.785. The metadata says 456.9 GB while the file tree shows about 104 GB, and the data type is listed as 'text' although it is sensor and table data. It contains location data, so check the personal-data terms.",
+ "amount_ko": "원천 684,534개, 라벨 311,694개, 교통수단 6종",
+ "amount_en": "684,534 source files, 311,694 label files, 6 transport modes",
+ "labels_ko": "시간 구간별 교통수단, 이동 경로",
+ "labels_en": "time-series segments, transport mode, trajectory",
+ "status": "full-run-2026-11-02"
+}

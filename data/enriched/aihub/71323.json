@@ -1,0 +1,32 @@
+{
+ "dataset_id": "71323",
+ "title_en": "Exhibition and performance docent data",
+ "summary_ko": "전국 전시·공연과 전시 작품을 설명하는 도슨트(해설) 원문 약 1,200건과, 이를 바탕으로 만든 기계독해 질문-답변 약 7,400개, 개체명(작가·작품·장소 등) 표시 약 2.9만 개를 담은 데이터입니다. 전시·공연 안내 챗봇이나 스마트 도슨트에 쓸 수 있습니다.",
+ "summary_en": "About 1,200 docent (guide) texts describing exhibitions, performances and artworks across Korea, plus about 7,400 machine-reading Q&A pairs and about 29,000 named-entity tags (artists, works, places and more). For exhibition and performance guide chatbots or smart docents.",
+ "contents_ko": "도슨트 원문(csv) + JSON(질문-답변, 개체명).",
+ "contents_en": "Docent texts (csv) + JSON (Q&A pairs, named entities).",
+ "modalities": ["text"],
+ "tasks": ["question_answering", "information_extraction"],
+ "topics": [{"ko": "문화예술·전시", "en": "Arts and exhibitions"}, {"ko": "관광", "en": "Tourism"}],
+ "keywords_ko": ["도슨트", "전시", "공연", "기계독해", "개체명 인식"],
+ "keywords_en": ["docent", "exhibitions", "performances", "machine reading", "named entity recognition"],
+ "labels": ["question", "answer span", "named entity"],
+ "file_formats": ["csv", "json"],
+ "scale_ko": "도슨트 원문 약 1,200건, 질문-답변 약 7,400개, 개체명 약 2.9만 개",
+ "classes_example": ["전시공연", "전시작품"],
+ "baseline": [
+  {"task": "machine reading QA", "model": "KoELECTRA", "metric": "F1", "value": "0.8554"},
+  {"task": "named entity recognition", "model": "KoELECTRA", "metric": "F1", "value": "0.9245"}
+ ],
+ "difficulty": "beginner",
+ "difficulty_note_ko": "약 10MB로 매우 작아 노트북에서 바로 실습할 수 있습니다. 원문 수는 적습니다.",
+ "skills_needed_ko": ["파이썬", "Hugging Face", "질의응답·개체명 인식 모델"],
+ "caveats_ko": ["원문이 약 1,200건으로 적음", "전시·공연 설명 저작권 확인 필요"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "작가·작품명 추출", "title_en": "Artist and title extraction", "desc_ko": "도슨트 글에서 작가 이름과 작품명을 뽑습니다.", "desc_en": "Extract artist and artwork names from docent texts."},
+  {"level": "capstone", "title_ko": "미술관 안내 챗봇", "title_en": "Museum guide chatbot", "desc_ko": "관람객 질문에 도슨트 글을 근거로 답하는 챗봇을 만듭니다.", "desc_en": "A chatbot that answers visitors from docent texts."},
+  {"level": "research", "title_ko": "도슨트 글 자동 작성", "title_en": "Automatic docent writing", "desc_ko": "작품 정보로 쉬운 해설문을 생성하는 방법을 연구합니다.", "desc_en": "Generate easy-to-read guide texts from artwork info."}
+ ],
+ "doc_used": true,
+ "uncertain": []
+}

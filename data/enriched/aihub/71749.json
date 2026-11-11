@@ -1,0 +1,29 @@
+{
+ "dataset_id": "71749",
+ "title_en": "Machine translation app, translator evaluation and new corpus for AI Hub data (2023)",
+ "summary_ko": "AI 허브 공개 말뭉치를 정제·검수해 만든 번역 메모리(TM, 한중·한일·영한·한영 최소 80만 문장)와 기계번역기 성능 향상을 위한 신규 말뭉치·비교 평가 데이터를 합친 약 140만 문장입니다. 번역 메모리 API, 번역기 평가 앱, 번역기 학습에 쓸 수 있습니다.",
+ "summary_en": "About 1.4 million sentences: a cleaned translation memory (TM) built from AI Hub corpora (at least 800k sentences: ko-zh, ko-ja, en-ko, ko-en) plus new corpora and evaluation data for improving machine translators. For TM APIs, translator evaluation apps and translator training.",
+ "contents_ko": "문장 텍스트(txt) + JSON(번역문, 언어쌍, 분야, 평가 정보).",
+ "contents_en": "Sentence text (txt) + JSON (translation, language pair, domain, evaluation info).",
+ "modalities": ["text"],
+ "tasks": ["translation"],
+ "topics": [{"ko": "번역·언어", "en": "Translation and languages"}, {"ko": "번역기 평가", "en": "Translator evaluation"}],
+ "keywords_ko": ["기계번역", "번역 메모리", "번역기 평가", "중국어", "일본어", "OpenNMT"],
+ "keywords_en": ["machine translation", "translation memory", "translator evaluation", "Chinese", "Japanese", "OpenNMT"],
+ "labels": ["translation"],
+ "file_formats": ["txt", "json"],
+ "scale_ko": "약 1,400,000문장(TM 최소 800,000: 한중 53만·한일 19.5만·한영 6.6만·영한 9천)",
+ "classes_example": ["한-중", "한-일", "한-영", "영-한"],
+ "baseline": [],
+ "difficulty": "intermediate",
+ "difficulty_note_ko": "약 0.55GB 텍스트라 가볍습니다. 하위 데이터 구성을 먼저 파악하세요.",
+ "skills_needed_ko": ["파이썬", "번역 모델 미세조정", "BLEU 평가"],
+ "caveats_ko": ["페이지에 성능 점수 표가 없음(OpenNMT 학습 조건만 소개)", "TM은 기존 AI 허브 말뭉치에서 만든 것이라 다른 번역 데이터와 겹칠 수 있음", "71593(2022년판)의 후속 데이터"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "번역기 BLEU 비교", "title_en": "Translator BLEU comparison", "desc_ko": "평가 데이터로 공개 번역기들의 언어쌍별 BLEU를 비교합니다.", "desc_en": "Compare open translators' BLEU per language pair."},
+  {"level": "capstone", "title_ko": "번역 메모리 검색 API", "title_en": "Translation memory search API", "desc_ko": "입력 문장과 비슷한 기존 번역을 찾아 주는 TM 검색 API를 만듭니다.", "desc_en": "Build an API that finds similar past translations."},
+  {"level": "research", "title_ko": "TM+기계번역 결합", "title_en": "TM-augmented MT", "desc_ko": "비슷한 TM 문장을 함께 넣으면 기계번역 품질이 오르는지 연구합니다.", "desc_en": "Study whether feeding similar TM matches improves MT."}
+ ],
+ "doc_used": true,
+ "uncertain": []
+}

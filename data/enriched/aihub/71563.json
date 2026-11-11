@@ -1,0 +1,29 @@
+{
+ "dataset_id": "71563",
+ "title_en": "Commercial autonomous vehicle daytime urban road data",
+ "summary_ko": "실제로 운행 중인 상용 자율주행차가 낮 시간 도심 도로에서 5개 카메라와 3D 라이다로 수집한 데이터입니다. 이미지에는 분할, 라이다 점군에는 3D 큐보이드(입체 상자)가 표시되고 차량 판단·제어 정보도 있어 자율주행 인지 AI에 쓸 수 있습니다.",
+ "summary_en": "Daytime urban road data from commercial self-driving cars with 5 cameras and 3D LiDAR: segmentation on images, 3D cuboids on point clouds, plus vehicle decision and control data. For autonomous-driving perception.",
+ "contents_ko": "카메라 이미지(jpg, 5채널) + 라이다 점군(pcd) + 분할 마스크(png) + JSON(분할, 3D 큐보이드, 센서·메타 정보).",
+ "contents_en": "Camera image (jpg, 5 channels) + LiDAR point cloud (pcd) + segmentation mask (png) + JSON (segmentation, 3D cuboids, sensor and meta info).",
+ "modalities": ["image", "3d", "sensor"],
+ "tasks": ["segmentation", "object_detection"],
+ "topics": [{"ko": "자율주행", "en": "Autonomous driving"}, {"ko": "도심 교통", "en": "Urban traffic"}],
+ "keywords_ko": ["자율주행", "라이다", "3D 큐보이드", "도심도로", "분할", "멀티 카메라"],
+ "keywords_en": ["autonomous driving", "LiDAR", "3D cuboid", "urban road", "segmentation", "multi-camera"],
+ "labels": ["segmentation", "3D cuboid", "sensor data", "metadata"],
+ "file_formats": ["jpg", "pcd", "png", "json"],
+ "scale_ko": "이미지 404,200장, 점군 80,840건, 분할 마스크 80,840장, 장면 약 2,021개",
+ "classes_example": ["동적객체", "정적객체", "도로객체", "Car (vehicle)", "policeCar"],
+ "baseline": [{"task": "3D object detection", "model": "PV-RCNN", "metric": "mAP", "value": "71.736% / 75.885%"}, {"task": "2D segmentation", "model": "HarDNet", "metric": "mIoU", "value": "70.02%"}, {"task": "2D segmentation", "model": "DeepLabV3+", "metric": "mIoU", "value": "65.92%"}],
+ "difficulty": "advanced",
+ "difficulty_note_ko": "카메라·라이다 센서 정렬(캘리브레이션)과 3D 탐지 경험이 필요합니다. 전체 약 317GB입니다.",
+ "skills_needed_ko": ["파이썬", "점군 처리", "3D 탐지 모델(OpenPCDet)", "분할 모델"],
+ "caveats_ko": ["PV-RCNN 3D 큐보이드 성능이 두 줄(71.7%, 75.9%)로 나뉘어 있는데 차이가 설명되지 않음", "분할은 전방 카메라 이미지에만 제공"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "도심 도로 분할", "title_en": "Urban road segmentation", "desc_ko": "전방 카메라 이미지에서 도로·차량·사람 영역을 분할합니다.", "desc_en": "Segment road, vehicles and people in front-camera images."},
+  {"level": "capstone", "title_ko": "라이다 3D 차량 탐지", "title_en": "LiDAR 3D vehicle detection", "desc_ko": "OpenPCDet으로 점군에서 차량·보행자 3D 상자를 탐지합니다.", "desc_en": "Detect 3D boxes for cars and pedestrians from point clouds."},
+  {"level": "research", "title_ko": "카메라-라이다 융합 인지", "title_en": "Camera-LiDAR fusion", "desc_ko": "5개 카메라와 라이다를 함께 써서 탐지 성능을 높이는 방법을 연구합니다.", "desc_en": "Fuse 5 cameras and LiDAR to improve detection."}
+ ],
+ "doc_used": true,
+ "uncertain": ["판단·제어 차량 데이터가 어떤 항목인지 팩 앞부분에서 확인되지 않음", "전체 클래스 목록은 첨부 카테고리 정의서에만 있고 예시 클래스만 확인됨"]
+}

@@ -1,0 +1,29 @@
+{
+ "dataset_id": "71968",
+ "title_en": "Court judgment anonymisation data",
+ "summary_ko": "대법원·사법정보공개포털 등에서 모은 판결문 21,000건(일반판결 15,000건, 1심-2심-최종심 연결 판결 6,000건)에 개인정보 개체를 문맥을 살려 비식별 처리한 라벨이 붙은 데이터입니다. 민사·가사 등 분야별로 구성되며, 문맥을 유지하는 개인정보 식별, 유사 판례 검색, 교육용 가상 판결문 생성에 쓸 수 있습니다.",
+ "summary_en": "21,000 court judgments (15,000 general and 6,000 linked first-instance, appeal and final rulings) from the Supreme Court and the judicial information portal, with personal-information entities de-identified while keeping context. Split by field such as civil and family law. For context-preserving PII detection, similar-case search and generating mock judgments for education.",
+ "contents_ko": "JSON(판결문 원문, 비식별 개체 라벨).",
+ "contents_en": "JSON (judgment text, de-identified entity labels).",
+ "modalities": ["text"],
+ "tasks": ["information_extraction", "text_generation", "retrieval_recommendation"],
+ "topics": [{"ko": "법률", "en": "Law"}, {"ko": "개인정보 보호", "en": "Privacy protection"}],
+ "keywords_ko": ["판결문", "비식별화", "개인정보", "개체명 인식", "판례 검색", "리걸테크"],
+ "keywords_en": ["court judgments", "de-identification", "personal data", "named entity recognition", "case search", "legal tech"],
+ "labels": ["de-identified entity"],
+ "file_formats": ["json"],
+ "scale_ko": "판결문 21,000건(일반 15,000건, 심급 연결 6,000건)",
+ "classes_example": ["민사", "가사"],
+ "baseline": [],
+ "difficulty": "intermediate",
+ "difficulty_note_ko": "약 0.19GB로 작아 다루기 쉽지만 법률 문장이 길고 어렵습니다.",
+ "skills_needed_ko": ["파이썬", "개체명 인식", "트랜스포머"],
+ "caveats_ko": ["비식별 개체 종류와 성능 지표가 팩 앞부분에 없음", "분야 전체 분포가 팩 앞부분에 다 나오지 않음"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "판결문 개인정보 찾기", "title_en": "PII detection in judgments", "desc_ko": "판결문에서 이름·주소 같은 개인정보 위치를 찾습니다.", "desc_en": "Find personal-information spans in judgments."},
+  {"level": "capstone", "title_ko": "판결문 자동 익명화 도구", "title_en": "Judgment anonymiser", "desc_ko": "문맥을 살리면서 개인정보를 가명으로 바꿔 주는 도구를 만듭니다.", "desc_en": "Replace PII with pseudonyms while keeping meaning."},
+  {"level": "research", "title_ko": "심급별 판결 변화 분석", "title_en": "Ruling changes across instances", "desc_ko": "1심-2심-최종심 판결의 차이를 자동 분석하는 방법을 연구합니다.", "desc_en": "Analyse how rulings change across court levels."}
+ ],
+ "doc_used": true,
+ "uncertain": ["비식별 개체 종류", "분야 전체 목록"]
+}

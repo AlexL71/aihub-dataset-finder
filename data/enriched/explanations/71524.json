@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71524",
+ "easy_ko": "책을 소리 내어 읽은 한국어, 영어, 일본어, 스페인어 목소리 약 4,100시간에 받아쓴 글을 붙인 데이터입니다. 말을 글로 바꾸는 음성 인식, 글을 목소리로 읽어 주는 음성 합성, 여러 언어 번역과 통역 AI에 쓸 수 있습니다.",
+ "easy_en": "About 4,100 hours of people reading books aloud in Korean, English, Japanese and Spanish, with written transcripts. You can use it for speech recognition, text-to-speech and AI that translates or interprets between these languages.",
+ "detail_ko": "도서를 낭독한 음성 4,107시간(wav; 한국어 1,001, 영어 1,016, 일본어 1,029, 스페인어 1,062시간)에 전사, 대응 번역문, 화자 정보를 JSON으로 붙였고, 한국어판 LibriSpeech(음성 인식 표준 평가 데이터) 구축이 목표입니다. 기준 성능은 Transformer 번역 BLEU 한-영 0.2031, 한-일 0.571, VITS 한국어 음성 합성 MOS 4.12, Wav2vec2.0-XLS-R-300m 음성 인식 WER 일본어 4.47%, 스페인어 5.4%입니다. 전체 약 920GB이고, 번역문과 음성의 짝 구성과 주제 번호(1~4)의 의미는 팩에 자세히 없습니다.",
+ "detail_en": "4,107 hours of read-aloud book audio (wav: 1,001 Korean, 1,016 English, 1,029 Japanese, 1,062 Spanish) with JSON transcripts, matching translations and speaker information, aiming to be a Korean version of LibriSpeech (a standard speech-recognition benchmark). Baselines: Transformer translation BLEU 0.2031 (Korean-English) and 0.571 (Korean-Japanese); Korean speech synthesis with VITS, MOS 4.12; speech recognition with Wav2vec2.0-XLS-R-300m, WER 4.47% (Japanese) and 5.4% (Spanish). Total size is about 920 GB. How translations pair with the audio and what topic numbers 1 to 4 mean are not detailed in the pack.",
+ "amount_ko": "음성 4,107시간(언어 4종)",
+ "amount_en": "4,107 hours of speech (4 languages)",
+ "labels_ko": "받아쓴 글, 번역 문장",
+ "labels_en": "transcripts, translations",
+ "status": "full-run-2026-11-02"
+}

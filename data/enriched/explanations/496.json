@@ -1,0 +1,12 @@
+{
+ "dataset_id": "496",
+ "easy_ko": "교통경찰이 손으로 하는 여섯 가지 신호(좌우로 진행, 앞뒤 정지 등)를 여러 날씨와 시간대에서 찍고, 사람 위치와 팔다리 같은 몸의 주요 점을 표시한 데이터입니다. 자율주행차가 경찰의 손 신호를 알아보고 따르게 하는 AI를 만들 수 있습니다.",
+ "easy_en": "Videos of six traffic-police hand signals (go left-to-right or right-to-left, stop from the front or back, and so on) filmed in different weather and times of day, with the person's position and key body points marked. You can build AI that lets self-driving cars recognise and follow police hand signals.",
+ "detail_ko": "교통경찰 수신호 6종(우측→좌측, 좌측→우측, 전방정지, 후방정지, 좌우측방 동시정지, 전후방 동시정지)을 촬영한 영상 12,130클립(mp4)과 초당 15프레임 이미지 1,801,574장(jpg)에 사람 바운딩박스, 2D 관절, 수신호 종류를 JSON으로 붙였습니다. 기준 성능은 기록에서 확인되지 않습니다. 전체 약 2.4TB입니다.",
+ "detail_en": "12,130 video clips (mp4) of 6 traffic-police hand signals (right-to-left, left-to-right, stop front, stop rear, stop both sides, stop front and rear) and 1,801,574 frames at 15 fps (jpg), with JSON person boxes, 2D keypoints and signal class. No baseline is visible in the record. Total size is about 2.4 TB.",
+ "amount_ko": "영상 약 1.2만 클립, 이미지 약 180만 장, 신호 6종",
+ "amount_en": "about 12k clips, about 1.8M images, 6 signals",
+ "labels_ko": "사람 위치 상자, 몸의 주요 점(키포인트), 손 신호 종류",
+ "labels_en": "box around the officer, body key points, hand-signal class",
+ "status": "full-run-2026-11-02"
+}

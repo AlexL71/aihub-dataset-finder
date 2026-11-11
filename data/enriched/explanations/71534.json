@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71534",
+ "easy_ko": "세 명 이상이 함께 쉬거나 일하는 등의 동작을 여러 카메라로 찍은 영상과 사진에 몸 관절 점을 표시하고 입체 움직임 파일도 담은 데이터입니다. 여러 사람이 함께하는 동작을 알아보거나 몸의 입체 자세를 추정하는 AI에 쓸 수 있습니다.",
+ "easy_en": "Videos and photos from several cameras of three or more people doing things together, such as leisure or chores, with body joint points marked and 3D motion files included. You can use it to build AI that recognises group actions or estimates body pose in 3D.",
+ "detail_ko": "세 명 이상의 여가 시간·의무 시간 상호작용 동작을 여러 카메라로 찍은 영상 30,843개(MP4)와 이미지 203,380장(JPG)에 몸 키포인트(JSON)를 붙이고 3D 모션 FBX 3,601개를 함께 제공하며, 10대~60대 이상과 다양한 체형을 포함합니다. 기준 성능은 PoseConv3D 상호작용 동작 분류 정확도 88.61%, mAP 84.65%, TCMR 3D 자세 추정 MPJPE 68.09mm입니다. 전체 약 480GB이고, 71528(2인) 데이터와 구조가 같으며, 세부 동작 클래스 목록은 팩 앞부분에 없습니다.",
+ "detail_en": "30,843 videos (MP4) and 203,380 images (JPG) of interactions among three or more people (leisure and obligatory time) filmed by several cameras, with JSON body keypoints and 3,601 3D motion files (FBX), covering ages from teens to 60+ and varied body types. Baselines: interaction classification with PoseConv3D, accuracy 88.61% and mAP 84.65%; 3D pose estimation with TCMR, MPJPE 68.09 mm. Total size is about 480 GB. It has the same structure as 71528 (two people), and the detailed action class list is not in the pack.",
+ "amount_ko": "영상 30,843개, 이미지 203,380장, FBX 3,601개",
+ "amount_en": "30,843 videos, 203,380 images, 3,601 FBX files",
+ "labels_ko": "몸 관절 점, 동작 종류, 입체 움직임",
+ "labels_en": "keypoints, action class, 3D motion",
+ "status": "full-run-2026-11-02"
+}

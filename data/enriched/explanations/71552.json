@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71552",
+ "easy_ko": "실제 병원 뇌 MRI로 학습한 AI가 새로 만들어 낸 가짜 뇌 MRI 사진 1만 장으로, 정상과 이상이 반씩 들어 있습니다. 실제 환자 정보가 없어 비교적 자유롭게 의료 영상 AI 연습이나 교육에 쓸 수 있습니다.",
+ "easy_en": "10,000 fake brain MRI images created by AI trained on real hospital scans, half normal and half abnormal. With no real patient data, they can be used fairly freely to train medical imaging AI or for teaching.",
+ "detail_ko": "병원 실제 뇌 MRI로 학습한 생성 모델이 만든 합성 뇌 MRI 10,000장(png; 정상 5,000, 이상 5,000)에 병변 유무와 병변명을 JSON으로 붙였습니다. 기준 성능은 Score SDE 합성 품질 FID 1.6, 영상의학 전문의 시각 튜링 테스트 정확도 46% / 55%입니다. 실제 환자 영상이 아닌 합성 영상이라 실제 진단 성능을 보장하지 않고, 이상 안의 병변 종류별 수량이 팩에 없습니다. 페이지 표의 '분류 모델의 유사도' 기준값 5%와 측정값 0.75%·0.2%는 의미가 헷갈립니다.",
+ "detail_en": "10,000 synthetic brain MRI images (png; 5,000 normal, 5,000 abnormal) made by a generative model trained on real hospital brain MRI, with JSON lesion presence and lesion name. Baselines: synthesis quality with Score SDE, FID 1.6; visual Turing test by radiologists, accuracy 46% / 55%. Being synthetic, they do not guarantee real diagnostic performance, and counts per lesion type within 'abnormal' are not in the pack. The page's 'classifier similarity' target of 5% and measured 0.75% and 0.2% are confusing.",
+ "amount_ko": "합성 뇌 MRI 10,000장(정상 5,000, 이상 5,000)",
+ "amount_en": "10,000 synthetic brain MRI images (5,000 normal, 5,000 abnormal)",
+ "labels_ko": "정상·이상 구분, 병 이름",
+ "labels_en": "class tag (normal/abnormal, lesion name)",
+ "status": "full-run-2026-11-02"
+}

@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71678",
+ "easy_ko": "일상 주제 문서를 바탕으로 두 사람이 며칠 간격을 두고 여러 번 이어서 나눈 한국어 대화 6만여 개로, 대화에 참고한 문서와 검색어가 표시되어 있습니다. 지식을 반영하면서 지난 대화를 기억하는 한국어 챗봇에 쓸 수 있습니다.",
+ "easy_en": "Over 60,000 Korean conversations in which two people talk several times, days apart, based on everyday-topic documents, with the documents and search terms they used marked. You can use it to build Korean chatbots that draw on knowledge and remember past conversations.",
+ "detail_ko": "일상 주제 문서 109,215건(txt)을 바탕으로 두 사람이 2~4번 이어서 나눈 멀티세션 대화 61,553건(2세션 41,393, 3세션 10,054, 4세션 10,106; 세션 153,372건)에 참고 문서 정보와 검색어를 JSON으로 붙였습니다. 71630(멀티세션 대화)과 비슷한 구성입니다. 문서 일부는 구매·라이선스 자료라 이용 조건을 확인해야 하고, 성능 지표 값은 팩에 없습니다.",
+ "detail_en": "61,553 multi-session conversations (41,393 with 2 sessions, 10,054 with 3, 10,106 with 4; 153,372 sessions) between two people continuing 2 to 4 times, based on 109,215 everyday-topic documents (txt), with JSON reference-document information and search queries. It is similar to the multi-session dialogue set 71630. Some documents are purchased or licensed, so check the terms of use; no metric values are in the pack.",
+ "amount_ko": "멀티세션 대화 61,553건(세션 153,372건), 문서 109,215건",
+ "amount_en": "61,553 multi-session conversations (153,372 sessions), 109,215 documents",
+ "labels_ko": "대화 내용, 참고한 문서, 검색어",
+ "labels_en": "dialogue, document reference, search query",
+ "status": "full-run-2026-11-02"
+}

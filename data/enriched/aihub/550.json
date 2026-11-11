@@ -1,0 +1,29 @@
+{
+ "dataset_id": "550",
+ "title_en": "Integrated indoor space 3D data",
+ "summary_ko": "실내 시설 28곳과 방 703곳을 스캔한 점구름 데이터에 2D 이미지, 일부 GPS, 실내 공기질 센서 정보를 합치고 공간 요소 12만여 개를 3D 상자로 표시한 데이터입니다. 실내 3D 물체 인식, 로봇 학습, 인테리어 렌더링, 건물 시뮬레이션에 쓸 수 있습니다.",
+ "summary_en": "Point clouds scanned from 28 indoor facilities and 703 rooms, fused with 2D images, some GPS and indoor air-quality sensor data, with about 123,000 space elements labelled with 3D boxes. For indoor 3D object recognition, robot learning, interior rendering and building simulation.",
+ "contents_ko": "점구름(pts) + 2D 이미지 + JSON(3D 상자, 공간 요소 종류) + 공기질 센서 정보.",
+ "contents_en": "Point clouds (pts) + 2D images + JSON (3D boxes, element type) + air-quality sensor data.",
+ "modalities": ["3d", "image", "sensor"],
+ "tasks": ["object_detection", "3d_reconstruction", "segmentation"],
+ "topics": [{"ko": "실내 공간·건축", "en": "Indoor spaces and architecture"}, {"ko": "로봇", "en": "Robots"}, {"ko": "디지털 트윈", "en": "Digital twins"}],
+ "keywords_ko": ["실내 3D", "점구름", "3D 객체 탐지", "인테리어", "디지털 트윈", "공기질"],
+ "keywords_en": ["indoor 3D", "point cloud", "3D object detection", "interior", "digital twin", "air quality"],
+ "labels": ["3D bounding box", "element class"],
+ "file_formats": ["pts", "jpg", "json"],
+ "scale_ko": "122,655건(시설 단위 28개·46,588개, 방 단위 703개·76,067개)",
+ "classes_example": ["기초공간요소 > 바닥", "기초공간요소 > 벽", "기초공간요소 > 천장", "기초공간요소 > 기둥", "기초공간요소 > 계단", "개폐공간요소 > 문", "개폐공간요소 > 창문", "주요 가구요소 > 침대", "주요 가구요소 > 테이블", "주요 가구요소 > 책상", "주요 가구요소 > 의자", "주요 가구요소 > 소파"],
+ "baseline": [],
+ "difficulty": "advanced",
+ "difficulty_note_ko": "3D 점구름 탐지는 연구 수준입니다. 약 300GB입니다.",
+ "skills_needed_ko": ["파이썬", "점구름 처리(Open3D)", "3D 탐지 모델"],
+ "caveats_ko": ["성능 지표가 팩 앞부분에 없음"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "방 점구름 시각화", "title_en": "Visualise room point clouds", "desc_ko": "방 점구름을 불러와 3D 상자와 함께 봅니다.", "desc_en": "Load room point clouds and view them with 3D boxes."},
+  {"level": "capstone", "title_ko": "가구 배치 측정 도구", "title_en": "Furniture layout measurer", "desc_ko": "점구름에서 가구를 찾아 크기와 위치를 표로 정리합니다.", "desc_en": "Find furniture in point clouds and list sizes and positions."},
+  {"level": "research", "title_ko": "공기질과 공간 구조 관계", "title_en": "Air quality and room layout", "desc_ko": "방 구조와 공기질 센서 값의 관계를 분석합니다.", "desc_en": "Analyse how room layout relates to air-quality readings."}
+ ],
+ "doc_used": true,
+ "uncertain": []
+}

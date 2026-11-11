@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71923",
+ "easy_ko": "드론으로 찍은 풍력 발전기와 태양광 패널의 일반 사진과 열화상 사진 10만여 장에 결함 영역과 사진에 대한 질문과 답을 붙인 데이터입니다. 발전 설비의 오염, 페인트 손상, 균열, 열이 몰린 곳 같은 결함을 자동으로 찾고 설명하는 점검 AI에 쓸 수 있습니다.",
+ "easy_en": "Over 100,000 regular and thermal drone images of wind turbines and solar panels, with defect areas and questions and answers about each image. You can use it to build inspection AI that finds and explains defects such as dirt, paint damage, cracks and hot spots automatically.",
+ "detail_ko": "드론으로 찍은 풍력 발전기 80,906장과 태양광 패널 19,710장, 총 100,616장의 RGB·열화상 이미지(jpg; 결함 75,459, 정상 25,157)에 결함 분할(정상 날개, 정상 패널, 오염, 페인트 데미지, 라미네이트 노출·데미지, 본드 크랙, 리셉터 결함, 레인카라 결함, 와류발전기 결함, 열점 결함)과 시각 질의응답을 JSON으로 붙였습니다. 페이지에 성능 점수 표가 없고, 결함이 '10종'이라 쓰였지만 나열된 이름은 9개이며, 풍력이 약 80%로 태양광보다 훨씬 많습니다.",
+ "detail_en": "100,616 RGB and thermal drone images (jpg) of wind turbines (80,906) and solar panels (19,710), 75,459 with defects and 25,157 normal, with JSON segmentation (normal blade, normal panel, contamination, paint damage, laminate exposure and damage, bond crack, receptor defect, rain-collar defect, vortex-generator defect, hot spot) and visual question-answer pairs. There is no score table; defects are described as '10 types' but only 9 names are listed; and wind turbines make up about 80%, far more than solar panels.",
+ "amount_ko": "이미지 100,616장(풍력 80,906, 태양광 19,710; 결함 75,459, 정상 25,157)",
+ "amount_en": "100,616 images (80,906 wind, 19,710 solar; 75,459 defect, 25,157 normal)",
+ "labels_ko": "결함 영역, 질문과 답",
+ "labels_en": "segmentation, question-answer",
+ "status": "full-run-2026-11-02"
+}

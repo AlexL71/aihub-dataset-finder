@@ -1,0 +1,29 @@
+{
+ "dataset_id": "71701",
+ "title_en": "Edible insect rearing automation data",
+ "summary_ko": "곤충 사육 연구시설에서 식용곤충 6종(장수풍뎅이·흰점박이꽃무지·갈색거저리·백강잠 유충, 메뚜기·풀무치)을 찍은 RGB 이미지와 분광 이미지 각 20만 장 이상, 사육 환경 데이터가 정상·비정상과 상자·영역 분할로 표시되어 있습니다. 곤충 사육 상태를 자동으로 살피는 AI에 쓸 수 있습니다.",
+ "summary_en": "200,000+ RGB and 200,000+ spectral images of 6 edible insect species (beetle, flower chafer, mealworm and silkworm larvae, locusts) from a research rearing facility, labelled normal/abnormal with boxes and segmentation, plus rearing environment data. For AI that monitors insect rearing.",
+ "contents_ko": "RGB(jpg)·분광(png) 이미지 + 환경 데이터(csv) + JSON(상자, 분할 영역, 정상/비정상).",
+ "contents_en": "RGB (jpg) and spectral (png) images + environment data (csv) + JSON (boxes, segmentation, normal/abnormal).",
+ "modalities": ["image", "sensor", "tabular"],
+ "tasks": ["object_detection", "segmentation", "image_classification", "anomaly_detection"],
+ "topics": [{"ko": "스마트 축산·곤충 사육", "en": "Smart farming and insect rearing"}, {"ko": "미래 식량", "en": "Future food"}],
+ "keywords_ko": ["식용곤충", "곤충 사육", "분광 이미지", "유충", "정상·비정상", "사육 환경"],
+ "keywords_en": ["edible insects", "insect rearing", "spectral image", "larvae", "normal/abnormal", "rearing environment"],
+ "labels": ["bounding box", "polygon", "normal/abnormal"],
+ "file_formats": ["jpg", "png", "csv", "json"],
+ "scale_ko": "곤충 6종, RGB 이미지 20만 장·분광 이미지 20만 장 이상, 환경 데이터 20만 세트 이상(종마다 68,000건)",
+ "classes_example": ["장수풍뎅이", "흰점박이 꽃무지", "갈색거저리", "백강잠", "메뚜기", "풀무치"],
+ "baseline": [{"task": "insect object detection", "model": "YOLOv8", "metric": "", "value": ""}],
+ "difficulty": "beginner",
+ "difficulty_note_ko": "6종·정상/비정상으로 구조가 단순해 탐지 입문에 좋고, 전체 약 153GB라 종 하나만 받아도 됩니다.",
+ "skills_needed_ko": ["파이썬", "YOLO 탐지", "이미지 분류"],
+ "caveats_ko": ["한 연구시설에서만 촬영해 일반 농가 환경과 다를 수 있음", "정상·비정상 기준과 성능 지표 값이 팩 앞부분에 없음"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "곤충 종 분류", "title_en": "Insect species classification", "desc_ko": "사진을 보고 6종 중 어떤 곤충인지 분류합니다.", "desc_en": "Classify which of the 6 species is in a photo."},
+  {"level": "capstone", "title_ko": "사육통 이상 개체 알림", "title_en": "Abnormal insect alert", "desc_ko": "YOLO로 비정상 개체를 찾아 사육 농가에 알리는 모니터링 앱을 만듭니다.", "desc_en": "Detect abnormal insects with YOLO and alert farmers."},
+  {"level": "research", "title_ko": "분광 이미지로 건강 판단", "title_en": "Health from spectral images", "desc_ko": "RGB보다 분광 이미지가 이상 개체를 더 잘 찾는지 연구합니다.", "desc_en": "Study whether spectral images find abnormal insects better than RGB."}
+ ],
+ "doc_used": true,
+ "uncertain": ["비정상 판정 기준 확인 필요"]
+}

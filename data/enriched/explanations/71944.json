@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71944",
+ "easy_ko": "예전 교통법규 위반 데이터를 다시 다듬어 만든 도로 사진 2만 장에, 장면 속 요소 사이의 의미 관계를 담은 설명을 붙인 데이터입니다. 교통 위반을 찾아내는 AI나 교통 교육, 운전 시뮬레이터에 쓸 수 있습니다.",
+ "easy_en": "20,000 road images reworked from older traffic-violation data, each with a description of the meaning relations between elements in the scene. You can use it for AI that spots traffic violations, traffic education or driving simulators.",
+ "detail_ko": "2022년 AI 허브 교통법규 위반상황 데이터를 다시 가공(업사이클링)해 중복 이미지를 빼고, 이미지 20,000건(jpg)에 요소 사이의 의미 관계를 담은 이미지-텍스트 설명(JSON)을 붙였습니다. 온톨로지·검색 기반 생성(RAG)과 사람 검수로 정확도를 높였습니다. 구성: 신호위반 45.3%, 중앙선 침범 30.2%, 안전모 미착용 1.1% 등. 위반 탐지, 교통 교육, 시뮬레이터에 쓰도록 만들었습니다. 위반 유형 간 불균형이 크고(안전모 미착용 1.1%), 페이지에 성능 점수 표가 없고, 원본 데이터와 이미지가 겹칠 수 있습니다.",
+ "detail_en": "20,000 images (jpg) taken from AI Hub's 2022 traffic-violation data after removing duplicates, with JSON image-text descriptions of the meaning relations between elements, made more accurate using an ontology, retrieval-augmented generation (RAG) and human review. Composition: 45.3% signal violations, 30.2% centre-line crossing, 1.1% no helmet and others. It is meant for violation detection, traffic education and simulators. Violation types are very imbalanced (no helmet only 1.1%). There is no score table, and images may overlap with the original dataset.",
+ "amount_ko": "20,000건",
+ "amount_en": "20,000 items",
+ "labels_ko": "사진 설명, 요소 사이 관계",
+ "labels_en": "image-text description",
+ "status": "full-run-2026-11-02"
+}

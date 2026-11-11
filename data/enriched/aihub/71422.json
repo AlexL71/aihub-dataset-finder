@@ -1,0 +1,29 @@
+{
+ "dataset_id": "71422",
+ "title_en": "CrossFit motion data",
+ "summary_ko": "에어 스쿼트·프런트 스쿼트·숄더 프레스 등 크로스핏 주요 동작을 정상 자세와 발뒤꿈치·팔꿈치·고관절 오류 자세로 나눠 8대 카메라로 찍은 영상 4,000동작(32,400클립)입니다. 2D·3D 관절 키포인트가 있어 운동 자세 교정·동작 분류 AI에 쓸 수 있습니다.",
+ "summary_en": "4,000 CrossFit movements (32,400 clips from 8 cameras) such as air squats, front squats and shoulder presses, performed correctly and with typical errors (heels, elbows, hips). With 2D/3D joint keypoints, for exercise form correction and movement classification.",
+ "contents_ko": "동작 영상(avi) + 이미지(jpg) + CSV(2D·3D 키포인트) + JSON(동작 종류, 정상·오류 유형).",
+ "contents_en": "Motion video (avi) + image (jpg) + CSV (2D/3D keypoints) + JSON (movement type, correct/error type).",
+ "modalities": ["video", "image"],
+ "tasks": ["keypoint_pose", "action_recognition", "segmentation"],
+ "topics": [{"ko": "스포츠·피트니스", "en": "Sports and fitness"}, {"ko": "비대면 운동 코칭", "en": "Remote exercise coaching"}],
+ "keywords_ko": ["크로스핏", "스쿼트", "자세 교정", "키포인트", "동작 분류", "홈트레이닝"],
+ "keywords_en": ["CrossFit", "squat", "form correction", "keypoints", "movement classification", "home workout"],
+ "labels": ["2D keypoints", "3D keypoints", "segmentation", "movement type", "error type"],
+ "file_formats": ["avi", "jpg", "csv", "json"],
+ "scale_ko": "동작 4,000건(8채널, 32,400클립), 2D 키포인트 32,400개, 3D 키포인트 4,000개",
+ "classes_example": ["에어 스쿼트", "프런트 스쿼트", "오버헤드 스쿼트", "숄더 프레스", "푸쉬 프레스", "저크 프레스", "정상", "팔꿈치 오류"],
+ "baseline": [{"task": "CrossFit error classification (2D)", "model": "PoseC3D", "metric": "Top-3 accuracy", "value": "99.88%"}],
+ "difficulty": "intermediate",
+ "difficulty_note_ko": "키포인트 CSV만 써도 자세 분류 실습이 가능합니다. 영상은 약 1.3TB이고 가장 작은 파일도 약 0.36GB입니다.",
+ "skills_needed_ko": ["파이썬", "자세 추정(YOLO-pose·MediaPipe)", "시계열 분류"],
+ "caveats_ko": ["전체 약 1.3TB, 가장 작은 파일도 약 0.36GB", "동작 분류 성능이 기준 85%에 측정 10%로 적혀 있어 오기 가능성이 큼", "같은 동작을 8채널로 찍어 분할 시 같은 동작이 섞이지 않게 주의"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "스쿼트 정상·오류 분류", "title_en": "Squat form classifier", "desc_ko": "키포인트로 스쿼트가 정상인지 오류인지 분류합니다.", "desc_en": "Classify squats as correct or wrong from keypoints."},
+  {"level": "capstone", "title_ko": "홈트 자세 코칭 앱", "title_en": "Home workout coaching app", "desc_ko": "웹캠으로 운동하면 어떤 관절이 잘못됐는지 실시간으로 알려 줍니다.", "desc_en": "Give real-time feedback on which joint is wrong via webcam."},
+  {"level": "research", "title_ko": "카메라 수와 3D 정확도", "title_en": "Camera count vs 3D accuracy", "desc_ko": "카메라 수를 줄였을 때 3D 자세 복원과 오류 분류가 얼마나 나빠지는지 연구합니다.", "desc_en": "Study how fewer cameras affect 3D pose and error classification."}
+ ],
+ "doc_used": true,
+ "uncertain": ["동작 분류 성능 10%는 페이지 표기 그대로이며 실제 값인지 확인 필요"]
+}

@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71755",
+ "easy_ko": "사람이 많은 실내 시설에서 로봇에 단 카메라, 깊이 카메라, 레이저 센서로 찍은 주행 데이터에 사람과 물체 위치, 사람 동작을 표시한 데이터입니다. 사람들 사이를 부딪치지 않고 다니는 로봇 AI에 쓸 수 있습니다.",
+ "easy_en": "Driving data from a robot's camera, depth camera and laser sensor in busy indoor public places, marking where people and objects are and what people are doing. You can use it to build robot AI that moves among people without bumping into them.",
+ "detail_ko": "실내 다중이용시설에서 로봇에 단 RGB-D 카메라·라이다·IMU로 찍은 주행 데이터로, RGB-D 영상(mp4, jpg)·깊이(png)·라이다(pcd) 각 150,229건과 IMU(csv), 주행 클립 2,528개에 사람·실내 객체 상자, 3D 큐보이드, 동작 구간을 JSON으로 붙이고 로봇·장소 도면을 함께 제공합니다. 페이지에 성능 점수 표가 없고(YOLOv7 등 소개만 있음), 객체 클래스 목록은 팩 앞부분에 없습니다. 2020년 로봇 주행 데이터의 고도화판입니다.",
+ "detail_en": "Robot driving data from indoor public facilities recorded with an RGB-D camera, lidar and IMU on a robot: 150,229 each of RGB-D frames (mp4, jpg), depth images (png) and lidar scans (pcd), IMU logs (csv) and 2,528 driving clips, with JSON boxes and 3D cuboids for people and indoor objects, action segments, and robot and site drawings. There is no score table (only YOLOv7 and others are mentioned), and the object class list is not in the pack. It is an enhanced version of the 2020 robot driving data.",
+ "amount_ko": "RGB-D·깊이·라이다 각 150,229건, 주행 클립 2,528개",
+ "amount_en": "150,229 each of RGB-D, depth and lidar frames; 2,528 driving clips",
+ "labels_ko": "사람·물체 위치 상자와 입체 상자, 사람 동작 구간",
+ "labels_en": "bounding box, 3D cuboid, action segments",
+ "status": "full-run-2026-11-02"
+}

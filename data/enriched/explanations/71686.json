@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71686",
+ "easy_ko": "한국 상황과 외국 상황의 일상 대화 목소리 1,250시간에 받아쓴 글과 번역 문장을 붙인 데이터입니다. 말을 듣고 바로 다른 언어로 옮겨 주는 통역 AI에 쓸 수 있습니다.",
+ "easy_en": "1,250 hours of everyday conversation speech in Korean settings and foreign settings, with written transcripts and translations. You can use it to build AI that listens and translates into another language right away.",
+ "detail_ko": "한국 상황 일상대화 음성 500시간과 외국 상황 음성 언어별 250시간(메타데이터 예시 기준 러시아어·프랑스어 등으로 추정), 총 1,250시간(wav 374,824건)에 전사·번역 텍스트(JSON 20,264건)를 붙였습니다. 외국어 종류는 메타데이터 예시(ko, ru, fr …)와 언어 이름으로 추정한 것이고, 성능 지표는 팩 앞부분에 없습니다.",
+ "detail_en": "1,250 hours of speech (374,824 wav files): 500 hours of everyday conversation in Korean settings and 250 hours per language in foreign settings (probably Russian, French and others, judging by metadata examples), with 20,264 JSON transcript and translation files. The foreign languages are inferred from metadata examples (ko, ru, fr …) and language names, and no metrics are in the pack.",
+ "amount_ko": "음성 1,250시간(wav 374,824건), 전사·번역 JSON 20,264건",
+ "amount_en": "1,250 hours of speech (374,824 wav files), 20,264 transcript/translation JSON files",
+ "labels_ko": "받아쓴 글, 번역 문장",
+ "labels_en": "transcript, translation",
+ "status": "full-run-2026-11-02"
+}

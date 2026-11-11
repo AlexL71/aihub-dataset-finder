@@ -1,0 +1,29 @@
+{
+ "dataset_id": "71646",
+ "title_en": "Generative AI multilingual translation quality evaluation data",
+ "summary_ko": "신문기사·학술논문·뉴스레터 문장 약 30만 개를 한국어와 영어·중국어·일본어 사이 양방향으로 사람이 번역한 병렬 말뭉치 307,175문장과, 기계번역을 사람이 고치며 품질을 평가한 데이터(MTPE) 122,808문장입니다. 기계번역 품질 예측과 번역 모델 학습에 쓸 수 있습니다.",
+ "summary_en": "307,175 human-translated parallel sentences between Korean and English, Chinese and Japanese (both directions) from news articles, papers and newsletters, plus 122,808 machine-translation post-edit (MTPE) quality ratings. For translation quality estimation and training translation models.",
+ "contents_ko": "JSON(원문, 사람 번역문, 기계번역문, 교정문, 품질 평가, 분야).",
+ "contents_en": "JSON (source, human translation, machine translation, post-edit, quality rating, domain).",
+ "modalities": ["text"],
+ "tasks": ["translation", "text_classification"],
+ "topics": [{"ko": "번역·통역", "en": "Translation and interpretation"}, {"ko": "생성형 AI 평가", "en": "Generative AI evaluation"}],
+ "keywords_ko": ["다국어 번역", "병렬 말뭉치", "번역 품질 평가", "MTPE", "COMET", "한중일영"],
+ "keywords_en": ["multilingual translation", "parallel corpus", "translation quality", "MTPE", "COMET", "Korean-English-Chinese-Japanese"],
+ "labels": ["translation", "post-edit", "quality rating"],
+ "file_formats": ["json"],
+ "scale_ko": "번역 307,175문장, 평가 122,808문장, 분야 14종",
+ "classes_example": ["영어", "중국어", "일본어"],
+ "baseline": [],
+ "difficulty": "intermediate",
+ "difficulty_note_ko": "약 1.1GB로 작아 다루기 쉽습니다. 번역 품질 지표(COMET 등)를 먼저 익히세요.",
+ "skills_needed_ko": ["파이썬", "트랜스포머 번역 모델", "번역 평가 지표 이해"],
+ "caveats_ko": ["언어쌍 목록은 팩 본문에서 추정한 것(영·중·일)임", "성능 지표 값이 팩에 없음"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "번역 품질 점수 예측", "title_en": "Translation score prediction", "desc_ko": "원문·번역문 쌍으로 품질 점수를 예측합니다.", "desc_en": "Predict quality scores from source-translation pairs."},
+  {"level": "capstone", "title_ko": "논문 초록 번역 검수기", "title_en": "Abstract translation checker", "desc_ko": "논문 초록 기계번역에서 품질이 낮은 문장을 표시해 줍니다.", "desc_en": "Flag low-quality machine-translated abstract sentences."},
+  {"level": "research", "title_ko": "LLM 번역 평가", "title_en": "Evaluating LLM translations", "desc_ko": "생성형 AI 번역을 이 데이터 기준으로 자동 평가하는 방법을 연구합니다.", "desc_en": "Automatically evaluate generative-AI translations with this data."}
+ ],
+ "doc_used": true,
+ "uncertain": ["정확한 언어쌍 수"]
+}

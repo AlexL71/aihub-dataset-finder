@@ -1,0 +1,29 @@
+{
+ "dataset_id": "71950",
+ "title_en": "Category-based reasoning data (upcycling)",
+ "summary_ko": "2022년 AI Hub 영상이미지 데이터를 다시 가공해, 건축·골프·육아·요리·여행 등 40개 주제(각 2.5%)의 이미지 20,000건에 카테고리 판단 질의응답(Q&A)과 사고과정(CoT, 답에 이르는 추론 단계) 라벨을 붙인 데이터입니다. 근거를 설명하는 분류 AI와 콘텐츠 추천 시스템에 쓸 수 있습니다.",
+ "summary_en": "20,000 images re-processed from AI Hub's 2022 vision data across 40 topics (2.5% each) such as architecture, golf, childcare, cooking and travel, with category-judgement Q&A and chain-of-thought (step-by-step reasoning) labels. For explainable classification and content recommendation.",
+ "contents_ko": "이미지(jpg) + JSON(질의응답·사고과정).",
+ "contents_en": "Images (jpg) + JSON (Q&A, chain of thought).",
+ "modalities": ["image", "text"],
+ "tasks": ["visual_qa", "image_classification", "retrieval_recommendation"],
+ "topics": [{"ko": "멀티모달 AI", "en": "Multimodal AI"}, {"ko": "추론", "en": "Reasoning"}],
+ "keywords_ko": ["카테고리 분류", "추론", "질의응답", "사고과정", "콘텐츠 추천", "업사이클링"],
+ "keywords_en": ["category classification", "reasoning", "Q&A", "chain of thought", "content recommendation", "upcycling"],
+ "labels": ["question-answer", "chain of thought", "category"],
+ "file_formats": ["jpg", "json"],
+ "scale_ko": "20,000건(40개 주제, 각 2.5%)",
+ "classes_example": ["건축", "골프", "육아", "요리", "여행", "발레"],
+ "baseline": [],
+ "difficulty": "intermediate",
+ "difficulty_note_ko": "약 99GB로 큰 편이라 일부만 받아 실습하는 것이 좋습니다.",
+ "skills_needed_ko": ["파이썬", "멀티모달 모델", "트랜스포머"],
+ "caveats_ko": ["주제당 약 500건으로 적어 분류 학습에는 부족할 수 있음", "기존 AI Hub 데이터를 재가공한 것이라 원본 데이터와 겹칠 수 있음", "성능 지표 값이 팩 앞부분에 없음"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "40개 주제 이미지 분류", "title_en": "40-topic image classifier", "desc_ko": "이미지가 어떤 활동 주제인지 분류합니다.", "desc_en": "Classify images into 40 activity topics."},
+  {"level": "capstone", "title_ko": "근거 있는 콘텐츠 추천", "title_en": "Explainable content tagging", "desc_ko": "이미지에 주제를 붙이고 이유를 설명하는 추천 도구를 만듭니다.", "desc_en": "Tag images with topics and explain why."},
+  {"level": "research", "title_ko": "사고과정이 분류에 주는 효과", "title_en": "CoT for classification", "desc_ko": "사고과정 학습이 분류 정확도와 설명력에 주는 효과를 연구합니다.", "desc_en": "Study how CoT training affects accuracy and explanations."}
+ ],
+ "doc_used": true,
+ "uncertain": []
+}

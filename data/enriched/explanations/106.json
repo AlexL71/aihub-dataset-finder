@@ -1,0 +1,12 @@
+{
+ "dataset_id": "106",
+ "easy_ko": "한국어 위키백과 문서에서 '대상-특징-값' 형태로 정리한 지식, 위키 글에 대한 질문과 답, 문장에서 빠진 말 채우기, 같은 대상을 가리키는 말 연결을 모은 데이터입니다. 상식 질문에 답하는 챗봇이나 지식을 서로 연결한 지식 지도를 만들 수 있습니다.",
+ "easy_en": "Knowledge taken from Korean Wikipedia articles as subject–property–value facts, plus questions and answers on the articles, restored missing parts of sentences, and links between words that refer to the same thing. You can build chatbots that answer general-knowledge questions or a knowledge graph that links facts together.",
+ "detail_ko": "2017년 한국어 위키백과 주요 문서 15만 개에서 추출한 트리플(개체, 속성, 값) 75만 개와 위키 본문 질문-정답 쌍, 생략 복원 태깅, 상호참조 태깅 데이터로 구성됩니다. 기준 성능 지표는 없습니다. 2017년 기준이라 오래된 정보가 있고, 개요 설명에 법률 분야 문구가 잘못 섞여 있으며, 파일 형식(json/txt)은 기록에서 확인되지 않은 추정입니다. 상세 페이지 정보가 제한적입니다.",
+ "detail_en": "750k knowledge triples (entity, property, value) extracted from 150k major Korean Wikipedia articles (2017), plus question–answer pairs on article text, ellipsis-restoration tags and coreference tags. No baseline is published. The 2017 snapshot is dated, the overview mistakenly contains legal-domain text, and file formats (json/txt) are not confirmed; detailed documentation is limited.",
+ "amount_ko": "위키 문서 15만 개, 지식 75만 개",
+ "amount_en": "150k Wikipedia articles, 750k facts",
+ "labels_ko": "대상-특징-값 지식, 질문과 답, 같은 대상 연결, 빠진 말 표시",
+ "labels_en": "subject–property–value facts, question–answer pairs, coreference links, ellipsis tags",
+ "status": "full-run-2026-11-02"
+}

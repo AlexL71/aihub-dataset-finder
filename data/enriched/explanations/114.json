@@ -1,0 +1,12 @@
+{
+ "dataset_id": "114",
+ "easy_ko": "참여자 동의를 받아 모은 한국인의 메신저 일상 대화로, 줄임말 같은 평소 채팅 말투와 대화 주제, 말한 사람 정보가 들어 있습니다. 사람처럼 자연스럽게 대답하는 한국어 챗봇을 만들 수 있습니다.",
+ "easy_en": "Everyday Korean messenger chats collected with participants' consent, keeping casual chat style such as abbreviations, plus the topic and speaker information. You can build Korean chatbots that reply as naturally as a person.",
+ "detail_ko": "한국인 메신저 일상대화 200만 건(말차례 약 1,600만 회, 발화 약 3,200만 개)을 JSON으로 제공하며, 대화별 화자 정보·대화 유형·주제와 말차례 순서대로 발화 텍스트(개인정보 비식별)가 있습니다. 기준 성능은 RoBERTa bi-encoder 응답 선택 R10@1 0.8617입니다. 비식별 처리되었지만 실제 대화이므로 이용 약관 확인이 필요합니다.",
+ "detail_en": "2M Korean messenger conversations (about 16M turns, 32M utterances) in JSON, with speaker info, conversation type and topic, and de-identified utterances in turn order. Baseline: RoBERTa bi-encoder response selection R10@1 0.8617. Although de-identified, these are real chats, so check the terms of use.",
+ "amount_ko": "대화 200만 건, 발화 약 3,200만 개",
+ "amount_en": "2M conversations, about 32M utterances",
+ "labels_ko": "대화 주제, 대화 유형, 말한 사람 정보",
+ "labels_en": "conversation topic, conversation type, speaker info",
+ "status": "full-run-2026-11-02"
+}

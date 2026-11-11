@@ -1,0 +1,29 @@
+{
+ "dataset_id": "71318",
+ "title_en": "Forest tree species 3D object scanning and modelling data",
+ "summary_ko": "국내 대표 산림 수종 82종(침엽수 19, 활엽수 62, 죽림 1) 나무 2,500그루를 라이다로 스캔한 3D 포인트클라우드와 3D 객체 모델을 담은 데이터입니다. 계절·지역·용도(용재·조경·내화 등)가 다양합니다. 디지털트윈 숲 관리나 3D 수종 분류 AI에 쓸 수 있습니다.",
+ "summary_en": "LiDAR-scanned 3D point clouds and 3D object models of 2,500 trees from 82 representative Korean forest species (19 conifers, 62 broadleaf, 1 bamboo), across seasons, regions and uses (timber, landscaping, fire-resistant and more). For digital-twin forest management or 3D tree species classification.",
+ "contents_ko": "나무 포인트클라우드(las) + 3D 모델(fbx) + JSON(수종, 계절, 지역, 크기).",
+ "contents_en": "Tree point clouds (las) + 3D models (fbx) + JSON (species, season, region, size).",
+ "modalities": ["3d"],
+ "tasks": ["image_classification", "3d_reconstruction"],
+ "topics": [{"ko": "산림·환경", "en": "Forests and environment"}, {"ko": "디지털트윈", "en": "Digital twins"}],
+ "keywords_ko": ["산림 수종", "라이다", "3D 모델링", "디지털트윈", "도시숲"],
+ "keywords_en": ["tree species", "LiDAR", "3D modelling", "digital twin", "urban forest"],
+ "labels": ["species", "3D model", "season", "region", "use type"],
+ "file_formats": ["las", "fbx", "json"],
+ "scale_ko": "나무 2,500그루, 수종 82종",
+ "classes_example": ["침엽수", "활엽수", "죽림", "용재수종", "조경수종", "내화수종"],
+ "baseline": [{"task": "3D tree species classification", "model": "G3DNet18 + RepSurf", "metric": "accuracy", "value": "91.6%"}],
+ "difficulty": "advanced",
+ "difficulty_note_ko": "약 107GB이고 포인트클라우드 처리가 필요합니다. 샘플 수(2,500)는 적습니다.",
+ "skills_needed_ko": ["파이썬", "포인트클라우드 처리", "3D 분류 모델"],
+ "caveats_ko": ["봄·겨울 데이터가 없음", "수종당 평균 약 30그루로 적음", "AI Hub 태그가 중복 표기됨"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "침엽수·활엽수 분류", "title_en": "Conifer vs broadleaf", "desc_ko": "포인트클라우드로 침엽수인지 활엽수인지 분류합니다.", "desc_en": "Classify point clouds as conifer or broadleaf."},
+  {"level": "capstone", "title_ko": "가상 도시숲 설계", "title_en": "Virtual urban-forest planner", "desc_ko": "3D 나무 모델로 공원 수목 배치를 시뮬레이션합니다.", "desc_en": "Simulate tree layouts for a park with the 3D models."},
+  {"level": "research", "title_ko": "나무 높이·부피 추정", "title_en": "Tree height and volume", "desc_ko": "포인트클라우드로 나무 높이·줄기 지름·부피를 추정하는 방법을 연구합니다.", "desc_en": "Estimate height, trunk diameter and volume from point clouds."}
+ ],
+ "doc_used": true,
+ "uncertain": []
+}

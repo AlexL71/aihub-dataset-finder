@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71814",
+ "easy_ko": "전문 조사원이 키워드를 바탕으로 만든 설문 문항 1만 1천여 건과, 그 안의 단어와 단어 관계를 표시한 데이터입니다. 키워드만 넣으면 설문지를 만들어 주는 AI에 쓸 수 있습니다.",
+ "easy_en": "Over 11,000 survey questions written by professional researchers from keywords, with words and the relationships between them marked. You can use it to build AI that drafts a questionnaire from just a few keywords.",
+ "detail_ko": "전문 리서처가 만든 키워드 기반 설문 원천 데이터 11,372건과 개체·관계 라벨 97,957건(JSON)으로 된 한국어 설문 문항 생성용 데이터입니다. 리서치 비전문가도 키워드만 넣으면 설문을 만들 수 있도록, 저작권 문제가 해결된 전문가 작성 문항으로 구축했습니다. 개체·관계 종류와 성능 지표는 팩 앞부분에 없습니다.",
+ "detail_en": "11,372 keyword-based Korean survey items written by professional researchers and 97,957 entity and relation labels (JSON), for generating survey questions. The entity and relation types and any metrics are not in the pack.",
+ "amount_ko": "원천 11,372건, 라벨 97,957건",
+ "amount_en": "11,372 source items, 97,957 labels",
+ "labels_ko": "단어(개체), 단어 사이 관계",
+ "labels_en": "entity, relation",
+ "status": "full-run-2026-11-02"
+}

@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71968",
+ "easy_ko": "판결문 2만 1천 건에서 사람 이름 같은 개인 정보를 글의 흐름은 살리면서 가린 데이터로, 첫 재판부터 마지막 재판까지 이어진 판결도 들어 있습니다. 개인 정보를 찾아 가리는 AI나 비슷한 판례 찾기, 교육용 가상 판결문 만들기에 쓸 수 있습니다.",
+ "easy_en": "21,000 court judgments in which personal details such as names are hidden while keeping the text readable, including cases linked from first instance to final appeal. You can use it for AI that finds and hides personal data, similar-case search, or generating mock judgments for teaching.",
+ "detail_ko": "대법원·사법정보공개포털 등에서 모은 판결문 21,000건(일반판결 15,000건, 1심-2심-최종심 연결 판결 6,000건)에 개인정보 개체를 문맥을 살려 비식별 처리한 라벨을 JSON으로 붙였고, 분야 예는 민사, 가사입니다. 비식별 개체 종류와 성능 지표는 팩 앞부분에 없고, 분야 전체 분포도 팩 앞부분에 다 나오지 않습니다.",
+ "detail_en": "21,000 court judgments (JSON; 15,000 ordinary and 6,000 linked first-instance, appeal and final rulings) from the Supreme Court and the judicial information portal, with labels that de-identify personal-data entities while keeping the context, in fields such as civil and family law. The entity types and any metrics are not in the pack, and the full field distribution is not shown.",
+ "amount_ko": "판결문 21,000건(일반 15,000, 심급 연결 6,000)",
+ "amount_en": "21,000 judgments (15,000 ordinary, 6,000 linked across instances)",
+ "labels_ko": "가린 개인 정보 항목",
+ "labels_en": "de-identified entity",
+ "status": "full-run-2026-11-02"
+}

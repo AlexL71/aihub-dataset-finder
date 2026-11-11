@@ -1,0 +1,32 @@
+{
+ "dataset_id": "71315",
+ "title_en": "Breaking (b-boying) movement data",
+ "summary_ko": "브레이킹의 탑락·다운락·파워무브·프리즈 4가지 동작군에서 각 20개와 컴비네이션 5개, 총 85개 동작을 국가대표·세계 랭커부터 초·중급 비보이·비걸까지 102명이 하는 모습을 카메라 8대로 찍은 영상 약 1.5만 클립에 2D·3D 키포인트를 붙인 데이터입니다. 브레이킹 동작 분석·심사 보조 AI에 쓸 수 있습니다.",
+ "summary_en": "About 15,000 clips of 85 breaking moves (20 each of toprock, downrock, power moves and freezes, plus 5 combinations) performed by 102 dancers from national-team and world-ranked to beginner b-boys and b-girls, filmed by 8 cameras, with 2D and 3D keypoints. For AI that analyses breaking moves or assists judging.",
+ "contents_ko": "멀티뷰 동작 영상(mp4) + JSON·CSV(2D·3D 키포인트, 동작 정보).",
+ "contents_en": "Multi-view movement videos (mp4) + JSON/CSV (2D and 3D keypoints, movement info).",
+ "modalities": ["video", "3d"],
+ "tasks": ["keypoint_pose", "action_recognition"],
+ "topics": [{"ko": "춤·공연예술", "en": "Dance and performing arts"}, {"ko": "스포츠", "en": "Sports"}],
+ "keywords_ko": ["브레이킹", "비보잉", "파워무브", "자세 추정", "올림픽 심사"],
+ "keywords_en": ["breaking", "b-boying", "power moves", "pose estimation", "Olympic judging"],
+ "labels": ["2D keypoint", "3D keypoint", "movement class", "skill level"],
+ "file_formats": ["mp4", "json", "csv"],
+ "scale_ko": "영상 약 1.5만 클립, 동작 85종, 시연자 102명",
+ "classes_example": ["탑락", "다운락", "파워무브", "프리즈", "컴비네이션"],
+ "baseline": [
+  {"task": "move classification", "model": "PoseC3D", "metric": "top-3 accuracy", "value": "99.65%"},
+  {"task": "move similarity", "model": "BPE", "metric": "AUC-ROC", "value": "0.7455"}
+ ],
+ "difficulty": "advanced",
+ "difficulty_note_ko": "전체 약 5.5TB로 매우 큽니다. 키포인트만 받아 쓰세요. 회전·물구나무 동작이 많아 자세 추정이 어렵습니다.",
+ "skills_needed_ko": ["파이썬", "자세 추정", "동작 분류(PoseC3D 등)"],
+ "caveats_ko": ["전체 약 5.5TB", "남성 시연자가 88%로 치우침", "페이지의 클립 수(14,998)와 라벨 수량(17,200)이 다름", "71312·71313번과 같은 구축 기관·구조"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "동작군 분류", "title_en": "Move-family classifier", "desc_ko": "키포인트로 탑락·다운락·파워무브·프리즈를 구분합니다.", "desc_en": "Classify toprock, downrock, power moves and freezes."},
+  {"level": "capstone", "title_ko": "브레이킹 연습 피드백", "title_en": "Breaking practice feedback", "desc_ko": "연습 영상을 프로 동작과 비교해 유사도 점수를 줍니다.", "desc_en": "Score practice videos against pro moves."},
+  {"level": "research", "title_ko": "거꾸로 선 자세 추정", "title_en": "Upside-down pose estimation", "desc_ko": "물구나무·회전 자세에서 키포인트 추정 정확도를 높이는 방법을 연구합니다.", "desc_en": "Improve keypoint estimation for inverted and spinning poses."}
+ ],
+ "doc_used": true,
+ "uncertain": ["exact clip count"]
+}

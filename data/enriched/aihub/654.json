@@ -1,0 +1,33 @@
+{
+ "dataset_id": "654",
+ "title_en": "Driving video data for road marking recognition",
+ "summary_ko": "다채널 카메라로 찍은 주행 영상 약 100시간(이미지 36만 장)에 속도제한·보호구역·진행방향·횡단보도·안전지대·차선 같은 노면표시를 상자·분할·폴리라인으로 표시하고, 닳거나 잘 안 보이는 '비온전' 표시와 온전한 표시를 구분한 데이터입니다. 지워진 노면표시도 알아보는 자율주행 AI에 쓸 수 있습니다.",
+ "summary_en": "About 100 hours of driving video (360,000 images) from multi-channel cameras, with road markings (speed limits, school zones, direction arrows, crosswalks, safety zones, lanes) marked by boxes, segmentation and polylines, and split into intact and worn or hard-to-see markings. For self-driving AI that still recognises faded road markings.",
+ "contents_ko": "주행 이미지 + JSON(상자, 분할, 폴리라인, 온전·비온전, 도로유형·날씨·시간대).",
+ "contents_en": "Driving images + JSON (boxes, segmentation, polylines, intact/worn, road type, weather, time of day).",
+ "modalities": ["image"],
+ "tasks": ["object_detection", "segmentation"],
+ "topics": [{"ko": "자율주행", "en": "Autonomous driving"}, {"ko": "도로 관리·안전", "en": "Road maintenance and safety"}],
+ "keywords_ko": ["노면표시", "로드마크", "차선", "횡단보도", "도색 마모", "자율주행"],
+ "keywords_en": ["road markings", "lanes", "crosswalks", "worn paint", "visibility", "autonomous driving"],
+ "labels": ["bounding box", "segmentation", "polyline", "intact/worn"],
+ "file_formats": ["json"],
+ "scale_ko": "이미지 36만 장, 어노테이션 360만 개 이상, 비온전 60%",
+ "classes_example": ["속도제한", "보호구역", "진행방향", "안전지대", "횡단보도", "화살표", "차선"],
+ "baseline": [
+  {"task": "marking detection (small)", "model": "DetectoRS", "metric": "mAP", "value": "43.9%"},
+  {"task": "marking detection (medium)", "model": "DetectoRS", "metric": "mAP", "value": "70.6%"},
+  {"task": "marking detection (large)", "model": "DetectoRS", "metric": "mAP", "value": "83.1%"}
+ ],
+ "difficulty": "advanced",
+ "difficulty_note_ko": "전체 약 1TB로 크고 작은 노면표시 탐지가 어렵습니다.",
+ "skills_needed_ko": ["파이썬", "YOLO 탐지", "분할 모델", "차선 인식"],
+ "caveats_ko": ["전체 약 1TB", "작은 객체 탐지 성능이 낮음(mAP 44%)", "이미지 파일 형식이 팩에 JSON으로만 적혀 있음", "번호판·사람이 보일 수 있음"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "횡단보도 분할", "title_en": "Crosswalk segmentation", "desc_ko": "주행 사진에서 횡단보도 영역을 칠합니다.", "desc_en": "Segment crosswalks in driving photos."},
+  {"level": "capstone", "title_ko": "재도색 필요 구간 지도", "title_en": "Repainting-needed map", "desc_ko": "비온전 노면표시를 찾아 재도색이 필요한 곳을 지도에 표시합니다.", "desc_en": "Find worn markings and map where repainting is needed."},
+  {"level": "research", "title_ko": "마모된 표시 인식 강화", "title_en": "Robust worn-marking recognition", "desc_ko": "온전 표시로 학습한 모델이 비온전 표시에서 떨어지는 성능을 줄이는 방법을 연구합니다.", "desc_en": "Reduce the accuracy drop from intact to worn markings."}
+ ],
+ "doc_used": true,
+ "uncertain": ["image file format"]
+}

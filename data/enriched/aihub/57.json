@@ -1,0 +1,29 @@
+{
+ "dataset_id": "57",
+ "title_en": "Multimodal video (drama dialogue scenes)",
+ "summary_ko": "드라마 같은 영상 콘텐츠에서 자른 1~4분 길이 클립 1,943개(21시간)로, 등장인물 75명의 대사, 감정 8종, 성별·연령대, 행동 106종, 물체 324종 위치, 장면 설명 문장이 함께 달려 있습니다. 영상·음성·텍스트를 함께 이해하는 멀티모달 AI 연구에 쓸 수 있습니다.",
+ "summary_en": "1,943 clips (21 hours, 1–4 minutes each) cut from drama-style video content, labelled with dialogue of 75 characters, 8 emotions, gender and age group, 106 actions, positions of 324 object types, and scene description sentences. For multimodal AI research that combines video, audio and text.",
+ "contents_ko": "영상 클립 + 이미지 15.8만 장 + 메타정보(화자와 대사 1만 961쌍, 인물 얼굴·몸 좌표, 감정 점수, 성별·연령대, 행동, 관련 물체와 좌표, 구간·이미지 묘사 문장 5개씩).",
+ "contents_en": "Video clips + 158k images + metadata (10,961 speaker-utterance pairs, face and body coordinates, emotion scores, gender and age group, actions, related objects with coordinates, 5 description sentences per segment and image).",
+ "modalities": ["video", "audio", "text", "image"],
+ "tasks": ["visual_qa", "image_captioning", "action_recognition", "sentiment_emotion", "object_detection"],
+ "topics": [{"ko": "드라마·영상 콘텐츠", "en": "Drama and video content"}, {"ko": "감정", "en": "Emotion"}, {"ko": "사람 행동", "en": "Human behaviour"}],
+ "keywords_ko": ["멀티모달", "드라마", "대화", "감정 인식", "나이 인식", "행동 인식", "장면 설명"],
+ "keywords_en": ["multimodal", "drama", "dialogue", "emotion recognition", "age recognition", "action recognition", "scene description"],
+ "labels": ["dialogue transcript", "emotion scores", "bounding box", "action class", "captions", "gender and age group"],
+ "file_formats": ["mp4", "jpg", "json"],
+ "scale_ko": "클립 1,943개(21시간), 이미지 158,383장, 대화 10,961쌍, 인물 75명",
+ "classes_example": ["기쁨", "슬픔", "분노", "놀람", "공포", "경멸", "혐오", "중립"],
+ "baseline": [],
+ "difficulty": "advanced",
+ "difficulty_note_ko": "라벨 종류가 많고 영상·음성·텍스트를 함께 다뤄야 합니다. 파일이 21GB 이상 덩어리로만 제공되어 일부만 받기 어렵습니다.",
+ "skills_needed_ko": ["파이썬", "영상·텍스트 멀티모달 모델", "대용량 압축 파일 다루기"],
+ "caveats_ko": ["가장 작은 파일도 21GB, 전체 약 300GB", "라이선스가 연구 개발용으로 제한됨", "2018년 구축으로 오래됨, 성능 지표 없음"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "등장인물별 감정 변화 그래프", "title_en": "Emotion timeline per character", "desc_ko": "메타정보의 감정 점수로 인물별 감정이 장면마다 어떻게 바뀌는지 그립니다.", "desc_en": "Plot how each character's emotion scores change across scenes."},
+  {"level": "capstone", "title_ko": "드라마 장면 질문 답하기", "title_en": "Answer questions about drama scenes", "desc_ko": "장면 설명과 대사로 '누가 화났나?' 같은 질문에 답하는 시스템을 만듭니다.", "desc_en": "Use descriptions and dialogue to answer questions such as 'who is angry?'."},
+  {"level": "research", "title_ko": "대사+표정으로 감정 인식", "title_en": "Emotion from dialogue plus faces", "desc_ko": "얼굴 영상과 대사 텍스트를 결합한 감정 인식이 한쪽만 쓸 때보다 나은지 연구합니다.", "desc_en": "Study whether combining face video and dialogue beats single-input emotion recognition."}
+ ],
+ "doc_used": true,
+ "uncertain": ["영상 출처(드라마 등)가 페이지에 명확히 적혀 있지 않음"]
+}

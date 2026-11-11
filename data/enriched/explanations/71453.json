@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71453",
+ "easy_ko": "한국에서 찍은 사진 약 300만 장에서 사람, 탈것, 동물, 그릇, 음식 같은 물체의 모양을 배경과 나누어 칠한 큰 데이터입니다. 주변 차량이나 표지판처럼 한국 환경의 물체를 정확히 잘라 내는 AI에 쓸 수 있습니다.",
+ "easy_en": "About 3 million photos taken in Korea, with objects such as people, vehicles, animals, dishes and food painted in separately from the background. You can use it to build AI that cuts out objects in Korean settings precisely, such as nearby cars or road signs.",
+ "detail_ko": "한국에서 촬영한 이미지 약 300만 장(jpg)에 물체 분할 영역과 카테고리 라벨을 JSON으로 붙인 한국형 비전 데이터입니다. 상위 카테고리 예: 사람, 탈것, 실외, 동물, 주방, 채소, 가구, 실내, 전자기기. 카테고리별 수량 차이가 큽니다. 전체 용량은 약 1464GB이고, 같은 300만 장 이미지가 탐지(71452)·설명문(71454)·관계성(71456) 데이터와 공유되므로 여러 데이터를 함께 쓸 때 학습·평가 분할이 겹치지 않게 해야 합니다. 팩에는 기준 성능 지표가 없습니다.",
+ "detail_en": "About 3 million images (jpg) shot in Korea, with JSON segmentation and category labels; a Korean-style vision set meant to reduce the Western bias of existing data. Example top-level categories: person, vehicle, outdoor, animal, kitchen, vegetable, furniture, indoor, electronics. Category counts vary widely. Total size is about 1,464 GB, and the same 3 million images are shared with the detection (71452), captioning (71454) and relationship (71456) sets, so keep train and test splits apart when combining them. The pack gives no baseline metric.",
+ "amount_ko": "이미지 약 300만 장, 라벨 약 300만 건",
+ "amount_en": "about 3 million images, about 3 million labels",
+ "labels_ko": "물체 모양 영역, 카테고리",
+ "labels_en": "segmentation masks, category",
+ "status": "full-run-2026-11-02"
+}

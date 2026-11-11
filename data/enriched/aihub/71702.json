@@ -1,0 +1,29 @@
+{
+ "dataset_id": "71702",
+ "title_en": "Video summary data via speech recognition",
+ "summary_ko": "말소리가 70% 이상인 방송 콘텐츠(TBS, EBS) 3,000시간 이상에, 검색 질의어(음성과 글) 약 21만 건과 그 질의에 맞는 하이라이트 영상 구간·분류가 표시되어 있습니다. 말로 물어보면 영상 속 원하는 장면을 찾아 주는 AI에 쓸 수 있습니다.",
+ "summary_en": "3,000+ hours of speech-heavy broadcast content (TBS, EBS) with about 210,000 search queries (speech and text) and the matching highlight segments and categories. For AI that finds the right scene in a video from a spoken question.",
+ "contents_ko": "방송 영상(mp4) + 질의어 음성 + JSON(전사, 키워드, 하이라이트 구간, 분류 태그).",
+ "contents_en": "Broadcast video (mp4) + query speech + JSON (transcript, keywords, highlight segments, category tags).",
+ "modalities": ["video", "audio", "text"],
+ "tasks": ["speech_recognition", "retrieval_recommendation", "summarization"],
+ "topics": [{"ko": "방송·영상 콘텐츠", "en": "Broadcast and video content"}, {"ko": "음성 검색", "en": "Voice search"}],
+ "keywords_ko": ["영상 요약", "하이라이트 검색", "음성 인식", "방송 콘텐츠", "검색 질의", "키워드 추출"],
+ "keywords_en": ["video summary", "highlight search", "speech recognition", "broadcast content", "search query", "keyword extraction"],
+ "labels": ["transcript", "keywords", "time segment", "tag"],
+ "file_formats": ["mp4", "json"],
+ "scale_ko": "방송 영상 3,000시간 이상(원천 5,958건), 질의 문장 210,817건",
+ "classes_example": [],
+ "baseline": [],
+ "difficulty": "advanced",
+ "difficulty_note_ko": "영상 구간 검색과 음성 인식을 함께 다뤄 어렵고 전체 약 2.3TB입니다.",
+ "skills_needed_ko": ["파이썬", "음성 인식 모델(Whisper 등)", "문장 임베딩 검색"],
+ "caveats_ko": ["전체 약 2.3TB", "개요(4천 건 이상)와 구축량(원천 5,958건) 수치 기준이 다름", "평가지표 CER·WER·F1이 언급되나 값은 팩 앞부분에 없음"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "질의어 받아쓰기", "title_en": "Query transcription", "desc_ko": "질의어 음성을 Whisper로 받아쓰고 CER을 재 봅니다.", "desc_en": "Transcribe spoken queries with Whisper and measure CER."},
+  {"level": "capstone", "title_ko": "말로 찾는 방송 하이라이트", "title_en": "Voice search for highlights", "desc_ko": "음성 질문을 글로 바꾸고 전사 문장과 비교해 맞는 영상 구간을 찾아 줍니다.", "desc_en": "Turn a spoken question into text and find the matching video segment."},
+  {"level": "research", "title_ko": "화면+대사 구간 검색", "title_en": "Visual + transcript segment search", "desc_ko": "대사뿐 아니라 화면 정보도 써서 하이라이트 검색 정확도를 높이는 방법을 연구합니다.", "desc_en": "Study using visuals as well as speech to improve highlight search."}
+ ],
+ "doc_used": true,
+ "uncertain": ["하이라이트 분류 카테고리 목록 확인 필요"]
+}

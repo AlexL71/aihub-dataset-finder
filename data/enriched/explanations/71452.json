@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71452",
+ "easy_ko": "한국에서 찍은 사진 약 300만 장에 사람, 탈것, 동물, 과일, 채소, 한식 같은 물체의 위치를 상자로 표시한 큰 데이터입니다. 서양 사진 위주인 기존 데이터와 달리 한국 환경의 물체를 잘 알아보는 AI를 만드는 데 쓸 수 있습니다.",
+ "easy_en": "About 3 million photos taken in Korea, with boxes marking objects such as people, vehicles, animals, fruit, vegetables and Asian food. Unlike older datasets built mostly from Western photos, it helps build AI that recognises objects in Korean settings.",
+ "detail_ko": "한국에서 촬영한 이미지 약 300만 장(jpg)에 물체 위치 상자와 카테고리 라벨을 JSON으로 붙인 한국형 비전 데이터입니다. 상위 카테고리 예: 사람, 탈것, 동물, 주방, 과일, 채소, 음식(동양), 가구, 전자기기. 카테고리별 수량 차이가 큽니다(사람 약 67만, 동물 약 5만). 전체 용량은 약 1459GB이고, 같은 300만 장 이미지가 분할(71453)·설명문(71454)·관계성(71456) 데이터와 공유되므로 여러 데이터를 함께 쓸 때 학습·평가 분할이 겹치지 않게 해야 합니다. 팩에는 기준 성능 지표가 없습니다.",
+ "detail_en": "About 3 million images (jpg) shot in Korea, with JSON bounding-box and category labels; a Korean-style vision set meant to reduce the Western bias of existing data. Example top-level categories: person, vehicle, animal, kitchen, fruit, vegetable, Asian food, furniture, electronics. Category counts vary widely (about 670,000 person vs. about 50,000 animal). Total size is about 1,459 GB, and the same 3 million images are shared with the segmentation (71453), captioning (71454) and relationship (71456) sets, so keep train and test splits apart when combining them. The pack gives no baseline metric.",
+ "amount_ko": "이미지 약 300만 장, 라벨 약 300만 건",
+ "amount_en": "about 3 million images, about 3 million labels",
+ "labels_ko": "물체 위치 상자, 카테고리",
+ "labels_en": "bounding boxes, category",
+ "status": "full-run-2026-11-02"
+}

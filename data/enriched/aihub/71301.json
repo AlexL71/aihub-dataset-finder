@@ -1,0 +1,29 @@
+{
+ "dataset_id": "71301",
+ "title_en": "OCR data (finance and logistics)",
+ "summary_ko": "은행·증권·보험 서식에 손으로 쓴 금융 문서 5만 장과 선하증권·포장명세서·상업송장·원산지증명서 같은 물류 선적 서류 약 10.8만 장에, 단어·어절 영역을 4점 다각형으로 표시하고 글자를 붙인 데이터입니다. 금융·물류 서류를 자동으로 읽어 전산 입력하는 OCR·RPA에 쓸 수 있습니다.",
+ "summary_en": "50,000 handwritten bank, securities and insurance forms and about 108,000 logistics shipping documents (bills of lading, packing lists, commercial invoices, certificates of origin), with word regions marked by 4-point polygons and transcribed. For OCR and RPA that read finance and logistics paperwork into computer systems.",
+ "contents_ko": "문서 이미지(png/jpg) + JSON(4점 다각형, 텍스트, 서식 종류).",
+ "contents_en": "Document images (png/jpg) + JSON (4-point polygons, text, form type).",
+ "modalities": ["image", "text"],
+ "tasks": ["ocr", "information_extraction"],
+ "topics": [{"ko": "금융·보험", "en": "Finance and insurance"}, {"ko": "물류·무역", "en": "Logistics and trade"}],
+ "keywords_ko": ["금융 서식", "선하증권", "상업송장", "OCR", "RPA"],
+ "keywords_en": ["financial forms", "bill of lading", "commercial invoice", "OCR", "RPA"],
+ "labels": ["4-point polygon", "transcription", "form type"],
+ "file_formats": ["png", "jpg", "json"],
+ "scale_ko": "문서 이미지 약 15.8만 장(금융 5만, 물류 약 10.8만)",
+ "classes_example": ["선하증권", "포장명세서", "상업송장", "원산지증명서", "은행", "증권", "보험"],
+ "baseline": [],
+ "difficulty": "intermediate",
+ "difficulty_note_ko": "약 165GB이고 손글씨와 인쇄체가 섞여 있습니다.",
+ "skills_needed_ko": ["파이썬", "OCR 모델(텍스트 탐지·인식)", "문서 정보 추출"],
+ "caveats_ko": ["작성 내용이 가상 정보인지 확인 필요", "성능 지표 표가 팩에서 비어 있음", "632번 금융 문서 OCR과 주제가 겹침"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "서류 종류 분류", "title_en": "Document type classifier", "desc_ko": "문서 이미지가 선하증권·송장 중 무엇인지 분류합니다.", "desc_en": "Classify documents as bill of lading, invoice and so on."},
+  {"level": "capstone", "title_ko": "선적서류 자동 입력", "title_en": "Shipping-document auto-entry", "desc_ko": "송장에서 품목·수량·금액을 뽑아 엑셀로 정리합니다.", "desc_en": "Extract items, quantities and amounts from invoices into a spreadsheet."},
+  {"level": "research", "title_ko": "레이아웃 기반 정보 추출", "title_en": "Layout-aware extraction", "desc_ko": "글자 위치 정보를 함께 쓰는 문서 이해 모델(LayoutLM 등)을 연구합니다.", "desc_en": "Study layout-aware document models such as LayoutLM."}
+ ],
+ "doc_used": true,
+ "uncertain": ["baseline values"]
+}

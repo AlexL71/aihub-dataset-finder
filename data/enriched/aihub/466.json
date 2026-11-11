@@ -1,0 +1,29 @@
+{
+ "dataset_id": "466",
+ "title_en": "Speech synthesis data by emotion and speaking style",
+ "summary_ko": "전문 성우 50명이 기쁨·슬픔·분노·놀람·두려움·혐오·중립 같은 감정과 구연체·낭독체 등 발화 스타일, 3가지 발성 캐릭터로 녹음한 음성 1,067시간입니다. 감정을 담아 말하는 음성 합성(TTS)으로 AI 스피커, 게임, 돌봄 로봇 목소리를 만들 수 있습니다.",
+ "summary_en": "1,067 hours of recordings by 50 professional voice actors in emotions (joy, sadness, anger, surprise, fear, disgust, neutral), speaking styles (storytelling, reading and more) and 3 voice characters. For expressive text-to-speech voices for AI speakers, games and care robots.",
+ "contents_ko": "음성(wav) + JSON(문장 텍스트, 감정, 발화 스타일, 캐릭터, 화자 정보).",
+ "contents_en": "Audio (wav) + JSON (sentence text, emotion, speaking style, character, speaker info).",
+ "modalities": ["audio", "text"],
+ "tasks": ["speech_synthesis", "audio_classification", "sentiment_emotion"],
+ "topics": [{"ko": "음성 합성", "en": "Speech synthesis"}, {"ko": "감정", "en": "Emotion"}, {"ko": "게임·콘텐츠", "en": "Games and content"}],
+ "keywords_ko": ["TTS", "감정 음성", "성우", "발화 스타일", "음성 합성", "캐릭터 목소리"],
+ "keywords_en": ["TTS", "emotional speech", "voice actors", "speaking style", "speech synthesis", "character voice"],
+ "labels": ["transcript", "emotion", "speaking style", "voice character"],
+ "file_formats": ["wav", "json"],
+ "scale_ko": "1,067시간(감정 581.8시간, 발화 스타일 259.8시간 등), 성우 50명",
+ "classes_example": ["기쁨", "놀람", "슬픔", "분노", "두려움", "혐오", "중립", "구연체", "낭독체"],
+ "baseline": [],
+ "difficulty": "advanced",
+ "difficulty_note_ko": "음성 합성 모델 학습은 GPU와 전문 지식이 필요합니다. 감정 분류만 하면 중급입니다. 약 220GB입니다.",
+ "skills_needed_ko": ["파이썬", "오디오 처리", "TTS 모델(VITS 등)"],
+ "caveats_ko": ["개요(7가지 감정 목록)와 통계 표의 감정 이름이 조금 다름", "성우 목소리 사용 조건 확인 필요"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "목소리 감정 분류", "title_en": "Voice emotion classifier", "desc_ko": "음성으로 7가지 감정을 분류합니다.", "desc_en": "Classify 7 emotions from voice."},
+  {"level": "capstone", "title_ko": "감정 동화 읽어주기", "title_en": "Expressive storytelling TTS", "desc_ko": "구연체·감정 음성으로 TTS를 미세조정해 동화를 감정 있게 읽어 줍니다.", "desc_en": "Fine-tune TTS on storytelling and emotions to read children's stories."},
+  {"level": "research", "title_ko": "감정 세기 조절 음성 합성", "title_en": "Controllable emotion intensity", "desc_ko": "감정 강도를 조절할 수 있는 TTS 방법을 연구합니다.", "desc_en": "Study TTS that controls emotion intensity."}
+ ],
+ "doc_used": true,
+ "uncertain": ["감정 클래스 이름이 개요와 통계에서 다름"]
+}

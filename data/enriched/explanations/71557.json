@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71557",
+ "easy_ko": "정치, 경제, 사회, 스포츠 같은 뉴스 기사를 아나운서와 아나운서 교육생이 읽은 목소리 1,132시간에 뉴스 대본을 붙인 데이터입니다. 아나운서처럼 또박또박 읽는 가상 아나운서 목소리나 뉴스를 읽어 주는 AI 스피커에 쓸 수 있습니다.",
+ "easy_en": "1,132 hours of news articles on politics, the economy, society, sports and more, read aloud by current and former announcers and trainees, with the news scripts. You can use it to build a virtual announcer voice that reads clearly, or AI speakers that read the news.",
+ "detail_ko": "정치·경제·사회·문화·국제·지역·스포츠·IT과학 8개 분야 뉴스 기사를 전·현직 아나운서와 교육생이 읽은 음성 1,132시간, 381,456건(wav; 남성 약 538시간, 여성 약 595시간)에 뉴스 대본 전사, 분야, 화자 정보를 JSON으로 붙였습니다. 기준 성능은 VITS 음성 합성 MOS 4.27입니다. 구축 목적에 기계독해·질의응답이 적혀 있지만 실제 라벨은 음성 전사뿐이고, 성능 표의 AI 과제가 'Speech Recognition'으로 적혀 있지만 지표는 음성 합성 MOS입니다. 여성 정치·사회 분야 시간이 목표의 약 1.5배로 분포가 고르지 않습니다.",
+ "detail_en": "1,132 hours, 381,456 clips (wav; about 538 hours male, about 595 hours female) of news articles in 8 sections (politics, economy, society, culture, international, regional, sports, IT/science) read by current and former announcers and trainees, with JSON script transcripts, section and speaker information. Baseline: speech synthesis with VITS, MOS 4.27. The stated purpose mentions machine reading and QA, but the only labels are transcripts; the metrics table lists the task as 'Speech Recognition' while the metric is synthesis MOS. Female politics and society hours are about 1.5 times their target, so the spread is uneven.",
+ "amount_ko": "음성 1,132시간, 381,456건, 뉴스 분야 8종",
+ "amount_en": "1,132 hours, 381,456 clips, 8 news sections",
+ "labels_ko": "뉴스 대본 받아쓰기, 뉴스 분야, 말한 사람 정보",
+ "labels_en": "transcripts, news section, speaker info",
+ "status": "full-run-2026-11-02"
+}

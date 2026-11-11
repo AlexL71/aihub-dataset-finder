@@ -1,0 +1,29 @@
+{
+ "dataset_id": "71668",
+ "title_en": "Generative AI live-streaming video English interpretation and translation data",
+ "summary_ko": "일상·여행·게임·교육·라이브커머스·요리 등 라이브 스트리밍 방송의 한국어↔영어 음성과 전사·번역 문장을 모은 데이터(총 파일 4,701,948개)로, 신조어·은어·말투까지 반영합니다. 스트리밍 영상 자동 자막, 대화체 음성 인식, 한영 통번역 AI에 쓸 수 있습니다.",
+ "summary_en": "Korean-English speech, transcripts and translations from live-streaming shows (daily talk, travel, games, education, live commerce, cooking, etc.), 4,701,948 files in total, including slang and casual speech. For streaming subtitles, conversational speech recognition and Korean-English interpretation.",
+ "contents_ko": "방송 음성(wav) + JSON(전사, 번역, 분야).",
+ "contents_en": "Stream audio (wav) + JSON (transcript, translation, category).",
+ "modalities": ["audio", "text"],
+ "tasks": ["translation", "speech_recognition"],
+ "topics": [{"ko": "번역·통역", "en": "Translation and interpretation"}, {"ko": "라이브 스트리밍", "en": "Live streaming"}],
+ "keywords_ko": ["라이브 스트리밍", "통번역", "한영 번역", "자동 자막", "신조어", "대화체 음성"],
+ "keywords_en": ["live streaming", "interpretation", "Korean-English translation", "auto subtitles", "slang", "conversational speech"],
+ "labels": ["transcript", "translation"],
+ "file_formats": ["wav", "json"],
+ "scale_ko": "총 파일 4,701,948개, 서브라벨링 2,157건",
+ "classes_example": ["일상,소통", "여행", "게임", "경제", "교육", "스포츠", "라이브커머스", "음식,요리"],
+ "baseline": [],
+ "difficulty": "advanced",
+ "difficulty_note_ko": "번역 텍스트만 쓰면 중급이지만 음성까지 받으면 약 743GB로 매우 큽니다.",
+ "skills_needed_ko": ["파이썬", "트랜스포머 번역 모델", "음성 처리"],
+ "caveats_ko": ["전체 약 743GB", "성능 지표 값이 팩에 없음", "중국어(71670)·일본어(71671) 버전과 같은 구조"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "방송 말투 번역", "title_en": "Casual speech translation", "desc_ko": "스트리밍 대사 텍스트로 한영 번역 모델을 미세조정합니다.", "desc_en": "Fine-tune a Korean-English translator on stream lines."},
+  {"level": "capstone", "title_ko": "라이브 방송 영어 자막", "title_en": "Live stream English subtitles", "desc_ko": "한국어 방송 음성을 받아쓰고 영어 자막으로 바꾸는 파이프라인을 만듭니다.", "desc_en": "Turn Korean stream audio into English subtitles."},
+  {"level": "research", "title_ko": "신조어·은어 번역", "title_en": "Slang translation", "desc_ko": "신조어와 은어를 자연스럽게 번역하는 방법을 연구합니다.", "desc_en": "Translate new slang naturally."}
+ ],
+ "doc_used": true,
+ "uncertain": ["총 음성 시간"]
+}

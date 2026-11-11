@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71856",
+ "easy_ko": "해안 경계 감시 상황을 컴퓨터로 만들어 낸 일반 카메라 사진과 적외선 사진 약 15만 장에 배, 비행기, 드론, 새, 전단, 오물 풍선 같은 물체 위치와 설명을 붙인 데이터입니다. 실제로 드물게 일어나는 상황까지 알아보는 경계 감시 AI에 쓸 수 있습니다.",
+ "easy_en": "About 150,000 computer-generated visible-light and infrared images of coastal surveillance scenes, with objects such as ships, aircraft, drones, birds, leaflets and trash balloons boxed and described. You can use it to build surveillance AI that can recognise rare situations too.",
+ "detail_ko": "해안·경계 감시 상황을 합성한 가시광선(EO) 이미지 112,911장과 적외선(IR) 이미지 36,352장(jpg), 총 149,263장에 객체 345,991개의 상자(클래스 9종: 어선, 군함, 상선, 고정익 유인항공기, 회전익 유인항공기, 무인항공기, 새, 삐라, 오물폭탄)와 이미지 설명을 JSON으로 붙였고, 씨드 데이터 500건이 있습니다. 합성 이미지라 실제 감시 영상 성능은 따로 검증해야 하고, 데이터 개요가 비어 있어 합성 방법을 확인해야 하며, 모델 성능 수치는 팩에 없습니다. 71858 실제 경계 인식 데이터와 같은 기관입니다.",
+ "detail_en": "149,263 synthetic images (jpg) of coastal and perimeter surveillance scenes, 112,911 visible-light (EO) and 36,352 infrared (IR), with JSON boxes for 345,991 objects in 9 classes (fishing boat, warship, merchant ship, fixed-wing aircraft, rotary-wing aircraft, drone, bird, propaganda leaflet, trash balloon) and image captions, plus 500 seed items. Being synthetic, real surveillance performance must be checked separately; the overview is empty, so check how images were generated; no model scores are in the pack. Same builder as the real-image set 71858.",
+ "amount_ko": "이미지 149,263장(EO 112,911, IR 36,352), 객체 345,991개, 클래스 9종",
+ "amount_en": "149,263 images (112,911 EO, 36,352 IR), 345,991 objects, 9 classes",
+ "labels_ko": "물체 위치 상자, 사진 설명",
+ "labels_en": "bounding box, caption",
+ "status": "full-run-2026-11-02"
+}

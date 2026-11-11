@@ -1,0 +1,29 @@
+{
+ "dataset_id": "71411",
+ "title_en": "Machine translation parallel corpus by speech style (written, spoken, chat)",
+ "summary_ko": "한국어와 영어·일본어·중국어 사이의 양방향 번역 문장 90,003건으로, 문어(글)·구어(말)·채팅 세 가지 말투가 같은 비율로 들어 있습니다. 말투·주제별로 번역기 성능을 비교하는 벤치마크(평가용 기준 데이터)로 만들어졌습니다.",
+ "summary_en": "90,003 bidirectional translation pairs between Korean and English, Japanese and Chinese, split evenly into written, spoken and chat style. Built as a benchmark for comparing translators by style and topic.",
+ "contents_ko": "번역 문장 쌍 JSON(원문, 번역문, 언어쌍, 발화유형, 주제).",
+ "contents_en": "Translation pair JSON (source, target, language pair, speech style, topic).",
+ "modalities": ["text"],
+ "tasks": ["translation"],
+ "topics": [{"ko": "번역·언어", "en": "Translation and languages"}, {"ko": "언어모델 평가", "en": "Language model evaluation"}],
+ "keywords_ko": ["기계번역", "병렬 말뭉치", "채팅체", "구어체", "일본어", "중국어"],
+ "keywords_en": ["machine translation", "parallel corpus", "chat style", "spoken style", "Japanese", "Chinese"],
+ "labels": ["translation", "speech style", "topic"],
+ "file_formats": ["json"],
+ "scale_ko": "문장 쌍 90,003건, 언어쌍 6개(각 약 16.7%), 발화유형 3종, 주제 4종",
+ "classes_example": ["문어(WR)", "구어(SP)", "채팅(CH)", "en-ko", "ko-jp", "ko-zh"],
+ "baseline": [{"task": "machine translation (ko-en)", "model": "Fairseq Transformer", "metric": "BLEU", "value": "0.4277"}, {"task": "machine translation (ko-zh)", "model": "Fairseq Transformer", "metric": "BLEU", "value": "0.6630"}, {"task": "machine translation (ko-ja)", "model": "Fairseq Transformer", "metric": "BLEU", "value": "0.5712"}],
+ "difficulty": "beginner",
+ "difficulty_note_ko": "약 60MB로 아주 가볍고 노트북에서도 다룰 수 있습니다. 공개 번역 모델 평가부터 시작하세요.",
+ "skills_needed_ko": ["파이썬", "Hugging Face 번역 모델", "BLEU 평가"],
+ "caveats_ko": ["벤치마크용이라 학습용으로는 양이 적음", "성능 기준값이 0.005점으로 매우 낮게 잡혀 있음", "주제 약어(CA·ES·SH·ST)의 뜻이 팩 앞부분에 없음"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "말투별 번역기 비교", "title_en": "Translator comparison by style", "desc_ko": "공개 번역 모델 2~3개의 BLEU를 문어·구어·채팅별로 비교합니다.", "desc_en": "Compare 2-3 open translators' BLEU on written, spoken and chat text."},
+  {"level": "capstone", "title_ko": "채팅 번역 플러그인", "title_en": "Chat translation plugin", "desc_ko": "채팅체 문장으로 미세조정한 번역기를 메신저 화면에 붙입니다.", "desc_en": "Attach a chat-tuned translator to a messenger interface."},
+  {"level": "research", "title_ko": "LLM 번역 말투 분석", "title_en": "LLM translation style analysis", "desc_ko": "대형 언어모델이 채팅체를 번역할 때 말투가 얼마나 유지되는지 분석합니다.", "desc_en": "Analyse how well LLM translations keep chat style."}
+ ],
+ "doc_used": true,
+ "uncertain": []
+}

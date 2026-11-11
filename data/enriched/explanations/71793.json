@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71793",
+ "easy_ko": "부산의 하천과 도시 지역이 물에 잠길 위험을 컴퓨터로 계산한 그림과 침수 위험 지역 사진에 물에 잠기는 부분을 칠해 표시한 데이터입니다. 도시가 물에 잠기는 것을 예측하고 재난에 대비하는 AI에 쓸 수 있습니다.",
+ "easy_en": "Computer-simulated flood maps and photos of flood-risk areas in Busan's rivers and city districts, with the flooded parts painted in. You can use it to build AI that predicts urban flooding and helps prepare for disasters.",
+ "detail_ko": "부산 수영강·온천천·동천 하천 지역과 북구·동래구·중구·사상구 도시 지역의 침수위험 수치모델 이미지 27,516장과 침수위험 지역 이미지 100,000장(jpg)에 침수 영역 다각형과 조건 정보를 JSON으로 붙였습니다. 수치모델이 만든 모의 이미지라 실제 침수와 다를 수 있고, 부산 일부 지역만 포함하며, 성능 지표 값은 팩에 없습니다.",
+ "detail_en": "27,516 numerical-model flood-risk images and 100,000 flood-risk area images (jpg) of Busan's Suyeong River, Oncheon Stream and Dongcheon Stream areas and the Buk, Dongnae, Jung and Sasang districts, with JSON flood-area polygons and condition information. The model images are simulations and may differ from real floods, only parts of Busan are covered, and no metric values are in the pack.",
+ "amount_ko": "수치모델 이미지 27,516장, 침수위험 지역 이미지 100,000장",
+ "amount_en": "27,516 numerical-model images, 100,000 flood-risk area images",
+ "labels_ko": "물에 잠기는 영역",
+ "labels_en": "polygon segmentation",
+ "status": "full-run-2026-11-02"
+}

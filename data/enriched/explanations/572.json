@@ -1,0 +1,12 @@
+{
+ "dataset_id": "572",
+ "easy_ko": "골목길 같은 생활 도로 사진마다 일방통행·속도 제한·어린이보호구역 바닥 표시, 과속방지턱, 맨홀, 길 안내 막대, 방치된 물건처럼 오토바이 운전에 위험한 것들을 표시한 데이터입니다. 배달 라이더에게 앞의 위험을 미리 알려 주는 AI를 만들 수 있습니다.",
+ "easy_en": "Photos of everyday local roads such as alleys, marked with things that are risky for motorcycle riders: one-way, speed-limit and school-zone road markings, speed bumps, manholes, delineator posts and abandoned objects. You can build AI that warns delivery riders of hazards ahead.",
+ "detail_ko": "골목길·이면도로 등 생활도로에서 촬영한 이미지 약 42만 장(png/jpg)에 위험 시설물(일방통행 표식, 속도 제한 문자, 어린이보호구역 문자, 과속방지턱, 맨홀, 시선 유도봉, 공사안내 표지판, 방치물 등)의 바운딩박스·폴리곤·폴리라인·분할을 JSON으로 붙였습니다. 기준 성능은 기록에서 확인되지 않습니다. 전체 약 1.1TB이며, 형식 표기가 png와 JPG로 다르고, 거리 사진에 사람·번호판이 보일 수 있습니다.",
+ "detail_en": "About 420k images (png/jpg) of local roads and alleys, with JSON boxes, polygons, polylines and segmentation for hazards (one-way markings, speed-limit text, school-zone text, speed bumps, manholes, delineator posts, construction signs, abandoned objects and more). No baseline is visible in the record. Total size is about 1.1 TB; the format is listed as png in one place and JPG in another; people and plates may be visible.",
+ "amount_ko": "이미지 약 42만 장",
+ "amount_en": "about 420k images",
+ "labels_ko": "위험 시설물 위치 상자·테두리·선, 시설물 종류",
+ "labels_en": "boxes, outlines and lines around hazards, hazard type",
+ "status": "full-run-2026-11-02"
+}

@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71363",
+ "easy_ko": "국립공원을 드론과 여러 위성으로 찍은 사진에 건물, 하천, 도로, 논, 밭, 숲, 나무를 벤 곳, 해안 쓰레기 같은 땅 쓰임새를 색으로 칠한 데이터입니다. 국립공원 안의 산사태, 불법 벌목, 불법 경작 같은 변화를 자동으로 감시하는 AI를 만들 수 있습니다.",
+ "easy_en": "Drone and satellite images of national parks with land uses coloured in, such as buildings, streams, roads, rice paddies, fields, forests, logged areas and coastal litter. You can build AI that automatically watches for changes in national parks, such as landslides, illegal logging and illegal farming.",
+ "detail_ko": "국립공원을 드론(0.1m)과 위성(Skysat 0.5m, Sentinel-2 10m, Landsat 30m)으로 촬영한 영상 5만 장(드론 2만, 위성 3만; TIF)에 토지 피복(건물, 하천, 도로, 논, 밭, 산림, 벌목지, 해안쓰레기 등) 세그멘테이션 마스크와 JSON을 붙였습니다. 기준 성능은 SegFormer 토지 피복 분할 mIoU 72.25%입니다. 해상도별로 클래스 구성이 다르고, 국립공원 지역만 있습니다.",
+ "detail_en": "50k images (20k drone at 0.1 m, 30k satellite from Skysat 0.5 m, Sentinel-2 10 m and Landsat 30 m; TIF) of national parks, with land-cover segmentation masks (building, stream, road, paddy, field, forest, logged area, coastal litter and more) and JSON. Baseline: SegFormer land-cover segmentation mIoU 72.25%. Class sets differ by resolution; only national parks are covered.",
+ "amount_ko": "영상 5만 장(드론 2만, 위성 3만)",
+ "amount_en": "50k images (20k drone, 30k satellite)",
+ "labels_ko": "땅 쓰임새별 영역(색칠)",
+ "labels_en": "land-cover masks",
+ "status": "full-run-2026-11-02"
+}

@@ -1,0 +1,12 @@
+{
+ "dataset_id": "57",
+ "easy_ko": "드라마 같은 영상에서 자른 짧은 장면마다 등장인물의 대사, 기쁨·슬픔 같은 감정, 성별과 나이대, 하는 행동, 주변 물건 위치, 장면을 설명하는 문장을 함께 붙인 데이터입니다. 영상과 소리, 글을 함께 이해해서 장면을 설명하거나 질문에 답하는 AI를 연구할 수 있습니다.",
+ "easy_en": "Short scenes cut from drama-like videos, each with the characters' lines, emotions such as joy or sadness, gender and age group, actions, the positions of nearby objects, and sentences describing the scene. You can study AI that understands video, sound and text together to describe scenes or answer questions.",
+ "detail_ko": "1~4분 길이 클립 1,943개(21시간)와 이미지 158,383장으로, 등장인물 75명의 화자·대사 10,961쌍, 얼굴·몸 좌표, 감정 8종 점수, 성별·연령대, 행동 106종, 물체 324종과 좌표, 구간·이미지별 묘사 문장 5개씩을 JSON 메타정보로 제공합니다. 기준 성능 지표는 없습니다. 가장 작은 파일도 21GB(전체 약 300GB)이고, 라이선스가 연구 개발용으로 제한되며, 2018년 구축이라 오래되었습니다.",
+ "detail_en": "1,943 clips of 1–4 minutes (21 hours) and 158,383 images, with JSON metadata: 10,961 speaker–line pairs for 75 characters, face and body coordinates, scores for 8 emotions, gender and age group, 106 action types, 324 object types with coordinates, and 5 description sentences per segment and image. No baseline is published. Even the smallest file is 21 GB (about 300 GB total), the license is limited to research and development, and the data dates from 2018.",
+ "amount_ko": "영상 클립 1,943개(21시간), 이미지 약 15.8만 장",
+ "amount_en": "1,943 clips (21 hours), about 158k images",
+ "labels_ko": "대사, 감정, 성별·나이대, 행동, 물체 위치 상자, 장면 설명 문장",
+ "labels_en": "dialogue lines, emotion, gender and age group, actions, object boxes, scene captions",
+ "status": "full-run-2026-11-02"
+}

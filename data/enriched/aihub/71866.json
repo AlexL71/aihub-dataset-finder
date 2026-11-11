@@ -1,0 +1,29 @@
+{
+ "dataset_id": "71866",
+ "title_en": "Korean video understanding data",
+ "summary_ko": "SBS 방송 등 한국 영상 7,822개에서 뽑은 이미지 41,000장과 상세 설명 문장 410,000개(영어·한국어)로, 동식물·뉴스·예능·드라마 같은 9개 장르 코드별로 나뉘어 있습니다. 한국 영상 이해, 텍스트로 영상 장면을 찾는 검색 AI에 쓸 수 있습니다.",
+ "summary_en": "41,000 images from 7,822 Korean videos (such as SBS broadcasts) with 410,000 detailed caption sentences (English and Korean), split into 9 genre codes (animals/plants, news, entertainment, drama and more). For Korean video understanding and text-to-video scene search.",
+ "contents_ko": "이미지(png, jpeg) + 텍스트(txt) + JSON(이미지 캡션).",
+ "contents_en": "Image (png, jpeg) + text (txt) + JSON (image captions).",
+ "modalities": ["image", "video", "text"],
+ "tasks": ["image_captioning", "retrieval_recommendation", "visual_qa"],
+ "topics": [{"ko": "멀티모달 AI", "en": "Multimodal AI"}, {"ko": "방송 콘텐츠", "en": "Broadcast content"}],
+ "keywords_ko": ["영상 이해", "이미지 캡션", "텍스트-영상 검색", "방송", "한국 문화", "VAST"],
+ "keywords_en": ["video understanding", "image captioning", "text-to-video retrieval", "broadcast", "Korean culture", "VAST"],
+ "labels": ["caption"],
+ "file_formats": ["png", "jpg", "txt", "json"],
+ "scale_ko": "영상 7,822개, 이미지 41,000장, 캡션 41,000파일(410,000문장)",
+ "classes_example": ["AP(동식물)", "CA", "EI", "FO", "NW", "RL", "SF", "SL", "ST"],
+ "baseline": [],
+ "difficulty": "advanced",
+ "difficulty_note_ko": "약 340GB이고 멀티모달 모델(VAST) 학습은 GPU가 많이 필요합니다. 캡션 검색 실습은 CLIP으로도 가능합니다.",
+ "skills_needed_ko": ["파이썬", "CLIP 등 이미지-텍스트 모델", "임베딩 검색(FAISS)"],
+ "caveats_ko": ["페이지에 성능 점수 표가 없음(VAST 학습 조건 소개만 있음)", "장르 코드 중 AP 외 뜻은 팩에서 확인 안 됨", "이미지 출처 표에 'Blur' 처리 표시가 있어 얼굴 등이 흐리게 처리된 것으로 보임", "검증 세트 없이 학습 38,950·시험 2,050으로 나뉨"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "장면 장르 분류", "title_en": "Scene genre classifier", "desc_ko": "이미지가 뉴스·예능·드라마 중 어디서 왔는지 분류합니다.", "desc_en": "Classify which genre a frame comes from."},
+  {"level": "capstone", "title_ko": "한국어 장면 검색기", "title_en": "Korean scene search", "desc_ko": "한국어 문장으로 방송 장면을 찾는 CLIP+FAISS 검색기를 만듭니다.", "desc_en": "Find broadcast scenes from Korean text with CLIP and FAISS."},
+  {"level": "research", "title_ko": "한국 문화 맥락 캡션", "title_en": "Culture-aware captioning", "desc_ko": "한국 문화 요소를 정확히 설명하는 캡션 모델을 연구합니다.", "desc_en": "Study captioning that names Korean cultural elements correctly."}
+ ],
+ "doc_used": true,
+ "uncertain": ["장르 코드(CA, EI, FO 등)의 정확한 뜻"]
+}

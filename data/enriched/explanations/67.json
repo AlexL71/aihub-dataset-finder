@@ -1,0 +1,12 @@
+{
+ "dataset_id": "67",
+ "easy_ko": "축구 경기 영상에서 뽑은 사진마다 선수·공·심판 위치와 몸의 주요 점, 그리고 슛·패스·드리블·코너킥·태클 같은 동작을 표시한 데이터입니다. 경기 분석이나 하이라이트 장면을 자동으로 뽑아 주는 AI를 만들 수 있습니다.",
+ "easy_en": "Frames from soccer match videos, each marked with where the players, ball and referee are, the key body points, and the move, such as shot, pass, dribble, corner kick or tackle. You can build AI for match analysis or for picking highlight scenes automatically.",
+ "detail_ko": "협회 경기와 직접 촬영한 축구 영상 200시간 이상에서 추출한 이미지 400만 장 이상(구축량 28.8만)으로, JSON에 사람·공·심판 바운딩박스, 관절 키포인트, 동작 분류(Shoot, Pass, Dribble, Defense, Cornerkick, Freekick, Slidingtackle, Steal, Foul), 환경 정보가 있습니다. 기준 성능은 YOLOv4 사람 탐지 mAP 81.47%, 몸통 자세 추정 PCK 85.5%입니다. 전체 약 2.2TB이며 협회 경기 영상 포함으로 이용 조건 확인이 필요하고, 폴더 이름 철자가 섞여 있습니다(Conerkick/Cornerkick).",
+ "detail_en": "4M+ frames (288k built items) from 200+ hours of association and self-recorded soccer video. JSON labels give boxes for players, ball and referee, joint keypoints, action class (shoot, pass, dribble, defense, corner kick, free kick, sliding tackle, steal, foul) and environment info. Baselines: YOLOv4 person detection mAP 81.47%, torso pose PCK 85.5%. Total size is about 2.2 TB; check usage terms for association footage; folder names mix spellings (Conerkick/Cornerkick).",
+ "amount_ko": "이미지 400만 장 이상, 영상 200시간 이상",
+ "amount_en": "4M+ images, 200+ hours of video",
+ "labels_ko": "선수·공·심판 위치 상자, 몸의 주요 점(키포인트), 축구 동작 종류",
+ "labels_en": "boxes around players, ball and referee, body key points, soccer move class",
+ "status": "full-run-2026-11-02"
+}

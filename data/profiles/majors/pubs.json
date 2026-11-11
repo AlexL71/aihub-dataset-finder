@@ -1,0 +1,47 @@
+{
+ "id": "pubs",
+ "name_ko": "공공사회ㆍ통일외교학부(공공사회학전공)",
+ "name_en": "Public Sociology (School of Public Society and Unification Diplomacy)",
+ "college": "공공정책대학",
+ "summary_ko": "사회학 이론과 사회조사·사회통계를 바탕으로 불평등, 복지, 노동, 가족, 범죄, 문화, 미디어 같은 사회문제를 분석하고 정책 대안을 찾는 전공입니다. 사회복지 연계전공으로 사회복지사 1급 응시 자격을, 사회조사분석사 자격증 준비도 가능합니다.",
+ "summary_en": "Uses sociological theory plus social research and statistics to analyse social problems such as inequality, welfare, labour, family, crime, culture and media, and to propose policy alternatives. A linked social-welfare program qualifies students for the social worker licence exam, and students can prepare for the social survey analyst certificate.",
+ "key_topics": ["사회학 이론", "사회조사방법·사회통계", "불평등·계층", "사회복지·사회보장", "사회적 경제·사회적 기업", "노동·가족·인구", "범죄정책·인권", "문화·미디어·대중문화", "도시와 사회", "정보사회와 정책"],
+ "course_keywords": ["현대사회학의초대", "사회학개론", "사회조사방법론", "사회복지개론", "사회복지정책론", "공공사회학", "고전사회학이론", "현대사회학이론", "사회문제론", "사회계층과불평등", "시민사회론", "사회적경제론", "사회적기업론", "가족복지론", "사회심리측정과분석", "대중문화연구", "미디어와사회", "사회심리학", "정치사회학", "도시와사회", "사회보장론", "사회통계", "사회조사실습", "노인복지론", "범죄정책", "복지국가론", "여성복지론", "영상사회학", "사회인구학", "법과인권", "노동과사회", "사회복지조사론", "정보사회와정책", "문화정책", "사회조사캡스톤디자인"],
+ "curriculum_by_year": {
+  "1": ["현대사회학의초대", "행정학의이해", "한국경제의이해", "빅데이터사이언스입문", "디지털리터러시입문"],
+  "2": ["사회학개론", "사회조사방법론", "사회복지개론", "사회복지정책론", "공공사회학", "고전·현대사회학이론", "사회문제론", "사회계층과불평등", "시민사회론", "사회적경제론", "사회적기업론", "가족복지론", "사회심리측정과분석", "대중문화연구", "미디어와사회"],
+  "3": ["종교와사회", "경제와사회", "사회심리학", "정치사회학", "도시와사회", "문화와사회", "사회보장론", "사회운동과NGO", "사회통계", "사회조사실습", "노인복지론", "범죄정책", "복지국가론", "여성복지론", "영상사회학"],
+  "4": ["사회발전론", "사회변동론", "한국사회론", "사회인구학", "법과인권", "노동과사회", "사회복지조사론", "정보사회와정책", "문화정책", "사회조사캡스톤디자인"]
+ },
+ "careers": ["리서치·여론조사 기관(사회조사분석사)", "사회복지사(공공기관, 복지기관, 비영리조직, 협동조합)", "정부기관·국회·정당·연구기관", "언론", "금융·일반 기업", "대학원 진학(사회학, 사회복지학)"],
+ "research_areas": ["사회정책·사회복지", "사회적 기업", "복지 태도", "공공부조"],
+ "data_interests": [
+  {"topic_ko": "설문과 여론", "topic_en": "Surveys and public opinion", "keywords": ["설문 응답", "여론 조사", "인식 조사"]},
+  {"topic_ko": "복지와 돌봄", "topic_en": "Welfare and care", "keywords": ["노인 돌봄", "복지 서비스", "상담 기록"]},
+  {"topic_ko": "인구와 가족", "topic_en": "Population and family", "keywords": ["저출산", "고령화", "가구 통계"]},
+  {"topic_ko": "범죄와 안전", "topic_en": "Crime and safety", "keywords": ["범죄 통계", "CCTV", "생활 안전"]},
+  {"topic_ko": "SNS와 미디어", "topic_en": "Social media and media", "keywords": ["댓글", "혐오 표현", "뉴스"]},
+  {"topic_ko": "민원과 상담", "topic_en": "Complaints and counselling", "keywords": ["민원 텍스트", "상담 대화", "심리 상담"]},
+  {"topic_ko": "도시와 지역 격차", "topic_en": "Cities and regional gaps", "keywords": ["지역 통계", "유동인구", "주거"]}
+ ],
+ "interest_questions": [
+  {"q_ko": "어떤 사회문제에 관심이 있나요?", "q_en": "Which social problem interests you?",
+   "options": [{"ko": "복지·노인·돌봄", "en": "Welfare, elderly and care"}, {"ko": "불평등·노동", "en": "Inequality and labour"}, {"ko": "범죄·안전", "en": "Crime and safety"}, {"ko": "미디어·혐오 표현", "en": "Media and hate speech"}, {"ko": "인구·가족 변화", "en": "Population and family change"}]},
+  {"q_ko": "다뤄보고 싶은 자료는?", "q_en": "What data would you like to use?",
+   "options": [{"ko": "설문 응답", "en": "Survey answers"}, {"ko": "SNS·댓글 텍스트", "en": "Social media and comments"}, {"ko": "상담·민원 대화", "en": "Counselling and complaint dialogues"}, {"ko": "인구·지역 통계", "en": "Population and regional statistics"}]}
+ ],
+ "project_themes": ["온라인 댓글 혐오 표현 탐지", "노인 돌봄 상담 대화 주제 분석", "지역별 인구 고령화 시각화", "민원 텍스트 자동 분류"],
+ "data_skill_level": "medium",
+ "data_skill_note": "사회조사방법론, 사회통계, 사회조사실습, 사회심리측정과분석 과목이 있어 설문 데이터 분석 경험이 있습니다. 프로그래밍 과목은 거의 없습니다.",
+ "sources": [
+  {"kind": "page", "label": "학과소개", "url": "https://sejong.korea.ac.kr/pubs/4552/subview.do"},
+  {"kind": "page", "label": "졸업 후 진로", "url": "https://sejong.korea.ac.kr/pubs/4554/subview.do"},
+  {"kind": "page", "label": "교과과정", "url": "https://sejong.korea.ac.kr/pubs/4560/subview.do"},
+  {"kind": "page", "label": "교과과정표", "url": "https://sejong.korea.ac.kr/pubs/4586/subview.do"},
+  {"kind": "pdf", "label": "전공역량기반 교육과정", "url": "https://sejong.korea.ac.kr/pdfView/pubs/19/31/fileDownload.do"}
+ ],
+ "inferred_fields": ["data_interests", "interest_questions", "project_themes"],
+ "gaps": ["curriculum_by_year estimated from course numbers; the employment-status image was not read."],
+ "version": 1,
+ "created": "2026-10-29"
+}

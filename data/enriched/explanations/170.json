@@ -1,0 +1,12 @@
+{
+ "dataset_id": "170",
+ "easy_ko": "강도, 폭력, 불, 가스 사고, 갇힘, 응급 환자, 지진, 넘어짐, 도움 요청 같은 위급한 상황의 목소리와 소리를 녹음하고 어떤 상황인지 표시한 데이터입니다. 소리만 듣고 위험한 일이 생겼음을 알아채 혼자 사는 사람을 돕는 안전 AI를 만들 수 있습니다.",
+ "easy_en": "Recordings of voices and sounds in emergencies such as robbery, violence, fire, gas accidents, being trapped, medical emergencies, earthquakes, falls and calls for help, each labelled with the situation. You can build safety AI that notices danger just from sound and helps people who live alone.",
+ "detail_ko": "위급상황 16종의 음성·음향 3,559시간(화재 458h, 응급의료 452h, 실내 정상 510h, 도움요청 305h, 태풍 303h 등)으로, wav(16bit 44.1kHz) 파일과 JSON(상황 대분류·중분류, 전사, 구간 정보)으로 구성됩니다. 기준 성능은 CapsuleNet 위급상황 인식 F1-score 0.98입니다. 일부 소리는 원음을 합성해 만든 데이터라 실제 사고 소리와 차이가 있을 수 있습니다.",
+ "detail_en": "3,559 hours of speech and sound for 16 emergency types (fire 458 h, medical emergency 452 h, indoor normal 510 h, call for help 305 h, typhoon 303 h and more), as wav (16-bit, 44.1 kHz) with JSON (situation category and sub-category, transcript, time segments). Baseline: CapsuleNet emergency recognition F1-score 0.98. Some sounds are synthesised from source recordings, so they may differ from real incidents.",
+ "amount_ko": "음성·소리 3,559시간, 상황 16종",
+ "amount_en": "3,559 hours of audio, 16 situations",
+ "labels_ko": "위급상황 종류, 말소리 받아 적기(전사), 시간 구간",
+ "labels_en": "emergency type, transcript, time segment",
+ "status": "full-run-2026-11-02"
+}

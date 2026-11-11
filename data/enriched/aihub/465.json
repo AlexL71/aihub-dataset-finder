@@ -1,0 +1,29 @@
+{
+ "dataset_id": "465",
+ "title_en": "Multi-singer singing voice data",
+ "summary_ko": "발라드/R&B·록/팝·트로트 1,500곡을 가수 18명이 나눠 부른 노래 음성 4,681개와 미디·가사 파일입니다. 가수 목소리를 배워 새 노래를 부르게 하는 가창 합성(가상 가수) AI에 쓸 수 있습니다.",
+ "summary_en": "4,681 sung recordings of 1,500 songs (ballad/R&B, rock/pop, trot) split among 18 singers, with MIDI and lyrics files. For singing-voice synthesis (virtual singer) AI that learns a singer's voice and sings new songs.",
+ "contents_ko": "노래 음성(wav) + 미디 + JSON(가사, 음표·박자 정렬, 가수 성별·연령, 장르).",
+ "contents_en": "Singing audio (wav) + MIDI + JSON (lyrics, note and timing alignment, singer sex and age, genre).",
+ "modalities": ["audio", "text"],
+ "tasks": ["speech_synthesis"],
+ "topics": [{"ko": "음악·노래", "en": "Music and singing"}, {"ko": "엔터테인먼트", "en": "Entertainment"}],
+ "keywords_ko": ["가창 합성", "노래", "가상 가수", "트로트", "미디", "음성 합성"],
+ "keywords_en": ["singing voice synthesis", "songs", "virtual singer", "trot", "MIDI", "speech synthesis"],
+ "labels": ["lyrics", "MIDI alignment", "singer attributes", "genre"],
+ "file_formats": ["wav", "mid", "json"],
+ "scale_ko": "4,681곡 음성(장르별 약 1,560), 가수 18명",
+ "classes_example": ["발라드/R&B", "록/팝", "트로트"],
+ "baseline": [{"task": "singing voice synthesis", "model": "SVS model", "metric": "MOS (human rating)", "value": "4.52"}],
+ "difficulty": "advanced",
+ "difficulty_note_ko": "약 39GB로 크기는 적당하지만 가창 합성 모델 학습은 GPU와 음성 합성 지식이 필요합니다.",
+ "skills_needed_ko": ["파이썬", "오디오 처리", "음성 합성 모델(DiffSinger 등)"],
+ "caveats_ko": ["곡 저작권이 있는 미디·가사를 구매해 만든 데이터라 이용 조건을 꼭 확인", "가수 목소리를 흉내 내는 기술이라 악용 주의"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "장르별 음높이 분석", "title_en": "Pitch analysis by genre", "desc_ko": "장르별 음높이 범위와 비브라토를 분석합니다.", "desc_en": "Analyse pitch range and vibrato by genre."},
+  {"level": "capstone", "title_ko": "가사 넣으면 노래하는 데모", "title_en": "Lyrics-to-singing demo", "desc_ko": "공개 가창 합성 모델을 미세조정해 짧은 노래를 생성합니다.", "desc_en": "Fine-tune an open singing synthesis model to generate a short song."},
+  {"level": "research", "title_ko": "적은 데이터로 새 가수 목소리 학습", "title_en": "Few-shot singer adaptation", "desc_ko": "곡 몇 개만으로 새로운 가수 음색을 학습하는 방법을 연구합니다.", "desc_en": "Learn a new singer's timbre from only a few songs."}
+ ],
+ "doc_used": true,
+ "uncertain": []
+}

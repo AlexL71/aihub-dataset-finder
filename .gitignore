@@ -1,0 +1,21 @@
+# local environment and secrets
+.venv/
+.env
+cookie.txt
+.claude/
+.pytest_cache/
+__pycache__/
+*.part
+graphify-out/
+
+# data: git keeps only what the running app needs (dataset records, search index, major profiles, icon and field lists).
+# Collected pages, documents and the query embedding cache stay on the machine that collected them.
+data/raw/
+data/manifest.csv
+data/sample_ids.txt
+data/parsed/aihub/pages/
+data/parsed/aihub/docs/
+data/parsed/aihub/dataset_list.csv
+data/parsed/university/
+data/index/embedding_cache.sqlite
+data/index/*.tmp

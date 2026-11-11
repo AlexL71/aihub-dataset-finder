@@ -1,0 +1,29 @@
+{
+ "dataset_id": "71481",
+ "title_en": "Expert-domain in-depth interview data",
+ "summary_ko": "역사·경제·교육·자연과학·환경·의학·컴퓨터 등 15개 전문 분야의 심층 인터뷰 음성 2,080시간에 전사, 질의-응답, 요약이 붙은 데이터입니다. 전문용어가 많은 대화를 받아쓰고 요약하는 AI와 오탈자 교정에 쓸 수 있습니다.",
+ "summary_en": "2,080 hours of in-depth interview speech across 15 expert fields (history, economics, education, natural science, environment, medicine, computing, etc.) with transcripts, question-answer pairs and summaries. For AI that transcribes and summarises jargon-heavy conversations and fixes typos.",
+ "contents_ko": "인터뷰 음성(wav) + JSON(전사, 질의-응답, 요약).",
+ "contents_en": "Interview speech (wav) + JSON (transcript, question-answer, summary).",
+ "modalities": ["audio", "text"],
+ "tasks": ["speech_recognition", "summarization", "text_generation"],
+ "topics": [{"ko": "회의·인터뷰 기록", "en": "Meeting and interview records"}, {"ko": "전문 지식", "en": "Expert knowledge"}],
+ "keywords_ko": ["심층 인터뷰", "음성 인식", "요약", "전문용어", "오탈자 교정", "자동 회의록"],
+ "keywords_en": ["in-depth interview", "speech recognition", "summarisation", "technical terms", "typo correction", "automatic minutes"],
+ "labels": ["transcript", "question-answer", "summary"],
+ "file_formats": ["wav", "json"],
+ "scale_ko": "음성 2,080시간, 전문 분야 15종",
+ "classes_example": ["역사/고고학", "경제/경영", "교육", "자연과학", "환경", "컴퓨터학", "예방의학/직업환경의학"],
+ "baseline": [{"task": "speech recognition", "model": "Conformer", "metric": "CER", "value": "16.09%"}, {"task": "typo correction", "model": "BART", "metric": "GLEU", "value": "93"}, {"task": "summarisation", "model": "BART", "metric": "ROUGE-1", "value": "47.98%"}, {"task": "summarisation", "model": "BART", "metric": "ROUGE-L", "value": "38.24%"}],
+ "difficulty": "intermediate",
+ "difficulty_note_ko": "전사·요약 텍스트만 쓰면 다루기 쉽고, 음성까지 쓰면 약 163GB입니다.",
+ "skills_needed_ko": ["파이썬", "음성 인식 모델", "요약 모델(BART 등)"],
+ "caveats_ko": ["일부는 유튜브·방송사 출처라 이용 조건 확인 필요", "분야별 비율이 2.6%~9.8%로 차이가 있음"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "인터뷰 요약", "title_en": "Interview summariser", "desc_ko": "전사 텍스트로 짧은 요약문을 만드는 모델을 미세조정합니다.", "desc_en": "Fine-tune a model to summarise interview transcripts."},
+  {"level": "capstone", "title_ko": "세미나 자동 회의록", "title_en": "Automatic seminar minutes", "desc_ko": "녹음을 받아쓰고 요약해 회의록을 만들어 주는 도구를 만듭니다.", "desc_en": "Transcribe and summarise recordings into minutes."},
+  {"level": "research", "title_ko": "전문용어 음성 인식 개선", "title_en": "Better jargon recognition", "desc_ko": "분야별 전문용어 인식 오류를 줄이는 방법을 연구합니다.", "desc_en": "Reduce recognition errors on domain jargon."}
+ ],
+ "doc_used": true,
+ "uncertain": []
+}

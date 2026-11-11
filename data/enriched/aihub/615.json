@@ -1,0 +1,29 @@
+{
+ "dataset_id": "615",
+ "title_en": "Language-based image editing data",
+ "summary_ko": "사람 전신·얼굴 원본 사진 약 5천 장과, '셔츠를 빨간색으로 바꿔줘' 같은 한국어 편집 명령에 따라 색상·모양을 바꾼 편집 이미지 약 14.7만 장을 짝지은 데이터입니다. 신체 부위·옷·탈것 영역도 다각형으로 표시되어 있습니다. 말로 사진을 고치는 AI에 쓸 수 있습니다.",
+ "summary_en": "About 5,000 original full-body and face photos paired with about 147,000 edited images that follow Korean text commands such as \"make the shirt red\" (colour and shape changes), with polygons for body parts, clothes and vehicles. For AI that edits photos from text instructions.",
+ "contents_ko": "원본·편집 이미지(jpg) + 편집 명령어(txt) + JSON(다각형 분할).",
+ "contents_en": "Original and edited images (jpg) + edit commands (txt) + JSON (polygon segmentation).",
+ "modalities": ["image", "text"],
+ "tasks": ["image_generation", "segmentation"],
+ "topics": [{"ko": "이미지 편집·디자인", "en": "Image editing and design"}, {"ko": "생성 AI", "en": "Generative AI"}],
+ "keywords_ko": ["이미지 편집", "텍스트 명령", "색상 변환", "생성 AI", "한국어 명령어"],
+ "keywords_en": ["image editing", "text instructions", "colour change", "generative AI", "Korean commands"],
+ "labels": ["edit command", "polygon segmentation", "edited image"],
+ "file_formats": ["jpg", "txt", "json"],
+ "scale_ko": "원본 약 5천 장, 편집 이미지 약 14.7만 장(색상 8.9만, 모양 5.7만)",
+ "classes_example": ["신체부위", "의상", "탈것"],
+ "baseline": [{"task": "object detection for edit targets", "model": "Faster R-CNN", "metric": "mAP", "value": "72.33%"}],
+ "difficulty": "advanced",
+ "difficulty_note_ko": "약 180GB이고 생성 모델(확산 모델 등)을 다뤄야 합니다.",
+ "skills_needed_ko": ["파이썬", "이미지 생성 모델", "텍스트-이미지 모델"],
+ "caveats_ko": ["사람 얼굴·전신 사진이라 초상권 주의", "원본 이미지가 5천 장으로 적음", "기준 성능은 편집이 아닌 객체 탐지 결과임"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "옷 영역 분할", "title_en": "Clothing segmentation", "desc_ko": "사진에서 의상 영역을 칠합니다.", "desc_en": "Segment clothing areas in photos."},
+  {"level": "capstone", "title_ko": "한국어 명령 사진 편집 앱", "title_en": "Korean text photo editor", "desc_ko": "'모자를 파란색으로' 같은 명령으로 사진을 고치는 데모를 만듭니다.", "desc_en": "Build a demo that edits photos from commands like 'make the hat blue'."},
+  {"level": "research", "title_ko": "영역 지정 편집 품질", "title_en": "Mask-guided editing quality", "desc_ko": "분할 영역을 함께 주면 편집 정확도가 얼마나 좋아지는지 연구합니다.", "desc_en": "Study how giving segmentation masks improves edit accuracy."}
+ ],
+ "doc_used": true,
+ "uncertain": []
+}

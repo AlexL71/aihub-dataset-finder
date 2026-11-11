@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71827",
+ "easy_ko": "역, 병원, 학교, 관광지 같은 곳에서 사람들이 키오스크 화면을 쓰는 모습을 찍은 영상 약 1,000시간에 행동 구간, 몸 관절 점, 영상 설명, 성별과 나이대를 표시한 데이터입니다. 어르신이나 어린이에게 맞춤 서비스를 하는 키오스크와 서비스 로봇에 쓸 수 있습니다.",
+ "easy_en": "About 1,000 hours of video of people using kiosk screens in places such as stations, hospitals, schools and tourist sites, marked with action segments, body joint points, video descriptions, gender and age group. You can use it to build kiosks and service robots that adapt to users such as older people or children.",
+ "detail_ko": "교통·의료·교육·관광 등 시설 환경 10종에서 키오스크 사용 모습을 찍은 영상 49,211건(mp4, 약 1,013시간)에 행동 구간 93,651개(탐색, 사용, 종료), 행동 태그, 키포인트, 영상 캡션, 사용 로그, 사용자 특징(성별, 유소년·청중장년·노년)을 JSON으로 붙였습니다. 전체 약 1.2TB이고, 사람 얼굴·몸이 찍혀 개인정보에 주의해야 하며, 노년 10.7%·유소년 4.7%로 연령 분포가 치우쳐 있습니다. 성별·연령 클립 합계(54,543)와 전체 영상 수가 다르고, 품질 점수는 라벨 정확도이며 모델 성능 수치는 팩에 없습니다.",
+ "detail_en": "49,211 videos (mp4, about 1,013 hours) of people using kiosks in 10 kinds of facilities (transport, medical, education, tourism and more), with JSON temporal segments (93,651: explore, use, finish), action tags, keypoints, video captions, usage logs and user features (gender; youth, adult, older adult). Total size is about 1.2 TB. Faces and bodies are visible, so handle personal data with care; older adults (10.7%) and young people (4.7%) are under-represented. The gender/age clip total (54,543) differs from the video count, and quality scores describe label accuracy; no model scores are in the pack.",
+ "amount_ko": "영상 49,211건(약 1,013시간), 행동 구간 93,651개, 시설 환경 10종",
+ "amount_en": "49,211 videos (about 1,013 hours), 93,651 action segments, 10 facility types",
+ "labels_ko": "행동 구간, 행동 종류, 몸 관절 점, 영상 설명",
+ "labels_en": "temporal segment, action tag, keypoint, caption",
+ "status": "full-run-2026-11-02"
+}

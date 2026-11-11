@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71928",
+ "easy_ko": "예전 자율주행 데이터를 다시 다듬어, 공사 구간, 밝기가 갑자기 바뀌는 곳, 터널, 일반 구간의 도로 사진 5,000여 장에 사진 설명과 질문-답을 붙인 데이터입니다. 자율주행차가 도로 상황을 이해하고 질문에 답하는 AI에 쓸 수 있습니다.",
+ "easy_en": "Over 5,000 road photos of work zones, places where brightness changes suddenly, tunnels and ordinary sections, reworked from older self-driving data, each with a description and questions and answers. You can use it to build AI that helps self-driving cars understand road situations and answer questions.",
+ "detail_ko": "기존 AI 허브 자율주행차 정적객체 데이터를 재가공(업사이클링)한 도로 이미지 5,032장(jpg)에 이미지-텍스트 관계 설명과 질의응답 라벨 10,064건(관계·QA 각 5,032; JSON)을 붙였고, 구간은 공사중, 조도 급변구간, 터널구간, 일반구간입니다. 페이지에 성능 점수 표와 모델 설명이 없고, 통계 표 수량(10,064)은 이미지가 아니라 라벨 수 기준이며, 기존 데이터를 재가공한 것이라 원본과 이미지가 겹칠 수 있습니다.",
+ "detail_en": "5,032 road images (jpg) upcycled from AI Hub's earlier static-object self-driving data, with 10,064 JSON labels (5,032 image-text relation descriptions and 5,032 QA), in work-zone, sudden-brightness-change, tunnel and ordinary sections. There is no score table or model description; the statistics figure (10,064) counts labels, not images; and being reworked from existing data, images may overlap with the original.",
+ "amount_ko": "이미지 5,032장, 라벨 10,064건",
+ "amount_en": "5,032 images, 10,064 labels",
+ "labels_ko": "사진 설명, 질문과 답",
+ "labels_en": "image-text relation, question-answer",
+ "status": "full-run-2026-11-02"
+}

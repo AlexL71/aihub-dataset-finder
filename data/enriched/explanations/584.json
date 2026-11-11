@@ -1,0 +1,12 @@
+{
+ "dataset_id": "584",
+ "easy_ko": "초·중·고 학생들의 방과후 수업과 체험 활동을 지켜보며 쓴 기록마다 교육 전문가가 학생의 핵심 능력 점수를 매긴 데이터입니다. 수업 기록 글만 보고 학생이 어떤 능력을 키우고 있는지 알려 주는 AI를 만들 수 있지만, 미성년자 기록이라 개인정보에 주의해야 합니다.",
+ "easy_en": "Observation notes from after-school classes and hands-on activities of elementary, middle and high-school students, each scored by education experts on the students' core competencies. You can build AI that estimates a student's growing skills from class notes, but these are records of minors, so privacy matters.",
+ "detail_ko": "초·중·고 학생 약 1.8만 명의 방과후·체험 활동 수업 관찰 기록 약 14만 건에 교육 전문가가 매긴 핵심 역량 점수와 학생·프로그램·미션 정보를 csv로 제공합니다(활동 분류: 학습지원, 창의체험, 진로탐색, 시민역량, 자치/행사, 자기개발). 기준 성능은 KorBERT 역량 점수 예측 weighted F1 0.61, MAE 0.41로 낮은 편입니다. 미성년자 관찰 기록이라 개인정보에 주의해야 하며, 초등 기록이 63%로 치우쳐 있습니다.",
+ "detail_en": "About 140k observation records from after-school and hands-on classes of about 18k elementary, middle and high-school students, with expert-assigned core-competency scores and student, programme and mission info, all in csv (activity areas: learning support, creative experience, career exploration, civic competence, self-government and events, self-development). Baselines are low: KorBERT score prediction weighted F1 0.61, MAE 0.41. Records concern minors, so privacy matters; 63% are from elementary school.",
+ "amount_ko": "수업 기록 약 14만 건, 학생 약 1.8만 명",
+ "amount_en": "about 140k class records, about 18k students",
+ "labels_ko": "핵심 능력 점수, 학생·프로그램 정보",
+ "labels_en": "core-competency score, student and programme info",
+ "status": "full-run-2026-11-02"
+}

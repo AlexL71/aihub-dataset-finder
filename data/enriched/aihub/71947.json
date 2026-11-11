@@ -1,0 +1,29 @@
+{
+ "dataset_id": "71947",
+ "title_en": "Visual commonsense reasoning data (upcycling)",
+ "summary_ko": "2022년 AI Hub 영상이미지 데이터를 다시 가공해, 이미지 20,000건에 상식적 판단을 묻는 질의응답(Q&A)과 사고과정(CoT, 답에 이르는 추론 단계) 라벨을 붙인 데이터입니다. 대칭성·반사·빈칸 채우기·아웃포커싱 등 유형별로 구성되며, 이미지 기반 질의응답과 시각 추론 AI에 쓸 수 있습니다.",
+ "summary_en": "20,000 images re-processed from AI Hub's 2022 vision data, with commonsense Q&A and chain-of-thought (step-by-step reasoning) labels. Types include symmetry, reflection, fill-in-the-blank and out-of-focus, among others. For image Q&A and visual reasoning AI.",
+ "contents_ko": "이미지(jpg) + JSON(질의응답·사고과정).",
+ "contents_en": "Images (jpg) + JSON (Q&A, chain of thought).",
+ "modalities": ["image", "text"],
+ "tasks": ["visual_qa", "question_answering"],
+ "topics": [{"ko": "멀티모달 AI", "en": "Multimodal AI"}, {"ko": "추론", "en": "Reasoning"}],
+ "keywords_ko": ["시각 상식", "추론", "질의응답", "사고과정", "멀티모달", "업사이클링"],
+ "keywords_en": ["visual commonsense", "reasoning", "Q&A", "chain of thought", "multimodal", "upcycling"],
+ "labels": ["question-answer", "chain of thought"],
+ "file_formats": ["jpg", "json"],
+ "scale_ko": "20,000건(유형별 약 10%씩)",
+ "classes_example": ["대칭성", "반사", "빈칸 채우기", "아웃포커싱"],
+ "baseline": [],
+ "difficulty": "intermediate",
+ "difficulty_note_ko": "약 95GB로 큰 편이라 일부만 받아 실습하는 것이 좋습니다.",
+ "skills_needed_ko": ["파이썬", "멀티모달 모델", "트랜스포머"],
+ "caveats_ko": ["2만 건에 비해 용량(약 95GB)이 커서 고해상도 이미지로 보임", "성능 지표 값이 팩 앞부분에 없음"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "추론 유형 분류", "title_en": "Reasoning type classifier", "desc_ko": "질문이 어떤 상식 추론 유형인지 분류합니다.", "desc_en": "Classify the reasoning type of a question."},
+  {"level": "capstone", "title_ko": "이미지 상식 퀴즈 앱", "title_en": "Visual commonsense quiz", "desc_ko": "이미지를 보고 상식 질문에 답하는 앱을 만듭니다.", "desc_en": "App that answers commonsense questions on images."},
+  {"level": "research", "title_ko": "사고과정 학습 효과", "title_en": "Effect of CoT training", "desc_ko": "사고과정 라벨이 소형 멀티모달 모델의 추론력에 주는 효과를 연구합니다.", "desc_en": "Measure how CoT labels help small multimodal models."}
+ ],
+ "doc_used": true,
+ "uncertain": ["추론 유형 전체 목록"]
+}

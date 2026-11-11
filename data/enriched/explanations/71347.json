@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71347",
+ "easy_ko": "전기차 세 차종을 실제로 몰며 모터와 감속기의 떨림, 배터리 전압을 기록하고, 정상·주의·고장 상태를 표시한 데이터입니다. 전기차가 고장 나기 전에 이상 징후를 미리 알려 주는 AI를 만들 수 있습니다.",
+ "easy_en": "Vibration of motors and reduction gears and battery voltages recorded while actually driving three electric car models, labelled as normal, caution or fault. You can build AI that warns of electric-car problems before they turn into breakdowns.",
+ "detail_ko": "아이오닉·코나·니로 전기차 실주행 중 모터·감속기 진동 센서의 주파수 분석(STFT) 이미지 약 55만 건(png)과 배터리 셀 전압·편차 데이터 약 22만 건(npy)에 상태 라벨(정상, 편심 주의·결함, 감자 결함, 감속기 기어 결함, 셀전압 결함, 셀편차 주의 등)과 결함 영역을 JSON으로 붙였습니다. 기준 성능은 DeepLab V3+ 모터·감속기 고장 분류 정확도 99.6%·결함 영역 mIoU 96.66%, LSTM-FCN 배터리 고장 분류 97.75%입니다. 전체 약 1.3TB이며, 현대·기아 차종 3개만 있고 결함은 인위적으로 만든 실험일 수 있습니다.",
+ "detail_en": "About 550k STFT (frequency-analysis) images (png) from motor and reducer vibration sensors and about 220k battery cell voltage and deviation records (npy), collected while driving Ioniq, Kona and Niro EVs, with JSON state labels (normal, eccentricity caution or fault, demagnetisation fault, reducer gear fault, cell-voltage fault, cell-deviation caution and more) and fault regions. Baselines: DeepLab V3+ motor/reducer fault classification accuracy 99.6% and fault-region mIoU 96.66%, LSTM-FCN battery fault classification 97.75%. Total size is about 1.3 TB; only 3 Hyundai/Kia models; faults may have been induced for the experiment.",
+ "amount_ko": "떨림 분석 그림 약 55만 건, 배터리 기록 약 22만 건",
+ "amount_en": "about 550k vibration images, about 220k battery records",
+ "labels_ko": "정상·주의·고장 상태, 고장 영역",
+ "labels_en": "normal, caution or fault state, fault region",
+ "status": "full-run-2026-11-02"
+}

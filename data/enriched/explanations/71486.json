@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71486",
+ "easy_ko": "뉴스, 잡지, 책, 블로그, 방송 대본에서 모은 한국어 문장에 사실을 말하는지, 추측하는지, 앞일을 예상하는지, 대화인지를 표시한 데이터입니다. 문장 종류를 나누거나 사실인지 따져 보는 AI에 쓸 수 있습니다.",
+ "easy_en": "Korean sentences from news, magazines, books, blogs and TV scripts, each marked as stating a fact, making a guess, predicting the future or being dialogue. You can use it to build AI that sorts sentences by type or checks whether something is stated as fact.",
+ "detail_ko": "뉴스·매거진·도서·블로그·방송대본 문서 1만 건 이상에서 모은 한국어 문장 16만 5천 개 이상(txt)에 문장 유형(사실형, 추론형, 예측형, 대화형), 극성(긍정/부정), 시제, 확실성 라벨을 JSON·CSV로 붙였습니다. 기준 성능은 BERT F1 문장 유형 0.85, 극성 0.92, 확실성 0.94입니다. 설명서 구축량(180,000)과 페이지(165,000)가 다르고, 페이지의 라벨링 유형이 '내용요약'으로 적혀 있지만 실제는 문장 속성 분류입니다.",
+ "detail_en": "Over 165,000 Korean sentences (txt) from more than 10,000 documents (news, magazines, books, blogs, broadcast scripts), with JSON/CSV labels for sentence type (fact, inference, prediction, dialogue), polarity (positive/negative), tense and certainty. Baselines with BERT, F1: sentence type 0.85, polarity 0.92, certainty 0.94. The build amount differs between the manual (180,000) and the page (165,000), and the page lists the label type as 'content summary' although it is really sentence-attribute classification.",
+ "amount_ko": "문장 16만 5천 개 이상(문서 1만 건 이상)",
+ "amount_en": "over 165,000 sentences (over 10,000 documents)",
+ "labels_ko": "문장 종류, 긍정·부정, 시제, 확실성",
+ "labels_en": "sentence type, polarity, tense, certainty",
+ "status": "full-run-2026-11-02"
+}

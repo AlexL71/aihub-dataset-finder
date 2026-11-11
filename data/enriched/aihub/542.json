@@ -1,0 +1,29 @@
+{
+ "dataset_id": "542",
+ "title_en": "Multi-speaker speech synthesis data",
+ "summary_ko": "일반인 3,400명 이상이 25개 대본에서 2,000~2,400문장씩 녹음한 음성 10,152시간으로, 음소를 고루 담도록 설계되었습니다. 적은 녹음만으로 내 목소리를 흉내 내는 개인화 음성 합성(TTS)이나 다화자 TTS 연구에 쓸 수 있습니다.",
+ "summary_en": "10,152 hours of speech from 3,400+ ordinary people, each reading 2,000–2,400 sentences from 25 scripts designed to cover phonemes evenly. For personalised TTS that copies a voice from a small recording, or multi-speaker TTS research.",
+ "contents_ko": "음성(wav) + JSON(문장 텍스트, 화자 성별·연령대, 대본 번호).",
+ "contents_en": "Audio (wav) + JSON (sentence text, speaker sex and age group, script number).",
+ "modalities": ["audio", "text"],
+ "tasks": ["speech_synthesis", "speech_recognition"],
+ "topics": [{"ko": "음성 합성", "en": "Speech synthesis"}, {"ko": "음성", "en": "Speech"}],
+ "keywords_ko": ["음성 합성", "TTS", "다화자", "개인화 음성", "목소리 복제"],
+ "keywords_en": ["speech synthesis", "TTS", "multi-speaker", "personalised voice", "voice cloning"],
+ "labels": ["transcript", "speaker attributes"],
+ "file_formats": ["wav", "json"],
+ "scale_ko": "10,152시간, 화자 3,400명 이상",
+ "classes_example": [],
+ "baseline": [],
+ "difficulty": "advanced",
+ "difficulty_note_ko": "TTS 학습은 GPU와 전문 지식이 필요하고 전체 약 2.2TB입니다.",
+ "skills_needed_ko": ["파이썬", "오디오 처리", "TTS 모델(VITS, YourTTS)"],
+ "caveats_ko": ["목소리 복제 기술은 사칭·사기 악용 위험이 있어 윤리적 사용 필요", "성능 지표가 팩 앞부분에 없음"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "화자 연령대 분류", "title_en": "Speaker age-group classifier", "desc_ko": "음성으로 화자의 연령대를 분류합니다.", "desc_en": "Classify speaker age group from voice."},
+  {"level": "capstone", "title_ko": "5분 녹음으로 내 목소리 TTS", "title_en": "My-voice TTS from 5 minutes", "desc_ko": "다화자 모델을 소량 데이터로 적응시켜 내 목소리로 읽어 주는 데모를 만듭니다.", "desc_en": "Adapt a multi-speaker model with a few minutes of audio to read in your voice."},
+  {"level": "research", "title_ko": "합성 음성 탐지", "title_en": "Detecting synthetic voices", "desc_ko": "복제된 목소리를 진짜와 구분하는 방법을 연구합니다.", "desc_en": "Study telling cloned voices from real ones."}
+ ],
+ "doc_used": true,
+ "uncertain": []
+}

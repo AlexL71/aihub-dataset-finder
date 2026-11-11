@@ -1,0 +1,12 @@
+{
+ "dataset_id": "547",
+ "easy_ko": "특허 문서마다 우리나라 산업 분류(한국표준산업분류) 중 어느 산업에 해당하는지를 정확하게 연결해 둔 데이터입니다. 특허 내용을 읽고 어느 산업 분야인지 자동으로 분류하거나 산업별 특허 흐름을 분석하는 AI를 만들 수 있습니다.",
+ "easy_en": "Patent documents each linked to the matching industry in Korea's standard industrial classification (KSIC). You can build AI that reads a patent and sorts it into the right industry, or analyses patent trends by industry.",
+ "detail_ko": "한국표준산업분류(KSIC) 대분류 21개 아래 세세분류 563개마다 특허 1,000건씩, 총 563,000건의 특허 텍스트(요약·청구항 등)에 KSIC 산업분류 코드와 기술요소를 JSON으로 붙였습니다. 라벨링 유형이 '내용요약'으로 적혀 있지만 실제로는 분류 라벨이며, 기준 성능은 기록에서 확인되지 않습니다.",
+ "detail_en": "563,000 patent texts (abstracts, claims and more), 1,000 for each of 563 KSIC sub-sub-classes under 21 sections, with JSON KSIC code and technical elements. The labelling type is listed as content summary, but the labels are classification codes; no baseline is visible in the record.",
+ "amount_ko": "특허 56.3만 건, 산업 분류 563개",
+ "amount_en": "563k patents, 563 industry classes",
+ "labels_ko": "산업 분류 코드(KSIC), 기술 요소",
+ "labels_en": "industry class code (KSIC), technical elements",
+ "status": "full-run-2026-11-02"
+}

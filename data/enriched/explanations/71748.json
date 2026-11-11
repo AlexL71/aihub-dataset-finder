@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71748",
+ "easy_ko": "공공 저작물, 저작권이 끝난 옛글, 자유 이용 허락된 유튜브 자막 등에서 모은 한국어 글 약 336만 건과, 사람의 평가로 AI 답변을 다듬는 학습 자료를 모은 데이터입니다. 한국어를 잘하는 대형 언어 모델과 챗봇을 만드는 데 쓸 수 있습니다.",
+ "easy_en": "About 3.36 million Korean texts from public works, old texts whose copyright has expired and freely licensed YouTube subtitles, plus training data for improving AI answers with human feedback. You can use it to build large language models and chatbots that are good at Korean.",
+ "detail_ko": "공유·공공 저작물, 저작권 만료 고전, CC 라이선스 유튜브 자막 등에서 모은 한국어 말뭉치 3,361,406건(약 22.9억 어절; 구어체·문어체, 주제 예: 공학, 보건, 사회, 인문, 자연)과 RLHF(사람 피드백 강화학습) 데이터 약 77,000건(질의응답 SFT 13,000, 응답 순위 RM 33,000, PPO 질문 31,000)입니다(JSON). 페이지에 성능 점수 표가 없고(LLaMA2 소개만 있음), 개요의 20억 어절·310만 건과 분포 표의 22.9억 어절·336만 건이 다릅니다. 말뭉치·PPO 데이터에는 라벨이 없고, 출처별 라이선스 조건을 확인해야 합니다.",
+ "detail_en": "3,361,406 Korean corpus items (about 2.29 billion words; spoken and written style; topics such as engineering, health, society, humanities, natural science) from shared and public works, out-of-copyright classics and CC-licensed YouTube subtitles, plus about 77,000 RLHF (reinforcement learning from human feedback) items: 13,000 SFT question-answer pairs, 33,000 RM response rankings and 31,000 PPO prompts (JSON). There is no score table (only LLaMA2 is mentioned), and the overview (2 billion words, 3.1 million items) differs from the distribution table (2.29 billion words, 3.36 million items). The corpus and PPO data are unlabelled, and licence terms per source should be checked.",
+ "amount_ko": "말뭉치 3,361,406건(약 22.9억 어절), RLHF 약 77,000건(SFT 13,000, RM 33,000, PPO 31,000)",
+ "amount_en": "3,361,406 corpus items (about 2.29 billion words), about 77,000 RLHF items (13,000 SFT, 33,000 RM, 31,000 PPO)",
+ "labels_ko": "질문과 답, 답변 순위",
+ "labels_en": "question-answer pairs, response rankings",
+ "status": "full-run-2026-11-02"
+}

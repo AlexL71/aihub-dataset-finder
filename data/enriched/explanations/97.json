@@ -1,0 +1,12 @@
+{
+ "dataset_id": "97",
+ "easy_ko": "신문 기사, 기고문, 잡지, 법원 판결문 글마다 중요한 문장 세 개를 골라 둔 요약과, 사람이 새로 쓴 짧은 요약을 함께 붙인 데이터입니다. 뉴스나 법률 문서를 자동으로 짧게 요약해 주는 AI를 만들 수 있습니다.",
+ "easy_en": "Newspaper articles, opinion pieces, magazines and court rulings, each with two summaries: three key sentences picked from the text, and a short summary written fresh by a person. You can build AI that automatically summarises news or legal documents.",
+ "detail_ko": "신문기사 30만, 기고문 6만, 잡지 1만, 법원 판결문 3만 건, 총 40만 건의 원문(문장 단위)에 추출 요약(문장 번호 3개)과 생성 요약문을 붙여 요약 80만 건을 JSON으로 제공합니다. 기준 성능은 BertSumExt / SummaRuNNer 추출 요약 ROUGE-1 뉴스 50.8%, 법률 56.9%입니다.",
+ "detail_en": "400k source texts split into sentences (300k news articles, 60k opinion pieces, 10k magazine articles, 30k court rulings), each with an extractive summary (3 sentence indices) and an abstractive summary, 800k summaries in total, in JSON. Baselines: BertSumExt / SummaRuNNer extractive ROUGE-1 50.8% (news) and 56.9% (legal).",
+ "amount_ko": "원문 40만 건, 요약 80만 건",
+ "amount_en": "400k source texts, 800k summaries",
+ "labels_ko": "골라 뽑은 핵심 문장 3개, 새로 쓴 요약문, 글 종류",
+ "labels_en": "3 key sentences picked from the text, newly written summary, text type",
+ "status": "full-run-2026-11-02"
+}

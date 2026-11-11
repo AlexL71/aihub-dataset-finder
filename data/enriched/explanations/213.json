@@ -1,0 +1,12 @@
+{
+ "dataset_id": "213",
+ "easy_ko": "성능이 다른 여러 열화상 카메라로 사람을 찍은 사진에, 카메라가 잰 온도와 실제 체온계로 잰 체온을 짝지어 붙인 데이터입니다. 값싼 열화상 카메라로도 체온을 정확하게 잴 수 있도록 오차를 바로잡는 AI를 만들 수 있습니다.",
+ "easy_en": "Photos of people taken with thermal cameras of different quality, each paired with the temperature the camera measured and the real body temperature from a thermometer. You can build AI that corrects the error so even cheap thermal cameras measure body temperature accurately.",
+ "detail_ko": "고성능·중성능·저성능 열화상 카메라로 촬영한 사람 이미지 461,318장(고성능 35.8만, 중성능 7.4만, 저성능 2.9만)과, 실측 체온 또는 고성능 카메라 값과 짝지은 데이터 24,669쌍으로 구성됩니다. JSON에 얼굴·사람 바운딩박스, 측정 온도, 실측 값, 성별·연령·외형·옷차림이 있습니다. 기준 성능은 CNN + DNN 체온 회귀(고성능) RMSE 0.483이며 성능 표의 단위(mm)와 과제명(Object Detection)이 잘못 적혀 있습니다. 구축량 4.8만은 짝 데이터 기준으로 보입니다.",
+ "detail_en": "461,318 thermal images of people from high-, mid- and low-grade cameras (358k, 74k, 29k) and 24,669 pairs matched to real thermometer readings or high-grade camera values. JSON gives face and person boxes, measured temperature, reference value, and sex, age, appearance and clothing. Baseline: CNN + DNN temperature regression (high-grade) RMSE 0.483; the table wrongly shows the unit as mm and the task as object detection. The 48k built count appears to refer to the paired data.",
+ "amount_ko": "열화상 사진 약 46만 장, 짝 데이터 약 2.5만 쌍",
+ "amount_en": "about 461k thermal images, about 24.7k pairs",
+ "labels_ko": "얼굴·사람 위치 상자, 카메라 온도, 실제 체온, 성별·나이·옷차림",
+ "labels_en": "boxes around face and person, camera temperature, real body temperature, sex, age, clothing",
+ "status": "full-run-2026-11-02"
+}

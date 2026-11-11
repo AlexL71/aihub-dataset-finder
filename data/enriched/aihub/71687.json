@@ -1,0 +1,29 @@
+{
+ "dataset_id": "71687",
+ "title_en": "Battery defect image data",
+ "summary_ko": "이차전지 셀·모듈을 찍은 3D X-Ray CT 이미지 약 22만 장과 원통형 셀 외관(RGB) 이미지 약 22만 장에 결함 영역이 표시되어 있습니다. 배터리 제조 공정에서 불량을 자동으로 찾는 머신비전 AI에 쓸 수 있습니다.",
+ "summary_en": "About 220,000 3D X-ray CT images of battery cells and modules and about 220,000 RGB exterior images of cylindrical cells, with defect regions marked. For machine-vision AI that finds defects in battery production.",
+ "contents_ko": "CT·외관 이미지(jpg, png) + JSON(결함 분할 영역, 결함 종류, 정상/비정상).",
+ "contents_en": "CT and exterior images (jpg, png) + JSON (defect segmentation, defect type, normal/abnormal).",
+ "modalities": ["image"],
+ "tasks": ["segmentation", "anomaly_detection", "image_classification"],
+ "topics": [{"ko": "배터리 제조", "en": "Battery manufacturing"}, {"ko": "품질 검사", "en": "Quality inspection"}],
+ "keywords_ko": ["이차전지", "배터리 불량", "X-Ray CT", "외관 검사", "결함 분할", "머신비전"],
+ "keywords_en": ["secondary battery", "battery defects", "X-ray CT", "visual inspection", "defect segmentation", "machine vision"],
+ "labels": ["polygon", "class", "normal/abnormal"],
+ "file_formats": ["jpg", "png", "json"],
+ "scale_ko": "이미지 446,244장(CT 223,780장, RGB 외관 222,464장)",
+ "classes_example": ["porosity"],
+ "baseline": [{"task": "battery defect segmentation", "model": "DeepLab v3+ (Dilated Residual Network)", "metric": "", "value": ""}],
+ "difficulty": "intermediate",
+ "difficulty_note_ko": "불량 분할 실습에 좋지만 전체 약 507GB입니다. CT나 RGB 중 하나만 일부 받아 쓰세요.",
+ "skills_needed_ko": ["파이썬", "분할 모델", "OpenCV"],
+ "caveats_ko": ["전체 약 507GB", "정상보다 비정상 이미지가 훨씬 많아 실제 공정 비율과 다름", "결함 종류 전체 목록이 팩 앞부분에 없음"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "정상·불량 배터리 분류", "title_en": "Normal vs defective battery", "desc_ko": "외관 사진을 정상과 불량으로 나누는 분류 모델을 만듭니다.", "desc_en": "Classify exterior photos as normal or defective."},
+  {"level": "capstone", "title_ko": "CT 결함 분할 검사기", "title_en": "CT defect segmentation inspector", "desc_ko": "CT 이미지에서 기공 같은 결함 영역을 칠하고 불량 판정을 내립니다.", "desc_en": "Segment defects such as pores in CT images and decide pass/fail."},
+  {"level": "research", "title_ko": "CT와 외관 결합 검사", "title_en": "Combining CT and exterior views", "desc_ko": "내부(CT)와 외관 정보를 함께 쓰면 불량 검출이 나아지는지 연구합니다.", "desc_en": "Study whether combining CT and exterior images improves detection."}
+ ],
+ "doc_used": true,
+ "uncertain": ["결함 종류 목록과 성능 지표 값 확인 필요"]
+}

@@ -1,0 +1,29 @@
+{
+ "dataset_id": "71545",
+ "title_en": "Transport mode detection data",
+ "summary_ko": "스마트폰 센서(AP, 기지국, GPS, IMU)로 기록한 이동 데이터에 걷기·자전거·자동차·버스·지하철 같은 교통수단이 시간 구간별로 표시된 표 데이터입니다. 출발지-도착지 이동 궤적과 대중교통카드·공유 킥보드·차량 궤적 같은 연계 데이터도 있어 교통수단 판별과 다음 위치 예측에 쓸 수 있습니다.",
+ "summary_en": "Phone-sensor travel logs (Wi-Fi AP, cell tower, GPS, IMU) with time segments labelled walk, bike, car, bus, subway or other, plus origin-destination trajectories and linked transit-card, e-scooter and vehicle data. For transport mode detection and next-location prediction.",
+ "contents_ko": "센서·궤적 CSV + 라벨 CSV/JSON(시간 구간별 교통수단, 이동 궤적).",
+ "contents_en": "Sensor and trajectory CSV + label CSV/JSON (transport mode per time segment, trajectories).",
+ "modalities": ["sensor", "tabular"],
+ "tasks": ["tabular_prediction", "forecasting"],
+ "topics": [{"ko": "교통·이동", "en": "Transport and mobility"}, {"ko": "스마트시티", "en": "Smart city"}],
+ "keywords_ko": ["교통수단 판별", "이동 궤적", "GPS", "IMU", "대중교통", "위치 예측"],
+ "keywords_en": ["transport mode detection", "trajectory", "GPS", "IMU", "public transit", "location prediction"],
+ "labels": ["time-series segment", "transport mode", "trajectory"],
+ "file_formats": ["csv", "json"],
+ "scale_ko": "원천 684,534개 (약 456.9GB 표기), 라벨 311,694개, 교통수단 6종",
+ "classes_example": ["WALK", "BIKE", "CAR", "BUS", "SUBWAY", "ETC"],
+ "baseline": [{"task": "next location prediction", "model": "LightMove (Neural ODE)", "metric": "Top-10 accuracy", "value": "61.6%"}, {"task": "transport mode classification", "model": "DenseNet", "metric": "F1-score (macro)", "value": "0.785"}],
+ "difficulty": "intermediate",
+ "difficulty_note_ko": "시계열 센서 데이터를 구간으로 나눠 다뤄야 합니다. 표 데이터 입문 후에 도전하세요.",
+ "skills_needed_ko": ["파이썬", "판다스", "시계열 분류", "지도 좌표 다루기"],
+ "caveats_ko": ["메타데이터는 456.9GB, 파일 트리는 약 104GB로 크기가 다름", "데이터 유형이 '텍스트'로 적혀 있지만 실제는 센서·표 데이터", "위치 데이터라 개인정보 처리 조건 확인 필요"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "걷기·버스·지하철 구분", "title_en": "Walk, bus or subway?", "desc_ko": "GPS 속도와 IMU 값으로 교통수단을 분류하는 모델을 만듭니다.", "desc_en": "Classify transport mode from GPS speed and IMU values."},
+  {"level": "capstone", "title_ko": "출퇴근 동선 예측", "title_en": "Commute route prediction", "desc_ko": "이동 궤적으로 다음에 갈 위치를 예측합니다.", "desc_en": "Predict the next location from trajectories."},
+  {"level": "research", "title_ko": "적은 센서로 교통수단 판별", "title_en": "Mode detection with fewer sensors", "desc_ko": "GPS 없이 IMU·기지국만으로 얼마나 정확히 판별할 수 있는지 연구합니다.", "desc_en": "Study accuracy using only IMU and cell-tower data, without GPS."}
+ ],
+ "doc_used": true,
+ "uncertain": []
+}

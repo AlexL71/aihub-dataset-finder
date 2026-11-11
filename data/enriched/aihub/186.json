@@ -1,0 +1,29 @@
+{
+ "dataset_id": "186",
+ "title_en": "Barrier-free zone driving videos (mobility-impaired view)",
+ "summary_ko": "휠체어 이용자 같은 교통약자의 눈높이에서 실외 경로·진입로·실내 공간을 찍은 영상과 이미지로, 턱·계단처럼 이동을 막는 물체와 경사로처럼 도움이 되는 물체가 표시되어 있습니다(노면 객체 50만, 공간 객체 30만 건). 교통약자용 길 안내 지도나 보조 기기에 쓸 수 있습니다.",
+ "summary_en": "Video and images taken at the eye level of mobility-impaired people such as wheelchair users along outdoor routes, entrances and indoor spaces, labelling objects that block movement (curbs, steps) and ones that help (ramps): 500,000 surface objects and 300,000 space objects. For accessible route maps or assistive devices.",
+ "contents_ko": "주행 영상·이미지 + JSON(노면·공간 객체 상자 또는 다각형, 클래스).",
+ "contents_en": "Video and images + JSON (surface and space object boxes or polygons, class).",
+ "modalities": ["image", "video"],
+ "tasks": ["object_detection", "segmentation"],
+ "topics": [{"ko": "교통약자·접근성", "en": "Mobility-impaired people and accessibility"}, {"ko": "보행·이동 안전", "en": "Pedestrian safety"}],
+ "keywords_ko": ["배리어프리", "교통약자", "휠체어", "경사로", "턱", "이동권"],
+ "keywords_en": ["barrier-free", "mobility-impaired", "wheelchair", "ramp", "curb", "right to mobility"],
+ "labels": ["bounding box", "polygon", "class"],
+ "file_formats": ["jpg", "json"],
+ "scale_ko": "노면정보 객체 50만 건, 공간정보 객체 30만 건(구축량 80만)",
+ "classes_example": ["턱", "부분경사로", "계단", "출입문"],
+ "baseline": [{"task": "object detection", "model": "YOLOv5", "metric": "recall", "value": "88.3%"}],
+ "difficulty": "beginner",
+ "difficulty_note_ko": "YOLO 탐지 실습에 좋고 약 340GB입니다.",
+ "skills_needed_ko": ["파이썬 기초", "YOLO 객체 탐지"],
+ "caveats_ko": ["클래스 목록이 팩 앞부분에 일부만 있음"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "턱·경사로 탐지", "title_en": "Curb and ramp detection", "desc_ko": "이미지에서 턱과 경사로를 탐지합니다.", "desc_en": "Detect curbs and ramps in images."},
+  {"level": "capstone", "title_ko": "휠체어 접근성 지도", "title_en": "Wheelchair accessibility map", "desc_ko": "탐지 결과를 위치와 함께 모아 캠퍼스 접근성 지도를 만듭니다.", "desc_en": "Collect detections with locations to build a campus accessibility map."},
+  {"level": "research", "title_ko": "실내 진입 가능성 판단", "title_en": "Judging indoor accessibility", "desc_ko": "출입구 사진으로 휠체어 진입 가능 여부를 자동 판단하는 방법을 연구합니다.", "desc_en": "Study automatic judgement of wheelchair access from entrance photos."}
+ ],
+ "doc_used": true,
+ "uncertain": ["클래스 이름 일부는 설명에서 추정"]
+}

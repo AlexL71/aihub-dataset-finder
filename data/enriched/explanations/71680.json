@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71680",
+ "easy_ko": "어린이와 청소년 3,596명의 상담을 녹음해 받아 적고 질문과 답으로 정리한 데이터로, 몸과 마음의 건강과 생활 형편을 담고 있습니다. 상담 기록을 자동으로 정리하거나 아이의 위기 신호를 찾는 연구에 쓸 수 있습니다.",
+ "easy_en": "Recorded and transcribed counselling sessions with 3,596 children and teenagers, organised into questions and answers about their physical and mental health and living situation. You can use it for research on automating counselling records or spotting signs that a child is in crisis.",
+ "detail_ko": "만 7~12세 아동·청소년 3,596명의 상담을 녹음·전사(txt)하고 7문항 18항목 이상의 질의응답과 아동 유형(일반아동, 시설거주아동, 저소득층, 다문화가정, 학대경험아동)·학년·성별 정보를 JSON으로 정리했습니다. 아동의 민감한 상담 내용이라 이용 조건과 연구 윤리 승인을 꼭 확인해야 하고, 3,596건으로 규모가 작습니다. AI 판단을 실제 아동 위기 판정에 바로 쓰면 안 되며, 성능 지표 값은 팩에 없습니다.",
+ "detail_en": "Counselling sessions with 3,596 children aged 7 to 12, recorded and transcribed (txt) and organised in JSON as question-answer pairs (7 questions, 18+ items) with child type (general, living in care, low-income, multicultural family, abuse experience), school year and gender. This is sensitive counselling content about children, so be sure to check the terms of use and research-ethics approval; at 3,596 sessions it is small. AI judgements must not be used directly to decide whether a real child is in crisis, and no metric values are in the pack.",
+ "amount_ko": "상담 3,596건(7문항 18항목 이상)",
+ "amount_en": "3,596 counselling sessions (7 questions, 18+ items)",
+ "labels_ko": "질문과 답, 받아쓴 글, 아동 정보",
+ "labels_en": "question-answer, transcript, child profile",
+ "status": "full-run-2026-11-02"
+}

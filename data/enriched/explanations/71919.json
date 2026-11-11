@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71919",
+ "easy_ko": "공개된 특허의 대표 도면 4만 장마다 도면 속 요소, 부품 사이 관계, 발명의 기술적 의미를 차근차근 따져 적은 글을 붙인 데이터입니다. 특허 도면을 해석하거나 특허 명세서 작성, 특허 검색을 돕는 AI에 쓸 수 있습니다.",
+ "easy_en": "40,000 representative drawings from published patents, each with a step-by-step written explanation of the parts in the drawing, how they relate and what the invention means technically. You can use it to build AI that interprets patent drawings, helps write patent specifications or searches patents.",
+ "detail_ko": "공개 특허 공보(KIPRIS)의 대표 도면 40,000장(png)과 도면 요소 인식·구성요소 관계·발명의 기술적 의미를 단계적 사고(CoT)로 적은 추론 텍스트 40,000건(JSON)으로, 도면 유형은 사시도, 분해도, 단면도, 블록도, 흐름도, 공정도, 회로도이며 국제특허분류(IPC)별로 나뉩니다. 페이지에 성능 점수 표가 없고(Qwen3-VL-30B-A3B 소개만 있음), 메타데이터 유형은 '텍스트'지만 원천은 PNG 도면이며, 회로도는 일부 분야에서 매우 적습니다(C 화학·야금 3장).",
+ "detail_en": "40,000 representative patent drawings (png) from published patent gazettes (KIPRIS) with 40,000 JSON chain-of-thought (CoT) texts covering element recognition, component relationships and technical meaning, across drawing types (perspective, exploded, cross-section, block diagram, flow chart, process chart, circuit diagram) grouped by IPC class. There is no score table (only Qwen3-VL-30B-A3B is mentioned); the metadata says 'text' although the sources are PNG drawings; and circuit diagrams are very rare in some fields (3 in C, chemistry and metallurgy).",
+ "amount_ko": "도면 40,000장, CoT 라벨 40,000건",
+ "amount_en": "40,000 drawings, 40,000 CoT labels",
+ "labels_ko": "단계별 해석 글, 도면 종류, 특허 분류",
+ "labels_en": "CoT reasoning, drawing type, IPC",
+ "status": "full-run-2026-11-02"
+}

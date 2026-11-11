@@ -1,0 +1,29 @@
+{
+ "dataset_id": "71558",
+ "title_en": "Korean dialect speech of middle-aged and older adults (Chungcheong, Jeolla, Jeju)",
+ "summary_ko": "충청도·전라도·제주도의 50대 이상 화자가 따라 말하기, 질문 답하기, 2인 대화로 말한 방언 음성 약 2,000시간에 전사와 주석이 붙어 있습니다. 중·노년층 방언 화자의 음성 인식과 사라져 가는 방언 보존에 쓸 수 있습니다.",
+ "summary_en": "About 2,000 hours of dialect speech by speakers aged 50+ in Chungcheong, Jeolla and Jeju (read-after, Q&A and two-person conversation), with transcripts and annotations. For speech recognition of older dialect speakers and dialect preservation.",
+ "contents_ko": "음성(wav) + JSON(전사, 방언 주석, 화자 정보).",
+ "contents_en": "Audio (wav) + JSON (transcripts, dialect annotations, speaker info).",
+ "modalities": ["audio", "text"],
+ "tasks": ["speech_recognition", "audio_classification"],
+ "topics": [{"ko": "방언·한국어", "en": "Dialects and Korean"}, {"ko": "고령층 음성", "en": "Older adults' speech"}],
+ "keywords_ko": ["방언", "중노년층", "충청도", "전라도", "제주도", "음성 인식"],
+ "keywords_en": ["dialect", "older adults", "Chungcheong", "Jeolla", "Jeju", "speech recognition"],
+ "labels": ["transcript", "annotation", "speaker info"],
+ "file_formats": ["wav", "json"],
+ "scale_ko": "음성 약 2,004시간 (충청도 801.1시간·라벨 161,415건, 전라도 1,015시간·라벨 179,844건, 제주도 207.2시간·라벨 56,666건)",
+ "classes_example": ["따라말하기", "질문답하기", "2인대화"],
+ "baseline": [],
+ "difficulty": "advanced",
+ "difficulty_note_ko": "전체 약 155GB이고 음성 인식 모델 학습에 큰 GPU가 필요합니다.",
+ "skills_needed_ko": ["파이썬", "음성 인식 모델", "음성 전처리"],
+ "caveats_ko": ["전체 약 155GB", "여성 화자 비율이 69~83%로 높음", "제주도는 약 207시간으로 다른 지역보다 적음", "메타데이터는 2,004시간, 분포 표 합계는 2,023시간으로 다름", "팩에 성능 지표 값이 없음(BERT·Conformer 사용만 적혀 있음)", "71517 강원·경상판과 구조가 같음"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "충청·전라·제주 방언 구분", "title_en": "Chungcheong, Jeolla or Jeju dialect ID", "desc_ko": "음성이나 전사 글로 어느 지역 방언인지 분류합니다.", "desc_en": "Classify which region's dialect a clip is."},
+  {"level": "capstone", "title_ko": "제주어 자막 생성기", "title_en": "Jeju dialect subtitle generator", "desc_ko": "제주 방언 음성으로 음성 인식을 미세조정해 자막을 만듭니다.", "desc_en": "Fine-tune speech recognition on Jeju speech to make subtitles."},
+  {"level": "research", "title_ko": "적은 데이터 방언 인식", "title_en": "Low-resource dialect recognition", "desc_ko": "데이터가 적은 제주 방언에서 다른 지역 데이터를 활용해 인식률을 높이는 방법을 연구합니다.", "desc_en": "Use other regions' data to improve low-resource Jeju recognition."}
+ ],
+ "doc_used": true,
+ "uncertain": ["감정 등 주석 항목의 구성이 팩에서 확인되지 않음"]
+}

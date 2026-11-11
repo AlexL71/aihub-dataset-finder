@@ -1,0 +1,29 @@
+{
+ "dataset_id": "71369",
+ "title_en": "Bio-medical paper linkage analysis data",
+ "summary_ko": "PubMed의 대장암·유방암·당뇨병·전립선암·심근경색 관련 영어 논문 2만 편(질환별 4천 편)에서 유전자·단백질·질병 같은 생물학적 개체와 그 사이의 관계를 표시한 데이터입니다. 논문에서 생물학적 관계를 자동으로 뽑아 신약 개발을 돕는 바이오 NLP AI에 쓸 수 있습니다.",
+ "summary_en": "20,000 English PubMed papers (4,000 each on colorectal cancer, breast cancer, diabetes, prostate cancer and myocardial infarction) annotated with biological entities (genes, proteins, diseases and more) and the relations between them. For bio-NLP AI that extracts biological relations from papers to support drug discovery.",
+ "contents_ko": "논문 원문(pdf) + JSON(개체명, 개체 간 관계).",
+ "contents_en": "Paper full text (pdf) + JSON (entities, relations).",
+ "modalities": ["text"],
+ "tasks": ["information_extraction"],
+ "topics": [{"ko": "바이오·의료 연구", "en": "Biomedical research"}, {"ko": "신약 개발", "en": "Drug discovery"}],
+ "keywords_ko": ["바이오 NLP", "관계 추출", "PubMed", "신약 개발", "개체명 인식"],
+ "keywords_en": ["bio-NLP", "relation extraction", "PubMed", "drug discovery", "named entity recognition"],
+ "labels": ["biomedical entity", "relation"],
+ "file_formats": ["pdf", "json"],
+ "scale_ko": "논문 2만 편, 질환 5종",
+ "classes_example": ["대장암", "유방암", "당뇨병", "전립선암", "심근경색"],
+ "baseline": [{"task": "biomedical relation extraction", "model": "BERT", "metric": "F1", "value": "0.9638"}],
+ "difficulty": "advanced",
+ "difficulty_note_ko": "약 41GB이고 영어 의학 논문과 생물학 지식이 필요합니다.",
+ "skills_needed_ko": ["파이썬", "BioBERT 등 의료 언어모델", "PDF 텍스트 추출"],
+ "caveats_ko": ["논문 원문 저작권 확인 필요", "AI Hub 데이터 영역이 '한국어'로 적혀 있지만 실제 논문은 영어", "관계 종류 목록이 팩 앞부분에 없음"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "논문 질환 분류", "title_en": "Paper disease classifier", "desc_ko": "논문 초록으로 5개 질환 중 무엇에 관한 논문인지 분류합니다.", "desc_en": "Classify abstracts into the 5 diseases."},
+  {"level": "capstone", "title_ko": "유전자-질병 관계 그래프", "title_en": "Gene-disease knowledge graph", "desc_ko": "추출된 관계로 질환별 지식 그래프를 만들어 보여줍니다.", "desc_en": "Build and visualise a gene-disease knowledge graph."},
+  {"level": "research", "title_ko": "신약 표적 후보 찾기", "title_en": "Finding drug-target candidates", "desc_ko": "관계 그래프에서 새로운 표적 후보를 예측하는 방법을 연구합니다.", "desc_en": "Predict new drug-target candidates from the relation graph."}
+ ],
+ "doc_used": true,
+ "uncertain": ["relation type list"]
+}

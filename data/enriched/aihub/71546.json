@@ -1,0 +1,29 @@
+{
+ "dataset_id": "71546",
+ "title_en": "Daily-life task and command data (spaces)",
+ "summary_ko": "아파트·주택·빌라 같은 실제 한국 생활 공간과 모델하우스를 촬영해 만든 3D 공간 데이터 2,000개입니다. 공간 분류와 분할 라벨이 있어 로봇이나 AI 에이전트가 집 안을 이해하고 명령을 수행하는 가상공간 연구에 쓸 수 있습니다.",
+ "summary_en": "2,000 3D spaces built from real Korean homes (apartments, houses, villas) and model houses, with space-type and segmentation labels. For virtual environments where robots or AI agents understand rooms and follow commands.",
+ "contents_ko": "3D 공간 모델(FBX/OBJ, 텍스처 PNG) + JSON(공간 분류, 분할).",
+ "contents_en": "3D space model (FBX/OBJ, PNG texture) + JSON (space type, segmentation).",
+ "modalities": ["3d"],
+ "tasks": ["segmentation", "3d_reconstruction"],
+ "topics": [{"ko": "로봇·AI 에이전트", "en": "Robots and AI agents"}, {"ko": "실내 3D 공간", "en": "Indoor 3D spaces"}],
+ "keywords_ko": ["3D 공간", "실내 공간", "로봇", "AI 에이전트", "가상공간"],
+ "keywords_en": ["3D spaces", "indoor scenes", "robots", "AI agents", "virtual environment"],
+ "labels": ["space type", "segmentation"],
+ "file_formats": ["fbx", "obj", "png", "json"],
+ "scale_ko": "3D 공간 2,000개 (주거용 1,627개 포함)",
+ "classes_example": ["아파트", "주택", "빌라", "오피스텔", "타운하우스"],
+ "baseline": [],
+ "difficulty": "advanced",
+ "difficulty_note_ko": "3D 공간 파일(FBX)과 가상 환경 도구를 다뤄야 합니다. 파일 하나도 커서(최소 약 0.8GB) 준비가 필요합니다.",
+ "skills_needed_ko": ["파이썬", "3D 모델 다루기", "가상 환경(Unity 등)"],
+ "caveats_ko": ["데이터 통계 표가 연어·명태 수중 이미지 데이터로 잘못 올라가 있음", "페이지 형식은 FBX, 설명서는 OBJ로 적혀 있음", "데이터 유형이 '텍스트'로 적혀 있지만 실제는 3D", "성능 지표 없음", "71547 명령어 데이터와 함께 쓰는 세트"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "공간 종류 분류", "title_en": "Space type classification", "desc_ko": "3D 공간을 렌더링한 이미지로 방·공간 종류를 분류합니다.", "desc_en": "Classify space types from rendered views."},
+  {"level": "capstone", "title_ko": "가상 집 안 길찾기", "title_en": "Navigation in a virtual home", "desc_ko": "3D 공간을 가상 환경에 올려 에이전트가 목표 방까지 가게 합니다.", "desc_en": "Let an agent navigate to a target room in a virtual home."},
+  {"level": "research", "title_ko": "한국형 실내 로봇 명령 수행", "title_en": "Korean home robot instruction following", "desc_ko": "71547 명령어와 함께 언어 명령을 듣고 공간에서 임무를 수행하는 방법을 연구합니다.", "desc_en": "Study following language commands in these spaces with 71547."}
+ ],
+ "doc_used": true,
+ "uncertain": ["분할 클래스 목록과 비주거 공간 종류가 팩에서 확인되지 않음"]
+}

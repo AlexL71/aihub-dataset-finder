@@ -1,0 +1,29 @@
+{
+ "dataset_id": "71266",
+ "title_en": "Science and technology Korean-English parallel translation corpus",
+ "summary_ko": "학술지에서 모은 한→영 번역 문장 150만 개로, 인공지능·빅데이터·IT·경제·정치·북한·국제기구·의료·환경·문화·기후 등 15개 세부 분야의 전문 용어가 들어 있습니다. 학술·기술 문서 전문 번역기에 쓸 수 있습니다.",
+ "summary_en": "1.5 million Korean→English sentence pairs from academic journals across 15 sub-fields such as AI, big data, IT, economics, politics, North Korea, international organisations, medicine, environment, culture and climate. For specialist translators of academic and technical documents.",
+ "contents_ko": "문장 쌍 텍스트(txt) + JSON(원문, 번역, 분야).",
+ "contents_en": "Sentence pair text (txt) + JSON (source, translation, field).",
+ "modalities": ["text"],
+ "tasks": ["translation"],
+ "topics": [{"ko": "번역·외국어", "en": "Translation and foreign languages"}, {"ko": "학술·과학기술", "en": "Academia and science"}],
+ "keywords_ko": ["학술 번역", "한영 번역", "인공지능", "전문 용어", "논문"],
+ "keywords_en": ["academic translation", "Korean-English", "artificial intelligence", "technical terms", "papers"],
+ "labels": ["translation", "field"],
+ "file_formats": ["txt", "json"],
+ "scale_ko": "문장 쌍 150만 개(한-영), 세부 분야 15종",
+ "classes_example": ["인공지능", "빅데이터", "IT", "경제일반", "북한", "사회_의료", "기후"],
+ "baseline": [{"task": "translation (ko→en)", "model": "OpenNMT", "metric": "BLEU", "value": "0.7325"}],
+ "difficulty": "beginner",
+ "difficulty_note_ko": "약 0.65GB로 작아 번역 모델 미세조정 실습에 좋습니다.",
+ "skills_needed_ko": ["파이썬", "Hugging Face", "번역 모델"],
+ "caveats_ko": ["한→영 한 방향만 있음", "BLEU 값이 0~1 단위로 표기됨"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "AI 논문 초록 번역", "title_en": "AI abstract translator", "desc_ko": "인공지능 분야 문장으로 한-영 번역 모델을 학습합니다.", "desc_en": "Train a Korean-English model on AI-field sentences."},
+  {"level": "capstone", "title_ko": "학위논문 초록 번역 도우미", "title_en": "Thesis abstract helper", "desc_ko": "한국어 초록을 넣으면 분야에 맞는 영어 초록 초안을 만듭니다.", "desc_en": "Draft an English abstract from a Korean one with field-aware terms."},
+  {"level": "research", "title_ko": "분야 적응 번역", "title_en": "Domain-adaptive translation", "desc_ko": "분야 정보를 함께 주면 전문 용어 번역이 좋아지는지 연구합니다.", "desc_en": "Test whether giving the field label improves term translation."}
+ ],
+ "doc_used": true,
+ "uncertain": []
+}

@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71386",
+ "easy_ko": "벼, 밀, 고추, 배추, 무 씨앗이 싹트는 과정을 시간 순서로 찍어 잘 싹텄는지 표시한 사진과, 고추·무·상추·배추 여러 품종의 생김새를 찍은 사진과 특징 기록을 담은 데이터입니다. 씨앗 발아 검사나 새 품종의 특징 조사를 자동으로 해 주는 AI를 만들 수 있습니다.",
+ "easy_en": "Time-lapse photos of rice, wheat, chili pepper, napa cabbage and radish seeds sprouting, marked as sprouting well or not, plus photos and trait records of many varieties of pepper, radish, lettuce and cabbage. You can build AI that automates seed germination tests and trait surveys of new varieties.",
+ "detail_ko": "① 5개 작물(벼, 밀, 고추, 배추, 무) 25개 품종 종자의 발아 시계열 이미지 54,867장에 정상발아·이상발아·불발아 바운딩박스, ② 4개 작물(고추, 무, 상추, 배추) 40개 품종의 품종 특성 이미지 약 24만 장(jpg)과 특성 기록(csv)으로 구성됩니다. 성능 지표 표는 비어 있고 YOLOv5 목표 mAP 70% 이상만 소개되어 있습니다. 전체 약 1TB이며, 6개 품종 특성의 항목 이름은 기록에서 확인되지 않습니다.",
+ "detail_en": "Two parts: (1) 54,867 time-lapse germination images of 25 varieties of 5 crops (rice, wheat, chili pepper, napa cabbage, radish) with boxes for normal, abnormal and failed germination; (2) about 240k variety-trait images (jpg) and trait records (csv) for 40 varieties of 4 crops (pepper, radish, lettuce, cabbage). The performance table is empty; only a YOLOv5 target of 70%+ mAP is mentioned. Total size is about 1 TB; the names of the 6 trait items are not in the record.",
+ "amount_ko": "발아 사진 54,867장, 품종 특성 사진 약 24만 장",
+ "amount_en": "54,867 germination images, about 240k trait images",
+ "labels_ko": "씨앗 위치 상자, 발아 상태, 품종, 특징 값",
+ "labels_en": "seed boxes, germination state, variety, trait values",
+ "status": "full-run-2026-11-02"
+}

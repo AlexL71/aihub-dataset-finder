@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71887",
+ "easy_ko": "사과, 배, 복숭아, 자두 나무의 꽃 솎기, 열매 솎기, 가지치기, 수확 작업을 사진과 양손 센서, 누르는 힘 센서로 기록하고, 위치 상자와 질문-답, 차근차근 따지는 추론을 붙인 데이터 3만여 건입니다. 과수원 로봇이 무엇을 어떻게 할지 판단하는 AI에 쓸 수 있습니다.",
+ "easy_en": "Over 30,000 labelled records of flower thinning, fruit thinning, pruning and harvesting on apple, pear, peach and plum trees, captured with cameras, sensors on both hands and pressure sensors, with boxes, questions and answers and step-by-step reasoning. You can use it to build AI that decides what an orchard robot should do and how.",
+ "detail_ko": "사과·배·복숭아·자두 4종 과수의 적화·적과·가지치기·수확 작업을 시각(jpeg), 양손 센서·압력 센서·환경 정보(csv)로 기록하고 상자, 질의응답, 단계적 사고(CoT) 추론을 붙인 라벨 30,194건(JSON; 수확 17,296, 가지치기 6,324, 적과 4,119, 적화 2,455)입니다. 페이지에 성능 점수 표가 없고(VARCO-VISION 소개만 있음), 사과 수확이 24.85%로 많고 복숭아 적과는 1.99%로 적으며, 적화 데이터에는 복숭아·자두가 없습니다.",
+ "detail_en": "30,194 JSON labels (17,296 harvest, 6,324 pruning, 4,119 fruit thinning, 2,455 flower thinning) for apple, pear, peach and plum orchard work, recorded with images (jpeg) and two-hand, pressure and environment sensors (csv), with boxes, question-answer pairs and chain-of-thought (CoT) reasoning. There is no score table (only VARCO-VISION is mentioned); apple harvesting is 24.85% while peach fruit thinning is 1.99%; and flower-thinning data has no peach or plum.",
+ "amount_ko": "라벨 30,194건(수확 17,296, 가지치기 6,324, 적과 4,119, 적화 2,455)",
+ "amount_en": "30,194 labels (17,296 harvest, 6,324 pruning, 4,119 fruit thinning, 2,455 flower thinning)",
+ "labels_ko": "위치 상자, 질문과 답, 단계별 추론",
+ "labels_en": "bounding box, question-answer, CoT",
+ "status": "full-run-2026-11-02"
+}

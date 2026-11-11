@@ -1,0 +1,29 @@
+{
+ "dataset_id": "560",
+ "title_en": "Korean adult whole-body shape and measurement data",
+ "summary_ko": "한국 성인 1,000명(남녀 각 500명, 20~60대)을 촬영한 2D 이미지 100만 장과 3D 몸 형상(메시·포인트클라우드), 키·몸무게 등 36개 실측 치수를 담은 데이터입니다. 사진으로 신체 치수를 재는 AI나 맞춤 옷 서비스에 쓸 수 있습니다.",
+ "summary_en": "2D images (1 million) and 3D body shapes (mesh and point cloud) of 1,000 Korean adults (500 men, 500 women, 20s to 60s+), plus 36 measured body sizes such as height and weight. For AI that measures body size from photos or made-to-measure clothing.",
+ "contents_ko": "2D 이미지(jpg) + 3D 메시(obj)·포인트클라우드(ply) + 신체 치수 CSV + 분할 JSON.",
+ "contents_en": "2D images (jpg) + 3D mesh (obj) and point cloud (ply) + body measurement CSV + segmentation JSON.",
+ "modalities": ["image", "3d", "tabular"],
+ "tasks": ["segmentation", "3d_reconstruction", "tabular_prediction"],
+ "topics": [{"ko": "신체 치수·체형", "en": "Body measurement and shape"}, {"ko": "패션", "en": "Fashion"}],
+ "keywords_ko": ["신체 치수", "체형", "3D 스캔", "맞춤 옷", "한국인 표준"],
+ "keywords_en": ["body measurements", "body shape", "3D scan", "made-to-measure clothing", "Korean anthropometry"],
+ "labels": ["segmentation", "body measurements"],
+ "file_formats": ["jpg", "obj", "ply", "csv", "json"],
+ "scale_ko": "1,000명, 2D 이미지 100만 장, 3D 1,000세트, 치수 36항목",
+ "classes_example": [],
+ "baseline": [],
+ "difficulty": "advanced",
+ "difficulty_note_ko": "2D·3D·표 데이터를 함께 다뤄야 하고 전체 약 436GB입니다.",
+ "skills_needed_ko": ["파이썬", "이미지 분할", "3D 데이터 처리", "회귀 모델"],
+ "caveats_ko": ["전체 약 436GB", "사람 몸을 찍은 민감한 데이터", "치수 실측은 1,000명분뿐", "성능 지표가 팩 앞부분에 없음"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "키·몸무게로 치수 예측", "title_en": "Predict sizes from height and weight", "desc_ko": "치수 CSV로 키·몸무게에서 허리둘레 등을 예측합니다.", "desc_en": "Predict waist and other sizes from height and weight with the CSV."},
+  {"level": "capstone", "title_ko": "사진 기반 옷 사이즈 추천", "title_en": "Photo-based clothing size advice", "desc_ko": "전신 사진을 분할해 치수를 추정하고 옷 사이즈를 추천합니다.", "desc_en": "Segment a full-body photo, estimate sizes and suggest a clothing size."},
+  {"level": "research", "title_ko": "2D 사진으로 3D 체형 복원", "title_en": "3D body shape from 2D photos", "desc_ko": "여러 방향 사진에서 3D 몸 형상을 복원하는 방법을 연구합니다.", "desc_en": "Reconstruct 3D body shape from multi-view photos."}
+ ],
+ "doc_used": true,
+ "uncertain": ["클래스 목록을 페이지와 설명서에서 찾지 못함"]
+}

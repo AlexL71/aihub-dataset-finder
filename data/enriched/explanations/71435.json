@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71435",
+ "easy_ko": "농구, 배구, 핸드볼, 야구, 축구 경기 장면을 여러 방향의 카메라로 찍고, 선수와 경기장 위치를 표시한 뒤 속공, 블로킹, 3점 슛 같은 팀 플레이 장면을 규칙으로 정해 붙인 데이터입니다. 경기 하이라이트를 자동으로 뽑아 요약해 주는 AI를 만들 수 있습니다.",
+ "easy_en": "Basketball, volleyball, handball, baseball and soccer scenes filmed from several camera directions, with players and court features marked and team plays such as fast breaks, blocks and three-point shots defined by rules. You can build AI that picks out and summarises game highlights automatically.",
+ "detail_ko": "5개 종목(농구·배구·야구 각 12,000, 핸드볼 9,000, 축구 15,000) 경기 장면을 8방향 카메라로 촬영한 영상 60,000개(mp4, 1920×1080, 120fps)와 라벨 이미지 192,980장(jpg)에 선수·경기장 바운딩박스·다각형과 집단행동 규칙 정보(속공, 지공, 3점 슛, 블로킹, 서브득점, 피벗 플레이, 번트, 연속패스 등)를 JSON으로 붙였습니다. 기준 성능은 AttNet(ResNet-50) 객체 탐지 정확도 72%, GCN + MLP + HGP-SL 집단행동 인식 정확도 83%입니다. 전체 약 1.4TB이며, 연출된 경기일 수 있어 실제 중계 영상 일반화 확인이 필요하고, 성능 표의 AI TASK가 모두 Object Detection으로 적혀 있습니다.",
+ "detail_en": "60,000 videos (mp4, 1920×1080, 120 fps) from 8 camera directions of 5 sports (basketball, volleyball and baseball 12,000 each, handball 9,000, soccer 15,000) and 192,980 labelled images (jpg), with JSON boxes and polygons for players and court features and rule-based group-action info (fast break, set offence, three-pointer, block, service ace, pivot play, bunt, passing sequence and more). Baselines: AttNet (ResNet-50) object detection accuracy 72%, GCN + MLP + HGP-SL group-action recognition accuracy 83%. Total size is about 1.4 TB; games may be staged, so check generalisation to real broadcasts; all tasks are listed as object detection.",
+ "amount_ko": "영상 60,000개, 라벨 사진 192,980장, 종목 5개",
+ "amount_en": "60,000 videos, 192,980 labelled images, 5 sports",
+ "labels_ko": "선수·경기장 위치 상자·테두리, 팀 플레이 종류와 규칙",
+ "labels_en": "boxes and polygons for players and court, group-action class and rules",
+ "status": "full-run-2026-11-02"
+}

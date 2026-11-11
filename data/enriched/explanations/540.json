@@ -1,0 +1,12 @@
+{
+ "dataset_id": "540",
+ "easy_ko": "어린이가 대본을 읽거나 독후감·일기·자유 주제로 한국어로 말한 녹음과, 그 말을 받아 적은 글을 짝지은 데이터입니다. 아이 목소리를 잘 알아듣는 교육용 챗봇이나 학습 앱을 만들 수 있습니다.",
+ "easy_en": "Recordings of children reading scripts or talking freely in Korean about books, diaries and other topics, paired with written transcripts. You can build educational chatbots or learning apps that understand children's voices well.",
+ "detail_ko": "아동 한국어 음성 5,000시간(정형 75%·비정형 25%, 저소음 80%·소음 20%; 정형 무소음 2,750h 등)으로, wav 음성(16/48kHz), 대본(txt), 전사 JSON(화자 정보, 정형/비정형, 소음 여부)으로 구성됩니다. 기준 성능 지표는 없습니다. 어린이 음성이므로 개인정보·이용 약관 확인이 필요합니다.",
+ "detail_en": "5,000 hours of children's Korean speech (75% scripted, 25% free; 80% low-noise, 20% noisy; e.g. scripted quiet 2,750 h), with wav audio (16/48 kHz), scripts (txt) and JSON transcripts (speaker info, scripted or free, noise flag). No baseline is published. These are children's voices, so check privacy and terms of use.",
+ "amount_ko": "음성 5,000시간",
+ "amount_en": "5,000 hours of speech",
+ "labels_ko": "말소리를 받아 적은 글(전사), 화자 정보, 대본 읽기·자유 말하기, 소음 여부",
+ "labels_en": "transcripts, speaker info, scripted or free, noise flag",
+ "status": "full-run-2026-11-02"
+}

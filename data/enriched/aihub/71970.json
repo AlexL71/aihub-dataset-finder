@@ -1,0 +1,29 @@
+{
+ "dataset_id": "71970",
+ "title_en": "Vietnam and Malaysia call centre data",
+ "summary_ko": "베트남·말레이시아 IT/SW 제품 매뉴얼 21,027건과 콜센터 대화 86,980건(2,020,678문장)을 원천으로, 대화 의도·문맥 분석 라벨 1,000,691건과 이중번역 질의응답(QA)셋을 만든 데이터입니다. 모바일·스마트TV 등 제품별 기능·설치·사용법 상담으로 구성되며, 다국어 상담 챗봇과 AI 콜봇에 쓸 수 있습니다.",
+ "summary_en": "21,027 IT/software manuals and 86,980 call-centre conversations (2,020,678 sentences) from Vietnam and Malaysia, turned into 1,000,691 dialogue-intent and context labels plus a double-translated Q&A set. Covers features, installation and usage for products such as mobile phones and smart TVs. For multilingual support chatbots and AI call bots.",
+ "contents_ko": "대화(csv: 턴·역할·발화) + 매뉴얼 + JSON(의도·문맥, 번역 QA).",
+ "contents_en": "Dialogues (csv: turn, role, utterance) + manuals + JSON (intent and context, translated Q&A).",
+ "modalities": ["text"],
+ "tasks": ["dialogue", "text_classification", "question_answering", "translation"],
+ "topics": [{"ko": "고객 상담", "en": "Customer service"}, {"ko": "동남아 언어", "en": "Southeast Asian languages"}],
+ "keywords_ko": ["콜센터", "베트남어", "말레이어", "의도 분류", "기술지원", "다국어 챗봇"],
+ "keywords_en": ["call centre", "Vietnamese", "Malay", "intent classification", "tech support", "multilingual chatbot"],
+ "labels": ["dialogue intent", "context", "translated question-answer"],
+ "file_formats": ["csv", "json"],
+ "scale_ko": "매뉴얼 21,027건(6,594,838토큰), 콜센터 대화 86,980건(2,020,678문장), 의도·문맥 라벨 1,000,691건",
+ "classes_example": ["기능", "앱설명", "설정", "설치법", "사용법"],
+ "baseline": [],
+ "difficulty": "intermediate",
+ "difficulty_note_ko": "약 0.5GB로 다루기 쉽지만 베트남어·말레이어 처리가 필요합니다.",
+ "skills_needed_ko": ["파이썬", "다국어 트랜스포머", "의도 분류"],
+ "caveats_ko": ["QA셋 수량이 팩 앞부분에서 잘려 있음", "'이중번역'에 쓰인 언어 쌍이 팩 앞부분에 분명하지 않음", "성능 지표 값이 팩 앞부분에 없음"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "상담 의도 분류", "title_en": "Support intent classifier", "desc_ko": "고객 발화가 설치·설정·사용법 중 무엇인지 분류합니다.", "desc_en": "Classify customer utterances by intent."},
+  {"level": "capstone", "title_ko": "다국어 기술지원 챗봇", "title_en": "Multilingual tech support bot", "desc_ko": "매뉴얼을 검색해 베트남어·말레이어로 답하는 챗봇을 만듭니다.", "desc_en": "Bot answering in Vietnamese or Malay from manuals."},
+  {"level": "research", "title_ko": "저자원 언어 대화 전이", "title_en": "Low-resource dialogue transfer", "desc_ko": "한 언어로 배운 상담 모델을 다른 언어로 옮기는 방법을 연구합니다.", "desc_en": "Transfer support models across languages."}
+ ],
+ "doc_used": true,
+ "uncertain": ["QA셋 수량", "번역 언어 쌍"]
+}

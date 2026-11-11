@@ -1,0 +1,12 @@
+{
+ "dataset_id": "78",
+ "easy_ko": "스튜디오에서 모델이 옷을 입고 찍은 전신 사진과 같은 옷의 상품 사진을 짝지어, 모델의 자세(몸의 주요 점)와 몸·옷 영역을 표시한 데이터입니다. 상품 사진만으로 모델이 그 옷을 입은 모습을 만들어 주는 가상 피팅 AI를 만들 수 있습니다.",
+ "easy_en": "Full-body studio photos of models wearing clothes, paired with product photos of the same clothes, with the model's pose (key body points) and body and clothing areas marked. You can build virtual-fitting AI that shows a model wearing an item from just its product photo.",
+ "detail_ko": "단색 배경 스튜디오에서 촬영한 모델 착용 사진 674만 장(라벨 약 12만 건), 제품 사진 4만 장, 제품-착용 쌍 117,270개로 구성됩니다. JSON에는 모델 키포인트, 신체·옷 semantic segmentation(모자, 외상의, 내상의, 하의, 신발), 제품 키포인트·영역, 쌍 정보가 있습니다. 기준 성능은 HRNet 자세 추정 mAP 98.8%, 패션 분할 mIoU 75.5%입니다. 라벨은 약 12만 건으로 사진 수보다 훨씬 적고, 사람 사진이라 이용 약관 확인이 필요합니다.",
+ "detail_en": "6.74M studio photos of models wearing outfits (about 120k labelled), 40k product photos and 117,270 product–worn pairs. JSON holds model keypoints, semantic segmentation of body and clothing (hat, outer top, inner top, bottom, shoes), product keypoints and regions, and pair info. Baselines: HRNet pose estimation mAP 98.8%, fashion segmentation mIoU 75.5%. Only about 120k photos are labelled, far fewer than the total, and people appear in the photos, so check the terms of use.",
+ "amount_ko": "모델 사진 674만 장(라벨 약 12만 건), 상품 사진 4만 장",
+ "amount_en": "6.74M model photos (about 120k labelled), 40k product photos",
+ "labels_ko": "몸의 주요 점(키포인트), 몸·옷 영역, 상품-착용 사진 짝",
+ "labels_en": "body key points, body and clothing regions, product–worn photo pairs",
+ "status": "full-run-2026-11-02"
+}

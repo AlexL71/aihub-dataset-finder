@@ -1,0 +1,29 @@
+{
+ "dataset_id": "71952",
+ "title_en": "Vietnam and Malaysia ESG data",
+ "summary_ko": "베트남·말레이시아의 ESG 환경 규제, 입법 동향, 판례, 기사, 정부·기업 ESG 자료 등 문서 50,098건과 이를 바탕으로 만든 질의응답 10,000건으로 된 데이터입니다. 두 나라의 ESG 규제를 요약하고 질문에 답하는 LLM과 챗봇에 쓸 수 있습니다.",
+ "summary_en": "50,098 documents on ESG environmental regulation, legislative trends, court cases, news and government and corporate ESG material from Vietnam and Malaysia, plus 10,000 Q&A items built from them. For LLMs and chatbots that summarise and answer questions on ESG rules in both countries.",
+ "contents_ko": "JSON(문서 원문, 질의응답).",
+ "contents_en": "JSON (document text, Q&A).",
+ "modalities": ["text"],
+ "tasks": ["question_answering", "summarization", "information_extraction"],
+ "topics": [{"ko": "ESG·지속가능성", "en": "ESG and sustainability"}, {"ko": "법률", "en": "Law"}],
+ "keywords_ko": ["ESG", "베트남", "말레이시아", "환경 규제", "판례", "질의응답"],
+ "keywords_en": ["ESG", "Vietnam", "Malaysia", "environmental regulation", "court cases", "question answering"],
+ "labels": ["question-answer"],
+ "file_formats": ["json"],
+ "scale_ko": "원천 50,098건, 질의응답 10,000건",
+ "classes_example": ["규제", "입법 동향", "판례", "기사", "정부 및 기업 ESG 자료"],
+ "baseline": [],
+ "difficulty": "intermediate",
+ "difficulty_note_ko": "약 0.57GB로 작지만 외국 법률 문서라 언어와 도메인 이해가 필요합니다.",
+ "skills_needed_ko": ["파이썬", "LLM 미세조정", "임베딩 검색"],
+ "caveats_ko": ["문서 언어(현지어·영어·한국어)가 팩 앞부분에 분명하지 않음", "성능 지표 값이 팩 앞부분에 없음"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "ESG 문서 종류 분류", "title_en": "ESG document type classifier", "desc_ko": "문서가 규제·판례·기사 중 무엇인지 분류합니다.", "desc_en": "Classify documents as regulation, case or news."},
+  {"level": "capstone", "title_ko": "동남아 ESG 규제 챗봇", "title_en": "SE Asia ESG rules bot", "desc_ko": "진출 기업을 위해 ESG 규제를 근거와 함께 답해 주는 챗봇을 만듭니다.", "desc_en": "Chatbot answering ESG rule questions with sources."},
+  {"level": "research", "title_ko": "국가 간 규제 비교 요약", "title_en": "Cross-country rule comparison", "desc_ko": "두 나라 규제 차이를 자동으로 비교·요약하는 방법을 연구합니다.", "desc_en": "Automatically compare and summarise rules across countries."}
+ ],
+ "doc_used": true,
+ "uncertain": ["문서 언어", "말레이시아 자료 비율"]
+}

@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71370",
+ "easy_ko": "전국 지하수 관측소에서 자동으로 잰 지하수 높이와 물 상태 값, 수질 검사, 날씨, 지하수 사용량, 위치 정보를 모은 아주 큰 표 데이터입니다. 지하수 높이와 수질이 어떻게 바뀔지 예측하는 AI를 만들 수 있습니다.",
+ "easy_en": "A very large table of groundwater levels and water readings measured automatically at monitoring stations across Korea, plus water-quality tests, weather, groundwater use and location data. You can build AI that predicts how groundwater levels and quality will change.",
+ "detail_ko": "전국 지하수 관측망의 수위·전기전도도 등 자동 측정값 약 2억 건과 수질, 기상, 지하수 이용량, 공간 정보를 합친 약 2.6억 건(csv, json, 일부 jpg)입니다. 기준 성능은 DLinear 예측 MAPE 강우·지표수 기반 지하수위 1.12%, 수질 0.61%, 이용량 기반 관측정 수위 2.97%입니다. 행 수가 매우 많아 메모리 관리가 필요하고, 개요 설명이 매우 짧으며, 71352번 상수원·녹조 데이터와 같은 구축 기관입니다.",
+ "detail_en": "About 260M records (csv, json, some jpg): about 200M automatic readings from the national groundwater monitoring network (water level, electrical conductivity and more) plus water quality, weather, groundwater use and spatial data. Baselines: DLinear forecasting MAPE 1.12% (level from rainfall and surface water), 0.61% (quality), 2.97% (monitoring-well level from usage). The row count is huge, so manage memory; the overview is very brief; same organisation as dataset 71352.",
+ "amount_ko": "측정 기록 약 2.6억 건",
+ "amount_en": "about 260M records",
+ "labels_ko": "지하수 높이, 수질 값, 사용량",
+ "labels_en": "water level, water quality, usage",
+ "status": "full-run-2026-11-02"
+}

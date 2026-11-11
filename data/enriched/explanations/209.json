@@ -1,0 +1,12 @@
+{
+ "dataset_id": "209",
+ "easy_ko": "배우들이 걷기, 손 흔들기, 홈트레이닝, 요가, 재활 동작 같은 여러 동작을 하는 모습을 여러 카메라로 찍고, 관절 위치와 입체 몸 모형, 체형 정보를 만든 데이터입니다. 사진 한 장으로 사람의 입체 자세와 체형을 되살리는 AI를 만들어 운동 코칭이나 재활에 쓸 수 있습니다.",
+ "easy_en": "Actors performing many movements, such as walking, waving, home workouts, yoga and rehabilitation exercises, filmed by many cameras, with joint positions, full body models in depth and body-shape data made. You can build AI that rebuilds a person's pose and body shape in depth from one photo, for exercise coaching or rehab.",
+ "detail_ko": "배우 24명이 70가지 동작(기본 동작, 운동, 재활 BBS 동작 등)을 다시점 카메라로 촬영한 2D 이미지 200만 장(jpg)과 3D 모델 50만 건으로, 2D 자세 JSON, 3D 자세 JSON(관절 x·y·z, 회전), 3D 형태(obj), 점구름 2.5만(ply), 카메라 보정, 액터별 체형 파라미터가 있습니다. 기준 성능 지표는 없습니다. 전체 약 4TB이며 배우가 24명뿐이라 체형 다양성이 제한적입니다.",
+ "detail_en": "2M 2D images (jpg) and 500k 3D models of 24 actors performing 70 movements (basic motions, exercise, rehabilitation balance-test moves), filmed by multi-view cameras, with 2D pose JSON, 3D pose JSON (joint x, y, z and rotation), 3D meshes (obj), 25k point clouds (ply), camera calibration and per-actor body-shape parameters. No baseline is published. Total size is about 4 TB; only 24 actors limits body-shape diversity.",
+ "amount_ko": "이미지 200만 장, 입체 모델 50만 건, 동작 70종",
+ "amount_en": "2M images, 500k 3D models, 70 movements",
+ "labels_ko": "관절 위치(평면·입체), 입체 몸 모형, 체형 값, 카메라 보정 정보",
+ "labels_en": "2D and 3D joint positions, 3D body mesh, body-shape parameters, camera calibration",
+ "status": "full-run-2026-11-02"
+}

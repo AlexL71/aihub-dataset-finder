@@ -1,0 +1,12 @@
+{
+ "dataset_id": "68",
+ "easy_ko": "배우들이 여러 가지 손동작을 하거나 단어를 말하는 모습을 찍고, 손가락 마디 위치와 입술 모양의 주요 점을 표시한 데이터입니다. 손동작이나 수어를 알아보는 AI, 소리 없이 입 모양만 보고 어떤 단어인지 읽어 내는 AI를 만들 수 있습니다.",
+ "easy_en": "Videos of actors making many hand gestures or saying words, with the finger-joint positions and key points of the lips marked. You can build AI that recognises hand gestures or sign language, or reads words from lip movements without sound.",
+ "detail_ko": "손 데이터는 배우 209명이 72가지 손동작을 한 Full-HD 이미지 50만 장(jpg), 카메라 파라미터, 3D 손 모델(obj), 21개 관절 3D 위치와 손 영역 분할(JSON)이며 3D 손 자세 10만 개를 포함합니다. 입술 데이터는 배우 200명이 단어 1,000개를 발화한 영상 50만 개(mp4)와 입술 특징점 24개, 3D 모델입니다. 기준 성능은 RootNet + H3Net 3D 손 자세 MPJPE 17.8mm, Inception v4 단어 독순 WER 3.5%입니다. 전체 약 645GB이며 얼굴(입술)이 나오는 영상이라 이용 약관 확인이 필요합니다.",
+ "detail_en": "Hands: 500k Full-HD images (jpg) of 209 actors making 72 gestures, with camera parameters, 3D hand meshes (obj) and JSON with 21 3D joint positions and hand segmentation, including 100k 3D hand poses. Lips: 500k videos (mp4) of 200 actors saying 1,000 words, with 24 lip landmarks and 3D models. Baselines: RootNet + H3Net 3D hand pose MPJPE 17.8 mm, Inception v4 word lip reading WER 3.5%. Total size is about 645 GB; faces (lips) are visible, so check the terms of use.",
+ "amount_ko": "손 이미지 50만 장, 입술 영상 50만 개, 단어 1,000개",
+ "amount_en": "500k hand images, 500k lip videos, 1,000 words",
+ "labels_ko": "손가락 마디 위치(입체), 입술 주요 점, 손 영역, 단어 이름",
+ "labels_en": "3D hand joint positions, lip key points, hand region, spoken word",
+ "status": "full-run-2026-11-02"
+}

@@ -1,0 +1,12 @@
+{
+ "dataset_id": "463",
+ "easy_ko": "TV와 라디오 방송에서 두 명 이상이 자연스럽게 나눈 대화를 녹음하고, 그 말을 받아 적은 글과 누가 언제 말했는지를 표시한 데이터입니다. 방송 자막을 자동으로 만들거나 대화를 글로 바꾸는 AI를 만들 수 있습니다.",
+ "easy_en": "Recordings of natural conversations between two or more people on TV and radio, with written transcripts and who spoke when. You can build AI that makes broadcast subtitles automatically or turns conversations into text.",
+ "detail_ko": "TV·라디오 방송 대화체 음성 10,000시간(wav)과 JSON(전사, 화자, 발화 구간, 억양구 경계, 비식별 표시, 22개 카테고리)으로 구성되며, 개인정보와 혐오 발언은 비식별 처리되었습니다. 기준 성능은 기록에서 확인되지 않으며 설명에 ESPnet Conformer가 언급됩니다. 방송 음원이라 이용 조건 확인이 필요합니다.",
+ "detail_en": "10,000 hours of conversational broadcast speech (wav) with JSON transcripts, speaker, utterance segments, intonation-phrase boundaries, de-identification marks and 22 categories; personal data and hate speech are masked. No baseline is visible, though ESPnet Conformer is mentioned. Broadcast audio means the usage terms must be checked.",
+ "amount_ko": "음성 10,000시간, 분야 22개",
+ "amount_en": "10,000 hours of speech, 22 categories",
+ "labels_ko": "말소리를 받아 적은 글(전사), 말한 사람과 시간, 억양 끊김 표시",
+ "labels_en": "transcripts, speaker turns and timing, intonation boundaries",
+ "status": "full-run-2026-11-02"
+}

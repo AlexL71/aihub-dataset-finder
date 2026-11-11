@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71263",
+ "easy_ko": "교양, 관찰 예능, 리얼 버라이어티, 드라마, 라디오 같은 방송 분야의 한국어-중국어, 한국어-일본어(양방향) 번역 문장을 짝지은 데이터입니다. 방송 프로그램 자막을 다른 나라 말로 옮기는 번역기를 만들 수 있습니다.",
+ "easy_en": "Sentence pairs translated between Korean and Chinese or Japanese (both directions) in fields such as educational shows, observational and reality variety shows, dramas and radio. You can build translators that localise TV subtitles into other languages.",
+ "detail_ko": "한국어-중국어, 한국어-일본어(양방향) 번역 문장 쌍 약 240만~300만 개(txt, JSON: 원문, 번역, 분야)입니다. 기준 성능은 OpenNMT BLEU 한→중 0.7485, 한→일 0.738, 중→한 0.7084입니다. BLEU 값이 0~1 단위로 적혀 있으며, 페이지 구축량(300만)과 통계표 합계(240만)가 다르고, 방송 대사 저작권 때문에 사용 범위 확인이 필요합니다.",
+ "detail_en": "About 2.4–3M sentence pairs between Korean and Chinese or Japanese (both directions) (txt and JSON: source, translation, field). Baselines: OpenNMT BLEU 0.7485 (ko→zh), 0.738 (ko→ja), 0.7084 (zh→ko). BLEU is given on a 0–1 scale; the page's build count (3M) differs from the statistics total (2.4M); broadcast-dialogue copyright limits use.",
+ "amount_ko": "번역 문장 쌍 약 240만~300만 개",
+ "amount_en": "About 2.4–3M sentence pairs",
+ "labels_ko": "번역 문장 짝, 방송 장르",
+ "labels_en": "sentence pairs, broadcast genre",
+ "status": "full-run-2026-11-02"
+}

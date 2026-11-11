@@ -1,0 +1,32 @@
+{
+ "dataset_id": "589",
+ "title_en": "Forest tree species image data (Gyeongsang)",
+ "summary_ko": "경상 지역 항공사진과 위성 모사영상 약 11.5만 건에 소나무·낙엽송·기타 침엽수·활엽수·상록활엽수·비산림 등 수종 영역을 칠한 데이터입니다. 숲의 수종 지도를 만들거나 산림 변화를 찾는 AI에 쓸 수 있습니다.",
+ "summary_en": "About 115,000 aerial photos and simulated satellite images of the Gyeongsang region, with tree species areas painted (pine, larch, other conifers, broadleaf, evergreen broadleaf, non-forest and more). For AI that maps tree species or detects forest change.",
+ "contents_ko": "항공·위성 영상(TIFF) + 라벨 마스크(TIFF) + JSON(속성).",
+ "contents_en": "Aerial and satellite images (TIFF) + label masks (TIFF) + JSON (attributes).",
+ "modalities": ["image"],
+ "tasks": ["segmentation"],
+ "topics": [{"ko": "산림·환경", "en": "Forests and environment"}, {"ko": "원격탐사", "en": "Remote sensing"}],
+ "keywords_ko": ["산림 수종", "항공영상", "위성영상", "경상", "임상도"],
+ "keywords_en": ["tree species", "aerial imagery", "satellite imagery", "Gyeongsang", "forest map"],
+ "labels": ["segmentation mask", "species class"],
+ "file_formats": ["tiff", "json"],
+ "scale_ko": "영상 약 11.5만 건, 클래스 7종",
+ "classes_example": ["소나무", "낙엽송", "기타침엽수", "활엽수", "상록활엽수", "판독불가", "비산림"],
+ "baseline": [
+  {"task": "species segmentation (aerial)", "model": "U-Net", "metric": "mIoU", "value": "80.13%"},
+  {"task": "species segmentation (simulated satellite)", "model": "U-Net", "metric": "mIoU", "value": "72.26%"}
+ ],
+ "difficulty": "intermediate",
+ "difficulty_note_ko": "약 86GB로 중간 크기입니다. 처음이라면 10GB짜리 제주판(586번)부터 해 보세요.",
+ "skills_needed_ko": ["파이썬", "분할 모델(U-Net)", "TIFF·GIS 기초"],
+ "caveats_ko": ["경상 지역만 있음", "통계표가 팩에 비어 있어 클래스 분포를 알 수 없음", "586·588번 다른 지역판과 구조가 같음"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "소나무 숲 찾기", "title_en": "Find pine forests", "desc_ko": "항공사진에서 소나무 영역만 칠하는 모델을 만듭니다.", "desc_en": "Segment only pine areas in aerial photos."},
+  {"level": "capstone", "title_ko": "산불 위험 수종 지도", "title_en": "Wildfire-risk species map", "desc_ko": "불에 잘 타는 침엽수 비율을 지도로 보여줍니다.", "desc_en": "Map the share of flammable conifers."},
+  {"level": "research", "title_ko": "3개 지역 통합 학습", "title_en": "Three-region joint training", "desc_ko": "제주·전라·경상 데이터를 합치면 성능이 얼마나 좋아지는지 연구합니다.", "desc_en": "Study the gain from training on Jeju, Jeolla and Gyeongsang together."}
+ ],
+ "doc_used": true,
+ "uncertain": ["class distribution not in pack"]
+}

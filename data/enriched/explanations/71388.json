@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71388",
+ "easy_ko": "건설 현장 장비의 위치 기록, 자재가 들어오고 나가는 영상, 건설 자재 사진, 굴착기 사진에 위치 상자, 굴착기 몸의 주요 점, 영역, 작업 종류를 표시한 데이터입니다. 공사 장비가 무슨 일을 얼마나 했는지 자동으로 추적해 공사 생산성을 재는 AI를 만들 수 있습니다.",
+ "easy_en": "Location tracks of construction equipment, videos of materials coming in and out, photos of building materials and photos of excavators, marked with boxes, excavator key points, areas and work type. You can build AI that tracks what construction equipment does and measures site productivity.",
+ "detail_ko": "건설 장비 20종의 위치 궤적 3,870일치(txt), 자재 입출고 영상 312시간(avi, mp4)과 이미지 10,158장, 건설 자재 이미지 101,459장(20종), 굴착기 이미지 100,406장(jpg, jpeg)에 바운딩박스, 굴착기 키포인트, 분할, 작업 공정(토공, 운송, 상차, 양중, 지면 천공 등), 요약을 JSON·CSV로 붙였습니다. 굴착기 키포인트 PCK 지표만 소개되고 성능 점수는 없습니다. 파일 트리는 약 413GB인데 페이지는 총 1.58TB로 적혀 있어 다르고, 자재 클래스 표에 같은 이름(castIronCover)이 두 번 나옵니다.",
+ "detail_en": "Location tracks of 20 equipment types over 3,870 days (txt), 312 hours of material in/out video (avi, mp4) with 10,158 images, 101,459 construction-material images (20 types) and 100,406 excavator images (jpg, jpeg), with JSON/CSV boxes, excavator keypoints, segmentation, work type (earthwork, hauling, loading, lifting, drilling and more) and text summaries. Only a PCK metric for excavator keypoints is mentioned, with no score. The file tree shows about 413 GB while the page says 1.58 TB; the material class table lists 'castIronCover' twice.",
+ "amount_ko": "위치 기록 3,870일, 영상 312시간, 사진 약 21만 장",
+ "amount_en": "3,870 days of tracks, 312 hours of video, about 210k images",
+ "labels_ko": "위치 상자, 굴착기 주요 점, 영역, 작업 종류, 요약 글",
+ "labels_en": "boxes, excavator key points, masks, work type, text summary",
+ "status": "full-run-2026-11-02"
+}

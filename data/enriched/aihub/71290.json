@@ -1,0 +1,29 @@
+{
+ "dataset_id": "71290",
+ "title_en": "Overseas trademark image AI data",
+ "summary_ko": "1800년대부터 2022년까지 미국 등 해외에 출원된 상표 이미지 약 84만 장에, 변리사가 참여해 비엔나코드(상표 도형 분류) 중분류 기준으로 원·선·사각형·동물·새·사람 몸 같은 도형 객체 약 151만 개를 상자·분할로 표시한 데이터입니다. 유사 상표 검색이나 로고 도형 인식 AI에 쓸 수 있습니다.",
+ "summary_en": "About 840,000 overseas (mainly US) trademark images filed from the 1800s to 2022, with about 1.51 million figure objects (circles, lines, squares, animals, birds, human body parts and more) marked by boxes and segmentation by Vienna Code mid-level class with patent attorneys involved. For similar-trademark search or logo figure recognition.",
+ "contents_ko": "상표 이미지(jpg) + JSON(도형 상자, 분할, 비엔나코드).",
+ "contents_en": "Trademark images (jpg) + JSON (figure boxes, segmentation, Vienna Code).",
+ "modalities": ["image"],
+ "tasks": ["object_detection", "segmentation", "retrieval_recommendation"],
+ "topics": [{"ko": "특허·지식재산", "en": "Patents and intellectual property"}, {"ko": "디자인", "en": "Design"}],
+ "keywords_ko": ["해외 상표", "로고", "비엔나코드", "USPTO", "유사 상표 검색"],
+ "keywords_en": ["overseas trademarks", "logos", "Vienna Code", "USPTO", "similar trademark search"],
+ "labels": ["bounding box", "segmentation", "Vienna Code class"],
+ "file_formats": ["jpg", "json"],
+ "scale_ko": "상표 이미지 약 84만 장, 도형 객체 약 151만 개",
+ "classes_example": ["Circles", "Lines, bands, bars", "Squares", "Rectangles", "Natural phenomena", "Birds, bats"],
+ "baseline": [],
+ "difficulty": "intermediate",
+ "difficulty_note_ko": "약 24GB로 받기 쉽고 탐지 실습에 좋습니다.",
+ "skills_needed_ko": ["파이썬", "YOLO 탐지", "임베딩 검색(FAISS 등)"],
+ "caveats_ko": ["실제 기업 상표 이미지라 상업적 사용 주의", "성능 지표 표가 팩에서 비어 있음", "71285번 국내 사용자 상표 데이터와 같은 구축 기관"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "로고 도형 탐지", "title_en": "Logo shape detection", "desc_ko": "상표에서 원·사각형·동물 같은 도형을 찾습니다.", "desc_en": "Detect circles, squares, animals and other shapes in logos."},
+  {"level": "capstone", "title_ko": "해외 출원 전 유사 상표 체크", "title_en": "Pre-filing trademark check", "desc_ko": "내 로고와 비슷한 미국 상표를 찾아 보여줍니다.", "desc_en": "Find US trademarks similar to your logo."},
+  {"level": "research", "title_ko": "시대별 로고 디자인 변화", "title_en": "Logo design over time", "desc_ko": "연도별 도형 분포로 로고 디자인 트렌드를 분석합니다.", "desc_en": "Analyse logo design trends from shape distribution by year."}
+ ],
+ "doc_used": true,
+ "uncertain": ["baseline values"]
+}

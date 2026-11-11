@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71733",
+ "easy_ko": "전통 한복(윗옷, 아래옷, 겉옷, 덧옷)과 장신구 사진 약 126만 장과 입체 모형 1,135개에, 디자인, 색, 무늬와 시대, 신분 같은 정보를 붙인 데이터입니다. 한복 디자인을 분석하거나 가상으로 한복을 입어 보는 AI에 쓸 수 있습니다.",
+ "easy_en": "About 1.26 million photos and 1,135 three-dimensional models of traditional hanbok (tops, bottoms, outer and over-garments) and accessories, with design, colour, pattern, era and social-status information. You can use it to analyse hanbok design or build virtual hanbok try-on AI.",
+ "detail_ko": "전통 한복(웃옷, 아래옷, 겉옷, 덧옷)과 장신구(쓰개, 몸장식 등)의 2D 이미지 1,264,797장(png)과 3D 모델 1,135개(fbx + png 맵)에 디자인·색상·문양과 시대·신분·착장 상황 정보를 분할 영역·메타정보(JSON)로, 이미지 캡션 63,226건을 붙였습니다. 페이지에 성능 점수 표가 없고(Mask R-CNN 소개만 있음), 분포 표의 비율이 100%를 넘는 값(107.8% 등)으로 적혀 있으며, 캡션은 일부 이미지에만 있습니다.",
+ "detail_en": "1,264,797 2D images (png) and 1,135 3D models (fbx + png maps) of traditional hanbok (tops, bottoms, outer and over-garments) and accessories (headwear, body ornaments), with JSON segmentation and metadata on design, colour, pattern, era, social status and occasion, plus 63,226 image captions. There is no score table (only Mask R-CNN is described), the distribution table shows shares above 100% (such as 107.8%), and captions cover only some images.",
+ "amount_ko": "2D 이미지 1,264,797장, 3D 모델 1,135개, 캡션 63,226건",
+ "amount_en": "1,264,797 2D images, 1,135 3D models, 63,226 captions",
+ "labels_ko": "옷 부분 영역, 사진 설명, 시대·신분 등 정보",
+ "labels_en": "segmentation, captions, metadata",
+ "status": "full-run-2026-11-02"
+}

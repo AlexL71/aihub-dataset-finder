@@ -1,0 +1,12 @@
+{
+ "dataset_id": "625",
+ "easy_ko": "영상 댓글과 온라인 게시판에서 모은 말하듯 쓴 한국어 글에, 사람·장소 같은 이름, 새로 생긴 말, '음', '아' 같은 감탄사를 표시한 아주 큰 데이터입니다. 인터넷 말투를 잘 알아듣는 챗봇이나 댓글 분석 AI를 만들 수 있습니다.",
+ "easy_en": "A very large collection of casual Korean writing from video comments and online forums, with names (people, places and more), newly coined words and interjections such as 'um' and 'ah' marked. You can build chatbots or comment-analysis AI that understand internet-style Korean.",
+ "detail_ko": "영상 댓글(엔터테인먼트, 사회, 게임, 생활, 제품리뷰 등)과 온라인 게시판 등 16종 출처의 구어체 한국어 텍스트 10억 어절(JSON)에 개체명, 신조어, 간투어 등 형태소 태그를 붙였습니다. 기준 성능은 BERT / ELECTRA KLUE-STS F1 0.8314, KLUE-NER F1 0.8963입니다. 정제했다고 하지만 댓글 특성상 불쾌한 표현이 남아 있을 수 있고, 감정 라벨은 없으며, 624번 웹 말뭉치와 같은 구축 기관입니다.",
+ "detail_en": "1 billion words (eojeol) of colloquial Korean from 16 sources such as video comments (entertainment, society, games, lifestyle, product reviews) and online forums, in JSON with named-entity, new-word and morpheme tags (including interjections). Baselines: BERT / ELECTRA KLUE-STS F1 0.8314 and KLUE-NER F1 0.8963. Despite cleaning, offensive comments may remain; there are no emotion labels; built by the same organisation as dataset 624.",
+ "amount_ko": "글 10억 어절, 출처 16종",
+ "amount_en": "1 billion words, 16 sources",
+ "labels_ko": "이름(개체명), 새로 생긴 말, 감탄사 같은 말 단위",
+ "labels_en": "named entities, new-word tags, morpheme tags",
+ "status": "full-run-2026-11-02"
+}

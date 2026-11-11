@@ -1,0 +1,12 @@
+{
+ "dataset_id": "162",
+ "easy_ko": "드론과 카메라로 다리, 댐, 옹벽, 건물을 찍은 사진에서 콘크리트 균열, 벗겨짐, 물 샘, 녹슨 철근 같은 손상 부분을 표시한 데이터입니다. 사람이 직접 올라가지 않아도 건물과 시설이 안전한지 점검해 주는 AI를 만들 수 있습니다.",
+ "easy_en": "Drone and camera photos of bridges, dams, retaining walls and buildings, with damage such as concrete cracks, peeling, leaks and exposed rusty steel marked. You can build AI that checks whether structures are safe without people climbing up to inspect them.",
+ "detail_ko": "드론과 고해상도 카메라로 촬영한 교량·댐·옹벽·건물 결함 이미지 50만 건에 6개 결함 클래스(콘크리트 균열 17만, 강재 손상 10만, 백태/누수 8만, 박리 6.1만, 도장 손상 5.5만, 철근 노출 3.4만)가 다각형 또는 바운딩박스와 재질·시설물 종류 정보로 라벨링되어 있습니다. 전체 용량은 약 3.8TB입니다. 성능 지표는 확인되지 않았습니다.",
+ "detail_en": "500k defect images of bridges, dams, retaining walls and buildings taken by drone and high-resolution camera, labelled with polygons or boxes for six defect classes (concrete crack 170k, steel damage 100k, efflorescence/leak 80k, spalling 61k, paint damage 55k, exposed rebar 34k), plus material and structure type. Total size about 3.8 TB; no performance figures were found.",
+ "amount_ko": "손상 사진 50만 장, 손상 종류 6가지",
+ "amount_en": "500k damage photos, 6 damage types",
+ "labels_ko": "손상 부분 윤곽 또는 상자, 손상 종류, 재질",
+ "labels_en": "outline or box around the damage, damage type, material",
+ "status": "sample-2026-11-02"
+}

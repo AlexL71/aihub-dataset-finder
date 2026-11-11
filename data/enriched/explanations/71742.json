@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71742",
+ "easy_ko": "일상 물건 4만 2천여 개를 컴퓨터 속 입체 물건으로 만들고, 깨끗한지, 액체가 찼는지, 더러운지 같은 상태와 열 수 있는지, 집을 수 있는지 같은 쓰임새를 표시한 데이터입니다. 명령을 따르는 로봇이 물건을 알아보는 데 쓸 수 있습니다.",
+ "easy_en": "Over 42,000 everyday objects built as three-dimensional computer models, marked with their state (clean, filled with liquid or dirty) and what can be done with them (can be opened, can be picked up). You can use it to help command-following robots recognise objects.",
+ "detail_ko": "일상 물체 42,003개의 3D 물체(fbx)와 렌더링 이미지(png)에 물체당 상태 3종(예: 컵-깨끗한, 컵-액체가 차있는, 컵-더러운)과 활용 속성(예: 열 수 있는, 집을 수 있는), 의미·개체 분할, 깊이를 JSON으로 붙였습니다. 페이지에 성능 점수 표가 없고, 물체 종류 전체 목록은 팩 앞부분에 없습니다. 71741(공간)·71743(명령어)과 같은 시리즈입니다.",
+ "detail_en": "42,003 everyday 3D objects (fbx) with rendered images (png) and JSON states (3 per object, such as cup clean, cup filled with liquid, cup dirty), affordances (such as openable, pickable), semantic and instance segmentation and depth. There is no score table, and the full object list is not in the pack. Part of a series with 71741 (spaces) and 71743 (commands).",
+ "amount_ko": "3D 물체 42,003개(물체당 상태 3종)",
+ "amount_en": "42,003 3D objects (3 states each)",
+ "labels_ko": "물체 영역, 깊이, 상태, 쓰임새",
+ "labels_en": "semantic segmentation, instance segmentation, depth, state, affordance",
+ "status": "full-run-2026-11-02"
+}

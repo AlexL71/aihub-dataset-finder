@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71384",
+ "easy_ko": "다큐, 교양, 예능, 드라마, 인터뷰 같은 방송의 한국어 말소리와 받아 적은 글에, 독일어·프랑스어·이탈리아어 번역문과 그 나라 사람이 읽은 녹음을 짝지어 둔 데이터입니다. 방송 자막을 자동으로 만들거나 말을 바로 다른 나라 말로 옮기는 통역 AI를 만들 수 있습니다.",
+ "easy_en": "Korean speech from broadcasts such as documentaries, educational shows, entertainment, dramas and interviews, with transcripts, paired with German, French and Italian translations and recordings by native speakers. You can build AI that makes subtitles automatically or interprets speech into another language.",
+ "detail_ko": "방송 약 600시간의 한국어 음성(wav)과 전사 JSON, 독일어·프랑스어·이탈리아어 번역 JSON, 원어민 발화 음성(wav)으로 구성됩니다(한국어 음성 495,152개, 번역 1,671,131개, 원어민 발화 1,687,263개, 언어 4종). 기준 성능은 CTC + Transformer 음성 인식 CER 8.87%, Transformer 번역 BLEU 한→독 0.4073, 한→불 0.4306, 한→이 0.3936입니다. 전체 약 346GB이며, 한국어 음성 수(약 50만)와 번역·발화 수(약 167만)가 달라 짝 구조 확인이 필요하고, 음성 인식 CER이 71379번 영어판과 같은 값으로 적혀 있으며, 71373번 번역 말뭉치와 같은 기관·구성입니다.",
+ "detail_en": "About 600 hours of Korean broadcast speech (wav) with Korean transcripts (JSON), German, French and Italian translations (JSON) and native-speaker recordings (wav) (495,152 Korean segments, 1,671,131 translations, 1,687,263 native-speaker recordings, 4 languages). Baselines: CTC + Transformer speech recognition CER 8.87%, Transformer translation BLEU 0.4073 (ko→de), 0.4306 (ko→fr), 0.3936 (ko→it). Total size is about 346GB; the Korean segment count (about 500k) differs from the translation and recording counts (about 1.67M), so check how pairs are linked; the CER is the same value as in the English version (71379); same organisation and structure as translation corpus 71373.",
+ "amount_ko": "방송 약 600시간, 언어 4종",
+ "amount_en": "about 600 hours of broadcasts, 4 languages",
+ "labels_ko": "말소리를 받아 적은 글(전사), 번역문, 원어민 녹음",
+ "labels_en": "transcripts, translations, native-speaker recordings",
+ "status": "full-run-2026-11-02"
+}

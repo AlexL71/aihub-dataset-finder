@@ -1,0 +1,29 @@
+{
+ "dataset_id": "172",
+ "title_en": "Vehicle type, model year and licence plate recognition images",
+ "summary_ko": "부천시 CCTV와 주유소·주차장 카메라 영상 2,189시간에서 잘라낸 차량 이미지 50만 장(차종·색상·제조사·연식 정보)과 번호판 이미지 10만 장(번호 값)입니다. 차종 인식, 번호판 읽기, 도난 차량 추적 AI에 쓸 수 있습니다.",
+ "summary_en": "500,000 cropped vehicle images (type, colour, maker, model year) and 100,000 licence-plate images (plate text) taken from 2,189 hours of Bucheon CCTV and petrol-station and parking-lot cameras. For vehicle recognition, plate reading and stolen-car tracking AI.",
+ "contents_ko": "차량 크롭 이미지 + JSON(차종, 색상, 제조사, 연식), 번호판 크롭 이미지 + JSON(번호 값).",
+ "contents_en": "Cropped vehicle image + JSON (type, colour, maker, year); cropped plate image + JSON (plate text).",
+ "modalities": ["image"],
+ "tasks": ["image_classification", "ocr", "object_detection"],
+ "topics": [{"ko": "자동차", "en": "Cars"}, {"ko": "교통·보안", "en": "Traffic and security"}, {"ko": "주차·주유소", "en": "Parking and petrol stations"}],
+ "keywords_ko": ["번호판 인식", "차종 분류", "연식", "CCTV", "주차장", "도난 차량"],
+ "keywords_en": ["licence plate recognition", "vehicle type", "model year", "CCTV", "parking lot", "stolen car"],
+ "labels": ["class (type, maker, year, colour)", "plate text"],
+ "file_formats": ["jpg", "json"],
+ "scale_ko": "차량 이미지 50만 장, 번호판 이미지 10만 장, 원본 영상 약 2,189시간",
+ "classes_example": [],
+ "baseline": [{"task": "licence plate OCR", "model": "CRAFT + 4-stage STR", "metric": "accuracy", "value": "99.75%"}],
+ "difficulty": "beginner",
+ "difficulty_note_ko": "이미지가 이미 잘려 있어 분류·OCR 실습이 쉽습니다. 약 232GB입니다.",
+ "skills_needed_ko": ["파이썬", "전이학습 이미지 분류", "OCR 모델 사용"],
+ "caveats_ko": ["번호판은 개인정보와 연결될 수 있어 이용 약관과 사용 목적을 반드시 확인"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "차량 색상·차종 분류", "title_en": "Vehicle colour and type classifier", "desc_ko": "차량 이미지로 색상과 차종을 분류합니다.", "desc_en": "Classify vehicle colour and type from images."},
+  {"level": "capstone", "title_ko": "주차장 입출차 기록 시스템", "title_en": "Parking entry log", "desc_ko": "번호판을 읽어 입·출차 시간을 기록하는 데모를 만듭니다.", "desc_en": "Read plates to log entry and exit times."},
+  {"level": "research", "title_ko": "연식 구분 세밀 분류", "title_en": "Fine-grained model-year recognition", "desc_ko": "같은 차종의 연식 차이를 구분하는 세밀 분류 방법을 연구합니다.", "desc_en": "Study fine-grained recognition of model years of the same car."}
+ ],
+ "doc_used": true,
+ "uncertain": ["클래스 목록을 페이지와 설명서에서 찾지 못함"]
+}

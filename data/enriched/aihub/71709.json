@@ -1,0 +1,29 @@
+{
+ "dataset_id": "71709",
+ "title_en": "Table image-text pair data",
+ "summary_ko": "공공누리 문서에서 모은 표 이미지 약 40만 장(기본표·조합표·병합표 등)에 표 내용 정보와 1문장 요약문·3문장 설명문이 짝지어 있습니다. 문서 속 표를 읽고 내용을 글로 요약·설명하는 AI에 쓸 수 있습니다.",
+ "summary_en": "About 400,000 table images from public documents (basic, combined, merged tables, etc.) paired with table content, a 1-sentence summary and a 3-sentence description. For AI that reads tables in documents and summarises or explains them.",
+ "contents_ko": "표 이미지(jpg) + 표 내용(html) + JSON(요약문, 설명문).",
+ "contents_en": "Table image (jpg) + table content (html) + JSON (summary, description).",
+ "modalities": ["image", "text"],
+ "tasks": ["image_captioning", "summarization", "ocr"],
+ "topics": [{"ko": "문서 이해", "en": "Document understanding"}, {"ko": "접근성", "en": "Accessibility"}],
+ "keywords_ko": ["표", "표 요약", "이미지-텍스트", "문서 AI", "표 해설", "공공 문서"],
+ "keywords_en": ["table", "table summary", "image-text", "document AI", "table explanation", "public documents"],
+ "labels": ["table content", "summary", "description"],
+ "file_formats": ["jpg", "html", "json"],
+ "scale_ko": "표 이미지 404,080건(기본표 139,995, 조합표 57,856, 병합표 125,162 등)",
+ "classes_example": ["기본표", "조합표", "병합표"],
+ "baseline": [{"task": "table summary", "model": "KE-T5", "metric": "BLEU", "value": "23.44"}],
+ "difficulty": "intermediate",
+ "difficulty_note_ko": "전체 약 34GB로 다룰 만하지만, 표 이미지를 글로 바꾸는 멀티모달 모델이 필요합니다.",
+ "skills_needed_ko": ["파이썬", "Hugging Face", "T5 같은 요약 모델"],
+ "caveats_ko": ["표 설명(BLEURT) 성능 값이 팩 앞부분에서 잘림", "71706 차트 이미지-텍스트 데이터와 같은 기관·비슷한 구성"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "표 종류 분류", "title_en": "Table type classification", "desc_ko": "표 이미지가 기본표·조합표·병합표 중 무엇인지 분류합니다.", "desc_en": "Classify table images by type."},
+  {"level": "capstone", "title_ko": "표 한 줄 요약기", "title_en": "One-line table summariser", "desc_ko": "표 내용(html)을 T5로 한 문장 요약하고 BLEU로 평가합니다.", "desc_en": "Summarise table content in one sentence with T5 and score with BLEU."},
+  {"level": "research", "title_ko": "이미지에서 바로 표 해설", "title_en": "Explaining tables from images", "desc_ko": "html 없이 표 이미지만으로 정확한 해설을 쓰는 방법을 연구합니다.", "desc_en": "Study explaining tables directly from images without html."}
+ ],
+ "doc_used": true,
+ "uncertain": []
+}

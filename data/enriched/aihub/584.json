@@ -1,0 +1,32 @@
+{
+ "dataset_id": "584",
+ "title_en": "Student and youth core competency analysis education data",
+ "summary_ko": "초·중·고 학생 약 1만 8천 명의 방과후·체험 활동 수업 관찰 기록 약 14만 건에 교육 전문가가 핵심 역량 점수를 매긴 데이터입니다. 학생 및 프로그램 정보도 함께 있습니다. 수업 기록 글에서 학생 역량을 예측하는 AI에 쓸 수 있습니다.",
+ "summary_en": "About 140,000 teacher observation notes on about 18,000 elementary, middle and high school students in learning-support and activity programmes, with core competency scores given by education experts, plus student and programme information. For AI that predicts student competencies from class notes.",
+ "contents_ko": "학생·프로그램·미션 정보와 수업 기록 텍스트, 역량 점수(모두 csv).",
+ "contents_en": "Student, programme and mission information, class-note text and competency scores (all csv).",
+ "modalities": ["text", "tabular"],
+ "tasks": ["text_classification", "tabular_prediction"],
+ "topics": [{"ko": "교육", "en": "Education"}, {"ko": "학생 평가", "en": "Student assessment"}],
+ "keywords_ko": ["학생 역량", "수업 기록", "교육 평가", "청소년", "에듀테크"],
+ "keywords_en": ["student competencies", "class notes", "educational assessment", "youth", "edtech"],
+ "labels": ["competency score"],
+ "file_formats": ["csv"],
+ "scale_ko": "수업 기록 약 14만 건, 학생 약 1.8만 명",
+ "classes_example": ["학습지원", "창의체험", "진로탐색", "시민역량", "자치/행사", "자기개발"],
+ "baseline": [
+  {"task": "competency score prediction", "model": "KorBERT", "metric": "weighted F1", "value": "0.61"},
+  {"task": "competency score prediction", "model": "KorBERT", "metric": "MAE", "value": "0.41"}
+ ],
+ "difficulty": "beginner",
+ "difficulty_note_ko": "약 30MB csv라 엑셀·판다스로 바로 열 수 있습니다. 기준 성능(F1 0.61)이 낮은 어려운 문제입니다.",
+ "skills_needed_ko": ["파이썬", "판다스", "텍스트 분류(BERT 등)"],
+ "caveats_ko": ["미성년자 관찰 기록이라 개인정보 주의", "초등 기록이 63%로 치우침", "기준 성능이 낮음"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "학교급별 기록 분석", "title_en": "Notes by school level", "desc_ko": "초·중·고 기록 길이와 프로그램 분포를 비교합니다.", "desc_en": "Compare note length and programme mix by school level."},
+  {"level": "capstone", "title_ko": "학생 역량 리포트 생성기", "title_en": "Student competency reporter", "desc_ko": "수업 기록에서 역량 점수를 예측해 학생별 리포트를 만듭니다.", "desc_en": "Predict competency scores from notes and build per-student reports."},
+  {"level": "research", "title_ko": "역량 점수 편향 분석", "title_en": "Bias in competency scoring", "desc_ko": "모델 예측이 학교급·프로그램에 따라 치우치는지 연구합니다.", "desc_en": "Study whether predictions are biased by school level or programme."}
+ ],
+ "doc_used": true,
+ "uncertain": []
+}

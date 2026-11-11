@@ -1,0 +1,29 @@
+{
+ "dataset_id": "140",
+ "title_en": "Household waste images",
+ "summary_ko": "가구, 종이, 플라스틱, 유리병, 캔, 페트병, 형광등 등 생활 폐기물 15종을 휴대폰으로 여러 각도에서 찍은 사진입니다. 사진마다 폐기물 위치가 상자로 표시되어 있고 종류와 훼손 정도가 적혀 있어, 쓰레기 자동 분류에 쓸 수 있습니다.",
+ "summary_en": "Phone photos of 15 kinds of household waste (furniture, paper, plastic, glass bottles, cans, PET bottles, fluorescent lamps and more), each taken from several angles. Every photo has a box around the item plus its type and damage level, so it can be used for automatic waste sorting.",
+ "contents_ko": "폐기물 1건당 사진 5~7장(원거리·정면·위·아래 등) + JSON 라벨(상자 좌표, 종류, 세부 품목, 훼손 정도, 주/야간, 실내/실외, 카메라 정보).",
+ "contents_en": "5–7 photos per item (far, front, top, bottom and so on) + a JSON label (box coordinates, type, sub-item, damage level, day/night, indoor/outdoor, camera info).",
+ "modalities": ["image"],
+ "tasks": ["object_detection", "image_classification"],
+ "topics": [{"ko": "쓰레기·재활용", "en": "Waste and recycling"}, {"ko": "환경", "en": "Environment"}, {"ko": "생활용품", "en": "Household items"}],
+ "keywords_ko": ["생활 폐기물", "분리수거", "재활용", "쓰레기 분류", "페트병", "스티로폼", "가구 폐기"],
+ "keywords_en": ["household waste", "recycling", "waste sorting", "PET bottle", "styrofoam", "furniture disposal"],
+ "labels": ["bounding box", "polygon", "class", "attributes (damage, colour, shape, transparency)"],
+ "file_formats": ["jpg", "json"],
+ "scale_ko": "15종 × 1만 건 = 15만 건, 사진 약 75만 장",
+ "classes_example": ["가구", "고철류", "나무", "도기", "비닐", "스티로폼", "유리병", "의류", "자전거", "전자제품", "종이", "캔류", "페트병", "플라스틱", "형광등"],
+ "baseline": [],
+ "difficulty": "beginner",
+ "difficulty_note_ko": "종류별로 폴더가 나뉘고 상자 라벨이 단순해 첫 이미지 분류·탐지 프로젝트로 좋습니다. 전체 약 330GB이므로 몇 개 종류만 받아 시작하세요.",
+ "skills_needed_ko": ["파이썬 기초", "YOLO 같은 탐지 모델 사용법(튜토리얼 수준)"],
+ "caveats_ko": ["전체 약 330GB: 일부 종류만 내려받기 권장", "라벨에 촬영 GPS 좌표가 들어 있음", "성능 지표 표가 페이지에 없음(설명에는 YOLOv4 사용)"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "분리수거 도우미 분류기", "title_en": "Recycling helper classifier", "desc_ko": "사진을 올리면 종이·플라스틱·캔·유리병 중 무엇인지 알려주는 분류 모델을 만듭니다.", "desc_en": "Build a model that says whether a photo shows paper, plastic, a can or a glass bottle."},
+  {"level": "capstone", "title_ko": "대형 폐기물 신고 앱", "title_en": "Bulky-waste reporting app", "desc_ko": "가구·전자제품 사진에서 품목을 탐지해 배출 수수료와 신고 방법을 안내하는 모바일 앱을 만듭니다.", "desc_en": "A mobile app that detects furniture or appliances in a photo and shows the disposal fee and how to report it."},
+  {"level": "research", "title_ko": "훼손·오염된 폐기물 인식 성능 연구", "title_en": "Recognising damaged or dirty waste", "desc_ko": "훼손 정도와 주/야간 속성별로 탐지 성능이 어떻게 떨어지는지 분석하고 개선 방법을 비교합니다.", "desc_en": "Measure how detection drops for damaged items and night photos, and compare ways to improve it."}
+ ],
+ "doc_used": true,
+ "uncertain": ["라벨링 구분에 Polygon도 있으나 대부분 상자 라벨로 보임"]
+}

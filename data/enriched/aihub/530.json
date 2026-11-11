@@ -1,0 +1,29 @@
+{
+ "dataset_id": "530",
+ "title_en": "Overloaded vehicle road-hazard data",
+ "summary_ko": "CCTV·드론·블랙박스·직접 촬영으로 모은 화물차 이미지 40만 장으로, 정상 차량과 높이·넓이·길이 과적, 적재 불량, 불법 개조 차량이 상자·분할로 표시되어 있습니다. 차를 세우지 않고 영상만으로 과적을 판정하는 단속 AI에 쓸 수 있습니다.",
+ "summary_en": "400,000 images of trucks from CCTV, drones, dash cams and direct shooting, labelled as normal or overloaded by height, width or length, badly loaded, or illegally modified, with boxes and segmentation. For enforcement AI that judges overloading from video without stopping vehicles.",
+ "contents_ko": "차량 이미지(jpg) + JSON(차량 상자·분할, 차량 크기, 정상/불법 유형, 촬영 방법).",
+ "contents_en": "Vehicle image (jpg) + JSON (box and segmentation, vehicle size, normal or violation type, capture method).",
+ "modalities": ["image"],
+ "tasks": ["object_detection", "segmentation", "image_classification"],
+ "topics": [{"ko": "교통 안전", "en": "Road safety"}, {"ko": "화물·물류", "en": "Freight and logistics"}, {"ko": "단속·행정", "en": "Enforcement"}],
+ "keywords_ko": ["과적 차량", "화물차", "적재 불량", "불법 개조", "도로 안전", "단속"],
+ "keywords_en": ["overloaded vehicles", "trucks", "bad loading", "illegal modification", "road safety", "enforcement"],
+ "labels": ["bounding box", "segmentation", "violation type", "vehicle size"],
+ "file_formats": ["jpg", "json"],
+ "scale_ko": "원천·라벨 각 40만 장, 차량 크기 3종, 불법 유형 5종",
+ "classes_example": ["정상차량", "높이과적", "넓이과적", "길이과적", "적재불량", "불법개조"],
+ "baseline": [],
+ "difficulty": "intermediate",
+ "difficulty_note_ko": "차량 탐지는 쉽지만 과적 유형 판정은 미세한 차이를 봐야 합니다. 약 160GB입니다.",
+ "skills_needed_ko": ["파이썬", "YOLO 탐지", "이미지 분류"],
+ "caveats_ko": ["성능 지표가 팩 앞부분에 없음"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "과적 vs 정상 분류", "title_en": "Overloaded vs normal", "desc_ko": "화물차 사진을 정상과 과적으로 분류합니다.", "desc_en": "Classify truck photos as normal or overloaded."},
+  {"level": "capstone", "title_ko": "CCTV 과적 의심 알림", "title_en": "CCTV overload alerts", "desc_ko": "도로 CCTV에서 과적 의심 차량을 찾아 기록하는 데모를 만듭니다.", "desc_en": "Find and log suspected overloaded trucks from road CCTV."},
+  {"level": "research", "title_ko": "드론 vs CCTV 시점 비교", "title_en": "Drone vs CCTV view", "desc_ko": "촬영 방법별 과적 판정 정확도를 비교합니다.", "desc_en": "Compare overload detection accuracy across capture methods."}
+ ],
+ "doc_used": true,
+ "uncertain": []
+}

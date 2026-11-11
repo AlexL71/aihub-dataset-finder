@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71889",
+ "easy_ko": "방송 통신 기기의 적합성 평가 기록을 평가 종류와 법적 근거에 따라 질문과 답 10만여 건으로 만든 데이터입니다. 적합성 평가 상담 챗봇이나 스스로 점검하기, 담당 직원 답변 작성을 돕는 AI에 쓸 수 있습니다.",
+ "easy_en": "Over 100,000 questions and answers built from conformity-assessment records for broadcasting and telecom equipment, organised by assessment type and legal basis. You can use it to build conformity-assessment advice chatbots, self-check tools or AI that helps staff draft answers.",
+ "detail_ko": "중앙전파관리소가 제공한 방송통신기자재 적합성평가 완료 데이터를 평가 유형과 법적 판단 근거에 따라 만든 질의응답 100,659건(JSON; 원천·라벨 동일)으로, 대분류는 EMC·무선·유선, 중분류는 고시 기준(예: 무선설비의 기기, 기타 무선설비의 기기, 단말장치)입니다. 페이지에 성능 점수 표가 없고(질의응답 모델 설계 소개만 있음), 무선설비의 기기가 1%로 적으며, 법규 개정에 따라 답변이 바뀔 수 있습니다.",
+ "detail_en": "100,659 question-answer items (JSON; source and label identical) built from completed conformity assessments of broadcasting and telecom equipment provided by the Central Radio Management Office, organised by assessment type and legal basis, with main classes EMC, wireless and wired and sub-classes by notice (such as radio equipment, other radio equipment, terminal devices). There is no score table (only the QA model design is described); radio equipment is only 1%; and answers may change when regulations are revised.",
+ "amount_ko": "질의응답 100,659건",
+ "amount_en": "100,659 QA items",
+ "labels_ko": "질문과 답, 기기 분류",
+ "labels_en": "question-answer, equipment class",
+ "status": "full-run-2026-11-02"
+}

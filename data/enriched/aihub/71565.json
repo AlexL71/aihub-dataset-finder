@@ -1,0 +1,29 @@
+{
+ "dataset_id": "71565",
+ "title_en": "Table question answering data",
+ "summary_ko": "학술자료·국가통계 등 일반 문서 속 표를 보고 묻는 질문과 정답 100만 쌍입니다. 표에서 답을 찾는 '정답 추출형' 80만 건과 표로는 답할 수 없는 '응답 불가형' 20만 건으로 나뉘어 있어, 표를 읽고 답하는 챗봇·검색 AI에 쓸 수 있습니다.",
+ "summary_en": "1 million question-answer pairs about tables in general documents (academic and national statistics), with 800,000 answerable and 200,000 unanswerable questions. For chatbots and search that answer from tables.",
+ "contents_ko": "표 텍스트(txt) + JSON(질문, 정답, 정답 위치, 유형, 분야).",
+ "contents_en": "Table text (txt) + JSON (question, answer, answer location, type, domain).",
+ "modalities": ["text"],
+ "tasks": ["question_answering"],
+ "topics": [{"ko": "문서·표 이해", "en": "Document and table understanding"}, {"ko": "검색·챗봇", "en": "Search and chatbots"}],
+ "keywords_ko": ["표 질의응답", "기계독해", "표 문서", "응답 불가", "통계"],
+ "keywords_en": ["table QA", "machine reading", "table documents", "unanswerable questions", "statistics"],
+ "labels": ["question", "answer", "answer span", "QA type", "domain"],
+ "file_formats": ["txt", "json"],
+ "scale_ko": "질의응답 1,000,000건 (정답 추출형 800,000, 응답 불가형 200,000), 분야 10종",
+ "classes_example": ["건축", "공공행정", "과학기술", "교육", "금융", "농수산", "문화·스포츠", "보건·의료", "환경"],
+ "baseline": [{"task": "table question answering", "model": "BART", "metric": "F1-score", "value": "0.8732"}],
+ "difficulty": "beginner",
+ "difficulty_note_ko": "전체 약 0.21GB로 작고 질문-정답 형식이라 질의응답 입문에 좋습니다.",
+ "skills_needed_ko": ["파이썬", "허깅페이스 Transformers", "한국어 자연어 처리"],
+ "caveats_ko": ["분야별 비율 합계가 정확히 100이 아님(예: 기타 11,576건이 5.78%로 적혀 있음)", "원문 HWP·PDF 표가 텍스트로 바뀌면서 표 구조 일부가 사라졌을 수 있음"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "답할 수 있는 질문 판별", "title_en": "Answerable or not", "desc_ko": "표로 답할 수 있는 질문인지 아닌지 분류합니다.", "desc_en": "Classify whether a question is answerable from the table."},
+  {"level": "capstone", "title_ko": "통계표 챗봇", "title_en": "Statistics table chatbot", "desc_ko": "통계표를 올리면 질문에 표 속 값을 찾아 답하는 챗봇을 만듭니다.", "desc_en": "Build a chatbot that answers questions from uploaded statistics tables."},
+  {"level": "research", "title_ko": "큰 표에서의 질의응답", "title_en": "QA on large tables", "desc_ko": "행이 많은 표에서 성능이 떨어지는 문제를 분석하고 개선합니다.", "desc_en": "Analyse and fix accuracy drop on tables with many rows."}
+ ],
+ "doc_used": true,
+ "uncertain": []
+}

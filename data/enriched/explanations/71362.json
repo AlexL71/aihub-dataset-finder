@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71362",
+ "easy_ko": "철캔, 알루미늄캔, 종이, 페트병, 플라스틱, 스티로폼 같은 재활용품을 하나씩 찍은 사진과 선별장에서 찍은 사진에 물건 위치와 영역, 종류를 표시한 데이터입니다. 재활용품을 자동으로 골라내는 선별 로봇이나 분리수거 AI를 만들 수 있습니다.",
+ "easy_en": "Photos of recyclables such as steel cans, aluminium cans, paper, PET bottles, plastics and polystyrene, taken one item at a time and on sorting lines, with each item's position, area and type marked. You can build sorting robots or recycling AI that separates recyclables automatically.",
+ "detail_ko": "재활용품 개별 촬영 이미지 약 71만 장과 선별장 영상 이미지 약 30만 장, 총 약 100만 장(jpg)에 대분류 9종·세부 15종(철캔, 알루미늄캔, 종이, 무색·유색 단일 페트, PE, PP, PS, 스티로폼 등)의 바운딩박스·분할을 JSON으로 붙였습니다. 기준 성능은 YOLOR 재활용품 탐지 mAP 77.84%입니다. 전체 약 2.4TB이며, 개별 촬영과 실제 선별장 이미지의 환경 차이가 큽니다.",
+ "detail_en": "About 1M images (jpg): about 710k of individually photographed recyclables and about 300k from sorting-line video, with JSON boxes and segmentation for 9 main and 15 sub-classes (steel can, aluminium can, paper, clear and coloured PET, PE, PP, PS, polystyrene foam and more). Baseline: YOLOR recyclable detection mAP 77.84%. Total size is about 2.4 TB; individual shots and sorting-line images differ greatly in setting.",
+ "amount_ko": "사진 약 100만 장, 세부 종류 15종",
+ "amount_en": "about 1M images, 15 sub-classes",
+ "labels_ko": "재활용품 위치 상자·영역, 품목과 세부 종류",
+ "labels_en": "boxes and masks around recyclables, item class and sub-class",
+ "status": "full-run-2026-11-02"
+}

@@ -1,0 +1,29 @@
+{
+ "dataset_id": "71924",
+ "title_en": "NEW step-by-step reasoning logistics robot grasp teaching data",
+ "summary_ko": "물체가 겹쳐 쌓인 물류 환경(피킹·분배·포장 구역)에서 로봇이 지시받은 물체를 충돌 없이 집도록, RGB·깊이·점군 촬영 데이터와 파지 자세, 단계적 사고(CoT) 추론을 담은 데이터입니다. 실제 환경 71,994건, 가상(물리 시뮬레이터) 환경 71,598건, 3D CAD 물체 1,890건이 있어 물류 로봇 파지 AI에 쓸 수 있습니다.",
+ "summary_en": "Data for robots to grasp a named object without collisions in cluttered logistics scenes (picking, sorting, packing zones), with RGB, depth and point clouds, grasp poses and chain-of-thought reasoning: 71,994 real scenes, 71,598 simulated scenes and 1,890 3D CAD objects. For logistics robot grasping.",
+ "contents_ko": "RGB(png) + 깊이(npy) + 점군(pcd) + 3D CAD(obj, mtl, 텍스처 png) + JSON(3D 라벨, 파지 자세, CoT).",
+ "contents_en": "RGB (png) + depth (npy) + point cloud (pcd) + 3D CAD (obj, mtl, texture png) + JSON (3D labels, grasp pose, CoT).",
+ "modalities": ["3d", "image", "text"],
+ "tasks": ["object_detection", "keypoint_pose", "depth_estimation", "visual_qa"],
+ "topics": [{"ko": "물류 로봇", "en": "Logistics robots"}, {"ko": "로봇 파지", "en": "Robot grasping"}],
+ "keywords_ko": ["로봇 파지", "6자유도", "물류", "점군", "CoT", "시뮬레이션"],
+ "keywords_en": ["robot grasping", "6-DoF", "logistics", "point cloud", "chain-of-thought", "simulation"],
+ "labels": ["3D labels", "grasp pose", "CoT"],
+ "file_formats": ["png", "npy", "pcd", "obj", "mtl", "json"],
+ "scale_ko": "실제 71,994건, 가상 71,598건, 3D CAD 원천 1,890건(라벨 630건)",
+ "classes_example": ["피킹 작업 구역", "분배 작업 구역", "포장 작업 구역", "생활용품류", "식품/과자류"],
+ "baseline": [],
+ "difficulty": "advanced",
+ "difficulty_note_ko": "약 705GB이고 3D 점군·6자유도 파지 지식이 필요합니다. 학생은 가상 데이터 일부로 시작하세요.",
+ "skills_needed_ko": ["파이썬", "3D 점군 처리(Open3D)", "6자유도 파지 모델(GraspNet 등)", "ROS 기초"],
+ "caveats_ko": ["페이지에 성능 점수 표가 없음(6자유도 파지 자세 추정 임무 소개만 있음)", "3D CAD는 원천 1,890건이지만 라벨은 630건", "통계 표의 합계(258,939, 47,864)가 구축량과 단위가 달라 보임"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "물류 물체 탐지", "title_en": "Logistics object detection", "desc_ko": "RGB 이미지에서 상자·생활용품을 YOLO로 찾습니다.", "desc_en": "Detect boxes and goods in RGB images with YOLO."},
+  {"level": "capstone", "title_ko": "지시 기반 파지 데모", "title_en": "Instruction-based grasp demo", "desc_ko": "'과자 봉지 집어' 같은 지시로 대상과 파지 자세를 고르는 시뮬레이션을 만듭니다.", "desc_en": "Pick the target and grasp from a text instruction in simulation."},
+  {"level": "research", "title_ko": "가상→실제 파지 전이", "title_en": "Sim-to-real grasping", "desc_ko": "가상 데이터로 학습한 파지 모델을 실제 환경에 옮기는 방법을 연구합니다.", "desc_en": "Study transferring simulated grasp models to real scenes."}
+ ],
+ "doc_used": true,
+ "uncertain": ["통계 표 수량 단위(물체 단위인지 장면 단위인지)"]
+}

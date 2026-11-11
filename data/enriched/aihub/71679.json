@@ -1,0 +1,29 @@
+{
+ "dataset_id": "71679",
+ "title_en": "Data for smart manufacturing facility safety monitoring",
+ "summary_ko": "스마트 공장의 일반 CCTV·열화상 CCTV 영상 20,000개와 여기서 뽑은 이미지 400,000장에 침입(펜스 월장·훼손 등)·인명사고·화재 상황이 상자와 분할로 표시되고, 이미지 설명문 10,020개가 함께 있는 데이터입니다. 공장 안전 관제와 이상 상황 자동 감지 AI에 쓸 수 있습니다.",
+ "summary_en": "20,000 regular and thermal CCTV videos from smart factories and 400,000 extracted images, with intrusion (fence climbing, fence damage, etc.), worker accidents and fire marked by boxes and segmentation, plus 10,020 image captions. For factory safety monitoring and automatic incident detection.",
+ "contents_ko": "CCTV·열화상 영상(mp4) + 이미지(png) + JSON(상자, 분할, 상황 클래스, 설명문).",
+ "contents_en": "CCTV and thermal video (mp4) + image (png) + JSON (boxes, segmentation, situation class, captions).",
+ "modalities": ["video", "image"],
+ "tasks": ["object_detection", "segmentation", "action_recognition", "anomaly_detection"],
+ "topics": [{"ko": "산업 안전", "en": "Industrial safety"}, {"ko": "관제·CCTV", "en": "Monitoring and CCTV"}],
+ "keywords_ko": ["스마트 공장", "침입 탐지", "인명사고", "화재 감시", "열화상", "CCTV"],
+ "keywords_en": ["smart factory", "intrusion detection", "worker accidents", "fire monitoring", "thermal imaging", "CCTV"],
+ "labels": ["bounding box", "segmentation", "situation class", "caption"],
+ "file_formats": ["mp4", "png", "json"],
+ "scale_ko": "영상 20,000개(침입탐지 10,000, 인명사고 9,000, 화재감시 1,000), 이미지 400,000장, 라벨 420,000개",
+ "classes_example": ["미침입", "펜스 월장", "펜스 훼손", "인명사고", "화재"],
+ "baseline": [],
+ "difficulty": "advanced",
+ "difficulty_note_ko": "상황 종류가 많고 전체가 약 1.5TB입니다. 한 상황 유형의 이미지부터 시작하세요.",
+ "skills_needed_ko": ["파이썬", "YOLO 탐지", "영상 행동 인식"],
+ "caveats_ko": ["전체 약 1,518GB", "화재감시 영상이 1,000개로 적음", "재연된 상황일 가능성 확인 필요", "성능 지표 값이 팩에 없음", "무인 플랜트(71677)와 같은 기관·구조"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "펜스 월장 탐지", "title_en": "Fence-climbing detection", "desc_ko": "CCTV 이미지에서 펜스를 넘는 사람을 찾습니다.", "desc_en": "Detect people climbing fences in CCTV images."},
+  {"level": "capstone", "title_ko": "공장 쓰러짐 알림", "title_en": "Factory fall alert", "desc_ko": "작업자가 쓰러지는 인명사고를 감지해 알리는 데모를 만듭니다.", "desc_en": "Detect fallen workers and raise an alert."},
+  {"level": "research", "title_ko": "적은 화재 데이터 학습", "title_en": "Learning from few fire samples", "desc_ko": "화재 영상이 적을 때 탐지 성능을 높이는 방법을 연구합니다.", "desc_en": "Improve fire detection with few fire videos."}
+ ],
+ "doc_used": true,
+ "uncertain": ["인명사고 세부 클래스"]
+}

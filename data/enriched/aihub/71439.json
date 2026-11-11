@@ -1,0 +1,29 @@
+{
+ "dataset_id": "71439",
+ "title_en": "Manufacturing worker musculoskeletal-risk prevention AI data",
+ "summary_ko": "절단·사상·용접·조립 등 17개 제조 공정에서 일하는 노동자 이미지 12만 장으로, 작업자 상자, 관절 키포인트 27개, 작업 자세 정보 5종, 작업 부가 정보 14종이 붙어 있습니다. 근골격계에 부담을 주는 작업 자세를 자동으로 평가하는 AI에 쓸 수 있습니다.",
+ "summary_en": "120,000 images of workers in 17 manufacturing processes (cutting, grinding, welding, assembly, etc.) with worker boxes, 27 body keypoints, 5 posture items and 14 extra work items. For AI that rates work postures that strain muscles and joints.",
+ "contents_ko": "작업 현장 이미지(jpg) + JSON(작업자 상자, 관절 키포인트 27개, 작업 자세 정보, 작업 부가 정보).",
+ "contents_en": "Workplace image (jpg) + JSON (worker box, 27 keypoints, posture info, extra work info).",
+ "modalities": ["image"],
+ "tasks": ["keypoint_pose", "image_classification", "object_detection"],
+ "topics": [{"ko": "산업 안전·보건", "en": "Occupational safety and health"}, {"ko": "제조", "en": "Manufacturing"}],
+ "keywords_ko": ["근골격계 질환", "작업 자세", "인간공학", "제조 공정", "자세 추정", "유해요인"],
+ "keywords_en": ["musculoskeletal disorders", "work posture", "ergonomics", "manufacturing process", "pose estimation", "risk factors"],
+ "labels": ["bounding box", "keypoints (27)", "posture class", "work attributes"],
+ "file_formats": ["jpg", "json"],
+ "scale_ko": "이미지 12만 장, 제조 공정 17종",
+ "classes_example": ["절단 공정", "사상 공정", "용접 공정", "조립 공정", "주조 공정", "선별 공정"],
+ "baseline": [{"task": "work posture classification", "model": "EfficientNet b3", "metric": "Accuracy", "value": "83.18%"}],
+ "difficulty": "intermediate",
+ "difficulty_note_ko": "자세 추정·분류 실습에 좋지만 전체 약 164GB입니다. 일부 공정만 받아 쓰세요.",
+ "skills_needed_ko": ["파이썬", "자세 추정 모델", "이미지 분류"],
+ "caveats_ko": ["전체 약 164GB", "공정별 비율 차이가 큼(도색 0.55%, 사상6 13.88%)", "작업 자세 5종의 정확한 클래스 이름은 팩 앞부분에 없음"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "작업 자세 분류기", "title_en": "Work posture classifier", "desc_ko": "작업자 사진을 보고 자세 종류를 분류합니다.", "desc_en": "Classify the posture type from worker photos."},
+  {"level": "capstone", "title_ko": "공장 자세 위험도 알림", "title_en": "Factory posture-risk alert", "desc_ko": "키포인트로 관절 각도를 계산해 부담이 큰 자세를 알려 주는 도구를 만듭니다.", "desc_en": "Compute joint angles from keypoints and warn about straining postures."},
+  {"level": "research", "title_ko": "인간공학 평가 자동화", "title_en": "Automated ergonomic assessment", "desc_ko": "키포인트에서 RULA 같은 인간공학 점수를 자동 산출하는 방법을 연구합니다.", "desc_en": "Compute ergonomic scores such as RULA from keypoints."}
+ ],
+ "doc_used": true,
+ "uncertain": ["작업 자세 정보 5종과 부가 정보 14종의 세부 항목"]
+}

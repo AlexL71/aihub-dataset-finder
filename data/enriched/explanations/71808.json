@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71808",
+ "easy_ko": "교육 영상 3,900개와 그 대본에서 만든 문제와 정답 1만여 쌍을 모은 데이터입니다. 강의 영상을 보고 학생에게 맞는 퀴즈를 자동으로 만들어 주는 교육용 AI에 쓸 수 있습니다.",
+ "easy_en": "Over 12,000 question-answer pairs made from 3,900 educational videos and their scripts. You can use it to build educational AI that creates quizzes from lecture videos for each student.",
+ "detail_ko": "교육 영상 3,900건(mp4)과 스크립트 3,900건에서 만든 문제-정답 쌍 12,078건(JSON)으로, 학습자 수준에 맞춘 문제 자동 생성을 통해 교육 효과 평가와 맞춤형 학습 계획 수립을 돕고 AI 디지털 교과서·맞춤형 교수학습 플랫폼에 쓰도록 만들었습니다. 문제-정답 쌍이 많지 않고, 교과·분야 분포와 성능 지표는 팩 앞부분에 없습니다.",
+ "detail_en": "12,078 question-answer pairs (JSON) made from 3,900 educational videos (mp4) and their 3,900 scripts, built to generate questions suited to each learner, support assessment of learning and personalised study plans, and feed AI digital textbooks and adaptive learning platforms. The number of pairs is modest, and the subject distribution and any metrics are not in the pack.",
+ "amount_ko": "영상 3,900건, 스크립트 3,900건, 문제-정답 12,078건",
+ "amount_en": "3,900 videos, 3,900 scripts, 12,078 question-answer pairs",
+ "labels_ko": "문제와 정답",
+ "labels_en": "question-answer pair",
+ "status": "full-run-2026-11-02"
+}

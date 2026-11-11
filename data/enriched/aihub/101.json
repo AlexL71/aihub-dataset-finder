@@ -1,0 +1,29 @@
+{
+ "dataset_id": "101",
+ "title_en": "Visual question answering on living environments",
+ "summary_ko": "대전 유성구 등에서 어린이·노인·일반인의 일상생활과 실내 가전·가구 배치를 찍은 사진 106만 장(3D 공간 스캔 이미지 10만 장 포함)에, 사진 내용에 대한 질문과 답을 붙인 한국어 VQA 데이터입니다. 사진을 보고 질문에 답하는 AI, 시각장애인 보조 앱에 쓸 수 있습니다.",
+ "summary_en": "1.06 million photos of everyday life of children, older adults and other people, plus indoor appliance and furniture layouts (including 100k images from 3D scans), mainly in Yuseong, Daejeon, with Korean questions and answers about each photo. For AI that answers questions about images, or assistive apps for blind users.",
+ "contents_ko": "사진 1장 + 질문-답 여러 쌍(객관적 사실·추론 질문) + 물체 상자와 장면 분류(번화가·골목·실내·매장 등).",
+ "contents_en": "One photo + several question-answer pairs (factual and reasoning) + object boxes and scene class (busy street, alley, indoor, shop and so on).",
+ "modalities": ["image", "text", "3d"],
+ "tasks": ["visual_qa", "object_detection"],
+ "topics": [{"ko": "일상생활·주거", "en": "Daily life and housing"}, {"ko": "노인·어린이", "en": "Older adults and children"}, {"ko": "접근성", "en": "Accessibility"}],
+ "keywords_ko": ["VQA", "시각 질의응답", "일상생활", "거주환경", "노인", "어린이", "시각장애 보조"],
+ "keywords_en": ["VQA", "visual question answering", "daily life", "living environment", "older adults", "children", "visual assistance"],
+ "labels": ["question-answer pairs", "bounding box", "scene class"],
+ "file_formats": ["jpg", "json"],
+ "scale_ko": "사진 1,063,340장(일반 96만, 3D 스캔 추출 10만), 구축량 719만(질문 포함)",
+ "classes_example": ["번화가", "골목", "차량", "야외", "공공장소", "실내", "매장", "음식"],
+ "baseline": [],
+ "difficulty": "advanced",
+ "difficulty_note_ko": "사진과 한국어 질문을 함께 다루는 멀티모달 모델이 필요합니다. 약 135GB입니다.",
+ "skills_needed_ko": ["파이썬", "이미지-텍스트 멀티모달 모델(BLIP, LLaVA 등)", "한국어 텍스트 처리"],
+ "caveats_ko": ["성능 지표가 팩 앞부분에서 잘림", "일상 사진이라 사람 얼굴 비식별 여부 확인 필요"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "장면 종류 분류", "title_en": "Scene type classifier", "desc_ko": "사진을 번화가·골목·실내·매장 같은 장면으로 분류합니다.", "desc_en": "Classify photos into scenes such as street, alley, indoor or shop."},
+  {"level": "capstone", "title_ko": "사진 보고 답하는 도우미 앱", "title_en": "Ask-about-a-photo helper", "desc_ko": "공개 VQA 모델을 한국어 질문으로 미세조정해 '앞에 뭐가 있어?'에 답하는 앱을 만듭니다.", "desc_en": "Fine-tune an open VQA model on Korean questions to answer 'what is in front of me?'."},
+  {"level": "research", "title_ko": "노인 생활환경 위험 요소 질의응답", "title_en": "Hazard QA for older adults' homes", "desc_ko": "노인 거주환경 사진에서 넘어짐 위험 같은 질문에 답하는 능력을 평가·개선합니다.", "desc_en": "Evaluate and improve answers about hazards such as fall risks in seniors' homes."}
+ ],
+ "doc_used": true,
+ "uncertain": []
+}

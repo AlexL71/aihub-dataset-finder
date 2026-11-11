@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71581",
+ "easy_ko": "수도권 여행자 4,000명의 여행 기록으로, 여행자 정보, 이동 경로, 방문한 곳, 쓴 돈과 여행지 사진이 함께 있습니다. 여행에서 돈을 많이 쓸 사람을 예측하거나 취향에 맞는 여행지를 추천하는 AI에 쓸 수 있습니다.",
+ "easy_en": "Travel records of 4,000 travellers in the Seoul capital region, with traveller details, routes, places visited, money spent and travel photos. You can use it to build AI that predicts big spenders or recommends destinations to match someone's taste.",
+ "detail_ko": "수도권 여행자 4,000명(세트)의 여행자 정보, GPS 동선, 방문 기록, 소비 내역, POI(CSV)와 여행지 사진 135,183장으로, 여행 기간(당일, 1박2일, 2박3일 이상)과 연령대 등이 있습니다. 기준 성능은 CatBoost 고소비 여행자 예측 F1 0.7376, 여행지 추천 Recall@10 40.62%입니다. 사진 포함 전체 약 395GB이고, 20~30대가 약 71%로 치우쳐 있습니다. 동부권·서부권·제주 데이터는 별도 데이터셋입니다. GPS 동선은 개인정보가 될 수 있어 이용 조건을 확인해야 합니다.",
+ "detail_en": "4,000 traveller sets from the Seoul capital region: traveller profiles, GPS routes, visit records, spending and POIs (CSV), plus 135,183 travel photos, with trip length (day trip, 1 night, 2+ nights) and age group. Baselines with CatBoost: high-spending traveller prediction F1 0.7376; destination recommendation Recall@10 40.62%. Total size including photos is about 395 GB, and travellers in their 20s and 30s make up about 71%. The eastern, western and Jeju data are separate datasets. GPS routes can be personal data, so check the terms of use.",
+ "amount_ko": "여행자 4,000명(세트), 여행지 사진 135,183장",
+ "amount_en": "4,000 travellers (sets), 135,183 travel photos",
+ "labels_ko": "여행자 정보, 방문 기록, 소비 내역",
+ "labels_en": "traveller profile, visit records, spending",
+ "status": "full-run-2026-11-02"
+}

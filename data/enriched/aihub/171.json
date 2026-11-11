@@ -1,0 +1,29 @@
+{
+ "dataset_id": "171",
+ "title_en": "Abnormal behaviour CCTV videos",
+ "summary_ko": "폭행·싸움·절도·기물파손·실신·배회·침입·투기·강도·데이트폭력·납치·주취행동 등 12가지 이상행동을 CCTV 시점으로 연출해 찍은 영상 717시간(8,436컷)입니다. 공공 CCTV에서 범죄나 사고를 자동으로 감지하는 지능형 관제 AI에 쓸 수 있습니다.",
+ "summary_en": "717 hours (8,436 clips) of staged CCTV-view video covering 12 abnormal behaviours: assault, fighting, burglary, vandalism, fainting, wandering, trespassing, dumping, robbery, dating violence, kidnapping and drunken behaviour. For intelligent public CCTV that detects crimes and accidents automatically.",
+ "contents_ko": "CCTV 영상 클립 + XML/JSON 라벨(이상행동 종류, 발생 구간, 사람 위치).",
+ "contents_en": "CCTV clips + XML/JSON labels (behaviour type, event segment, person position).",
+ "modalities": ["video"],
+ "tasks": ["action_recognition", "anomaly_detection", "object_detection"],
+ "topics": [{"ko": "범죄 예방·치안", "en": "Crime prevention and public safety"}, {"ko": "CCTV·보안", "en": "CCTV and security"}],
+ "keywords_ko": ["이상행동", "CCTV", "폭행", "싸움", "절도", "실신", "지능형 관제"],
+ "keywords_en": ["abnormal behaviour", "CCTV", "assault", "fighting", "theft", "fainting", "smart surveillance"],
+ "labels": ["action class (12)", "time segment", "bounding box"],
+ "file_formats": ["mp4", "xml"],
+ "scale_ko": "717시간, 8,436클립, 이상행동 12종(주취 1,262, 싸움 1,174, 폭행 913 등)",
+ "classes_example": ["폭행", "싸움", "절도", "기물파손", "실신", "배회", "침입", "투기", "강도", "납치", "주취행동"],
+ "baseline": [],
+ "difficulty": "advanced",
+ "difficulty_note_ko": "영상 이상행동 인식은 어렵고, 전체 약 5TB이며 파일 하나가 최소 3GB입니다.",
+ "skills_needed_ko": ["파이썬", "영상 동작 인식", "시간 구간 검출"],
+ "caveats_ko": ["전체 약 5TB, 최소 파일 3GB", "연출된 장면이라 실제 사건과 다를 수 있음", "2019년 구축, 성능 지표가 팩에서 잘림"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "싸움 vs 일상 장면 분류", "title_en": "Fight vs normal scene", "desc_ko": "클립에서 뽑은 프레임으로 싸움 장면을 분류합니다.", "desc_en": "Classify fight scenes from extracted frames."},
+  {"level": "capstone", "title_ko": "야간 공원 이상행동 알림", "title_en": "Park CCTV anomaly alerts", "desc_ko": "실신·싸움을 감지하면 관제 화면에 알림을 띄우는 데모를 만듭니다.", "desc_en": "Show alerts on a control screen when fainting or fights are detected."},
+  {"level": "research", "title_ko": "이상행동 발생 시점 검출", "title_en": "Temporal localisation of abnormal events", "desc_ko": "긴 영상에서 이상행동의 시작·끝을 찾는 방법을 비교합니다.", "desc_en": "Compare methods that find start and end of events in long videos."}
+ ],
+ "doc_used": true,
+ "uncertain": []
+}

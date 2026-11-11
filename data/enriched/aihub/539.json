@@ -1,0 +1,29 @@
+{
+ "dataset_id": "539",
+ "title_en": "Speech and motion synthesis data",
+ "summary_ko": "486명이 혼자 말하거나 둘이 대화하는 모습을 카메라 4대와 모션캡처로 찍어, 말소리·몸짓·얼굴 움직임·자막을 시간에 맞춰 묶은 데이터입니다. 말하는 내용과 목소리에 맞춰 아바타나 가상 유튜버의 몸짓을 자동으로 만드는 AI에 쓸 수 있습니다.",
+ "summary_en": "486 people filmed talking alone or in pairs with 4 cameras and motion capture, with speech, body gestures, face movement and transcripts all aligned in time. It can train AI that automatically creates gestures for avatars or virtual YouTubers to match what is said and how it sounds.",
+ "contents_ko": "4개 각도 영상(mp4) + 음성(wav) + 모션캡처(bvh, c3d) + JSON(2D·3D 몸·얼굴 키포인트, 문장별 자막과 시작·끝 시간, 감정, 화자 성별·연령대·전문가 여부, 발화 주제).",
+ "contents_en": "Video from 4 angles (mp4) + audio (wav) + motion capture (bvh, c3d) + JSON (2D and 3D body and face key points, per-sentence transcript with start and end times, emotion, speaker sex, age group and expert or not, topic).",
+ "modalities": ["video", "audio", "text", "3d"],
+ "tasks": ["keypoint_pose", "speech_recognition", "image_generation", "sentiment_emotion"],
+ "topics": [{"ko": "아바타·가상 인간", "en": "Avatars and virtual humans"}, {"ko": "몸짓·동작", "en": "Gestures and motion"}, {"ko": "한국어 대화", "en": "Korean conversation"}, {"ko": "애니메이션·방송", "en": "Animation and broadcasting"}],
+ "keywords_ko": ["모션캡처", "몸짓 생성", "아바타", "버추얼 유튜버", "음성 동기화", "키포인트", "감정", "대화"],
+ "keywords_en": ["motion capture", "gesture generation", "avatar", "virtual YouTuber", "speech-motion sync", "keypoints", "emotion", "conversation"],
+ "labels": ["keypoints 2D/3D", "transcript with timestamps", "emotion", "speaker attributes"],
+ "file_formats": ["mp4", "wav", "bvh", "c3d", "json"],
+ "scale_ko": "영상 4,070시간, 음성 1,017시간, 라벨 8,524건, 화자 486명(독백·2인 대화 각 50%, 자유 발화 75%)",
+ "classes_example": ["무표정", "기쁨", "슬픔", "분노", "놀람", "공포", "경멸"],
+ "baseline": [{"task": "speech-driven gesture generation", "model": "Audio-Representation-Pose (ARP)", "metric": "Likert scale (human rating)", "value": "3.97"}],
+ "difficulty": "advanced",
+ "difficulty_note_ko": "전체 약 4TB이고 영상·음성·3D 모션을 함께 다뤄야 해 난도가 높습니다. 자막과 감정 라벨만 쓰는 텍스트 분석은 쉬운 편입니다.",
+ "skills_needed_ko": ["파이썬", "시계열(시퀀스) 딥러닝", "3D 모션 데이터(bvh) 다루기", "오디오 특징(MFCC) 추출"],
+ "caveats_ko": ["전체 약 4TB, 가장 작은 파일도 약 0.3GB", "감정 라벨의 79%가 무표정이라 감정 클래스가 매우 불균형", "사람 얼굴이 나오는 영상이므로 이용 약관과 초상권 확인 필요"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "대화 주제·감정 통계 분석", "title_en": "Topic and emotion statistics of conversations", "desc_ko": "JSON 자막만 사용해 주제·연령대별로 감정 표현과 문장 길이가 어떻게 다른지 시각화합니다.", "desc_en": "Using only the JSON transcripts, visualise how emotion and sentence length differ by topic and age group."},
+  {"level": "capstone", "title_ko": "말하는 아바타 데모", "title_en": "Talking avatar demo", "desc_ko": "음성을 넣으면 2D 키포인트 몸짓을 생성해 간단한 캐릭터에 입히는 데모를 만듭니다.", "desc_en": "Feed in speech, generate 2D key-point gestures and apply them to a simple character."},
+  {"level": "research", "title_ko": "감정을 반영한 몸짓 생성", "title_en": "Emotion-aware gesture generation", "desc_ko": "음성과 감정 라벨을 함께 입력해 3D 몸짓을 생성하고, 사람 평가로 자연스러움을 비교합니다.", "desc_en": "Generate 3D gestures from speech plus emotion labels and compare naturalness with human ratings."}
+ ],
+ "doc_used": true,
+ "uncertain": ["성능 표의 AI TASK가 'Image Generation'으로 적혀 있으나 실제로는 음성 기반 몸짓 생성"]
+}

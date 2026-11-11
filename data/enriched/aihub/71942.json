@@ -1,0 +1,29 @@
+{
+ "dataset_id": "71942",
+ "title_en": "Sports video data (volleyball) (upcycling)",
+ "summary_ko": "2021년 AI Hub 배구 영상 데이터를 다시 가공해, 경기 이미지와 요소 간 의미 관계를 담은 이미지·텍스트 데이터 20,000건을 만든 데이터입니다. 온톨로지와 RAG로 정확도를 높였으며, 배구 기술 분석·심판 훈련·경기 해설 생성 AI에 쓸 수 있습니다.",
+ "summary_en": "20,000 image-text items re-processed from AI Hub's 2021 volleyball video data, describing semantic relations between game elements, refined with ontology, RAG and human review. For volleyball skill analysis, referee training and commentary generation.",
+ "contents_ko": "경기 이미지(jpg) + JSON(이미지 설명·요소 관계).",
+ "contents_en": "Game images (jpg) + JSON (descriptions, element relations).",
+ "modalities": ["image", "text"],
+ "tasks": ["visual_qa", "image_captioning", "text_generation"],
+ "topics": [{"ko": "스포츠", "en": "Sports"}, {"ko": "멀티모달 AI", "en": "Multimodal AI"}],
+ "keywords_ko": ["배구", "스포츠 해설", "심판 훈련", "온톨로지", "멀티모달", "업사이클링"],
+ "keywords_en": ["volleyball", "sports commentary", "referee training", "ontology", "multimodal", "upcycling"],
+ "labels": ["image-text description"],
+ "file_formats": ["jpg", "json"],
+ "scale_ko": "20,000건(협회경기 49%, 경기촬영 39% 등)",
+ "classes_example": [],
+ "baseline": [],
+ "difficulty": "intermediate",
+ "difficulty_note_ko": "약 5.6GB로 다룰 만하며, 비전-언어 모델 미세조정 실습에 좋습니다.",
+ "skills_needed_ko": ["파이썬", "멀티모달 모델", "트랜스포머"],
+ "caveats_ko": ["기존 AI Hub 데이터를 재가공한 것이라 원본 데이터와 겹칠 수 있음", "라벨 구조와 성능 지표가 팩 앞부분에 없음"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "배구 장면 설명 생성", "title_en": "Volleyball scene captioning", "desc_ko": "경기 이미지를 보고 장면 설명을 만듭니다.", "desc_en": "Describe volleyball game images."},
+  {"level": "capstone", "title_ko": "자동 경기 해설 도우미", "title_en": "Auto commentary helper", "desc_ko": "경기 장면으로 해설 문장을 만들어 주는 도구를 만듭니다.", "desc_en": "Generate commentary lines from game scenes."},
+  {"level": "research", "title_ko": "온톨로지 기반 장면 이해", "title_en": "Ontology-grounded scene QA", "desc_ko": "스포츠 규칙 온톨로지로 질의응답 오류를 줄이는 방법을 연구합니다.", "desc_en": "Reduce QA errors using a sports-rule ontology."}
+ ],
+ "doc_used": true,
+ "uncertain": ["라벨 항목 구성", "나머지 출처 비율"]
+}

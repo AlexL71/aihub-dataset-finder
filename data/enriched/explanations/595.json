@@ -1,0 +1,12 @@
+{
+ "dataset_id": "595",
+ "easy_ko": "수직 농장에서 겨자채, 근대, 상추, 케일이 자라는 모습을 정해진 시간마다 찍고, 작물 위치와 자라는 단계(심은 때·자라는 때·거둘 때)를 표시한 뒤 같은 시간의 온도·습도 기록을 붙인 데이터입니다. 작물이 얼마나 자랐고 무게가 얼마일지 예측하는 AI를 만들 수 있습니다.",
+ "easy_en": "Leaf mustard, chard, lettuce and kale photographed at set times as they grow in a vertical farm, with each plant's position and growth stage (planting, growing, harvest) marked, plus temperature and humidity records from the same times. You can build AI that predicts how far the crops have grown and how much they weigh.",
+ "detail_ko": "수직농장 엽채류 4종(겨자채, 근대, 상추, 케일)의 시계열 이미지 약 16만 장(jpg)에 작물 바운딩박스와 생육 단계(정식기, 생육기, 수확기), 생체중을 JSON으로 붙이고, 온습도 등 재배 환경 센서 데이터 약 20만 건을 함께 제공합니다. 기준 성능은 YOLOv5 작물 탐지 mAP 96.52%, LSTM 생체중 예측 RMSE 0.062입니다. 전체 약 137GB이며 페이지 수정일(2020-07)이 구축년도(2021)보다 앞서 표기 오류로 보이고, 596번 딸기 데이터와 같은 구축 기관·구조입니다.",
+ "detail_en": "About 160k time-series images (jpg) of 4 leafy vegetables (leaf mustard, chard, lettuce, kale) in a vertical farm, with JSON boxes, growth stage (transplanting, growing, harvest) and fresh weight, plus about 200k environment sensor records such as temperature and humidity. Baselines: YOLOv5 crop detection mAP 96.52%, LSTM fresh-weight prediction RMSE 0.062. Total size is about 137 GB; the page's update date (July 2020) predates the build year (2021), likely an error; same organisation and structure as dataset 596.",
+ "amount_ko": "이미지 약 16만 장, 센서 기록 약 20만 건",
+ "amount_en": "about 160k images, about 200k sensor records",
+ "labels_ko": "작물 위치 상자, 자라는 단계, 작물 무게, 재배 환경 값",
+ "labels_en": "boxes around plants, growth stage, fresh weight, environment values",
+ "status": "full-run-2026-11-02"
+}

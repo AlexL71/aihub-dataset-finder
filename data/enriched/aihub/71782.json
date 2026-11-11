@@ -1,0 +1,29 @@
+{
+ "dataset_id": "71782",
+ "title_en": "Generative AI finance-domain multilingual parallel corpus data",
+ "summary_ko": "공시정보·뉴스·논문 등 금융 분야 문장을 한국어와 영어·일본어·중국어·베트남어·인도네시아어로 옮긴 병렬 말뭉치로, 언어쌍마다 약 50만 문장(총 약 254만 문장)입니다. 금융 분야 기계번역과 금융기관 통번역 서비스에 쓸 수 있습니다.",
+ "summary_en": "A finance-domain parallel corpus (disclosures, news, papers) between Korean and English, Japanese, Chinese, Vietnamese and Indonesian, about 500,000 sentences per pair (about 2.54 million total). For financial machine translation and interpretation services.",
+ "contents_ko": "JSON(한국어 원문, 번역문, 문서 유형).",
+ "contents_en": "JSON (Korean source, translation, document type).",
+ "modalities": ["text"],
+ "tasks": ["translation"],
+ "topics": [{"ko": "금융", "en": "Finance"}, {"ko": "번역·통역", "en": "Translation and interpretation"}],
+ "keywords_ko": ["금융 번역", "병렬 말뭉치", "공시정보", "베트남어", "인도네시아어", "기계번역"],
+ "keywords_en": ["financial translation", "parallel corpus", "disclosures", "Vietnamese", "Indonesian", "machine translation"],
+ "labels": ["translation", "document type"],
+ "file_formats": ["json"],
+ "scale_ko": "한-영 508,506, 한-일 507,999, 한-중 505,153, 한-베 512,400, 한-인니 510,612문장",
+ "classes_example": ["영어", "일본어", "중국어", "베트남어", "인도네시아어"],
+ "baseline": [],
+ "difficulty": "intermediate",
+ "difficulty_note_ko": "약 16GB 텍스트라 다룰 만합니다. 한 언어쌍만 골라 번역 모델을 미세조정하세요.",
+ "skills_needed_ko": ["파이썬", "트랜스포머 번역 모델", "금융 용어 이해"],
+ "caveats_ko": ["성능 지표 값이 팩에 없음", "출처(공시·뉴스·논문)별 비율 확인 필요"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "금융 뉴스 한영 번역", "title_en": "Korean-English finance news MT", "desc_ko": "금융 문장으로 작은 번역 모델을 미세조정합니다.", "desc_en": "Fine-tune a small translator on finance sentences."},
+  {"level": "capstone", "title_ko": "외국인 고객 금융 안내 번역기", "title_en": "Finance translator for foreign customers", "desc_ko": "베트남어·인도네시아어 고객용 금융 안내문 번역 도구를 만듭니다.", "desc_en": "Translate bank notices for Vietnamese and Indonesian customers."},
+  {"level": "research", "title_ko": "금융 용어 일관성", "title_en": "Financial term consistency", "desc_ko": "번역에서 금융 전문용어를 일관되게 옮기는 방법을 연구합니다.", "desc_en": "Keep financial terms consistent in translation."}
+ ],
+ "doc_used": true,
+ "uncertain": []
+}

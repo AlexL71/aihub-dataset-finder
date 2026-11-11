@@ -1,0 +1,12 @@
+{
+ "dataset_id": "474",
+ "easy_ko": "전주시와 광주광역시를 차와 비행기에 단 레이저 거리 측정 장비로 훑어 도시를 입체 점과 면으로 만들고, 도로·차선·건물·차 같은 물체를 색으로 구분한 데이터입니다. 실제 도시를 컴퓨터 안에 똑같이 만드는 '디지털 트윈'이나 입체 공간 분석 AI를 만들 수 있습니다.",
+ "easy_en": "3D point clouds and surface models of Jeonju and Gwangju scanned by laser equipment on cars and aircraft, with objects such as roads, lanes, buildings and vehicles coloured by type. You can build 'digital twin' copies of real cities or AI that analyses 3D spaces.",
+ "detail_ko": "전주시와 광주광역시 40㎢(각 20㎢)를 차량 MMS와 항공 라이다로 스캔한 도시 3D 점구름(las)과 메시, 이미지(jpg)로 구성된 258,423건(원천 파일 2,852개)으로, JSON에 객체 10종(도로, 차선, 건물, 차량 등)의 3D 시맨틱 분할 라벨과 지역 정보가 있습니다. 기준 성능은 기록에서 확인되지 않으며, 가장 작은 파일도 0.19GB입니다.",
+ "detail_en": "258,423 items (2,852 source files) of 3D city point clouds (las), meshes and images (jpg) covering 40 km² of Jeonju and Gwangju (20 km² each), scanned by vehicle MMS and airborne lidar, with JSON 3D semantic segmentation labels for 10 object classes (road, lane, building, vehicle and more) and region. No baseline is visible in the record; even the smallest file is 0.19 GB.",
+ "amount_ko": "데이터 약 25.8만 건, 면적 40㎢",
+ "amount_en": "about 258k items, 40 km²",
+ "labels_ko": "입체 점마다 물체 종류(도로·건물 등)",
+ "labels_en": "3D semantic labels per point (road, building and more)",
+ "status": "full-run-2026-11-02"
+}

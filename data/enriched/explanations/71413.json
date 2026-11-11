@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71413",
+ "easy_ko": "많은 사람의 얼굴을 배경, 각도, 액세서리를 바꿔 가며 찍고, 눈·코·입·머리카락 같은 얼굴 부위를 색으로 칠하고 얼굴 주요 점을 표시한 데이터입니다. 화장이나 머리 모양을 가상으로 입혀 보는 앱이나 가상 캐릭터를 만드는 AI에 쓸 수 있습니다.",
+ "easy_en": "Photos of many people's faces with different backgrounds, angles and accessories, with face parts such as eyes, nose, mouth and hair coloured in and facial key points marked. You can build apps that try on make-up or hairstyles virtually, or AI that creates virtual characters.",
+ "detail_ko": "3,000명을 배경·각도·액세서리를 바꿔 1인당 50장씩 촬영한 얼굴 이미지 150,000장(png)에 얼굴 부위 19종 분할 마스크(grayscale png)와 106점 키포인트, 얼굴 바운딩박스, 촬영 정보를 JSON으로 붙였습니다. 기준 성능은 AGRNet 얼굴 부위 분할 F1-score 0.8116입니다. 전체 약 451GB이며, 실제 얼굴 사진이라 개인정보·초상권 이용 조건을 꼭 확인해야 하고, 같은 사람 50장이 있어 사람 단위로 나눠야 하며, 19개 부위 전체 목록은 기록에서 확인되지 않습니다.",
+ "detail_en": "150,000 face images (png) of 3,000 people, 50 each with varied backgrounds, angles and accessories, with 19-part segmentation masks (grayscale png), 106-point keypoints, face boxes and capture info in JSON. Baseline: AGRNet face-parsing F1-score 0.8116. Total size is about 451 GB; these are real faces, so check privacy and portrait rights; each person has 50 images, so split by person; the full list of 19 parts is not in the record.",
+ "amount_ko": "얼굴 사진 150,000장, 3,000명",
+ "amount_en": "150,000 face images, 3,000 people",
+ "labels_ko": "얼굴 부위 영역(색칠), 얼굴 주요 점, 얼굴 위치 상자",
+ "labels_en": "face-part masks, facial key points, face box",
+ "status": "full-run-2026-11-02"
+}

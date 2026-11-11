@@ -1,0 +1,29 @@
+{
+ "dataset_id": "495",
+ "title_en": "Waste plastic images",
+ "summary_ko": "재활용 선별장에서 찍은 생활계 폐플라스틱 사진 80만 장을 재질별 4종(PET, PE, PP, PS)으로 나누고 영역을 칠한 데이터입니다. 플라스틱 재질을 자동으로 구분하는 선별 AI나 분리배출 교육 앱에 쓸 수 있습니다.",
+ "summary_en": "800,000 photos of household waste plastic from recycling sorting facilities, segmented and labelled by 4 materials (PET, PE, PP, PS). For AI that sorts plastics by material automatically, or recycling-education apps.",
+ "contents_ko": "폐플라스틱 사진(jpg) + JSON(분할 다각형, 재질 클래스).",
+ "contents_en": "Waste-plastic photo (jpg) + JSON (segmentation polygon, material class).",
+ "modalities": ["image"],
+ "tasks": ["segmentation", "image_classification"],
+ "topics": [{"ko": "쓰레기·재활용", "en": "Waste and recycling"}, {"ko": "환경", "en": "Environment"}],
+ "keywords_ko": ["폐플라스틱", "재활용", "PET", "PE", "PP", "PS", "분리배출"],
+ "keywords_en": ["waste plastic", "recycling", "PET", "PE", "PP", "PS", "waste separation"],
+ "labels": ["segmentation polygon", "class (4 materials)"],
+ "file_formats": ["jpg", "json"],
+ "scale_ko": "802,870건(PE 31.1만, PET 23.3만, PP 15.4만, PS 10.3만)",
+ "classes_example": ["PET", "PE", "PP", "PS"],
+ "baseline": [],
+ "difficulty": "beginner",
+ "difficulty_note_ko": "클래스가 4개뿐이라 첫 분할·분류 프로젝트에 좋습니다. 전체 약 690GB라 일부만 받아 쓰세요.",
+ "skills_needed_ko": ["파이썬 기초", "이미지 분할 또는 분류"],
+ "caveats_ko": ["전체 약 690GB", "성능 지표가 팩 앞부분에 없음", "재질은 겉모양만으로 구분이 어려운 경우가 있음"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "플라스틱 재질 분류", "title_en": "Plastic material classifier", "desc_ko": "사진으로 PET·PE·PP·PS를 분류합니다.", "desc_en": "Classify PET, PE, PP and PS from photos."},
+  {"level": "capstone", "title_ko": "분리배출 도우미 앱", "title_en": "Waste separation helper app", "desc_ko": "플라스틱을 찍으면 재질과 배출 방법을 알려주는 앱을 만듭니다.", "desc_en": "Snap a plastic item to see its material and how to dispose of it."},
+  {"level": "research", "title_ko": "선별장 컨베이어 실시간 분할", "title_en": "Real-time segmentation on conveyors", "desc_ko": "겹쳐 흘러가는 플라스틱을 빠르게 분할하는 경량 모델을 연구합니다.", "desc_en": "Study lightweight models for overlapping plastics on conveyors."}
+ ],
+ "doc_used": true,
+ "uncertain": []
+}

@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71547",
+ "easy_ko": "가상의 집이나 가게 안에서 로봇이 해야 할 일을 한국어로 지시한 명령문 20만 개로, '오른쪽으로 돌기' 같은 이동과 '집어서 놓기', '씻어서 놓기' 같은 동작 단위로 나뉘어 있습니다. 말로 시키면 그대로 움직이는 로봇 연구에 쓸 수 있습니다.",
+ "easy_en": "200,000 Korean instructions telling a robot what to do inside virtual homes or shops, split into steps such as moving ('turn right') and handling things ('pick up and put down', 'wash and put down'). You can use it for research on robots that act on spoken instructions.",
+ "detail_ko": "가상 생활 공간에서 로봇·AI 에이전트가 수행할 한국어 임무 명령어 200,000건(txt; 주거 160,000, 상업 30,000, 문교·사회 10,000)에 수집 공간과 동작 단위 분할(예: 오른쪽으로 회전하기, 앞으로 이동하기, 집어서 놓기, 담아서 놓기, 잘라서 놓기, 씻어서 놓기)을 JSON으로 붙였습니다. 팩에 성능 지표가 없고, 라벨링 유형 설명(해상도, 파일 크기 등)이 명령어 데이터와 잘 맞지 않습니다. 71546 공간 데이터와 함께 쓰는 세트입니다.",
+ "detail_en": "200,000 Korean mission commands (txt; 160,000 residential, 30,000 commercial, 10,000 education/social) for robots or AI agents in virtual living spaces, with JSON collection space and action-step segmentation (such as turn right, move forward, pick up and place, put in and place, cut and place, wash and place). There are no metrics in the pack, and the label-type description (resolution, file size) does not fit command data well. It is meant to be used with the space set 71546.",
+ "amount_ko": "명령어 200,000건(주거 160,000, 상업 30,000, 문교·사회 10,000)",
+ "amount_en": "200,000 commands (160,000 residential, 30,000 commercial, 10,000 education/social)",
+ "labels_ko": "동작 단위 구분, 수집 공간",
+ "labels_en": "action segments, collection space, metadata",
+ "status": "full-run-2026-11-02"
+}

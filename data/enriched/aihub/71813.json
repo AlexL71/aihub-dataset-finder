@@ -1,0 +1,29 @@
+{
+ "dataset_id": "71813",
+ "title_en": "Multimodal information retrieval data",
+ "summary_ko": "공공데이터포털·정책브리핑 등 공개 문서 PDF 20,123개를 페이지별로 나눈 이미지 75,684장과 문맥 텍스트 75,684건에, 이미지·텍스트 요소 바운딩박스와 캡션 라벨이 붙은 데이터입니다. 문서 이미지와 글을 함께 검색하고 요약하는 검색 엔진 AI에 쓸 수 있습니다.",
+ "summary_en": "75,684 page images and 75,684 context texts split from 20,123 open public-document PDFs, with bounding-box and caption labels for image and text elements. For search-engine AI that retrieves and summarises across document images and text.",
+ "contents_ko": "문서(pdf) + 페이지 이미지(jpg) + 문맥 텍스트(txt) + JSON(요소 상자·캡션).",
+ "contents_en": "Documents (pdf) + page images (jpg) + context text (txt) + JSON (element boxes, captions).",
+ "modalities": ["image", "text"],
+ "tasks": ["retrieval_recommendation", "object_detection", "image_captioning"],
+ "topics": [{"ko": "문서 AI", "en": "Document AI"}, {"ko": "정보 검색", "en": "Information retrieval"}],
+ "keywords_ko": ["멀티모달 검색", "문서 검색", "RAG", "바운딩박스", "캡션", "공공 문서"],
+ "keywords_en": ["multimodal retrieval", "document search", "RAG", "bounding box", "captions", "public documents"],
+ "labels": ["bounding box", "caption"],
+ "file_formats": ["pdf", "jpg", "txt", "json"],
+ "scale_ko": "PDF 20,123개, 페이지 이미지·텍스트·라벨 각 75,684건",
+ "classes_example": ["텍스트 > 본문, 목록, 제목, 소제목", "머리말", "꼬리말", "페이지번호", "시각 요소 > 표, 차트(세로막대형), 차트(원형), 차트(꺾은선형)"],
+ "baseline": [],
+ "difficulty": "intermediate",
+ "difficulty_note_ko": "약 48GB로 크며, 이미지·텍스트 임베딩과 검색 색인을 다뤄야 합니다.",
+ "skills_needed_ko": ["파이썬", "임베딩 검색(FAISS)", "멀티모달 모델"],
+ "caveats_ko": ["데이터 개요 설명이 팩에 비어 있음", "검색 질의·정답 쌍 구성과 성능 지표가 팩 앞부분에 없음"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "문서 페이지 텍스트 검색", "title_en": "Page text search", "desc_ko": "문맥 텍스트를 임베딩해 비슷한 페이지를 찾습니다.", "desc_en": "Embed page text and find similar pages."},
+  {"level": "capstone", "title_ko": "정책 문서 멀티모달 검색기", "title_en": "Policy doc multimodal search", "desc_ko": "글과 그림을 함께 검색하고 결과를 요약하는 도구를 만듭니다.", "desc_en": "Search text and figures together and summarise."},
+  {"level": "research", "title_ko": "이미지·텍스트 결합 검색", "title_en": "Joint image-text retrieval", "desc_ko": "페이지 이미지와 텍스트 임베딩을 합쳐 검색 정확도를 높이는 방법을 연구합니다.", "desc_en": "Fuse page image and text embeddings for retrieval."}
+ ],
+ "doc_used": true,
+ "uncertain": ["검색 평가용 질의 포함 여부"]
+}

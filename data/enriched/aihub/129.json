@@ -1,0 +1,102 @@
+{
+ "dataset_id": "129",
+ "title_en": "Korean-Chinese translation corpus (social science)",
+ "summary_ko": "정치/행정, 금융/증시, 사회/노동/복지, 조례, K-POP·대중문화 등 사회과학 분야의 한국어-중국어 번역 문장 쌍 130만 개입니다. 한국어 원문은 평균 15어절이며, 분야 특화 한-중 번역기나 분야별 용어 사전 개발에 쓸 수 있습니다.",
+ "summary_en": "1.3 million Korean-Chinese sentence pairs in social science (politics and administration, finance, social welfare and labour, local ordinances, K-pop and pop culture and more). Korean sentences average 15 words; useful for domain-specific Korean-Chinese translators or term dictionaries.",
+ "contents_ko": "한국어 문장 + 중국어 번역 + 분야 라벨.",
+ "contents_en": "Korean sentence + Chinese translation + domain label.",
+ "modalities": [
+  "text"
+ ],
+ "tasks": [
+  "translation"
+ ],
+ "topics": [
+  {
+   "ko": "번역·외국어",
+   "en": "Translation and foreign languages"
+  },
+  {
+   "ko": "중국어",
+   "en": "Chinese language"
+  },
+  {
+   "ko": "행정·사회",
+   "en": "Administration and society"
+  }
+ ],
+ "keywords_ko": [
+  "한-중 번역",
+  "병렬 말뭉치",
+  "기계번역",
+  "중국어",
+  "정치/행정",
+  "금융/증시",
+  "사회/노동/복지"
+ ],
+ "keywords_en": [
+  "Korean-Chinese translation",
+  "parallel corpus",
+  "machine translation",
+  "Chinese",
+  "politics and administration",
+  "finance",
+  "social welfare and labour"
+ ],
+ "labels": [
+  "parallel sentence pairs",
+  "domain"
+ ],
+ "file_formats": [
+  "json",
+  "xlsx"
+ ],
+ "scale_ko": "병렬 문장 130만 쌍(정치·행정 25만, 금융 20만, 사회 20만, 조례 20만, K-POP 20만, 문화재 15만, 교육 10만)",
+ "classes_example": [
+  "정치/행정",
+  "금융/증시",
+  "사회/노동/복지",
+  "조례",
+  "K-POP·대중문화",
+  "문화재/향토/K-FOOD",
+  "교육"
+ ],
+ "baseline": [],
+ "difficulty": "beginner",
+ "difficulty_note_ko": "약 0.36GB 텍스트로 작아 번역 품질 비교나 작은 번역 모델 미세조정 실습에 좋습니다.",
+ "skills_needed_ko": [
+  "파이썬",
+  "Hugging Face 번역 모델",
+  "BLEU 평가"
+ ],
+ "caveats_ko": [
+  "파일 형식은 팩에서 확인하지 못해 추정"
+ ],
+ "project_ideas": [
+  {
+   "level": "beginner",
+   "title_ko": "분야별 한-중 번역 품질 비교",
+   "title_en": "Korean-Chinese quality by domain",
+   "desc_ko": "공개 번역 모델의 BLEU를 분야별로 비교하고 자주 틀리는 표현을 찾습니다.",
+   "desc_en": "Compare BLEU of an open translator by domain and find common errors."
+  },
+  {
+   "level": "capstone",
+   "title_ko": "중국어권 주민용 행정 안내 번역기",
+   "title_en": "Public-service translator for Chinese-speaking residents",
+   "desc_ko": "한 분야로 미세조정한 한-중 번역기를 만들어 일반 번역기와 비교하는 웹 데모를 만듭니다.",
+   "desc_en": "Fine-tune a Korean-Chinese translator on one domain and demo it against a general one."
+  },
+  {
+   "level": "research",
+   "title_ko": "병렬 말뭉치로 전문 용어 대역어 추출",
+   "title_en": "Term pairs from parallel text",
+   "desc_ko": "문장 쌍에서 분야 용어의 대역어를 자동으로 뽑아 용어 사전을 만드는 방법을 연구합니다.",
+   "desc_en": "Study automatic extraction of term translations to build a glossary."
+  }
+ ],
+ "doc_used": true,
+ "uncertain": [
+  "파일 형식이 팩에 명시되지 않음"
+ ]
+}

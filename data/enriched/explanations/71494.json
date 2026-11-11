@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71494",
+ "easy_ko": "강에 세운 물 높이 눈금판을 카메라와 CCTV로 찍은 사진 38만 5천여 장에 눈금판과 물 표면 위치를 상자로 표시하고 실제 물 높이를 적은 데이터입니다. 카메라로 강물 높이를 자동으로 읽어 홍수 피해를 막는 AI에 쓸 수 있습니다.",
+ "easy_en": "Over 385,000 camera and CCTV photos of water-level gauge boards in rivers, with boxes marking the gauge and the water surface and the true water level noted. You can use it to build AI that reads river levels from cameras automatically to help prevent flood damage.",
+ "detail_ko": "하천 수위표(목자판)를 영상 촬영과 CCTV로 찍은 이미지 385,095장(jpg)에 수위표·수면 상자, 수위 참값, 날씨·장비 정보를 JSON으로 붙였습니다. 기준 성능은 수위 참값 분류 Keras CNN 정확도 90.56%, 수위표 탐지 YOLOv4 mAP 91.32%, 수면 탐지 YOLOv4 mAP 95.31%입니다. 전체 약 130GB이고, 날씨 정보가 비어 있는(null) 이미지가 약 41%이며 비·흐림 이미지가 약 7%로 적습니다.",
+ "detail_en": "385,095 images (jpg) of river staff gauges from filming and CCTV, with JSON boxes for the gauge and water surface, the true water level, and weather and device information. Baselines: true water-level classification with a Keras CNN, accuracy 90.56%; gauge detection with YOLOv4, mAP 91.32%; water-surface detection with YOLOv4, mAP 95.31%. Total size is about 130 GB. About 41% of images have empty (null) weather data, and rainy or cloudy images are few (about 7%).",
+ "amount_ko": "이미지 385,095장",
+ "amount_en": "385,095 images",
+ "labels_ko": "눈금판·물 표면 위치 상자, 실제 물 높이, 날씨, 장비 종류",
+ "labels_en": "bounding boxes, true water level, weather, device type",
+ "status": "full-run-2026-11-02"
+}

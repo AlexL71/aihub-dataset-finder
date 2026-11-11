@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71708",
+ "easy_ko": "해조류와 바다 밑 물질 31가지를 수백 가지 빛 색깔로 나누어 찍는 특수 카메라(초분광) 사진 약 116만 장에 영역을 칠해 표시한 데이터입니다. 위성, 비행기, 드론으로 해조류가 사는 곳과 바다숲을 살피는 AI에 쓸 수 있습니다.",
+ "easy_en": "About 1.16 million images of 31 kinds of seaweed and seabed material from a special camera that splits light into many narrow colour bands (hyperspectral), with each area painted in. You can use it to build AI that monitors seaweed habitats and underwater forests from satellites, planes and drones.",
+ "detail_ko": "해조류와 저서물질(기타 포함) 31종(예: 갈파래류, 청각류, 대마디말류, 그물바탕말류, 모자반류, 나래미역류, 감태류, 유절산호말류, 무절산호말류)의 초분광 이미지(tiff; 복사휘도·반사도 반반)와 라벨 각 1,160,636장, 원시 png 35,059장에 분할 영역과 종류를 JSON으로 붙였습니다. 전체 약 4.3TB이고, 종별 수량 차이가 커서(모자반류가 많음) 클래스가 불균형하며, 성능 지표는 팩 앞부분에 없습니다.",
+ "detail_en": "1,160,636 hyperspectral images (tiff; half radiance, half reflectance) and labels of 31 kinds of seaweed and benthic material (such as sea lettuce, Codium, Cladophora, Dictyota, Sargassum, Alaria, Ecklonia, articulated and crustose coralline algae), plus 35,059 raw png images, with JSON segmentation and class. Total size is about 4.3 TB. Counts vary widely by type (Sargassum is common), so classes are imbalanced; no metrics are in the pack.",
+ "amount_ko": "초분광 이미지·라벨 각 1,160,636장, 원시 png 35,059장, 31종",
+ "amount_en": "1,160,636 hyperspectral images and labels, 35,059 raw png images, 31 classes",
+ "labels_ko": "해조류·바닥 물질 영역, 종류",
+ "labels_en": "polygons, class",
+ "status": "full-run-2026-11-02"
+}

@@ -1,0 +1,29 @@
+{
+ "dataset_id": "577",
+ "title_en": "News article machine reading comprehension data",
+ "summary_ko": "중앙일보 등 국내 종합일간지·지역신문 20종의 뉴스 기사를 지문으로 써서 만든 질문-답변 약 40만 건입니다. 답을 그대로 뽑는 추출형, 추론형, 예/아니오형, 답할 수 없는 질문형 4가지가 있습니다. 문서를 읽고 질문에 답하는 AI에 쓸 수 있습니다.",
+ "summary_en": "About 400,000 question-answer pairs built on news articles from 20 Korean national and regional newspapers, in 4 types: extractive, inference, yes/no and unanswerable. For AI that reads documents and answers questions.",
+ "contents_ko": "뉴스 기사 지문(txt) + JSON(질문, 답변, 답 위치, 질문 유형).",
+ "contents_en": "News passages (txt) + JSON (question, answer, answer span, question type).",
+ "modalities": ["text"],
+ "tasks": ["question_answering"],
+ "topics": [{"ko": "뉴스·언론", "en": "News and media"}, {"ko": "기계독해", "en": "Machine reading comprehension"}],
+ "keywords_ko": ["기계독해", "질의응답", "뉴스", "MRC", "한국어"],
+ "keywords_en": ["machine reading", "question answering", "news", "MRC", "Korean"],
+ "labels": ["question", "answer span", "question type"],
+ "file_formats": ["txt", "json"],
+ "scale_ko": "질문-답변 약 40만 건, 기사 지문 약 20만 개, 질문 유형 4종",
+ "classes_example": ["추출형", "추론형", "Yes/No 단문형", "응답불가형"],
+ "baseline": [{"task": "machine reading QA", "model": "ELECTRA", "metric": "F1", "value": "0.8464"}],
+ "difficulty": "beginner",
+ "difficulty_note_ko": "약 0.3GB로 작아 노트북에서도 질의응답 모델을 미세조정할 수 있습니다.",
+ "skills_needed_ko": ["파이썬", "Hugging Face", "BERT·ELECTRA 미세조정"],
+ "caveats_ko": ["기사 원문 저작권 때문에 사용 범위 확인 필요"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "뉴스 질의응답 모델", "title_en": "News QA model", "desc_ko": "KoELECTRA를 미세조정해 기사에서 답을 찾습니다.", "desc_en": "Fine-tune KoELECTRA to find answers in articles."},
+  {"level": "capstone", "title_ko": "뉴스 묻고 답하기 챗봇", "title_en": "News Q&A chatbot", "desc_ko": "기사 검색과 질의응답을 묶어 오늘 뉴스에 답하는 챗봇을 만듭니다.", "desc_en": "Combine article search and QA into a chatbot about today's news."},
+  {"level": "research", "title_ko": "답할 수 없는 질문 판별", "title_en": "Detecting unanswerable questions", "desc_ko": "지문에 답이 없을 때 모델이 거절하도록 하는 방법을 연구합니다.", "desc_en": "Study making models refuse when the passage has no answer."}
+ ],
+ "doc_used": true,
+ "uncertain": []
+}

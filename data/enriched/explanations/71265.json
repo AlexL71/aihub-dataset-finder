@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71265",
+ "easy_ko": "여행, 음식, 쇼핑, 예약 같은 일상 대화와 해외 영업·해외 고객 채팅 분야의 한국어-영어(양방향) 번역 문장을 짝지은 데이터입니다. 말하듯 쓴 문장을 번역하는 번역기나 해외 고객 상담 챗봇을 만들 수 있습니다.",
+ "easy_en": "Sentence pairs translated between Korean and English (both directions) in fields such as travel, food, shopping, bookings, overseas sales and chats with overseas customers. You can build translators for casual speech or chatbots that help overseas customers.",
+ "detail_ko": "한국어-영어(양방향) 번역 문장 쌍 300만 개(한-영 150만, 영-한 150만)(txt, JSON: 원문, 번역, 분야)입니다. 기준 성능은 OpenNMT BLEU 한→영 0.7309, 영→한 0.7182입니다. BLEU 값이 0~1 단위로 적혀 있으며, 도소매유통 문장이 많아 분야가 치우쳐 있습니다(세부 분야 15종, 신조어·약어·관용 표현 포함).",
+ "detail_en": "3M (1.5M ko–en, 1.5M en–ko) sentence pairs between Korean and English (both directions) (txt and JSON: source, translation, field). Baselines: OpenNMT BLEU 0.7309 (ko→en) and 0.7182 (en→ko). BLEU is given on a 0–1 scale; wholesale and retail sentences dominate (15 sub-fields, including slang, abbreviations and idioms).",
+ "amount_ko": "번역 문장 쌍 300만 개(한-영 150만, 영-한 150만)",
+ "amount_en": "3M (1.5M ko–en, 1.5M en–ko) sentence pairs",
+ "labels_ko": "번역 문장 짝, 분야",
+ "labels_en": "sentence pairs, field",
+ "status": "full-run-2026-11-02"
+}

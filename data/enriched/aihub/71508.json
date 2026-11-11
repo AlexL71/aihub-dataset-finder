@@ -1,0 +1,29 @@
+{
+ "dataset_id": "71508",
+ "title_en": "Data for preventing recognition errors on look-alike objects",
+ "summary_ko": "모양·색·질감이 비슷해 같은 물건으로 착각하기 쉬운 서로 다른 물체 50쌍(100종)을 조명·배경 등 10가지 환경으로 바꿔 가며 찍은 이미지 103만여 장에 상자와 다각형이 표시되어 있습니다. 무인점포·스마트 물류에서 비슷한 상품을 헷갈리지 않게 하는 AI에 쓸 수 있습니다.",
+ "summary_en": "About 1.03 million images of 50 pairs (100 kinds) of different objects that look alike in shape, colour or texture, shot under 10 environment changes, with boxes and polygons. For AI in unmanned stores and smart logistics that must not confuse similar products.",
+ "contents_ko": "이미지(JPG) + JSON(상자, 다각형, 객체 클래스, 환경 조건).",
+ "contents_en": "Images (JPG) + JSON (boxes, polygons, object class, environment condition).",
+ "modalities": ["image"],
+ "tasks": ["object_detection", "segmentation", "image_classification"],
+ "topics": [{"ko": "유통·물류", "en": "Retail and logistics"}, {"ko": "물체 인식", "en": "Object recognition"}],
+ "keywords_ko": ["유사 객체", "상품 인식", "무인점포", "스마트 물류", "환경 변환", "인식 오류"],
+ "keywords_en": ["look-alike objects", "product recognition", "unmanned store", "smart logistics", "environment variation", "recognition errors"],
+ "labels": ["bounding box", "polygon", "class"],
+ "file_formats": ["jpg", "json"],
+ "scale_ko": "이미지 1,032,842장, 비동일 객체 50쌍(100종), 환경변환 10종",
+ "classes_example": ["각설탕", "치킨무", "메주", "황토벽돌", "삶은메추리알", "통마늘", "국수소면", "실타래", "숟가락", "비누", "백설기", "환경변환 C010~C100(각도·배경색·휘도·조명)"],
+ "baseline": [],
+ "difficulty": "advanced",
+ "difficulty_note_ko": "전체 약 950GB~1.1TB로 매우 큽니다. 몇 쌍만 골라 받아 쓰세요.",
+ "skills_needed_ko": ["파이썬", "YOLO 탐지", "분할 모델(Mask R-CNN)", "미세 분류"],
+ "caveats_ko": ["전체 약 950GB(페이지 표기 1,116.2GB)", "성능 지표 수치가 팩에서 확인되지 않음", "같은 기관의 71510(개체 레벨 인식) 데이터와 연관"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "비슷한 상품 쌍 구분", "title_en": "Look-alike product pair classifier", "desc_ko": "헷갈리기 쉬운 상품 한 쌍을 구분하는 분류 모델을 학습합니다.", "desc_en": "Train a classifier for one confusing product pair."},
+  {"level": "capstone", "title_ko": "무인점포 상품 인식 데모", "title_en": "Unmanned store recognition demo", "desc_ko": "카메라로 비슷한 상품을 탐지해 정확히 구분하는 계산 데모를 만듭니다.", "desc_en": "Detect and separate similar products in a checkout demo."},
+  {"level": "research", "title_ko": "환경 변화에 강한 인식", "title_en": "Robustness to environment changes", "desc_ko": "조명·배경 변화가 유사 객체 혼동을 얼마나 늘리는지 분석합니다.", "desc_en": "Study how lighting and background increase confusion."}
+ ],
+ "doc_used": true,
+ "uncertain": ["100종 객체 전체 목록과 환경변환 코드 10종의 정확한 뜻은 확인하지 못함"]
+}

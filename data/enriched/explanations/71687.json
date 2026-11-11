@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71687",
+ "easy_ko": "충전해서 다시 쓰는 배터리의 셀과 모듈을 엑스레이 단층 촬영(CT)으로 찍은 사진과 겉모습 사진 약 45만 장에 불량 부분을 표시한 데이터입니다. 배터리 공장에서 불량품을 자동으로 찾아내는 AI에 쓸 수 있습니다.",
+ "easy_en": "About 450,000 X-ray CT images and surface photos of rechargeable battery cells and modules, with defective areas marked. You can use it to build AI that automatically finds defective batteries in factories.",
+ "detail_ko": "이차전지 셀·모듈 3D X-Ray CT 이미지 223,780장과 원통형 셀 외관(RGB) 이미지 222,464장, 총 446,244장(jpg, png)에 결함 분할 영역(예: porosity), 결함 종류, 정상/비정상을 JSON으로 붙였습니다. 기준 모델은 DeepLab v3+(Dilated Residual Network) 결함 분할이지만 값은 팩 앞부분에 없습니다. 전체 약 507GB이고, 정상보다 비정상 이미지가 훨씬 많아 실제 공정 비율과 다르며, 결함 종류 전체 목록은 팩 앞부분에 없습니다.",
+ "detail_en": "446,244 images (jpg, png): 223,780 3D X-ray CT images of secondary-battery cells and modules and 222,464 RGB surface images of cylindrical cells, with JSON defect polygons (such as porosity), defect type and normal/abnormal. The baseline model is DeepLab v3+ (Dilated Residual Network) for defect segmentation, but its score is not in the pack. Total size is about 507 GB. Abnormal images far outnumber normal ones, unlike a real production line, and the full defect list is not in the pack.",
+ "amount_ko": "이미지 446,244장(CT 223,780, 외관 222,464)",
+ "amount_en": "446,244 images (223,780 CT, 222,464 surface)",
+ "labels_ko": "불량 부분 테두리, 불량 종류, 정상·비정상",
+ "labels_en": "polygons, class, normal/abnormal",
+ "status": "full-run-2026-11-02"
+}

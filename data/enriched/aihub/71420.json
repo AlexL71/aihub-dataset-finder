@@ -1,0 +1,29 @@
+{
+ "dataset_id": "71420",
+ "title_en": "Fusion dataset for indoor positioning",
+ "summary_ko": "서울 지하상가 23곳과 연결된 지하철역 7곳의 통로에서 스마트폰 앱으로 수집한 와이파이 신호와 지자기(땅의 자기장) 센서 기록 약 1,607만 건입니다. GPS가 잘 안 잡히는 지하에서 현재 위치를 맞히는 실내 측위·길 안내 AI에 쓸 수 있습니다.",
+ "summary_en": "About 16.07 million Wi-Fi and geomagnetic sensor records collected by a phone app in the corridors of 23 underground shopping centres and 7 connected subway stations in Seoul. For indoor positioning and navigation where GPS fails.",
+ "contents_ko": "센서 기록 JSON(수집 지점 위치, 와이파이 신호 세기, 지자기 값).",
+ "contents_en": "Sensor record JSON (collection point location, Wi-Fi signal strength, geomagnetic values).",
+ "modalities": ["sensor"],
+ "tasks": ["tabular_prediction"],
+ "topics": [{"ko": "실내 위치·길 안내", "en": "Indoor positioning and navigation"}, {"ko": "교통·지하철", "en": "Transport and subway"}],
+ "keywords_ko": ["실내 측위", "와이파이", "지자기", "지하상가", "지하철역", "길 안내"],
+ "keywords_en": ["indoor positioning", "Wi-Fi", "geomagnetic", "underground mall", "subway station", "navigation"],
+ "labels": ["location", "sensor values"],
+ "file_formats": ["json"],
+ "scale_ko": "센서 기록 16,074,500건, 수집 지점 64,298곳, 장소 30곳(지하상가 23·역사 7)",
+ "classes_example": ["을지로권역", "종로권역", "명동권역", "강남권역", "터미널권역", "영등포권역"],
+ "baseline": [{"task": "location recognition", "model": "Automatic Self-Reconstruction Model", "metric": "Accuracy", "value": "85.99%"}, {"task": "position error", "model": "Automatic Self-Reconstruction Model", "metric": "RMSE", "value": "1.87 m"}],
+ "difficulty": "intermediate",
+ "difficulty_note_ko": "약 2.4GB로 가볍고 표 데이터처럼 다룰 수 있습니다. 한 지하상가만 골라 시작하세요.",
+ "skills_needed_ko": ["파이썬", "pandas", "회귀·최근접 이웃(KNN) 모델"],
+ "caveats_ko": ["데이터가 수집된 장소에서만 쓸 수 있다고 명시됨", "와이파이 신호는 시간이 지나면 바뀌어 최신 환경과 다를 수 있음", "성능표의 AI TASK가 Object Detection으로 적혀 있으나 실제는 위치 추정"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "와이파이 지문 위치 추정", "title_en": "Wi-Fi fingerprint locator", "desc_ko": "KNN으로 와이파이 신호 세기만 보고 가장 가까운 수집 지점을 맞힙니다.", "desc_en": "Use KNN on Wi-Fi strengths to find the nearest collection point."},
+  {"level": "capstone", "title_ko": "지하상가 길 안내 앱", "title_en": "Underground mall navigation app", "desc_ko": "현재 위치를 추정해 목적지 출구까지 안내하는 앱 데모를 만듭니다.", "desc_en": "Estimate position and guide users to an exit."},
+  {"level": "research", "title_ko": "와이파이+지자기 융합", "title_en": "Wi-Fi and geomagnetic fusion", "desc_ko": "두 센서를 함께 쓰면 위치 오차가 얼마나 줄어드는지 연구합니다.", "desc_en": "Study how much fusing both sensors reduces position error."}
+ ],
+ "doc_used": true,
+ "uncertain": []
+}

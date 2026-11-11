@@ -1,0 +1,45 @@
+{
+ "id": "sfa_business",
+ "name_ko": "국제스포츠학부(스포츠비즈니스전공)",
+ "name_en": "Sport Business (School of International Sport)",
+ "college": "문화스포츠대학",
+ "summary_ko": "스포츠 산업의 경영, 마케팅, 미디어, 에이전트, 이벤트, 관광, 법을 배우는 전공입니다. 스포츠데이터분석과 스포츠빅데이터분석, 스포츠영상공학 과목이 있고, 국제 스포츠 문화·외교·커뮤니케이션 과목을 스포츠과학전공과 함께 배웁니다.",
+ "summary_en": "Covers the business side of sport: management, marketing, media, agents, events, tourism and law. Includes sport data analysis, sport big-data analysis and sport video engineering, plus shared courses on international sport culture, diplomacy and communication with the Sport Science major.",
+ "key_topics": ["스포츠 마케팅·브랜딩", "스포츠 경영·재무", "스포츠 미디어·저널리즘", "스포츠 에이전트", "스포츠 이벤트·스포테인먼트", "스포츠 데이터·빅데이터 분석", "스포츠 관광", "스포츠 법", "e스포츠"],
+ "course_keywords": ["스포츠경제학", "국제스포츠행정", "스포츠데이터분석", "스포츠사회학", "스포츠마케팅", "스포츠프라퍼티스", "미디어스포츠론", "스포츠경영", "스포츠소비자행동", "스포츠시장조사론", "스포츠에이전트실무", "스포테인먼트비즈니스", "스포츠저널리즘", "스포츠비즈니스창업실습", "스포츠영상공학론", "스포츠재무와회계", "스포츠세일즈와프로모션", "스포츠브랜딩과디자인", "스포츠빅데이터분석", "글로벌스포츠마케팅실습", "스포츠이벤트실습", "스포츠법률", "스포츠투어리즘", "스포츠비즈니스영어", "국제스포츠문화의이해", "국제스포츠외교"],
+ "curriculum_by_year": {
+  "1": ["국제스포츠문화의이해", "국제스포츠외교", "글로벌스포츠커뮤니케이션", "스포츠경제학", "국제스포츠행정", "스포츠데이터분석", "전공실기"],
+  "2": ["글로벌스포츠비즈니스환경의이해", "글로벌문화와에티켓", "스포츠사회학", "스포츠마케팅", "스포츠프라퍼티스", "미디어스포츠론", "스포츠경영"],
+  "3": ["글로벌인턴쉽", "스포츠비즈니스영어", "스포츠소비자행동", "스포츠시장조사론", "스포츠에이전트실무", "스포테인먼트비즈니스", "스포츠저널리즘", "스포츠비즈니스창업실습", "스포츠영상공학론", "스포츠재무와회계", "스포츠세일즈와프로모션"],
+  "4": ["스포츠브랜딩과디자인", "스포츠빅데이터분석", "글로벌스포츠마케팅실습", "스포츠에이전트실습", "스포츠저널리즘실습", "스포츠이벤트실습", "스포츠법률", "스포츠투어리즘"]
+ },
+ "careers": ["프로 구단·스포츠 협회 프런트", "스포츠 마케팅·스폰서십 기업", "스포츠 에이전트", "스포츠 기자·미디어", "스포츠 이벤트·대회 운영", "국제 스포츠 기구·스포츠 외교", "스포츠 데이터 분석가", "대학원 진학(스포츠융합학)"],
+ "research_areas": ["스포츠 마케팅·소비자 행동", "스포츠 빅데이터 분석", "e스포츠", "스포츠 관광", "스포츠와 지속가능발전"],
+ "data_interests": [
+  {"topic_ko": "경기 기록과 선수 데이터", "topic_en": "Game records and player data", "keywords": ["경기 기록", "선수 스탯", "승부 예측"]},
+  {"topic_ko": "경기 영상", "topic_en": "Game video", "keywords": ["하이라이트", "선수 추적", "중계 영상"]},
+  {"topic_ko": "팬과 관중", "topic_en": "Fans and spectators", "keywords": ["관중 수", "티켓 판매", "팬 반응"]},
+  {"topic_ko": "스포츠 뉴스와 SNS", "topic_en": "Sport news and social media", "keywords": ["뉴스 기사", "댓글", "감성 분석"]},
+  {"topic_ko": "스포츠 관광·이벤트", "topic_en": "Sport tourism and events", "keywords": ["관광객", "대회 방문"]},
+  {"topic_ko": "e스포츠·게임", "topic_en": "Esports and games", "keywords": ["게임 플레이 기록", "e스포츠 중계"]}
+ ],
+ "interest_questions": [
+  {"q_ko": "스포츠 비즈니스에서 어떤 일이 끌리나요?", "q_en": "Which sport business job appeals to you?",
+   "options": [{"ko": "마케팅·스폰서십", "en": "Marketing and sponsorship"}, {"ko": "경기·선수 데이터 분석", "en": "Game and player data analysis"}, {"ko": "스포츠 미디어·기자", "en": "Sport media and journalism"}, {"ko": "이벤트·관광", "en": "Events and tourism"}, {"ko": "e스포츠", "en": "Esports"}]},
+  {"q_ko": "다뤄보고 싶은 자료는?", "q_en": "What data would you like to use?",
+   "options": [{"ko": "경기 기록", "en": "Game records"}, {"ko": "경기 영상", "en": "Game videos"}, {"ko": "팬 반응·SNS", "en": "Fan reactions and social media"}, {"ko": "티켓·관중 데이터", "en": "Ticket and attendance data"}]}
+ ],
+ "project_themes": ["경기 기록으로 승부 예측", "경기 영상 하이라이트 자동 추출", "SNS 팬 반응으로 구단 브랜드 분석", "관중 수 예측으로 티켓 가격 전략 세우기"],
+ "data_skill_level": "medium",
+ "data_skill_note": "스포츠데이터분석, 스포츠시장조사론, 스포츠빅데이터분석 과목이 있어 기초 데이터 분석을 경험할 수 있습니다. 프로그래밍 과목은 따로 없습니다.",
+ "sources": [
+  {"kind": "page", "label": "학부소개", "url": "https://sejong.korea.ac.kr/sfa/4918/subview.do"},
+  {"kind": "page", "label": "교육목표", "url": "https://sejong.korea.ac.kr/sfa/4921/subview.do"},
+  {"kind": "page", "label": "학부 교과과정(이수체계도)", "url": "https://sejong.korea.ac.kr/sfa/4943/subview.do"},
+  {"kind": "page", "label": "대학원 교과과정", "url": "https://sejong.korea.ac.kr/sfa/4933/subview.do"}
+ ],
+ "inferred_fields": ["careers", "data_interests", "interest_questions", "project_themes"],
+ "gaps": ["Shares one website with 스포츠과학전공; only the curriculum map separates the two. No careers page; careers inferred."],
+ "version": 1,
+ "created": "2026-10-29"
+}

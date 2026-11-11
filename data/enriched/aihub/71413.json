@@ -1,0 +1,29 @@
+{
+ "dataset_id": "71413",
+ "title_en": "Face parsing data",
+ "summary_ko": "3,000명을 배경·각도·액세서리를 바꿔 가며 1인당 50장씩 찍은 얼굴 이미지 150,000장입니다. 눈·코·입·머리카락 등 19개 얼굴 부위가 픽셀 단위로 칠해져 있고 106개 얼굴 키포인트가 있어 메이크업·헤어 가상 체험, 가상 캐릭터 생성 같은 얼굴 부위 분할(Face Parsing) AI에 쓸 수 있습니다.",
+ "summary_en": "150,000 face images of 3,000 people (50 each) with varied backgrounds, angles and accessories. 19 face parts such as eyes, nose, mouth and hair are labelled per pixel, with 106 face keypoints, for face parsing used in virtual makeup, hairstyle try-on and avatar creation.",
+ "contents_ko": "얼굴 이미지(png) + 부위 분할 마스크(grayscale png) + JSON(106점 키포인트, 얼굴 상자, 촬영 정보).",
+ "contents_en": "Face image (png) + part mask (grayscale png) + JSON (106 keypoints, face box, capture info).",
+ "modalities": ["image"],
+ "tasks": ["segmentation", "keypoint_pose"],
+ "topics": [{"ko": "뷰티·미용", "en": "Beauty and cosmetics"}, {"ko": "미디어·가상 캐릭터", "en": "Media and virtual avatars"}],
+ "keywords_ko": ["얼굴 분할", "Face Parsing", "얼굴 키포인트", "가상 메이크업", "헤어스타일", "아바타"],
+ "keywords_en": ["face segmentation", "face parsing", "facial landmarks", "virtual makeup", "hairstyle", "avatar"],
+ "labels": ["segmentation mask", "106 keypoints", "bounding box"],
+ "file_formats": ["png", "json"],
+ "scale_ko": "얼굴 이미지 150,000장(3,000명×50장), 얼굴 부위 19종, 키포인트 106점",
+ "classes_example": ["눈", "코", "입", "머리카락"],
+ "baseline": [{"task": "face part segmentation", "model": "AGRNet", "metric": "F1-score", "value": "0.8116"}],
+ "difficulty": "intermediate",
+ "difficulty_note_ko": "분할 실습에 좋지만 전체 약 451GB이고 가장 작은 파일도 약 0.34GB입니다. 일부만 받아 쓰세요.",
+ "skills_needed_ko": ["파이썬", "분할 모델(U-Net·BiSeNet)", "얼굴 키포인트"],
+ "caveats_ko": ["전체 약 451GB", "실제 얼굴 사진이라 개인정보·초상권 이용 조건을 꼭 확인", "같은 사람 50장이 있어 분할 시 사람 단위로 나눠야 함", "19개 부위 전체 목록은 팩 앞부분에 없음"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "얼굴 부위 분할", "title_en": "Face part segmentation", "desc_ko": "U-Net으로 얼굴 사진에서 눈·코·입·머리카락 영역을 칠합니다.", "desc_en": "Segment eyes, nose, mouth and hair with U-Net."},
+  {"level": "capstone", "title_ko": "가상 립스틱 체험", "title_en": "Virtual lipstick try-on", "desc_ko": "입술 영역을 찾아 원하는 색을 자연스럽게 입혀 보는 앱을 만듭니다.", "desc_en": "Find the lips and apply a chosen colour naturally."},
+  {"level": "research", "title_ko": "각도·액세서리 강건성", "title_en": "Robustness to angle and accessories", "desc_ko": "얼굴 각도와 안경·모자 같은 가림이 분할 성능에 주는 영향을 분석합니다.", "desc_en": "Analyse how pose and occluding accessories affect parsing."}
+ ],
+ "doc_used": true,
+ "uncertain": []
+}

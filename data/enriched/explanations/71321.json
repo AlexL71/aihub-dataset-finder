@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71321",
+ "easy_ko": "강원도 양식장의 연어와 명태를 CCTV와 물속 카메라로 찍은 사진에 물고기 영역을 칠하고, 물속 산소·온도·산성도 같은 센서 값과 수질·사육 관리 기록을 함께 모은 데이터입니다. 연어와 명태가 잘 자라는지 예측하고, 명태에게 중요한 물 온도를 미리 알려 주는 양식장 AI를 만들 수 있습니다.",
+ "easy_en": "CCTV and underwater photos of salmon and pollock at Gangwon fish farms with each fish coloured in, plus sensor readings such as oxygen, temperature and acidity, and water-quality and care records. You can build fish-farm AI that predicts salmon and pollock growth and forecasts the water temperature that matters for pollock.",
+ "detail_ko": "강원도 양식장에서 CCTV·수중카메라로 촬영한 이미지 12만 장(연어 8만, 명태 4만, jpg)에 분할, 종, 성장 단계(연어 치어·성어, 명태 치어)를 JSON으로 붙이고, 용존산소·수온·pH 등 센서 데이터 약 100만 세트와 수질·사육 관리 기록(csv)을 함께 제공합니다. 기준 성능은 Mask R-CNN 분할 mIoU 연어 치어 84.91%, 명태 치어 81.97%입니다. 강원도 양식장 데이터만 있고, 640번 뱀장어 양식 데이터와 같은 구축 기관·구조입니다.",
+ "detail_en": "120k images (jpg; 80k salmon, 40k pollock) from CCTV and underwater cameras at Gangwon fish farms, with JSON segmentation, species and growth stage (salmon fry and adults, pollock fry), plus about 1M sensor sets (dissolved oxygen, temperature, pH and more) and water-quality and husbandry records (csv). Baselines: Mask R-CNN segmentation mIoU 84.91% (salmon fry) and 81.97% (pollock fry). Only Gangwon farms are covered; same organisation and structure as dataset 640.",
+ "amount_ko": "사진 12만 장(연어 8만, 명태 4만), 센서 기록 약 100만 세트",
+ "amount_en": "120k images (80k salmon, 40k pollock), about 1M sensor sets",
+ "labels_ko": "물고기 영역(색칠), 물고기 종류, 자라는 단계, 센서·관리 값",
+ "labels_en": "fish masks, species, growth stage, sensor and care values",
+ "status": "full-run-2026-11-02"
+}

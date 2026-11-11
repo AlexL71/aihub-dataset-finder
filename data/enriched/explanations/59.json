@@ -1,0 +1,12 @@
+{
+ "dataset_id": "59",
+ "easy_ko": "개와 고양이가 걷고, 먹고, 눕는 모습을 오래 촬영한 영상에서 장면을 뽑아, 동물의 위치와 다리·머리 같은 몸의 주요 점, 그리고 무슨 행동을 하는지를 표시한 데이터입니다. 집에 혼자 있는 반려동물이 무엇을 하는지 알려 주는 펫 카메라나 앱을 만들 수 있습니다.",
+ "easy_en": "Frames from long videos of dogs and cats walking, eating, lying down and more, marked with where the animal is, key body points such as legs and head, and what it is doing. You could build a pet camera or app that tells owners what their pet does when alone.",
+ "detail_ko": "개·고양이 행동 영상 514시간에서 추출한 프레임 약 757만 장에 바운딩박스, 15개 관절 키포인트, 행동 클래스가 JSON으로 라벨링되어 있습니다. 종(개/고양이)별로 폴더가 나뉩니다. 기준 성능은 ST-GCN 기반 행동 분류 Top-5 정확도 약 70%로, 개선 여지가 있습니다. 행동 클래스 목록은 원문 설명서에서 확인하는 것이 좋습니다.",
+ "detail_en": "About 7.57M frames extracted from 514 hours of dog and cat behaviour video, labelled in JSON with bounding boxes, 15 joint keypoints and an action class; folders are split by species. The baseline (ST-GCN action recognition) reaches about 70% top-5 accuracy, leaving room for improvement. Check the manual for the full list of action classes.",
+ "amount_ko": "영상 514시간, 표시된 장면 약 757만 장",
+ "amount_en": "514 hours of video, about 7.57M labelled frames",
+ "labels_ko": "동물 위치 상자, 관절 15곳, 행동 종류",
+ "labels_en": "box around the animal, 15 joint points, action type",
+ "status": "sample-2026-11-02"
+}

@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71598",
+ "easy_ko": "서울·인천·경기의 관광지, 음식점, 숙소, 쇼핑 장소 정보와 장소 사진, 사진 설명, 그리고 관광에 관한 질문과 답을 함께 묶은 데이터입니다. 사진과 지식을 같이 보고 여행 질문에 답하는 챗봇이나 추천 AI에 쓸 수 있습니다.",
+ "easy_en": "Information on tourist sights, restaurants, places to stay and shops in Seoul, Incheon and Gyeonggi, together with photos of the places, photo descriptions, and questions and answers about travel. You can use it to build chatbots or recommendation AI that look at photos and facts together to answer travel questions.",
+ "detail_ko": "서울·인천·경기 장소(POI) 191,788건의 정보(csv)와 지식 트리플(주어-관계-대상), 장소 이미지 958,940장(png)과 이미지 설명 문장, 질문-답변 3,835,760건(JSON)을 묶은 지식 기반 시각 질의응답(KVQA) 데이터입니다. 장소 분류는 관광지, 문화시설, 음식점, 레포츠, 숙박, 쇼핑입니다. 기준 성능은 ZS-F-VQA + KGE 융합 5지선다 지식 VQA 정확도 78.28%입니다. 전체 약 9.4TB로 매우 크고, 표마다 수량이 다르며(POI 161,500 vs 191,788, 트리플 299,781 vs 2,233,284), 음식점 비중이 약 40%로 큽니다. POI 원본 일부는 외부 기업 제공 자료입니다.",
+ "detail_en": "Knowledge-based visual question answering (KVQA) data for Seoul, Incheon and Gyeonggi: information on 191,788 places (POIs, csv), knowledge triples (subject-relation-object), 958,940 place images (png) with captions, and 3,835,760 question-answer pairs (JSON). Place types are tourist sights, cultural facilities, restaurants, leisure sports, lodging and shopping. Baseline: 5-choice knowledge VQA with ZS-F-VQA + KGE fusion, accuracy 78.28%. Total size is about 9.4 TB, very large. Counts differ between tables (POIs 161,500 vs. 191,788; triples 299,781 vs. 2,233,284), and restaurants make up about 40%. Some POI source data comes from outside companies.",
+ "amount_ko": "POI 191,788건, 이미지 958,940장, 트리플 2,233,284건, 질문-답변 3,835,760건",
+ "amount_en": "191,788 POIs, 958,940 images, 2,233,284 triples, 3,835,760 QA pairs",
+ "labels_ko": "지식 트리플, 사진 설명 문장, 질문과 답",
+ "labels_en": "triples, image captions, question-answer pairs",
+ "status": "full-run-2026-11-02"
+}

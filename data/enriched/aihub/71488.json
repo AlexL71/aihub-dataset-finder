@@ -1,0 +1,32 @@
+{
+ "dataset_id": "71488",
+ "title_en": "Intelligent beekeeping data",
+ "summary_ko": "벌통 안 꿀벌 사진 27만여 건에 생애단계(알·애벌레·번데기·수일벌·여왕벌), 벌 종류(이탈리안·카니올란·한봉·호박벌), 질병(백묵병) 등 12개 클래스가 상자와 다각형으로 표시되어 있습니다. 꿀벌 질병 예측과 양봉 관리 AI에 쓸 수 있습니다.",
+ "summary_en": "About 274,000 images from inside beehives with 12 classes (life stages egg, larva, pupa, worker/drone, queen; bee breeds Italian, Carniolan, Korean native, bumblebee; chalkbrood disease) marked by boxes and polygons. For bee disease prediction and beekeeping AI.",
+ "contents_ko": "벌통 이미지(jpg) + JSON(상자, 분할 다각형, 클래스). 음성·환경 데이터도 있으나 모델 학습에는 쓰지 않음.",
+ "contents_en": "Hive images (jpg) + JSON (boxes, polygons, class). Audio and environment data included but not used for model training.",
+ "modalities": ["image"],
+ "tasks": ["image_classification", "object_detection", "segmentation", "anomaly_detection"],
+ "topics": [{"ko": "농업·양봉", "en": "Agriculture and beekeeping"}, {"ko": "곤충·생태", "en": "Insects and ecology"}],
+ "keywords_ko": ["꿀벌", "양봉", "백묵병", "생애단계", "여왕벌", "질병 예측"],
+ "keywords_en": ["honeybee", "beekeeping", "chalkbrood", "life stage", "queen bee", "disease prediction"],
+ "labels": ["bounding box", "polygon", "class"],
+ "file_formats": ["jpg", "csv", "mp4", "json"],
+ "scale_ko": "학습 이미지 274,216건, 클래스 12종 (음성 5,968건·환경 2,712,823건 별도)",
+ "classes_example": ["알", "애벌레", "번데기", "수일벌-이탈리안", "수일벌-카니올란", "수일벌-한봉", "여왕벌", "호박벌", "백묵병"],
+ "baseline": [
+  {"task": "life-issue (disease) classification", "model": "GoogLeNet", "metric": "Accuracy", "value": "97.21%"},
+  {"task": "life-stage classification", "model": "GoogLeNet", "metric": "Accuracy", "value": "91.42%"}
+ ],
+ "difficulty": "beginner",
+ "difficulty_note_ko": "클래스가 분명해 이미지 분류 실습에 좋습니다. 전체 약 77GB라 일부만 받아도 됩니다.",
+ "skills_needed_ko": ["파이썬", "이미지 분류(CNN)", "YOLO 탐지"],
+ "caveats_ko": ["전체 약 77GB", "구축기관 표기가 페이지와 설명서에서 다름", "음성·환경 데이터는 학습에 쓰이지 않았다고 명시됨"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "꿀벌 생애단계 분류", "title_en": "Bee life-stage classification", "desc_ko": "사진 속 벌이 알·애벌레·번데기·성충 중 무엇인지 분류합니다.", "desc_en": "Classify bees as egg, larva, pupa or adult."},
+  {"level": "capstone", "title_ko": "벌통 질병 알림 앱", "title_en": "Hive disease alert app", "desc_ko": "벌집 사진에서 백묵병을 찾아 농가에 알려주는 앱을 만듭니다.", "desc_en": "Detect chalkbrood in comb photos and alert beekeepers."},
+  {"level": "research", "title_ko": "벌 종류 미세 구분", "title_en": "Fine-grained bee breed recognition", "desc_ko": "생김새가 비슷한 꿀벌 품종을 구분하는 방법을 연구합니다.", "desc_en": "Study telling apart similar-looking honeybee breeds."}
+ ],
+ "doc_used": true,
+ "uncertain": ["12개 클래스 전체 목록 중 일부는 팩에서 잘려 확인되지 않음"]
+}

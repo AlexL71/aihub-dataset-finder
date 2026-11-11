@@ -1,0 +1,29 @@
+{
+ "dataset_id": "527",
+ "title_en": "Weed recognition data for precision-agriculture machinery",
+ "summary_ko": "강피·물달개비·흰명아주 등 잡초 14종을 지상에서 찍은 RGB 사진 38.9만 장에 잡초 영역을 칠하고, 적외선 온도 10.8만 개와 토양·환경 센서 17만 세트를 함께 담은 데이터입니다. 잡초를 찾아 자동으로 제거하는 농기계나 잡초 분류 AI에 쓸 수 있습니다.",
+ "summary_en": "389,000 ground-level RGB photos of 14 weed species (barnyard grass, monochoria, white goosefoot and more) with weed regions segmented, plus 108,000 infrared temperature records and 170,000 soil and environment sensor sets. For farm machines that find and remove weeds, or weed-classification AI.",
+ "contents_ko": "잡초 사진(jpg) + JSON(잡초 분할, 종) + 적외선 온도 + 토양·환경 센서 데이터.",
+ "contents_en": "Weed photo (jpg) + JSON (segmentation, species) + infrared temperature + soil and environment sensor data.",
+ "modalities": ["image", "sensor", "tabular"],
+ "tasks": ["segmentation", "image_classification"],
+ "topics": [{"ko": "농업·스마트팜", "en": "Agriculture and smart farming"}, {"ko": "잡초·작물 관리", "en": "Weeds and crop management"}, {"ko": "농기계", "en": "Farm machinery"}],
+ "keywords_ko": ["잡초", "잡초 탐지", "정밀농업", "제초 로봇", "강피", "논잡초"],
+ "keywords_en": ["weeds", "weed detection", "precision agriculture", "weeding robot", "barnyard grass", "paddy weeds"],
+ "labels": ["segmentation", "class (14 weeds)", "sensor values"],
+ "file_formats": ["jpg", "json"],
+ "scale_ko": "RGB 학습 데이터 388,879개, 토양·환경 170,205세트, 적외선 107,579개, 잡초 14종",
+ "classes_example": ["강피(논피)", "물달개비", "흰명아주"],
+ "baseline": [],
+ "difficulty": "beginner",
+ "difficulty_note_ko": "잡초 종 분류·분할은 첫 프로젝트로 좋습니다. 약 480GB라 일부 종만 받아 쓰세요.",
+ "skills_needed_ko": ["파이썬 기초", "이미지 분할·분류"],
+ "caveats_ko": ["잡초 14종 전체 목록과 성능 지표가 팩 앞부분에 없음"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "잡초 종 분류", "title_en": "Weed species classifier", "desc_ko": "사진으로 잡초 14종을 분류합니다.", "desc_en": "Classify the 14 weed species from photos."},
+  {"level": "capstone", "title_ko": "잡초 위치 찾기 데모", "title_en": "Weed localisation demo", "desc_ko": "밭 사진에서 잡초 영역을 칠해 제초 위치를 표시합니다.", "desc_en": "Paint weed regions in field photos to mark weeding spots."},
+  {"level": "research", "title_ko": "어린 잡초 조기 인식", "title_en": "Early recognition of young weeds", "desc_ko": "작물과 닮은 어린 잡초를 일찍 구분하는 방법을 연구합니다.", "desc_en": "Study telling young weeds from similar-looking crops."}
+ ],
+ "doc_used": true,
+ "uncertain": []
+}

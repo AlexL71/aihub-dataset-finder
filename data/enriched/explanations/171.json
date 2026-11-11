@@ -1,0 +1,12 @@
+{
+ "dataset_id": "171",
+ "easy_ko": "폭행, 싸움, 도둑질, 기물 부수기, 쓰러짐, 침입, 납치, 술 취한 행동 같은 이상행동을 CCTV에서 보이는 것처럼 연출해 찍고, 어떤 행동이 언제 일어났는지 표시한 영상 데이터입니다. 공공 CCTV에서 범죄나 사고를 자동으로 알아채는 관제 AI를 만들 수 있습니다.",
+ "easy_en": "Staged CCTV-style videos of abnormal behaviour such as assault, fights, theft, vandalism, fainting, break-ins, kidnapping and drunken behaviour, marked with what happened and when. You can build monitoring AI that automatically spots crimes or accidents on public CCTV.",
+ "detail_ko": "이상행동 12종(주취 1,262, 싸움 1,174, 폭행 913 등)을 CCTV 시점으로 연출 촬영한 영상 717시간, 8,436클립(mp4)으로, XML 라벨에 이상행동 종류, 발생 구간, 사람 위치가 있습니다. 2019년 구축이며 기준 성능은 기록에서 확인되지 않습니다. 전체 약 5TB에 최소 파일이 3GB이고, 연출된 장면이라 실제 사건과 다를 수 있습니다.",
+ "detail_en": "717 hours of staged CCTV-view video in 8,436 clips (mp4) covering 12 abnormal behaviours (drunkenness 1,262, fights 1,174, assault 913 and more), with XML labels for behaviour type, time segment and person position. Built in 2019; no baseline is visible. Total size is about 5 TB and the smallest file is 3 GB; scenes are staged, so they may differ from real incidents.",
+ "amount_ko": "영상 717시간, 클립 8,436개, 이상행동 12종",
+ "amount_en": "717 hours of video, 8,436 clips, 12 behaviours",
+ "labels_ko": "이상행동 종류, 일어난 시간 구간, 사람 위치 상자",
+ "labels_en": "abnormal-behaviour class, time segment, box around the person",
+ "status": "full-run-2026-11-02"
+}

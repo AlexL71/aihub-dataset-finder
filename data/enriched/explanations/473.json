@@ -1,0 +1,12 @@
+{
+ "dataset_id": "473",
+ "easy_ko": "어린이부터 어른까지 나이, 성별, 목소리 색깔(보통·허스키 등), 노래 종류(동요·댄스 등)별로 나눈 사람들이 부른 노래 녹음에, 소리마다 가사와 음표를 맞춰 둔 데이터입니다. 여러 목소리로 노래를 부르는 AI나 노래 연습 앱을 만들 수 있습니다.",
+ "easy_en": "Song recordings by people grouped by age (from children to adults), sex, voice colour (normal, husky and more) and genre (children's songs, dance and more), with lyrics and musical notes matched to each sound. You can build AI that sings in many voices, or singing-practice apps.",
+ "detail_ko": "연령·성별·음색·장르로 나눈 16개 그룹 가창자 92명의 노래 음성 4,000곡(wav)과 음표 단위 가사·미디 정보, 가창자 그룹을 담은 JSON으로 구성됩니다. 기준 성능은 기록에서 확인되지 않습니다. 어린이 가창자 데이터가 포함되어 이용 조건 확인이 필요합니다.",
+ "detail_en": "4,000 song recordings (wav) by 92 singers in 16 groups defined by age, sex, timbre and genre, with JSON note-level lyrics, MIDI notes and singer group. No baseline is visible in the record. Children's singing is included, so check the usage terms.",
+ "amount_ko": "노래 4,000곡, 가수 92명",
+ "amount_en": "4,000 songs, 92 singers",
+ "labels_ko": "음표마다 가사와 음 높이(미디), 가수 그룹",
+ "labels_en": "note-level lyrics and MIDI notes, singer group",
+ "status": "full-run-2026-11-02"
+}

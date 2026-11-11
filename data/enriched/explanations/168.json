@@ -1,0 +1,12 @@
+{
+ "dataset_id": "168",
+ "easy_ko": "스마트폰·태블릿·액션캠으로 찍은 진짜 얼굴 영상과, 사진 인쇄물·화면·가면으로 얼굴을 흉내 낸 가짜 영상을 모아 진짜인지 가짜인지 표시한 데이터입니다. 일반 카메라만으로도 얼굴 인증에서 가짜 얼굴을 막는 보안 AI를 만들 수 있습니다.",
+ "easy_en": "Real face videos filmed with smartphones, tablets and action cameras, plus fake ones using printed photos, screens and masks, each marked as real or fake. You can build security AI that blocks fake faces in face login using only an ordinary camera.",
+ "detail_ko": "3,040명을 스마트폰·태블릿·GoPro로 촬영한 영상 54,870개(mp4)와 추출 이미지 1,646,100장(jpg), 얼굴 마스크 이미지로 구성되며, 라벨에 실제/공격 종류(Live, Print, Replay, 3D Mask), 조명, 기기가 있습니다. 기준 성능 지표는 없습니다. 3D 마스크 영상은 150개로 적고, 실제 얼굴 데이터라 이용 약관과 개인정보 보호를 반드시 확인해야 합니다.",
+ "detail_en": "54,870 videos (mp4) of 3,040 people filmed with smartphones, tablets and GoPro, 1,646,100 extracted images (jpg) and face mask images, labelled with live vs. attack type (print, replay, 3D mask), lighting and device. No baseline is published. Only 150 3D-mask videos exist; these are real faces, so terms of use and privacy must be checked.",
+ "amount_ko": "영상 약 5.5만 개, 이미지 약 164.6만 장, 3,040명",
+ "amount_en": "about 55k videos, about 1.65M images, 3,040 people",
+ "labels_ko": "진짜·가짜 종류(인쇄·화면·가면), 얼굴 영역",
+ "labels_en": "live or attack type (print, replay, mask), face region",
+ "status": "full-run-2026-11-02"
+}

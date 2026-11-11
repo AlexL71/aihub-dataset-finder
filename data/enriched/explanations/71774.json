@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71774",
+ "easy_ko": "드론으로 찍은 다리 사진 42만여 장에 균열, 떨어져 나감, 물 샘, 녹슮 같은 다리 결함 부분을 칠해 표시한 데이터입니다. 다리 겉모습을 점검하고 위험 등급을 자동으로 매기는 AI에 쓸 수 있습니다.",
+ "easy_en": "Over 420,000 drone photos of bridges with defects such as cracks, spalling, leaks and rust painted in. You can use it to build AI that inspects the outside of bridges and rates their risk level automatically.",
+ "detail_ko": "드론 교량 영상과 입면정사영상에서 뽑은 이미지 420,074장(jpg)에 결함 영역 분할, 재질, 결함 유형(균열, 박락, 백태, 누수, 함몰, 요철, 강재 부식, 강재 박리)을 JSON으로 붙였습니다(콘크리트 균열 116,377장 등). 결함별 수량 차이가 매우 크고(박락 612장, 균열 116,377장), 성능 지표 값은 팩에 없습니다.",
+ "detail_en": "420,074 images (jpg) from drone bridge footage and elevation orthophotos, with JSON defect segmentation, material and defect type (crack, spalling, efflorescence, leakage, depression, unevenness, steel corrosion, steel peeling), including 116,377 concrete-crack images. Counts vary hugely by defect (612 spalling vs. 116,377 crack), and no metric values are in the pack.",
+ "amount_ko": "이미지 420,074장",
+ "amount_en": "420,074 images",
+ "labels_ko": "결함 영역, 결함 종류, 재질",
+ "labels_en": "segmentation, defect type, material",
+ "status": "full-run-2026-11-02"
+}

@@ -1,0 +1,109 @@
+{
+ "dataset_id": "138",
+ "title_en": "Water pipe leak detection data",
+ "summary_ko": "상수도 계량기함과 제수변에 설치한 누수 감지 센서 소리 데이터 5만 건으로, 전문가가 현장에서 확인한 옥외 누수·옥내 누수·기계/전기음·환경음·정상음 5종으로 분류되어 있습니다. 소리로 수도관 누수를 자동으로 찾는 AI에 쓸 수 있습니다.",
+ "summary_en": "50,000 records from leak-detection sensors on water meters and valves, classified after on-site expert checks into outdoor leak, indoor leak, mechanical/electrical noise, environmental sound and normal. For AI that finds water-pipe leaks from sound automatically.",
+ "contents_ko": "센서 소리 신호의 특징값(주파수 대역별 값 등) 텍스트/표 + 라벨(5종 클래스, 위치 정보).",
+ "contents_en": "Sensor sound features (values per frequency band and so on) as text or table + label (5 classes, location info).",
+ "modalities": [
+  "audio",
+  "sensor",
+  "tabular"
+ ],
+ "tasks": [
+  "anomaly_detection",
+  "tabular_prediction",
+  "audio_classification"
+ ],
+ "topics": [
+  {
+   "ko": "상하수도·물 관리",
+   "en": "Water supply and management"
+  },
+  {
+   "ko": "도시 기반시설",
+   "en": "Urban infrastructure"
+  },
+  {
+   "ko": "센서·IoT",
+   "en": "Sensors and IoT"
+  }
+ ],
+ "keywords_ko": [
+  "누수 감지",
+  "상수관로",
+  "수도",
+  "센서",
+  "이상 탐지",
+  "스마트 시티"
+ ],
+ "keywords_en": [
+  "leak detection",
+  "water pipes",
+  "water supply",
+  "sensor",
+  "anomaly detection",
+  "smart city"
+ ],
+ "labels": [
+  "class (5)"
+ ],
+ "file_formats": [
+  "csv",
+  "json"
+ ],
+ "scale_ko": "5만 건(옥외 누수 1만, 옥내 누수 1만, 기계·전기음 5천, 환경음 5천, 정상음 2만)",
+ "classes_example": [
+  "옥외누수(OUT)",
+  "옥내누수(IN)",
+  "기계.전기음(NOISE)",
+  "환경음(OTHER)",
+  "정상음(NORMAL)"
+ ],
+ "baseline": [
+  {
+   "task": "5-class leak classification",
+   "model": "XGBoost",
+   "metric": "accuracy",
+   "value": "90%"
+  }
+ ],
+ "difficulty": "beginner",
+ "difficulty_note_ko": "약 0.02GB 표 데이터라 노트북에서 scikit-learn·XGBoost로 바로 분류해 볼 수 있습니다.",
+ "skills_needed_ko": [
+  "파이썬",
+  "pandas",
+  "기본 머신러닝(XGBoost)"
+ ],
+ "caveats_ko": [
+  "원 소리 파일이 아니라 특징값 형태일 가능성이 높음(팩 기준)",
+  "파일 형식은 추정"
+ ],
+ "project_ideas": [
+  {
+   "level": "beginner",
+   "title_ko": "누수 vs 정상 분류",
+   "title_en": "Leak vs normal classifier",
+   "desc_ko": "센서 특징으로 누수와 정상을 구분하고 중요한 특징을 확인합니다.",
+   "desc_en": "Separate leaks from normal and inspect important features."
+  },
+  {
+   "level": "capstone",
+   "title_ko": "수도관 누수 알림 대시보드",
+   "title_en": "Pipe leak alert dashboard",
+   "desc_ko": "센서별 누수 확률을 지도에 표시하는 대시보드를 만듭니다.",
+   "desc_en": "Show leak probability per sensor on a map dashboard."
+  },
+  {
+   "level": "research",
+   "title_ko": "잡음과 누수 소리 구분",
+   "title_en": "Separating noise from leaks",
+   "desc_ko": "기계음·환경음이 누수로 잘못 판정되는 원인을 분석하고 줄이는 방법을 연구합니다.",
+   "desc_en": "Analyse why machine and environmental sounds are mistaken for leaks and reduce it."
+  }
+ ],
+ "doc_used": true,
+ "uncertain": [
+  "데이터 형식(소리 원본인지 특징값인지)이 팩에서 명확하지 않음"
+ ]
+}

@@ -1,0 +1,29 @@
+{
+ "dataset_id": "71328",
+ "title_en": "Marine organisms causing coastal fishery ecosystem damage",
+ "summary_ko": "제주·동해·거제·부산 등 연안 바닷속에서 찍은 이미지 약 18.5만 장(화질 개선 전·후)에, 갯녹음 등 피해를 주는 해양생물 7종(보라성게·말똥성게·소라·고둥·군소·별불가사리·아무르불가사리)과 해조류 2종(감태·모자반) 약 82만 개를 상자·분할로 표시한 데이터입니다. 연안 어장 생태를 모니터링하는 수중 AI에 쓸 수 있습니다.",
+ "summary_en": "About 185,000 underwater images (before and after enhancement) from coasts such as Jeju, Donghae, Geoje and Busan, with about 820,000 objects boxed and segmented: 7 harmful species (purple and other sea urchins, turban shells, whelks, sea hares, two starfish species) and 2 seaweeds (Ecklonia, Sargassum). For underwater AI that monitors coastal fishery ecosystems.",
+ "contents_ko": "수중 이미지(jpg, 화질 개선 전·후) + JSON(상자, 분할, 종) + 계측 데이터.",
+ "contents_en": "Underwater images (jpg, before and after enhancement) + JSON (boxes, segmentation, species) + measurement data.",
+ "modalities": ["image"],
+ "tasks": ["object_detection", "segmentation"],
+ "topics": [{"ko": "해양 생태", "en": "Marine ecology"}, {"ko": "수산 자원", "en": "Fishery resources"}],
+ "keywords_ko": ["성게", "불가사리", "갯녹음", "해조류", "수중 촬영"],
+ "keywords_en": ["sea urchins", "starfish", "barren ground", "seaweed", "underwater imaging"],
+ "labels": ["bounding box", "segmentation", "species"],
+ "file_formats": ["jpg", "json"],
+ "scale_ko": "학습 이미지 약 18.5만 장, 객체 약 82만 개, 생물 9종",
+ "classes_example": ["보라성게", "말똥성게", "소라", "고둥", "군소", "별불가사리", "감태"],
+ "baseline": [{"task": "marine organism segmentation", "model": "Swin-L", "metric": "mIoU", "value": "81.06%"}],
+ "difficulty": "intermediate",
+ "difficulty_note_ko": "탐지·분할 실습에 좋지만 전체 약 555GB입니다.",
+ "skills_needed_ko": ["파이썬", "YOLO 탐지", "분할 모델"],
+ "caveats_ko": ["전체 약 555GB", "보라성게·고둥 객체가 많아 종별로 치우침", "수집 지역이 거제·동해에 많이 몰림"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "성게·불가사리 탐지", "title_en": "Urchin and starfish detection", "desc_ko": "수중 사진에서 성게와 불가사리를 찾아 셉니다.", "desc_en": "Detect and count urchins and starfish underwater."},
+  {"level": "capstone", "title_ko": "갯녹음 위험 지도", "title_en": "Barren-ground risk map", "desc_ko": "지역별 성게 밀도와 해조류 면적으로 갯녹음 위험을 보여줍니다.", "desc_en": "Show barren-ground risk from urchin density and seaweed cover."},
+  {"level": "research", "title_ko": "화질 개선 효과 분석", "title_en": "Effect of image enhancement", "desc_ko": "화질 개선 전·후 이미지로 학습한 모델 성능을 비교합니다.", "desc_en": "Compare models trained on raw vs enhanced images."}
+ ],
+ "doc_used": true,
+ "uncertain": []
+}

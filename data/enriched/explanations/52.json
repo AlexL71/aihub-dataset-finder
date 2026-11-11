@@ -1,0 +1,12 @@
+{
+ "dataset_id": "52",
+ "easy_ko": "전문 댄서와 일반인이 촬영 스튜디오에서 K-pop 노래 안무를 추는 영상을 찍고, 장면마다 팔·다리·머리 같은 몸의 주요 점 위치와 어떤 춤 동작인지를 표시한 데이터입니다. 춤 동작을 따라 했는지 봐 주는 댄스 코칭 앱이나 홈트레이닝 앱을 만들 수 있습니다.",
+ "easy_en": "Videos of professional and amateur dancers performing K-pop choreography in a studio, with the key body points (arms, legs, head) and the dance move marked in each frame. You can build a dance-coaching or home-workout app that checks whether you follow the moves.",
+ "detail_ko": "모션캡처 스튜디오에서 K-pop 100곡과 기본 안무 10곡을 촬영한 영상 클립 40만 개로 구성됩니다. 프레임 이미지(jpg)마다 COCO 유사 JSON에 2D 키포인트(가시성 포함, 40만 건), 일부 3D 키포인트(10만 건), 사람 바운딩박스, 댄서 ID, 곡 구간별 기본 동작 분류, 핵심 안무 여부, 카메라 파라미터가 들어 있습니다. 기준 성능은 HRNet 2D 자세 추정 mAP 75.9%입니다. 스튜디오 촬영이라 실제 환경과 차이가 있고, 곡·안무 저작권 관련 이용 조건 확인이 필요합니다.",
+ "detail_en": "400k video clips of K-pop choreography (100 songs plus 10 basic routines) filmed in a motion-capture studio. Each jpg frame has COCO-style JSON with 2D keypoints and visibility (400k), 3D keypoints for part of the data (100k), person bounding boxes, dancer ID, basic-move class per song section, a key-choreography flag and camera parameters. Baseline: HRNet 2D pose estimation mAP 75.9%. Studio footage differs from real-world video, and song and choreography copyright terms must be checked.",
+ "amount_ko": "영상 클립 40만 개, K-pop 100곡 + 기본 안무 10곡",
+ "amount_en": "400k clips, 100 K-pop songs + 10 basic routines",
+ "labels_ko": "몸의 주요 점(키포인트, 평면·입체), 사람 상자, 춤 동작 구분",
+ "labels_en": "body key points (2D and 3D), box around the dancer, dance move class",
+ "status": "full-run-2026-11-02"
+}

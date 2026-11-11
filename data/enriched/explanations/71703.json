@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71703",
+ "easy_ko": "나이 든 어르신들이 감정, 물건, 장소, 사건 같은 낱말을 보고 떠오르는 옛 기억을 이야기한 목소리 약 1만 시간에 받아쓴 글을 붙인 데이터입니다. 기억이 얼마나 구체적인지와 감정이 표시되어 있어, 어르신의 인지 기능을 살피는 AI 연구에 쓸 수 있습니다.",
+ "easy_en": "About 10,000 hours of older adults telling memories that come to mind when they see words about feelings, objects, places or events, with written transcripts. How specific each memory is and its emotions are marked, so you can use it for research on AI that checks older people's thinking skills.",
+ "detail_ko": "60세 이상 고령자가 5개 분류(감정-긍정/중립, 감정-부정, 사물, 장소, 관계/사건) 단어 50개를 보고 떠오르는 근현대 경험을 말한 구술 음성 10,529시간(wav)과 전사(txt), 라벨(JSON: 구술자 정보, 기억 구체성, 감정, 감각 요소) 각 143,630건입니다. 음성 포함 시 전체 약 2.5TB이고, 치매 진단 라벨이 아니라 기억 구체성 태그라 의료 판단에 바로 쓰면 안 되며, 성능 지표는 팩 앞부분에 없습니다.",
+ "detail_en": "143,630 each of oral-history audio (wav, 10,529 hours in total), transcripts (txt) and JSON labels (speaker information, memory specificity, emotion, sensory elements) from adults aged 60+ recalling life experiences prompted by 50 words in 5 groups (positive/neutral emotion, negative emotion, objects, places, relationships/events). With audio the total is about 2.5 TB. The tags measure how specific memories are, not a dementia diagnosis, so do not use them directly for medical judgements; no metrics are in the pack.",
+ "amount_ko": "음성·텍스트·라벨 각 143,630건, 음성 10,529시간, 단어 50개",
+ "amount_en": "143,630 each of audio, transcripts and labels, 10,529 hours, 50 prompt words",
+ "labels_ko": "받아쓴 글, 기억의 구체성, 감정, 감각 요소, 말한 사람 정보",
+ "labels_en": "transcript, memory specificity, emotion, sensory elements, speaker metadata",
+ "status": "full-run-2026-11-02"
+}

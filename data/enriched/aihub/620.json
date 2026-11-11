@@ -1,0 +1,32 @@
+{
+ "dataset_id": "620",
+ "title_en": "Multi-sensor movement tracking data",
+ "summary_ko": "네트워크로 연결된 여러 CCTV에서 직접 찍은 영상 약 2,500분(약 290만 프레임)에 사람 상자와 같은 사람 ID를 표시한 데이터입니다. 여러 카메라를 지나가는 특정인의 동선을 추적하는 AI(재식별)에 쓸 수 있습니다.",
+ "summary_en": "About 2,500 minutes of video (about 2.9 million frames) from several networked CCTV cameras, with person boxes and IDs that stay the same across cameras. For AI that tracks a person's route across multiple cameras (re-identification).",
+ "contents_ko": "CCTV 영상(mp4) + 프레임별 JSON(사람 상자, 사람 ID, 카메라).",
+ "contents_en": "CCTV videos (mp4) + per-frame JSON (person box, person ID, camera).",
+ "modalities": ["video"],
+ "tasks": ["object_detection", "object_tracking"],
+ "topics": [{"ko": "공공 안전·감시", "en": "Public safety and surveillance"}, {"ko": "방역", "en": "Disease control"}],
+ "keywords_ko": ["동선 추적", "CCTV", "사람 재식별", "다중 카메라", "방역"],
+ "keywords_en": ["movement tracking", "CCTV", "person re-identification", "multi-camera", "contact tracing"],
+ "labels": ["person bounding box", "person ID", "camera ID"],
+ "file_formats": ["mp4", "json"],
+ "scale_ko": "영상 약 2,500분, JSON 약 294만 개, 등장 인물 약 450명",
+ "classes_example": ["사람(person)", "무효 영역(void)", "가림 처리(blackout)"],
+ "baseline": [
+  {"task": "multi-camera tracking (Re-ID)", "model": "QDTrack", "metric": "IDF1", "value": "30.5%"},
+  {"task": "person detection", "model": "Faster R-CNN", "metric": "mAP", "value": "91.6%"}
+ ],
+ "difficulty": "advanced",
+ "difficulty_note_ko": "약 132GB이고 여러 카메라 간 재식별은 기준 성능(IDF1 30%)이 낮은 어려운 문제입니다.",
+ "skills_needed_ko": ["파이썬", "객체 탐지", "다중 객체 추적", "재식별 모델"],
+ "caveats_ko": ["사람이 찍힌 CCTV 영상이라 개인정보·감시 윤리 주의", "오후 영상이 92%, 맑은 날이 88%로 치우침", "재식별 기준 성능이 낮음"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "CCTV 사람 탐지", "title_en": "CCTV person detection", "desc_ko": "CCTV 프레임에서 사람을 찾아 상자로 표시합니다.", "desc_en": "Detect people in CCTV frames."},
+  {"level": "capstone", "title_ko": "건물 내 동선 지도", "title_en": "Indoor route map", "desc_ko": "카메라별 추적 결과를 이어 한 사람의 이동 경로를 그립니다.", "desc_en": "Link per-camera tracks into one person's route."},
+  {"level": "research", "title_ko": "카메라 간 재식별 개선", "title_en": "Better cross-camera Re-ID", "desc_ko": "조명·각도가 다른 카메라 사이 재식별 정확도를 높이는 방법을 연구합니다.", "desc_en": "Improve re-identification across cameras with different light and angles."}
+ ],
+ "doc_used": true,
+ "uncertain": []
+}

@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71857",
+ "easy_ko": "교육과정과 연결된 국어 지문 문제 1만여 세트(지문, 문제, 정답과 오답, 해설)를 그림과 영역 표시, 그림 설명으로 정리한 데이터로, 문제마다 쉽고 어려운 정도가 표시되어 있습니다. 수준에 맞는 국어 문제를 추천하거나 공부를 돕는 AI에 쓸 수 있습니다.",
+ "easy_en": "Over 10,000 sets of Korean-language reading questions linked to the curriculum (passage, question, right and wrong answers, explanation), organised as images with marked areas and image descriptions, each tagged with difficulty. You can use it to build AI that recommends questions at the right level or helps students study.",
+ "detail_ko": "교육과정과 연결된 국어 교과 지문형 문제 10,270세트를 이미지(png)와 상자, 다각형, 지문·문항·정답·해설, 이미지 설명, 난이도(상 386, 중 2,738, 하 약 7,146)로 JSON에 정리했습니다. 난이도 '하'가 약 70%로 치우쳐 있고, 출판사 저작물 기반이라 이용 조건을 확인해야 하며, 품질 점수는 라벨 정확도이고 모델 성능 수치는 팩에 없습니다.",
+ "detail_en": "10,270 sets of curriculum-linked Korean-language passage questions as images (png) with JSON boxes, polygons, passage, question, answers and explanation, image captions and difficulty (386 hard, 2,738 medium, about 7,146 easy). About 70% are easy, so difficulty is skewed; the material comes from publishers, so check the terms of use; quality scores describe label accuracy and no model scores are in the pack.",
+ "amount_ko": "문제 10,270세트, 난이도 3단계",
+ "amount_en": "10,270 question sets, 3 difficulty levels",
+ "labels_ko": "영역 상자와 테두리, 지문·문제·정답·해설, 그림 설명, 난이도",
+ "labels_en": "bounding box, polygon, caption, question-answer",
+ "status": "full-run-2026-11-02"
+}

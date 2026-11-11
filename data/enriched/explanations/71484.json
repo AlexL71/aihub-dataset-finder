@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71484",
+ "easy_ko": "드론으로 배추밭과 무밭을 찍은 사진 20만 장에 작물이 있는 곳을 칠하고, 실제로 얼마나 거뒀는지 기록을 함께 담은 데이터입니다. 밭의 재배 넓이를 계산하고 수확량을 미리 예측하는 AI에 쓸 수 있습니다.",
+ "easy_en": "200,000 drone photos of cabbage and radish fields with the crop areas painted in, plus records of how much was actually harvested. You can use it to build AI that measures growing area and predicts harvest size in advance.",
+ "detail_ko": "드론으로 찍은 배추·무 밭의 다중분광·RGB 이미지 20만 장(TIFF)에 작물 분할 라벨 38만 건(JSON)을 붙이고, 배추·무 생산량 데이터 각 500건(총 1,000건)을 함께 제공합니다. 기준 성능은 U-Net + EfficientNet-B0 작물 분할 mIoU 80.12%입니다. 전체 약 370GB이고, 성능값이 통계표(82.23%)와 성능지표표(80.12%)에서 다릅니다. 설명서에는 라벨 유형이 키포인트로 적혀 있어 페이지(세그멘테이션)와 다릅니다.",
+ "detail_en": "200,000 drone multispectral and RGB images (TIFF) of cabbage and radish fields with 380,000 crop segmentation annotations (JSON), plus 500 yield records each for cabbage and radish (1,000 in total). Baseline: crop segmentation with U-Net + EfficientNet-B0, mIoU 80.12%. Total size is about 370 GB. The score differs between the statistics table (82.23%) and the metrics table (80.12%), and the manual lists the label type as keypoints while the page says segmentation.",
+ "amount_ko": "이미지 20만 장, 라벨 38만 건, 생산량 데이터 1,000건",
+ "amount_en": "200,000 images, 380,000 annotations, 1,000 yield records",
+ "labels_ko": "작물 영역 다각형, 작물 종류, 생산량 기록",
+ "labels_en": "segmentation polygons, crop class, yield records",
+ "status": "full-run-2026-11-02"
+}

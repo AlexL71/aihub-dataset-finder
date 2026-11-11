@@ -1,0 +1,33 @@
+{
+ "dataset_id": "71690",
+ "title_en": "LNG tank quality inspection image data (ships and offshore plants, upgraded)",
+ "summary_ko": "LNG 운반선·추진선의 LNG 탱크 제작 과정(용접, 표면처리, 파이프, 케이블, 절단, 폼스프레이)을 찍은 이미지 약 31만 장에 양품·불량과 품질 유형이 상자·다각형·분류로 표시되어 있습니다. 탱크 제작 중 품질 결함을 자동으로 찾는 AI에 쓸 수 있습니다.",
+ "summary_en": "About 310,000 images from LNG tank construction (welding, surface treatment, pipes, cables, cutting, foam spray) labelled good/defective by quality type with boxes, polygons and classes. For AI that finds quality defects during tank construction.",
+ "contents_ko": "공정 이미지(jpg) + JSON(상자, 분할 다각형, 품질 유형 클래스).",
+ "contents_en": "Process image (jpg) + JSON (boxes, segmentation polygons, quality-type class).",
+ "modalities": ["image"],
+ "tasks": ["object_detection", "segmentation", "image_classification", "anomaly_detection"],
+ "topics": [{"ko": "조선·해양플랜트", "en": "Shipbuilding and offshore plants"}, {"ko": "품질 검사", "en": "Quality inspection"}],
+ "keywords_ko": ["LNG 탱크", "조선", "용접 불량", "표면처리", "품질 검사", "결함 탐지"],
+ "keywords_en": ["LNG tank", "shipbuilding", "weld defects", "surface treatment", "quality inspection", "defect detection"],
+ "labels": ["bounding box", "polygon", "class"],
+ "file_formats": ["jpg", "json"],
+ "scale_ko": "원천 이미지 310,356장, 라벨 332,274개, 클래스 23종(양품 29%, 불량 71%)",
+ "classes_example": ["탱크클리닝 불량", "표면양품", "폼 스프레이 양품", "폼 스프레이 불량품"],
+ "baseline": [
+  {"task": "quality type classification", "model": "ViT", "metric": "F1-score", "value": "99.97"},
+  {"task": "object detection", "model": "EfficientDet", "metric": "mAP", "value": "88.43"},
+  {"task": "segmentation", "model": "MaskDINO", "metric": "mAP", "value": "95.72"}
+ ],
+ "difficulty": "intermediate",
+ "difficulty_note_ko": "탐지·분할·분류를 모두 연습할 수 있지만 전체 약 706GB입니다. 공정 하나만 골라 받아 쓰세요.",
+ "skills_needed_ko": ["파이썬", "YOLO 탐지", "분할 모델", "이미지 분류"],
+ "caveats_ko": ["전체 약 706GB", "표면처리가 60%로 공정별 데이터가 불균형", "불량이 양품보다 많아 실제 공정 비율과 다름", "분류 F1 99.97은 매우 높아 데이터 중복 여부 확인 필요"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "양품·불량 분류", "title_en": "Good vs defective classification", "desc_ko": "폼스프레이 사진을 양품과 불량으로 분류합니다.", "desc_en": "Classify foam-spray photos as good or defective."},
+  {"level": "capstone", "title_ko": "용접 결함 탐지기", "title_en": "Weld defect detector", "desc_ko": "용접·절단 사진에서 결함 위치를 상자로 찾아 검사 보고서를 만듭니다.", "desc_en": "Box defects in weld and cut photos and produce an inspection report."},
+  {"level": "research", "title_ko": "공정 간 지식 옮기기", "title_en": "Transfer across processes", "desc_ko": "많은 공정(표면처리)에서 배운 모델을 데이터가 적은 공정에 옮기는 방법을 연구합니다.", "desc_en": "Transfer models from data-rich to data-poor processes."}
+ ],
+ "doc_used": true,
+ "uncertain": ["23개 클래스 전체 이름 확인 필요"]
+}

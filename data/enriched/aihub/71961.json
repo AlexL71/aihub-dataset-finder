@@ -1,0 +1,29 @@
+{
+ "dataset_id": "71961",
+ "title_en": "Makeup recommendation data for problem skin",
+ "summary_ko": "여드름·지루성 피부염·주사·민감성 등 문제성 피부 유형별 메이크업 지식 문서 9,377건(약 5,012만 토큰)과 질의응답 10,043쌍으로 된 데이터입니다. 피부 고민에 맞는 메이크업 방법과 상품을 추천하는 챗봇에 쓸 수 있습니다.",
+ "summary_en": "9,377 knowledge documents (about 50.1 million tokens) on makeup for problem skin types such as acne, seborrhoeic dermatitis, rosacea and sensitive skin, plus 10,043 Q&A pairs. For chatbots that recommend makeup methods and products for skin concerns.",
+ "contents_ko": "지식 문서(doc, json) + 질의응답(json).",
+ "contents_en": "Knowledge documents (doc, json) + Q&A (json).",
+ "modalities": ["text"],
+ "tasks": ["question_answering", "dialogue", "retrieval_recommendation"],
+ "topics": [{"ko": "뷰티", "en": "Beauty"}, {"ko": "피부 건강", "en": "Skin health"}],
+ "keywords_ko": ["메이크업", "문제성 피부", "여드름", "민감성 피부", "상품 추천", "질의응답"],
+ "keywords_en": ["makeup", "problem skin", "acne", "sensitive skin", "product recommendation", "question answering"],
+ "labels": ["question-answer"],
+ "file_formats": ["doc", "json"],
+ "scale_ko": "지식 문서 9,377건(50,120,919토큰), 질의응답 10,043쌍",
+ "classes_example": ["화농성 여드름 피부", "지루성 피부염 피부", "주사 피부", "민감성 피부"],
+ "baseline": [],
+ "difficulty": "beginner",
+ "difficulty_note_ko": "약 0.17GB로 작아 RAG 챗봇 실습에 좋습니다.",
+ "skills_needed_ko": ["파이썬", "임베딩 검색", "LLM 활용"],
+ "caveats_ko": ["피부 질환 관련 답변을 의료 조언으로 쓰면 안 됨", "성능 지표 값이 팩 앞부분에 없음"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "피부 고민 질문 분류", "title_en": "Skin concern classifier", "desc_ko": "질문이 어떤 피부 유형 고민인지 분류합니다.", "desc_en": "Classify which skin type a question is about."},
+  {"level": "capstone", "title_ko": "피부 맞춤 메이크업 챗봇", "title_en": "Skin-aware makeup chatbot", "desc_ko": "피부 고민을 말하면 메이크업 방법을 근거와 함께 알려 줍니다.", "desc_en": "Suggest makeup steps with sources for a skin concern."},
+  {"level": "research", "title_ko": "안전한 뷰티 답변", "title_en": "Safe beauty answers", "desc_ko": "의료 조언과 뷰티 조언을 구분해 안전하게 답하는 방법을 연구합니다.", "desc_en": "Separate medical from beauty advice safely."}
+ ],
+ "doc_used": true,
+ "uncertain": ["피부 유형 전체 목록"]
+}

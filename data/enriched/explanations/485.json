@@ -1,0 +1,12 @@
+{
+ "dataset_id": "485",
+ "easy_ko": "성우와 배우가 시, 소설, 희곡, 시나리오를 감정을 담아 읽은 녹음에, 읽은 글과 기쁨·슬픔·화남 같은 감정 표시를 붙인 데이터입니다. 감정이 살아 있는 오디오북이나 표현력 있는 AI 목소리를 만들 수 있습니다.",
+ "easy_en": "Recordings of voice actors and actors reading poems, novels, plays and screenplays with feeling, paired with the text and emotion labels such as joy, sadness and anger. You can build expressive audiobooks or AI voices that sound full of feeling.",
+ "detail_ko": "시 131.5h, 희곡/시나리오 166h, 소설 159h, 총 456.5시간의 낭독 음성(wav)과 감정 대본 4,510개로, JSON에 철자 전사, 발음 전사, 장르, 감정·스타일(기쁨, 당황, 슬픔, 분노, 불안, 상처, 무감정) 동의 투표가 있습니다. 기준 성능은 기록에서 확인되지 않습니다. 문학 작품 대본 저작권 관련 이용 조건 확인이 필요합니다.",
+ "detail_en": "456.5 hours of read speech (wav): poems 131.5 h, plays and screenplays 166 h, novels 159 h, with 4,510 emotion scripts and JSON spelling and pronunciation transcripts, genre and agreement votes for emotion and style (joy, embarrassment, sadness, anger, anxiety, hurt, neutral). No baseline is visible in the record. Check copyright terms for the literary texts.",
+ "amount_ko": "낭독 음성 약 456시간",
+ "amount_en": "about 456 hours of reading",
+ "labels_ko": "읽은 글(철자·발음 두 가지), 장르, 감정·말투 투표",
+ "labels_en": "spelling and pronunciation transcripts, genre, emotion and style votes",
+ "status": "full-run-2026-11-02"
+}

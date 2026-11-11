@@ -1,0 +1,12 @@
+{
+ "dataset_id": "617",
+ "easy_ko": "디자인에 쓰이는 여러 물체를 아이콘, 일러스트, 선 그림으로 그린 이미지마다 무엇을 그린 것인지 이름과 위치, 설명 글을 붙인 데이터입니다. 그림이나 아이콘이 무엇을 뜻하는지 알아보거나 비슷한 아이콘을 찾아 주는 AI를 만들 수 있습니다.",
+ "easy_en": "Icons, illustrations and line sketches of many objects used in design, each labelled with what it shows, its position and a text description. You can build AI that understands what a drawing or icon means, or finds similar icons.",
+ "detail_ko": "디자인용 물체 1,002종을 픽토그램(아이콘)·일러스트레이션·스케치(라인드로잉) 3가지 유형으로 표현한 추상 이미지 약 53만 장(jpg)에 물체 이름, 바운딩박스, 설명 텍스트, 이미지 유형을 JSON으로 붙였습니다. 기준 성능은 ResNet-101 추상 이미지 분류 top-5 정확도 95.3%입니다. 클래스가 1,002개라 클래스당 이미지가 적을 수 있으며, 618번 몽타주 데이터와 같은 구축 기관입니다.",
+ "detail_en": "About 530k abstract images (jpg) of 1,002 design objects drawn as pictograms (icons), illustrations or sketches (line drawings), with JSON object name, bounding box, text description and image type. Baseline: ResNet-101 abstract image classification top-5 accuracy 95.3%. With 1,002 classes there may be few images per class; built by the same organisation as dataset 618.",
+ "amount_ko": "이미지 약 53만 장, 물체 1,002종",
+ "amount_en": "about 530k images, 1,002 object classes",
+ "labels_ko": "물체 이름, 위치 상자, 설명 글, 그림 종류",
+ "labels_en": "object name, bounding box, text description, image type",
+ "status": "full-run-2026-11-02"
+}

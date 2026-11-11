@@ -1,0 +1,29 @@
+{
+ "dataset_id": "71771",
+ "title_en": "Electrical equipment construction site danger state judgment data",
+ "summary_ko": "전기 설비 공사 현장에서 찍은 작업 안전 이미지 387,709건으로, 지중송전·변전·배전·철탑·건축전기 작업 공정 이미지 192,542건, 케이블협착·감전·추락·고소차량협착 같은 사고 유형 이미지 97,265건, 안전장비 이미지 97,902건이 상자·키포인트로 표시되어 있습니다. 전기 공사 현장 위험성 평가와 안전관리 AI에 쓸 수 있습니다.",
+ "summary_en": "387,709 work-safety images from electrical construction sites: 192,542 work-process images (underground transmission, substation, distribution, tower, building electrical), 97,265 accident-type images (cable pinching, electric shock, fall, aerial-truck pinching) and 97,902 safety-equipment images, with boxes and keypoints. For risk assessment and safety management on electrical sites.",
+ "contents_ko": "현장 이미지(jpg) + JSON(상자, 키포인트, 작업·사고 유형).",
+ "contents_en": "Site image (jpg) + JSON (boxes, keypoints, work and accident type).",
+ "modalities": ["image"],
+ "tasks": ["object_detection", "keypoint_pose", "action_recognition"],
+ "topics": [{"ko": "산업 안전", "en": "Industrial safety"}, {"ko": "전기 공사", "en": "Electrical construction"}],
+ "keywords_ko": ["전기 공사", "감전", "추락", "배전", "안전장비", "YOLOv8-pose"],
+ "keywords_en": ["electrical work", "electric shock", "fall", "power distribution", "safety equipment", "YOLOv8-pose"],
+ "labels": ["bounding box", "keypoints", "work/accident class"],
+ "file_formats": ["jpg", "json"],
+ "scale_ko": "387,709건(작업 공정 192,542·사고 유형 97,265·안전장비 97,902)",
+ "classes_example": ["지중송전설비작업", "변전설비작업", "배전설비작업", "철탑설비작업", "건축전기설비작업", "케이블협착", "감전", "추락", "고소차량협착"],
+ "baseline": [],
+ "difficulty": "intermediate",
+ "difficulty_note_ko": "약 32GB로 가볍고 YOLO 탐지·자세 추정 실습에 좋습니다.",
+ "skills_needed_ko": ["파이썬", "YOLO 탐지·자세 추정", "행동 분류(DD-Net) 기초"],
+ "caveats_ko": ["페이지에 성능 점수 표가 없음(YOLOv8·LightGBM·YOLOv8-pose·DD-Net 소개만 있음)", "통계 요약은 '33만 건'이라 쓰였지만 구축량은 387,709건으로 다름", "배전·건축전기 작업이 각 17%대로 많아 작업 종류 불균형이 있음"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "전기 작업 종류 분류", "title_en": "Electrical work type classifier", "desc_ko": "현장 사진이 어떤 전기 작업인지 분류합니다.", "desc_en": "Classify which electrical job a photo shows."},
+  {"level": "capstone", "title_ko": "감전 위험 경보", "title_en": "Electric shock alert", "desc_ko": "작업자 위치와 자세로 감전·추락 위험을 경고하는 데모를 만듭니다.", "desc_en": "Warn of shock or fall risk from worker position and pose."},
+  {"level": "research", "title_ko": "현장 간 전이 학습", "title_en": "Cross-site transfer", "desc_ko": "조선소 안전 데이터(71770)와 함께 학습해 다른 현장에서도 통하는 모델을 연구합니다.", "desc_en": "Study models that generalize across sites using shipyard data too."}
+ ],
+ "doc_used": true,
+ "uncertain": ["사고 유형의 N/P 표기 의미"]
+}

@@ -1,0 +1,12 @@
+{
+ "dataset_id": "507",
+ "easy_ko": "높은 곳에서 일하는 현장을 CCTV, 안전모 카메라, 액션캠으로 찍고, 안전 장비를 했는지, 안전고리를 걸었는지, 짐을 너무 많이 실었는지, 난간에 기댔는지 같은 위험 상황을 표시한 데이터입니다. 높은 곳 작업자의 추락 사고를 막는 안전 관리 AI를 만들 수 있습니다.",
+ "easy_en": "Videos of work at height filmed with CCTV, helmet cameras and action cameras, marked with risks such as missing safety gear, unhooked safety lines, overloading and leaning on railings. You can build safety AI that helps prevent workers from falling.",
+ "detail_ko": "고소작업 현장을 CCTV·안전모 부착 카메라·액션캠으로 촬영한 영상 371시간에서 뽑은 이미지 687,895장(jpg)에 작업자·장구 바운딩박스, 키포인트, 위험 상황 클래스(안전모, 안전고리 체결, 과적, 난간 기대기, 신호수 등)를 JSON으로 붙였습니다. 위험 상황은 연출 시나리오이며 기준 성능은 기록에서 확인되지 않습니다.",
+ "detail_en": "687,895 jpg images from 371 hours of work-at-height video filmed by CCTV, helmet-mounted cameras and action cameras, with JSON boxes for workers and gear, keypoints and danger classes (helmet, safety-hook attached, overloading, leaning on railing, signal person and more). Dangerous situations are staged; no baseline is visible in the record.",
+ "amount_ko": "영상 371시간, 이미지 약 68.8만 장",
+ "amount_en": "371 hours of video, about 688k images",
+ "labels_ko": "작업자·장비 위치 상자, 몸의 주요 점, 위험 상황 종류",
+ "labels_en": "boxes around workers and gear, body key points, danger class",
+ "status": "full-run-2026-11-02"
+}

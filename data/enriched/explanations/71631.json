@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71631",
+ "easy_ko": "성인이 두 명씩 앱으로 통화하며 대본 없이 나눈 일상 대화 목소리에 받아쓴 글과, 문장마다 기쁨, 슬픔, 화남 같은 감정과 그 세기를 표시한 데이터입니다. 음성 인식, 감정 인식, 대화 챗봇에 쓸 수 있습니다.",
+ "easy_en": "Unscripted everyday phone conversations between pairs of adults using an app, with written transcripts and each sentence marked with an emotion such as joy, sadness or anger and how strong it is. You can use it for speech recognition, emotion recognition and chatbots.",
+ "detail_ko": "성인 두 사람이 앱으로 대본 없이 여러 주제에 대해 통화한 음성(wav)에 전사, 감정 상태(기쁨, 사랑스러움, 두려움, 화남, 슬픔, 놀라움, 없음), 감정 유형(긍정/부정/중립), 감정 정도(약함/보통/강함), 감정 대상, 화자 정보를 JSON으로 붙였습니다. 기준 성능은 CNN 감정 인식 정확도 91.37%, Transformer 음성 인식 CER 6.8%, x-vector 화자 인식 EER 3.174%, ESPnet 음성 인식 WER 13.3%입니다. 전체 약 302GB이고, 구축량이 6,000시간(메타데이터)과 3,000시간(성인)으로 다르게 적혀 있으며 남성 화자가 약 20%로 적습니다.",
+ "detail_en": "Unscripted app-based phone calls between pairs of adults on many topics (wav), with JSON transcripts, emotion state (joy, love, fear, anger, sadness, surprise, none), sentiment (positive/negative/neutral), intensity (weak/medium/strong), emotion target and speaker information. Baselines: emotion recognition with CNN, accuracy 91.37%; speech recognition with Transformer, CER 6.8%; speaker recognition with x-vector, EER 3.174%; speech recognition with ESPnet, WER 13.3%. Total size is about 302 GB. The build amount is given as both 6,000 hours (metadata) and 3,000 hours (adults), and male speakers are only about 20%.",
+ "amount_ko": "성인 음성 3,000시간(메타데이터에는 6,000시간)",
+ "amount_en": "3,000 hours of adult speech (6,000 hours in the metadata)",
+ "labels_ko": "받아쓴 글, 감정 종류, 긍정·부정, 감정 세기, 말한 사람 정보",
+ "labels_en": "transcripts, emotion (7 classes), sentiment, emotion intensity, speaker attributes",
+ "status": "full-run-2026-11-02"
+}

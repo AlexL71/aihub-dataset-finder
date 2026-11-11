@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71931",
+ "easy_ko": "예전에 공개된 자율주행차 데이터를 다시 다듬어, 밤 자동차 전용도로 사진 8,000장에 장면 설명과 장면에 대한 질문-답을 붙인 데이터입니다. 자율주행차가 도로 상황을 이해하고 사진에 대한 질문에 답하는 AI에 쓸 수 있습니다.",
+ "easy_en": "Older self-driving car data reworked (upcycled) into 8,000 photos of expressways at night, each with a scene description and questions and answers about the scene. You can use it to build AI that helps self-driving cars understand road situations and answer questions about images.",
+ "detail_ko": "기존 AI 허브 상용 자율주행차 데이터를 재가공(업사이클링)한 밤 자동차 전용도로 이미지 8,000장(jpg, 약 2,006개 장면)에 장면 설명(이미지-텍스트 관계)과 질의응답 라벨 16,000건(JSON)을 붙였고, 수집 시간대(주로 20~24시), 주행 속도, 날씨 정보가 있습니다(예: 맑음, 구름, 흐림, 20~22시, 22~24시). 페이지에 성능 점수 표와 모델 설명이 없고, 야간 데이터인데 7~20시 수집이 12.45% 섞여 있고, 원천 폴더별 수량(3,574·2,045·2,381)이 주간판(71930)과 똑같아 확인이 필요하며, 31~50km/h 장면은 1개뿐이고, 기존 데이터를 재가공한 것이라 원본과 이미지가 겹칠 수 있습니다.",
+ "detail_en": "8,000 images (jpg, about 2,006 scenes) of expressways at night, upcycled from AI Hub's earlier commercial self-driving car data, with 16,000 JSON labels for scene descriptions (image-text relations) and question-answer pairs, plus collection time (mostly 8 pm to midnight), speed and weather information (such as clear, cloudy, overcast, 8 to 10 pm, 10 pm to midnight). There is no score table or model description; although this is night data, 12.45% was collected between 7 am and 8 pm; the per-folder source counts (3,574, 2,045, 2,381) are identical to the daytime set 71930, which needs checking; there is only one 31 to 50 km/h scene; being reworked from existing data, images may overlap with the original set.",
+ "amount_ko": "이미지 8,000장, 라벨 16,000건, 약 2,006개 장면",
+ "amount_en": "8,000 images, 16,000 labels, about 2,006 scenes",
+ "labels_ko": "장면 설명, 질문과 답",
+ "labels_en": "image-text relation, question-answer",
+ "status": "full-run-2026-11-02"
+}

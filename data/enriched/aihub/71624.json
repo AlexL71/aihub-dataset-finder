@@ -1,0 +1,29 @@
+{
+ "dataset_id": "71624",
+ "title_en": "Passenger autonomous car nighttime urban road data",
+ "summary_ko": "승용 자율주행차가 밤에 도심 도로를 달리며 모은 카메라 이미지와 라이다 점군 160,000세트로, 2D 분할·상자와 3D 상자가 붙어 있습니다. 주간 데이터보다 부족한 야간 상황의 자율주행 인지 AI 학습과 평가에 쓸 수 있습니다.",
+ "summary_en": "160,000 sets of camera images and LiDAR point clouds from a passenger autonomous car driving urban roads at night, with 2D segmentation and boxes and 3D boxes. For training and testing night-time self-driving perception, which has less data than daytime.",
+ "contents_ko": "카메라 이미지(jpg) + 라이다(pcd) + JSON(2D 분할·상자, 3D 상자, 위치·제어 정보).",
+ "contents_en": "Camera image (jpg) + LiDAR (pcd) + JSON (2D segmentation and boxes, 3D boxes, position and control info).",
+ "modalities": ["image", "3d"],
+ "tasks": ["segmentation", "object_detection"],
+ "topics": [{"ko": "자율주행", "en": "Autonomous driving"}, {"ko": "야간 주행", "en": "Night driving"}],
+ "keywords_ko": ["자율주행", "야간", "도심 도로", "라이다", "의미 분할", "3D 탐지"],
+ "keywords_en": ["autonomous driving", "night", "urban roads", "LiDAR", "semantic segmentation", "3D detection"],
+ "labels": ["segmentation", "2D bounding box", "3D bounding box", "class"],
+ "file_formats": ["jpg", "pcd", "json"],
+ "scale_ko": "160,000세트(2D 분할 160,000, 2D/3D 160,000)",
+ "classes_example": ["background", "crossWalk", "curb", "freespace", "pedestrian", "bicycle", "bus"],
+ "baseline": [{"task": "3D object detection", "model": "PV-RCNN", "metric": "mAP", "value": "72.03%"}, {"task": "2D semantic segmentation", "model": "ConvNeXt", "metric": "mIoU", "value": "55.99%"}],
+ "difficulty": "advanced",
+ "difficulty_note_ko": "야간 이미지라 2D 분할도 어렵고(mIoU 약 56%), 전체가 약 274GB입니다.",
+ "skills_needed_ko": ["파이썬", "분할 모델", "포인트 클라우드 3D 탐지"],
+ "caveats_ko": ["전체 약 274GB", "야간 2D 분할 성능이 낮음", "성능표 1번 항목이 페이지에 없음"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "야간 보행자 탐지", "title_en": "Night pedestrian detection", "desc_ko": "밤 도심 이미지에서 보행자를 상자로 찾습니다.", "desc_en": "Box pedestrians in night city images."},
+  {"level": "capstone", "title_ko": "주야간 성능 비교", "title_en": "Day vs night comparison", "desc_ko": "주간 데이터(71621)로 학습한 모델이 밤에 얼마나 떨어지는지 비교합니다.", "desc_en": "Measure how a day-trained model (71621) drops at night."},
+  {"level": "research", "title_ko": "야간 라이다 보완 분할", "title_en": "LiDAR-aided night segmentation", "desc_ko": "어두운 이미지를 라이다로 보완해 분할 성능을 높이는 방법을 연구합니다.", "desc_en": "Use LiDAR to improve segmentation in dark images."}
+ ],
+ "doc_used": true,
+ "uncertain": ["3D 탐지 대상 클래스 목록"]
+}

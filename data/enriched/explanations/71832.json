@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71832",
+ "easy_ko": "대형 언어 AI가 베트남어와 베트남 문화를 얼마나 잘 이해하는지 시험하는 문제 2만 6천여 개로, 상식 추론, 문장 이해, 지어내지 않기, 도덕성, 문화 그림 이해 같은 과제로 나뉩니다. 베트남어 AI 챗봇의 품질과 신뢰성을 평가하는 데 쓸 수 있습니다.",
+ "easy_en": "Over 26,000 test questions on how well large language models understand Vietnamese and Vietnamese culture, grouped into tasks such as common-sense reasoning, reading, avoiding made-up answers, ethics and understanding culture-based images. You can use it to evaluate the quality and trustworthiness of Vietnamese chatbots.",
+ "detail_ko": "대형 언어 모델(LLM)의 베트남어·베트남 문화 이해를 평가하는 문항 26,299건(원천 txt, JSON 정답)으로, 과제 10종(Vie-CSQA, Vie-HellaSwag, Vie-MMLU, Vie-TruthfulQA, Vie-CommonGen, Vie-HHH, Vie-Winogrande, Vie-DROP, Vie-BoolQ, Vie-CMMU; CMMU는 이미지 포함)입니다. 제목은 '글로벌'이지만 내용은 베트남어·베트남 문화 중심이고, 기존 벤치마크를 바탕으로 만들어 원본과 겹칠 수 있으며, 모델 평가 결과 수치는 팩에 없습니다.",
+ "detail_en": "26,299 evaluation items (source txt, JSON answers) testing large language models on Vietnamese language and culture, in 10 tasks (Vie-CSQA, Vie-HellaSwag, Vie-MMLU, Vie-TruthfulQA, Vie-CommonGen, Vie-HHH, Vie-Winogrande, Vie-DROP, Vie-BoolQ, Vie-CMMU; CMMU includes images). Despite the 'global' title, the content centres on Vietnamese language and culture; it is based on existing benchmarks, so it may overlap with the originals; no model results are in the pack.",
+ "amount_ko": "평가 문항 26,299건, 과제 10종",
+ "amount_en": "26,299 evaluation items, 10 tasks",
+ "labels_ko": "문제와 정답",
+ "labels_en": "question-answer",
+ "status": "full-run-2026-11-02"
+}

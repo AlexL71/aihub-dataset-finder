@@ -1,0 +1,29 @@
+{
+ "dataset_id": "71729",
+ "title_en": "Generative AI Korean multi-event extraction data",
+ "summary_ko": "스포츠·연예·증권·산업·라이프 등 뉴스·도서 원문 230,837건 중 7,216개 문서에서 사건 17,625개와 사건의 주체·객체를 태깅한 데이터입니다. 한 글에 여러 사건이 있을 때 각각을 뽑아 내는 정보 추출, 검색·자동 분류에 쓸 수 있습니다.",
+ "summary_en": "From 230,837 news and book texts (sports, entertainment, stocks, industry, lifestyle, etc.), 7,216 documents tagged with 17,625 events and their subjects and objects. For extracting multiple events per text, search and auto-categorisation.",
+ "contents_ko": "원문 텍스트(csv) + JSON(사건 유형, 사건 주체·객체, 카테고리).",
+ "contents_en": "Source text (csv) + JSON (event type, event subject and object, category).",
+ "modalities": ["text"],
+ "tasks": ["information_extraction", "text_classification"],
+ "topics": [{"ko": "언어·정보 추출", "en": "Language and information extraction"}, {"ko": "뉴스 분석", "en": "News analysis"}],
+ "keywords_ko": ["이벤트 추출", "사건 추출", "정보 추출", "뉴스", "SpERT", "관계 추출"],
+ "keywords_en": ["event extraction", "multi-event", "information extraction", "news", "SpERT", "relation extraction"],
+ "labels": ["event type", "event arguments", "category"],
+ "file_formats": ["csv", "json"],
+ "scale_ko": "원문 230,837건, 다중 이벤트 문서 7,216건, 이벤트 17,625개",
+ "classes_example": ["스포츠", "연예", "증권", "산업", "라이프"],
+ "baseline": [],
+ "difficulty": "intermediate",
+ "difficulty_note_ko": "약 0.22GB로 가볍지만 실제 라벨은 문서 약 7천 건뿐입니다.",
+ "skills_needed_ko": ["파이썬", "Hugging Face 토큰 분류", "관계·이벤트 추출(SpERT)"],
+ "caveats_ko": ["페이지에 성능 점수 표가 없음(BERT+SpERT 계획만 있음)", "라벨이 붙은 문서는 원문의 약 3%", "이벤트 수가 17,233과 17,625로 표마다 다름", "71728과 같은 기관"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "기사 카테고리 분류", "title_en": "News category classifier", "desc_ko": "원문 기사를 스포츠·증권·연예 등으로 분류합니다.", "desc_en": "Classify articles into sports, stocks, entertainment and more."},
+  {"level": "capstone", "title_ko": "증권 뉴스 사건 알림", "title_en": "Stock news event alerts", "desc_ko": "증권 기사에서 인수·실적 같은 사건과 회사를 뽑아 알림으로 보여 줍니다.", "desc_en": "Extract events like acquisitions or earnings and the companies involved."},
+  {"level": "research", "title_ko": "LLM 이벤트 추출 비교", "title_en": "LLM vs fine-tuned extraction", "desc_ko": "대형 언어모델과 미세조정 모델의 다중 이벤트 추출 성능을 비교합니다.", "desc_en": "Compare LLM prompting with fine-tuned models for multi-event extraction."}
+ ],
+ "doc_used": true,
+ "uncertain": []
+}

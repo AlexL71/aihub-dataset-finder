@@ -1,0 +1,29 @@
+{
+ "dataset_id": "71377",
+ "title_en": "Low-light environment image data",
+ "summary_ko": "역광·그림자·창문 빛 등 10가지 어두운 환경(실내·실외)에서 노출을 5단계로 바꿔 찍은 이미지 약 204만 장입니다. 51종 객체가 상자와 분할 영역으로 표시되어 있어 야간 CCTV·방범·자율주행의 어두운 곳 물체 탐지에 쓸 수 있습니다.",
+ "summary_en": "About 2.04 million images taken in 10 kinds of low-light scenes (backlight, shadow, window light, etc.) at 5 exposure levels, with 51 object types marked by boxes and segmentation masks. For night CCTV, security and driving detection.",
+ "contents_ko": "저조도 이미지(jpg, 비식별) + JSON(상자, 분할 영역, 객체 종류, 저조도 환경·노출 단계·시점).",
+ "contents_en": "Low-light image (jpg, anonymised) + JSON (boxes, segmentation masks, object type, light condition, exposure level, camera angle).",
+ "modalities": ["image"],
+ "tasks": ["object_detection", "segmentation"],
+ "topics": [{"ko": "방범·보안", "en": "Security and surveillance"}, {"ko": "교통·자율주행", "en": "Traffic and autonomous driving"}],
+ "keywords_ko": ["저조도", "야간", "노출 브라케팅", "CCTV", "객체 탐지", "분할"],
+ "keywords_en": ["low light", "night", "exposure bracketing", "CCTV", "object detection", "segmentation"],
+ "labels": ["bounding box", "segmentation mask", "class", "light condition", "exposure level"],
+ "file_formats": ["jpg", "json"],
+ "scale_ko": "이미지 2,036,560장, 저조도 환경 10종, 장소 10종, 객체 51종(13개 분류), 노출 5단계",
+ "classes_example": ["역광", "약함", "강함", "그림자", "낮음", "부드러움", "단일", "화면", "창"],
+ "baseline": [{"task": "object detection", "model": "TridentNet", "metric": "mAP", "value": "71.93%"}, {"task": "instance segmentation", "model": "PointRend", "metric": "mask AP", "value": "70.71%"}],
+ "difficulty": "intermediate",
+ "difficulty_note_ko": "탐지·분할 실습에 좋지만 전체 약 1.2TB입니다. 환경 몇 개만 골라 받아 쓰세요.",
+ "skills_needed_ko": ["파이썬", "YOLO 탐지", "분할 모델", "이미지 밝기 보정"],
+ "caveats_ko": ["전체 약 1.2TB", "같은 장면을 노출만 바꿔 5번 찍어 train/val 분할 시 같은 장면이 섞이지 않게 주의", "51종 객체 목록은 팩 앞부분에 없음"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "어두운 사진 사람·차 탐지", "title_en": "Person and car detection in the dark", "desc_ko": "저조도 사진에서 사람과 차량을 YOLO로 탐지합니다.", "desc_en": "Detect people and cars in low-light photos with YOLO."},
+  {"level": "capstone", "title_ko": "야간 방범 CCTV 보조", "title_en": "Night security CCTV helper", "desc_ko": "어두운 영상에서 사람을 탐지해 경비원에게 알리는 시스템을 만듭니다.", "desc_en": "Detect people in dark footage and alert guards."},
+  {"level": "research", "title_ko": "노출별 탐지 성능 분석", "title_en": "Detection accuracy by exposure", "desc_ko": "노출 단계와 조명 종류에 따라 탐지 성능이 어떻게 변하는지, 밝기 보정이 도움이 되는지 연구합니다.", "desc_en": "Study how exposure and lighting type affect detection and whether enhancement helps."}
+ ],
+ "doc_used": true,
+ "uncertain": []
+}

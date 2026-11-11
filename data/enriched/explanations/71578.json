@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71578",
+ "easy_ko": "비나 안개 속에서 레이저 센서로 찍어 빗방울 같은 잡음이 섞인 점 데이터와, 그 잡음을 걸러 낸 깨끗한 점 데이터를 짝지은 데이터입니다. 궂은 날씨에도 레이저 센서가 물체를 잘 알아보도록 잡음을 지우는 AI에 쓸 수 있습니다.",
+ "easy_en": "Pairs of laser point data recorded in rain or fog, one with noise such as raindrops mixed in and one with that noise filtered out. You can use it to build AI that removes noise so lidar can still recognise objects in bad weather.",
+ "detail_ko": "비·안개 등 악천후에서 128채널 라이다로 찍은 노이즈 점군 50,000개와 잡음을 걸러 낸 디노이즈 점군 50,000개(pcd)에 3D 분할과 노이즈 점 라벨(JSON)을 붙였으며, 도로 주행과 K-CITY 기상 재현 시설에서 모았습니다. 기준 성능은 SPVConv 3D 분할 mIoU 노이즈 72.54%, 디노이즈 76.75%, 라이다 디노이징 mIoU 80.63%입니다. 전체 약 612GB이고, 기상 재현 시설 데이터는 실제 날씨와 다를 수 있으며, 3D 분할 클래스 목록은 팩 앞부분에 없습니다. 디노이즈 성능 기준값(18%)이 노이즈(30%)보다 낮게 잡혀 있습니다.",
+ "detail_en": "50,000 noisy point clouds recorded by a 128-channel lidar in bad weather such as rain and fog, paired with 50,000 denoised versions (pcd), with JSON 3D segmentation and noise-point labels, collected on roads and at the K-CITY weather-simulation facility. Baselines with SPVConv: 3D segmentation mIoU 72.54% (noisy) and 76.75% (denoised); lidar denoising mIoU 80.63%. Total size is about 612 GB. Data from the weather facility may differ from real weather, the 3D segmentation class list is not in the pack, and the target for denoised data (18%) is set lower than for noisy data (30%).",
+ "amount_ko": "노이즈 점군 50,000개 + 디노이즈 점군 50,000개",
+ "amount_en": "50,000 noisy + 50,000 denoised point clouds",
+ "labels_ko": "점마다 물체 종류(입체 분할), 잡음 점 표시",
+ "labels_en": "3D semantic segmentation, noise points",
+ "status": "full-run-2026-11-02"
+}

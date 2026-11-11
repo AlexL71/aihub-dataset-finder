@@ -1,0 +1,29 @@
+{
+ "dataset_id": "71793",
+ "title_en": "Busan flood risk composite data",
+ "summary_ko": "부산 수영강·온천천·동천 하천 지역과 북구·동래구·중구·사상구 도시 지역의 침수위험 수치모델 이미지 27,516장과 침수위험 지역 이미지 100,000장에 침수 영역이 다각형으로 칠해진 데이터입니다. 도시 침수 예측과 재난 대응 AI에 쓸 수 있습니다.",
+ "summary_en": "27,516 flood-risk numerical model images and 100,000 flood-risk area images for Busan rivers (Suyeong, Oncheon, Dong) and 4 urban districts (Buk, Dongnae, Jung, Sasang), with flooded areas outlined by polygons. For urban flood prediction and disaster response AI.",
+ "contents_ko": "침수 모델·지역 이미지(jpg) + JSON(침수 영역 다각형, 조건 정보).",
+ "contents_en": "Flood model and area images (jpg) + JSON (flood polygons, scenario info).",
+ "modalities": ["image"],
+ "tasks": ["segmentation", "forecasting"],
+ "topics": [{"ko": "재난·침수", "en": "Disasters and flooding"}, {"ko": "도시 안전", "en": "Urban safety"}],
+ "keywords_ko": ["침수", "도시 홍수", "부산", "하천", "수치모델", "기후변화"],
+ "keywords_en": ["flooding", "urban flood", "Busan", "rivers", "numerical model", "climate change"],
+ "labels": ["polygon segmentation"],
+ "file_formats": ["jpg", "json"],
+ "scale_ko": "수치모델 이미지 27,516장, 침수위험 지역 이미지 100,000장",
+ "classes_example": ["수영강", "온천천", "동천", "북구", "동래구", "중구", "사상구"],
+ "baseline": [],
+ "difficulty": "intermediate",
+ "difficulty_note_ko": "약 36GB로 다룰 만하고 분할 실습에 좋습니다. 수치모델 이미지의 의미를 먼저 이해하세요.",
+ "skills_needed_ko": ["파이썬", "분할 모델", "GIS 기초"],
+ "caveats_ko": ["수치모델이 만든 모의 이미지라 실제 침수와 다를 수 있음", "부산 일부 지역만 포함", "성능 지표 값이 팩에 없음"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "침수 영역 분할", "title_en": "Flood area segmentation", "desc_ko": "이미지에서 침수 위험 영역을 칠합니다.", "desc_en": "Segment flood-risk areas in images."},
+  {"level": "capstone", "title_ko": "강수량별 침수 지도", "title_en": "Rainfall flood map", "desc_ko": "강수 조건에 따라 침수 예상 지역을 보여 주는 지도를 만듭니다.", "desc_en": "Show expected flood areas per rainfall scenario."},
+  {"level": "research", "title_ko": "수치모델 대체 AI", "title_en": "AI surrogate for flood models", "desc_ko": "느린 수치모델 대신 빠르게 침수를 예측하는 AI를 연구합니다.", "desc_en": "Fast AI surrogate for slow flood simulations."}
+ ],
+ "doc_used": true,
+ "uncertain": ["수치모델 입력 조건(강수량 등) 포함 여부"]
+}

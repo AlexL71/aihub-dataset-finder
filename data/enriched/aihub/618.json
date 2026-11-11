@@ -1,0 +1,29 @@
+{
+ "dataset_id": "618",
+ "title_en": "Persona-based virtual person montage (composite sketch) data",
+ "summary_ko": "실존하지 않는 한국인 가상 인물 사진 약 1만 장과, 그 인물을 보고 그린 스케치, 말로 된 설명만 듣고 그린 몽타주 스케치 등 약 8만 장을 짝지은 데이터입니다. 몽타주로 비슷한 얼굴을 찾거나 얼굴을 재구성하는 AI에 쓸 수 있습니다.",
+ "summary_en": "About 10,000 photos of virtual (not real) Korean people paired with sketches drawn from looking at them and montage (composite) sketches drawn only from verbal descriptions, about 80,000 images in total. For AI that finds similar faces from a montage or reconstructs faces.",
+ "contents_ko": "가상 인물 이미지·스케치(jpg) + JSON(상자, 얼굴 설명문).",
+ "contents_en": "Virtual-person images and sketches (jpg) + JSON (boxes, face description text).",
+ "modalities": ["image", "text"],
+ "tasks": ["image_classification", "retrieval_recommendation", "image_generation"],
+ "topics": [{"ko": "얼굴 인식·수사", "en": "Face recognition and investigation"}, {"ko": "디자인", "en": "Design"}],
+ "keywords_ko": ["몽타주", "얼굴 스케치", "가상 인물", "유사 인물 검색", "실종자 찾기"],
+ "keywords_en": ["montage", "face sketch", "virtual person", "similar-face search", "missing persons"],
+ "labels": ["identity", "bounding box", "face description"],
+ "file_formats": ["jpg", "json"],
+ "scale_ko": "전체 약 8만 장(가상 인물 약 1만, 관찰 스케치 약 1만, 설명 기반 몽타주 약 3만)",
+ "classes_example": [],
+ "baseline": [{"task": "sketch-to-photo identity recognition", "model": "ArcFace", "metric": "top-5 accuracy", "value": "81.9%"}],
+ "difficulty": "intermediate",
+ "difficulty_note_ko": "약 9GB로 받기 쉽지만 사진-스케치 짝 학습(메트릭 학습)이 필요합니다.",
+ "skills_needed_ko": ["파이썬", "얼굴 인식 모델(ArcFace 등)", "임베딩 검색"],
+ "caveats_ko": ["가상 인물이지만 얼굴 인식 기술은 오남용 위험이 있음", "통계표가 팩에 비어 있음", "페이지 구축량(10,088)과 개요(8만여 장) 숫자가 다름"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "사진-스케치 짝 맞추기", "title_en": "Photo-sketch matching", "desc_ko": "스케치를 보고 어느 사진 인물인지 맞힙니다.", "desc_en": "Match a sketch to the right photo."},
+  {"level": "capstone", "title_ko": "몽타주 유사 인물 검색", "title_en": "Montage-based face search", "desc_ko": "몽타주를 넣으면 비슷한 얼굴 상위 5명을 보여줍니다.", "desc_en": "Show the top 5 similar faces for a montage."},
+  {"level": "research", "title_ko": "설명문으로 얼굴 생성", "title_en": "Face generation from descriptions", "desc_ko": "말로 된 얼굴 설명에서 얼굴 이미지를 만드는 방법을 연구합니다.", "desc_en": "Generate face images from verbal descriptions."}
+ ],
+ "doc_used": true,
+ "uncertain": ["total image count (10,088 vs about 80,000)", "클래스 목록을 페이지와 설명서에서 찾지 못함"]
+}

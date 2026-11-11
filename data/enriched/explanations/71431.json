@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71431",
+ "easy_ko": "과일, 채소, 음료, 우유, 주방용품, 화장품, 장난감 같은 상품을 멀쩡한 모습, 찌그러진 모습, 분해되거나 깨진 모습, 여러 개가 뭉친 모습으로 찍고 위치와 상태를 표시한 데이터입니다. 모양이 바뀌어도 같은 상품으로 알아보는 무인 계산대나 상품 분류 로봇을 만들 수 있습니다.",
+ "easy_en": "Photos of products such as fruit, vegetables, drinks, dairy, kitchenware, cosmetics and toys, shown intact, deformed, taken apart, broken or bunched together, with position and condition marked. You can build unmanned checkouts or sorting robots that still recognise a product when its shape changes.",
+ "detail_ko": "상품 10개 분류(과실류, 채소류, 음료, 유제품, 주방용품 등)를 상태 6종(정상, 변형, 분리/분해, 손실/파손, 훼손, 계수변환 56,439장)으로 촬영한 이미지 649,128장(jpg)에 바운딩박스, 상품 분류, 상태 유형, 메타정보를 JSON으로 붙였습니다. 성능 지표 표는 비어 있고 YOLOX 사용만 소개되어 있습니다. 전체 약 537GB이며, 같은 상품의 여러 상태 사진이 있어 분할 시 같은 상품이 섞이지 않게 주의해야 합니다.",
+ "detail_en": "649,128 images (jpg) of products in 10 categories (fruit, vegetables, drinks, dairy, kitchenware and more) in 6 conditions (normal, deformed, separated/disassembled, lost/broken, damaged, count-changed 56,439), with JSON boxes, product class, condition and metadata. The performance table is empty; only YOLOX is mentioned. Total size is about 537 GB; each product appears in several conditions, so split by product.",
+ "amount_ko": "상품 사진 649,128장, 상태 6종",
+ "amount_en": "649,128 images, 6 conditions",
+ "labels_ko": "상품 위치 상자, 상품 종류, 상태(멀쩡함·찌그러짐·깨짐 등)",
+ "labels_en": "product boxes, product class, condition type",
+ "status": "full-run-2026-11-02"
+}

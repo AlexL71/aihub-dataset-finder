@@ -1,0 +1,29 @@
+{
+ "dataset_id": "195",
+ "title_en": "Vehicle and pedestrian recognition images",
+ "summary_ko": "교차로·인도 인접 도로처럼 사고가 나기 쉬운 곳을 자율주행 모사 차량으로 360시간 촬영한 이미지 120만 장으로, 사람·차량·이륜차 같은 움직이는 물체가 표시되어 있습니다. 자율주행 보조 시스템이나 사고 위험 안내 서비스에 쓸 수 있습니다.",
+ "summary_en": "1.2 million images from 360 hours of driving by an autonomous test vehicle in accident-prone places such as intersections and roads next to sidewalks, with moving objects (people, vehicles, two-wheelers) labelled. For driver-assistance systems and accident-risk alerts.",
+ "contents_ko": "주행 이미지(사람·번호판 비식별) + JSON(이동체 상자·다각형, 클래스).",
+ "contents_en": "Driving images (faces and plates masked) + JSON (moving-object boxes and polygons, class).",
+ "modalities": ["image"],
+ "tasks": ["object_detection", "segmentation"],
+ "topics": [{"ko": "자율주행", "en": "Self-driving"}, {"ko": "교통 안전", "en": "Road safety"}],
+ "keywords_ko": ["보행자 인식", "차량 인식", "교차로", "이륜차", "자율주행", "사고 위험"],
+ "keywords_en": ["pedestrian detection", "vehicle detection", "intersection", "two-wheelers", "self-driving", "accident risk"],
+ "labels": ["bounding box", "polygon", "class"],
+ "file_formats": ["jpg", "json"],
+ "scale_ko": "영상 360시간, 이미지 120만 장",
+ "classes_example": ["사람", "차량", "이륜차"],
+ "baseline": [],
+ "difficulty": "intermediate",
+ "difficulty_note_ko": "보행자·차량 탐지는 YOLO로 쉽게 시작할 수 있지만 전체 약 2.2TB입니다.",
+ "skills_needed_ko": ["파이썬", "YOLO 탐지"],
+ "caveats_ko": ["전체 약 2.2TB", "성능 지표가 팩 앞부분에 없음"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "보행자·차량 탐지", "title_en": "Pedestrian and vehicle detection", "desc_ko": "주행 이미지에서 사람과 차량을 탐지합니다.", "desc_en": "Detect people and vehicles in driving images."},
+  {"level": "capstone", "title_ko": "교차로 보행자 경고", "title_en": "Intersection pedestrian warning", "desc_ko": "우회전 시 보행자를 감지하면 운전자에게 경고하는 데모를 만듭니다.", "desc_en": "Warn drivers about pedestrians when turning at intersections."},
+  {"level": "research", "title_ko": "가려진 보행자 인식", "title_en": "Occluded pedestrian detection", "desc_ko": "차 사이에 가려진 보행자 탐지 성능을 분석하고 개선합니다.", "desc_en": "Analyse and improve detection of pedestrians hidden between cars."}
+ ],
+ "doc_used": true,
+ "uncertain": []
+}

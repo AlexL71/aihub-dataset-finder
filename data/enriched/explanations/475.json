@@ -1,0 +1,12 @@
+{
+ "dataset_id": "475",
+ "easy_ko": "카메라와 드론으로 찍은 공룡 발자국 화석 사진에 발자국 테두리를 그리고, 육식·초식 공룡 같은 발자국 주인 유형과 발견된 땅과 지층 정보를 붙인 데이터입니다. 사진 속 공룡 발자국을 찾아 분류하거나 화석 유적을 관리하는 AI를 만들 수 있습니다.",
+ "easy_en": "Camera and drone photos of dinosaur footprint fossils with each footprint outlined, plus the type of dinosaur that made it and details of the land and rock layers where it was found. You can build AI that finds and classifies dinosaur footprints in photos or helps manage fossil sites.",
+ "detail_ko": "카메라·드론으로 촬영한 공룡발자국 화석 사진과 3D 가공 이미지 141,327건(수각류 약 3.7만 등, jpg)으로, JSON에 발자국 테두리 폴리곤, 유형(수각류, 조각류, 용각류), 지형·지층·지질시대·고환경 정보가 있습니다. 기준 성능은 기록에서 확인되지 않습니다. 전체 약 850GB입니다.",
+ "detail_en": "141,327 camera, drone and 3D-processed images (jpg) of dinosaur footprint fossils (about 37k theropod and more), with JSON footprint outline polygons, type (theropod, ornithopod, sauropod), and terrain, rock layer, geological period and palaeo-environment info. No baseline is visible in the record. Total size is about 850 GB.",
+ "amount_ko": "사진 약 14.1만 건, 발자국 유형 3종",
+ "amount_en": "about 141k images, 3 footprint types",
+ "labels_ko": "발자국 테두리, 공룡 유형, 땅·지층·시대 정보",
+ "labels_en": "footprint outline, dinosaur type, terrain, rock-layer and period info",
+ "status": "full-run-2026-11-02"
+}

@@ -1,0 +1,12 @@
+{
+ "dataset_id": "497",
+ "easy_ko": "밤에 CCTV로 찍은 적외선 사진과 열화상 사진마다 사람, 자전거 탄 사람, 킥보드 탄 사람 같은 물체와 밤에 일어난 사건·사고를 표시한 데이터입니다. 어두운 밤에도 사고를 알아채는 CCTV AI를 만들 수 있습니다.",
+ "easy_en": "Night-time infrared and thermal CCTV images marked with people, cyclists, scooter riders and other objects, as well as night-time incidents and accidents. You can build CCTV AI that notices accidents even in the dark.",
+ "detail_ko": "서초구 CCTV 야간 적외선(IR)·열화상 이미지 2,212,000장(객체용 IR·열화상 각 62.1만, 사건사고용 IR·열화상 각 48.5만, jpg)에 물체 바운딩박스, 클래스(사람, 자전거 탄 사람, 자전거, 킥보드 탄 사람, 킥보드 등), 사건사고 종류를 JSON으로 붙였습니다. 사건사고 클래스 목록과 기준 성능은 기록에서 확인되지 않습니다.",
+ "detail_en": "2,212,000 night-time infrared and thermal CCTV images from Seocho-gu (621k each of IR and thermal for objects, 485k each for incidents; jpg) with JSON boxes, classes (person, cyclist, bicycle, scooter rider, scooter and more) and incident type. The incident classes and baseline are not visible in the record.",
+ "amount_ko": "적외선·열화상 사진 약 221만 장",
+ "amount_en": "about 2.21M infrared and thermal images",
+ "labels_ko": "물체 위치 상자, 물체 종류, 사건·사고 종류",
+ "labels_en": "boxes around objects, object class, incident type",
+ "status": "full-run-2026-11-02"
+}

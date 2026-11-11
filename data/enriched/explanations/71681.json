@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71681",
+ "easy_ko": "경북 연구원의 연어 양식 수조에서 찍은 물속 사진 21만여 장에 연어 영역을 칠하고, 직접 잰 몸 크기와 물 상태 센서 기록, 키우기 기록을 함께 담은 데이터입니다. 연어가 얼마나 자랄지와 수조 속 무게를 추정하는 AI에 쓸 수 있습니다.",
+ "easy_en": "Over 210,000 underwater photos from salmon farming tanks at a Gyeongbuk research institute, with salmon painted in, plus hand-measured fish sizes, water-quality sensor records and rearing logs. You can use it to build AI that predicts salmon growth and estimates fish weight in a tank.",
+ "detail_ko": "경북 수산자원연구원 연어 양식 수조의 수중 사진 216,000장(jpg)에 연어 분할(png 마스크, JSON)을 붙이고, 개체 실측 1,920건, 수질 센서 기록 702,720건, 생육 관리 기록 488건(csv)을 함께 제공합니다. 한 기관 수조에서만 촬영됐고, 실측 데이터가 1,920건으로 적어 생체량 회귀가 어려울 수 있으며, 성능 지표 값은 팩에 없습니다.",
+ "detail_en": "216,000 underwater photos (jpg) from salmon tanks at the Gyeongbuk Fisheries Resources Research Institute with salmon segmentation (png masks, JSON), plus 1,920 hand measurements of fish, 702,720 water-quality sensor records and 488 rearing logs (csv). Everything comes from one institute's tanks, the 1,920 measurements may be too few for biomass regression, and no metric values are in the pack.",
+ "amount_ko": "수중 사진 216,000장, 실측 1,920건, 수질 센서 702,720건, 관리 기록 488건",
+ "amount_en": "216,000 underwater photos, 1,920 measurements, 702,720 sensor records, 488 rearing logs",
+ "labels_ko": "연어 영역, 몸 크기 측정값, 센서 기록",
+ "labels_en": "segmentation, fish measurements, sensor time series",
+ "status": "full-run-2026-11-02"
+}

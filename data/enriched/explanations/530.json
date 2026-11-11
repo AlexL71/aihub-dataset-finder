@@ -1,0 +1,12 @@
+{
+ "dataset_id": "530",
+ "easy_ko": "CCTV, 드론, 블랙박스로 찍은 화물차 사진마다 정상인지, 짐을 너무 높거나 넓거나 길게 실었는지, 짐을 잘못 묶었는지, 불법으로 개조했는지를 표시한 데이터입니다. 차를 세우지 않고 영상만으로 짐을 너무 많이 실은 차를 찾아내는 단속 AI를 만들 수 있습니다.",
+ "easy_en": "Photos of trucks from CCTV, drones and dashcams, each marked as normal or as overloaded in height, width or length, badly secured, or illegally modified. You can build enforcement AI that spots overloaded trucks from video without stopping them.",
+ "detail_ko": "CCTV·드론·블랙박스·직접 촬영으로 모은 화물차 원천 이미지 40만 장과 라벨 40만 건(jpg)으로, JSON에 차량 바운딩박스·분할, 차량 크기(3종), 정상/불법 유형(높이과적, 넓이과적, 길이과적, 적재불량, 불법개조), 촬영 방법이 있습니다. 기준 성능은 기록에서 확인되지 않습니다.",
+ "detail_en": "400k truck images and 400k labels (jpg) from CCTV, drones, dashcams and direct shooting, with JSON vehicle boxes and segmentation, vehicle size (3 types), and normal or violation type (over-height, over-width, over-length, poor loading, illegal modification) and capture method. No baseline is visible in the record.",
+ "amount_ko": "화물차 사진 40만 장",
+ "amount_en": "400k truck images",
+ "labels_ko": "차량 위치 상자·영역, 차 크기, 정상·위반 종류",
+ "labels_en": "boxes and masks around trucks, vehicle size, normal or violation type",
+ "status": "full-run-2026-11-02"
+}

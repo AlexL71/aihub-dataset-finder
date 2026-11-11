@@ -1,0 +1,12 @@
+{
+ "dataset_id": "582",
+ "easy_ko": "신문, 보도자료, 간행물, 역사 기록, 문학, 연설문 같은 한국어 글마다 중요한 문장을 골라 둔 요약과 새로 짧게 쓴 요약을 함께 붙인 데이터입니다. 긴 문서를 핵심만 짧게 정리해 주는 요약 AI를 만들 수 있습니다.",
+ "easy_en": "Korean texts such as newspapers, press releases, publications, historical records, literature and speeches, each with two summaries: key sentences picked from the text and a short newly written summary. You can build AI that sums up long documents in a few lines.",
+ "detail_ko": "신문·보도자료·간행물·역사기록물·문학·연설문 등 한국어 원문 약 20만 건(txt)에 추출요약 문장과 생성요약문을 JSON으로 붙였습니다. 기준 성능은 Transformer 생성요약 ROUGE-L 36.89%입니다. 통계표가 비어 있어 유형별 수량은 일부만 보이며, 원문 저작권 때문에 사용 범위 확인이 필요합니다.",
+ "detail_en": "About 200k Korean source texts (txt) such as news, press releases, publications, historical records, literature and speeches, each with extractive summary sentences and an abstractive summary in JSON. Baseline: Transformer abstractive summarisation ROUGE-L 36.89%. The statistics table is empty, so per-type counts are only partly visible; source copyright limits use.",
+ "amount_ko": "원문 약 20만 건",
+ "amount_en": "about 200k source texts",
+ "labels_ko": "골라 뽑은 핵심 문장, 새로 쓴 요약문",
+ "labels_en": "extractive summary sentences, abstractive summary",
+ "status": "full-run-2026-11-02"
+}

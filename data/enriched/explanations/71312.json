@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71312",
+ "easy_ko": "초급부터 고급까지 여러 수준의 시연자들이 필라테스 동작을 하는 모습을 여러 대의 카메라로 동시에 찍고, 몸의 주요 점 위치(평면·입체)와 동작 이름을 붙인 데이터입니다. 집에서도 필라테스 자세를 바로잡아 주거나 동작을 알아보는 AI를 만들 수 있습니다.",
+ "easy_en": "Performers from beginner to advanced level performing Pilates moves, filmed by several cameras at once, with key body points (flat and in depth) and the move names labelled. You can build AI that recognises Pilates moves or corrects your form, even at home.",
+ "detail_ko": "필라테스 동작 50종을 시연자 120명이 하는 모습을 카메라 8대로 동시에 촬영한 영상 약 1.7만 클립(mp4)에 2D·3D 키포인트와 동작 정보(매트, 리포머, 체어, 초급·중급·고급)를 JSON·CSV로 붙였습니다. 기준 성능은 PoseC3D 동작 분류 top-3 정확도 99.78%, BPE 동작 유사도 AUC-ROC 0.9665입니다. 전체 약 16.9TB이며 시연자 얼굴이 보입니다. 페이지에 남성 시연자 91%로 적혀 있어 성별 표기가 뒤바뀐 것으로 의심되며, 매트 동작이 대부분이고 기구 동작은 적습니다.",
+ "detail_en": "About 17k multi-view videos (mp4) of 120 performers doing 50 Pilates moves, filmed by 8 cameras at once, with JSON/CSV 2D and 3D keypoints and move info (mat, reformer, chair; beginner, intermediate, advanced). Baselines: PoseC3D move classification top-3 accuracy 99.78%, BPE move similarity AUC-ROC 0.9665. Total size is about 16.9TB; performers' faces are visible. The page lists 91% male performers, which looks like a swapped label; mat moves dominate and equipment moves are few.",
+ "amount_ko": "영상 약 1.7만 클립, 동작 50종, 시연자 120명",
+ "amount_en": "about 17k clips, 50 moves, 120 performers",
+ "labels_ko": "몸의 주요 점(평면·입체), 동작 이름, 실력 수준",
+ "labels_en": "2D and 3D body key points, move class, skill level",
+ "status": "full-run-2026-11-02"
+}

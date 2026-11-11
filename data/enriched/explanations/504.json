@@ -1,0 +1,12 @@
+{
+ "dataset_id": "504",
+ "easy_ko": "15세기부터 20세기 초까지 조선시대 옛 책과 문서에 쓰인 옛한글을 한 글자씩 나누고 어떤 글자인지 표시한 데이터입니다. 옛 문헌을 자동으로 읽어 지금 글자로 옮겨 주는 AI를 만들어 국어 역사 연구를 도울 수 있습니다.",
+ "easy_en": "Old Hangul from Joseon-era books and documents, from the 1400s to the early 1900s, split into single characters with each one identified. You can build AI that reads old texts and turns them into modern digital text, helping research on the history of Korean.",
+ "detail_ko": "15세기~20세기 초 고문헌·고문서(필사본 67%, 목판본 18%, 활자본 15%; 문학류 74%, 종교서·언해·음식조리서·언간 등)의 옛한글 12,003,864글자를 문헌 이미지(png)에서 분할하고, JSON에 글자별 분할 영역, 글자 값, 판본 종류, 문헌 분류를 붙였습니다. 기준 성능은 기록에서 확인되지 않습니다. 필사본 비율이 높아 글씨체 차이가 큽니다.",
+ "detail_en": "12,003,864 old-Hangul characters segmented from document images (png) of texts from the 15th to early 20th century (manuscripts 67%, woodblock prints 18%, movable-type prints 15%; literature 74%, plus religious texts, translations, cookbooks and letters), with JSON character regions, character values, print type and document category. No baseline is visible in the record. Manuscripts dominate, so handwriting styles vary widely.",
+ "amount_ko": "옛한글 약 1,200만 글자",
+ "amount_en": "about 12M old-Hangul characters",
+ "labels_ko": "글자마다 영역, 정답 글자, 책 만든 방식(손글씨·목판·활자), 문헌 종류",
+ "labels_en": "character regions, character label, print type, document category",
+ "status": "full-run-2026-11-02"
+}

@@ -1,0 +1,29 @@
+{
+ "dataset_id": "71418",
+ "title_en": "Korean speakers' topic-adaptive English speaking assessment data",
+ "summary_ko": "한국인 2,640명(대학생·구직자·직장인)이 영어 말하기 시험에 답한 음성 약 1,017시간과 전사, 그리고 교사 2명 이상이 매긴 점수입니다. 화용적 기능·정확성·내용·텍스트 유형별 점수가 있어 영어 말하기 자동 채점 AI에 쓸 수 있습니다.",
+ "summary_en": "About 1,017 hours of English speaking-test answers from 2,640 Korean speakers (students, job seekers, workers) with transcripts and scores from two or more teachers on function, accuracy, content and text type. For automatic English speaking assessment.",
+ "contents_ko": "답변 음성(wav) + JSON(질문, 전사, 교사 채점 점수, 등급, 응답자 정보).",
+ "contents_en": "Answer audio (wav) + JSON (question, transcript, teacher scores, level, speaker info).",
+ "modalities": ["audio", "text"],
+ "tasks": ["audio_classification", "speech_recognition", "text_classification"],
+ "topics": [{"ko": "영어 교육", "en": "English education"}, {"ko": "취업·시험 준비", "en": "Job and test preparation"}],
+ "keywords_ko": ["영어 말하기", "자동 채점", "말하기 시험", "영어 음성", "외국어 교육", "발화 평가"],
+ "keywords_en": ["English speaking", "automatic scoring", "speaking test", "English speech", "language education", "speech assessment"],
+ "labels": ["transcription", "teacher scores", "proficiency level"],
+ "file_formats": ["wav", "json"],
+ "scale_ko": "음성 약 1,017시간, 응답자 2,640명, 등급 5단계",
+ "classes_example": ["NA (Native)", "TH (Talented High)", "TM (Talented Mid)", "TL (Talented Low)", "IG (Ignite) 이하"],
+ "baseline": [{"task": "pragmatic function scoring", "model": "Transformer", "metric": "Pearson correlation", "value": "0.7691"}, {"task": "accuracy scoring", "model": "Transformer", "metric": "Pearson correlation", "value": "0.7405"}, {"task": "content and context scoring", "model": "Transformer", "metric": "Pearson correlation", "value": "0.733"}],
+ "difficulty": "intermediate",
+ "difficulty_note_ko": "약 73GB로 다룰 만합니다. 전사 텍스트만으로 점수 예측을 먼저 해 보세요.",
+ "skills_needed_ko": ["파이썬", "음성 인식(Whisper)", "텍스트·음성 회귀 모델"],
+ "caveats_ko": ["PCC 기준값 0.72(%)와 측정값 76.91(%)의 단위 표기가 섞여 있음", "중급(TM·TH) 응답자가 많고 최하위 등급은 109명뿐", "대학생·구직자가 약 68%"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "답변 길이와 점수 분석", "title_en": "Answer length vs score", "desc_ko": "말한 시간·단어 수와 교사 점수의 관계를 그래프로 봅니다.", "desc_en": "Plot speaking time and word count against teacher scores."},
+  {"level": "capstone", "title_ko": "영어 말하기 연습 앱", "title_en": "English speaking practice app", "desc_ko": "질문에 답하면 예상 등급과 고칠 점을 알려 주는 앱을 만듭니다.", "desc_en": "Answer a prompt and get a predicted level and tips."},
+  {"level": "research", "title_ko": "음성 vs 텍스트 채점", "title_en": "Audio vs text scoring", "desc_ko": "전사 텍스트만 쓴 모델과 음성 특징을 함께 쓴 모델의 채점 정확도를 비교합니다.", "desc_en": "Compare text-only and audio+text scoring models."}
+ ],
+ "doc_used": true,
+ "uncertain": []
+}

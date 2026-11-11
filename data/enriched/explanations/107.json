@@ -1,0 +1,12 @@
+{
+ "dataset_id": "107",
+ "easy_ko": "60세 이상 어르신들이 자유롭게 이야기한 목소리를 녹음하고, 그 말을 받아 적은 글을 짝지은 데이터입니다. 사투리와 억양이 있는 어르신 말을 잘 알아듣는 AI 비서나 건강 확인 음성 서비스를 만들 수 있습니다.",
+ "easy_en": "Recordings of people aged 60 and over speaking freely, paired with written transcripts. You can build AI assistants or voice-based health check services that understand older people's speech, accents and dialects well.",
+ "detail_ko": "60세 이상 남녀 화자 1,000명 이상의 자유 발화 음성 3,000시간 이상으로, wav 음성, 전사 텍스트, JSON 메타정보(화자 성별·나이·지역, 녹음 환경, 주제)로 구성됩니다. 노인 발화는 사투리·억양 등 다른 연령대와 다른 특성이 있습니다. 기준 성능은 CNN-BLSTM + 통계 언어모델(적응 학습) CER 6.95%, WER 10.66%입니다. 노인 음성 개인정보 관련 이용 약관 확인이 필요합니다.",
+ "detail_en": "3,000+ hours of free speech from 1,000+ men and women aged 60+, with wav audio, transcripts and JSON metadata (speaker sex, age and region, recording environment, topic). Older speakers' dialects and intonation differ from other age groups. Baselines: adapted CNN-BLSTM + statistical language model CER 6.95%, WER 10.66%. Check the terms of use regarding older speakers' personal data.",
+ "amount_ko": "음성 3,000시간 이상, 화자 1,000명 이상",
+ "amount_en": "3,000+ hours of speech, 1,000+ speakers",
+ "labels_ko": "말소리를 받아 적은 글(전사), 화자 성별·나이·지역",
+ "labels_en": "transcripts, speaker sex, age and region",
+ "status": "full-run-2026-11-02"
+}

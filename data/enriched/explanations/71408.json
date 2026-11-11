@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71408",
+ "easy_ko": "돼지를 키우는 축사 안에서 돼지가 숨 쉬는 모습과 바닥 상태를 사진으로 찍고, 같은 때의 온도·습도·공기(이산화탄소, 암모니아)와 돼지의 몸무게·체온·먹이 양을 함께 기록한 데이터입니다. AI가 '지금 축사 환경이 돼지에게 괜찮은지' 판단하고, 난방·환기 에너지를 아끼는 방법을 찾는 데 쓸 수 있습니다.",
+ "easy_en": "Photos of pigs breathing and of the barn floor, recorded together with the barn's temperature, humidity and air (CO2, ammonia) and each pig's weight, body temperature and feed. An AI can learn whether the barn is comfortable for the pigs and how to save heating and ventilation energy.",
+ "detail_ko": "양돈 사육 챔버에서 수집한 멀티모달 데이터입니다. 환경 센서 시계열(온도·습도·CO2·NH3) 약 32만 건, 돼지 호흡 이미지 30만 장과 바닥 표면 이미지 10만 장(png), 개체 측정 기록(호흡량·증발량·체중·직장온도·사료·급수량, CSV)으로 구성됩니다. 이미지에는 바운딩박스와 키포인트가 JSON으로 라벨링되어 있습니다. 호흡량 탐지 모델로 HRNet이 소개되어 있으나 성능 지표는 공개되지 않았습니다. 돈사 환경 제어, 생체 에너지 수지 예측, 호흡 기반 건강 모니터링 연구에 적합합니다.",
+ "detail_en": "Multimodal data from pig-rearing chambers: about 320k environmental sensor records (temperature, humidity, CO2, NH3), 300k breathing images and 100k floor-surface images (png), and per-animal measurements (respiration, evaporation, weight, rectal temperature, feed and water intake, CSV). Images carry bounding boxes and keypoints (JSON). HRNet is mentioned for respiration detection, but no performance figures are published. Suited to barn climate control, bio-energy prediction and breathing-based health monitoring.",
+ "amount_ko": "이미지 40만 장, 센서·측정 기록 약 44.6만 건",
+ "amount_en": "400k images, about 446k sensor and measurement records",
+ "labels_ko": "상자 표시, 몸의 주요 점(키포인트), 센서 값",
+ "labels_en": "boxes around objects, body key points, sensor values",
+ "status": "sample-2026-11-02"
+}

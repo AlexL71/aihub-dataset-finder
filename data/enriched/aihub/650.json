@@ -1,0 +1,32 @@
+{
+ "dataset_id": "650",
+ "title_en": "In-vehicle multimodal data for interface improvement",
+ "summary_ko": "장비를 단 차량 안에서 운전자·탑승자의 손 제스처 19종 영상 약 50만 건(이미지 250만 장)과 음성 명령 93종 녹음 약 50만 건에 손 키포인트와 받아쓰기를 붙인 데이터입니다. 손짓이나 말로 차를 조작하는 AI 인터페이스에 쓸 수 있습니다.",
+ "summary_en": "About 500,000 in-car video clips (2.5 million images) of 19 hand gestures by drivers and passengers, plus about 500,000 recordings of 93 voice commands, with hand keypoints and transcripts. For AI interfaces that control the car by gesture or voice.",
+ "contents_ko": "제스처 영상(mp4)·이미지(jpg) + 음성(wav) + JSON(키포인트, 제스처, 음성 전사).",
+ "contents_en": "Gesture videos (mp4) and images (jpg) + audio (wav) + JSON (keypoints, gesture, transcript).",
+ "modalities": ["video", "image", "audio"],
+ "tasks": ["keypoint_pose", "action_recognition", "speech_recognition"],
+ "topics": [{"ko": "자동차 인터페이스", "en": "In-car interfaces"}, {"ko": "모빌리티", "en": "Mobility"}],
+ "keywords_ko": ["손 제스처", "음성 명령", "차량 인포테인먼트", "운전자", "멀티모달"],
+ "keywords_en": ["hand gestures", "voice commands", "car infotainment", "driver", "multimodal"],
+ "labels": ["hand keypoint", "gesture class", "transcript", "command class"],
+ "file_formats": ["mp4", "jpg", "wav", "json"],
+ "scale_ko": "제스처 영상 약 50만 건, 이미지 250만 장, 음성 약 50만 건, 제스처 19종·음성 명령 93종",
+ "classes_example": [],
+ "baseline": [
+  {"task": "voice command recognition", "model": "wav2vec 2.0", "metric": "CER", "value": "0.78%"},
+  {"task": "gesture classification", "model": "TSM", "metric": "F1", "value": "0.9932"}
+ ],
+ "difficulty": "advanced",
+ "difficulty_note_ko": "전체 약 1.5TB로 크지만 음성만 또는 제스처만 받아 쓸 수 있습니다.",
+ "skills_needed_ko": ["파이썬", "영상 분류 모델", "음성인식 모델"],
+ "caveats_ko": ["전체 약 1.5TB", "운전자 얼굴이 보이는 영상", "19가지 제스처·93가지 명령 목록이 팩 앞부분에 없음", "651번 이상행동 데이터와 같은 구축 기관·차량"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "음성 명령 분류", "title_en": "Voice command classifier", "desc_ko": "짧은 음성을 93가지 차량 명령으로 분류합니다.", "desc_en": "Classify short audio into 93 car commands."},
+  {"level": "capstone", "title_ko": "제스처로 음악 조작", "title_en": "Gesture music control", "desc_ko": "손짓으로 음량·곡 넘김을 하는 차량 데모를 만듭니다.", "desc_en": "Control volume and tracks with hand gestures."},
+  {"level": "research", "title_ko": "제스처+음성 결합", "title_en": "Gesture plus voice fusion", "desc_ko": "두 신호를 합치면 소음 속 명령 인식이 좋아지는지 연구합니다.", "desc_en": "Test whether combining gesture and voice helps in noisy cars."}
+ ],
+ "doc_used": true,
+ "uncertain": ["gesture and command class lists", "클래스 목록을 페이지와 설명서에서 찾지 못함"]
+}

@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71663",
+ "easy_ko": "중학생부터 어른까지 사람들이 발표하는 영상과 목소리, 발표 자료, 전문가가 매긴 발표 점수를 모은 데이터로, 몸짓 같은 말 이외의 요소도 표시되어 있습니다. 발표 실력을 자동으로 평가하거나 좋지 않은 몸짓을 알아채는 AI에 쓸 수 있습니다.",
+ "easy_en": "Videos and audio of people from middle-school age to adults giving presentations, with their slides and expert scores, plus non-verbal elements such as gestures marked. You can use it to build AI that scores presentations or spots unhelpful gestures.",
+ "detail_ko": "중학교 3학년부터 40대까지의 발표 영상(mp4)·음성, 발표 자료 텍스트, 전문가 발표 평가로, 언어적 요소 800건과 비언어적 요소(이미지 288,000장, 키포인트 라벨 28,800건; jpg, JSON)를 담았습니다. 언어적 평가 데이터가 800건뿐이고, 부정적 제스처 종류 목록과 성능 지표는 팩에 없으며, 얼굴이 나오는 영상이라 이용 조건을 확인해야 합니다.",
+ "detail_en": "Presentation videos (mp4) and audio, slide text and expert scores from speakers aged from the third year of middle school to their 40s: 800 verbal-element items and non-verbal elements (288,000 images, 28,800 keypoint labels; jpg, JSON). There are only 800 verbal evaluation items, the list of negative gestures and any metrics are not in the pack, and faces are visible, so check the terms of use.",
+ "amount_ko": "언어적 800건, 비언어적 이미지 288,000장·라벨 28,800건",
+ "amount_en": "800 verbal items, 288,000 non-verbal images, 28,800 labels",
+ "labels_ko": "발표 점수, 몸 관절 점, 몸짓 종류",
+ "labels_en": "presentation score, keypoints, gesture class",
+ "status": "full-run-2026-11-02"
+}

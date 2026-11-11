@@ -1,0 +1,12 @@
+{
+ "dataset_id": "488",
+ "easy_ko": "프로야구 경기와 여러 각도에서 찍은 야구 영상의 사진마다 타자, 투수, 포수, 야수, 심판과 배트, 공, 글러브 위치, 선수 몸의 주요 점을 표시한 데이터입니다. AI 야구 중계나 투구·타격 자세를 분석해 주는 앱을 만들 수 있습니다.",
+ "easy_en": "Images from pro baseball games and from baseball videos shot at many angles, marked with batters, pitchers, catchers, fielders, umpires, bats, balls and gloves, plus players' key body points. You can build AI baseball broadcasts or apps that analyse pitching and batting form.",
+ "detail_ko": "프로야구 협회 경기 영상과 직접 촬영한 경기·동작 영상에서 뽑은 이미지 122만 장 이상(jpg)으로, JSON에 선수(포지션별 10만 개 이상)·심판·장비 바운딩박스, 관절 키포인트, 행동이 있습니다. 기준 성능은 기록에서 확인되지 않습니다. 협회 경기 영상이 포함되어 이용 조건 확인이 필요합니다.",
+ "detail_en": "1.22M+ jpg images from pro baseball association footage and self-recorded game and motion video, with JSON bounding boxes for players (100k+ per position), umpires and equipment, joint keypoints and actions. No baseline is visible in the record. Association footage is included, so check the usage terms.",
+ "amount_ko": "이미지 122만 장 이상",
+ "amount_en": "1.22M+ images",
+ "labels_ko": "선수·심판·장비 위치 상자, 몸의 주요 점(키포인트), 행동",
+ "labels_en": "boxes around players, umpires and equipment, body key points, action",
+ "status": "full-run-2026-11-02"
+}

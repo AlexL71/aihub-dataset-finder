@@ -1,0 +1,29 @@
+{
+ "dataset_id": "71362",
+ "title_en": "Recyclables classification and sorting data",
+ "summary_ko": "금속캔(철·알루미늄)·종이·페트병(무색·유색)·플라스틱(PE·PP·PS)·스티로폼 등 재활용품을 개별 촬영한 이미지 약 71만 장과 선별장 영상에서 뽑은 이미지 약 30만 장에 상자·분할을 표시한 데이터입니다. 재활용 선별 로봇이나 자동 분리수거 AI에 쓸 수 있습니다.",
+ "summary_en": "About 710,000 photos of individual recyclables (steel and aluminium cans, paper, clear and coloured PET bottles, PE/PP/PS plastics, styrofoam and more) and about 300,000 frames from sorting-facility video, with boxes and segmentation. For recycling-sorting robots or automatic waste-separation AI.",
+ "contents_ko": "재활용품 이미지(jpg) + JSON(상자, 분할, 품목·세부 분류).",
+ "contents_en": "Recyclable images (jpg) + JSON (boxes, segmentation, item and sub-class).",
+ "modalities": ["image"],
+ "tasks": ["object_detection", "segmentation", "image_classification"],
+ "topics": [{"ko": "쓰레기·재활용", "en": "Waste and recycling"}, {"ko": "환경", "en": "Environment"}],
+ "keywords_ko": ["재활용", "분리수거", "선별 로봇", "페트병", "플라스틱 종류"],
+ "keywords_en": ["recycling", "waste sorting", "sorting robot", "PET bottles", "plastic types"],
+ "labels": ["bounding box", "segmentation", "item class", "sub-class"],
+ "file_formats": ["jpg", "json"],
+ "scale_ko": "이미지 약 100만 장(개별 약 71만, 선별영상 약 30만), 대분류 9종·세부 15종",
+ "classes_example": ["철캔", "알루미늄캔", "종이", "무색단일 페트", "유색단일 페트", "PP", "PS"],
+ "baseline": [{"task": "recyclable detection", "model": "YOLOR", "metric": "mAP", "value": "77.84%"}],
+ "difficulty": "intermediate",
+ "difficulty_note_ko": "전체 약 2.4TB로 매우 큽니다. 선별영상 이미지(약 170GB)부터 받아 쓰세요.",
+ "skills_needed_ko": ["파이썬", "YOLO 탐지", "분할 모델"],
+ "caveats_ko": ["전체 약 2.4TB", "개별 촬영 이미지와 실제 선별장 이미지의 환경 차이가 큼"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "재활용품 종류 분류", "title_en": "Recyclable classifier", "desc_ko": "사진으로 캔·종이·페트·플라스틱을 분류합니다.", "desc_en": "Classify cans, paper, PET and plastic from photos."},
+  {"level": "capstone", "title_ko": "분리수거 도우미 앱", "title_en": "Recycling helper app", "desc_ko": "쓰레기를 찍으면 어느 통에 버릴지 알려줍니다.", "desc_en": "Snap an item and learn which bin it goes in."},
+  {"level": "research", "title_ko": "컨베이어 실시간 탐지", "title_en": "Real-time conveyor detection", "desc_ko": "빠르게 움직이는 선별 라인에서 정확도와 속도를 함께 높이는 방법을 연구합니다.", "desc_en": "Balance speed and accuracy on fast sorting conveyors."}
+ ],
+ "doc_used": true,
+ "uncertain": []
+}

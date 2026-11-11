@@ -1,0 +1,12 @@
+{
+ "dataset_id": "75",
+ "easy_ko": "온라인 쇼핑에서 옷을 가상으로 입어 볼 수 있도록 사람의 몸(얼굴·손·발·상체·하체)과 옷·신발·모자·액세서리를 찍고, 사진마다 몸 부위와 상품 영역을 표시한 데이터입니다. 한 대상을 빙 둘러 찍은 사진도 있어, 옷을 입은 모습을 미리 보여 주는 가상 피팅 AI를 만들 수 있습니다.",
+ "easy_en": "Photos of human bodies (face, hands, feet, upper and lower body) and of clothes, shoes, hats and accessories, with body parts and product areas outlined, taken for virtual try-on in online shopping. Some items were photographed all the way around, so you can build virtual-fitting AI that shows how clothes would look on you.",
+ "detail_ko": "원천 사진 약 419만 장(2D 신체 101만, 2D 상품 180만, 3D 신체 51만, 3D 상품 86만)과 학습용 2D 세트 약 282만 개로 구성됩니다. 2D 사진(4000×6000, jpg)마다 JSON/XML에 신체 부위 또는 상품 종류의 폴리곤 영역과 성별·나이대·사이즈 속성이 있고, 3D는 한 대상을 360도로 찍은 사진 160장 이상 묶음입니다. 기준 성능은 Mask R-CNN 신체 분할 mIoU 77.6%, 상품 분할 mIoU 88%이며, 성능 표에서 분할 과제가 다른 과제명으로 적혀 있습니다. 전체 약 9TB로 매우 크므로 작은 파일 일부부터 받는 것이 좋고, 얼굴은 흐림 처리되어 있습니다.",
+ "detail_en": "About 4.19M raw photos (2D body 1.01M, 2D products 1.8M, 3D body 510k, 3D products 860k) and about 2.82M 2D training sets. Each 2D photo (4000×6000, jpg) has JSON/XML polygons for body parts or product types plus sex, age group and size attributes; 3D sets are 160+ photos taken 360 degrees around one subject. Baselines: Mask R-CNN body segmentation mIoU 77.6%, product segmentation mIoU 88%; the table lists the segmentation tasks under other task names. Total size is about 9 TB, so start with a few small files; faces are blurred.",
+ "amount_ko": "원천 사진 약 419만 장, 학습용 세트 약 282만 개",
+ "amount_en": "about 4.19M raw photos, about 2.82M training sets",
+ "labels_ko": "몸 부위·상품 영역(다각형), 상품 종류, 성별·나이대·사이즈",
+ "labels_en": "outlines of body parts and products, product type, sex, age group, size",
+ "status": "full-run-2026-11-02"
+}

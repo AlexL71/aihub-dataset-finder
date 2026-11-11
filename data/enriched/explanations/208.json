@@ -1,0 +1,12 @@
+{
+ "dataset_id": "208",
+ "easy_ko": "원격 진료를 위해 의사·간호사·환자가 진료 상황에서 하는 말을 녹음하고 받아 적은 글과, 증상·직업·나이·성별 정보를 붙인 데이터입니다. 진료 대화를 글로 받아 적는 의료용 음성 인식이나 원격 진료 앱을 만들 수 있습니다.",
+ "easy_en": "Recordings of doctors, nurses and patients speaking in medical consultations for telemedicine, with transcripts and information on symptoms, role, age and sex. You can build medical speech recognition that writes down consultations, or telemedicine apps.",
+ "detail_ko": "의사 300시간·간호사 400시간 음성과 의료진 문장 코퍼스 3.3만, 환자 음성 45만 문장(약 600시간)과 환자 문장 15만으로 구성됩니다. wav 음성, 전사 텍스트, 메타정보(화자 직군·연령·성별, 증상, 대화 시나리오)가 있습니다. 시나리오 기반 녹음이라 실제 진료와 다를 수 있으며, 기준 성능은 기록에서 확인되지 않습니다.",
+ "detail_en": "Medical staff speech (300 hours of doctors, 400 hours of nurses) with a 33k-sentence staff corpus, and 450k patient sentences of speech (about 600 hours) with a 150k-sentence patient corpus. Data includes wav audio, transcripts and metadata (speaker role, age, sex, symptom, dialogue scenario). Recordings follow scenarios, so they may differ from real consultations; no baseline is visible in the record.",
+ "amount_ko": "의료진 음성 700시간, 환자 음성 약 600시간",
+ "amount_en": "700 hours of staff speech, about 600 hours of patient speech",
+ "labels_ko": "말소리를 받아 적은 글(전사), 화자 직군·나이·성별, 증상",
+ "labels_en": "transcripts, speaker role, age and sex, symptom",
+ "status": "full-run-2026-11-02"
+}

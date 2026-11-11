@@ -1,0 +1,12 @@
+{
+ "dataset_id": "190",
+ "easy_ko": "관광지, 도시, 숲 위를 나는 드론에서 찍은 고화질 영상과 레이저 거리 측정 영상에, 강·숲·건물·차·사람 같은 물체 위치와 영역, 위치·높이·날씨 같은 비행 정보를 붙인 데이터입니다. 교통 분석, 실종자 찾기, 택배 배달을 하는 스스로 나는 드론을 만들 수 있습니다.",
+ "easy_en": "High-resolution video and laser-scan data from drones flying over tourist spots, cities and forests, marked with objects and areas such as rivers, forests, buildings, cars and people, plus flight details like position, altitude and weather. You can build self-flying drones for traffic analysis, finding missing people or delivering parcels.",
+ "detail_ko": "4K 비행 영상 320시간(5분 단위 약 3,840클립)과 라이다 60시간으로 구성되며, 교통정보 분석·실종자 수색·배송 드론 3가지 임무별로 JSON에 물체 바운딩박스(대·중·소분류), 영역 폴리곤, 임무·지역·날씨·GPS·고도·촬영 각도 정보가 있습니다. 클래스는 하천, 숲, 잔디밭, 건물, 차량, 산책로, 사람, 가로등, 횡단보도, 신호등 등입니다. 기준 성능은 기록에서 확인되지 않습니다. 전체 약 4.8TB입니다.",
+ "detail_en": "320 hours of 4K flight video (about 3,840 five-minute clips) and 60 hours of lidar, covering 3 missions (traffic analysis, missing-person search, delivery), with JSON object boxes (three-level categories), region polygons and mission, area, weather, GPS, altitude and camera-angle metadata. Classes include river, forest, lawn, building, vehicle, walking path, person, street light, crosswalk and traffic light. No baseline is visible in the record. Total size is about 4.8 TB.",
+ "amount_ko": "비행 영상 320시간, 라이다 60시간",
+ "amount_en": "320 hours of flight video, 60 hours of lidar",
+ "labels_ko": "물체 위치 상자, 영역 윤곽, 위치·높이·날씨 등 비행 정보",
+ "labels_en": "boxes around objects, region outlines, flight metadata (GPS, altitude, weather)",
+ "status": "full-run-2026-11-02"
+}

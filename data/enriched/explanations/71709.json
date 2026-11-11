@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71709",
+ "easy_ko": "공공 문서에서 모은 표 그림 약 40만 장에 표 내용과 한 문장 요약, 세 문장 설명을 짝지은 데이터입니다. 문서 속 표를 읽고 내용을 글로 요약하고 설명하는 AI에 쓸 수 있습니다.",
+ "easy_en": "About 400,000 table images from public documents, each paired with the table's content, a one-sentence summary and a three-sentence description. You can use it to build AI that reads tables in documents and summarises and explains them in words.",
+ "detail_ko": "공공누리 문서에서 모은 표 이미지 404,080건(jpg; 기본표 139,995, 조합표 57,856, 병합표 125,162 등)에 표 내용(html)과 1문장 요약문·3문장 설명문(JSON)을 짝지었습니다. 기준 성능은 KE-T5 표 요약 BLEU 23.44이고, 표 설명(BLEURT) 값은 팩 앞부분에서 잘렸습니다. 71706 차트 이미지-텍스트 데이터와 같은 기관·비슷한 구성입니다.",
+ "detail_en": "404,080 table images (jpg; 139,995 basic, 57,856 combined, 125,162 merged-cell and others) from public (KOGL) documents, each paired with the table content (html) and a one-sentence summary and three-sentence description (JSON). Baseline: table summarisation with KE-T5, BLEU 23.44; the description (BLEURT) value is cut off in the pack. Same builder and similar layout as the chart set 71706.",
+ "amount_ko": "표 이미지 404,080건",
+ "amount_en": "404,080 table images",
+ "labels_ko": "표 내용, 요약, 설명",
+ "labels_en": "table content, summary, description",
+ "status": "full-run-2026-11-02"
+}

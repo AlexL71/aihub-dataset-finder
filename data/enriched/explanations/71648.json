@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71648",
+ "easy_ko": "옷 디자인 스케치 그림 4,000장마다 실제로 옷을 만들 때 쓰는 패턴 도면 파일을 짝지은 데이터로, 옷 모양에 따라 여러 종류로 나뉩니다. 스케치를 보고 맞는 패턴 도면을 찾거나 만들어 주는 AI에 쓸 수 있습니다.",
+ "easy_en": "4,000 clothing design sketches, each paired with the pattern drawing file used to actually make the garment, sorted into many garment shapes. You can use it to build AI that finds or creates the right pattern drawing from a sketch.",
+ "detail_ko": "의류 디자인 스케치 이미지(png) 4,000세트(원천 12,000개)마다 패턴 도면 CAD(dxf)와 벡터(emf), 스케치 상자와 의복 분류(JSON)를 짝지었고, 의복 형태는 54종(종류별 70~80개; 예: 남성 상의 반소매 티셔츠·후드 티셔츠·긴소매 셔츠, 남성 아우터 자켓·코트·패딩·카디건, 남성 하의 긴바지·반바지, 여성 상의)입니다. 세트 수가 4,000개로 적고, dxf·emf 처리 도구가 필요하며, 성능 지표는 팩 앞부분에 없습니다.",
+ "detail_en": "4,000 sets (12,000 source files) pairing each clothing design sketch (png) with its pattern drawing (CAD, dxf) and vector file (emf), plus JSON sketch boxes and garment class, across 54 garment shapes (70 to 80 each; such as men's short-sleeve t-shirts, hoodies, long-sleeve shirts, jackets, coats, padded jackets, cardigans, trousers, shorts, and women's tops). With only 4,000 sets it is small, dxf/emf tools are needed, and no metrics are in the pack.",
+ "amount_ko": "4,000세트(원천 12,000개), 의복 형태 54종",
+ "amount_en": "4,000 sets (12,000 source files), 54 garment shapes",
+ "labels_ko": "스케치 위치 상자, 옷 종류",
+ "labels_en": "bounding boxes, garment class",
+ "status": "full-run-2026-11-02"
+}

@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71955",
+ "easy_ko": "국립국악원이 새로 녹음한 국악 합주곡 1,004곡의 전체 음원과 악기마다 따로 녹음한 음원에 장르, 곡, 악기 정보를 붙인 데이터입니다. 국악을 만들거나 분류하는 AI, 콘텐츠 제작과 교육에 쓸 수 있습니다.",
+ "easy_en": "Full recordings of 1,004 Korean traditional ensemble pieces newly recorded by the National Gugak Center, plus separate tracks for each instrument, with genre, piece and instrument information. You can use it for AI that generates or classifies gugak music, and for content production and teaching.",
+ "detail_ko": "국립국악원이 새로 녹음한 국악 합주곡 1,004곡의 마스터 음원 1,004개와 악기별 멀티트랙 음원 6,416개, 총 7,420개(wav)에 장르·곡·악기 메타데이터(라벨 1,004개)를 붙였고, 장르는 정악(풍류음악, 궁중음악)과 민속악(산조, 판소리, 민요 등)입니다. 곡 수가 장르별로 고르지 않고, 음악 생성 전용 작업 분류가 없어 '텍스트 생성'으로 대신 표시되어 있으며, 성능 지표 값은 팩 앞부분에 없습니다.",
+ "detail_en": "7,420 audio files (wav): 1,004 master recordings of traditional Korean ensemble pieces newly recorded by the National Gugak Center and 6,416 per-instrument multitrack recordings, with genre, piece and instrument metadata (1,004 labels), in jeongak (pungnyu and court music) and folk music (sanjo, pansori, minyo and more). Pieces are unevenly spread across genres; music generation is tagged as 'text generation' because there is no dedicated task category; no metric values are in the pack.",
+ "amount_ko": "음원 7,420개(마스터 1,004, 멀티트랙 6,416), 라벨 1,004개",
+ "amount_en": "7,420 audio files (1,004 masters, 6,416 multitracks), 1,004 labels",
+ "labels_ko": "장르, 악기, 곡 정보",
+ "labels_en": "genre, instrument, piece metadata",
+ "status": "full-run-2026-11-02"
+}

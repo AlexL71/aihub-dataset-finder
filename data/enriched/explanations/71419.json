@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71419",
+ "easy_ko": "10대부터 60대까지 연기자들이 대화하거나 발표하는 모습을 연기하며 몸 움직임을 기록한 데이터로, 영상, 뼈대 움직임 파일, 말한 대본, 동작 구간 표시가 들어 있습니다. 가상 세계의 아바타나 게임 캐릭터가 말하면서 자연스럽게 몸짓하도록 만드는 AI를 만들 수 있습니다.",
+ "easy_en": "Motion-capture recordings of actors in their teens to 60s acting out conversations and presentations, with videos, skeleton motion files, scripts of what they said and tagged motion segments. You can build AI that makes metaverse avatars or game characters gesture naturally while they talk.",
+ "detail_ko": "10대~60대 연기자가 대화(TA)·발표(PT) 상황을 연기한 정면 영상 1,352건(mp4), 골격 동작 2,408건(bvh, fbx, qtm), 발화·시나리오 대본(txt, 시나리오 14종), 동작 구간 태깅·메타정보(JSON)로 구성됩니다(혼성, 여자 동성, 남자 동성 조합). 기준 성능은 Action2Motion 동작 생성 FID 1.35(낮을수록 좋음)입니다. 건수가 적어 큰 모델 학습에는 부족할 수 있고, 동작 종류 전체 목록은 기록에서 확인되지 않습니다.",
+ "detail_en": "1,352 front-view videos (mp4) and 2,408 skeleton motion files (bvh, fbx, qtm) of actors aged teens to 60s acting out conversations (TA) and presentations (PT) in mixed, female-only and male-only pairings, with speech and scenario scripts (txt; 14 scenarios) and JSON motion-segment tags and metadata. Baseline: Action2Motion motion generation FID 1.35 (lower is better). The small number of items may limit large models; the full list of action categories is not in the record.",
+ "amount_ko": "영상 1,352건, 뼈대 움직임 2,408건, 상황 14종",
+ "amount_en": "1,352 videos, 2,408 skeleton motions, 14 scenarios",
+ "labels_ko": "동작 구간 표시, 대본, 연기자 정보",
+ "labels_en": "motion-segment tags, scripts, performer metadata",
+ "status": "full-run-2026-11-02"
+}

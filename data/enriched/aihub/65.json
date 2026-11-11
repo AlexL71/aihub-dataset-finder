@@ -1,0 +1,32 @@
+{
+ "dataset_id": "65",
+ "title_en": "Sports human motion (golf)",
+ "summary_ko": "협회 경기 영상과 직접 찍은 골프 영상 400시간 이상에서 뽑은 이미지 432만 장으로, 선수·클럽 위치와 몸 관절, 스윙·퍼팅 동작이 표시되어 있습니다. 프로·아마추어·일반인, 남녀로 나뉘어 있어 골프 자세 분석이나 스윙 코칭 앱을 만들 수 있습니다.",
+ "summary_en": "4.32 million frames from 400+ hours of golf video (association matches and self-recorded), with player and club positions, body joints and swing/putt labels. Split by professional, amateur and public players and by sex, for golf posture analysis or swing-coaching apps.",
+ "contents_ko": "영상 프레임 이미지 + JSON(사람·클럽 상자, 관절 키포인트, 동작 구분(swing/putt), 환경 정보). 협회·아마추어·일반, 성별, 동작별 폴더.",
+ "contents_en": "Frames + JSON (person and club boxes, joint keypoints, action swing/putt, environment info). Folders by association/amateur/public, sex and action.",
+ "modalities": ["video", "image"],
+ "tasks": ["keypoint_pose", "object_detection", "action_recognition"],
+ "topics": [{"ko": "스포츠", "en": "Sports"}, {"ko": "골프", "en": "Golf"}, {"ko": "사람 동작", "en": "Human motion"}],
+ "keywords_ko": ["골프", "스윙", "퍼팅", "자세 추정", "스포츠 분석", "코칭"],
+ "keywords_en": ["golf", "swing", "putting", "pose estimation", "sports analytics", "coaching"],
+ "labels": ["bounding box", "keypoints", "action class"],
+ "file_formats": ["jpg", "json"],
+ "scale_ko": "영상 400시간 이상, 이미지 432만 장 이상(구축량 57.6만)",
+ "classes_example": ["swing", "putt", "Association", "Amateur", "Public"],
+ "baseline": [
+  {"task": "person detection", "model": "YOLOv4-style detector", "metric": "mAP", "value": "60.09%"},
+  {"task": "pose estimation (torso)", "model": "multi-stage pose network", "metric": "PCK", "value": "86.7%"}
+ ],
+ "difficulty": "intermediate",
+ "difficulty_note_ko": "자세 추정 도구로 바로 실습할 수 있지만 전체 약 2TB라 일부 폴더(예: 아마추어 남성 스윙)만 받아야 합니다.",
+ "skills_needed_ko": ["파이썬", "자세 추정 모델(MediaPipe, YOLO-pose)", "관절 각도 계산"],
+ "caveats_ko": ["전체 약 2TB", "협회 경기 영상 포함으로 이용 조건 확인 필요"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "프로와 아마추어 스윙 비교", "title_en": "Pro vs amateur swing", "desc_ko": "관절 좌표로 프로와 아마추어의 스윙 궤적·각도 차이를 시각화합니다.", "desc_en": "Visualise swing path and angle differences between pros and amateurs from joints."},
+  {"level": "capstone", "title_ko": "스마트폰 골프 스윙 코치", "title_en": "Phone golf swing coach", "desc_ko": "스윙 영상을 찍으면 자세를 추정해 프로 평균과 비교 피드백을 주는 앱을 만듭니다.", "desc_en": "Estimate pose from a swing video and compare it with pro averages."},
+  {"level": "research", "title_ko": "빠른 동작에서의 자세 추정 개선", "title_en": "Pose estimation for fast motion", "desc_ko": "스윙처럼 빠른 동작에서 흐려지는 관절 추정 오차를 분석하고 시간 정보를 이용해 개선합니다.", "desc_en": "Analyse and reduce joint errors in fast, blurry motion using temporal information."}
+ ],
+ "doc_used": true,
+ "uncertain": []
+}

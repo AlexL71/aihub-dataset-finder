@@ -1,0 +1,29 @@
+{
+ "dataset_id": "71405",
+ "title_en": "Noisy-environment speech data for command recognition",
+ "summary_ko": "식당·카페·기차역·공항 등 여러 사람이 말하는 곳(2,905시간)과 달리는 차 안(1,116시간)에서 녹음한 명령어 발화 약 4,021시간입니다. 주변 소음 속에서 중심 화자의 명령을 알아듣는 음성 인식 AI, 차량용 음성 비서에 쓸 수 있습니다.",
+ "summary_en": "About 4,021 hours of spoken commands recorded in busy multi-speaker places such as restaurants, cafes, stations and airports (2,905 h) and in moving cars (1,116 h). For speech recognition that hears the main speaker's command through noise, e.g. in-car assistants.",
+ "contents_ko": "명령어 음성(wav) + JSON(전사, 소음 환경, 화자 정보, 차량 조건).",
+ "contents_en": "Command speech (wav) + JSON (transcript, noise setting, speaker info, car conditions).",
+ "modalities": ["audio"],
+ "tasks": ["speech_recognition"],
+ "topics": [{"ko": "음성 비서", "en": "Voice assistants"}, {"ko": "차량·모빌리티", "en": "Vehicles and mobility"}],
+ "keywords_ko": ["음성 인식", "명령어", "소음 환경", "차량 소음", "다화자", "음성 비서"],
+ "keywords_en": ["speech recognition", "voice commands", "noisy environment", "car noise", "multi-speaker", "voice assistant"],
+ "labels": ["transcription", "noise setting", "speaker metadata"],
+ "file_formats": ["wav", "json"],
+ "scale_ko": "약 4,021시간(다화자 소음 2,905시간, 차량 소음 1,116시간), 다화자 장소 10종",
+ "classes_example": ["식당", "카페", "편의점", "대형몰", "기차역", "공원", "헬스장", "공항", "병원", "차량"],
+ "baseline": [{"task": "command speech recognition", "model": "ESPnet", "metric": "CER", "value": "9.2%"}],
+ "difficulty": "intermediate",
+ "difficulty_note_ko": "음성 인식 미세조정 실습에 좋지만 전체 약 677GB입니다. 한 장소나 차량 소음만 받아 쓰세요.",
+ "skills_needed_ko": ["파이썬", "음성 인식 모델(Whisper·ESPnet)", "오디오 전처리"],
+ "caveats_ko": ["전체 약 677GB", "화자 출생지가 수도권 72%로 치우침", "여성 63%·남성 37%로 성비 차이 있음"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "소음 환경별 인식률 비교", "title_en": "Recognition accuracy by noise type", "desc_ko": "공개 음성 인식 모델로 장소별 오류율을 측정해 어느 소음이 가장 어려운지 봅니다.", "desc_en": "Measure an open ASR model's error rate per location."},
+  {"level": "capstone", "title_ko": "차량용 음성 명령기", "title_en": "In-car voice command system", "desc_ko": "차량 소음 데이터로 미세조정해 '창문 열어' 같은 명령을 알아듣는 시스템을 만듭니다.", "desc_en": "Fine-tune on car noise to recognise commands like 'open the window'."},
+  {"level": "research", "title_ko": "근거리·원거리 강건성", "title_en": "Near vs far-field robustness", "desc_ko": "원거리 녹음과 근거리 녹음의 성능 차이를 줄이는 잡음 제거·증강 방법을 연구합니다.", "desc_en": "Study denoising and augmentation to close the far-field gap."}
+ ],
+ "doc_used": true,
+ "uncertain": []
+}

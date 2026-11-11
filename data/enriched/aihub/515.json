@@ -1,0 +1,29 @@
+{
+ "dataset_id": "515",
+ "title_en": "Abnormal behaviour videos in residential and shared spaces",
+ "summary_ko": "주거지·공용공간 CCTV 시점의 영상 300시간(9,000건)으로, 절도·주거침입·아동학대·폭행 같은 이상행동과 32가지 전조현상, 정상행동이 사람 상자·키포인트·분할로 표시되어 있습니다. 범죄를 미리 알아채는 생활 안전 CCTV AI에 쓸 수 있습니다.",
+ "summary_en": "300 hours (9,000 clips) of CCTV-view video in homes and shared spaces, labelled with abnormal behaviours (theft, break-ins, child abuse, assault), 32 warning-sign behaviours and normal behaviour, using person boxes, keypoints and segmentation. For community-safety CCTV AI that notices crimes early.",
+ "contents_ko": "영상(mp4) + JSON(사람 상자, 키포인트, 분할, 행동 분류: 정상/전조현상/이상행동).",
+ "contents_en": "Video (mp4) + JSON (person boxes, keypoints, segmentation, behaviour: normal / warning sign / abnormal).",
+ "modalities": ["video"],
+ "tasks": ["action_recognition", "keypoint_pose", "anomaly_detection"],
+ "topics": [{"ko": "범죄 예방·치안", "en": "Crime prevention and public safety"}, {"ko": "아동 보호", "en": "Child protection"}, {"ko": "CCTV", "en": "CCTV"}],
+ "keywords_ko": ["이상행동", "주거침입", "아동학대", "폭행", "전조현상", "CCTV"],
+ "keywords_en": ["abnormal behaviour", "break-in", "child abuse", "assault", "warning signs", "CCTV"],
+ "labels": ["bounding box", "keypoints", "segmentation", "behaviour class"],
+ "file_formats": ["mp4", "json"],
+ "scale_ko": "영상 9,000건(아동학대 4,139, 폭행 3,664, 주거침입 953, 절도 244), 300시간",
+ "classes_example": ["절도", "주거침입", "아동학대", "폭행", "전조현상", "정상행동"],
+ "baseline": [],
+ "difficulty": "advanced",
+ "difficulty_note_ko": "전조현상까지 구분하는 영상 행동 인식이라 어렵습니다. 전체 약 1TB입니다.",
+ "skills_needed_ko": ["파이썬", "영상 동작 인식", "자세 기반 행동 분류"],
+ "caveats_ko": ["연출 영상으로 보이며 아동학대 등 민감한 내용이라 사용에 주의", "성능 지표가 팩 앞부분에 없음"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "폭행 vs 정상 행동 분류", "title_en": "Assault vs normal", "desc_ko": "관절 시퀀스로 폭행과 정상 행동을 분류합니다.", "desc_en": "Classify assault versus normal behaviour from joint sequences."},
+  {"level": "capstone", "title_ko": "공동주택 이상행동 알림", "title_en": "Apartment anomaly alerts", "desc_ko": "주거침입 전조를 감지해 경비실에 알리는 데모를 만듭니다.", "desc_en": "Detect break-in warning signs and alert the security office."},
+  {"level": "research", "title_ko": "전조현상으로 범죄 조기 예측", "title_en": "Early prediction from warning signs", "desc_ko": "전조 행동 패턴으로 범죄 발생 전에 경고하는 방법을 연구합니다.", "desc_en": "Study warning before a crime happens using precursor behaviours."}
+ ],
+ "doc_used": true,
+ "uncertain": []
+}

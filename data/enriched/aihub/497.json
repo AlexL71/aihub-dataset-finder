@@ -1,0 +1,29 @@
+{
+ "dataset_id": "497",
+ "title_en": "IR and thermal dataset for night-time incidents",
+ "summary_ko": "서초구 CCTV에서 밤에 찍은 적외선(IR) 이미지와 열화상 이미지 221만 장으로, 사람·자전거 탄 사람·킥보드 탄 사람 같은 물체와 야간 사건사고가 상자로 표시되어 있습니다. 어두운 밤에도 사고를 알아채는 지능형 CCTV에 쓸 수 있습니다.",
+ "summary_en": "2.21 million night-time infrared (IR) and thermal images from Seocho-gu CCTV, with boxes for people, cyclists, kick-scooter riders and night incidents. For intelligent CCTV that notices accidents even in the dark.",
+ "contents_ko": "IR·열화상 이미지(jpg) + JSON(물체 상자, 사건사고 종류).",
+ "contents_en": "IR and thermal images (jpg) + JSON (object boxes, incident type).",
+ "modalities": ["image", "sensor"],
+ "tasks": ["object_detection", "action_recognition"],
+ "topics": [{"ko": "야간 안전", "en": "Night-time safety"}, {"ko": "CCTV·보안", "en": "CCTV and security"}, {"ko": "스마트시티", "en": "Smart city"}],
+ "keywords_ko": ["열화상", "적외선", "야간 CCTV", "사건사고", "킥보드", "스마트시티"],
+ "keywords_en": ["thermal", "infrared", "night CCTV", "incidents", "kick scooter", "smart city"],
+ "labels": ["bounding box", "class", "incident type"],
+ "file_formats": ["jpg", "json"],
+ "scale_ko": "2,212,000장(객체용 IR·열화상 각 62.1만, 사건사고용 IR·열화상 각 48.5만)",
+ "classes_example": ["사람", "자전거 탄 사람", "자전거", "킥보드 탄 사람", "킥보드"],
+ "baseline": [],
+ "difficulty": "intermediate",
+ "difficulty_note_ko": "탐지 실습은 쉽지만 열화상·IR 특성을 이해해야 합니다. 약 430GB입니다.",
+ "skills_needed_ko": ["파이썬", "YOLO 탐지", "다중 스펙트럼 영상 기초"],
+ "caveats_ko": ["사건사고 클래스 목록과 성능 지표가 팩 앞부분에 없음"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "야간 열화상 사람 탐지", "title_en": "Night thermal person detection", "desc_ko": "열화상 이미지에서 사람을 탐지합니다.", "desc_en": "Detect people in thermal images."},
+  {"level": "capstone", "title_ko": "야간 킥보드 사고 알림", "title_en": "Night scooter accident alert", "desc_ko": "킥보드 넘어짐 같은 사고를 감지해 알리는 데모를 만듭니다.", "desc_en": "Detect scooter falls at night and send alerts."},
+  {"level": "research", "title_ko": "IR과 열화상 결합", "title_en": "Fusing IR and thermal", "desc_ko": "IR·열화상을 함께 쓸 때 야간 탐지가 좋아지는지 연구합니다.", "desc_en": "Study whether combining IR and thermal improves night detection."}
+ ],
+ "doc_used": true,
+ "uncertain": []
+}

@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71390",
+ "easy_ko": "경상도 지역의 지질 지도, 땅을 뚫어 조사한 기록, 땅속 탐사 자료, 땅의 단면 그림을 같은 형식의 이미지로 정리하고 지층 종류를 칠해 둔 데이터입니다. 땅속 지층 구조를 추정해 이산화탄소를 땅속에 묻어 두기 좋은 곳을 찾는 AI를 만들 수 있습니다.",
+ "easy_en": "Geological maps, drilling records, underground survey data and cross-section drawings from the Gyeongsang region, converted into standard images with rock layers coloured in. You can build AI that estimates underground layer structure to find good places to store carbon dioxide underground.",
+ "detail_ko": "경상권(장기분지 등)의 지질도(24,800), 시추 기록(48,000), 지구물리 탐사(4,855), 지질 단면도(5,058), 저장 적지 정답(5,058) 등 표준화 이미지 87,771장(tif)에 지층·암상(경상누층군 신동층군 낙동층·진주층·하산동층, 유천층군 다대포층 등) 분할 영상(tif)과 JSON을 붙였습니다. 기준 성능은 NeRF 지질 단면 생성 픽셀 정확도 82.95%, U-Net 저장 적지 예측 77.5%입니다. 실제 AI 모델에 쓴 이미지는 일부(예: 지질도 30장)뿐이며, 원본은 지오빅데이터 오픈플랫폼 자료이고 경상권 한 지역만 대상입니다.",
+ "detail_en": "87,771 standardised images (tif) from the Gyeongsang region (such as the Janggi Basin): geological maps (24,800), drilling logs (48,000), geophysical surveys (4,855), cross-sections (5,058) and storage-site ground truth (5,058), with segmentation masks (tif) and JSON for rock units (Gyeongsang Supergroup formations such as Nakdong, Jinju, Hasandong and Dadaepo). Baselines: NeRF cross-section generation pixel accuracy 82.95%, U-Net storage-site prediction 77.5%. Only part of the images (for example 30 maps) were used in the models; sources come from the Geo Big Data Open Platform; only one region is covered.",
+ "amount_ko": "지질 이미지 87,771장",
+ "amount_en": "87,771 geological images",
+ "labels_ko": "지층·암석 종류 영역(색칠), 저장하기 좋은 곳 정답",
+ "labels_en": "rock-unit masks, storage-site ground truth",
+ "status": "full-run-2026-11-02"
+}

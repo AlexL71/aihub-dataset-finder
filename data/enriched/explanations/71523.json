@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71523",
+ "easy_ko": "스마트 농장에서 키운 오이와 딸기를 찍은 사진 27만여 장에 열매, 꽃, 잎, 줄기 같은 부위와 잿빛곰팡이병, 흰가루병 같은 병, 해충을 상자로 표시한 데이터입니다. 작물이 잘 자라는지 살피고 병과 벌레를 찾아내는 AI에 쓸 수 있습니다.",
+ "easy_en": "Over 270,000 photos of cucumbers and strawberries grown in smart farms, with boxes marking plant parts (fruit, flowers, leaves, stems), diseases such as grey mould and powdery mildew, and pests. You can use it to build AI that monitors crop growth and finds disease and insects.",
+ "detail_ko": "스마트팜 오이·딸기의 CCTV 시계열, 작물 부위, 생육지표, 병해, 해충 트랩 이미지 270,989건(jpg; 오이 161,332, 딸기 109,657)에 상자와 클래스를 JSON으로 붙였습니다. 클래스는 작물이상(정상, 잿빛곰팡이병, 흰가루병, 노균병, 칼슘결핍), 피해정도(초기, 중기이후), 작물부위(열매, 꽃, 잎, 줄기), 생육단계(유묘기, 생장기, 착과/과실기)입니다. 전체 약 200GB이고, 성능 지표 수치는 팩에서 확인되지 않으며 해충 트랩 이미지는 3,785건으로 적습니다.",
+ "detail_en": "270,989 images (jpg: 161,332 cucumber, 109,657 strawberry) from smart-farm CCTV time series, plant parts, growth indicators, diseases and pest traps, with JSON boxes and classes: crop condition (normal, grey mould, powdery mildew, downy mildew, calcium deficiency), damage level (early, mid or later), plant part (fruit, flower, leaf, stem) and growth stage (seedling, growing, fruiting). Total size is about 200 GB. No metric values are visible in the pack, and pest-trap images are few (3,785).",
+ "amount_ko": "이미지 270,989건(오이 161,332, 딸기 109,657)",
+ "amount_en": "270,989 images (161,332 cucumber, 109,657 strawberry)",
+ "labels_ko": "위치 상자, 작물 부위·병·해충·자라는 단계",
+ "labels_en": "bounding boxes, class (part, disease, damage, growth stage)",
+ "status": "full-run-2026-11-02"
+}

@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71822",
+ "easy_ko": "직접 찍은 헌 옷 사진 26만 장을 다시 입을 옷, 재활용할 옷, 버릴 옷으로 나누고, 옷 종류와 찢어짐, 얼룩 같은 손상 위치를 표시한 데이터입니다. 헌 옷 고르기를 자동으로 해서 재활용을 늘리는 AI에 쓸 수 있습니다.",
+ "easy_en": "260,000 photos of used clothing sorted into clothes to reuse, recycle or throw away, with the type of garment and the position of damage such as tears and stains marked. You can use it to build AI that sorts used clothing automatically to increase recycling.",
+ "detail_ko": "직접 촬영한 헌 옷 이미지 260,000장(jpg)에 처리 구분 3종(재사용 40%, 재활용 50%, 폐기 10%), 옷 종류 11종(예: COAT, JUMPER, SHIRTS, DRESS, CASUAL PANTS), 손상·오염·부착물 상자, 질의응답을 JSON으로 붙였습니다. 전체 약 554GB이고, 품질 표의 구분별 수량(4만·5만·1만)이 전체 26만 장과 달라 확인이 필요하며, 품질 점수는 라벨 정확도이고 모델 성능 수치는 팩에 없습니다.",
+ "detail_en": "260,000 photos (jpg) of used clothing taken for the project, with JSON disposal class (reuse 40%, recycle 50%, discard 10%), 11 garment types (such as coat, jumper, shirt, dress, casual trousers), boxes for damage, stains and attachments, and question-answer pairs. Total size is about 554 GB. The quality table's per-class counts (40,000, 50,000, 10,000) do not match the 260,000 total, and its scores describe label accuracy; no model scores are in the pack.",
+ "amount_ko": "이미지 260,000장, 처리 구분 3종, 옷 종류 11종",
+ "amount_en": "260,000 images, 3 disposal classes, 11 garment types",
+ "labels_ko": "손상·얼룩 위치 상자, 옷 종류·처리 구분, 질문과 답",
+ "labels_en": "bounding box, class, question-answer",
+ "status": "full-run-2026-11-02"
+}

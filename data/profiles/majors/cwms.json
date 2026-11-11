@@ -1,0 +1,48 @@
+{
+ "id": "cwms",
+ "name_ko": "문화창의학부(미디어문예창작전공)",
+ "name_en": "Media and Creative Writing (School of Culture and Creativity)",
+ "college": "문화스포츠대학",
+ "summary_ko": "시, 소설, 희곡, 비평 같은 순수 문학 창작과 함께 시나리오, TV 드라마, 방송 구성, 광고, 게임 시나리오, 디지털 스토리텔링 같은 미디어 글쓰기를 배우는 전공입니다. 현역 작가의 실기 수업과 창작 워크숍이 중심입니다.",
+ "summary_en": "Teaches literary writing (poetry, fiction, drama, criticism) together with media writing such as screenplays, TV drama, broadcast scripts, advertising, game scenarios and digital storytelling. Practical workshops with working writers are central.",
+ "key_topics": ["시·소설·희곡 창작", "문학 비평", "시나리오와 TV 드라마", "방송 구성·제작", "광고 글쓰기", "게임 기획과 시나리오", "디지털·뉴미디어 스토리텔링", "아동문학", "편집·출판", "AI 시대의 창작 윤리"],
+ "course_keywords": ["시의이해", "서사의이해", "희곡의이해", "비평의이해", "영상문학의이해", "문예학개론", "기술적글쓰기", "미디어의이해", "현대시분석", "현대소설분석", "시창작세미나", "소설창작세미나", "희곡창작세미나", "시나리오기법", "애니메이션의이해", "방송창작세미나", "뉴미디어스토리텔링", "TV드라마의이론및연습", "게임의이해", "게임기획및시나리오", "방송제작워크숍", "영화론및연습", "한국영화사", "논픽션글쓰기", "서브컬처와미디어", "AI시대의창작과창작윤리", "광고론및연습", "아동문학론", "편집출판캡스톤디자인", "K드라마와OTT플랫폼"],
+ "curriculum_by_year": {
+  "1": ["미디어문예창작트레이닝캠프", "디지털리터러시입문"],
+  "2": ["문예학개론", "기술적글쓰기", "미디어의이해", "시의이해", "서사의이해", "희곡의이해", "비평의이해", "영상문학의이해", "현대시분석", "현대소설분석", "시창작세미나", "소설창작세미나", "시나리오기법", "애니메이션의이해", "뉴미디어스토리텔링"],
+  "3": ["시기법론", "소설창작워크숍", "시창작워크숍", "TV드라마의이론및연습", "아동문학론", "공연제작워크숍", "한국영화사", "게임의이해", "게임기획및시나리오", "방송제작워크숍", "희곡창작세미나", "논픽션글쓰기", "AI시대의창작과창작윤리"],
+  "4": ["시·소설창작특수과제", "광고론및연습", "아동문학연습", "편집출판캡스톤디자인", "영화평론세미나", "K드라마와OTT플랫폼"]
+ },
+ "careers": ["시인·소설가·극작가", "방송작가(구성작가, 드라마 작가)", "시나리오·웹소설·게임 시나리오 작가", "출판 편집자·콘텐츠 에디터", "광고 카피라이터", "콘텐츠 기획자", "대학원 진학(문예창작·비평)"],
+ "research_areas": [],
+ "data_interests": [
+  {"topic_ko": "문학 작품과 글", "topic_en": "Literature and writing", "keywords": ["소설", "시", "문체", "한국어 말뭉치"]},
+  {"topic_ko": "대본과 대화", "topic_en": "Scripts and dialogue", "keywords": ["드라마 대본", "대화", "등장인물 말투"]},
+  {"topic_ko": "이야기 생성", "topic_en": "Story generation", "keywords": ["줄거리", "요약", "창작 보조"]},
+  {"topic_ko": "아동 도서", "topic_en": "Children's books", "keywords": ["동화", "그림책", "읽기 수준"]},
+  {"topic_ko": "광고 문구", "topic_en": "Ad copy", "keywords": ["카피", "슬로건", "광고 텍스트"]},
+  {"topic_ko": "번역과 다국어", "topic_en": "Translation", "keywords": ["문학 번역", "다국어 자막"]},
+  {"topic_ko": "감정과 문체", "topic_en": "Emotion and style", "keywords": ["감정 분류", "문체 분석"]}
+ ],
+ "interest_questions": [
+  {"q_ko": "어떤 글을 쓰고 싶나요?", "q_en": "What do you like to write?",
+   "options": [{"ko": "시·소설", "en": "Poetry and fiction"}, {"ko": "드라마·영화 대본", "en": "Drama and film scripts"}, {"ko": "게임 시나리오", "en": "Game scenarios"}, {"ko": "광고·카피", "en": "Advertising copy"}, {"ko": "동화·아동문학", "en": "Children's stories"}]},
+  {"q_ko": "AI와 함께 무엇을 해보고 싶나요?", "q_en": "What would you like to try with AI?",
+   "options": [{"ko": "창작 아이디어 받기", "en": "Get writing ideas"}, {"ko": "문체·감정 분석", "en": "Analyse style and emotion"}, {"ko": "대사·대화 만들기", "en": "Generate dialogue"}, {"ko": "요약·번역", "en": "Summarise and translate"}]}
+ ],
+ "project_themes": ["드라마 대본 대사로 인물 말투 분석", "소설 문장의 감정 흐름 시각화", "동화 읽기 수준 자동 판별", "광고 카피 생성 실험"],
+ "data_skill_level": "low",
+ "data_skill_note": "데이터·프로그래밍 과목은 디지털리터러시입문 정도입니다. 텍스트 데이터를 생성형 AI나 노코드 도구로 다뤄보는 것부터 시작하는 것이 좋습니다.",
+ "sources": [
+  {"kind": "page", "label": "학부소개", "url": "https://sejong.korea.ac.kr/cwms/5116/subview.do"},
+  {"kind": "page", "label": "비전 및 목표", "url": "https://sejong.korea.ac.kr/cwms/5117/subview.do"},
+  {"kind": "page", "label": "교육과정(영역별)", "url": "https://sejong.korea.ac.kr/cwms/5121/subview.do"},
+  {"kind": "page", "label": "교과과정 2026", "url": "https://sejong.korea.ac.kr/cwms/5124/subview.do"},
+  {"kind": "page", "label": "취업정보", "url": "https://sejong.korea.ac.kr/cwms/5136/subview.do"},
+  {"kind": "pdf", "label": "교육과정표 2024", "url": "https://sejong.korea.ac.kr/pdfView/cwms/25/37/fileDownload.do"}
+ ],
+ "inferred_fields": ["careers", "data_interests", "interest_questions", "project_themes"],
+ "gaps": ["The competency PDF uses an embedded font and extracts as garbled text; the course list page was used instead.", "curriculum_by_year estimated from course numbers."],
+ "version": 1,
+ "created": "2026-10-29"
+}

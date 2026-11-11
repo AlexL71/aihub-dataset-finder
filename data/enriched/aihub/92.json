@@ -1,0 +1,29 @@
+{
+ "dataset_id": "92",
+ "title_en": "Machine reading comprehension on books",
+ "summary_ko": "다양한 주제의 도서에서 뽑은 500자 안팎 지문에 질문과 답을 붙인 한국어 기계독해 데이터 100만 건입니다. 30%는 지문에 답이 없는 질문이고, 같은 질문을 어순·동의어로 바꾼 질문도 있어 도서 검색이나 지식 질의응답 챗봇에 쓸 수 있습니다.",
+ "summary_en": "1 million Korean reading-comprehension items with ~500-character passages from books on many subjects. 30% of questions have no answer in the passage, and questions are paraphrased with word order and synonyms, for book search or knowledge Q&A chatbots.",
+ "contents_ko": "JSON: 도서 지문, 질문(변형 포함), 정답 위치·텍스트, 답 없음 여부.",
+ "contents_en": "JSON: book passage, question (with paraphrases), answer position and text, no-answer flag.",
+ "modalities": ["text"],
+ "tasks": ["question_answering", "retrieval_recommendation"],
+ "topics": [{"ko": "도서·출판", "en": "Books and publishing"}, {"ko": "한국어 질의응답", "en": "Korean question answering"}, {"ko": "도서관·지식 검색", "en": "Libraries and knowledge search"}],
+ "keywords_ko": ["기계독해", "도서", "질의응답", "정답 없는 질문", "자연어 검색", "챗봇"],
+ "keywords_en": ["machine reading comprehension", "books", "question answering", "unanswerable questions", "natural-language search", "chatbot"],
+ "labels": ["question-answer pairs", "answer span", "no-answer flag"],
+ "file_formats": ["json"],
+ "scale_ko": "질문-답 1,001,060건(답 있음 70%, 답 없음 30%)",
+ "classes_example": ["정답이 있는 질문", "정답이 없는 질문"],
+ "baseline": [{"task": "machine reading comprehension", "model": "Transformer", "metric": "F1-score", "value": "0.89"}],
+ "difficulty": "beginner",
+ "difficulty_note_ko": "약 0.1GB로 작고 질의응답 예제 코드로 바로 학습할 수 있습니다.",
+ "skills_needed_ko": ["파이썬", "Hugging Face 질의응답 미세조정"],
+ "caveats_ko": ["도서 원문 전체가 아니라 짧은 지문만 제공"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "도서 지문 질의응답 모델", "title_en": "Book passage QA model", "desc_ko": "KoELECTRA로 학습해 지문에서 답을 찾고 답 없음도 판단하게 합니다.", "desc_en": "Train KoELECTRA to find answers and detect unanswerable questions."},
+  {"level": "capstone", "title_ko": "도서관 자연어 검색 도우미", "title_en": "Library natural-language search", "desc_ko": "질문을 입력하면 관련 지문을 찾고 답을 보여주는 검색 데모를 만듭니다.", "desc_en": "Retrieve relevant passages for a question and show the answer."},
+  {"level": "research", "title_ko": "질문 바꿔 말하기에 강한 모델", "title_en": "Robustness to paraphrased questions", "desc_ko": "같은 뜻의 다른 질문에서 답이 달라지는지 분석하고 일관성을 높이는 방법을 연구합니다.", "desc_en": "Check whether paraphrases change answers and study ways to improve consistency."}
+ ],
+ "doc_used": true,
+ "uncertain": []
+}

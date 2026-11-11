@@ -1,0 +1,12 @@
+{
+ "dataset_id": "89",
+ "easy_ko": "정치·경제·연예·스포츠 같은 뉴스 기사에 질문과 정답을 붙여, 기사 안에서 답이 어디 있는지 표시한 한국어 데이터입니다. 글을 읽고 질문에 답하는 챗봇을 만들 수 있으며, 답이 없는 질문과 답의 근거가 표시된 질문도 들어 있습니다.",
+ "easy_en": "Korean news articles on politics, economy, entertainment, sports and more, with questions and answers attached and the answer's location in the article marked. You can build chatbots that read a text and answer questions; it also includes unanswerable questions and questions with the supporting clue marked.",
+ "detail_ko": "9개 분야 뉴스 기사 본문에 질문-답을 붙인 한국어 기계독해 데이터 45만 건(표준 25만, 정답 없음 10만, 설명 가능 10만)으로, SQuAD 형식 JSON에 본문, 질문, 정답(시작 위치·텍스트), 단서(위치·텍스트), 육하원칙 유형, 기사 분야가 있습니다. 2018년 기사 기반이라 오래되었고 기준 성능 지표가 없습니다.",
+ "detail_en": "450k Korean machine-reading-comprehension items on news articles in 9 categories (250k standard, 100k unanswerable, 100k with explanations), in SQuAD-style JSON with passage, question, answer (start index, text), clue (index, text), 5W1H type and article category. Based on 2018 articles, so somewhat dated; no baseline is published.",
+ "amount_ko": "질문-답 45만 건, 기사 분야 9개",
+ "amount_en": "450k question–answer items, 9 news categories",
+ "labels_ko": "질문과 정답, 정답 위치, 답의 근거, 질문 유형(누가·언제 등)",
+ "labels_en": "questions and answers, answer position, supporting clue, question type (who, when, etc.)",
+ "status": "full-run-2026-11-02"
+}

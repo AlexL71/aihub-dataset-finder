@@ -1,0 +1,12 @@
+{
+ "dataset_id": "132",
+ "easy_ko": "교육·문화·시사·금융·IT 같은 여러 분야의 방송 회의와 토론 소리를 녹음하고, 그 말을 받아 적은 글을 짝지은 데이터입니다. 회의 영상에 자막을 자동으로 달거나 회의록을 자동으로 써 주는 AI를 만들 수 있습니다.",
+ "easy_en": "Recordings of broadcast meetings and debates in fields such as education, culture, current affairs, finance and IT, paired with written transcripts. You can build AI that adds subtitles to meeting videos or writes meeting minutes automatically.",
+ "detail_ko": "8개 분야 회의·토론 방송 음성 3,000시간(교육·문화예술·가족 각 400h, 교양·시사 각 550h, 토크 300h, 금융·IT 각 200h)으로, wav 음성, txt 전사, JSON 메타정보(장르, 발화자 성별, 방송 날짜)로 구성됩니다. 기준 성능은 Jasper 음성 인식 CER 12.79%, WER 31.51%이며, 성능 표 이름이 '강의 학습 성능'으로 잘못 적혀 있습니다. 방송 회의라 실제 사내 회의와 분위기가 다를 수 있습니다.",
+ "detail_en": "3,000 hours of broadcast meeting and debate speech in 8 genres (education, culture and arts, family 400 h each; liberal arts and current affairs 550 h each; talk 300 h; finance and IT 200 h each), with wav audio, txt transcripts and JSON metadata (genre, speaker sex, broadcast date). Baselines: Jasper CER 12.79%, WER 31.51%; the table is mislabelled as lecture performance. Broadcast meetings may differ from real office meetings.",
+ "amount_ko": "음성 3,000시간, 분야 8개",
+ "amount_en": "3,000 hours of speech, 8 genres",
+ "labels_ko": "말소리를 받아 적은 글(전사), 분야, 말한 사람 성별",
+ "labels_en": "transcripts, genre, speaker sex",
+ "status": "full-run-2026-11-02"
+}

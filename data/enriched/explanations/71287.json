@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71287",
+ "easy_ko": "자율주행차의 레이저 거리 측정 데이터를 다시 정리해, 승용차·SUV·트럭·버스·자전거·보행자·중앙분리대·가드레일을 입체 점 하나하나 단위로 나눠 표시한 데이터입니다. 레이저 데이터로 주변 물체를 정밀하게 구분하는 자율주행 AI를 만들 수 있습니다.",
+ "easy_en": "Self-driving car laser-scan data cleaned up again, with every 3D point labelled as part of a sedan, SUV, truck, bus, bicycle, pedestrian, median barrier or guardrail. You can build self-driving AI that precisely separates nearby objects in laser data.",
+ "detail_ko": "기존 AI Hub 자율주행 라이다 데이터(71258번 등) 약 31.5만 프레임을 다시 정제해 클래스 9종(sedan, suv, truck, bus, bicycle, pedestrian, median, guardrail 등)의 점 단위 3D 분할과 인스턴스 ID를 JSON으로 붙였으며, 참고용 이미지(jpg)가 함께 있습니다. 기준 성능은 FKAConv 3D 분할 mIoU 99.88%로 비정상적으로 높아 평가 방식 확인이 필요합니다.",
+ "detail_en": "About 315k lidar frames (pcd) re-processed from earlier AI Hub driving data (such as 71258), with JSON per-point 3D segmentation in 9 classes (sedan, SUV, truck, bus, bicycle, pedestrian, median, guardrail and more) and instance IDs, plus reference images (jpg). Baseline: FKAConv 3D segmentation mIoU 99.88%, which is suspiciously high, so check the evaluation method.",
+ "amount_ko": "레이저 점 데이터 약 31.5만 프레임, 9종",
+ "amount_en": "about 315k lidar frames, 9 classes",
+ "labels_ko": "입체 점마다 물체 종류, 같은 물체 번호",
+ "labels_en": "per-point class, instance ID",
+ "status": "full-run-2026-11-02"
+}

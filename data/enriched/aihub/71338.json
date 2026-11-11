@@ -1,0 +1,32 @@
+{
+ "dataset_id": "71338",
+ "title_en": "Clickbait news article detection data",
+ "summary_ko": "경제·연예·세계·IT과학·생활문화·정치·사회 신문기사 약 73만 건으로, 제목과 본문이 맞지 않는 낚시성 기사와 본문 중간에 엉뚱한 주제가 끼어든 기사를 자동·직접 생성해 표시한 데이터입니다. 낚시성 기사를 걸러내는 AI에 쓸 수 있습니다.",
+ "summary_en": "About 730,000 news articles (economy, entertainment, world, IT/science, lifestyle, politics, society) including generated clickbait whose headline does not match the body and articles with an off-topic passage inserted. For AI that filters clickbait news.",
+ "contents_ko": "기사 텍스트 JSON(제목, 본문, 낚시성 여부, 생성 방식, 분야).",
+ "contents_en": "Article text JSON (headline, body, clickbait label, generation method, category).",
+ "modalities": ["text"],
+ "tasks": ["text_classification"],
+ "topics": [{"ko": "뉴스·언론", "en": "News and media"}, {"ko": "허위정보", "en": "Misinformation"}],
+ "keywords_ko": ["낚시성 기사", "클릭베이트", "가짜뉴스", "제목-본문 불일치", "뉴스 신뢰도"],
+ "keywords_en": ["clickbait", "fake news", "headline-body mismatch", "news credibility", "misinformation"],
+ "labels": ["clickbait label", "generation method", "category", "inconsistent sentence"],
+ "file_formats": ["txt", "json"],
+ "scale_ko": "기사 약 73만 건(제목 불일치 약 36만, 본문 주제 불일치 약 37만), 분야 7종",
+ "classes_example": ["경제", "연예", "세계", "IT&과학", "생활&문화", "정치", "사회"],
+ "baseline": [
+  {"task": "headline-body clickbait classification", "model": "HAND", "metric": "accuracy", "value": "87.1%"},
+  {"task": "off-topic passage detection", "model": "BERT", "metric": "accuracy", "value": "83.88%"}
+ ],
+ "difficulty": "beginner",
+ "difficulty_note_ko": "약 2.4GB 텍스트로 다루기 쉽고 문장 분류 입문에 좋습니다.",
+ "skills_needed_ko": ["파이썬", "텍스트 분류(BERT 등)"],
+ "caveats_ko": ["낚시성 기사 상당수가 인위적으로 만든 것이라 실제 낚시 기사와 다를 수 있음", "기사 원문 저작권 확인 필요"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "낚시성 제목 판별", "title_en": "Clickbait headline detector", "desc_ko": "제목과 본문이 맞는지 분류합니다.", "desc_en": "Classify whether a headline matches its article."},
+  {"level": "capstone", "title_ko": "뉴스 신뢰도 브라우저 확장", "title_en": "News credibility extension", "desc_ko": "읽는 기사가 낚시성일 가능성을 표시해 주는 도구를 만듭니다.", "desc_en": "A tool that flags likely clickbait while reading news."},
+  {"level": "research", "title_ko": "LLM 생성 낚시 기사 탐지", "title_en": "Detecting LLM-made clickbait", "desc_ko": "언어모델이 만든 낚시 기사도 잡아내는지 연구합니다.", "desc_en": "Test detection of clickbait written by language models."}
+ ],
+ "doc_used": true,
+ "uncertain": []
+}

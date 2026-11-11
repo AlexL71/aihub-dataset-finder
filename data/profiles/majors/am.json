@@ -1,0 +1,48 @@
+{
+ "id": "am",
+ "name_ko": "미래모빌리티학과",
+ "name_en": "Future Mobility",
+ "college": "과학기술대학",
+ "summary_ko": "자율주행차, 이동로봇, 지능형교통체계처럼 사람과 물건이 이동하는 방식을 새롭게 만드는 기술을 배우는 융합 학과입니다. 컴퓨터·AI, 기계·차량, 교통공학을 함께 다루며, 자율주행 실증도시인 세종시와 연계한 PBL·현장실습이 많습니다.",
+ "summary_en": "An interdisciplinary department on new ways of moving people and goods: self-driving cars, mobile robots and intelligent transport systems. It combines computing and AI, vehicle engineering and traffic engineering, with many project-based classes and field placements linked to Sejong City's self-driving test programs.",
+ "key_topics": ["자율주행 시스템(인지-판단-제어)", "영상처리와 딥러닝", "센서 데이터 처리", "차량 동역학과 제어", "이동로봇", "지능형교통체계(ITS)와 교통운영", "도시 모빌리티 시뮬레이션", "통합 모빌리티 서비스(MaaS)", "자율주행 통신·보안"],
+ "course_keywords": ["미래모빌리티개론", "파이썬 기초", "선형대수학", "확률과 통계", "AI-빅데이터공학수학", "자료구조개론", "IoT개론", "빅데이터 개론", "기초역학개론", "시계열 분석및응용", "데이터마이닝", "영상처리및딥러닝", "데이터베이스", "인공지능개론", "인공신경망 제어시스템", "차량동역학및제어", "센서데이터처리", "자율주행시스템 개론", "인공지능 로보틱스", "지능형교통체계개론", "교통운영분석", "도시모빌리티 시뮬레이션", "컴퓨터비전", "딥러닝입문", "거대언어모델과 챗GPT", "이동로봇 운행시스템", "자율주행 통신시스템", "자율주행 안전및보안", "MaaS: 통합모빌리티서비스", "스마트모빌리티 시스템설계"],
+ "curriculum_by_year": {
+  "1": ["기초·일반 미적분학", "파이썬 기초", "통계학 입문", "컴퓨터언어", "일반물리학", "미래모빌리티개론", "IoT 기초 PBL"],
+  "2": ["선형대수학", "확률과 통계", "AI-빅데이터공학수학", "IoT개론", "자료구조개론", "객체지향프로그래밍", "빅데이터 개론", "통신및네트워크", "기초역학개론", "최적설계개론", "전기회로", "지능형교통체계개론", "자율주행 기반기술 PBL", "로봇설계/주행 PBL"],
+  "3": ["시계열 분석및응용", "데이터마이닝", "영상처리및딥러닝", "데이터베이스", "인공지능개론", "인공신경망 제어시스템", "차량동역학및제어", "신뢰성공학", "센서데이터처리", "인공지능 로보틱스", "자율주행시스템 개론", "교통운영분석", "도시모빌리티 시뮬레이션", "도시모빌리티 데이터과학 PBL"],
+  "4": ["컴퓨터비전", "딥러닝입문", "거대언어모델과 챗GPT", "딥러닝응용", "이동로봇 운행시스템", "자율주행 통신시스템", "자율주행 안전및보안", "IoT 보안", "MaaS", "인공지능 모빌리티", "스마트모빌리티 시스템설계", "첨단모빌리티 빅데이터 PBL", "캡스톤디자인", "모빌리티 현장실습"]
+ },
+ "careers": ["자율주행 소프트웨어·인지 알고리즘 개발자", "완성차·부품사 차량 제어 엔지니어", "로봇·물류 자동화 엔지니어", "교통 데이터 분석가·ITS 엔지니어", "모빌리티 서비스(MaaS) 기획자", "공공기관·연구원 교통정책 연구원"],
+ "research_areas": ["스마트 모빌리티(교통)", "필드 로봇", "설계 최적화"],
+ "data_interests": [
+  {"topic_ko": "자율주행 인지", "topic_en": "Perception for self-driving", "keywords": ["도로 주행 영상", "라이다", "차선·신호등·보행자 인식"]},
+  {"topic_ko": "교통 흐름과 혼잡", "topic_en": "Traffic flow and congestion", "keywords": ["교통량", "CCTV 교통 영상", "신호 운영"]},
+  {"topic_ko": "대중교통과 이동 수요", "topic_en": "Public transport and travel demand", "keywords": ["버스 이용", "승하차", "이동 경로"]},
+  {"topic_ko": "로봇과 드론 이동", "topic_en": "Robots and drones", "keywords": ["이동로봇 주행", "드론 영상", "실내 주행"]},
+  {"topic_ko": "교통안전", "topic_en": "Road safety", "keywords": ["사고 위험", "위험 운전 행동", "도로 노면 상태"]},
+  {"topic_ko": "차량 센서와 운전자", "topic_en": "Vehicle sensors and drivers", "keywords": ["차량 센서 시계열", "운전자 상태", "졸음 운전"]},
+  {"topic_ko": "물류·배송", "topic_en": "Logistics and delivery", "keywords": ["배송 경로", "물류 창고", "화물"]}
+ ],
+ "interest_questions": [
+  {"q_ko": "모빌리티에서 어떤 문제를 풀고 싶나요?", "q_en": "Which mobility problem do you want to solve?",
+   "options": [{"ko": "자율주행차가 길을 보게 하기", "en": "Help self-driving cars see the road"}, {"ko": "교통 체증 줄이기", "en": "Reduce traffic jams"}, {"ko": "교통사고 예방", "en": "Prevent accidents"}, {"ko": "로봇·드론 배송", "en": "Robot and drone delivery"}, {"ko": "대중교통 개선", "en": "Better public transport"}]},
+  {"q_ko": "다뤄보고 싶은 자료는?", "q_en": "What data would you like to use?",
+   "options": [{"ko": "주행 영상·라이다", "en": "Driving video and LiDAR"}, {"ko": "교통량·이동 기록", "en": "Traffic counts and trip records"}, {"ko": "차량 센서 신호", "en": "Vehicle sensor signals"}, {"ko": "드론·로봇 영상", "en": "Drone and robot video"}]}
+ ],
+ "project_themes": ["주행 영상에서 차선과 보행자 인식", "교차로 교통량 예측", "위험 운전 행동 감지", "도로 파손(포트홀) 탐지", "버스 승하차 데이터로 혼잡 시간 분석"],
+ "data_skill_level": "high",
+ "data_skill_note": "1학년부터 파이썬·통계를 배우고, 3~4학년에 데이터마이닝, 영상처리및딥러닝, 컴퓨터비전, 거대언어모델 과목이 있습니다.",
+ "sources": [
+  {"kind": "page", "label": "학과소개", "url": "https://sejong.korea.ac.kr/am/3482/subview.do"},
+  {"kind": "page", "label": "교육목표", "url": "https://sejong.korea.ac.kr/am/3483/subview.do"},
+  {"kind": "page", "label": "교과과정", "url": "https://sejong.korea.ac.kr/am/3489/subview.do"},
+  {"kind": "page", "label": "전공교과목", "url": "https://sejong.korea.ac.kr/am/12551/subview.do"},
+  {"kind": "page", "label": "연구실", "url": "https://sejong.korea.ac.kr/am/3504/subview.do"},
+  {"kind": "image", "label": "전공체계도 2026", "url": "https://sejong.korea.ac.kr/sites/am/images/temp_1770008544372100.png"}
+ ],
+ "inferred_fields": ["careers", "data_interests", "interest_questions", "project_themes"],
+ "gaps": ["No careers page; careers inferred from the goals table (industry demand areas)."],
+ "version": 1,
+ "created": "2026-10-29"
+}

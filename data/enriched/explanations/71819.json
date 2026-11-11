@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71819",
+ "easy_ko": "학년과 주제별 논술형 글 2만 편에 두 명 이상의 전문가가 매긴 점수와 고칠 점을 적은 피드백을 붙인 데이터입니다. 글을 자동으로 채점하고 무엇을 고치면 좋을지 알려 주는 교육용 AI에 쓸 수 있습니다.",
+ "easy_en": "20,000 argumentative essay texts, each scored by two or more experts with written feedback on what to improve. You can use it to build educational AI that scores writing automatically and suggests improvements.",
+ "detail_ko": "학년과 주제별 논술형 글 20,000건(txt)에 2인 이상 전문가의 채점 점수와 피드백을 JSON으로 붙였습니다. 분류: 에세이 목적(설명, 설득, 친교 및 정서), 과목(국어, 사회, 과학), 학년(초5, 초6, 중1, 중2, 중3). 성능 지표 값은 팩 앞부분에 없습니다.",
+ "detail_en": "20,000 argumentative essay texts (txt) with JSON scores and feedback from two or more experts. Categories: essay purpose (explanatory, persuasive, social/emotional), subject (Korean, social studies, science), grade (primary 5 and 6, middle school 1 to 3). No metric values are in the pack.",
+ "amount_ko": "원천·라벨 각 20,000건",
+ "amount_en": "20,000 texts and labels",
+ "labels_ko": "채점 점수, 피드백",
+ "labels_en": "writing score, feedback",
+ "status": "full-run-2026-11-02"
+}

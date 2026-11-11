@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71751",
+ "easy_ko": "실제 불이 난 현장과 불 실험 영상에서 모은 처음과 중간 단계의 불 영상과 사진 약 238만 장에 불꽃, 연기 같은 것을 상자로 표시한 데이터입니다. CCTV로 불을 바로 알아채는 AI에 쓸 수 있습니다.",
+ "easy_en": "About 2.38 million images and video clips of fires in their early and middle stages, from real fires and fire experiments, with flames, smoke and other objects boxed. You can use it to build AI that spots fires on CCTV right away.",
+ "detail_ko": "소방청·소방본부·방재시험연구원의 실제 화재와 화재 실험 영상에서 모은 초기·중기 화재 데이터로, 12초 동영상 클립 5,304개(mp4), 화재 현상 이미지 1,909,440장과 화재 현장 주요 객체 이미지 472,500장(jpg, 총 약 2,381,940장)에 상자, 화재 단계, 장소(8종), 객체 종류(15종)를 JSON으로 붙였습니다. 페이지에 성능 점수 표가 없고(SlowFast 목표 Top-1 90%만 소개), 화재 실험 영상이 섞여 있어 실제 현장과 차이가 있을 수 있으며, 객체 15종 이름은 팩 앞부분에 없습니다.",
+ "detail_en": "Early- and mid-stage fire data from real fires and fire experiments (National Fire Agency, fire headquarters, fire-testing institute): 5,304 twelve-second video clips (mp4), 1,909,440 fire-phenomenon images and 472,500 key-object images (jpg, about 2,381,940 in total), with JSON boxes, fire stage, place (8 types) and object class (15 types). There is no score table (only a SlowFast Top-1 target of 90%), experiment footage may differ from real scenes, and the 15 object names are not in the pack.",
+ "amount_ko": "동영상 클립 5,304개, 이미지 약 2,381,940장",
+ "amount_en": "5,304 video clips, about 2,381,940 images",
+ "labels_ko": "불꽃·연기 등 위치 상자, 불 단계, 장소, 물체 종류",
+ "labels_en": "bounding box, fire stage, object class",
+ "status": "full-run-2026-11-02"
+}

@@ -1,0 +1,29 @@
+{
+ "dataset_id": "500",
+ "title_en": "Smart aquaculture integrated data (whiteleg shrimp)",
+ "summary_ko": "순환여과식 양식장 수조 8개에서 찍은 흰다리새우 성장 단계별 이미지 15만 장과 수온·염분·용존산소·pH 같은 사육 환경 시계열 15만 건입니다. 새우 상태를 진단하고 최적의 사육 환경을 관리하는 스마트 양식 AI에 쓸 수 있습니다.",
+ "summary_en": "150,000 images of whiteleg shrimp at different growth stages from 8 recirculating-aquaculture tanks, plus 150,000 environment time-series records (water temperature, salinity, dissolved oxygen, pH and more). For smart-aquaculture AI that diagnoses shrimp condition and manages optimal rearing conditions.",
+ "contents_ko": "새우 이미지(png) + 환경 시계열(csv) + JSON(성장 단계, 개체 정보).",
+ "contents_en": "Shrimp images (png) + environment time series (csv) + JSON (growth stage, individual info).",
+ "modalities": ["image", "sensor", "tabular"],
+ "tasks": ["image_classification", "object_detection", "forecasting"],
+ "topics": [{"ko": "수산·양식", "en": "Fisheries and aquaculture"}, {"ko": "새우", "en": "Shrimp"}, {"ko": "수질 관리", "en": "Water quality management"}],
+ "keywords_ko": ["흰다리새우", "스마트 양식", "순환여과", "수질", "성장 단계", "용존산소"],
+ "keywords_en": ["whiteleg shrimp", "smart aquaculture", "recirculating system", "water quality", "growth stage", "dissolved oxygen"],
+ "labels": ["growth stage", "object info", "environment values"],
+ "file_formats": ["png", "csv", "json"],
+ "scale_ko": "이미지 15만 장, 환경 데이터 15만 건, 수조 8개",
+ "classes_example": ["생육 단계 > step1", "생육 단계 > step2", "생육 단계 > step3"],
+ "baseline": [],
+ "difficulty": "beginner",
+ "difficulty_note_ko": "이미지 분류와 표 데이터 분석을 각각 쉽게 시작할 수 있습니다. 약 178GB입니다.",
+ "skills_needed_ko": ["파이썬", "이미지 분류", "pandas 시계열 분석"],
+ "caveats_ko": ["성능 지표가 팩 앞부분에 없음"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "수질 변화 시각화", "title_en": "Water-quality trends", "desc_ko": "수조별 수온·용존산소 변화를 그래프로 그립니다.", "desc_en": "Plot water temperature and oxygen per tank."},
+  {"level": "capstone", "title_ko": "새우 성장 모니터링 대시보드", "title_en": "Shrimp growth dashboard", "desc_ko": "사진으로 성장 단계를 분류하고 환경 데이터와 함께 보여줍니다.", "desc_en": "Classify growth stage from photos and show it with environment data."},
+  {"level": "research", "title_ko": "사육 환경과 성장 속도", "title_en": "Environment and growth rate", "desc_ko": "어떤 수질 조건이 새우 성장에 가장 좋은지 분석합니다.", "desc_en": "Analyse which water conditions best support shrimp growth."}
+ ],
+ "doc_used": true,
+ "uncertain": []
+}

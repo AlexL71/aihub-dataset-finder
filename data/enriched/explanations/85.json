@@ -1,0 +1,12 @@
+{
+ "dataset_id": "85",
+ "easy_ko": "한국인의 헤어스타일 사진마다 머리 길이, 웨이브, 앞머리, 가르마, 머리색 같은 스타일 종류와 머리카락 영역을 표시한 데이터입니다. 사진 속 헤어스타일을 알아보거나, 내 얼굴에 다른 머리 모양을 입혀 미리 보여 주는 AI를 만들 수 있습니다.",
+ "easy_en": "Photos of Korean hairstyles, each marked with the style (length, curls, bangs, parting, hair colour) and the hair area. You can build AI that recognises a hairstyle or shows how a different hairstyle would look on your face.",
+ "detail_ko": "미용실 직접 시술과 크라우드소싱으로 촬영한 73.7만 장 중 50만 장(직접시술 34만, 미용실 10만, 특수 1만, 시술 후 5만)에 스타일 클래스(길이, 컬, 앞머리, 탈모 정도, 투블럭, 가르마, 색상 7종, 특수 헤어)와 머리 영역 분할을 JSON으로 라벨링했습니다. 기준 성능은 StarGAN v2 헤어스타일 합성 FID 19.68(낮을수록 좋음)입니다. 얼굴 사진이라 이용 약관 확인이 필요합니다.",
+ "detail_en": "500k labelled photos (out of 737k taken) from salon treatments and crowdsourcing: 340k self-treated, 100k salon, 10k special styles, 50k after-treatment. JSON labels give hairstyle classes (length, curl, bangs, hair loss, two-block cut, parting, 7 colours, special styles) and hair segmentation. Baseline: StarGAN v2 hairstyle synthesis FID 19.68 (lower is better). Faces are visible, so check the terms of use.",
+ "amount_ko": "라벨 사진 50만 장(촬영 73.7만 장 중)",
+ "amount_en": "500k labelled photos (of 737k taken)",
+ "labels_ko": "헤어스타일 종류(길이·웨이브·앞머리·색 등), 머리카락 영역",
+ "labels_en": "hairstyle class (length, curl, bangs, colour and more), hair region",
+ "status": "full-run-2026-11-02"
+}

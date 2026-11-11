@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71417",
+ "easy_ko": "공장, 공사장, 교통수단, 공연장처럼 아주 시끄러운 곳에서 사람들이 말한 소리를 녹음하고, 받아 적은 글과 소음 종류를 붙인 데이터입니다. 큰 소음을 걸러 내고 말을 또렷하게 들은 뒤 알아듣는 음성 인식 AI를 만들 수 있습니다.",
+ "easy_en": "Recordings of people speaking in very loud places such as factories, construction sites, vehicles and concert halls, with transcripts and the type of noise. You can build speech recognition that filters out heavy noise, makes speech clear and then understands it.",
+ "detail_ko": "76dB 이상의 극한 소음 환경(교통수단 512.9h, 공사장 423.3h, 공장 512.9h, 시설류 325.2h, 기타 140.5h, 복합소음 168.1h)에서 녹음한 음성 약 2,083시간(wav)에 전사, 소음 환경, 소음 크기를 JSON으로 붙였습니다. 기준 성능은 TSCN + ESPnet 음성 명료도 ESTOI 0.86(96dB 이상), 음성 인식 향상 F1 0.24(76~85dB)·0.15(96dB 이상)입니다. 전체 약 966GB이며, 단위 표기가 섞여 있고 F1 '성능 향상도'의 기준이 불분명하며, 71376번 극한 소음 소리 데이터와 같은 기관·소음 분류입니다.",
+ "detail_en": "About 2,083 hours of speech (wav) recorded in extreme noise of 76 dB or more (transport 512.9 h, construction 423.3 h, factories 512.9 h, facilities 325.2 h, other 140.5 h, mixed 168.1 h), with JSON transcripts, noise environment and noise level. Baselines: TSCN + ESPnet speech intelligibility ESTOI 0.86 (96 dB+), ASR improvement F1 0.24 (76–85 dB) and 0.15 (96 dB+). Total size is about 966 GB; units are mixed and the basis of the F1 'improvement' is unclear; same organisation and noise scheme as dataset 71376.",
+ "amount_ko": "음성 약 2,083시간, 소음 환경 6종",
+ "amount_en": "about 2,083 hours of speech, 6 noise environments",
+ "labels_ko": "말소리를 받아 적은 글(전사), 소음 종류, 소음 크기",
+ "labels_en": "transcripts, noise environment, noise level",
+ "status": "full-run-2026-11-02"
+}

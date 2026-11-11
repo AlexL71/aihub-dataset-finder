@@ -1,0 +1,12 @@
+{
+ "dataset_id": "176",
+ "easy_ko": "불이 나기 전 피어오르는 연기 장면과, 구름·안개·조명·햇빛처럼 연기와 헷갈리기 쉬운 장면을 모아 연기와 불꽃 위치를 표시한 데이터입니다. 연기를 일찍 알아채 불이 크게 번지기 전에 알려 주는 CCTV AI를 만들 수 있습니다.",
+ "easy_en": "Scenes of smoke rising before a fire, together with easily confused scenes such as clouds, fog, lights and sunlight, with smoke and flames marked. You can build CCTV AI that notices smoke early and gives a warning before a fire spreads.",
+ "detail_ko": "이미지 173만 장(화재씬 74만, 유사씬 66만, 무관씬 30만, jpg)에 연기·불꽃 바운딩박스와 폴리곤 약 200만 개, 화재·진화 시작-끝 키프레임을 JSON으로 붙였습니다. 기준 성능은 기록에서 확인되지 않으며 설명에 YOLACT가 언급됩니다. 전체 약 1TB입니다.",
+ "detail_en": "1.73M jpg images (740k fire scenes, 660k look-alike scenes, 300k unrelated scenes) with about 2M smoke and flame boxes and polygons and fire/extinguishing start–end keyframes in JSON. No baseline is visible, though YOLACT is mentioned. Total size is about 1 TB.",
+ "amount_ko": "이미지 173만 장, 상자 약 200만 개",
+ "amount_en": "1.73M images, about 2M boxes",
+ "labels_ko": "연기·불꽃 위치 상자와 윤곽, 불 시작·끝 장면",
+ "labels_en": "boxes and outlines around smoke and flames, fire start and end frames",
+ "status": "full-run-2026-11-02"
+}

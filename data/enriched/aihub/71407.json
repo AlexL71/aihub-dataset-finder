@@ -1,0 +1,115 @@
+{
+ "dataset_id": "71407",
+ "title_en": "Construction site hazard state judgement data",
+ "summary_ko": "건설 현장의 추락·낙하·협착·화재·전도 5대 사고 유형과 주의 작업, 안전 보조장비 상황을 찍은 이미지 226,000장입니다. 비계 발판·안전난간·개구부 덮개 설치 같은 정상 상황과 설치 불량 같은 위험 상황이 시나리오별로 상자와 영역으로 표시되어 있어 AI CCTV 위험 감지에 쓸 수 있습니다.",
+ "summary_en": "226,000 images of construction sites covering five accident types (falls, falling objects, caught-in, fire, tip-over) plus caution work and safety gear. Normal and hazardous scenarios (e.g. missing guardrails) are marked with boxes and masks, for AI CCTV hazard detection.",
+ "contents_ko": "현장 이미지(jpg) + JSON(상자, 분할 영역, 사고 유형, 정상·위험 시나리오 ID).",
+ "contents_en": "Site image (jpg) + JSON (boxes, masks, accident type, normal/hazard scenario ID).",
+ "modalities": [
+  "image"
+ ],
+ "tasks": [
+  "object_detection",
+  "segmentation",
+  "image_classification"
+ ],
+ "topics": [
+  {
+   "ko": "건설·안전",
+   "en": "Construction and safety"
+  },
+  {
+   "ko": "산업재해 예방",
+   "en": "Workplace accident prevention"
+  }
+ ],
+ "keywords_ko": [
+  "건설 안전",
+  "추락",
+  "낙하",
+  "안전난간",
+  "위험 감지",
+  "CCTV"
+ ],
+ "keywords_en": [
+  "construction safety",
+  "falls",
+  "falling objects",
+  "guardrails",
+  "hazard detection",
+  "CCTV"
+ ],
+ "labels": [
+  "bounding box",
+  "segmentation mask",
+  "accident type",
+  "scenario"
+ ],
+ "file_formats": [
+  "jpg",
+  "json"
+ ],
+ "scale_ko": "이미지 226,000장(5대 사고 유형 각 40,000장, 주의요망작업 10,000장, 안전보조장비 16,000장)",
+ "classes_example": [
+  "추락",
+  "낙하",
+  "협착",
+  "화재",
+  "전도",
+  "주의요망작업",
+  "안전보조장비",
+  "개구부 덮개 설치(정상)",
+  "덤프 트럭 위험 반경 내 근로자 작업(위험)"
+ ],
+ "baseline": [
+  {
+   "task": "객체 탐지(세그멘테이션)",
+   "model": "SpineNet 기반 Mask R-CNN",
+   "metric": "mAP",
+   "value": "78.3%"
+  },
+  {
+   "task": "위험상황 탐지(바운딩박스)",
+   "model": "SpineNet 기반 Mask R-CNN",
+   "metric": "mAP",
+   "value": "79.6%"
+  }
+ ],
+ "difficulty": "intermediate",
+ "difficulty_note_ko": "탐지 실습으로 적당하고 약 254GB입니다. 사고 유형 하나만 골라 시작하세요.",
+ "skills_needed_ko": [
+  "파이썬",
+  "YOLO 탐지",
+  "분할 모델"
+ ],
+ "caveats_ko": [
+  "정상과 위험 상황 차이가 작아(예: 난간 유무) 장면 이해가 필요함",
+  "시나리오 연출 촬영일 가능성이 있어 실제 현장 일반화 확인 필요",
+  "설명서를 읽을 수 없어 페이지 정보만 사용"
+ ],
+ "project_ideas": [
+  {
+   "level": "beginner",
+   "title_ko": "사고 유형 분류",
+   "title_en": "Accident type classifier",
+   "desc_ko": "현장 사진이 추락·낙하·화재 중 어떤 위험과 관련 있는지 분류합니다.",
+   "desc_en": "Classify which accident type a site photo relates to."
+  },
+  {
+   "level": "capstone",
+   "title_ko": "안전난간 미설치 감지 CCTV",
+   "title_en": "Missing-guardrail CCTV alert",
+   "desc_ko": "개구부·단부에 난간이나 덮개가 없을 때 관리자에게 알리는 시스템을 만듭니다.",
+   "desc_en": "Alert managers when openings or edges lack guardrails or covers."
+  },
+  {
+   "level": "research",
+   "title_ko": "정상·위험 미세 구분",
+   "title_en": "Fine normal-vs-hazard distinction",
+   "desc_ko": "같은 공정에서 정상과 위험 상황을 구분하는 장면 이해 모델을 연구합니다.",
+   "desc_en": "Study scene models that separate normal from hazardous states in the same task."
+  }
+ ],
+ "doc_used": false,
+ "uncertain": []
+}

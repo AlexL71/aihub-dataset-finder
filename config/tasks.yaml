@@ -1,0 +1,34 @@
+# Controlled list of AI tasks used in enriched dataset records (field "tasks").
+# id: technical name -> plain-language phrase shown to non-AI students.
+# Add a task here first if a dataset needs one that is missing; the validator rejects unknown ids.
+
+modalities: [image, video, text, audio, 3d, sensor, tabular]
+
+tasks:
+  image_classification:   {en: "Tell what is in a picture", ko: "사진 속 대상이 무엇인지 분류하기"}
+  object_detection:       {en: "Find and box things in a picture", ko: "사진에서 물체 위치를 찾아 상자로 표시하기"}
+  segmentation:           {en: "Outline the exact area of things in a picture", ko: "사진에서 물체 영역을 정확히 칠하기"}
+  keypoint_pose:          {en: "Find body or object key points (pose)", ko: "몸·물체의 주요 점(자세) 찾기"}
+  ocr:                    {en: "Read text in images", ko: "이미지 속 글자 읽기"}
+  image_captioning:       {en: "Describe a picture in words", ko: "사진을 문장으로 설명하기"}
+  visual_qa:              {en: "Answer questions about a picture or video", ko: "사진·영상에 대한 질문에 답하기"}
+  image_generation:       {en: "Create or change images", ko: "이미지 만들기·바꾸기"}
+  action_recognition:     {en: "Recognise actions or events in video", ko: "영상 속 행동·사건 알아보기"}
+  object_tracking:        {en: "Follow moving things across video frames", ko: "영상에서 움직이는 대상 따라가기"}
+  3d_reconstruction:      {en: "Build 3D shapes or scenes", ko: "3D 형태·공간 만들기"}
+  depth_estimation:       {en: "Estimate distance and depth", ko: "거리·깊이 추정하기"}
+  speech_recognition:     {en: "Turn speech into text", ko: "말소리를 글자로 바꾸기"}
+  speech_synthesis:       {en: "Turn text into speech", ko: "글자를 말소리로 바꾸기"}
+  audio_classification:   {en: "Recognise sounds, speakers or emotions in audio", ko: "소리·화자·감정 알아보기"}
+  text_classification:    {en: "Sort texts into categories", ko: "글을 종류별로 분류하기"}
+  sentiment_emotion:      {en: "Detect feelings or opinions", ko: "감정·의견 알아보기"}
+  information_extraction: {en: "Pull out names, facts and fields from text", ko: "글에서 이름·사실·항목 뽑기"}
+  question_answering:     {en: "Answer questions from documents", ko: "문서를 읽고 질문에 답하기"}
+  summarization:          {en: "Make long text short", ko: "긴 글 요약하기"}
+  translation:            {en: "Translate between languages", ko: "언어 번역하기"}
+  dialogue:               {en: "Chatbots and conversation", ko: "챗봇·대화 만들기"}
+  text_generation:        {en: "Write or correct text", ko: "글 쓰기·고치기"}
+  retrieval_recommendation: {en: "Search and recommend", ko: "검색·추천하기"}
+  forecasting:            {en: "Predict future values from past data", ko: "과거 기록으로 미래 값 예측하기"}
+  anomaly_detection:      {en: "Find unusual cases or defects", ko: "이상·불량 찾기"}
+  tabular_prediction:     {en: "Predict from table data", ko: "표 데이터로 예측하기"}

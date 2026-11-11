@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71383",
+ "easy_ko": "집, 공장, 물류 창고에서 쓰는 여러 물건을 입체로 스캔하고, 물건끼리 겹쳐 가려진 장면과 로봇 손·사람 손이 물건을 잡는 장면에서 보이는 부분과 가려진 부분, 물건의 방향, 손가락 위치를 표시한 데이터입니다. 로봇이 가려진 물건도 알아보고 잘 집어 올리게 하는 AI를 만들 수 있습니다.",
+ "easy_en": "3D scans of objects used at home, in factories and in warehouses, plus scenes where objects hide one another and scenes of robot and human hands grasping them, marked with the visible and hidden parts, each object's position and orientation, and finger positions. You can build AI that helps robots recognise partly hidden objects and pick them up well.",
+ "detail_ko": "가정·산업·물류 물체 200종의 3D 스캔(obj, pcd)과 가림 데이터 154,600세트, 로봇 파지 112,359세트, 사람 파지 126,000세트, 총 393,159세트의 이미지(png, 가상·실제)에 물체 6D 자세, 가시·가림(amodal) 영역, 사람 손 3D 키포인트를 JSON으로 붙였습니다. 기준 성능은 Mask R-CNN 가시 영역 분할 mAP 52.57%, UOAIS-Net amodal 분할 mAP 52.09%, TemplatePose 6D 자세 Recall(VSD) 61.78%입니다. 전체 약 4.2TB(최소 파일 약 0.27GB)이며, 가상 이미지와 실제 이미지가 섞여 있어 평가 시 구분이 필요합니다.",
+ "detail_en": "3D scans (obj, pcd) of 200 household, industrial and logistics objects and 393,159 image sets (png, synthetic and real): 154,600 occlusion scenes, 112,359 robot grasps and 126,000 human grasps, with JSON 6D object poses, visible and amodal masks and 3D hand keypoints. Baselines: Mask R-CNN visible-mask mAP 52.57%, UOAIS-Net amodal segmentation mAP 52.09%, TemplatePose 6D pose recall (VSD) 61.78%. Total size is about 4.2 TB (smallest file about 0.27 GB); synthetic and real images are mixed, so separate them when evaluating.",
+ "amount_ko": "데이터 약 39.3만 세트, 물건 200종",
+ "amount_en": "about 393k sets, 200 objects",
+ "labels_ko": "보이는 영역·가려진 영역, 물건 위치와 방향, 손가락 주요 점(입체)",
+ "labels_en": "visible and amodal masks, 6D object pose, 3D hand key points",
+ "status": "full-run-2026-11-02"
+}

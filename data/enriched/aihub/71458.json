@@ -1,0 +1,29 @@
+{
+ "dataset_id": "71458",
+ "title_en": "Urban tree 3D growth data",
+ "summary_ko": "도심 가로수·조경수를 3D 라이다로 찍은 점군(좌표·색·반사 강도)에 잎과 가지를 나눈 분할 라벨이 붙어 있고, 환경 요소와 엽록소 함량·바이오매스(부피) 변화량 측정 표가 함께 있습니다. 도시 나무의 탄소 흡수량 추정 AI에 쓸 수 있습니다.",
+ "summary_en": "3D LiDAR point clouds (coordinates, colour, intensity) of urban street and landscape trees with leaf/branch segmentation labels, plus tables of environment factors and changes in chlorophyll and biomass (volume). For AI that estimates how much carbon city trees absorb.",
+ "contents_ko": "수목 3D 점군 + 이미지(jpg·png)·3D 모델(fbx) + JSON(잎·가지 분할) + CSV(환경·엽록소·바이오매스 변화량).",
+ "contents_en": "Tree 3D point cloud + images (jpg, png) and 3D models (fbx) + JSON (leaf/branch segmentation) + CSV (environment, chlorophyll, biomass change).",
+ "modalities": ["3d", "image", "tabular"],
+ "tasks": ["segmentation", "tabular_prediction"],
+ "topics": [{"ko": "기후변화·탄소", "en": "Climate change and carbon"}, {"ko": "도시 녹지", "en": "Urban green space"}],
+ "keywords_ko": ["도시 수목", "3D 점군", "잎-가지 분할", "바이오매스", "엽록소", "탄소 흡수"],
+ "keywords_en": ["urban trees", "3D point cloud", "leaf-branch segmentation", "biomass", "chlorophyll", "carbon uptake"],
+ "labels": ["point segmentation (leaf/branch)", "chlorophyll content", "biomass change", "environment factors"],
+ "file_formats": ["csv", "jpg", "png", "fbx", "json"],
+ "scale_ko": "팩 앞부분에 정확한 수량 없음(전체 약 82GB)",
+ "classes_example": ["잎", "가지"],
+ "baseline": [{"task": "leaf/branch classification", "model": "LightGBM", "metric": "Accuracy", "value": "83.54%"}, {"task": "biomass and chlorophyll change prediction", "model": "LightGBM", "metric": "R2", "value": "0.66"}],
+ "difficulty": "advanced",
+ "difficulty_note_ko": "3D 점군 처리와 표 데이터 예측을 함께 다뤄 어렵습니다. CSV 예측부터 시작하면 쉽습니다.",
+ "skills_needed_ko": ["파이썬", "포인트 클라우드 처리(Open3D)", "LightGBM"],
+ "caveats_ko": ["수목 수·점군 수가 팩 앞부분에 없음", "바이오매스 예측 R2가 0.66으로 기준(0.65)을 겨우 넘음"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "엽록소 변화 예측", "title_en": "Chlorophyll change prediction", "desc_ko": "환경 측정 CSV로 엽록소 함량 변화를 예측합니다.", "desc_en": "Predict chlorophyll change from environment CSV data."},
+  {"level": "capstone", "title_ko": "가로수 탄소 계산기", "title_en": "Street-tree carbon calculator", "desc_ko": "점군으로 나무 부피를 추정해 탄소 흡수량을 보여 주는 도구를 만듭니다.", "desc_en": "Estimate tree volume from point clouds and show carbon uptake."},
+  {"level": "research", "title_ko": "딥러닝 잎·가지 분할", "title_en": "Deep leaf-branch segmentation", "desc_ko": "PointNet 같은 점군 모델로 잎·가지 분할 정확도를 높이는 방법을 연구합니다.", "desc_en": "Improve leaf/branch segmentation with point-cloud networks."}
+ ],
+ "doc_used": true,
+ "uncertain": ["데이터 수량", "점군 파일 형식(메타데이터에 pcd·ply 언급 없음)"]
+}

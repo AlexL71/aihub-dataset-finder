@@ -1,0 +1,12 @@
+{
+ "dataset_id": "492",
+ "easy_ko": "고양시 CCTV 사진마다 길가 쓰레기 더미, 현수막, 공사 현장, 길을 막는 물건, 불법 주차처럼 주민 불만이 자주 생기는 것들의 위치를 낮과 밤으로 나눠 표시한 데이터입니다. 주민이 신고하기 전에 CCTV로 문제를 먼저 찾아 알려 주는 행정 AI를 만들 수 있습니다.",
+ "easy_en": "Goyang City CCTV images marked, by day and night, with common sources of public complaints: piles of rubbish, banners, construction sites, things blocking sidewalks and illegal parking. You can build city-service AI that spots these problems on CCTV before residents report them.",
+ "detail_ko": "고양시 CCTV 이미지 100만 장(쓰레기 26.5%, 현수막 20%, 공사현장·보행방해물·불법주정차 등, jpg)에 민원 요소(도로변 쓰레기봉투 더미, 골목 비포장 쓰레기, 가로·세로 현수막, 공사현장, 불법주정차 등) 바운딩박스, 라벨, 낮/밤 구분을 JSON으로 붙였습니다. 기준 성능은 기록에서 확인되지 않으며 고양시 CCTV만 포함됩니다.",
+ "detail_en": "1M Goyang City CCTV images (rubbish 26.5%, banners 20%, plus construction sites, sidewalk obstructions, illegal parking and more; jpg) with JSON bounding boxes and labels for complaint items (bagged rubbish piles, loose alley rubbish, horizontal and vertical banners, construction sites, illegal parking and more) and day/night. No baseline is visible, and only Goyang CCTV is included.",
+ "amount_ko": "CCTV 사진 100만 장",
+ "amount_en": "1M CCTV images",
+ "labels_ko": "민원 요소 위치 상자, 종류, 낮·밤",
+ "labels_en": "boxes around complaint items, class, day or night",
+ "status": "full-run-2026-11-02"
+}

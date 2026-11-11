@@ -1,0 +1,29 @@
+{
+ "dataset_id": "71484",
+ "title_en": "Open-field crop (cabbage etc.) growth data",
+ "summary_ko": "드론으로 찍은 배추·무 밭의 다중분광·RGB 이미지 20만 장에 작물 영역이 분할(세그멘테이션)로 표시되어 있고, 배추·무 생산량 기록 각 500건이 함께 있습니다. 재배 면적 계산과 생산량 예측 AI에 쓸 수 있습니다.",
+ "summary_en": "200,000 drone multispectral and RGB images of cabbage and radish fields with crop areas segmented, plus 500 production records each for cabbage and radish. For AI that measures cultivated area and predicts yield.",
+ "contents_ko": "드론 이미지(TIFF, 다중분광) + JSON(작물 분할 라벨) + 배추·무 생산량 데이터.",
+ "contents_en": "Drone images (TIFF, multispectral) + JSON (crop segmentation labels) + cabbage and radish yield data.",
+ "modalities": ["image", "tabular"],
+ "tasks": ["segmentation", "forecasting"],
+ "topics": [{"ko": "농업·작물", "en": "Agriculture and crops"}, {"ko": "드론·원격탐사", "en": "Drones and remote sensing"}],
+ "keywords_ko": ["배추", "무", "드론", "다중분광", "재배면적", "생산량 예측"],
+ "keywords_en": ["cabbage", "radish", "drone", "multispectral", "cultivated area", "yield prediction"],
+ "labels": ["segmentation polygon", "class", "yield record"],
+ "file_formats": ["tiff", "json"],
+ "scale_ko": "이미지 20만 장, 어노테이션 38만 건, 생산량 데이터 1,000건(배추·무 각 500건)",
+ "classes_example": ["배추", "무"],
+ "baseline": [{"task": "crop segmentation (cabbage, radish)", "model": "U-Net + EfficientNet-B0", "metric": "mIoU", "value": "80.12%"}],
+ "difficulty": "intermediate",
+ "difficulty_note_ko": "분할 실습에 좋지만 다중분광 TIFF를 다루는 법을 알아야 하고 전체 약 370GB입니다.",
+ "skills_needed_ko": ["파이썬", "분할 모델(U-Net)", "다중분광 영상 처리"],
+ "caveats_ko": ["전체 약 370GB", "성능값이 통계표(82.23%)와 성능지표표(80.12%)에서 다름", "설명서에는 라벨 유형이 키포인트로 적혀 있어 페이지(세그멘테이션)와 다름"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "배추·무 밭 구분", "title_en": "Cabbage vs radish field mapping", "desc_ko": "드론 사진에서 배추와 무 영역을 칠하는 분할 모델을 학습합니다.", "desc_en": "Train a segmentation model that marks cabbage and radish areas."},
+  {"level": "capstone", "title_ko": "재배 면적 자동 계산기", "title_en": "Automatic cultivated-area calculator", "desc_ko": "분할 결과로 작물별 재배 면적을 계산해 지도로 보여줍니다.", "desc_en": "Compute crop area from segmentation and show it on a map."},
+  {"level": "research", "title_ko": "분광 정보로 생산량 예측", "title_en": "Yield prediction from spectral data", "desc_ko": "다중분광 지수와 생산량 기록의 관계를 분석해 수확량을 예측합니다.", "desc_en": "Relate multispectral indices to yield records to predict harvest."}
+ ],
+ "doc_used": true,
+ "uncertain": ["생산량 데이터의 파일 형식과 이미지와의 연결 방식이 팩에 자세히 없음"]
+}

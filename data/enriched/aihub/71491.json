@@ -1,0 +1,33 @@
+{
+ "dataset_id": "71491",
+ "title_en": "Pixel-level scene understanding multimodal data",
+ "summary_ko": "악기·동물·스포츠·여행·음식 등 14개 분야의 짧은 영상 4,183개와 프레임 이미지 31만여 장에 물체 상자, 픽셀 단위 분할, 장면 질의응답(한글·영어)이 붙어 있습니다. 영상 속 물체 탐지·분할·추적과 영상 질의응답 AI에 쓸 수 있습니다.",
+ "summary_en": "4,183 short videos and about 314,000 frame images across 14 domains (instruments, animals, sports, travel, food, etc.) with object boxes, pixel-level segmentation and Korean/English scene Q&A. For object detection, segmentation, tracking and video question answering.",
+ "contents_ko": "영상(mp4) + 프레임 이미지(jpg) + 분할 마스크(png) + JSON(상자, 질의응답).",
+ "contents_en": "Video (mp4) + frames (jpg) + segmentation masks (png) + JSON (boxes, Q&A).",
+ "modalities": ["video", "image", "text"],
+ "tasks": ["object_detection", "segmentation", "object_tracking", "visual_qa"],
+ "topics": [{"ko": "영상 이해", "en": "Video understanding"}, {"ko": "멀티모달 AI", "en": "Multimodal AI"}],
+ "keywords_ko": ["픽셀 분할", "파놉틱 분할", "객체 추적", "영상 질의응답", "멀티모달", "장면 인식"],
+ "keywords_en": ["pixel segmentation", "panoptic segmentation", "object tracking", "video QA", "multimodal", "scene understanding"],
+ "labels": ["bounding box", "segmentation mask", "question-answer pair"],
+ "file_formats": ["mp4", "jpg", "png", "json"],
+ "scale_ko": "영상 4,183개, 이미지 314,489장, 도메인 14개",
+ "classes_example": ["instrument", "animal", "sports", "outdoor", "travel", "food", "furniture", "electronic"],
+ "baseline": [
+  {"task": "video question answering (Korean)", "model": "HCRN", "metric": "Accuracy", "value": "77.66%"},
+  {"task": "video question answering (English)", "model": "HCRN", "metric": "Accuracy", "value": "74.74%"},
+  {"task": "panoptic segmentation", "model": "Mask2Former", "metric": "PQ", "value": "71.58%"}
+ ],
+ "difficulty": "advanced",
+ "difficulty_note_ko": "분할·추적·질의응답이 섞인 멀티모달 데이터라 여러 모델을 다뤄야 합니다. 약 56GB입니다.",
+ "skills_needed_ko": ["파이썬", "분할 모델(Mask2Former)", "영상 처리", "멀티모달 모델"],
+ "caveats_ko": ["classes_example은 물체 클래스가 아니라 영상 도메인", "물체 클래스 목록이 팩 앞부분에 없음", "같은 기관의 71492·71495 영상 데이터셋과 연관"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "영상 프레임 물체 분할", "title_en": "Frame object segmentation", "desc_ko": "프레임 이미지에서 물체 영역을 칠하는 분할 모델을 학습합니다.", "desc_en": "Train segmentation on video frames."},
+  {"level": "capstone", "title_ko": "영상 질문 답변 데모", "title_en": "Video Q&A demo", "desc_ko": "짧은 영상을 올리고 한국어로 질문하면 답하는 웹 데모를 만듭니다.", "desc_en": "Build a web demo answering Korean questions about a clip."},
+  {"level": "research", "title_ko": "분할 기반 영상 추적", "title_en": "Segmentation-based tracking", "desc_ko": "픽셀 분할 결과로 물체를 프레임 간 추적하는 방법을 연구합니다.", "desc_en": "Track objects across frames using pixel masks."}
+ ],
+ "doc_used": true,
+ "uncertain": ["성능표에 '객체 탐지'로 적혀 있으나 지표 PQ는 파놉틱 분할 지표임"]
+}

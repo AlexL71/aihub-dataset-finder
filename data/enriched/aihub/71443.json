@@ -1,0 +1,29 @@
+{
+ "dataset_id": "71443",
+ "title_en": "Shipbuilding and offshore plant P&ID symbol data",
+ "summary_ko": "조선·해양플랜트 설계 도면(P&ID) 23,028장에 파이프·밸브·탱크·압축기 등 심볼 554,214개가 상자로 표시된 데이터입니다. 설계 도면에서 심볼을 자동으로 찾고 개수를 세는 AI에 쓸 수 있습니다.",
+ "summary_en": "23,028 shipbuilding and offshore plant design drawings (P&ID) with 554,214 symbols such as pipes, valves, tanks and compressors marked by boxes. For AI that finds and counts symbols in engineering drawings.",
+ "contents_ko": "P&ID 도면 이미지(png) + JSON(심볼 상자, 대분류·소분류).",
+ "contents_en": "P&ID drawing image (png) + JSON (symbol box, main and sub class).",
+ "modalities": ["image"],
+ "tasks": ["object_detection"],
+ "topics": [{"ko": "조선·플랜트 설계", "en": "Shipbuilding and plant design"}, {"ko": "제조", "en": "Manufacturing"}],
+ "keywords_ko": ["P&ID", "설계 도면", "심볼 인식", "밸브", "조선", "해양플랜트"],
+ "keywords_en": ["P&ID", "engineering drawings", "symbol recognition", "valves", "shipbuilding", "offshore plant"],
+ "labels": ["bounding box", "class"],
+ "file_formats": ["png", "json"],
+ "scale_ko": "도면 23,028장, 심볼 554,214개, 설계사 4곳",
+ "classes_example": ["Compressor", "Agitator", "Eye Washer", "Hose Reel"],
+ "baseline": [],
+ "difficulty": "intermediate",
+ "difficulty_note_ko": "도면 속 작은 심볼 탐지라 어렵지만 YOLO로 시작할 수 있습니다. 전체 약 71GB입니다.",
+ "skills_needed_ko": ["파이썬", "YOLO 탐지", "큰 이미지 타일 처리"],
+ "caveats_ko": ["심볼 종류별 수량 차이가 매우 큼", "설계사(V01~V04)마다 도면 스타일이 다름", "성능 지표가 팩에 없음"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "밸브 심볼 탐지", "title_en": "Valve symbol detection", "desc_ko": "도면에서 밸브 심볼을 찾아 상자로 표시합니다.", "desc_en": "Box valve symbols in drawings."},
+  {"level": "capstone", "title_ko": "도면 자재 목록 자동 작성", "title_en": "Automatic bill of materials", "desc_ko": "도면 속 심볼을 세어 종류별 수량표를 자동으로 만듭니다.", "desc_en": "Count symbols and build a quantity table per type."},
+  {"level": "research", "title_ko": "설계사 간 일반화", "title_en": "Cross-designer generalisation", "desc_ko": "한 설계사 도면으로 학습해 다른 설계사 도면에도 잘 맞는지 연구합니다.", "desc_en": "Train on one designer's drawings, test on another's."}
+ ],
+ "doc_used": true,
+ "uncertain": ["전체 심볼 소분류 수", "기준 성능 모델과 점수"]
+}

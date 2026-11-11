@@ -1,0 +1,12 @@
+{
+ "dataset_id": "577",
+ "easy_ko": "여러 신문사의 뉴스 기사를 읽고 답하는 질문과 정답을 붙인 데이터로, 기사에서 답을 그대로 찾는 질문, 생각해서 답하는 질문, 예/아니오 질문, 답이 없는 질문이 있습니다. 글을 읽고 질문에 답하는 AI를 만들 수 있습니다.",
+ "easy_en": "News articles from many newspapers with questions and answers attached: questions whose answer is in the text, questions that need reasoning, yes/no questions and questions with no answer. You can build AI that reads a text and answers questions about it.",
+ "detail_ko": "중앙일보 등 국내 종합일간지·지역신문 20종의 기사 지문 약 20만 개(txt)로 만든 질문-답변 약 40만 건(JSON: 질문, 답변, 답 위치, 질문 유형 4종: 추출형, 추론형, Yes/No 단문형, 응답불가형)입니다. 기준 성능은 ELECTRA 기계독해 F1 0.8464입니다. 기사 원문 저작권 때문에 사용 범위 확인이 필요합니다.",
+ "detail_en": "About 400k question–answer items built on about 200k article passages (txt) from 20 Korean national and regional newspapers including JoongAng Ilbo, with JSON question, answer, answer span and 4 question types (extractive, inferential, yes/no, unanswerable). Baseline: ELECTRA machine reading F1 0.8464. Article copyright limits use, so check the terms.",
+ "amount_ko": "질문-답 약 40만 건, 기사 약 20만 개",
+ "amount_en": "about 400k QA items, about 200k articles",
+ "labels_ko": "질문과 정답, 정답 위치, 질문 종류",
+ "labels_en": "questions and answers, answer span, question type",
+ "status": "full-run-2026-11-02"
+}

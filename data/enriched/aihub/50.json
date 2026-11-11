@@ -1,0 +1,29 @@
+{
+ "dataset_id": "50",
+ "title_en": "Plenoptic camera images for better AR/VR screen accuracy",
+ "summary_ko": "카메라 25대를 5×5로 묶은 플렌옵틱 카메라와 라이다로 도로·자연·실내 등 17곳 이상을 찍은 영상 데이터입니다. 같은 장면을 여러 시점에서 찍은 사진과 거리(깊이) 정보, 사람·건물·신호등 등 50종 이상 물체 표시가 있어 AR/VR, 3D 복원, 깊이 추정 연구에 쓸 수 있습니다.",
+ "summary_en": "Images from a 5×5 array of 25 synchronised cameras plus a lidar, recorded at 17+ places such as roads, nature and indoors. The same scene is seen from many viewpoints with depth from the lidar and boxes/outlines for 50+ object types, for AR/VR, 3D reconstruction and depth estimation research.",
+ "contents_ko": "한 장면 = 5×5 카메라 사진 25장(jpg) + 보정된 사진 + 깊이 값 이미지 + JSON/XML 라벨(상자, 다각형) + 촬영 장소·시간·카메라 보정 정보 txt.",
+ "contents_en": "One scene = 25 photos from the 5×5 camera array (jpg) + calibrated photos + depth images + JSON/XML labels (boxes, polygons) + txt with place, time and camera calibration.",
+ "modalities": ["image", "3d", "sensor"],
+ "tasks": ["depth_estimation", "3d_reconstruction", "object_detection", "segmentation"],
+ "topics": [{"ko": "가상·증강현실", "en": "Virtual and augmented reality"}, {"ko": "카메라·영상 기술", "en": "Camera and imaging technology"}, {"ko": "가상 전시", "en": "Virtual exhibitions"}],
+ "keywords_ko": ["플렌옵틱", "라이다", "깊이 이미지", "다시점", "카메라 보정", "AR", "VR", "재초점"],
+ "keywords_en": ["plenoptic", "lidar", "depth image", "multi-view", "camera calibration", "AR", "VR", "refocusing"],
+ "labels": ["bounding box", "polygon", "depth (lidar)", "camera calibration"],
+ "file_formats": ["jpg", "json", "xml", "txt"],
+ "scale_ko": "원천 약 500시간 분량, 학습 데이터 약 18만 건, 17곳 이상, 날씨·조명 조건 3가지 이상",
+ "classes_example": ["사람", "건물", "도로", "가로등", "신호등"],
+ "baseline": [{"task": "3D refocus accuracy (depth)", "model": "custom supervised / transfer model", "metric": "RMSE", "value": "940.33 mm"}],
+ "difficulty": "advanced",
+ "difficulty_note_ko": "다시점 카메라와 깊이 데이터를 다루는 전문 분야이고 전체 약 1.6TB라 연구 수준입니다.",
+ "skills_needed_ko": ["파이썬", "카메라 보정·다시점 기하학", "깊이 추정 모델"],
+ "caveats_ko": ["전체 약 1.6TB", "기준 모델 오차(RMSE 약 94cm)가 커서 성능 비교 기준으로 쓰기 어려움", "설명서 일부가 다른 과제(의류 3D) 문구를 그대로 씀"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "시점에 따른 사진 차이 시각화", "title_en": "Visualise differences between viewpoints", "desc_ko": "25장 사진을 나란히 놓고 시점에 따라 물체 위치가 어떻게 바뀌는지(시차) 보여줍니다.", "desc_en": "Show how object positions shift (parallax) across the 25 photos."},
+  {"level": "capstone", "title_ko": "사진 한 장으로 깊이 추정", "title_en": "Depth from a single photo", "desc_ko": "라이다 깊이를 정답으로 공개 깊이 추정 모델을 미세조정하고 장소별 오차를 비교합니다.", "desc_en": "Fine-tune an open depth model with lidar depth as ground truth and compare errors by place."},
+  {"level": "research", "title_ko": "다시점 사진으로 가상 전시 장면 만들기", "title_en": "Novel views for virtual exhibitions", "desc_ko": "NeRF·가우시안 스플래팅으로 새 시점 영상을 만들고 카메라 수를 줄였을 때 품질을 분석합니다.", "desc_en": "Render new viewpoints with NeRF or Gaussian splatting and study quality with fewer cameras."}
+ ],
+ "doc_used": true,
+ "uncertain": []
+}

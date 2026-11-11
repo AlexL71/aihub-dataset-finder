@@ -1,0 +1,29 @@
+{
+ "dataset_id": "475",
+ "title_en": "Dinosaur footprint fossil images",
+ "summary_ko": "카메라·드론으로 찍은 공룡발자국 화석 사진과 3D 가공 이미지 14만 장으로, 발자국 테두리와 수각류·조각류·용각류 유형, 발견 지형·지층·지질시대 정보가 들어 있습니다. 공룡발자국 탐지·분류나 지질문화재 관리 시스템에 쓸 수 있습니다.",
+ "summary_en": "140,000 camera, drone and 3D-processed images of dinosaur footprint fossils, with footprint outlines, type (theropod, ornithopod, sauropod) and metadata such as terrain, rock layer and geological period. For footprint detection and classification or geological-heritage management systems.",
+ "contents_ko": "발자국 사진(jpg) + JSON(발자국 테두리 다각형, 유형, 지형·지층·지질시대·고환경 정보).",
+ "contents_en": "Footprint photo (jpg) + JSON (outline polygon, type, terrain, strata, geological age, palaeo-environment).",
+ "modalities": ["image", "3d"],
+ "tasks": ["segmentation", "image_classification", "object_detection"],
+ "topics": [{"ko": "지질·자연유산", "en": "Geology and natural heritage"}, {"ko": "공룡·고생물", "en": "Dinosaurs and palaeontology"}, {"ko": "드론", "en": "Drones"}],
+ "keywords_ko": ["공룡발자국", "화석", "수각류", "용각류", "지질문화재", "드론"],
+ "keywords_en": ["dinosaur footprints", "fossils", "theropod", "sauropod", "geological heritage", "drone"],
+ "labels": ["polygon (footprint outline)", "class (3 types)", "geological metadata"],
+ "file_formats": ["jpg", "json"],
+ "scale_ko": "141,327건(카메라·드론·3D 가공 이미지, 수각류 약 3.7만 등)",
+ "classes_example": ["수각류", "조각류", "용각류"],
+ "baseline": [],
+ "difficulty": "intermediate",
+ "difficulty_note_ko": "클래스가 3개뿐이지만 발자국 경계가 흐려 분할이 쉽지 않습니다. 약 850GB입니다.",
+ "skills_needed_ko": ["파이썬", "분할 모델", "이미지 분류"],
+ "caveats_ko": ["전체 약 850GB", "성능 지표가 팩 앞부분에 없음"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "공룡발자국 유형 분류", "title_en": "Footprint type classifier", "desc_ko": "발자국 사진을 수각류·조각류·용각류로 분류합니다.", "desc_en": "Classify footprints as theropod, ornithopod or sauropod."},
+  {"level": "capstone", "title_ko": "드론 사진으로 발자국 찾기", "title_en": "Find footprints in drone images", "desc_ko": "드론 사진에서 발자국을 분할해 위치 지도를 만듭니다.", "desc_en": "Segment footprints in drone images and map their locations."},
+  {"level": "research", "title_ko": "3D 정보로 발자국 인식 개선", "title_en": "3D cues for footprint recognition", "desc_ko": "3D 가공 이미지(깊이)가 흐린 발자국 인식에 도움이 되는지 연구합니다.", "desc_en": "Study whether 3D depth helps recognise faint footprints."}
+ ],
+ "doc_used": true,
+ "uncertain": []
+}

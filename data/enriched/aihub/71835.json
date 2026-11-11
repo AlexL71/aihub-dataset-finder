@@ -1,0 +1,29 @@
+{
+ "dataset_id": "71835",
+ "title_en": "Non-contract legal document template data",
+ "summary_ko": "민사소장·형사고소장·행정소송소장·진정서 등 계약서가 아닌 법률 문서 서식 10,299건을 정리하고, 문서 종류와 각 항목의 형식·내용·위치를 약 28만 개 태그로 표시한 데이터입니다. 소장·고소장 같은 법률 문서를 자동으로 분석하거나 만들어 주는 AI에 쓸 수 있습니다.",
+ "summary_en": "10,299 non-contract legal templates (civil complaints, criminal complaints, administrative suits, petitions and more) with document categories and about 280,000 tags for each item's type, content and position. For AI that analyses or drafts legal filings.",
+ "contents_ko": "법률 문서 서식 원문(JSON) + 라벨(JSON: 문서 분류, 항목 형식·내용·위치 태그).",
+ "contents_en": "Legal template text (JSON) + labels (JSON: document category, item type/content/position tags).",
+ "modalities": ["text"],
+ "tasks": ["text_classification", "information_extraction", "text_generation"],
+ "topics": [{"ko": "법률", "en": "Law"}, {"ko": "소송 문서", "en": "Litigation documents"}],
+ "keywords_ko": ["소장", "고소장", "법률 문서", "서식", "문서 자동 생성", "리걸테크"],
+ "keywords_en": ["complaints", "criminal complaints", "legal documents", "templates", "document generation", "legal tech"],
+ "labels": ["document category", "item tag"],
+ "file_formats": ["json"],
+ "scale_ko": "법률 문서 10,299건, 라벨 284,445개",
+ "classes_example": ["민사소장", "진정서", "형사고소장", "형사고발장", "행정소송소장"],
+ "baseline": [],
+ "difficulty": "beginner",
+ "difficulty_note_ko": "약 0.04GB로 작아 노트북에서 바로 분류·추출 실습을 할 수 있습니다.",
+ "skills_needed_ko": ["파이썬", "Hugging Face", "한국어 BERT"],
+ "caveats_ko": ["일부 문서 종류는 수량이 매우 적음(예: 진정서 5건)", "모델 성능 수치가 팩에 없음", "71834 계약 법률 문서 데이터와 같은 구조"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "법률 문서 종류 분류", "title_en": "Legal filing type classifier", "desc_ko": "문서 본문으로 소장·고소장 등 종류를 분류합니다.", "desc_en": "Classify filings such as complaints by type."},
+  {"level": "capstone", "title_ko": "고소장 작성 도우미", "title_en": "Complaint drafting helper", "desc_ko": "사건 내용을 입력하면 서식에 맞춘 고소장 초안을 만듭니다.", "desc_en": "Draft a complaint in the right format from case facts."},
+  {"level": "research", "title_ko": "희소 문서 종류 생성", "title_en": "Generating rare document types", "desc_ko": "예시가 적은 문서 종류도 형식에 맞게 생성하는 방법을 연구합니다.", "desc_en": "Study generating well-formed rare document types."}
+ ],
+ "doc_used": true,
+ "uncertain": []
+}

@@ -1,0 +1,29 @@
+{
+ "dataset_id": "71671",
+ "title_en": "Generative AI live-streaming video Japanese interpretation and translation data",
+ "summary_ko": "일상·여행·게임·교육·라이브커머스 등 라이브 스트리밍 방송의 한국어↔일본어 음성과 전사·번역 문장을 모은 데이터(총 파일 3,872,416개)로, 신조어·은어·말투까지 반영합니다. 스트리밍 영상 일본어 자막, 대화체 음성 인식, 한일 통번역 AI에 쓸 수 있습니다.",
+ "summary_en": "Korean-Japanese speech, transcripts and translations from live-streaming shows (daily talk, travel, games, education, live commerce, etc.), 3,872,416 files in total, including slang and casual speech. For Japanese stream subtitles, conversational speech recognition and Korean-Japanese interpretation.",
+ "contents_ko": "방송 음성(wav) + JSON(전사, 번역, 분야).",
+ "contents_en": "Stream audio (wav) + JSON (transcript, translation, category).",
+ "modalities": ["audio", "text"],
+ "tasks": ["translation", "speech_recognition"],
+ "topics": [{"ko": "번역·통역", "en": "Translation and interpretation"}, {"ko": "라이브 스트리밍", "en": "Live streaming"}],
+ "keywords_ko": ["라이브 스트리밍", "통번역", "한일 번역", "자동 자막", "신조어", "대화체 음성"],
+ "keywords_en": ["live streaming", "interpretation", "Korean-Japanese translation", "auto subtitles", "slang", "conversational speech"],
+ "labels": ["transcript", "translation"],
+ "file_formats": ["wav", "json"],
+ "scale_ko": "총 파일 3,872,416개, 서브라벨링 1,996건",
+ "classes_example": ["일상,소통", "여행", "게임", "교육", "라이브커머스"],
+ "baseline": [],
+ "difficulty": "advanced",
+ "difficulty_note_ko": "번역 텍스트만 쓰면 중급이지만 음성까지 받으면 약 698GB로 매우 큽니다.",
+ "skills_needed_ko": ["파이썬", "트랜스포머 번역 모델", "음성 처리"],
+ "caveats_ko": ["전체 약 698GB", "개요의 구축목적에 '영어 통번역'으로 적혀 있어 복사 오기로 보임", "성능 지표 값이 팩에 없음", "영어(71668)·중국어(71670) 버전과 같은 구조"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "게임 방송 한일 번역", "title_en": "Game stream Korean-Japanese translation", "desc_ko": "게임 방송 대사로 한일 번역 모델을 미세조정합니다.", "desc_en": "Fine-tune a Korean-Japanese translator on game streams."},
+  {"level": "capstone", "title_ko": "일본어 실시간 자막", "title_en": "Real-time Japanese subtitles", "desc_ko": "한국어 방송 음성에 일본어 자막을 붙이는 도구를 만듭니다.", "desc_en": "Add Japanese subtitles to Korean streams."},
+  {"level": "research", "title_ko": "존댓말·반말 번역 일관성", "title_en": "Politeness-consistent translation", "desc_ko": "한일 번역에서 존댓말 수준을 맞추는 방법을 연구합니다.", "desc_en": "Keep politeness levels consistent in Korean-Japanese translation."}
+ ],
+ "doc_used": true,
+ "uncertain": ["총 음성 시간"]
+}

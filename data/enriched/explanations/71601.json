@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71601",
+ "easy_ko": "사람이 집에서 쓰는 물건을 손으로 잡고 다루는 모습을 여러 밝기의 조명 아래에서 찍은 사진 500만 건에 물건 위치, 잡는 지점, 손과 상체 관절 점을 표시한 데이터입니다. 로봇에게 사람의 손동작을 가르치는 AI에 쓸 수 있습니다.",
+ "easy_en": "5 million images of people grasping and handling household items under lighting at many brightness levels, marking each object's position, the grasp points, and hand and upper-body joints. You can use it to build AI that teaches robots how people move their hands.",
+ "detail_ko": "가정용 물품(파지 30품목, 조작 100품목)을 사람이 손으로 잡고 다루는 동작을 조명 10단계(0~9)로 찍은 이미지 5,000,000건(단계별 50만)에 물체 2D 상자, 파지 지점, 손 관절, 상체 관절, 조명 단계를 JSON으로 붙였습니다. 기준 성능은 ST-GCN 파지-조작 동작 분류 Top-5 정확도 95.87%, 파지 지점 탐지 mAP 75.6%이며, 일부 학습모델은 '알수없음'으로 적혀 있습니다. 전체 약 2TB이고, 이미지 형식이 'image'로만 적혀 있으며, 같은 동작을 조명만 바꿔 반복 촬영해 분할 시 주의해야 합니다.",
+ "detail_en": "5,000,000 images (500,000 per lighting level) of people grasping (30 items) and manipulating (100 items) household objects under 10 lighting levels (0 to 9), with JSON 2D object boxes, grasp points, hand keypoints, upper-body keypoints and lighting level. Baselines: grasp/manipulation action classification with ST-GCN, Top-5 accuracy 95.87%; graspable-point detection, mAP 75.6%; some models are listed as 'unknown'. Total size is about 2 TB, the image format is listed only as 'image', and the same actions were repeated with only the lighting changed, so split carefully.",
+ "amount_ko": "5,000,000건(조명 10단계), 파지 30품목, 조작 100품목",
+ "amount_en": "5,000,000 images (10 lighting levels), 30 grasp items, 100 manipulation items",
+ "labels_ko": "물건 위치 상자, 잡는 지점, 손·상체 관절 점, 조명 단계",
+ "labels_en": "2D bounding boxes, grasp points, hand keypoints, upper-body keypoints",
+ "status": "full-run-2026-11-02"
+}

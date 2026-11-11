@@ -1,0 +1,29 @@
+{
+ "dataset_id": "71916",
+ "title_en": "NEW household chemical product main ingredient health hazard data",
+ "summary_ko": "켐토피아 DB, 공공기관 누리집, 물질안전보건자료(MSDS), 해외 DB(ECHA, PubChem 등)에서 모은 생활화학제품 주성분 유해성 원천 데이터 10만 건과, 이를 바탕으로 만든 질의응답 20만 건입니다. 세정·세탁·코팅·접착·방향탈취·염색도색 제품 등으로 나뉘어 있어 생활화학제품 안전 정보 챗봇과 규제 대응 지원 AI에 쓸 수 있습니다.",
+ "summary_en": "100,000 source records on health hazards of main ingredients in household chemical products (from a chemical DB, public agency sites, safety data sheets (MSDS), and foreign DBs such as ECHA and PubChem) and 200,000 QA pairs built from them, grouped by product type (cleaning, laundry, coating, adhesive, air freshener, dye/paint and more). For chemical safety chatbots and regulatory support.",
+ "contents_ko": "원천 JSON(성분, 유해성, GHS 분류) + 질의응답 JSON.",
+ "contents_en": "Source JSON (ingredient, hazard, GHS class) + QA JSON.",
+ "modalities": ["text"],
+ "tasks": ["question_answering", "text_generation", "information_extraction"],
+ "topics": [{"ko": "화학물질 안전", "en": "Chemical safety"}, {"ko": "소비자 안전 정보", "en": "Consumer safety information"}],
+ "keywords_ko": ["생활화학제품", "유해성", "GHS 분류", "MSDS", "독성", "LLM"],
+ "keywords_en": ["household chemicals", "health hazard", "GHS classification", "MSDS", "toxicity", "LLM"],
+ "labels": ["question-answer"],
+ "file_formats": ["json"],
+ "scale_ko": "원천 100,000건, 질의응답 200,000건(원천 1건당 2쌍)",
+ "classes_example": ["세정제품", "세탁제품", "코팅제품", "접착·접합제품", "방향·탈취제품", "염색·도색제품", "자동차 전용 제품"],
+ "baseline": [],
+ "difficulty": "beginner",
+ "difficulty_note_ko": "약 1.3GB 텍스트로 가볍습니다. 질의응답·챗봇 실습에 좋습니다.",
+ "skills_needed_ko": ["파이썬", "Hugging Face 텍스트 모델", "검색 기반 생성(RAG) 기초"],
+ "caveats_ko": ["페이지에 성능 점수 표가 없음(안전 정보 생성·질의응답 임무 소개만 있음)", "자동차 전용 제품이 0.5%로 적음", "규제·독성 정보는 갱신될 수 있어 최신 출처 확인이 필요"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "제품 분류별 유해 성분 통계", "title_en": "Hazard stats by product type", "desc_ko": "제품 분류별로 유해 성분이 얼마나 자주 나오는지 분석합니다.", "desc_en": "Count hazardous ingredients by product type."},
+  {"level": "capstone", "title_ko": "생활화학제품 안전 챗봇", "title_en": "Household chemical safety chatbot", "desc_ko": "성분 이름을 물으면 유해성과 안전 사용법을 알려주는 챗봇을 만듭니다.", "desc_en": "Answer hazard and safe-use questions about ingredients."},
+  {"level": "research", "title_ko": "MSDS 자동 작성", "title_en": "Automatic MSDS drafting", "desc_ko": "성분 정보로 MSDS 초안을 자동 생성하는 방법을 연구합니다.", "desc_en": "Study generating MSDS drafts from ingredient data."}
+ ],
+ "doc_used": true,
+ "uncertain": []
+}

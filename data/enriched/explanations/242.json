@@ -1,0 +1,12 @@
+{
+ "dataset_id": "242",
+ "easy_ko": "한국 사람이 자주 먹는 음식 사진마다 음식 이름과 주재료, 칼로리 같은 건강 정보를 붙인 데이터입니다. 밥상 사진을 찍으면 무엇을 얼마나 먹었는지 알려 주는 식단 관리 앱을 만들 수 있습니다.",
+ "easy_en": "Photos of foods Koreans often eat, each labelled with the dish name, main ingredients and health information such as calories. You can build diet apps that tell you what you ate and how much from a photo of your meal.",
+ "detail_ko": "한국인이 자주 먹는 음식 약 500종의 이미지 300만 장(jpg)에 음식 코드·이름, 카테고리(밥·국·탕·찌개, 나물, 구이, 면·만두, 빵, 음료 등), 주재료, 칼로리 등 건강 정보, 바운딩박스를 JSON으로 붙였습니다. 기준 성능은 기록에서 확인되지 않습니다. 전체 약 840GB이며, 비슷한 한국 음식 데이터(74번)와 비교해 보면 좋습니다.",
+ "detail_en": "3M jpg images of about 500 foods commonly eaten in Korea, with JSON food code and name, category (rice, soups and stews, side dishes, grilled dishes, noodles and dumplings, bread, drinks and more), main ingredients, health info such as calories, and bounding boxes. No baseline is visible in the record. Total size is about 840 GB; compare with the similar Korean food dataset (74).",
+ "amount_ko": "음식 사진 300만 장, 음식 약 500종",
+ "amount_en": "3M food photos, about 500 dishes",
+ "labels_ko": "음식 이름·종류, 주재료·칼로리 등 건강 정보, 음식 위치 상자",
+ "labels_en": "dish name and category, health info (ingredients, calories), box around the food",
+ "status": "full-run-2026-11-02"
+}

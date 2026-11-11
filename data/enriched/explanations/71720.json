@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71720",
+ "easy_ko": "판결문, 결정문 같은 국내 법률 문서 3만여 건을 영어, 중국어, 힌디어, 베트남어, 러시아어로 번역해 짝지은 데이터입니다. 한국에 사는 외국인에게 법률 정보를 알려 주는 번역기에 쓸 수 있습니다.",
+ "easy_en": "Over 30,000 Korean legal documents such as court judgements and decisions, translated into English, Chinese, Hindi, Vietnamese and Russian. You can use it to build translators that give legal information to foreigners living in Korea.",
+ "detail_ko": "판결문·결정문·조서 등 국내 법률 문서 30,205건(csv; 한국어 421,019문장)을 언어 5종(영어, 중국어, 힌디어, 베트남어, 러시아어)으로 번역한 번역 라벨 151,025건(JSON; 총 2,105,095문장)과 서브라벨링 데이터 16,600건으로, 법률 분야는 9종(예: 민사)입니다. BLEU로 평가했다고 하나 수치는 팩에 없고, 법률 분야 9종 전체 이름은 확인이 필요합니다.",
+ "detail_en": "30,205 Korean legal documents (csv; 421,019 sentences) such as judgements, decisions and records, with 151,025 JSON translation labels (2,105,095 sentences in total) into 5 languages (English, Chinese, Hindi, Vietnamese, Russian) and 16,600 sub-labelled items, across 9 legal fields (such as civil law). BLEU was reportedly used but no value is in the pack, and the full names of the 9 fields need checking.",
+ "amount_ko": "원천 30,205건(421,019문장), 번역 151,025건(2,105,095문장), 언어 5종",
+ "amount_en": "30,205 source documents (421,019 sentences), 151,025 translations (2,105,095 sentences), 5 languages",
+ "labels_ko": "번역 문장",
+ "labels_en": "translation",
+ "status": "full-run-2026-11-02"
+}

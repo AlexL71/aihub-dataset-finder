@@ -1,0 +1,32 @@
+{
+ "dataset_id": "71308",
+ "title_en": "Common-sense sentence correction data",
+ "summary_ko": "표준국어대사전·우리말샘·한국어기초사전 예문에서 모은 일상 문장 약 51만 개와, 각 문장에서 뽑은 핵심 개념어 묶음(개념 집합)을 담은 데이터입니다. 주어진 단어들로 상식에 맞는 문장을 만들거나 고치는 AI(상식 추론)에 쓸 수 있습니다.",
+ "summary_en": "About 510,000 everyday sentences from dictionary examples (Standard Korean Dictionary, Urimalsaem, Basic Korean Dictionary), each with its set of key concept words. For AI that writes or corrects common-sense sentences from a given set of words (common-sense reasoning).",
+ "contents_ko": "문장(txt) + JSON(개념 집합, 형태소·품사 정보).",
+ "contents_en": "Sentences (txt) + JSON (concept set, morpheme and part-of-speech info).",
+ "modalities": ["text"],
+ "tasks": ["text_generation"],
+ "topics": [{"ko": "상식 추론", "en": "Commonsense reasoning"}, {"ko": "한국어 말뭉치", "en": "Korean language corpus"}],
+ "keywords_ko": ["상식 문장", "개념 집합", "문장 생성", "국어사전", "상식 추론"],
+ "keywords_en": ["common-sense sentences", "concept sets", "sentence generation", "Korean dictionary", "commonsense reasoning"],
+ "labels": ["concept set", "morpheme", "part of speech"],
+ "file_formats": ["txt", "json"],
+ "scale_ko": "문장 약 51만 개, 개념어 약 254만 개",
+ "classes_example": [],
+ "baseline": [
+  {"task": "common-sense sentence generation", "model": "seq2seq model", "metric": "ROUGE-L", "value": "72.57%"},
+  {"task": "common-sense sentence generation", "model": "seq2seq model", "metric": "concept coverage", "value": "0.85"}
+ ],
+ "difficulty": "beginner",
+ "difficulty_note_ko": "약 0.65GB로 작아 문장 생성 모델 실습에 좋습니다.",
+ "skills_needed_ko": ["파이썬", "Hugging Face", "생성 모델(KoBART·T5 등)"],
+ "caveats_ko": ["71309·71311번과 이어지는 3단계 연작의 첫 데이터", "사전 예문이라 문장이 짧고 정형적임"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "단어로 문장 만들기", "title_en": "Words-to-sentence generator", "desc_ko": "개념어 3~5개를 넣으면 자연스러운 문장을 만듭니다.", "desc_en": "Generate a natural sentence from 3-5 concept words."},
+  {"level": "capstone", "title_ko": "한국어 학습자 작문 도우미", "title_en": "Korean-learner writing helper", "desc_ko": "배운 단어로 예문을 만들어 주는 학습 앱을 만듭니다.", "desc_en": "A learning app that creates example sentences from studied words."},
+  {"level": "research", "title_ko": "상식 위반 문장 탐지", "title_en": "Detecting nonsense sentences", "desc_ko": "상식에 어긋나는 생성 문장을 찾아내는 방법을 연구합니다.", "desc_en": "Find generated sentences that break common sense."}
+ ],
+ "doc_used": true,
+ "uncertain": []
+}

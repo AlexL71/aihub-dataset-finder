@@ -1,0 +1,12 @@
+{
+ "dataset_id": "150",
+ "easy_ko": "비닐하우스에서 키우는 토마토와 장미가 건강한지, 병이나 벌레 피해를 입었는지 표시한 사진과, 농업에서 쓰는 용어를 정리한 사전을 함께 모은 데이터입니다. 작물 병 진단이나 귀농인에게 맞는 지원사업을 안내하는 챗봇을 만들 수 있습니다.",
+ "easy_en": "Photos of greenhouse tomatoes and roses marked as healthy or affected by disease or pests, together with a dictionary of farming terms. You can build crop-disease diagnosis tools or a chatbot that guides new farmers to the right support programmes.",
+ "detail_ko": "토마토·장미의 정상 및 병해충 감염 이미지 3만 장(jpg)과 농업경영체·지원사업·상담 사례에서 뽑은 농업 용어 1만 개 사전(표제어·관련어), 지원사업 정보로 구성됩니다(구축량 8.6만). 기준 성능 지표는 없습니다. 2018년 구축으로 지원사업 정보가 오래되었고, 전체 약 540GB입니다. 상세 설명 자료가 제한적입니다.",
+ "detail_en": "30k jpg images of healthy and pest- or disease-infected tomatoes and roses, a dictionary of 10k farming terms (headwords and related words) drawn from farm registries, support programmes and consultation cases, and programme info (86k built items). No baseline is published. Built in 2018, so programme info is outdated; total size about 540 GB. Documentation is limited.",
+ "amount_ko": "병해충 사진 3만 장, 농업 용어 1만 개",
+ "amount_en": "30k pest and disease photos, 10k farming terms",
+ "labels_ko": "건강·병해충 구분, 농업 용어 사전",
+ "labels_en": "healthy or pest/disease class, term dictionary",
+ "status": "full-run-2026-11-02"
+}

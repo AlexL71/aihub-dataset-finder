@@ -1,0 +1,33 @@
+{
+ "dataset_id": "71348",
+ "title_en": "Solar power status and site suitability analysis data",
+ "summary_ko": "항공·드론·SAR 위성 영상에서 건물·지상·수상에 설치된 태양광 패널 이미지 약 4.7만 장과, 패널을 새로 설치할 만한 건물 옥상 이미지 약 2.3만 장(옥상 시설물 표시)에 분할·상자를 붙이고 일사량·일조량·기온 같은 참조 데이터를 더한 데이터입니다. 태양광 설치 현황 파악과 설치 적지 분석 AI에 쓸 수 있습니다.",
+ "summary_en": "About 47,000 aerial, drone and SAR satellite images of solar panels installed on buildings, land and water, plus about 23,000 rooftop images for new installations (with rooftop objects marked), with segmentation and boxes and reference data such as solar radiation, sunshine hours and temperature. For AI that maps existing solar installations and finds suitable sites.",
+ "contents_ko": "항공·위성 영상(tif) + JSON(분할, 상자) + 기상 참조 데이터(csv).",
+ "contents_en": "Aerial and satellite images (tif) + JSON (segmentation, boxes) + weather reference data (csv).",
+ "modalities": ["image", "tabular"],
+ "tasks": ["segmentation", "object_detection", "tabular_prediction"],
+ "topics": [{"ko": "에너지·태양광", "en": "Energy and solar power"}, {"ko": "원격탐사", "en": "Remote sensing"}],
+ "keywords_ko": ["태양광 패널", "옥상", "적지 분석", "항공영상", "재생에너지"],
+ "keywords_en": ["solar panels", "rooftops", "site suitability", "aerial imagery", "renewable energy"],
+ "labels": ["segmentation", "bounding box", "rooftop objects"],
+ "file_formats": ["tif", "csv", "json"],
+ "scale_ko": "이미지 약 7.1만 장(패널 약 4.7만, 옥상 약 2.3만), 참조 데이터 약 4.2만 건",
+ "classes_example": ["태양광 패널", "건물 옥상"],
+ "baseline": [
+  {"task": "solar panel segmentation (aerial/drone)", "model": "Mask R-CNN", "metric": "Dice", "value": "0.8734"},
+  {"task": "suitable-area detection", "model": "Mask R-CNN", "metric": "Dice", "value": "0.6732"},
+  {"task": "solar panel detection (SAR)", "model": "YOLOv4", "metric": "F1", "value": "0.31"}
+ ],
+ "difficulty": "intermediate",
+ "difficulty_note_ko": "약 60GB이고 패널 분할은 쉽지만 SAR 위성 영상 탐지는 매우 어렵습니다.",
+ "skills_needed_ko": ["파이썬", "분할 모델", "GIS 기초"],
+ "caveats_ko": ["SAR 영상 탐지 성능(F1 0.31)이 매우 낮음", "적지 분석 성능도 높지 않음"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "태양광 패널 분할", "title_en": "Solar panel segmentation", "desc_ko": "항공사진에서 태양광 패널 영역을 칠합니다.", "desc_en": "Segment solar panels in aerial photos."},
+  {"level": "capstone", "title_ko": "우리 동네 태양광 지도", "title_en": "Neighbourhood solar map", "desc_ko": "설치된 패널과 설치 가능 옥상을 지도에 함께 보여줍니다.", "desc_en": "Map installed panels and suitable rooftops together."},
+  {"level": "research", "title_ko": "옥상 발전량 예측", "title_en": "Rooftop yield prediction", "desc_ko": "옥상 면적과 일사량으로 예상 발전량을 예측합니다.", "desc_en": "Predict solar output from rooftop area and radiation data."}
+ ],
+ "doc_used": true,
+ "uncertain": []
+}

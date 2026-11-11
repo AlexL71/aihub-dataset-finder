@@ -1,0 +1,12 @@
+{
+ "dataset_id": "110",
+ "easy_ko": "법, 판결문, 특허, 논문 요약, 국회 법안 같은 전문 문서의 문장마다 어떤 종류의 글인지, 그리고 그 안의 전문 용어가 어디에 있고 무슨 종류인지 표시한 데이터입니다. 법률이나 특허 문서에서 중요한 용어를 자동으로 뽑아내거나 문서를 찾아 주는 AI를 만들 수 있습니다.",
+ "easy_en": "Sentences from specialist documents such as laws, court rulings, patents, paper abstracts and parliamentary bills, each marked with the type of text and the position and kind of technical terms in it. You can build AI that pulls key terms out of legal or patent documents, or searches such documents.",
+ "detail_ko": "전문분야 말뭉치 150만 건(특허 83만, 법령·규칙 30만, 논문 초록 30만, 의안 7만)에 문장 분류와 개체명(유형·위치) 약 1,577만 개를 라벨링했습니다. 기준 성능은 BERT 분야 문장 분류 F1-score 0.93, 법령 개체 유형 인식 F1-score 0.99입니다. 성능 표에서 개체명 인식이 'Text Classification'으로 적혀 있고, 파일 형식(json)은 기록에서 확인되지 않은 추정입니다.",
+ "detail_en": "1.5M specialist-domain items (830k patents, 300k laws and rules, 300k paper abstracts, 70k bills) with sentence classes and about 15.77M named entities (type and position). Baselines: BERT domain sentence classification F1-score 0.93, entity-type recognition on laws F1-score 0.99. The performance table lists entity recognition as text classification, and the file format (json) is not confirmed.",
+ "amount_ko": "문장 150만 건, 전문 용어 표시 약 1,577만 개",
+ "amount_en": "1.5M items, about 15.77M term labels",
+ "labels_ko": "글 종류, 전문 용어 위치와 종류(개체명)",
+ "labels_en": "text type, technical terms with position and type (named entities)",
+ "status": "full-run-2026-11-02"
+}

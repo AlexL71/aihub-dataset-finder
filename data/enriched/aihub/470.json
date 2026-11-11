@@ -1,0 +1,29 @@
+{
+ "dataset_id": "470",
+ "title_en": "Welfare call-centre counselling data",
+ "summary_ko": "대학병원·광역이동지원센터·정신건강상담센터 3곳의 복지 상담 통화를 연기자가 재현한 음성 2,945시간(문장 227만 개)과 전사문입니다. 복지 지원 문의에 답하는 AI 상담 서비스나 상담 음성 인식에 쓸 수 있습니다.",
+ "summary_en": "2,945 hours of welfare counselling calls (2.28 million sentences) re-enacted by actors for 3 institutions (a university hospital, a mobility support centre, a mental-health counselling centre), with transcripts. For AI counselling services that answer welfare questions, or counselling speech recognition.",
+ "contents_ko": "문장 단위 음성(wav, 16kHz) + JSON(전사, 화자 성별·연령대, 기관·상담 주제).",
+ "contents_en": "Sentence-level audio (wav, 16 kHz) + JSON (transcript, speaker sex and age group, institution and topic).",
+ "modalities": ["audio", "text"],
+ "tasks": ["speech_recognition", "dialogue", "text_classification"],
+ "topics": [{"ko": "복지·사회 서비스", "en": "Welfare and social services"}, {"ko": "고객 서비스·콜센터", "en": "Customer service and call centres"}, {"ko": "정신 건강", "en": "Mental health"}],
+ "keywords_ko": ["복지 상담", "콜센터", "음성 인식", "정신건강", "이동지원", "AI 상담"],
+ "keywords_en": ["welfare counselling", "call centre", "speech recognition", "mental health", "mobility support", "AI counselling"],
+ "labels": ["transcript", "speaker attributes", "institution and topic"],
+ "file_formats": ["wav", "json"],
+ "scale_ko": "음성 2,945시간, 문장 2,276,065개(약 323GB 음성 + 20GB 라벨)",
+ "classes_example": ["대학병원", "광역이동지원센터", "정신건강상담센터"],
+ "baseline": [],
+ "difficulty": "intermediate",
+ "difficulty_note_ko": "음성 인식 미세조정이나 전사문 분석으로 시작할 수 있습니다. 약 210GB입니다.",
+ "skills_needed_ko": ["파이썬", "오디오 처리", "음성 인식·텍스트 분류"],
+ "caveats_ko": ["연기자가 재현한 상담이라 실제 통화와 다를 수 있음", "정신건강 상담 내용은 민감하므로 신중히 사용"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "상담 기관별 문의 유형 분석", "title_en": "Enquiry types by institution", "desc_ko": "전사문으로 기관별 자주 묻는 질문을 분석합니다.", "desc_en": "Analyse frequent questions per institution from transcripts."},
+  {"level": "capstone", "title_ko": "이동지원 예약 음성 봇", "title_en": "Mobility-support booking voice bot", "desc_ko": "음성으로 이동지원 차량 예약을 받는 상담 봇 프로토타입을 만듭니다.", "desc_en": "Prototype a voice bot that takes mobility-support bookings."},
+  {"level": "research", "title_ko": "상담 통화 감정·위기 신호 탐지", "title_en": "Detecting distress in calls", "desc_ko": "정신건강 상담에서 위기 신호를 찾는 텍스트·음성 특징을 연구합니다.", "desc_en": "Study text and voice cues of distress in mental-health calls."}
+ ],
+ "doc_used": true,
+ "uncertain": []
+}

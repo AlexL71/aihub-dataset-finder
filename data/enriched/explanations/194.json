@@ -1,0 +1,12 @@
+{
+ "dataset_id": "194",
+ "easy_ko": "자동차가 달리며 찍은 건물·랜드마크 사진과 레이저 거리 측정, 위치 측정 기록에 건물 벽, 차선, 횡단보도, 방음벽, 기둥, 표지판, 신호등을 표시하고 입체 정밀 지도도 함께 만든 데이터입니다. 높은 건물 사이나 터널처럼 위성 위치 신호가 약한 곳에서도 차가 자기 위치를 알아내는 AI를 만들 수 있습니다.",
+ "easy_en": "Photos of buildings and landmarks taken from a moving car, with laser scans and positioning records, marked with building faces, lanes, crosswalks, noise barriers, poles, signs and traffic lights, plus a detailed 3D map. You can build AI that lets a car know where it is even where satellite positioning is weak, such as among tall buildings or in tunnels.",
+ "detail_ko": "주행 중 수집한 이미지·영상·라이다·GNSS/INS 데이터 200만 건 이상(도로면 표지 78.2만, 세로 기둥 54.3만, 교통표지판 27만, 건물 18.2만, 신호등 15.3만 등)으로, JSON에 건물·도로면 폴리곤과 도로 객체 바운딩박스가 있고 시맨틱 포인트 클라우드 정밀지도(pcd)가 포함됩니다. 기준 성능은 기록에서 확인되지 않으며 파일 형식 일부는 추정입니다.",
+ "detail_en": "2M+ items of driving data (images, video, lidar, GNSS/INS): road-surface markings 782k, vertical poles 543k, traffic signs 270k, buildings 182k, traffic lights 153k and more, with JSON polygons for buildings and road surfaces, bounding boxes for road objects, and a semantic point-cloud HD map (pcd). No baseline is visible, and some file formats are assumed.",
+ "amount_ko": "데이터 200만 건 이상",
+ "amount_en": "2M+ items",
+ "labels_ko": "건물·도로면 윤곽, 도로 물체 위치 상자, 입체 정밀 지도",
+ "labels_en": "outlines of buildings and road surfaces, boxes around road objects, semantic 3D map",
+ "status": "full-run-2026-11-02"
+}

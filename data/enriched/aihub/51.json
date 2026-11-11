@@ -1,0 +1,33 @@
+{
+ "dataset_id": "51",
+ "title_en": "K-Fashion images",
+ "summary_ko": "한국 패션 사진 120만 장에 옷의 위치(상자·윤곽)와 상의·하의·아우터·원피스 종류, 색상·소재·핏·디테일 같은 186가지 속성, 스트리트·페미닌 등 23가지 스타일을 패션 전문가가 표시한 데이터입니다. 스타일 분류, 비슷한 옷 찾기, 패션 트렌드 분석에 쓸 수 있습니다.",
+ "summary_en": "1.2 million Korean fashion photos where fashion experts marked each garment (box and outline), its type (top, bottom, outer, dress), 186 attributes such as colour, material, fit and details, and one of 23 styles such as street or feminine. Useful for style classification, similar-item search and trend analysis.",
+ "contents_ko": "패션 사진 1장 + JSON(아우터·상의·하의·원피스별 상자와 다각형 좌표, 카테고리·기장·색상·소재·프린트·핏·디테일, 전체 스타일).",
+ "contents_en": "One fashion photo + JSON (box and polygon per outer, top, bottom or dress; category, length, colour, material, print, fit, details; overall style).",
+ "modalities": ["image"],
+ "tasks": ["object_detection", "segmentation", "image_classification", "retrieval_recommendation"],
+ "topics": [{"ko": "패션·의류", "en": "Fashion and clothing"}, {"ko": "트렌드·소비", "en": "Trends and consumers"}, {"ko": "온라인 쇼핑", "en": "Online shopping"}],
+ "keywords_ko": ["K-패션", "패션 스타일", "의류 속성", "코디 추천", "유사 상품 검색", "트렌드"],
+ "keywords_en": ["K-fashion", "fashion style", "clothing attributes", "outfit recommendation", "similar item search", "trend"],
+ "labels": ["bounding box", "polygon", "class", "attributes (colour, material, fit, details)", "style"],
+ "file_formats": ["jpg", "json"],
+ "scale_ko": "120만 건, 대분류 10개, 세부 속성 186개, 스타일 23개",
+ "classes_example": ["스트리트", "페미닌", "캐주얼", "모던", "레트로", "블라우스", "청바지", "코트", "패딩", "드레스"],
+ "baseline": [
+  {"task": "fashion item detection", "model": "Mask R-CNN", "metric": "AP@50", "value": "81.48%"},
+  {"task": "style classification", "model": "Global Convolution Network", "metric": "Recall top-3", "value": "91.11%"},
+  {"task": "matching item recommendation", "model": "Combined Global Descriptors", "metric": "HR@10", "value": "72.85%"}
+ ],
+ "difficulty": "beginner",
+ "difficulty_note_ko": "약 64GB로 중간 크기이고 라벨이 이해하기 쉬워 패션 분류 첫 프로젝트에 좋습니다. 속성이 많아 고급 과제로도 확장할 수 있습니다.",
+ "skills_needed_ko": ["파이썬 기초", "전이학습으로 이미지 분류", "JSON 라벨 읽기"],
+ "caveats_ko": ["사람이 나오는 사진이므로 이용 약관 확인 필요", "스타일 구분은 전문가 판단이라 클래스 경계가 모호할 수 있음"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "패션 스타일 분류기", "title_en": "Fashion style classifier", "desc_ko": "사진을 넣으면 스트리트·캐주얼·페미닌 등 스타일을 맞히는 모델을 만듭니다.", "desc_en": "A model that tells the style of an outfit photo."},
+  {"level": "capstone", "title_ko": "비슷한 옷 찾기 앱", "title_en": "Find-similar-clothes app", "desc_ko": "옷 영역을 잘라 임베딩으로 비슷한 상품을 검색하는 데모를 만듭니다.", "desc_en": "Crop garments and search similar items with image embeddings."},
+  {"level": "research", "title_ko": "한국형 패션 속성과 스타일의 관계", "title_en": "How attributes define Korean styles", "desc_ko": "색상·소재·핏 속성으로 스타일을 설명하는 모델을 만들고 어떤 속성이 스타일을 결정하는지 분석합니다.", "desc_en": "Explain styles from attributes and analyse which attributes matter most."}
+ ],
+ "doc_used": true,
+ "uncertain": []
+}

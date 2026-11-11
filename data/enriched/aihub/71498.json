@@ -1,0 +1,33 @@
+{
+ "dataset_id": "71498",
+ "title_en": "Korean–multilingual translation corpus (humanities)",
+ "summary_ko": "역사·정치·경제·철학·교육 분야 도서·논문·간행물에서 뽑은 한국어 문장 30만 1천여 건을 영어·중국어·일본어로 번역한 말뭉치입니다. 인문학 분야 다국어 기계번역 모델 학습에 쓸 수 있습니다.",
+ "summary_en": "About 301,000 Korean sentences from humanities books, papers and publications (history, politics, economics, philosophy, education) translated into English, Chinese and Japanese. For multilingual machine translation in the humanities.",
+ "contents_ko": "JSON(한국어 원문 + 영어·중국어·일본어 중 하나의 번역문, 분야 정보).",
+ "contents_en": "JSON (Korean source + English, Chinese or Japanese translation, field info).",
+ "modalities": ["text"],
+ "tasks": ["translation"],
+ "topics": [{"ko": "기계번역", "en": "Machine translation"}, {"ko": "인문·사회", "en": "Humanities and social science"}],
+ "keywords_ko": ["번역 말뭉치", "한영 번역", "한중 번역", "한일 번역", "인문학", "병렬 말뭉치"],
+ "keywords_en": ["translation corpus", "Korean-English", "Korean-Chinese", "Korean-Japanese", "humanities", "parallel corpus"],
+ "labels": ["translation pair", "field"],
+ "file_formats": ["json"],
+ "scale_ko": "301,181건 (영어 121,150, 중국어 90,014, 일본어 90,017)",
+ "classes_example": ["역사/고고학", "정치/행정", "경제/경영", "철학/종교", "교육"],
+ "baseline": [
+  {"task": "Korean-English translation", "model": "Transformer", "metric": "BLEU", "value": "0.3254"},
+  {"task": "Korean-Chinese translation", "model": "Transformer", "metric": "BLEU", "value": "0.4454"},
+  {"task": "Korean-Japanese translation", "model": "Transformer", "metric": "BLEU", "value": "0.6942"}
+ ],
+ "difficulty": "intermediate",
+ "difficulty_note_ko": "용량이 작아(약 50MB) 다루기 쉽지만 번역 모델 학습에는 GPU와 시간이 필요합니다.",
+ "skills_needed_ko": ["파이썬", "Transformer 번역 모델", "토큰화"],
+ "caveats_ko": ["설명서 소개에 '기초과학 중분류'로 적힌 문구가 남아 있음(복사 오류로 보임)", "같은 시리즈의 다른 분야 번역 말뭉치와 구조가 비슷함"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "인문학 용어 번역 사전", "title_en": "Humanities term glossary", "desc_ko": "병렬 문장에서 역사·철학 용어 짝을 뽑아 다국어 용어집을 만듭니다.", "desc_en": "Extract history and philosophy term pairs into a glossary."},
+  {"level": "capstone", "title_ko": "한국사 자료 다국어 번역기", "title_en": "Korean history multilingual translator", "desc_ko": "번역 모델을 미세조정해 한국 역사·문화 글을 외국어로 옮기는 도구를 만듭니다.", "desc_en": "Fine-tune a model to translate Korean history texts."},
+  {"level": "research", "title_ko": "분야별 번역 품질 비교", "title_en": "Translation quality by field", "desc_ko": "인문학 세부 분야별로 번역 점수가 어떻게 다른지 분석합니다.", "desc_en": "Compare translation scores across humanities subfields."}
+ ],
+ "doc_used": true,
+ "uncertain": []
+}

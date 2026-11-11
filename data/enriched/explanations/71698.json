@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71698",
+ "easy_ko": "여러 가지 소음 속에서 녹음한 지식 질문과 답 대화 목소리 약 2,000시간과, 위험한 소리를 알아채기 위한 주변 소리 약 500시간을 모은 데이터입니다. 시끄러운 곳에서도 말을 알아듣고 답하는 AI 스피커나 위험 소리 감지 AI에 쓸 수 있습니다.",
+ "easy_en": "About 2,000 hours of knowledge question-and-answer conversations recorded in many kinds of noise, plus about 500 hours of environmental sounds for detecting dangerous noises. You can use it to build AI speakers that understand and answer in noisy places, or AI that detects warning sounds.",
+ "detail_ko": "총 2,534.75시간(102,761건): 여러 소음 환경의 지식 질의응답 대화 음성 2,024.89시간(41,503건)과 이상소리 감지용 환경 소리 509.87시간(61,258건)(wav)에 전사와 주제 라벨(JSON, SRT; 경제및산업, 사회및제도, 문화및라이프, 게임및과학, 건강및의학, 언론및보도)을 붙였습니다. 전체 약 882GB이고, 환경 소리 클래스 목록과 성능 지표 값은 팩 앞부분에 없습니다. 샘플 라벨에 WER 0.24~0.25 같은 값이 보이나 공식 성능인지 불명확합니다.",
+ "detail_en": "2,534.75 hours in total (102,761 files, wav): 2,024.89 hours (41,503 files) of knowledge Q&A conversations in various noise conditions and 509.87 hours (61,258 files) of environmental sounds for abnormal-sound detection, with JSON/SRT transcripts and topic labels (economy and industry, society and institutions, culture and lifestyle, games and science, health and medicine, press and news). Total size is about 882 GB. The environmental sound classes and metric values are not in the pack; sample labels show values such as WER 0.24 to 0.25, but it is unclear whether these are official scores.",
+ "amount_ko": "총 2,534.75시간(102,761건): 대화 2,024.89시간, 환경 소리 509.87시간",
+ "amount_en": "2,534.75 hours (102,761 files): 2,024.89 hours of dialogue, 509.87 hours of environmental sound",
+ "labels_ko": "받아쓴 글, 주제",
+ "labels_en": "transcript, topic class",
+ "status": "full-run-2026-11-02"
+}

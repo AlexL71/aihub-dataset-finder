@@ -1,0 +1,29 @@
+{
+ "dataset_id": "71381",
+ "title_en": "CMF (colour, material, finish) identification data",
+ "summary_ko": "가구·가전·주방용품·화장품 등 17개 품목군 제품 1,263개를 찍은 이미지 189,450장으로, 금속 헤어라인·고광택 플라스틱·가죽·원목무늬 같은 소재·마감 느낌(CMF)과 광택·투명도·표면 거칠기가 표시되어 있습니다. 제품 사진으로 소재와 마감을 알아보는 AI, 디자이너용 소재 검색에 쓸 수 있습니다.",
+ "summary_en": "189,450 photos of 1,263 products in 17 groups (furniture, appliances, kitchenware, cosmetics, etc.) labelled with material/finish feel (CMF) such as brushed metal, glossy plastic, leather or wood grain, plus gloss, transparency and roughness. For recognising materials from product photos.",
+ "contents_ko": "제품 이미지(jpg, jpeg) + JSON(상자, CMF 소재·마감 분류, 광택도, 투명도, 표면조도, 실내외).",
+ "contents_en": "Product image (jpg, jpeg) + JSON (box, CMF material/finish class, gloss, transparency, surface roughness, indoor/outdoor).",
+ "modalities": ["image"],
+ "tasks": ["image_classification", "object_detection", "retrieval_recommendation"],
+ "topics": [{"ko": "제품 디자인", "en": "Product design"}, {"ko": "제조·소재", "en": "Manufacturing and materials"}],
+ "keywords_ko": ["CMF", "소재", "표면 마감", "제품 디자인", "광택", "이미지 분류"],
+ "keywords_en": ["CMF", "material", "surface finish", "product design", "gloss", "image classification"],
+ "labels": ["bounding box", "material/finish class", "gloss", "transparency", "surface roughness"],
+ "file_formats": ["jpg", "jpeg", "json"],
+ "scale_ko": "이미지 189,450장, 제품 1,263개(17개 품목군), CMF 표현 약 32종",
+ "classes_example": ["거울광택이 있는 금속느낌", "금속 헤어라인느낌", "고광택 플라스틱느낌", "투명느낌", "가죽느낌", "원목무늬느낌", "카본 패턴느낌"],
+ "baseline": [{"task": "CMF image classification", "model": "Swin Transformer", "metric": "Top-1 accuracy", "value": "75.86%"}, {"task": "CMF image classification", "model": "Swin Transformer", "metric": "Top-5 accuracy", "value": "97.21%"}],
+ "difficulty": "intermediate",
+ "difficulty_note_ko": "분류 실습에 좋지만 클래스 불균형이 크고(1~14%) 전체 약 715GB입니다. 일부 품목군만 받아 쓰세요.",
+ "skills_needed_ko": ["파이썬", "이미지 분류(CNN·Transformer)", "클래스 불균형 처리"],
+ "caveats_ko": ["전체 약 715GB", "CMF 클래스 간 비율 차이가 큼(약 1~14%)", "같은 제품을 여러 장 찍어 분할 시 같은 제품이 섞이지 않게 주의", "클래스 번호에 빠진 번호가 있음(10·20·27번)"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "광택 정도 분류", "title_en": "Gloss level classifier", "desc_ko": "제품 사진을 무광·반광·유광으로 분류합니다.", "desc_en": "Classify product photos as matte, semi-gloss or glossy."},
+  {"level": "capstone", "title_ko": "디자이너용 소재 검색", "title_en": "Material search for designers", "desc_ko": "사진을 올리면 비슷한 소재·마감의 제품을 찾아 주는 검색 서비스를 만듭니다.", "desc_en": "Upload a photo and find products with similar material and finish."},
+  {"level": "research", "title_ko": "세밀한 소재 구분", "title_en": "Fine-grained material recognition", "desc_ko": "헤어라인·샌딩처럼 비슷한 마감을 구분하는 세밀 분류 방법을 연구합니다.", "desc_en": "Study fine-grained classification of similar finishes such as brushed vs sanded."}
+ ],
+ "doc_used": true,
+ "uncertain": []
+}

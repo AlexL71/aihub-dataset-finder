@@ -1,0 +1,29 @@
+{
+ "dataset_id": "592",
+ "title_en": "Sports video data (combat sports: taekkyeon)",
+ "summary_ko": "전통무예 택견의 36가지 동작을 스튜디오에서 카메라 8대로 동시에 찍은 동작 클립 약 11.8만 개(이미지 약 1억 장)에 몸 관절 키포인트와 동작 이름을 붙인 데이터입니다. 동작을 분류하거나 따라 하는 동작이 얼마나 맞는지 평가하는 AI에 쓸 수 있습니다.",
+ "summary_en": "About 118,000 motion clips (about 100 million frames) of 36 taekkyeon (Korean traditional martial art) moves filmed by 8 cameras at once in a studio, with body keypoints and move names. For AI that classifies moves or scores how well a learner copies them.",
+ "contents_ko": "동작 영상(mp4)·프레임 이미지(jpg) + 키포인트 CSV + JSON(동작 정보).",
+ "contents_en": "Motion videos (mp4) and frames (jpg) + keypoint CSV + JSON (move information).",
+ "modalities": ["video", "image"],
+ "tasks": ["keypoint_pose", "action_recognition"],
+ "topics": [{"ko": "스포츠·무예", "en": "Sports and martial arts"}, {"ko": "동작 분석", "en": "Motion analysis"}],
+ "keywords_ko": ["택견", "전통무예", "동작 인식", "자세 추정", "멀티뷰", "비대면 교육"],
+ "keywords_en": ["taekkyeon", "traditional martial arts", "action recognition", "pose estimation", "multi-view", "remote training"],
+ "labels": ["keypoint", "action class"],
+ "file_formats": ["mp4", "jpg", "csv", "json"],
+ "scale_ko": "동작 클립 약 11.8만 개, 이미지 약 1억 장, 동작 36종, 약 900시간",
+ "classes_example": ["대분류 > 개별구", "대분류 > 동작구", "대분류 > 응용동작", "품밟기", "활개질", "딴죽", "차기", "손질", "홀새김", "연무동작"],
+ "baseline": [{"task": "taekkyeon move classification", "model": "PoseC3D", "metric": "top-1 accuracy", "value": "78.13%"}],
+ "difficulty": "advanced",
+ "difficulty_note_ko": "전체 약 11.8TB로 매우 큽니다. 키포인트 CSV만 받아 쓰는 것을 권합니다.",
+ "skills_needed_ko": ["파이썬", "자세 추정", "동작 인식(PoseC3D 등)"],
+ "caveats_ko": ["전체 약 11.8TB", "시연자 얼굴이 보일 수 있음", "36개 세부 동작 이름 전체는 팩에 없음(동작 종류만 확인)"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "키포인트로 동작 분류", "title_en": "Keypoint-based move classifier", "desc_ko": "키포인트 CSV만으로 택견 동작을 분류합니다.", "desc_en": "Classify taekkyeon moves from keypoint CSV only."},
+  {"level": "capstone", "title_ko": "택견 자세 코칭 앱", "title_en": "Taekkyeon pose coach", "desc_ko": "웹캠 자세를 전문가 동작과 비교해 일치도 점수를 보여줍니다.", "desc_en": "Compare webcam pose with an expert move and show a match score."},
+  {"level": "research", "title_ko": "멀티뷰 3D 자세 복원", "title_en": "Multi-view 3D pose", "desc_ko": "카메라 8대 영상으로 3D 관절 위치를 복원하는 방법을 연구합니다.", "desc_en": "Reconstruct 3D joints from 8 camera views."}
+ ],
+ "doc_used": true,
+ "uncertain": ["full names of all 36 moves (only move groups found)"]
+}

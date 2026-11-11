@@ -1,0 +1,12 @@
+{
+ "dataset_id": "489",
+ "easy_ko": "부산의 시장, 번화가, 야구장 주변, 지하철역, 버스 터미널 같은 곳의 CCTV 영상에 지나가는 사람 위치와 옷차림을 표시하고 얼굴은 가린 데이터입니다. 시간과 장소별로 사람이 얼마나 다니는지 분석해 버스 노선이나 상권 정책을 세우는 AI를 만들 수 있습니다.",
+ "easy_en": "CCTV-style video of busy places in Busan, such as a market, a downtown area, the area around a baseball stadium, a subway station and a bus terminal, with each passer-by's position and clothing marked and faces blurred. You can build AI that analyses how many people pass by at each time and place, to plan bus routes or business policy.",
+ "detail_ko": "부산 상권 7곳(자갈치시장, 서면, 사직구장 주변, 동래역, 사상 시외버스 터미널 등)과 시간대 5개의 CCTV 화각 영상 330시간(3분 클립 6,600개, mp4)에 사람 바운딩박스·분할, 인상착의 속성, 장소·시간대를 JSON으로 붙였으며 얼굴은 비식별 처리되었습니다. 기준 성능은 기록에서 확인되지 않습니다. 실제 거리 영상이라 이용 약관·개인정보 확인이 필요합니다.",
+ "detail_en": "330 hours (6,600 three-minute clips, mp4) of CCTV-angle video at 7 Busan commercial areas (Jagalchi Market, Seomyeon, around Sajik Stadium, Dongnae Station, Sasang bus terminal and more) across 5 time slots, with JSON person boxes and masks, appearance attributes, and place and time; faces are de-identified. No baseline is visible in the record. These are real streets, so check terms and privacy.",
+ "amount_ko": "영상 330시간(클립 6,600개), 장소 7곳",
+ "amount_en": "330 hours of video (6,600 clips), 7 places",
+ "labels_ko": "사람 위치 상자·영역, 옷차림 같은 겉모습, 장소·시간대",
+ "labels_en": "boxes and masks around people, appearance attributes, place and time slot",
+ "status": "full-run-2026-11-02"
+}

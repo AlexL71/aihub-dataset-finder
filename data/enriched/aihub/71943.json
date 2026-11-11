@@ -1,0 +1,29 @@
+{
+ "dataset_id": "71943",
+ "title_en": "Living facility safety data from natural disasters (upcycling)",
+ "summary_ko": "2022년 AI Hub 자연재해 생활시설 안전 데이터를 다시 가공해, 이미지 20,000건에 피해 상황 질의응답(Q&A)과 사고과정(CoT, 답에 이르는 추론 단계) 라벨을 붙인 데이터입니다. 정상 상태 이미지 57.7%, 재해 피해 이미지 42.3%로 구성되며, 재난·산업안전 챗봇에 쓸 수 있습니다.",
+ "summary_en": "20,000 images re-processed from AI Hub's 2022 natural-disaster living-facility safety data, with damage-situation Q&A and chain-of-thought (step-by-step reasoning) labels. 57.7% normal-state and 42.3% disaster-damage images. For disaster and industrial-safety chatbots.",
+ "contents_ko": "이미지(jpg) + JSON(질의응답·사고과정).",
+ "contents_en": "Images (jpg) + JSON (Q&A, chain of thought).",
+ "modalities": ["image", "text"],
+ "tasks": ["visual_qa", "question_answering"],
+ "topics": [{"ko": "재난·안전", "en": "Disaster and safety"}, {"ko": "멀티모달 AI", "en": "Multimodal AI"}],
+ "keywords_ko": ["자연재해", "생활시설", "피해 판단", "질의응답", "사고과정", "업사이클링"],
+ "keywords_en": ["natural disasters", "living facilities", "damage assessment", "Q&A", "chain of thought", "upcycling"],
+ "labels": ["question-answer", "chain of thought"],
+ "file_formats": ["jpg", "json"],
+ "scale_ko": "20,000건(정상 57.7%, 재해 피해 42.3%)",
+ "classes_example": ["정상 상태", "재해 피해"],
+ "baseline": [],
+ "difficulty": "intermediate",
+ "difficulty_note_ko": "약 9GB이며, 비전-언어 모델로 추론형 질의응답을 학습하는 실습에 좋습니다.",
+ "skills_needed_ko": ["파이썬", "멀티모달 모델", "트랜스포머"],
+ "caveats_ko": ["기존 AI Hub 데이터를 재가공한 것이라 원본 데이터와 겹칠 수 있음", "재해 종류 목록과 성능 지표가 팩 앞부분에 없음"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "피해 여부 분류", "title_en": "Damage vs normal classifier", "desc_ko": "시설 이미지가 정상인지 피해 상태인지 분류합니다.", "desc_en": "Classify facility images as normal or damaged."},
+  {"level": "capstone", "title_ko": "재난 현장 질의응답 챗봇", "title_en": "Disaster site Q&A bot", "desc_ko": "현장 사진을 올리면 피해 상황을 설명해 주는 챗봇을 만듭니다.", "desc_en": "Chatbot that explains damage from site photos."},
+  {"level": "research", "title_ko": "사고과정 학습 효과", "title_en": "Effect of CoT training", "desc_ko": "사고과정 라벨이 소형 멀티모달 모델의 정확도에 주는 효과를 연구합니다.", "desc_en": "Measure how CoT labels help small multimodal models."}
+ ],
+ "doc_used": true,
+ "uncertain": ["재해 종류 목록"]
+}

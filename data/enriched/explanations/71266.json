@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71266",
+ "easy_ko": "인공지능, 빅데이터, IT, 경제, 정치, 북한, 의료, 기후 같은 학술 분야의 한국어→영어 번역 문장을 짝지은 데이터입니다. 학술 논문이나 기술 문서를 전문적으로 번역하는 번역기를 만들 수 있습니다.",
+ "easy_en": "Sentence pairs translated between Korean and English (Korean to English only) in fields such as AI, big data, IT, economics, politics, North Korea, medicine and climate research. You can build translators for academic papers and technical documents.",
+ "detail_ko": "한국어→영어 번역 문장 쌍 150만 개(txt, JSON: 원문, 번역, 분야)입니다. 기준 성능은 OpenNMT BLEU 한→영 0.7325입니다. BLEU 값이 0~1 단위로 적혀 있으며, 한→영 한 방향만 있습니다(세부 분야 15종, 학술지 문장).",
+ "detail_en": "1.5M sentence pairs between Korean and English (Korean to English only) (txt and JSON: source, translation, field). Baselines: OpenNMT BLEU 0.7325 (ko→en). BLEU is given on a 0–1 scale; only the Korean-to-English direction is provided (15 sub-fields, journal sentences).",
+ "amount_ko": "번역 문장 쌍 150만 개",
+ "amount_en": "1.5M sentence pairs",
+ "labels_ko": "번역 문장 짝, 학술 분야",
+ "labels_en": "sentence pairs, academic field",
+ "status": "full-run-2026-11-02"
+}

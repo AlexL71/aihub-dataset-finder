@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71562",
+ "easy_ko": "영화, 드라마, 소설, 만화 등 약 4,000편의 줄거리를 작은 이야기 조각으로 나누고, 장르, 주제, 인물, 감정, 장소 같은 이야기 요소를 표시한 글 데이터입니다. 작가에게 다음 이야기를 추천하거나 이야기를 자동으로 만들어 주는 AI에 쓸 수 있습니다.",
+ "easy_en": "Text data that splits the plots of about 4,000 films, dramas, novels and comics into small story units, marking story elements such as genre, theme, characters, emotions and places. You can use it to build AI that suggests what happens next to writers or generates stories automatically.",
+ "detail_ko": "영화·드라마·소설·만화 등 작품 3,953편의 줄거리를 스토리 유닛 100,077건으로 나누고 장르(예: SF, 공포, 드라마, 멜로/로맨스, 미스터리, 스릴러, 액션, 전쟁, 코미디, 판타지)·주제·설정·모티프·인물·서사단계·감정·장소를 표시했으며, 스크립트 분석 1,376,589건(지문 873,462 + 대사 503,127)이 JSON으로 있습니다. 기준 성능은 ScriptWriter-CPre 다음 스토리 유닛 선택 R10@1 0.7, R2@1 0.93입니다. 원작 줄거리를 재창작한 텍스트라 원작 전문은 없고, 모티프 전체 목록은 팩 앞부분에 없습니다.",
+ "detail_en": "Plots of 3,953 works (films, dramas, novels, comics and more) split into 100,077 story units, tagged with genre (such as SF, horror, drama, romance, mystery, thriller, action, war, comedy, fantasy), theme, setting, motif, characters, narrative stage, emotion and place, plus 1,376,589 script-analysis items (873,462 stage directions + 503,127 dialogue lines), in JSON. Baselines: next-story-unit selection with ScriptWriter-CPre, R10@1 0.7 and R2@1 0.93. The texts are rewritten plot summaries, so the original works' full texts are not included, and the full motif list is not in the pack.",
+ "amount_ko": "작품 3,953편, 스토리 유닛 100,077건, 스크립트 분석 1,376,589건",
+ "amount_en": "3,953 works, 100,077 story units, 1,376,589 script-analysis items",
+ "labels_ko": "줄거리, 이야기 조각 표시, 장르·모티프·감정·서사 단계",
+ "labels_en": "summaries, sequence labels, tags (genre, motif, emotion, narrative stage)",
+ "status": "full-run-2026-11-02"
+}

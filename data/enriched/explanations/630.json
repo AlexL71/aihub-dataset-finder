@@ -1,0 +1,12 @@
+{
+ "dataset_id": "630",
+ "easy_ko": "맑은 날뿐 아니라 폭설, 폭우, 안개, 젖은 길 반사 같은 나쁜 날씨에 달리며 카메라와 레이저 거리 측정 장비로 모은 데이터에, 차와 사람 같은 물체 위치와 날씨를 표시한 데이터입니다. 날씨가 나빠도 주변을 잘 알아보는 자율주행 AI를 만들 수 있습니다.",
+ "easy_en": "Driving data from cameras and laser scanners collected not only in clear weather but also in heavy snow, heavy rain, fog and wet-road glare, with vehicles, people and other objects marked and the weather recorded. You can build self-driving AI that sees well even in bad weather.",
+ "detail_ko": "악천후를 포함한 주행 중 수집한 카메라 이미지 36만 장과 라이다 36만 프레임, 센서 정보(txt)에 2D 폴리곤, 3D 큐보이드(승용차, 버스, 트럭, 보행자, 자전거, 오토바이, 킥보드, 볼라드, 라바콘, 횡단보도 표지, 속도제한 차선 등), 날씨(Normal, Hazy, Rainy, Snowy)를 JSON으로 붙였습니다. 기준 성능은 Voxel R-CNN 3D 탐지 mAP 75.54%, Mask R-CNN 분할 mIoU 맑음 68.39%·비 58.01%입니다. 이미지·포인트클라우드 파일 형식이 기록에 txt로만 적혀 있으며, 629번 융합 센서 데이터와 같은 구축 기관입니다.",
+ "detail_en": "360k camera images and 360k lidar frames collected while driving in various weather including severe conditions, with sensor info (txt) and JSON 2D polygons, 3D cuboids (car, bus, truck, pedestrian, bicycle, motorcycle, kick scooter, bollard, traffic cone, crosswalk sign, speed-limit lane and more) and weather (normal, hazy, rainy, snowy). Baselines: Voxel R-CNN 3D detection mAP 75.54%, Mask R-CNN segmentation mIoU 68.39% (clear) and 58.01% (rain). File formats are listed only as txt; built by the same organisation as dataset 629.",
+ "amount_ko": "카메라 사진 36만 장, 레이저 점 데이터 36만 프레임",
+ "amount_en": "360k camera images, 360k lidar frames",
+ "labels_ko": "물체 테두리, 입체 상자, 물체 종류, 날씨",
+ "labels_en": "polygons, 3D cuboids, object class, weather",
+ "status": "full-run-2026-11-02"
+}

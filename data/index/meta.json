@@ -1,0 +1,8 @@
+{
+ "model": "gemini-embedding-001",
+ "output_dim": 768,
+ "cards": 867,
+ "chunks": 12576,
+ "n_datasets": 867,
+ "built": "2026-11-01T04:40:25"
+}

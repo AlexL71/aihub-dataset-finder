@@ -1,0 +1,29 @@
+{
+ "dataset_id": "170",
+ "title_en": "Emergency speech and sound",
+ "summary_ko": "강도·폭력·화재·가스·전기 사고·갇힘·응급의료·지진·태풍·낙상·붕괴·도움 요청 등 16종 위급상황의 음성과 소리 3,559시간입니다. 소리만으로 위급상황을 알아채 취약계층을 돕는 돌봄·안전 AI에 쓸 수 있습니다.",
+ "summary_en": "3,559 hours of speech and sound for 16 emergency situations, including robbery, assault, fire, gas and electrical accidents, being trapped, medical emergencies, earthquakes, typhoons, falls, collapses and calls for help. For care and safety AI that recognises emergencies from sound to help vulnerable people.",
+ "contents_ko": "음성/음향 파일(wav, 16bit 44.1kHz) + JSON(상황 대분류·중분류, 전사, 구간 정보).",
+ "contents_en": "Audio file (wav, 16-bit 44.1 kHz) + JSON (situation category and sub-category, transcript, segment info).",
+ "modalities": ["audio", "text"],
+ "tasks": ["audio_classification", "speech_recognition", "anomaly_detection"],
+ "topics": [{"ko": "재난·안전", "en": "Disaster and safety"}, {"ko": "범죄 예방", "en": "Crime prevention"}, {"ko": "돌봄·취약계층", "en": "Care and vulnerable groups"}],
+ "keywords_ko": ["위급상황", "비명", "화재", "도움 요청", "소리 분류", "안전 돌봄"],
+ "keywords_en": ["emergency", "scream", "fire", "call for help", "sound classification", "safety care"],
+ "labels": ["class (16 situations)", "transcript", "time segment"],
+ "file_formats": ["wav", "json"],
+ "scale_ko": "3,559시간(화재 458h, 응급의료 452h, 실내 정상 510h, 도움요청 305h, 태풍 303h 등)",
+ "classes_example": ["강도범죄", "폭력범죄", "화재", "가스사고", "응급의료", "지진", "낙상", "도움요청"],
+ "baseline": [{"task": "emergency recognition", "model": "CapsuleNet", "metric": "F1-score", "value": "0.98"}],
+ "difficulty": "intermediate",
+ "difficulty_note_ko": "소리 분류는 스펙트로그램+CNN으로 실습할 수 있지만 전체 약 508GB입니다.",
+ "skills_needed_ko": ["파이썬", "오디오 특징 추출(librosa)", "소리 분류 모델"],
+ "caveats_ko": ["일부 소리는 원음을 합성해 만든 데이터", "실제 사고 소리와 차이가 있을 수 있음"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "위급 vs 정상 소리 분류", "title_en": "Emergency vs normal sound", "desc_ko": "위급 소리와 일상 소리를 구분하는 분류 모델을 만듭니다.", "desc_en": "Build a classifier separating emergency and everyday sounds."},
+  {"level": "capstone", "title_ko": "혼자 사는 어르신 소리 알림", "title_en": "Sound alerts for seniors living alone", "desc_ko": "집 안 소리에서 낙상·도움 요청을 감지해 보호자에게 알리는 데모를 만듭니다.", "desc_en": "Detect falls and calls for help from home audio and alert caregivers."},
+  {"level": "research", "title_ko": "합성 데이터와 실제 소리의 차이", "title_en": "Synthetic vs real emergency sounds", "desc_ko": "합성으로 만든 위급 소리로 학습한 모델이 실제 녹음에서 얼마나 통하는지 연구합니다.", "desc_en": "Study how models trained on synthetic sounds perform on real recordings."}
+ ],
+ "doc_used": true,
+ "uncertain": []
+}

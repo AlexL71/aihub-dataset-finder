@@ -1,0 +1,29 @@
+{
+ "dataset_id": "71531",
+ "title_en": "Patent data mapped to the national science and technology standard classification",
+ "summary_ko": "한국 공개·등록 특허 30만여 건을 국가과학기술표준분류(17개 대분류·188개 중분류)에 맞춰 분류하고, 중점과학기술분류(11개)와 6T 분류(6개)도 함께 붙인 데이터입니다. 특허 같은 기술 문서를 국가 분류 체계로 자동 분류하는 AI에 쓸 수 있습니다.",
+ "summary_en": "About 300,000 Korean published/registered patents labelled with the national science and technology standard classification (17 major, 188 mid categories), plus key-technology (11) and 6T (6) classes. For AI that automatically classifies technical documents into national categories.",
+ "contents_ko": "특허 텍스트(txt) + JSON(과학기술표준분류, 중점과학기술분류, 6T 분류).",
+ "contents_en": "Patent text (txt) + JSON (standard classification, key-technology and 6T classes).",
+ "modalities": ["text"],
+ "tasks": ["text_classification"],
+ "topics": [{"ko": "특허·지식재산", "en": "Patents and IP"}, {"ko": "연구개발 정책", "en": "R&D policy"}],
+ "keywords_ko": ["특허", "과학기술표준분류", "6T 분류", "문서 분류", "기술문서", "R&D"],
+ "keywords_en": ["patents", "science and technology standard classification", "6T classification", "document classification", "technical documents", "R&D"],
+ "labels": ["standard classification", "key-technology class", "6T class"],
+ "file_formats": ["txt", "json"],
+ "scale_ko": "특허 300,240건, 과학기술표준분류 중분류 188개",
+ "classes_example": ["과학기술표준분류 17개 대분류 / 188개 중분류", "기계 > 측정표준/시험평가기술", "기계 > 생산기반기술", "기계 > 로봇/자동화기계", "기계 > 나노/마이크로기계시스템", "재료", "화공", "전기/전자", "정보통신", "에너지/자원", "중점과학기술분류 11개", "6T 분류 6개"],
+ "baseline": [],
+ "difficulty": "intermediate",
+ "difficulty_note_ko": "용량이 작지만(약 0.4GB) 188개 클래스 분류라 클래스 불균형을 다뤄야 합니다.",
+ "skills_needed_ko": ["파이썬", "텍스트 분류(KoBERT)", "다중 클래스 평가"],
+ "caveats_ko": ["성능 지표 수치가 팩에서 확인되지 않음(모델은 KoBERT, 지표는 F1)", "중분류별 수량 분포가 팩 앞부분에서 잘림"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "6T 분야 분류", "title_en": "6T field classification", "desc_ko": "특허 초록을 6T 분야 6개 중 하나로 분류합니다.", "desc_en": "Classify patent abstracts into the six 6T fields."},
+  {"level": "capstone", "title_ko": "특허 자동 분류 도구", "title_en": "Patent auto-classifier", "desc_ko": "특허 글을 넣으면 과학기술표준분류를 추천하는 웹 도구를 만듭니다.", "desc_en": "Recommend standard classes for input patent text."},
+  {"level": "research", "title_ko": "계층 분류 방법 비교", "title_en": "Hierarchical classification comparison", "desc_ko": "대분류→중분류 단계 분류와 바로 188개 분류의 성능을 비교합니다.", "desc_en": "Compare two-step vs flat 188-class classification."}
+ ],
+ "doc_used": true,
+ "uncertain": []
+}

@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71572",
+ "easy_ko": "안양과 부천 교차로의 CCTV 사진 약 115만 장과 차량이 얼마나 지나가는지, 신호가 어떻게 바뀌는지, 도로가 어떻게 이어지는지를 담은 데이터입니다. 시행착오로 배우는 AI로 신호를 조절해 막힘을 줄이거나 이동 시간을 예측하는 연구에 쓸 수 있습니다.",
+ "easy_en": "About 1.15 million CCTV images from intersections in Anyang and Bucheon, with traffic counts, signal timings and road network data. You can use it for research on AI that learns by trial and error to time traffic lights and cut congestion, or to predict travel times.",
+ "detail_ko": "안양시·부천시 교차로 CCTV 영상 이미지 1,152,305장(jpg)과 교통량 데이터(개별 차량·출발지-도착지·회전 교통량, 각 68,640개), 신호, 교통 지표, 도로 네트워크(CSV/XML), 영상 라벨 3,840개(차종: car, bus, small_truck, large_truck, bike, unknown)로 총 1,804,194개입니다. 페이지는 약 5.04TB, 파일 트리는 약 1TB로 크기가 다르고, 가장 작은 파일도 약 37GB라 일부만 받기 어렵습니다. 영상 라벨이 3,840개뿐이고 팩에 성능 지표가 없습니다.",
+ "detail_en": "1,804,194 items in total: 1,152,305 intersection CCTV images (jpg) from Anyang and Bucheon, traffic-volume data (individual vehicles, origin-destination and turning volumes, 68,640 files each), signal, traffic-indicator and road-network data (CSV/XML), and 3,840 image labels (vehicle types: car, bus, small truck, large truck, bike, unknown). The page says about 5.04 TB while the file tree shows about 1 TB, and even the smallest file is about 37 GB, so partial downloads are hard. There are only 3,840 image labels and no metrics in the pack.",
+ "amount_ko": "총 1,804,194개(영상 이미지 1,152,305장, 영상 라벨 3,840개)",
+ "amount_en": "1,804,194 items (1,152,305 CCTV images, 3,840 image labels)",
+ "labels_ko": "교통량, 신호 시간, 교통 지표, 영상 속 차종",
+ "labels_en": "traffic volume, signal timing, traffic indicators, image labels",
+ "status": "full-run-2026-11-02"
+}

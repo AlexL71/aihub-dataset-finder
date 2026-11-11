@@ -1,0 +1,12 @@
+{
+ "dataset_id": "569",
+ "easy_ko": "정부와 공공기관의 보도자료 같은 행정 문서 글에 질문과 정답을 붙인 데이터로, 글에서 답 찾기, 절차 묻기, 표에서 답 찾기, 예/아니오, 객관식, 답이 없는 질문까지 여러 종류가 있습니다. 행정 안내 챗봇이나 정부 문서 검색 서비스를 만들 수 있습니다.",
+ "easy_en": "Administrative documents such as government press releases, with questions and answers attached in several types: find the answer in the text, ask about procedures, find the answer in a table, yes/no, multiple choice, and questions with no answer. You can build public-service chatbots or search tools for government documents.",
+ "detail_ko": "정부 부처·지자체·공공기관 행정문서 약 60만 건에서 선별한 지문(200~2,000자, 분야 11개) 약 20.6만 개에 같은 뜻의 질문 2개씩, 총 411,840건의 질의응답을 JSON으로 만들었습니다(문서 제목·발행기관·발행일·분야, 정답 위치, 유형 6종, 답 없음 여부, 객관식 보기). 기준 성능은 ELECTRA 질의응답 F1-score 0.8588입니다. 문서 대부분이 2014~2018년 자료라 최신 정책과 다를 수 있습니다.",
+ "detail_en": "411,840 QA items in JSON: about 206k passages (200–2,000 characters, 11 fields) selected from about 600k government administrative documents, each with 2 paraphrased questions, plus title, issuer, date, field, answer span, 6 QA types, no-answer flag and multiple-choice options. Baseline: ELECTRA QA F1-score 0.8588. Most documents date from 2014–2018, so they may not reflect current policy.",
+ "amount_ko": "질문-답 약 41.2만 건, 지문 약 20.6만 개",
+ "amount_en": "about 412k QA items, about 206k passages",
+ "labels_ko": "질문과 정답, 정답 위치, 질문 종류, 객관식 보기, 문서 분야",
+ "labels_en": "questions and answers, answer span, QA type, choices, document field",
+ "status": "full-run-2026-11-02"
+}

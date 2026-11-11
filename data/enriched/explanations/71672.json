@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71672",
+ "easy_ko": "베트남의 사회, 정치, 경제, 문화, 역사, 의학, IT 같은 여러 분야 베트남어 글을 아주 많이 모으고 질문과 답을 붙인 데이터입니다. 베트남어 챗봇이나 베트남어를 쓰는 생성형 AI를 학습시키는 데 쓸 수 있습니다.",
+ "easy_en": "A very large collection of Vietnamese text from many fields, such as society, politics, economy, culture, history, medicine and IT, with questions and answers added. You can use it to train Vietnamese chatbots or generative AI that writes Vietnamese.",
+ "detail_ko": "베트남어 원문(txt) 242,473,248어절에 질의응답과 분야(사회/정치/일반, IT/과학, 지리/자연/국가, 건강/의학, 문화/역사/예술)를 JSON으로 붙인 말뭉치입니다. 문화/역사/예술이 32.3%로 많고, 질의응답 쌍 수와 성능 지표는 팩에 없습니다.",
+ "detail_en": "242,473,248 words of Vietnamese text (txt) with JSON question-answer labels and field (society/politics/general, IT/science, geography/nature/countries, health/medicine, culture/history/arts). Culture/history/arts makes up 32.3%, and the number of QA pairs and any metrics are not in the pack.",
+ "amount_ko": "242,473,248어절",
+ "amount_en": "242,473,248 words",
+ "labels_ko": "질문과 답, 분야",
+ "labels_en": "question-answer, category",
+ "status": "full-run-2026-11-02"
+}

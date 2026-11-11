@@ -1,0 +1,29 @@
+{
+ "dataset_id": "71561",
+ "title_en": "River facility 3D scanning data",
+ "summary_ko": "하천에 있는 시설물 46종 400개를 8방향에서 찍은 사진(3,205장), 레이저 점군, 3D 모델, CityGML, 복셀 데이터와 2D/3D 키포인트·마스크입니다. 사진으로 하천 시설물을 3D로 만드는 AI와 하천 디지털 트윈 구현에 쓸 수 있습니다.",
+ "summary_en": "46 types (400 objects) of river facilities photographed from 8 directions (3,205 images), with point clouds, 3D models, CityGML, voxel data, 2D/3D keypoints and masks. For image-to-3D reconstruction and river digital twins.",
+ "contents_ko": "이미지(jpg) + 점군(las) + 3D 모델(obj, mtl, 텍스처 jpg) + CityGML(gml) + 복셀 + JSON(메타정보, 2D/3D 키포인트) + 마스크(png) + mat.",
+ "contents_en": "Image (jpg) + point cloud (las) + 3D model (obj, mtl, jpg texture) + CityGML (gml) + voxels + JSON (metadata, 2D/3D keypoints) + mask (png) + mat.",
+ "modalities": ["image", "3d", "sensor"],
+ "tasks": ["3d_reconstruction", "keypoint_pose", "segmentation"],
+ "topics": [{"ko": "디지털 트윈·도시", "en": "Digital twin and cities"}, {"ko": "하천·수자원 시설", "en": "River and water facilities"}],
+ "keywords_ko": ["3D 스캐닝", "점군", "하천 시설", "디지털 트윈", "CityGML"],
+ "keywords_en": ["3D scanning", "point cloud", "river facilities", "digital twin", "CityGML"],
+ "labels": ["2D keypoints", "3D keypoints", "mask", "metadata"],
+ "file_formats": ["jpg", "las", "obj", "mtl", "gml", "json", "png", "mat"],
+ "scale_ko": "시설 46종 400개 객체, 이미지 3,205장, 점군 800개, 3D 모델 418개, 복셀 800개",
+ "classes_example": ["국가하천 시설물 > 제방, 취/배수문, 수위관측소", "배수장", "보", "하구둑 > 방조제, 배수문", "양수장", "친수시설 > 벤치, 데크, 화장실, 안내판", "지방하천 시설물"],
+ "baseline": [{"task": "3D object reconstruction", "model": "Mesh R-CNN", "metric": "meshAP", "value": "48.95%"}],
+ "difficulty": "advanced",
+ "difficulty_note_ko": "점군·3D 메시를 다뤄야 합니다. 객체는 400개뿐인데 전체 약 918GB입니다.",
+ "skills_needed_ko": ["파이썬", "점군 처리(Open3D)", "3D 복원 모델"],
+ "caveats_ko": ["전체 약 918GB", "객체가 400개로 적어 3D 복원 학습에 부족할 수 있음", "71559 도로교통시설판과 같은 구조"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "점군 시각화와 객체 잘라내기", "title_en": "Point cloud viewing and cropping", "desc_ko": "Open3D로 하천 시설 점군을 열고 배경을 제거합니다.", "desc_en": "Open river-facility point clouds and remove background."},
+  {"level": "capstone", "title_ko": "8방향 사진으로 3D 만들기", "title_en": "3D from 8-view photos", "desc_ko": "8방향 사진으로 시설물 3D 모델을 만들고 정답 모델과 비교합니다.", "desc_en": "Reconstruct 3D from 8-view photos and compare to ground truth."},
+  {"level": "research", "title_ko": "도로→하천 시설 일반화", "title_en": "Road-to-river generalisation", "desc_ko": "71559 도로시설로 학습한 3D 복원 모델이 하천 시설에도 통하는지 연구합니다.", "desc_en": "Test whether a model trained on 71559 road facilities works on river facilities."}
+ ],
+ "doc_used": true,
+ "uncertain": ["mat 파일의 내용(카메라 파라미터 등)이 팩에서 확인되지 않음"]
+}

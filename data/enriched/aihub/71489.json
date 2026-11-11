@@ -1,0 +1,33 @@
+{
+ "dataset_id": "71489",
+ "title_en": "Korean speech by native speakers of European languages, for education",
+ "summary_ko": "유럽어를 모국어로 쓰는 외국인이 말한 한국어 음성 약 1,538시간에 철자·발음 전사, 발음 오류 태깅, 발음·말하기 평가 점수가 붙어 있습니다. 외국인 한국어 말하기 자동 채점과 발음 교정 프로그램에 쓸 수 있습니다.",
+ "summary_en": "About 1,538 hours of Korean speech by native speakers of European languages, with spelling and pronunciation transcripts, pronunciation-error tags and pronunciation/speaking scores. For automatic scoring of learners' Korean speaking and pronunciation feedback.",
+ "contents_ko": "음성(WAV) + JSON(전사, 발음 오류 태깅, 평가 점수, 화자 정보).",
+ "contents_en": "Audio (WAV) + JSON (transcripts, error tags, scores, speaker info).",
+ "modalities": ["audio", "text"],
+ "tasks": ["speech_recognition", "audio_classification"],
+ "topics": [{"ko": "한국어 교육", "en": "Korean language education"}, {"ko": "음성 인식", "en": "Speech recognition"}],
+ "keywords_ko": ["외국인 한국어", "발음 평가", "말하기 평가", "발음 오류", "자동 채점", "전사"],
+ "keywords_en": ["Korean learners", "pronunciation assessment", "speaking assessment", "pronunciation errors", "automatic scoring", "transcription"],
+ "labels": ["transcript", "pronunciation transcript", "error tag", "evaluation score"],
+ "file_formats": ["wav", "json"],
+ "scale_ko": "음성 1,538.5시간",
+ "classes_example": ["반복", "간투사", "모음오류", "강세 오류", "경계억양 오류", "음운탈락", "구개음화", "ㄴ-첨가", "유음화", "격음화", "비음화", "경음화"],
+ "baseline": [
+  {"task": "speech recognition for speaking assessment", "model": "Conformer-CTC small", "metric": "CER", "value": "10.62%"},
+  {"task": "pronunciation assessment", "model": "Wav2vec2.0", "metric": "Pearson correlation", "value": "0.8"},
+  {"task": "pronunciation assessment", "model": "Wav2vec2.0", "metric": "F1-score", "value": "0.9547"}
+ ],
+ "difficulty": "advanced",
+ "difficulty_note_ko": "전체 약 300GB이고 음성 모델과 평가 점수 예측을 함께 다뤄야 합니다.",
+ "skills_needed_ko": ["파이썬", "음성 인식 모델", "Wav2vec2 미세조정", "음성 전처리"],
+ "caveats_ko": ["전체 약 300GB", "설명서 소개에 '서양어·아시아어 사용자'로 적혀 있어 아시아어 데이터셋과 설명이 섞였을 수 있음", "다른 모국어별 한국어 음성 데이터셋과 비슷함"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "외국인 한국어 받아쓰기", "title_en": "Learner Korean speech-to-text", "desc_ko": "외국인 한국어 음성을 글자로 바꾸는 음성 인식 모델을 미세조정합니다.", "desc_en": "Fine-tune speech recognition on learners' Korean speech."},
+  {"level": "capstone", "title_ko": "발음 연습 피드백 앱", "title_en": "Pronunciation practice feedback app", "desc_ko": "학습자가 읽은 문장의 발음 점수와 틀린 부분을 알려주는 앱을 만듭니다.", "desc_en": "Build an app that scores pronunciation and shows errors."},
+  {"level": "research", "title_ko": "모국어별 발음 오류 분석", "title_en": "Error patterns by native language", "desc_ko": "유럽어 화자의 모국어에 따라 한국어 발음 오류가 어떻게 다른지 분석합니다.", "desc_en": "Analyse how Korean pronunciation errors differ by native language."}
+ ],
+ "doc_used": true,
+ "uncertain": ["화자 수와 모국어별 분포 수치가 팩에서 확인되지 않음"]
+}

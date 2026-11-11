@@ -1,0 +1,33 @@
+{
+ "dataset_id": "71267",
+ "title_en": "Sensor-fusion data for autonomous wheelchairs guiding people with disabilities",
+ "summary_ko": "자율주행 휠체어에 단 좌우 카메라 이미지 28.8만 장과 16채널 라이다 14.4만 프레임에 실내·실외 장애물과 길을 다각형 분할·3D 상자로 표시한 데이터입니다. 장애인·노인이 안전하게 이동하도록 길을 안내하는 자율주행 휠체어 AI에 쓸 수 있습니다.",
+ "summary_en": "288,000 images from left and right cameras and 144,000 frames from a 16-channel LiDAR on an autonomous wheelchair, with indoor and outdoor obstacles and paths marked by polygon segmentation and 3D boxes. For autonomous wheelchair AI that guides people with disabilities and older people safely.",
+ "contents_ko": "카메라 이미지(jpg) + 라이다 포인트클라우드(pcd) + JSON(2D 다각형, 3D 상자).",
+ "contents_en": "Camera images (jpg) + LiDAR point clouds (pcd) + JSON (2D polygons, 3D boxes).",
+ "modalities": ["image", "3d"],
+ "tasks": ["segmentation", "object_detection"],
+ "topics": [{"ko": "장애인 이동 지원", "en": "Mobility for people with disabilities"}, {"ko": "자율주행", "en": "Autonomous driving"}],
+ "keywords_ko": ["자율주행 휠체어", "교통약자", "라이다", "장애물 인식", "경로 안내"],
+ "keywords_en": ["autonomous wheelchair", "mobility-impaired", "LiDAR", "obstacle detection", "path guidance"],
+ "labels": ["2D polygon segmentation", "3D bounding box"],
+ "file_formats": ["jpg", "pcd", "json"],
+ "scale_ko": "카메라 이미지 28.8만 장, 라이다 14.4만 프레임",
+ "classes_example": ["보행자(pedestrian)", "휠체어(wheelchair)", "볼라드(bollard)", "승용차(car)", "트럭(truck)", "오토바이(motorcycle)", "킥보드(kickboard)", "자전거(bicycle)", "벤치(bench)", "맨홀(manhole)", "점자블록(Warning/Leading Block)", "라바콘(labacon)"],
+ "baseline": [
+  {"task": "3D object detection", "model": "Mask R-CNN (as reported)", "metric": "mAP", "value": "75.91%"},
+  {"task": "segmentation (indoor)", "model": "Mask R-CNN", "metric": "mIoU", "value": "72.09%"},
+  {"task": "segmentation (outdoor)", "model": "Mask R-CNN", "metric": "mIoU", "value": "74.15%"}
+ ],
+ "difficulty": "advanced",
+ "difficulty_note_ko": "약 211GB이고 카메라·라이다를 함께 다뤄야 합니다.",
+ "skills_needed_ko": ["파이썬", "분할 모델", "포인트클라우드 3D 탐지"],
+ "caveats_ko": ["보행자가 찍힌 영상", "3D 탐지 모델이 Mask R-CNN으로 적혀 있어 확인 필요"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "보도·통로 분할", "title_en": "Walkway segmentation", "desc_ko": "휠체어 카메라 사진에서 지나갈 수 있는 길을 칠합니다.", "desc_en": "Segment passable paths in wheelchair camera images."},
+  {"level": "capstone", "title_ko": "휠체어 장애물 경고", "title_en": "Wheelchair obstacle warning", "desc_ko": "라이다로 계단·턱·사람을 감지해 경고합니다.", "desc_en": "Warn about stairs, kerbs and people using LiDAR."},
+  {"level": "research", "title_ko": "저가 라이다 3D 탐지", "title_en": "3D detection with low-cost LiDAR", "desc_ko": "16채널 저해상도 라이다에서 3D 탐지 성능을 높이는 방법을 연구합니다.", "desc_en": "Improve 3D detection with sparse 16-channel LiDAR."}
+ ],
+ "doc_used": true,
+ "uncertain": ["3D detection model name"]
+}

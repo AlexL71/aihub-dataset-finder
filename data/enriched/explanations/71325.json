@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71325",
+ "easy_ko": "종묘장에서 키우는 어미 꽃게와 알에서 깨어나 자라는 어린 꽃게를 찍은 사진마다 위치와 자라는 단계를 표시하고, 물 환경과 사육 관리 기록을 함께 모은 데이터입니다. 어린 꽃게가 잘 자라는지 살피고 병을 일찍 찾아내는 양식 AI를 만들 수 있습니다.",
+ "easy_en": "Photos of mother blue crabs and of young crabs growing from hatchlings at a hatchery, each marked with position and growth stage, plus water-condition and care records. You can build aquaculture AI that checks how young crabs grow and spots disease early.",
+ "detail_ko": "종묘장의 어미 꽃게(포란 1~4단계) 이미지 약 5.4만 장과 꽃게 종자(조에아 1~4기, 메갈로파, 치게 1~3기 8단계) 이미지 약 10.7만 장(jpg)에 바운딩박스·폴리라인, 성장 단계, 질병 여부를 JSON으로 붙이고, 수질 환경 데이터 약 25.7만 건과 사육 관리 데이터를 함께 제공합니다. 기준 성능은 EfficientNet 조에아 단계 분류 정확도 93.8%, 치게 질병 분류 93.1%, YOLOv4 어미 꽃게 탐지 mAP 95.39%입니다. 현미경·확대 사진이라 전문 지식이 필요할 수 있고, 꽃게 한 종만 있습니다.",
+ "detail_en": "About 54k images of brood blue crabs (egg-bearing stages 1–4) and about 107k images of crab seed in 8 stages (zoea 1–4, megalopa, juvenile 1–3) (jpg), with JSON boxes, polylines, growth stage and disease status, plus about 257k water-quality records and husbandry data. Baselines: EfficientNet zoea-stage classification accuracy 93.8%, juvenile disease classification 93.1%, YOLOv4 brood-crab detection mAP 95.39%. Microscope and close-up images may need expert knowledge; only one crab species is included.",
+ "amount_ko": "사진 약 16만 장, 물 환경 기록 약 25.7만 건",
+ "amount_en": "about 160k images, about 257k water-quality records",
+ "labels_ko": "꽃게 위치 상자·선, 자라는 단계, 병 여부, 물 환경 값",
+ "labels_en": "boxes and polylines around crabs, growth stage, disease status, water values",
+ "status": "full-run-2026-11-02"
+}

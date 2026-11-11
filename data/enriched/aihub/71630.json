@@ -1,0 +1,29 @@
+{
+ "dataset_id": "71630",
+ "title_en": "Korean multi-session dialogue",
+ "summary_ko": "두 사람이 페르소나와 주제를 받아 시간 간격을 두고 2~4번 이어서 나눈 한국어 일상 대화 80,000건으로, 참여자·페르소나·주제·시간 간격 정보와 세션별 요약이 붙어 있습니다. 예전 대화를 기억하는 한국어 챗봇에 쓸 수 있습니다.",
+ "summary_en": "80,000 Korean everyday conversations where two people with given personas and topics talk over 2-4 sessions separated in time, with participant, persona, topic and time-gap info and session summaries. For Korean chatbots that remember past conversations.",
+ "contents_ko": "JSON(대화 텍스트, 페르소나, 주제, 시간 간격, 세션 요약).",
+ "contents_en": "JSON (dialogue text, persona, topic, time gap, session summary).",
+ "modalities": ["text"],
+ "tasks": ["dialogue", "summarization", "text_generation"],
+ "topics": [{"ko": "챗봇·대화", "en": "Chatbots and dialogue"}, {"ko": "일상 대화", "en": "Everyday conversation"}],
+ "keywords_ko": ["멀티세션", "챗봇", "장기 기억", "페르소나", "대화 요약", "한국어"],
+ "keywords_en": ["multi-session", "chatbot", "long-term memory", "persona", "dialogue summary", "Korean"],
+ "labels": ["persona", "topic", "time gap", "summary"],
+ "file_formats": ["json"],
+ "scale_ko": "대화 80,000건(2세션 40,000, 3세션 20,000, 4세션 20,000), 전문대화 4,000건 포함",
+ "classes_example": ["2세션", "3세션", "4세션"],
+ "baseline": [{"task": "response generation (multi-session)", "model": "T5", "metric": "Appropriate generation rate", "value": "78.65%"}, {"task": "response generation (multi-session)", "model": "T5", "metric": "Likert score", "value": "4.09"}],
+ "difficulty": "intermediate",
+ "difficulty_note_ko": "약 0.5GB로 작아 다루기 쉽지만 긴 맥락을 기억하는 생성 모델은 어렵습니다.",
+ "skills_needed_ko": ["파이썬", "트랜스포머", "대화 모델 미세조정"],
+ "caveats_ko": ["성능이 사람 평가(Likert) 위주라 재현이 어려움", "전문대화(5%)는 2세션만 있음"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "대화 세션 요약", "title_en": "Session summariser", "desc_ko": "한 세션 대화를 짧게 요약하는 모델을 미세조정합니다.", "desc_en": "Fine-tune a model to summarise one session."},
+  {"level": "capstone", "title_ko": "기억하는 친구 챗봇", "title_en": "Chatbot that remembers", "desc_ko": "지난 대화 요약을 저장해 다음 대화에 반영하는 챗봇을 만듭니다.", "desc_en": "Chatbot that stores summaries and uses them next time."},
+  {"level": "research", "title_ko": "장기 기억 활용 평가", "title_en": "Long-term memory evaluation", "desc_ko": "챗봇이 이전 세션 정보를 얼마나 잘 쓰는지 자동 평가하는 방법을 연구합니다.", "desc_en": "Automatically evaluate use of past-session info."}
+ ],
+ "doc_used": true,
+ "uncertain": []
+}

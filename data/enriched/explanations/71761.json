@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71761",
+ "easy_ko": "조선소와 배 만드는 현장에서 모은 용접 부위 사진 14만여 장에 구멍, 덜 녹아 붙음, 갈라짐 같은 용접 결함을 테두리로 표시한 데이터입니다. 눈으로 본 사진과 방사선 사진이 모두 있어 용접 품질 검사를 자동으로 하는 AI에 쓸 수 있습니다.",
+ "easy_en": "Over 140,000 photos of welds from shipyards and shipbuilding sites, with welding defects such as pores, incomplete fusion and cracks outlined. Both visual photos and X-ray images are included, so you can build AI that inspects weld quality automatically.",
+ "detail_ko": "조선소·선박 제조 현장의 용접 이미지 144,019장(jpg; 육안검사 VT 74,019, 방사선검사 RT 일반강재 60,000·알루미늄 10,000)에 결함(정상, 기공, 용입부족, 용합불량, 언더컷, 균열, 슬래그혼입) 다각형, 검사 유형, 재질을 JSON으로 붙였습니다. 페이지에 성능 점수 표가 없고(YOLOv5x-seg 소개만 있음), 균열(RT 강재 2,277·알루미늄 332)과 슬래그혼입이 적으며, VT와 RT는 이미지 성질이 달라 따로 학습하는 것이 좋습니다.",
+ "detail_en": "144,019 weld images (jpg; 74,019 visual inspection (VT), 60,000 radiographic (RT) on steel and 10,000 RT on aluminium) from shipyards, with JSON defect polygons (normal, porosity, incomplete penetration, lack of fusion, undercut, crack, slag inclusion), inspection type and material. There is no score table (only YOLOv5x-seg is described), cracks (2,277 RT steel, 332 aluminium) and slag inclusions are few, and VT and RT images are very different, so train on them separately.",
+ "amount_ko": "이미지 144,019장(VT 74,019, RT 강재 60,000, RT 알루미늄 10,000)",
+ "amount_en": "144,019 images (74,019 VT, 60,000 RT steel, 10,000 RT aluminium)",
+ "labels_ko": "용접 결함 테두리, 결함 종류",
+ "labels_en": "polygon, defect class",
+ "status": "full-run-2026-11-02"
+}

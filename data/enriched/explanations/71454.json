@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71454",
+ "easy_ko": "한국에서 찍은 사진 약 300만 장마다 한글과 영어로 된 설명 문장을 여러 개씩 붙인 데이터입니다. 사진을 보고 문장으로 설명하는 AI, 예를 들어 눈이 불편한 사람에게 화면을 읽어 주는 서비스에 쓸 수 있습니다.",
+ "easy_en": "About 3 million photos taken in Korea, each with several description sentences in Korean and English. You can use it to build AI that describes pictures in words, for example a service that reads the screen aloud for people with poor eyesight.",
+ "detail_ko": "한국에서 촬영한 이미지 약 300만 장(jpg)에 한글·영문 설명문(이미지당 각 10개) 라벨을 JSON으로 붙인 한국형 비전 데이터입니다. 상위 카테고리 예: 사람, 탈것, 동물, 음식 등 다른 한국형 비전 데이터와 같은 범주. 전체 용량은 약 1463GB이고, 같은 300만 장 이미지가 탐지(71452)·분할(71453)·관계성(71456) 데이터와 공유되므로 여러 데이터를 함께 쓸 때 학습·평가 분할이 겹치지 않게 해야 합니다. 팩에는 기준 성능 지표가 없습니다.",
+ "detail_en": "About 3 million images (jpg) shot in Korea, with JSON captions (10 Korean and 10 English per image) labels; a Korean-style vision set meant to reduce the Western bias of existing data. Example top-level categories: the same categories as the other Korean-style vision sets, such as person, vehicle, animal and food. Total size is about 1,463 GB, and the same 3 million images are shared with the detection (71452), segmentation (71453) and relationship (71456) sets, so keep train and test splits apart when combining them. The pack gives no baseline metric.",
+ "amount_ko": "이미지 약 300만 장, 라벨 약 300만 건",
+ "amount_en": "about 3 million images, about 3 million labels",
+ "labels_ko": "사진 설명 문장(한글·영어)",
+ "labels_en": "captions (Korean, English)",
+ "status": "full-run-2026-11-02"
+}

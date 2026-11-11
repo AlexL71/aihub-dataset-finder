@@ -1,0 +1,12 @@
+{
+ "dataset_id": "468",
+ "easy_ko": "서해 바다에 설치한 CCTV로 찍은 바다 안개(해무) 사진마다 안개가 얼마나 짙은지, 황사·햇빛 반사·비·눈처럼 헷갈리는 현상인지를 표시하고, 같은 때의 날씨·바다 관측 값을 붙인 데이터입니다. 바다 안개를 미리 알아채 다리·항구·공항의 사고를 막는 AI를 만들 수 있습니다.",
+ "easy_en": "Photos of sea fog from CCTV cameras on Korea's west coast, each tagged with how thick the fog is or whether it is something easily confused with fog (yellow dust, sun glare, rain, snow), plus weather and ocean readings from the same time. You can build AI that detects sea fog early to prevent accidents on bridges and at ports and airports.",
+ "detail_ko": "서해 연안·외해 CCTV 이미지 369,640건(jpg)에 해무 등급 태그, 이상현상 태그(해무 없음, 해무, 황사, 태양반사광, 강우, 강설), 관측 시각·지점, 기상·해양 관측값을 JSON으로 붙였습니다. 성능 지표 표가 비어 있으며, 해무 등급 구분 기준은 기록에서 확인되지 않습니다.",
+ "detail_en": "369,640 CCTV images (jpg) from coastal and offshore sites in the Yellow Sea, with JSON fog-level tags, phenomenon tags (no fog, fog, yellow dust, sun glare, rain, snow), observation time and site, and weather and ocean readings. The performance table is empty, and the fog-level criteria are not visible in the record.",
+ "amount_ko": "CCTV 사진 약 37만 건",
+ "amount_en": "about 370k CCTV images",
+ "labels_ko": "바다 안개 정도, 헷갈리는 현상 종류, 날씨·바다 관측 값",
+ "labels_en": "fog level, look-alike phenomenon tags, weather and ocean readings",
+ "status": "full-run-2026-11-02"
+}

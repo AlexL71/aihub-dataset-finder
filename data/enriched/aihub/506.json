@@ -1,0 +1,29 @@
+{
+ "dataset_id": "506",
+ "title_en": "Coastal pollutant data (beach and floating litter)",
+ "summary_ko": "드론·스마트폰·CCTV로 찍은 해안 쓰레기와 바다에 떠다니는 부유 쓰레기 이미지 42.6만 장으로, 플라스틱·금속·유리 등이 상자 또는 다각형으로 표시되어 있습니다. 해안 쓰레기 모니터링이나 쓰레기 분포 지도 제작에 쓸 수 있습니다.",
+ "summary_en": "426,000 drone, smartphone and CCTV images of beach litter and floating marine litter, with plastic, metal, glass and other items marked by boxes or polygons. For coastal litter monitoring and litter distribution maps.",
+ "contents_ko": "이미지(jpg) + JSON(쓰레기 상자 또는 다각형, 재질 클래스, 촬영 장비).",
+ "contents_en": "Image (jpg) + JSON (litter boxes or polygons, material class, capture device).",
+ "modalities": ["image"],
+ "tasks": ["object_detection", "segmentation"],
+ "topics": [{"ko": "해양 환경", "en": "Marine environment"}, {"ko": "쓰레기·재활용", "en": "Waste and recycling"}, {"ko": "드론", "en": "Drones"}],
+ "keywords_ko": ["해안 쓰레기", "부유 쓰레기", "해양 오염", "드론", "플라스틱", "환경 모니터링"],
+ "keywords_en": ["beach litter", "floating litter", "marine pollution", "drone", "plastic", "environmental monitoring"],
+ "labels": ["bounding box", "polygon", "class (material)"],
+ "file_formats": ["jpg", "json"],
+ "scale_ko": "426,246장(해안쓰레기 상자 35.7만, 부유쓰레기 상자 4.8만, 다각형 2.1만)",
+ "classes_example": ["플라스틱", "금속", "유리"],
+ "baseline": [],
+ "difficulty": "beginner",
+ "difficulty_note_ko": "약 92GB로 다룰 만하고 YOLO 탐지 첫 프로젝트로 좋습니다.",
+ "skills_needed_ko": ["파이썬 기초", "YOLO 객체 탐지"],
+ "caveats_ko": ["클래스 전체 목록과 성능 지표가 팩 앞부분에 없음"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "해변 플라스틱 탐지", "title_en": "Beach plastic detection", "desc_ko": "해변 사진에서 플라스틱 쓰레기를 탐지합니다.", "desc_en": "Detect plastic litter in beach photos."},
+  {"level": "capstone", "title_ko": "드론 해안 쓰레기 지도", "title_en": "Drone coastal litter map", "desc_ko": "드론 사진의 탐지 결과로 해안별 쓰레기 양을 지도에 표시합니다.", "desc_en": "Map litter amounts along the coast from drone detections."},
+  {"level": "research", "title_ko": "물 위 부유 쓰레기 분할", "title_en": "Segmenting floating litter", "desc_ko": "파도·반사 때문에 어려운 부유 쓰레기 분할 성능을 개선합니다.", "desc_en": "Improve segmentation of floating litter despite waves and glare."}
+ ],
+ "doc_used": true,
+ "uncertain": []
+}

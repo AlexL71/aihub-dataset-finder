@@ -1,0 +1,12 @@
+{
+ "dataset_id": "64",
+ "easy_ko": "과자·음료·라면·생활용품·화장품 같은 마트 상품 1만여 종을 여러 높이와 각도에서 한 개씩 또는 여러 개 함께 찍고, 사진마다 상품 이름과 위치를 표시한 데이터입니다. 무인 매장이나 셀프 계산대에서 상품을 자동으로 알아보는 AI를 만들 수 있습니다.",
+ "easy_en": "Over ten thousand supermarket products, such as snacks, drinks, ramen, household goods and cosmetics, photographed alone or in groups from several heights and angles, each photo marked with the product name and position. You can build AI that recognises products automatically in unmanned shops or self-checkouts.",
+ "detail_ko": "14개 대분류의 상품 10,280종을 높이 3가지(0·30·60도)와 24가지 각도에서 촬영한 jpg 사진 144만 장(단수 72만, 복수 72만)입니다. JSON 라벨에는 상품 ID·이름, 대분류, 바운딩박스가 있습니다. 기준 성능은 EfficientNet-B7 상품 분류 정확도 97.51%입니다. 스튜디오 촬영이라 실제 매장 선반 사진에서는 정확도가 떨어질 수 있으며 전체 약 720GB입니다.",
+ "detail_en": "1.44M jpg photos (720k single, 720k multiple) of 10,280 products in 14 categories, shot at 3 heights (0, 30, 60 degrees) and 24 angles. JSON labels hold product ID and name, category and bounding box. Baseline: EfficientNet-B7 product classification accuracy 97.51%. Studio photos may not transfer well to real store shelves. Total size is about 720 GB.",
+ "amount_ko": "사진 144만 장, 상품 10,280종",
+ "amount_en": "1.44M photos, 10,280 products",
+ "labels_ko": "상품 이름·종류, 상품 위치 상자",
+ "labels_en": "product name and category, box around the product",
+ "status": "full-run-2026-11-02"
+}

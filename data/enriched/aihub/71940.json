@@ -1,0 +1,29 @@
+{
+ "dataset_id": "71940",
+ "title_en": "Clothing virtual try-on 3D image data (upcycling)",
+ "summary_ko": "2020년 AI 허브 의류 가상착용 3D 이미지 데이터에서 중복·불필요한 데이터를 빼고 대표 표본만 남긴(다운사이징) 업사이클링판으로, 이미지·텍스트 라벨 3,340,727건입니다. 2D 신체 28.7%, 2D 상품 51.5%, 3D 신체 7.2%, 3D 상품 12.5%로 구성되어 가상 피팅과 멀티모달 패션 AI에 쓸 수 있습니다.",
+ "summary_en": "An upcycled, downsized version of AI Hub's 2020 clothing virtual try-on 3D image data, keeping representative samples and removing duplicates: 3,340,727 image-text items (2D body 28.7%, 2D product 51.5%, 3D body 7.2%, 3D product 12.5%). For virtual fitting and multimodal fashion AI.",
+ "contents_ko": "신체·상품 이미지(jpg) + JSON(이미지·텍스트 라벨).",
+ "contents_en": "Body and product images (jpg) + JSON (image-text labels).",
+ "modalities": ["image", "3d", "text"],
+ "tasks": ["image_generation", "image_captioning", "retrieval_recommendation"],
+ "topics": [{"ko": "패션·의류", "en": "Fashion and clothing"}, {"ko": "가상 피팅", "en": "Virtual try-on"}],
+ "keywords_ko": ["가상착용", "가상 피팅", "의류", "3D 신체", "다운사이징", "업사이클링"],
+ "keywords_en": ["virtual try-on", "virtual fitting", "clothing", "3D body", "downsizing", "upcycling"],
+ "labels": ["image-text"],
+ "file_formats": ["jpg", "json"],
+ "scale_ko": "3,340,727건(2D 신체 28.7%·2D 상품 51.5%·3D 신체 7.2%·3D 상품 12.5%)",
+ "classes_example": ["2D 신체", "2D 상품", "3D 신체", "3D 상품"],
+ "baseline": [],
+ "difficulty": "advanced",
+ "difficulty_note_ko": "다운사이징판인데도 파일 목록 기준 약 7.3TB입니다. 일부만 받아 실습하세요.",
+ "skills_needed_ko": ["파이썬", "이미지 생성 모델(확산 모델) 기초", "CLIP 등 이미지-텍스트 모델"],
+ "caveats_ko": ["페이지에 성능 점수 표와 모델 설명이 없음", "'다운사이징'판인데 전체 크기가 약 7.3TB로 매우 큼", "형식이 jpg뿐이라 실제 3D 메시가 포함되는지 불분명", "사람 신체 이미지라 개인정보 주의"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "옷 종류 검색", "title_en": "Clothing search", "desc_ko": "텍스트로 비슷한 의류 이미지를 찾는 CLIP 검색을 만듭니다.", "desc_en": "Search clothing images by text with CLIP."},
+  {"level": "capstone", "title_ko": "가상 피팅 데모", "title_en": "Virtual try-on demo", "desc_ko": "신체 이미지에 상품 이미지를 입혀보는 생성 모델 데모를 만듭니다.", "desc_en": "Dress a body image in a product image with a generative model."},
+  {"level": "research", "title_ko": "다운사이징 효과 검증", "title_en": "Downsizing effect study", "desc_ko": "원본과 축소판으로 학습한 모델 성능을 비교해 표본 선별 효과를 연구합니다.", "desc_en": "Compare models trained on full vs downsized data."}
+ ],
+ "doc_used": true,
+ "uncertain": ["3D 데이터의 실제 형식(메시 포함 여부)"]
+}

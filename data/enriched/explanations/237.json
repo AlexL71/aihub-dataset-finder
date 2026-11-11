@@ -1,0 +1,12 @@
+{
+ "dataset_id": "237",
+ "easy_ko": "비닐하우스에서 키우는 채소, 꽃, 열대 과일 작물을 여러 거리와 각도에서 찍고, 사진마다 작물 위치와 얼마나 자랐는지를 표시한 데이터입니다. 작물 종류와 자란 정도를 알아보는 스마트 온실 AI를 만들 수 있습니다.",
+ "easy_en": "Photos of greenhouse vegetables, flowers and tropical fruit crops taken from different distances and angles, each marked with where the plant is and how far it has grown. You can build smart-greenhouse AI that recognises crop type and growth stage.",
+ "detail_ko": "국내 주요 시설 작물 20종(채소·화훼·열대과수: 가지, 거베라, 고추 등)을 거리·각도별로 촬영한 이미지 100만 장(수집 120만 장 이상, jpg)에 작물·품종, 개체 바운딩박스, 생육 단계(3단계 이상), 촬영 거리·각도를 JSON으로 붙였습니다. 기준 성능은 기록에서 확인되지 않습니다. 전체 약 7.6TB로 매우 큽니다.",
+ "detail_en": "1M jpg images (from 1.2M+ collected) of 20 major greenhouse crops (vegetables, flowers, tropical fruit: eggplant, gerbera, peppers and more) shot at various distances and angles, with JSON crop and variety, plant bounding box, growth stage (3+ stages) and capture distance and angle. No baseline is visible in the record. Total size is very large (about 7.6 TB).",
+ "amount_ko": "이미지 100만 장, 작물 20종",
+ "amount_en": "1M images, 20 crops",
+ "labels_ko": "작물 위치 상자, 작물·품종, 자란 단계",
+ "labels_en": "box around the plant, crop and variety, growth stage",
+ "status": "full-run-2026-11-02"
+}

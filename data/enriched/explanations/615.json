@@ -1,0 +1,12 @@
+{
+ "dataset_id": "615",
+ "easy_ko": "사람 전신과 얼굴 사진을 '셔츠를 빨간색으로 바꿔 줘' 같은 한국어 명령대로 색이나 모양을 바꾼 사진과 짝지어 둔 데이터로, 몸 부위·옷·탈것 영역도 표시되어 있습니다. 말로 명령하면 사진을 고쳐 주는 AI를 만들 수 있습니다.",
+ "easy_en": "Full-body and face photos paired with versions edited by Korean commands such as 'make the shirt red', changing colour or shape, with body parts, clothing and vehicles outlined. You can build AI that edits photos when you tell it what to change.",
+ "detail_ko": "사람 전신·얼굴 원본 이미지 약 5천 장과, 한국어 편집 명령어(txt)에 따라 색상(8.9만)·모양(5.7만)을 바꾼 편집 이미지 약 14.7만 장(jpg)으로, 신체부위·의상·탈것 영역 다각형 분할이 JSON으로 있습니다. 기준 성능은 Faster R-CNN 편집 대상 탐지 mAP 72.33%로, 편집 품질이 아닌 객체 탐지 결과입니다. 사람 얼굴·전신 사진이라 초상권에 주의해야 하며 원본이 5천 장으로 적습니다.",
+ "detail_en": "About 5k original full-body and face photos and about 147k edited images (jpg) changed by Korean edit commands (txt) in colour (89k) or shape (57k), with JSON polygon segmentation of body parts, clothing and vehicles. Baseline: Faster R-CNN edit-target detection mAP 72.33%, which measures detection, not editing quality. Faces and bodies are shown, so mind portrait rights; there are only 5k originals.",
+ "amount_ko": "원본 사진 약 5천 장, 편집 사진 약 14.7만 장",
+ "amount_en": "about 5k originals, about 147k edited images",
+ "labels_ko": "편집 명령 글, 몸 부위·옷·탈것 영역, 편집된 사진",
+ "labels_en": "edit command text, body-part, clothing and vehicle masks, edited image",
+ "status": "full-run-2026-11-02"
+}

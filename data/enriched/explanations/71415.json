@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71415",
+ "easy_ko": "참여자마다 아기 때부터 지금까지 나이대별 얼굴 사진을 모으고, 얼굴 위치, 얼굴 주요 점, 사진 속 나이를 표시한 데이터입니다. 나이가 들어도 같은 사람을 알아보는 얼굴 인식이나 나이 추정 AI를 만들 수 있지만, 실제 얼굴이라 개인정보에 주의해야 합니다.",
+ "easy_en": "Face photos of each participant from babyhood to now, across age groups, with face position, facial key points and the age in each photo marked. You can build face recognition that still knows a person as they age, or age-estimation AI, but these are real faces, so privacy matters.",
+ "detail_ko": "초상권 동의를 받은 참여자 1인당 유아기부터 현재까지 연령대별 얼굴 사진 50장씩, 총 50,250장(png, 약 1,005명; 본인 외 얼굴 블러)에 얼굴 바운딩박스, 5점 키포인트, 출생년도·현재 나이·사진 나이·촬영 기기를 JSON으로 붙였습니다. 기준 성능은 SAM 노화 얼굴 변환 정확도 44.45%, C3AE 나이 추정 MAE 3.96세입니다. 실제 얼굴이라 개인정보·초상권 이용 조건을 꼭 확인해야 하고, 옛날 사진은 화질·기기가 제각각이며, 참여자 수는 50,250÷50으로 계산한 값입니다.",
+ "detail_en": "50,250 face photos (png) from about 1,005 consenting participants, 50 each spanning infancy to the present (other faces blurred), with JSON face boxes, 5 keypoints, birth year, current age, age in the photo and capture device. Baselines: SAM face-aging accuracy 44.45%, C3AE age estimation MAE 3.96 years. These are real faces, so check privacy and portrait rights; old photos vary in quality and device; the participant count is computed as 50,250 ÷ 50.",
+ "amount_ko": "얼굴 사진 50,250장, 약 1,005명",
+ "amount_en": "50,250 face photos, about 1,005 people",
+ "labels_ko": "얼굴 위치 상자, 얼굴 주요 점, 사진 속 나이, 출생 연도",
+ "labels_en": "face box, facial key points, age in photo, birth year",
+ "status": "full-run-2026-11-02"
+}

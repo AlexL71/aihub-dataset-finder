@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71838",
+ "easy_ko": "캄보디아의 문화, 규범, 관습, 예절을 담은 크메르어 글을 많이 모으고 영어와 한국어 번역, 질문과 답, 평가 문제를 붙인 데이터입니다. 캄보디아 사람을 위한 챗봇이나 크메르어 언어 AI를 만드는 데 쓸 수 있습니다.",
+ "easy_en": "A large collection of Khmer texts about Cambodia's culture, norms, customs and manners, with English and Korean translations, questions and answers, and test items. You can use it to build chatbots for people in Cambodia or language AI for Khmer.",
+ "detail_ko": "캄보디아의 문화·규범·관습·예절을 담은 크메르어 말뭉치 287,528건(txt, 124,530,017어절)과 영어·한국어 번역본, 지시형 질의응답 5,000건, 성능평가 문항 2,000건(JSON)입니다. 크메르어는 띄어쓰기가 거의 없어 '어절' 수 계산 방식을 확인해야 하고, 번역본은 기계번역 여부를 확인해야 하고, 모델 성능 수치는 팩에 없습니다. 71837 탄자니아 말뭉치과 같은 구조입니다.",
+ "detail_en": "A Khmer corpus of 287,528 items (txt, 124,530,017 words) on Cambodia's culture, norms, customs and etiquette, with English and Korean translations, 5,000 instruction-style QA items and 2,000 evaluation items (JSON). Khmer has almost no spaces between words, so check how 'words' were counted. Check whether the translations were machine-made; no model scores are in the pack. Same structure as the Tanzanian corpus 71837.",
+ "amount_ko": "말뭉치 287,528건(124,530,017어절), 질의응답 5,000건, 평가 2,000건",
+ "amount_en": "287,528 corpus items (124,530,017 words), 5,000 QA items, 2,000 evaluation items",
+ "labels_ko": "영어·한국어 번역, 질문과 답",
+ "labels_en": "translation, question-answer",
+ "status": "full-run-2026-11-02"
+}

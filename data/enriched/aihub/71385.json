@@ -1,0 +1,29 @@
+{
+ "dataset_id": "71385",
+ "title_en": "Household waste data (utilisation and feedback)",
+ "summary_ko": "재활용 선별장, 실내형 분류기, 스마트폰 앱으로 찍은 생활폐기물 이미지 551,562장으로, 종이·캔·유리·페트·플라스틱·비닐 등과 이물질·다중포장재가 섞였는지가 상자로 표시되어 있습니다. 재활용품 자동 선별기나 분리배출 안내 앱에 쓸 수 있습니다.",
+ "summary_en": "551,562 images of household waste from recycling plants, an indoor sorter and a phone app, with paper, cans, glass, PET, plastic, vinyl etc. boxed and marked for contamination or mixed packaging. For automatic recycling sorters and sorting-guide apps.",
+ "contents_ko": "폐기물 이미지(jpg, 1280×720 이상) + JSON(상자, 재질 분류, 이물질·다중포장재 여부).",
+ "contents_en": "Waste image (jpg, 1280x720+) + JSON (boxes, material class, contamination/mixed-packaging flag).",
+ "modalities": ["image"],
+ "tasks": ["object_detection", "image_classification"],
+ "topics": [{"ko": "환경·재활용", "en": "Environment and recycling"}, {"ko": "스마트 선별 설비", "en": "Smart sorting equipment"}],
+ "keywords_ko": ["생활폐기물", "재활용", "분리배출", "이물질", "선별장", "객체 탐지"],
+ "keywords_en": ["household waste", "recycling", "waste sorting", "contamination", "sorting plant", "object detection"],
+ "labels": ["bounding box", "material class", "contamination flag"],
+ "file_formats": ["jpg", "json"],
+ "scale_ko": "이미지 551,562장(선별장 222,835, 실내 분류기 127,844, 앱 200,883), 상자 약 160만 개",
+ "classes_example": ["종이", "종이팩", "캔류", "갈색 유리", "페트", "플라스틱", "비닐", "페트 + 이물질"],
+ "baseline": [{"task": "recyclable detection", "model": "YOLOv7", "metric": "mAP", "value": "94.2%"}, {"task": "general waste detection", "model": "YOLOv7", "metric": "mAP", "value": "93.2%"}],
+ "difficulty": "beginner",
+ "difficulty_note_ko": "YOLO 탐지 입문에 좋은 주제입니다. 다만 전체 약 562GB라 한 촬영 환경(예: 실내 분류기)만 받아 쓰세요.",
+ "skills_needed_ko": ["파이썬", "YOLO 탐지", "클래스 불균형 처리"],
+ "caveats_ko": ["전체 약 562GB", "플라스틱 관련 클래스가 매우 많고 유리 세부 클래스는 적어 불균형이 큼", "페이지에 '551,562만 장'이라는 오기가 있음"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "재활용품 종류 탐지", "title_en": "Recyclable type detector", "desc_ko": "사진 속 캔·페트·종이 등을 YOLO로 찾아 표시합니다.", "desc_en": "Detect cans, PET bottles and paper in photos with YOLO."},
+  {"level": "capstone", "title_ko": "분리배출 도우미 앱", "title_en": "Recycling helper app", "desc_ko": "쓰레기를 찍으면 어떤 통에 버려야 하는지, 이물질을 씻어야 하는지 알려 줍니다.", "desc_en": "Snap waste and learn which bin it goes in and whether to clean it."},
+  {"level": "research", "title_ko": "촬영 환경 간 일반화", "title_en": "Generalisation across capture settings", "desc_ko": "선별장 영상으로 학습한 모델이 앱 사진에도 잘 되는지 도메인 차이를 연구합니다.", "desc_en": "Study whether plant-trained models work on phone photos."}
+ ],
+ "doc_used": true,
+ "uncertain": []
+}

@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71940",
+ "easy_ko": "예전 옷 가상 착용 데이터에서 겹치거나 필요 없는 것을 빼고 대표만 남긴 사진과 글 라벨 334만여 건으로, 사람 몸과 옷 상품의 평면, 입체 자료로 나뉩니다. 옷을 가상으로 입혀 보거나 패션 AI를 만드는 데 쓸 수 있습니다.",
+ "easy_en": "Over 3.34 million image and text labels from an older virtual try-on dataset, trimmed to representative samples by removing duplicates and unneeded items, split into flat and three-dimensional data of bodies and clothing products. You can use it for virtual try-on or other fashion AI.",
+ "detail_ko": "2020년 AI 허브 의류 가상착용 3D 이미지 데이터에서 중복·불필요한 데이터를 빼고 대표 표본만 남긴(다운사이징) 업사이클링판으로, 신체·상품 이미지(jpg)와 이미지·텍스트 라벨(JSON) 3,340,727건(2D 신체 28.7%, 2D 상품 51.5%, 3D 신체 7.2%, 3D 상품 12.5%)입니다. 페이지에 성능 점수 표와 모델 설명이 없고, '다운사이징'판인데 전체 크기가 약 7.3TB로 매우 크며, 형식이 jpg뿐이라 실제 3D 메시가 포함되는지 불분명합니다. 사람 신체 이미지라 개인정보에 주의해야 합니다.",
+ "detail_en": "3,340,727 body and product images (jpg) with image-text labels (JSON), an upcycled, downsized version of AI Hub's 2020 virtual try-on 3D image data with duplicates and unneeded items removed (28.7% 2D body, 51.5% 2D product, 7.2% 3D body, 12.5% 3D product). There is no score table or model description; despite 'downsizing' it is still about 7.3 TB; the only format is jpg, so it is unclear whether real 3D meshes are included; and body images are personal data, so take care.",
+ "amount_ko": "3,340,727건(2D 신체 28.7%, 2D 상품 51.5%, 3D 신체 7.2%, 3D 상품 12.5%)",
+ "amount_en": "3,340,727 items (28.7% 2D body, 51.5% 2D product, 7.2% 3D body, 12.5% 3D product)",
+ "labels_ko": "사진-글 설명",
+ "labels_en": "image-text",
+ "status": "full-run-2026-11-02"
+}

@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71587",
+ "easy_ko": "카메라, 레이저 센서(라이다), 레이더, 위치 센서를 함께 단 수집 차량이 비, 눈, 안개, 미세먼지 속 자동차 전용도로를 달리며 모은 사진과 레이저 점 데이터입니다. 사진의 모든 부분을 물체와 배경별로 칠하고 레이저 점 속 물체를 입체 상자로 표시해, 자율주행차가 주변을 알아보는 AI 연구에 쓸 수 있습니다.",
+ "easy_en": "Photos and laser point data from a collection vehicle fitted with cameras, a laser sensor (lidar), radar and positioning sensors, driving expressways in rain, snow, fog and fine dust. Every part of each photo is painted by object or background and objects in the laser data are boxed, for research on AI that helps self-driving cars see their surroundings.",
+ "detail_ko": "카메라·라이다·레이더·GNSS/INS를 동기화한 수집 차량으로 비, 눈, 안개, 미세먼지 속 자동차 전용도로를 주행하며 모은 데이터로, 전방 카메라 이미지 100,000장, 라이다 점군 100,000개에 2D 판옵틱 분할(모든 픽셀을 물체·배경별로 칠함)과 라이다 3D 상자를 JSON으로 붙이고 GNSS/INS 위치 정보를 함께 제공합니다. 기준 성능은 Voxel R-CNN 3D 객체 탐지 mAP 78.42%, EfficientPS 판옵틱 분할 PQ 비 55.46%, 안개 53.17%입니다. 날씨 비율은 일반 30%, 강우 35%, 안개 15%, 미세먼지 10%, 강설 10%입니다. 미세먼지 구축량이 1,000장으로 적혀 있으나 비율은 10%라 오기일 수 있고, 물체 클래스 목록은 팩 앞부분에 없습니다. 71577·71580·71588·71590과 같은 기관·구성입니다.",
+ "detail_en": "Collected by a vehicle with synchronised camera, lidar, radar and GNSS/INS driving expressways in rain, snow, fog and fine dust: 100,000 front-camera images, 100,000 lidar point clouds, with JSON 2D panoptic segmentation (every pixel labelled by object or background) and lidar 3D boxes, plus GNSS/INS position data. Baselines: 3D object detection with Voxel R-CNN, mAP 78.42%; panoptic segmentation with EfficientPS, PQ 55.46% (rain) and 53.17% (fog). Weather shares are 30% normal, 35% rain, 15% fog, 10% fine dust and 10% snow. Fine dust is listed as 1,000 images but 10%, which may be a typo, and the object class list is not in the pack. Same builder and layout as 71577, 71580, 71588 and 71590.",
+ "amount_ko": "전방 카메라 이미지 100,000장, 라이다 점군 100,000개",
+ "amount_en": "100,000 front-camera images, 100,000 lidar point clouds",
+ "labels_ko": "사진 전체 영역(판옵틱 분할), 물체 입체 상자",
+ "labels_en": "panoptic segmentation, 3D cuboids",
+ "status": "full-run-2026-11-02"
+}

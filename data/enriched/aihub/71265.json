@@ -1,0 +1,32 @@
+{
+ "dataset_id": "71265",
+ "title_en": "Daily-life and colloquial Korean-English parallel translation corpus",
+ "summary_ko": "여행·음식·구매·예약 같은 일상 대화와 해외 영업·해외 고객 채팅 문장을 한→영 150만, 영→한 150만 문장(총 300만)으로 번역한 말뭉치입니다. 신조어·약어·관용 표현이 들어 있어 구어체 번역기나 해외 고객 상담 챗봇에 쓸 수 있습니다.",
+ "summary_en": "A 3-million-sentence corpus (1.5 million Korean→English, 1.5 million English→Korean) of everyday talk (travel, food, shopping, booking), overseas sales and chats with foreign customers, including slang, abbreviations and idioms. For colloquial translators or chatbots that serve overseas customers.",
+ "contents_ko": "문장 쌍 텍스트(txt) + JSON(원문, 번역, 분야).",
+ "contents_en": "Sentence pair text (txt) + JSON (source, translation, field).",
+ "modalities": ["text"],
+ "tasks": ["translation"],
+ "topics": [{"ko": "번역·외국어", "en": "Translation and foreign languages"}, {"ko": "해외 영업", "en": "Overseas sales"}],
+ "keywords_ko": ["한영 번역", "구어체", "신조어", "해외 영업", "채팅"],
+ "keywords_en": ["Korean-English translation", "colloquial", "slang", "overseas sales", "chat"],
+ "labels": ["translation", "field"],
+ "file_formats": ["txt", "json"],
+ "scale_ko": "문장 쌍 300만 개(한-영 150만, 영-한 150만), 세부 분야 15종",
+ "classes_example": ["여행", "음식", "구매", "예약", "도소매유통", "정보통신", "해외고객과의 채팅"],
+ "baseline": [
+  {"task": "translation (ko→en)", "model": "OpenNMT", "metric": "BLEU", "value": "0.7309"},
+  {"task": "translation (en→ko)", "model": "OpenNMT", "metric": "BLEU", "value": "0.7182"}
+ ],
+ "difficulty": "beginner",
+ "difficulty_note_ko": "약 0.5GB로 작고 문장이 짧아(평균 5어절) 번역 실습에 좋습니다.",
+ "skills_needed_ko": ["파이썬", "Hugging Face", "번역 모델"],
+ "caveats_ko": ["BLEU 값이 0~1 단위로 표기됨", "도소매유통 문장이 많아 분야가 치우침"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "여행 회화 번역기", "title_en": "Travel phrase translator", "desc_ko": "여행 문장만으로 한-영 번역 모델을 학습합니다.", "desc_en": "Train a Korean-English model on travel sentences."},
+  {"level": "capstone", "title_ko": "해외 고객 채팅 번역", "title_en": "Overseas customer chat translator", "desc_ko": "쇼핑몰 상담 채팅을 실시간으로 번역하는 도구를 만듭니다.", "desc_en": "Build a live translator for shop customer chats."},
+  {"level": "research", "title_ko": "신조어 번역 평가", "title_en": "Evaluating slang translation", "desc_ko": "신조어·약어 번역이 맞는지 평가하는 방법을 연구합니다.", "desc_en": "Study how to evaluate slang and abbreviation translation."}
+ ],
+ "doc_used": true,
+ "uncertain": []
+}

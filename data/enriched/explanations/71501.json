@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71501",
+ "easy_ko": "블라우스, 코트, 셔츠, 원피스 같은 옷의 상품 사진과 사람이 입은 사진 55만여 장에 옷 부분을 테두리로 표시하고, 옷 치수와 옷감, 입은 사람의 몸 정보를 연결한 데이터입니다. 옷을 가상으로 입혀 보거나 세탁 서비스를 돕는 AI에 쓸 수 있습니다.",
+ "easy_en": "Over 550,000 product photos and on-body photos of clothes such as blouses, coats, shirts and dresses, with the garment outlined and linked to its size, fabric and the wearer's body measurements. You can use it to build AI for virtual try-on or for laundry services.",
+ "detail_ko": "12종 의류(blouse, cardigan, coat, jacket, jumper, shirt, sweater, t-shirt, vest, bottom, onepiece(dress), onepiece(jumpsuit))의 상품·착용 이미지 550,634장에 옷 영역 2D 다각형 분할, 의류 종류, 치수, 원단 정보, 착용자 신체 정보를 JSON으로 붙였습니다. 기준 성능은 Mask R-CNN 의류 분할 AP 80%입니다. 전체 약 330GB이고, 페이지의 데이터 형식이 'txt'로만 적혀 있어 이미지 형식이 불분명하며, 점프수트는 1,585장으로 매우 적습니다.",
+ "detail_en": "550,634 product and on-body images of 12 clothing categories (blouse, cardigan, coat, jacket, jumper, shirt, sweater, t-shirt, vest, bottom, dress, jumpsuit) with JSON 2D polygon masks, category, garment size, fabric information and wearer body data. Baseline: clothing segmentation with Mask R-CNN, AP 80%. Total size is about 330 GB. The page lists the format only as 'txt', so the image format is unclear, and the jumpsuit category is very small (1,585 images).",
+ "amount_ko": "이미지 550,634장, 의류 종류 12종",
+ "amount_en": "550,634 images, 12 clothing categories",
+ "labels_ko": "옷 테두리, 옷 종류, 치수, 옷감, 입은 사람 몸 정보",
+ "labels_en": "garment polygons, category, size, fabric, body measurements",
+ "status": "full-run-2026-11-02"
+}

@@ -1,0 +1,32 @@
+{
+ "dataset_id": "77",
+ "title_en": "Super-resolution images",
+ "summary_ko": "농산물·식품·의류·기계·건물 등 일상 물건 600여 소분류를 찍은 고해상도 사진과, 같은 장면의 저해상도 사진을 짝지은 82만 장입니다. 흐린 저화질 사진을 선명한 고화질로 바꾸는 초해상화 AI를 학습할 수 있습니다.",
+ "summary_en": "826,000 images: high-resolution photos of everyday objects in 600+ sub-categories (farm produce, food, clothing, machines, buildings and more) paired with low-resolution versions of the same scene. For training super-resolution AI that turns blurry low-quality images into sharp ones.",
+ "contents_ko": "고해상도(HR)·저해상도(LR) 이미지 쌍(PNG/JPEG) + 라벨(분류, 물체 정보).",
+ "contents_en": "High-resolution (HR) and low-resolution (LR) image pairs (PNG/JPEG) + labels (category, object info).",
+ "modalities": ["image"],
+ "tasks": ["image_generation"],
+ "topics": [{"ko": "영상 화질 개선", "en": "Image quality enhancement"}, {"ko": "미디어·방송", "en": "Media and broadcasting"}, {"ko": "생활용품", "en": "Everyday objects"}],
+ "keywords_ko": ["초해상화", "화질 개선", "고해상도", "저해상도", "이미지 복원", "업스케일링"],
+ "keywords_en": ["super resolution", "image enhancement", "high resolution", "low resolution", "image restoration", "upscaling"],
+ "labels": ["HR-LR image pairs", "category"],
+ "file_formats": ["png", "jpg", "json"],
+ "scale_ko": "HR 413,119장 + LR 413,119장 = 826,238장, 대분류 8개, 소분류 600개 이상",
+ "classes_example": ["농업·임업·어업 생산물", "식료품·의류", "금속제품·기계", "건축물"],
+ "baseline": [
+  {"task": "super resolution", "model": "EDSR", "metric": "MOS (human rating)", "value": "3.59"},
+  {"task": "super resolution", "model": "RCAN", "metric": "PSNR", "value": "34.18 dB"}
+ ],
+ "difficulty": "intermediate",
+ "difficulty_note_ko": "입력과 정답이 짝지어져 있어 이해하기 쉽지만, 이미지 생성 모델 학습에는 GPU가 필요합니다. 전체 약 7.3TB라 일부 분류만 쓰세요.",
+ "skills_needed_ko": ["파이썬", "PyTorch로 이미지 복원 모델 학습", "PSNR·SSIM 평가"],
+ "caveats_ko": ["전체 약 7.3TB로 매우 큼", "성능 표의 AI TASK가 'Image Classification'으로 적혀 있음", "RCAN PSNR이 기준값보다 낮게 적혀 있음"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "보간법 vs AI 화질 비교", "title_en": "Interpolation vs AI upscaling", "desc_ko": "공개 초해상화 모델과 단순 확대(bicubic)의 결과를 PSNR로 비교합니다.", "desc_en": "Compare a public super-resolution model with bicubic upscaling using PSNR."},
+  {"level": "capstone", "title_ko": "저화질 상품 사진 개선 도구", "title_en": "Product photo enhancer", "desc_ko": "쇼핑몰용 저화질 상품 사진을 선명하게 바꾸는 웹 도구를 만듭니다.", "desc_en": "A web tool that sharpens low-quality product photos for online shops."},
+  {"level": "research", "title_ko": "분야별 초해상화 성능 차이", "title_en": "Super-resolution across categories", "desc_ko": "식품·의류·건물 등 분류별로 복원 품질이 어떻게 다른지 분석하고 분야 특화 미세조정을 비교합니다.", "desc_en": "Analyse quality by category and compare category-specific fine-tuning."}
+ ],
+ "doc_used": true,
+ "uncertain": []
+}

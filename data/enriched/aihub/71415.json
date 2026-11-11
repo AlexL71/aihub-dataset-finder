@@ -1,0 +1,29 @@
+{
+ "dataset_id": "71415",
+ "title_en": "Face recognition aging image data",
+ "summary_ko": "초상권 동의를 받은 참여자 1인당 유아기부터 현재까지 연령대별 얼굴 사진 50장씩, 총 50,250장입니다. 얼굴 상자와 5점 키포인트, 사진 속 나이·출생년도가 붙어 있어 나이가 들어도 같은 사람을 알아보는 얼굴 인식, 나이 추정, 노화 얼굴 변환 AI에 쓸 수 있습니다.",
+ "summary_en": "50,250 face photos, 50 per consenting participant from infancy to now, with face boxes, 5 keypoints, age in photo and birth year. For age-robust face recognition, age estimation and face aging generation.",
+ "contents_ko": "얼굴 사진(png, 본인 외 얼굴 블러) + JSON(얼굴 상자, 5점 키포인트, 출생년도·현재 나이·사진 나이·촬영 기기).",
+ "contents_en": "Face photo (png, other faces blurred) + JSON (face box, 5 keypoints, birth year, current age, age in photo, camera).",
+ "modalities": ["image"],
+ "tasks": ["object_detection", "keypoint_pose", "image_classification", "image_generation"],
+ "topics": [{"ko": "공공안전·신원 확인", "en": "Public safety and identity checks"}, {"ko": "엔터테인먼트", "en": "Entertainment"}],
+ "keywords_ko": ["얼굴 인식", "노화", "나이 추정", "얼굴 변환", "에이징", "신원 확인"],
+ "keywords_en": ["face recognition", "aging", "age estimation", "face transformation", "age progression", "identity verification"],
+ "labels": ["bounding box", "5 keypoints", "age", "metadata"],
+ "file_formats": ["png", "json"],
+ "scale_ko": "얼굴 사진 50,250장(1인당 50장, 약 1,005명)",
+ "classes_example": ["20~35세", "36~49세", "50세 이상", "남자", "여자"],
+ "baseline": [{"task": "face aging transformation", "model": "SAM", "metric": "Accuracy", "value": "44.45%"}, {"task": "age estimation", "model": "C3AE", "metric": "MAE", "value": "3.96 years"}],
+ "difficulty": "intermediate",
+ "difficulty_note_ko": "약 77GB로 다룰 만하지만 같은 사람 사진이 많아 사람 단위로 분할해야 합니다.",
+ "skills_needed_ko": ["파이썬", "얼굴 인식 모델(ArcFace 등)", "회귀(나이 추정)"],
+ "caveats_ko": ["실제 얼굴 사진이라 개인정보·초상권 이용 조건을 꼭 확인", "옛날 사진은 화질·기기가 제각각임", "참여자 수(약 1,005명)는 50,250÷50으로 계산한 값", "나이 추정 MAE 단위가 '단위없음'으로 표기(연 단위로 보임)"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "사진 나이 추정", "title_en": "Age-from-photo estimator", "desc_ko": "얼굴 사진으로 나이를 예측하고 평균 오차를 잽니다.", "desc_en": "Predict age from a face and measure the mean error."},
+  {"level": "capstone", "title_ko": "어릴 적 사진 매칭", "title_en": "Childhood photo matcher", "desc_ko": "현재 사진과 어릴 적 사진이 같은 사람인지 판단하는 데모를 만듭니다.", "desc_en": "Build a demo that checks if a childhood and current photo match."},
+  {"level": "research", "title_ko": "나이 차이와 인식 성능", "title_en": "Age gap vs recognition accuracy", "desc_ko": "사진 사이 나이 차이가 커질수록 얼굴 인식 성능이 얼마나 떨어지는지 연구합니다.", "desc_en": "Study how recognition drops as the age gap grows."}
+ ],
+ "doc_used": true,
+ "uncertain": []
+}

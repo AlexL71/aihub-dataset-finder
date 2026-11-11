@@ -1,0 +1,12 @@
+{
+ "dataset_id": "142",
+ "easy_ko": "강원·충청 지역을 비행기와 인공위성에서 찍은 사진에 건물, 주차장, 도로, 가로수, 논, 밭, 숲, 빈 땅이 어디인지 색으로 칠한 데이터입니다. 하늘 사진만으로 땅을 어떻게 쓰고 있는지 지도를 자동으로 만들고 개발이나 환경 변화를 살피는 AI를 만들 수 있습니다.",
+ "easy_en": "Aerial and satellite photos of the Gangwon and Chungcheong region where buildings, parking lots, roads, street trees, rice paddies, fields, forests and bare land are coloured in. You can build AI that automatically maps how land is used and monitors development and environmental change.",
+ "detail_ko": "강원·충청 지역 항공사진(51cm) 111,745장(정밀 39,500, 대략 72,245)과 Sentinel-2 위성영상(10m) 600장으로 구성되며, 512×512 또는 1024×1024 TIFF 패치에 건물·주차장·도로·가로수·논·밭·산림·나지 8종 세그멘테이션 라벨이 JSON으로 붙어 있습니다. 기준 성능은 DeepLab v3 항공사진 토지피복 분할 픽셀 정확도 96.18%입니다. 위성영상은 600장으로 적고 클래스가 5종으로 다릅니다.",
+ "detail_en": "111,745 aerial images of the Gangwon and Chungcheong region at 51 cm (39,500 fine, 72,245 coarse labels) and 600 Sentinel-2 satellite images at 10 m, as 512×512 or 1024×1024 TIFF patches with JSON segmentation labels for 8 classes: building, parking lot, road, street tree, paddy, field, forest and bare land. Baseline: DeepLab v3 aerial land-cover segmentation pixel accuracy 96.18%. The satellite set is small (600 images) and uses a different 5-class scheme.",
+ "amount_ko": "항공사진 111,745장, 위성영상 600장",
+ "amount_en": "111,745 aerial images, 600 satellite images",
+ "labels_ko": "땅 쓰임새별 영역(색칠), 정밀·대략 라벨 구분",
+ "labels_en": "land-cover regions (colour masks), fine or coarse label flag",
+ "status": "full-run-2026-11-02"
+}

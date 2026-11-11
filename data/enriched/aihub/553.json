@@ -1,0 +1,29 @@
+{
+ "dataset_id": "553",
+ "title_en": "Special vehicle shape data from a driving car's view",
+ "summary_ko": "특수차·화물차·건설기계 67종 1,155대를 주행 차량 시점에서 찍은 이미지 103.5만 장으로, 외관 분류용 2D 상자와 형상 인식용 2.5D 상자(큐보이드) 51.8만 장이 표시되어 있습니다. 자율주행차의 특수 차량 인식이나 도로시설 파손 사고 예방에 쓸 수 있습니다.",
+ "summary_en": "1.035 million images of 1,155 special vehicles (special-purpose, freight, construction machines) in 67 types, seen from a driving car, with 2D boxes for appearance classes and 518,000 2.5D cuboids for shape. For self-driving recognition of special vehicles and preventing damage to road facilities.",
+ "contents_ko": "차량 이미지(jpg) + JSON(2D 상자, 큐보이드, 차종 분류).",
+ "contents_en": "Vehicle image (jpg) + JSON (2D box, cuboid, vehicle class).",
+ "modalities": ["image"],
+ "tasks": ["object_detection", "image_classification"],
+ "topics": [{"ko": "자율주행", "en": "Self-driving"}, {"ko": "건설기계·특수차", "en": "Construction and special vehicles"}],
+ "keywords_ko": ["특수 차량", "건설기계", "화물차", "큐보이드", "자율주행", "차종 분류"],
+ "keywords_en": ["special vehicles", "construction machinery", "trucks", "cuboid", "self-driving", "vehicle classification"],
+ "labels": ["2D bounding box", "2.5D cuboid", "class (67 types)"],
+ "file_formats": ["jpg", "json"],
+ "scale_ko": "이미지 1,035,341장, 큐보이드 517,671장, 차종 67종 1,155대",
+ "classes_example": ["특수차", "화물차", "건설기계"],
+ "baseline": [],
+ "difficulty": "intermediate",
+ "difficulty_note_ko": "차종 분류·탐지 실습에 좋지만 약 1TB입니다.",
+ "skills_needed_ko": ["파이썬", "YOLO 탐지", "3D 상자 추정 기초"],
+ "caveats_ko": ["성능 지표가 팩 앞부분에 없음"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "건설기계 종류 분류", "title_en": "Construction machine classifier", "desc_ko": "굴착기·덤프트럭 같은 차종을 분류합니다.", "desc_en": "Classify machines such as excavators and dump trucks."},
+  {"level": "capstone", "title_ko": "공사 차량 접근 알림", "title_en": "Construction vehicle alert", "desc_ko": "주행 영상에서 특수 차량을 탐지해 운전자에게 알립니다.", "desc_en": "Detect special vehicles in driving video and warn drivers."},
+  {"level": "research", "title_ko": "단일 카메라 3D 상자 추정", "title_en": "Monocular 3D box estimation", "desc_ko": "큐보이드 라벨로 특수 차량의 3D 크기·방향을 추정합니다.", "desc_en": "Estimate 3D size and heading of special vehicles from cuboids."}
+ ],
+ "doc_used": true,
+ "uncertain": []
+}

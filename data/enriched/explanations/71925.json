@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71925",
+ "easy_ko": "실제 금융 거래 패턴을 본떠 개인 정보 없이 만든 가짜 거래 기록 700만여 건에 정상 거래와 이상 거래(사기)를 표시한 데이터입니다. 카드나 계좌 이체에서 사기 거래를 찾아내는 AI를 학습하고 검증하는 데 쓸 수 있습니다.",
+ "easy_en": "Over 7 million fake transaction records made to mimic real financial patterns without any personal data, each marked as normal or anomalous (fraud). You can use it to train and test AI that catches fraudulent card payments or bank transfers.",
+ "detail_ko": "실제 금융거래 패턴(금융결제원 전자금융공동망, 카드사 2021~2024년 데이터)을 반영해 민감정보 없이 만든 합성 거래 데이터(csv) 7,096,642건으로, 전자금융공동망 4,926,785건(이상거래 19,084건)과 카드거래 2,169,857건(이상거래 80,009건)에 거래 정보, 사용자 패턴, 정상·이상 라벨이 있습니다(원천 12,302,694건). 페이지에 성능 점수 표가 없고(그래프 특징 + SMOTE 모델 소개만 있음), 전자금융 이상거래 비율이 약 0.39%로 매우 적습니다. 합성 데이터라 실제 사기 수법과 차이가 있을 수 있고, 합성 이상거래 수가 원천보다 많아 증강된 것으로 보입니다.",
+ "detail_en": "7,096,642 synthetic transactions (csv) built without sensitive data to reflect real patterns (KFTC e-banking network and card-company data, 2021 to 2024): 4,926,785 e-banking (19,084 anomalous) and 2,169,857 card (80,009 anomalous), with transaction information, user patterns and normal/anomaly labels (12,302,694 source records). There is no score table (only graph features + SMOTE are described); e-banking anomalies are only about 0.39%; being synthetic, it may differ from real fraud methods; and synthetic anomalies outnumber the source ones (80,009 vs. 60,121 card), so they seem to be augmented.",
+ "amount_ko": "합성 7,096,642건(이상거래 99,093건), 원천 12,302,694건",
+ "amount_en": "7,096,642 synthetic records (99,093 anomalous), 12,302,694 source records",
+ "labels_ko": "정상·이상 거래 표시",
+ "labels_en": "normal/anomaly label",
+ "status": "full-run-2026-11-02"
+}

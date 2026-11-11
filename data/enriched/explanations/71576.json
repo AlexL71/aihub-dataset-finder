@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71576",
+ "easy_ko": "밝기가 다른 여러 실내 주차장에서 차에 단 주변 카메라, 앞 카메라, 레이저 센서로 기록한 데이터입니다. 주차 칸, 주차선, 기둥, 사람 같은 것이 표시되어 있고 위치 추정용 데이터도 있어 스스로 주차하는 차와 주차 칸 찾기 AI에 쓸 수 있습니다.",
+ "easy_en": "Data recorded in indoor car parks with different lighting, using a car's surround-view cameras, front camera and laser sensor. Parking spaces, lines, pillars, people and more are marked, and there is data for working out the car's position, so you can build AI for self-parking cars and finding parking spaces.",
+ "detail_ko": "여러 실내 주차장에서 전용 차량의 어라운드뷰(AVM)·전방 카메라(jpg), 라이다(pcd), IMU로 기록한 데이터로, 객체 인식용 162,166장(AVM 80,194 + 전방 40,986 + 라이다 40,986)에 분할과 큐보이드(JSON)를, 위치 추정용 89,060장에 차량 자세를 제공하며 메타데이터 550개가 있습니다. 클래스 예: Parking Area, No Parking Area, Parking Line, Parking Area Number, Disabled Icon, Speed Bump, Parking Block, Pillar, Vehicle, Human. 기준 성능은 HDL SLAM·Cartographer 위치 추정 ATE 0.28, HRNet-OCR 이미지 분할 mIoU 73.35%, DeepLabV3·STDC 주차 공간 분할 mIoU 71.98%, CMX 이미지+라이다 분할 mIoU 73.53%입니다. 전체 약 2.7TB이고, 데이터 유형이 '이미지'로 적혀 있지만 라이다·IMU도 포함됩니다.",
+ "detail_en": "Data recorded in several indoor car parks by a dedicated vehicle with surround-view (AVM) and front cameras (jpg), lidar (pcd) and IMU: 162,166 frames for object recognition (80,194 AVM + 40,986 front + 40,986 lidar) with JSON segmentation and cuboids, 89,060 frames for localisation with vehicle pose, and 550 metadata files. Example classes: parking area, no-parking area, parking line, space number, disabled icon, speed bump, parking block, pillar, vehicle, human. Baselines: localisation with HDL SLAM and Cartographer, ATE 0.28; image segmentation with HRNet-OCR, mIoU 73.35%; parking-space segmentation with DeepLabV3 and STDC, mIoU 71.98%; image+lidar segmentation with CMX, mIoU 73.53%. Total size is about 2.7 TB, and although the data type says 'image', lidar and IMU are included.",
+ "amount_ko": "객체 인식용 162,166장, 위치 추정용 89,060장, 메타데이터 550개",
+ "amount_en": "162,166 recognition frames, 89,060 localisation frames, 550 metadata files",
+ "labels_ko": "주차 칸·물체 영역, 입체 상자, 차 위치",
+ "labels_en": "segmentation, cuboids, vehicle pose",
+ "status": "full-run-2026-11-02"
+}

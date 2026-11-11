@@ -1,0 +1,29 @@
+{
+ "dataset_id": "189",
+ "title_en": "Sidewalk walking images",
+ "summary_ko": "인도를 걸으며 찍은 영상 이미지 67만 장으로, 자전거·자동차·사람·개·킥보드·가로수·가로등 등 보행 장애물 29종이 상자·다각형으로 표시되고, 보도블록·점자블록·자전거도로·파손 노면 같은 노면 상태도 칠해져 있습니다. 장애인 보행 보조와 인도 주행 로봇에 쓸 수 있습니다.",
+ "summary_en": "670,000 images from walking on sidewalks, with 29 obstacle types (bicycles, cars, people, dogs, scooters, street trees, lamp posts and more) boxed or outlined, and surface states (sidewalk blocks, tactile paving, bike lanes, damaged surfaces) painted. For walking aids for disabled people and sidewalk robots.",
+ "contents_ko": "인도 이미지 + 라벨(장애물 상자·다각형, 노면 분할 다각형).",
+ "contents_en": "Sidewalk image + labels (obstacle boxes and polygons, surface segmentation polygons).",
+ "modalities": ["image"],
+ "tasks": ["object_detection", "segmentation"],
+ "topics": [{"ko": "보행·이동 안전", "en": "Pedestrian safety"}, {"ko": "접근성·장애", "en": "Accessibility and disability"}, {"ko": "로봇", "en": "Robots"}],
+ "keywords_ko": ["인도", "보행 장애물", "점자블록", "보도블록", "장애인 이동권", "배달 로봇"],
+ "keywords_en": ["sidewalk", "walking obstacles", "tactile paving", "sidewalk blocks", "disability mobility", "delivery robot"],
+ "labels": ["bounding box", "polygon", "class (29 obstacles + surfaces)"],
+ "file_formats": ["jpg", "xml"],
+ "scale_ko": "이미지 67만 장, 장애물 29종, 노면 상태 여러 종",
+ "classes_example": ["bicycle", "car", "person", "dog", "scooter", "motorcycle", "tree_trunk", "pole", "braille_guide_blocks"],
+ "baseline": [],
+ "difficulty": "intermediate",
+ "difficulty_note_ko": "탐지·분할 모두 실습할 수 있지만 파일이 9GB 이상 덩어리로만 제공되고 전체 약 608GB입니다.",
+ "skills_needed_ko": ["파이썬", "YOLO 탐지", "분할 모델"],
+ "caveats_ko": ["최소 파일 9GB", "2019년 구축, 성능 지표 없음", "파일 형식은 추정"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "점자블록 분할", "title_en": "Tactile paving segmentation", "desc_ko": "인도 사진에서 점자블록 영역을 칠하는 모델을 학습합니다.", "desc_en": "Train a model that paints tactile-paving areas."},
+  {"level": "capstone", "title_ko": "시각장애인 인도 안내", "title_en": "Sidewalk guidance for blind users", "desc_ko": "점자블록을 따라가며 앞 장애물을 음성으로 알려주는 앱을 만듭니다.", "desc_en": "Follow tactile paving and announce obstacles ahead by voice."},
+  {"level": "research", "title_ko": "노면 파손 자동 지도화", "title_en": "Mapping damaged sidewalks", "desc_ko": "파손 노면 분할 결과로 위험 구간 지도를 만드는 방법을 연구합니다.", "desc_en": "Build danger maps from damaged-surface segmentation."}
+ ],
+ "doc_used": true,
+ "uncertain": ["파일 형식이 팩에 명시되지 않음"]
+}

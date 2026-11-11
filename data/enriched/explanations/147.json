@@ -1,0 +1,12 @@
+{
+ "dataset_id": "147",
+ "easy_ko": "고추·무·배추·오이·콩·토마토·파 같은 밭 작물의 잎과 열매 사진마다 건강한지, 탄저병·흰가루병 같은 어떤 병에 걸렸는지 표시한 데이터입니다. 농민이 사진을 찍으면 작물 병을 알려 주는 진단 앱을 만들 수 있습니다.",
+ "easy_en": "Photos of leaves and fruit of field crops such as chili peppers, radish, cabbage, cucumber, soybean, tomato and green onion, each marked as healthy or with a disease such as anthracnose or powdery mildew. You can build an app that tells farmers which disease a crop has from a photo.",
+ "detail_ko": "노지 작물 10종의 학습 데이터 349,151건(정상 약 15.4만, 질병 원본 2만 + 10배 증강 20만, jpg)으로, JSON에 작물, 질병 코드(20여 종), 촬영 부위, 피해 정도, 관심 영역 바운딩박스가 있습니다. 기준 성능 지표는 없습니다. 질병 사진 대부분이 증강본이므로 같은 원본이 학습·검증에 섞이지 않게 원본 기준으로 나눠야 하며, 페이지 표 제목이 '시설 작물 질병'으로 잘못 적혀 있습니다.",
+ "detail_en": "349,151 training items for 10 open-field crops (about 154k healthy; 20k original disease photos plus 200k 10× augmentations; jpg), with JSON crop, disease code (20+ diseases), plant part, damage level and region-of-interest box. No baseline is published. Most disease photos are augmentations, so split by original image to avoid leakage between train and validation; the page table is mislabelled as greenhouse crops.",
+ "amount_ko": "학습 데이터 약 34.9만 건, 작물 10종",
+ "amount_en": "about 349k training items, 10 crops",
+ "labels_ko": "작물·병 종류, 병든 부위 상자, 촬영 부위, 피해 정도",
+ "labels_en": "crop and disease class, box around the affected area, plant part, damage level",
+ "status": "full-run-2026-11-02"
+}

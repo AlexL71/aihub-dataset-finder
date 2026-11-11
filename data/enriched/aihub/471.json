@@ -1,0 +1,29 @@
+{
+ "dataset_id": "471",
+ "title_en": "Shape estimation of objects hidden behind obstacles",
+ "summary_ko": "철조망·유리창 같은 장애물에 가려진 물체와 가려지지 않은 같은 물체 사진을 200종 이상 카테고리별 2,000장 이상씩 모은 43만 장입니다. 물체 영역 분할 라벨이 있어 가려진 물체 인식, 형태 복원, 인페인팅 연구에 쓸 수 있습니다.",
+ "summary_en": "431,000 photos of objects in 200+ categories (2,000+ per category), both hidden behind obstacles such as wire fences and glass and unobstructed. Segmentation labels support research on occluded object recognition, shape completion and inpainting.",
+ "contents_ko": "가려진/가려지지 않은 물체 사진(jpg) + JSON(물체 분할 마스크, 장애물 종류, 카테고리).",
+ "contents_en": "Occluded and clear object photos (jpg) + JSON (object segmentation mask, obstacle type, category).",
+ "modalities": ["image"],
+ "tasks": ["segmentation", "image_classification", "image_generation"],
+ "topics": [{"ko": "컴퓨터 비전 연구", "en": "Computer vision research"}, {"ko": "로봇·자율주행", "en": "Robots and self-driving"}],
+ "keywords_ko": ["가림", "occlusion", "철조망", "유리창", "형상 추정", "인페인팅", "텍스처 편향"],
+ "keywords_en": ["occlusion", "wire fence", "glass", "shape estimation", "inpainting", "texture bias"],
+ "labels": ["segmentation mask", "obstacle type", "category"],
+ "file_formats": ["jpg", "json"],
+ "scale_ko": "431,120건, 객체 카테고리 200종 이상",
+ "classes_example": ["철조망", "유리창"],
+ "baseline": [],
+ "difficulty": "advanced",
+ "difficulty_note_ko": "가림 문제를 다루는 연구 성격이 강하고 전체 약 680GB입니다.",
+ "skills_needed_ko": ["파이썬", "분할 모델", "생성 모델(인페인팅) 기초"],
+ "caveats_ko": ["성능 지표와 카테고리 목록이 팩 앞부분에 없음"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "가림 여부 분류", "title_en": "Occluded or not", "desc_ko": "사진 속 물체가 장애물에 가려졌는지 분류합니다.", "desc_en": "Classify whether the object is behind an obstacle."},
+  {"level": "capstone", "title_ko": "철조망 지우기 도구", "title_en": "Fence-removal tool", "desc_ko": "철조망 영역을 찾아 인페인팅으로 지우는 사진 편집 데모를 만듭니다.", "desc_en": "Find fence regions and remove them with inpainting."},
+  {"level": "research", "title_ko": "텍스처 편향 줄이기", "title_en": "Reducing texture bias", "desc_ko": "가려진 물체에서 모델이 형태 대신 질감에 의존하는 문제를 분석하고 줄입니다.", "desc_en": "Analyse and reduce reliance on texture over shape for occluded objects."}
+ ],
+ "doc_used": true,
+ "uncertain": []
+}

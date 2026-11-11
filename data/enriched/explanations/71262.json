@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71262",
+ "easy_ko": "가공식품, 농산물, 축산물, 식품 첨가물, 유해물질, 건강식품 같은 식품 분야의 영어-한국어, 중국어-한국어 번역 문장을 짝지은 데이터입니다. 식품 분야 문서를 전문적으로 번역하는 번역기를 만들 수 있습니다.",
+ "easy_en": "Sentence pairs translated between English–Korean and Chinese–Korean in fields such as processed food, farm produce, livestock products, food additives, harmful substances and health foods. You can build translators specialised in food-related documents.",
+ "detail_ko": "영어-한국어, 중국어-한국어 번역 문장 쌍 300만 개(영-한 150만, 중-한 150만)(txt, JSON: 원문, 번역, 분야)입니다. 기준 성능은 OpenNMT BLEU 영→한 0.7588, 중→한 0.7144입니다. BLEU 값이 0~1 단위로 적혀 있으며, 식품 학술지 등에서 모은 문장이라 일상 표현은 적습니다(세부 분야 20종).",
+ "detail_en": "3M (1.5M en–ko, 1.5M zh–ko) sentence pairs between English–Korean and Chinese–Korean (txt and JSON: source, translation, field). Baselines: OpenNMT BLEU 0.7588 (en→ko) and 0.7144 (zh→ko). BLEU is given on a 0–1 scale; sentences come from food journals and similar sources, so everyday expressions are few (20 sub-fields).",
+ "amount_ko": "번역 문장 쌍 300만 개(영-한 150만, 중-한 150만)",
+ "amount_en": "3M (1.5M en–ko, 1.5M zh–ko) sentence pairs",
+ "labels_ko": "번역 문장 짝, 식품 세부 분야",
+ "labels_en": "sentence pairs, food sub-field",
+ "status": "full-run-2026-11-02"
+}

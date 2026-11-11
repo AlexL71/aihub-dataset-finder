@@ -1,0 +1,12 @@
+{
+ "dataset_id": "111",
+ "easy_ko": "의료, 금융, 학교 가정통신문, 국제 스포츠, IT, 축제, 대법원 판례, 지역 문화·음식 분야의 한국어 문장과 영어 번역을 짝지은 데이터입니다. 가정통신문 번역기나 판례 번역기처럼 특정 분야에 강한 번역 AI를 만들 수 있습니다.",
+ "easy_en": "Korean sentences paired with English translations in fields such as medicine, finance, school newsletters to parents, international sports, IT, festivals, Supreme Court rulings and local culture and food. You can build translation AI that is strong in one field, such as school newsletters or court rulings.",
+ "detail_ko": "8개 분야 한국어-영어 병렬 문장 150만 쌍(의료 25만, 금융·스포츠·IT·축제·향토문화 각 20만, 판례 15만, 가정통신문 10만)으로, 한국어 원문은 평균 15어절이며 분야 라벨이 있습니다. 기준 성능은 Google/AWS 클라우드 번역 BLEU 0.5166입니다. 파일 형식(json/xlsx)은 기록에서 확인되지 않은 추정입니다.",
+ "detail_en": "1.5M Korean–English sentence pairs in 8 domains (medical 250k; finance, sports, IT, festivals and local culture 200k each; court rulings 150k; school newsletters 100k); Korean sentences average 15 words, with domain labels. Baseline: Google/AWS cloud MT BLEU 0.5166. File formats (json/xlsx) are not confirmed.",
+ "amount_ko": "번역 문장 150만 쌍, 분야 8개",
+ "amount_en": "1.5M sentence pairs, 8 domains",
+ "labels_ko": "한국어-영어 번역 짝, 분야",
+ "labels_en": "Korean–English sentence pairs, domain",
+ "status": "full-run-2026-11-02"
+}

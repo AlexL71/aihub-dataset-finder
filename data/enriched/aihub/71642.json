@@ -1,0 +1,29 @@
+{
+ "dataset_id": "71642",
+ "title_en": "Chemical (genotoxicity) hazard prediction data",
+ "summary_ko": "PubChem·eChemPortal·Tox21 등 공개 자료에서 모은 화학물질 유전독성 실험 정보 200,017건(InChI 식별자, 실험 조건, 결과, 근거)과 화학물질 2D 구조 이미지 10,319장으로 이루어진 데이터입니다. 화학물질 구조로 유전독성을 예측하는 AI에 쓸 수 있습니다.",
+ "summary_en": "200,017 genotoxicity test records for chemicals from public sources such as PubChem, eChemPortal and Tox21 (InChI identifiers, test conditions, results, evidence) plus 10,319 2D structure images. For AI that predicts genotoxicity from chemical structure.",
+ "contents_ko": "JSON(화학물질 식별자·속성, 유전독성 실험 정보) + 2D 구조 이미지(png).",
+ "contents_en": "JSON (chemical identifiers and properties, genotoxicity test info) + 2D structure image (png).",
+ "modalities": ["tabular", "text", "image"],
+ "tasks": ["tabular_prediction", "information_extraction"],
+ "topics": [{"ko": "화학물질 안전", "en": "Chemical safety"}, {"ko": "독성학", "en": "Toxicology"}],
+ "keywords_ko": ["유전독성", "화학물질", "InChI", "독성 예측", "Tox21", "분자 구조"],
+ "keywords_en": ["genotoxicity", "chemicals", "InChI", "toxicity prediction", "Tox21", "molecular structure"],
+ "labels": ["genotoxicity result", "test level", "evidence"],
+ "file_formats": ["json", "png"],
+ "scale_ko": "실험 기록 200,017건, 구조 이미지 10,319장",
+ "classes_example": ["Animal", "Animal cell line", "Bacteria", "Germ cell", "Protein"],
+ "baseline": [],
+ "difficulty": "intermediate",
+ "difficulty_note_ko": "약 1.2GB로 작지만 화학 구조 표현(InChI·SMILES)을 이해해야 합니다.",
+ "skills_needed_ko": ["파이썬", "RDKit", "표 데이터 분류"],
+ "caveats_ko": ["단백질 수준 실험이 약 63%로 치우침", "같은 물질에 여러 실험이 있어 물질 단위로 나눠야 누수를 막음", "성능 지표가 팩에 없음"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "유전독성 양성·음성 분류", "title_en": "Genotoxicity classifier", "desc_ko": "분자 특징으로 유전독성 양성 여부를 분류합니다.", "desc_en": "Classify genotoxicity from molecular features."},
+  {"level": "capstone", "title_ko": "화학물질 위험 조회 도구", "title_en": "Chemical hazard lookup", "desc_ko": "물질 이름이나 구조를 넣으면 예측 독성과 근거를 보여 줍니다.", "desc_en": "Show predicted toxicity and evidence for a chemical."},
+  {"level": "research", "title_ko": "그래프 신경망 독성 예측", "title_en": "GNN toxicity prediction", "desc_ko": "분자 그래프 모델로 유전독성 예측을 높이는 방법을 연구합니다.", "desc_en": "Use molecular graph networks for genotoxicity prediction."}
+ ],
+ "doc_used": true,
+ "uncertain": ["라벨(결과) 값의 형식"]
+}

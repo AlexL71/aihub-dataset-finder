@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71468",
+ "easy_ko": "피겨 스케이팅의 점프, 스핀, 스텝 동작을 카메라 8대로 찍고, 몸 관절 위치와 넘어짐 같은 동작 결과를 표시한 데이터입니다. 동작을 알아보고 자세를 분석해 원격으로 코칭하는 AI에 쓸 수 있습니다.",
+ "easy_en": "Figure-skating jumps, spins and steps filmed with 8 cameras, marking body joint positions and the result of each move, such as a fall. You can use it to build AI that recognises moves, analyses posture and coaches skaters remotely.",
+ "detail_ko": "피겨 스케이팅 동작 5,000개를 8대 카메라로 찍은 영상 40,000클립(avi)과 이미지(jpg)에 2D 키포인트 40,000개, 3D 키포인트 5,000개(CSV), 분할, 동작 분류와 결과(정상, 넘어짐, 회전수 부족 등; JSON)를 붙였습니다. 동작 예: Waltz, 1S(Salchow), 1T(Toe loop), 1Lz(Lutz), Two-Foot Spin, Camel, Swizzle. 기준 성능은 PoseC3D 2D 동작 분류 Top-3 정확도 99.94%, 오류 분류 Top-3 정확도 10%입니다. 전체 약 2,337GB이고, 오류 분류 값은 기준(85%)과 크게 달라 표기 오류일 수 있으며, 1회전 점프 위주로 보입니다.",
+ "detail_en": "5,000 figure-skating moves filmed by 8 cameras (40,000 video clips, avi) plus images (jpg), with 40,000 2D and 5,000 3D keypoint sets (CSV), segmentation, and move class and outcome (normal, fall, under-rotation and others; JSON). Example moves: Waltz, 1S (Salchow), 1T (toe loop), 1Lz (Lutz), two-foot spin, camel, swizzle. Baselines with PoseC3D (2D): move classification Top-3 accuracy 99.94%, error classification Top-3 accuracy 10%. Total size is about 2,337 GB. The error-classification value is far from its target (85%) and may be a typo, and the moves look mostly like single-rotation jumps.",
+ "amount_ko": "동작 5,000개(영상 40,000클립), 2D 키포인트 40,000개, 3D 키포인트 5,000개",
+ "amount_en": "5,000 moves (40,000 clips), 40,000 2D and 5,000 3D keypoint sets",
+ "labels_ko": "관절 위치 점(평면·입체), 몸 영역, 동작 종류, 실수 종류",
+ "labels_en": "2D and 3D keypoints, segmentation, move class, error type",
+ "status": "full-run-2026-11-02"
+}

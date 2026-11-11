@@ -1,0 +1,32 @@
+{
+ "dataset_id": "103",
+ "title_en": "Korean Sign Language videos",
+ "summary_ko": "길찾기·교통·주소와 관련된 한국수어 문장 2,000개, 단어 3,000개, 지숫자·지문자 1,000개를 담은 영상 53.6만 클립입니다. 농인 20명을 5개 각도에서 동시에 찍었고, 형태소·표정 같은 비수지 요소와 프레임별 손·몸 키포인트가 있어 수어 인식·번역 AI에 쓸 수 있습니다.",
+ "summary_en": "536,000 video clips of Korean Sign Language: 2,000 sentences, 3,000 words and 1,000 finger-number/finger-spelling signs about directions, transport and addresses. 20 Deaf signers were filmed from 5 angles at once, with morpheme and non-manual (facial) annotations and per-frame hand and body keypoints, for sign recognition and translation AI.",
+ "contents_ko": "수어 영상 클립(mp4) + JSON(한국어 문장·단어, 수어 형태소, 비수지 요소, 30fps 프레임별 키포인트).",
+ "contents_en": "Sign video clip (mp4) + JSON (Korean sentence or word, sign morphemes, non-manual markers, keypoints per frame at 30 fps).",
+ "modalities": ["video", "text"],
+ "tasks": ["action_recognition", "keypoint_pose", "translation"],
+ "topics": [{"ko": "수어·농인", "en": "Sign language and Deaf community"}, {"ko": "접근성·장애", "en": "Accessibility and disability"}, {"ko": "교통·길찾기", "en": "Transport and directions"}],
+ "keywords_ko": ["한국수어", "수어 번역", "농인", "지문자", "키포인트", "접근성"],
+ "keywords_en": ["Korean Sign Language", "sign translation", "Deaf", "finger spelling", "keypoints", "accessibility"],
+ "labels": ["sentence/word gloss", "sign morphemes", "non-manual markers", "keypoints"],
+ "file_formats": ["mp4", "json"],
+ "scale_ko": "수어 영상 536,000클립(스튜디오 50만, 크라우드 2.1만, 아바타 1.5만), 문장 2,000·단어 3,000·지숫자/지문자 1,000",
+ "classes_example": [],
+ "baseline": [
+  {"task": "sign sentence recognition", "model": "not disclosed", "metric": "BLEU", "value": "0.9883"},
+  {"task": "Korean sign recognition", "model": "weakly supervised model", "metric": "WER", "value": "26.74%"}
+ ],
+ "difficulty": "advanced",
+ "difficulty_note_ko": "영상 시퀀스와 번역을 함께 다루고 전체 약 2.7TB라 어렵습니다. 키포인트 JSON만 쓰면 용량 부담이 훨씬 적습니다.",
+ "skills_needed_ko": ["파이썬", "키포인트 시계열 모델", "시퀀스-투-시퀀스 번역 기초"],
+ "caveats_ko": ["전체 약 2.7TB", "길찾기·교통·주소 분야 중심이라 일상 수어 전체를 다루지는 않음", "사람 얼굴이 나오므로 이용 약관 확인 필요"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "지문자(자음·모음) 분류", "title_en": "Finger-spelling classifier", "desc_ko": "지문자 영상의 손 키포인트로 자음·모음을 분류합니다.", "desc_en": "Classify finger-spelled letters from hand keypoints."},
+  {"level": "capstone", "title_ko": "지하철 수어 단어 인식 앱", "title_en": "Subway sign-word recogniser", "desc_ko": "교통 관련 수어 단어를 인식해 텍스트로 보여주는 앱을 만듭니다.", "desc_en": "Recognise transport-related sign words and show them as text."},
+  {"level": "research", "title_ko": "수어 문장→한국어 번역", "title_en": "Sign sentence to Korean translation", "desc_ko": "키포인트와 비수지 요소를 입력으로 한국어 문장을 생성하는 번역 모델을 연구합니다.", "desc_en": "Study translation models that generate Korean from keypoints and non-manual markers."}
+ ],
+ "doc_used": true,
+ "uncertain": ["클래스 목록을 페이지와 설명서에서 찾지 못함"]
+}

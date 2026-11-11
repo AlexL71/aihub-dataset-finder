@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71597",
+ "easy_ko": "병원 CT로 학습한 AI가 만들어 낸 가짜 CT 사진 2만 장으로, 가슴(정상, 폐암, 폐렴 등)과 배(정상, 위암, 간암 등) 사진이 반씩 들어 있습니다. 실제 환자 정보가 없어 의료 AI 연습이나 교육에 비교적 자유롭게 쓸 수 있습니다.",
+ "easy_en": "20,000 fake CT images created by AI trained on hospital CT scans, half of the chest (normal, lung cancer, pneumonia and more) and half of the abdomen (normal, stomach cancer, liver cancer and more). With no real patient data, they can be used fairly freely to train medical AI or for teaching.",
+ "detail_ko": "병원 CT로 학습한 합성 모델이 만든 합성 CT 이미지 20,000장(png; 흉부 10,000: Normal, Lung Cancer, Pneumothorax, Pneumonia, ILD / 복부 10,000: Normal, Colon Cancer, Stomach Cancer, Pancreas Cancer, Liver Cancer)에 병변 유무와 병변명을 JSON으로 붙였습니다. 기준 성능은 사람 판독자 시각 튜링 테스트 정확도 복부 정상 vs 위암 56%, 정상 vs 대장암 46%로, 낮을수록 진짜와 구분하기 어렵다는 뜻입니다. 합성 이미지라 진단용 모델 검증에는 실제 데이터가 필요하고, 병변 위치 표시는 없이 분류 태그만 있습니다.",
+ "detail_en": "20,000 synthetic CT images (png) from a generative model trained on hospital CT: 10,000 chest (normal, lung cancer, pneumothorax, pneumonia, interstitial lung disease) and 10,000 abdomen (normal, colon, stomach, pancreatic and liver cancer), with JSON lesion presence and name. Baselines: visual Turing test with human readers, accuracy 56% (abdomen, normal vs. stomach cancer) and 46% (normal vs. colon cancer); lower means people cannot tell fake from real. Being synthetic, validating diagnostic models still needs real data, and there are only class tags, no lesion locations.",
+ "amount_ko": "합성 CT 이미지 20,000장(흉부 10,000, 복부 10,000), 질환 8종 + 정상",
+ "amount_en": "20,000 synthetic CT images (10,000 chest, 10,000 abdomen), 8 diseases + normal",
+ "labels_ko": "병이 있는지 여부, 병 이름",
+ "labels_en": "lesion class",
+ "status": "full-run-2026-11-02"
+}

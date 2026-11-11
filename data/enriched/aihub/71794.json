@@ -1,0 +1,29 @@
+{
+ "dataset_id": "71794",
+ "title_en": "Generative AI bill review report summary data",
+ "summary_ko": "국회 의안정보시스템에 공개된 법률안 검토보고서(원시 5만 건)를 바탕으로 3만 건 이상의 보고서 요약을 만든 데이터입니다. 법률 제정·개정 보고서를 쉽게 요약해 주는 리걸테크 AI에 쓸 수 있습니다.",
+ "summary_en": "Summaries of 30,000+ bill review reports built from 50,000 raw reports published on the National Assembly bill information system. For legal-tech AI that summarises law-making and amendment reports.",
+ "contents_ko": "검토보고서 텍스트 + JSON(요약).",
+ "contents_en": "Review report text + JSON (summary).",
+ "modalities": ["text"],
+ "tasks": ["summarization"],
+ "topics": [{"ko": "법률·입법", "en": "Law and legislation"}, {"ko": "공공 문서", "en": "Public documents"}],
+ "keywords_ko": ["법률안", "검토보고서", "국회", "문서 요약", "리걸테크", "입법"],
+ "keywords_en": ["bills", "review reports", "National Assembly", "document summarisation", "legal tech", "legislation"],
+ "labels": ["summary"],
+ "file_formats": ["txt", "json"],
+ "scale_ko": "원시 5만 건, 요약 라벨 3만 건 이상",
+ "classes_example": [],
+ "baseline": [],
+ "difficulty": "intermediate",
+ "difficulty_note_ko": "약 0.5GB로 작지만 법률 문서가 길어 긴 문서 요약 모델이 필요합니다.",
+ "skills_needed_ko": ["파이썬", "트랜스포머 요약 모델", "긴 문서 처리"],
+ "caveats_ko": ["정확한 라벨 수가 '3만 건 이상'으로만 적혀 있음", "성능 지표 값이 팩에 없음", "71795(국회 회의록)와 같은 기관"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "법률안 한 줄 요약", "title_en": "One-line bill summary", "desc_ko": "검토보고서를 짧게 요약하는 모델을 미세조정합니다.", "desc_en": "Fine-tune a short summariser for review reports."},
+  {"level": "capstone", "title_ko": "시민용 법안 설명 서비스", "title_en": "Plain-language bill explainer", "desc_ko": "새 법안의 핵심을 쉬운 말로 요약해 보여 주는 웹을 만듭니다.", "desc_en": "Web app explaining new bills in plain words."},
+  {"level": "research", "title_ko": "법률 요약 사실성", "title_en": "Factuality in legal summaries", "desc_ko": "요약이 원문 법률 내용을 틀리지 않게 하는 방법을 연구합니다.", "desc_en": "Keep legal summaries faithful to the source."}
+ ],
+ "doc_used": true,
+ "uncertain": ["정확한 요약 라벨 수"]
+}

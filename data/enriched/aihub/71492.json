@@ -1,0 +1,29 @@
+{
+ "dataset_id": "71492",
+ "title_en": "Video transition boundary inference data",
+ "summary_ko": "드라마·음악·반려동물·스포츠·여행·요리 등 영상 18만여 개에 장면이 바뀌는 사건 경계 시각(타임스탬프), 사건을 일으킨 물체의 상자, 장면별 자연어 설명이 붙어 있습니다. 주요 장면 요약, 광고 삽입 위치 찾기 같은 영상 이해 AI에 쓸 수 있습니다.",
+ "summary_en": "About 185,000 videos (drama, music, pets, sports, travel, cooking, etc.) with event-boundary timestamps, boxes for the objects causing events, and natural-language captions per boundary. For video summarisation, ad-insertion points and video understanding.",
+ "contents_ko": "영상(mp4) + JSON(경계 타임스탬프, 상자, 자연어 캡션).",
+ "contents_en": "Video (mp4) + JSON (boundary timestamps, boxes, captions).",
+ "modalities": ["video", "text"],
+ "tasks": ["action_recognition", "image_captioning", "object_detection"],
+ "topics": [{"ko": "영상 이해", "en": "Video understanding"}, {"ko": "미디어·콘텐츠", "en": "Media and content"}],
+ "keywords_ko": ["장면 전환", "사건 경계", "타임스탬프", "영상 요약", "캡션", "광고 삽입"],
+ "keywords_en": ["scene transition", "event boundary", "timestamp", "video summarisation", "caption", "ad insertion"],
+ "labels": ["boundary timestamp", "bounding box", "caption"],
+ "file_formats": ["mp4", "json"],
+ "scale_ko": "영상 184,699개 (분야별 수백~1천여 시간)",
+ "classes_example": ["드라마", "음악", "반려동물", "스포츠", "여행", "엔터", "요리", "일상"],
+ "baseline": [{"task": "video boundary inference", "model": "Contrastive learning approach", "metric": "F1-score@0.05", "value": "0.774"}],
+ "difficulty": "advanced",
+ "difficulty_note_ko": "전체 약 10TB로 매우 큽니다. 한 분야만 골라 일부만 받아 쓰세요.",
+ "skills_needed_ko": ["파이썬", "영상 처리", "시계열 영상 모델", "대용량 데이터 관리"],
+ "caveats_ko": ["전체 약 10TB", "구매 영상이 포함되어 이용 조건 확인 필요", "같은 기관의 71491·71495 데이터셋과 연관"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "장면 전환 감지", "title_en": "Scene change detection", "desc_ko": "프레임 차이로 장면이 바뀌는 시점을 찾고 정답 타임스탬프와 비교합니다.", "desc_en": "Find scene changes from frame differences and compare with labels."},
+  {"level": "capstone", "title_ko": "영상 하이라이트 요약기", "title_en": "Video highlight summariser", "desc_ko": "사건 경계와 캡션으로 긴 영상의 주요 장면 목록을 자동으로 만듭니다.", "desc_en": "Build key-scene lists from boundaries and captions."},
+  {"level": "research", "title_ko": "사건 경계 추론 모델", "title_en": "Event boundary inference model", "desc_ko": "분야별로 사건 경계 탐지 성능이 어떻게 달라지는지 연구합니다.", "desc_en": "Study how boundary detection varies across video genres."}
+ ],
+ "doc_used": true,
+ "uncertain": ["캡션이 한국어만인지 영어도 있는지 팩에 명확하지 않음"]
+}

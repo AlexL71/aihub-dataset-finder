@@ -1,0 +1,29 @@
+{
+ "dataset_id": "191",
+ "title_en": "Bus route driving images for autonomous buses",
+ "summary_ko": "고정 노선을 달리는 버스에서 300시간 이상 찍은 주행 영상의 이미지 100만 장으로, 차·트럭·버스·이륜차·보행자, 교통표지판·신호등·버스 정류장 상자와 버스전용차로·주행 가능 영역 다각형이 표시되어 있습니다. 자율주행 버스 개발에 쓸 수 있습니다.",
+ "summary_en": "1 million images from 300+ hours of driving on fixed bus routes, with boxes for cars, trucks, buses, two-wheelers, pedestrians, traffic signs, traffic lights and bus stops, and polygons for bus lanes and drivable areas. For developing autonomous buses.",
+ "contents_ko": "주행 이미지 + JSON(물체 상자, 도로 영역 다각형, 클래스).",
+ "contents_en": "Driving image + JSON (object boxes, road-area polygons, class).",
+ "modalities": ["image"],
+ "tasks": ["object_detection", "segmentation"],
+ "topics": [{"ko": "자율주행", "en": "Self-driving"}, {"ko": "대중교통", "en": "Public transport"}],
+ "keywords_ko": ["자율주행 버스", "버스 노선", "버스전용차로", "정류장", "주행 가능 영역"],
+ "keywords_en": ["autonomous bus", "bus route", "bus lane", "bus stop", "drivable area"],
+ "labels": ["bounding box", "polygon", "class"],
+ "file_formats": ["jpg", "json"],
+ "scale_ko": "이미지 100만 장 이상(차 약 90만, 교통표지판 73만, 신호등 30만, 주행가능영역 90만, 버스전용차로 5만 등)",
+ "classes_example": ["차", "트럭", "버스", "이륜차", "보행자", "교통표지판", "신호등", "버스전용차로"],
+ "baseline": [{"task": "drivable-area segmentation", "model": "DeepLab V3+ (EfficientNet)", "metric": "overall accuracy", "value": "91%"}],
+ "difficulty": "intermediate",
+ "difficulty_note_ko": "탐지·분할 실습에 좋지만 전체 약 2.7TB입니다. 일부 노선만 받아 쓰세요.",
+ "skills_needed_ko": ["파이썬", "YOLO 탐지", "분할 모델"],
+ "caveats_ko": ["전체 약 2.7TB", "이륜차·보행자 수가 차량에 비해 매우 적음"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "버스전용차로 분할", "title_en": "Bus-lane segmentation", "desc_ko": "주행 이미지에서 버스전용차로를 칠하는 모델을 학습합니다.", "desc_en": "Train a model that paints bus lanes."},
+  {"level": "capstone", "title_ko": "정류장 접근 알림", "title_en": "Bus-stop approach alert", "desc_ko": "정류장과 대기 승객을 탐지해 정차를 안내하는 데모를 만듭니다.", "desc_en": "Detect stops and waiting passengers to guide stopping."},
+  {"level": "research", "title_ko": "드문 보행자·이륜차 인식", "title_en": "Recognising rare pedestrians and bikes", "desc_ko": "클래스 불균형 속에서 보행자·이륜차 탐지를 개선하는 방법을 연구합니다.", "desc_en": "Improve pedestrian and two-wheeler detection under class imbalance."}
+ ],
+ "doc_used": true,
+ "uncertain": []
+}

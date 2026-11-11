@@ -1,0 +1,29 @@
+{
+ "dataset_id": "525",
+ "title_en": "Integrated plant disease data (greenhouse crops)",
+ "summary_ko": "전국 시설 재배지와 연구기관 테스트베드에서 찍은 작물 사진 68.5만 장으로, 정상·병 발생·영양장애·생육장애·작물보호제 처리 반응이 상자로 표시되고 촬영 전 48시간의 온습도 같은 환경 시계열도 함께 있습니다. 병해 진단과 방제 정보 제공 AI에 쓸 수 있습니다.",
+ "summary_en": "685,000 crop photos from greenhouses nationwide and research test beds, labelled normal, diseased, nutrient disorder, growth disorder or crop-protection treatment response, plus 48 hours of environmental time series (temperature, humidity and more) before each shot. For AI that diagnoses disease and gives treatment advice.",
+ "contents_ko": "작물 이미지(jpg) + JSON(병해·장애 상자, 클래스) + 환경 시계열 CSV(촬영 전 48시간, 15분 간격).",
+ "contents_en": "Crop image (jpg) + JSON (disease/disorder boxes, class) + environment time-series CSV (48 h before capture, 15-minute steps).",
+ "modalities": ["image", "sensor", "tabular"],
+ "tasks": ["object_detection", "image_classification", "tabular_prediction"],
+ "topics": [{"ko": "농업·스마트팜", "en": "Agriculture and smart farming"}, {"ko": "식물 병해", "en": "Plant disease"}, {"ko": "농약·작물보호", "en": "Crop protection"}],
+ "keywords_ko": ["식물 병해", "생리장해", "영양장애", "작물보호제", "시설 재배", "환경 데이터"],
+ "keywords_en": ["plant disease", "physiological disorder", "nutrient deficiency", "crop protection", "greenhouse", "environment data"],
+ "labels": ["bounding box", "class (normal / disease / disorder / treatment response)"],
+ "file_formats": ["jpg", "json", "csv"],
+ "scale_ko": "684,616건(정상 30만 이상, 병 발생 13.6만, 영양장애 7.4만, 생육장애 4.6만, 보호제 반응 4.6만)",
+ "classes_example": ["정상", "병발생", "영양장애", "생육장애", "보호제 처리반응"],
+ "baseline": [],
+ "difficulty": "intermediate",
+ "difficulty_note_ko": "이미지 분류·탐지와 환경 시계열을 함께 써 볼 수 있습니다. 전체 약 1.8TB입니다.",
+ "skills_needed_ko": ["파이썬", "이미지 탐지", "시계열 특징 추출"],
+ "caveats_ko": ["작물 종류와 성능 지표가 팩 앞부분에 없음"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "병해 vs 영양장애 분류", "title_en": "Disease vs nutrient disorder", "desc_ko": "잎 사진으로 병해와 영양장애를 구분합니다.", "desc_en": "Distinguish disease from nutrient disorder in leaf photos."},
+  {"level": "capstone", "title_ko": "하우스 방제 도우미", "title_en": "Greenhouse treatment helper", "desc_ko": "병해를 진단하고 환경 기록과 함께 방제 정보를 보여주는 앱을 만듭니다.", "desc_en": "Diagnose problems and show treatment advice with environment history."},
+  {"level": "research", "title_ko": "환경 이력으로 병 발생 예측", "title_en": "Disease prediction from environment history", "desc_ko": "촬영 전 48시간 환경으로 병 발생을 미리 예측하는 모델을 연구합니다.", "desc_en": "Predict disease onset from the previous 48 hours of environment data."}
+ ],
+ "doc_used": true,
+ "uncertain": []
+}

@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71305",
+ "easy_ko": "한 사람은 정해진 감정과 상황에 놓인 역할을, 다른 사람은 그 마음에 공감해 주는 역할을 맡아 나눈 한국어 대화를 모은 데이터입니다. 사용자의 감정에 공감하며 이야기를 들어 주는 상담 챗봇을 만들 수 있습니다.",
+ "easy_en": "Korean conversations in which one person plays someone in a given emotional situation and the other responds with empathy. You can build counselling chatbots that listen and respond with empathy.",
+ "detail_ko": "공감형 한국어 대화 약 3.2만 세션(발화 약 47만 개)(tsv, json)에 대화 특성 라벨을 붙였습니다. 기준 성능은 KoGPT2 다음 발화 생성 BLEU 0.0801, KLUE RoBERTa-base 공감 대화 분류 0.057(BLEU로 표기된 AI Hub 오류로 보임)입니다. 감정·상황·화자 관계(부모자녀, 조손, 친구, 연인, 직장 동료 등) 라벨이 있으며, 연기한 대화라 실제 위기 상담에 그대로 쓰면 안 됩니다. 71302·71304·71305번 대화 데이터는 같은 구축 기관입니다.",
+ "detail_en": "About 32k sessions (about 470k utterances) Korean empathetic dialogues (tsv, json) with dialogue-feature labels. Baselines: KoGPT2 next-utterance generation BLEU 0.0801 and KLUE RoBERTa-base empathetic dialogue classification 0.057 (reported as BLEU, likely an AI Hub error). Labels include emotion, situation and relationship (parent–child, grandparent–grandchild, friends, partners, co-workers and more); the dialogues are acted, so do not use them as-is for real crisis counselling. Datasets 71302, 71304 and 71305 come from the same organisation.",
+ "amount_ko": "대화 약 3.2만 세션",
+ "amount_en": "about 32k sessions of dialogue",
+ "labels_ko": "감정, 상황, 두 사람의 관계, 대화 특성",
+ "labels_en": "emotion, situation, speaker relationship, dialogue features",
+ "status": "full-run-2026-11-02"
+}

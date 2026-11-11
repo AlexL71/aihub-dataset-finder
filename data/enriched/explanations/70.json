@@ -1,0 +1,12 @@
+{
+ "dataset_id": "70",
+ "easy_ko": "안내 로봇의 눈높이에서 다가오는 사람들을 찍은 영상에, 사람 위치와 표정·눈길, 말의 목적(길 묻기, 인사, 안내 부탁 등)과 말투, 그리고 로봇에게 말을 거는 중인지를 표시한 데이터입니다. 사람과 자연스럽게 대화하는 안내 로봇이나 돌봄 로봇을 만들 수 있습니다.",
+ "easy_en": "Video seen from a guide robot's eye level as people approach, marked with each person's position, facial expression, gaze, the purpose of what they say (asking the way, greeting, asking for guidance), tone of voice, and whether they are talking to the robot. You can build guide or care robots that talk with people more naturally.",
+ "detail_ko": "안내 로봇 1인칭 시점 영상 500시간(음성 300시간), 클립 21.6만 개, 라벨 이미지 100.8만 장으로 구성됩니다. mp4 클립(음성 포함)과 이미지별 JSON에 사람 바운딩박스, 표정, 시선, 발화 의도, 어조, 로봇과의 상호작용 여부가 있습니다. 기준 성능은 CNN + Transformer 발화 의도 분류 정확도 71.5%, 사람 탐지 mAP 85.2%입니다. 전체 약 2.4TB이며 실제 사람 얼굴·음성이 있어 이용 약관 확인이 필요합니다.",
+ "detail_en": "500 hours of first-person video from a guide robot (300 hours with speech), 216k clips and 1.008M labelled images. mp4 clips with audio and per-image JSON give person bounding boxes, facial expression, gaze, speech intent, tone and whether the person is interacting with the robot. Baselines: CNN + Transformer speech-intent accuracy 71.5%, person detection mAP 85.2%. Total size is about 2.4 TB; real faces and voices are included, so check the terms of use.",
+ "amount_ko": "영상 500시간, 클립 21.6만 개, 이미지 약 100만 장",
+ "amount_en": "500 hours of video, 216k clips, about 1M images",
+ "labels_ko": "사람 위치 상자, 표정, 눈길, 말의 목적, 말투, 로봇과 대화 여부",
+ "labels_en": "box around each person, expression, gaze, speech purpose, tone, talking-to-robot flag",
+ "status": "full-run-2026-11-02"
+}

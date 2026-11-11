@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71702",
+ "easy_ko": "말소리가 많은 방송 프로그램 3,000시간 이상에 사람들이 말이나 글로 던진 검색 질문과, 그 질문에 맞는 하이라이트 장면 구간을 표시한 데이터입니다. 말로 물어보면 영상 속 원하는 장면을 찾아 주는 AI에 쓸 수 있습니다.",
+ "easy_en": "Over 3,000 hours of talk-heavy TV programmes, with search questions asked by voice or text and the highlight segment of the video that answers each one. You can use it to build AI that finds the scene you want in a video when you ask out loud.",
+ "detail_ko": "말소리가 70% 이상인 방송 콘텐츠(TBS, EBS) 3,000시간 이상(원천 5,958건, mp4)에 검색 질의(음성·텍스트) 210,817문장과 전사, 키워드, 하이라이트 구간, 분류 태그를 JSON으로 붙였습니다. 전체 약 2.3TB이고, 개요(4천 건 이상)와 구축량(원천 5,958건)의 수치 기준이 다르며, 평가지표 CER·WER·F1이 언급되나 값은 팩 앞부분에 없습니다.",
+ "detail_en": "Over 3,000 hours of broadcast content (TBS, EBS) with at least 70% speech (5,958 source files, mp4), with 210,817 search queries (voice and text) and JSON transcripts, keywords, highlight time segments and tags. Total size is about 2.3 TB. The overview (4,000+ items) and the build amount (5,958 source files) count differently, and CER, WER and F1 are mentioned but their values are not in the pack.",
+ "amount_ko": "방송 영상 3,000시간 이상(원천 5,958건), 질의 문장 210,817건",
+ "amount_en": "3,000+ hours of broadcast video (5,958 source files), 210,817 queries",
+ "labels_ko": "받아쓴 글, 키워드, 장면 구간, 분류",
+ "labels_en": "transcript, keywords, time segment, tag",
+ "status": "full-run-2026-11-02"
+}

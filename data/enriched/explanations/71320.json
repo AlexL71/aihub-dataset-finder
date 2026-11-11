@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71320",
+ "easy_ko": "10대부터 50대 이상까지 나이대별로 자주 쓰는 은어, 속어, 신조어, 줄임말이 들어간 말을 게임, SNS, 군대, 연애, 직장, 가족 같은 주제로 녹음하고, 받아 적은 글과 은어 표시를 붙인 데이터입니다. 요즘 말투와 줄임말도 잘 알아듣는 음성 인식이나 챗봇을 만들 수 있습니다.",
+ "easy_en": "Recordings of speech full of the slang, jargon, new words and abbreviations each age group (teens to 50s and over) often uses, on topics such as games, social media, the military, dating, work and family, with transcripts and slang marked. You can build speech recognition or chatbots that understand current slang and abbreviations.",
+ "detail_ko": "연령대 5개(10대~50대 이상)와 여러 주제(게임, SNS, 군대, 연애, 직장, 가족 등)의 은어·속어 포함 발화 음성 약 3,000시간(wav)에 전사, 은어 표시, 연령대·주제를 JSON과 자막(SRT)으로 붙였습니다. 기준 성능은 mBART 은어→표준어 문장 변환 BLEU 0.869, wav2vec 2.0 음성 인식 CER 13%입니다. 전체 약 540GB이며, 20대 발화가 39%로 가장 많고 비속어가 포함되어 있습니다.",
+ "detail_en": "About 3,000 hours of speech (wav) containing slang and jargon from 5 age groups (teens to 50s+) on topics such as games, social media, the military, dating, work and family, with JSON and SRT transcripts, slang tags, age group and topic. Baselines: mBART slang-to-standard conversion BLEU 0.869, wav2vec 2.0 speech recognition CER 13%. Total size is about 540 GB; speakers in their 20s make up 39%; profanity is included.",
+ "amount_ko": "음성 약 3,000시간, 나이대 5개",
+ "amount_en": "about 3,000 hours of speech, 5 age groups",
+ "labels_ko": "말소리를 받아 적은 글(전사), 은어 표시, 나이대, 주제",
+ "labels_en": "transcripts, slang tags, age group, topic",
+ "status": "full-run-2026-11-02"
+}

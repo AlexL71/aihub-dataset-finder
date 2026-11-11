@@ -1,0 +1,12 @@
+{
+ "dataset_id": "527",
+ "easy_ko": "논밭의 잡초를 땅에서 찍은 사진마다 잡초 영역을 칠하고 어떤 잡초인지 표시한 뒤, 온도 측정값과 흙·환경 센서 값을 함께 담은 데이터입니다. 잡초를 찾아 자동으로 없애는 농기계나 잡초 이름을 알려 주는 AI를 만들 수 있습니다.",
+ "easy_en": "Ground photos of weeds in paddies and fields with each weed's area coloured in and its species named, plus temperature readings and soil and environment sensor values. You can build farm machines that find and remove weeds automatically, or AI that names weeds.",
+ "detail_ko": "잡초 14종(강피, 물달개비, 흰명아주 등)을 지상에서 촬영한 RGB 학습 데이터 388,879개(jpg)에 잡초 분할과 종을 JSON으로 붙이고, 적외선 온도 107,579개와 토양·환경 센서 170,205세트를 함께 제공합니다. 잡초 14종 전체 목록과 기준 성능은 기록에서 확인되지 않습니다.",
+ "detail_en": "388,879 ground RGB training images (jpg) of 14 weed species (barnyard grass, monochoria, lamb's quarters and more) with JSON segmentation and species, plus 107,579 infrared temperature records and 170,205 soil and environment sensor sets. The full list of 14 species and a baseline are not visible in the record.",
+ "amount_ko": "잡초 사진 약 38.9만 장, 잡초 14종",
+ "amount_en": "about 389k weed images, 14 species",
+ "labels_ko": "잡초 영역(색칠), 잡초 종류, 온도·흙·환경 값",
+ "labels_en": "weed masks, weed species, temperature, soil and environment values",
+ "status": "full-run-2026-11-02"
+}

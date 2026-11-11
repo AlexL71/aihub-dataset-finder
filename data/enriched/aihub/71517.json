@@ -1,0 +1,33 @@
+{
+ "dataset_id": "71517",
+ "title_en": "Korean dialect speech of middle-aged and older adults (Gangwon, Gyeongsang)",
+ "summary_ko": "강원도·경상도의 50대 이상 화자가 따라 말하기, 질문 답하기, 2인 대화로 말한 방언 음성 약 2,004시간에 전사와 주석이 붙어 있습니다. 중·노년층 방언 화자의 음성 인식과 방언 보존에 쓸 수 있습니다.",
+ "summary_en": "About 2,004 hours of dialect speech by speakers aged 50+ in Gangwon and Gyeongsang (read-after, Q&A and two-person conversation), with transcripts and annotations. For speech recognition of older dialect speakers and dialect preservation.",
+ "contents_ko": "음성(wav) + JSON(전사, 방언 주석, 화자 정보).",
+ "contents_en": "Audio (wav) + JSON (transcripts, dialect annotations, speaker info).",
+ "modalities": ["audio", "text"],
+ "tasks": ["speech_recognition", "audio_classification"],
+ "topics": [{"ko": "방언·한국어", "en": "Dialects and Korean"}, {"ko": "고령층 음성", "en": "Older adults' speech"}],
+ "keywords_ko": ["방언", "중노년층", "강원도", "경상도", "음성 인식", "전사"],
+ "keywords_en": ["dialect", "older adults", "Gangwon", "Gyeongsang", "speech recognition", "transcription"],
+ "labels": ["transcript", "annotation", "speaker info"],
+ "file_formats": ["wav", "json"],
+ "scale_ko": "음성 약 2,004시간 (강원도 801.4시간·라벨 142,374건, 경상도 1,202.9시간·라벨 236,563건)",
+ "classes_example": ["따라말하기", "질문답하기", "2인대화"],
+ "baseline": [
+  {"task": "emotion classification", "model": "BERT", "metric": "Accuracy", "value": "69.6%"},
+  {"task": "speech recognition", "model": "Conformer", "metric": "CER", "value": "6.24%"},
+  {"task": "speech recognition", "model": "Conformer", "metric": "sWER", "value": "12.52%"}
+ ],
+ "difficulty": "advanced",
+ "difficulty_note_ko": "전체 약 157GB이고 음성 인식 모델 학습에 큰 GPU가 필요합니다.",
+ "skills_needed_ko": ["파이썬", "음성 인식 모델", "음성 전처리"],
+ "caveats_ko": ["전체 약 157GB", "여성 화자 비율이 72~79%로 높음", "같은 시리즈의 다른 지역 중·노년층 방언 데이터와 구조가 같음"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "강원·경상 방언 구분", "title_en": "Gangwon vs Gyeongsang dialect ID", "desc_ko": "음성이나 전사 글로 어느 지역 방언인지 분류합니다.", "desc_en": "Classify which region's dialect a clip is."},
+  {"level": "capstone", "title_ko": "어르신 음성 비서", "title_en": "Voice assistant for older adults", "desc_ko": "방언 음성으로 미세조정한 음성 인식으로 간단한 명령을 알아듣는 비서를 만듭니다.", "desc_en": "Build an assistant using dialect-tuned speech recognition."},
+  {"level": "research", "title_ko": "연령·방언별 인식 오류", "title_en": "Recognition errors by age and dialect", "desc_ko": "연령대와 방언에 따라 음성 인식 오류가 어떻게 달라지는지 분석합니다.", "desc_en": "Analyse speech recognition errors by age and dialect."}
+ ],
+ "doc_used": true,
+ "uncertain": ["감정분류 성능이 있으나 감정 라벨 구성은 팩에서 확인되지 않음"]
+}

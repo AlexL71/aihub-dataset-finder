@@ -1,0 +1,29 @@
+{
+ "dataset_id": "71707",
+ "title_en": "Horse body-part identification and abnormal condition image data",
+ "summary_ko": "말의 얼굴·눈·다리 등 부위 사진, 걷는 모습(평보·속보) 이미지, 발굽 사진 등 약 65만 장에 분류·상자·키포인트·다각형이 표시되어 있습니다. 말 개체를 식별하고 다리 절음(파행)이나 발굽 질환 같은 이상 상태를 일찍 찾는 AI에 쓸 수 있습니다.",
+ "summary_en": "About 650,000 images of horse body parts (face, eyes, legs), walking and trotting gait, and hooves, labelled with classes, boxes, keypoints and polygons. For AI that identifies individual horses and detects lameness or hoof disease early.",
+ "contents_ko": "말 이미지(png) + JSON(분류, 상자, 키포인트, 다각형).",
+ "contents_en": "Horse image (png) + JSON (class, boxes, keypoints, polygons).",
+ "modalities": ["image"],
+ "tasks": ["image_classification", "object_detection", "keypoint_pose", "segmentation", "anomaly_detection"],
+ "topics": [{"ko": "말 산업·축산", "en": "Horse industry and livestock"}, {"ko": "동물 건강", "en": "Animal health"}],
+ "keywords_ko": ["말", "부위 식별", "보행 분석", "파행", "발굽 질환", "개체 식별"],
+ "keywords_en": ["horse", "body-part identification", "gait analysis", "lameness", "hoof disease", "individual identification"],
+ "labels": ["class", "bounding box", "keypoints", "polygon"],
+ "file_formats": ["png", "json"],
+ "scale_ko": "이미지 650,497장(부위 식별 부위별 2,000장, 보행 방향별 75,000장, 발굽 약 14,500장)",
+ "classes_example": ["얼굴", "이마", "콧등", "눈", "앞다리", "뒷다리", "평보", "속보", "발굽"],
+ "baseline": [],
+ "difficulty": "intermediate",
+ "difficulty_note_ko": "작업이 다양해 실습거리가 많지만 전체 약 2.3TB입니다. 부위·발굽 데이터부터 받아 쓰세요.",
+ "skills_needed_ko": ["파이썬", "YOLO 탐지", "포즈 추정", "이미지 분류"],
+ "caveats_ko": ["전체 약 2.3TB", "보행 데이터가 대부분이라 부위·발굽 데이터는 상대적으로 적음", "이상 상태 종류와 성능 지표가 팩 앞부분에 없음"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "말 부위 분류", "title_en": "Horse body-part classification", "desc_ko": "사진이 얼굴·다리·발굽 중 어느 부위인지 분류합니다.", "desc_en": "Classify which body part a photo shows."},
+  {"level": "capstone", "title_ko": "걸음걸이로 파행 찾기", "title_en": "Lameness from gait", "desc_ko": "보행 이미지 키포인트로 다리 움직임을 비교해 절음 의심 말을 찾습니다.", "desc_en": "Compare gait keypoints to flag horses that may be lame."},
+  {"level": "research", "title_ko": "얼굴로 말 개체 식별", "title_en": "Horse ID from face", "desc_ko": "얼굴·콧등 사진으로 말 개체를 구별하는 방법을 연구합니다.", "desc_en": "Study identifying individual horses from face images."}
+ ],
+ "doc_used": true,
+ "uncertain": ["이상 상태(질환) 라벨 종류 확인 필요"]
+}

@@ -1,0 +1,29 @@
+{
+ "dataset_id": "71464",
+ "title_en": "Korean learners' Chinese and Japanese speech data for education",
+ "summary_ko": "한국인 학습자가 중국어·일본어로 말한 음성 1,019시간에 전사(받아쓰기), 학습자 수준 평가, 언어학적 분석 메타데이터가 붙은 데이터입니다. 중국어·일본어 발음·말하기 자동 평가와 음성 인식에 쓸 수 있습니다.",
+ "summary_en": "1,019 hours of Chinese and Japanese speech by Korean learners with transcripts, learner level ratings and linguistic analysis metadata. For automatic Chinese/Japanese pronunciation and speaking assessment and speech recognition.",
+ "contents_ko": "중국어·일본어 발화 음성(wav) + JSON(전사, 학습자 수준·평가, 태깅).",
+ "contents_en": "Chinese and Japanese speech (wav) + JSON (transcript, learner level and scores, tags).",
+ "modalities": ["audio", "text"],
+ "tasks": ["speech_recognition", "audio_classification"],
+ "topics": [{"ko": "외국어 교육", "en": "Foreign language education"}, {"ko": "음성 인식", "en": "Speech recognition"}],
+ "keywords_ko": ["중국어 발음", "일본어 발음", "말하기 평가", "한국인 학습자", "음성 인식", "외국어 교육"],
+ "keywords_en": ["Chinese pronunciation", "Japanese pronunciation", "speaking assessment", "Korean learners", "speech recognition", "language education"],
+ "labels": ["transcript", "proficiency rating", "linguistic tags"],
+ "file_formats": ["wav", "json"],
+ "scale_ko": "음성 1,019시간(중국어·일본어), 말하기 문항 주제 10종",
+ "classes_example": ["중국어", "일본어"],
+ "baseline": [{"task": "speech recognition (Chinese)", "model": "RNN-Transducer", "metric": "CER", "value": "6%"}, {"task": "speech recognition (Japanese)", "model": "RNN-Transducer", "metric": "CER", "value": "4.2%"}, {"task": "pronunciation assessment (Chinese)", "model": "wav2vec 2.0 + MLP", "metric": "Pearson correlation", "value": "0.73"}, {"task": "pronunciation assessment (Japanese)", "model": "wav2vec 2.0 + MLP", "metric": "Pearson correlation", "value": "0.62"}],
+ "difficulty": "intermediate",
+ "difficulty_note_ko": "음성 데이터라 처리가 필요하지만 약 77GB로 다룰 만합니다. 한 언어만 골라 시작하세요.",
+ "skills_needed_ko": ["파이썬", "음성 처리", "사전학습 음성 모델 미세조정"],
+ "caveats_ko": ["언어별 시간 비율이 팩 앞부분에 없음", "일본어 발음 평가 상관(0.62)이 중국어보다 낮음", "영어 버전(71463)과 같은 구조"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "중국어 성조 발음 점수", "title_en": "Chinese pronunciation scoring", "desc_ko": "음성 특징으로 중국어 발음 점수를 예측합니다.", "desc_en": "Predict Chinese pronunciation scores from speech."},
+  {"level": "capstone", "title_ko": "일본어 회화 연습 앱", "title_en": "Japanese conversation practice app", "desc_ko": "학생 발화를 받아쓰고 발음 피드백을 주는 앱을 만듭니다.", "desc_en": "App that transcribes and gives feedback on Japanese speech."},
+  {"level": "research", "title_ko": "다국어 발음 평가 모델", "title_en": "Multilingual pronunciation assessment", "desc_ko": "한 모델로 중국어·일본어 발음을 함께 평가하는 방법을 연구합니다.", "desc_en": "One model to assess both Chinese and Japanese pronunciation."}
+ ],
+ "doc_used": true,
+ "uncertain": ["언어별 데이터 시간", "학습자 수준 등급 체계"]
+}

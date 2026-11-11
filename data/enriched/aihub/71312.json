@@ -1,0 +1,32 @@
+{
+ "dataset_id": "71312",
+ "title_en": "Pilates movement data",
+ "summary_ko": "필라테스 대표 동작 50개를 초·중·고급 시연자 120명이 하는 모습을 카메라 8대로 동시에 찍은 영상 약 1.7만 클립에 2D·3D 관절 키포인트와 동작 정보를 붙인 데이터입니다. 매트·리포머·체어 동작이 있습니다. 비대면 자세 교정이나 동작 분류 AI에 쓸 수 있습니다.",
+ "summary_en": "About 17,000 clips of 50 representative Pilates movements performed by 120 beginner, intermediate and advanced practitioners, filmed by 8 cameras at once, with 2D and 3D joint keypoints and movement info (mat, reformer and chair). For remote posture-correction or movement classification AI.",
+ "contents_ko": "멀티뷰 동작 영상(mp4) + JSON·CSV(2D·3D 키포인트, 동작 정보).",
+ "contents_en": "Multi-view movement videos (mp4) + JSON/CSV (2D and 3D keypoints, movement info).",
+ "modalities": ["video", "3d"],
+ "tasks": ["keypoint_pose", "action_recognition"],
+ "topics": [{"ko": "운동·피트니스", "en": "Exercise and fitness"}, {"ko": "동작 분석", "en": "Motion analysis"}],
+ "keywords_ko": ["필라테스", "자세 교정", "자세 추정", "홈트레이닝", "멀티뷰"],
+ "keywords_en": ["Pilates", "posture correction", "pose estimation", "home workout", "multi-view"],
+ "labels": ["2D keypoint", "3D keypoint", "movement class", "skill level"],
+ "file_formats": ["mp4", "json", "csv"],
+ "scale_ko": "영상 약 1.7만 클립, 동작 50종, 시연자 120명",
+ "classes_example": ["Mat", "Reformer", "Chair", "초급", "중급", "고급"],
+ "baseline": [
+  {"task": "movement classification", "model": "PoseC3D", "metric": "top-3 accuracy", "value": "99.78%"},
+  {"task": "movement similarity", "model": "BPE", "metric": "AUC-ROC", "value": "0.9665"}
+ ],
+ "difficulty": "advanced",
+ "difficulty_note_ko": "전체 약 16.9TB로 매우 크고 파일 하나가 최소 2GB입니다. 키포인트만 받아 쓰세요.",
+ "skills_needed_ko": ["파이썬", "자세 추정", "동작 분류(PoseC3D 등)"],
+ "caveats_ko": ["전체 약 16.9TB", "페이지에 남성 시연자 91%로 적혀 있어 성별 표기가 뒤바뀐 것으로 의심됨", "매트 동작이 대부분이고 기구 동작은 적음", "시연자 얼굴이 보임"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "필라테스 동작 분류", "title_en": "Pilates move classifier", "desc_ko": "키포인트로 50개 동작을 분류합니다.", "desc_en": "Classify 50 moves from keypoints."},
+  {"level": "capstone", "title_ko": "홈 필라테스 자세 코치", "title_en": "Home Pilates coach", "desc_ko": "웹캠 자세를 고급 시연자와 비교해 교정 포인트를 알려줍니다.", "desc_en": "Compare webcam posture with experts and give corrections."},
+  {"level": "research", "title_ko": "숙련도 자동 판정", "title_en": "Skill-level assessment", "desc_ko": "키포인트 움직임으로 초·중·고급을 구분하는 방법을 연구합니다.", "desc_en": "Tell beginner, intermediate and advanced apart from motion."}
+ ],
+ "doc_used": true,
+ "uncertain": ["gender distribution (page may have swapped values)"]
+}

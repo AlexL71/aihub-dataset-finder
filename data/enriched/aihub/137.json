@@ -1,0 +1,29 @@
+{
+ "dataset_id": "137",
+ "title_en": "Industrial waste images",
+ "summary_ko": "금속·벽돌·유리/도자기·타이어·폐목재·폐보드·폐섬유·폐지·폐콘크리트·합성수지 등 산업폐기물 10종 사진 100만 장으로, 폐기물 위치 상자와 종류가 표시되어 있습니다. 폐기물 처리장에서 쓰레기 종류를 자동으로 가려내는 AI에 쓸 수 있습니다.",
+ "summary_en": "1 million photos of 10 kinds of industrial waste (metal, bricks, glass/ceramics, tyres, wood, boards, textiles, paper, concrete, synthetic resin) with boxes and type labels. For AI that sorts waste automatically at processing sites.",
+ "contents_ko": "폐기물 1건당 사진 5장 + JSON 라벨(상자 좌표, 종류, 훼손 정도, 촬영 정보).",
+ "contents_en": "5 photos per waste item + JSON label (box coordinates, type, damage level, shooting info).",
+ "modalities": ["image"],
+ "tasks": ["object_detection", "image_classification"],
+ "topics": [{"ko": "쓰레기·재활용", "en": "Waste and recycling"}, {"ko": "환경", "en": "Environment"}, {"ko": "건설·산업 현장", "en": "Construction and industry"}],
+ "keywords_ko": ["산업폐기물", "폐기물 분류", "재활용", "건설폐기물", "폐타이어", "자원 순환"],
+ "keywords_en": ["industrial waste", "waste sorting", "recycling", "construction waste", "tyres", "resource circulation"],
+ "labels": ["bounding box", "class", "attributes"],
+ "file_formats": ["jpg", "json"],
+ "scale_ko": "10종 × 2만 건 = 20만 건, 사진 100만 장",
+ "classes_example": ["금속류", "벽돌/블록", "유리/도자기류", "타이어", "폐목재류", "폐보드류", "폐섬유", "폐지류", "폐콘크리트류", "합성수지"],
+ "baseline": [],
+ "difficulty": "beginner",
+ "difficulty_note_ko": "클래스가 10개로 단순해 첫 탐지 프로젝트로 좋습니다. 전체 약 466GB라 일부 종류만 받아 쓰세요.",
+ "skills_needed_ko": ["파이썬 기초", "YOLO로 객체 탐지"],
+ "caveats_ko": ["전체 약 466GB", "성능 지표 표가 비어 있음(설명에는 YOLOv4 사용)"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "산업폐기물 10종 분류", "title_en": "10-class industrial waste classifier", "desc_ko": "사진으로 폐기물 종류를 분류하고 헷갈리는 종류를 분석합니다.", "desc_en": "Classify waste types and analyse confusions."},
+  {"level": "capstone", "title_ko": "컨베이어 폐기물 선별 데모", "title_en": "Conveyor waste-sorting demo", "desc_ko": "영상에서 폐기물을 탐지해 종류별로 개수를 세는 선별 데모를 만듭니다.", "desc_en": "Detect waste in video and count items by type."},
+  {"level": "research", "title_ko": "생활·산업 폐기물 통합 인식", "title_en": "Joint household and industrial waste recognition", "desc_ko": "생활폐기물(140번)과 합쳐 학습했을 때 성능 변화를 연구합니다.", "desc_en": "Study performance when training jointly with household waste (dataset 140)."}
+ ],
+ "doc_used": true,
+ "uncertain": []
+}

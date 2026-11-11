@@ -1,0 +1,29 @@
+{
+ "dataset_id": "71446",
+ "title_en": "Fashion preference by year and recommendation data",
+ "summary_ko": "1950~1990년대 남녀 대표 패션 이미지 112,062장과 사람들이 각 스타일을 얼마나 좋아하는지 답한 설문 응답 284,839건을 연결한 데이터입니다. 패션 추천 시스템과 유행 주기 분석에 쓸 수 있습니다.",
+ "summary_en": "112,062 representative fashion images of men and women from the 1950s to 1990s linked to 284,839 survey answers on how much people like each style. For fashion recommendation and trend-cycle analysis.",
+ "contents_ko": "시대별 패션 이미지(jpg) + JSON(선호도 설문 응답).",
+ "contents_en": "Fashion image by decade (jpg) + JSON (preference survey answers).",
+ "modalities": ["image", "tabular"],
+ "tasks": ["retrieval_recommendation", "image_classification"],
+ "topics": [{"ko": "패션·쇼핑", "en": "Fashion and shopping"}, {"ko": "추천 시스템", "en": "Recommender systems"}],
+ "keywords_ko": ["패션 추천", "선호도", "패션 트렌드", "시대별 스타일", "설문", "그래프 신경망"],
+ "keywords_en": ["fashion recommendation", "preference", "fashion trends", "decade styles", "survey", "graph neural network"],
+ "labels": ["preference survey answer", "gender", "decade"],
+ "file_formats": ["jpg", "json"],
+ "scale_ko": "패션 이미지 112,062장, 선호도 응답 284,839건, 연대 5개(1950~1990)",
+ "classes_example": ["1950", "1960", "1970", "1980", "1990"],
+ "baseline": [{"task": "clothing recommendation", "model": "PinSage", "metric": "HR@500", "value": "80.67%"}],
+ "difficulty": "intermediate",
+ "difficulty_note_ko": "추천 시스템 실습에 좋지만 이미지 전체가 약 336GB입니다. 설문 JSON부터 보세요.",
+ "skills_needed_ko": ["파이썬", "추천 시스템", "판다스"],
+ "caveats_ko": ["전체 약 336GB", "여성 이미지가 남성보다 약 2.5배 많음", "선호도는 설문 응답이라 응답자 특성에 따라 치우칠 수 있음", "메타데이터에 데이터 형식이 txt로 적혀 있음"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "연대별 선호 스타일 분석", "title_en": "Preferred style by decade", "desc_ko": "설문 응답을 모아 연대·성별별로 인기 있는 스타일을 시각화합니다.", "desc_en": "Visualise popular styles by decade and gender from survey answers."},
+  {"level": "capstone", "title_ko": "레트로 패션 추천 앱", "title_en": "Retro fashion recommender app", "desc_ko": "사용자가 좋아한 사진을 바탕으로 비슷한 시대 스타일을 추천합니다.", "desc_en": "Recommend decade styles similar to photos a user liked."},
+  {"level": "research", "title_ko": "유행 주기 예측", "title_en": "Fashion cycle prediction", "desc_ko": "시대별 선호도 변화로 어떤 스타일이 다시 유행할지 연구합니다.", "desc_en": "Study which past styles may come back from preference changes."}
+ ],
+ "doc_used": true,
+ "uncertain": ["설문 응답 JSON의 정확한 항목(점수 척도 등)"]
+}

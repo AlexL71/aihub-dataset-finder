@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71521",
+ "easy_ko": "실제 병원 엑스레이로 학습한 AI가 새로 만들어 낸 가짜 엑스레이 사진 10만여 장으로, 가슴, 유방, 코 옆 빈 곳(부비동), 얼굴뼈, 발 사진에 정상인지 병이 있는지 표시했습니다. 실제 환자 정보 없이 의료 영상 AI를 연습시키거나 교육에 쓸 수 있습니다.",
+ "easy_en": "Over 100,000 fake X-ray images created by AI trained on real hospital X-rays, covering the chest, breast, sinuses, facial bones and feet, each marked as normal or showing disease. You can use them to train medical imaging AI or for teaching without any real patient data.",
+ "detail_ko": "의료기관 X-ray로 학습한 생성 모델이 만든 합성 X-ray 이미지 105,000장(png; ChestPA 2만, 유방촬영 2.5만, PNS 2만, 안면골 2만, 발 2만)에 병변 유무와 병변명(예: Normal, Abnormal, Mucosal thickness, Air-fluid, Haziness, Hallux Valgus, Flat Foot)을 JSON으로 붙였습니다. 기준 성능은 사람 판독자 시각 튜링 테스트 정확도 흉부 60%, 유방촬영 46%, DenseNet121 분류기의 실제-합성 정확도 차이 1.8%입니다. 실제가 아닌 합성 이미지이고, 유방촬영 병변 클래스 구성은 팩에서 잘렸습니다. '유사도' 지표는 낮을수록 실제와 비슷하다는 뜻으로 보입니다.",
+ "detail_en": "105,000 synthetic X-ray images (png: 20,000 chest PA, 25,000 mammography, 20,000 sinus (PNS), 20,000 facial bone, 20,000 foot) made by a generative model trained on hospital X-rays, with JSON lesion presence and name (such as normal, abnormal, mucosal thickening, air-fluid level, haziness, hallux valgus, flat foot). Baselines: visual Turing test with human readers, accuracy 60% (chest) and 46% (mammography); DenseNet121 accuracy gap between real and synthetic 1.8%. These are not real images, and the mammography lesion classes are cut off in the pack. The 'similarity' metric seems to mean lower is closer to real.",
+ "amount_ko": "합성 이미지 105,000장, 부위 5종",
+ "amount_en": "105,000 synthetic images, 5 body regions",
+ "labels_ko": "병이 있는지 여부, 병 이름",
+ "labels_en": "lesion presence, lesion class",
+ "status": "full-run-2026-11-02"
+}

@@ -1,0 +1,33 @@
+{
+ "dataset_id": "71339",
+ "title_en": "Experiment-based material property data",
+ "summary_ko": "고속 측정 실험으로 얻은 여러 금속 합금 조성별 전기 저항·경도·결정 구조(비정질 여부)·두께 측정값과 주사전자현미경(SEM) 이미지 약 16만 건을 담은 표 데이터입니다. 새 금속 소재의 물성을 예측하고 추천하는 AI에 쓸 수 있습니다.",
+ "summary_en": "About 160,000 measurements from high-throughput experiments on metal alloy compositions: electrical resistance, hardness, crystal structure (amorphous or not), thickness, plus scanning electron microscope (SEM) images. For AI that predicts and recommends properties of new metal materials.",
+ "contents_ko": "조성·측정값 표(csv) + SEM 이미지(jpg).",
+ "contents_en": "Composition and measurement tables (csv) + SEM images (jpg).",
+ "modalities": ["tabular", "image"],
+ "tasks": ["tabular_prediction"],
+ "topics": [{"ko": "재료공학·신소재", "en": "Materials science"}, {"ko": "제조", "en": "Manufacturing"}],
+ "keywords_ko": ["금속 물성", "합금 조성", "경도", "전기 저항", "신소재 개발"],
+ "keywords_en": ["metal properties", "alloy composition", "hardness", "electrical resistivity", "materials discovery"],
+ "labels": ["resistivity", "hardness", "amorphous/crystalline"],
+ "file_formats": ["csv", "jpg"],
+ "scale_ko": "측정 데이터 약 16만 건(원천 약 22.6만 파일), 합금계 여러 종",
+ "classes_example": ["Co-TM1-TM2", "Al-TM1-TM2"],
+ "baseline": [
+  {"task": "amorphous prediction", "model": "sequential neural network", "metric": "F1", "value": "0.91"},
+  {"task": "resistivity prediction", "model": "Random Forest", "metric": "R2", "value": "0.99"},
+  {"task": "hardness prediction", "model": "Random Forest", "metric": "R2", "value": "0.94"}
+ ],
+ "difficulty": "intermediate",
+ "difficulty_note_ko": "약 10MB로 매우 작아 엑셀·판다스로 바로 실습할 수 있습니다. 재료 지식이 있으면 좋습니다.",
+ "skills_needed_ko": ["파이썬", "판다스", "랜덤 포레스트·회귀 모델"],
+ "caveats_ko": ["원천 파일 구조가 측정 장비별로 나뉘어 있어 합치는 작업이 필요함", "SEM 이미지는 약 2,000장으로 적음"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "조성으로 경도 예측", "title_en": "Hardness from composition", "desc_ko": "합금 조성으로 경도를 예측하는 회귀 모델을 만듭니다.", "desc_en": "Predict hardness from alloy composition."},
+  {"level": "capstone", "title_ko": "소재 추천 도구", "title_en": "Material recommender", "desc_ko": "원하는 저항·경도를 넣으면 후보 조성을 추천합니다.", "desc_en": "Suggest compositions for target resistivity and hardness."},
+  {"level": "research", "title_ko": "능동 학습 소재 탐색", "title_en": "Active-learning materials search", "desc_ko": "적은 실험으로 좋은 소재를 찾는 능동 학습을 연구합니다.", "desc_en": "Find good materials with fewer experiments via active learning."}
+ ],
+ "doc_used": true,
+ "uncertain": []
+}

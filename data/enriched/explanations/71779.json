@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71779",
+ "easy_ko": "서부권을 여행한 사람 3,200명이 여행 앱으로 남긴 여행자 정보, 이동 경로, 들른 곳과 한 일, 쓴 돈, 사진을 모은 데이터입니다. 사람마다 맞는 여행지나 숙소를 추천하는 AI에 쓸 수 있습니다.",
+ "easy_en": "Records left in a travel app by 3,200 people travelling in the western region: traveller details, routes, places visited and activities, money spent and photos. You can use it to build AI that recommends destinations or places to stay for each person.",
+ "detail_ko": "서부권 여행객 3,200명(세트)이 전용 앱으로 남긴 여행자 정보, GPS 동선, 방문지·활동 기록, 소비 내역(csv, json)과 사진(jpg)입니다. GPS·소비 기록은 개인 이동 정보라 이용 조건을 확인해야 하고, 성능 지표 값은 팩에 없습니다. 서부권에 포함된 시·도는 팩 앞부분에 없습니다. 수도권(71776)·동부권(71778)·서부권(71779)·제주도 및 도서지역(71780) 4개 권역 중 하나입니다.",
+ "detail_en": "Records from 3,200 travellers (sets) in the western region collected through a dedicated app: traveller profiles, GPS routes, visits and activities, spending (csv, json) and photos (jpg). GPS and spending records are personal movement data, so check the terms of use; no metric values are in the pack. Which provinces count as 'western' is not in the pack. It is one of 4 regions: capital area (71776), east (71778), west (71779), and Jeju and islands (71780).",
+ "amount_ko": "여행자 3,200명(세트)",
+ "amount_en": "3,200 travellers (sets)",
+ "labels_ko": "여행자 정보, 이동 경로, 방문·활동, 쓴 돈",
+ "labels_en": "traveller profile, route, activity, spending",
+ "status": "full-run-2026-11-02"
+}

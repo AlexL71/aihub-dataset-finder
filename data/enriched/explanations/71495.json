@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71495",
+ "easy_ko": "드라마, 음악, 반려동물, 운동, 요리 같은 영상 9만 7천여 개를 사람 행동의 작은 구간으로 나누고, 구간마다 한국어와 영어 설명 문장을 붙인 데이터입니다. 영상 속 행동을 문장으로 설명해 주는 AI에 쓸 수 있습니다.",
+ "easy_en": "Over 97,000 videos, such as dramas, music, pets, sports and cooking, split into short segments of human actions, each with a description sentence in Korean and English. You can use it to build AI that describes the actions in a video in words.",
+ "detail_ko": "드라마·음악·반려동물·스포츠·여행·엔터·요리·일상·패션뷰티·헬스건강 등 영상 97,382개(mp4, 약 3,313시간)를 행동 구간으로 나누고, 구간 타임스탬프와 한국어·영어 설명문을 JSON으로 붙였습니다. 기준 성능은 PDVC 영상 장면 설명 BLEU-4 한국어 0.0489, 영어 0.0842로 매우 낮습니다. 전체 약 7TB이고, 통계에 이미지 314,489장이 적혀 있으나 71491 데이터셋 수치와 같아 복사 오류일 수 있습니다. 구매 영상이 포함되어 이용 조건을 확인해야 합니다.",
+ "detail_en": "97,382 videos (mp4, about 3,313 hours) of dramas, music, pets, sports, travel, entertainment, cooking, daily life, fashion/beauty and health, split into action segments with JSON timestamps and Korean and English captions. Baselines: video scene captioning with PDVC, BLEU-4 0.0489 (Korean) and 0.0842 (English), which is very low. Total size is about 7 TB. The statistics list 314,489 images, the same figure as dataset 71491, so it may be a copy error. Purchased videos are included, so check the terms of use.",
+ "amount_ko": "영상 97,382개, 약 3,313시간",
+ "amount_en": "97,382 videos, about 3,313 hours",
+ "labels_ko": "행동 구간 시각, 한국어·영어 설명 문장",
+ "labels_en": "segment timestamps, Korean and English captions",
+ "status": "full-run-2026-11-02"
+}

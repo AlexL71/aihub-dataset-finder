@@ -1,0 +1,29 @@
+{
+ "dataset_id": "71886",
+ "title_en": "NEW skincare ingredient-efficacy recommendation data",
+ "summary_ko": "10,000명(여성 56%, 13~69세)의 피부 이미지 10,000장과 피부 고민·타입·생활환경 설문 10,000건에, 맞춤 성분·효능·관리법을 단계적 사고 과정(CoT, 추론 근거를 차례로 쓰는 방식)과 함께 적은 질문-추론-답변 10,000건이 붙어 있습니다. 개인 맞춤 화장품 성분 추천 AI에 쓸 수 있습니다.",
+ "summary_en": "10,000 skin images and 10,000 surveys (skin concerns, type, lifestyle) from 10,000 people (56% female, ages 13–69), each with a question–chain-of-thought–answer record recommending ingredients, efficacy and care steps. For personalized cosmetic ingredient recommendation.",
+ "contents_ko": "피부 이미지(jpg) + 설문(csv) + JSONL(질문-CoT-답변, 성분·효능 태그).",
+ "contents_en": "Skin image (jpg) + survey (csv) + JSONL (question–CoT–answer, ingredient/efficacy tags).",
+ "modalities": ["image", "text", "tabular"],
+ "tasks": ["visual_qa", "retrieval_recommendation", "text_generation"],
+ "topics": [{"ko": "뷰티·스킨케어", "en": "Beauty and skincare"}, {"ko": "멀티모달 추천", "en": "Multimodal recommendation"}],
+ "keywords_ko": ["스킨케어", "화장품 성분", "맞춤 추천", "CoT", "피부 고민", "LLaVA"],
+ "keywords_en": ["skincare", "cosmetic ingredients", "personalized recommendation", "chain-of-thought", "skin concerns", "LLaVA"],
+ "labels": ["question-CoT-answer", "ingredient tags"],
+ "file_formats": ["jpg", "csv", "jsonl"],
+ "scale_ko": "이미지 10,000장, 설문 10,000건, 질문-CoT-답변 10,000건",
+ "classes_example": [],
+ "baseline": [],
+ "difficulty": "intermediate",
+ "difficulty_note_ko": "약 6.6GB로 가볍지만, 멀티모달 모델(LLaVA-7B) 미세조정은 GPU 메모리가 많이 필요합니다.",
+ "skills_needed_ko": ["파이썬", "멀티모달 LLM(LLaVA) 기초", "추천 시스템 기초"],
+ "caveats_ko": ["페이지에 성능 점수 표가 없음(LLaVA-1.5-7B 소개만 있음)", "얼굴·피부 사진이라 개인정보 주의", "평균 나이 43.8세로 중년층 중심"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "피부 고민 통계", "title_en": "Skin concern statistics", "desc_ko": "설문으로 나이·성별별 주요 피부 고민을 분석합니다.", "desc_en": "Analyse main skin concerns by age and gender."},
+  {"level": "capstone", "title_ko": "성분 추천 챗봇", "title_en": "Ingredient recommender chatbot", "desc_ko": "사진과 설문을 받아 성분과 이유를 알려주는 챗봇을 만듭니다.", "desc_en": "Recommend ingredients with reasons from photo and survey."},
+  {"level": "research", "title_ko": "추천 근거 신뢰성", "title_en": "Trustworthy recommendation reasoning", "desc_ko": "CoT 추론 근거가 실제 성분 효능과 맞는지 검증하는 방법을 연구합니다.", "desc_en": "Study checking CoT reasons against real ingredient efficacy."}
+ ],
+ "doc_used": true,
+ "uncertain": ["피부 고민·타입 클래스 목록(팩 앞부분에 없음)"]
+}

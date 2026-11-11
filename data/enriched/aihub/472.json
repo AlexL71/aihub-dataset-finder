@@ -1,0 +1,29 @@
+{
+ "dataset_id": "472",
+ "title_en": "Multi-sensor multi-object tracking and prediction data",
+ "summary_ko": "한국 도로를 달리는 자율주행 차량의 카메라 이미지 40만 장과 라이다 점구름 40만 장으로, 차·이륜차·보행자 등 주변 물체의 위치(2D 상자, 3D 큐보이드)와 추적 ID, 차선·도로 경계가 표시되어 있습니다. 주변 물체를 따라가며 움직임을 예측하는 자율주행 인지 AI에 쓸 수 있습니다.",
+ "summary_en": "400,000 camera images and 400,000 lidar point clouds from an autonomous car on Korean roads, with 2D boxes, 3D cuboids and tracking IDs for cars, two-wheelers, pedestrians and more, plus lanes and road edges. For self-driving perception that tracks surrounding objects and predicts their motion.",
+ "contents_ko": "이미지(jpg) + 라이다(pcd) + JSON(2D 상자, 차선 폴리라인, 3D 큐보이드, 추적 ID, 시나리오).",
+ "contents_en": "Images (jpg) + lidar (pcd) + JSON (2D boxes, lane polylines, 3D cuboids, tracking IDs, scenario).",
+ "modalities": ["image", "3d", "sensor"],
+ "tasks": ["object_detection", "object_tracking", "forecasting"],
+ "topics": [{"ko": "자율주행", "en": "Self-driving"}, {"ko": "센서·라이다", "en": "Sensors and lidar"}],
+ "keywords_ko": ["다중 객체 추적", "라이다", "센서 융합", "자율주행", "궤적 예측", "큐보이드"],
+ "keywords_en": ["multi-object tracking", "lidar", "sensor fusion", "self-driving", "trajectory prediction", "cuboid"],
+ "labels": ["2D bounding box", "3D cuboid", "tracking id", "polyline"],
+ "file_formats": ["jpg", "pcd", "json"],
+ "scale_ko": "이미지 40만 장, 점구름 40만 장, 시나리오 20종, 이미지 클래스 8종·라이다 클래스 4종",
+ "classes_example": ["차", "이륜차", "보행자", "신호등", "표지판", "차선", "도로 경계"],
+ "baseline": [],
+ "difficulty": "advanced",
+ "difficulty_note_ko": "카메라·라이다 융합과 추적·예측을 함께 다루는 연구 수준입니다. 약 830GB입니다.",
+ "skills_needed_ko": ["파이썬", "3D 탐지·추적", "궤적 예측 모델"],
+ "caveats_ko": ["성능 지표가 팩 앞부분에 없음"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "카메라 이미지 물체 탐지", "title_en": "Camera object detection", "desc_ko": "이미지에서 차·보행자를 탐지합니다.", "desc_en": "Detect cars and pedestrians in camera images."},
+  {"level": "capstone", "title_ko": "라이다 다중 객체 추적 시각화", "title_en": "Lidar multi-object tracking viewer", "desc_ko": "3D 상자와 추적 ID로 주변 차량 궤적을 3D로 보여줍니다.", "desc_en": "Show surrounding vehicle tracks in 3D with IDs."},
+  {"level": "research", "title_ko": "보행자 움직임 예측", "title_en": "Pedestrian motion prediction", "desc_ko": "추적 궤적으로 몇 초 뒤 보행자 위치를 예측하는 모델을 연구합니다.", "desc_en": "Predict pedestrian positions seconds ahead from tracks."}
+ ],
+ "doc_used": true,
+ "uncertain": []
+}

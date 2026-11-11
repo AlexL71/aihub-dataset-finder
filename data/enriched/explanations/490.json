@@ -1,0 +1,12 @@
+{
+ "dataset_id": "490",
+ "easy_ko": "전북 장수의 사과 네 품종을 찍은 사진마다 사과 영역과, 자르지 않고 잰 단맛 등급(A·B·C)을 표시하고, 과수원 흙과 환경 센서 값도 함께 담은 데이터입니다. 사과 사진만 보고 품종과 얼마나 단지 알려 주는 AI를 만들 수 있습니다.",
+ "easy_en": "Photos of four apple varieties from Jangsu, Jeonbuk, each marked with the apple's area and a sweetness grade (A, B, C) measured without cutting the fruit, plus orchard soil and environment sensor readings. You can build AI that tells the variety and how sweet an apple is from a photo.",
+ "detail_ko": "전북 장수 사과 4품종(홍로·후지·시나노골드·아리수) 이미지 535,691장(후지 48%, 홍로 36%, 시나노골드 8%, 아리수 8%, jpg)에 사과 분할, 품종, 비파괴 당도 등급(A·B·C)을 JSON으로 붙였고, 토양·환경 센서 177,984세트와 적외선 데이터 119,423개가 포함됩니다. 기준 성능은 기록에서 확인되지 않습니다. 품종별 사진 수가 크게 불균형합니다.",
+ "detail_en": "535,691 jpg images of 4 apple varieties from Jangsu (Fuji 48%, Hongro 36%, Shinano Gold 8%, Arisoo 8%) with JSON apple segmentation, variety and non-destructive sugar grade (A, B, C), plus 177,984 soil and environment sensor sets and 119,423 infrared records. No baseline is visible in the record. Varieties are strongly imbalanced.",
+ "amount_ko": "사과 사진 약 53.6만 장, 센서 약 17.8만 세트",
+ "amount_en": "about 536k apple images, about 178k sensor sets",
+ "labels_ko": "사과 영역, 품종, 단맛 등급, 흙·환경 센서 값",
+ "labels_en": "apple masks, variety, sweetness grade, soil and environment sensor values",
+ "status": "full-run-2026-11-02"
+}

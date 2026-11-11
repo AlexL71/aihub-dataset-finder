@@ -1,0 +1,12 @@
+{
+ "dataset_id": "146",
+ "easy_ko": "사과와 배 과수원에서 열매·꽃·잎·가지를 찍은 사진으로, 건강한 것과 과수화상병·탄저병 같은 여러 병에 걸린 것을 구분해 두었습니다. 병든 부분이 표시되어 있고 병이 얼마나 진행됐는지도 적혀 있어, 사진으로 과일나무 병을 알려 주는 앱을 만들 수 있습니다.",
+ "easy_en": "Photos of apple and pear fruit, flowers, leaves and branches from orchards, sorted into healthy and several diseases such as fire blight. Diseased spots are marked and the disease stage is recorded, so you can build an app that spots fruit-tree diseases from a photo.",
+ "detail_ko": "사과·배 과수원 실촬영 이미지(약 4032×3024)에 작물, 질병 코드, 촬영 부위, 생육 단계, 피해 단계(초기·중기·말기), 관심 영역 바운딩박스가 JSON으로 라벨링되어 있습니다. 클래스는 정상 2종과 질병 7종으로 9개이며, 학습용 19.4만 건 중 질병 이미지 대부분은 원본 1.4만 장을 10배 증강한 것입니다. 기준 성능은 ResNet50 F1-score 0.92입니다. 증강본이 학습·검증에 섞이지 않도록 원본 단위로 분할해야 합니다.",
+ "detail_en": "Orchard photos (about 4032×3024) of apple and pear, labelled in JSON with crop, disease code, plant part, growth stage, damage stage (early/mid/late) and a region-of-interest box. Nine classes (2 healthy, 7 diseases); of the 194k training items, most disease images are 10× augmentations of 14k originals. Baseline: ResNet50, F1 0.92. Split by original image so augmented copies do not leak between training and validation.",
+ "amount_ko": "학습용 19.4만 건(정상 4만, 질병 원본 1.4만, 증강 14만)",
+ "amount_en": "194k training items (40k healthy, 14k disease originals, 140k augmented)",
+ "labels_ko": "병 이름, 병든 부분 상자, 촬영 부위, 피해 정도",
+ "labels_en": "disease name, box around the affected part, plant part, damage stage",
+ "status": "sample-2026-11-02"
+}

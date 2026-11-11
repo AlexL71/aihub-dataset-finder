@@ -1,0 +1,12 @@
+{
+ "dataset_id": "101",
+ "easy_ko": "어린이·노인·일반인의 일상생활과 집 안 가전·가구 모습을 찍은 사진마다, 사진 내용에 대한 질문과 답을 한국어로 붙인 데이터입니다. 사진을 보고 질문에 답해 주는 AI를 만들어 시각장애인을 돕는 앱 등에 쓸 수 있습니다.",
+ "easy_en": "Photos of daily life of children, older people and adults, and of home appliances and furniture, each with Korean questions and answers about what is in the photo. You can build AI that answers questions about a picture, for example in apps that help blind people.",
+ "detail_ko": "대전 유성구 등에서 촬영한 일상·실내 사진 1,063,340장(일반 96만, 3D 공간 스캔 추출 10만, jpg)에 질문-답(객관적 사실·추론 질문), 물체 바운딩박스, 장면 분류(번화가·골목·실내·매장 등)를 JSON으로 붙였습니다(구축량 719만, 질문 포함). 기준 성능은 기록에서 확인되지 않습니다. 일상 사진이라 사람 얼굴 비식별 여부 확인이 필요합니다.",
+ "detail_en": "1,063,340 jpg photos of daily life and indoor spaces taken in Daejeon and elsewhere (960k ordinary, 100k extracted from 3D space scans), with JSON question–answer pairs (factual and reasoning), object bounding boxes and scene classes (busy street, alley, indoor, shop and more); 7.19M built items including questions. No baseline is visible in the record. These are everyday photos, so check whether faces are de-identified.",
+ "amount_ko": "사진 약 106만 장, 질문 포함 구축량 719만",
+ "amount_en": "about 1.06M photos, 7.19M items including questions",
+ "labels_ko": "사진에 대한 질문과 답, 물체 위치 상자, 장면 종류",
+ "labels_en": "questions and answers about the photo, object boxes, scene class",
+ "status": "full-run-2026-11-02"
+}

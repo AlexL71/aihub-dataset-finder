@@ -1,0 +1,29 @@
+{
+ "dataset_id": "546",
+ "title_en": "Daily-life colloquial Korean-Chinese and Korean-Japanese parallel corpus",
+ "summary_ko": "여행(공항·기내·음식점), 스포츠 관람, 일상생활 같은 상황의 구어체 한국어-중국어, 한국어-일본어 번역 문장 860만 개입니다. 여행·일상 회화 번역기나 다국어 챗봇에 쓸 수 있습니다.",
+ "summary_en": "8.6 million colloquial Korean-Chinese and Korean-Japanese sentence pairs from situations such as travel (airports, flights, restaurants), watching sports and everyday life. For travel and everyday-conversation translators or multilingual chatbots.",
+ "contents_ko": "한국어 문장 + 중국어 또는 일본어 번역 + 상황 분류(대·중·소분류).",
+ "contents_en": "Korean sentence + Chinese or Japanese translation + situation category (3 levels).",
+ "modalities": ["text"],
+ "tasks": ["translation", "dialogue"],
+ "topics": [{"ko": "번역·외국어", "en": "Translation and foreign languages"}, {"ko": "여행·관광", "en": "Travel and tourism"}, {"ko": "일상 대화", "en": "Everyday conversation"}],
+ "keywords_ko": ["한중 번역", "한일 번역", "구어체", "여행 회화", "병렬 말뭉치"],
+ "keywords_en": ["Korean-Chinese translation", "Korean-Japanese translation", "colloquial", "travel phrases", "parallel corpus"],
+ "labels": ["parallel sentence pairs", "situation category"],
+ "file_formats": ["txt", "xlsx", "json"],
+ "scale_ko": "860만 문장(한-중, 중-한, 한-일, 일-한)",
+ "classes_example": ["공항/기내", "음식점", "스포츠 관람", "일상"],
+ "baseline": [],
+ "difficulty": "beginner",
+ "difficulty_note_ko": "약 0.5GB 텍스트라 번역 품질 비교나 작은 번역 모델 실습에 좋습니다.",
+ "skills_needed_ko": ["파이썬", "Hugging Face 번역 모델", "BLEU 평가"],
+ "caveats_ko": ["성능 지표가 팩 앞부분에 없음"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "여행 회화 번역 품질 비교", "title_en": "Travel phrase translation quality", "desc_ko": "공개 번역기의 한-일·한-중 여행 문장 품질을 비교합니다.", "desc_en": "Compare open translators on Korean-Japanese and Korean-Chinese travel sentences."},
+  {"level": "capstone", "title_ko": "여행자 회화 번역 앱", "title_en": "Traveller phrase translator", "desc_ko": "상황을 고르면 자주 쓰는 문장을 바로 번역해 주는 앱을 만듭니다.", "desc_en": "Pick a situation and get common phrases translated instantly."},
+  {"level": "research", "title_ko": "구어체 번역의 자연스러움", "title_en": "Naturalness in colloquial translation", "desc_ko": "문어체로 학습한 모델과 구어체 학습 모델의 번역 자연스러움을 비교합니다.", "desc_en": "Compare naturalness of models trained on formal vs colloquial text."}
+ ],
+ "doc_used": true,
+ "uncertain": []
+}

@@ -1,0 +1,29 @@
+{
+ "dataset_id": "71445",
+ "title_en": "Clothing design pattern data",
+ "summary_ko": "상의·하의 의류 이미지 약 41만 장으로, 옷 영역이 다각형으로 칠해져 있고 동물·체크·도트·식물·줄무늬·기하학 등 10종 패턴으로 나뉘어 있습니다. 옷 무늬를 알아보거나 새 패턴을 만드는 AI에 쓸 수 있습니다.",
+ "summary_en": "About 415,000 top and bottom clothing images with clothing areas outlined by polygons and 10 pattern types such as animal, check, dot, plants, stripe and geometric. For AI that recognises clothing patterns or creates new ones.",
+ "contents_ko": "의류 이미지 + JSON(2D 다각형 분할, 상의·하의, 패턴 종류).",
+ "contents_en": "Clothing image + JSON (2D polygon segmentation, top or bottom, pattern type).",
+ "modalities": ["image"],
+ "tasks": ["image_classification", "segmentation", "image_generation"],
+ "topics": [{"ko": "패션·쇼핑", "en": "Fashion and shopping"}, {"ko": "디자인", "en": "Design"}],
+ "keywords_ko": ["의류 패턴", "줄무늬", "체크", "패션", "Mask R-CNN", "가상 피팅"],
+ "keywords_en": ["clothing pattern", "stripe", "check", "fashion", "Mask R-CNN", "virtual try-on"],
+ "labels": ["polygon", "garment type", "pattern class"],
+ "file_formats": ["json"],
+ "scale_ko": "이미지 약 41만 장, 상의·하의 × 패턴 10종 = 20종",
+ "classes_example": ["animal", "artifact", "check", "dot", "etc", "etcnature", "geometric", "plants", "stripe", "symbol"],
+ "baseline": [{"task": "pattern classification", "model": "Mask R-CNN (mmdetection)", "metric": "Top-1 Accuracy", "value": "90.22%"}],
+ "difficulty": "beginner",
+ "difficulty_note_ko": "패턴 분류는 입문용으로 좋습니다. 전체 약 73GB라 일부만 받아도 됩니다.",
+ "skills_needed_ko": ["파이썬", "이미지 분류", "분할 모델"],
+ "caveats_ko": ["총 수량이 415,038장과 415,033장으로 두 번 다르게 적혀 있음", "패턴별 수량 차이가 큼(하의 etcnature 288장, 하의 plants 65,640장)", "'etc' 패턴이 커서 경계가 모호할 수 있음", "이미지 파일 형식이 페이지에 명확하지 않음"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "옷 무늬 분류", "title_en": "Clothing pattern classifier", "desc_ko": "옷 사진을 보고 줄무늬·체크·도트 등 패턴을 분류합니다.", "desc_en": "Classify stripes, checks, dots and other patterns."},
+  {"level": "capstone", "title_ko": "패턴으로 옷 검색", "title_en": "Search clothes by pattern", "desc_ko": "원하는 무늬를 고르면 비슷한 패턴의 옷을 찾아 주는 쇼핑 도구를 만듭니다.", "desc_en": "Shopping tool that finds clothes with a chosen pattern."},
+  {"level": "research", "title_ko": "새 의류 패턴 생성", "title_en": "New clothing pattern generation", "desc_ko": "기존 패턴을 학습해 새로운 무늬를 만드는 생성 모델을 연구합니다.", "desc_en": "Generate new textile patterns from learned ones."}
+ ],
+ "doc_used": true,
+ "uncertain": ["이미지 파일 형식"]
+}

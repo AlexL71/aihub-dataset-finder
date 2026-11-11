@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71385",
+ "easy_ko": "재활용 선별장, 실내 분류기, 스마트폰 앱으로 찍은 생활 쓰레기 사진마다 종이, 캔, 유리, 페트병, 플라스틱, 비닐 같은 종류와 다른 이물질이나 여러 포장재가 섞였는지를 상자로 표시한 데이터입니다. 재활용품을 자동으로 골라내는 기계나 분리배출을 알려 주는 앱을 만들 수 있습니다.",
+ "easy_en": "Photos of household waste from recycling sorting centres, indoor sorting machines and a smartphone app, with boxes marking the type (paper, cans, glass, PET bottles, plastics, plastic film) and whether it is mixed with other materials or packaging. You can build machines that sort recyclables automatically or apps that explain how to separate waste.",
+ "detail_ko": "재활용 선별장(222,835), 실내형 분류기(127,844), 스마트폰 앱(200,883)으로 촬영한 생활폐기물 이미지 551,562장(jpg, 1280×720 이상)에 상자 약 160만 개와 재질 분류(종이, 종이팩, 캔류, 유리, 페트, 플라스틱, 비닐 등), 이물질·다중포장재 여부를 JSON으로 붙였습니다. 기준 성능은 YOLOv7 탐지 mAP 재활용품 94.2%, 일반 쓰레기 93.2%입니다. 전체 약 562GB이며, 플라스틱 관련 클래스가 매우 많고 유리 세부 클래스는 적어 불균형이 크고, 페이지에 '551,562만 장'이라는 오기가 있습니다.",
+ "detail_en": "551,562 household-waste images (jpg, at least 1280×720) from recycling centres (222,835), indoor sorting machines (127,844) and a smartphone app (200,883), with JSON labels for about 1.6M boxes, material class (paper, paper cartons, cans, glass, PET, plastics, film and more) and contamination or multi-material flags. Baselines: YOLOv7 detection mAP 94.2% (recyclables) and 93.2% (general waste). Total size is about 562 GB; plastic classes dominate and glass sub-classes are few; the page contains a typo ('551,562 ten-thousand images').",
+ "amount_ko": "사진 551,562장, 상자 약 160만 개",
+ "amount_en": "551,562 images, about 1.6M boxes",
+ "labels_ko": "쓰레기 위치 상자, 재질 종류, 이물질·여러 포장재 여부",
+ "labels_en": "boxes around waste, material class, contamination flag",
+ "status": "full-run-2026-11-02"
+}

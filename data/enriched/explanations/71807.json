@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71807",
+ "easy_ko": "공개된 규제 제도, 점검표, 검사 보고서 같은 규정 문서에 질문과 답, 문서 분류를 붙인 글 데이터 40만여 건입니다. 규정에 대해 묻고 답하거나 규정 문서를 자동으로 쓰고 나누는 AI에 쓸 수 있습니다.",
+ "easy_en": "Over 400,000 text items built from public regulatory documents such as regulatory frameworks, checklists and inspection reports, with questions and answers and document classes. You can use it to build AI that answers questions about regulations, or writes and sorts regulatory documents.",
+ "detail_ko": "공공누리 공개 자료의 규제 체계·체크리스트·검사 보고서 등 규정 문서를 바탕으로 질의응답과 텍스트 분류, 분야(예: 자원 및 에너지)를 JSON으로 붙인 406,658건입니다. 규정 질의응답, 승급 시험 문제 생성, 규정 문서 자동 작성·분류에 쓰도록 만들었습니다. 분야 전체 목록과 성능 지표는 팩 앞부분에 없습니다.",
+ "detail_en": "406,658 JSON items based on regulatory documents (regulatory frameworks, checklists, inspection reports and more) from public KOGL material, with question-answer pairs, text classes and field (such as resources and energy). It is meant for regulation Q&A, generating promotion-exam questions, and drafting and classifying regulatory documents. The full field list and any metrics are not in the pack.",
+ "amount_ko": "406,658건",
+ "amount_en": "406,658 items",
+ "labels_ko": "질문과 답, 문서 분류",
+ "labels_en": "question-answer, text class",
+ "status": "full-run-2026-11-02"
+}

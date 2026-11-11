@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71711",
+ "easy_ko": "사진 약 10만 장마다 물체와 그 특징, 물체 사이 관계를 정리한 그림 지도를 만들고, 이를 바탕으로 한국어 질문과 답 약 100만 개, 사진 설명을 붙인 데이터입니다. 사진 속 물체 관계를 이해하고 한국어 질문에 답하는 AI에 쓸 수 있습니다.",
+ "easy_en": "About 100,000 images, each with a scene graph of objects, their features and how they relate, plus about 1 million Korean questions and answers based on it and image descriptions. You can use it to build AI that understands relationships between objects in a photo and answers questions in Korean.",
+ "detail_ko": "이미지(jpg, png)와 장면 그래프 101,378건(객체 약 1,000종의 상자, 속성, 관계)에 한국어 질문-답변 1,013,780쌍(질의 카테고리: relation, attribute, category, global)과 이미지 캡션 20,535건을 JSON으로 붙였고, 국내 일상 장면과 한국적 이미지를 모았습니다. 기준 성능은 단답형 VQA Top-2 정확도 69.57%, 장문형 VQA BLEU-1 26.55%이며, 기준 모델 이름은 팩 앞부분에 없습니다. 일부 이미지는 온라인 수집이라 이용 조건을 확인해야 합니다.",
+ "detail_en": "101,378 images (jpg, png) with scene graphs (boxes, attributes and relationships for about 1,000 object types), 1,013,780 Korean question-answer pairs (query types: relation, attribute, category, global) and 20,535 image captions in JSON, covering everyday Korean scenes and Korea-specific images. Baselines: short-answer VQA, Top-2 accuracy 69.57%; long-answer VQA, BLEU-1 26.55%; the model names are not in the pack. Some images were collected online, so check the terms of use.",
+ "amount_ko": "이미지·장면 그래프 101,378건, 질문-답변 1,013,780쌍, 캡션 20,535건",
+ "amount_en": "101,378 images and scene graphs, 1,013,780 QA pairs, 20,535 captions",
+ "labels_ko": "물체 위치 상자, 물체 관계 그림 지도, 질문과 답, 사진 설명",
+ "labels_en": "bounding boxes, scene graph, question-answer, caption",
+ "status": "full-run-2026-11-02"
+}

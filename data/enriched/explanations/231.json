@@ -1,0 +1,12 @@
+{
+ "dataset_id": "231",
+ "easy_ko": "여러 체형의 사람들이 스쿼트 같은 운동을 바른 자세와 틀린 자세로 하는 모습을 여러 방향에서 찍고, 몸의 주요 점 위치와 자세가 맞는지를 표시한 데이터입니다. 집에서 운동할 때 자세를 바로잡아 주는 홈트레이닝 앱이나 재활 운동 앱을 만들 수 있습니다.",
+ "easy_en": "Videos of people of different body types doing exercises such as squats with correct and incorrect form, filmed from several directions, with key body points and whether the form is correct marked. You can build home-workout or rehab apps that correct your posture while you exercise.",
+ "detail_ko": "다양한 성별·체형·키의 참여자가 운동 30종을 5가지 운동 상태로 수행한 영상 클립 20만 개(5개 시점)의 프레임 이미지(jpg)에 COCO 17개 관절 키포인트, 운동 종류, 정자세/오류자세, 시점을 JSON으로 붙였습니다. 기준 성능은 ResNet + TSM 운동 종류 인식 mAP 95.89%, 운동 상태 인식 mAP 80.43%입니다. 구축량이 '200,000만 클립'으로 잘못 적혀 있으며 실제로는 20만 클립으로 보입니다.",
+ "detail_en": "Frames (jpg) from 200k video clips (5 viewpoints) of participants of various sexes, body types and heights doing 30 exercises in 5 exercise states, with JSON for 17 COCO keypoints, exercise type, correct or incorrect form and viewpoint. Baselines: ResNet + TSM exercise-type recognition mAP 95.89%, exercise-state recognition mAP 80.43%. The page states '2 billion clips' by mistake; it appears to be 200k clips.",
+ "amount_ko": "영상 클립 20만 개, 운동 30종",
+ "amount_en": "200k clips, 30 exercises",
+ "labels_ko": "몸의 주요 점(키포인트), 운동 종류, 바른 자세·틀린 자세",
+ "labels_en": "body key points, exercise type, correct or incorrect form",
+ "status": "full-run-2026-11-02"
+}

@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71561",
+ "easy_ko": "둑, 수문, 수위 관측소, 벤치, 안내판 같은 하천 시설 400개를 여러 방향에서 찍은 사진과 레이저 스캔, 입체 모형을 모은 데이터입니다. 사진으로 하천 시설의 입체 모형을 만드는 AI와 하천을 컴퓨터 속에 옮기는 디지털 트윈에 쓸 수 있습니다.",
+ "easy_en": "Photos taken from many directions, laser scans and three-dimensional models of 400 river facilities such as levees, sluice gates, water-level stations, benches and signboards. You can use it to build AI that creates three-dimensional models of river facilities from photos, and for digital twins of rivers.",
+ "detail_ko": "시설 46종 400개 객체를 여러 방향에서 찍은 이미지 3,205장(jpg), 점군 800개(las), 3D 모델 418개(obj, mtl, 텍스처 jpg), 복셀 800개, mat 파일, CityGML(gml), 2D/3D 키포인트·메타정보(JSON), 마스크(png)로 구성됩니다. 시설 예: 제방, 취/배수문, 수위관측소, 배수장, 보, 방조제, 배수문, 양수장, 벤치, 데크, 화장실, 안내판. 기준 성능은 Mesh R-CNN 3D 객체 복원 meshAP 48.95%입니다. 전체 약 918GB이고, 객체가 400개로 적어 3D 복원 학습에 부족할 수 있습니다. 71559 도로교통시설판과 같은 구조입니다.",
+ "detail_en": "400 objects of 46 facility types, with 3,205 images (jpg) taken from several directions, 800 point clouds (las), 418 3D models (obj, mtl, jpg textures), 800 voxel files, mat files, CityGML (gml), JSON 2D/3D keypoints and metadata, and masks (png). Example facilities: levees, intake/drain gates, water-level stations, pumping stations, weirs, sea walls, sluice gates, pump houses, benches, decks, toilets, signboards. Baseline: 3D object reconstruction with Mesh R-CNN, meshAP 48.95%. Total size is about 918 GB. With only 400 objects, it may be too small for training 3D reconstruction. Same structure as the road facility set 71559.",
+ "amount_ko": "시설 46종 400개 객체, 이미지 3,205장",
+ "amount_en": "400 objects of 46 facility types, 3,205 images",
+ "labels_ko": "평면·입체 관절 점(키포인트), 물체 마스크, 메타정보",
+ "labels_en": "2D and 3D keypoints, masks, metadata",
+ "status": "full-run-2026-11-02"
+}

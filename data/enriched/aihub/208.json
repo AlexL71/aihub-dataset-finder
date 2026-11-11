@@ -1,0 +1,29 @@
+{
+ "dataset_id": "208",
+ "title_en": "Medical staff and patient speech for telemedicine",
+ "summary_ko": "비대면 진료를 위해 의사 300시간·간호사 400시간 음성과 환자 45만 문장(약 600시간) 음성, 그리고 의료진·환자 문장 코퍼스를 모은 데이터입니다. 직군·연령·성별·증상별로 나뉘어 있어 진료 대화를 받아쓰는 의료 음성 인식이나 비대면 진료 앱에 쓸 수 있습니다.",
+ "summary_en": "Speech for telemedicine: 300 hours from doctors, 400 hours from nurses, 450,000 patient sentences (about 600 hours), plus text corpora from staff and patients, organised by job, age, sex and symptom. For medical speech recognition that transcribes consultations, or telemedicine apps.",
+ "contents_ko": "음성(wav) + 전사 텍스트 + 메타정보(화자 직군·연령·성별, 증상, 대화 시나리오).",
+ "contents_en": "Audio (wav) + transcript + metadata (speaker role, age, sex, symptom, dialogue scenario).",
+ "modalities": ["audio", "text"],
+ "tasks": ["speech_recognition", "dialogue"],
+ "topics": [{"ko": "의료·건강", "en": "Medicine and health"}, {"ko": "음성", "en": "Speech"}, {"ko": "원격 진료", "en": "Telemedicine"}],
+ "keywords_ko": ["의료 음성", "비대면 진료", "의사", "간호사", "환자 증상", "음성 인식"],
+ "keywords_en": ["medical speech", "telemedicine", "doctor", "nurse", "patient symptoms", "speech recognition"],
+ "labels": ["transcript", "speaker role", "symptom", "demographics"],
+ "file_formats": ["wav", "json", "txt"],
+ "scale_ko": "의료진 음성 700시간 + 문장 3.3만, 환자 음성 45만 문장(약 600시간) + 문장 15만",
+ "classes_example": ["의사", "간호사", "환자"],
+ "baseline": [],
+ "difficulty": "intermediate",
+ "difficulty_note_ko": "음성 인식 미세조정 실습에 좋고, 의료 용어가 많아 분야 적응 연구에 알맞습니다. 약 270GB입니다.",
+ "skills_needed_ko": ["파이썬", "오디오 처리", "음성 인식 모델 미세조정"],
+ "caveats_ko": ["시나리오 기반 녹음이라 실제 진료와 다를 수 있음", "성능 지표가 팩에서 잘림"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "환자 증상 문장 분류", "title_en": "Classify patient symptom sentences", "desc_ko": "환자 문장 코퍼스로 증상 종류를 분류합니다.", "desc_en": "Classify symptom types from patient sentences."},
+  {"level": "capstone", "title_ko": "진료 대화 자동 기록", "title_en": "Automatic consultation notes", "desc_ko": "의사-환자 대화를 받아쓰고 증상과 처방 안내를 요약합니다.", "desc_en": "Transcribe doctor-patient talk and summarise symptoms and advice."},
+  {"level": "research", "title_ko": "의료 용어 음성 인식 개선", "title_en": "Better ASR for medical terms", "desc_ko": "약 이름·병명 인식 오류를 분석하고 용어 사전 적응을 연구합니다.", "desc_en": "Analyse errors on drug and disease names and study vocabulary adaptation."}
+ ],
+ "doc_used": true,
+ "uncertain": []
+}

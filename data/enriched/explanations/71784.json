@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71784",
+ "easy_ko": "보행자 사고가 잦은 골목길과 생활 도로에서 일반 카메라, 열화상 카메라, 레이저 센서로 모은 데이터에 보행자, 오토바이, 전동 킥보드, 차량을 표시했습니다. 어린이나 노인 같은 교통약자와 갑작스러운 상황까지 알아보는 자율주행 AI에 쓸 수 있습니다.",
+ "easy_en": "Data from ordinary cameras, thermal cameras and laser sensors on alleys and local streets where pedestrian accidents are common, marking pedestrians, motorbikes, e-scooters and cars. You can use it to build self-driving AI that also handles vulnerable road users such as children and older people, and sudden events.",
+ "detail_ko": "보행자 사고가 잦은 골목길·생활도로에서 가시광 이미지 40만 장, 열화상 이미지 10만 장(png), 라이다 10만 장(pcd)을 모으고 보행자·이륜차·전동킥보드·차량 등(예: 보행자, 차량, 킥보드, 자전거)을 상자, 키포인트, 인스턴스 분할로 JSON에 표시했습니다. 전체 약 1,227GB이고, 엣지케이스 시나리오 일부는 연출일 수 있으며, 클래스 전체 목록과 성능 지표는 팩 앞부분에 없습니다.",
+ "detail_en": "400,000 visible-light images and 100,000 thermal images (png) plus 100,000 lidar scans (pcd) from alleys and residential streets with frequent pedestrian accidents, with JSON boxes, keypoints and instance segmentation for pedestrians, two-wheelers, e-scooters, vehicles and more. Total size is about 1,227 GB. Some edge-case scenarios may be staged, and the full class list and metrics are not in the pack.",
+ "amount_ko": "가시광 40만 장, 열화상 10만 장, 라이다 10만 장",
+ "amount_en": "400,000 visible images, 100,000 thermal images, 100,000 lidar scans",
+ "labels_ko": "물체 위치 상자, 관절 점, 물체 영역",
+ "labels_en": "bounding box, keypoints, instance segmentation",
+ "status": "full-run-2026-11-02"
+}

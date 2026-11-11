@@ -1,0 +1,29 @@
+{
+ "dataset_id": "71587",
+ "title_en": "High-precision collection vehicle bad-weather data",
+ "summary_ko": "카메라·라이다·레이더·GNSS/INS를 동기화해 단 수집 차량으로 비·눈·안개·미세먼지 속 자동차 전용도로를 달리며 모은 데이터로, 전방 카메라 이미지 10만 장과 라이다 점군 10만 개가 있습니다. 판옵틱 분할과 3D 상자가 있어 악천후 자율주행 인식 연구에 쓸 수 있습니다.",
+ "summary_en": "Expressway driving data in rain, snow, fog and fine dust from a vehicle with synchronised camera, lidar, radar and GNSS/INS: 100k front images and 100k lidar point clouds with panoptic segmentation and 3D boxes, for bad-weather perception.",
+ "contents_ko": "카메라 이미지(jpg) + 라이다 점군(pcd) + JSON(2D 판옵틱 분할, 3D 상자) + GNSS/INS 위치 정보.",
+ "contents_en": "Camera image (jpg) + lidar point cloud (pcd) + JSON (2D panoptic segmentation, 3D cuboids) + GNSS/INS pose.",
+ "modalities": ["image", "3d", "sensor"],
+ "tasks": ["segmentation", "object_detection"],
+ "topics": [{"ko": "자율주행", "en": "Autonomous driving"}, {"ko": "악천후 주행 안전", "en": "Bad-weather driving safety"}],
+ "keywords_ko": ["자율주행", "악천후", "안개", "강우", "라이다", "판옵틱 분할"],
+ "keywords_en": ["autonomous driving", "bad weather", "fog", "rain", "lidar", "panoptic segmentation"],
+ "labels": ["panoptic segmentation", "3D cuboid"],
+ "file_formats": ["jpg", "pcd", "json"],
+ "scale_ko": "전방 카메라 이미지 100,000장, 라이다 점군 100,000개(일반 30%·강우 35%·안개 15%·미세먼지 10%·강설 10%)",
+ "classes_example": ["일반", "강우", "미세먼지", "안개", "강설"],
+ "baseline": [{"task": "3D object detection", "model": "Voxel R-CNN", "metric": "mAP", "value": "78.42%"}, {"task": "panoptic segmentation (rain)", "model": "EfficientPS", "metric": "PQ", "value": "55.46%"}, {"task": "panoptic segmentation (fog)", "model": "EfficientPS", "metric": "PQ", "value": "53.17%"}],
+ "difficulty": "advanced",
+ "difficulty_note_ko": "카메라·라이다를 함께 다뤄야 하고 전체 약 306GB입니다. 한 날씨 조건부터 시작하세요.",
+ "skills_needed_ko": ["파이썬", "분할 모델", "3D 점군 처리(Open3D·OpenPCDet)", "센서 좌표 변환"],
+ "caveats_ko": ["미세먼지 구축량이 1,000장으로 적혀 있으나 비율은 10%라 오기 가능성", "물체 클래스 목록은 팩 앞부분에 없음", "71577·71580·71588·71590과 같은 기관·구성"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "날씨 분류", "title_en": "Weather classifier", "desc_ko": "전방 이미지로 맑음·비·안개·눈을 분류합니다.", "desc_en": "Classify clear, rain, fog and snow from front images."},
+  {"level": "capstone", "title_ko": "악천후 차량 탐지 비교", "title_en": "Bad-weather detection comparison", "desc_ko": "카메라와 라이다 탐지 결과를 날씨별로 비교하는 대시보드를 만듭니다.", "desc_en": "Compare camera and lidar detection by weather in a dashboard."},
+  {"level": "research", "title_ko": "악천후 영상 복원", "title_en": "Bad-weather image restoration", "desc_ko": "안개·비 제거 전처리가 분할 성능을 얼마나 높이는지 연구합니다.", "desc_en": "Study whether de-fogging and de-raining improve segmentation."}
+ ],
+ "doc_used": true,
+ "uncertain": []
+}

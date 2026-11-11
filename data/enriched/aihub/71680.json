@@ -1,0 +1,29 @@
+{
+ "dataset_id": "71680",
+ "title_en": "Child and adolescent counselling data",
+ "summary_ko": "만 7~12세 아동·청소년 3,596명의 상담을 녹음·전사하고 7문항 18항목 이상의 질의응답으로 정리한 데이터로, 신체·정신 건강 상태와 생활 상황을 담고 있습니다. 일반·시설거주·저소득층·다문화가정·학대경험 아동이 포함되어 상담 기록 자동화와 위기 신호 감지 연구에 쓸 수 있습니다.",
+ "summary_en": "Recorded and transcribed counselling sessions with 3,596 children aged 7-12, organised as question-answer data across 7 questions and 18+ items on physical and mental health and living situations. Includes general, residential-care, low-income, multicultural-family and abuse-experienced children; for counselling record automation and risk-signal research.",
+ "contents_ko": "상담 전사 텍스트(txt) + JSON(질의응답, 아동 유형·학년·성별 정보).",
+ "contents_en": "Counselling transcripts (txt) + JSON (question-answer, child type, grade, gender).",
+ "modalities": ["text", "audio"],
+ "tasks": ["text_classification", "summarization", "dialogue"],
+ "topics": [{"ko": "아동 상담·복지", "en": "Child counselling and welfare"}, {"ko": "정신 건강", "en": "Mental health"}],
+ "keywords_ko": ["아동 상담", "청소년", "정신 건강", "학대 예방", "상담 기록", "위기 감지"],
+ "keywords_en": ["child counselling", "adolescents", "mental health", "abuse prevention", "counselling records", "risk detection"],
+ "labels": ["question-answer", "transcript", "child profile"],
+ "file_formats": ["txt", "json"],
+ "scale_ko": "상담 3,596건(7문항 18항목 이상)",
+ "classes_example": ["일반아동", "시설거주아동", "저소득층", "다문화가정", "학대경험아동"],
+ "baseline": [],
+ "difficulty": "intermediate",
+ "difficulty_note_ko": "약 11GB로 다루기 쉽지만 아동 상담이라 매우 민감한 데이터입니다. 연구 윤리를 먼저 확인하세요.",
+ "skills_needed_ko": ["파이썬", "한국어 자연어 처리", "연구 윤리 이해"],
+ "caveats_ko": ["아동의 민감한 상담 내용이라 이용 조건과 연구 윤리 승인을 꼭 확인해야 함", "3,596건으로 규모가 작음", "AI 판단을 실제 아동 위기 판정에 바로 쓰면 안 됨", "성능 지표 값이 팩에 없음"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "상담 답변 주제 분류", "title_en": "Answer topic classifier", "desc_ko": "아이의 답변이 어떤 상담 항목에 해당하는지 분류합니다.", "desc_en": "Classify which counselling item an answer belongs to."},
+  {"level": "capstone", "title_ko": "상담 기록 요약 도우미", "title_en": "Counselling note summariser", "desc_ko": "상담 전사를 상담사용 요약 보고서로 정리해 줍니다.", "desc_en": "Turn transcripts into summary notes for counsellors."},
+  {"level": "research", "title_ko": "위기 신호 조기 탐지", "title_en": "Early risk-signal detection", "desc_ko": "상담 내용에서 상담사가 다시 볼 필요가 있는 위기 신호를 찾는 방법을 신중히 연구합니다.", "desc_en": "Carefully study flagging risk signals for counsellor review."}
+ ],
+ "doc_used": true,
+ "uncertain": ["음성 파일 제공 여부(형식은 txt로 적힘)"]
+}

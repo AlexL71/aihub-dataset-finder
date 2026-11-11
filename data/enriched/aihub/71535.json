@@ -1,0 +1,29 @@
+{
+ "dataset_id": "71535",
+ "title_en": "Shapeless clothing and pose data",
+ "summary_ko": "코트·블라우스·팬츠·드레스처럼 형태가 일정하지 않은 옷과 그 옷을 입은 모델을 직접 촬영한 이미지 약 41만 장입니다. 옷 영역 분할과 사람 몸의 2D 키포인트(관절 점)가 표시되어 있어 가상 피팅(옷 입혀 보기) AI에 쓸 수 있습니다.",
+ "summary_en": "About 410,000 photos of shapeless clothes (coats, blouses, pants, dresses) and models wearing them, with clothing segmentation and 2D body keypoints. For virtual try-on AI.",
+ "contents_ko": "의류·착용 이미지 + JSON(의류 분할, 2D 키포인트, 카테고리).",
+ "contents_en": "Clothing and worn-clothing image + JSON (clothing segmentation, 2D keypoints, category).",
+ "modalities": ["image"],
+ "tasks": ["segmentation", "keypoint_pose", "image_generation"],
+ "topics": [{"ko": "패션·의류", "en": "Fashion and clothing"}, {"ko": "가상 피팅", "en": "Virtual try-on"}],
+ "keywords_ko": ["의류 분할", "포즈 추정", "가상 피팅", "패션", "키포인트"],
+ "keywords_en": ["clothing segmentation", "pose estimation", "virtual try-on", "fashion", "keypoints"],
+ "labels": ["segmentation", "2D keypoints", "category"],
+ "file_formats": ["json"],
+ "scale_ko": "이미지 410,409장 (의류·착용 399,985장 + 기본 의상 모델 10,424장), 의류 종류 4대분류",
+ "classes_example": ["코트", "베스트", "가디건", "블라우스", "티셔츠", "스웨터", "팬츠", "스커트", "드레스", "점프수트"],
+ "baseline": [{"task": "clothing parsing", "model": "Augmented-CE2P (SCHP)", "metric": "mAP", "value": "85.22%"}, {"task": "human pose estimation", "model": "Simple Baseline", "metric": "mAP", "value": "98.11%"}],
+ "difficulty": "intermediate",
+ "difficulty_note_ko": "분할·자세 추정 실습에 좋지만 전체 약 527GB입니다. 일부 카테고리만 받아 쓰세요.",
+ "skills_needed_ko": ["파이썬", "분할 모델", "자세 추정 모델"],
+ "caveats_ko": ["전체 약 527GB", "데이터 개요 문장(연도별 패션 선호도 매칭)이 실제 내용(의류 분할·포즈)과 맞지 않음", "메타데이터의 데이터 형식이 txt로 적혀 있어 이미지 형식이 불분명함"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "옷 종류 분할", "title_en": "Clothing type segmentation", "desc_ko": "사진에서 상의·하의·아우터 영역을 칠하는 분할 모델을 학습합니다.", "desc_en": "Train a model that segments tops, bottoms and outerwear."},
+  {"level": "capstone", "title_ko": "간단한 가상 피팅 데모", "title_en": "Simple virtual try-on demo", "desc_ko": "자세 키포인트와 옷 분할 결과로 다른 옷을 사람 사진에 입혀 봅니다.", "desc_en": "Use pose keypoints and clothing masks to put another garment on a person photo."},
+  {"level": "research", "title_ko": "늘어지는 옷의 분할 개선", "title_en": "Segmenting loose, deforming clothes", "desc_ko": "형태가 바뀌는 옷에서 분할이 틀리는 경우를 분석하고 개선합니다.", "desc_en": "Study and reduce segmentation errors on shape-changing clothes."}
+ ],
+ "doc_used": true,
+ "uncertain": ["이미지 파일 형식(jpg/png 등)이 팩에 명확히 없음"]
+}

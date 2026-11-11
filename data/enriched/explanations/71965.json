@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71965",
+ "easy_ko": "영화 회사가 만든 한국 섬, 고궁, 전통 건축, 조선 시대 거리, 산 같은 한국적 풍경의 입체 모형 1만 개와 렌더링 사진에 설명 글을 붙인 데이터입니다. 영화나 드라마 특수 효과용 입체 모형을 찾거나 만드는 AI에 쓸 수 있습니다.",
+ "easy_en": "10,000 three-dimensional models of Korean scenes made by a film studio, such as islands, royal palaces, traditional buildings, Joseon-era streets and mountains, with rendered images and text descriptions. You can use it for AI that finds or creates 3D assets for film and TV visual effects.",
+ "detail_ko": "덱스터스튜디오가 제작한 한국적 일상 3D 에셋(fbx) 10,000개와 렌더 이미지 240,000장(jpg), 총 원천 250,000개에 텍스트 설명 라벨(JSON) 10,000개를 붙였고, 분류는 한국 섬, 한국 고궁, 한국 전통건축, 조선 생활거리, 한국 산 등입니다. 데이터 개요 설명이 팩에 비어 있고, 에셋당 렌더 이미지가 24장으로 보이나 시점 구성은 확인이 필요하며, 성능 지표 값은 팩 앞부분에 없습니다.",
+ "detail_en": "10,000 3D assets (fbx) of everyday Korean scenes made by Dexter Studios, with 240,000 rendered images (jpg; 250,000 source files in total) and 10,000 JSON text-description labels, grouped as Korean islands, royal palaces, traditional architecture, Joseon-era streets and mountains. The overview is empty in the pack; each asset seems to have 24 renders, but the viewpoints need checking; no metric values are given.",
+ "amount_ko": "원천 250,000개(fbx 10,000 + jpg 240,000), 가공 json 10,000개",
+ "amount_en": "250,000 source files (10,000 fbx + 240,000 jpg), 10,000 JSON labels",
+ "labels_ko": "입체 모형 설명 글",
+ "labels_en": "text description",
+ "status": "full-run-2026-11-02"
+}

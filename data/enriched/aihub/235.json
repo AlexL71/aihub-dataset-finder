@@ -1,0 +1,29 @@
+{
+ "dataset_id": "235",
+ "title_en": "Thermal camera images of industrial complexes",
+ "summary_ko": "산업단지의 저장탱크·배관·밸브·배전반·에어컨 실외기·공장 내외부·사람·자동차·선박 10종을 열화상 카메라로 찍은 이미지 103만 장으로, 정상과 누출·단락·고온 같은 이상 상황이 구분되어 있습니다. 산업단지 재난·안전사고를 미리 감지하는 AI에 쓸 수 있습니다.",
+ "summary_en": "1.03 million thermal images of 10 objects in industrial complexes (storage tanks, pipes, valves, switchboards, AC outdoor units, factory interiors and exteriors, people, cars, ships), labelled normal or abnormal (leak, short circuit, overheating). For AI that detects disasters and accidents early in industrial complexes.",
+ "contents_ko": "열화상 이미지 + JSON(대상 객체, 정상/이상 상태, 영역).",
+ "contents_en": "Thermal image + JSON (object, normal/abnormal state, region).",
+ "modalities": ["image", "sensor"],
+ "tasks": ["anomaly_detection", "image_classification", "object_detection"],
+ "topics": [{"ko": "산업 안전", "en": "Industrial safety"}, {"ko": "화학·에너지 시설", "en": "Chemical and energy facilities"}, {"ko": "센서·카메라", "en": "Sensors and cameras"}],
+ "keywords_ko": ["열화상", "산업단지", "누출 감지", "과열", "배전반", "안전사고"],
+ "keywords_en": ["thermal imaging", "industrial complex", "leak detection", "overheating", "switchboard", "safety accidents"],
+ "labels": ["class (object)", "state (normal / leak / short / high temp)", "region"],
+ "file_formats": ["jpg", "json"],
+ "scale_ko": "1,034,629장(객체 10종 × 정상 약 7.6~7.9만 + 이상 약 2.5~2.9만)",
+ "classes_example": ["저장탱크 누출", "이송배관 누출", "배전반 단락", "에어컨 실외기 고온", "공장내부 고온", "선박 고온"],
+ "baseline": [],
+ "difficulty": "beginner",
+ "difficulty_note_ko": "정상/이상 분류는 이해하기 쉬운 첫 프로젝트입니다. 약 266GB입니다.",
+ "skills_needed_ko": ["파이썬 기초", "전이학습 이미지 분류"],
+ "caveats_ko": ["이상 상황 일부는 연출된 것일 수 있음", "성능 지표가 팩에서 확인되지 않음"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "배전반 과열 분류", "title_en": "Switchboard overheating classifier", "desc_ko": "열화상으로 배전반의 정상/단락을 분류합니다.", "desc_en": "Classify switchboards as normal or short-circuited from thermal images."},
+  {"level": "capstone", "title_ko": "산업단지 열 이상 모니터", "title_en": "Industrial thermal anomaly monitor", "desc_ko": "열화상 카메라 영상에서 이상 설비를 찾아 알리는 대시보드를 만듭니다.", "desc_en": "Flag abnormal equipment from thermal cameras on a dashboard."},
+  {"level": "research", "title_ko": "정상 데이터만으로 이상 찾기", "title_en": "Anomaly detection from normal data only", "desc_ko": "정상 이미지로만 학습해 누출·과열을 찾는 비지도 방법을 비교합니다.", "desc_en": "Compare unsupervised methods trained only on normal images."}
+ ],
+ "doc_used": true,
+ "uncertain": []
+}

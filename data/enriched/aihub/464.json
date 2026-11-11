@@ -1,0 +1,29 @@
+{
+ "dataset_id": "464",
+ "title_en": "Meeting speech recognition data by domain",
+ "summary_ko": "시사토론·독서모임·온라인 회의·의회 녹취·팟캐스트 등에서 3명 이상이 나누는 회의 음성 7,000시간과 전사문으로, 10개 카테고리에 화자 바뀜과 억양 경계가 표시되어 있습니다. 회의록 자동 작성과 회의 자막 생성에 쓸 수 있습니다.",
+ "summary_en": "7,000 hours of meeting speech among 3+ people from current-affairs debates, book clubs, online meetings, parliamentary records and podcasts, with transcripts across 10 categories and speaker-turn and intonation boundaries. For automatic meeting minutes and meeting subtitles.",
+ "contents_ko": "음성(wav) + JSON(전사, 화자, 발화 구간, 억양구 경계, 비식별 표시, 카테고리).",
+ "contents_en": "Audio (wav) + JSON (transcript, speaker, segments, intonation boundaries, anonymisation marks, category).",
+ "modalities": ["audio", "text"],
+ "tasks": ["speech_recognition", "summarization"],
+ "topics": [{"ko": "회의·토론", "en": "Meetings and debates"}, {"ko": "음성", "en": "Speech"}, {"ko": "의회·정치", "en": "Parliament and politics"}],
+ "keywords_ko": ["회의 음성", "회의록", "의회", "토론", "음성 인식", "다화자"],
+ "keywords_en": ["meeting speech", "minutes", "parliament", "debate", "speech recognition", "multi-speaker"],
+ "labels": ["transcript", "speaker turns", "intonation boundaries", "category"],
+ "file_formats": ["wav", "json"],
+ "scale_ko": "음성 7,000시간, 회의 카테고리 10개",
+ "classes_example": ["시사토론", "독서모임", "온라인회의", "의회"],
+ "baseline": [],
+ "difficulty": "intermediate",
+ "difficulty_note_ko": "음성 인식과 요약을 잇는 실습에 좋지만 약 560GB입니다.",
+ "skills_needed_ko": ["파이썬", "음성 인식", "화자 분리", "텍스트 요약"],
+ "caveats_ko": ["의회·방송 자료 포함으로 이용 조건 확인 필요"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "회의 발언 시간 통계", "title_en": "Speaking-time statistics", "desc_ko": "화자별 발언 시간과 차례 바뀜 횟수를 분석합니다.", "desc_en": "Analyse speaking time and turn-taking per speaker."},
+  {"level": "capstone", "title_ko": "동아리 회의록 자동 작성", "title_en": "Automatic club meeting minutes", "desc_ko": "회의 녹음을 받아쓰고 화자별 요점을 정리해 줍니다.", "desc_en": "Transcribe meetings and summarise each speaker's points."},
+  {"level": "research", "title_ko": "의회 발언 요약 품질", "title_en": "Summarising parliamentary speech", "desc_ko": "긴 의회 토론을 요약할 때 사실 왜곡을 줄이는 방법을 연구합니다.", "desc_en": "Reduce factual errors when summarising long debates."}
+ ],
+ "doc_used": true,
+ "uncertain": []
+}

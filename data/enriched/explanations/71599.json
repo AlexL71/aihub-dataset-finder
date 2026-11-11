@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71599",
+ "easy_ko": "집에서 쓰는 물건 200가지를 로봇 손으로 쥐고, 잡고, 돌리고, 흔들고, 긁는 모습을 찍은 사진 300만 건과 물건의 입체 모형을 모은 데이터입니다. 물건의 자세와 잡을 수 있는 부분이 표시되어 있어 집안일을 돕는 로봇이 물건을 잘 잡게 하는 AI에 쓸 수 있습니다.",
+ "easy_en": "3 million images of a robot hand squeezing, grasping, turning, shaking and scratching 200 household objects, plus three-dimensional models of the objects. Each object's pose and graspable areas are marked, so you can build AI that helps home robots pick things up well.",
+ "detail_ko": "가정용 물체 200종을 로봇 손으로 쥐기·잡기·돌리기·흔들기·긁기 5가지 임무로 다루며 찍은 임무 데이터 3,000,000건(임무당 60만, 고·저해상도 이미지)과 물체 3D 모델 600건(obj, mtl; 정점 16K·64K·512K)에 물체 3D 자세, 파지 영역, 임무 종류를 JSON으로 붙였습니다. 기준 성능은 파지 물체 3D 자세 추정 정확도 57.57%, 파지 지점 탐지 mAP 79.24%이며, 성능표의 학습모델은 '알수없음'으로 적혀 있습니다. 전체 약 4.4TB이고 가장 작은 파일도 약 1GB이며, 이미지 형식이 'image'로만 적혀 있습니다(jpg로 추정).",
+ "detail_en": "3,000,000 task records (600,000 per task; high- and low-resolution images) of a robot hand handling 200 household objects in 5 tasks (squeeze, grasp, rotate, shake, scratch), plus 600 3D object models (obj, mtl; 16K, 64K and 512K vertices), with JSON 3D object pose, grasp region and task type. Baselines: 3D pose estimation of grasped objects, accuracy 57.57%; graspable-point detection, mAP 79.24%; the model is listed as 'unknown'. Total size is about 4.4 TB, with even the smallest file about 1 GB, and the image format is listed only as 'image' (probably jpg).",
+ "amount_ko": "임무 데이터 3,000,000건(5개 임무), 물체 200종, 3D 모델 600건",
+ "amount_en": "3,000,000 task records (5 tasks), 200 objects, 600 3D models",
+ "labels_ko": "물건의 입체 자세, 잡을 수 있는 부분, 동작 종류",
+ "labels_en": "3D object pose, grasp region, task type",
+ "status": "full-run-2026-11-02"
+}

@@ -1,0 +1,12 @@
+{
+ "dataset_id": "65",
+ "easy_ko": "골프 경기와 연습 영상에서 뽑은 사진마다 선수와 골프채 위치, 팔·다리 같은 몸의 주요 점, 스윙인지 퍼팅인지를 표시한 데이터로, 프로·아마추어·일반인과 남녀가 나뉘어 있습니다. 골프 자세를 분석해 주는 스윙 코칭 앱을 만들 수 있습니다.",
+ "easy_en": "Frames from golf match and practice videos, each marked with where the player and club are, the key body points, and whether the move is a swing or a putt; pros, amateurs and the general public, men and women, are separated. You can build a swing-coaching app that analyses golf posture.",
+ "detail_ko": "협회 경기 영상과 직접 촬영한 골프 영상 400시간 이상에서 추출한 이미지 432만 장 이상(구축량 57.6만)으로, JSON에 사람·클럽 바운딩박스, 관절 키포인트, 동작 구분(swing/putt), 환경 정보가 있습니다. 협회·아마추어·일반, 성별, 동작별 폴더로 나뉩니다. 기준 성능은 사람 탐지 mAP 60.09%, 몸통 자세 추정 PCK 86.7%입니다. 전체 약 2TB이며 협회 경기 영상이 포함되어 이용 조건 확인이 필요합니다.",
+ "detail_en": "4.32M+ frames (576k built items) from 400+ hours of association match footage and self-recorded golf video. JSON labels give boxes for the person and club, joint keypoints, the action (swing or putt) and environment info; folders are split by level (association, amateur, public), sex and action. Baselines: person detection mAP 60.09%, torso pose estimation PCK 86.7%. Total size is about 2 TB; association footage means the usage terms must be checked.",
+ "amount_ko": "이미지 432만 장 이상, 영상 400시간 이상",
+ "amount_en": "4.32M+ images, 400+ hours of video",
+ "labels_ko": "사람·골프채 위치 상자, 몸의 주요 점(키포인트), 스윙·퍼팅 구분",
+ "labels_en": "boxes around player and club, body key points, swing or putt",
+ "status": "full-run-2026-11-02"
+}

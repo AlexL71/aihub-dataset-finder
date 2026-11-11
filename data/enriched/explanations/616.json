@@ -1,0 +1,12 @@
+{
+ "dataset_id": "616",
+ "easy_ko": "KBS 뉴스와 유튜브 영상에 중요한 장면(하이라이트) 구간과 장소, 인물 관계, 행동, 감정 같은 내용 키워드와 설명을 표시한 데이터입니다. 긴 영상을 자동으로 짧게 줄이거나 장면 설명을 만들어 주는 AI를 만들 수 있습니다.",
+ "easy_en": "KBS news and YouTube videos marked with highlight segments and keywords and descriptions of their content, such as place, relationships between people, actions and emotions. You can build AI that automatically shortens long videos or writes scene descriptions.",
+ "detail_ko": "KBS 뉴스 1,001시간과 유튜브 5,000시간, 원천 영상 약 6,000시간(가공 약 1.8만 시간, mp4)에 하이라이트 구간, 카테고리, 키워드·설명을 JSON으로 붙였습니다. 키워드는 장소 21종, 인물관계 12종, 행동 65종, 감정 7종 등입니다. 기준 성능은 Video Transformer 영상 요약 F1 0.65, 영상 캡셔닝 micro F1 0.51입니다. 전체 약 6.8TB이며, 방송·유튜브 영상 저작권 때문에 사용 범위 확인이 필요하고 출연자 얼굴이 보입니다.",
+ "detail_en": "About 6,000 hours of source video (KBS news 1,001 h, YouTube 5,000 h; about 18k processed hours; mp4) with JSON highlight segments, categories, and keywords and descriptions (21 place types, 12 relationship types, 65 actions, 7 emotions and more). Baselines: Video Transformer summarisation F1 0.65, captioning micro F1 0.51. Total size is about 6.8 TB; broadcast and YouTube copyright limits use; people's faces are visible.",
+ "amount_ko": "원천 영상 약 6,000시간",
+ "amount_en": "about 6,000 hours of source video",
+ "labels_ko": "하이라이트 구간, 영상 분류, 장소·관계·행동·감정 키워드, 설명",
+ "labels_en": "highlight segments, category, keywords (place, relation, action, emotion), description",
+ "status": "full-run-2026-11-02"
+}

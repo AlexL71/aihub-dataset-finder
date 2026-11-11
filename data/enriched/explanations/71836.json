@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71836",
+ "easy_ko": "한국, 중국, 일본 고전 작품 891편의 원문과 번역, 요약에, 단락마다 내용 분류와 주제어, 주제 문장을 붙인 데이터입니다. 동아시아 옛이야기의 소재를 살려 새 이야기를 만들어 주는 창작 도우미 AI에 쓸 수 있습니다.",
+ "easy_en": "Original texts, translations and summaries of 891 Korean, Chinese and Japanese classics, with a content category, keywords and a theme sentence for each paragraph. You can use it to build creative-writing AI that turns motifs from East Asian classics into new stories.",
+ "detail_ko": "한국 71편·중국 353편·일본 467편, 총 891편 고전 작품의 원문·번역문·요약문(txt)과 단락 14,197개에 내용 분류(예: 자연, 인간), 주제어, 주제문을 JSON으로 붙였습니다. 한국 작품은 71편뿐이라 국가 간 수량 차이가 크고, 내용 분류 전체 목록은 팩 앞부분에서 잘렸으며, 모델 성능 수치는 팩에 없습니다.",
+ "detail_en": "Original texts, translations and summaries (txt) of 891 classics (71 Korean, 353 Chinese, 467 Japanese), with JSON content categories (such as nature, humans), keywords and theme sentences for 14,197 paragraphs. Korea has only 71 works, so countries are unevenly represented; the full category list is cut off in the pack, and no model scores are given.",
+ "amount_ko": "작품 891편(한국 71, 중국 353, 일본 467), 라벨 단락 14,197개",
+ "amount_en": "891 works (71 Korean, 353 Chinese, 467 Japanese), 14,197 labelled paragraphs",
+ "labels_ko": "내용 분류, 주제어, 주제 문장",
+ "labels_en": "content category, keyword, theme sentence",
+ "status": "full-run-2026-11-02"
+}

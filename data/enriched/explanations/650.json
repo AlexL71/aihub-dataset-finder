@@ -1,0 +1,12 @@
+{
+ "dataset_id": "650",
+ "easy_ko": "차 안에서 운전자와 탑승자가 하는 여러 손짓 영상과 음성 명령 녹음에, 손가락 마디 위치와 손짓 종류, 받아 적은 명령 글을 붙인 데이터입니다. 손짓이나 말로 차 안의 기능을 조작하는 AI를 만들 수 있습니다.",
+ "easy_en": "Videos of drivers and passengers making hand gestures inside a car, and recordings of their voice commands, with finger-joint positions, the gesture type and transcripts of the commands. You can build AI that lets people control in-car functions with gestures or voice.",
+ "detail_ko": "장비를 단 차량 안에서 촬영한 운전자·탑승자 손 제스처 19종 영상 약 50만 건(mp4, 이미지 250만 장)과 음성 명령 93종 녹음 약 50만 건(wav)에 손 키포인트, 제스처 종류, 음성 전사, 명령 종류를 JSON으로 붙였습니다. 기준 성능은 wav2vec 2.0 음성 명령 인식 CER 0.78%, TSM 제스처 분류 F1 0.9932입니다. 전체 약 1.5TB이며 운전자 얼굴이 보이고, 제스처·명령 목록은 기록에서 확인되지 않으며, 651번 이상행동 데이터와 같은 구축 기관·차량입니다.",
+ "detail_en": "About 500k in-car videos (mp4, 2.5M images) of 19 hand gestures by drivers and passengers, and about 500k recordings (wav) of 93 voice commands, with JSON hand keypoints, gesture class, transcripts and command class. Baselines: wav2vec 2.0 voice-command recognition CER 0.78%, TSM gesture classification F1 0.9932. Total size is about 1.5 TB; drivers' faces are visible; the gesture and command lists are not in the record; same organisation and vehicles as dataset 651.",
+ "amount_ko": "손짓 영상 약 50만 건(사진 250만 장), 음성 명령 약 50만 건",
+ "amount_en": "about 500k gesture videos (2.5M images), about 500k voice commands",
+ "labels_ko": "손가락 마디 위치, 손짓 종류, 받아 적은 명령 글, 명령 종류",
+ "labels_en": "hand key points, gesture class, transcript, command class",
+ "status": "full-run-2026-11-02"
+}

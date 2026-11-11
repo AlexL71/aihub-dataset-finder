@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71479",
+ "easy_ko": "인도네시아, 베트남, 몽골, 태국 등 아시아권 외국인이 한국어로 말한 목소리 약 1,500시간에 받아쓴 글, 발음 실수 표시, 말하기 점수를 붙인 데이터입니다. 외국인의 한국어 말하기를 자동으로 채점하고 발음을 고쳐 주는 AI에 쓸 수 있습니다.",
+ "easy_en": "About 1,500 hours of speakers from Asian countries such as Indonesia, Vietnam, Mongolia and Thailand speaking Korean, with written transcripts, marked pronunciation mistakes and speaking scores. You can use it to build AI that scores foreigners' spoken Korean and gives pronunciation feedback.",
+ "detail_ko": "인도네시아, 베트남, 몽골, 태국 등 아시아권 화자의 한국어 발화 음성 1,500시간(wav)에 철자·발음 전사, 발음 오류 태그(예: 모음오류, 강세 오류, 경계억양 오류, 구개음화, 비음화, 경음화)와 오류 원인, 말하기 평가 점수, 화자 정보를 JSON으로 붙였습니다. 기준 성능은 음성 인식 Conformer-CTC small CER 11.18%, 발음 평가 wav2vec 2.0 피어슨 상관 0.81, 내용·언어사용 채점 LSTM QWK 0.86, 숙달도 분류 KcELECTRA 가중 분류 오류 8.69%입니다. 화자 출신은 인도네시아, 베트남, 몽골, 우즈베키스탄, 카자흐스탄, 태국, 인도, 미얀마 등입니다. 전체 약 299GB이고, 출신 국가별 시간 비율은 팩에 없습니다. 영어 모국어 화자 버전(71469)과 같은 구조입니다.",
+ "detail_en": "1,500 hours of Korean speech (wav) by speakers from Asian countries such as Indonesia, Vietnam, Mongolia and Thailand, with JSON spelling and pronunciation transcripts, pronunciation error tags (such as vowel errors, stress errors, boundary-intonation errors, palatalisation, nasalisation, tensing) and their causes, speaking scores and speaker information. Baselines: speech recognition with Conformer-CTC small, CER 11.18%; pronunciation assessment with wav2vec 2.0, Pearson correlation 0.81; content and language-use scoring with LSTM, QWK 0.86; proficiency classification with KcELECTRA, weighted classification error 8.69%. Speakers come from Indonesia, Vietnam, Mongolia, Uzbekistan, Kazakhstan, Thailand, India, Myanmar and other countries. Total size is about 299 GB, and the split of hours by country is not in the pack. It has the same structure as the native-English-speaker version (71469).",
+ "amount_ko": "음성 1,500시간",
+ "amount_en": "1,500 hours of speech",
+ "labels_ko": "철자·발음 받아쓰기, 발음 실수 표시, 말하기 점수",
+ "labels_en": "spelling and pronunciation transcripts, error tags, assessment scores",
+ "status": "full-run-2026-11-02"
+}

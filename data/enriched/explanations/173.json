@@ -1,0 +1,12 @@
+{
+ "dataset_id": "173",
+ "easy_ko": "버스·트럭·택시 운전자의 실제 운전 모습과, 졸거나 딴짓하는 운전을 연기한 모습을 찍은 사진마다 얼굴·눈·코·입·휴대폰 위치와 얼굴 주요 점, 운전 상태를 표시한 데이터입니다. 운전자가 졸거나 휴대폰을 보면 경고해 주는 AI를 만들 수 있습니다.",
+ "easy_en": "Photos of bus, truck and taxi drivers on real roads, and of drivers acting drowsy or distracted, marked with the face, eyes, nose, mouth and phone positions, facial key points and driving state. You can build AI that warns drivers when they nod off or look at their phone.",
+ "detail_ko": "운전자 750명 이상의 얼굴 이미지 약 35만 장(실도로 19.25만, 준통제 5만, 통제 환경 등, jpg)으로, JSON에 얼굴·눈·코·입·소지품 바운딩박스 또는 얼굴 키포인트와 운전 상태(정상, 졸음, 부주의)가 있습니다. 기준 성능은 기록에서 확인되지 않습니다. 운전자 얼굴 데이터라 이용 약관 확인이 필요합니다.",
+ "detail_en": "About 350k face images (jpg) of 750+ drivers (192.5k real-road, 50k semi-controlled, plus controlled settings), with JSON boxes for face, eyes, nose, mouth and belongings or facial keypoints, and driving state (normal, drowsy, distracted). No baseline is visible in the record. These are drivers' faces, so check the terms of use.",
+ "amount_ko": "이미지 약 35만 장, 운전자 750명 이상",
+ "amount_en": "about 350k images, 750+ drivers",
+ "labels_ko": "얼굴·눈·코·입·소지품 위치 상자, 얼굴 주요 점, 운전 상태",
+ "labels_en": "boxes for face, eyes, nose, mouth and belongings, facial key points, driving state",
+ "status": "full-run-2026-11-02"
+}

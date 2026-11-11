@@ -1,0 +1,32 @@
+{
+ "dataset_id": "97",
+ "title_en": "Document summarisation text",
+ "summary_ko": "신문기사 30만, 기고문 6만, 잡지 1만, 법원 판결문 3만 건(총 40만 건) 원문에 원문에서 그대로 고른 3문장 추출 요약과 새로 쓴 생성 요약을 붙인 데이터입니다. 뉴스·법률 문서 자동 요약 AI 학습에 쓸 수 있습니다.",
+ "summary_en": "400,000 source texts (300k news articles, 60k opinion pieces, 10k magazine articles, 30k court rulings), each with a 3-sentence extractive summary and a newly written abstractive summary. For training automatic summarisation of news and legal documents.",
+ "contents_ko": "JSON: 원문(문장 단위), 분야, 추출 요약(문장 번호 3개), 생성 요약문.",
+ "contents_en": "JSON: source text (split into sentences), category, extractive summary (3 sentence indices), abstractive summary.",
+ "modalities": ["text"],
+ "tasks": ["summarization"],
+ "topics": [{"ko": "뉴스·언론", "en": "News and journalism"}, {"ko": "법률·판결", "en": "Law and court rulings"}, {"ko": "문서 요약", "en": "Document summarisation"}],
+ "keywords_ko": ["문서 요약", "추출 요약", "생성 요약", "신문기사", "판결문", "사설"],
+ "keywords_en": ["document summarisation", "extractive summary", "abstractive summary", "news", "court ruling", "opinion"],
+ "labels": ["extractive summary (3 sentences)", "abstractive summary", "category"],
+ "file_formats": ["json"],
+ "scale_ko": "원문 40만 건, 요약문 80만 건(추출 40만 + 생성 40만)",
+ "classes_example": ["신문기사", "기고문", "잡지", "법원 판결문"],
+ "baseline": [
+  {"task": "extractive summarisation (news)", "model": "BertSumExt / SummaRuNNer", "metric": "ROUGE-1", "value": "50.8%"},
+  {"task": "extractive summarisation (legal)", "model": "BertSumExt / SummaRuNNer", "metric": "ROUGE-1", "value": "56.9%"}
+ ],
+ "difficulty": "intermediate",
+ "difficulty_note_ko": "약 0.4GB로 가볍습니다. 추출 요약은 문장 분류로 쉽게 시작할 수 있고, 생성 요약은 GPU가 필요합니다.",
+ "skills_needed_ko": ["파이썬", "Hugging Face 요약 모델(KoBART) 미세조정", "ROUGE 평가"],
+ "caveats_ko": [],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "중요 문장 3개 고르기", "title_en": "Pick the 3 key sentences", "desc_ko": "문장마다 요약에 들어갈지 분류하는 추출 요약 모델을 만듭니다.", "desc_en": "Build an extractive model that classifies whether each sentence belongs in the summary."},
+  {"level": "capstone", "title_ko": "판결문 쉬운 요약기", "title_en": "Plain summary of court rulings", "desc_ko": "판결문을 넣으면 일반인이 이해할 수 있는 짧은 요약을 생성하는 웹을 만듭니다.", "desc_en": "Generate short, plain summaries of court rulings for the public."},
+  {"level": "research", "title_ko": "분야가 다른 글의 요약 성능", "title_en": "Summarisation across text types", "desc_ko": "뉴스로 학습한 모델이 판결문·기고문에서 얼마나 잘 요약하는지 비교합니다.", "desc_en": "Compare how a news-trained model does on rulings and opinion pieces."}
+ ],
+ "doc_used": true,
+ "uncertain": []
+}

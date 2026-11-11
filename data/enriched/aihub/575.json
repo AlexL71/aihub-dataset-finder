@@ -1,0 +1,32 @@
+{
+ "dataset_id": "575",
+ "title_en": "Smart barn data (broilers and laying hens)",
+ "summary_ko": "스마트 양계장에서 찍은 육계·산란계 이미지에 생애 단계별 서있기·섭식·급수·날개펴기·폐사·깃털 쪼기 같은 행동을 상자(약 108만 건)와 키포인트(약 18만 건)로 표시하고, 닭 소리 4,800건을 더한 데이터입니다. 닭의 건강 이상이나 폐사를 자동으로 찾는 AI에 쓸 수 있습니다.",
+ "summary_en": "Images of broiler and laying-hen chickens in smart poultry farms, with behaviours by life stage (standing, eating, drinking, wing spreading, death, feather pecking and more) marked with boxes (about 1.08 million) and keypoints (about 180,000), plus 4,800 chicken sound clips. For AI that spots sick or dead chickens automatically.",
+ "contents_ko": "닭 이미지(png) + 소리(wav) + JSON(상자, 키포인트, 행동, 생애 단계).",
+ "contents_en": "Chicken images (png) + sound (wav) + JSON (boxes, keypoints, behaviour, life stage).",
+ "modalities": ["image", "audio"],
+ "tasks": ["object_detection", "keypoint_pose", "action_recognition", "audio_classification", "anomaly_detection"],
+ "topics": [{"ko": "축산", "en": "Livestock farming"}, {"ko": "동물 행동", "en": "Animal behaviour"}],
+ "keywords_ko": ["육계", "산란계", "양계", "스마트 축사", "폐사 탐지", "행동 인식"],
+ "keywords_en": ["broilers", "laying hens", "poultry", "smart barn", "dead-bird detection", "behaviour recognition"],
+ "labels": ["bounding box", "keypoint", "behaviour class", "life stage", "sound label"],
+ "file_formats": ["png", "wav", "json"],
+ "scale_ko": "상자 약 108만 건, 키포인트 약 18만 건, 음성 4,800건",
+ "classes_example": ["서있기", "섭식", "급수", "날개펴기", "폐사", "군집", "깃털 쪼기"],
+ "baseline": [
+  {"task": "behaviour recognition", "model": "DetectoRS / PoseC3D / custom CNN", "metric": "accuracy", "value": "93.69%"},
+  {"task": "sound recognition", "model": "custom CNN", "metric": "accuracy", "value": "91.83%"}
+ ],
+ "difficulty": "advanced",
+ "difficulty_note_ko": "전체 약 2TB로 크고 닭이 작고 많이 겹쳐 탐지가 어렵습니다.",
+ "skills_needed_ko": ["파이썬", "YOLO 탐지", "자세 추정", "오디오 분류"],
+ "caveats_ko": ["전체 약 2TB", "574번 젖소 축사 데이터와 같은 구축 기관·구조"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "폐사 닭 탐지", "title_en": "Dead chicken detection", "desc_ko": "양계장 사진에서 죽은 닭을 찾아 상자로 표시합니다.", "desc_en": "Find and box dead chickens in farm photos."},
+  {"level": "capstone", "title_ko": "양계장 이상 행동 모니터", "title_en": "Poultry abnormal-behaviour monitor", "desc_ko": "깃털 쪼기·군집 같은 이상 행동 비율을 시간별로 보여줍니다.", "desc_en": "Show hourly rates of feather pecking, crowding and other abnormal behaviour."},
+  {"level": "research", "title_ko": "울음소리로 스트레스 판단", "title_en": "Stress from vocalisations", "desc_ko": "닭 소리 특징으로 스트레스·질병을 조기 감지하는 방법을 연구합니다.", "desc_en": "Detect stress or disease early from chicken sounds."}
+ ],
+ "doc_used": true,
+ "uncertain": []
+}

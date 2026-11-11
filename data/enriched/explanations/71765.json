@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71765",
+ "easy_ko": "컴퓨터로 직접 만든 가상 실내 공간 200개와 그 안에서 뽑은 실사 같은 사진 4,000장에, 소파, 침대, 냉장고, 세면대 같은 가구와 가전의 입체 상자와 영역을 표시한 데이터입니다. 사진으로 실내를 입체로 만드는 AI나 디지털 트윈, 가상현실에 쓸 수 있습니다.",
+ "easy_en": "200 virtual indoor spaces built by computer and 4,000 realistic images taken from them, with boxes and areas for furniture and appliances such as sofas, beds, fridges and washbasins. You can use it to build AI that rebuilds rooms in three dimensions from photos, or for digital twins and virtual reality.",
+ "detail_ko": "Unity 3D 등으로 만든 가상 실내 3D 공간 모델 200건(fbx, 공간당 에셋 30개 이상)과 실사풍 2D 이미지 4,000장(jpg)에 3D 객체 큐보이드 200건, 2D 파놉틱 분할 4,000건, 7종 렌더링 이미지 32,000장을 붙였습니다. 객체 예: 소파, 의자, 책상, 침대, 주방세트, 식탁, 세면대, 양변기, 욕조, TV, 냉장고, 세탁기, 액자. 페이지에 성능 점수 표가 없고(TR3D 목표 mAP@0.25 65%·mAP@0.5 50%만 소개), 합성 데이터라 실제 실내 사진과 차이가 있을 수 있으며, 렌더링 7종 이름은 팩 앞부분에 없습니다.",
+ "detail_en": "200 virtual indoor 3D space models (fbx, 30+ assets each) built with Unity 3D and other tools, plus 4,000 photo-realistic 2D images (jpg), with 200 3D object cuboid labels, 4,000 2D panoptic segmentation labels and 32,000 rendered images of 7 kinds. Example objects: sofa, chair, desk, bed, kitchen set, dining table, washbasin, toilet, bathtub, TV, fridge, washing machine, picture frame. There is no score table (only TR3D targets of mAP@0.25 65% and mAP@0.5 50%), the synthetic scenes may differ from real interiors, and the 7 rendering types are not named in the pack.",
+ "amount_ko": "3D 공간 200건, 2D 이미지 4,000장, 렌더링 32,000장",
+ "amount_en": "200 3D spaces, 4,000 2D images, 32,000 renderings",
+ "labels_ko": "가구·가전 입체 상자, 사진 전체 영역(파놉틱 분할), 렌더링",
+ "labels_en": "3D cuboid, panoptic segmentation, rendering",
+ "status": "full-run-2026-11-02"
+}

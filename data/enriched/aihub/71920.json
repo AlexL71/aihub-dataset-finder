@@ -1,0 +1,29 @@
+{
+ "dataset_id": "71920",
+ "title_en": "NEW Korean traditional folk painting (minhwa) creation data",
+ "summary_ko": "가회민화박물관·국립민속박물관·국립중앙박물관 등 50개 소장처 자료와 직접 촬영으로 모은 한국 전통 민화 이미지(기본 3,779장 + 상세 묘사 5,340장)로, 한국어 캡션 28,872문장과 영어 캡션 29,215문장, 객체·표현 기법·상징성 메타데이터가 붙어 있습니다. 민화 스타일 이미지 생성, 전통 디자인, 교육 자료 AI에 쓸 수 있습니다.",
+ "summary_en": "Korean folk painting (minhwa) images from 50 collections (Gahoe Museum, National Folk Museum, National Museum of Korea and more) plus own photography: 3,779 base and 5,340 detail images, with 28,872 Korean and 29,215 English caption sentences and metadata on objects, techniques and symbolism. For minhwa-style image generation, traditional design and education.",
+ "contents_ko": "민화 이미지(jpg, 1080px 이상) + JSON(한·영 캡션, 객체·기법·상징 메타데이터).",
+ "contents_en": "Minhwa image (jpg, 1080px+) + JSON (Korean/English captions, object/technique/symbol metadata).",
+ "modalities": ["image", "text"],
+ "tasks": ["image_generation", "image_captioning"],
+ "topics": [{"ko": "전통문화·예술", "en": "Traditional culture and art"}, {"ko": "생성 AI", "en": "Generative AI"}],
+ "keywords_ko": ["민화", "전통 회화", "텍스트-이미지 생성", "이미지 캡션", "K-디자인", "문화유산"],
+ "keywords_en": ["minhwa", "folk painting", "text-to-image", "image captioning", "K-design", "cultural heritage"],
+ "labels": ["caption (Korean/English)", "metadata"],
+ "file_formats": ["jpg", "json"],
+ "scale_ko": "이미지 9,119장(기본 3,779·상세 5,340), 한국어 캡션 28,872문장(514,558토큰), 영어 캡션 29,215문장(847,192토큰)",
+ "classes_example": [],
+ "baseline": [],
+ "difficulty": "intermediate",
+ "difficulty_note_ko": "약 2.6GB로 가볍습니다. Stable Diffusion LoRA 미세조정 실습에 알맞습니다.",
+ "skills_needed_ko": ["파이썬", "확산 모델(Stable Diffusion) LoRA 미세조정", "이미지 캡션 모델 기초"],
+ "caveats_ko": ["페이지에 성능 점수 표가 없음(text-to-image 모델 소개만 있음)", "박물관 소장품이라 생성물 이용 시 저작권·이용 조건 확인 필요", "민화 주제(화조·책가도 등) 분포는 팩 앞부분에 없음"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "민화 캡션 검색", "title_en": "Minhwa caption search", "desc_ko": "캡션 문장으로 원하는 민화 이미지를 찾는 검색을 만듭니다.", "desc_en": "Search minhwa images by caption text."},
+  {"level": "capstone", "title_ko": "민화 스타일 생성기", "title_en": "Minhwa style generator", "desc_ko": "LoRA로 미세조정해 글로 민화풍 이미지를 만드는 앱을 만듭니다.", "desc_en": "Fine-tune with LoRA to make minhwa-style images from text."},
+  {"level": "research", "title_ko": "상징 정확도 평가", "title_en": "Symbol fidelity evaluation", "desc_ko": "생성된 민화가 전통 상징을 올바르게 표현하는지 평가하는 방법을 연구합니다.", "desc_en": "Study evaluating whether generated minhwa keep traditional symbols right."}
+ ],
+ "doc_used": true,
+ "uncertain": []
+}

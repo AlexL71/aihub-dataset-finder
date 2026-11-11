@@ -1,0 +1,12 @@
+{
+ "dataset_id": "466",
+ "easy_ko": "전문 성우들이 기쁨, 슬픔, 화남, 놀람 같은 감정과 이야기하듯 말하기, 책 읽듯 말하기 같은 여러 말투로 녹음한 목소리와 문장을 짝지은 데이터입니다. 감정을 담아 말하는 AI 목소리를 만들어 AI 스피커, 게임, 돌봄 로봇에 쓸 수 있습니다.",
+ "easy_en": "Recordings by professional voice actors reading sentences with emotions such as joy, sadness, anger and surprise, and in styles such as storytelling and reading aloud, paired with the text. You can build AI voices that speak with emotion for smart speakers, games or care robots.",
+ "detail_ko": "전문 성우 50명이 감정(기쁨, 놀람, 슬픔, 분노, 두려움, 혐오, 중립), 발화 스타일(구연체, 낭독체 등), 3가지 발성 캐릭터로 녹음한 음성 1,067시간(감정 581.8시간, 발화 스타일 259.8시간 등, wav)과 JSON(문장 텍스트, 감정, 발화 스타일, 캐릭터, 화자 정보)입니다. 기준 성능 지표는 없습니다. 개요와 통계 표의 감정 이름이 조금 다르며, 성우 목소리 사용 조건 확인이 필요합니다.",
+ "detail_en": "1,067 hours of speech (emotion 581.8 h, speaking style 259.8 h and more; wav) recorded by 50 professional voice actors with 7 emotions (joy, surprise, sadness, anger, fear, disgust, neutral), speaking styles (storytelling, reading and more) and 3 voice characters, with JSON text, emotion, style, character and speaker info. No baseline is published. Emotion names differ slightly between the overview and the statistics; check the voice-usage terms.",
+ "amount_ko": "음성 1,067시간, 성우 50명",
+ "amount_en": "1,067 hours of speech, 50 voice actors",
+ "labels_ko": "문장 글, 감정, 말투, 목소리 캐릭터, 화자 정보",
+ "labels_en": "sentence text, emotion, speaking style, voice character, speaker info",
+ "status": "full-run-2026-11-02"
+}

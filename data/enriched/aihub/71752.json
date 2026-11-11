@@ -1,0 +1,29 @@
+{
+ "dataset_id": "71752",
+ "title_en": "Generative AI Indonesian corpus data",
+ "summary_ko": "트위터(X)·뉴스·위키피디아에서 모은 인도네시아어 말뭉치 약 2억 토큰(1,378만 문장)으로, 한류·한국 문화·관광·상품 같은 한국 관련 맥락이 담겨 있고 개체명 라벨이 붙어 있습니다. 다국어 대형 언어모델 학습, 인도네시아어 번역·검색·챗봇에 쓸 수 있습니다.",
+ "summary_en": "About 200 million tokens (13.78M sentences) of Indonesian from Twitter (X), news and Wikipedia, rich in Korea-related context (Hallyu, culture, tourism, products), with named-entity labels. For multilingual LLM training and Indonesian translation, search and chatbots.",
+ "contents_ko": "말뭉치 텍스트(csv) + JSON(개체명 라벨).",
+ "contents_en": "Corpus text (csv) + JSON (named-entity labels).",
+ "modalities": ["text"],
+ "tasks": ["information_extraction", "text_generation"],
+ "topics": [{"ko": "다국어·생성 AI", "en": "Multilingual and generative AI"}, {"ko": "한국-인도네시아 교류", "en": "Korea-Indonesia relations"}],
+ "keywords_ko": ["인도네시아어", "말뭉치", "개체명 인식", "LLM", "한류", "IndoBERT"],
+ "keywords_en": ["Indonesian", "corpus", "named entity recognition", "LLM", "Hallyu", "IndoBERT"],
+ "labels": ["named entities"],
+ "file_formats": ["csv", "json"],
+ "scale_ko": "토큰 200,113,484개, 문장 13,781,860개, 파일 8,790,584개",
+ "classes_example": ["SNS", "Newspaper", "Others"],
+ "baseline": [],
+ "difficulty": "intermediate",
+ "difficulty_note_ko": "약 6.4GB 텍스트입니다. 인도네시아어를 몰라도 개체명 인식 실습은 가능합니다.",
+ "skills_needed_ko": ["파이썬", "Hugging Face(IndoBERT)", "토큰 분류(NER)"],
+ "caveats_ko": ["페이지에 성능 점수 표가 없음(IndoBERT 미세조정 소개만 있음)", "트위터가 토큰의 약 75%로 구어·은어가 많음", "개체명 종류 목록은 팩 앞부분에 없음"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "한국 관련 키워드 분석", "title_en": "Korea-related keyword analysis", "desc_ko": "인도네시아 트윗에서 한국 관련 단어가 얼마나 자주 나오는지 분석합니다.", "desc_en": "Count how often Korea-related words appear in Indonesian tweets."},
+  {"level": "capstone", "title_ko": "인도네시아어 개체명 인식기", "title_en": "Indonesian NER tagger", "desc_ko": "IndoBERT로 한국 브랜드·연예인·지명을 찾는 개체명 인식기를 만듭니다.", "desc_en": "Build an IndoBERT NER for Korean brands, celebrities and places."},
+  {"level": "research", "title_ko": "한류 여론 분석", "title_en": "Hallyu sentiment research", "desc_ko": "SNS 글로 인도네시아의 한국 문화 관심 변화를 분석합니다.", "desc_en": "Analyse shifts in Indonesian interest in Korean culture."}
+ ],
+ "doc_used": true,
+ "uncertain": []
+}

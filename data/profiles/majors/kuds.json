@@ -1,0 +1,47 @@
+{
+ "id": "kuds",
+ "name_ko": "공공사회ㆍ통일외교학부(통일외교안보전공)",
+ "name_en": "Unification, Diplomacy and Security (School of Public Society and Unification Diplomacy)",
+ "college": "공공정책대학",
+ "summary_ko": "북한, 통일, 외교, 안보 네 분야를 함께 배우는 전공으로, 1997년 북한학과에서 출발했습니다. 북한의 정치·경제·사회·문화, 국제관계와 국제법, 국가정보와 협상, 사이버안보까지 다루며 많은 과목이 영어로 개설됩니다.",
+ "summary_en": "Studies North Korea, unification, diplomacy and security together; it began as the North Korean Studies department in 1997. Covers North Korean politics, economy, society and culture, international relations and law, national intelligence and negotiation, and cyber security, with many courses taught in English.",
+ "key_topics": ["북한 정치·경제·사회·문화", "남북관계와 통일정책", "외교정책·국제관계", "안보·군사·전략", "국제법·유엔", "국가정보·협상", "북한이탈주민·인권", "사이버안보", "이주·난민"],
+ "course_keywords": ["한반도와4대강국", "북한학개론", "국가정보학개론", "북한연구조사방법론", "남북한통일정책론", "북한이탈주민연구", "남북한관계사연구", "북한선전선동론", "북한사회문화론", "비교사회주의개론", "북한통치이데올로기", "북한리더십연구", "북한의행정과정책", "북한의대중문화론", "국제관계이론", "비교정치개론", "국제정치경제", "유엔과국제기구", "전쟁과평화연구", "북한문학예술론", "북한의농업과식량문제", "북한의협상전략론", "한반도평화체제", "북한엘리트연구", "대북심리전연구", "국제분쟁해결연구", "이주및난민문제세미나", "국제법", "한반도주변정세세미나", "남북통일세미나", "사이버안보정책세미나", "북한관광연구"],
+ "curriculum_by_year": {
+  "1": ["한반도와4대강국", "북한학개론", "국가정보학개론", "북한연구조사방법론", "남북한통일정책론", "북한이탈주민연구", "남북한관계사연구", "디지털리터러시입문"],
+  "2": ["북한선전선동론", "북한사회문화론", "비교사회주의개론", "북한통치이데올로기", "북한리더십연구", "북한의행정과정책", "북한의대중문화론", "유엔과국제기구", "전쟁과평화연구"],
+  "3": ["북한문학예술론", "북한의농업과식량문제", "북한의협상전략론", "한반도평화체제", "북한엘리트연구", "대북심리전연구", "국제분쟁해결연구", "이주및난민문제세미나"],
+  "4": ["국제법", "한반도주변정세세미나", "남북통일세미나", "사이버안보정책세미나", "현장실습"]
+ },
+ "careers": ["국가공무원(통일부, 외교부, 국방부, 국가정보원)", "남북 교류·대북 사업 관련 기업", "국제기구·NGO", "안보·국방 연구기관", "언론", "북한학 대학원 진학"],
+ "research_areas": ["북한 정치·경제", "통일정책", "북한 인권·탈북민", "외교·안보"],
+ "data_interests": [
+  {"topic_ko": "외교·국제 뉴스", "topic_en": "Diplomacy and world news", "keywords": ["뉴스 기사", "주제 분류", "요약"]},
+  {"topic_ko": "북한 관련 문서", "topic_en": "North Korea documents", "keywords": ["북한 매체", "선전 문구", "북한 말"]},
+  {"topic_ko": "국제 여론", "topic_en": "International opinion", "keywords": ["SNS", "감성 분석"]},
+  {"topic_ko": "위성 영상", "topic_en": "Satellite images", "keywords": ["토지 이용", "농업 작황", "시설 변화"]},
+  {"topic_ko": "사이버 안보", "topic_en": "Cyber security", "keywords": ["가짜 뉴스", "악성 문서", "보안 위협"]},
+  {"topic_ko": "다국어 번역", "topic_en": "Multilingual translation", "keywords": ["외교 문서 번역", "다국어 말뭉치"]},
+  {"topic_ko": "이주와 난민", "topic_en": "Migration and refugees", "keywords": ["이주 통계", "정착 지원"]}
+ ],
+ "interest_questions": [
+  {"q_ko": "어떤 주제에 관심이 있나요?", "q_en": "Which topic interests you?",
+   "options": [{"ko": "북한 사회·문화", "en": "North Korean society and culture"}, {"ko": "외교·국제관계", "en": "Diplomacy and international relations"}, {"ko": "안보·국방", "en": "Security and defence"}, {"ko": "인권·이주·난민", "en": "Human rights, migration and refugees"}, {"ko": "사이버안보·가짜뉴스", "en": "Cyber security and fake news"}]},
+  {"q_ko": "다뤄보고 싶은 자료는?", "q_en": "What data would you like to use?",
+   "options": [{"ko": "뉴스·문서 텍스트", "en": "News and document text"}, {"ko": "위성 영상", "en": "Satellite images"}, {"ko": "SNS 여론", "en": "Social media opinion"}, {"ko": "다국어 번역 문장", "en": "Multilingual sentence pairs"}]}
+ ],
+ "project_themes": ["외교 뉴스 주제 자동 분류", "남북한 언어 차이 비교", "가짜 뉴스 탐지 실험", "위성 영상으로 농업 작황 변화 관찰"],
+ "data_skill_level": "low",
+ "data_skill_note": "데이터 과목은 디지털리터러시입문, 빅데이터사이언스입문(선택) 정도입니다. 텍스트 분석을 노코드 도구나 생성형 AI로 시작하는 것이 좋습니다.",
+ "sources": [
+  {"kind": "page", "label": "통일외교안보전공 소개", "url": "https://sejong.korea.ac.kr/kuds/4636/subview.do"},
+  {"kind": "page", "label": "졸업 후 진로", "url": "https://sejong.korea.ac.kr/kuds/4639/subview.do"},
+  {"kind": "page", "label": "교육과정", "url": "https://sejong.korea.ac.kr/kuds/14026/subview.do"},
+  {"kind": "page", "label": "교과목목록(대학원)", "url": "https://sejong.korea.ac.kr/kuds/4646/subview.do"},
+  {"kind": "pdf", "label": "전공역량기반교육과정", "url": "https://sejong.korea.ac.kr/pdfView/kuds/20/180/fileDownload.do"}
+ ],
+ "inferred_fields": ["data_interests", "interest_questions", "project_themes"],
+ "gaps": ["curriculum_by_year estimated from course numbers."],
+ "version": 1,
+ "created": "2026-10-29"
+}

@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71620",
+ "easy_ko": "신문 기사, 기고문, 법률 문서를 AI와 사람이 요약한 글 10만여 개에 맞춤법, 단어 선택, 어색한 문장, 중요 내용 틀림, 반복 같은 실수를 표시하고 고친 데이터입니다. 요약문의 실수를 찾아 고치는 AI나 요약 AI 품질 검사에 쓸 수 있습니다.",
+ "easy_en": "Over 100,000 summaries of newspaper articles, opinion pieces and legal documents written by AI and by people, with mistakes such as spelling, word choice, awkward sentences, wrong key facts and repetition marked and corrected. You can use it to build AI that finds and fixes errors in summaries or checks the quality of summarisation AI.",
+ "detail_ko": "신문 기사·기고문·법률 문서(39/39/22%)를 요약한 요약문 101,386건(기계 요약 90,248, 사람 요약 11,138)에 오류 6종(한글맞춤법·띄어쓰기 오류, 단어 선택 오류, 비문, 미완성 문장, 키워드·중요 내용 오류, 유사한 내용 반복)의 위치·유형과 수정문을 JSON으로 붙였습니다. 기준 성능은 XLM-RoBERTa base 오류 유형 분류 정확도 73.45%, KoBART 오류 교정 F1 0.5374입니다. 단어 선택 오류 수가 페이지에 '110,48'로 잘려 있고, 기계 요약이 약 90%로 사람 요약은 적습니다.",
+ "detail_en": "101,386 summaries (90,248 machine-written, 11,138 human-written) of newspaper articles, opinion pieces and legal documents (39/39/22%), with JSON error positions and types for 6 error kinds (spelling/spacing, word choice, ungrammatical sentence, incomplete sentence, wrong keyword or key content, repetition) and corrected text. Baselines: error-type classification with XLM-RoBERTa base, accuracy 73.45%; error correction with KoBART, F1 0.5374. The word-choice error count is cut off on the page ('110,48'), and machine summaries make up about 90%, so human summaries are few.",
+ "amount_ko": "요약문 101,386건(기계 90,248, 사람 11,138), 오류 유형 6종",
+ "amount_en": "101,386 summaries (90,248 machine, 11,138 human), 6 error types",
+ "labels_ko": "실수 종류, 실수 위치, 고친 문장",
+ "labels_en": "error type, error span, correction",
+ "status": "full-run-2026-11-02"
+}

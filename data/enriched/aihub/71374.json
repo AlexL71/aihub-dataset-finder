@@ -1,0 +1,29 @@
+{
+ "dataset_id": "71374",
+ "title_en": "Smart seed hatchery data (olive flounder, rock bream)",
+ "summary_ko": "종자배양장에서 현미경·DSLR로 찍은 넙치·돌돔 유생과 치어, 먹이생물(로티퍼·알테미아) 군집 이미지 약 15만 장(객체 약 62만 개)에 상자·다각형을 표시하고, 수질 센서 약 84만 건과 사육 관리 기록을 담은 데이터입니다. 어린 물고기 성장 단계와 길이를 자동으로 재는 AI에 쓸 수 있습니다.",
+ "summary_en": "About 150,000 microscope and DSLR images of olive flounder and rock bream larvae and juveniles and feed organisms (rotifers, Artemia) from hatcheries, with about 620,000 objects boxed and outlined, plus about 840,000 water-quality sensor records and rearing logs. For AI that measures fish fry growth stage and length automatically.",
+ "contents_ko": "군집 이미지(jpg) + JSON(상자, 다각형, 성장 단계) + 센서·관리 데이터.",
+ "contents_en": "Group images (jpg) + JSON (boxes, polygons, growth stage) + sensor and management data.",
+ "modalities": ["image", "sensor"],
+ "tasks": ["object_detection", "segmentation", "image_classification"],
+ "topics": [{"ko": "수산 양식", "en": "Aquaculture"}, {"ko": "해양 생물", "en": "Marine life"}],
+ "keywords_ko": ["넙치", "돌돔", "종자 생산", "유생", "먹이생물"],
+ "keywords_en": ["olive flounder", "rock bream", "seed production", "larvae", "feed organisms"],
+ "labels": ["bounding box", "polygon", "growth stage"],
+ "file_formats": ["jpg", "json"],
+ "scale_ko": "이미지 약 15만 장, 객체 약 62만 개, 센서 약 84만 건",
+ "classes_example": ["넙치 변태1단계", "넙치 변태3단계", "넙치 치어", "돌돔 유생", "돌돔 치어", "로티퍼", "알테미아"],
+ "baseline": [{"task": "flounder larva metamorphosis stage detection", "model": "YOLOv5", "metric": "accuracy", "value": "99.77%"}],
+ "difficulty": "intermediate",
+ "difficulty_note_ko": "약 37GB이고 작은 유생이 많이 겹친 군집 이미지라 탐지가 까다롭습니다.",
+ "skills_needed_ko": ["파이썬", "YOLO 탐지", "분할 모델"],
+ "caveats_ko": ["현미경 이미지라 전문 지식이 필요할 수 있음", "640·71321번과 같은 구축 기관"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "먹이생물 구분", "title_en": "Rotifer vs Artemia", "desc_ko": "현미경 사진에서 로티퍼와 알테미아를 구분합니다.", "desc_en": "Tell rotifers and Artemia apart in microscope images."},
+  {"level": "capstone", "title_ko": "치어 길이 자동 측정", "title_en": "Fry length measurer", "desc_ko": "분할 결과로 치어 길이를 재고 성장 곡선을 그립니다.", "desc_en": "Measure fry length from masks and plot growth curves."},
+  {"level": "research", "title_ko": "변태 단계 예측", "title_en": "Metamorphosis timing", "desc_ko": "수질과 이미지로 넙치 유생의 변태 시기를 예측합니다.", "desc_en": "Predict flounder metamorphosis timing from water quality and images."}
+ ],
+ "doc_used": true,
+ "uncertain": []
+}

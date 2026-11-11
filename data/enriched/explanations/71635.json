@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71635",
+ "easy_ko": "여자프로농구와 대학남자농구 경기 영상에 선수 위치와 움직임, 팀 기록, 공격과 수비 작전 상황을 표시한 데이터입니다. 경기 영상을 분석하고 어떤 작전을 썼는지 알아내는 AI에 쓸 수 있습니다.",
+ "easy_en": "Women's professional and men's university basketball match video marking player positions and movement, team stats, and attacking and defending tactics. You can use it to build AI that analyses match video and works out which tactics were used.",
+ "detail_ko": "여자프로농구와 대학남자농구 경기 영상(mp4)과 프레임 이미지(jpg)로 만든 이미지 분석 데이터 77,157건(전체 78,357건)에 선수 상자·추적, 팀 스탯 이벤트, 전술 상황(예: 속공, 포스트업, 컷인, 캐치 앤 슛, 픽앤롤, 픽앤팝, 대인방어, 지역방어 2-3·3-2)을 JSON으로 붙였습니다. 기준 성능은 R3D 전술 상황 분류 정확도 66.78%, 팀 스탯 분류 정확도 93.51%, YOLO v5 선수 탐지 F1 0.9725입니다. 성능표에는 정확도가 0.6678%처럼 적혀 있어 표기 오류로 보입니다. 축구(71482)·핸드볼(71634)과 같은 구조입니다.",
+ "detail_en": "77,157 image-analysis items (78,357 in total) from women's professional and men's university basketball match video (mp4) and frames (jpg), with JSON player boxes and tracking, team stat events and tactical situations (such as fast break, post-up, cut-in, catch and shoot, pick and roll, pick and pop, man-to-man defence, 2-3 and 3-2 zone defence). Baselines: tactical classification with R3D, accuracy 66.78%; team stat classification, accuracy 93.51%; player detection with YOLO v5, F1 0.9725. The metrics table writes the accuracy as 0.6678%, which looks like a typo. Same structure as the football (71482) and handball (71634) sets.",
+ "amount_ko": "전체 78,357건(이미지 분석 77,157건)",
+ "amount_en": "78,357 items (77,157 image-analysis items)",
+ "labels_ko": "선수 위치 상자와 추적, 작전 상황, 팀 기록",
+ "labels_en": "player boxes and tracking, tactic class, stat events",
+ "status": "full-run-2026-11-02"
+}

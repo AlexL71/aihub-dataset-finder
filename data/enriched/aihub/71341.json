@@ -1,0 +1,32 @@
+{
+ "dataset_id": "71341",
+ "title_en": "Bivalve (egg cockle, Manila clam) seed production data",
+ "summary_ko": "충남수산자원연구소 배양장의 새조개·바지락 수정란·유생·치패(어린 조개) 현미경 이미지 약 13만 장(분할 표시)과 수조 센서 데이터 약 137만 건, 수기 관리 기록을 담은 데이터입니다. 조개 종자를 안정적으로 생산하도록 성장과 배양 환경을 관리하는 AI에 쓸 수 있습니다.",
+ "summary_en": "About 130,000 microscope images of egg cockle and Manila clam eggs, larvae and spat (young clams) from a Chungnam hatchery with segmentation, plus about 1.37 million tank sensor records and handwritten management logs. For AI that manages growth and culture conditions for stable clam seed production.",
+ "contents_ko": "조개 종자 이미지(jpg) + JSON(분할) + 센서·관리 데이터(csv).",
+ "contents_en": "Clam seed images (jpg) + JSON (segmentation) + sensor and management data (csv).",
+ "modalities": ["image", "sensor", "tabular"],
+ "tasks": ["segmentation", "object_detection", "forecasting"],
+ "topics": [{"ko": "수산 양식", "en": "Aquaculture"}, {"ko": "해양 생물", "en": "Marine life"}],
+ "keywords_ko": ["새조개", "바지락", "종자 생산", "유생", "스마트 양식"],
+ "keywords_en": ["egg cockle", "Manila clam", "seed production", "larvae", "smart aquaculture"],
+ "labels": ["segmentation", "growth stage"],
+ "file_formats": ["jpg", "csv", "json"],
+ "scale_ko": "이미지 약 13만 장, 센서 약 137만 건, 성장 단계 3종 × 조개 2종",
+ "classes_example": ["수정란", "유생", "치패", "새조개", "바지락"],
+ "baseline": [
+  {"task": "egg cockle seed segmentation", "model": "U-Net", "metric": "mIoU", "value": "99.55%"},
+  {"task": "Manila clam seed segmentation", "model": "U-Net", "metric": "mIoU", "value": "99.54%"}
+ ],
+ "difficulty": "intermediate",
+ "difficulty_note_ko": "약 12.5GB로 받기 쉽지만 현미경 이미지와 센서 데이터를 함께 이해해야 합니다.",
+ "skills_needed_ko": ["파이썬", "분할 모델(U-Net)", "시계열 분석"],
+ "caveats_ko": ["한 연구소 배양장 데이터만 있음", "기준 성능이 99%대로 매우 높아 실제 현장과 차이가 있을 수 있음"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "성장 단계 분류", "title_en": "Growth-stage classifier", "desc_ko": "현미경 사진으로 수정란·유생·치패를 구분합니다.", "desc_en": "Tell eggs, larvae and spat apart in microscope images."},
+  {"level": "capstone", "title_ko": "종자 개체 수 세기", "title_en": "Seed counting tool", "desc_ko": "분할 결과로 수조별 유생·치패 수를 자동으로 셉니다.", "desc_en": "Count larvae and spat per tank from segmentation."},
+  {"level": "research", "title_ko": "수질과 생존율", "title_en": "Water quality vs survival", "desc_ko": "센서 데이터로 종자 생존율을 예측하는 방법을 연구합니다.", "desc_en": "Predict seed survival from sensor data."}
+ ],
+ "doc_used": true,
+ "uncertain": []
+}

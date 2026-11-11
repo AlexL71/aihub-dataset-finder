@@ -1,0 +1,12 @@
+{
+ "dataset_id": "499",
+ "easy_ko": "동물병원에서 찍은 반려동물 흉부 엑스레이 사진마다 심장이 커짐이나 기흉 같은 병이 있는지와 그 위치를 표시한 데이터입니다. 수의사가 반려동물의 병을 더 빨리 찾도록 돕는 AI를 만들 수 있지만, 수의사의 진단을 대신할 수는 없습니다.",
+ "easy_en": "Chest X-ray images of pets taken at animal hospitals, each marked with whether a condition such as an enlarged heart or a collapsed lung is present and where. You can build AI that helps vets find pet diseases faster, but it cannot replace a vet's diagnosis.",
+ "detail_ko": "동물병원에서 촬영한 반려동물 흉부 영상 156,942건(jpg)에 질환 코드(심비대, 기관허탈, 종격동변위, 흉강종양, 기흉, 횡경막탈장 등과 정상), 병변 바운딩박스·폴리곤·선, 동물 정보를 JSON으로 붙였습니다(흉강종양 3.2만, 횡경막탈장 3.4만 등). 질환 비율은 대부분 1~38%로 낮은 클래스가 많습니다. 기준 성능은 기록에서 확인되지 않으며, 수의사 진단을 대신하면 안 됩니다.",
+ "detail_en": "156,942 chest X-ray images (jpg) of pets from animal hospitals, with JSON disease codes (cardiomegaly, tracheal collapse, mediastinal shift, thoracic tumour, pneumothorax, diaphragmatic hernia and normal), lesion boxes, polygons and lines, and animal info (thoracic tumour 32k, diaphragmatic hernia 34k and more). Disease ratios are low (mostly 1~38%), so many classes are rare. No baseline is visible in the record; it must not replace a vet's diagnosis.",
+ "amount_ko": "엑스레이 영상 약 15.7만 건",
+ "amount_en": "about 157k X-ray images",
+ "labels_ko": "병 종류, 병든 곳 위치 상자·윤곽·선, 동물 정보",
+ "labels_en": "disease class, lesion boxes, outlines and lines, animal info",
+ "status": "full-run-2026-11-02"
+}

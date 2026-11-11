@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71752",
+ "easy_ko": "트위터, 뉴스, 위키백과에서 모은 인도네시아어 글 약 2억 토큰으로, 한류, 한국 문화, 관광 같은 한국 관련 내용이 담겨 있고 이름, 장소 같은 개체명이 표시되어 있습니다. 인도네시아어 번역, 검색, 챗봇이나 다국어 언어 AI 학습에 쓸 수 있습니다.",
+ "easy_en": "About 200 million tokens of Indonesian text from Twitter (X), news and Wikipedia, including Korea-related content such as the Korean Wave, culture and tourism, with names of people, places and so on marked. You can use it for Indonesian translation, search, chatbots or training multilingual language AI.",
+ "detail_ko": "트위터(X)·뉴스·위키피디아에서 모은 인도네시아어 말뭉치(csv) 토큰 200,113,484개, 문장 13,781,860개, 파일 8,790,584개에 개체명 라벨(JSON)을 붙였고, 출처 분류는 SNS, Newspaper, Others입니다. 페이지에 성능 점수 표가 없고(IndoBERT 미세조정 소개만 있음), 트위터가 토큰의 약 75%로 구어·은어가 많으며, 개체명 종류 목록은 팩 앞부분에 없습니다.",
+ "detail_en": "An Indonesian corpus (csv) from Twitter (X), news and Wikipedia: 200,113,484 tokens, 13,781,860 sentences and 8,790,584 files, with JSON named-entity labels; sources are grouped as SNS, newspaper and others. There is no score table (only IndoBERT fine-tuning is described), Twitter makes up about 75% of tokens, so there is a lot of informal language and slang, and the entity types are not listed in the pack.",
+ "amount_ko": "토큰 200,113,484개, 문장 13,781,860개",
+ "amount_en": "200,113,484 tokens, 13,781,860 sentences",
+ "labels_ko": "이름·장소 같은 개체명",
+ "labels_en": "named entities",
+ "status": "full-run-2026-11-02"
+}

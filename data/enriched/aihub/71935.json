@@ -1,0 +1,29 @@
+{
+ "dataset_id": "71935",
+ "title_en": "Traffic hand signal pattern video data (upcycling)",
+ "summary_ko": "기존 AI 허브 교통 수신호 영상 데이터를 재가공(업사이클링)한 프레임 이미지 304,057장과 영상 클립 12,130개 설명으로, 클립마다 시간 흐름을 강조한 설명과 비디오 캡션 라벨(총 24,260건)이 붙어 있습니다. 우측→좌측, 좌측→우측, 전방정지, 후방정지 등 6종 수신호가 고르게 들어 있어 자율주행차의 수신호 이해와 영상 캡션 AI에 쓸 수 있습니다.",
+ "summary_en": "304,057 frame images and 12,130 clip descriptions upcycled from existing AI Hub traffic hand-signal video data, each clip with a temporal-continuity description and a video caption (24,260 labels). 6 evenly balanced signals (right-to-left, left-to-right, front stop, rear stop and more), for hand-signal understanding in autonomous driving and video captioning.",
+ "contents_ko": "프레임 이미지(jpg) + JSON(시간 연속성 설명, 비디오 캡션).",
+ "contents_en": "Frame images (jpg) + JSON (temporal description, video caption).",
+ "modalities": ["image", "video", "text"],
+ "tasks": ["action_recognition", "image_captioning", "visual_qa"],
+ "topics": [{"ko": "자율주행", "en": "Autonomous driving"}, {"ko": "동작 인식", "en": "Gesture recognition"}],
+ "keywords_ko": ["교통 수신호", "제스처 인식", "비디오 캡션", "자율주행", "시간 연속성", "업사이클링"],
+ "keywords_en": ["traffic hand signals", "gesture recognition", "video captioning", "autonomous driving", "temporal continuity", "upcycling"],
+ "labels": ["temporal description", "video caption"],
+ "file_formats": ["jpg", "json"],
+ "scale_ko": "프레임 304,057장, 클립 12,130개, 라벨 24,260건, 수신호 6종",
+ "classes_example": ["우측에서 좌측으로", "좌측에서 우측으로", "전방정지", "후방정지", "좌우측방 동시정지", "전후방 동시정지"],
+ "baseline": [],
+ "difficulty": "intermediate",
+ "difficulty_note_ko": "약 412GB로 큽니다. 일부 클립으로 수신호 분류부터 해보세요.",
+ "skills_needed_ko": ["파이썬", "영상 행동 인식", "비디오 캡션 모델 기초"],
+ "caveats_ko": ["페이지에 성능 점수 표와 모델 설명이 없음", "원본 수신호 데이터와 프레임이 겹칠 수 있음", "수신호하는 사람이 찍힌 영상이라 개인정보 주의"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "수신호 6분류", "title_en": "Six-signal classifier", "desc_ko": "프레임 묶음으로 6가지 수신호를 분류합니다.", "desc_en": "Classify the 6 hand signals from frame sequences."},
+  {"level": "capstone", "title_ko": "수신호 해석 데모", "title_en": "Hand signal interpreter", "desc_ko": "영상 속 수신호를 인식해 차량이 할 행동을 문장으로 알려줍니다.", "desc_en": "Recognize the signal and say what the car should do."},
+  {"level": "research", "title_ko": "시간 흐름 캡션 평가", "title_en": "Temporal caption evaluation", "desc_ko": "동작 순서를 정확히 설명하는 비디오 캡션 평가 방법을 연구합니다.", "desc_en": "Study evaluating captions that describe motion order."}
+ ],
+ "doc_used": true,
+ "uncertain": []
+}

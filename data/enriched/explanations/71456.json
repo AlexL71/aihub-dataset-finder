@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71456",
+ "easy_ko": "한국에서 찍은 사진 약 300만 장에서 물체끼리의 관계, 예를 들어 무엇이 무엇 위에 있는지를 정리한 데이터입니다. 사진 속 장면을 이해하거나 말로 길을 안내하는 AI에 쓸 수 있습니다.",
+ "easy_en": "About 3 million photos taken in Korea, recording how the objects in each picture relate to each other, for example what is on top of what. You can use it to build AI that understands scenes in photos or gives directions in words.",
+ "detail_ko": "한국에서 촬영한 이미지 3,003,848장(jpg, 약 1,540GB)과 설명문을 바탕으로 객체와 객체 간 관계를 그래프로 정리한 라벨 3,003,848건(JSON, 약 11.4GB)입니다. 상위 카테고리 예: 사람, 탈것, 동물, 스포츠, 주방, 과일, 가구. 같은 300만 장 이미지가 탐지(71452)·분할(71453)·설명문(71454) 데이터와 공유되므로 함께 쓸 때 학습·평가 분할이 겹치지 않게 해야 합니다. 관계 종류 목록과 성능 지표는 팩에 없습니다.",
+ "detail_en": "3,003,848 images shot in Korea (jpg, about 1,540 GB) with 3,003,848 JSON labels (about 11.4 GB) that turn objects and their relationships, drawn from the images and captions, into graphs. Example top-level categories: person, vehicle, animal, sports, kitchen, fruit, furniture. The same 3 million images are shared with the detection (71452), segmentation (71453) and captioning (71454) sets, so keep train and test splits apart when combining them. The list of relationship types and any metrics are not in the pack.",
+ "amount_ko": "이미지 3,003,848장, 라벨 3,003,848건",
+ "amount_en": "3,003,848 images, 3,003,848 labels",
+ "labels_ko": "물체, 물체 사이 관계, 설명 문장",
+ "labels_en": "objects, object relationships, text",
+ "status": "full-run-2026-11-02"
+}

@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71941",
+ "easy_ko": "예전 핸드볼 경기 영상 데이터에서 겹치는 사진을 빼고 고른 2만 장에, 경기 장면 속 요소 사이의 관계를 담은 설명을 붙인 데이터입니다. 핸드볼 작전 분류, 코치 AI, 선수 행동 예측에 쓸 수 있습니다.",
+ "easy_en": "20,000 images chosen from older handball match video data after removing duplicates, each with a description of how the elements in the scene relate. You can use it for handball tactic classification, coaching AI or predicting player actions.",
+ "detail_ko": "2022년 AI 허브 핸드볼 전술판정 영상 데이터를 다시 가공(업사이클링)해 중복 이미지를 빼고, 이미지 20,000건(jpg)에 요소 사이의 의미 관계를 담은 이미지-텍스트 설명(JSON)을 붙였습니다. 온톨로지·검색 기반 생성(RAG)과 사람 검수로 정확도를 높였습니다. 구성: 무작위 추출 이미지. 전술 분류, 코치 AI, 행동 예측에 쓰도록 만들었습니다. 시즌·팀 분포 기준 없이 무작위로 뽑아 팀·경기별 편향이 있을 수 있고, 전술 클래스 목록은 팩에 없으며, 선수가 찍혀 초상권에 주의해야 합니다. 페이지에 성능 점수 표가 없고, 원본 데이터와 이미지가 겹칠 수 있습니다.",
+ "detail_en": "20,000 images (jpg) taken from AI Hub's 2022 handball tactical-judgement video data after removing duplicates, with JSON image-text descriptions of the meaning relations between elements, made more accurate using an ontology, retrieval-augmented generation (RAG) and human review. Composition: randomly sampled images. It is meant for tactic classification, coaching AI and action prediction. Images were sampled randomly without balancing seasons or teams, so there may be team or match bias; the tactic class list is not in the pack; players are visible, so mind portrait rights. There is no score table, and images may overlap with the original dataset.",
+ "amount_ko": "20,000건",
+ "amount_en": "20,000 items",
+ "labels_ko": "사진 설명, 요소 사이 관계",
+ "labels_en": "image-text description",
+ "status": "full-run-2026-11-02"
+}

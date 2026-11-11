@@ -1,0 +1,12 @@
+{
+ "dataset_id": "534",
+ "easy_ko": "토마토 농가 온실에서 찍은 사진마다 꽃과 열매 같은 부분의 위치와 테두리를 표시하고, 온실의 온도·습도 같은 환경 기록과 줄기 굵기·잎 크기 같은 자람 측정값을 함께 모은 데이터입니다. 토마토가 잘 자라는지 살피고 온실 환경을 알맞게 조절하는 스마트팜 AI를 만들 수 있습니다.",
+ "easy_en": "Photos from tomato greenhouses with parts such as flowers and fruit boxed and outlined, together with greenhouse records such as temperature and humidity and growth measurements such as stem thickness and leaf size. You can build smart-farm AI that checks how well tomato plants grow and keeps greenhouse conditions right.",
+ "detail_ko": "토마토 농가 6곳에서 촬영한 이미지 209,100건(png)에 개체 폴리곤·바운딩박스(꽃, 열매, 만개꽃 등)를 JSON으로 붙이고, 온실 환경 시계열 214,200건(엑셀/텍스트)과 생육지표(생장 길이, 화방 높이, 줄기 두께, 엽장·엽폭 등) 측정 9,800건을 함께 제공합니다. 기준 성능은 이미지 판독 모델 분류율 95%로 적혀 있으나 모델 이름은 공개되지 않았습니다. 535번 데이터와 구조가 같습니다.",
+ "detail_en": "209,100 images (png) from 6 tomato farms with JSON polygons and boxes (flowers, fruit, full blooms and more), plus 214,200 greenhouse environment time-series records (Excel/text) and 9,800 growth-trait measurements (growth length, truss height, stem thickness, leaf length and width and more). A 95% classification rate is reported for an unnamed image model. It shares its structure with dataset 535.",
+ "amount_ko": "이미지 약 20.9만 건, 환경 기록 약 21.4만 건",
+ "amount_en": "about 209k images, about 214k environment records",
+ "labels_ko": "꽃·열매 위치 상자·테두리, 자람 측정값, 온실 환경 값",
+ "labels_en": "boxes and outlines around flowers and fruit, growth measurements, greenhouse environment values",
+ "status": "full-run-2026-11-02"
+}

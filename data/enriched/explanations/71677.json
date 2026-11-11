@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71677",
+ "easy_ko": "사람 없이 돌아가는 공장 설비를 일반 카메라와 열화상 카메라로 찍은 영상과 사진 40만 장에 침입, 설비 사고, 불 같은 이상 상황을 표시한 데이터입니다. 무인 공장을 한곳에서 지켜보며 이상 상황을 자동으로 알아채는 AI에 쓸 수 있습니다.",
+ "easy_en": "Videos and 400,000 images from ordinary and thermal cameras at unmanned plants, marking abnormal situations such as intrusion, equipment accidents and fire. You can use it to build AI that monitors unmanned plants from one place and detects trouble automatically.",
+ "detail_ko": "무인 플랜트의 실화상 영상 13,400개와 열화상 영상 6,600개(mp4), 여기서 뽑은 이미지 400,000장(png; 실화상 268,000, 열화상 132,000)에 이상 상황(침입, 설비사고, 화재) 상자, 분할, 클래스를 JSON으로 붙였습니다. 전체 약 821GB이고, 재연된 상황일 가능성을 확인해야 하며, 세부 클래스와 성능 지표는 팩 앞부분에 없습니다.",
+ "detail_en": "13,400 visible-light and 6,600 thermal videos (mp4) from unmanned plants and 400,000 images taken from them (png; 268,000 visible, 132,000 thermal), with JSON boxes, segmentation and incident class (intrusion, equipment accident, fire). Total size is about 821 GB. Check whether incidents were staged; detailed classes and metrics are not in the pack.",
+ "amount_ko": "영상 20,000개(실화상 13,400, 열화상 6,600), 이미지 400,000장",
+ "amount_en": "20,000 videos (13,400 visible, 6,600 thermal), 400,000 images",
+ "labels_ko": "이상 상황 위치 상자, 영역, 상황 종류",
+ "labels_en": "bounding boxes, segmentation, incident class",
+ "status": "full-run-2026-11-02"
+}

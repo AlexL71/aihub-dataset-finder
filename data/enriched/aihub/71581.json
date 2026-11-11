@@ -1,0 +1,29 @@
+{
+ "dataset_id": "71581",
+ "title_en": "Domestic travel log data (capital region)",
+ "summary_ko": "수도권 여행자 4,000명의 여행 기록으로, 여행자 정보, GPS 이동 경로, 방문 활동, 소비 내역과 여행지 사진 135,183장이 함께 있습니다. 여행 소비가 큰 사람 예측, 취향 기반 여행지 추천 AI에 쓸 수 있습니다.",
+ "summary_en": "Travel records of 4,000 travellers in the Seoul capital region: traveller profiles, GPS routes, visit activities, spending and 135,183 travel photos. For predicting high-spending travellers and recommending places by preference.",
+ "contents_ko": "CSV(여행자 정보, GPS 동선, 방문 기록, 소비 내역, POI) + 여행지 사진(이미지).",
+ "contents_en": "CSV (traveller profiles, GPS routes, visit logs, spending, POIs) + travel photos.",
+ "modalities": ["tabular", "image"],
+ "tasks": ["retrieval_recommendation", "tabular_prediction"],
+ "topics": [{"ko": "관광·여행", "en": "Tourism and travel"}, {"ko": "소비자 행동 분석", "en": "Consumer behaviour analysis"}],
+ "keywords_ko": ["여행 로그", "여행지 추천", "GPS 동선", "소비 내역", "관광 데이터", "수도권"],
+ "keywords_en": ["travel log", "destination recommendation", "GPS routes", "spending records", "tourism data", "capital region"],
+ "labels": ["traveller profile", "visit records", "spending"],
+ "file_formats": ["csv"],
+ "scale_ko": "여행자 4,000명(세트), 여행지 사진 135,183장",
+ "classes_example": ["당일", "1박2일", "2박3일 이상", "20대", "30대"],
+ "baseline": [{"task": "high-spending traveller prediction", "model": "CatBoost", "metric": "F1-score", "value": "0.7376"}, {"task": "destination recommendation", "model": "CatBoost", "metric": "Recall@10", "value": "40.62%"}],
+ "difficulty": "beginner",
+ "difficulty_note_ko": "표 데이터(CSV)만으로도 분석·추천 실습이 가능합니다. 사진(대부분 용량, 약 395GB)은 필요할 때만 받으세요.",
+ "skills_needed_ko": ["파이썬", "pandas", "추천 모델 기초", "CatBoost 등 표 데이터 모델"],
+ "caveats_ko": ["사진 포함 전체 약 395GB", "20~30대가 약 71%로 치우침", "GPS 동선은 개인정보가 될 수 있어 이용 조건 확인", "동부권·서부권·제주 데이터는 별도 데이터셋"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "여행 패턴 분석", "title_en": "Travel pattern analysis", "desc_ko": "연령·여행 기간별로 많이 가는 장소와 소비 금액을 비교합니다.", "desc_en": "Compare popular places and spending by age and trip length."},
+  {"level": "capstone", "title_ko": "수도권 여행지 추천 앱", "title_en": "Capital-region trip recommender", "desc_ko": "취향을 입력하면 비슷한 여행자가 간 장소를 추천하는 웹 앱을 만듭니다.", "desc_en": "Recommend places visited by similar travellers."},
+  {"level": "research", "title_ko": "동선 기반 다음 장소 예측", "title_en": "Next-place prediction", "desc_ko": "GPS 동선과 방문 순서로 다음 방문 장소를 예측하는 모델을 연구합니다.", "desc_en": "Predict the next visited place from GPS routes."}
+ ],
+ "doc_used": true,
+ "uncertain": []
+}

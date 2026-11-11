@@ -1,0 +1,29 @@
+{
+ "dataset_id": "226",
+ "title_en": "Wearable lifelogs of people at high risk of dementia",
+ "summary_ko": "광주광역시 치매 고위험군 어르신들이 웨어러블 기기로 기록한 수면 정보 1.5만 건, 걸음·활동 정보 1.5만 건, 인지기능 검사(MMSE) 9천 건과 고위험군 라벨입니다. 일상 생활 기록으로 치매를 조기에 예측하는 AI에 쓸 수 있습니다.",
+ "summary_en": "Wearable lifelogs from older adults at high risk of dementia in Gwangju: 15,000 sleep records, 15,000 walking/activity records, 9,000 cognitive test (MMSE) results and risk labels. For AI that predicts dementia early from daily-life data.",
+ "contents_ko": "CSV 표: 수면 기록, 걸음·활동 기록, MMSE 점수, 고위험군 여부 라벨.",
+ "contents_en": "CSV tables: sleep records, steps and activity, MMSE scores, risk-group label.",
+ "modalities": ["tabular", "sensor"],
+ "tasks": ["tabular_prediction", "forecasting"],
+ "topics": [{"ko": "노인·치매", "en": "Older adults and dementia"}, {"ko": "헬스케어·웨어러블", "en": "Healthcare and wearables"}, {"ko": "수면·활동", "en": "Sleep and activity"}],
+ "keywords_ko": ["치매", "웨어러블", "라이프로그", "수면", "걸음 수", "MMSE", "조기 진단"],
+ "keywords_en": ["dementia", "wearable", "lifelog", "sleep", "steps", "MMSE", "early diagnosis"],
+ "labels": ["risk-group label", "MMSE score"],
+ "file_formats": ["csv"],
+ "scale_ko": "총 39,300건(수면 1.5만, 걸음 1.5만, MMSE 9천, 라벨 300)",
+ "classes_example": ["정상", "이상(고위험)"],
+ "baseline": [{"task": "dementia classification (normal/abnormal)", "model": "hierarchical BiLSTM", "metric": "AUC-ROC", "value": "0.90"}],
+ "difficulty": "beginner",
+ "difficulty_note_ko": "약 0.08GB 표 데이터라 노트북에서 pandas와 기본 머신러닝으로 바로 분석할 수 있습니다.",
+ "skills_needed_ko": ["파이썬", "pandas", "시계열·표 데이터 분류"],
+ "caveats_ko": ["라벨이 300건으로 적어 과적합 주의", "건강 데이터라 이용 약관·개인정보 확인 필요", "태그에 '문서요약'이 잘못 붙어 있음"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "수면 패턴과 인지 점수", "title_en": "Sleep patterns and cognition", "desc_ko": "수면 시간·깊이와 MMSE 점수의 관계를 시각화합니다.", "desc_en": "Visualise how sleep duration and depth relate to MMSE."},
+  {"level": "capstone", "title_ko": "어르신 건강 리포트 대시보드", "title_en": "Senior health report dashboard", "desc_ko": "웨어러블 기록을 주간 리포트로 보여주고 이상 변화를 표시합니다.", "desc_en": "Show weekly wearable reports and flag unusual changes."},
+  {"level": "research", "title_ko": "라이프로그로 치매 위험 예측", "title_en": "Dementia risk from lifelogs", "desc_ko": "수면·활동 시계열로 고위험군을 예측하고 중요한 특징을 해석합니다.", "desc_en": "Predict high-risk status from sleep and activity series and interpret key features."}
+ ],
+ "doc_used": true,
+ "uncertain": []
+}

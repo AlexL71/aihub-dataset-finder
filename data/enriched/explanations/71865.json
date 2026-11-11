@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71865",
+ "easy_ko": "농업, 축산, 어업 전문 책과 논문, 작업 상황 대본에서 만든 한국어 문장 약 424만 개를 베트남어, 인도네시아어, 크메르어, 태국어로 번역한 데이터입니다. 농어촌에서 일하는 외국인 노동자를 위한 전문 번역이나 농업 지식 챗봇에 쓸 수 있습니다.",
+ "easy_en": "About 4.24 million Korean sentences from farming, livestock and fishing books, papers and work-situation scripts, translated into Vietnamese, Indonesian, Khmer and Thai. You can use it for specialist translation or farming-knowledge chatbots for foreign workers in rural and fishing areas.",
+ "detail_ko": "농림축산·어업 전문도서, 논문, 웹/저널, 작업 상황 시나리오로 만든 한국어 문장 4,240,231개(txt, csv)를 4개 언어(베트남어, 인도네시아어, 크메르어, 태국어)로 번역한 병렬 말뭉치 라벨 4,240,231건(JSON, 총 24,474,572문장)으로, 분야는 작물생산, 원예생산, 가축업, 수산생산업, 수산가공업 등입니다. 페이지에 성능 점수 표가 없고(Llama 3.1 8B instruct 소개만 있음), 라벨 2,447만 문장은 4개 언어 번역을 합친 수로 보이며, 기계 번역 후 검수 방식인지는 팩에서 확인되지 않습니다.",
+ "detail_en": "4,240,231 Korean sentences (txt, csv) from farming, livestock and fisheries books, papers, web/journals and work-situation scenarios, with 4,240,231 JSON labels translating them into 4 languages (Vietnamese, Indonesian, Khmer, Thai; 24,474,572 sentences in total), in fields such as crop production, horticulture, livestock, fishery production and seafood processing. There is no score table (only Llama 3.1 8B Instruct is mentioned); the 24.47 million sentences seem to combine all 4 languages; whether translations were machine-made then checked is not stated.",
+ "amount_ko": "한국어 4,240,231문장, 라벨 4,240,231건(총 24,474,572문장)",
+ "amount_en": "4,240,231 Korean sentences, 4,240,231 labels (24,474,572 sentences in total)",
+ "labels_ko": "번역 문장, 분야",
+ "labels_en": "translation, field",
+ "status": "full-run-2026-11-02"
+}

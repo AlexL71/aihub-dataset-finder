@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71685",
+ "easy_ko": "고양시 110가구에서 한 달쯤 집 전체 전기 사용량과 TV, 선풍기, 전기포트, 세탁기 같은 가전 22가지의 전기 사용량을 따로 잰 데이터입니다. 집 전체 전기 사용량만 보고 어떤 가전이 켜졌는지 알아내는 AI에 쓸 수 있습니다.",
+ "easy_en": "Electricity use measured for about a month in 110 homes in Goyang, both for the whole home and separately for 22 appliances such as TVs, fans, kettles and washing machines. You can use it to build AI that works out which appliances are on from the whole-home reading alone.",
+ "detail_ko": "고양시 110가구에서 약 31일 동안 분전반 전체 전력과 가전 22종(예: TV, 선풍기, 전기포트, 전기밥솥, 세탁기, 헤어드라이기, 진공 청소기)의 전력을 측정한 시계열(CSV) 40,641일분(가구·기기별 하루 단위)에 가전 켜짐·꺼짐 시점을 JSON으로 붙였습니다. 기준 모델은 UNet-NILM(켜짐·꺼짐 분류와 전력 추정)이지만 값은 팩 앞부분에 없습니다. 전체 약 589GB이고, 측정 기간이 문서마다 31일·32일로 다르게 적혀 있으며, 데이터 유형이 '텍스트'로 표시되지만 실제는 전력 측정값입니다.",
+ "detail_en": "Power time series (CSV) from 110 homes in Goyang over about 31 days: whole-home panel power plus 22 appliances (such as TV, fan, kettle, rice cooker, washing machine, hair dryer, vacuum cleaner), 40,641 home/appliance-days in total, with JSON on/off timestamps. The baseline model is UNet-NILM (on/off classification and power estimation), but its score is not in the pack. Total size is about 589 GB. The measurement period is given as 31 or 32 days in different documents, and the data type says 'text' although it is power readings.",
+ "amount_ko": "110가구, 가전 22종, 40,641일분",
+ "amount_en": "110 homes, 22 appliances, 40,641 home/appliance-days",
+ "labels_ko": "가전 켜짐·꺼짐 시각",
+ "labels_en": "timestamp, on/off state",
+ "status": "full-run-2026-11-02"
+}

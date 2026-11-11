@@ -1,0 +1,29 @@
+{
+ "dataset_id": "492",
+ "title_en": "General civil-complaint image data (Goyang CCTV)",
+ "summary_ko": "고양시 CCTV 이미지 100만 장으로, 도로변·골목 쓰레기 더미, 가로·세로 현수막, 공사현장, 보행방해물, 불법 주정차처럼 민원이 자주 생기는 요소가 낮·밤으로 나뉘어 상자로 표시되어 있습니다. 민원이 들어오기 전에 CCTV로 문제를 찾아 알리는 행정 서비스에 쓸 수 있습니다.",
+ "summary_en": "1 million Goyang City CCTV images with boxes for common complaint items (piles of rubbish by roads and in alleys, horizontal and vertical banners, construction sites, sidewalk obstructions, illegal parking), split into day and night. For public services that spot problems on CCTV before complaints arrive.",
+ "contents_ko": "CCTV 이미지(jpg) + JSON(민원 요소 상자, 라벨, 낮/밤).",
+ "contents_en": "CCTV image (jpg) + JSON (complaint-item boxes, label, day/night).",
+ "modalities": ["image"],
+ "tasks": ["object_detection"],
+ "topics": [{"ko": "행정·민원", "en": "Public services and complaints"}, {"ko": "도시 환경", "en": "Urban environment"}, {"ko": "쓰레기·재활용", "en": "Waste"}],
+ "keywords_ko": ["민원", "CCTV", "불법 주정차", "현수막", "쓰레기 투기", "보행방해물"],
+ "keywords_en": ["civil complaints", "CCTV", "illegal parking", "banners", "littering", "sidewalk obstruction"],
+ "labels": ["bounding box", "class", "day/night"],
+ "file_formats": ["jpg", "json"],
+ "scale_ko": "이미지 100만 장(쓰레기 26.5%, 현수막 20%, 공사현장·보행방해물·불법주정차 등)",
+ "classes_example": ["도로변쓰레기봉투더미", "골목비포장쓰레기", "가로현수막", "세로현수막", "공사현장", "불법주정차"],
+ "baseline": [],
+ "difficulty": "beginner",
+ "difficulty_note_ko": "약 28GB로 작고 YOLO 탐지 첫 프로젝트로 좋습니다.",
+ "skills_needed_ko": ["파이썬 기초", "YOLO 객체 탐지"],
+ "caveats_ko": ["성능 지표가 팩 앞부분에 없음", "고양시 CCTV만 포함"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "불법 현수막 탐지", "title_en": "Illegal banner detection", "desc_ko": "CCTV 이미지에서 현수막을 탐지합니다.", "desc_en": "Detect banners in CCTV images."},
+  {"level": "capstone", "title_ko": "민원 사전 알림 대시보드", "title_en": "Pre-complaint alert dashboard", "desc_ko": "쓰레기·불법주정차를 감지해 담당 부서별로 알리는 대시보드를 만듭니다.", "desc_en": "Detect litter and illegal parking and route alerts to departments."},
+  {"level": "research", "title_ko": "야간 민원 요소 탐지", "title_en": "Night-time detection", "desc_ko": "낮과 밤 이미지의 탐지 성능 차이를 분석하고 개선합니다.", "desc_en": "Analyse and close the day-night detection gap."}
+ ],
+ "doc_used": true,
+ "uncertain": []
+}

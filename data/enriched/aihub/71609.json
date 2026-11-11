@@ -1,0 +1,29 @@
+{
+ "dataset_id": "71609",
+ "title_en": "Dynamic object perception data from intelligent infrastructure sensors",
+ "summary_ko": "가로등·신호등·스마트폴 같은 도로 시설에 단 센서로 찍은 3D 점군과 이미지 168,430건으로, 차량·사람·이륜차 같은 움직이는 물체가 상자로 표시되어 있습니다. 도로 쪽에서 물체 위치와 동선을 추적해 자율주행차에 알려 주는 C-ITS 인프라 AI, 교통 혼잡도 측정에 쓸 수 있습니다.",
+ "summary_en": "168,430 3D point clouds and images from sensors on street lights, traffic lights and smart poles, with moving objects such as vehicles, pedestrians and two-wheelers boxed. For roadside C-ITS perception that tracks objects for autonomous cars and measures congestion.",
+ "contents_ko": "점군(pcd) + 이미지 + JSON(3D 상자, 객체 종류) + 캘리브레이션 정보.",
+ "contents_en": "Point cloud (pcd) + image + JSON (3D boxes, object type) + calibration info.",
+ "modalities": ["3d", "sensor", "image"],
+ "tasks": ["object_detection", "object_tracking"],
+ "topics": [{"ko": "스마트 교통(C-ITS)", "en": "Smart transport (C-ITS)"}, {"ko": "자율주행", "en": "Autonomous driving"}],
+ "keywords_ko": ["지능형 인프라", "노변 센서", "라이다", "3D 객체 탐지", "교통 밀집도", "C-ITS"],
+ "keywords_en": ["intelligent infrastructure", "roadside sensor", "lidar", "3D object detection", "traffic density", "C-ITS"],
+ "labels": ["3D bounding box", "object class"],
+ "file_formats": ["pcd", "json"],
+ "scale_ko": "점군·이미지 168,430건, 캘리브레이션 16,843건(10~11월 수집)",
+ "classes_example": ["차량", "사람", "이륜차", "Light", "Quiet", "Jam"],
+ "baseline": [],
+ "difficulty": "advanced",
+ "difficulty_note_ko": "3D 점군과 센서 캘리브레이션을 다뤄야 합니다. 약 160GB입니다.",
+ "skills_needed_ko": ["파이썬", "3D 점군 처리(Open3D·OpenPCDet)", "객체 추적"],
+ "caveats_ko": ["페이지에 성능 지표 표가 없음", "교통 밀집도 비율 합이 100%를 넘음(26.14+74.30+5.70)", "이미지 확장자가 명시되지 않음"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "교차로 점군 시각화", "title_en": "Intersection point-cloud viewer", "desc_ko": "점군과 3D 상자를 함께 띄워 교차로 물체를 살펴봅니다.", "desc_en": "View point clouds with 3D boxes at an intersection."},
+  {"level": "capstone", "title_ko": "교차로 혼잡도 측정기", "title_en": "Intersection congestion meter", "desc_ko": "탐지된 차량·사람 수로 시간대별 혼잡도를 계산해 보여 줍니다.", "desc_en": "Compute congestion over time from detected vehicles and people."},
+  {"level": "research", "title_ko": "인프라-차량 협력 인지", "title_en": "Infrastructure-vehicle cooperative perception", "desc_ko": "도로 센서와 차량 센서를 합쳐 사각지대 물체를 찾는 방법을 연구합니다.", "desc_en": "Study fusing roadside and vehicle sensors to see blind spots."}
+ ],
+ "doc_used": true,
+ "uncertain": ["객체 클래스(차량·사람·이륜차)는 개요 문장 기준이며 전체 목록은 확인 안 됨"]
+}

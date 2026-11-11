@@ -1,0 +1,29 @@
+{
+ "dataset_id": "71569",
+ "title_en": "Point-cloud super-resolution data for low-resolution LiDAR",
+ "summary_ko": "같은 도로 주행에서 저해상도(32채널)와 고해상도(128채널) 라이다로 동시에 찍은 점군 각 5만 장과 3D 분할 라벨입니다. 값싼 저해상도 라이다 점군을 고해상도처럼 만들어(점군 초해상화) 물체 인식 성능을 높이는 AI에 쓸 수 있습니다.",
+ "summary_en": "50,000 pairs of synchronised low-res (32-channel) and high-res (128-channel) LiDAR point clouds from road driving, with 3D segmentation labels. For point-cloud super-resolution that makes cheap LiDAR look like high-end LiDAR.",
+ "contents_ko": "라이다 점군(pcd, 32채널·128채널) + JSON(3D 분할·객체 정보).",
+ "contents_en": "LiDAR point cloud (pcd, 32 and 128 channels) + JSON (3D segmentation and object info).",
+ "modalities": ["3d", "sensor"],
+ "tasks": ["segmentation", "image_generation", "object_detection"],
+ "topics": [{"ko": "자율주행", "en": "Autonomous driving"}, {"ko": "라이다 센서", "en": "LiDAR sensors"}],
+ "keywords_ko": ["라이다", "점군 초해상화", "32채널", "128채널", "3D 분할"],
+ "keywords_en": ["LiDAR", "point-cloud super-resolution", "32-channel", "128-channel", "3D segmentation"],
+ "labels": ["3D segmentation", "3D object info"],
+ "file_formats": ["pcd", "json"],
+ "scale_ko": "점군 100,000장 (32채널 50,000 + 128채널 50,000), 라벨 100,000개",
+ "classes_example": ["Car", "Two-wheel vehicle", "Pedestrian", "Road", "Sidewalk", "Structure", "Trunk", "Fence", "Pole", "Traffic Sign", "Traffic Light"],
+ "baseline": [{"task": "point-cloud super-resolution", "model": "Implicit LiDAR Network", "metric": "IoU", "value": "22.4%"}, {"task": "3D segmentation (high-res)", "model": "SPVConv", "metric": "mIoU", "value": "51.9%"}, {"task": "3D segmentation (low-res)", "model": "SPVConv", "metric": "mIoU", "value": "42.3%"}],
+ "difficulty": "advanced",
+ "difficulty_note_ko": "점군 딥러닝(희소 합성곱 등) 경험이 필요합니다. 전체 약 325GB입니다.",
+ "skills_needed_ko": ["파이썬", "점군 처리", "3D 분할 모델"],
+ "caveats_ko": ["데이터 유형이 '이미지'로 적혀 있지만 실제는 라이다 점군", "라벨 표의 해상도가 고해상도 라벨인데 32CH로 적혀 있어 헷갈림", "초해상화 IoU 22.4%로 아직 낮음"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "32채널 vs 128채널 비교", "title_en": "32 vs 128 channel comparison", "desc_ko": "같은 장면의 두 점군을 시각화하고 점 밀도 차이를 봅니다.", "desc_en": "Visualise both point clouds of one scene and compare density."},
+  {"level": "capstone", "title_ko": "저해상도 라이다 분할 성능 높이기", "title_en": "Boosting low-res LiDAR segmentation", "desc_ko": "초해상화한 점군으로 분할했을 때 mIoU가 얼마나 오르는지 실험합니다.", "desc_en": "Check how much super-resolved clouds improve segmentation mIoU."},
+  {"level": "research", "title_ko": "새 점군 초해상화 모델", "title_en": "New point-cloud super-resolution", "desc_ko": "32채널에서 128채널 점군을 더 정확히 만드는 모델을 연구합니다.", "desc_en": "Research better models to upsample 32-channel to 128-channel clouds."}
+ ],
+ "doc_used": true,
+ "uncertain": []
+}

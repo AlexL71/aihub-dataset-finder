@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71854",
+ "easy_ko": "실제 도로에서 겪은 위험한 상황 100가지를 카메라, 레이저 센서, 위치 센서로 기록하고, 자율주행 가상 시험 프로그램에서 쓸 수 있는 장면 파일과 설명 문장으로 만든 데이터입니다. 자율주행차가 위험한 상황에서 잘 대처하는지 시험하는 데 쓸 수 있습니다.",
+ "easy_en": "100 dangerous situations met on real roads, recorded with cameras, laser sensors and positioning sensors and turned into scenario files for self-driving simulators plus description sentences. You can use it to test whether self-driving cars handle dangerous situations well.",
+ "detail_ko": "실도로 위험 상황 시나리오 100건의 실주행 영상(mp4)·라이다(pcd)·GNSS(csv) 각 100세트와 시뮬레이터용 시나리오(OpenSCENARIO, xosc)·도로(OpenDRIVE, xodr) 파일, 상황 설명(JSON)입니다. 유형 예: 공사 구간 주행, 교차로 주행, 그림자에 의한 인지오류, 날씨, 도로 상태, 보행자 주변 주행, 차선변경·급제동, 터널 진출입. 시나리오가 100건뿐이라 딥러닝 학습보다 시험·검증용에 가깝고, 모델 성능 수치는 팩에 없습니다.",
+ "detail_en": "100 real-road hazard scenarios, each with driving video (mp4), lidar (pcd) and GNSS (csv), converted into simulator scenario (OpenSCENARIO, xosc) and road (OpenDRIVE, xodr) files with JSON situation descriptions. Types include work zones, intersections, shadow-induced perception errors, weather, road conditions, driving near pedestrians, lane changes and sudden braking, and tunnel entry and exit. With only 100 scenarios it suits testing and validation more than deep-learning training; no model scores are in the pack.",
+ "amount_ko": "위험 상황 시나리오 100건(영상·라이다·GNSS 각 100세트)",
+ "amount_en": "100 hazard scenarios (100 sets each of video, lidar and GNSS)",
+ "labels_ko": "상황 설명, 시험용 장면 파일",
+ "labels_en": "caption, scenario",
+ "status": "full-run-2026-11-02"
+}

@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71424",
+ "easy_ko": "브레이크댄스와 택견 동작을 스튜디오에서 여러 대의 카메라로 찍고, 그 움직임을 체형이 다른 여러 입체 캐릭터에 옮겨 입힌 움직임 데이터를 함께 담은 데이터입니다. 사람의 동작을 가상 캐릭터에 자연스럽게 옮기는 AI를 만들어 메타버스 춤·무예 교육에 쓸 수 있습니다.",
+ "easy_en": "Breakdance and taekkyeon moves filmed in a studio by several cameras, together with the same motions transferred onto many 3D characters with different body shapes. You can build AI that moves human motion naturally onto virtual characters, for dance and martial-arts lessons in the metaverse.",
+ "detail_ko": "브레이킹(공통·시그니처 동작)과 택견(품밟기, 맞대거리/연무동작 등) 동작을 8대 카메라로 촬영한 영상 72,320클립(mp4)과 모션 데이터 102,146건(bvh; 사람 모션 1건당 10개 캐릭터 모션 포함), 메타데이터 9,286건(JSON)으로 구성됩니다. 기준 성능은 CNN 3D 모션 리타게팅 NRMSE 3.91%입니다. 전체 약 451GB(최소 파일 약 2GB)이며, 성능 표의 AI TASK가 Object Detection으로 잘못 적혀 있습니다.",
+ "detail_en": "72,320 video clips (mp4) of breaking (common and signature moves) and taekkyeon (footwork, sparring and demonstration moves) filmed by 8 cameras, 102,146 motion files (bvh; each human motion retargeted to 10 characters) and 9,286 metadata files (JSON). Baseline: CNN 3D motion retargeting NRMSE 3.91%. Total size is about 451 GB (smallest file about 2 GB); the AI task is mislabelled as object detection.",
+ "amount_ko": "영상 72,320클립, 움직임 데이터 102,146건",
+ "amount_en": "72,320 clips, 102,146 motion files",
+ "labels_ko": "몸의 움직임(뼈대 주요 점), 동작 종류",
+ "labels_en": "skeleton motion (bvh key points), move type",
+ "status": "full-run-2026-11-02"
+}

@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71760",
+ "easy_ko": "한국어 대형 언어 AI가 믿을 만한지 시험하는 질문과 답 데이터로, 해롭거나 치우친 답을 하는지, 정보가 정확한지, 도움이 되는지를 따집니다. 한국어 AI 챗봇의 안전성과 사실이 아닌 말을 지어내는지(환각) 평가하는 데 쓸 수 있습니다.",
+ "easy_en": "Question-and-answer data for testing whether Korean large language models can be trusted: whether they give harmful or biased answers, whether their information is accurate, and whether they are helpful. You can use it to evaluate the safety of Korean chatbots and whether they make things up (hallucinate).",
+ "detail_ko": "한국어 대형 언어모델(LLM) 신뢰성 평가용 질문·답변(JSON)으로, 평가용 33,000건(무해성 20,000: 편향성·혐오·위험성·민감성 / 정보 정확성 10,000: 국어·한국사·일반 상식 / 도움 적정성 3,000: 구체성·넌센스)과 정보 정확성 학습용 50,000건이 있습니다. 벤치마크 데이터라 모델 점수 표는 없고, 평가용 데이터를 학습에 쓰면 평가가 무의미해지며, 혐오·위험 질문이 포함되어 다룰 때 주의해야 합니다.",
+ "detail_en": "Question-answer data (JSON) for evaluating the trustworthiness of Korean large language models: 33,000 evaluation items (20,000 harmlessness: bias, hate, danger, sensitivity; 10,000 factual accuracy: Korean language, Korean history, general knowledge; 3,000 helpfulness: specificity, nonsense) and 50,000 training items for factual accuracy. As a benchmark it has no model score table; training on the evaluation items would make the evaluation meaningless, and hateful and dangerous questions are included, so handle with care.",
+ "amount_ko": "평가용 33,000건 + 학습용 50,000건",
+ "amount_en": "33,000 evaluation + 50,000 training items",
+ "labels_ko": "질문과 답, 평가 분야",
+ "labels_en": "question-answer, category",
+ "status": "full-run-2026-11-02"
+}

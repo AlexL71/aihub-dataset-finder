@@ -1,0 +1,29 @@
+{
+ "dataset_id": "71406",
+ "title_en": "Soccer kick motion and ball trajectory data (vision)",
+ "summary_ko": "초등학생부터 성인까지 선수 114명이 찬 23,760번의 킥을 8대 카메라로 찍은 이미지 약 114만 장과 공 궤적 영상입니다. 선수 자세 22개 키포인트와 공 위치(2D·3D)가 표시되어 있어 킥 자세 코칭, 공 궤적 예측 훈련 시스템에 쓸 수 있습니다.",
+ "summary_en": "About 1.14 million images from 8 cameras of 23,760 kicks by 114 players (elementary to adult), plus ball trajectory video. Labelled with 22 body keypoints and 2D/3D ball positions, for kick-form coaching and trajectory prediction.",
+ "contents_ko": "킥 동작 이미지(jpg) + 공 궤적 영상(mp4) + JSON(선수 2D·3D 키포인트, 공 좌표·궤적).",
+ "contents_en": "Kick image (jpg) + ball trajectory video (mp4) + JSON (2D/3D player keypoints, ball coordinates and trajectory).",
+ "modalities": ["image", "video"],
+ "tasks": ["keypoint_pose", "object_tracking", "forecasting"],
+ "topics": [{"ko": "스포츠 과학", "en": "Sports science"}, {"ko": "축구 훈련", "en": "Soccer training"}],
+ "keywords_ko": ["축구", "킥 동작", "자세 추정", "공 궤적", "3D 키포인트", "코칭"],
+ "keywords_en": ["soccer", "kick motion", "pose estimation", "ball trajectory", "3D keypoints", "coaching"],
+ "labels": ["2D keypoints", "3D keypoints", "ball trajectory"],
+ "file_formats": ["jpg", "mp4", "json"],
+ "scale_ko": "킥 23,760회(선수 114명), 동작 이미지 1,140,480장(6개 동작×8채널), 3D 키포인트 142,500건",
+ "classes_example": ["오른발 킥", "왼발 킥", "성인", "초등", "중등", "고등"],
+ "baseline": [{"task": "kick pose estimation", "model": "AlphaPose", "metric": "mAP", "value": "98.98%"}, {"task": "ball trajectory prediction", "model": "ResNet-50", "metric": "mean point difference", "value": "0.26 m"}],
+ "difficulty": "advanced",
+ "difficulty_note_ko": "다중 카메라·3D 좌표를 다뤄야 하고 전체 약 2.2TB입니다. 한 카메라 이미지 일부로 2D 자세부터 시작하세요.",
+ "skills_needed_ko": ["파이썬", "자세 추정 모델(YOLO-pose·AlphaPose)", "다중 카메라 3D 좌표", "시계열 예측"],
+ "caveats_ko": ["전체 약 2.2TB", "오른발 킥이 약 80%로 치우침", "같은 킥을 여러 카메라로 찍어 분할 시 같은 킥이 섞이지 않게 주의"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "킥 자세 키포인트 시각화", "title_en": "Kick pose visualisation", "desc_ko": "공개 자세 모델로 킥 순간의 관절을 찾아 그림으로 보여 줍니다.", "desc_en": "Find joints at the kick moment with an open pose model and draw them."},
+  {"level": "capstone", "title_ko": "유소년 킥 코칭 앱", "title_en": "Youth kick coaching app", "desc_ko": "킥 영상을 올리면 성인 선수 자세와 비교해 고칠 점을 알려 줍니다.", "desc_en": "Compare a youth kick with adult form and suggest fixes."},
+  {"level": "research", "title_ko": "초기 프레임으로 궤적 예측", "title_en": "Trajectory from early frames", "desc_ko": "킥 직후 몇 프레임만으로 공이 날아갈 3D 궤적을 예측하는 모델을 연구합니다.", "desc_en": "Predict the 3D ball path from a few frames after the kick."}
+ ],
+ "doc_used": true,
+ "uncertain": []
+}

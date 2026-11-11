@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71315",
+ "easy_ko": "국가대표·세계 랭커부터 초·중급까지 여러 수준의 비보이·비걸들이 브레이킹(비보잉) 동작을 하는 모습을 여러 대의 카메라로 동시에 찍고, 몸의 주요 점 위치(평면·입체)와 동작 이름을 붙인 데이터입니다. 집에서도 브레이킹(비보잉) 자세를 바로잡아 주거나 동작을 알아보는 AI를 만들 수 있습니다.",
+ "easy_en": "B-boys and b-girls from national-team and world-ranked dancers to beginners performing breaking (b-boying) moves, filmed by several cameras at once, with key body points (flat and in depth) and the move names labelled. You can build AI that recognises breaking (b-boying) moves or corrects your form, even at home.",
+ "detail_ko": "브레이킹(비보잉) 동작 85종을 시연자 102명이 하는 모습을 카메라 8대로 동시에 촬영한 영상 약 1.5만 클립(mp4)에 2D·3D 키포인트와 동작 정보(탑락·다운락·파워무브·프리즈 각 20개와 컴비네이션 5개)를 JSON·CSV로 붙였습니다. 기준 성능은 PoseC3D 동작 분류 top-3 정확도 99.65%, BPE 동작 유사도 AUC-ROC 0.7455입니다. 전체 약 5.5TB이며 시연자 얼굴이 보입니다. 남성 시연자가 88%로 치우쳐 있고, 페이지의 클립 수(14,998)와 라벨 수량(17,200)이 다르며, 71312·71313번과 같은 구축 기관·구조입니다.",
+ "detail_en": "About 15k multi-view videos (mp4) of 102 performers doing 85 breaking (b-boying) moves, filmed by 8 cameras at once, with JSON/CSV 2D and 3D keypoints and move info (20 each of toprock, downrock, power moves and freezes plus 5 combinations). Baselines: PoseC3D move classification top-3 accuracy 99.65%, BPE move similarity AUC-ROC 0.7455. Total size is about 5.5TB; performers' faces are visible. Men make up 88% of performers; the clip count (14,998) differs from the label count (17,200); same organisation and structure as 71312 and 71313.",
+ "amount_ko": "영상 약 1.5만 클립, 동작 85종, 시연자 102명",
+ "amount_en": "about 15k clips, 85 moves, 102 performers",
+ "labels_ko": "몸의 주요 점(평면·입체), 동작 이름, 실력 수준",
+ "labels_en": "2D and 3D body key points, move class, skill level",
+ "status": "full-run-2026-11-02"
+}

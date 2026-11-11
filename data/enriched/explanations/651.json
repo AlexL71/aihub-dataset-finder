@@ -1,0 +1,12 @@
+{
+ "dataset_id": "651",
+ "easy_ko": "차 앞좌석과 뒷좌석을 찍은 영상에 졸음운전, 음주운전, 물건 찾기, 통화, 휴대폰 만지기, 운전자 폭행 같은 위험 행동과 기쁨·화남·놀람·슬픔 같은 감정, 탑승자 센서 정보를 붙인 데이터입니다. 운전 중 위험한 행동을 알아채 경고해 주는 AI를 만들 수 있습니다.",
+ "easy_en": "Videos of a car's front and back seats marked with risky behaviour such as drowsy or drunk driving, searching for things, phone calls, using a phone and attacks on the driver, plus emotions (joy, anger, surprise, sadness) and passenger sensor data. You can build AI that notices dangerous behaviour while driving and gives a warning.",
+ "detail_ko": "차량 앞·뒷좌석 영상 약 50만 건(mp4)과 이미지 250만 장(jpg)에 바운딩박스, 이상행동 7종(졸음운전, 음주운전, 물건찾기, 통화, 휴대폰 조작, 차량 제어, 운전자 폭행), 감정 5종(기쁨, 분노, 놀람, 슬픔, 중립), 탑승자 센서 데이터를 JSON으로 붙였습니다. 기준 성능은 TSN(ResNet) 이상행동 분류 F1 0.9892입니다. 전체 약 798GB이며, 탑승자 얼굴이 보이고, 연기로 재현한 행동이라 실제와 다를 수 있으며, 650번 인터페이스 데이터와 같은 구축 기관입니다.",
+ "detail_en": "About 500k in-car videos (mp4) of front and rear seats and 2.5M images (jpg), with JSON boxes, 7 abnormal behaviours (drowsy driving, drunk driving, searching for objects, phone call, phone use, vehicle control, assaulting the driver), 5 emotions (joy, anger, surprise, sadness, neutral) and occupant sensor data. Baseline: TSN (ResNet) abnormal-behaviour classification F1 0.9892. Total size is about 798 GB; occupants' faces are visible; behaviours are acted, so they may differ from reality; same organisation as dataset 650.",
+ "amount_ko": "영상 약 50만 건, 사진 250만 장",
+ "amount_en": "about 500k videos, 2.5M images",
+ "labels_ko": "사람 위치 상자, 위험 행동 종류, 감정, 탑승자 센서 값",
+ "labels_en": "boxes around occupants, behaviour class, emotion, sensor values",
+ "status": "full-run-2026-11-02"
+}

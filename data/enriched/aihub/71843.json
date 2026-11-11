@@ -1,0 +1,29 @@
+{
+ "dataset_id": "71843",
+ "title_en": "Intellectual property law LLM pretraining and instruction-tuning data",
+ "summary_ko": "특허·상표 등 지식재산권법의 판결문·법령·심결례·심결문·유권해석 문서와, 이를 바탕으로 만든 법률 상담 질의응답·요약 데이터로 구성됩니다(총 100,700건). 지식재산 분야 법률 상담 챗봇이나 유사 사례 검색 LLM에 쓸 수 있습니다.",
+ "summary_en": "Intellectual-property-law rulings, statutes, tribunal decisions and official interpretations, plus legal-advice QA and summaries built from them (100,700 items in total). For IP legal advice chatbots and similar-case search with LLMs.",
+ "contents_ko": "법률 원문(JSON) + 라벨(JSON: 질의응답, 요약).",
+ "contents_en": "Legal source text (JSON) + labels (JSON: QA, summaries).",
+ "modalities": ["text"],
+ "tasks": ["question_answering", "summarization", "dialogue", "retrieval_recommendation"],
+ "topics": [{"ko": "법률", "en": "Law"}, {"ko": "지식재산", "en": "Intellectual property"}],
+ "keywords_ko": ["지식재산권법", "특허 심결", "판결문", "Instruction tuning", "법률 상담", "LLM"],
+ "keywords_en": ["IP law", "patent trial decisions", "court rulings", "instruction tuning", "legal advice", "LLM"],
+ "labels": ["question-answer", "summary"],
+ "file_formats": ["json"],
+ "scale_ko": "전체 100,700건(심결문 85,180건·판결문 9,820건 등), 요약 5,500건",
+ "classes_example": ["판결문", "법령", "심결례", "심결문", "유권해석"],
+ "baseline": [],
+ "difficulty": "intermediate",
+ "difficulty_note_ko": "약 0.7GB 텍스트입니다. LLM 미세조정에는 GPU가 필요합니다.",
+ "skills_needed_ko": ["파이썬", "Hugging Face", "LLM 미세조정(LoRA)", "RAG"],
+ "caveats_ko": ["심결문이 대부분이라 판결문·법령은 적음", "Context Precision 55% 이상은 목표값이며 실제 결과는 팩에 없음", "71841 민사법 데이터와 같은 기관·구조"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "심결문 요약", "title_en": "Trial decision summariser", "desc_ko": "특허·상표 심결문을 짧게 요약하는 모델을 미세조정합니다.", "desc_en": "Fine-tune a model to summarise IP trial decisions."},
+  {"level": "capstone", "title_ko": "지식재산 상담 챗봇", "title_en": "IP advice chatbot", "desc_ko": "상표·특허 분쟁 질문에 비슷한 심결을 근거로 답하는 챗봇을 만듭니다.", "desc_en": "Answer IP questions citing similar decisions."},
+  {"level": "research", "title_ko": "법 분야 간 전이 학습", "title_en": "Cross-domain legal transfer", "desc_ko": "민사법 데이터로 학습한 모델이 지식재산 분야에 얼마나 통하는지 연구합니다.", "desc_en": "Study transfer from civil-law to IP-law tuning."}
+ ],
+ "doc_used": true,
+ "uncertain": ["질의응답 건수 합계 확인 필요"]
+}

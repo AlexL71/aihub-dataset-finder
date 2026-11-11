@@ -1,0 +1,32 @@
+{
+ "dataset_id": "593",
+ "title_en": "Smart aquaculture farm integrated data (scallops)",
+ "summary_ko": "촬영 박스로 찍은 가리비 이미지 약 12만 장에 개체 상자·다각형과 따개비·다모류 같은 부착 생물 여부를 표시하고, 수온 같은 해양 환경 데이터를 함께 담은 데이터입니다. 가리비 선별이나 성장 예측 AI에 쓸 수 있습니다.",
+ "summary_en": "About 120,000 images of scallops taken in a measuring box, with boxes and polygons per scallop and whether fouling organisms (barnacles, polychaete worms) are attached, plus ocean environment data such as water temperature. For AI that sorts scallops or predicts their growth.",
+ "contents_ko": "가리비 이미지(jpg) + JSON(상자, 다각형, 부착 생물) + 해양 환경 데이터.",
+ "contents_en": "Scallop images (jpg) + JSON (boxes, polygons, fouling organisms) + ocean environment data.",
+ "modalities": ["image", "sensor"],
+ "tasks": ["object_detection", "segmentation", "anomaly_detection", "forecasting"],
+ "topics": [{"ko": "수산 양식", "en": "Aquaculture"}, {"ko": "해양", "en": "Ocean"}],
+ "keywords_ko": ["가리비", "스마트 양식", "부착 생물", "따개비", "수산업"],
+ "keywords_en": ["scallops", "smart aquaculture", "fouling organisms", "barnacles", "fisheries"],
+ "labels": ["bounding box", "polygon", "fouling type"],
+ "file_formats": ["jpg", "json"],
+ "scale_ko": "이미지 약 12만 장, 해양 환경 12만 세트",
+ "classes_example": ["정상", "따개비", "다모류"],
+ "baseline": [
+  {"task": "scallop detection", "model": "uncertain (\"General (A1)\")", "metric": "mAP", "value": "87.07%"},
+  {"task": "scallop segmentation", "model": "HRNet", "metric": "mIoU", "value": "98.85%"}
+ ],
+ "difficulty": "beginner",
+ "difficulty_note_ko": "약 12GB로 작고 배경이 단순한 촬영 박스 사진이라 탐지 입문에 좋습니다.",
+ "skills_needed_ko": ["파이썬", "YOLO 탐지", "분할 모델"],
+ "caveats_ko": ["정상 개체가 약 5%뿐이라 크게 치우침", "594번 굴 데이터와 같은 구축 기관·구조", "탐지 모델 이름이 'General (A1)'로만 적혀 있음"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "부착 생물 탐지", "title_en": "Fouling detection", "desc_ko": "가리비 사진에서 따개비·다모류를 찾습니다.", "desc_en": "Find barnacles and worms on scallop photos."},
+  {"level": "capstone", "title_ko": "가리비 자동 선별기", "title_en": "Automatic scallop sorter", "desc_ko": "크기와 부착 생물로 가리비 등급을 나누는 선별 화면을 만듭니다.", "desc_en": "Grade scallops by size and fouling in a sorting screen."},
+  {"level": "research", "title_ko": "환경으로 성장 예측", "title_en": "Growth from environment", "desc_ko": "수온 등 환경 데이터로 가리비 크기 변화를 예측합니다.", "desc_en": "Predict scallop size change from ocean environment data."}
+ ],
+ "doc_used": true,
+ "uncertain": ["detection model name"]
+}

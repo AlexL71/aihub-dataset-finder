@@ -1,0 +1,49 @@
+{
+ "id": "economics",
+ "name_ko": "경제통계학부(경제정책학전공)",
+ "name_en": "Economic Policy (School of Economics and Statistics)",
+ "college": "공공정책대학",
+ "summary_ko": "미시·거시경제, 화폐금융, 재정, 국제경제, 경제사를 배우고 계량경제학으로 경제 데이터를 분석해 정책을 평가하는 전공입니다. 졸업생은 금융권, 대기업, 공기업, 정부 연구기관, 언론 등으로 진출합니다.",
+ "summary_en": "Covers micro- and macroeconomics, money and finance, public finance, international economics and economic history, and uses econometrics to analyse economic data and evaluate policy. Graduates go to finance, large companies, public enterprises, government research institutes and the press.",
+ "key_topics": ["미시경제·시장 원리", "거시경제·경기변동", "화폐·금융", "재정·조세", "국제무역·국제금융", "계량경제학·금융시계열", "노동·도시·환경경제", "경제사·한국경제", "소득분배·사회보장"],
+ "course_keywords": ["경제학원론:미시", "경제학원론:거시", "경제수학", "시장경제의원리", "거시경제학", "경제통계학", "도시경제이론", "경제사상사", "서구경제사", "한국경제사", "화폐·금융과경제활동", "현대재정의이론과현실", "계량경제학입문", "노동경제이론", "조세와국민경제", "게임이론입문", "산업조직론", "국제경제학:금융", "국제경제학:무역", "수리경제이론", "정보사회와경제", "경제성장의이해", "경제정책론", "법과경제", "계량경제학연습", "금융시계열입문", "소득재분배와사회보장제도", "경기변동입문", "동북아경제론", "자원·환경경제학"],
+ "curriculum_by_year": {
+  "1": ["한국경제의이해", "경제학원론:미시", "경제학원론:거시", "경제수학", "디지털리터러시 입문"],
+  "2": ["시장경제의원리", "거시경제학", "도시경제이론", "경제사상사", "서구경제사", "경제통계학", "시사경제영어", "해외경제사례분석"],
+  "3": ["게임이론입문", "노동경제이론", "산업조직론", "화폐·금융과경제활동", "정보사회와경제", "경제개방과국민경제", "경제성장의이해", "현대재정의이론과현실", "경제정책론", "조세와국민경제", "계량경제학입문", "수리경제이론", "국제경제학", "한국경제사"],
+  "4": ["법과경제", "자원·환경경제학", "경기변동입문", "한국경제의거시분석", "동북아경제론", "비교경제제도론", "소득재분배와사회보장제도", "계량경제학연습", "금융시계열입문", "경제학세미나"]
+ },
+ "careers": ["은행·증권·보험 등 금융권(여신심사, 리스크관리, 애널리스트, 펀드매니저)", "대기업 기획·재무", "공기업·정부투자기관", "정부·국책 연구기관 경제연구원", "이코노미스트·경제부 기자", "퀀트 애널리스트·보험계리사", "대학원 진학"],
+ "research_areas": [],
+ "data_interests": [
+  {"topic_ko": "물가·고용·경기", "topic_en": "Prices, jobs and business cycles", "keywords": ["경제 지표", "시계열", "고용 통계"]},
+  {"topic_ko": "금융 시장", "topic_en": "Financial markets", "keywords": ["주가", "환율", "금리", "금융 뉴스"]},
+  {"topic_ko": "부동산과 도시", "topic_en": "Real estate and cities", "keywords": ["집값", "상권", "유동인구"]},
+  {"topic_ko": "경제 뉴스와 정책 문서", "topic_en": "Economic news and policy documents", "keywords": ["뉴스 감성", "보고서 요약", "정책 텍스트"]},
+  {"topic_ko": "소득과 복지", "topic_en": "Income and welfare", "keywords": ["가계 소득", "사회보장", "불평등"]},
+  {"topic_ko": "무역", "topic_en": "Trade", "keywords": ["수출입", "품목 분류"]},
+  {"topic_ko": "환경과 에너지 경제", "topic_en": "Environment and energy", "keywords": ["에너지 소비", "탄소 배출"]}
+ ],
+ "interest_questions": [
+  {"q_ko": "경제의 어떤 주제가 궁금한가요?", "q_en": "Which economic topic interests you?",
+   "options": [{"ko": "금융·투자", "en": "Finance and investment"}, {"ko": "부동산·도시", "en": "Real estate and cities"}, {"ko": "일자리·소득·복지", "en": "Jobs, income and welfare"}, {"ko": "무역·국제경제", "en": "Trade and global economy"}, {"ko": "환경·에너지", "en": "Environment and energy"}]},
+  {"q_ko": "다뤄보고 싶은 자료는?", "q_en": "What data would you like to use?",
+   "options": [{"ko": "경제 지표 시계열", "en": "Economic indicator time series"}, {"ko": "경제 뉴스·보고서", "en": "Economic news and reports"}, {"ko": "지역·부동산 데이터", "en": "Regional and housing data"}, {"ko": "설문·가계 자료", "en": "Surveys and household data"}]}
+ ],
+ "project_themes": ["경제 뉴스 감성으로 주가 흐름 설명하기", "지역별 상권 데이터로 창업 입지 분석", "금융 보고서 자동 요약", "에너지 소비 예측"],
+ "data_skill_level": "medium",
+ "data_skill_note": "경제통계학, 계량경제학입문·연습, 금융시계열입문이 있어 통계 분석과 회귀분석 경험을 쌓습니다. 프로그래밍·머신러닝 과목은 따로 없습니다.",
+ "sources": [
+  {"kind": "page", "label": "학과소개", "url": "https://sejong.korea.ac.kr/economics/4702/subview.do"},
+  {"kind": "page", "label": "취업 및 진로", "url": "https://sejong.korea.ac.kr/economics/4704/subview.do"},
+  {"kind": "page", "label": "교과과정 소개", "url": "https://sejong.korea.ac.kr/economics/4708/subview.do"},
+  {"kind": "page", "label": "교과과정표", "url": "https://sejong.korea.ac.kr/economics/4734/subview.do"},
+  {"kind": "page", "label": "전공체계도", "url": "https://sejong.korea.ac.kr/economics/4711/subview.do"},
+  {"kind": "pdf", "label": "진로가이드(한국고용정보원, 2015)", "url": "https://sejong.korea.ac.kr/sites/economics/files/guide.pdf"},
+  {"kind": "pdf", "label": "전공역량기반 교육과정", "url": "https://sejong.korea.ac.kr/pdfView/economics/21/34/fileDownload.do"}
+ ],
+ "inferred_fields": ["data_interests", "interest_questions", "project_themes"],
+ "gaps": ["The career guide is a general national booklet for economics (2015), not specific to this department; only its job list was used."],
+ "version": 1,
+ "created": "2026-10-29"
+}

@@ -1,0 +1,29 @@
+{
+ "dataset_id": "71389",
+ "title_en": "Digital K-Art data",
+ "summary_ko": "박물관·전시장·개인 소장품을 직접 촬영한 한국 미술품·유물의 2D 이미지 약 22만 장과 3D 모델 약 1만 개입니다. 서예·회화·공예·조각·건축·악기 6개 유형과 시대(고대·근대·현대)가 붙어 있고 한국어·영어 설명이 있어 가상 박물관, 작품 자동 분류에 쓸 수 있습니다.",
+ "summary_en": "About 221k 2D images and 10k 3D models of Korean artworks and artefacts photographed at museums, exhibitions and private collections. Tagged with 6 types (calligraphy, painting, craft, sculpture, architecture, instruments) and era, with Korean/English metadata, for virtual museums and artwork classification.",
+ "contents_ko": "작품 이미지(jpg) + 3D 모델(obj) + JSON(2D 다각형·3D 큐보이드 영역, 작품 유형, 시대, 한·영 메타데이터).",
+ "contents_en": "Artwork image (jpg) + 3D model (obj) + JSON (2D polygons, 3D cuboids, artwork type, era, Korean/English metadata).",
+ "modalities": ["image", "3d"],
+ "tasks": ["image_classification", "segmentation", "3d_reconstruction"],
+ "topics": [{"ko": "문화유산·미술", "en": "Cultural heritage and art"}, {"ko": "가상 박물관·메타버스", "en": "Virtual museums and metaverse"}],
+ "keywords_ko": ["K-Art", "문화유산", "미술품", "3D 모델", "가상 박물관", "서예"],
+ "keywords_en": ["K-Art", "cultural heritage", "artworks", "3D models", "virtual museum", "calligraphy"],
+ "labels": ["polygon", "cuboid", "artwork type", "era", "metadata"],
+ "file_formats": ["jpg", "obj", "json"],
+ "scale_ko": "2D 이미지 221,291장, 3D 모델 10,097개, 작품 유형 6종(3D는 4종)",
+ "classes_example": ["서예", "회화", "공예", "조각", "건축", "악기", "고대", "근대", "현대"],
+ "baseline": [{"task": "2D artwork classification", "model": "SE-ResNet", "metric": "Accuracy", "value": "97.88%"}, {"task": "3D artwork classification", "model": "PointNet", "metric": "Accuracy", "value": "85.86%"}],
+ "difficulty": "intermediate",
+ "difficulty_note_ko": "2D 분류는 쉬운 편이지만 3D(obj)는 점군 처리 지식이 필요하고 전체 약 493GB입니다. 2D부터 시작하세요.",
+ "skills_needed_ko": ["파이썬", "이미지 분류(CNN)", "3D 점군 처리(PointNet)"],
+ "caveats_ko": ["전체 약 493GB", "2D는 서예·회화가 80% 이상, 3D는 조각이 약 80%로 불균형이 큼", "2D 이미지 수가 221,291과 221,392 등으로 표마다 조금씩 다름"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "작품 유형 분류", "title_en": "Artwork type classifier", "desc_ko": "사진을 보고 서예·회화·공예 등 작품 유형을 맞힙니다.", "desc_en": "Classify photos into calligraphy, painting, craft and other types."},
+  {"level": "capstone", "title_ko": "웹 가상 전시관", "title_en": "Web virtual exhibition", "desc_ko": "3D 모델과 한·영 설명으로 웹에서 둘러보는 가상 전시관을 만듭니다.", "desc_en": "Build a web virtual gallery with 3D models and bilingual captions."},
+  {"level": "research", "title_ko": "작품 시대 추정", "title_en": "Artwork era estimation", "desc_ko": "이미지만으로 고대·근대·현대 작품을 구분할 수 있는지 연구합니다.", "desc_en": "Study whether images alone reveal an artwork's era."}
+ ],
+ "doc_used": true,
+ "uncertain": []
+}

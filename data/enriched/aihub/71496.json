@@ -1,0 +1,33 @@
+{
+ "dataset_id": "71496",
+ "title_en": "Korean–multilingual translation corpus (basic science)",
+ "summary_ko": "수학·물리·화학·지구과학·생명과학 분야 도서·논문·간행물에서 뽑은 한국어 문장 30만 8천여 건을 영어·중국어·일본어로 번역한 말뭉치입니다. 기초과학 분야 다국어 기계번역 모델 학습에 쓸 수 있습니다.",
+ "summary_en": "About 308,000 Korean sentences from basic-science books, papers and publications (math, physics, chemistry, earth science, life science) translated into English, Chinese and Japanese. For multilingual machine translation in basic science.",
+ "contents_ko": "JSON(한국어 원문 + 영어·중국어·일본어 중 하나의 번역문, 분야 정보).",
+ "contents_en": "JSON (Korean source + English, Chinese or Japanese translation, field info).",
+ "modalities": ["text"],
+ "tasks": ["translation"],
+ "topics": [{"ko": "기계번역", "en": "Machine translation"}, {"ko": "기초과학", "en": "Basic science"}],
+ "keywords_ko": ["번역 말뭉치", "한영 번역", "한중 번역", "한일 번역", "기초과학", "병렬 말뭉치"],
+ "keywords_en": ["translation corpus", "Korean-English", "Korean-Chinese", "Korean-Japanese", "basic science", "parallel corpus"],
+ "labels": ["translation pair", "field"],
+ "file_formats": ["json"],
+ "scale_ko": "308,064건 (영어 127,567, 중국어 90,051, 일본어 90,489)",
+ "classes_example": ["수학", "물리학", "화학", "지구과학", "생명과학"],
+ "baseline": [
+  {"task": "Korean-Chinese translation", "model": "Transformer", "metric": "BLEU", "value": "0.5075"},
+  {"task": "Korean-Japanese translation", "model": "Transformer", "metric": "BLEU", "value": "0.7639"},
+  {"task": "Korean-English translation", "model": "Transformer", "metric": "BLEU", "value": "0.3662"}
+ ],
+ "difficulty": "intermediate",
+ "difficulty_note_ko": "용량이 작아(약 50MB) 다루기 쉽지만 번역 모델 학습에는 GPU와 시간이 필요합니다.",
+ "skills_needed_ko": ["파이썬", "Transformer 번역 모델", "토큰화"],
+ "caveats_ko": ["성능표에 한-중(0.4608)·한-일(0.7178) 값이 한 번 더 있어 어느 값이 최종인지 불분명", "같은 시리즈의 다른 분야 번역 말뭉치와 구조가 비슷함"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "과학 용어 다국어 사전", "title_en": "Multilingual science glossary", "desc_ko": "병렬 문장에서 과학 용어 짝을 뽑아 한·영·중·일 용어집을 만듭니다.", "desc_en": "Extract science term pairs into a four-language glossary."},
+  {"level": "capstone", "title_ko": "과학 교재 번역 도우미", "title_en": "Science textbook translation helper", "desc_ko": "사전학습 번역 모델을 미세조정해 과학 문장 번역 웹 도구를 만듭니다.", "desc_en": "Fine-tune a translation model into a science-text web tool."},
+  {"level": "research", "title_ko": "언어쌍별 번역 난이도", "title_en": "Translation difficulty by language pair", "desc_ko": "한영 번역 점수가 한일보다 낮은 이유를 분석합니다.", "desc_en": "Analyse why Korean-English scores lower than Korean-Japanese."}
+ ],
+ "doc_used": true,
+ "uncertain": []
+}

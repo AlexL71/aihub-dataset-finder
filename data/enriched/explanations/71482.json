@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71482",
+ "easy_ko": "프로 축구 등 330경기 영상에 선수 위치와 움직임, 팀 기록, 빠른 역습이나 코너킥 같은 공격과 수비 작전 상황을 표시한 데이터입니다. 경기 영상을 분석하고 작전을 살펴보거나 승부를 예측하는 AI에 쓸 수 있습니다.",
+ "easy_en": "Video of 330 football matches, including professional games, marking player positions and movement, team stats and attacking or defending tactics such as fast counter-attacks or corner kicks. You can use it to build AI that analyses match video, studies tactics or predicts results.",
+ "detail_ko": "K리그 등 프로 경기와 직접 촬영한 축구 330경기 영상(mp4, 초당 5프레임)과 프레임 이미지(jpg)로 만든 이미지 분석 데이터 87,838건(전체 89,158건)에 선수 상자·추적, 팀 스탯 이벤트, 전술 상황(빠른역습, 빌드업-크로스형, 빌드업-중앙침투형, 세트피스-코너킥, 최종수비라인 구축, 대인압박 등)을 JSON으로 붙였습니다. 기준 성능은 전술 상황 분류 R3D 정확도 61.2%, 팀 스탯 분류 R3D 정확도 90.09%, 선수 탐지 YOLO v5 F1 0.9767입니다. 전술 분류 정확도는 기준을 겨우 넘고, 페이지에 농구·핸드볼 경기 수도 적혀 있어 범위를 확인해야 하며, 방송 영상 기반이라 이용 조건 확인이 필요합니다.",
+ "detail_en": "Video (mp4, 5 frames per second) of 330 football matches from the K League and self-filmed games, with frame images (jpg) turned into 87,838 image-analysis items (89,158 in total), and JSON player boxes and tracking, team stat events and tactical situations (fast counter, build-up by cross, build-up through the centre, corner kick, final defensive line, man-marking press and others). Baselines: tactical classification with R3D, accuracy 61.2%; team stat classification with R3D, accuracy 90.09%; player detection with YOLO v5, F1 0.9767. Tactical accuracy only just clears its target; the page also lists basketball and handball match counts, so check the scope; it is based on broadcast video, so check the terms of use.",
+ "amount_ko": "축구 330경기 영상, 이미지 분석 87,838건(전체 89,158건)",
+ "amount_en": "330 football match videos, 87,838 image-analysis items (89,158 in total)",
+ "labels_ko": "선수 위치 상자와 추적, 작전 상황, 팀 기록",
+ "labels_en": "player boxes and tracking, tactic class, stat events",
+ "status": "full-run-2026-11-02"
+}

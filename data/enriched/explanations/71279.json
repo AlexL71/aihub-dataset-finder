@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71279",
+ "easy_ko": "여러 사진을 색(파스텔·발광), 질감(딱딱함·거침), 재질(금속·유리), 모양(하트) 같은 성질에 따라 묶고, '같은 성질을 가진 사진 고르기' 같은 문제와 정답을 만든 데이터입니다. 사진을 보고 사람처럼 생각해서 답을 고르는 AI를 만들 수 있습니다.",
+ "easy_en": "Many photos grouped by visual property, such as colour (pastel, glowing), texture (hard, rough), material (metal, glass) and shape (heart), with puzzles like 'pick the image with the same property' and their answers. You can build AI that looks at pictures and reasons like a person to pick the right answer.",
+ "detail_ko": "이미지 약 46.5만 장(jpg)를 성질 40종으로 묶고 선택형 시각 추론 문제 6만 개와 정답을 JSON으로 붙였습니다. 기준 성능은 ViT 이미지 분류 F1 0.8003입니다. 전체 약 600GB이며, 스톡 이미지(게티이미지뱅크)가 포함되어 사용 조건 확인이 필요하고, 71286·71288·71291번 데이터와 같은 구축 기관·구조입니다.",
+ "detail_en": "About 465k images (jpg) grouped into 40 visual property classes, with 60k multiple-choice visual reasoning questions and answers in JSON. Baseline: ViT image classification F1 0.8003. Total size is about 600GB; stock images (Getty Images Bank) are included, so check the usage terms; same organisation and structure as datasets 71286·71288·71291.",
+ "amount_ko": "사진 약 46.5만 장, 문제 6만 개, 유형 40종",
+ "amount_en": "About 465k images, 60k questions, 40 types",
+ "labels_ko": "성질 분류, 고르기 문제와 정답",
+ "labels_en": "visual property class, multiple-choice question and answer",
+ "status": "full-run-2026-11-02"
+}

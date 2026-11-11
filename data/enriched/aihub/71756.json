@@ -1,0 +1,29 @@
+{
+ "dataset_id": "71756",
+ "title_en": "Synthetic embryo image data",
+ "summary_ko": "참여병원 5곳의 실제 배아 이미지(현미경 3일차·5일차, 타임랩스 2cell·4cell·8cell·포배기)를 바탕으로 생성 모델로 만든 합성 배아 이미지 데이터로, 총 61,133건이 범주 라벨과 함께 있습니다. 의료 교육 자료, 배아 자동 등급 분류 연구에 쓸 수 있습니다.",
+ "summary_en": "Synthetic embryo images generated from real embryo images of 5 hospitals (microscope day 3 and day 5; time-lapse 2-cell, 4-cell, 8-cell, blastocyst), 61,133 items with category labels. For medical education and automatic embryo grading research.",
+ "contents_ko": "배아 이미지(jpg, png) + JSON(배양 단계 범주 라벨).",
+ "contents_en": "Embryo images (jpg, png) + JSON (culture stage category labels).",
+ "modalities": ["image"],
+ "tasks": ["image_generation", "image_classification"],
+ "topics": [{"ko": "의료 영상", "en": "Medical imaging"}, {"ko": "난임·생식의학", "en": "Fertility and reproductive medicine"}],
+ "keywords_ko": ["배아", "합성 데이터", "확산 모델", "타임랩스", "포배기", "등급 분류"],
+ "keywords_en": ["embryo", "synthetic data", "diffusion model", "time-lapse", "blastocyst", "grading"],
+ "labels": ["image category"],
+ "file_formats": ["jpg", "png", "json"],
+ "scale_ko": "61,133건(표상 원천 약 2.6만 건 + 합성 6만 건)",
+ "classes_example": ["3일차 배아", "5일차 배아", "2cell", "4cell", "8cell", "포배기"],
+ "baseline": [],
+ "difficulty": "intermediate",
+ "difficulty_note_ko": "약 42GB로 분류 실습은 쉽지만, 합성 이미지 생성은 확산 모델 지식이 필요합니다.",
+ "skills_needed_ko": ["파이썬", "이미지 분류(ResNet 등)", "확산 모델(Latent Diffusion) 기초"],
+ "caveats_ko": ["페이지에 성능 점수 표가 없음(Latent Diffusion·분류 모델 소개만 있음)", "표의 원천 2.6만+합성 6만 건과 구축량 61,133건이 맞지 않음", "합성 이미지라 실제 진료 판단에 바로 쓰면 안 됨"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "배아 배양 단계 분류", "title_en": "Embryo stage classifier", "desc_ko": "배아 이미지를 2cell·4cell·8cell·포배기로 분류합니다.", "desc_en": "Classify embryo images into 2-cell, 4-cell, 8-cell or blastocyst."},
+  {"level": "capstone", "title_ko": "합성 vs 실제 비교", "title_en": "Synthetic vs real comparison", "desc_ko": "합성 이미지를 더했을 때 분류 정확도가 얼마나 오르는지 비교합니다.", "desc_en": "Compare classifier accuracy with and without synthetic images."},
+  {"level": "research", "title_ko": "의료 합성 데이터 품질 평가", "title_en": "Medical synthetic data quality", "desc_ko": "합성 배아 이미지의 사실성과 다양성을 평가하는 지표를 연구합니다.", "desc_en": "Study metrics for realism and diversity of synthetic embryo images."}
+ ],
+ "doc_used": true,
+ "uncertain": ["합성·원천 이미지 비율(표마다 다름)"]
+}

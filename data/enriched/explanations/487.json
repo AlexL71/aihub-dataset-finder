@@ -1,0 +1,12 @@
+{
+ "dataset_id": "487",
+ "easy_ko": "운동, 일, 여행, 여가 같은 일상 영상의 장면마다 사람이나 물건(앞쪽)과 배경을 나눠 표시하고, 일부는 사람이 없는 진짜 배경 장면도 함께 담은 데이터입니다. 영상에서 필요 없는 사람이나 물건을 지우고 빈자리를 자연스럽게 채우는 편집 AI를 만들 수 있습니다.",
+ "easy_en": "Frames from everyday videos (exercise, work, travel, leisure) with people and objects in front separated from the background, plus some true background frames with nobody in them. You can build editing AI that erases unwanted people or objects from video and fills the gap naturally.",
+ "detail_ko": "일상 영상 프레임 516,705장(jpg/png)에 전경·배경 분할 마스크(JSON)와 정답 배경 프레임 3,447장을 붙였으며, 전경 크기는 10% 미만부터 30% 이상까지 다양합니다. 기준 성능은 기록에서 확인되지 않습니다. 정답 배경이 3,447장으로 적습니다.",
+ "detail_en": "516,705 frames (jpg/png) from everyday videos with foreground/background masks (JSON) and 3,447 ground-truth background frames; foreground size ranges from under 10% to over 30% of the frame. No baseline is visible in the record. Ground-truth backgrounds are few (3,447).",
+ "amount_ko": "영상 장면 약 51.7만 장, 진짜 배경 3,447장",
+ "amount_en": "about 517k frames, 3,447 true backgrounds",
+ "labels_ko": "앞쪽 물체와 배경 영역, 진짜 배경 장면",
+ "labels_en": "foreground/background masks, ground-truth background frames",
+ "status": "full-run-2026-11-02"
+}

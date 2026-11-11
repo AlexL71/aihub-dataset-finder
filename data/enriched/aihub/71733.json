@@ -1,0 +1,29 @@
+{
+ "dataset_id": "71733",
+ "title_en": "Traditional hanbok 3D data",
+ "summary_ko": "전통 한복(웃옷·아래옷·겉옷·덧옷)과 장신구(쓰개·몸장식 등)의 2D 이미지 약 126만 장과 3D 모델 1,135개입니다. 디자인·색상·문양과 시대·신분·착장 상황 정보가 분할 영역·캡션으로 붙어 있어 한복 디자인 분석, 가상 한복 입어 보기 AI에 쓸 수 있습니다.",
+ "summary_en": "About 1.26 million 2D images and 1,135 3D models of traditional hanbok garments and accessories, with segmentation and captions describing design, colour, pattern, era, social status and occasion. For hanbok design analysis and virtual try-on.",
+ "contents_ko": "이미지(png) + 3D 모델(fbx + png 맵) + JSON(분할 영역, 메타정보) + 이미지 캡션 JSON.",
+ "contents_en": "Image (png) + 3D model (fbx + png maps) + JSON (segmentation, metadata) + caption JSON.",
+ "modalities": ["image", "3d", "text"],
+ "tasks": ["segmentation", "image_captioning", "image_generation"],
+ "topics": [{"ko": "전통 문화·패션", "en": "Traditional culture and fashion"}, {"ko": "가상 착용·메타버스", "en": "Virtual try-on and metaverse"}],
+ "keywords_ko": ["한복", "전통 복식", "가상 착용", "3D 모델", "문양", "패션 디자인"],
+ "keywords_en": ["hanbok", "traditional costume", "virtual try-on", "3D models", "patterns", "fashion design"],
+ "labels": ["segmentation", "captions", "metadata"],
+ "file_formats": ["png", "fbx", "json"],
+ "scale_ko": "2D 이미지 1,264,797장, 3D 모델 1,135개, 캡션 63,226건",
+ "classes_example": ["웃옷", "아래옷", "겉옷", "덧옷", "쓰개", "몸장식"],
+ "baseline": [],
+ "difficulty": "intermediate",
+ "difficulty_note_ko": "분할 실습에 좋고 약 255GB입니다. 2D 이미지 일부부터 시작하세요.",
+ "skills_needed_ko": ["파이썬", "분할 모델(Mask R-CNN)", "3D 도구 기초"],
+ "caveats_ko": ["페이지에 성능 점수 표가 없음(Mask R-CNN 소개만 있음)", "분포 표의 비율이 100%를 넘는 값(107.8% 등)으로 적혀 있음", "캡션은 일부 이미지(63,226건)에만 있음"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "한복 부위 분할", "title_en": "Hanbok part segmentation", "desc_ko": "한복 이미지에서 저고리·치마 등 부위를 분할합니다.", "desc_en": "Segment parts like jeogori and skirt in hanbok images."},
+  {"level": "capstone", "title_ko": "가상 한복 입어 보기", "title_en": "Virtual hanbok try-on", "desc_ko": "사용자 사진에 한복 이미지를 합성해 입어 보는 웹 데모를 만듭니다.", "desc_en": "Overlay hanbok on a user photo in a web demo."},
+  {"level": "research", "title_ko": "시대별 한복 스타일 생성", "title_en": "Era-conditioned hanbok generation", "desc_ko": "시대·신분 조건을 주고 한복 디자인을 생성하는 모델을 연구합니다.", "desc_en": "Study generating hanbok designs conditioned on era and status."}
+ ],
+ "doc_used": true,
+ "uncertain": []
+}

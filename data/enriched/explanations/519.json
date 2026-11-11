@@ -1,0 +1,12 @@
+{
+ "dataset_id": "519",
+ "easy_ko": "제주에서 자라는 먹을 수 있거나 약으로 쓰는 식물을 꽃, 열매, 잎 앞면, 잎 뒷면으로 나눠 찍고, 사진마다 식물 영역과 이름을 표시한 데이터입니다. 사진으로 식물 이름을 알려 주는 식물도감 앱을 만들 수 있습니다.",
+ "easy_en": "Photos of edible and medicinal plants native to Jeju, taken separately of flowers, fruit and the front and back of leaves, each with the plant area outlined and the species named. You can build a plant-guide app that names a plant from a photo.",
+ "detail_ko": "제주 식용·약용 자생식물 60종의 부위별 이미지 30만 장(꽃 9,600, 열매 23,400, 잎 앞면 133,500 등, jpg)에 대략적 폴리곤, 식물 종, 부위(꽃, 열매, 잎 앞면, 잎 뒷면)를 JSON으로 붙였습니다. 식물 60종 이름과 기준 성능은 기록에서 확인되지 않습니다. 부위별 수량이 크게 달라 꽃 사진이 적습니다.",
+ "detail_en": "300k jpg images of 60 edible and medicinal plant species native to Jeju, split by part (flowers 9,600, fruit 23,400, leaf fronts 133,500 and more), with JSON coarse polygons, species and part (flower, fruit, leaf front, leaf back). The 60 species names and a baseline are not visible in the record. Counts vary widely by part; flowers are scarce.",
+ "amount_ko": "사진 30만 장, 식물 60종",
+ "amount_en": "300k images, 60 species",
+ "labels_ko": "식물 영역(대략적 테두리), 식물 이름, 부위(꽃·열매·잎)",
+ "labels_en": "coarse plant outlines, species, plant part (flower, fruit, leaf)",
+ "status": "full-run-2026-11-02"
+}

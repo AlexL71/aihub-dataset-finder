@@ -1,0 +1,129 @@
+{
+ "dataset_id": "71617",
+ "title_en": "Dynamic object perception data from 4D imaging radar",
+ "summary_ko": "자율주행차에 단 4D 이미징 레이다와 카메라·라이다로 고속도로·도심을 달리며 모은 데이터 약 106만 장입니다. 승용차·버스·트럭·오토바이·보행자·특수차량·자전거가 3D 상자로 표시되어 있고 악천후 장면도 있어, 레이다 기반·센서 융합 물체 인식 AI에 쓸 수 있습니다.",
+ "summary_en": "About 1.06 million frames from 4D imaging radar plus camera and lidar on highways and city roads, with cars, buses, trucks, motorcycles, pedestrians, special vehicles and bicycles in 3D boxes, including bad weather. For radar-based and sensor-fusion object detection.",
+ "contents_ko": "카메라 이미지(png) + 라이다 점군(pcd) + 레이다 데이터(txt) + JSON(3D 상자, 객체 종류, 날씨).",
+ "contents_en": "Camera image (png) + lidar point cloud (pcd) + radar data (txt) + JSON (3D boxes, object type, weather).",
+ "modalities": [
+  "image",
+  "3d",
+  "sensor"
+ ],
+ "tasks": [
+  "object_detection"
+ ],
+ "topics": [
+  {
+   "ko": "자율주행",
+   "en": "Autonomous driving"
+  },
+  {
+   "ko": "레이다 센서",
+   "en": "Radar sensing"
+  }
+ ],
+ "keywords_ko": [
+  "4D 레이다",
+  "자율주행",
+  "센서 융합",
+  "3D 객체 탐지",
+  "악천후",
+  "라이다"
+ ],
+ "keywords_en": [
+  "4D radar",
+  "autonomous driving",
+  "sensor fusion",
+  "3D object detection",
+  "bad weather",
+  "lidar"
+ ],
+ "labels": [
+  "3D bounding box",
+  "object class",
+  "projected 2D box",
+  "camera visibility"
+ ],
+ "file_formats": [
+  "png",
+  "pcd",
+  "txt",
+  "json"
+ ],
+ "scale_ko": "1,060,700장(프레임), 동적 객체 7종, 맑음 48%·야간 32%·우천·안개·미세먼지 포함",
+ "classes_example": [
+  "승용차",
+  "버스",
+  "트럭",
+  "오토바이",
+  "보행자",
+  "특수목적차량",
+  "자전거"
+ ],
+ "baseline": [
+  {
+   "task": "카메라 객체 탐지(일반)",
+   "model": "CenterNet/CenterPoint/CenterFusion",
+   "metric": "mAP",
+   "value": "48.91%"
+  },
+  {
+   "task": "라이다 객체 탐지(일반)",
+   "model": "CenterPoint",
+   "metric": "mAP",
+   "value": "71.6%"
+  },
+  {
+   "task": "레이다 객체 탐지(일반)",
+   "model": "CenterPoint",
+   "metric": "mAP",
+   "value": "51.34%"
+  },
+  {
+   "task": "융합 객체 탐지(악천후)",
+   "model": "CenterFusion",
+   "metric": "mAP",
+   "value": "55.13%"
+  }
+ ],
+ "difficulty": "advanced",
+ "difficulty_note_ko": "레이다·라이다·카메라를 함께 다뤄야 하고 전체 약 4.3TB입니다. 한 센서·한 날씨만 받아 시작하세요.",
+ "skills_needed_ko": [
+  "파이썬",
+  "3D 점군 처리(OpenPCDet)",
+  "센서 융합",
+  "레이다 데이터 기초"
+ ],
+ "caveats_ko": [
+  "전체 약 4.3TB",
+  "레이다·라이다 점군(pcd)과 카메라(png)를 함께 다뤄야 해 센서 융합 지식 필요",
+  "71619(주행환경 객체)와 같은 기관·센서 구성",
+  "설명서는 스캔 이미지라 쓰지 않고 페이지 정보만 사용"
+ ],
+ "project_ideas": [
+  {
+   "level": "beginner",
+   "title_ko": "레이다·라이다 점 비교",
+   "title_en": "Radar vs lidar points",
+   "desc_ko": "같은 장면의 레이다·라이다 점을 겹쳐 보며 밀도 차이를 비교합니다.",
+   "desc_en": "Overlay radar and lidar points and compare density."
+  },
+  {
+   "level": "capstone",
+   "title_ko": "악천후 차량 탐지기",
+   "title_en": "Bad-weather vehicle detector",
+   "desc_ko": "레이다 기반 탐지기를 만들어 비·안개에서 카메라 탐지와 비교합니다.",
+   "desc_en": "Build a radar detector and compare it with camera detection in rain and fog."
+  },
+  {
+   "level": "research",
+   "title_ko": "레이다-카메라 융합",
+   "title_en": "Radar-camera fusion",
+   "desc_ko": "값싼 레이다+카메라 조합이 라이다를 얼마나 대체할 수 있는지 연구합니다.",
+   "desc_en": "Study how far radar+camera can replace lidar."
+  }
+ ],
+ "doc_used": false,
+ "uncertain": []
+}

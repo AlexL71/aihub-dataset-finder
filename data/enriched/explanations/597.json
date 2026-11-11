@@ -1,0 +1,12 @@
+{
+ "dataset_id": "597",
+ "easy_ko": "블랙박스와 CCTV로 찍힌 교통사고 영상마다 차와 사람 위치, 사고가 난 곳(직선 도로·교차로·횡단보도 등), 사고 종류(차끼리, 차와 보행자, 차와 자전거)를 표시한 데이터입니다. 사고 상황을 분류하고 누구 잘못이 더 큰지 추정하는 AI를 만들 수 있습니다.",
+ "easy_en": "Dashcam and CCTV videos of traffic accidents, marked with vehicles and people, where the crash happened (straight road, intersection, crosswalk and more) and the accident type (car vs. car, car vs. pedestrian, car vs. bicycle). You can build AI that classifies accidents and estimates who was more at fault.",
+ "detail_ko": "블랙박스·CCTV 교통사고 영상 약 2.2만 건(mp4)과 이미지 약 328만 장(png)에 차량·사람 바운딩박스, 사고 장소(직선 도로, 신호 있는 사거리, T자형·회전 교차로, 신호 없는 횡단보도, 주차장 등), 사고 유형(차대차·차대보행자·차대자전거), 과실 정보를 JSON으로 붙였습니다. 기준 성능은 VTN 과실 상황 영상 분류 F1 0.7591, DetectoRS 객체 탐지 mAP 83.4%입니다. 전체 약 3.9TB이며 번호판·사람이 보일 수 있고, 차대차 직선 도로 사고가 42%로 치우쳐 있으며 과실 비율 라벨 형식은 기록에서 확인되지 않습니다.",
+ "detail_en": "About 22k accident videos (mp4) from dashcams and CCTV and about 3.28M images (png), with JSON vehicle and person boxes, accident location (straight road, signalled crossroads, T-junction, roundabout, unsignalled crosswalk, parking lot and more), accident type (car–car, car–pedestrian, car–bicycle) and fault info. Baselines: VTN fault-situation video classification F1 0.7591, DetectoRS object detection mAP 83.4%. Total size is about 3.9 TB; plates and people may be visible; car–car straight-road crashes make up 42%; the fault-ratio label format is not visible in the record.",
+ "amount_ko": "사고 영상 약 2.2만 건, 이미지 약 328만 장",
+ "amount_en": "about 22k accident videos, about 3.28M images",
+ "labels_ko": "차·사람 위치 상자, 사고 장소, 사고 종류, 잘못 정도 정보",
+ "labels_en": "boxes around vehicles and people, accident location, accident type, fault info",
+ "status": "full-run-2026-11-02"
+}

@@ -1,0 +1,29 @@
+{
+ "dataset_id": "71962",
+ "title_en": "Molecular toxicity reasoning data",
+ "summary_ko": "Tox21 공개 데이터(사람 세포 대상 생물검정)에서 고른 화합물 5,000개에 SMILES·RDKit 분자 특징과 중요도, 그리고 세포독성 여부를 단계적으로 설명하는 한국어 사고과정(CoT, 답에 이르는 추론 단계) 문장을 붙인 데이터입니다. 간(HepG2)·유방암(MCF-7)·신장(HEK293) 등 세포주별로 구성되며, 분자 구조로 독성을 추론하는 화학 특화 LLM에 쓸 수 있습니다.",
+ "summary_en": "5,000 compounds from the public Tox21 human-cell bioassay data, with SMILES and RDKit features and their importance, plus Korean chain-of-thought (step-by-step reasoning) sentences explaining cytotoxicity. Split by cell line such as liver (HepG2), breast cancer (MCF-7) and kidney (HEK293). For chemistry LLMs that reason about toxicity from molecular structure.",
+ "contents_ko": "JSON(SMILES, 분자 특징·중요도, 독성 여부, 사고과정 설명문).",
+ "contents_en": "JSON (SMILES, molecular features and importance, toxicity, reasoning text).",
+ "modalities": ["text", "tabular"],
+ "tasks": ["text_generation", "tabular_prediction", "text_classification"],
+ "topics": [{"ko": "화학·신약", "en": "Chemistry and drug discovery"}, {"ko": "독성 평가", "en": "Toxicity assessment"}],
+ "keywords_ko": ["분자 독성", "Tox21", "SMILES", "RDKit", "세포독성", "사고과정"],
+ "keywords_en": ["molecular toxicity", "Tox21", "SMILES", "RDKit", "cytotoxicity", "chain of thought"],
+ "labels": ["toxicity", "feature importance", "chain-of-thought text"],
+ "file_formats": ["json"],
+ "scale_ko": "원천 5,000개, CoT 라벨 5,000개(HepG2 1,951, MCF-7 1,177, HEK293 463 등)",
+ "classes_example": ["HepG2 (Liver)", "MCF-7 (Breast Cancer)", "HEK293 (Kidney)", "HeLa (Cervical Cancer)"],
+ "baseline": [],
+ "difficulty": "intermediate",
+ "difficulty_note_ko": "약 0.02GB로 매우 작지만 화학 지식과 LLM 미세조정 경험이 필요합니다.",
+ "skills_needed_ko": ["파이썬", "RDKit(분자 처리)", "LLM 미세조정"],
+ "caveats_ko": ["Tox21 원본에서 가공한 것이라 원본과 겹침", "독성·비독성 비율이 팩 앞부분에 없음", "성능 지표 값이 팩 앞부분에 없음"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "분자 독성 분류", "title_en": "Toxicity classifier", "desc_ko": "RDKit 특징으로 세포독성 여부를 분류합니다.", "desc_en": "Classify cytotoxicity from RDKit features."},
+  {"level": "capstone", "title_ko": "독성 설명 도우미", "title_en": "Toxicity explainer", "desc_ko": "SMILES를 넣으면 독성 가능성과 근거를 설명해 주는 도구를 만듭니다.", "desc_en": "Explain likely toxicity and reasons for a SMILES."},
+  {"level": "research", "title_ko": "CoT가 화학 추론에 주는 효과", "title_en": "CoT for chemical reasoning", "desc_ko": "사고과정 학습이 LLM의 독성 예측 정확도를 높이는지 연구합니다.", "desc_en": "Test whether CoT training improves toxicity prediction."}
+ ],
+ "doc_used": true,
+ "uncertain": ["독성 라벨 비율"]
+}

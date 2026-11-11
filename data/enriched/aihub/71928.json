@@ -1,0 +1,29 @@
+{
+ "dataset_id": "71928",
+ "title_en": "Autonomous vehicle static object recognition and update automation data (upcycling)",
+ "summary_ko": "기존 AI 허브 자율주행 데이터를 다시 가공(업사이클링)한 도로 이미지 5,032장에, 이미지-텍스트 관계 설명과 질의응답 라벨 10,064건을 붙인 데이터입니다. 공사중·조도 급변·터널·일반 구간으로 나뉘어 있어 자율주행차의 도로 상황 이해와 시각 질의응답 AI에 쓸 수 있습니다.",
+ "summary_en": "5,032 road images re-processed (upcycled) from existing AI Hub driving data, with 10,064 labels of image-text relation descriptions and QA. Split into construction, sudden lighting change, tunnel and normal sections, for road-situation understanding and visual QA in autonomous driving.",
+ "contents_ko": "도로 이미지(jpg) + JSON(이미지-텍스트 관계, 질의응답).",
+ "contents_en": "Road image (jpg) + JSON (image-text relations, QA).",
+ "modalities": ["image", "text"],
+ "tasks": ["visual_qa", "image_captioning"],
+ "topics": [{"ko": "자율주행", "en": "Autonomous driving"}, {"ko": "도로 시설물 관리", "en": "Road facility management"}],
+ "keywords_ko": ["자율주행", "정적 객체", "도로 공사", "터널", "시각 질의응답", "업사이클링"],
+ "keywords_en": ["autonomous driving", "static objects", "road construction", "tunnel", "visual QA", "upcycling"],
+ "labels": ["image-text relation", "question-answer"],
+ "file_formats": ["jpg", "json"],
+ "scale_ko": "이미지 5,032장, 라벨 10,064건(관계·QA 각 5,032)",
+ "classes_example": ["공사중", "조도 급변구간", "터널구간", "일반구간"],
+ "baseline": [],
+ "difficulty": "beginner",
+ "difficulty_note_ko": "약 2.2GB로 가볍습니다. 작은 비전-언어 모델로 질의응답 실습하기 좋습니다.",
+ "skills_needed_ko": ["파이썬", "비전-언어 모델(VLM) 기초", "이미지 캡션 평가"],
+ "caveats_ko": ["페이지에 성능 점수 표와 모델 설명이 없음", "통계 표 수량(10,064)은 이미지가 아니라 라벨 수 기준", "기존 AI 허브 데이터를 재가공한 것이라 원본 데이터와 이미지가 겹칠 수 있음"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "도로 구간 분류", "title_en": "Road section classifier", "desc_ko": "이미지가 공사중·터널·일반 구간 중 무엇인지 분류합니다.", "desc_en": "Classify images as construction, tunnel or normal."},
+  {"level": "capstone", "title_ko": "도로 상황 질의응답", "title_en": "Road situation QA", "desc_ko": "'앞에 공사 중인가?' 같은 질문에 답하는 VLM 데모를 만듭니다.", "desc_en": "Answer questions like 'is there construction ahead?' with a VLM."},
+  {"level": "research", "title_ko": "지도 정보 자동 갱신", "title_en": "Automatic map updates", "desc_ko": "주행 이미지로 공사 구간 같은 정적 정보 변화를 찾아 지도에 반영하는 방법을 연구합니다.", "desc_en": "Study updating maps with static changes found in driving images."}
+ ],
+ "doc_used": true,
+ "uncertain": ["원본이 된 AI 허브 데이터셋 이름"]
+}

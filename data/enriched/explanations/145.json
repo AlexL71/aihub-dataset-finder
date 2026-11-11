@@ -1,0 +1,12 @@
+{
+ "dataset_id": "145",
+ "easy_ko": "축사에서 소, 돼지, 닭을 찍은 사진마다 동물 위치, 머리·다리 같은 몸의 주요 점, 서 있는지 누워 있는지, 닭이 얼마나 모여 있는지를 표시한 데이터입니다. 가축이 아픈지, 평소와 다르게 행동하는지 자동으로 살피는 스마트 축사 AI를 만들 수 있습니다.",
+ "easy_en": "Photos of cattle, pigs and chickens in barns, each marked with where the animals are, their key body points, whether they are standing or lying down, and how crowded the chickens are. You can build smart-farm AI that checks automatically whether animals are sick or behaving unusually.",
+ "detail_ko": "소(송아지·번식우·비육우), 돼지(모돈·자돈·비육돈), 닭(육계·토종닭) 축사 영상 이미지 21만 건(각 7만 건, jpg)으로, JSON에 개체 바운딩박스, 부위 키포인트(소 17곳, 돼지 14곳), 자세 클래스(서 있기, 가슴 대고 눕기, 옆으로 눕기), 닭 밀집도가 있습니다. 기준 성능은 소 키포인트 Stacked Hourglass PCK 87.57%, 돼지 키포인트 MSPN PCK 95.1%, 닭 밀집도 분류 macro F1 0.804입니다. 축사 카메라 각도가 고정되어 다른 농장에서는 성능이 다를 수 있습니다.",
+ "detail_en": "210k barn images (70k each) of cattle (calves, breeding, fattening), pigs (sows, piglets, finishers) and chickens (broilers, native), with JSON bounding boxes, body keypoints (17 for cattle, 14 for pigs), posture classes (standing, lying on chest, lying on side) and chicken density. Baselines: cattle keypoints Stacked Hourglass PCK 87.57%, pig keypoints MSPN PCK 95.1%, chicken density macro F1 0.804. Fixed camera angles mean results may differ on other farms.",
+ "amount_ko": "이미지 21만 건(소·돼지·닭 각 7만)",
+ "amount_en": "210k images (70k each for cattle, pigs, chickens)",
+ "labels_ko": "동물 위치 상자, 몸의 주요 점(키포인트), 자세, 닭 모임 정도",
+ "labels_en": "boxes around animals, body key points, posture, chicken density",
+ "status": "full-run-2026-11-02"
+}

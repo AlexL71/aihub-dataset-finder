@@ -1,0 +1,12 @@
+{
+ "dataset_id": "117",
+ "easy_ko": "일상 대화와 토론 같은 한국어 대화 글마다 내용을 한 문장으로 줄인 요약을 붙인 데이터입니다. 메신저 대화나 상담 내용, 회의 내용을 짧게 정리해 주는 AI를 만들 수 있습니다.",
+ "easy_en": "Korean conversations, such as daily chats and debates, each with a one-sentence summary. You can build AI that briefly sums up messenger chats, customer-service conversations or meetings.",
+ "detail_ko": "한국어 대화 원문 35만 건(화자별 발화)에 한 문장 요약문 35만 건과 메타정보(화자 정보, 대화 유형, 주제)를 JSON으로 붙였습니다. 대화체는 문어체보다 생략·변형이 많아 문맥을 고려한 요약이 필요합니다. 기준 성능은 Transformer / GPT ROUGE-1 20.9%로 낮아 개선 여지가 큽니다.",
+ "detail_en": "350k Korean dialogues (utterances by speaker) with 350k one-sentence summaries and metadata (speaker info, conversation type, topic) in JSON. Dialogue has more omissions and variation than written text, so summarisation must use context. Baseline: Transformer / GPT ROUGE-1 20.9%, low, so there is much room for improvement.",
+ "amount_ko": "대화 35만 건, 요약 35만 건",
+ "amount_en": "350k dialogues, 350k summaries",
+ "labels_ko": "한 문장 요약, 대화 주제·유형, 말한 사람 정보",
+ "labels_en": "one-sentence summary, topic and conversation type, speaker info",
+ "status": "full-run-2026-11-02"
+}

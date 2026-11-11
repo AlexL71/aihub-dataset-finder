@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71513",
+ "easy_ko": "양식장에서 키우는 송어와 산천어를 찍은 사진에 물고기 위치와 입, 지느러미 같은 몸 부위 점을 표시하고, 물 상태와 사육 기록을 함께 담은 데이터입니다. 물고기가 얼마나 자랐는지 재고 양식장을 자동으로 관리하는 AI에 쓸 수 있습니다.",
+ "easy_en": "Photos of farmed trout and masu salmon with each fish's position and body points such as the mouth and fins marked, plus water-quality and farm-care records. You can use it to build AI that measures how much fish have grown and runs fish farms automatically.",
+ "detail_ko": "양식장 송어·산천어의 군집 이미지 142,871건과 개체 이미지 2,984건(jpg)에 상자, 입술·지느러미 등 키포인트, 종, 성장 단계(치어, 중성어, 성어)를 JSON으로 붙이고, 수질환경 1,008,981건과 사육관리 4,590건을 함께 제공합니다. 기준 성능은 EfficientDet D2 물고기 탐지 mAP 85.62%, HRNet 키포인트 탐지 OKS 82.31%입니다. 전체 약 73GB이고, 개체 이미지는 약 3천 건으로 적으며, 수질·사육관리 데이터의 파일 형식은 팩에 자세히 없습니다.",
+ "detail_en": "142,871 group images and 2,984 single-fish images (jpg) of farmed trout and masu salmon, with JSON boxes, keypoints such as lips and fins, species and growth stage (fry, juvenile, adult), plus 1,008,981 water-quality records and 4,590 farm-care records. Baselines: fish detection with EfficientDet D2, mAP 85.62%; keypoint detection with HRNet, OKS 82.31%. Total size is about 73 GB. Single-fish images are few (about 3,000), and the file format of the water and care data is not detailed in the pack.",
+ "amount_ko": "군집 이미지 142,871건, 개체 이미지 2,984건, 수질환경 1,008,981건, 사육관리 4,590건",
+ "amount_en": "142,871 group images, 2,984 single-fish images, 1,008,981 water records, 4,590 care records",
+ "labels_ko": "물고기 위치 상자, 몸 부위 점, 종류, 성장 단계",
+ "labels_en": "bounding boxes, keypoints, species, growth stage",
+ "status": "full-run-2026-11-02"
+}

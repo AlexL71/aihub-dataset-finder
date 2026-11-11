@@ -1,0 +1,12 @@
+{
+ "dataset_id": "479",
+ "easy_ko": "인쇄된 것과 손으로 쓴 수학 문제 사진에서 수식, 그래프·도형·집합 그림, 낙서 기호를 찾아 글자와 구조로 바꿔 둔 데이터입니다. 수학 문제를 찍으면 식을 읽어 주는 공부 앱이나 문제 풀이 앱을 만들 수 있습니다.",
+ "easy_en": "Printed and handwritten maths images in which formulas, graphs, shapes, set diagrams and doodle symbols are found and turned into text and structure. You can build study apps that read the formulas from a photo of a maths problem, or problem-solving apps.",
+ "detail_ko": "인쇄체 38,997장과 손글씨 149,268장(식별 데이터셋 각 38,990장, png)에 수식 LaTeX 텍스트, 도형(그래프, 평면도형, 집합) 구성 정보, 낙서기호, 영역 분할을 JSON으로 붙였습니다. 기준 성능은 기록에서 확인되지 않습니다.",
+ "detail_en": "38,997 printed and 149,268 handwritten images (png; 38,990 each in the recognition sets) with JSON LaTeX text for formulas, structure info for diagrams (graphs, plane figures, sets), doodle symbols and region segmentation. No baseline is visible in the record.",
+ "amount_ko": "인쇄 약 3.9만 장, 손글씨 약 14.9만 장",
+ "amount_en": "about 39k printed, about 149k handwritten images",
+ "labels_ko": "수식 글(LaTeX), 도형 구성 정보, 영역 표시",
+ "labels_en": "formula text (LaTeX), diagram structure, region masks",
+ "status": "full-run-2026-11-02"
+}

@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71696",
+ "easy_ko": "어린이 동화와 소설 약 10만 편의 이야기 글에 줄거리 요약을 붙인 데이터입니다. 한국어 어린이 동화의 줄거리를 새로 만들거나 요약하는 AI에 쓸 수 있습니다.",
+ "easy_en": "About 100,000 children's stories and novels, each with a plot summary. You can use it to build AI that writes or summarises storylines for Korean children's stories.",
+ "detail_ko": "어린이 동화·소설 원문 100,000건에 줄거리 101,087건(추출 요약 3문장 138,579건, 생성 요약 1문장 101,087건; JSON)을 붙였고, 분류는 의사소통, 자연탐구, 사회관계, 예술경험, 신체운동/건강입니다. 평가지표는 ROUGE·BERTScore F1이지만 값은 팩 앞부분에 없고, 원본 도서의 이용 조건을 확인해야 합니다. 71695 동화 삽화 생성 데이터와 같은 기관·분류 체계입니다.",
+ "detail_en": "100,000 children's stories and novels with 101,087 storylines (138,579 three-sentence extractive summaries, 101,087 one-sentence abstractive summaries; JSON), classified as communication, nature exploration, social relations, art experience and physical activity/health. Metrics are ROUGE and BERTScore F1, but values are not in the pack; check the terms of use for the source books. Same builder and classification as the illustration set 71695.",
+ "amount_ko": "원문 100,000건, 줄거리 101,087건",
+ "amount_en": "100,000 source texts, 101,087 storylines",
+ "labels_ko": "줄거리 요약",
+ "labels_en": "summary",
+ "status": "full-run-2026-11-02"
+}

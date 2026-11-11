@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71328",
+ "easy_ko": "연안 바닷속에서 찍은 사진마다 바다 숲을 망가뜨리는 성게, 소라, 고둥, 군소, 불가사리와 감태·모자반 같은 해조류의 위치와 영역을 표시한 데이터입니다. 바닷속 생태계가 망가지는지 살피는 수중 감시 AI를 만들 수 있습니다.",
+ "easy_en": "Underwater photos from coastal waters with sea urchins, turban shells, whelks, sea hares and starfish that damage seaweed forests, and seaweeds such as kelp and sargassum, boxed and outlined. You can build underwater monitoring AI that checks whether coastal ecosystems are being damaged.",
+ "detail_ko": "제주·동해·거제·부산 등 연안 수중 이미지 약 18.5만 장(jpg, 화질 개선 전·후)에 해양생물 7종(보라성게, 말똥성게, 소라, 고둥, 군소, 별불가사리, 아무르불가사리)과 해조류 2종(감태, 모자반), 객체 약 82만 개의 바운딩박스·분할을 JSON으로 붙이고 계측 데이터를 함께 제공합니다. 기준 성능은 Swin-L 해양생물 분할 mIoU 81.06%입니다. 전체 약 555GB이며, 보라성게·고둥이 많아 종별로 치우치고 수집 지역이 거제·동해에 몰려 있습니다.",
+ "detail_en": "About 185k underwater images (jpg, before and after enhancement) from coasts such as Jeju, the East Sea, Geoje and Busan, with JSON boxes and segmentation for about 820k objects of 7 marine animals (purple and green sea urchins, turban shell, whelk, sea hare, two starfish species) and 2 seaweeds (kelp, sargassum), plus measurement data. Baseline: Swin-L segmentation mIoU 81.06%. Total size is about 555 GB; purple urchins and whelks dominate; most data comes from Geoje and the East Sea.",
+ "amount_ko": "물속 사진 약 18.5만 장, 생물 약 82만 개, 9종",
+ "amount_en": "about 185k underwater images, about 820k objects, 9 species",
+ "labels_ko": "바다 생물 위치 상자·영역, 생물 종류",
+ "labels_en": "boxes and masks around marine organisms, species",
+ "status": "full-run-2026-11-02"
+}

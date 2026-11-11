@@ -1,0 +1,32 @@
+{
+ "dataset_id": "633",
+ "title_en": "Medicine and cosmetics packaging OCR data",
+ "summary_ko": "의약품·화장품 포장 상자를 직접 찍은 이미지 5만 쌍에 제품명·성분표·복용량·유통기한·사용법 같은 글자 위치(4점 다각형·상자)와 내용을 표시한 데이터입니다. 포장을 찍으면 성분과 주의사항을 알려주는 OCR 앱에 쓸 수 있습니다.",
+ "summary_en": "50,000 photos of medicine and cosmetics packaging with text such as product name, ingredient list, dosage, expiry date and directions marked by 4-point polygons and boxes plus the text. For OCR apps that read ingredients and warnings from a photo of the package.",
+ "contents_ko": "포장 이미지(jpg) + JSON(글자 영역, 텍스트).",
+ "contents_en": "Packaging images (jpg) + JSON (text regions, text).",
+ "modalities": ["image", "text"],
+ "tasks": ["ocr", "information_extraction"],
+ "topics": [{"ko": "의약품·헬스케어", "en": "Medicines and healthcare"}, {"ko": "화장품·뷰티", "en": "Cosmetics and beauty"}],
+ "keywords_ko": ["의약품 포장", "화장품 성분", "OCR", "성분표", "유통기한"],
+ "keywords_en": ["medicine packaging", "cosmetic ingredients", "OCR", "ingredient list", "expiry date"],
+ "labels": ["4-point polygon", "bounding box", "transcription"],
+ "file_formats": ["jpg", "json"],
+ "scale_ko": "포장 이미지 5만 쌍(의약품·화장품)",
+ "classes_example": ["의약품 패키지", "화장품 패키지"],
+ "baseline": [
+  {"task": "cosmetics packaging OCR", "model": "custom (Mask R-CNN based)", "metric": "F1", "value": "0.9522"},
+  {"task": "medicine packaging OCR", "model": "custom (Mask R-CNN based)", "metric": "F1", "value": "0.9449"}
+ ],
+ "difficulty": "intermediate",
+ "difficulty_note_ko": "약 152GB이고 포장 곡면·반사 때문에 글자가 휘어 보입니다.",
+ "skills_needed_ko": ["파이썬", "OCR 모델(텍스트 탐지·인식)"],
+ "caveats_ko": ["전체 약 152GB", "통계표가 팩에 없음", "632번 금융 문서 OCR과 같은 구축 기관", "의료 판단에 그대로 쓰면 안 됨"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "유통기한 읽기", "title_en": "Expiry-date reader", "desc_ko": "포장 사진에서 유통기한 글자를 찾아 읽습니다.", "desc_en": "Find and read the expiry date on a package."},
+  {"level": "capstone", "title_ko": "성분 알레르기 체크 앱", "title_en": "Ingredient allergy checker", "desc_ko": "화장품 성분표를 읽어 내 알레르기 성분이 있는지 알려줍니다.", "desc_en": "Read ingredient lists and flag the user's allergens."},
+  {"level": "research", "title_ko": "휘어진 글자 인식", "title_en": "Curved-text recognition", "desc_ko": "원통형 용기의 휘어진 글자 인식을 높이는 방법을 연구합니다.", "desc_en": "Improve recognition of curved text on round containers."}
+ ],
+ "doc_used": true,
+ "uncertain": []
+}

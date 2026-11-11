@@ -1,0 +1,33 @@
+{
+ "dataset_id": "71370",
+ "title_en": "Groundwater quantity and quality data",
+ "summary_ko": "전국 지하수 관측망의 수위·전기전도도 같은 자동 측정값 약 2억 건, 수질 데이터, 기상·지하수 이용량·공간 정보를 모은 약 2.6억 건의 표 데이터입니다. 지하수 수위와 수질을 예측하는 AI나 지하수 관리 연구에 쓸 수 있습니다.",
+ "summary_en": "About 260 million records from Korea's groundwater monitoring network: about 200 million automatic readings (water level, electrical conductivity and more), water-quality data, and weather, groundwater-use and spatial info. For AI that forecasts groundwater level and quality, or groundwater management research.",
+ "contents_ko": "관측·수질·이용량 표(csv) + JSON + 일부 이미지(jpg).",
+ "contents_en": "Monitoring, quality and usage tables (csv) + JSON + some images (jpg).",
+ "modalities": ["tabular", "sensor"],
+ "tasks": ["forecasting", "tabular_prediction"],
+ "topics": [{"ko": "수질·수자원", "en": "Water quality and resources"}, {"ko": "환경 모니터링", "en": "Environmental monitoring"}],
+ "keywords_ko": ["지하수", "수위 예측", "수질", "관측망", "환경영향평가"],
+ "keywords_en": ["groundwater", "water level forecasting", "water quality", "monitoring network", "environmental impact"],
+ "labels": ["water level", "water quality", "usage"],
+ "file_formats": ["csv", "json", "jpg"],
+ "scale_ko": "측정 데이터 약 2.6억 건",
+ "classes_example": [],
+ "baseline": [
+  {"task": "groundwater level forecasting (rainfall/surface water)", "model": "DLinear", "metric": "MAPE", "value": "1.12%"},
+  {"task": "groundwater quality forecasting", "model": "DLinear", "metric": "MAPE", "value": "0.61%"},
+  {"task": "monitoring-well level forecasting (usage)", "model": "DLinear", "metric": "MAPE", "value": "2.97%"}
+ ],
+ "difficulty": "intermediate",
+ "difficulty_note_ko": "압축 파일은 약 1.2GB지만 행이 매우 많아 지점별로 나눠 다뤄야 합니다.",
+ "skills_needed_ko": ["파이썬", "판다스·시계열 처리", "시계열 예측 모델"],
+ "caveats_ko": ["행 수가 매우 많아 메모리 관리 필요", "71352번 상수원·녹조 데이터와 같은 구축 기관", "개요 설명이 매우 짧음"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "관측정 수위 시각화", "title_en": "Well level dashboard", "desc_ko": "관측정별 지하수 수위 변화를 그래프로 보여줍니다.", "desc_en": "Plot groundwater levels per monitoring well."},
+  {"level": "capstone", "title_ko": "가뭄기 지하수 경보", "title_en": "Drought groundwater alert", "desc_ko": "강수량과 이용량으로 수위 하락을 예측해 경고합니다.", "desc_en": "Forecast falling levels from rainfall and use and warn early."},
+  {"level": "research", "title_ko": "지역 간 수위 연계 분석", "title_en": "Spatial groundwater modelling", "desc_ko": "주변 관측정 정보를 함께 써서 예측을 높이는 방법을 연구합니다.", "desc_en": "Use nearby wells together to improve forecasts."}
+ ],
+ "doc_used": true,
+ "uncertain": []
+}

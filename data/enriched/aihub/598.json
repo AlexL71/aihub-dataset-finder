@@ -1,0 +1,29 @@
+{
+ "dataset_id": "598",
+ "title_en": "Vehicle-view multimodal data for parking space search",
+ "summary_ko": "실내·실외 주차장과 도로에서 차량에 단 카메라와 라이다(LiDAR, 레이저로 거리를 재는 센서)로 모은 이미지 약 50만 장에 차량·주차선 등 2D 상자, 분할 영역, 3D 상자를 표시한 데이터입니다. 자율주차 차량이 빈 주차 공간과 주행 가능 영역을 찾는 AI에 쓸 수 있습니다.",
+ "summary_en": "About 500,000 images plus LiDAR (laser distance sensor) point clouds collected from a car in indoor and outdoor parking lots and roads, with 2D boxes, segmentation and 3D boxes. For self-parking AI that finds free parking spaces and drivable areas.",
+ "contents_ko": "카메라 이미지(jpg) + 라이다 포인트클라우드(pcd) + JSON(2D 상자, 분할, 3D 상자).",
+ "contents_en": "Camera images (jpg) + LiDAR point clouds (pcd) + JSON (2D boxes, segmentation, 3D boxes).",
+ "modalities": ["image", "3d"],
+ "tasks": ["object_detection", "segmentation"],
+ "topics": [{"ko": "자율주행", "en": "Autonomous driving"}, {"ko": "주차", "en": "Parking"}],
+ "keywords_ko": ["자율주차", "주차 공간", "라이다", "포인트클라우드", "3D 탐지"],
+ "keywords_en": ["self-parking", "parking spaces", "LiDAR", "point cloud", "3D detection"],
+ "labels": ["2D bounding box", "segmentation", "3D bounding box"],
+ "file_formats": ["jpg", "pcd", "json"],
+ "scale_ko": "2D 상자 약 50만, 분할 약 15만, 3D 상자 약 12만 건",
+ "classes_example": ["도로 위 장애물 > 주차블럭", "도로 위 장애물 > 과속방지턱", "도로 위 장애물 > 라비콘", "설비 > 전기차 충전설비", "신호 > 주차안내 표지판", "전용 주차장 > 장애인", "차량 > 자동차", "보행자 > 성인", "보행자 > 어린이", "이륜차 > 자전거", "면적 > 주차 가능 공간", "면적 > 주행 가능 공간"],
+ "baseline": [],
+ "difficulty": "advanced",
+ "difficulty_note_ko": "카메라와 라이다를 함께 다뤄야 하고 전체 약 289GB입니다.",
+ "skills_needed_ko": ["파이썬", "Mask R-CNN", "포인트클라우드 3D 탐지"],
+ "caveats_ko": ["전체 약 289GB", "번호판·사람이 보일 수 있음", "성능 지표 표가 팩에서 비어 있음"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "주차장 차량 탐지", "title_en": "Parking-lot car detection", "desc_ko": "주차장 사진에서 차량을 찾아 상자로 표시합니다.", "desc_en": "Detect cars in parking-lot photos."},
+  {"level": "capstone", "title_ko": "빈 주차 공간 찾기", "title_en": "Free-space finder", "desc_ko": "주차선과 차량 분할 결과로 빈 칸을 표시합니다.", "desc_en": "Mark empty bays from parking-line and car segmentation."},
+  {"level": "research", "title_ko": "카메라+라이다 융합 3D 탐지", "title_en": "Camera-LiDAR fusion", "desc_ko": "영상과 포인트클라우드를 합치면 3D 탐지가 얼마나 좋아지는지 연구합니다.", "desc_en": "Study how fusing images and point clouds improves 3D detection."}
+ ],
+ "doc_used": true,
+ "uncertain": ["baseline values"]
+}

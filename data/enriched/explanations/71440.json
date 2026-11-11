@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71440",
+ "easy_ko": "특허청 상표 자료에서 모은 로고 그림을 그림 마크, 캐릭터, 그림과 글자를 합친 마크, 글자 마크로 나누고 어떤 산업의 로고인지 설명을 붙인 데이터입니다. 브랜드 느낌을 글로 적으면 로고를 그려 주는 AI를 만들 수 있지만, 상표권 문제를 조심해야 합니다.",
+ "easy_en": "Logo images from Korean trademark office records, sorted into symbol marks, characters, combination marks and word marks, with descriptions of the industry each logo belongs to. You can build AI that draws a logo from a written brand concept, but trademark rights must be respected.",
+ "detail_ko": "특허청 상표 자료의 로고 이미지 583,725장(png; 심볼 마크 약 21만, 캐릭터 약 11만, 콤비네이션 마크, 워드마크)에 바운딩박스, 로고 종류 4종, 산업군 12개, 텍스트 설명을 JSON으로 붙였습니다. 기준 성능은 GAN 로고 생성 FID 62.14(낮을수록 좋음)입니다. 원천이 상표 데이터라 생성 결과의 상표권 문제에 주의해야 하며, 전체 약 57GB이고 로고 종류별 수량 차이가 있습니다.",
+ "detail_en": "583,725 logo images (png) from Korean trademark office data (about 210k symbol marks, 110k characters, plus combination marks and word marks), with JSON boxes, 4 logo types, 12 industry groups and text descriptions. Baseline: GAN logo generation FID 62.14 (lower is better). The source is trademark data, so generated logos may raise trademark issues; total size is about 57 GB; counts differ by logo type.",
+ "amount_ko": "로고 그림 583,725장, 로고 종류 4종, 산업 12개",
+ "amount_en": "583,725 logos, 4 logo types, 12 industries",
+ "labels_ko": "로고 위치 상자, 로고 종류, 산업 분야, 설명 글",
+ "labels_en": "logo box, logo type, industry, text description",
+ "status": "full-run-2026-11-02"
+}

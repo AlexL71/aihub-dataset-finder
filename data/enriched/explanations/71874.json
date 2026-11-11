@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71874",
+ "easy_ko": "논문, 의료 정보 사이트, 진료 지침, 의학 교과서 같은 곳에서 모은 의학 글을 아주 많이 모으고, 의사가 함께 만든 의학 질문과 답 1만 5천여 쌍을 붙인 데이터입니다. 외과, 정신건강의학과, 피부과 같은 전문 분야의 의료 특화 AI를 학습시키고 평가하는 데 쓸 수 있습니다.",
+ "easy_en": "A very large amount of medical text from papers, health websites, clinical guidelines and textbooks, plus over 15,000 medical questions and answers made with doctors. You can use it to train and evaluate medical AI for specialties such as surgery, psychiatry and dermatology.",
+ "detail_ko": "학술 논문, 의료 정보 사이트, 정부·학회·국제기관 가이드라인, 의학 교과서, 동의서 등에서 모은 원천 텍스트 120,673,006토큰과 의학 질의응답 15,286쌍(JSON: 진료과, 질문 유형, 답변)으로, 진료과는 외과, 예방의학, 정신건강의학과, 신경과/신경외과, 피부과, 안과, 이비인후과 등입니다. 페이지에 성능 점수 표가 없고(KorMedMCQA로 테스트한다는 소개만 있음), 외과(3,731쌍)가 많고 피부과·예방의학은 700여 쌍으로 적으며, 의료 답변을 실제 진료에 그대로 쓰면 안 됩니다.",
+ "detail_en": "120,673,006 tokens of source text from papers, health-information sites, government, society and international guidelines, medical textbooks and consent forms, plus 15,286 medical question-answer pairs (JSON: specialty, question type, answer), covering specialties such as surgery, preventive medicine, psychiatry, neurology/neurosurgery, dermatology, ophthalmology and ENT. There is no score table (only that KorMedMCQA is used for testing); surgery (3,731 pairs) dominates while dermatology and preventive medicine have only about 700 each. The answers must not be used as real medical care.",
+ "amount_ko": "원천 120,673,006토큰, 질의응답 15,286쌍",
+ "amount_en": "120,673,006 tokens of source text, 15,286 QA pairs",
+ "labels_ko": "질문과 답, 진료과, 질문 유형",
+ "labels_en": "question-answer, specialty, question type",
+ "status": "full-run-2026-11-02"
+}

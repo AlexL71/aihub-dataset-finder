@@ -1,0 +1,29 @@
+{
+ "dataset_id": "617",
+ "title_en": "Abstract image data for sketch and icon recognition",
+ "summary_ko": "디자인에 쓰이는 물체 1,002종을 픽토그램(아이콘)·일러스트·스케치(선 그림)로 표현한 추상 이미지 약 53만 장에 물체 이름과 상자, 설명 텍스트를 붙인 데이터입니다. 그림이나 아이콘이 무엇을 뜻하는지 알아보거나 비슷한 아이콘을 찾는 AI에 쓸 수 있습니다.",
+ "summary_en": "About 530,000 abstract images (pictograms/icons, illustrations, line sketches) of 1,002 kinds of objects used in design, with object names, boxes and text descriptions. For AI that recognises what a drawing or icon shows, or finds similar icons.",
+ "contents_ko": "추상 이미지(jpg) + JSON(물체 이름, 상자, 설명 텍스트, 이미지 유형).",
+ "contents_en": "Abstract images (jpg) + JSON (object name, box, description, image type).",
+ "modalities": ["image", "text"],
+ "tasks": ["image_classification", "object_detection", "retrieval_recommendation"],
+ "topics": [{"ko": "디자인", "en": "Design"}, {"ko": "그림·아이콘", "en": "Drawings and icons"}],
+ "keywords_ko": ["아이콘", "스케치", "픽토그램", "일러스트", "디자인 검색"],
+ "keywords_en": ["icons", "sketches", "pictograms", "illustrations", "design search"],
+ "labels": ["object class", "bounding box", "text description", "image type"],
+ "file_formats": ["jpg", "json"],
+ "scale_ko": "추상 이미지 약 53만 장, 물체 1,002종, 유형 3종",
+ "classes_example": ["픽토그램(아이콘)", "일러스트레이션", "스케치(라인드로잉)"],
+ "baseline": [{"task": "abstract image classification", "model": "ResNet-101", "metric": "top-5 accuracy", "value": "95.3%"}],
+ "difficulty": "beginner",
+ "difficulty_note_ko": "약 37GB이고 이미지가 단순해 분류 입문에 좋습니다. 클래스가 1,002개로 많습니다.",
+ "skills_needed_ko": ["파이썬", "CNN 이미지 분류"],
+ "caveats_ko": ["클래스 1,002개라 클래스당 이미지가 적을 수 있음", "618번 몽타주 데이터와 같은 구축 기관"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "스케치 물체 분류", "title_en": "Sketch classifier", "desc_ko": "선 그림이 어떤 물체인지 분류합니다.", "desc_en": "Classify which object a line sketch shows."},
+  {"level": "capstone", "title_ko": "그려서 아이콘 찾기", "title_en": "Draw-to-find icon search", "desc_ko": "손으로 그린 그림과 비슷한 아이콘을 찾아주는 검색 앱을 만듭니다.", "desc_en": "Build a search app that finds icons similar to a hand drawing."},
+  {"level": "research", "title_ko": "스케치-아이콘 공통 임베딩", "title_en": "Shared sketch-icon embedding", "desc_ko": "스케치·일러스트·아이콘을 같은 공간에 놓는 임베딩을 연구합니다.", "desc_en": "Learn one embedding space for sketches, illustrations and icons."}
+ ],
+ "doc_used": true,
+ "uncertain": []
+}

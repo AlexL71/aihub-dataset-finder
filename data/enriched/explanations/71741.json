@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71741",
+ "easy_ko": "카페, 식당, 사무실, 아파트, 주택, 학원 같은 한국형 실내 공간 1,400개를 컴퓨터 속 입체 공간으로 만든 데이터로, 물체 영역과 거리(깊이) 정보가 붙어 있습니다. 집안일이나 심부름 같은 명령을 따르는 로봇이 실내 공간을 이해하도록 학습하는 데 쓸 수 있습니다.",
+ "easy_en": "1,400 Korean indoor spaces, such as cafés, restaurants, offices, apartments, houses and academies, built as three-dimensional computer spaces with object areas and depth information. You can use it to train robots that follow commands such as chores or errands to understand indoor spaces.",
+ "detail_ko": "카페 358·아파트 311·오피스 210 등 한국형 실내 공간 1,400개의 3D 공간(fbx)과 렌더링 이미지(png)에 의미·개체 분할, 깊이, 메타정보를 JSON으로 붙였습니다(공간 종류: 카페, 식당, 오피스, 바, 아파트, 주택, 오피스텔, 학원). 페이지에 성능 점수 표가 없고(Mask R-CNN 픽셀 정확도 목표 80%만 소개), 가상 3D 공간이라 실제 사진과 차이가 있습니다. 71742(물체)·71743(명령어)과 같은 시리즈입니다.",
+ "detail_en": "1,400 Korean indoor 3D spaces (fbx; such as 358 cafés, 311 apartments, 210 offices; types: café, restaurant, office, bar, apartment, house, officetel, academy) with rendered images (png) and JSON semantic and instance segmentation, depth and metadata. There is no score table (only a Mask R-CNN pixel-accuracy target of 80%), and being virtual, the spaces differ from real photos. Part of a series with 71742 (objects) and 71743 (commands).",
+ "amount_ko": "3D 공간 1,400개",
+ "amount_en": "1,400 3D spaces",
+ "labels_ko": "물체 영역(의미·개체), 깊이",
+ "labels_en": "semantic segmentation, instance segmentation, depth",
+ "status": "full-run-2026-11-02"
+}

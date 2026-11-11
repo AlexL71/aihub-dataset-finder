@@ -1,0 +1,32 @@
+{
+ "dataset_id": "78",
+ "title_en": "Fashion products and worn-outfit images",
+ "summary_ko": "단색 배경 스튜디오에서 모델이 옷을 입고 찍은 전신 사진 674만 장과 같은 옷의 제품 사진 4만 장입니다. 모델의 자세(관절)·신체 영역과 제품 영역이 표시되어 있고 제품-착용 사진 쌍 11.7만 개가 있어, 옷을 가상으로 입혀 보는 AI(가상 피팅)나 모델 사진 생성에 쓸 수 있습니다.",
+ "summary_en": "6.74 million full-body studio photos of models wearing clothes on plain backgrounds and 40,000 product photos of the same items. Model pose (joints), body regions and product regions are labelled, with 117,000 product-to-worn pairs, for virtual try-on or generating model photos.",
+ "contents_ko": "모델 착용 사진 + 제품 사진 + JSON(모델 키포인트, 신체·옷 semantic 영역, 제품 키포인트·영역, 제품-착용 쌍 정보).",
+ "contents_en": "Worn-outfit photos + product photos + JSON (model keypoints, body and garment semantic regions, product keypoints and regions, product-worn pairs).",
+ "modalities": ["image"],
+ "tasks": ["image_generation", "keypoint_pose", "segmentation", "image_classification"],
+ "topics": [{"ko": "패션·의류", "en": "Fashion and clothing"}, {"ko": "온라인 쇼핑", "en": "Online shopping"}, {"ko": "가상 피팅", "en": "Virtual try-on"}],
+ "keywords_ko": ["가상 피팅", "패션 모델", "착용 사진", "자세", "의류 분할", "이미지 생성", "소상공인"],
+ "keywords_en": ["virtual try-on", "fashion model", "worn outfit", "pose", "garment segmentation", "image generation", "small sellers"],
+ "labels": ["keypoints", "semantic segmentation", "product-worn pairs"],
+ "file_formats": ["jpg", "json"],
+ "scale_ko": "모델 사진 674만 장(라벨 약 12만 건), 제품 사진 4만 장, 제품-착용 쌍 117,270개",
+ "classes_example": ["모자", "외상의", "내상의", "하의", "신발"],
+ "baseline": [
+  {"task": "model pose estimation", "model": "HRNet", "metric": "mAP", "value": "98.8%"},
+  {"task": "fashion semantic segmentation", "model": "HRNet", "metric": "mIoU", "value": "75.5%"}
+ ],
+ "difficulty": "advanced",
+ "difficulty_note_ko": "용량은 약 36GB로 작은 편이지만 가상 피팅은 생성 모델이 필요해 어렵습니다. 옷 영역 분할만 하면 중급입니다.",
+ "skills_needed_ko": ["파이썬", "이미지 분할", "생성 모델(GAN·확산 모델) 기초"],
+ "caveats_ko": ["라벨은 약 12만 건으로 사진 수보다 훨씬 적음", "사람 사진이라 이용 약관 확인 필요"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "착용 사진 속 옷 영역 칠하기", "title_en": "Segment clothes in model photos", "desc_ko": "semantic 영역 라벨로 상의·하의를 칠하는 분할 모델을 학습합니다.", "desc_en": "Train a segmentation model for tops and bottoms."},
+  {"level": "capstone", "title_ko": "소상공인용 가상 모델 사진 만들기", "title_en": "Virtual model photos for small sellers", "desc_ko": "제품 사진을 넣으면 모델이 입은 사진을 생성하는 가상 피팅 데모를 만듭니다.", "desc_en": "Generate a worn photo from a product photo with a try-on model."},
+  {"level": "research", "title_ko": "자세가 달라도 자연스러운 가상 피팅", "title_en": "Try-on robust to pose", "desc_ko": "키포인트를 조건으로 넣어 다양한 자세에서 옷 주름·패턴이 유지되는지 연구합니다.", "desc_en": "Condition on keypoints and study whether folds and patterns survive pose changes."}
+ ],
+ "doc_used": true,
+ "uncertain": ["모델 자세 라벨 수가 120,936건과 120,396건으로 다르게 적혀 있음"]
+}

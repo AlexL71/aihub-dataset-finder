@@ -1,0 +1,29 @@
+{
+ "dataset_id": "71554",
+ "title_en": "Road surface damage by container trucks on Busan port roads",
+ "summary_ko": "부산 항만도로에서 컨테이너 차량 때문에 생긴 노면 파손을 드론(20m 상공 수직 촬영)과 촬영 차량 카메라로 찍은 이미지 약 41만 장입니다. 거북등 균열·세로 균열·러팅·포트홀·박리 등 13가지 파손이 상자와 분할로 표시되어 있어 도로 유지관리 AI에 쓸 수 있습니다.",
+ "summary_en": "About 410,000 drone (20 m, top-down) and vehicle-camera images of road damage from container trucks on Busan port roads, with 13 damage types (alligator cracks, longitudinal cracks, rutting, potholes, stripping, etc.) marked by boxes and segmentation. For road maintenance AI.",
+ "contents_ko": "드론·차량 이미지(png) + JSON(상자, 분할, 파손 종류).",
+ "contents_en": "Drone and vehicle image (png) + JSON (boxes, segmentation, damage type).",
+ "modalities": ["image"],
+ "tasks": ["object_detection", "segmentation", "anomaly_detection"],
+ "topics": [{"ko": "도로 관리·안전", "en": "Road maintenance and safety"}, {"ko": "항만·물류", "en": "Ports and logistics"}],
+ "keywords_ko": ["노면 파손", "균열", "포트홀", "드론", "항만도로", "부산"],
+ "keywords_en": ["road damage", "cracks", "potholes", "drone", "port roads", "Busan"],
+ "labels": ["bounding box", "segmentation", "class"],
+ "file_formats": ["png", "json"],
+ "scale_ko": "이미지 406,680장 (드론 121,958 + 차량 284,722), 파손 대분류 8종·소분류 13종, 객체 약 108만 개",
+ "classes_example": ["거북등", "단부균열", "세로방향균열", "시공균열", "반사균열", "러팅", "함몰", "포트홀", "라벨링(Ravelling)", "박리"],
+ "baseline": [],
+ "difficulty": "intermediate",
+ "difficulty_note_ko": "YOLO 탐지·분할 실습에 좋지만 전체 약 3.2TB로 매우 큽니다. 드론이나 차량 중 하나만 받아 쓰세요.",
+ "skills_needed_ko": ["파이썬", "YOLO 탐지", "분할 모델"],
+ "caveats_ko": ["전체 약 3.2TB", "성능 지표 표가 비어 있음(YOLOv7, mAP@0.5로 검증했다고만 적혀 있음)", "밀림균열·포트홀 등 일부 클래스가 1% 미만으로 매우 적음", "557번 도로 정비 데이터와 비슷함"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "균열 탐지", "title_en": "Crack detection", "desc_ko": "차량 카메라 이미지에서 균열을 YOLO로 탐지합니다.", "desc_en": "Detect cracks in vehicle-camera images with YOLO."},
+  {"level": "capstone", "title_ko": "드론 기반 항만도로 파손 지도", "title_en": "Drone port-road damage map", "desc_ko": "드론 이미지의 분할 결과로 구간별 파손 면적 지도를 만듭니다.", "desc_en": "Map damaged area per road section from drone segmentation."},
+  {"level": "research", "title_ko": "드론↔차량 시점 일반화", "title_en": "Drone-vehicle viewpoint generalisation", "desc_ko": "한 시점으로 학습한 파손 모델이 다른 시점에서도 통하는지 연구합니다.", "desc_en": "Test whether damage models trained on one viewpoint work on the other."}
+ ],
+ "doc_used": true,
+ "uncertain": ["원천 406,680장인데 '총 구축 건수 813,360'은 원천+라벨 합계로 보임"]
+}

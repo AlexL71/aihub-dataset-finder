@@ -1,0 +1,29 @@
+{
+ "dataset_id": "237",
+ "title_en": "Greenhouse crop individual images",
+ "summary_ko": "국내에서 주로 재배하는 시설 작물 20종(채소·화훼·열대과수)을 거리·각도별로 찍은 이미지 100만 장으로, 작물 개체 위치와 생육 단계(3단계 이상)가 표시되어 있습니다. 작물 종류와 생육 단계를 알아보는 스마트 온실 AI에 쓸 수 있습니다.",
+ "summary_en": "1 million images of 20 greenhouse crops grown in Korea (vegetables, flowers, tropical fruit) taken at set distances and angles, with plant positions and growth stage (3+ stages) labelled. For smart-greenhouse AI that recognises crop type and growth stage.",
+ "contents_ko": "작물 이미지 + JSON(작물·품종, 개체 상자, 생육 단계, 촬영 거리·각도).",
+ "contents_en": "Crop image + JSON (crop and variety, plant box, growth stage, distance and angle).",
+ "modalities": ["image"],
+ "tasks": ["image_classification", "object_detection"],
+ "topics": [{"ko": "농업·스마트팜", "en": "Agriculture and smart farming"}, {"ko": "시설원예", "en": "Greenhouse horticulture"}, {"ko": "꽃·화훼", "en": "Flowers"}],
+ "keywords_ko": ["시설 작물", "생육 단계", "스마트 온실", "화훼", "작물 분류"],
+ "keywords_en": ["greenhouse crops", "growth stage", "smart greenhouse", "flowers", "crop classification"],
+ "labels": ["class (crop)", "bounding box", "growth stage"],
+ "file_formats": ["jpg", "json"],
+ "scale_ko": "이미지 100만 장(수집 120만 장 이상), 작물 20종",
+ "classes_example": ["가지", "거베라", "고추(꽈리)", "고추(청양)", "고추(풋)"],
+ "baseline": [],
+ "difficulty": "intermediate",
+ "difficulty_note_ko": "분류 자체는 쉽지만 전체 약 7.6TB로 매우 커서 일부 작물만 받아야 합니다.",
+ "skills_needed_ko": ["파이썬", "전이학습 이미지 분류"],
+ "caveats_ko": ["전체 약 7.6TB", "성능 지표가 팩 앞부분에 없음"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "생육 단계 분류", "title_en": "Growth-stage classifier", "desc_ko": "한 작물의 사진으로 생육 단계를 분류합니다.", "desc_en": "Classify growth stage for one crop."},
+  {"level": "capstone", "title_ko": "온실 작물 생육 일지 앱", "title_en": "Greenhouse growth diary app", "desc_ko": "매일 사진으로 생육 단계를 기록해 수확 시기를 예측하는 앱을 만듭니다.", "desc_en": "Log growth stage from daily photos and predict harvest time."},
+  {"level": "research", "title_ko": "촬영 거리·각도의 영향", "title_en": "Effect of distance and angle", "desc_ko": "촬영 조건에 따라 분류 성능이 어떻게 변하는지 분석합니다.", "desc_en": "Analyse how distance and angle change classification accuracy."}
+ ],
+ "doc_used": true,
+ "uncertain": ["작물 20여 종 중 5종 이름만 확인됨"]
+}

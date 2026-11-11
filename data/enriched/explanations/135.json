@@ -1,0 +1,12 @@
+{
+ "dataset_id": "135",
+ "easy_ko": "강원·충청 지역을 비행기에서 찍은 사진에 소나무, 낙엽송, 그 밖의 바늘잎나무, 넓은잎나무가 자라는 곳을 색으로 칠해 구분한 데이터입니다. 하늘에서 찍은 사진만으로 숲의 나무 종류 지도를 만들고 숲의 변화를 살피는 AI를 만들 수 있습니다.",
+ "easy_en": "Aerial photos of the Gangwon and Chungcheong region where areas of pine, larch, other conifers and broadleaf trees are coloured in. You can build AI that maps tree species from the air and monitors changes in forests.",
+ "detail_ko": "강원·충청 지역 항공사진(25cm 해상도) 105,700장(정밀 라벨 39,370, 대략 라벨 66,330)과 위성 모사영상(5m) 1,000장으로 구성되며, 512×512 또는 1024×1024 TIFF 패치에 소나무·낙엽송·기타 침엽수·활엽수 4종 세그멘테이션 라벨이 JSON으로 붙어 있습니다. 기준 성능은 DeepLab v3+ 항공 4종 수종 분할 픽셀 정확도 82%, 침엽수/활엽수 분할 92%입니다. 대략(Coarse) 라벨은 경계가 거칠어 평가는 정밀 라벨로 하는 것이 좋습니다.",
+ "detail_en": "105,700 aerial images of the Gangwon and Chungcheong region at 25 cm resolution (39,370 fine, 66,330 coarse labels) and 1,000 simulated satellite images at 5 m, as 512×512 or 1024×1024 TIFF patches with JSON segmentation labels for 4 classes: pine, larch, other conifers and broadleaf. Baselines: DeepLab v3+ pixel accuracy 82% for 4-species segmentation and 92% for conifer/broadleaf. Coarse labels have rough borders, so evaluate on the fine labels.",
+ "amount_ko": "항공사진 105,700장, 위성 모사영상 1,000장",
+ "amount_en": "105,700 aerial images, 1,000 simulated satellite images",
+ "labels_ko": "나무 종류별 영역(색칠), 정밀·대략 라벨 구분",
+ "labels_en": "tree-species regions (colour masks), fine or coarse label flag",
+ "status": "full-run-2026-11-02"
+}

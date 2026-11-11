@@ -1,0 +1,12 @@
+{
+ "dataset_id": "179",
+ "easy_ko": "수도권 도로를 달리며 찍은 사진마다 갑자기 나타나는 고라니·보행자, 떨어진 짐, 공사 표지판, 도로에 팬 구멍(포트홀), 맨홀, 도로 갈라짐을 표시한 데이터입니다. 자율주행차가 도로 위 위험을 미리 알아채거나, 도로를 관리하는 기관이 망가진 곳을 찾는 AI를 만들 수 있습니다.",
+ "easy_en": "Photos taken while driving on capital-area roads, marked with things that suddenly appear (water deer, pedestrians), fallen cargo, construction signs, potholes, manholes and road cracks. You can build AI that helps self-driving cars notice road hazards early, or helps road agencies find damage.",
+ "detail_ko": "수도권 도로에서 300시간 이상 촬영한 주행 영상의 이미지 100만 장 이상(정적 객체 30만, 크랙 30만, 보수 포트홀 20만, 포트홀 10만, 동적 객체 5만 등, jpg)으로, JSON에 바운딩박스, 균열 세그멘테이션 마스크, 클래스(고라니, 보행자, 낙하물, 라바콘, 공사표지판, 포트홀, 맨홀, 크랙 등)가 있습니다. 기준 성능은 자체 CNN 노면 분할 픽셀 정확도 99.15%입니다. 전체 약 1TB이며, 178번 데이터와 구성이 같아 지역 비교 연구에 쓸 수 있습니다.",
+ "detail_en": "1M+ jpg images from 300+ hours of driving video on capital-area roads (static objects 300k, cracks 300k, repaired potholes 200k, potholes 100k, dynamic objects 50k and more), with JSON bounding boxes, crack segmentation masks and classes (water deer, pedestrian, fallen cargo, traffic cone, construction sign, pothole, manhole, crack and more). Baseline: custom CNN road-surface segmentation pixel accuracy 99.15%. Total size is about 1TB; it shares its design with dataset 178, which allows regional comparison.",
+ "amount_ko": "이미지 100만 장 이상, 주행 영상 300시간 이상",
+ "amount_en": "1M+ images, 300+ hours of driving video",
+ "labels_ko": "도로 위 물체 위치 상자, 도로 갈라짐 영역, 물체 종류",
+ "labels_en": "boxes around road objects, crack regions, object class",
+ "status": "full-run-2026-11-02"
+}

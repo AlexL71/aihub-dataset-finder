@@ -1,0 +1,29 @@
+{
+ "dataset_id": "71737",
+ "title_en": "Water-main inside and outside data from an AI bio-inspired robot",
+ "summary_ko": "제주·시흥·전주 등 4개 지자체의 도수관·송수관·배수관 안에 생체모방 주행 로봇을 넣어 찍은 내부 이미지와 내부·외부 음향 각 109,350건입니다. 관 내부 결함이 다각형으로 표시되어 있어 상수도관 이상 탐지 AI에 쓸 수 있습니다.",
+ "summary_en": "109,350 each of inside images, inside sound and outside sound captured by a bio-inspired crawling robot in water mains of 4 local governments (Jeju, Siheung, Jeonju, etc.), with pipe defects marked by polygons. For detecting water-pipe problems.",
+ "contents_ko": "관 내부 이미지(png) + 내부·외부 음향(wav) + JSON(결함 다각형, 관 종류·관경, 멀티모달 정보).",
+ "contents_en": "Pipe-interior image (png) + inside and outside audio (wav) + JSON (defect polygons, pipe type and diameter, multimodal info).",
+ "modalities": ["image", "audio"],
+ "tasks": ["segmentation", "anomaly_detection", "audio_classification"],
+ "topics": [{"ko": "상수도·시설물 관리", "en": "Water supply and infrastructure"}, {"ko": "점검 로봇", "en": "Inspection robots"}],
+ "keywords_ko": ["상수도관", "배관 점검", "결함 탐지", "생체모방 로봇", "음향", "분할"],
+ "keywords_en": ["water main", "pipe inspection", "defect detection", "bio-inspired robot", "acoustics", "segmentation"],
+ "labels": ["polygon", "defect class", "pipe metadata"],
+ "file_formats": ["png", "wav", "json"],
+ "scale_ko": "내부 이미지·내부 음향·외부 음향 각 109,350건, 지자체 4곳",
+ "classes_example": ["도수관", "송수관", "배수관", "주철관", "강관"],
+ "baseline": [],
+ "difficulty": "intermediate",
+ "difficulty_note_ko": "이미지 분할 실습에 적당하고 약 117GB입니다. 이미지부터 시작하세요.",
+ "skills_needed_ko": ["파이썬", "분할 모델(MaskDINO 등)", "오디오 처리 기초"],
+ "caveats_ko": ["페이지에 성능 점수 표가 없음", "구축 기관이 외부 음향은 이상 종류별 차이가 크지 않았다고 한계를 밝힘", "결함 클래스 목록은 팩 앞부분에 없음"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "배관 결함 분할", "title_en": "Pipe defect segmentation", "desc_ko": "관 내부 사진에서 부식·이물질 같은 결함 영역을 분할합니다.", "desc_en": "Segment defects like corrosion or debris inside pipes."},
+  {"level": "capstone", "title_ko": "배관 점검 보고서 생성", "title_en": "Pipe inspection report", "desc_ko": "로봇 주행 이미지에서 결함 위치와 사진을 모아 보고서를 만듭니다.", "desc_en": "Compile defect locations and images from a robot run."},
+  {"level": "research", "title_ko": "이미지+음향 융합 탐지", "title_en": "Image-audio fusion", "desc_ko": "이미지와 내부 음향을 함께 쓰면 결함 탐지가 좋아지는지 연구합니다.", "desc_en": "Study whether adding inside audio to images improves detection."}
+ ],
+ "doc_used": true,
+ "uncertain": []
+}

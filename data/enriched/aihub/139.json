@@ -1,0 +1,29 @@
+{
+ "dataset_id": "139",
+ "title_en": "Sewer pipe interior images",
+ "summary_ko": "하수관로 CCTV 조사 영상에서 뽑은 관 내부 이미지 47만 장으로, 균열·파손·이음부 손상·토사 퇴적 등 결함 8종과 정상 3종(이음부, 관 내부, 관 외부)으로 분류되어 있습니다. 땅꺼짐을 막기 위해 노후 하수관 결함을 자동으로 판독하는 AI에 쓸 수 있습니다.",
+ "summary_en": "470,000 images from sewer-pipe CCTV inspections, labelled as 8 defect types (cracks, breaks, joint damage, silt deposits and more) and 3 normal types (joint, pipe inside, outside). For AI that reads defects in ageing sewers automatically to help prevent sinkholes.",
+ "contents_ko": "관 내부 이미지(png) + 라벨(결함 클래스, 위치 상자).",
+ "contents_en": "Pipe interior image (png) + label (defect class, location box).",
+ "modalities": ["image"],
+ "tasks": ["image_classification", "object_detection", "anomaly_detection"],
+ "topics": [{"ko": "상하수도·물 관리", "en": "Water and sewer management"}, {"ko": "도시 기반시설", "en": "Urban infrastructure"}, {"ko": "안전 점검", "en": "Safety inspection"}],
+ "keywords_ko": ["하수관로", "CCTV 조사", "결함 탐지", "균열", "땅꺼짐", "시설물 점검"],
+ "keywords_en": ["sewer pipe", "CCTV inspection", "defect detection", "crack", "sinkhole", "infrastructure inspection"],
+ "labels": ["class (11)", "bounding box"],
+ "file_formats": ["png", "json"],
+ "scale_ko": "이미지 47만 장, 클래스 11개(결함 8, 정상 3)",
+ "classes_example": ["균열(CR)", "표면손상(SD)", "파손(BK)", "연결관-돌출(LP)", "이음부-손상(JF)", "이음부-단차(JD)", "토사퇴적(DS)", "이음부(PJ)"],
+ "baseline": [],
+ "difficulty": "beginner",
+ "difficulty_note_ko": "클래스가 명확해 결함 분류 첫 프로젝트에 좋습니다. 전체 약 390GB라 일부 클래스만 받아 시작하세요.",
+ "skills_needed_ko": ["파이썬 기초", "전이학습 이미지 분류", "YOLO 탐지(선택)"],
+ "caveats_ko": ["전체 약 390GB", "성능 지표가 페이지에 없음"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "하수관 결함 분류기", "title_en": "Sewer defect classifier", "desc_ko": "이미지로 균열·파손·정상 등을 분류하는 모델을 만듭니다.", "desc_en": "Classify images as crack, break, normal and so on."},
+  {"level": "capstone", "title_ko": "CCTV 조사 영상 자동 판독 보고서", "title_en": "Automatic sewer inspection report", "desc_ko": "조사 영상 프레임별 결함을 찾아 위치와 종류를 표로 정리해 주는 도구를 만듭니다.", "desc_en": "Find defects frame by frame and summarise their type and position in a table."},
+  {"level": "research", "title_ko": "드문 결함 인식 개선", "title_en": "Recognising rare defects", "desc_ko": "표면손상처럼 적은 클래스의 인식 성능을 높이는 방법을 비교합니다.", "desc_en": "Compare methods to improve rare classes such as surface damage."}
+ ],
+ "doc_used": true,
+ "uncertain": []
+}

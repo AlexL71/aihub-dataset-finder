@@ -1,0 +1,12 @@
+{
+ "dataset_id": "598",
+ "easy_ko": "주차장과 도로에서 차에 단 카메라와 레이저 거리 측정 장비로 찍은 사진에 차, 사람, 주차블록, 과속방지턱, 충전기 같은 물체 위치와 주차할 수 있는 공간, 다닐 수 있는 공간을 표시한 데이터입니다. 스스로 빈 주차 칸을 찾아 주차하는 자율주차 AI를 만들 수 있습니다.",
+ "easy_en": "Images and laser scans from cameras and lidar on cars in parking lots and on roads, marked with vehicles, people, wheel stops, speed bumps, EV chargers and more, plus the free parking spaces and drivable areas. You can build self-parking AI that finds an empty space and parks by itself.",
+ "detail_ko": "실내·실외 주차장과 도로에서 차량 카메라(jpg)와 라이다 포인트클라우드(pcd)로 수집한 데이터에 2D 바운딩박스 약 50만, 분할 약 15만, 3D 바운딩박스 약 12만 건을 JSON으로 붙였습니다. 클래스는 주차블럭, 과속방지턱, 라바콘, 전기차 충전설비, 주차안내 표지판, 장애인 전용 주차장, 자동차, 성인·어린이 보행자, 자전거, 주차 가능 공간, 주행 가능 공간 등입니다. 성능 지표 표는 비어 있습니다. 전체 약 289GB이며 번호판·사람이 보일 수 있습니다.",
+ "detail_en": "Vehicle camera images (jpg) and lidar point clouds (pcd) from indoor and outdoor parking lots and roads, with JSON labels: about 500k 2D boxes, 150k segmentations and 120k 3D boxes. Classes include wheel stops, speed bumps, traffic cones, EV chargers, parking signs, disabled parking spaces, cars, adult and child pedestrians, bicycles, free parking space and drivable area. The performance table is empty. Total size is about 289 GB; plates and people may be visible.",
+ "amount_ko": "평면 상자 약 50만, 영역 약 15만, 입체 상자 약 12만 건",
+ "amount_en": "about 500k 2D boxes, 150k masks, 120k 3D boxes",
+ "labels_ko": "물체 위치 상자(평면·입체), 주차 가능·주행 가능 영역",
+ "labels_en": "2D and 3D boxes around objects, free-parking and drivable-area masks",
+ "status": "full-run-2026-11-02"
+}

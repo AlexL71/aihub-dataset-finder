@@ -1,0 +1,12 @@
+{
+ "dataset_id": "571",
+ "easy_ko": "교육, 공공 민원, 인사, 온라인 쇼핑 고객센터의 실제 전화 상담을 녹음한 음질 낮은 소리와, 그 말을 받아 적은 글을 짝지은 데이터입니다. 전화 상담을 알아듣는 AI 고객센터나 통화 내용 검색 서비스를 만들 수 있습니다.",
+ "easy_en": "Real customer-service phone calls from education, public complaints, HR and online-shopping call centres, recorded at low telephone quality and paired with written transcripts. You can build AI call centres or call-search services that understand phone conversations.",
+ "detail_ko": "교육·공공 민원·HR·전자상거래 고객센터의 실제 상담 통화 음성 약 6,500시간(대부분 8kHz 전화 음질, wav)과 전사 텍스트(txt), JSON(화자, 도메인)으로 구성됩니다. 기준 성능은 기록에서 확인되지 않습니다. 전체 약 235GB이며, 실제 상담 통화라 개인정보 비식별 여부 확인이 필요합니다.",
+ "detail_en": "About 6,500 hours of real customer-service call audio (mostly 8 kHz telephone quality, wav) from education, public-complaint, HR and e-commerce call centres, with txt transcripts and JSON speaker and domain. No baseline is visible in the record. Total size is about 235 GB; these are real calls, so check de-identification.",
+ "amount_ko": "통화 음성 약 6,500시간",
+ "amount_en": "about 6,500 hours of call audio",
+ "labels_ko": "말소리를 받아 적은 글(전사), 상담 분야, 말한 사람 역할",
+ "labels_en": "transcripts, domain, speaker role",
+ "status": "full-run-2026-11-02"
+}

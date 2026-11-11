@@ -1,0 +1,12 @@
+{
+ "dataset_id": "491",
+ "easy_ko": "서울의 같은 지역을 한 해 간격으로 하늘에서 찍은 사진 두 장을 짝지어, 새로 지어지거나 없어지거나 바뀐 건물의 테두리와 변화 종류를 표시한 데이터입니다. 허가 없이 지은 건물을 자동으로 찾아내는 AI를 만들 수 있습니다.",
+ "easy_en": "Pairs of aerial photos of the same part of Seoul taken one year apart, with buildings that were newly built, removed or changed outlined and the type of change marked. You can build AI that automatically finds buildings put up without permission.",
+ "detail_ko": "서울시 제공 N년·N+1년 항공사진 비교쌍 50,779장(tif)에 변화 건물 약 10만 건의 폴리곤, 변화 유형(신축, 멸실, 갱신 등), 갱신 유형, 주소, 용도지역을 JSON으로 붙였습니다. 변화 유형 클래스 이름은 설명에서 추정한 것이며, 기준 성능은 기록에서 확인되지 않습니다.",
+ "detail_en": "50,779 paired aerial images (tif) of the same Seoul areas in year N and N+1, provided by the Seoul city government, with JSON polygons for about 100k changed buildings, change type (new, demolished, renovated and more), update type, address and zoning. Change-type class names are inferred from the description, and no baseline is visible in the record.",
+ "amount_ko": "항공사진 쌍 약 5.1만 장, 바뀐 건물 약 10만 건",
+ "amount_en": "about 51k aerial image pairs, about 100k changed buildings",
+ "labels_ko": "바뀐 건물 테두리, 변화 종류(신축·철거·변경), 주소·용도지역",
+ "labels_en": "outlines of changed buildings, change type (new, removed, changed), address and zoning",
+ "status": "full-run-2026-11-02"
+}

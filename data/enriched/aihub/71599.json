@@ -1,0 +1,29 @@
+{
+ "dataset_id": "71599",
+ "title_en": "Object property identification data for robot hands",
+ "summary_ko": "가정용 물체 200종을 로봇 손으로 쥐기·잡기·돌리기·흔들기·긁기 5가지 동작을 하며 찍은 이미지 데이터 300만 건과 물체 3D 모델(정점 16K·64K·512K)입니다. 물체의 3D 자세와 잡을 수 있는 영역이 표시되어 있어 가사 지원 로봇의 물체 파지 AI에 쓸 수 있습니다.",
+ "summary_en": "3 million image records of robot hands doing 5 tasks (grip, grasp, rotate, shake, scrape) on 200 household objects, plus 3D object models at three mesh resolutions. Labelled with 3D object pose and graspable regions, for household robot grasping.",
+ "contents_ko": "이미지(고·저해상도) + 3D 모델(obj, mtl) + JSON(물체 3D 자세, 파지 영역, 임무 종류).",
+ "contents_en": "Images (high and low resolution) + 3D models (obj, mtl) + JSON (3D object pose, grasp region, task type).",
+ "modalities": ["image", "3d"],
+ "tasks": ["keypoint_pose", "object_detection"],
+ "topics": [{"ko": "로봇 조작", "en": "Robot manipulation"}, {"ko": "가사 지원 로봇", "en": "Household robots"}],
+ "keywords_ko": ["로봇 손", "파지", "6D 자세", "가사 로봇", "3D 모델", "피지컬 AI"],
+ "keywords_en": ["robot hand", "grasping", "6D pose", "household robot", "3D models", "physical AI"],
+ "labels": ["3D object pose", "grasp region", "task type"],
+ "file_formats": ["jpg", "obj", "mtl", "json"],
+ "scale_ko": "임무 데이터 3,000,000건(5개 임무×60만), 물체 200종, 3D 모델 600건",
+ "classes_example": ["쥐기", "잡기", "돌리기", "흔들기", "긁기"],
+ "baseline": [{"task": "grasped object 3D pose estimation", "model": "unspecified", "metric": "Accuracy", "value": "57.57%"}, {"task": "graspable point detection", "model": "unspecified", "metric": "mAP", "value": "79.24%"}],
+ "difficulty": "advanced",
+ "difficulty_note_ko": "3D 자세·로봇 개념이 필요하고 전체 약 4.4TB이며 가장 작은 파일도 약 1GB입니다.",
+ "skills_needed_ko": ["파이썬", "6D 자세 추정", "3D 도구(Open3D)", "탐지 모델"],
+ "caveats_ko": ["전체 약 4.4TB, 가장 작은 파일도 약 1GB", "성능표의 학습모델이 '알수없음'으로 적혀 있음", "이미지 파일 형식이 'image'로만 적혀 있어 정확한 확장자 확인 필요(jpg로 추정)"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "물체 3D 모델 둘러보기", "title_en": "Browse 3D object models", "desc_ko": "obj 모델을 해상도별로 띄워 정점 수에 따른 차이를 비교합니다.", "desc_en": "View obj models at each resolution and compare detail."},
+  {"level": "capstone", "title_ko": "잡을 곳 추천기", "title_en": "Grasp point recommender", "desc_ko": "물체 사진에서 로봇이 잡기 좋은 지점을 탐지해 표시합니다.", "desc_en": "Detect and mark good grasp points on object photos."},
+  {"level": "research", "title_ko": "임무별 파지 전략", "title_en": "Task-specific grasping", "desc_ko": "돌리기·흔들기 등 임무에 따라 파지 위치가 어떻게 달라야 하는지 연구합니다.", "desc_en": "Study how grasp location should change by task."}
+ ],
+ "doc_used": true,
+ "uncertain": ["이미지 확장자가 jpg인지 png인지 페이지에 명시되지 않음"]
+}

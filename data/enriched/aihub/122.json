@@ -1,0 +1,96 @@
+{
+ "dataset_id": "122",
+ "title_en": "Korean dialect speech (Chungcheong)",
+ "summary_ko": "충청도 지역 10~60대 화자 2,000명 이상이 조용한 환경에서 사투리로 나눈 일상 대화 음성 3,000시간 이상과, 방언 그대로 적은 전사문 및 표준어 대응 문장입니다. 사투리를 알아듣는 음성 인식, 방언-표준어 변환, 지역 어르신 돌봄 AI에 쓸 수 있습니다.",
+ "summary_en": "3,000+ hours of everyday conversation in the Chungcheong dialect from 2,000+ speakers aged 10–69, recorded in quiet rooms, with transcripts written as spoken plus standard-Korean equivalents. For dialect-aware speech recognition, dialect-to-standard conversion, or AI care services for local older adults.",
+ "contents_ko": "음성(wav) + JSON(방언 전사, 표준어 대응, 화자 성별·연령·지역, 대화 주제).",
+ "contents_en": "Audio (wav) + JSON (dialect transcript, standard-Korean equivalent, speaker sex, age and region, topic).",
+ "modalities": [
+  "audio",
+  "text"
+ ],
+ "tasks": [
+  "speech_recognition",
+  "translation"
+ ],
+ "topics": [
+  {
+   "ko": "방언·지역 언어",
+   "en": "Dialects and regional language"
+  },
+  {
+   "ko": "음성",
+   "en": "Speech"
+  },
+  {
+   "ko": "충청도 지역",
+   "en": "Chungcheong region"
+  }
+ ],
+ "keywords_ko": [
+  "방언",
+  "사투리",
+  "충청도",
+  "음성 인식",
+  "표준어 변환",
+  "돌봄"
+ ],
+ "keywords_en": [
+  "dialect",
+  "Chungcheong",
+  "speech recognition",
+  "dialect to standard",
+  "regional speech",
+  "elderly care"
+ ],
+ "labels": [
+  "dialect transcript",
+  "standard-Korean pair",
+  "speaker attributes"
+ ],
+ "file_formats": [
+  "wav",
+  "json"
+ ],
+ "scale_ko": "음성 3,000시간 이상, 화자 2,000명 이상, 방언 전사·표준어 대응 50만 건 이상(구축량 432만)",
+ "classes_example": [],
+ "baseline": [],
+ "difficulty": "intermediate",
+ "difficulty_note_ko": "음성 인식 미세조정 실습에 좋지만 전체 약 453GB라 일부만 받아 쓰세요. 방언-표준어 텍스트 쌍만 쓰면 가볍게 시작할 수 있습니다.",
+ "skills_needed_ko": [
+  "파이썬",
+  "오디오 처리",
+  "음성 인식 모델 미세조정",
+  "텍스트 변환(seq2seq) 기초"
+ ],
+ "caveats_ko": [
+  "전체 약 453GB",
+  "조용한 환경 녹음이라 실제 소음 환경과 다를 수 있음",
+  "성능 지표가 팩 앞부분에 없음"
+ ],
+ "project_ideas": [
+  {
+   "level": "beginner",
+   "title_ko": "충청도 사투리 단어 사전 만들기",
+   "title_en": "Chungcheong dialect word list",
+   "desc_ko": "방언-표준어 쌍에서 자주 나오는 사투리 단어와 뜻을 정리합니다.",
+   "desc_en": "Build a list of frequent dialect words and their standard meanings."
+  },
+  {
+   "level": "capstone",
+   "title_ko": "사투리를 표준어로 바꿔 주는 번역기",
+   "title_en": "Dialect-to-standard converter",
+   "desc_ko": "방언 문장을 표준어로 바꾸는 모델을 학습하고 웹 데모를 만듭니다.",
+   "desc_en": "Train a model that rewrites dialect sentences in standard Korean and demo it."
+  },
+  {
+   "level": "research",
+   "title_ko": "방언 음성 인식 성능 격차",
+   "title_en": "Speech recognition gap for dialects",
+   "desc_ko": "표준어로 학습한 모델이 방언에서 얼마나 틀리는지 분석하고 적응 학습 효과를 연구합니다.",
+   "desc_en": "Measure how a standard-Korean model fails on the dialect and study adaptation."
+  }
+ ],
+ "doc_used": true,
+ "uncertain": []
+}

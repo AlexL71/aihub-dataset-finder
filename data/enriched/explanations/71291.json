@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71291",
+ "easy_ko": "여러 사진을 골프, 낚시, 요리, 육아, 캠핑, 테니스, 필라테스 같은 활동 분류에 따라 묶고, '같은 활동에 쓰이는 물건 사진 고르기' 같은 문제와 정답을 만든 데이터입니다. 사진을 보고 사람처럼 생각해서 답을 고르는 AI를 만들 수 있습니다.",
+ "easy_en": "Many photos grouped by activity category, such as golf, fishing, cooking, childcare, camping, tennis and pilates, with puzzles like 'pick the item used in the same activity' and their answers. You can build AI that looks at pictures and reasons like a person to pick the right answer.",
+ "detail_ko": "이미지 36만 장(jpg)를 활동 분류 40종으로 묶고 선택형 시각 추론 문제 6만 개와 정답을 JSON으로 붙였습니다. 기준 성능은 ViT 이미지 분류 F1 0.7401입니다. 전체 약 533GB이며, 스톡 이미지(게티이미지뱅크)가 포함되어 사용 조건 확인이 필요하고, 71279·71286·71288번 데이터와 같은 구축 기관·구조입니다.",
+ "detail_en": "360k images (jpg) grouped into 40 activity category classes, with 60k multiple-choice visual reasoning questions and answers in JSON. Baseline: ViT image classification F1 0.7401. Total size is about 533GB; stock images (Getty Images Bank) are included, so check the usage terms; same organisation and structure as datasets 71279·71286·71288.",
+ "amount_ko": "사진 36만 장, 문제 6만 개, 유형 40종",
+ "amount_en": "360k images, 60k questions, 40 types",
+ "labels_ko": "활동 분류 분류, 고르기 문제와 정답",
+ "labels_en": "activity category class, multiple-choice question and answer",
+ "status": "full-run-2026-11-02"
+}

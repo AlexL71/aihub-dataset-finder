@@ -1,0 +1,45 @@
+{
+ "id": "gchina",
+ "name_ko": "글로벌학부(중국학전공)",
+ "name_en": "Chinese Studies (School of Global Studies)",
+ "college": "글로벌비즈니스대학",
+ "summary_ko": "중국어와 함께 중국의 정치, 경제, 사회, 역사, 문화를 배우는 전공으로, 최근 교육과정 전반에 생성형 AI와 데이터 분석을 결합한 'AI 융합 중국 전문가' 양성을 목표로 합니다. 남경사범대학 해외연수(7+1) 프로그램이 있습니다.",
+ "summary_en": "Teaches Chinese language together with China's politics, economy, society, history and culture. The curriculum now blends generative AI and data analysis throughout, aiming at 'AI-convergent China specialists'. Includes a one-semester study program at Nanjing Normal University.",
+ "key_topics": ["중국어(회화, 문법, 작문, HSK·TSC)", "중국 정치·국제관계", "중국 경제·기업·통상", "중국 사회 이슈·신조어", "중국 역사·문화·문학", "한중 번역", "AI를 활용한 중국어 학습", "중국 시장 진출 전략"],
+ "course_keywords": ["실용중국어입문", "실용중국어연습", "중국학입문", "현대중국개황", "중국사회기초독해", "중국문화정보정독", "실용한문특강", "AI활용·중국문화와독해", "AI를활용한몰입형중국어문법입문", "AI기반의중급중국어회화", "고대중국역사개관", "현대중국역사개관", "중국어로배우는경제학기초", "중국정치체제의구조와특성", "신조어로중국사회읽기", "중국시사읽기", "중국어번역연습", "중국고급정보정독", "AI와함께하는HSK쓰기클래스", "한중스마트번역연습", "중국음식문화", "AI활용·중국대중문화현상탐구", "AI활용·21세기중국사회이슈탐구", "AI와데이터로보는중국경제", "중국기업데이터인사이트", "현대중국의국제관계", "AI기반중국어콘텐츠제작과발표", "AI로읽는글로벌통상과중국", "중국로컬시장진입전략과문화:AI실전", "AI기반캡스톤디자인"],
+ "curriculum_by_year": {
+  "1": ["실용중국어입문", "실용중국어연습", "중국학입문", "현대중국개황", "디지털리터러시입문"],
+  "2": ["중국사회기초독해", "중국문화정보정독", "실용한문특강", "AI활용·중국문화와독해", "AI를활용한중국어문법", "AI기반의중급중국어회화", "고대·현대중국역사개관", "중국어로배우는경제학기초", "중국정치체제의구조와특성"],
+  "3": ["중국어문법특강", "신조어로중국사회읽기", "중국시사읽기", "중국어번역연습", "중국고급정보정독", "AI와함께하는HSK쓰기클래스", "한중스마트번역연습", "중국음식문화", "AI활용·중국대중문화현상탐구", "AI와데이터로보는중국경제", "중국기업데이터인사이트", "현대중국의국제관계"],
+  "4": ["시사이슈중국어토론", "중국어교과교육론", "AI기반중국어콘텐츠제작과발표", "중국고전·현대문학사", "AI로읽는글로벌통상과중국", "중국로컬시장진입전략과문화:AI실전", "AI기반캡스톤디자인", "AI활용·중국산업동향보고제작PBL"]
+ },
+ "careers": ["중국어 교사·강사(교직 이수)", "관광·항공·운송 서비스(승무원, 투어 오퍼레이터)", "중국 시장 마케팅·홍보·콘텐츠 기획", "무역·유통·해외영업", "한중 통·번역, 출판·방송 언어 서비스", "중국 관련 콘텐츠 창업·인플루언서", "대학원 진학(중국학, 국제학, 경영·경제)"],
+ "research_areas": [],
+ "data_interests": [
+  {"topic_ko": "한중 번역", "topic_en": "Korean-Chinese translation", "keywords": ["병렬 말뭉치", "기계번역", "자막"]},
+  {"topic_ko": "중국어 음성과 회화", "topic_en": "Chinese speech and conversation", "keywords": ["발음", "음성 인식", "회화"]},
+  {"topic_ko": "관광과 외국인 방문객", "topic_en": "Tourism and visitors", "keywords": ["관광지", "다국어 안내", "관광 리뷰"]},
+  {"topic_ko": "중국 시장과 기업", "topic_en": "Chinese market and companies", "keywords": ["무역 통계", "소비 트렌드", "기업 데이터"]},
+  {"topic_ko": "SNS와 신조어", "topic_en": "Social media and new words", "keywords": ["SNS 게시물", "유행어", "여론"]},
+  {"topic_ko": "한자와 고문", "topic_en": "Chinese characters and classical texts", "keywords": ["한자 인식", "고문서"]}
+ ],
+ "interest_questions": [
+  {"q_ko": "중국 관련해 어떤 일을 해보고 싶나요?", "q_en": "What would you like to do related to China?",
+   "options": [{"ko": "번역·통역", "en": "Translation and interpreting"}, {"ko": "관광·서비스", "en": "Tourism and services"}, {"ko": "무역·마케팅", "en": "Trade and marketing"}, {"ko": "중국어 교육", "en": "Teaching Chinese"}, {"ko": "중국 사회·문화 분석", "en": "Analysing Chinese society and culture"}]},
+  {"q_ko": "다뤄보고 싶은 자료는?", "q_en": "What data would you like to use?",
+   "options": [{"ko": "한중 번역 문장", "en": "Korean-Chinese sentence pairs"}, {"ko": "중국어 음성", "en": "Chinese speech"}, {"ko": "관광 안내·리뷰", "en": "Tourism guides and reviews"}, {"ko": "무역·경제 통계", "en": "Trade and economic statistics"}]}
+ ],
+ "project_themes": ["한중 관광 안내문 번역 품질 비교", "중국어 발음 평가 도우미", "중국 관광객 리뷰로 선호 관광지 분석", "중국 SNS 신조어 트렌드 분석"],
+ "data_skill_level": "low",
+ "data_skill_note": "프로그래밍 과목은 없지만 AI 도구를 활용하는 수업(AI 회화, AI 데이터로 보는 중국경제, 기업데이터인사이트)이 많아 생성형 AI와 노코드 분석부터 시작하기 좋습니다.",
+ "sources": [
+  {"kind": "page", "label": "전공소개", "url": "https://sejong.korea.ac.kr/gchina/3987/subview.do"},
+  {"kind": "page", "label": "교육목표 및 졸업 후 진로", "url": "https://sejong.korea.ac.kr/gchina/3990/subview.do"},
+  {"kind": "page", "label": "교과목목록", "url": "https://sejong.korea.ac.kr/gchina/3994/subview.do"},
+  {"kind": "pdf", "label": "역량기반 교육과정(2025.12)", "url": "https://sejong.korea.ac.kr/pdfView/gchina/16/71/fileDownload.do"}
+ ],
+ "inferred_fields": ["data_interests", "interest_questions", "project_themes"],
+ "gaps": ["curriculum_by_year estimated from course numbers."],
+ "version": 1,
+ "created": "2026-10-29"
+}

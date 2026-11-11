@@ -1,0 +1,29 @@
+{
+ "dataset_id": "71842",
+ "title_en": "Passenger car user individual trip-chain data",
+ "summary_ko": "승용차 이용자 5,000명의 출발부터 도착까지 이동 경로(트립체인) 기록과 GPS, 이동 중 녹음한 음성 30,911건·전사문, 이동을 설명하는 문장으로 구성됩니다. 내비게이션의 맞춤 경로 안내나 음성 질의응답에 쓸 수 있습니다.",
+ "summary_en": "5,000 passenger-car trip chains with GPS, 30,911 voice recordings made while driving, transcripts and descriptive sentences. For personalised navigation guidance and voice QA.",
+ "contents_ko": "트립체인 기록(JSON), GPS(csv), 음성(mp3) + JSON(전사문, 이동 설명 문장).",
+ "contents_en": "Trip-chain records (JSON), GPS (csv), audio (mp3) + JSON (transcripts, trip description sentences).",
+ "modalities": ["tabular", "sensor", "audio", "text"],
+ "tasks": ["speech_recognition", "question_answering", "forecasting", "retrieval_recommendation"],
+ "topics": [{"ko": "교통·모빌리티", "en": "Transport and mobility"}, {"ko": "내비게이션", "en": "Navigation"}],
+ "keywords_ko": ["트립체인", "승용차", "GPS", "통행 패턴", "음성 인식", "내비게이션"],
+ "keywords_en": ["trip chain", "passenger car", "GPS", "travel patterns", "speech recognition", "navigation"],
+ "labels": ["transcript", "sentence"],
+ "file_formats": ["json", "csv", "mp3"],
+ "scale_ko": "트립체인 5,000건, GPS 5,000건, 음성 30,911건",
+ "classes_example": [],
+ "baseline": [],
+ "difficulty": "intermediate",
+ "difficulty_note_ko": "약 1.2GB로 가볍지만 GPS·음성·텍스트를 함께 다뤄야 합니다.",
+ "skills_needed_ko": ["파이썬", "pandas·GPS 처리", "Whisper 음성 인식"],
+ "caveats_ko": ["트립체인 5,000건은 통행 패턴 학습에 많지 않음", "음성 인식 CER 10%는 목표값으로 보이며 실제 결과는 팩에 없음", "GPS는 위치 정보라 활용 시 개인정보 주의", "71840 대중교통 트립체인 데이터와 같은 기관·구조"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "GPS 이동 경로 지도", "title_en": "GPS trip map", "desc_ko": "GPS 기록을 지도에 그려 출발지·도착지 패턴을 봅니다.", "desc_en": "Plot GPS trips to see origin-destination patterns."},
+  {"level": "capstone", "title_ko": "음성 내비 질의응답", "title_en": "Voice navigation QA", "desc_ko": "운전 중 음성 질문을 글로 바꾸고 경로 정보를 답해 주는 도우미를 만듭니다.", "desc_en": "Answer spoken driving questions with route info."},
+  {"level": "research", "title_ko": "운전자 목적지 예측", "title_en": "Driver destination prediction", "desc_ko": "출발 시간·위치로 목적지를 미리 예측하는 방법을 연구합니다.", "desc_en": "Study predicting destination from start time and place."}
+ ],
+ "doc_used": true,
+ "uncertain": []
+}

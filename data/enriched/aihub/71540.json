@@ -1,0 +1,29 @@
+{
+ "dataset_id": "71540",
+ "title_en": "Multi-resolution image conversion data",
+ "summary_ko": "같은 장면을 320×240부터 5K(5120×2880)까지 7단계 화질로 촬영한 이미지 약 210만 장입니다. 저화질에는 시멘틱 분할, 고화질에는 팬옵틱 분할이 표시되어 있어 초해상화(저화질을 고화질로 바꾸기)와 저화질 영상 속 물체 인식에 쓸 수 있습니다.",
+ "summary_en": "About 2.1 million images of the same scenes at 7 resolutions from 320x240 to 5K, with semantic segmentation on low-res and panoptic segmentation on high-res images. For super-resolution and recognition in low-quality video.",
+ "contents_ko": "이미지(jpg, 7단계 해상도, 비식별) + JSON(시멘틱·팬옵틱 분할).",
+ "contents_en": "Image (jpg, 7 resolution levels, anonymised) + JSON (semantic and panoptic segmentation).",
+ "modalities": ["image"],
+ "tasks": ["image_generation", "segmentation"],
+ "topics": [{"ko": "화질 개선·초해상화", "en": "Image enhancement and super-resolution"}, {"ko": "CCTV·보안", "en": "CCTV and security"}],
+ "keywords_ko": ["초해상화", "화질 개선", "팬옵틱 분할", "해상도", "CCTV"],
+ "keywords_en": ["super-resolution", "image enhancement", "panoptic segmentation", "resolution", "CCTV"],
+ "labels": ["semantic segmentation", "panoptic segmentation", "resolution level", "place", "camera angle"],
+ "file_formats": ["jpg", "json"],
+ "scale_ko": "이미지 2,104,263장, 해상도 7단계(단계별 300,609장), 촬영 장소 14종",
+ "classes_example": ["320×240", "640×480", "1280×720", "1920×1080", "2560×1440", "3840×2160", "5120×2880"],
+ "baseline": [],
+ "difficulty": "intermediate",
+ "difficulty_note_ko": "같은 장면의 저·고화질 쌍이 있어 초해상화 실습에 좋지만 전체 약 1.1TB입니다.",
+ "skills_needed_ko": ["파이썬", "초해상화 모델", "분할 모델"],
+ "caveats_ko": ["전체 약 1.1TB", "팩에 성능 지표 표가 없음", "분할 클래스 목록이 팩 앞부분에 없음"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "저화질 사진 2배 키우기", "title_en": "2x super-resolution", "desc_ko": "640×480 이미지를 1280×720으로 키우는 모델을 학습하고 화질을 비교합니다.", "desc_en": "Train a model to upscale 640x480 to 1280x720 and compare quality."},
+  {"level": "capstone", "title_ko": "CCTV 화질 복원 후 분할", "title_en": "Restore then segment CCTV-like images", "desc_ko": "저화질 이미지를 초해상화한 뒤 분할 정확도가 좋아지는지 확인합니다.", "desc_en": "Check if super-resolution improves segmentation on low-res images."},
+  {"level": "research", "title_ko": "해상도에 강한 분할 모델", "title_en": "Resolution-robust segmentation", "desc_ko": "7단계 해상도 전체에서 성능이 유지되는 분할 방법을 연구합니다.", "desc_en": "Study segmentation that holds up across all 7 resolutions."}
+ ],
+ "doc_used": true,
+ "uncertain": []
+}

@@ -1,0 +1,32 @@
+{
+ "dataset_id": "71493",
+ "title_en": "Korean–multilingual (non-English) translation corpus (technology and science)",
+ "summary_ko": "기계·재료·전기전자·정보통신·에너지 분야 도서·논문·간행물에서 뽑은 한국어 문장 30만 2천여 건을 중국어와 일본어로 번역한 말뭉치입니다. 기술과학 분야 한중·한일 기계번역 모델 학습에 쓸 수 있습니다.",
+ "summary_en": "About 302,000 Korean sentences from technology and science books, papers and publications (mechanical, materials, electrical/electronic, ICT, energy) translated into Chinese and Japanese. For Korean–Chinese and Korean–Japanese technical machine translation.",
+ "contents_ko": "JSON(한국어 원문 + 중국어 또는 일본어 번역문, 분야 정보).",
+ "contents_en": "JSON (Korean source + Chinese or Japanese translation, field info).",
+ "modalities": ["text"],
+ "tasks": ["translation"],
+ "topics": [{"ko": "기계번역", "en": "Machine translation"}, {"ko": "과학기술", "en": "Science and technology"}],
+ "keywords_ko": ["번역 말뭉치", "한중 번역", "한일 번역", "기술과학", "기계번역", "병렬 말뭉치"],
+ "keywords_en": ["translation corpus", "Korean-Chinese", "Korean-Japanese", "science and technology", "machine translation", "parallel corpus"],
+ "labels": ["translation pair", "field"],
+ "file_formats": ["json"],
+ "scale_ko": "302,130건 (한중 151,114쌍, 한일 151,016쌍)",
+ "classes_example": ["기계", "재료", "전기/전자", "정보/통신", "에너지/자원"],
+ "baseline": [
+  {"task": "Korean-Chinese translation", "model": "Transformer", "metric": "BLEU", "value": "48.26"},
+  {"task": "Korean-Japanese translation", "model": "Transformer", "metric": "BLEU", "value": "65.66"}
+ ],
+ "difficulty": "intermediate",
+ "difficulty_note_ko": "용량이 작아(약 50MB) 다루기 쉽지만 번역 모델 학습에는 GPU와 시간이 필요합니다.",
+ "skills_needed_ko": ["파이썬", "Transformer 번역 모델", "토큰화"],
+ "caveats_ko": ["같은 시리즈의 다른 분야 다국어 번역 말뭉치와 구조가 비슷함"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "기술 용어 번역 사전", "title_en": "Technical term glossary", "desc_ko": "병렬 문장에서 자주 나오는 기술 용어 짝을 뽑아 한중일 용어집을 만듭니다.", "desc_en": "Extract frequent technical term pairs into a glossary."},
+  {"level": "capstone", "title_ko": "논문 초록 번역기", "title_en": "Paper abstract translator", "desc_ko": "사전학습 번역 모델을 미세조정해 기술 문서 번역 웹 도구를 만듭니다.", "desc_en": "Fine-tune a translation model into a technical-text web tool."},
+  {"level": "research", "title_ko": "분야 적응 번역", "title_en": "Domain-adaptive translation", "desc_ko": "일반 번역 모델과 기술과학 미세조정 모델의 성능 차이를 분야별로 비교합니다.", "desc_en": "Compare general vs domain-tuned translation per field."}
+ ],
+ "doc_used": true,
+ "uncertain": []
+}

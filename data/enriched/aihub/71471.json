@@ -1,0 +1,29 @@
+{
+ "dataset_id": "71471",
+ "title_en": "Cattle (Hanwoo, dairy) and pig estrus behaviour data",
+ "summary_ko": "한우·젖소·돼지·흑돼지 농장에서 모은 축사 영상 600개, 키프레임 이미지 100만 장, 울음소리, 외음부 이미지 6만 장, 3D 체형 데이터 6만 장과 발정 측정 장비·전문가 판정 기록을 합친 데이터입니다. 가축 발정과 이상 행동을 자동으로 감지하는 AI에 쓸 수 있습니다.",
+ "summary_en": "600 barn videos, 1 million keyframe images, cries, 60,000 vulva images, 60,000 3D body-shape scans, plus estrus device readings and expert checks from Hanwoo, dairy cow, pig and black pig farms. For AI that detects estrus and abnormal behaviour in livestock.",
+ "contents_ko": "축사 영상(mp4) + 키프레임 이미지(jpg) + 울음소리(wav) + 3D 체형(npy) + 측정 기록(csv) + JSON(상자, 키포인트, 다각형).",
+ "contents_en": "Barn video (mp4) + keyframes (jpg) + cries (wav) + 3D body shape (npy) + measurements (csv) + JSON (boxes, keypoints, polygons).",
+ "modalities": ["video", "image", "audio", "3d", "tabular"],
+ "tasks": ["object_detection", "keypoint_pose", "segmentation", "audio_classification", "action_recognition"],
+ "topics": [{"ko": "스마트 축산", "en": "Smart livestock farming"}, {"ko": "동물 행동", "en": "Animal behaviour"}],
+ "keywords_ko": ["발정 탐지", "한우", "젖소", "돼지", "이상 행동", "멀티모달"],
+ "keywords_en": ["estrus detection", "Hanwoo cattle", "dairy cows", "pigs", "abnormal behaviour", "multimodal"],
+ "labels": ["bounding box", "keypoints", "polygon", "cry label", "estrus status"],
+ "file_formats": ["mp4", "jpg", "wav", "npy", "csv", "json"],
+ "scale_ko": "영상 600개, 키프레임 100만 장, 음성 600개, 외음부 이미지 6만 장, 3D 6만 장, 발정 체크 6,000건",
+ "classes_example": ["한우", "젖소", "양돈", "흑돼지"],
+ "baseline": [{"task": "cry detection", "model": "YOLOX-Audio", "metric": "F1-score", "value": "0.9364"}, {"task": "multimodal estrus classification", "model": "CRNN", "metric": "F1-score", "value": "0.9024"}, {"task": "box detection", "model": "YOLOX", "metric": "mAP", "value": "80.63%"}, {"task": "segmentation", "model": "Mask R-CNN", "metric": "mAP", "value": "80.13%"}, {"task": "keypoint detection", "model": "HRNet", "metric": "mAP", "value": "92.3%"}],
+ "difficulty": "advanced",
+ "difficulty_note_ko": "전체가 약 8TB로 매우 크고 여러 형태를 합쳐야 합니다. 키프레임 이미지 일부로 탐지부터 시작하세요.",
+ "skills_needed_ko": ["파이썬", "YOLO 탐지", "오디오 처리", "멀티모달 결합"],
+ "caveats_ko": ["전체 약 8,027GB", "농장 수가 적음(소 3, 젖소 3, 돼지 1, 흑돼지 1)", "영상 600개에서 뽑은 키프레임이라 비슷한 이미지가 많아 분할 시 누수 주의"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "축사 돼지 탐지", "title_en": "Pig detection in pens", "desc_ko": "키프레임 이미지에서 돼지를 상자로 찾습니다.", "desc_en": "Box pigs in barn keyframes."},
+  {"level": "capstone", "title_ko": "소 발정 알림 시스템", "title_en": "Cow estrus alert system", "desc_ko": "영상 행동과 울음소리를 합쳐 발정 가능성을 농가에 알립니다.", "desc_en": "Combine behaviour and cries to alert farmers of estrus."},
+  {"level": "research", "title_ko": "멀티모달 발정 예측", "title_en": "Multimodal estrus prediction", "desc_ko": "영상·소리·3D 체형 중 어떤 조합이 발정 예측에 가장 좋은지 연구합니다.", "desc_en": "Find which mix of video, audio and 3D best predicts estrus."}
+ ],
+ "doc_used": true,
+ "uncertain": ["행동 클래스 목록"]
+}

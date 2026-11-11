@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71314",
+ "easy_ko": "TV와 라디오의 교양, 시사, 예능, 토론 같은 방송 대화를 녹음하고, 받아 적은 글, 문장마다 주장·질문·감사·사과 같은 말의 의도, 요약문, 배경 소음 정보를 붙인 데이터입니다. 방송 자막을 자동으로 만들거나 대화의 의도를 알아보는 AI를 만들 수 있습니다.",
+ "easy_en": "Recorded conversations from TV and radio shows such as educational, current-affairs, entertainment and debate programmes, with transcripts, the purpose of each sentence (claim, question, thanks, apology and more), summaries and background-noise info. You can build AI that makes broadcast subtitles automatically or understands what speakers intend.",
+ "detail_ko": "TV·라디오 방송 8개 분야(교양, 문화, 시사, 예능, 예술, 지식교육, 토론 등)의 대화 음성 약 7,000시간에 전사, 문장 의도 23종(주장, 단순 질문, 수용/긍정, 거절/부정, 감사, 사과, 칭찬 등), 요약문, 화자·잡음 정보를 JSON으로 붙였습니다. 기준 성능은 ELECTRA 의도 분류 정확도 86.51%, Conformer 음성 인식 CER 11.14%, BART 요약 ROUGE-1 47.59%입니다. 전체 약 559GB이며, AI Hub 페이지에 형식이 'tex', 유형이 '텍스트'로 적혀 있어 음성 파일 형식 확인이 필요하고, 방송 저작권 때문에 사용 범위 확인이 필요합니다.",
+ "detail_en": "About 7,000 hours of conversational speech from TV and radio in 8 genres (liberal arts, culture, current affairs, entertainment, arts, education, debate and more), with JSON transcripts, 23 sentence intents (claim, simple question, acceptance, refusal, thanks, apology, praise and more), summaries, and speaker and noise info. Baselines: ELECTRA intent classification accuracy 86.51%, Conformer speech recognition CER 11.14%, BART summarisation ROUGE-1 47.59%. Total size is about 559 GB; the page lists the format as 'tex' and type as text, so check the audio format; broadcast copyright limits use.",
+ "amount_ko": "음성 약 7,000시간, 말의 의도 23종",
+ "amount_en": "about 7,000 hours of speech, 23 intents",
+ "labels_ko": "말소리를 받아 적은 글(전사), 문장 의도, 요약문, 화자·잡음 정보",
+ "labels_en": "transcripts, sentence intent, summary, speaker and noise info",
+ "status": "full-run-2026-11-02"
+}

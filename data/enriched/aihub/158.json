@@ -1,0 +1,32 @@
+{
+ "dataset_id": "158",
+ "title_en": "Livestock product quality (QC) images",
+ "summary_ko": "한우·육우 등심 단면, 돼지 삼겹살 단면, 닭 도체 외관, 달걀 외관과 신선도(호우 유닛) 사진 16만 건에 품질 등급을 붙인 데이터입니다. 고기·달걀 등급을 사진으로 자동 판정하는 축산물 품질 관리 AI에 쓸 수 있습니다.",
+ "summary_en": "160,000 images of Hanwoo and dairy-beef sirloin cross-sections, pork belly cross-sections, chicken carcasses, and eggs (appearance and freshness by Haugh unit), labelled with quality grades. For AI that grades meat and eggs from photos.",
+ "contents_ko": "축산물 사진 + 라벨(품질 등급, 성별, 부위, 신선도 값).",
+ "contents_en": "Product photo + label (quality grade, sex, cut, freshness value).",
+ "modalities": ["image"],
+ "tasks": ["image_classification", "tabular_prediction"],
+ "topics": [{"ko": "축산·식품", "en": "Livestock products and food"}, {"ko": "품질 검사", "en": "Quality inspection"}, {"ko": "고기·달걀", "en": "Meat and eggs"}],
+ "keywords_ko": ["축산물 등급", "한우", "삼겹살", "달걀 신선도", "품질 판정", "식품 검사"],
+ "keywords_en": ["meat grading", "Hanwoo beef", "pork belly", "egg freshness", "quality grading", "food inspection"],
+ "labels": ["class (quality grade)", "freshness value"],
+ "file_formats": ["jpg", "json"],
+ "scale_ko": "16만 건(한우 6만, 육우 1만, 돼지 1만, 닭 4만, 달걀 4만)",
+ "classes_example": ["한우 등심", "육우 등심", "삼겹살", "닭 도체", "달걀 외관", "달걀 신선도"],
+ "baseline": [
+  {"task": "beef carcass grade", "model": "ResNeXt", "metric": "accuracy", "value": "97.97%"},
+  {"task": "chicken carcass grade", "model": "adversarial autoencoder + ResNet50", "metric": "macro F1", "value": "0.83"}
+ ],
+ "difficulty": "beginner",
+ "difficulty_note_ko": "약 77GB로 다룰 만하고 등급 분류는 이해하기 쉬운 첫 프로젝트입니다.",
+ "skills_needed_ko": ["파이썬 기초", "전이학습 이미지 분류"],
+ "caveats_ko": ["등급 기준(마블링 등)을 이해해야 결과를 해석할 수 있음"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "한우 등급 분류기", "title_en": "Hanwoo grade classifier", "desc_ko": "등심 단면 사진으로 품질 등급을 분류합니다.", "desc_en": "Classify sirloin cross-section photos into grades."},
+  {"level": "capstone", "title_ko": "달걀 신선도 판정 앱", "title_en": "Egg freshness app", "desc_ko": "달걀 사진으로 신선도 등급을 예측하는 앱을 만듭니다.", "desc_en": "Predict egg freshness grade from a photo."},
+  {"level": "research", "title_ko": "마블링 정량화", "title_en": "Quantifying marbling", "desc_ko": "분할로 지방 비율을 계산해 등급 판정과 얼마나 일치하는지 연구합니다.", "desc_en": "Measure fat share by segmentation and compare with grades."}
+ ],
+ "doc_used": true,
+ "uncertain": []
+}

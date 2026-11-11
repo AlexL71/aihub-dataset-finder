@@ -1,0 +1,29 @@
+{
+ "dataset_id": "71319",
+ "title_en": "Jinan red ginseng quality data",
+ "summary_ko": "진안 홍삼 가공업체 저장고의 홍삼 약 18만 개를 X-ray로 두 방향씩 찍은 이미지 약 36만 장에, 내부 빈 공간(내공)·흰 부분(내백) 위치와 품질 등급(상·중·하·최하)을 상자로 표시한 데이터입니다. 홍삼을 자르지 않고 속 품질을 자동으로 판정하는 AI에 쓸 수 있습니다.",
+ "summary_en": "About 360,000 X-ray images (2 views each) of about 180,000 red ginseng roots from Jinan processors, with internal holes and white cores boxed and quality grades (high, medium, low, lowest). For AI that grades ginseng inner quality without cutting it.",
+ "contents_ko": "홍삼 X-ray 이미지(jpg) + JSON(상자, 품질 등급) + 메타 정보(csv).",
+ "contents_en": "Ginseng X-ray images (jpg) + JSON (boxes, quality grade) + metadata (csv).",
+ "modalities": ["image"],
+ "tasks": ["object_detection", "image_classification"],
+ "topics": [{"ko": "농산물 품질", "en": "Agricultural product quality"}, {"ko": "농업", "en": "Agriculture"}],
+ "keywords_ko": ["홍삼", "X-ray", "품질 등급", "비파괴 검사", "진안"],
+ "keywords_en": ["red ginseng", "X-ray", "quality grading", "non-destructive inspection", "Jinan"],
+ "labels": ["bounding box", "quality grade"],
+ "file_formats": ["jpg", "csv", "json"],
+ "scale_ko": "X-ray 이미지 약 36만 장, 등급 4종",
+ "classes_example": ["상", "중", "하", "최하"],
+ "baseline": [{"task": "ginseng quality classification", "model": "YOLOv5", "metric": "F1", "value": "69.5"}],
+ "difficulty": "intermediate",
+ "difficulty_note_ko": "약 41GB로 받을 만하지만 '최하' 등급이 70%로 크게 치우쳐 있습니다.",
+ "skills_needed_ko": ["파이썬", "YOLO 탐지", "클래스 불균형 처리"],
+ "caveats_ko": ["등급이 크게 치우침(상 3.6%, 최하 70%)", "진안 지역 홍삼만 있음", "기준 성능(F1 약 70)이 높지 않음"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "홍삼 등급 분류", "title_en": "Ginseng grade classifier", "desc_ko": "X-ray 사진으로 4가지 품질 등급을 분류합니다.", "desc_en": "Classify X-ray images into 4 quality grades."},
+  {"level": "capstone", "title_ko": "홍삼 선별 라인 데모", "title_en": "Ginseng sorting demo", "desc_ko": "내공·내백을 탐지해 등급별로 나누는 선별 화면을 만듭니다.", "desc_en": "Detect holes and white cores and sort roots by grade."},
+  {"level": "research", "title_ko": "불균형 등급 학습", "title_en": "Learning with imbalanced grades", "desc_ko": "희귀한 상등급 인식률을 높이는 샘플링·손실 함수를 연구합니다.", "desc_en": "Improve recall of rare top-grade roots with sampling or loss design."}
+ ],
+ "doc_used": true,
+ "uncertain": []
+}

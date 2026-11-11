@@ -1,0 +1,29 @@
+{
+ "dataset_id": "71578",
+ "title_en": "Lidar point-cloud denoising data for bad weather",
+ "summary_ko": "비·안개 같은 악천후에서 128채널 라이다로 찍은 '노이즈' 점군 5만 개와 잡음을 걸러 낸 '디노이즈' 점군 5만 개가 짝지어진 데이터입니다. 도로 주행과 K-CITY 기상 재현 시설에서 모았고 3D 분할 라벨이 있어 악천후 라이다 잡음 제거·객체 인식 AI에 쓸 수 있습니다.",
+ "summary_en": "50k noisy 128-channel lidar point clouds captured in rain and fog paired with 50k denoised versions, from road driving and the K-CITY weather facility, with 3D segmentation labels. For lidar denoising and perception in bad weather.",
+ "contents_ko": "라이다 점군(pcd; 노이즈·디노이즈) + JSON(3D 분할, 객체 정보).",
+ "contents_en": "Lidar point clouds (pcd; noisy and denoised) + JSON (3D segmentation, object info).",
+ "modalities": ["3d", "sensor"],
+ "tasks": ["segmentation", "anomaly_detection", "object_detection"],
+ "topics": [{"ko": "자율주행", "en": "Autonomous driving"}, {"ko": "악천후 센서 신뢰성", "en": "Sensor reliability in bad weather"}],
+ "keywords_ko": ["라이다", "잡음 제거", "악천후", "점군", "3D 분할", "안개"],
+ "keywords_en": ["lidar", "denoising", "bad weather", "point cloud", "3D segmentation", "fog"],
+ "labels": ["3D semantic segmentation", "noise points"],
+ "file_formats": ["pcd", "json"],
+ "scale_ko": "노이즈 점군 50,000개 + 디노이즈 점군 50,000개(128채널)",
+ "classes_example": ["노이즈 점", "비", "안개"],
+ "baseline": [{"task": "3D semantic segmentation (noisy)", "model": "SPVConv", "metric": "mIoU", "value": "72.54%"}, {"task": "3D semantic segmentation (denoised)", "model": "SPVConv", "metric": "mIoU", "value": "76.75%"}, {"task": "lidar denoising", "model": "SPVConv", "metric": "mIoU", "value": "80.63%"}],
+ "difficulty": "advanced",
+ "difficulty_note_ko": "3D 점군 모델 지식이 필요하고 전체 약 612GB입니다. 일부 장면만 받아 쓰세요.",
+ "skills_needed_ko": ["파이썬", "3D 점군 처리(Open3D)", "점군 분할 모델(SPVCNN 등)"],
+ "caveats_ko": ["전체 약 612GB", "기상 재현 시설 데이터는 실제 날씨와 다를 수 있음", "3D 분할 클래스 목록은 팩 앞부분에 없음", "디노이즈 성능 기준값(18%)이 노이즈(30%)보다 낮게 잡혀 있음"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "노이즈 점 시각화", "title_en": "Noise point visualisation", "desc_ko": "같은 장면의 노이즈·디노이즈 점군을 나란히 띄워 비·안개 잡음을 비교합니다.", "desc_en": "View noisy and denoised clouds side by side."},
+  {"level": "capstone", "title_ko": "라이다 잡음 필터", "title_en": "Lidar noise filter", "desc_ko": "점마다 잡음인지 분류해 걸러 내는 모델을 만들어 실시간 필터로 씁니다.", "desc_en": "Classify and remove noise points as a real-time filter."},
+  {"level": "research", "title_ko": "잡음 제거가 탐지에 주는 효과", "title_en": "Effect of denoising on detection", "desc_ko": "잡음 제거 전처리가 악천후 3D 객체 인식 성능을 얼마나 높이는지 연구합니다.", "desc_en": "Study how denoising improves 3D perception in bad weather."}
+ ],
+ "doc_used": true,
+ "uncertain": []
+}

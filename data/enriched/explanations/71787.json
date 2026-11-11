@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71787",
+ "easy_ko": "일반인과 배우 같은 사람들이 정해진 상황에 맞춰 지은 표정을 입체로 찍은 데이터 12만여 세트로, 얼굴 근육이 어떻게 움직였는지 표시되어 있습니다. 가상 인물의 표정을 만들거나 표정을 알아보는 AI에 쓸 수 있습니다.",
+ "easy_en": "Over 120,000 three-dimensional captures of facial expressions made by ordinary people and actors following set scenarios, marked with how the face muscles moved. You can use it to create expressions for digital humans or build AI that recognises expressions.",
+ "detail_ko": "일반인 122,451세트와 배우 등 특수인 5,049세트, 총 127,500세트의 시나리오 기반 3D 얼굴(obj, mtl)과 텍스처(jpg)에 얼굴 근육 움직임 단위(Action Unit)와 인물 정보를 JSON으로 붙였습니다. 전체 약 855GB이고, 얼굴 데이터라 이용 조건을 확인해야 하며, 시나리오·표정 종류 목록과 성능 지표는 팩 앞부분에 없습니다. 71785(안면 랜드마크)와 같은 기관입니다.",
+ "detail_en": "127,500 scenario-based 3D face sets (obj, mtl) with textures (jpg), 122,451 from ordinary people and 5,049 from actors and other special participants, with JSON Action Units (facial muscle movements) and person attributes. Total size is about 855 GB. These are faces, so check the terms of use; the scenario and expression lists and any metrics are not in the pack. Same builder as the facial-landmark set 71785.",
+ "amount_ko": "3D 데이터 127,500세트(일반인 122,451, 특수인 5,049)",
+ "amount_en": "127,500 3D sets (122,451 general, 5,049 special)",
+ "labels_ko": "얼굴 근육 움직임 단위, 인물 정보",
+ "labels_en": "action units, person attributes",
+ "status": "full-run-2026-11-02"
+}

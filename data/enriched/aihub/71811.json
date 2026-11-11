@@ -1,0 +1,29 @@
+{
+ "dataset_id": "71811",
+ "title_en": "Office document generation data",
+ "summary_ko": "공공데이터포털·정책브리핑 등 공개 자료에서 모은 오피스 문서 PDF 10,261개와 페이지 이미지 47,072장에, 시각·텍스트 요소 바운딩박스와 설명문 캡션 라벨 300,477건이 붙은 데이터입니다. 문서 구조를 이해하고 문서 작성을 돕는 AI에 쓸 수 있습니다.",
+ "summary_en": "10,261 office-document PDFs and 47,072 page images from open public sources, with 300,477 labels of bounding boxes for visual and text elements and descriptive captions. For AI that understands document layout and helps write documents.",
+ "contents_ko": "문서(pdf) + 페이지 이미지(jpg) + JSON(요소 상자·캡션).",
+ "contents_en": "Documents (pdf) + page images (jpg) + JSON (element boxes, captions).",
+ "modalities": ["image", "text"],
+ "tasks": ["object_detection", "image_captioning", "text_generation"],
+ "topics": [{"ko": "문서 AI", "en": "Document AI"}, {"ko": "공공 문서", "en": "Public documents"}],
+ "keywords_ko": ["오피스 문서", "문서 레이아웃", "바운딩박스", "캡션", "보고서 작성", "PDF"],
+ "keywords_en": ["office documents", "document layout", "bounding box", "captions", "report writing", "PDF"],
+ "labels": ["bounding box", "caption"],
+ "file_formats": ["pdf", "jpg", "json"],
+ "scale_ko": "PDF 10,261개, 이미지 47,072장, 라벨 300,477건",
+ "classes_example": ["시각요소", "텍스트요소"],
+ "baseline": [],
+ "difficulty": "intermediate",
+ "difficulty_note_ko": "약 50GB로 크고, 레이아웃 탐지와 텍스트 생성을 함께 다뤄야 합니다.",
+ "skills_needed_ko": ["파이썬", "객체 탐지", "문서 레이아웃 분석"],
+ "caveats_ko": ["데이터 개요 설명이 팩에 비어 있음", "요소 세부 클래스와 성능 지표가 팩 앞부분에 없음"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "문서 요소 탐지", "title_en": "Document element detection", "desc_ko": "문서 페이지에서 표·그림·텍스트 영역을 찾습니다.", "desc_en": "Detect tables, figures and text on pages."},
+  {"level": "capstone", "title_ko": "보고서 초안 작성 도우미", "title_en": "Report drafting assistant", "desc_ko": "문서 구조를 따라 보고서 초안을 만들어 주는 도구를 만듭니다.", "desc_en": "Tool that drafts reports following layouts."},
+  {"level": "research", "title_ko": "도표 설명문 자동 생성", "title_en": "Figure description generation", "desc_ko": "문서 속 그림·도표의 설명문을 자동으로 쓰는 방법을 연구합니다.", "desc_en": "Generate descriptions for figures in documents."}
+ ],
+ "doc_used": true,
+ "uncertain": ["요소 클래스 목록", "문서 종류 분포"]
+}

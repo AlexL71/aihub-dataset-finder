@@ -1,0 +1,12 @@
+{
+ "dataset_id": "72",
+ "easy_ko": "어린이 교육 방송 영상의 화면마다 나오는 물건과 캐릭터 위치를 상자로 표시하고, 짧은 영상마다 '양치질하기', '기차 타기'처럼 어떤 상황인지 표시한 데이터입니다. 어린이 영상의 내용을 자동으로 알아보는 AI로 유아용 영상 검색·추천이나 안전한 영상 분류에 쓸 수 있습니다.",
+ "easy_en": "Children's educational TV video where objects and characters are boxed in each frame and each short clip is labelled with the situation, such as brushing teeth or riding a train. You can build AI that understands children's videos, for search, recommendations or safe-content filtering.",
+ "detail_ko": "EBS 영유아 교육 방송 약 700시간에 프레임별 객체 바운딩박스 약 500만 개와 클립 단위 상황 라벨 약 28만 개(구축량 79.2만)를 붙였습니다. mp4 클립, jpg 프레임, 객체 JSON(상자, 물체 이름), 상황 JSON(상황 분류, 길이)으로 구성됩니다. 기준 성능은 SlowFast-R50 상황 분류 정확도 81.8%, EfficientDet-D7 객체 탐지 mAP 51.4%입니다. 전체 약 3.4TB이며 방송 영상 이용 조건 확인이 필요합니다.",
+ "detail_en": "About 700 hours of EBS early-childhood educational broadcasts with about 5M per-frame object bounding boxes and about 280k clip-level situation labels (792k built items). Data comes as mp4 clips, jpg frames, object JSON (box, object name) and situation JSON (class, duration). Baselines: SlowFast-R50 situation classification accuracy 81.8%, EfficientDet-D7 object detection mAP 51.4%. Total size is about 3.4 TB; check the broadcast usage terms.",
+ "amount_ko": "방송 약 700시간, 물체 상자 약 500만 개, 상황 라벨 약 28만 개",
+ "amount_en": "about 700 hours of broadcasts, about 5M object boxes, about 280k situation labels",
+ "labels_ko": "물체·캐릭터 위치 상자와 이름, 상황 종류",
+ "labels_en": "boxes and names for objects and characters, situation class",
+ "status": "full-run-2026-11-02"
+}

@@ -1,0 +1,12 @@
+{
+ "dataset_id": "542",
+ "easy_ko": "일반인 수천 명이 소리를 고루 담도록 만든 대본을 읽어 녹음한 목소리와 문장을 짝지은 데이터입니다. 짧은 녹음만으로 그 사람의 목소리를 흉내 내 말하게 하는 AI 목소리를 만들 수 있지만, 사칭에 악용되지 않도록 조심해야 합니다.",
+ "easy_en": "Recordings of thousands of ordinary people reading scripts designed to cover all Korean sounds evenly, paired with the sentences. You can build AI voices that copy a person's voice from a short recording, but care is needed so it is not misused for impersonation.",
+ "detail_ko": "일반인 화자 3,400명 이상이 25개 대본에서 2,000~2,400문장씩 녹음한 음성 10,152시간(wav)으로, 음소를 고루 담도록 설계되었으며 JSON에 문장 텍스트, 화자 성별·연령대, 대본 번호가 있습니다. 기준 성능은 기록에서 확인되지 않습니다. 목소리 복제 기술은 사칭·사기에 악용될 위험이 있어 윤리적 사용이 필요합니다.",
+ "detail_en": "10,152 hours of speech (wav) by 3,400+ ordinary speakers, each reading 2,000–2,400 sentences from 25 phonetically balanced scripts, with JSON sentence text, speaker sex, age group and script number. No baseline is visible in the record. Voice cloning can be misused for impersonation and fraud, so ethical use is required.",
+ "amount_ko": "음성 10,152시간, 화자 3,400명 이상",
+ "amount_en": "10,152 hours of speech, 3,400+ speakers",
+ "labels_ko": "읽은 문장 글, 화자 성별·나이대, 대본 번호",
+ "labels_en": "sentence text, speaker sex and age group, script number",
+ "status": "full-run-2026-11-02"
+}

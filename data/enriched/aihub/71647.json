@@ -1,0 +1,29 @@
+{
+ "dataset_id": "71647",
+ "title_en": "Object-manipulation hand motion 3D data",
+ "summary_ko": "키넥트 카메라 4대와 3D 모션캡처로 일상 물체 30종을 90가지 방식으로 잡고 다루는 손동작을 찍은 데이터로, 이미지 2,100,014장마다 손 관절 키포인트(2D·3D)와 물체 위치가 붙어 있습니다. 손-물체 상호작용 인식, 메타버스 손 제어, 로봇 손 조작 AI에 쓸 수 있습니다.",
+ "summary_en": "Hand motions grasping and handling 30 everyday objects in 90 ways, filmed with 4 Kinect cameras and 3D motion capture: 2,100,014 images with 2D/3D hand keypoints and object poses. For hand-object interaction recognition, metaverse hand control and robot manipulation AI.",
+ "contents_ko": "RGB·깊이 이미지(jpg·png) + JSON(손 키포인트) + 모션캡처 물체 데이터(txt).",
+ "contents_en": "RGB and depth images (jpg, png) + JSON (hand keypoints) + motion-capture object data (txt).",
+ "modalities": ["image", "video", "3d"],
+ "tasks": ["keypoint_pose", "3d_reconstruction", "action_recognition"],
+ "topics": [{"ko": "피지컬 AI·로봇", "en": "Physical AI and robotics"}, {"ko": "메타버스", "en": "Metaverse"}],
+ "keywords_ko": ["손 자세 추정", "손-물체 상호작용", "모션캡처", "키넥트", "3D", "로봇 조작"],
+ "keywords_en": ["hand pose estimation", "hand-object interaction", "motion capture", "Kinect", "3D", "robot manipulation"],
+ "labels": ["2D keypoints", "3D keypoints", "object pose"],
+ "file_formats": ["jpg", "png", "txt", "json"],
+ "scale_ko": "이미지 2,100,014장, 원시 영상 50시간(70,000클립), 물체 30종·상호작용 90종",
+ "classes_example": ["cracker_box", "potted_meat_can", "master_chef_can", "banana", "apple", "mug", "bowl", "scissors", "hammer", "spatula", "smartphone", "wine_glass"],
+ "baseline": [],
+ "difficulty": "advanced",
+ "difficulty_note_ko": "3D 손 자세 추정이라 어렵고 전체가 약 1.48TB입니다. 일부 물체만 받아 시작하세요.",
+ "skills_needed_ko": ["파이썬", "자세 추정", "3D 좌표 변환"],
+ "caveats_ko": ["전체 약 1,478GB", "실험실 촬영이라 실제 환경과 다를 수 있음", "성능 지표 값이 팩에 없음"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "2D 손 키포인트 추정", "title_en": "2D hand keypoint estimation", "desc_ko": "RGB 이미지에서 손 관절 위치를 찾습니다.", "desc_en": "Find hand joints in RGB images."},
+  {"level": "capstone", "title_ko": "잡기 방식 분류", "title_en": "Grasp type classifier", "desc_ko": "손 키포인트로 물체를 어떻게 잡고 있는지 분류합니다.", "desc_en": "Classify how an object is grasped from hand keypoints."},
+  {"level": "research", "title_ko": "손-물체 3D 동시 복원", "title_en": "Joint hand-object 3D reconstruction", "desc_ko": "손과 물체의 3D 자세를 함께 추정하는 방법을 연구합니다.", "desc_en": "Estimate hand and object 3D poses together."}
+ ],
+ "doc_used": true,
+ "uncertain": []
+}

@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71414",
+ "easy_ko": "여러 물건의 입체 모형과, 그 물건을 보고 전문가와 일반인이 여러 방향에서 손으로 그린 스케치, 그리고 모형을 그려 낸 사진을 짝지은 데이터입니다. 대충 그린 그림만으로 원하는 입체 모형을 찾아 주는 검색 AI를 만들 수 있습니다.",
+ "easy_en": "3D models of many objects paired with hand-drawn sketches of them made by experts and ordinary people from several viewpoints, plus rendered pictures of the models. You can build search AI that finds the 3D model you want from a rough sketch.",
+ "detail_ko": "212개 사물 클래스의 3D 에셋 3,180개(클래스당 15개; obj, blend, fbx, mtl)와 이를 보고 그린 스케치 175,587장, 렌더링 이미지 63,600장(png)에 클래스, 시점, 그린 사람 숙련도(숙련자·일반인), 난이도를 JSON으로 붙였습니다. 기준 성능은 EfficientNetV2 스케치 분류 Top-1 정확도 82.99%, Top-5 93.18%입니다. 212개 클래스 이름은 기록에 없고(synset_id로 구분), 클래스당 3D 에셋이 15개뿐이라 다양성이 적으며, 71412번과 같은 기관입니다.",
+ "detail_en": "3,180 3D assets (obj, blend, fbx, mtl) of 212 object classes (15 each), 175,587 sketches of them and 63,600 renderings (png), with JSON class, viewpoint, sketcher skill (expert or amateur) and difficulty. Baselines: EfficientNetV2 sketch classification top-1 accuracy 82.99%, top-5 93.18%. The 212 class names are not in the record (only synset IDs); only 15 assets per class limits 3D variety; same organisation as dataset 71412.",
+ "amount_ko": "입체 모형 3,180개, 스케치 175,587장",
+ "amount_en": "3,180 3D assets, 175,587 sketches",
+ "labels_ko": "물건 종류, 그린 방향, 그린 사람 실력",
+ "labels_en": "object class, viewpoint, sketcher skill level",
+ "status": "full-run-2026-11-02"
+}

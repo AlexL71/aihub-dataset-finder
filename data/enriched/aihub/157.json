@@ -1,0 +1,29 @@
+{
+ "dataset_id": "157",
+ "title_en": "Major crop growth images (drone spectral)",
+ "summary_ko": "주요 농작물 10종을 생육 단계별로 드론 초분광·다중분광 카메라로 찍은 필지 단위 이미지 100만 건과, 실제 농가에서 받은 수확량·품질 값입니다. 사진만으로 수확량과 품질을 미리 예측하는 AI에 쓸 수 있습니다.",
+ "summary_en": "1 million field-level drone images of 10 major crops taken with hyperspectral and multispectral cameras at different growth stages, paired with real yield and quality values from farmers. For AI that predicts yield and quality from images before harvest.",
+ "contents_ko": "필지 단위 분광 영상 타일 + 라벨(작물, 생육 단계, 생육 정보, 수확량, 품질값).",
+ "contents_en": "Field-level spectral image tiles + labels (crop, growth stage, growth info, yield, quality values).",
+ "modalities": ["image", "sensor", "tabular"],
+ "tasks": ["tabular_prediction", "forecasting", "image_classification"],
+ "topics": [{"ko": "농업·스마트팜", "en": "Agriculture and smart farming"}, {"ko": "드론·원격탐사", "en": "Drones and remote sensing"}, {"ko": "수확량 예측", "en": "Yield prediction"}],
+ "keywords_ko": ["초분광", "다중분광", "드론", "생육", "수확량 예측", "품질 예측"],
+ "keywords_en": ["hyperspectral", "multispectral", "drone", "crop growth", "yield prediction", "quality prediction"],
+ "labels": ["growth stage", "yield", "quality values"],
+ "file_formats": ["tif", "json"],
+ "scale_ko": "약 100만 건, 작물 10종",
+ "classes_example": ["당근", "양파", "감자", "벼", "옥수수", "마늘", "콩", "배추", "무", "양배추"],
+ "baseline": [{"task": "yield regression", "model": "ResNet", "metric": "RMSE", "value": "0.1606"}],
+ "difficulty": "advanced",
+ "difficulty_note_ko": "분광 영상과 회귀 예측을 함께 다뤄야 하고 전체 약 1.8TB입니다.",
+ "skills_needed_ko": ["파이썬", "다중 밴드 영상 처리", "회귀 모델", "식생지수(NDVI) 개념"],
+ "caveats_ko": ["전체 약 1.8TB", "성능 표의 단위가 'mm'로 잘못 적혀 있음"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "식생지수로 생육 비교", "title_en": "Compare growth with NDVI", "desc_ko": "분광 영상에서 NDVI를 계산해 생육 단계별 변화를 그래프로 그립니다.", "desc_en": "Compute NDVI and plot changes across growth stages."},
+  {"level": "capstone", "title_ko": "필지별 수확량 예측 지도", "title_en": "Field-level yield map", "desc_ko": "영상 특징으로 필지별 예상 수확량을 예측해 지도로 보여줍니다.", "desc_en": "Predict yield per field and show it on a map."},
+  {"level": "research", "title_ko": "언제 찍어야 가장 잘 예측할까", "title_en": "Best growth stage for prediction", "desc_ko": "어느 생육 단계 영상이 수확량 예측에 가장 유용한지 연구합니다.", "desc_en": "Study which growth stage gives the best yield prediction."}
+ ],
+ "doc_used": true,
+ "uncertain": ["파일 형식을 팩에서 확인하지 못함"]
+}

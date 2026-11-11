@@ -1,0 +1,32 @@
+{
+ "dataset_id": "71511",
+ "title_en": "Citrus fruit-set amount training data",
+ "summary_ko": "제주 동·서·남·북 40개 농가의 감귤나무를 찍은 이미지 20만 1천여 장에 꽃·새순 영역이 다각형으로 표시되고, 나무 크기·개화 상태와 환경 데이터가 함께 있습니다. 감귤 착과량(열매가 달리는 양)과 생산량을 예측하는 AI에 쓸 수 있습니다.",
+ "summary_en": "About 201,000 images of citrus trees from 40 farms across Jeju, with flowers and new shoots outlined by polygons, plus tree size, flowering state and environment data. For AI that predicts citrus fruit set and yield.",
+ "contents_ko": "감귤나무 이미지(jpg) + JSON(다각형, 나무 크기, 꽃·새순 상태, 환경·메타 데이터).",
+ "contents_en": "Citrus tree images (jpg) + JSON (polygons, tree size, flower/shoot state, environment and metadata).",
+ "modalities": ["image", "tabular"],
+ "tasks": ["segmentation", "tabular_prediction", "forecasting"],
+ "topics": [{"ko": "농업·과수", "en": "Agriculture and fruit trees"}, {"ko": "생산량 예측", "en": "Yield prediction"}],
+ "keywords_ko": ["감귤", "착과량", "제주", "개화", "새순", "생산량 예측"],
+ "keywords_en": ["citrus", "fruit set", "Jeju", "flowering", "new shoots", "yield prediction"],
+ "labels": ["polygon", "tree size", "flower/shoot state", "environment data"],
+ "file_formats": ["jpg", "json"],
+ "scale_ko": "이미지·라벨 201,184세트 (농가 40곳)",
+ "classes_example": ["많음", "보통", "빈약"],
+ "baseline": [
+  {"task": "citrus fruit-set prediction", "model": "PyCaret", "metric": "MAPE", "value": "4.89%"},
+  {"task": "citrus fruit-set prediction", "model": "PyCaret", "metric": "NMAE", "value": "3.5%"}
+ ],
+ "difficulty": "intermediate",
+ "difficulty_note_ko": "예측 자체는 표 데이터 모델로 가능하지만 이미지가 약 850GB로 매우 큽니다.",
+ "skills_needed_ko": ["파이썬", "분할 모델", "표 데이터 회귀(PyCaret)"],
+ "caveats_ko": ["전체 약 850GB", "classes_example은 꽃·새순 상태 등급"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "꽃 양 등급 분류", "title_en": "Flowering amount grading", "desc_ko": "나무 사진으로 꽃·새순 상태를 많음·보통·빈약으로 분류합니다.", "desc_en": "Classify flower/shoot state as many, normal or poor."},
+  {"level": "capstone", "title_ko": "농가 착과량 예측 대시보드", "title_en": "Farm fruit-set dashboard", "desc_ko": "사진과 환경 데이터로 농가별 착과량을 예측해 보여줍니다.", "desc_en": "Predict and show fruit set per farm."},
+  {"level": "research", "title_ko": "기상과 생리낙과 관계", "title_en": "Weather and fruit drop", "desc_ko": "기상 조건이 생리낙과와 착과량에 주는 영향을 분석합니다.", "desc_en": "Analyse weather effects on fruit drop and set."}
+ ],
+ "doc_used": true,
+ "uncertain": ["착과량 정답값이 어떤 단위로 기록되었는지 팩에 자세히 없음"]
+}

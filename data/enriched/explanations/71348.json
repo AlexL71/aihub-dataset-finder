@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71348",
+ "easy_ko": "비행기·드론·레이더 위성 사진에서 건물 위, 땅 위, 물 위에 설치된 태양광 패널과, 새로 설치하기 좋은 건물 옥상을 표시하고 햇빛 양과 기온 같은 정보를 붙인 데이터입니다. 태양광 설치 현황을 파악하고 어디에 더 설치하면 좋을지 찾는 AI를 만들 수 있습니다.",
+ "easy_en": "Aerial, drone and radar-satellite images marking solar panels installed on buildings, on the ground and on water, and building rooftops suitable for new panels, with data such as sunlight and temperature. You can build AI that maps existing solar installations and finds good places for more.",
+ "detail_ko": "항공·드론·SAR 위성 영상(tif)의 태양광 패널 이미지 약 4.7만 장과 설치 적지 건물 옥상 이미지 약 2.3만 장(옥상 시설물 표시)에 분할·바운딩박스를 JSON으로 붙이고 일사량·일조량·기온 등 참조 데이터 약 4.2만 건(csv)을 더했습니다. 기준 성능은 Mask R-CNN 패널 분할 Dice 0.8734, 적지 탐지 Dice 0.6732, YOLOv4 SAR 패널 탐지 F1 0.31입니다. SAR 탐지 성능이 매우 낮고 적지 분석 성능도 높지 않습니다.",
+ "detail_en": "About 47k solar-panel images and about 23k rooftop images suitable for installation (with rooftop objects marked) from aerial, drone and SAR satellite imagery (tif), with JSON segmentation and boxes, plus about 42k reference records (csv) such as irradiance, sunshine hours and temperature. Baselines: Mask R-CNN panel segmentation Dice 0.8734, suitable-area detection Dice 0.6732, YOLOv4 SAR panel detection F1 0.31. SAR detection is very weak, and site analysis is only moderate.",
+ "amount_ko": "사진 약 7.1만 장(패널 약 4.7만, 옥상 약 2.3만)",
+ "amount_en": "about 71k images (47k panels, 23k rooftops)",
+ "labels_ko": "태양광 패널·옥상 영역과 위치 상자, 옥상 시설물, 햇빛·기온 값",
+ "labels_en": "panel and rooftop masks and boxes, rooftop objects, sunlight and temperature values",
+ "status": "full-run-2026-11-02"
+}

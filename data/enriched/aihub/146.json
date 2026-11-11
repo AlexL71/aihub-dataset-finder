@@ -1,0 +1,29 @@
+{
+ "dataset_id": "146",
+ "title_en": "Fire blight images of fruit trees",
+ "summary_ko": "사과와 배 과수원에서 찍은 열매·꽃·잎·가지 사진으로, 정상과 과수화상병·탄저병·검은별무늬병 등 7가지 병을 구분해 둔 데이터입니다. 병든 부위가 상자로 표시되어 있고 피해 정도(초기·중기·말기)와 생육 단계도 들어 있어 작물 병 진단 앱을 만들 수 있습니다.",
+ "summary_en": "Photos of apple and pear fruit, flowers, leaves and branches from orchards, labelled as healthy or one of 7 diseases such as fire blight, anthracnose and scab. The area of interest is boxed and each photo also has the damage stage (early, middle, late) and growth stage, so it suits a crop-disease diagnosis app.",
+ "contents_ko": "사진 1장(약 4032×3024) + JSON 1개(작물, 질병 코드, 촬영 부위, 생육 단계, 피해 정도, 관심 영역 상자 좌표). 질병 사진은 원본 외에 10배 증강본이 따로 있음.",
+ "contents_en": "One photo (about 4032×3024) + one JSON (crop, disease code, plant part, growth stage, damage stage, box around the area of interest). Disease photos also come with a separate 10× augmented set.",
+ "modalities": ["image"],
+ "tasks": ["image_classification", "object_detection"],
+ "topics": [{"ko": "농업·스마트팜", "en": "Agriculture and smart farming"}, {"ko": "식물 병해", "en": "Plant disease"}, {"ko": "과일", "en": "Fruit"}],
+ "keywords_ko": ["과수화상병", "사과", "배", "작물 질병", "병해 진단", "탄저병", "스마트팜"],
+ "keywords_en": ["fire blight", "apple", "pear", "crop disease", "disease diagnosis", "anthracnose", "smart farm"],
+ "labels": ["class", "bounding box", "attributes (plant part, growth stage, damage stage)"],
+ "file_formats": ["jpg", "json"],
+ "scale_ko": "실제 촬영 약 11만 장 중 학습용 19.4만 건(정상 4만, 질병 원본 1.4만, 증강 14만), 클래스 9개",
+ "classes_example": ["배 정상", "배검은별무늬병", "배과수화상병", "사과 정상", "사과갈색무늬병", "사과과수화상병", "사과부란병", "사과점무늬낙엽병", "사과탄저병"],
+ "baseline": [{"task": "disease recognition", "model": "ResNet50", "metric": "F1-score", "value": "0.92"}],
+ "difficulty": "beginner",
+ "difficulty_note_ko": "클래스가 9개로 적고 폴더가 작물별로 나뉘어 있어 첫 이미지 분류 실습에 알맞습니다. 전체 약 480GB라서 원본 일부만 받아 쓰는 것이 좋습니다.",
+ "skills_needed_ko": ["파이썬 기초", "사전학습 모델로 이미지 분류하기(전이학습)"],
+ "caveats_ko": ["전체 약 480GB: 증강본을 빼고 원본만 받으면 훨씬 작음", "질병 사진 대부분이 증강본이라 같은 원본에서 나온 사진이 학습·검증에 섞이지 않게 나눠야 함"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "사과잎 병 진단기", "title_en": "Apple leaf disease checker", "desc_ko": "잎 사진을 넣으면 정상인지, 어떤 병인지 알려주는 분류 모델을 전이학습으로 만듭니다.", "desc_en": "Use transfer learning to tell whether a leaf photo is healthy or which disease it has."},
+  {"level": "capstone", "title_ko": "농가용 병해 신고 앱", "title_en": "Disease report app for farmers", "desc_ko": "사진으로 병을 진단하고 피해 단계와 촬영 위치를 기록해 지역별 발병 지도를 보여주는 앱을 만듭니다.", "desc_en": "An app that diagnoses disease from a photo, records the stage and location, and shows an outbreak map by region."},
+  {"level": "research", "title_ko": "적은 사진으로 새 병 인식하기", "title_en": "Recognising a new disease from few photos", "desc_ko": "병마다 원본 수십 장만 쓰는 퓨샷(few-shot) 학습이 증강 데이터를 많이 쓰는 방법과 비교해 얼마나 정확한지 연구합니다.", "desc_en": "Compare few-shot learning with only tens of original photos per disease against training with the large augmented set."}
+ ],
+ "doc_used": true,
+ "uncertain": ["설명서 수량(사과 정상 1만, 질병 2천)과 페이지 통계(합계 211,555)가 서로 다름: 페이지 값은 증강 포함으로 보임"]
+}

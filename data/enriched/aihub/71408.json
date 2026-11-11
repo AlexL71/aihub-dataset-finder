@@ -1,0 +1,29 @@
+{
+ "dataset_id": "71408",
+ "title_en": "Pig bio-energy data",
+ "summary_ko": "돼지 사육 챔버 안의 온도·습도·CO2·암모니아 센서 기록 32만 건과 돼지 호흡·바닥 표면 이미지 40만 장, 그리고 호흡량·증발량·체중·체온·사료·급수량 측정 기록입니다. 이미지에는 상자·키포인트가 표시되어 있어 스마트 돈사의 환경 제어와 에너지 예측 AI에 쓸 수 있습니다.",
+ "summary_en": "320k sensor records (temperature, humidity, CO2, ammonia) from pig chambers, 400k images of pig breathing and floor surfaces with boxes and keypoints, and measurements of respiration, evaporation, weight, body temperature, feed and water. For smart pig-barn climate control and energy prediction.",
+ "contents_ko": "돼지·바닥 이미지(png) + JSON(상자, 키포인트) + CSV(환경 센서, 호흡·증발량, 체중·체온, 사양관리 기록).",
+ "contents_en": "Pig and floor image (png) + JSON (boxes, keypoints) + CSV (climate sensors, respiration/evaporation, weight/temperature, feeding records).",
+ "modalities": ["image", "sensor", "tabular"],
+ "tasks": ["keypoint_pose", "object_detection", "forecasting", "tabular_prediction"],
+ "topics": [{"ko": "스마트 축산", "en": "Smart livestock farming"}, {"ko": "농업 에너지 관리", "en": "Farm energy management"}],
+ "keywords_ko": ["양돈", "스마트 돈사", "호흡량", "환경 센서", "체온", "디지털 트윈"],
+ "keywords_en": ["pig farming", "smart barn", "respiration", "climate sensors", "body temperature", "digital twin"],
+ "labels": ["bounding box", "keypoints", "sensor values"],
+ "file_formats": ["png", "csv", "json"],
+ "scale_ko": "이미지 400,000장(호흡 30만·바닥 10만), 텍스트·센서 기록 445,530건",
+ "classes_example": ["온도", "습도", "CO2", "NH3", "호흡량", "증발량", "체중", "직장온도"],
+ "baseline": [],
+ "difficulty": "advanced",
+ "difficulty_note_ko": "이미지와 센서 시계열을 함께 다뤄야 하고 전체 약 984GB입니다. 센서 CSV만으로 예측 실습을 먼저 하세요.",
+ "skills_needed_ko": ["파이썬", "pandas 시계열 처리", "키포인트 모델(HRNet)", "회귀·예측 모델"],
+ "caveats_ko": ["전체 약 984GB이며 가장 작은 파일도 약 31MB", "성능 지표 표가 비어 있음(HRNet 호흡량 탐지만 소개)", "데이터 유형에 비디오가 있으나 파일 형식은 png·csv로만 적혀 있음"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "돈사 환경 시각화", "title_en": "Barn climate dashboard", "desc_ko": "온도·습도·암모니아 센서 기록을 시간대별 그래프로 보여 줍니다.", "desc_en": "Plot temperature, humidity and ammonia readings over time."},
+  {"level": "capstone", "title_ko": "환기량 자동 추천", "title_en": "Ventilation recommender", "desc_ko": "센서 기록과 돼지 상태로 다음 시간의 적정 환기량을 예측합니다.", "desc_en": "Predict the right ventilation for the next hour from sensors and pig state."},
+  {"level": "research", "title_ko": "이미지로 호흡수 측정", "title_en": "Breathing rate from images", "desc_ko": "키포인트 변화로 돼지 호흡 횟수를 비접촉으로 재는 방법을 연구합니다.", "desc_en": "Study contact-free pig breathing rate from keypoint motion."}
+ ],
+ "doc_used": true,
+ "uncertain": []
+}

@@ -1,0 +1,12 @@
+{
+ "dataset_id": "199",
+ "easy_ko": "항구의 바다 표지와 부두 시설, 항구 근처의 배 같은 바다 위 물체를 찍은 사진과, 배끼리 부딪히지 않도록 만든 가상 상황 사진에 물체 위치와 종류를 표시한 데이터입니다. 스스로 다니는 배가 항구 시설과 다른 배를 알아보고 충돌을 피하는 AI를 만들 수 있습니다.",
+ "easy_en": "Photos of port structures (navigation markers, piers), ships and other objects near ports, plus virtual collision-avoidance scenes, with object positions and types marked. You can build AI that lets self-navigating ships recognise port structures and other vessels and avoid collisions.",
+ "detail_ko": "항만 구조물 851,727장, 항만 인근 선박 등 해상 물체 2,207,273장, 충돌 방지 가상 시나리오 511,128장, 총 약 357만 장(jpg, 비식별)에 구조물·선박 바운딩박스 또는 폴리곤, 클래스, 시나리오를 JSON으로 붙였습니다. 충돌 방지 이미지는 가상 시나리오이며, 클래스 전체 목록과 기준 성능은 기록에서 확인되지 않습니다. 전체 약 2.3TB입니다.",
+ "detail_en": "About 3.57M jpg images (de-identified): 851,727 of port structures, 2,207,273 of ships and other sea objects near ports, and 511,128 virtual collision-avoidance scenes, with JSON boxes or polygons, classes and scenario. Collision-avoidance images are virtual; the full class list and baseline are not visible in the record. Total size is about 2.3 TB.",
+ "amount_ko": "이미지 약 357만 장",
+ "amount_en": "about 3.57M images",
+ "labels_ko": "항구 시설·배 위치 상자·윤곽, 물체 종류, 상황 구분",
+ "labels_en": "boxes or outlines around port structures and ships, object class, scenario",
+ "status": "full-run-2026-11-02"
+}

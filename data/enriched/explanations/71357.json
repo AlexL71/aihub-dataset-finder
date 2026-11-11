@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71357",
+ "easy_ko": "사진만 봐서는 알 수 없고 상식이나 배경 지식이 있어야 답할 수 있는 한국어 질문과 답을 사진마다 붙이고, 관련 물체 위치와 근거가 되는 지식 문장도 함께 담은 데이터입니다. 사진과 바깥 지식을 함께 써서 질문에 답하는 AI를 만들 수 있습니다.",
+ "easy_en": "Photos paired with Korean questions that can only be answered with common sense or background knowledge, not from the picture alone, along with the answers, the related objects' positions and the knowledge facts that support each answer. You can build AI that answers questions by combining a photo with outside knowledge.",
+ "detail_ko": "위키미디어 이미지 약 6만 장(jpg)에 외부 지식이 필요한 한국어 질문-답변 약 12만 개, 관련 물체 바운딩박스, DBpedia·ConceptNet 기반 지식 근거 약 28만 개를 JSON으로 붙였습니다(분야: 문화, 생물, 물체, 식물, 교통, 한국적 이미지 등). 기준 성능은 KLUE-RoBERTa + ResNet-50 / ViT 지식 기반 VQA 정확도 55.18%로 낮습니다. 위키미디어 이미지 라이선스 확인이 필요합니다.",
+ "detail_en": "About 60k Wikimedia images (jpg) with about 120k Korean question–answer pairs that need outside knowledge, related object boxes and about 280k supporting facts based on DBpedia and ConceptNet, in JSON (areas: culture, living things, objects, plants, transport, Korean imagery and more). Baseline: KLUE-RoBERTa + ResNet-50 / ViT knowledge-based VQA accuracy 55.18%, which is low. Check Wikimedia image licences.",
+ "amount_ko": "사진 약 6만 장, 질문-답 약 12만 개, 지식 문장 약 28만 개",
+ "amount_en": "about 60k images, about 120k QA pairs, about 280k facts",
+ "labels_ko": "질문과 답, 관련 물체 위치 상자, 근거 지식 문장",
+ "labels_en": "questions and answers, object boxes, supporting knowledge facts",
+ "status": "full-run-2026-11-02"
+}

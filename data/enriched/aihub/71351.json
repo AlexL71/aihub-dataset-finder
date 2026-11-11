@@ -1,0 +1,32 @@
+{
+ "dataset_id": "71351",
+ "title_en": "Natural-language-to-SQL (NL2SQL) query generation data",
+ "summary_ko": "서울시 열린데이터광장·공공데이터포털의 행정 데이터로 만든 데이터베이스 약 6,400개와, 각 데이터베이스에 대한 한국어 질문과 같은 뜻의 SQL 질의 쌍 약 11만 개를 담은 데이터입니다. 말로 물으면 데이터베이스를 검색해 주는 NL2SQL AI에 쓸 수 있습니다.",
+ "summary_en": "About 6,400 databases built from Seoul Open Data Plaza and the national public data portal, with about 110,000 pairs of Korean questions and equivalent SQL queries. For NL2SQL AI that searches databases from plain-language questions.",
+ "contents_ko": "데이터베이스(SQLite, SQL) + JSON(데이터베이스 설명, 질문-SQL 쌍).",
+ "contents_en": "Databases (SQLite, SQL) + JSON (database annotations, question-SQL pairs).",
+ "modalities": ["text", "tabular"],
+ "tasks": ["question_answering", "text_generation"],
+ "topics": [{"ko": "데이터베이스·검색", "en": "Databases and search"}, {"ko": "공공데이터", "en": "Public data"}],
+ "keywords_ko": ["NL2SQL", "SQL", "자연어 질의", "데이터베이스", "공공데이터"],
+ "keywords_en": ["NL2SQL", "SQL", "natural-language query", "database", "public data"],
+ "labels": ["question", "SQL query", "database annotation"],
+ "file_formats": ["sqlite", "sql", "json"],
+ "scale_ko": "데이터베이스 약 6,400개, 질문-SQL 쌍 약 11만 개",
+ "classes_example": ["산업/경제"],
+ "baseline": [
+  {"task": "NL-to-SQL conversion", "model": "RYANSQL", "metric": "accuracy", "value": "82.2%"},
+  {"task": "NL-to-SQL conversion", "model": "BRIDGE", "metric": "accuracy", "value": "80.8%"}
+ ],
+ "difficulty": "intermediate",
+ "difficulty_note_ko": "약 1GB로 받기 쉽지만 SQL 기초 지식이 필요합니다.",
+ "skills_needed_ko": ["파이썬", "SQL", "Hugging Face", "생성 모델(T5 등)"],
+ "caveats_ko": ["SQL 문법 수준(조인 등) 분포가 팩 앞부분에 없음", "공공 행정 데이터 중심"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "간단한 질문→SQL", "title_en": "Simple question-to-SQL", "desc_ko": "T5를 미세조정해 한국어 질문을 SQL로 바꿉니다.", "desc_en": "Fine-tune T5 to turn Korean questions into SQL."},
+  {"level": "capstone", "title_ko": "공공데이터 대화형 검색", "title_en": "Chat with public data", "desc_ko": "서울시 데이터에 말로 질문하면 표로 답을 보여주는 앱을 만듭니다.", "desc_en": "Ask Seoul data questions in Korean and get table answers."},
+  {"level": "research", "title_ko": "LLM NL2SQL 평가", "title_en": "Evaluating LLMs on NL2SQL", "desc_ko": "대형 언어모델이 한국어 NL2SQL을 얼마나 잘 하는지 평가합니다.", "desc_en": "Benchmark large language models on Korean NL2SQL."}
+ ],
+ "doc_used": true,
+ "uncertain": ["full category list"]
+}

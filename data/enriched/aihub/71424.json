@@ -1,0 +1,29 @@
+{
+ "dataset_id": "71424",
+ "title_en": "Metaverse character motion retargeting data",
+ "summary_ko": "브레이킹(브레이크댄스)과 택견 동작을 스튜디오에서 8대 카메라로 찍은 영상 72,320클립과 모션 데이터 102,146건입니다. 사람 동작을 체형이 다른 여러 3D 캐릭터에 옮겨 입히는 모션 리타게팅 AI, 메타버스 춤·무예 교육에 쓸 수 있습니다.",
+ "summary_en": "72,320 video clips from 8 studio cameras of breaking (breakdance) and taekkyeon moves, with 102,146 motion files. For motion retargeting that transfers human moves onto 3D characters of different body shapes, and metaverse dance or martial-arts education.",
+ "contents_ko": "동작 영상(mp4) + 모션 데이터(bvh; 사람·캐릭터) + JSON(동작 종류, 메타정보).",
+ "contents_en": "Motion video (mp4) + motion data (bvh; human and character) + JSON (move type, metadata).",
+ "modalities": ["video", "3d"],
+ "tasks": ["keypoint_pose", "action_recognition"],
+ "topics": [{"ko": "메타버스·게임", "en": "Metaverse and games"}, {"ko": "K-문화·전통 무예", "en": "K-culture and traditional martial arts"}],
+ "keywords_ko": ["모션 리타게팅", "브레이킹", "택견", "3D 캐릭터", "모션캡처", "메타버스"],
+ "keywords_en": ["motion retargeting", "breaking", "taekkyeon", "3D characters", "motion capture", "metaverse"],
+ "labels": ["keypoints (bvh)", "move type", "metadata"],
+ "file_formats": ["mp4", "bvh", "json"],
+ "scale_ko": "영상 72,320클립, 모션 데이터 102,146건(캐릭터 모션 포함), 메타데이터 9,286건",
+ "classes_example": ["브레이킹 공통 동작", "브레이킹 시그니처 동작", "택견 품밟기-홑새김", "택견 맞대거리/연무동작"],
+ "baseline": [{"task": "3D motion retargeting", "model": "CNN", "metric": "NRMSE", "value": "3.91%"}],
+ "difficulty": "advanced",
+ "difficulty_note_ko": "bvh 골격 데이터와 리타게팅 개념이 필요하고 전체 약 451GB이며 가장 작은 파일도 약 2GB입니다.",
+ "skills_needed_ko": ["파이썬", "모션 데이터(bvh) 처리", "Blender 등 3D 도구", "시퀀스 모델"],
+ "caveats_ko": ["전체 약 451GB, 가장 작은 파일도 약 2GB", "캐릭터 모션은 사람 모션 1건당 10개 캐릭터로 만든 것(예: 5,824→58,240)", "성능표 AI TASK가 Object Detection으로 적혀 있으나 실제는 리타게팅"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "춤 동작 시각화", "title_en": "Dance motion viewer", "desc_ko": "bvh 파일을 읽어 브레이킹·택견 동작을 3D 골격으로 재생합니다.", "desc_en": "Play breaking and taekkyeon moves as 3D skeletons from bvh."},
+  {"level": "capstone", "title_ko": "택견 동작 따라하기 평가", "title_en": "Taekkyeon follow-along scoring", "desc_ko": "웹캠 자세와 기준 동작을 비교해 얼마나 비슷한지 점수를 매깁니다.", "desc_en": "Score how closely a webcam pose matches the reference move."},
+  {"level": "research", "title_ko": "체형 차이 리타게팅", "title_en": "Retargeting across body shapes", "desc_ko": "키·팔 길이가 다른 캐릭터로 동작을 옮길 때 발 미끄러짐을 줄이는 방법을 연구합니다.", "desc_en": "Study reducing foot sliding when retargeting to different body shapes."}
+ ],
+ "doc_used": true,
+ "uncertain": []
+}

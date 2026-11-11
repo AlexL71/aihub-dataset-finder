@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71369",
+ "easy_ko": "대장암, 유방암, 당뇨병, 전립선암, 심근경색에 관한 영어 의학 논문에서 유전자, 단백질, 질병 같은 생물 관련 이름과 그 사이의 관계를 표시한 데이터입니다. 논문 속 생물학적 관계를 자동으로 뽑아 신약 개발을 돕는 AI를 만들 수 있습니다.",
+ "easy_en": "English medical papers on colorectal cancer, breast cancer, diabetes, prostate cancer and heart attack, with biological names such as genes, proteins and diseases marked along with the relations between them. You can build AI that extracts biological relations from papers to help drug development.",
+ "detail_ko": "PubMed의 질환 5종(대장암, 유방암, 당뇨병, 전립선암, 심근경색) 관련 영어 논문 2만 편(질환별 4천 편, pdf)에 생물학적 개체명과 개체 간 관계를 JSON으로 붙였습니다. 기준 성능은 BERT 관계 추출 F1 0.9638입니다. 논문 원문 저작권 확인이 필요하고, AI Hub 데이터 영역이 '한국어'로 적혀 있지만 실제 논문은 영어이며, 관계 종류 목록은 기록에서 확인되지 않습니다.",
+ "detail_en": "20k English PubMed papers (pdf; 4k each on colorectal cancer, breast cancer, diabetes, prostate cancer and myocardial infarction) with JSON biomedical entities and relations between them. Baseline: BERT relation extraction F1 0.9638. Check paper copyright; the data field says Korean, but the papers are in English; the list of relation types is not in the record.",
+ "amount_ko": "논문 2만 편, 질환 5종",
+ "amount_en": "20k papers, 5 diseases",
+ "labels_ko": "생물 관련 이름(유전자·단백질·질병 등), 이름 사이의 관계",
+ "labels_en": "biomedical entities (genes, proteins, diseases and more), relations",
+ "status": "full-run-2026-11-02"
+}

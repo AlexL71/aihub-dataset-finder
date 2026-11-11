@@ -1,0 +1,29 @@
+{
+ "dataset_id": "490",
+ "title_en": "Jangsu (Jeonbuk) apple sugar-content quality data",
+ "summary_ko": "전북 장수의 사과 4품종(홍로·후지·시나노골드·아리수) 사진 53.6만 장에 사과 영역과 비파괴 당도 등급(A·B·C)을 표시하고, 토양·환경 센서 17.8만 세트와 적외선 데이터 11.9만 개를 함께 담았습니다. 사진으로 사과 품종과 당도를 예측하는 AI에 쓸 수 있습니다.",
+ "summary_en": "536,000 photos of 4 apple varieties from Jangsu, Jeonbuk (Hongro, Fuji, Shinano Gold, Arisoo) with apple regions and non-destructive sugar grades (A, B, C), plus 178,000 soil and environment sensor sets and 119,000 infrared records. For AI that predicts apple variety and sweetness from images.",
+ "contents_ko": "사과 RGB 사진(jpg) + JSON(사과 분할, 품종, 당도 등급) + 토양·환경 센서 + 적외선 데이터.",
+ "contents_en": "Apple RGB photo (jpg) + JSON (segmentation, variety, sugar grade) + soil and environment sensors + infrared data.",
+ "modalities": ["image", "sensor", "tabular"],
+ "tasks": ["image_classification", "segmentation", "tabular_prediction"],
+ "topics": [{"ko": "농업·스마트팜", "en": "Agriculture and smart farming"}, {"ko": "과일", "en": "Fruit"}, {"ko": "품질 검사", "en": "Quality inspection"}],
+ "keywords_ko": ["사과", "당도", "품종 분류", "비파괴 검사", "장수", "농산물 품질"],
+ "keywords_en": ["apple", "sugar content", "variety classification", "non-destructive testing", "Jangsu", "produce quality"],
+ "labels": ["segmentation", "variety", "sugar grade (A/B/C)", "sensor values"],
+ "file_formats": ["jpg", "json"],
+ "scale_ko": "사과 이미지 535,691장(후지 48%, 홍로 36%, 시나노골드 8%, 아리수 8%), 센서 177,984세트, 적외선 119,423개",
+ "classes_example": ["홍로", "후지", "시나노골드", "아리수", "A", "B", "C"],
+ "baseline": [],
+ "difficulty": "intermediate",
+ "difficulty_note_ko": "품종 분류는 쉽지만 사진만으로 당도를 맞히는 것은 어렵습니다. 약 570GB입니다.",
+ "skills_needed_ko": ["파이썬", "이미지 분류", "회귀·센서 데이터 결합"],
+ "caveats_ko": ["품종별 사진 수가 크게 불균형", "성능 지표가 팩 앞부분에 없음"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "사과 품종 분류", "title_en": "Apple variety classifier", "desc_ko": "사진으로 사과 4품종을 분류합니다.", "desc_en": "Classify the 4 apple varieties from photos."},
+  {"level": "capstone", "title_ko": "사과 당도 예측 앱", "title_en": "Apple sweetness app", "desc_ko": "사과 사진으로 당도 등급을 예측해 보여주는 앱을 만듭니다.", "desc_en": "Predict sweetness grade from an apple photo."},
+  {"level": "research", "title_ko": "재배 환경이 당도에 주는 영향", "title_en": "Growing conditions and sweetness", "desc_ko": "토양·환경 센서와 당도 등급의 관계를 분석합니다.", "desc_en": "Analyse how soil and environment data relate to sugar grades."}
+ ],
+ "doc_used": true,
+ "uncertain": []
+}

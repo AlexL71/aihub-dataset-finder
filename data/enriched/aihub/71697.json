@@ -1,0 +1,29 @@
+{
+ "dataset_id": "71697",
+ "title_en": "Robot driving data in orchards (grape, citrus)",
+ "summary_ko": "포도·감귤 과수원 농로와 노지를 실제로 주행하며 찍은 이미지 약 65만 장과 라이다 점군 약 31만 개에 사람·손수레·운반차·사다리·과수박스·나무 등이 상자·3D 상자·영역 분할로 표시되어 있습니다. 과수원에서 길을 찾고 장애물을 피하는 수확·운반·방제 로봇 AI에 쓸 수 있습니다.",
+ "summary_en": "About 650,000 images and 310,000 LiDAR point clouds from driving through grape and citrus orchards, with people, carts, carriers, ladders, fruit boxes, trees and more marked by boxes, 3D boxes and segmentation. For harvest, transport and spraying robots that find paths and avoid obstacles in orchards.",
+ "contents_ko": "주행 이미지(jpg) + 라이다 점군(pcd) + JSON(상자, 3D 큐보이드, 분할 영역, 클래스).",
+ "contents_en": "Driving image (jpg) + LiDAR point cloud (pcd) + JSON (boxes, 3D cuboids, segmentation, class).",
+ "modalities": ["image", "3d", "sensor"],
+ "tasks": ["object_detection", "segmentation"],
+ "topics": [{"ko": "농업 로봇", "en": "Agricultural robots"}, {"ko": "자율주행", "en": "Autonomous driving"}],
+ "keywords_ko": ["과수원", "농업 로봇", "포도", "감귤", "라이다", "경로 인식"],
+ "keywords_en": ["orchard", "agricultural robot", "grape", "citrus", "LiDAR", "path detection"],
+ "labels": ["bounding box", "3D cuboid", "polygon", "class"],
+ "file_formats": ["jpg", "pcd", "json"],
+ "scale_ko": "이미지 650,317장(포도 309,909·감귤 340,408), 점군 305,197개, 2D 객체 1,353,185개, 2D 클래스 14종",
+ "classes_example": ["사람", "손수레", "운반차", "트럭", "방제기", "사다리", "과수박스", "포도 봉지", "감귤", "비포장"],
+ "baseline": [],
+ "difficulty": "advanced",
+ "difficulty_note_ko": "전체 약 5.6TB로 매우 큽니다. 2D 이미지 일부로 탐지 실습부터 시작하세요.",
+ "skills_needed_ko": ["파이썬", "YOLO 탐지", "분할 모델", "점군(PCD) 처리"],
+ "caveats_ko": ["전체 약 5.6TB", "2D 객체의 약 32%가 사람으로 클래스 불균형", "성능 지표가 팩 앞부분에 없음", "71700 사과·배 과수원 데이터와 같은 구성"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "과수원 사람·장비 탐지", "title_en": "People and equipment detection in orchards", "desc_ko": "과수원 사진에서 사람·손수레·사다리를 YOLO로 탐지합니다.", "desc_en": "Detect people, carts and ladders in orchard photos with YOLO."},
+  {"level": "capstone", "title_ko": "과수원 주행 가능 길 찾기", "title_en": "Drivable path in orchards", "desc_ko": "비포장 길 영역을 분할해 로봇이 갈 수 있는 길을 표시합니다.", "desc_en": "Segment unpaved paths to show where a robot can drive."},
+  {"level": "research", "title_ko": "작물 간 일반화", "title_en": "Generalising across crops", "desc_ko": "포도·감귤로 학습한 모델이 사과·배 과수원(71700)에서도 통하는지 연구합니다.", "desc_en": "Study whether grape/citrus models work in apple/pear orchards (71700)."}
+ ],
+ "doc_used": true,
+ "uncertain": []
+}

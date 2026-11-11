@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71259",
+ "easy_ko": "어린이부터 어른까지 여러 수준의 태권도 선수와 수련생이 품새(태극 1~8장)와 기본 동작을 하는 모습을 아주 빠른 카메라로 찍고, 몸의 주요 점 위치와 동작 이름을 붙인 데이터입니다. 태권도 동작을 알아보고 자세가 정확한지 평가해 주는 AI를 만들 수 있습니다.",
+ "easy_en": "Taekwondo athletes and trainees of all ages and levels performing the Taegeuk forms and basic moves, filmed with very fast cameras, with key body points and move names labelled. You can build AI that recognises taekwondo moves and checks whether the posture is correct.",
+ "detail_ko": "남녀 선수 48명(유소년~장년, 선수급·일반 수련생)이 태극 1~8장 품새와 낱동작을 하는 120fps 영상 500시간에서 뽑은 이미지 약 90만 장(jpg)에 키포인트 29개, 동작 이름(동작 30만 개), 선수 정보를 JSON으로 붙였습니다. 기준 성능은 수정 VGG16-BN 동작 인식 정확도 94.48%, AlphaPose 자세 추정 mAP 97.99%입니다. 전체 약 329GB이며, 선수 얼굴이 보이고 미성년자가 포함되며, 선수급(A레벨)은 6명뿐입니다.",
+ "detail_en": "About 900k images (jpg) from 500 hours of 120 fps video of 48 male and female athletes (youth to senior; elite and regular trainees) performing Taegeuk forms 1–8 and single moves, with JSON 29 keypoints, move name (300k moves) and athlete info. Baselines: modified VGG16-BN move recognition accuracy 94.48%, AlphaPose pose estimation mAP 97.99%. Total size is about 329 GB; faces are visible and minors are included; only 6 are elite (A-level).",
+ "amount_ko": "사진 약 90만 장, 동작 30만 개, 선수 48명",
+ "amount_en": "about 900k images, 300k moves, 48 athletes",
+ "labels_ko": "몸의 주요 점(키포인트), 동작 이름, 선수 정보",
+ "labels_en": "body key points, move class, athlete info",
+ "status": "full-run-2026-11-02"
+}

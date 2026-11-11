@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71952",
+ "easy_ko": "베트남과 말레이시아의 ESG(환경, 사회, 지배구조) 규제, 법 만들기 흐름, 판례, 기사, 정부와 기업 자료 5만여 건과 이를 바탕으로 만든 질문과 답 1만 건입니다. 두 나라의 ESG 규제를 요약하고 질문에 답하는 챗봇에 쓸 수 있습니다.",
+ "easy_en": "Over 50,000 documents on ESG (environmental, social and governance) rules in Vietnam and Malaysia, including regulations, legislative trends, court cases, articles and government and company materials, plus 10,000 questions and answers built from them. You can use it to build chatbots that summarise and answer questions on ESG rules in both countries.",
+ "detail_ko": "베트남·말레이시아의 ESG 환경 규제, 입법 동향, 판례, 기사, 정부·기업 ESG 자료 등 문서 50,098건(JSON)과 이를 바탕으로 만든 질의응답 10,000건으로, 문서 추출·요약과 질의응답 LLM 개발에 쓰도록 만들었습니다. 문서 언어(현지어·영어·한국어)가 팩 앞부분에 분명하지 않고, 성능 지표 값은 팩 앞부분에 없습니다.",
+ "detail_en": "50,098 documents (JSON) on Vietnamese and Malaysian ESG regulation, legislative trends, court cases, news articles and government and corporate ESG materials, plus 10,000 question-answer pairs built from them, for LLM-based document extraction, summarisation and question answering. The document languages (local, English or Korean) are not clear in the pack, and no metric values are given.",
+ "amount_ko": "원천 50,098건, 질의응답 10,000건",
+ "amount_en": "50,098 source documents, 10,000 QA pairs",
+ "labels_ko": "질문과 답",
+ "labels_en": "question-answer",
+ "status": "full-run-2026-11-02"
+}

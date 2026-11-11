@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71762",
+ "easy_ko": "의료 기사와 자체 수집 자료로 만든 건강 질문과 의료진 답변 글을 아주 많이 모은 데이터로, 호흡기, 심장, 뇌, 소화기, 피부 같은 질환 분야로 나뉩니다. 의료 상담 챗봇이나 의료 특화 언어 AI를 학습시키는 데 쓸 수 있습니다.",
+ "easy_en": "A very large collection of health questions and answers by medical staff, built from medical articles and self-collected material, grouped into disease areas such as respiratory, heart, brain, digestive and skin. You can use it to train medical chatbots or medicine-focused language AI.",
+ "detail_ko": "의료 문서(온라인 기사)와 자체 수집 자료로 만든 헬스케어 질의응답 말뭉치(txt, JSON)로, 라벨 기준 약 242,870,922어절(질문 약 1,284만 어절)이고 질환 분류 19종(예: 호흡기질환, 순환기질환, 뇌신경정신질환, 소화기질환, 피부질환, 치과질환, 여성질환, 소아청소년질환)이 있습니다. 페이지에 성능 점수 표가 없고(ETRI T5 목표 ROUGE-1 ≥ 0.18, ROUGE-2 ≥ 0.025만 소개), '최종 증강 데이터'라 증강된 질문이 섞여 있습니다. 의료 답변이라 실제 진료 조언으로 쓰면 안 됩니다.",
+ "detail_en": "A healthcare question-answer corpus (txt, JSON) built from medical documents (online articles) and self-collected material: about 242,870,922 words in labels (about 12.84 million in questions), across 19 disease groups (such as respiratory, circulatory, neuro-psychiatric, digestive, skin, dental, women's and paediatric). There is no score table (only ETRI T5 targets of ROUGE-1 ≥ 0.18 and ROUGE-2 ≥ 0.025), and as 'final augmented data' it includes augmented questions. The answers must not be used as real medical advice.",
+ "amount_ko": "약 242,870,922어절(질문 약 1,284만 어절), 질환 분류 19종",
+ "amount_en": "about 242,870,922 words (about 12.84 million in questions), 19 disease groups",
+ "labels_ko": "질문과 답, 질환 분야",
+ "labels_en": "question-answer, disease group",
+ "status": "full-run-2026-11-02"
+}

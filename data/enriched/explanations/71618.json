@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71618",
+ "easy_ko": "학생 6,500명의 온라인 진로 상담 대화 기록과 설문, 전문가가 붙인 상담 요약과 추천 직업 분야를 모은 글 데이터입니다. 상담 대화를 보고 학생에게 맞는 진로를 추천하거나 진로 상담 챗봇을 만드는 데 쓸 수 있습니다.",
+ "easy_en": "Text records of online career counselling with 6,500 students, plus survey answers, expert-written session summaries and recommended job fields. You can use it to build AI that recommends careers from counselling chats or a career-counselling chatbot.",
+ "detail_ko": "학생 6,500명의 비대면 온라인 진로상담 대화(발화 826,160건; 회차, 상담 목적)와 기초 설문, 전문가 라벨(상담 요약, 추천 직업군 43종)을 JSON으로 묶었고, 직업 분류 메타는 한국어·영어·필리핀어로 있습니다. 기준 성능은 TF-IDF + RoBERTa 직업군 추천 Top-1 정확도 66.82%, Polyglot-Ko 5.8B(GPT-NeoX) 상담 챗봇 SSA(MOS) 71.65%입니다. 학생 상담 기록이라 개인정보 이용 조건을 꼭 확인해야 하고, 43개 직업군 이름은 팩 앞부분에 없습니다. AI 진로 추천은 참고용이며 상담사 판단을 대신할 수 없습니다.",
+ "detail_en": "Online career-counselling conversations with 6,500 students (826,160 utterances, with session number and purpose), baseline surveys and expert labels (session summaries, recommended job group out of 43), in JSON, plus job-classification metadata in Korean, English and Filipino. Baselines: job-group recommendation with TF-IDF + RoBERTa, Top-1 accuracy 66.82%; counsellor chatbot with Polyglot-Ko 5.8B (GPT-NeoX), SSA (MOS) 71.65%. These are student counselling records, so be sure to check the personal-data terms; the 43 job-group names are not in the pack. AI career suggestions are for reference only and cannot replace a counsellor.",
+ "amount_ko": "학생 6,500명, 상담 발화 826,160건, 직업군 43종",
+ "amount_en": "6,500 students, 826,160 utterances, 43 job groups",
+ "labels_ko": "상담 요약, 추천 직업 분야",
+ "labels_en": "summary, recommended job group",
+ "status": "full-run-2026-11-02"
+}

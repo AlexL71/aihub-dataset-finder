@@ -1,0 +1,29 @@
+{
+ "dataset_id": "71809",
+ "title_en": "Korean traditional pattern data",
+ "summary_ko": "국립중앙박물관·국가유산진흥원 등의 자료와 직접 촬영한 유물에서 모은 한국 전통 문양 이미지 24,536장과 문양만 뽑은 이미지 24,536장에, 한글 캡션 278,803문장과 영어 캡션 262,024문장이 붙은 데이터입니다. 글로 설명하면 전통 문양 이미지를 만들어 주는 생성 AI에 쓸 수 있습니다.",
+ "summary_en": "24,536 images of objects with Korean traditional patterns and 24,536 extracted pattern images, from museum and heritage-agency collections plus newly photographed artefacts, with 278,803 Korean and 262,024 English caption sentences. For text-to-image AI that generates traditional Korean patterns.",
+ "contents_ko": "이미지(jpg) + 한글·영어 캡션(json).",
+ "contents_en": "Images (jpg) + Korean and English captions (json).",
+ "modalities": ["image", "text"],
+ "tasks": ["image_generation", "image_captioning"],
+ "topics": [{"ko": "문화유산", "en": "Cultural heritage"}, {"ko": "생성형 AI", "en": "Generative AI"}],
+ "keywords_ko": ["전통 문양", "문화재", "이미지 생성", "캡션", "디자인", "박물관"],
+ "keywords_en": ["traditional patterns", "cultural heritage", "image generation", "captions", "design", "museum"],
+ "labels": ["image caption (Korean, English)"],
+ "file_formats": ["jpg", "json"],
+ "scale_ko": "객체·문양 이미지 24,536장, 문양 이미지 24,536장, 한글 캡션 278,803문장, 영어 캡션 262,024문장",
+ "classes_example": ["건축", "문화재", "생활소품"],
+ "baseline": [],
+ "difficulty": "intermediate",
+ "difficulty_note_ko": "약 11GB로 다룰 만하며, 사전학습된 이미지 생성 모델을 미세조정하는 실습에 좋습니다.",
+ "skills_needed_ko": ["파이썬", "확산 모델(이미지 생성)", "LoRA 미세조정"],
+ "caveats_ko": ["유물 출처 기관별 이용 조건을 확인해야 함", "성능 지표 값이 팩 앞부분에 없음"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "문양 이미지 캡션 생성", "title_en": "Pattern image captioning", "desc_ko": "문양 이미지를 보고 한글 설명을 만듭니다.", "desc_en": "Write Korean captions for pattern images."},
+  {"level": "capstone", "title_ko": "전통 문양 디자인 생성기", "title_en": "Traditional pattern generator", "desc_ko": "글로 설명하면 전통 문양을 그려 주는 디자인 도구를 만듭니다.", "desc_en": "Design tool that draws patterns from text."},
+  {"level": "research", "title_ko": "문양 스타일 충실도 평가", "title_en": "Pattern style fidelity", "desc_ko": "생성된 문양이 전통 양식을 잘 따르는지 평가하는 방법을 연구합니다.", "desc_en": "Measure how faithful generated patterns are to tradition."}
+ ],
+ "doc_used": true,
+ "uncertain": ["문양 분류 체계"]
+}

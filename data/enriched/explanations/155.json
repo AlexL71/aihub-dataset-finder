@@ -1,0 +1,12 @@
+{
+ "dataset_id": "155",
+ "easy_ko": "양식장 물속에서 헤엄치는 물고기 영상에, 물고기마다 위치, 헤엄치는 방향, 몸길이와 몸높이를 잰 선을 표시한 데이터입니다. 물고기를 꺼내지 않고도 크기를 재거나 행동을 살피는 양식장 AI를 만들 수 있습니다.",
+ "easy_en": "Underwater videos of fish swimming in fish farms, with each fish's position, swimming direction and lines measuring its body length and height marked. You can build fish-farm AI that measures fish size or watches their behaviour without taking them out of the water.",
+ "detail_ko": "양식 어종 5종(넙치·조피볼락·참돔·감성돔·돌돔)의 수중 유영 영상 371시간에서 뽑은 키프레임 이미지(jpg)와 개체 인스턴스 1,260,849개(어종별 약 24~27만)의 JSON 라벨(바운딩박스, 유영 각도, 체장·체고 선)로 구성됩니다. 기준 성능은 EfficientDet D2 체장·체고 선 검출 NMAE 7.49%입니다. 수중 카메라 위치가 고정되어 다른 양식장에서는 성능이 다를 수 있습니다.",
+ "detail_en": "Keyframes (jpg) from 371 hours of underwater video of 5 farmed species (flounder, rockfish, red sea bream, black sea bream, striped beakfish), with JSON labels for 1,260,849 fish instances (about 240–270k per species): bounding box, swimming angle, and body length and height lines. Baseline: EfficientDet D2 length/height line detection NMAE 7.49%. Fixed camera positions mean results may differ on other farms.",
+ "amount_ko": "영상 371시간, 물고기 표시 약 126만 개",
+ "amount_en": "371 hours of video, about 1.26M fish instances",
+ "labels_ko": "물고기 위치 상자, 헤엄 방향, 몸길이·몸높이 선",
+ "labels_en": "boxes around fish, swimming angle, body length and height lines",
+ "status": "full-run-2026-11-02"
+}

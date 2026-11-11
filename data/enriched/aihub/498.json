@@ -1,0 +1,29 @@
+{
+ "dataset_id": "498",
+ "title_en": "Pet disease diagnosis images (abdomen)",
+ "summary_ko": "동물병원에서 찍은 반려동물 복부 엑스레이·초음파 영상 30만 건으로, 간비대·소간증·거대신장·복부종양·비뇨기결석·장폐색·거대결장 등 복부 질환과 정상이 상자·다각형·선으로 표시되어 있습니다. 수의사의 반려동물 질병 진단을 돕는 AI에 쓸 수 있습니다.",
+ "summary_en": "300,000 abdominal X-ray and ultrasound images of pets from animal hospitals, labelled normal or with abdominal diseases (enlarged liver, small liver, enlarged kidney, abdominal tumour, urinary stones, bowel obstruction, megacolon and more) using boxes, polygons and lines. For AI that helps vets diagnose pet diseases.",
+ "contents_ko": "복부 영상(jpg) + JSON(질환 코드, 병변 상자·다각형·선, 동물 정보).",
+ "contents_en": "Abdominal image (jpg) + JSON (disease code, lesion box/polygon/line, animal info).",
+ "modalities": ["image"],
+ "tasks": ["image_classification", "object_detection", "segmentation"],
+ "topics": [{"ko": "반려동물", "en": "Pets"}, {"ko": "수의학·동물 의료", "en": "Veterinary medicine"}, {"ko": "의료 영상", "en": "Medical imaging"}],
+ "keywords_ko": ["반려동물", "수의 영상", "엑스레이", "초음파", "복부 질환", "질병 진단"],
+ "keywords_en": ["pets", "veterinary imaging", "X-ray", "ultrasound", "abdominal disease", "diagnosis"],
+ "labels": ["class (disease)", "bounding box", "polygon", "line"],
+ "file_formats": ["jpg", "json"],
+ "scale_ko": "302,949건(복부종양 6.3만, 비뇨기결석 3.5만 등), 질환 비율은 대부분 1~20%",
+ "classes_example": ["간비대", "소간증", "거대신장", "복부종양", "비뇨기결석", "장폐색", "거대결장"],
+ "baseline": [],
+ "difficulty": "intermediate",
+ "difficulty_note_ko": "약 56GB로 다룰 만하지만 질환 사진이 매우 적은 불균형 데이터라 어렵습니다.",
+ "skills_needed_ko": ["파이썬", "의료 영상 분류", "불균형 데이터 처리"],
+ "caveats_ko": ["질환 데이터 비율이 1~2%인 클래스가 많음", "수의사 진단을 대신하면 안 됨"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "비뇨기결석 유무 분류", "title_en": "Urinary stone classifier", "desc_ko": "복부 엑스레이에서 결석 유무를 분류합니다.", "desc_en": "Classify whether abdominal X-rays show urinary stones."},
+  {"level": "capstone", "title_ko": "동물병원 판독 보조 도구", "title_en": "Vet reading assistant", "desc_ko": "영상에서 의심 병변 위치를 표시해 수의사 판독을 돕는 도구를 만듭니다.", "desc_en": "Mark suspicious lesions to support vets' reading."},
+  {"level": "research", "title_ko": "희귀 질환 탐지 개선", "title_en": "Detecting rare conditions", "desc_ko": "질환 비율이 1%대인 클래스의 탐지 성능을 높이는 방법을 연구합니다.", "desc_en": "Improve detection for conditions present in about 1% of images."}
+ ],
+ "doc_used": true,
+ "uncertain": []
+}

@@ -1,0 +1,12 @@
+{
+ "dataset_id": "63",
+ "easy_ko": "등록된 상표 그림에서 도형 부분을 잘라 어떤 모양인지 분류해 둔 사진 데이터와, 상표 신청이 거절된 이유(발음이 비슷함, 뜻이 비슷함, 구별이 안 됨)를 분류한 심사 문서 글 데이터입니다. 내 상표와 비슷한 상표가 이미 있는지 찾거나, 등록될 수 있을지 미리 알려 주는 AI를 만들 수 있습니다.",
+ "easy_en": "Trademark images whose figure parts were cut out and classified by shape, plus examination documents that explain why trademark applications were refused (similar sound, similar meaning, not distinctive). You can build AI that finds similar existing trademarks or predicts whether a new one can be registered.",
+ "detail_ko": "특허정보원(KIPRIS) 상표 이미지 117만 건을 원천으로 도형 크롭 이미지와 비엔나 코드 라벨 학습 데이터 260만 건을 만들고, 의견제출통지서 텍스트 83.9만 건에 거절 사유(발음 유사·관념·식별력) 라벨을 붙였습니다. 기준 성능은 BERT 거절 사유 분류 정확도 90.66%, CNN 도형 탐지 mAP 70%입니다. 성능 표에 텍스트 분류가 'Image Classification'으로 적혀 있으며, 라벨을 이해하려면 비엔나 코드 체계를 따로 알아야 합니다.",
+ "detail_en": "From 1.17M trademark images from KIPRIS, 2.6M training items were built (figure crops with Vienna-code labels), plus 839k examination-notice texts labelled with the refusal reason (similar pronunciation, concept, distinctiveness). Baselines: BERT refusal-reason classification accuracy 90.66%, CNN figure detection mAP 70%. The performance table mislabels the text task as image classification, and you need to know the Vienna code system to read the labels.",
+ "amount_ko": "상표 이미지 260만 건, 심사 문서 글 약 84만 건",
+ "amount_en": "2.6M trademark image items, about 839k examination texts",
+ "labels_ko": "도형 분류 코드(비엔나 코드), 도형 위치, 거절 이유",
+ "labels_en": "figure class (Vienna code), figure crop or box, refusal reason",
+ "status": "full-run-2026-11-02"
+}

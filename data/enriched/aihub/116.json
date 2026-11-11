@@ -1,0 +1,29 @@
+{
+ "dataset_id": "116",
+ "title_en": "Korean dialogue (small business and public services)",
+ "summary_ko": "소상공인 가게와 공공 민원 10개 분야의 손님-점원 대화 50만 건 이상으로, 질문마다 주요 의도·세부 의도와 개체명, 유의어 사전이 붙어 있습니다. 가게 주문이나 민원 안내 챗봇의 의도 분류와 대화 흐름 설계에 쓸 수 있습니다.",
+ "summary_en": "500,000+ customer-clerk dialogues in 10 small-business and public-service areas, with main and sub intents, entities and a thesaurus for each question. For intent classification and dialogue flow design in shop-ordering or civil-service chatbots.",
+ "contents_ko": "대화 데이터: 손님 질문, 점원의 추가 질문, 손님 답변, 시스템 응답 + 도메인·카테고리, 의도(메인/서브), 엔티티, 시소러스.",
+ "contents_en": "Dialogues: customer question, clerk follow-up question, customer answer, system reply + domain and category, intents (main/sub), entities, thesaurus.",
+ "modalities": ["text"],
+ "tasks": ["dialogue", "text_classification", "information_extraction"],
+ "topics": [{"ko": "소상공인·가게", "en": "Small businesses and shops"}, {"ko": "행정·민원", "en": "Public services and complaints"}, {"ko": "챗봇", "en": "Chatbots"}],
+ "keywords_ko": ["한국어 대화", "챗봇", "의도 분류", "엔티티", "민원 상담", "소상공인"],
+ "keywords_en": ["Korean dialogue", "chatbot", "intent classification", "entities", "civil complaints", "small business"],
+ "labels": ["domain", "category", "main intent", "sub intent", "entities", "thesaurus"],
+ "file_formats": ["xlsx"],
+ "scale_ko": "대화 50만 건 이상, 10개 분야",
+ "classes_example": [],
+ "baseline": [],
+ "difficulty": "beginner",
+ "difficulty_note_ko": "약 0.01GB로 매우 작아 노트북에서 바로 의도 분류 실습을 할 수 있습니다.",
+ "skills_needed_ko": ["파이썬 기초", "pandas", "텍스트 분류"],
+ "caveats_ko": ["2018년 구축으로 오래됨", "파일 형식은 팩에서 확인하지 못해 추정", "성능 지표 없음"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "손님 질문 의도 분류", "title_en": "Customer question intent", "desc_ko": "질문을 메인 의도별로 분류하는 모델을 만듭니다.", "desc_en": "Classify questions by main intent."},
+  {"level": "capstone", "title_ko": "민원 안내 챗봇", "title_en": "Civil-service guide chatbot", "desc_ko": "의도와 엔티티를 인식해 필요한 추가 질문을 하고 답하는 챗봇을 만듭니다.", "desc_en": "Recognise intent and entities, ask follow-up questions and answer."},
+  {"level": "research", "title_ko": "유의어 사전을 이용한 의도 인식", "title_en": "Thesaurus-aided intent recognition", "desc_ko": "시소러스로 데이터를 늘렸을 때 적은 데이터 분야의 의도 인식이 좋아지는지 연구합니다.", "desc_en": "Test whether thesaurus-based augmentation helps intents with little data."}
+ ],
+ "doc_used": true,
+ "uncertain": ["파일 형식이 팩에 명시되지 않음", "클래스 목록을 페이지와 설명서에서 찾지 못함"]
+}

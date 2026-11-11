@@ -1,0 +1,32 @@
+{
+ "dataset_id": "648",
+ "title_en": "Daily life video data",
+ "summary_ko": "일반인 200명의 일상 행동(먹기·약 먹기·아이 돌보기·청소 등 100가지)을 1인칭·3인칭으로 찍은 영상 약 2만 건(약 7,000시간)과 주요 물체 이미지 약 6만 장, 행동 설명 텍스트를 담은 데이터입니다. 영상 속 일상 행동을 알아보는 AI나 개인 맞춤 VR/AR 서비스에 쓸 수 있습니다.",
+ "summary_en": "About 20,000 first- and third-person videos (about 7,000 hours) of 200 people doing 100 daily activities (eating, taking medicine, childcare, cleaning and more), about 60,000 key-object images and activity text. For AI that recognises daily activities in video or personalised VR/AR services.",
+ "contents_ko": "일상 행동 영상(mp4) + 물체 이미지(jpg) + 행동 설명(csv) + JSON(하이라이트 구간, 물체 상자).",
+ "contents_en": "Daily-activity videos (mp4) + object images (jpg) + activity text (csv) + JSON (highlight segments, object boxes).",
+ "modalities": ["video", "image", "text"],
+ "tasks": ["action_recognition", "object_detection"],
+ "topics": [{"ko": "일상생활·라이프로그", "en": "Daily life and lifelogging"}, {"ko": "VR·AR", "en": "VR and AR"}],
+ "keywords_ko": ["일상 행동", "라이프로그", "1인칭 영상", "행동 인식", "메타버스"],
+ "keywords_en": ["daily activities", "lifelogging", "first-person video", "action recognition", "metaverse"],
+ "labels": ["activity class", "highlight segment", "object bounding box"],
+ "file_formats": ["mp4", "jpg", "csv", "json"],
+ "scale_ko": "영상 약 2만 건(약 7,000시간), 이미지 약 6만 장, 행동 100종",
+ "classes_example": ["음식을 먹는다", "음료를 마신다", "약을 먹는다", "아이에게 밥을 먹인다", "장난감을 정리하다"],
+ "baseline": [
+  {"task": "first-person action classification", "model": "R(2+1)D-34", "metric": "top-1 accuracy", "value": "85.51%"},
+  {"task": "third-person action classification", "model": "R(2+1)D-34", "metric": "top-1 accuracy", "value": "85.99%"}
+ ],
+ "difficulty": "advanced",
+ "difficulty_note_ko": "영상 원본은 약 55TB로 매우 큽니다. 내려받기 목록은 약 22GB로 라벨·일부만 있는 것으로 보입니다.",
+ "skills_needed_ko": ["파이썬", "영상 분류 모델", "객체 탐지"],
+ "caveats_ko": ["원본 영상 전체 약 55TB", "파일 트리(22GB)와 페이지 용량이 크게 달라 실제 받을 수 있는 범위 확인 필요", "일반인 생활 모습이라 개인정보 주의"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "일상 행동 텍스트 분석", "title_en": "Activity text analysis", "desc_ko": "연령·성별별로 많이 하는 행동을 표로 정리합니다.", "desc_en": "Summarise common activities by age and gender."},
+  {"level": "capstone", "title_ko": "복약 확인 도우미", "title_en": "Medication check helper", "desc_ko": "영상에서 '약을 먹는다' 행동을 찾아 복약 기록을 남깁니다.", "desc_en": "Detect 'taking medicine' in video and log it."},
+  {"level": "research", "title_ko": "1인칭↔3인칭 행동 인식", "title_en": "First vs third person", "desc_ko": "시점이 다른 영상 사이에서 행동 인식을 옮기는 방법을 연구합니다.", "desc_en": "Transfer action recognition between first- and third-person views."}
+ ],
+ "doc_used": true,
+ "uncertain": ["what the 22 GB download actually contains"]
+}

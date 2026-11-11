@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71705",
+ "easy_ko": "아파트 거실과 베란다에서 화분 식물 90가지에 물을 적게, 보통으로, 많이 주며 찍은 사진과 센서 기록 약 50만 건에 잎과 뿌리 영역, 사진 설명을 붙인 데이터입니다. 식물 상태를 보고 언제 물을 줄지 알려 주는 AI에 쓸 수 있습니다.",
+ "easy_en": "About 500,000 photos and sensor records of 90 kinds of potted plants in apartment living rooms and balconies, watered too little, normally or too much, with leaves and roots outlined and photo descriptions. You can use it to build AI that looks at a plant and tells you when to water it.",
+ "detail_ko": "아파트 거실·베란다에서 화초·관상수 90종을 건조·일반·과습 세 방식으로 물을 주며 찍은 이미지(jpg)와 센서 메타데이터 각 495,359건에 잎·뿌리 등 다각형, 이미지 설명, 물주기·생육 유형(건생, 중생, 습생)을 JSON으로 붙였습니다. 기준 모델은 InceptionResNetV2 + PolyInception 물주기 상태 분류이지만 값은 팩 앞부분에 없습니다. 전체 약 1.2TB이고, 센서 항목은 팩 앞부분에 없습니다.",
+ "detail_en": "495,359 images (jpg) and 495,359 sensor metadata records of 90 houseplants and ornamental trees in apartment living rooms and balconies, watered in 3 ways (dry, normal, overwatered), with JSON polygons for leaves and roots, image captions and watering/habitat type (xeric, mesic, hydric). The baseline model is InceptionResNetV2 + PolyInception for watering-state classification, but its score is not in the pack. Total size is about 1.2 TB, and the sensor fields are not in the pack.",
+ "amount_ko": "식물 90종, 이미지·메타데이터 각 495,359건, 물주기 3종",
+ "amount_en": "90 plants, 495,359 images and metadata records each, 3 watering regimes",
+ "labels_ko": "잎·뿌리 테두리, 사진 설명, 물주기 상태",
+ "labels_en": "polygons, caption, watering class",
+ "status": "full-run-2026-11-02"
+}

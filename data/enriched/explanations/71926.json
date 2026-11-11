@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71926",
+ "easy_ko": "은행, 보험, 증권 콜센터의 실제 상담 7만여 건을 바탕으로 질문, 답, 이어지는 질문과 상담 요약을 만든 학습 자료 10만 건입니다. 금융 고객 상담 AI나 상담원을 돕는 도우미에 쓸 수 있습니다.",
+ "easy_en": "100,000 training items built from over 70,000 real call-centre conversations at banks, insurers and securities firms, with questions, answers, follow-up questions and conversation summaries. You can use it to build financial customer-service AI or assistants for counsellors.",
+ "detail_ko": "은행·보험·증권 콜센터 실제 상담 71,257건(은행 32,998, 보험 22,485, 증권 15,774)을 바탕으로, 핵심 금융용어를 반영한 질문-응답-후속질문 구조의 지시 학습 데이터 100,000건(은행 5만, 보험 3만, 증권 2만)과 상담 요약, 작업·상황·주제 분류를 JSON으로 만들었습니다. 페이지에 성능 점수 표가 없고(상담 분류 모델 소개만 있음), 한 금융그룹 계열사 상담만 담겨 다른 회사 상품에는 맞지 않을 수 있으며, 실제 상담 기반이라 개인정보 비식별 처리 여부를 확인해야 합니다.",
+ "detail_en": "100,000 instruction-tuning items (50,000 banking, 30,000 insurance, 20,000 securities; JSON) in question-answer-follow-up form with key financial terms, plus conversation summaries and task, situation and topic tags, built from 71,257 real call-centre consultations (32,998 banking, 22,485 insurance, 15,774 securities). There is no score table (only a consultation classifier is described); all consultations come from one financial group's affiliates, so they may not fit other firms' products; and they are based on real calls, so check how personal data was de-identified.",
+ "amount_ko": "원천 71,257건, 라벨 100,000건(은행 5만, 보험 3만, 증권 2만)",
+ "amount_en": "71,257 source consultations, 100,000 labels (50,000 banking, 30,000 insurance, 20,000 securities)",
+ "labels_ko": "상담 요약, 질문-답-이어지는 질문, 주제 분류",
+ "labels_en": "summary, question-answer-follow-up, topic tags",
+ "status": "full-run-2026-11-02"
+}

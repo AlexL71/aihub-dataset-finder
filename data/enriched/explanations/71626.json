@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71626",
+ "easy_ko": "자율주행 승용차가 눈, 비, 안개 같은 궂은 날씨에 도로를 달리며 카메라와 레이저 센서(라이다)로 모은 데이터입니다. 사진 속 도로와 물체 영역, 물체 위치 상자와 입체 상자가 표시되어 있어 한국 도로에 맞는 자율주행 인지 AI에 쓸 수 있습니다.",
+ "easy_en": "Data collected by a self-driving passenger car driving roads in bad weather such as snow, rain and fog with cameras and a laser sensor (lidar). Road and object areas, object boxes and 3D boxes are marked, so you can build self-driving perception AI suited to Korean roads.",
+ "detail_ko": "승용 자율주행차가 눈, 비, 안개 같은 궂은 날씨에 도로에서 모은 카메라 이미지(jpg)와 라이다 점군(pcd) 이미지 160,000장(2D 분할 160,000, 2D/3D 160,000)에 2D 분할·상자, 3D 상자, 위치·인지·판단·제어 정보를 JSON으로 붙였습니다. 클래스 예: background, crossWalk, fense, curb, freespace, bus, bicycle. 기준 성능은 PV-RCNN 3D 객체 탐지 mAP 66.73%, ConvNeXt 2D 분할 mIoU 76.61%입니다. 레이더 등 센서 정보도 있고, 전체 약 277GB이며, 날씨별(눈·비·안개) 수량은 팩 앞부분에 없습니다. 성능표 1번 항목은 페이지에 없습니다.",
+ "detail_en": "Camera images (jpg) and lidar point clouds (pcd) collected by a self-driving passenger car on roads in bad weather such as snow, rain and fog: 160,000 images (160,000 2D segmentation, 160,000 2D/3D), with JSON 2D segmentation and boxes, 3D boxes, and localisation, perception, decision and control data. Example classes: background, crosswalk, fence, curb, free space, bus, bicycle. Baselines: 3D object detection with PV-RCNN, mAP 66.73%; 2D segmentation with ConvNeXt, mIoU 76.61%. Radar and other sensor data are included; total size is about 277 GB, and counts per weather type (snow, rain, fog) are not in the pack. Item 1 of the metrics table is missing from the page.",
+ "amount_ko": "이미지 160,000장(2D 분할 160,000, 2D/3D 160,000)",
+ "amount_en": "160,000 images (160,000 2D segmentation, 160,000 2D/3D)",
+ "labels_ko": "도로·물체 영역, 물체 위치 상자(평면·입체), 물체 종류",
+ "labels_en": "segmentation, 2D and 3D boxes, class",
+ "status": "full-run-2026-11-02"
+}

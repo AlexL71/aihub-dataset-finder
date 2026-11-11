@@ -1,0 +1,47 @@
+{
+ "id": "aisemi",
+ "name_ko": "지능형반도체공학과",
+ "name_en": "AI Semiconductor Engineering",
+ "college": "과학기술대학",
+ "summary_ko": "인공지능 계산을 빠르고 효율적으로 처리하는 'AI 반도체'를 설계·제작하는 인재를 기르는 학과입니다. 회로, 반도체 소자·공정 같은 하드웨어와 인공지능·딥러닝 같은 소프트웨어를 함께 배우며, 실험·프로젝트·기업 인턴십 중심으로 운영됩니다.",
+ "summary_en": "Trains engineers who design and build AI semiconductors, the chips that run AI computation efficiently. Students learn hardware (circuits, devices, fabrication) together with software (AI, deep learning), with many labs, projects and industry internships.",
+ "key_topics": ["AI 반도체 설계", "집적회로와 디지털 시스템", "반도체 소자와 공정", "임베디드 시스템", "인공신경망과 딥러닝", "디지털 영상처리", "하드웨어 보안", "메모리·패키지·테스트"],
+ "course_keywords": ["회로이론및연습", "전자회로", "디지털시스템", "반도체소자공학", "전기자기학", "신호및시스템", "인공지능개론", "AI 회로 및 시스템 설계", "데이터구조", "파이썬프로그래밍", "확률과통계", "임베디드시스템", "마이크로프로세서", "디지털영상처리", "운영체제", "집적회로", "강화학습", "인공신경망과딥러닝", "반도체공정", "센서 소재·소자", "차세대 메모리 소자", "반도체 패키지 및 테스트", "반도체자동화시스템", "HW보안"],
+ "curriculum_by_year": {
+  "1": ["미적분학", "일반물리학", "일반화학", "파이썬프로그래밍", "통계학입문", "프로그래밍언어의기초"],
+  "2": ["회로이론및연습", "전기자기학", "공업수학", "전자회로", "디지털시스템", "반도체소자공학", "데이터구조", "이산수학", "신호및시스템1", "인공지능개론"],
+  "3": ["AI 회로 및 시스템 설계", "신호및시스템2", "임베디드시스템", "마이크로프로세서", "디지털영상처리", "확률과통계", "운영체제", "반도체공정"],
+  "4": ["집적회로", "강화학습", "인공신경망과딥러닝", "차세대 메모리 소자", "반도체 패키지 및 테스트", "HW보안", "인공지능소자"]
+ },
+ "careers": ["반도체 회로·시스템 설계 엔지니어", "반도체 소자·공정 엔지니어", "AI 가속기·임베디드 하드웨어 개발자", "반도체 장비·테스트·패키징 엔지니어", "대학원 진학 후 반도체 연구원"],
+ "research_areas": ["차세대 반도체 소자", "플라즈마·공정", "집적회로 및 시스템 설계", "뉴로 이미징 인포매틱스", "인공지능 반도체 공정·설계", "지능형 로직 및 시스템"],
+ "data_interests": [
+  {"topic_ko": "반도체·제조 공정 검사", "topic_en": "Semiconductor and manufacturing inspection", "keywords": ["웨이퍼 결함", "불량 검사 이미지", "공정 센서 데이터"]},
+  {"topic_ko": "전자 부품과 회로", "topic_en": "Electronic parts and circuits", "keywords": ["PCB 이미지", "부품 인식", "회로 도면"]},
+  {"topic_ko": "센서·시계열 신호", "topic_en": "Sensor and time-series signals", "keywords": ["진동", "전류·전압", "설비 이상 감지"]},
+  {"topic_ko": "엣지 AI 영상", "topic_en": "Images for on-device AI", "keywords": ["객체 인식", "경량 모델", "카메라 영상"]},
+  {"topic_ko": "음성·소리 인식", "topic_en": "Speech and sound recognition", "keywords": ["음성 명령", "소리 분류", "온디바이스 음성"]},
+  {"topic_ko": "로봇·자율주행 하드웨어", "topic_en": "Robots and self-driving hardware", "keywords": ["라이다", "카메라", "센서 융합"]},
+  {"topic_ko": "뇌·의료 영상", "topic_en": "Brain and medical imaging", "keywords": ["뇌 영상", "MRI", "생체 신호"]}
+ ],
+ "interest_questions": [
+  {"q_ko": "반도체와 AI 중 어떤 쪽에 더 끌리나요?", "q_en": "Which side pulls you more?",
+   "options": [{"ko": "칩·회로 설계", "en": "Chip and circuit design"}, {"ko": "소자·공정(만드는 과정)", "en": "Devices and fabrication"}, {"ko": "기기에서 돌아가는 AI", "en": "AI running on devices"}, {"ko": "공장 불량 검사 자동화", "en": "Automated factory defect inspection"}]},
+  {"q_ko": "다뤄보고 싶은 자료는?", "q_en": "What data would you like to use?",
+   "options": [{"ko": "불량·검사 이미지", "en": "Defect and inspection images"}, {"ko": "센서 신호", "en": "Sensor signals"}, {"ko": "카메라 영상", "en": "Camera video"}, {"ko": "음성·소리", "en": "Speech and sound"}]}
+ ],
+ "project_themes": ["제조 불량 이미지 분류 모델을 작게 만들어 엣지 기기에서 실행", "설비 센서 데이터로 고장 예측", "PCB 부품 인식", "경량 음성 명령 인식기"],
+ "data_skill_level": "high",
+ "data_skill_note": "파이썬, 데이터구조, 확률과통계, 인공지능개론, 딥러닝, 강화학습 과목이 있어 2학년 이후에는 딥러닝 실습이 가능한 수준입니다.",
+ "sources": [
+  {"kind": "page", "label": "학과소개", "url": "https://sejong.korea.ac.kr/AISEMI/3584/subview.do"},
+  {"kind": "page", "label": "전공소개", "url": "https://sejong.korea.ac.kr/AISEMI/3589/subview.do"},
+  {"kind": "page", "label": "전공체계도", "url": "https://sejong.korea.ac.kr/AISEMI/3591/subview.do"},
+  {"kind": "page", "label": "연구실", "url": "https://sejong.korea.ac.kr/AISEMI/3592/subview.do"},
+  {"kind": "page", "label": "교과목리스트", "url": "https://sejong.korea.ac.kr/AISEMI/3597/subview.do"}
+ ],
+ "inferred_fields": ["careers", "data_interests", "interest_questions", "project_themes"],
+ "gaps": ["No careers page on the department site; careers are inferred."],
+ "version": 1,
+ "created": "2026-10-29"
+}

@@ -1,0 +1,29 @@
+{
+ "dataset_id": "71879",
+ "title_en": "Dog growth and disease corpus data",
+ "summary_ko": "반려견 생애주기별 성장·질병 관리를 위한 말뭉치로, 기본정보 텍스트 약 107만 토큰(265건)과 보호자 질문·수의사 답변 질의응답 24,006건(약 371만 토큰)이 내과·피부과·안과·외과·치과로 나뉘어 있습니다. 반려견 건강 상담 챗봇에 쓸 수 있습니다.",
+ "summary_en": "A dog life-cycle growth and disease corpus: about 1.07M tokens of background text (265 items) and 24,006 owner-question / vet-answer pairs (about 3.71M tokens) across internal medicine, dermatology, ophthalmology, surgery and dentistry. For pet health chatbots.",
+ "contents_ko": "텍스트(txt) + 질의응답 JSON(진료과, 질문, 답변).",
+ "contents_en": "Text (txt) + QA JSON (department, question, answer).",
+ "modalities": ["text"],
+ "tasks": ["question_answering", "dialogue", "text_generation"],
+ "topics": [{"ko": "반려동물 헬스케어", "en": "Pet healthcare"}, {"ko": "수의학 챗봇", "en": "Veterinary chatbots"}],
+ "keywords_ko": ["반려견", "수의사 답변", "질의응답", "챗봇", "질병 관리", "Llama"],
+ "keywords_en": ["dog", "vet answers", "question answering", "chatbot", "disease care", "Llama"],
+ "labels": ["question-answer", "department"],
+ "file_formats": ["txt", "json"],
+ "scale_ko": "기본정보 1,066,794토큰(265건), 질의응답 24,006건(질의 1,735,201·답변 1,975,328토큰)",
+ "classes_example": ["내과", "피부과", "안과", "외과", "치과"],
+ "baseline": [],
+ "difficulty": "beginner",
+ "difficulty_note_ko": "약 30MB로 매우 가볍습니다. 작은 한국어 모델로 질의응답 실습하기 좋습니다.",
+ "skills_needed_ko": ["파이썬", "Hugging Face 텍스트 모델", "LLM 미세조정(LoRA) 기초"],
+ "caveats_ko": ["페이지에 성능 점수 표가 없음(Llama 8B 목표 Perplexity 10% 감소, '정확도 80%(BLEU 40 기준)'만 소개)", "목표값 표기 '정확도 80% (BLUE 40 기준)'은 지표가 섞여 있어 뜻이 불분명", "내과가 51%로 많고 치과·안과는 5% 이하"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "질문 진료과 분류", "title_en": "Question department classifier", "desc_ko": "보호자 질문이 내과·피부과 등 어디에 속하는지 분류합니다.", "desc_en": "Classify owner questions by vet department."},
+  {"level": "capstone", "title_ko": "반려견 건강 상담 챗봇", "title_en": "Dog health chatbot", "desc_ko": "질의응답으로 미세조정한 반려견 상담 챗봇을 만듭니다.", "desc_en": "Build a fine-tuned dog health Q&A chatbot."},
+  {"level": "research", "title_ko": "응급 질문 선별", "title_en": "Urgent question triage", "desc_ko": "병원에 바로 가야 하는 질문을 자동으로 찾아내는 방법을 연구합니다.", "desc_en": "Study flagging questions that need an urgent vet visit."}
+ ],
+ "doc_used": true,
+ "uncertain": []
+}

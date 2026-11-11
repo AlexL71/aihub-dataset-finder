@@ -1,0 +1,12 @@
+{
+ "dataset_id": "469",
+ "easy_ko": "마스크를 쓴 한국인의 얼굴을 스튜디오와 실제 생활 속에서 찍고, 마스크에 가려지지 않은 부분의 얼굴 주요 점을 표시한 데이터입니다. 마스크를 써도 본인인지 알아보는 얼굴 인증 AI를 만들 수 있지만, 실제 얼굴이라 개인정보에 주의해야 합니다.",
+ "easy_en": "Photos of Koreans wearing masks, taken in a studio and in everyday settings, with facial key points marked on the parts not covered by the mask. You can build face-login AI that still recognises people wearing masks, but these are real faces, so privacy matters.",
+ "detail_ko": "마스크 착용 한국인 얼굴 이미지 105만 8천 건(스튜디오 37.8만, 실제 상황 51.8만 등, jpg)에 얼굴 키포인트, 마스크 종류(착용·미착용·부분착용), 촬영 환경을 JSON으로 붙였으며, 동일인 1명이 1클래스입니다. 기준 성능은 기록에서 확인되지 않습니다. 실제 얼굴 데이터라 이용 약관과 개인정보 보호를 반드시 확인해야 합니다.",
+ "detail_en": "1.058M face images (jpg) of Koreans wearing masks (378k studio, 518k real-life and more), with JSON facial keypoints, mask type (worn, not worn, partly worn) and capture environment; each person is one identity class. No baseline is visible in the record. These are real faces, so the terms of use and privacy must be checked.",
+ "amount_ko": "얼굴 사진 약 105.8만 장",
+ "amount_en": "about 1.058M face photos",
+ "labels_ko": "얼굴 주요 점, 마스크 착용 상태, 사람 번호",
+ "labels_en": "facial key points, mask status, person ID",
+ "status": "full-run-2026-11-02"
+}

@@ -1,0 +1,32 @@
+{
+ "dataset_id": "72",
+ "title_en": "Early childhood educational broadcast video",
+ "summary_ko": "EBS 영유아 교육 방송 약 700시간에 물체 상자 약 500만 개와 상황 라벨 약 28만 개를 붙인 데이터입니다. 어린이 영상의 장면과 등장 물체를 자동으로 알아보는 AI로 유아용 콘텐츠 검색·추천이나 안전한 영상 분류에 쓸 수 있습니다.",
+ "summary_en": "About 700 hours of EBS early-childhood educational programmes with about 5 million object boxes and 280,000 situation labels. For AI that recognises scenes and objects in children's video, useful for kids' content search, recommendation and safe-content filtering.",
+ "contents_ko": "방송 영상 클립 + 객체 JSON(프레임별 상자, 물체 이름) + 상황 JSON(클립 단위 상황 분류, 길이).",
+ "contents_en": "Broadcast clips + object JSON (per-frame boxes and names) + situation JSON (situation class and length per clip).",
+ "modalities": ["video"],
+ "tasks": ["action_recognition", "object_detection", "retrieval_recommendation"],
+ "topics": [{"ko": "유아 교육", "en": "Early childhood education"}, {"ko": "방송·미디어", "en": "Broadcasting and media"}, {"ko": "어린이 콘텐츠", "en": "Children's content"}],
+ "keywords_ko": ["영유아", "교육 방송", "EBS", "상황 인식", "객체 인식", "어린이 콘텐츠"],
+ "keywords_en": ["early childhood", "educational TV", "EBS", "situation recognition", "object recognition", "kids content"],
+ "labels": ["bounding box", "object class", "situation class"],
+ "file_formats": ["mp4", "jpg", "json"],
+ "scale_ko": "방송 약 700시간, 객체 라벨 약 500만 개, 상황 라벨 약 28만 개(구축량 79.2만)",
+ "classes_example": ["먹기 > 마시기", "씻기 > 양치질하기", "입기 > 양말신기", "가기 > 병원가기", "교통수단타기 > 기차타기", "잠자기 > 취침하기", "객체 > 남자 아이", "객체 > 캐릭터(뚝딱이)", "객체 > 자전거", "객체 > 소파"],
+ "baseline": [
+  {"task": "situation classification", "model": "SlowFast-R50", "metric": "accuracy", "value": "81.8%"},
+  {"task": "object detection", "model": "EfficientDet-D7", "metric": "mAP", "value": "51.4%"}
+ ],
+ "difficulty": "advanced",
+ "difficulty_note_ko": "전체 약 3.4TB이고 영상 분류 모델이 필요합니다. 객체 라벨이 있는 프레임만 쓰면 중급 탐지 실습이 됩니다.",
+ "skills_needed_ko": ["파이썬", "객체 탐지", "영상 분류 모델"],
+ "caveats_ko": ["전체 약 3.4TB", "방송 영상 이용 조건 확인 필요"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "유아 방송 속 물체 통계", "title_en": "Objects in kids' TV", "desc_ko": "객체 라벨로 유아 방송에 자주 나오는 물체와 장면을 집계합니다.", "desc_en": "Count common objects and scenes in children's programmes."},
+  {"level": "capstone", "title_ko": "유아 교육 영상 주제 검색기", "title_en": "Topic search for kids' videos", "desc_ko": "'동물', '노래' 같은 상황으로 영상 구간을 찾아주는 검색 도구를 만듭니다.", "desc_en": "Search video segments by situations such as 'animals' or 'singing'."},
+  {"level": "research", "title_ko": "애니메이션·실사 혼합 영상의 인식", "title_en": "Recognition across animation and live action", "desc_ko": "만화와 실사가 섞인 유아 방송에서 탐지 성능 차이를 분석합니다.", "desc_en": "Analyse detection differences between animated and live-action parts."}
+ ],
+ "doc_used": true,
+ "uncertain": []
+}

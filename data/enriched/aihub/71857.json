@@ -1,0 +1,29 @@
+{
+ "dataset_id": "71857",
+ "title_en": "Korean language subject passage-based question data",
+ "summary_ko": "교육과정과 연결된 국어 교과 지문형 문제 10,270세트(지문, 문항, 정답·오답, 해설)를 이미지와 상자·다각형·이미지 설명으로 정리한 데이터입니다. 난이도(상·중·하)가 표시되어 있어 수준별 국어 문제 추천이나 학습 도우미에 쓸 수 있습니다.",
+ "summary_en": "10,270 Korean-language passage-question sets (passage, question, correct/wrong answers, explanation) linked to the curriculum, as images with boxes, polygons and captions, tagged by difficulty (high, mid, low). For level-based question recommendation and study assistants.",
+ "contents_ko": "문제 이미지(png) + JSON(상자, 다각형, 지문·문항·정답·해설, 이미지 설명, 난이도).",
+ "contents_en": "Question image (png) + JSON (boxes, polygons, passage, question, answer, explanation, caption, difficulty).",
+ "modalities": ["image", "text"],
+ "tasks": ["question_answering", "visual_qa", "ocr", "retrieval_recommendation"],
+ "topics": [{"ko": "국어 교육", "en": "Korean language education"}, {"ko": "에듀테크", "en": "Edtech"}],
+ "keywords_ko": ["국어", "지문형 문제", "독해", "난이도", "문제 추천", "해설"],
+ "keywords_en": ["Korean language", "passage questions", "reading comprehension", "difficulty", "question recommendation", "explanations"],
+ "labels": ["bounding box", "polygon", "caption", "question-answer"],
+ "file_formats": ["png", "json"],
+ "scale_ko": "문제 10,270세트, 난이도 3단계(상 386·중 2,738·하 약 7,146)",
+ "classes_example": ["상", "중", "하"],
+ "baseline": [],
+ "difficulty": "intermediate",
+ "difficulty_note_ko": "약 1.3GB로 가볍지만 문제 이미지를 읽고 답하려면 비전-언어 모델이 필요합니다.",
+ "skills_needed_ko": ["파이썬", "OCR", "비전-언어 모델(LLaVA 등)"],
+ "caveats_ko": ["난이도 '하'가 약 70%로 치우침", "출판사 저작물 기반이라 이용 조건 확인 필요", "품질 점수는 라벨 정확도이며 모델 성능 수치는 팩에 없음"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "문제 난이도 분류", "title_en": "Question difficulty classifier", "desc_ko": "지문·문항 텍스트로 난이도를 예측합니다.", "desc_en": "Predict question difficulty from text."},
+  {"level": "capstone", "title_ko": "수준별 국어 문제 추천", "title_en": "Level-based Korean question recommender", "desc_ko": "학생이 틀린 문제와 비슷한 수준의 문제를 골라 추천합니다.", "desc_en": "Recommend questions matched to a student's level."},
+  {"level": "research", "title_ko": "LLM 국어 독해 평가", "title_en": "LLM Korean reading evaluation", "desc_ko": "LLM이 국어 지문형 문제를 얼마나 잘 푸는지, 해설은 정확한지 연구합니다.", "desc_en": "Study LLM accuracy and explanation quality on Korean reading questions."}
+ ],
+ "doc_used": true,
+ "uncertain": ["학년 분포 확인 필요"]
+}

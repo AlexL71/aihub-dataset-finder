@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71541",
+ "easy_ko": "한국인 남녀 530명의 몸을 여러 자세로 입체 스캔한 데이터로, 몸 입체 모형과 사진, 몸 관절 점, 성별과 나이대, 체형 정보가 있습니다. 몸의 입체 자세를 추정하거나 가상 아바타를 만들고 체형을 분석하는 데 쓸 수 있습니다.",
+ "easy_en": "Three-dimensional scans of the bodies of 530 Korean men and women in many poses, with body models, photos, joint points, and sex, age group and body-type information. You can use it to estimate body pose in three dimensions, make virtual avatars or analyse body shape.",
+ "detail_ko": "한국인 남녀 각 265명(530명)의 몸을 20가지 자세(A~T)로 3D 스캔한 신체 3D 데이터 10,600세트(obj, gltf, 텍스처 png)와 2D 이미지 84,800장(jpg, png; 2D 원시 이미지 1,908,000장)에 키포인트, 자세, 성별, 연령대, BMI 등급을 JSON으로 붙였습니다. 기준 성능은 EvoSkeleton 3D 자세 예측 MPJPE 46.15mm입니다. 전체 약 207GB이고, 인체 생체정보라 사용 조건을 꼭 확인해야 합니다. 71539 얼굴 3D 스캐닝 데이터와 같은 기관·같은 구조입니다.",
+ "detail_en": "3D scans of 265 Korean men and 265 women (530 people) in 20 poses (A to T): 10,600 3D body sets (obj, gltf, png textures) and 84,800 2D images (jpg, png; 1,908,000 raw 2D images), with JSON keypoints, pose, sex, age group and BMI group. Baseline: 3D pose prediction with EvoSkeleton, MPJPE 46.15 mm. Total size is about 207 GB. Bodies are biometric data, so be sure to check the terms of use. Same builder and structure as the face scan set 71539.",
+ "amount_ko": "신체 3D 데이터 10,600세트, 2D 이미지 84,800장, 530명 × 자세 20종",
+ "amount_en": "10,600 3D body sets, 84,800 2D images, 530 people × 20 poses",
+ "labels_ko": "몸 관절 점, 자세, 성별, 나이대, 체형 등급",
+ "labels_en": "keypoints, pose, sex, age group, BMI group",
+ "status": "full-run-2026-11-02"
+}

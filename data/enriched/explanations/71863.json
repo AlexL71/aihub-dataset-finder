@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71863",
+ "easy_ko": "얼굴에 잘 생기는 건선, 아토피, 여드름 같은 피부병과 정상 얼굴을 AI로 만든 선명한 가짜 사진 1만 2천 장에 병변 영역과 진료 정보를 붙인 데이터입니다. 얼굴 피부병 진단과 심한 정도 판단을 돕는 AI에 쓸 수 있습니다.",
+ "easy_en": "12,000 sharp fake photos made by AI of 5 common facial skin conditions, such as psoriasis, atopic dermatitis and acne, plus normal faces, with lesion areas and clinical information. You can use it to build AI that helps diagnose facial skin disease and judge how severe it is.",
+ "detail_ko": "얼굴의 염증성 피부질환 5종(건선, 아토피, 여드름, 주사, 지루)과 정상 얼굴의 고해상도 합성 이미지 12,000장(png, 1024×1024·512×512)에 병변 마스킹 이미지 5,000장(png), 상자, 임상정보 12,000건(JSON)을 붙였습니다. 페이지에 성능 점수 표가 없고(DenseNet 6종 분류 소개만 있음), 합성 이미지라 실제 환자 사진에서 성능이 다를 수 있으며, 건선만 정면·측면이 있습니다. 클래스별 수량 합이 12,000장과 맞는지 팩에서 확인되지 않습니다.",
+ "detail_en": "12,000 high-resolution synthetic images (png, 1024×1024 and 512×512) of 5 inflammatory facial skin diseases (psoriasis, atopic dermatitis, acne, rosacea, seborrhoeic dermatitis) and normal faces, with 5,000 lesion masks (png), boxes and 12,000 clinical-information records (JSON). There is no score table (only a 6-class DenseNet is described); synthetic images may behave differently from real patient photos; only psoriasis has front and side views; and whether per-class counts add up to 12,000 cannot be checked in the pack.",
+ "amount_ko": "합성 이미지 12,000장(6개 클래스), 임상정보 12,000건, 병변 마스크 5,000장",
+ "amount_en": "12,000 synthetic images (6 classes), 12,000 clinical records, 5,000 lesion masks",
+ "labels_ko": "병변 영역, 위치 상자, 진료 정보",
+ "labels_en": "lesion mask, bounding box, clinical info",
+ "status": "full-run-2026-11-02"
+}

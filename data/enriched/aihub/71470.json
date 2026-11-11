@@ -1,0 +1,29 @@
+{
+ "dataset_id": "71470",
+ "title_en": "Korean traditional music (gugak) score and audio data",
+ "summary_ko": "국악(궁중음악·풍류음악·민속악)과 유사 국악(창작·퓨전 국악)의 MIDI 악보 11,069개와 같은 수의 음원 클립(평균 14초), 가사·시김새·템포·장단 등 속성 정보를 모은 데이터입니다. 국악 장르 분류, 자동 채보, 국악 작곡·편곡 AI에 쓸 수 있습니다.",
+ "summary_en": "11,069 MIDI scores and matching audio clips (about 14 s each) of Korean traditional music (court, pungnyu and folk) and gugak-style music (new and fusion gugak), with lyrics, ornamentation (sigimsae), tempo and rhythm cycle (jangdan) info. For gugak genre classification, automatic transcription and composition AI.",
+ "contents_ko": "MIDI 악보(mid) + 음원(wav) + JSON(가사, 시김새, 템포, 음조직·장단, 장르).",
+ "contents_en": "MIDI score (mid) + audio (wav) + JSON (lyrics, ornamentation, tempo, mode and rhythm cycle, genre).",
+ "modalities": ["audio"],
+ "tasks": ["audio_classification", "text_generation", "retrieval_recommendation"],
+ "topics": [{"ko": "국악·전통문화", "en": "Korean traditional music"}, {"ko": "음악 AI", "en": "Music AI"}],
+ "keywords_ko": ["국악", "MIDI", "장단", "시김새", "자동 채보", "음악 생성"],
+ "keywords_en": ["gugak", "MIDI", "rhythm cycle", "ornamentation", "automatic transcription", "music generation"],
+ "labels": ["lyrics", "ornamentation", "tempo", "mode and rhythm cycle", "genre"],
+ "file_formats": ["mid", "wav", "json"],
+ "scale_ko": "MIDI 악보·음원 각 11,069개(국악 8,006, 유사 국악 3,063), 총 154,076초",
+ "classes_example": ["궁중음악", "풍류음악", "민속악", "창작국악", "퓨전국악"],
+ "baseline": [],
+ "difficulty": "intermediate",
+ "difficulty_note_ko": "약 20GB로 작고 MIDI도 있어 음악 AI 입문에 좋습니다. 일부 장르는 수량이 매우 적습니다.",
+ "skills_needed_ko": ["파이썬", "오디오 처리(librosa)", "MIDI 처리"],
+ "caveats_ko": ["장르별 수량 차이가 큼(가야금병창·창극 3개)", "성능 지표가 팩에 없음", "클립이 평균 14초로 짧음"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "국악 장르 분류", "title_en": "Gugak genre classifier", "desc_ko": "음원 클립이 궁중음악·민속악·퓨전 중 무엇인지 분류합니다.", "desc_en": "Classify clips as court, folk or fusion music."},
+  {"level": "capstone", "title_ko": "국악 멜로디 생성기", "title_en": "Gugak melody generator", "desc_ko": "MIDI 악보로 학습해 장단에 맞는 짧은 국악 선율을 만듭니다.", "desc_en": "Generate short gugak melodies that fit a rhythm cycle."},
+  {"level": "research", "title_ko": "국악 자동 채보", "title_en": "Gugak automatic transcription", "desc_ko": "음원에서 시김새까지 살린 MIDI 악보를 만드는 방법을 연구합니다.", "desc_en": "Transcribe audio to MIDI including ornamentation."}
+ ],
+ "doc_used": true,
+ "uncertain": ["MIDI가 음원과 정확히 시간 정렬되어 있는지"]
+}

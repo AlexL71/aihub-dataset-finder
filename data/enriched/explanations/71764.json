@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71764",
+ "easy_ko": "비슷한 상표 찾기 서비스에 사용자가 직접 올린 상표 그림 50만여 장에 국제 분류 기준에 따라 그림 속 도형 위치와 영역을 표시한 데이터입니다. 다듬어지지 않은 실제 사용자 그림으로 비슷한 상표를 찾는 AI를 학습시킬 수 있습니다.",
+ "easy_en": "Over 500,000 trademark images uploaded by users of a similar-trademark search service, with the shapes in each image boxed and painted in according to an international classification. You can use these real, unpolished user images to train AI that finds similar trademarks.",
+ "detail_ko": "유사 상표 검색 서비스 사용자 입력 상표 이미지 502,741장(jpg, 16.31GB)에 국제 비엔나 코드 분류에 따른 도형(객체) 상자, 분할, 코드 라벨(예: nc01, nc02, nc03, nc14)을 JSON으로 붙였습니다. 페이지에 성능 점수 표가 없고(YOLOv8 소개만 있음), 클래스가 코드로만 표시되어 비엔나 코드 뜻은 따로 찾아야 하며, 분포 표상 클래스별 비율이 2.22%로 균등하게 맞춰져 있습니다.",
+ "detail_en": "502,741 trademark images (jpg, 16.31 GB) uploaded by users of a similar-trademark search service, with JSON boxes, segmentation and Vienna-code labels (such as nc01, nc02, nc03, nc14) for the figures in each image. There is no score table (only YOLOv8 is described), classes appear only as codes, so you need to look up the Vienna code meanings, and the distribution table shows each class evenly at 2.22%.",
+ "amount_ko": "원천·라벨 각 502,741건",
+ "amount_en": "502,741 images and labels",
+ "labels_ko": "도형 위치 상자, 도형 영역, 상표 분류 코드",
+ "labels_en": "bounding box, segmentation, Vienna code",
+ "status": "full-run-2026-11-02"
+}

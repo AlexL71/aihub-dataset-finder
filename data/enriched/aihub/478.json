@@ -1,0 +1,29 @@
+{
+ "dataset_id": "478",
+ "title_en": "Weather information data for hazardous weather prediction",
+ "summary_ko": "2014~2021년 기상청의 천리안 1·2호 위성 영상, 기상 레이더, 자동기상관측(AWS·AMOS) 자료와 기상특보 분석 라벨을 모은 37.5TB 데이터입니다. 태풍·폭우·폭염·폭설·가뭄 같은 위험기상을 미리 예측하는 AI에 쓸 수 있습니다.",
+ "summary_en": "37.5 TB of KMA data from 2014–2021: Chollian-1 and -2 satellite images, weather radar, automatic weather stations (AWS, AMOS) and annotated weather-warning events. For AI that forecasts hazardous weather such as typhoons, heavy rain, heatwaves, heavy snow and drought.",
+ "contents_ko": "위성 영상(png, nc), 레이더(png, uf), 관측소 자료(csv) + JSON/GeoJSON 기상특보 어노테이션.",
+ "contents_en": "Satellite images (png, nc), radar (png, uf), station data (csv) + JSON/GeoJSON weather-warning annotations.",
+ "modalities": ["image", "sensor", "tabular"],
+ "tasks": ["forecasting", "segmentation"],
+ "topics": [{"ko": "기상·날씨", "en": "Weather"}, {"ko": "재난·기후 위험", "en": "Disaster and climate risk"}, {"ko": "위성 영상", "en": "Satellite imagery"}],
+ "keywords_ko": ["위험기상", "기상 예측", "위성", "레이더", "AWS", "기상특보", "태풍"],
+ "keywords_en": ["hazardous weather", "weather forecasting", "satellite", "radar", "weather stations", "weather warnings", "typhoon"],
+ "labels": ["weather-warning annotations (GeoJSON)"],
+ "file_formats": ["png", "nc", "uf", "bin", "csv", "json"],
+ "scale_ko": "61,344시간 세트, 파일 4,309만 개, 37.5TB(공개 파일 약 16.6TB)",
+ "classes_example": ["태풍", "호우", "폭염", "대설", "건조"],
+ "baseline": [],
+ "difficulty": "advanced",
+ "difficulty_note_ko": "기상 원시 자료 형식(nc, uf)과 매우 큰 용량(공개분 약 16.6TB) 때문에 연구 수준입니다. AWS CSV만 쓰면 쉽게 시작할 수 있습니다.",
+ "skills_needed_ko": ["파이썬", "기상 자료 형식(xarray, NetCDF)", "시공간 예측 모델(ConvLSTM 등)"],
+ "caveats_ko": ["전체 공개분 약 16.6TB", "위험기상 클래스는 기상특보 종류에서 추정", "성능 지표가 팩 앞부분에 없음"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "관측소 기온·강수 분석", "title_en": "Station temperature and rain analysis", "desc_ko": "AWS CSV로 지역별 폭염·호우 일수를 집계합니다.", "desc_en": "Count heatwave and heavy-rain days by region from AWS CSV."},
+  {"level": "capstone", "title_ko": "레이더 강수 단기 예측", "title_en": "Short-term rain nowcasting", "desc_ko": "레이더 합성 영상으로 1시간 뒤 강수 영역을 예측하는 데모를 만듭니다.", "desc_en": "Predict rain areas an hour ahead from radar composites."},
+  {"level": "research", "title_ko": "위성+레이더로 위험기상 예측", "title_en": "Hazard forecasting with satellite and radar", "desc_ko": "위성·레이더·관측 자료를 결합해 기상특보 발령을 예측하는 모델을 연구합니다.", "desc_en": "Combine satellite, radar and stations to predict weather warnings."}
+ ],
+ "doc_used": true,
+ "uncertain": ["위험기상 클래스 이름은 추정"]
+}

@@ -1,0 +1,32 @@
+{
+ "dataset_id": "71528",
+ "title_en": "3D person-to-person interaction data (two people)",
+ "summary_ko": "두 사람이 함께 하는 상호작용 동작을 여러 카메라로 촬영한 영상 39,000개와 이미지 24만 8천여 장에 몸 키포인트가 표시되어 있고, 3D 모션(FBX)과 사람 3D 메시도 있습니다. 상호작용 동작 분류와 3D 자세 추정 AI에 쓸 수 있습니다.",
+ "summary_en": "39,000 multi-camera videos and about 248,000 images of two-person interactions with body keypoints, plus 3D motion (FBX) and 3D human meshes. For interaction action classification and 3D pose estimation.",
+ "contents_ko": "영상(MP4) + 이미지(JPG) + 3D 모션(FBX) + 3D 메시(OBJ·MTL) + JSON(키포인트).",
+ "contents_en": "Video (MP4) + images (JPG) + 3D motion (FBX) + 3D meshes (OBJ/MTL) + JSON (keypoints).",
+ "modalities": ["video", "image", "3d"],
+ "tasks": ["keypoint_pose", "action_recognition"],
+ "topics": [{"ko": "동작 분석", "en": "Motion analysis"}, {"ko": "컴퓨터 비전", "en": "Computer vision"}],
+ "keywords_ko": ["상호작용", "2인 동작", "3D 자세 추정", "키포인트", "모션캡처", "다시점 영상"],
+ "keywords_en": ["interaction", "two-person action", "3D pose estimation", "keypoints", "motion capture", "multi-view video"],
+ "labels": ["keypoint", "action class", "3D motion"],
+ "file_formats": ["mp4", "jpg", "fbx", "obj", "mtl", "json"],
+ "scale_ko": "영상 39,000개, 이미지 248,177장, FBX 4,803개, 3D 메시 96세트",
+ "classes_example": ["필수 시간 > 식사 및 간식 > 건배", "의무 시간", "여가 시간 > 그림 그리기", "행동 반응 시간", "상호작용 동작 총 80가지"],
+ "baseline": [
+  {"task": "interaction action classification", "model": "YOWO", "metric": "mAP", "value": "80.64%"},
+  {"task": "3D pose estimation", "model": "TCMR", "metric": "MPJPE", "value": "68.05 mm"}
+ ],
+ "difficulty": "advanced",
+ "difficulty_note_ko": "3D 자세와 다시점 영상을 다뤄야 하고 전체 약 625GB입니다.",
+ "skills_needed_ko": ["파이썬", "자세 추정 모델", "3D 데이터 처리", "영상 동작 인식"],
+ "caveats_ko": ["전체 약 625GB", "상호작용 동작 80가지 전체 이름은 팩에 없음(대분류와 예시만 확인)"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "2인 키포인트 시각화", "title_en": "Two-person keypoint visualisation", "desc_ko": "이미지 위에 두 사람의 키포인트를 그려 동작을 확인합니다.", "desc_en": "Draw both people's keypoints on images."},
+  {"level": "capstone", "title_ko": "상호작용 동작 인식기", "title_en": "Interaction action recogniser", "desc_ko": "영상에서 악수·포옹 같은 2인 동작을 분류하는 데모를 만듭니다.", "desc_en": "Classify two-person actions in video."},
+  {"level": "research", "title_ko": "가림에 강한 3D 자세 추정", "title_en": "Occlusion-robust 3D pose", "desc_ko": "두 사람이 서로 가릴 때 3D 자세 오차를 줄이는 방법을 연구합니다.", "desc_en": "Reduce 3D pose error when people occlude each other."}
+ ],
+ "doc_used": true,
+ "uncertain": []
+}

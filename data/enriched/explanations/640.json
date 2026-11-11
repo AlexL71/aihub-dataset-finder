@@ -1,0 +1,12 @@
+{
+ "dataset_id": "640",
+ "easy_ko": "뱀장어 양식장 수조 표면을 찍은 사진과 먹이 먹는 영상에 뱀장어 영역과 크기를 표시하고, 물속 산소·온도·산성도 같은 센서 값과 먹이·성장·죽음 관리 기록을 함께 모은 데이터입니다. 뱀장어가 얼마나 자랐고 크기가 고른지 실시간으로 살피는 양식장 AI를 만들 수 있습니다.",
+ "easy_en": "Photos of eel-farm tank surfaces and feeding videos with each eel's area and size marked, plus sensor readings such as dissolved oxygen, temperature and pH, and records of feeding, growth and deaths. You can build fish-farm AI that watches in real time how much eels have grown and how even their sizes are.",
+ "detail_ko": "상업용 뱀장어 양식장 2곳의 수조 표면 이미지 약 21만 장(jpg, 분할 라벨), 사료 섭취 영상 1,500건(mp4), 용존산소·수온·pH 등 센서 데이터 120만 세트, 수질 분석과 사료·생육·폐사 관리 데이터 수천 세트로 구성되며, 종(자포니카, 말모라타)과 크기(소·중·대) 라벨이 있습니다. 기준 성능은 Mask R-CNN 분할 mIoU 77.7%, 다항 회귀 체장 추정 NRMSE 7.5%, 성장·균일도 예측 상대 오차 4.3%입니다. 전체 약 795GB이며 양식장 2곳 데이터뿐이고 종별 이미지 수에 차이가 있습니다.",
+ "detail_en": "About 210k tank-surface eel images (jpg, segmentation labels), 1,500 feeding videos (mp4), 1.2M sensor sets (dissolved oxygen, temperature, pH and more) and thousands of water-quality, feeding, growth and mortality records from 2 commercial eel farms, with species (japonica, marmorata) and size (small, medium, large) labels. Baselines: Mask R-CNN segmentation mIoU 77.7%, polynomial-regression length estimation NRMSE 7.5%, growth and uniformity prediction relative error 4.3%. Total size is about 795 GB; only 2 farms; image counts differ by species.",
+ "amount_ko": "사진 약 21만 장, 영상 1,500건, 센서 기록 120만 세트",
+ "amount_en": "about 210k images, 1,500 videos, 1.2M sensor sets",
+ "labels_ko": "뱀장어 영역(색칠), 몸길이, 종류, 크기 등급, 센서·관리 값",
+ "labels_en": "eel masks, length, species, size class, sensor and care values",
+ "status": "full-run-2026-11-02"
+}

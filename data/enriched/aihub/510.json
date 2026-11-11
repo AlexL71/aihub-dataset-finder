@@ -1,0 +1,29 @@
+{
+ "dataset_id": "510",
+ "title_en": "Logistics warehouse work safety data",
+ "summary_ko": "물류창고 14곳 이상에서 찍은 영상과 위험 상황 연출 영상의 이미지 57.7만 장으로, 작업자(작업복 착용 여부)·지게차·적재물·랙 같은 물체가 상자와 다각형으로 표시되어 있습니다(이미지당 평균 7.3개). 물류센터 안전사고를 미리 막는 AI에 쓸 수 있습니다.",
+ "summary_en": "577,000 images from 14+ logistics warehouses and staged danger scenarios, with workers (with or without work clothes), forklifts, loads, racks and other objects marked by boxes and polygons (7.3 per image on average). For AI that prevents accidents in logistics centres.",
+ "contents_ko": "창고 이미지(jpg) + JSON(물체 상자·다각형, 클래스, 위험 상황).",
+ "contents_en": "Warehouse image (jpg) + JSON (object boxes and polygons, class, danger situation).",
+ "modalities": ["image"],
+ "tasks": ["object_detection", "segmentation"],
+ "topics": [{"ko": "물류·창고", "en": "Logistics and warehouses"}, {"ko": "산업 안전", "en": "Industrial safety"}],
+ "keywords_ko": ["물류창고", "지게차", "작업 안전", "적재물", "위험 상황", "산업안전"],
+ "keywords_en": ["logistics warehouse", "forklift", "work safety", "loads", "danger situation", "industrial safety"],
+ "labels": ["bounding box", "polygon", "class"],
+ "file_formats": ["jpg", "json"],
+ "scale_ko": "576,908장, 이미지당 객체 평균 7.3개",
+ "classes_example": ["작업자", "지게차", "적재물", "랙"],
+ "baseline": [],
+ "difficulty": "intermediate",
+ "difficulty_note_ko": "탐지 실습에 좋지만 물체가 많고 가려짐이 잦습니다. 약 520GB입니다.",
+ "skills_needed_ko": ["파이썬", "YOLO 탐지·분할"],
+ "caveats_ko": ["위험 상황 일부는 연출", "클래스 전체 목록과 성능 지표가 팩 앞부분에 없음"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "지게차·작업자 탐지", "title_en": "Forklift and worker detection", "desc_ko": "창고 이미지에서 지게차와 작업자를 탐지합니다.", "desc_en": "Detect forklifts and workers in warehouse images."},
+  {"level": "capstone", "title_ko": "지게차 근접 경고", "title_en": "Forklift proximity warning", "desc_ko": "지게차와 작업자가 가까워지면 경고하는 데모를 만듭니다.", "desc_en": "Warn when a forklift gets too close to a worker."},
+  {"level": "research", "title_ko": "적재물 붕괴 위험 판단", "title_en": "Judging load-collapse risk", "desc_ko": "랙 위 적재 상태로 붕괴 위험을 판단하는 방법을 연구합니다.", "desc_en": "Study judging collapse risk from how loads sit on racks."}
+ ],
+ "doc_used": true,
+ "uncertain": []
+}

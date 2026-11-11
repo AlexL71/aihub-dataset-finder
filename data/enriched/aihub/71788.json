@@ -1,0 +1,29 @@
+{
+ "dataset_id": "71788",
+ "title_en": "Corpus data from national records for hyperscale AI training",
+ "summary_ko": "국가기록원 등 정부 기관의 국가기록물·정부간행물에서 만든 말뭉치 약 3억 토큰과 의문사형·예/아니오 질의응답 데이터, 그리고 비난·혐오·선정·욕설·폭력·범죄·루머 등 대분류 7종·세분류 33종으로 나눈 유해 질의 데이터입니다. 정부 문서 질의응답 LLM과 유해 질의 차단 모델에 쓸 수 있습니다.",
+ "summary_en": "About 304 million tokens of corpus from national records and government publications, wh-question and yes/no QA data, plus harmful-query data in 7 main and 33 sub categories (hate, sexual content, profanity, violence, crime, rumours, spam). For government-document QA LLMs and harmful-query filters.",
+ "contents_ko": "JSON(말뭉치, 질의응답, 유해 질의·분류, 페르소나).",
+ "contents_en": "JSON (corpus, question-answer, harmful queries and categories, persona).",
+ "modalities": ["text"],
+ "tasks": ["question_answering", "text_classification", "text_generation"],
+ "topics": [{"ko": "공공·행정 문서", "en": "Public and government documents"}, {"ko": "AI 안전", "en": "AI safety"}],
+ "keywords_ko": ["국가기록물", "정부간행물", "질의응답", "유해 질의", "LLM", "말뭉치"],
+ "keywords_en": ["national records", "government publications", "question answering", "harmful queries", "LLM", "corpus"],
+ "labels": ["question-answer", "harm category"],
+ "file_formats": ["json"],
+ "scale_ko": "말뭉치 304,340,415토큰, 의문사형 질의응답 30,000건 등, 유해 질의 세분류 33종",
+ "classes_example": ["비난/혐오/차별", "선정", "욕설", "폭력", "범죄", "루머", "스팸 및 광고"],
+ "baseline": [],
+ "difficulty": "intermediate",
+ "difficulty_note_ko": "약 0.8GB 텍스트라 다루기 쉽습니다. 유해 질의 분류나 RAG 질의응답부터 시작하세요.",
+ "skills_needed_ko": ["파이썬", "트랜스포머", "텍스트 분류"],
+ "caveats_ko": ["유해 질의 데이터에는 불쾌한 표현이 포함될 수 있음", "Yes/No 질의응답 수량이 팩에서 잘려 있음", "성능 지표 값이 팩에 없음"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "유해 질의 분류기", "title_en": "Harmful query classifier", "desc_ko": "질문이 7개 유해 유형 중 무엇인지 분류합니다.", "desc_en": "Classify queries into 7 harm types."},
+  {"level": "capstone", "title_ko": "정부 문서 검색 챗봇", "title_en": "Government document chatbot", "desc_ko": "국가기록물을 검색해 근거와 함께 답하는 챗봇을 만듭니다.", "desc_en": "Chatbot answering from national records with sources."},
+  {"level": "research", "title_ko": "LLM 안전 필터 평가", "title_en": "LLM safety filter evaluation", "desc_ko": "페르소나별 유해 질의에 대한 필터 성능을 비교 연구합니다.", "desc_en": "Compare safety filters across personas."}
+ ],
+ "doc_used": true,
+ "uncertain": ["Yes/No 질의응답 수량"]
+}

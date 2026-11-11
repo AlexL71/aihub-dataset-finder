@@ -1,0 +1,29 @@
+{
+ "dataset_id": "558",
+ "title_en": "Text ethics verification data",
+ "summary_ko": "크라우드워커가 만든 대화 13만 세트(약 45만 문장)에 각 문장이 비윤리적인지, 어떤 유형(비난·혐오·차별·성적·욕설·폭력·범죄)인지, 강도는 얼마인지 표시한 데이터입니다. 챗봇이 나쁜 말을 걸러내는 AI에 쓸 수 있습니다.",
+ "summary_en": "About 130,000 dialogue sets (about 450,000 sentences) written by crowd workers, each sentence marked as unethical or not, with its type (censure, hate, discrimination, sexual, abuse, violence, crime) and intensity. For AI that filters harmful talk in chatbots.",
+ "contents_ko": "대화 문장 JSON(비윤리 여부, 유형, 강도 투표) + 문형·어휘단위 사전 JSON.",
+ "contents_en": "Dialogue sentence JSON (unethical flag, types, intensity votes) + sentence-frame and lexical-unit dictionaries in JSON.",
+ "modalities": ["text"],
+ "tasks": ["text_classification", "dialogue"],
+ "topics": [{"ko": "AI 윤리·콘텐츠 검열", "en": "AI ethics and content moderation"}, {"ko": "챗봇", "en": "Chatbots"}],
+ "keywords_ko": ["혐오 표현", "비윤리 문장", "콘텐츠 모더레이션", "챗봇 안전", "욕설 탐지"],
+ "keywords_en": ["hate speech", "unethical sentences", "content moderation", "chatbot safety", "abuse detection"],
+ "labels": ["unethical flag", "ethics type", "intensity score", "sentence frame", "lexical unit"],
+ "file_formats": ["json"],
+ "scale_ko": "대화세트 약 13만 건, 문장 약 45만 개(비윤리 약 25만), 유형 7종",
+ "classes_example": ["CENSURE", "HATE", "DISCRIMINATION", "SEXUAL", "ABUSE", "VIOLENCE", "CRIME"],
+ "baseline": [],
+ "difficulty": "beginner",
+ "difficulty_note_ko": "용량이 40MB 정도로 작아 노트북에서도 문장 분류 실습이 가능합니다.",
+ "skills_needed_ko": ["파이썬", "텍스트 분류(BERT 등)"],
+ "caveats_ko": ["불쾌한 표현이 많이 들어 있음", "유형이 비난(CENSURE)에 크게 치우침", "성능 지표가 팩 앞부분에 없음"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "비윤리 문장 판별기", "title_en": "Unethical sentence detector", "desc_ko": "문장이 비윤리적인지 아닌지 분류합니다.", "desc_en": "Classify whether a sentence is unethical."},
+  {"level": "capstone", "title_ko": "챗봇 안전 필터", "title_en": "Chatbot safety filter", "desc_ko": "챗봇 답변 전에 유형과 강도를 판단해 막거나 순화하는 필터를 만듭니다.", "desc_en": "Build a filter that blocks or softens chatbot replies by type and intensity."},
+  {"level": "research", "title_ko": "비윤리 강도 회귀", "title_en": "Intensity regression", "desc_ko": "투표자 성별·연령에 따라 강도 판단이 어떻게 다른지 연구합니다.", "desc_en": "Study how intensity judgements differ by voter gender and age."}
+ ],
+ "doc_used": true,
+ "uncertain": []
+}

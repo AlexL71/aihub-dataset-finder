@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71723",
+ "easy_ko": "대법원 등에서 모은 판례와 심결례 약 25만 건 가운데 6만여 건을 민사, 형사 같은 상황별로 나누고, 핵심 문장 요약과 질문-답을 만든 데이터입니다. 판결 요약, 판결 예측, 비슷한 판례 추천에 쓸 수 있습니다.",
+ "easy_en": "About 250,000 court rulings and tribunal decisions from the Supreme Court and other sources, of which over 60,000 are sorted by situation such as civil or criminal and given key-sentence summaries and questions and answers. You can use it for summarising judgements, predicting outcomes and recommending similar cases.",
+ "detail_ko": "대법원 등 공공 법률정보의 판례 203,809건과 심결례 48,137건(txt)을 모으고, 그중 일부를 상황별 카테고리 10종(예: 민사, 형사A(생활형), 형사B(일반형))으로 나눠 추출 요약 66,511건, 질의응답 90,944건, 사건 정보, 용어 키워드를 JSON으로 붙였습니다. 원문 사건명 등에 사람 이름이 섞여 있을 수 있어 주의해야 하고, 성능 수치는 팩에 없으며, 10개 카테고리 전체 이름은 확인이 필요합니다.",
+ "detail_en": "203,809 court rulings and 48,137 tribunal decisions (txt) from public legal sources such as the Supreme Court, part of which are sorted into 10 situation categories (such as civil, criminal A (everyday), criminal B (general)) with 66,511 JSON extractive summaries, 90,944 question-answer pairs, case information and term keywords. Case names may contain people's names, so take care; no scores are in the pack, and the full names of the 10 categories need checking.",
+ "amount_ko": "판례 203,809건·심결례 48,137건, 추출 요약 66,511건, 질의응답 90,944건",
+ "amount_en": "203,809 rulings and 48,137 decisions, 66,511 summaries, 90,944 QA pairs",
+ "labels_ko": "핵심 문장 요약, 질문과 답, 키워드, 사건 분류",
+ "labels_en": "extractive summary, question-answer, keyword, category",
+ "status": "full-run-2026-11-02"
+}

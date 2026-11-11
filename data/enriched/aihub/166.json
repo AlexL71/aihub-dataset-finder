@@ -1,0 +1,29 @@
+{
+ "dataset_id": "166",
+ "title_en": "Aged public facility images",
+ "summary_ko": "보도블록·점자블록·정류장 표지판·놀이터 기구·운동기구·볼라드·방음벽·벤치 등 공공시설물 사진 80만 장을 정상·수리 필요·교체/폐기 3단계로 나눈 데이터입니다. 지자체가 낡은 시설물을 자동으로 찾아 보수 계획을 세우는 AI에 쓸 수 있습니다.",
+ "summary_en": "800,000 photos of public facilities (sidewalk blocks, tactile paving, bus-stop signs, playground and exercise equipment, bollards, noise walls, benches and more), each labelled normal, needs repair, or replace/discard. For AI that helps local governments find worn-out facilities and plan maintenance.",
+ "contents_ko": "시설물 사진 + JSON(시설물 종류, 상태 등급, 상자 또는 영역).",
+ "contents_en": "Facility photo + JSON (facility type, condition grade, box or region).",
+ "modalities": ["image"],
+ "tasks": ["image_classification", "object_detection", "anomaly_detection"],
+ "topics": [{"ko": "도시 기반시설", "en": "Urban infrastructure"}, {"ko": "공공시설 관리", "en": "Public facility management"}, {"ko": "보행·안전", "en": "Pedestrian safety"}],
+ "keywords_ko": ["노후 시설물", "공공시설", "보도블록", "점자블록", "놀이터", "유지보수"],
+ "keywords_en": ["aged facilities", "public facilities", "sidewalk blocks", "tactile paving", "playground", "maintenance"],
+ "labels": ["class (facility type)", "condition grade (normal / repair / replace)", "bounding box"],
+ "file_formats": ["jpg", "json"],
+ "scale_ko": "80만 장, 통행·운동·녹지·보호·휴게 시설물 수십 종 × 상태 3단계",
+ "classes_example": ["보도블록", "점자블록", "정류장쉘터", "미끄럼틀", "그네", "볼라드", "방음벽", "벤치"],
+ "baseline": [],
+ "difficulty": "beginner",
+ "difficulty_note_ko": "상태 3단계 분류는 이해하기 쉬운 첫 프로젝트입니다. 전체 약 2.7TB라 몇 종류만 받아 쓰세요.",
+ "skills_needed_ko": ["파이썬 기초", "전이학습 이미지 분류"],
+ "caveats_ko": ["전체 약 2.7TB", "시설물마다 수리·교체 클래스 수가 매우 불균형"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "보도블록 상태 분류", "title_en": "Sidewalk block condition classifier", "desc_ko": "보도블록 사진을 정상과 교체 필요로 분류합니다.", "desc_en": "Classify sidewalk block photos as normal or needing replacement."},
+  {"level": "capstone", "title_ko": "시민 시설물 신고 앱", "title_en": "Citizen facility report app", "desc_ko": "사진을 찍으면 시설물 종류와 상태를 판별해 위치와 함께 신고하는 앱을 만듭니다.", "desc_en": "Snap a facility to get its type and condition and report it with location."},
+  {"level": "research", "title_ko": "불균형 상태 등급 학습", "title_en": "Learning with rare damage grades", "desc_ko": "수리·교체 사진이 적은 시설물에서 성능을 높이는 방법을 비교합니다.", "desc_en": "Compare methods for facilities with few repair/replace examples."}
+ ],
+ "doc_used": true,
+ "uncertain": []
+}

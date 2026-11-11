@@ -1,0 +1,29 @@
+{
+ "dataset_id": "71837",
+ "title_en": "Tanzania (Swahili) norms and culture corpus",
+ "summary_ko": "탄자니아의 문화·규범·관습·예절을 담은 스와힐리어 말뭉치 247,490건(약 1억 531만 어절)과 영어·한국어 번역본, 지시형 질의응답 5,000건, 성능평가 문항 2,000건으로 구성됩니다. 탄자니아용 챗봇이나 스와힐리어 LLM 개발에 쓸 수 있습니다.",
+ "summary_en": "247,490 Swahili texts (about 105 million words) on Tanzanian culture, norms, customs and etiquette, with English and Korean translations, 5,000 instruction QA pairs and 2,000 evaluation items. For Tanzanian chatbots and Swahili LLMs.",
+ "contents_ko": "스와힐리어 원문(txt) + JSON(영어·한국어 번역, 지시형 질의응답, 평가 문항).",
+ "contents_en": "Swahili text (txt) + JSON (English and Korean translations, instruction QA, evaluation items).",
+ "modalities": ["text"],
+ "tasks": ["text_generation", "question_answering", "translation", "dialogue"],
+ "topics": [{"ko": "다국어 LLM", "en": "Multilingual LLMs"}, {"ko": "아프리카 문화", "en": "African culture"}],
+ "keywords_ko": ["스와힐리어", "탄자니아", "말뭉치", "Instruction QA", "문화 규범", "번역"],
+ "keywords_en": ["Swahili", "Tanzania", "corpus", "instruction QA", "cultural norms", "translation"],
+ "labels": ["translation", "question-answer"],
+ "file_formats": ["txt", "json"],
+ "scale_ko": "말뭉치 247,490건(105,312,248어절), 질의응답 5,000건, 평가 2,000건",
+ "classes_example": [],
+ "baseline": [],
+ "difficulty": "intermediate",
+ "difficulty_note_ko": "약 1.2GB 텍스트입니다. LLM 사전학습·미세조정에는 GPU가 필요합니다.",
+ "skills_needed_ko": ["파이썬", "Hugging Face", "LLM 미세조정(LoRA)"],
+ "caveats_ko": ["번역본은 기계번역 여부 확인 필요", "모델 성능 수치가 팩에 없음", "71838 캄보디아 말뭉치와 같은 구조"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "스와힐리어 문화 QA 검색", "title_en": "Swahili culture QA retrieval", "desc_ko": "질문과 가장 비슷한 질의응답을 찾아 보여 줍니다.", "desc_en": "Retrieve the closest QA pair for a question."},
+  {"level": "capstone", "title_ko": "탄자니아 예절 챗봇", "title_en": "Tanzanian etiquette chatbot", "desc_ko": "현지 예절·관습을 스와힐리어·한국어로 알려 주는 챗봇을 만듭니다.", "desc_en": "Answer etiquette questions in Swahili and Korean."},
+  {"level": "research", "title_ko": "저자원 언어 LLM 적응", "title_en": "Low-resource LLM adaptation", "desc_ko": "말뭉치 추가 학습이 스와힐리어 평가 점수를 얼마나 올리는지 연구합니다.", "desc_en": "Study how continued pretraining improves Swahili scores."}
+ ],
+ "doc_used": true,
+ "uncertain": []
+}

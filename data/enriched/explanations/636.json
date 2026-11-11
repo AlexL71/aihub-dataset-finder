@@ -1,0 +1,12 @@
+{
+ "dataset_id": "636",
+ "easy_ko": "재난 안전 문자와 일기 예보 문장을 한국 수어로 옮긴 영상에, 수어 문장과 단어, 동작 시간, 얼굴 표정, 몸과 손의 주요 점을 표시한 데이터입니다. 재난 정보를 청각장애인에게 수어로 바로 알려 주는 번역 AI를 만들 수 있습니다.",
+ "easy_en": "Videos translating disaster-alert texts and weather forecasts into Korean Sign Language, marked with the signed sentence and words, timing, facial expressions and key points of the body and hands. You can build translation AI that delivers disaster information to Deaf people in sign language.",
+ "detail_ko": "재난안전문자와 일기예보 한국어 문장 약 16만 개(txt; 사회재난, 자연재난, 일기예보)를 한국수어로 옮긴 영상 약 20만 건(mp4)에 수어 문법 문장, 형태소 시간, 비수지 정보(표정 등), 몸·손 키포인트를 JSON/XML로 붙였습니다. 기준 성능은 한국어 GPT 모델 한국어→수어 번역 BLEU 0.1633(매우 낮음), 수어 동작 유사도 mASS 68.82%입니다. 전체 약 4.6TB이며 수어 통역사 얼굴이 보입니다.",
+ "detail_en": "About 200k sign-language videos (mp4) translating about 160k Korean sentences (txt) from disaster-alert texts and weather forecasts (social disasters, natural disasters, forecasts), with JSON/XML sign-grammar sentences, morpheme timing, non-manual signals (facial expression and more) and body and hand keypoints. Baselines: Korean GPT model Korean-to-sign translation BLEU 0.1633 (very low), sign-motion similarity mASS 68.82%. Total size is about 4.6 TB; interpreters' faces are visible.",
+ "amount_ko": "한국어 문장 약 16만 개, 수어 영상 약 20만 건",
+ "amount_en": "about 160k Korean sentences, about 200k sign videos",
+ "labels_ko": "수어 문장·단어와 시간, 표정 같은 손 이외 신호, 몸·손 주요 점",
+ "labels_en": "sign sentence, morphemes with timing, non-manual signals, body and hand key points",
+ "status": "full-run-2026-11-02"
+}

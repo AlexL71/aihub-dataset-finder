@@ -1,0 +1,29 @@
+{
+ "dataset_id": "71820",
+ "title_en": "Human-robot shared task data in manufacturing environments",
+ "summary_ko": "제조·물류 현장 물체 200종을 3D 스캔하고, 실제(1만 세트)·가상(9만 세트) 환경에서 여러 각도로 찍은 이미지에 물체 영역과 설명 문장을 붙인 데이터입니다. 사람이 말로 지시한 물체를 로봇이 찾아내는 비전-언어 모델(VLM) 미세조정에 쓸 수 있습니다.",
+ "summary_en": "200 manufacturing and logistics objects as 3D scans, plus images from real (10,000 sets) and virtual (90,000 sets) scenes with object masks and captions. For fine-tuning vision-language models so robots find objects described in words.",
+ "contents_ko": "3D CAD 스캔(obj, mtl, png), 촬영 이미지(png)·깊이 등(npy) + JSON(분할 영역, 캡션).",
+ "contents_en": "3D CAD scans (obj, mtl, png), captured images (png) and arrays (npy) + JSON (segmentation, captions).",
+ "modalities": ["3d", "image", "text"],
+ "tasks": ["segmentation", "image_captioning", "visual_qa"],
+ "topics": [{"ko": "로봇·피지컬 AI", "en": "Robotics and physical AI"}, {"ko": "제조·물류", "en": "Manufacturing and logistics"}],
+ "keywords_ko": ["사람-로봇 협업", "VLM", "지시 표현 분할", "3D 스캔", "가상 환경", "물류"],
+ "keywords_en": ["human-robot collaboration", "VLM", "referring segmentation", "3D scan", "synthetic scenes", "logistics"],
+ "labels": ["segmentation mask", "caption"],
+ "file_formats": ["obj", "mtl", "png", "npy", "json"],
+ "scale_ko": "3D 물체 200종, 촬영 데이터 100,000세트(실제 10,000·가상 90,000), 대분류 5종",
+ "classes_example": ["도구 및 장비", "자재 및 부품", "보관 및 포장", "안전 및 보호", "기타 물품"],
+ "baseline": [],
+ "difficulty": "advanced",
+ "difficulty_note_ko": "약 245GB이고 언어+영상 분할 모델(LAVT 등) 학습에 GPU가 많이 필요합니다.",
+ "skills_needed_ko": ["파이썬", "PyTorch", "분할 모델", "비전-언어 모델"],
+ "caveats_ko": ["가상 이미지가 90%라 실제 현장 성능은 따로 확인 필요", "품질 지표(정확도 98~100)는 라벨 품질이며 모델 성능 수치는 팩에 없음", "71821 가정환경 데이터와 같은 구조"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "공구·부품 분할", "title_en": "Tool and part segmentation", "desc_ko": "이미지에서 공구·부품 영역을 분할합니다.", "desc_en": "Segment tools and parts in images."},
+  {"level": "capstone", "title_ko": "말로 집을 물건 지정하기", "title_en": "Pick by voice command", "desc_ko": "'파란 상자 옆 드라이버'처럼 문장으로 말하면 해당 물체 영역을 찾아 줍니다.", "desc_en": "Find the object described by a sentence for a robot to pick."},
+  {"level": "research", "title_ko": "가상→실제 일반화", "title_en": "Sim-to-real generalisation", "desc_ko": "가상 이미지로 학습한 모델이 실제 이미지에서 얼마나 잘 되는지 연구합니다.", "desc_en": "Study how models trained on synthetic images work on real ones."}
+ ],
+ "doc_used": true,
+ "uncertain": ["npy 파일 내용(깊이·포인트 등) 확인 필요"]
+}

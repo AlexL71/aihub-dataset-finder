@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71379",
+ "easy_ko": "다큐, 교양, 예능, 드라마, 인터뷰 같은 방송의 한국어 말소리와 받아 적은 글에, 영어·스페인어·러시아어 번역문과 그 나라 사람이 읽은 녹음을 짝지어 둔 데이터입니다. 방송 자막을 자동으로 만들거나 말을 바로 다른 나라 말로 옮기는 통역 AI를 만들 수 있습니다.",
+ "easy_en": "Korean speech from broadcasts such as documentaries, educational shows, entertainment, dramas and interviews, with transcripts, paired with English, Spanish and Russian translations and recordings by native speakers. You can build AI that makes subtitles automatically or interprets speech into another language.",
+ "detail_ko": "방송 약 600시간의 한국어 음성(wav)과 전사 JSON, 영어·스페인어·러시아어 번역 JSON, 원어민 발화 음성(wav)으로 구성됩니다(음성 구간 1,637,555개, 언어 4종). 기준 성능은 CTC + Transformer 음성 인식 CER 8.87%, Transformer 번역 BLEU 한→영 0.4922, 한→스 0.4103, 한→러 0.4126입니다. 전체 약 353GB이며, 제목은 한국어-영어지만 스페인어·러시아어도 포함되고, 영화·드라마는 30시간(5%)으로 적으며, 71382번 번역 말뭉치와 같은 기관·구성입니다.",
+ "detail_en": "About 600 hours of Korean broadcast speech (wav) with Korean transcripts (JSON), English, Spanish and Russian translations (JSON) and native-speaker recordings (wav) (1,637,555 speech segments, 4 languages). Baselines: CTC + Transformer speech recognition CER 8.87%, Transformer translation BLEU 0.4922 (ko→en), 0.4103 (ko→es), 0.4126 (ko→ru). Total size is about 353GB; the title says Korean–English, but Spanish and Russian are included; film and drama make up only 30 hours (5%); same organisation and structure as translation corpus 71382.",
+ "amount_ko": "방송 약 600시간, 언어 4종",
+ "amount_en": "about 600 hours of broadcasts, 4 languages",
+ "labels_ko": "말소리를 받아 적은 글(전사), 번역문, 원어민 녹음",
+ "labels_en": "transcripts, translations, native-speaker recordings",
+ "status": "full-run-2026-11-02"
+}

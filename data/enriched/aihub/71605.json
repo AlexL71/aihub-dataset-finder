@@ -1,0 +1,29 @@
+{
+ "dataset_id": "71605",
+ "title_en": "Tourism KVQA data (Jeju and islands)",
+ "summary_ko": "제주도·도서 지역 관광지·음식점·숙박 등 장소(POI) 10,783곳의 정보와 지식 트리플, 이미지 53,915장과 설명 문장, 질문-답변 215,660건을 묶은 지식 기반 시각 질의응답(KVQA) 데이터입니다. 사진과 지식을 함께 보고 제주 관광 질문에 답하는 챗봇에 쓸 수 있습니다.",
+ "summary_en": "Knowledge-aware visual QA data for Jeju and islands: 10,783 places (POIs) with knowledge triples, 53,915 images with captions and 215,660 question-answer pairs. For tourism chatbots that answer from photos and knowledge.",
+ "contents_ko": "장소 정보(csv) + 이미지(png) + JSON(트리플, 이미지 캡션, 질문-답변).",
+ "contents_en": "Place info (csv) + images (png) + JSON (triples, image captions, question-answer pairs).",
+ "modalities": ["image", "text"],
+ "tasks": ["visual_qa", "image_captioning", "retrieval_recommendation"],
+ "topics": [{"ko": "관광·여행", "en": "Tourism and travel"}, {"ko": "챗봇·질의응답", "en": "Chatbots and question answering"}],
+ "keywords_ko": ["KVQA", "제주 관광", "지식 그래프", "이미지 캡션", "질의응답", "POI"],
+ "keywords_en": ["KVQA", "Jeju tourism", "knowledge graph", "image captioning", "question answering", "POI"],
+ "labels": ["triples", "image captions", "question-answer pairs"],
+ "file_formats": ["csv", "png", "json"],
+ "scale_ko": "POI 10,783건, 이미지 53,915장, 트리플 98,784건, 질문-답변 215,660건",
+ "classes_example": ["관광지", "문화시설", "음식점", "레포츠", "숙박", "쇼핑"],
+ "baseline": [],
+ "difficulty": "intermediate",
+ "difficulty_note_ko": "KVQA 시리즈 중 가장 작아(약 484GB) 실습용으로 좋습니다. 텍스트(트리플·QA)부터 시작하세요.",
+ "skills_needed_ko": ["파이썬", "비전-언어 모델", "지식 그래프 기초"],
+ "caveats_ko": ["페이지에 성능 지표 표가 없음", "POI 원본 일부는 외부 기업 제공 자료", "71598(수도권)·71607(동부권)·71608(서부권)과 같은 구성"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "제주 장소 캡션 분석", "title_en": "Jeju caption analysis", "desc_ko": "이미지 캡션에서 자주 나오는 단어를 관광 타입별로 정리합니다.", "desc_en": "Summarise common caption words by place type."},
+  {"level": "capstone", "title_ko": "제주 관광 Q&A 챗봇", "title_en": "Jeju tourism Q&A chatbot", "desc_ko": "트리플과 질문-답변으로 제주 장소 질문에 답하는 챗봇을 만듭니다.", "desc_en": "Answer Jeju place questions from triples and QA pairs."},
+  {"level": "research", "title_ko": "적은 데이터 지식 VQA", "title_en": "Low-data knowledge VQA", "desc_ko": "큰 권역 데이터로 학습한 모델을 제주 데이터에 맞추는 전이 학습을 연구합니다.", "desc_en": "Study transfer from larger regions to the small Jeju set."}
+ ],
+ "doc_used": true,
+ "uncertain": []
+}

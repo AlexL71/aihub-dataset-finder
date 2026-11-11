@@ -1,0 +1,108 @@
+{
+ "dataset_id": "188",
+ "title_en": "Traffic light and road sign recognition images (capital area)",
+ "summary_ko": "수도권 도로 주행 영상에서 뽑은 이미지 약 80만 장으로, 신호등 위치와 신호 상태, 도로 표지판 위치와 지시·규제·주의 속성이 표시되어 있습니다. 자율주행 신호 인식, 운전자 보조, 정밀 지도 제작에 쓸 수 있습니다.",
+ "summary_en": "About 800,000 images from driving on Seoul capital-area roads, labelled with traffic-light positions and states and road-sign positions with instruction, regulation and warning attributes. For self-driving signal recognition, driver assistance and HD map making.",
+ "contents_ko": "주행 이미지 + JSON(신호등·표지판 상자, 신호 상태, 표지판 종류·속성).",
+ "contents_en": "Driving image + JSON (traffic-light and sign boxes, signal state, sign type and attributes).",
+ "modalities": [
+  "image"
+ ],
+ "tasks": [
+  "object_detection",
+  "image_classification"
+ ],
+ "topics": [
+  {
+   "ko": "자율주행",
+   "en": "Self-driving"
+  },
+  {
+   "ko": "교통 표지·신호",
+   "en": "Traffic signs and signals"
+  }
+ ],
+ "keywords_ko": [
+  "신호등 인식",
+  "도로 표지판",
+  "자율주행",
+  "수도권",
+  "교통 신호"
+ ],
+ "keywords_en": [
+  "traffic light recognition",
+  "road signs",
+  "self-driving",
+  "Seoul area",
+  "traffic signals"
+ ],
+ "labels": [
+  "bounding box",
+  "signal state",
+  "sign attributes (shape, colour, type)",
+  "incident objects"
+ ],
+ "file_formats": [
+  "jpg",
+  "json"
+ ],
+ "scale_ko": "이미지 803,060장 (신호등 객체 3,029,801개·표지판 객체 2,946,632개는 지방 187번과 합친 값)",
+ "classes_example": [
+  "신호등",
+  "도로 표지판",
+  "유고정보(라바콘·포트홀·공사)",
+  "적색/황색/녹색 불",
+  "좌회전 화살표",
+  "주의·규제·지시 표지"
+ ],
+ "baseline": [
+  {
+   "task": "신호등 인식 (classification)",
+   "model": "MobileNetV2",
+   "metric": "Accuracy",
+   "value": "96.7%"
+  },
+  {
+   "task": "표지판 탐지 (detection)",
+   "model": "YOLO v4 scaled 1536",
+   "metric": "mAP",
+   "value": "65%"
+  }
+ ],
+ "difficulty": "intermediate",
+ "difficulty_note_ko": "신호등 상태 분류는 쉽지만 작은 표지판 탐지는 어렵습니다. 약 340GB입니다.",
+ "skills_needed_ko": [
+  "파이썬",
+  "YOLO 탐지",
+  "이미지 분류"
+ ],
+ "caveats_ko": [
+  "신호등/표지판 객체 수는 지방 데이터와 합친 값",
+  "설명서는 스캔 이미지라 쓰지 않고 페이지 정보만 사용"
+ ],
+ "project_ideas": [
+  {
+   "level": "beginner",
+   "title_ko": "표지판 종류 분류",
+   "title_en": "Road sign type classifier",
+   "desc_ko": "잘라낸 표지판을 지시·규제·주의로 분류합니다.",
+   "desc_en": "Classify cropped signs into instruction, regulation and warning."
+  },
+  {
+   "level": "capstone",
+   "title_ko": "속도 제한 표지 알림",
+   "title_en": "Speed-limit sign alert",
+   "desc_ko": "주행 영상에서 속도 제한 표지를 읽어 화면에 표시합니다.",
+   "desc_en": "Read speed-limit signs from driving video and display them."
+  },
+  {
+   "level": "research",
+   "title_ko": "수도권·지방 데이터 일반화",
+   "title_en": "Generalising between regions",
+   "desc_ko": "수도권으로 학습한 모델을 지방 도로(187번)에 적용해 차이를 분석합니다.",
+   "desc_en": "Apply the model to non-capital roads (dataset 187) and analyse the gap."
+  }
+ ],
+ "doc_used": false,
+ "uncertain": []
+}

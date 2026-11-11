@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71942",
+ "easy_ko": "예전 배구 경기 영상 데이터를 다시 다듬어 만든 경기 사진 2만 장에, 장면 속 요소 사이의 의미 관계를 담은 설명을 붙인 데이터입니다. 배구 기술 분석, 심판 훈련, 경기 해설을 만드는 AI에 쓸 수 있습니다.",
+ "easy_en": "20,000 match images reworked from older volleyball video data, each with a description of the meaning relations between elements in the scene. You can use it for volleyball skill analysis, referee training or AI that writes match commentary.",
+ "detail_ko": "2021년 AI 허브 배구 영상 데이터를 다시 가공(업사이클링)해 중복 이미지를 빼고, 이미지 20,000건(jpg)에 요소 사이의 의미 관계를 담은 이미지-텍스트 설명(JSON)을 붙였습니다. 온톨로지·검색 기반 생성(RAG)과 사람 검수로 정확도를 높였습니다. 구성: 협회경기 49%, 경기촬영 39% 등. 배구 기술 분석, 심판 훈련, 경기 해설 생성에 쓰도록 만들었습니다. 라벨 구조는 팩 앞부분에 없고, 페이지에 성능 점수 표가 없고, 원본 데이터와 이미지가 겹칠 수 있습니다.",
+ "detail_en": "20,000 images (jpg) taken from AI Hub's 2021 volleyball video data after removing duplicates, with JSON image-text descriptions of the meaning relations between elements, made more accurate using an ontology, retrieval-augmented generation (RAG) and human review. Composition: 49% association matches, 39% filmed games and others. It is meant for volleyball skill analysis, referee training and match commentary generation. The label structure is not in the pack. There is no score table, and images may overlap with the original dataset.",
+ "amount_ko": "20,000건",
+ "amount_en": "20,000 items",
+ "labels_ko": "사진 설명, 요소 사이 관계",
+ "labels_en": "image-text description",
+ "status": "full-run-2026-11-02"
+}

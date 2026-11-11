@@ -1,0 +1,29 @@
+{
+ "dataset_id": "71541",
+ "title_en": "Korean body 3D scanning data",
+ "summary_ko": "한국인 남녀 각 265명의 몸을 20가지 자세로 3D 스캔한 데이터입니다. 몸 3D 모델(메시+텍스처), 2D 이미지, 신체 키포인트와 성별·연령대·체형 정보가 있어 3D 자세 추정, 가상 아바타, 체형 분석에 쓸 수 있습니다.",
+ "summary_en": "3D body scans of 265 Korean men and 265 women each in 20 poses: 3D meshes with texture, 2D images, body keypoints and sex, age group and body type. For 3D pose estimation, avatars and body-shape analysis.",
+ "contents_ko": "신체 3D 모델(obj, gltf, 텍스처 png) + 2D 이미지(jpg, png) + JSON(키포인트, 성별·연령대·체형 정보).",
+ "contents_en": "Body 3D model (obj, gltf, png texture) + 2D image (jpg, png) + JSON (keypoints, sex, age group, body type).",
+ "modalities": ["3d", "image"],
+ "tasks": ["keypoint_pose", "3d_reconstruction"],
+ "topics": [{"ko": "3D 인체·아바타", "en": "3D bodies and avatars"}, {"ko": "인체공학·체형", "en": "Ergonomics and body shape"}],
+ "keywords_ko": ["3D 신체", "3D 포즈", "3D 스캐닝", "체형", "아바타"],
+ "keywords_en": ["3D body", "3D pose", "3D scanning", "body shape", "avatar"],
+ "labels": ["keypoints", "pose", "sex", "age group", "BMI group"],
+ "file_formats": ["obj", "gltf", "png", "jpg", "json"],
+ "scale_ko": "신체 3D 데이터 10,600세트, 2D 이미지 84,800장 (2D 원시 이미지 1,908,000장), 530명 × 20가지 자세",
+ "classes_example": ["자세 20종(A~T)", "BMI 등급", "연령대", "성별"],
+ "baseline": [{"task": "3D human pose prediction", "model": "EvoSkeleton", "metric": "MPJPE", "value": "46.15 mm"}],
+ "difficulty": "advanced",
+ "difficulty_note_ko": "3D 메시와 3D 관절 데이터를 다뤄야 하며 전체 약 207GB입니다.",
+ "skills_needed_ko": ["파이썬", "3D 메시 다루기", "3D 자세 추정 모델"],
+ "caveats_ko": ["전체 약 207GB", "인체 생체정보라 사용 조건을 꼭 확인", "71539 얼굴 3D 스캐닝 데이터와 같은 기관·같은 구조"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "2D 사진 자세 추정", "title_en": "2D pose estimation", "desc_ko": "2D 이미지에서 신체 키포인트를 찾는 모델을 학습합니다.", "desc_en": "Train a model to find body keypoints in 2D images."},
+  {"level": "capstone", "title_ko": "2D→3D 자세 올리기", "title_en": "Lifting 2D pose to 3D", "desc_ko": "2D 키포인트로 3D 관절 위치를 예측하고 MPJPE로 평가합니다.", "desc_en": "Predict 3D joints from 2D keypoints, evaluate with MPJPE."},
+  {"level": "research", "title_ko": "체형별 3D 신체 모델링", "title_en": "Body-type-aware 3D modelling", "desc_ko": "체형·연령대 정보를 이용해 한국인 체형을 반영한 3D 신체 모델을 연구합니다.", "desc_en": "Model Korean body shapes using BMI and age information."}
+ ],
+ "doc_used": true,
+ "uncertain": ["20가지 자세 이름은 찾지 못함 (신체 관절 키포인트는 32개)"]
+}

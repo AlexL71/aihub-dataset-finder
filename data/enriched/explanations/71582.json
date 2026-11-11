@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71582",
+ "easy_ko": "충청·전라 지역을 여행한 사람들이 스마트폰 앱으로 남긴 여행 기록으로, 어디를 어떤 순서로 갔는지, 각 장소에 얼마나 만족했는지, 돈을 어디에 얼마나 썼는지가 들어 있습니다. 여행자의 나이와 여행 스타일도 있어, 나에게 맞는 여행지를 추천하는 서비스를 만들 수 있습니다.",
+ "easy_en": "Travel diaries left in a smartphone app by people touring the Chungcheong and Jeolla regions: where they went and in what order, how satisfied they were with each place, and what they spent. Traveller age and travel style are included, so you can build a service that recommends places that suit someone.",
+ "detail_ko": "서부권 여행자 4,000명의 여행 로그로, 여행자 1명이 1세트입니다. CSV 표(여행자 정보, 여행, 방문지·만족도, 이동 내역, 활동·숙박·교통·사전 지출, 동반자), 여행자별 GPS 좌표, 여행지 사진 161,444장(얼굴 흐림 처리)으로 구성됩니다. 기준 성능은 CatBoost 방문지 유형 분류 F1 0.7465, 추천 Recall@10 37.1%입니다. 용량 대부분이 사진이므로 표와 GPS만 받으면 훨씬 작으며, 수도권·동부권·제주 데이터가 같은 구조로 있습니다.",
+ "detail_en": "Travel logs of 4,000 travellers in the western region, one set per traveller: CSV tables (traveller profile, trip, visited places and satisfaction, movements, activity/lodging/transport/pre-trip spending, companions), per-traveller GPS tracks and 161,444 trip photos (faces blurred). Baselines: CatBoost place-type classification F1 0.7465; recommendation Recall@10 37.1%. Most of the size is photos; the tables and GPS alone are small. Same-format sets exist for the capital area, east and Jeju.",
+ "amount_ko": "여행자 4,000명, 여행지 사진 약 16만 장",
+ "amount_en": "4,000 travellers, about 161k trip photos",
+ "labels_ko": "설문 답변, 지출 기록, 만족도 점수, 방문지 종류",
+ "labels_en": "survey answers, spending records, satisfaction scores, place types",
+ "status": "sample-2026-11-02"
+}

@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71803",
+ "easy_ko": "혼자 사는 어르신 집에서 모은 실내 환경과 움직임 센서, 스마트 반지의 몸 신호, 적외선 사진, 응급 호출 기록, 상담 기록을 함께 묶은 데이터입니다. 위험한 상황을 알아채고 그 까닭을 알려 주는 어르신 돌봄 AI에 쓸 수 있습니다.",
+ "easy_en": "Data combining indoor environment and motion sensors, body signals from a smart ring, infrared images, emergency-call records and counselling notes from the homes of older people living alone. You can use it to build elder-care AI that detects dangerous situations and explains why.",
+ "detail_ko": "독거노인 가구의 환경 측정·동작 감지 센서, 스마트링 생체신호, 응급요청 기록(csv), 적외선 이미지(png), 상담 기록을 센서별 120,865건씩 묶고, 상태 라벨(예: 응급, 주의, 일상)을 JSON으로 붙였습니다. 노인의 건강·상담 정보라 이용 조건과 연구 윤리를 확인해야 하고, 위험 상태 라벨 종류와 성능 지표는 팩 앞부분에 없습니다.",
+ "detail_en": "Multimodal data from homes of older people living alone: environment and motion sensors, smart-ring vital signs and emergency-call records (csv), infrared images (png) and counselling notes, 120,865 records per sensor, with JSON status labels (such as emergency, caution, daily). This is health and counselling information about older people, so check the terms of use and research ethics; the full status label list and any metrics are not in the pack.",
+ "amount_ko": "센서별 120,865건(환경·스마트링·적외선·응급요청)",
+ "amount_en": "120,865 records per sensor (environment, smart ring, infrared, emergency call)",
+ "labels_ko": "위험 상태, 센서 시간 기록",
+ "labels_en": "risk status, sensor time series",
+ "status": "full-run-2026-11-02"
+}

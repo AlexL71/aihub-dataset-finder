@@ -1,0 +1,12 @@
+{
+ "dataset_id": "123",
+ "easy_ko": "조용한 방에서 두 사람씩 일상·쇼핑·날씨·취미 같은 주제로 자유롭게 나눈 대화를 녹음하고, '음', '어' 같은 머뭇거림까지 받아 적은 데이터입니다. 한국어 말소리를 글로 바꾸는 AI를 연구할 때 성능을 비교하는 기준 데이터로 많이 쓰입니다.",
+ "easy_en": "Recordings of pairs of people chatting freely in a quiet room about daily life, shopping, weather, hobbies and more, transcribed down to hesitations like 'um' and 'uh'. It is widely used as a standard test set for comparing Korean speech-to-text AI.",
+ "detail_ko": "약 2,000명의 화자가 2인 1조로 조용한 환경에서 녹음한 자유 대화 음성 1,000시간(pcm/wav)과 ETRI 전사 규칙(철자·발음 이중 전사, 간투사 표기)에 따른 전사 텍스트(txt)로 구성되며, 'KsponSpeech'로 알려진 한국어 음성 인식 표준 벤치마크입니다. 주제는 안부·일상, 쇼핑, 취미, 날씨, 정치·경제, TV·연예 등입니다. 2018년 구축이며 기준 성능 지표는 기록에 없습니다. 이중 전사와 특수 기호를 이해하고 전처리해야 합니다.",
+ "detail_en": "1,000 hours of free conversation by about 2,000 speakers recorded in pairs in quiet rooms (pcm/wav), with txt transcripts following ETRI rules (dual spelling/pronunciation transcription, filler marks); this is the KsponSpeech benchmark widely used for Korean speech recognition. Topics include greetings and daily life, shopping, hobbies, weather, politics and economy, TV and entertainment. Built in 2018; no baseline in the record. The dual transcription and special symbols need preprocessing.",
+ "amount_ko": "음성 1,000시간, 화자 약 2,000명",
+ "amount_en": "1,000 hours of speech, about 2,000 speakers",
+ "labels_ko": "말소리를 받아 적은 글(철자·발음 두 가지, 머뭇거림 표시)",
+ "labels_en": "transcripts (spelling and pronunciation versions, filler marks)",
+ "status": "full-run-2026-11-02"
+}

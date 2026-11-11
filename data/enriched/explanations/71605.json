@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71605",
+ "easy_ko": "제주도와 섬 지역의 관광지, 음식점, 숙소, 쇼핑 장소 정보와 장소 사진, 사진 설명, 그리고 관광에 관한 질문과 답을 함께 묶은 데이터입니다. 사진과 지식을 같이 보고 여행 질문에 답하는 챗봇이나 추천 AI에 쓸 수 있습니다.",
+ "easy_en": "Information on tourist sights, restaurants, places to stay and shops in Jeju and other islands, together with photos of the places, photo descriptions, and questions and answers about travel. You can use it to build chatbots or recommendation AI that look at photos and facts together to answer travel questions.",
+ "detail_ko": "제주도와 섬 지역 장소(POI) 10,783건의 정보(csv)와 지식 트리플(주어-관계-대상), 장소 이미지 53,915장(png)과 이미지 설명 문장, 질문-답변 215,660건(JSON)을 묶은 지식 기반 시각 질의응답(KVQA) 데이터입니다. 장소 분류는 관광지, 문화시설, 음식점, 레포츠, 숙박, 쇼핑입니다. 페이지에 성능 지표 표가 없고, 71598(수도권)·71607(동부권)·71608(서부권)과 같은 구성입니다. POI 원본 일부는 외부 기업 제공 자료입니다.",
+ "detail_en": "Knowledge-based visual question answering (KVQA) data for Jeju and other islands: information on 10,783 places (POIs, csv), knowledge triples (subject-relation-object), 53,915 place images (png) with captions, and 215,660 question-answer pairs (JSON). Place types are tourist sights, cultural facilities, restaurants, leisure sports, lodging and shopping. There is no metrics table on the page. Same layout as 71598 (capital region), 71607 (eastern) and 71608 (western). Some POI source data comes from outside companies.",
+ "amount_ko": "POI 10,783건, 이미지 53,915장, 트리플 98,784건, 질문-답변 215,660건",
+ "amount_en": "10,783 POIs, 53,915 images, 98,784 triples, 215,660 QA pairs",
+ "labels_ko": "지식 트리플, 사진 설명 문장, 질문과 답",
+ "labels_en": "triples, image captions, question-answer pairs",
+ "status": "full-run-2026-11-02"
+}

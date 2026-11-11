@@ -1,0 +1,29 @@
+{
+ "dataset_id": "71734",
+ "title_en": "Korean traditional ink-and-colour painting production data",
+ "summary_ko": "화가들이 직접 그린 한국 전통 수묵 채색화 이미지 4,439장으로, 용기·가전·가구·차량·물고기·꽃·곤충 등 대상 분류 태그와 한국어·영어 설명 캡션이 각 4,439개 붙어 있습니다. 글로 설명하면 채색화를 그려 주는 텍스트→이미지 생성 AI에 쓸 수 있습니다.",
+ "summary_en": "4,439 Korean traditional ink-and-colour paintings made by artists, each with subject tags (containers, appliances, furniture, vehicles, fish, flowers, insects, etc.) and Korean and English captions. For text-to-image generation of traditional-style paintings.",
+ "contents_ko": "채색화 이미지(jpg) + JSON(분류 태그, 한·영 캡션).",
+ "contents_en": "Painting image (jpg) + JSON (class tags, Korean and English captions).",
+ "modalities": ["image", "text"],
+ "tasks": ["image_generation", "image_captioning", "image_classification"],
+ "topics": [{"ko": "전통 미술·문화", "en": "Traditional art and culture"}, {"ko": "생성 AI 콘텐츠", "en": "Generative AI content"}],
+ "keywords_ko": ["수묵 채색화", "텍스트→이미지", "Stable Diffusion", "캡션", "전통 회화", "스타일"],
+ "keywords_en": ["ink-and-colour painting", "text-to-image", "Stable Diffusion", "captions", "traditional painting", "style"],
+ "labels": ["class tags", "Korean caption", "English caption"],
+ "file_formats": ["jpg", "json"],
+ "scale_ko": "채색화 이미지 4,439장, 캡션 8,878개(한·영), 인공물 2,285·자연물 2,449",
+ "classes_example": ["용기", "가정용 전자기기", "가정용 가구", "차량", "운송기기", "물고기", "꽃", "곤충"],
+ "baseline": [],
+ "difficulty": "intermediate",
+ "difficulty_note_ko": "약 15GB로 가볍고 Stable Diffusion LoRA 미세조정 실습에 알맞습니다. GPU가 필요합니다.",
+ "skills_needed_ko": ["파이썬", "Stable Diffusion·LoRA 미세조정", "이미지 캡션"],
+ "caveats_ko": ["페이지에 성능 점수 표가 없음", "이미지 수가 적어 큰 모델을 처음부터 학습하기엔 부족함", "인공물+자연물 합(4,734)이 전체 4,439장과 다름", "71380 수묵화 데이터와 같은 기관"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "채색화 대상 분류", "title_en": "Painting subject classifier", "desc_ko": "그림 속 대상이 꽃·물고기·차량 등 무엇인지 분류합니다.", "desc_en": "Classify what a painting depicts."},
+  {"level": "capstone", "title_ko": "채색화 스타일 생성기", "title_en": "Ink-colour style generator", "desc_ko": "LoRA로 미세조정해 문장을 넣으면 채색화 스타일 그림을 만들어 줍니다.", "desc_en": "Fine-tune a LoRA that turns prompts into ink-colour paintings."},
+  {"level": "research", "title_ko": "적은 데이터 스타일 학습", "title_en": "Few-shot style learning", "desc_ko": "수천 장 수준 데이터로 화풍을 얼마나 잘 배울 수 있는지 연구합니다.", "desc_en": "Study how well a style can be learned from a few thousand images."}
+ ],
+ "doc_used": true,
+ "uncertain": []
+}

@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71460",
+ "easy_ko": "경북 지역 전통 한옥 약 600곳을 찍은 사진에 지붕, 기둥, 창문, 문, 벽 같은 한옥의 부분을 상자로 표시한 데이터입니다. 한옥 구조를 알아보거나 가상 세계(메타버스)에 한옥을 짓는 AI에 쓸 수 있습니다.",
+ "easy_en": "Photos of about 600 traditional Korean houses (hanok) in North Gyeongsang Province, with boxes marking house parts such as roofs, pillars, windows, doors and walls. You can use it to build AI that recognises hanok structure or designs hanok for virtual worlds (the metaverse).",
+ "detail_ko": "경상북도 23개 시·군의 한옥 약 600곳을 촬영한 이미지 323,197장(jpg)에 구성요소 10종(outer, door, roof, column, window, wall, floor, railing, basestone, stylobate) 상자와 대분류·소분류를 JSON으로 붙였습니다. 전체 약 339GB이고, 구성요소별 비율 차이가 큽니다(outer·railing 0.9%, basestone 22.5%). 개요에는 30만 장, 구축량에는 323,197장으로 적혀 있으며, 성능 지표 값은 페이지에 없습니다.",
+ "detail_en": "323,197 images (jpg) of about 600 hanok in 23 cities and counties of North Gyeongsang Province, with JSON boxes for 10 component classes (outer, door, roof, column, window, wall, floor, railing, base stone, stylobate) and main/sub categories. Total size is about 339 GB. Component shares vary widely (0.9% for outer and railing, 22.5% for base stone). The overview says 300,000 images while the build amount says 323,197, and no metric values are on the page.",
+ "amount_ko": "이미지 323,197장, 한옥 약 600곳, 구성요소 10종",
+ "amount_en": "323,197 images, about 600 hanok, 10 components",
+ "labels_ko": "한옥 부분 위치 상자, 부분 종류",
+ "labels_en": "bounding boxes, house component class",
+ "status": "full-run-2026-11-02"
+}

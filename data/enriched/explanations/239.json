@@ -1,0 +1,12 @@
+{
+ "dataset_id": "239",
+ "easy_ko": "여러 회사의 기계 설비에 휴대용 전력 측정기를 달아 전기를 어떻게 쓰는지 기록하고, 작동·멈춤 같은 사용 상태와 설비 건강 상태(정상·주의·경고)를 표시한 데이터입니다. 전기를 아끼거나 설비 고장을 미리 찾아내는 AI를 만들 수 있습니다.",
+ "easy_en": "Records of how machines at many companies use electricity, measured by portable power meters, marked with usage state (running, stopping) and equipment health (normal, caution, warning). You can build AI that saves energy or finds equipment faults early.",
+ "detail_ko": "63개 업체 설비 461대(10종)에 휴대형 전력계를 달아 측정한 전력 품질 원천 데이터 7.08억 건과 AI 학습 데이터 168만 건으로, 설비별 전력 품질 시계열(전류·전압·역률·고조파 등), 업체·설비 메타정보, 사용 패턴(Loading, Unloading, Stop)과 SOH 진단(정상, 주의, 경고) 라벨이 있습니다. 기준 성능은 LSTM + attention + autoencoder SOH 진단 오탐률 0.99~1.78%입니다. 설비 10종 이름은 기록에서 확인되지 않고, 성능 표의 과제명이 'Image Classification'으로 잘못 적혀 있습니다.",
+ "detail_en": "708M raw power-quality records and 1.68M AI training records from 461 machines (10 types) at 63 companies, measured with portable power meters: per-machine time series (current, voltage, power factor, harmonics and more), company and equipment metadata, and labels for usage pattern (loading, unloading, stop) and SOH state (normal, caution, warning). Baseline: LSTM + attention + autoencoder SOH diagnosis false-positive rate 0.99–1.78%. The 10 machine types are not named in the record, and the table wrongly lists the task as image classification.",
+ "amount_ko": "원천 기록 약 7.08억 건, 학습 데이터 168만 건, 설비 461대",
+ "amount_en": "about 708M raw records, 1.68M training records, 461 machines",
+ "labels_ko": "전기 사용 상태(작동·멈춤), 설비 건강 상태(정상·주의·경고)",
+ "labels_en": "usage pattern (loading, unloading, stop), equipment health (normal, caution, warning)",
+ "status": "full-run-2026-11-02"
+}

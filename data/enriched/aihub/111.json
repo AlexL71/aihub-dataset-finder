@@ -1,0 +1,29 @@
+{
+ "dataset_id": "111",
+ "title_en": "Specialised-domain Korean-English parallel corpus",
+ "summary_ko": "의료·금융·가정통신문·국제 스포츠·IT·축제·대법원 판례·향토문화/음식 8개 분야의 한국어-영어 번역 문장 쌍 150만 개입니다. 학교 가정통신문 다국어 번역기나 판례 전문 번역기처럼 분야에 특화된 번역 AI를 만들 수 있습니다.",
+ "summary_en": "1.5 million Korean-English sentence pairs in 8 domains: medical, finance, school newsletters to parents, international sports, IT, festivals, Supreme Court cases, and local culture and food. For domain-specific translators such as school-newsletter or case-law translation.",
+ "contents_ko": "한국어 원문 문장(평균 15어절) + 영어 번역 + 분야 라벨.",
+ "contents_en": "Korean source sentence (about 15 words on average) + English translation + domain label.",
+ "modalities": ["text"],
+ "tasks": ["translation"],
+ "topics": [{"ko": "번역·외국어", "en": "Translation and foreign languages"}, {"ko": "의료", "en": "Medicine"}, {"ko": "금융", "en": "Finance"}, {"ko": "교육·가정통신문", "en": "Education and school notices"}],
+ "keywords_ko": ["한영 번역", "병렬 말뭉치", "기계번역", "전문 번역", "가정통신문", "판례"],
+ "keywords_en": ["Korean-English translation", "parallel corpus", "machine translation", "domain translation", "school newsletter", "case law"],
+ "labels": ["parallel sentence pairs", "domain"],
+ "file_formats": ["json", "xlsx"],
+ "scale_ko": "병렬 문장 150만 쌍(의료 25만, 금융·스포츠·IT·축제·향토문화 각 20만, 판례 15만, 가정통신문 10만)",
+ "classes_example": ["의료/보건", "금융/증시", "가정 통신문", "국제 스포츠 행사", "IT기술", "축제/행사", "대법원 판례", "향토문화/음식"],
+ "baseline": [{"task": "machine translation", "model": "Google/AWS cloud MT", "metric": "BLEU", "value": "0.5166"}],
+ "difficulty": "beginner",
+ "difficulty_note_ko": "약 0.4GB로 작고, 번역 품질 비교나 작은 번역 모델 미세조정 실습에 좋습니다.",
+ "skills_needed_ko": ["파이썬", "Hugging Face 번역 모델 사용", "BLEU 평가"],
+ "caveats_ko": ["파일 형식은 팩에서 확인하지 못해 추정"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "번역기 분야별 품질 비교", "title_en": "Translator quality by domain", "desc_ko": "공개 번역 모델의 BLEU 점수를 분야별로 비교합니다.", "desc_en": "Compare BLEU of an open translation model across domains."},
+  {"level": "capstone", "title_ko": "다문화 가정용 가정통신문 번역기", "title_en": "School-notice translator for multicultural families", "desc_ko": "가정통신문 분야로 미세조정한 번역기를 웹으로 만듭니다.", "desc_en": "Fine-tune a translator on school notices and put it on the web."},
+  {"level": "research", "title_ko": "전문 용어 번역 정확도 개선", "title_en": "Better translation of domain terms", "desc_ko": "의료·판례 용어 번역 오류를 분석하고 용어집을 쓰는 방법을 비교합니다.", "desc_en": "Analyse term errors in medical and legal text and compare glossary-based methods."}
+ ],
+ "doc_used": true,
+ "uncertain": ["파일 형식이 팩에 명시되지 않음"]
+}

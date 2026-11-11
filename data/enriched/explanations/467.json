@@ -1,0 +1,12 @@
+{
+ "dataset_id": "467",
+ "easy_ko": "뉴스·시사·예능 방송과 프로야구·배구 경기 영상마다 내용을 정리한 요약 글과 영상에 대한 질문과 답을 붙인 데이터입니다. 영상 내용을 짧게 요약하거나 영상에 대해 물으면 답해 주는 AI를 만들 수 있습니다.",
+ "easy_en": "News, current-affairs and entertainment broadcasts and pro baseball and volleyball videos, each with a written summary and questions and answers about the video. You can build AI that summarises videos or answers questions about them.",
+ "detail_ko": "MBN 보도·시사·교양·예능과 프로야구·프로배구 원천 영상 38,467개(예능교양 49.6%, 생활안전 30.4%, 스포츠 20%, mp4)에 영상 요약문, 질문-답 쌍, 카테고리(사고발생, 산업안전, 자연재해, 치안안전, 배구, 야구, 건강, 다큐 등), 일부 대본 텍스트를 JSON으로 붙였습니다. 기준 성능 지표는 없습니다. 라벨링 데이터 수가 '20개'로 이상하게 적혀 있어 원문 확인이 필요하고, 방송·스포츠 영상 이용 조건 확인이 필요합니다.",
+ "detail_en": "38,467 source videos (mp4) from MBN news, current affairs, liberal arts and entertainment, plus pro baseball and volleyball (entertainment/culture 49.6%, safety 30.4%, sports 20%), with JSON video summaries, QA pairs, categories (accidents, industrial safety, natural disasters, public safety, volleyball, baseball, health, documentary and more) and some script text. No baseline is published. The labelled count is oddly given as '20', so check the source; broadcast and sports usage terms apply.",
+ "amount_ko": "영상 38,467개",
+ "amount_en": "38,467 videos",
+ "labels_ko": "영상 요약 글, 질문과 답, 영상 분야",
+ "labels_en": "video summary, question–answer pairs, category",
+ "status": "full-run-2026-11-02"
+}

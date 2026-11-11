@@ -1,0 +1,29 @@
+{
+ "dataset_id": "71953",
+ "title_en": "Multi-angle CCTV daily safety data",
+ "summary_ko": "교차로·골목길·보행로에서 2개 이상 각도로 동시에 찍은 CCTV 영상쌍 5,000건에 침입·스토킹·싸움·헬멧 미착용 등 11종 생활안전 상황의 객체 추적, 프레임 캡션, 행동 분류, 질의응답(VQA)과 3단계 사고과정(CoT) 라벨이 붙은 데이터입니다. 여러 시점을 함께 보는 스마트 관제와 안전사고 예측 AI에 쓸 수 있습니다.",
+ "summary_en": "5,000 pairs of CCTV videos shot simultaneously from two or more angles at intersections, alleys and walkways, labelled for 11 daily-safety situations such as intrusion, stalking, fighting and riding without a helmet, with object tracking, frame captions, action classes, VQA and three-step chain-of-thought labels. For multi-view smart surveillance and safety-incident prediction.",
+ "contents_ko": "CCTV 영상쌍(mp4) + JSON(추적·캡션·행동·질의응답·사고과정).",
+ "contents_en": "CCTV video pairs (mp4) + JSON (tracking, captions, actions, Q&A, chain of thought).",
+ "modalities": ["video", "text"],
+ "tasks": ["action_recognition", "object_tracking", "visual_qa", "image_captioning"],
+ "topics": [{"ko": "생활안전·관제", "en": "Public safety and surveillance"}, {"ko": "멀티모달 AI", "en": "Multimodal AI"}],
+ "keywords_ko": ["CCTV", "다중 시점", "침입", "스토킹", "싸움", "VQA"],
+ "keywords_en": ["CCTV", "multi-view", "intrusion", "stalking", "fighting", "VQA"],
+ "labels": ["object track", "frame caption", "action class", "question-answer", "chain of thought"],
+ "file_formats": ["mp4", "json"],
+ "scale_ko": "영상쌍 5,000건(11종 상황)",
+ "classes_example": ["침입", "스토킹", "싸움", "헬멧 미착용"],
+ "baseline": [],
+ "difficulty": "advanced",
+ "difficulty_note_ko": "약 484GB로 매우 크고, 다중 시점 영상과 추론 라벨을 함께 다뤄야 합니다.",
+ "skills_needed_ko": ["파이썬", "영상 행동 인식", "멀티모달 모델"],
+ "caveats_ko": ["상황별 수량 차이가 큼(싸움 50건 등)", "사람이 찍힌 CCTV 영상이라 이용 조건과 개인정보 처리 확인 필요", "성능 지표 값이 팩 앞부분에 없음"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "CCTV 위험 상황 분류", "title_en": "CCTV incident classifier", "desc_ko": "한 시점 영상으로 11종 상황을 분류합니다.", "desc_en": "Classify 11 incident types from one view."},
+  {"level": "capstone", "title_ko": "다중 시점 관제 대시보드", "title_en": "Multi-view monitoring dashboard", "desc_ko": "두 각도 영상을 함께 보고 위험 상황을 알려 줍니다.", "desc_en": "Alert on incidents using two camera angles."},
+  {"level": "research", "title_ko": "시점 융합 행동 인식", "title_en": "Multi-view action fusion", "desc_ko": "여러 시점 정보를 합쳐 행동 인식을 개선하는 방법을 연구합니다.", "desc_en": "Fuse multiple views to improve action recognition."}
+ ],
+ "doc_used": true,
+ "uncertain": ["11종 상황 전체 목록"]
+}

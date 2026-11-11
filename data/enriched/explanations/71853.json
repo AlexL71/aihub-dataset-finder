@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71853",
+ "easy_ko": "밀순, 새싹 인삼, 양상추, 녹차, 팥순 같은 기능성 작물을 옆과 위에서 찍은 사진 24만여 장에 작물 위치, 자란 주차, 사진 설명과 재배 환경 기록을 붙인 데이터입니다. 작물 종류와 자라는 단계를 알아내 스마트팜 환경을 자동으로 맞추는 AI에 쓸 수 있습니다.",
+ "easy_en": "Over 240,000 side and top photos of functional crops such as wheat sprouts, ginseng sprouts, lettuce, green tea and red-bean sprouts, with crop positions, growth week, photo descriptions and growing-environment records. You can use it to build AI that identifies crop type and growth stage to control smart-farm conditions automatically.",
+ "detail_ko": "기능성 작물(예: 밀순, 새싹인삼 개량종·연풍, 양상추, 녹차, 두메부추, 팥순, 구절초)을 옆·위 두 각도에서 찍은 이미지 245,000건(jpg, 1920×1080)에 작물 상자, 생육 주차, 이미지 설명, 환경·생육 기록 245,000건, 성분 분석 90건을 JSON으로 붙였습니다. F1 90% 이상은 목표치이며 실제 결과는 팩에 없고, 작물 전체 목록이 팩에서 잘렸을 수 있으며, 성분 분석은 90건뿐입니다.",
+ "detail_en": "245,000 images (jpg, 1920×1080) of functional crops (such as wheat sprouts, ginseng sprouts of two varieties, lettuce, green tea, mountain chives, red-bean sprouts, Siberian chrysanthemum) taken from the side and top, with JSON crop boxes, growth week, captions, 245,000 environment and growth records and 90 composition analyses. F1 of 90% or more is a target, not a result; the crop list may be cut off in the pack; and there are only 90 composition analyses.",
+ "amount_ko": "이미지 245,000건, 환경·생육 기록 245,000건, 성분 분석 90건",
+ "amount_en": "245,000 images, 245,000 environment/growth records, 90 composition analyses",
+ "labels_ko": "작물 위치 상자, 작물 종류·자란 주차, 사진 설명",
+ "labels_en": "bounding box, class, caption",
+ "status": "full-run-2026-11-02"
+}

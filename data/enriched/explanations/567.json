@@ -1,0 +1,12 @@
+{
+ "dataset_id": "567",
+ "easy_ko": "서울의 오래된 주택을 일반 카메라와 열화상 카메라로 함께 찍은 사진마다 금 간 곳, 벗겨진 곳, 철근이 드러난 곳 같은 낡은 흔적과 상태(좋음·보통·나쁨)를 표시한 데이터입니다. 낡은 건물이 얼마나 위험한지 진단하는 AI를 만들 수 있습니다.",
+ "easy_en": "Paired ordinary and thermal photos of old houses in Seoul, marked with signs of ageing such as cracks, peeling and exposed steel bars, and a condition rating (good, fair, poor). You can build AI that assesses how dangerous old buildings are.",
+ "detail_ko": "서울 25개 구의 20년 이상 된 주택 1,350여 동을 RGB·열화상으로 함께 촬영한 이미지 쌍 약 81만 장(jpg)에 점검 유형 7종(균열, 박리·박락, 철근노출, 대지, 마감, 생활, 창호)과 상태 3등급(우수·보통·불량)의 바운딩박스·폴리곤을 JSON으로 붙였습니다. 기준 성능은 기록에서 확인되지 않습니다. 전체 약 430GB이며, 상태 등급이 '불량'에 크게 치우쳐 있고 주택 외관에 주소 등 위치 정보가 보일 수 있습니다.",
+ "detail_en": "About 810k paired RGB and thermal images (jpg) of 1,350+ houses aged 20+ years across Seoul's 25 districts, with JSON boxes and polygons for 7 inspection types (crack, peeling/spalling, exposed rebar, site, finish, living, windows and doors) and 3 condition grades (good, fair, poor). No baseline is visible in the record. Total size is about 430 GB; grades skew heavily to poor, and house exteriors may reveal addresses.",
+ "amount_ko": "사진 약 81만 장(일반·열화상 쌍), 주택 1,350여 동",
+ "amount_en": "about 810k image pairs, 1,350+ houses",
+ "labels_ko": "낡은 흔적 위치 상자·테두리, 점검 종류, 상태 등급",
+ "labels_en": "boxes and outlines around defects, inspection type, condition grade",
+ "status": "full-run-2026-11-02"
+}

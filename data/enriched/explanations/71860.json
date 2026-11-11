@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71860",
+ "easy_ko": "리서치 회사의 인터뷰 대화 3,040건을 여러 번 주고받는 형식으로 정리하고, 인터뷰 목적과 주제, 진행자 스타일, 단어와 단어 관계를 붙인 데이터입니다. 상황에 맞는 인터뷰 질문을 자동으로 만들어 주는 AI에 쓸 수 있습니다.",
+ "easy_en": "3,040 interview conversations from a research company, organised as multi-turn exchanges, with the interview purpose, topic, interviewer style, and words and their relationships marked. You can use it to build AI that writes fitting interview questions automatically.",
+ "detail_ko": "리서치 회사의 인터뷰 대화 3,040건을 멀티턴 형식(JSON)으로 정리하고 인터뷰 목적·주제·진행자 스타일(설명형, 예시형, 요약형, 기타)과 개체·관계 정보를 붙였습니다. 3,040건으로 대화 모델 학습에는 적은 편이고, BLEU로 평가한다고 하나 수치는 팩에 없으며, 설명형이 약 62%로 스타일이 치우쳐 있습니다.",
+ "detail_en": "3,040 interview conversations from a research company, organised in multi-turn JSON with interview purpose, topic, interviewer style (explanatory, example-based, summarising, other) and entity and relation information. At 3,040 conversations it is small for training dialogue models; BLEU is said to be the metric but no value is in the pack; and about 62% are explanatory, so styles are skewed.",
+ "amount_ko": "인터뷰 3,040건, 진행자 성향 4종",
+ "amount_en": "3,040 interviews, 4 interviewer styles",
+ "labels_ko": "단어(개체), 단어 관계, 진행자 스타일",
+ "labels_en": "entity, relation, class",
+ "status": "full-run-2026-11-02"
+}

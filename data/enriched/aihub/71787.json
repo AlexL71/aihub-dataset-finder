@@ -1,0 +1,29 @@
+{
+ "dataset_id": "71787",
+ "title_en": "Scenario-based facial expression 3D data",
+ "summary_ko": "일반인과 배우 등 특수인이 시나리오에 따라 지은 표정을 3D로 촬영한 데이터 127,500세트로, 얼굴 근육 움직임 단위(Action Unit) 라벨이 붙어 있습니다. 디지털 휴먼 표정 생성과 표정 인식 AI에 쓸 수 있습니다.",
+ "summary_en": "127,500 sets of 3D facial expressions made by ordinary people and trained performers following scenarios, labelled with facial Action Units (muscle movement units). For digital-human expression generation and expression recognition AI.",
+ "contents_ko": "3D 얼굴(obj·mtl) + 텍스처(jpg) + JSON(Action Unit, 인물 정보).",
+ "contents_en": "3D face (obj, mtl) + texture (jpg) + JSON (Action Units, person info).",
+ "modalities": ["3d", "image"],
+ "tasks": ["3d_reconstruction", "image_generation", "sentiment_emotion"],
+ "topics": [{"ko": "디지털 휴먼·콘텐츠", "en": "Digital humans and content"}, {"ko": "감정 표현", "en": "Emotional expression"}],
+ "keywords_ko": ["3D 표정", "Action Unit", "디지털 휴먼", "얼굴 애니메이션", "표정 인식", "시나리오"],
+ "keywords_en": ["3D facial expression", "Action Unit", "digital human", "facial animation", "expression recognition", "scenario"],
+ "labels": ["action units", "person attributes"],
+ "file_formats": ["obj", "mtl", "jpg", "json"],
+ "scale_ko": "3D 데이터 127,500세트(일반인 122,451, 특수인 5,049)",
+ "classes_example": ["일반인", "특수인"],
+ "baseline": [],
+ "difficulty": "advanced",
+ "difficulty_note_ko": "3D 메시와 Action Unit을 다뤄야 해서 어렵고 전체가 약 855GB입니다.",
+ "skills_needed_ko": ["파이썬", "3D 메시 처리", "생성 모델"],
+ "caveats_ko": ["전체 약 855GB", "얼굴 데이터라 이용 조건 확인 필요", "시나리오·표정 종류 목록과 성능 지표가 팩 앞부분에 없음", "71785(안면 랜드마크)와 같은 기관"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "Action Unit 분류", "title_en": "Action Unit classifier", "desc_ko": "3D 얼굴 렌더 이미지로 활성화된 Action Unit을 분류합니다.", "desc_en": "Classify active Action Units from rendered faces."},
+  {"level": "capstone", "title_ko": "가상 캐릭터 표정 제어", "title_en": "Virtual character expressions", "desc_ko": "Action Unit 값으로 3D 캐릭터 표정을 움직이는 데모를 만듭니다.", "desc_en": "Drive a 3D character's face with Action Unit values."},
+  {"level": "research", "title_ko": "텍스트로 3D 표정 생성", "title_en": "Text-to-3D expression", "desc_ko": "상황 설명 문장에서 3D 표정을 생성하는 방법을 연구합니다.", "desc_en": "Generate 3D expressions from scenario text."}
+ ],
+ "doc_used": true,
+ "uncertain": ["Action Unit 종류 수"]
+}

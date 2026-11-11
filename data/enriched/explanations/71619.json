@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71619",
+ "easy_ko": "자율주행차에 단 최신 영상 레이더와 카메라, 레이저 센서로 고속도로와 도심을 달리며 모은 데이터 약 100만 장에 중앙분리대, 방음벽, 육교, 터널, 가로수, 표지판 같은 도로 주변 구조물을 입체 상자로 표시했습니다. 레이더로 주행 환경을 알아보는 자율주행 AI에 쓸 수 있습니다.",
+ "easy_en": "About 1 million frames recorded on highways and in cities by a self-driving car with an imaging radar, cameras and a laser sensor, with fixed roadside structures such as median barriers, noise walls, overpasses, tunnels, street trees and signs marked with 3D boxes. You can use it to build self-driving AI that recognises the driving environment with radar.",
+ "detail_ko": "자율주행차에 단 4D 이미징 레이다(txt), 카메라(png), 라이다(pcd)를 동기화해 고속도로·도심에서 모은 약 1,000,091프레임에 주행환경 객체 7종(중앙분리대, 방음벽, 육교, 터널, 가로수, 표지판, 램프) 3D 상자(일부 다각형)와 객체 종류를 JSON으로 붙였습니다. 전체 약 4.2TB이고, 페이지에 성능 지표 표가 없습니다. 71617(동적 객체)과 같은 기관·센서 구성입니다.",
+ "detail_en": "About 1,000,091 synchronised frames from a 4D imaging radar (txt), cameras (png) and lidar (pcd) on a self-driving car on highways and city roads, with JSON 3D boxes (some polygons) and class for 7 driving-environment objects (median barrier, noise wall, overpass, tunnel, street tree, sign, ramp). Total size is about 4.2 TB, and there is no metrics table on the page. Same builder and sensors as 71617 (moving objects).",
+ "amount_ko": "약 1,000,091프레임, 주행환경 객체 7종",
+ "amount_en": "about 1,000,091 frames, 7 driving-environment object classes",
+ "labels_ko": "도로 구조물 입체 상자, 테두리, 구조물 종류",
+ "labels_en": "3D bounding boxes, polygons, object class",
+ "status": "full-run-2026-11-02"
+}

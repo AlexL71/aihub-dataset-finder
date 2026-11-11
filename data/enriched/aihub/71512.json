@@ -1,0 +1,29 @@
+{
+ "dataset_id": "71512",
+ "title_en": "Gyeongbuk World Heritage seowon metaverse images and 3D data",
+ "summary_ko": "유네스코 세계유산인 경북 4개 서원(도산·병산·소수·옥산)의 건물과 부재(지붕·계단·초석 등)를 찍은 2D 이미지 26만여 건과 3D 스캔 모델 5천여 건입니다. 이미지에는 분류·상자·다각형 라벨이 있습니다. 전통 건축 부재 인식과 메타버스 3D 모델 검색에 쓸 수 있습니다.",
+ "summary_en": "About 263,000 2D images and 5,000 3D scanned models of buildings and architectural parts (roofs, stairs, foundation stones, etc.) at four UNESCO seowon academies in Gyeongbuk, with class, box and polygon labels. For recognising traditional building parts and metaverse 3D model search.",
+ "contents_ko": "이미지(JPG) + 3D 모델(OBJ, MTL) + JSON(분류, 상자, 다각형, 부재 정보).",
+ "contents_en": "Images (JPG) + 3D models (OBJ, MTL) + JSON (class, boxes, polygons, part info).",
+ "modalities": ["image", "3d"],
+ "tasks": ["image_classification", "object_detection", "segmentation", "retrieval_recommendation"],
+ "topics": [{"ko": "문화유산·관광", "en": "Cultural heritage and tourism"}, {"ko": "메타버스·3D", "en": "Metaverse and 3D"}],
+ "keywords_ko": ["서원", "세계문화유산", "전통 건축", "3D 스캔", "메타버스", "건물 부재"],
+ "keywords_en": ["seowon", "World Heritage", "traditional architecture", "3D scan", "metaverse", "building parts"],
+ "labels": ["class", "bounding box", "polygon"],
+ "file_formats": ["jpg", "obj", "mtl", "json"],
+ "scale_ko": "2D 이미지 263,323건, 3D 모델 5,025건",
+ "classes_example": ["단위건물전체", "팔작지붕", "맞배지붕", "문부", "담장부", "계단", "디딤석", "초석"],
+ "baseline": [],
+ "difficulty": "intermediate",
+ "difficulty_note_ko": "이미지 분류·탐지는 쉬운 편이지만 3D OBJ 모델을 다루려면 3D 도구 지식이 필요합니다. 약 230GB입니다.",
+ "skills_needed_ko": ["파이썬", "이미지 분류", "YOLO 탐지", "3D 모델 처리"],
+ "caveats_ko": ["전체 약 230GB", "검색용 모델은 유효성 검증을 하지 않았다고 명시됨", "부재 클래스마다 수량 차이가 큼"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "전통 지붕 종류 분류", "title_en": "Traditional roof type classification", "desc_ko": "사진 속 지붕이 팔작지붕인지 맞배지붕인지 분류합니다.", "desc_en": "Classify roofs as hip-and-gable or gable."},
+  {"level": "capstone", "title_ko": "서원 부재 안내 앱", "title_en": "Seowon architecture guide app", "desc_ko": "관광객이 찍은 사진에서 건물 부재를 찾아 이름과 설명을 보여줍니다.", "desc_en": "Detect building parts in visitor photos and explain them."},
+  {"level": "research", "title_ko": "2D 사진으로 3D 모델 검색", "title_en": "2D-to-3D model retrieval", "desc_ko": "사진 특징 벡터로 가장 비슷한 3D 부재 모델을 찾는 방법을 연구합니다.", "desc_en": "Retrieve matching 3D part models from photo features."}
+ ],
+ "doc_used": true,
+ "uncertain": ["성능 지표 수치가 팩에서 확인되지 않음"]
+}

@@ -1,0 +1,29 @@
+{
+ "dataset_id": "71344",
+ "title_en": "Smart farm data (Korean melon)",
+ "summary_ko": "참외 온실에서 정식·착과·수확 단계에 찍은 이미지 약 23만 장에 노균병·흰가루병과 각각 비슷해 보이는 증상, 정상을 상자로 표시하고, 온습도 같은 환경 데이터를 함께 담은 데이터입니다. 참외 병을 사진으로 조기 진단하는 AI에 쓸 수 있습니다.",
+ "summary_en": "About 230,000 images from Korean melon (chamoe) greenhouses at transplanting, fruit-setting and harvest stages, with downy mildew, powdery mildew, look-alike symptoms and healthy leaves boxed, plus environment data such as temperature and humidity. For AI that diagnoses melon diseases early from photos.",
+ "contents_ko": "참외 이미지(jpg) + JSON(상자, 질병, 생육 단계) + 환경 데이터.",
+ "contents_en": "Melon images (jpg) + JSON (boxes, disease, growth stage) + environment data.",
+ "modalities": ["image", "sensor"],
+ "tasks": ["image_classification", "object_detection"],
+ "topics": [{"ko": "작물 병해충", "en": "Crop pests and diseases"}, {"ko": "스마트팜", "en": "Smart farming"}],
+ "keywords_ko": ["참외", "노균병", "흰가루병", "병해 진단", "스마트팜"],
+ "keywords_en": ["Korean melon", "downy mildew", "powdery mildew", "disease diagnosis", "smart farm"],
+ "labels": ["bounding box", "disease class", "growth stage", "day/night"],
+ "file_formats": ["jpg", "json"],
+ "scale_ko": "이미지 약 23만 장, 질병 클래스 5종, 생육 단계 3종",
+ "classes_example": ["노균병", "노균병유사", "흰가루병", "흰가루병유사", "정상"],
+ "baseline": [{"task": "disease classification", "model": "ResNet-50", "metric": "accuracy", "value": "97.71%"}],
+ "difficulty": "beginner",
+ "difficulty_note_ko": "약 35GB이고 병해 분류 입문에 좋습니다. '유사' 클래스가 있어 실전에 가깝습니다.",
+ "skills_needed_ko": ["파이썬", "CNN 이미지 분류", "YOLO 탐지(선택)"],
+ "caveats_ko": ["참외 한 작물만 있음", "야간 이미지가 33% 섞여 있음"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "참외 병해 분류", "title_en": "Melon disease classifier", "desc_ko": "잎 사진으로 노균병·흰가루병·정상을 구분합니다.", "desc_en": "Classify leaves as downy mildew, powdery mildew or healthy."},
+  {"level": "capstone", "title_ko": "온실 병해 알림", "title_en": "Greenhouse disease alert", "desc_ko": "온실 카메라 사진에서 병을 찾아 방제 시기를 알려줍니다.", "desc_en": "Spot disease in greenhouse photos and suggest spraying time."},
+  {"level": "research", "title_ko": "유사 증상 구별", "title_en": "Separating look-alikes", "desc_ko": "실제 병과 비슷한 증상을 구별하는 정확도를 높이는 방법을 연구합니다.", "desc_en": "Improve telling real disease from look-alike symptoms."}
+ ],
+ "doc_used": true,
+ "uncertain": []
+}

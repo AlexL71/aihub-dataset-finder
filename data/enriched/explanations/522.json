@@ -1,0 +1,12 @@
+{
+ "dataset_id": "522",
+ "easy_ko": "부천시의 이어진 교차로 여러 곳 CCTV 사진에 차와 보행자 위치를 표시하고, 신호 체계에 맞춰 방향별로 지나간 차와 사람 수를 함께 기록한 데이터입니다. 교통 흐름에 맞춰 신호를 똑똑하게 바꾸는 스마트 교차로 AI를 만들 수 있습니다.",
+ "easy_en": "CCTV images from a network of connected intersections in Bucheon, with vehicles and pedestrians marked, plus counts of cars and people passing in each direction linked to the signal timing. You can build smart-intersection AI that adjusts traffic lights to the actual traffic flow.",
+ "detail_ko": "부천시 4×4 연속 교차로 16곳의 교통 CCTV 영상 75,250개(약 21.8만 분)에서 뽑은 이미지 276,749장(jpg)으로, JSON/CSV에 차량·보행자 바운딩박스, 큐보이드, 키포인트, 폴리라인, 방향별 통과량, 신호 정보가 있습니다. 차종은 승용차, 소형버스, 버스, 소형트럭, 트럭, 대형트럭, 이륜차, 미상 8종입니다. 기준 성능은 기록에서 확인되지 않습니다.",
+ "detail_en": "276,749 jpg images from 75,250 traffic CCTV videos (about 218k minutes) at 16 intersections in a 4×4 grid in Bucheon, with JSON/CSV vehicle and pedestrian boxes, cuboids, keypoints, polylines, per-direction counts and signal info. Vehicle classes: car, small bus, bus, small truck, truck, large truck, two-wheeler and unknown. No baseline is visible in the record.",
+ "amount_ko": "이미지 약 27.7만 장, 교차로 16곳",
+ "amount_en": "about 277k images, 16 intersections",
+ "labels_ko": "차·보행자 위치 상자·입체 상자, 몸의 주요 점, 방향별 통과 수, 신호 정보",
+ "labels_en": "boxes and cuboids around vehicles and pedestrians, key points, per-direction counts, signal info",
+ "status": "full-run-2026-11-02"
+}

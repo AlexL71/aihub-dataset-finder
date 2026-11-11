@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71353",
+ "easy_ko": "레이저로 훑은 문화유산 유적의 입체 점 데이터에 조형물, 탑, 비석, 토기, 벽, 문, 기둥, 지붕 같은 대상을 입체 상자로 표시하고, 생활·종교·무덤 같은 주제 정보를 붙인 데이터입니다. 가상현실 속 문화재를 알아보고 분류하는 입체 AI를 만들 수 있습니다.",
+ "easy_en": "Laser-scanned 3D point data of cultural heritage sites, with objects such as sculptures, pagodas, stone monuments, pottery, walls, gates, pillars and roofs marked by 3D boxes, and themes such as daily life, religion and tombs. You can build AI that recognises and sorts heritage objects in virtual reality.",
+ "detail_ko": "라이다로 스캔한 문화유산 유적 포인트클라우드 약 10.5만 건(las, csv: XYZ·RGB)에 객체 8종(조형물, 탑, 비, 도, 토기류, 벽, 문, 기둥, 지붕 등)의 3D 바운딩박스와 테마 10종(주거생활, 종교, 무덤 등) 등 문화재 정보를 JSON으로 붙였습니다. 기준 성능은 SE-PseudoGrid 3D 객체 분류 정확도 99.1%입니다. 전체 약 644GB이며 문화재 관련 이용 조건 확인이 필요합니다.",
+ "detail_en": "About 105k lidar point clouds (las; csv with XYZ and RGB) of cultural heritage sites, with JSON 3D boxes for 8 object classes (sculptures, pagodas, steles, pottery, walls, gates, pillars, roofs and more) and heritage info including 10 themes (dwellings, religion, tombs and more). Baseline: SE-PseudoGrid 3D object classification accuracy 99.1%. Total size is about 644 GB; check heritage usage terms.",
+ "amount_ko": "입체 점 데이터 약 10.5만 건, 대상 8종",
+ "amount_en": "about 105k point clouds, 8 object classes",
+ "labels_ko": "문화재 대상 입체 상자, 대상 종류, 유적 주제",
+ "labels_en": "3D boxes around heritage objects, class, theme",
+ "status": "full-run-2026-11-02"
+}

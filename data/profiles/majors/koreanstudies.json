@@ -1,0 +1,46 @@
+{
+ "id": "koreanstudies",
+ "name_ko": "글로벌학부(한국학전공)",
+ "name_en": "Korean Studies (School of Global Studies)",
+ "college": "글로벌비즈니스대학",
+ "summary_ko": "한국의 언어, 문학, 역사, 전통·대중문화를 배우고 이를 한류 문화산업, 스토리텔링·캐릭터 기획, 외국인 대상 한국어 교육으로 확장하는 전공입니다. 한국어교원 자격과 국어 교사 자격(교직) 과정이 있습니다.",
+ "summary_en": "Covers Korean language, literature, history and traditional and popular culture, and extends them to the Hallyu culture industry, storytelling and character planning, and teaching Korean to foreigners. Korean-language teacher certification and a Korean-language school-teacher track are available.",
+ "key_topics": ["한국어학(문법, 발음, 어휘, 어문규범)", "한국 문학(고전, 현대시, 소설, 구비문학)", "한국 전통문화·민속", "한류·대중문화", "문화산업·문화 원형", "스토리텔링·캐릭터 기획", "외국인 대상 한국어 교육", "한국학 정보화"],
+ "course_keywords": ["한국문화의이해", "한국어의이해", "한국문학의이해", "실용한국어", "실용한국사", "실용한자", "언어의이해", "한국어교육개론", "한국의구비문학", "한국의민속예술", "한국고전문학사", "한국고전소설의이해", "한국어교수법", "대조언어학", "한국어이해·표현교육법", "한국어문법론", "한국어어문규범", "한국의문화원형", "한국문화산업의이해", "한국대중문학의이해", "한국아동문학감상", "스토리텔링연습", "한국의전통문화", "한국어의뿌리와역사", "한국문화비평연습", "한국현대시의이해", "한국어발음·문법·어휘교육법", "한국문화교육론", "한국현대소설의이해", "한국어교육실습", "한국어교재론", "한국어평가론", "한국문화와미디어", "한국학과정보화", "문화캐릭터기획과개발", "한국학과캡스톤디자인", "지역문화산업개발연습"],
+ "curriculum_by_year": {
+  "1": ["한국문화의이해", "한국어의이해", "한국문학의이해", "실용한국어", "실용한국사", "실용한자", "언어의이해", "한국어교육개론", "디지털리터러시입문"],
+  "2": ["한국의구비문학", "한국의민속예술", "한국고전문학사", "한국고전소설의이해", "한국어교수법", "대조언어학", "한국어이해·표현교육법", "한국어문법론", "한국어어문규범", "한국의문화원형", "한국문화산업의이해"],
+  "3": ["한국대중문학의이해", "한국아동문학감상", "스토리텔링연습", "한국의전통문화", "한국어의뿌리와역사", "한국문화비평연습", "한국현대시의이해", "한국어발음·문법·어휘교육법", "한국문화교육론", "한국현대소설의이해", "한국어교육실습", "한국어교재론", "한국어평가론", "한국어의말소리"],
+  "4": ["한국문화와미디어", "한국학과정보화", "문화캐릭터기획과개발", "한국학과캡스톤디자인", "지역문화산업개발연습", "현장실습"]
+ },
+ "careers": ["외국인 대상 한국어 강사(다문화센터, 세종학당, 코이카, 해외 한국문화원)", "국어 교사(교직 이수)·교육기관 강사", "문화재단·문화기관 기획자·코디네이터", "한류·콘텐츠 기업", "대중문화 비평가·칼럼니스트", "대학원 진학(한국학, 국어국문학, 한국어교육, 문화콘텐츠)"],
+ "research_areas": [],
+ "data_interests": [
+  {"topic_ko": "한국어 학습자 데이터", "topic_en": "Korean learner data", "keywords": ["외국인 한국어 발화", "학습자 작문", "오류 분석"]},
+  {"topic_ko": "한국어 말뭉치", "topic_en": "Korean corpora", "keywords": ["문어", "구어", "방언", "어휘"]},
+  {"topic_ko": "한국어 음성과 발음", "topic_en": "Korean speech and pronunciation", "keywords": ["발음 평가", "음성 인식", "억양"]},
+  {"topic_ko": "고전·문학 텍스트", "topic_en": "Classical and literary text", "keywords": ["고전 소설", "현대시", "구비문학"]},
+  {"topic_ko": "한류와 대중문화", "topic_en": "Hallyu and pop culture", "keywords": ["K-드라마", "K-pop", "팬 반응"]},
+  {"topic_ko": "전통문화와 지역", "topic_en": "Traditional and local culture", "keywords": ["민속", "축제", "지역 문화"]},
+  {"topic_ko": "옛 글자와 한자", "topic_en": "Old scripts and Chinese characters", "keywords": ["한자", "고문서"]}
+ ],
+ "interest_questions": [
+  {"q_ko": "한국학에서 어떤 쪽이 좋나요?", "q_en": "Which side of Korean studies do you like?",
+   "options": [{"ko": "외국인에게 한국어 가르치기", "en": "Teaching Korean to foreigners"}, {"ko": "한국 문학", "en": "Korean literature"}, {"ko": "한류·대중문화", "en": "Hallyu and pop culture"}, {"ko": "전통문화·역사", "en": "Traditional culture and history"}, {"ko": "스토리텔링·캐릭터 기획", "en": "Storytelling and character design"}]},
+  {"q_ko": "다뤄보고 싶은 자료는?", "q_en": "What data would you like to use?",
+   "options": [{"ko": "외국인 한국어 발화·작문", "en": "Foreign learners' Korean speech and writing"}, {"ko": "한국어 문장·말뭉치", "en": "Korean sentences and corpora"}, {"ko": "문학·고전 텍스트", "en": "Literary and classical text"}, {"ko": "한류 콘텐츠 반응", "en": "Reactions to Hallyu content"}]}
+ ],
+ "project_themes": ["외국인 학습자 한국어 발음 평가 도우미", "학습자 작문 문법 오류 분석", "방언 말뭉치로 지역별 어휘 비교", "K-드라마 해외 반응 분석"],
+ "data_skill_level": "low",
+ "data_skill_note": "데이터 과목은 디지털리터러시입문과 한국학과정보화 정도입니다. 한국어 말뭉치를 노코드 도구나 생성형 AI로 다뤄보는 것부터 시작하는 것이 좋습니다.",
+ "sources": [
+  {"kind": "page", "label": "전공소개", "url": "https://sejong.korea.ac.kr/koreanstudies/3881/subview.do"},
+  {"kind": "page", "label": "교육과정", "url": "https://sejong.korea.ac.kr/koreanstudies/12203/subview.do"},
+  {"kind": "page", "label": "교과과정", "url": "https://sejong.korea.ac.kr/koreanstudies/3912/subview.do"},
+  {"kind": "pdf", "label": "전공역량기반 교육과정", "url": "https://sejong.korea.ac.kr/pdfView/koreanstudies/15/70/fileDownload.do"}
+ ],
+ "inferred_fields": ["data_interests", "interest_questions", "project_themes"],
+ "gaps": ["curriculum_by_year estimated from course numbers."],
+ "version": 1,
+ "created": "2026-10-29"
+}

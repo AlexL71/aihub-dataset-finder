@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71418",
+ "easy_ko": "한국 대학생, 구직자, 직장인이 영어 말하기 시험 질문에 답한 녹음에, 받아 적은 글과 선생님들이 매긴 점수와 등급을 붙인 데이터입니다. 영어 말하기를 자동으로 채점해 주는 AI를 만들 수 있습니다.",
+ "easy_en": "Recordings of Korean university students, job seekers and office workers answering English speaking-test questions, with transcripts and scores and levels given by teachers. You can build AI that scores English speaking automatically.",
+ "detail_ko": "한국인 2,640명(대학생·구직자 약 68%, 직장인)이 영어 말하기 시험에 답한 음성 약 1,017시간(wav)에 질문, 전사, 교사 2명 이상의 채점 점수(화용적 기능, 정확성, 내용, 텍스트 유형), 등급 5단계(NA, TH, TM, TL, IG 이하), 응답자 정보를 JSON으로 붙였습니다. 기준 성능은 Transformer 자동 채점 Pearson 상관계수 화용적 기능 0.7691, 정확성 0.7405, 내용·맥락 0.733입니다. 단위 표기가 섞여 있고, 중급(TM·TH) 응답자가 많으며 최하위 등급은 109명뿐입니다.",
+ "detail_en": "About 1,017 hours of English speaking-test answers (wav) by 2,640 Koreans (about 68% students and job seekers, plus office workers), with JSON questions, transcripts, scores from at least 2 teachers (pragmatic function, accuracy, content, text type), 5 proficiency levels (NA, TH, TM, TL, IG and below) and respondent info. Baselines: Transformer automatic scoring Pearson correlation 0.7691 (pragmatic function), 0.7405 (accuracy), 0.733 (content and context). Units are mixed; mid-levels (TM, TH) dominate and only 109 are at the lowest level.",
+ "amount_ko": "답변 음성 약 1,017시간, 응답자 2,640명",
+ "amount_en": "about 1,017 hours of answers, 2,640 respondents",
+ "labels_ko": "받아 적은 답변 글, 선생님 점수, 실력 등급",
+ "labels_en": "transcripts, teacher scores, proficiency level",
+ "status": "full-run-2026-11-02"
+}

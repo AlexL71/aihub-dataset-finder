@@ -1,0 +1,32 @@
+{
+ "dataset_id": "56",
+ "title_en": "Landmark images",
+ "summary_ko": "전국 50개 도시의 공공기관·주요 건물·관광명소·편의시설 등 랜드마크 2만 5천 곳을 곳마다 약 200장씩 찍은 500만 장 이상의 사진입니다. 사진 속 장소가 어디인지 맞히거나 비슷한 사진을 찾는 AI, 관광 안내 앱에 쓸 수 있습니다.",
+ "summary_en": "5+ million photos of 25,000 landmarks (public buildings, major buildings, tourist sites, facilities) in 50 Korean cities, about 200 photos each. Useful for AI that recognises which place a photo shows, finds similar photos, or powers tourist-guide apps.",
+ "contents_ko": "랜드마크 사진 1장 + 라벨(도시, 랜드마크 이름·분류, 일부 상자). 시·도별 폴더로 나뉨.",
+ "contents_en": "One landmark photo + label (city, landmark name and type, some boxes). Folders are by province/city.",
+ "modalities": ["image"],
+ "tasks": ["image_classification", "retrieval_recommendation", "object_detection"],
+ "topics": [{"ko": "관광·명소", "en": "Tourism and sights"}, {"ko": "도시·건물", "en": "Cities and buildings"}, {"ko": "지역 정보", "en": "Local information"}],
+ "keywords_ko": ["랜드마크", "관광지", "건물 인식", "장소 인식", "이미지 검색", "도시"],
+ "keywords_en": ["landmark", "tourist site", "building recognition", "place recognition", "image retrieval", "city"],
+ "labels": ["class (landmark)", "bounding box"],
+ "file_formats": ["jpg", "json"],
+ "scale_ko": "500만 장 이상, 50개 도시 × 500개 랜드마크 = 2만 5천 클래스",
+ "classes_example": ["테마파크 > 롯데월드"],
+ "baseline": [
+  {"task": "landmark classification", "model": "ResNet50 + ArcFace", "metric": "GAP", "value": "96%"},
+  {"task": "image retrieval", "model": "DELF", "metric": "mAP", "value": "98%"}
+ ],
+ "difficulty": "intermediate",
+ "difficulty_note_ko": "전체 약 12.8TB로 매우 크지만 도시별 폴더가 있어 한 도시만 받아 쓰면 초급 프로젝트로도 할 수 있습니다.",
+ "skills_needed_ko": ["파이썬", "전이학습으로 이미지 분류", "이미지 임베딩 검색(FAISS)"],
+ "caveats_ko": ["전체 약 12.8TB: 한두 도시만 받아 시작", "클래스가 2만 5천 개라 전체 학습에는 큰 GPU 필요"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "우리 도시 랜드마크 맞히기", "title_en": "Guess the landmarks of one city", "desc_ko": "세종시처럼 한 도시의 랜드마크 사진만으로 분류 모델을 만듭니다.", "desc_en": "Train a classifier on one city's landmarks, for example Sejong."},
+  {"level": "capstone", "title_ko": "사진으로 찾는 관광 안내 앱", "title_en": "Photo-based tour guide app", "desc_ko": "사진을 찍으면 비슷한 랜드마크를 검색해 이름과 정보를 보여주는 앱을 만듭니다.", "desc_en": "Take a photo, retrieve the matching landmark and show its information."},
+  {"level": "research", "title_ko": "대규모 장소 인식과 검색", "title_en": "Large-scale place recognition", "desc_ko": "수만 개 클래스에서 ArcFace 분류와 임베딩 검색 방식을 비교하고 계절·시간대 변화에 대한 강인성을 분석합니다.", "desc_en": "Compare ArcFace classification and embedding retrieval over tens of thousands of classes and test robustness to season and time of day."}
+ ],
+ "doc_used": true,
+ "uncertain": []
+}

@@ -1,0 +1,29 @@
+{
+ "dataset_id": "71317",
+ "title_en": "Firefighter motion 3D object modelling data",
+ "summary_ko": "실제 소방 교관이 화재 대응 훈련 교범에 따라 한 기본 동작 36종·훈련 동작 305종을 모션캡처한 전신·손가락 3D 동작 데이터(fbx·mb)와, 이를 3D 캐릭터·배경·각도별로 렌더링한 AI 학습용 영상 약 1.5만 개, 키포인트 라벨을 담은 데이터입니다. 소방 훈련 콘텐츠나 소방관 동작 인식 AI에 쓸 수 있습니다.",
+ "summary_en": "Motion-capture 3D data (fbx, mb) of full-body and finger movements by real firefighting instructors for 36 basic and 305 training motions from the fire-response manual, plus about 15,000 rendered training videos (3 characters × 5 angles × 3 backgrounds) and keypoint labels. For firefighting training content or firefighter motion recognition AI.",
+ "contents_ko": "3D 모션(fbx, mb) + 참고·렌더링 영상(mp4) + 텍스처(png, jpg) + JSON(키포인트).",
+ "contents_en": "3D motion (fbx, mb) + reference and rendered videos (mp4) + textures (png, jpg) + JSON (keypoints).",
+ "modalities": ["3d", "video", "image"],
+ "tasks": ["keypoint_pose", "action_recognition"],
+ "topics": [{"ko": "소방·재난 대응", "en": "Firefighting and emergency response"}, {"ko": "3D 콘텐츠", "en": "3D content"}],
+ "keywords_ko": ["소방관", "모션캡처", "3D 애니메이션", "훈련 콘텐츠", "동작 인식"],
+ "keywords_en": ["firefighters", "motion capture", "3D animation", "training content", "action recognition"],
+ "labels": ["keypoint", "motion class"],
+ "file_formats": ["fbx", "mb", "mp4", "png", "jpg", "json"],
+ "scale_ko": "3D 동작 341종, AI 학습용 영상 약 1.5만 개",
+ "classes_example": ["기본 동작", "훈련 동작"],
+ "baseline": [{"task": "2D firefighter motion recognition", "model": "DD-Net", "metric": "accuracy", "value": "98.44%"}],
+ "difficulty": "intermediate",
+ "difficulty_note_ko": "약 82GB이고 3D 파일(fbx)을 다루려면 Blender 같은 도구가 필요합니다.",
+ "skills_needed_ko": ["파이썬", "3D 도구(Blender·Maya) 기초", "동작 인식"],
+ "caveats_ko": ["학습용 영상은 렌더링된 가상 캐릭터라 실제 영상과 다름", "mb 파일은 Maya 전용 형식"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "소방 동작 분류", "title_en": "Firefighting motion classifier", "desc_ko": "키포인트로 소방 훈련 동작을 분류합니다.", "desc_en": "Classify firefighting training motions from keypoints."},
+  {"level": "capstone", "title_ko": "VR 소방 훈련 콘텐츠", "title_en": "VR firefighting training", "desc_ko": "3D 동작을 이용해 표준 훈련 동작을 보여주는 VR 장면을 만듭니다.", "desc_en": "Build a VR scene that demonstrates standard training motions."},
+  {"level": "research", "title_ko": "합성→실제 영상 전이", "title_en": "Synthetic-to-real transfer", "desc_ko": "렌더링 영상으로 학습한 모델이 실제 소방관 영상에서 통하는지 연구합니다.", "desc_en": "Test whether models trained on rendered video work on real footage."}
+ ],
+ "doc_used": true,
+ "uncertain": []
+}

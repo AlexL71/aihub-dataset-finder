@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71556",
+ "easy_ko": "공공기관, 교통, 약속, 주문 같은 상황에서 사람들이 주소를 말한 목소리 약 50만 개에 받아쓴 글을 붙이고, 주소 줄임말과 같은 뜻 말도 모은 데이터입니다. 내비게이션, 고객센터, 긴급 신고에서 말로 한 주소를 정확히 알아듣는 AI에 쓸 수 있습니다.",
+ "easy_en": "About 500,000 recordings of people saying addresses in situations such as public offices, transport, appointments and ordering, with written transcripts, plus address abbreviations and synonyms. You can use it to build AI that correctly understands spoken addresses in navigation, call centres and emergency calls.",
+ "detail_ko": "상황 6종(공공, 교통, 안내, 약속, 일상, 주문)에서 주소를 말한 음성 500,874쌍(wav)에 전사(주소 문장), 화자 정보, 상황을 CSV/JSON으로 붙이고, 주소 줄임말·동의어 1,100건(JSON)을 함께 제공합니다. 기준 성능은 Jasper 음성 인식 CER 7.79%입니다. 60대 이상 화자가 2.5%로 적고, 화자 성별 건수 합계(약 100만)가 전체 50만 쌍과 맞지 않으며, 메타데이터의 데이터 형식·라벨링 유형 칸이 비어 있습니다.",
+ "detail_en": "500,874 pairs of address speech (wav) in 6 situations (public, transport, guidance, appointments, daily life, ordering), with CSV/JSON transcripts (address sentences), speaker information and situation, plus 1,100 address abbreviations and synonyms (JSON). Baseline: speech recognition with Jasper, CER 7.79%. Speakers aged 60+ are only 2.5%, the gender counts add up to about 1 million and do not match the 500,000 pairs, and the metadata fields for format and label type are empty.",
+ "amount_ko": "주소 음성 500,874쌍, 주소 동의어 1,100건",
+ "amount_en": "500,874 address speech pairs, 1,100 address synonyms",
+ "labels_ko": "받아쓴 주소 문장, 말한 사람 정보, 상황",
+ "labels_en": "transcripts, speaker info, situation",
+ "status": "full-run-2026-11-02"
+}

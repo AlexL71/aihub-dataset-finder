@@ -1,0 +1,29 @@
+{
+ "dataset_id": "71713",
+ "title_en": "Robot behaviour data (small-object grasping)",
+ "summary_ko": "물류센터에서 다루는 작은 낱개 상품(에어캡·비닐 재포장 상품 포함)을 흡착 그리퍼 로봇팔로 집는 데이터로, 상품 RGB·깊이 이미지 약 21만 쌍과 로봇팔 행동 이미지 약 20만 장에 영역 분할이 표시되어 있습니다. 주문 피킹을 자동화하는 로봇 AI에 쓸 수 있습니다.",
+ "summary_en": "Suction-gripper robot-arm grasping data for small single items in logistics centres (including items rewrapped in bubble wrap or plastic): about 210,000 RGB/depth image pairs and 200,000 robot-arm action images with segmentation. For robots that automate order picking.",
+ "contents_ko": "상품 RGB(jpg)·깊이(png) 이미지 + 로봇팔 행동 이미지(jpg) + JSON(분할 영역).",
+ "contents_en": "Product RGB (jpg) and depth (png) images + robot-arm action images (jpg) + JSON (segmentation).",
+ "modalities": ["image", "sensor"],
+ "tasks": ["segmentation", "depth_estimation"],
+ "topics": [{"ko": "로봇·피지컬 AI", "en": "Robotics and physical AI"}, {"ko": "물류 자동화", "en": "Logistics automation"}],
+ "keywords_ko": ["로봇 파지", "흡착 그리퍼", "소형 상품", "오더 피킹", "깊이 이미지", "물류센터"],
+ "keywords_en": ["robot grasping", "suction gripper", "small items", "order picking", "depth image", "logistics centre"],
+ "labels": ["polygon"],
+ "file_formats": ["jpg", "png", "json"],
+ "scale_ko": "상품 RGB·깊이 이미지 각 209,403장, 로봇팔 행동 이미지 201,517장",
+ "classes_example": ["재포장 > 비닐, 에어캡, 종이, 재포장 없음", "낱개", "더미", "파지 성공", "파지 실패", "로봇 행동 > 이송 위치로 이동, 상품 파지, 상품 이송"],
+ "baseline": [],
+ "difficulty": "intermediate",
+ "difficulty_note_ko": "2D 분할 위주라 71692보다 쉽고, 전체 약 243GB입니다.",
+ "skills_needed_ko": ["파이썬", "분할 모델", "깊이 이미지 처리"],
+ "caveats_ko": ["비닐·에어캡 포장은 반사 때문에 깊이 값이 부정확할 수 있음", "상품은 200종이지만 이름 목록과 성능 지표가 팩 앞부분에 없음", "71692 3D 물건 파지 데이터와 같은 기관"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "상품 영역 분할", "title_en": "Item segmentation", "desc_ko": "상자 속 작은 상품을 하나씩 칠하는 분할 모델을 학습합니다.", "desc_en": "Segment individual small items in a bin."},
+  {"level": "capstone", "title_ko": "흡착 위치 추천", "title_en": "Suction point suggestion", "desc_ko": "분할 결과와 깊이로 평평하고 잡기 좋은 흡착 지점을 고릅니다.", "desc_en": "Pick flat suction points from segmentation and depth."},
+  {"level": "research", "title_ko": "비닐 포장 상품 인식", "title_en": "Recognising plastic-wrapped items", "desc_ko": "반사가 심한 비닐·에어캡 상품의 분할 정확도를 높이는 방법을 연구합니다.", "desc_en": "Study better segmentation of reflective wrapped items."}
+ ],
+ "doc_used": true,
+ "uncertain": []
+}

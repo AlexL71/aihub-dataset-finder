@@ -1,0 +1,29 @@
+{
+ "dataset_id": "71449",
+ "title_en": "Vegetation carbon storage identification data",
+ "summary_ko": "수도권 산림·도심 지역의 항공 사진, 근적외선(NIR) 사진, Sentinel-2 위성 영상에 수종 등 식생 클래스 분할 라벨과 위성 라이다(GEDI) 기반 탄소량 라벨을 붙인 데이터입니다. 나무와 숲이 탄소를 얼마나 저장하는지 지도로 추정하는 AI에 쓸 수 있습니다.",
+ "summary_en": "Aerial photos, near-infrared photos and Sentinel-2 satellite images of forest and urban areas around Seoul, with vegetation class segmentation (e.g. tree species) and carbon amount labels based on spaceborne LiDAR (GEDI). For AI that maps how much carbon trees and forests store.",
+ "contents_ko": "항공·NIR·위성 이미지(tif) + JSON(식생 클래스 분할, 탄소량 라벨).",
+ "contents_en": "Aerial, NIR and satellite image (tif) + JSON (vegetation class segmentation, carbon labels).",
+ "modalities": ["image"],
+ "tasks": ["segmentation", "tabular_prediction"],
+ "topics": [{"ko": "기후변화·탄소", "en": "Climate change and carbon"}, {"ko": "산림·환경", "en": "Forests and environment"}],
+ "keywords_ko": ["탄소 포집", "식생", "항공 사진", "위성 영상", "수종", "온실가스"],
+ "keywords_en": ["carbon capture", "vegetation", "aerial imagery", "satellite imagery", "tree species", "greenhouse gas"],
+ "labels": ["segmentation", "class", "carbon amount"],
+ "file_formats": ["tif", "json"],
+ "scale_ko": "이미지 66,000장(항공 45,000, NIR 20,000, 위성 1,000), 라벨 파일 132,000개",
+ "classes_example": ["소나무", "낙엽송", "기타침엽수"],
+ "baseline": [{"task": "carbon amount prediction (forest aerial)", "model": "Hybrid U-Net", "metric": "Correlation", "value": "0.876"}, {"task": "carbon amount prediction (forest NIR)", "model": "Hybrid U-Net", "metric": "Correlation", "value": "0.909"}, {"task": "carbon amount prediction (forest satellite)", "model": "Hybrid U-Net", "metric": "Correlation", "value": "0.826"}],
+ "difficulty": "advanced",
+ "difficulty_note_ko": "원격탐사 영상(tif)과 탄소량 회귀를 함께 다뤄야 해서 어렵습니다. 전체는 약 52GB입니다.",
+ "skills_needed_ko": ["파이썬", "분할 모델(U-Net)", "원격탐사 영상 처리(GDAL·rasterio)"],
+ "caveats_ko": ["위성 이미지는 1,000장뿐임", "산림 지역이 약 82%로 도심보다 훨씬 많음", "탄소량 라벨은 위성 라이다 자료 기반 추정값임"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "수종 분할", "title_en": "Tree species segmentation", "desc_ko": "항공 사진에서 소나무·낙엽송 등 수종 영역을 칠합니다.", "desc_en": "Segment tree species areas in aerial photos."},
+  {"level": "capstone", "title_ko": "우리 동네 탄소 지도", "title_en": "Neighbourhood carbon map", "desc_ko": "항공 사진으로 지역별 식생 탄소량을 추정해 지도로 보여 줍니다.", "desc_en": "Estimate vegetation carbon per area and show it on a map."},
+  {"level": "research", "title_ko": "위성만으로 탄소량 추정", "title_en": "Carbon from satellite only", "desc_ko": "값싼 위성 영상만으로 항공 사진 수준의 탄소 추정이 가능한지 연구합니다.", "desc_en": "Can cheap satellite images match aerial-based carbon estimates?"}
+ ],
+ "doc_used": true,
+ "uncertain": ["탄소량 라벨이 픽셀 단위 값인지 영역 단위 값인지", "전체 식생 클래스 수"]
+}

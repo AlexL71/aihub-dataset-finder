@@ -1,0 +1,29 @@
+{
+ "dataset_id": "190",
+ "title_en": "Autonomous drone flight videos",
+ "summary_ko": "관광지·도심·산림 위를 나는 드론에서 찍은 4K 비행 영상 320시간과 라이다 영상 60시간입니다. 교통정보 분석·실종자 수색·배송 드론 3가지 임무별로 물체 상자와 영역 분할, GPS·고도·날씨·비행 속도 정보가 붙어 있어 자율주행 드론 연구에 쓸 수 있습니다.",
+ "summary_en": "320 hours of 4K drone flight video over tourist sites, cities and forests plus 60 hours of lidar data. For 3 missions (traffic analysis, missing-person search, delivery), it has object boxes, region segmentation and GPS, altitude, weather and flight-speed metadata, for autonomous drone research.",
+ "contents_ko": "비행 영상 클립(5분 단위) + 이미지 + JSON(물체 상자와 대·중·소분류, 영역 다각형, 임무·지역·날씨·GPS·고도·촬영 각도) + 라이다 데이터.",
+ "contents_en": "Flight clips (5 minutes) + images + JSON (object boxes with 3-level classes, region polygons, mission, area, weather, GPS, altitude, camera angle) + lidar data.",
+ "modalities": ["video", "image", "sensor", "3d"],
+ "tasks": ["object_detection", "segmentation"],
+ "topics": [{"ko": "드론", "en": "Drones"}, {"ko": "교통·도시", "en": "Traffic and cities"}, {"ko": "수색·구조", "en": "Search and rescue"}, {"ko": "물류·배달", "en": "Logistics and delivery"}],
+ "keywords_ko": ["자율주행 드론", "비행 영상", "항공 시점", "실종자 수색", "배송 드론", "라이다"],
+ "keywords_en": ["autonomous drone", "flight video", "aerial view", "missing-person search", "delivery drone", "lidar"],
+ "labels": ["bounding box", "region polygon", "flight metadata"],
+ "file_formats": ["mp4", "jpg", "json"],
+ "scale_ko": "4K 비행 영상 320시간(약 3,840클립), 라이다 60시간",
+ "classes_example": ["자연물 > 하천", "자연물 > 숲", "자연물 > 잔디밭", "인공물 > 건물", "인공물 > 차량", "인공물 > 산책로", "사람", "주택", "가로등", "승용차", "횡단보도", "신호등"],
+ "baseline": [],
+ "difficulty": "advanced",
+ "difficulty_note_ko": "전체 약 4.8TB이고 파일이 3,956개로 많아 다루기 어렵습니다. 한 임무의 일부 클립만 써서 시작하세요.",
+ "skills_needed_ko": ["파이썬", "객체 탐지·분할", "대용량 영상 처리"],
+ "caveats_ko": ["전체 약 4.8TB", "성능 지표가 팩에서 잘림"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "드론 영상 물체 탐지", "title_en": "Object detection in drone footage", "desc_ko": "비행 영상 프레임에서 차량·사람을 탐지합니다.", "desc_en": "Detect vehicles and people in flight frames."},
+  {"level": "capstone", "title_ko": "산림 실종자 수색 보조", "title_en": "Forest search assistant", "desc_ko": "산림 비행 영상에서 사람을 찾아 GPS 위치로 표시하는 도구를 만듭니다.", "desc_en": "Find people in forest footage and mark GPS positions."},
+  {"level": "research", "title_ko": "고도·날씨에 따른 인식 성능", "title_en": "Recognition by altitude and weather", "desc_ko": "메타정보로 비행 조건별 탐지 성능 차이를 분석합니다.", "desc_en": "Use metadata to analyse detection by flight condition."}
+ ],
+ "doc_used": true,
+ "uncertain": []
+}

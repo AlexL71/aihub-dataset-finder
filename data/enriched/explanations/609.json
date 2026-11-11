@@ -1,0 +1,12 @@
+{
+ "dataset_id": "609",
+ "easy_ko": "여행, 쇼핑, 숙소, 스포츠, 일상 대화와 해외 영업 같은 상황에서 쓰는 말투의 한국어 문장과 스페인어, 독일어, 프랑스어 번역을 짝지은 데이터입니다. 여행이나 일상 대화를 바로 번역해 주는 번역기나 여러 나라 말을 하는 챗봇을 만들 수 있습니다.",
+ "easy_en": "Everyday spoken-style Korean sentences for travel, shopping, lodging, sports, daily life and overseas sales, paired with Spanish, German and French translations. You can build translators for travel and daily conversation, or multilingual chatbots.",
+ "detail_ko": "여행·쇼핑·숙소·스포츠·일상·해외영업(IT 등) 분야 구어체 문장을 한국어↔스페인어·독일어·프랑스어 양방향으로 번역한 병렬 문장 쌍 약 860만 개(txt, xlsx, JSON: 분야, 번역 방향)입니다. 기준 성능은 Transformer 일상 분야 BLEU 독→한 0.5396, 한→독 0.4789, 프→한 0.5376입니다. 번역 방향별로 분야 비율이 크게 다르고, BLEU 값이 0~1 단위로 적혀 있습니다.",
+ "detail_en": "About 8.6M colloquial sentence pairs between Korean and Spanish, German or French in both directions, covering travel, shopping, lodging, sports, daily life and overseas sales (IT and more), in txt, xlsx and JSON (domain, direction). Baselines: Transformer BLEU on daily-life text 0.5396 (de→ko), 0.4789 (ko→de), 0.5376 (fr→ko). Domain mix differs greatly by direction, and BLEU is given on a 0–1 scale.",
+ "amount_ko": "번역 문장 쌍 약 860만 개, 언어 3종",
+ "amount_en": "about 8.6M sentence pairs, 3 languages",
+ "labels_ko": "번역 문장 짝, 분야, 번역 방향",
+ "labels_en": "sentence pairs, domain, translation direction",
+ "status": "full-run-2026-11-02"
+}

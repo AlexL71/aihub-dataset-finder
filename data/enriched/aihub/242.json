@@ -1,0 +1,29 @@
+{
+ "dataset_id": "242",
+ "title_en": "Food images for health management",
+ "summary_ko": "한국인이 자주 먹는 음식 500여 종의 사진 300만 장으로, 음식 이름과 주재료·칼로리 같은 건강 정보가 붙어 있습니다. 양념과 재료가 섞인 한식을 사진으로 알아보고 당뇨병 환자 등의 식단을 관리하는 앱에 쓸 수 있습니다.",
+ "summary_en": "3 million photos of about 500 foods that Koreans eat often, labelled with dish name and health information such as main ingredients and calories. For apps that recognise mixed Korean dishes from photos and help people such as diabetes patients manage their diet.",
+ "contents_ko": "음식 사진 + 라벨(음식 코드·이름, 카테고리, 주재료, 칼로리 등 건강 정보, 상자).",
+ "contents_en": "Food photo + label (food code and name, category, main ingredients, calories and other health info, box).",
+ "modalities": ["image"],
+ "tasks": ["image_classification", "object_detection"],
+ "topics": [{"ko": "음식·한식", "en": "Food and Korean cuisine"}, {"ko": "영양·건강", "en": "Nutrition and health"}, {"ko": "당뇨·만성질환", "en": "Diabetes and chronic disease"}],
+ "keywords_ko": ["음식 인식", "한식", "칼로리", "당뇨", "식단 관리", "영양 분석"],
+ "keywords_en": ["food recognition", "Korean food", "calories", "diabetes", "diet management", "nutrition analysis"],
+ "labels": ["class (~500 foods)", "health info", "bounding box"],
+ "file_formats": ["jpg", "json"],
+ "scale_ko": "음식 이미지 300만 장, 카테고리 약 500개",
+ "classes_example": ["밥·국·탕·찌개 > 순대국", "밥·국·탕·찌개 > 미역국", "죽·조림·나물 > 시금치나물", "구이·튀김·육류·어류 > 수육", "면·만두류 > 칼국수", "면·만두류 > 짬뽕", "빵·과자 > 햄버거", "차·음료·유제품 > 커피류"],
+ "baseline": [],
+ "difficulty": "intermediate",
+ "difficulty_note_ko": "클래스가 500개라 분류가 쉽지 않고 전체 약 840GB입니다. 일부 카테고리만 받아 시작하세요.",
+ "skills_needed_ko": ["파이썬", "전이학습 이미지 분류", "클래스가 많은 분류 평가"],
+ "caveats_ko": ["전체 약 840GB", "성능 지표가 팩 앞부분에 없음", "74번 음식 데이터와 비슷하므로 함께 비교해 보면 좋음"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "한식 반찬 분류", "title_en": "Korean side-dish classifier", "desc_ko": "반찬 20종을 골라 사진으로 분류합니다.", "desc_en": "Pick 20 side dishes and classify them."},
+  {"level": "capstone", "title_ko": "당뇨 환자용 식단 기록 앱", "title_en": "Diet log app for diabetes patients", "desc_ko": "식사 사진을 인식해 칼로리·주재료를 기록하고 주간 리포트를 보여줍니다.", "desc_en": "Recognise meals and log calories and ingredients with weekly reports."},
+  {"level": "research", "title_ko": "섞인 한식 인식", "title_en": "Recognising mixed Korean dishes", "desc_ko": "비빔밥·찌개처럼 재료가 섞인 음식의 인식 오류를 분석하고 개선합니다.", "desc_en": "Analyse and reduce errors on mixed dishes such as bibimbap and stews."}
+ ],
+ "doc_used": true,
+ "uncertain": []
+}

@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71715",
+ "easy_ko": "공부하는 사람을 찍은 영상과 사진, 주변 소음, 뇌파를 모아, 집중하며 흥미로운지, 차분한지, 지루한지, 졸린지 같은 상태를 다섯 가지로 나눈 데이터입니다. 원격 수업에서 학생 상태를 알아보는 AI에 쓸 수 있습니다.",
+ "easy_en": "Videos and photos of people studying, plus background noise and brain-wave recordings, sorted into five states such as focused and interested, calm, bored or sleepy. You can use it to build AI that reads how students are doing in online classes.",
+ "detail_ko": "공부하는 성인·미성년을 찍은 영상(mp4)·이미지 1,446,570장(jpg)과 얼굴 상자·키포인트(JSON), 주변 소음 약 1,871시간(wav), 뇌파·설문(csv)에 상태 5종(집중-흥미로움, 집중-차분함, 집중하지않음-차분함, 집중하지않음-지루함, 졸음)을 붙였습니다. 영상은 약 14,465,700초입니다. 전체 약 2.5TB이고, 미성년자 얼굴이 포함되어 개인정보에 주의해야 하며, 성능 수치는 팩에 없고 뇌파 데이터는 일부 건수만 있습니다.",
+ "detail_en": "Videos (mp4, about 14,465,700 seconds) and 1,446,570 images (jpg) of adults and minors studying, with JSON face boxes and keypoints, about 1,871 hours of background noise (wav), and brain-wave and survey data (csv), labelled with 5 states (focused-interested, focused-calm, unfocused-calm, unfocused-bored, drowsy). Total size is about 2.5 TB. Minors' faces are included, so take care with personal data; no scores are in the pack, and brain-wave data covers only some records.",
+ "amount_ko": "이미지 1,446,570장, 영상 약 14,465,700초, 소음 약 1,871시간, 상태 5종",
+ "amount_en": "1,446,570 images, about 14,465,700 seconds of video, about 1,871 hours of noise, 5 states",
+ "labels_ko": "얼굴 위치 상자, 관절 점, 공부 상태",
+ "labels_en": "bounding box, keypoint, class",
+ "status": "full-run-2026-11-02"
+}

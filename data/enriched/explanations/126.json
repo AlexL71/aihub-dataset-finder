@@ -1,0 +1,12 @@
+{
+ "dataset_id": "126",
+ "easy_ko": "뉴스, 정부 웹사이트, 조례, 한국 역사·문화, 일상 말투, 상황별 대화 같은 여러 종류의 한국어 문장과 영어 번역을 짝지은 데이터입니다. 일반적인 한영 번역기를 만들거나 조례·문화 소개 글을 번역하는 AI를 만들 수 있습니다.",
+ "easy_en": "Korean sentences of many kinds, such as news, government websites, local ordinances, Korean history and culture, casual speech and everyday dialogues, paired with English translations. You can build a general Korean–English translator or AI that translates ordinances and cultural content.",
+ "detail_ko": "한국어-영어 병렬 문장 160만 쌍(뉴스 80만, 정부·지자체 웹사이트 10만, 행정규칙·조례 10만, 한국 역사·문화 10만, 구어체 40만, 상황별 대화 10만)으로 분야 라벨이 있습니다. 기준 성능은 조례 번역 GNMT BLEU 0.488입니다. 2019년 구축이며 파일 형식(xlsx)은 확인되지 않은 추정입니다.",
+ "detail_en": "1.6M Korean–English sentence pairs (news 800k, government websites 100k, administrative rules and ordinances 100k, Korean history and culture 100k, colloquial 400k, situational dialogue 100k) with domain labels. Baseline: GNMT BLEU 0.488 on ordinances. Built in 2019; the file format (xlsx) is not confirmed.",
+ "amount_ko": "번역 문장 160만 쌍",
+ "amount_en": "1.6M sentence pairs",
+ "labels_ko": "한국어-영어 번역 짝, 글 분야",
+ "labels_en": "Korean–English sentence pairs, domain",
+ "status": "full-run-2026-11-02"
+}

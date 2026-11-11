@@ -1,0 +1,12 @@
+{
+ "dataset_id": "87",
+ "easy_ko": "가게나 키오스크에서 주문하고, 예약하고, 생활 문의를 하는 상황을 사람들이 연기한 한국어 말소리와 그 말을 받아 적은 글을 짝지은 데이터입니다. 말로 주문을 받는 키오스크나 고객을 응대하는 음성 챗봇을 만들 수 있습니다.",
+ "easy_en": "Korean speech of people acting out ordering, booking and everyday questions at shops and kiosks, paired with written transcripts of what they said. You can build voice-ordering kiosks or voice chatbots that serve customers.",
+ "detail_ko": "가상 시나리오로 녹음한 고객 응대 음성 3,000시간(구매·예약·생활 각 1,000시간, 구축량 432만)으로, wav 음성, txt 전사, JSON 메타정보(화자, 도메인, 대화 주제, 음성 품질)로 구성됩니다. 기준 성능은 Jasper 음성 인식 CER 10.32%, WER 29.88%입니다. 연기한 음성이라 실제 매장 소음 환경과 다를 수 있습니다.",
+ "detail_en": "3,000 hours of scripted customer-service speech (1,000 hours each for purchasing, booking and daily life; 4.32M built items), with wav audio, txt transcripts and JSON metadata (speaker, domain, topic, audio quality). Baselines: Jasper speech recognition CER 10.32%, WER 29.88%. The speech is acted, so it may not match real shop noise.",
+ "amount_ko": "음성 3,000시간",
+ "amount_en": "3,000 hours of speech",
+ "labels_ko": "말소리를 받아 적은 글(전사), 분야·대화 주제, 화자 정보",
+ "labels_en": "transcripts, domain and topic, speaker info",
+ "status": "full-run-2026-11-02"
+}

@@ -1,0 +1,32 @@
+{
+ "dataset_id": "71304",
+ "title_en": "Knowledge-search dialogue data",
+ "summary_ko": "한 사람은 궁금한 질문자, 다른 사람은 인터넷 검색으로 답하는 전문가 역할을 맡아 나눈 한국어 대화 약 1.8만 세션(발화 약 38만 개)입니다. 가족·경제·건강·쇼핑·스포츠 등 10개 주제가 고르게 들어 있습니다. 외부 지식을 찾아 답하는 챗봇·AI 비서에 쓸 수 있습니다.",
+ "summary_en": "About 18,000 Korean dialogue sessions (about 380,000 utterances) where one speaker asks questions and the other acts as an expert answering with web search, spread evenly over 10 topics such as family, economy, health, shopping and sports. For chatbots and AI assistants that look up external knowledge to answer.",
+ "contents_ko": "대화 텍스트(tsv, json) + 대화 특성 라벨(주제, 지식 출처 등).",
+ "contents_en": "Dialogue text (tsv, json) + dialogue-feature labels (topic, knowledge source and more).",
+ "modalities": ["text"],
+ "tasks": ["dialogue", "question_answering", "text_generation"],
+ "topics": [{"ko": "챗봇", "en": "Chatbots"}, {"ko": "지식 검색", "en": "Knowledge search"}],
+ "keywords_ko": ["지식 대화", "챗봇", "질의응답", "검색 기반 답변", "AI 비서"],
+ "keywords_en": ["knowledge dialogue", "chatbot", "question answering", "search-grounded answers", "AI assistant"],
+ "labels": ["topic", "dialogue features"],
+ "file_formats": ["tsv", "json"],
+ "scale_ko": "대화 약 1.8만 세션, 발화 약 38만 개, 주제 10종",
+ "classes_example": ["가족과 주거", "경제 활동", "미용과 건강", "배움과 학문", "스포츠", "식음료"],
+ "baseline": [
+  {"task": "knowledge-grounded response generation", "model": "KoLANG-T5", "metric": "F1", "value": "0.3798"},
+  {"task": "knowledge-grounded response generation", "model": "KoLANG-T5", "metric": "Knowledge F1", "value": "0.5899"}
+ ],
+ "difficulty": "beginner",
+ "difficulty_note_ko": "약 0.1GB로 작아 RAG(검색 기반 생성) 챗봇 실습에 좋습니다.",
+ "skills_needed_ko": ["파이썬", "Hugging Face", "검색 기반 생성(RAG) 기초"],
+ "caveats_ko": ["검색한 원문 문서가 함께 있는지 팩 앞부분에서 확인 안 됨", "71302·71305번 대화 데이터와 같은 구축 기관"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "질문 주제 분류", "title_en": "Question topic classifier", "desc_ko": "질문자의 첫 발화로 대화 주제를 맞힙니다.", "desc_en": "Predict the topic from the first question."},
+  {"level": "capstone", "title_ko": "검색 기반 상담 챗봇", "title_en": "Search-grounded advice bot", "desc_ko": "질문에 맞는 문서를 찾아 답변하는 RAG 챗봇을 만듭니다.", "desc_en": "Build a RAG chatbot that finds documents and answers."},
+  {"level": "research", "title_ko": "지식 근거 답변 평가", "title_en": "Grounded-answer evaluation", "desc_ko": "답변이 검색한 지식에 근거하는지 평가하는 방법을 연구합니다.", "desc_en": "Evaluate whether answers are grounded in retrieved knowledge."}
+ ],
+ "doc_used": true,
+ "uncertain": ["whether retrieved source documents are included"]
+}

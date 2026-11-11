@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71444",
+ "easy_ko": "터널과 지하차도를 달리며 찍은 일반 사진, 근적외선 사진, 레이저 스캔(라이다)에 소화기, 소화전, 표지판, 유도등 같은 안전 시설 8종을 표시한 데이터입니다. 터널 시설 점검과 터널 안에서 자율주행차가 자기 위치를 알아내는 AI에 쓸 수 있습니다.",
+ "easy_en": "Ordinary photos, near-infrared photos and laser scans (lidar) taken while driving through tunnels and underpasses, with 8 kinds of safety equipment marked, such as fire extinguishers, hydrants, signs and guide lights. You can use it for AI that checks tunnel equipment or helps self-driving cars find their position inside tunnels.",
+ "detail_ko": "터널·지하차도 주행 중 수집한 RGB 이미지 384,994장, 근적외선(NIR) 이미지 413,943장(jpg), 라이다 300,258건(pcd)에 시설물 8종(소화기구, 옥내소화전설비, 제연설비, 터널입구정보표지판, 진입차단표지판, 차로이용규제신호등, 거리유도표시등, 피난구유도표시)을 2D 상자와 3D 큐보이드로 표시하고 캘리브레이션 정보를 JSON으로 붙였습니다. 터널 30곳의 측위용 GIS 자료(shp)와 조명을 끈 상태의 참조용 증강 이미지도 있습니다. 전체 약 1,079GB이고, 페이지의 RGB 수량(384,9940건)은 오타로 설명서 값은 384,994장입니다. 증강 이미지는 품질 검사에서 제외됐고, 팩에서 성능 지표가 잘려 보이지 않습니다.",
+ "detail_en": "Collected while driving through tunnels and underpasses: 384,994 RGB images and 413,943 near-infrared (NIR) images (jpg) plus 300,258 lidar scans (pcd), with 8 facility classes (fire extinguishers, indoor hydrants, smoke-control equipment, tunnel-entrance information signs, entry-blocking signs, lane-control signals, distance guide lights, emergency-exit signs) marked as 2D boxes and 3D cuboids, and calibration data in JSON. It also includes positioning GIS data (shp) for 30 tunnels and reference augmented images with the lights off. Total size is about 1,079 GB. The page's RGB count (384,9940) is a typo; the manual gives 384,994. The augmented images were left out of quality checks, and the metrics are cut off in the pack.",
+ "amount_ko": "RGB 이미지 384,994장, NIR 이미지 413,943장, 라이다 300,258건, 시설물 8종",
+ "amount_en": "384,994 RGB images, 413,943 NIR images, 300,258 lidar scans, 8 facility classes",
+ "labels_ko": "시설물 위치 상자와 입체 상자, 시설물 종류, 센서 보정 정보",
+ "labels_en": "2D boxes and 3D cuboids, facility class, sensor calibration",
+ "status": "full-run-2026-11-02"
+}

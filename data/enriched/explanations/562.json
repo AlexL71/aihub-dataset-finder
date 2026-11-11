@@ -1,0 +1,12 @@
+{
+ "dataset_id": "562",
+ "easy_ko": "동물병원에서 모은 반려견과 반려묘의 눈 사진마다 어떤 증상이나 병이 있는지와 그 위치를 표시한 데이터입니다. 사진으로 반려동물의 눈 질환을 찾아 수의사를 돕는 AI를 만들 수 있지만, 수의사 진단을 대신할 수는 없습니다.",
+ "easy_en": "Eye photos of dogs and cats collected at animal hospitals, each marked with which symptoms or diseases are present and where. You can build AI that helps vets spot eye diseases from photos, but it cannot replace a vet's diagnosis.",
+ "detail_ko": "반려견(질환 12종)·반려묘(질환 6종)의 눈 사진·안구 초음파·안저 이미지 약 30만 장(jpg)에 질환(안검염, 안검종양, 결막염, 각막궤양, 백내장, 핵경화, 유리체변성 등)과 중증도, 바운딩박스·분할 영역을 JSON으로 붙였습니다. 전체 약 201GB이며, 561번 데이터와 같은 구축 기관이 만들었습니다. 촬영 장비(카메라·초음파·안저)가 섞여 있습니다. 기준 성능은 기록에서 확인되지 않으며, 수의사 진단을 대신하면 안 됩니다.",
+ "detail_en": "About 300k eye photos, ocular ultrasound and fundus images (jpg) of dogs (12 diseases) and cats (6 diseases), with JSON disease class (blepharitis, eyelid tumour, conjunctivitis, corneal ulcer, cataract, nuclear sclerosis, vitreous degeneration and more), severity, and boxes and masks. Total size is about 201GB; built by the same organisation as dataset 561. Capture devices (camera, ultrasound, fundus) are mixed. No baseline is visible in the record, and it must not replace a vet's diagnosis.",
+ "amount_ko": "사진 약 30만 장, 개 질환 12종·고양이 질환 6종",
+ "amount_en": "about 300k images, 12 dog and 6 cat diseases",
+ "labels_ko": "질환 종류, 심한 정도, 병든 곳 위치 상자·영역",
+ "labels_en": "disease class, severity, boxes and masks around lesions",
+ "status": "full-run-2026-11-02"
+}

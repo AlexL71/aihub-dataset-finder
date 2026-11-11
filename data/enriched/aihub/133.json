@@ -1,0 +1,29 @@
+{
+ "dataset_id": "133",
+ "title_en": "Mathematics learner competency data",
+ "summary_ko": "초등 1학년~중학 3학년 학생들의 수학 문제 정오답 기록 226만 건과, 문항 난이도·변별도 같은 문항 정보, 학습자 이해도 정보, 수학 개념 약 3,000개를 연결한 지식체계입니다. 학생이 다음 문제를 맞힐지 예측하고 약한 개념을 찾아 맞춤 학습을 추천하는 AI에 쓸 수 있습니다.",
+ "summary_en": "2.26 million maths answer records (right/wrong) from grade 1 to middle-school grade 3, with item information (difficulty, discrimination, guessing), learner ability estimates, and a knowledge map of about 3,000 maths concepts. For AI that predicts whether a student will answer correctly, finds weak concepts and recommends personalised practice.",
+ "contents_ko": "JSON: 학습자 정오답표(학년, 문항, 정답 여부), 문항 IRT 정보(난이도·변별도·추측도), 학습자 IRT 정보(이해력·진점수), 수학 지식체계(단위개념과 선후 관계).",
+ "contents_en": "JSON: learner answer records (grade, item, correct or not), item IRT parameters (difficulty, discrimination, guessing), learner IRT values (ability, true score), maths knowledge map (unit concepts and prerequisites).",
+ "modalities": ["tabular", "text"],
+ "tasks": ["tabular_prediction", "retrieval_recommendation"],
+ "topics": [{"ko": "교육·학습", "en": "Education and learning"}, {"ko": "수학", "en": "Mathematics"}, {"ko": "에듀테크", "en": "EdTech"}],
+ "keywords_ko": ["수학", "학습 분석", "지식 추적", "맞춤 학습", "IRT", "학력 격차", "에듀테크"],
+ "keywords_en": ["mathematics", "learning analytics", "knowledge tracing", "personalised learning", "IRT", "achievement gap", "edtech"],
+ "labels": ["answer correctness", "item IRT parameters", "learner ability", "concept map"],
+ "file_formats": ["json"],
+ "scale_ko": "정오답 기록 226만 건 이상, 문항 2,140개 이상, 학습자 10만 명 이상, 수학 개념 약 3,000개(초1~중3)",
+ "classes_example": [],
+ "baseline": [{"task": "answer correctness prediction", "model": "Deep Knowledge Tracing", "metric": "AUC-ROC", "value": "0.83"}],
+ "difficulty": "beginner",
+ "difficulty_note_ko": "약 1GB 표 데이터라 pandas와 기본 머신러닝으로 바로 분석할 수 있습니다. 지식 추적 딥러닝은 중급입니다.",
+ "skills_needed_ko": ["파이썬", "pandas", "기본 머신러닝", "문항반응이론(IRT) 개념"],
+ "caveats_ko": ["학생 학습 기록이라 개인정보·이용 약관 확인 필요"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "학년별 어려운 수학 개념 찾기", "title_en": "Hardest maths concepts by grade", "desc_ko": "정답률이 낮은 개념을 학년별로 찾아 시각화합니다.", "desc_en": "Find and visualise the lowest-accuracy concepts by grade."},
+  {"level": "capstone", "title_ko": "맞춤 수학 문제 추천기", "title_en": "Personalised maths practice recommender", "desc_ko": "학생의 약한 개념을 찾아 선수 개념부터 문제를 추천하는 웹 앱을 만듭니다.", "desc_en": "Find a student's weak concepts and recommend practice starting from prerequisites."},
+  {"level": "research", "title_ko": "지식 추적 모델 비교", "title_en": "Comparing knowledge tracing models", "desc_ko": "IRT, DKT, 트랜스포머 기반 모델의 정답 예측 성능과 해석 가능성을 비교합니다.", "desc_en": "Compare IRT, DKT and transformer models for accuracy and interpretability."}
+ ],
+ "doc_used": true,
+ "uncertain": []
+}

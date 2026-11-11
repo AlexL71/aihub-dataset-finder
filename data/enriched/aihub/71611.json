@@ -1,0 +1,29 @@
+{
+ "dataset_id": "71611",
+ "title_en": "Badminton motion and match video data",
+ "summary_ko": "실업·대학·주니어 선수의 배드민턴 대회·훈련 영상에서 뽑은 이미지 192,000장으로, 선수·심판·코트·네트가 상자와 다각형으로, 선수 관절이 키포인트로 표시되어 있습니다. 경기 영상 분석, 선수 자세 분석·코칭 AI에 쓸 수 있습니다.",
+ "summary_en": "192,000 images from badminton match and training videos of pro, college and junior players, with players, umpires, court and net marked by boxes and polygons and player joints as keypoints. For match analysis and form coaching.",
+ "contents_ko": "경기 이미지(jpg) + 영상(mp4) + JSON(상자, 다각형, 관절 키포인트, 경기·동작 정보).",
+ "contents_en": "Match image (jpg) + video (mp4) + JSON (boxes, polygons, joint keypoints, match and motion info).",
+ "modalities": ["image", "video"],
+ "tasks": ["object_detection", "segmentation", "keypoint_pose", "action_recognition"],
+ "topics": [{"ko": "스포츠 분석", "en": "Sports analytics"}, {"ko": "라켓 스포츠", "en": "Racket sports"}],
+ "keywords_ko": ["배드민턴", "자세 추정", "경기 분석", "선수 탐지", "스윙", "코칭"],
+ "keywords_en": ["badminton", "pose estimation", "match analysis", "player detection", "swing", "coaching"],
+ "labels": ["bounding box", "polygon", "keypoints", "match info"],
+ "file_formats": ["jpg", "mp4", "json"],
+ "scale_ko": "이미지 192,000장(대회·훈련 영상 기반), 단식·복식·혼합",
+ "classes_example": ["선수", "심판", "코트", "네트", "단식", "복식", "혼합", "스윙"],
+ "baseline": [{"task": "object detection (player, umpire, court, net)", "model": "Faster R-CNN", "metric": "mAP@0.5", "value": "96.97%"}, {"task": "player keypoint detection", "model": "HRNet", "metric": "MPJPE", "value": "44.17 mm"}, {"task": "player keypoint detection", "model": "HRNet", "metric": "PCK", "value": "95.9%"}],
+ "difficulty": "intermediate",
+ "difficulty_note_ko": "약 60GB로 다룰 만하고 탐지·자세 추정 실습에 좋습니다.",
+ "skills_needed_ko": ["파이썬", "YOLO 탐지", "자세 추정(YOLO-pose·HRNet)"],
+ "caveats_ko": ["전문 선수 데이터가 약 90%로 일반인 자세와 다를 수 있음", "같은 경기에서 뽑은 연속 프레임이 많아 경기 단위로 분할 필요", "71612 테니스 데이터와 같은 기관·구성"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "선수·셔틀 코트 탐지", "title_en": "Player and court detection", "desc_ko": "경기 이미지에서 선수·코트·네트를 YOLO로 찾습니다.", "desc_en": "Detect players, court and net in match images."},
+  {"level": "capstone", "title_ko": "배드민턴 스윙 코칭 앱", "title_en": "Badminton swing coach", "desc_ko": "스윙 영상의 관절을 전문 선수와 비교해 고칠 점을 보여 줍니다.", "desc_en": "Compare a user's swing joints with pros and suggest fixes."},
+  {"level": "research", "title_ko": "선수 이동 패턴 분석", "title_en": "Player movement patterns", "desc_ko": "코트 위 선수 위치 변화로 단식·복식 전술 패턴을 분석합니다.", "desc_en": "Analyse singles and doubles tactics from court positions."}
+ ],
+ "doc_used": true,
+ "uncertain": []
+}

@@ -1,0 +1,29 @@
+{
+ "dataset_id": "71327",
+ "title_en": "3D ground-penetrating radar survey data",
+ "summary_ko": "2015~2022년 서울 주요 도로를 지표투과레이더(GPR, 땅속으로 전파를 쏘아 내부를 보는 장비)로 탐사한 영상 약 21만 건에, 땅꺼짐 원인이 되는 지하 공동(빈 공간)과 맨홀·배관 같은 비공동 신호를 상자로 표시한 데이터입니다. 도로 밑 싱크홀 위험을 자동으로 찾는 AI에 쓸 수 있습니다.",
+ "summary_en": "About 210,000 ground-penetrating radar (GPR, which sends radio waves into the ground to see inside) images from Seoul's main roads in 2015-2022, with underground cavities (a cause of sinkholes) and non-cavity signals such as manholes and pipes boxed. For AI that finds sinkhole risks under roads automatically.",
+ "contents_ko": "GPR B·C 스캔 이미지(jpg) + XML(상자, 클래스).",
+ "contents_en": "GPR B-scan and C-scan images (jpg) + XML (boxes, class).",
+ "modalities": ["image"],
+ "tasks": ["object_detection", "anomaly_detection"],
+ "topics": [{"ko": "도로 관리·안전", "en": "Road maintenance and safety"}, {"ko": "지하 탐사", "en": "Subsurface survey"}],
+ "keywords_ko": ["지표투과레이더", "GPR", "싱크홀", "지하 공동", "도로 안전"],
+ "keywords_en": ["ground-penetrating radar", "GPR", "sinkholes", "underground cavities", "road safety"],
+ "labels": ["bounding box", "class", "scan type"],
+ "file_formats": ["jpg", "xml"],
+ "scale_ko": "GPR 이미지 약 21만 건, 클래스 6종",
+ "classes_example": ["공동 대칭", "공동 비대칭", "공동 기타", "맨홀", "종배관", "횡배관"],
+ "baseline": [{"task": "cavity detection", "model": "EfficientDet", "metric": "mAP@0.5", "value": "84.57%"}],
+ "difficulty": "intermediate",
+ "difficulty_note_ko": "약 2.7GB로 작아 받기 쉽지만 GPR 영상을 읽는 기초 지식이 필요합니다.",
+ "skills_needed_ko": ["파이썬", "객체 탐지", "GPR 신호 기초"],
+ "caveats_ko": ["서울 도로 데이터만 있음", "B·C 스캔 개념을 알아야 함", "AI Hub 성능 지표 표는 비어 있고 값은 모델 설명에서 가져옴"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "공동·비공동 분류", "title_en": "Cavity vs non-cavity", "desc_ko": "GPR 이미지가 공동인지 배관·맨홀인지 분류합니다.", "desc_en": "Classify GPR images as cavity or pipe/manhole."},
+  {"level": "capstone", "title_ko": "싱크홀 위험 지도", "title_en": "Sinkhole risk map", "desc_ko": "탐지 결과를 도로 위치와 함께 지도에 표시합니다.", "desc_en": "Map detected cavities along roads."},
+  {"level": "research", "title_ko": "B·C 스캔 결합 탐지", "title_en": "Combining B and C scans", "desc_ko": "두 방향 스캔을 함께 써서 오탐을 줄이는 방법을 연구합니다.", "desc_en": "Use both scan views together to cut false alarms."}
+ ],
+ "doc_used": true,
+ "uncertain": []
+}

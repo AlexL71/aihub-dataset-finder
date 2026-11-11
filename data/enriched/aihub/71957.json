@@ -1,0 +1,29 @@
+{
+ "dataset_id": "71957",
+ "title_en": "Document-understanding-based visual element generation data",
+ "summary_ko": "공공데이터포털·정부·지자체 문서의 수치 설명문 10,000건을 바탕으로 차트 이미지 10,000장을 만들고, 차트에 대한 질의응답과 사고과정(CoT, 답에 이르는 추론 단계) 라벨을 붙인 데이터입니다. 세로 막대형 43.5%, 가로 막대형 27.8%, 선형 13.8%, 원형 6.3% 등으로 구성되며, 문서 자동 시각화와 차트 이해 AI에 쓸 수 있습니다.",
+ "summary_en": "10,000 numeric descriptions from public and government documents turned into 10,000 chart images, with Q&A and chain-of-thought (step-by-step reasoning) labels about the charts. Vertical bar 43.5%, horizontal bar 27.8%, line 13.8%, pie 6.3% and others. For automatic document visualisation and chart understanding.",
+ "contents_ko": "설명문·차트 정보(json) + 차트 이미지(jpg) + 질의응답·사고과정.",
+ "contents_en": "Descriptions and chart specs (json) + chart images (jpg) + Q&A and chain of thought.",
+ "modalities": ["text", "image"],
+ "tasks": ["image_generation", "visual_qa", "text_generation"],
+ "topics": [{"ko": "문서 AI", "en": "Document AI"}, {"ko": "데이터 시각화", "en": "Data visualisation"}],
+ "keywords_ko": ["차트 생성", "문서 시각화", "막대 그래프", "질의응답", "사고과정", "공공 문서"],
+ "keywords_en": ["chart generation", "document visualisation", "bar chart", "Q&A", "chain of thought", "public documents"],
+ "labels": ["chart image", "question-answer", "chain of thought"],
+ "file_formats": ["json", "jpg"],
+ "scale_ko": "원천 10,000건, 라벨 json 10,000건 + 차트 이미지 10,000장",
+ "classes_example": ["세로 막대형", "가로 막대형", "선형", "원형"],
+ "baseline": [],
+ "difficulty": "beginner",
+ "difficulty_note_ko": "약 0.37GB로 작아 노트북으로 실습할 수 있습니다.",
+ "skills_needed_ko": ["파이썬", "트랜스포머", "matplotlib"],
+ "caveats_ko": ["막대형 차트가 70% 이상으로 차트 종류가 치우쳐 있음", "성능 지표 값이 팩 앞부분에 없음"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "설명문에서 차트 코드 생성", "title_en": "Text to chart code", "desc_ko": "수치 설명문을 읽고 차트를 그리는 코드를 만듭니다.", "desc_en": "Generate plotting code from numeric text."},
+  {"level": "capstone", "title_ko": "보고서 자동 시각화 도구", "title_en": "Report auto-visualiser", "desc_ko": "문서 속 숫자를 찾아 알맞은 차트로 바꿔 주는 도구를 만듭니다.", "desc_en": "Turn numbers in documents into fitting charts."},
+  {"level": "research", "title_ko": "차트 유형 선택 추론", "title_en": "Choosing the right chart", "desc_ko": "데이터에 맞는 차트 종류를 근거와 함께 고르는 방법을 연구합니다.", "desc_en": "Choose chart types with explained reasoning."}
+ ],
+ "doc_used": true,
+ "uncertain": ["질의응답 수량"]
+}

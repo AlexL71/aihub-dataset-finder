@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71704",
+ "easy_ko": "한국인 1,800명을 여러 방향에서 찍은 전신 사진과 얼굴 사진에 몸 관절 점과 몸 영역을 표시하고, 신체 치수와 전신 입체 모형, 옷 사진도 함께 담은 데이터입니다. 한국인 체형의 가상 인물(디지털 휴먼)이나 가상 옷을 만드는 AI에 쓸 수 있습니다.",
+ "easy_en": "Full-body and face photos of 1,800 Korean people taken from many directions, with body joint points and body areas marked, plus body measurements, full-body three-dimensional models and clothing photos. You can use it to build AI that creates digital humans with Korean body shapes or virtual clothing.",
+ "detail_ko": "한국인 1,800명의 여러 방향 전신 이미지 43,200장과 고해상도 얼굴 이미지 1,800장(jpg, 총 45,000개)에 관절 키포인트와 분할 영역을 JSON으로 붙였고, 신체 치수, 전신 3D 모델, 의상·액세서리 이미지가 추가로 있습니다. 전체 약 3.8TB이고, 실제 인물 사진이라 초상권·이용 조건을 확인해야 하며, 추가 데이터(3D·치수) 수량과 성능 지표는 팩 앞부분에 없습니다.",
+ "detail_en": "43,200 full-body images from several directions and 1,800 high-resolution face images (jpg, 45,000 in total) of 1,800 Korean people, with JSON keypoints and segmentation, plus body measurements, full-body 3D models and clothing and accessory images. Total size is about 3.8 TB. These are real people, so check portrait rights and terms of use; counts for the extra data (3D, measurements) and any metrics are not in the pack.",
+ "amount_ko": "1,800명, 전신 이미지 43,200장, 얼굴 이미지 1,800장",
+ "amount_en": "1,800 people, 43,200 full-body images, 1,800 face images",
+ "labels_ko": "몸 관절 점, 몸 영역",
+ "labels_en": "keypoints, polygons",
+ "status": "full-run-2026-11-02"
+}

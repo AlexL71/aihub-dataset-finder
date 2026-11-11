@@ -1,0 +1,12 @@
+{
+ "dataset_id": "525",
+ "easy_ko": "비닐하우스 작물 사진마다 건강한지, 병에 걸렸는지, 영양이 부족한지, 잘 못 자라는지, 농약에 반응했는지를 상자로 표시하고, 사진 찍기 전 이틀 동안의 온도·습도 기록도 붙인 데이터입니다. 작물 병을 진단하고 방제 방법을 알려 주는 AI를 만들 수 있습니다.",
+ "easy_en": "Greenhouse crop photos with boxes marking whether plants are healthy, diseased, short of nutrients, growing poorly or reacting to pesticide, plus temperature and humidity records from the two days before each photo. You can build AI that diagnoses crop diseases and suggests how to treat them.",
+ "detail_ko": "전국 시설 재배지와 연구기관 테스트베드에서 촬영한 작물 이미지 684,616건(정상 30만 이상, 병 발생 13.6만, 영양장애 7.4만, 생육장애 4.6만, 보호제 처리반응 4.6만, jpg)에 병해·장애 바운딩박스와 클래스를 JSON으로 붙이고, 촬영 전 48시간 환경 시계열(15분 간격 CSV)을 함께 제공합니다. 작물 종류와 기준 성능은 기록에서 확인되지 않습니다.",
+ "detail_en": "684,616 jpg images of greenhouse crops from farms and research test beds (300k+ normal, 136k disease, 74k nutrient disorder, 46k growth disorder, 46k crop-protection treatment response), with JSON boxes and classes and environment time series for the 48 hours before capture (CSV, 15-minute intervals). Crop types and a baseline are not visible in the record.",
+ "amount_ko": "작물 사진 약 68.5만 건",
+ "amount_en": "about 685k crop images",
+ "labels_ko": "정상·병·영양 부족·자람 문제·농약 반응 구분, 위치 상자, 환경 기록",
+ "labels_en": "normal, disease, nutrient or growth disorder, treatment response, boxes, environment records",
+ "status": "full-run-2026-11-02"
+}

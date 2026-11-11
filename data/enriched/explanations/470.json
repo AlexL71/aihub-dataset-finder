@@ -1,0 +1,12 @@
+{
+ "dataset_id": "470",
+ "easy_ko": "대학병원, 장애인 이동 지원 센터, 정신건강 상담센터의 복지 상담 통화를 연기자가 다시 연기해 녹음하고, 그 말을 받아 적은 글을 짝지은 데이터입니다. 복지 서비스 문의에 답해 주는 AI 상담원이나 상담 음성 인식을 만들 수 있습니다.",
+ "easy_en": "Welfare counselling calls from a university hospital, a mobility-support centre and a mental-health counselling centre, re-enacted by actors and recorded, paired with written transcripts. You can build AI counsellors that answer welfare questions, or speech recognition for counselling calls.",
+ "detail_ko": "대학병원·광역이동지원센터·정신건강상담센터 3곳의 복지 상담을 연기자가 재현한 문장 단위 음성 2,945시간, 2,276,065문장(wav, 16kHz, 약 323GB)과 JSON 라벨(전사, 화자 성별·연령대, 기관·상담 주제, 약 20GB)입니다. 기준 성능 지표는 없습니다. 연기자가 재현한 상담이라 실제 통화와 다를 수 있고, 정신건강 상담 내용은 민감하므로 신중히 써야 합니다.",
+ "detail_en": "2,945 hours of sentence-level speech (2,276,065 sentences; wav, 16 kHz, about 323 GB) re-enacted by actors from welfare counselling at a university hospital, a regional mobility-support centre and a mental-health counselling centre, with JSON labels (transcript, speaker sex and age group, institution and topic; about 20 GB). No baseline is published. Re-enactments may differ from real calls, and mental-health content is sensitive, so use it carefully.",
+ "amount_ko": "음성 2,945시간, 문장 약 228만 개",
+ "amount_en": "2,945 hours of speech, about 2.28M sentences",
+ "labels_ko": "말소리를 받아 적은 글(전사), 화자 성별·나이대, 기관·상담 주제",
+ "labels_en": "transcripts, speaker sex and age group, institution and topic",
+ "status": "full-run-2026-11-02"
+}

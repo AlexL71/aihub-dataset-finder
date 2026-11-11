@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71645",
+ "easy_ko": "10대부터 60대 이상까지 한국인 얼굴을 여러 각도에서 찍은 사진과, 정밀 장비로 잰 수분, 탄력, 주름, 모공, 색소 같은 피부 측정값을 짝지은 데이터입니다. 얼굴 사진만으로 피부 상태를 알려 주는 AI에 쓸 수 있습니다.",
+ "easy_en": "Photos of Korean faces from many angles, from teenagers to people over 60, paired with skin measurements from precise equipment, such as moisture, elasticity, wrinkles, pores and pigmentation. You can use it to build AI that tells you about skin condition from a face photo alone.",
+ "detail_ko": "10대~60대 이상 한국인 남녀의 얼굴을 여러 각도에서 찍은 고해상도 이미지 13,936장(jpg)과 정밀 장비 피부 측정 84,688건(csv; 수분량, 탄력, 주름, 모공, 색소침착 등)에 얼굴 부위 상자, 측정값, 메타데이터를 JSON으로 붙였습니다(라벨 125,424건). 얼굴 이미지라 개인정보·이용 조건을 확인해야 하고, 성능 지표는 팩에 없습니다. 같은 사람의 여러 각도 사진이 있어 사람 단위로 나눠야 합니다.",
+ "detail_en": "13,936 high-resolution face images (jpg) of Korean men and women from their teens to 60+, taken from several angles, paired with 84,688 precise skin measurements (csv: moisture, elasticity, wrinkles, pores, pigmentation and more) and JSON face-region boxes, measurements and metadata (125,424 labels). These are face images, so check the personal-data terms; no metrics are in the pack. Each person appears from several angles, so split by person.",
+ "amount_ko": "얼굴 이미지 13,936장, 측정 84,688건, 라벨 125,424건",
+ "amount_en": "13,936 face images, 84,688 measurements, 125,424 labels",
+ "labels_ko": "얼굴 부위 위치 상자, 피부 측정값",
+ "labels_en": "bounding boxes, skin measurements",
+ "status": "full-run-2026-11-02"
+}

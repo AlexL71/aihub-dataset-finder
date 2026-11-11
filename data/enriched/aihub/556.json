@@ -1,0 +1,29 @@
+{
+ "dataset_id": "556",
+ "title_en": "Typhoon and flood damage and risk data",
+ "summary_ko": "태풍과 홍수 발생 전후의 전경·상세 사진을 비교할 수 있게 모은 데이터로, 피해 시설과 위험 요소가 상자·다각형으로 표시되어 있습니다. 다음 재해 때 피해 여부와 규모를 미리 예측하는 AI에 쓸 수 있습니다.",
+ "summary_en": "Before-and-after overview and detail photos of typhoon and flood events, with damaged facilities and hazards marked by boxes and polygons. For AI that predicts whether and how much damage will occur in future disasters.",
+ "contents_ko": "재해 전후 사진(jpg) + JSON(객체 상자·다각형, 피해·위험 유형).",
+ "contents_en": "Before/after photos (jpg) + JSON (object boxes and polygons, damage and risk type).",
+ "modalities": ["image"],
+ "tasks": ["object_detection", "segmentation", "anomaly_detection"],
+ "topics": [{"ko": "재난·안전", "en": "Disaster and safety"}, {"ko": "기상·자연재해", "en": "Weather and natural disasters"}, {"ko": "홍수", "en": "Floods"}],
+ "keywords_ko": ["태풍", "홍수", "피해 예측", "재해 전후 비교", "변화 탐지"],
+ "keywords_en": ["typhoon", "flood", "damage prediction", "before-after comparison", "change detection"],
+ "labels": ["bounding box", "polygon", "damage/risk class"],
+ "file_formats": ["jpg", "json"],
+ "scale_ko": "약 212GB",
+ "classes_example": ["하천 > 댐", "하천 > 제방", "하천 > 교량 및 교각", "도시 > 교통신호등", "도시 > 보행신호등", "도시 > 사람", "도시 > 자동차", "도시 > 도로", "도시 > 건물", "도시 > 산사태", "공통 > 전신주·가로등·지하차도", "상태: 정상(level0) / 피해(level2)"],
+ "baseline": [],
+ "difficulty": "intermediate",
+ "difficulty_note_ko": "피해 탐지는 쉽지만 전후 비교 예측은 어렵습니다. 약 176GB입니다.",
+ "skills_needed_ko": ["파이썬", "YOLO 탐지", "변화 탐지 기초"],
+ "caveats_ko": ["일부 원천 사진이 언론사 출처라 이용 조건 확인 필요", "장수·성능 지표가 팩 앞부분에 없음"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "침수 지역 탐지", "title_en": "Flooded-area detection", "desc_ko": "사진에서 물에 잠긴 영역을 찾습니다.", "desc_en": "Find flooded areas in photos."},
+  {"level": "capstone", "title_ko": "재해 전후 비교 도구", "title_en": "Before-after comparison tool", "desc_ko": "같은 장소의 전후 사진을 비교해 피해 부위를 표시합니다.", "desc_en": "Compare before and after photos of a place and highlight damage."},
+  {"level": "research", "title_ko": "평상시 사진으로 피해 위험 예측", "title_en": "Predicting risk from normal-time photos", "desc_ko": "재해 전 사진만으로 피해 가능성이 높은 시설을 예측합니다.", "desc_en": "Predict vulnerable facilities from pre-disaster photos."}
+ ],
+ "doc_used": true,
+ "uncertain": []
+}

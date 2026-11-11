@@ -1,0 +1,32 @@
+{
+ "dataset_id": "71262",
+ "title_en": "Specialised-domain English-Korean and Chinese-Korean translation corpus (food)",
+ "summary_ko": "식품 학술지 등에서 모은 영-한 150만, 중-한 150만 문장 쌍(총 300만)입니다. 가공식품·농산물·축수산물·식품첨가물·유해물질·건강식품 등 20개 세부 분야의 전문 용어가 들어 있습니다. 식품 분야 전문 번역기에 쓸 수 있습니다.",
+ "summary_en": "3 million sentence pairs (1.5 million English-Korean, 1.5 million Chinese-Korean) from food science journals and similar sources, covering 20 sub-fields such as processed food, agricultural products, livestock and seafood, additives, hazardous substances and health food. For specialist food-domain translators.",
+ "contents_ko": "문장 쌍 텍스트(txt) + JSON(원문, 번역, 분야).",
+ "contents_en": "Sentence pair text (txt) + JSON (source, translation, field).",
+ "modalities": ["text"],
+ "tasks": ["translation"],
+ "topics": [{"ko": "번역·외국어", "en": "Translation and foreign languages"}, {"ko": "식품", "en": "Food"}],
+ "keywords_ko": ["식품", "전문 번역", "영한 번역", "중한 번역", "식품 안전"],
+ "keywords_en": ["food", "specialised translation", "English-Korean", "Chinese-Korean", "food safety"],
+ "labels": ["translation", "field"],
+ "file_formats": ["txt", "json"],
+ "scale_ko": "문장 쌍 300만 개(영-한 150만, 중-한 150만), 세부 분야 20종",
+ "classes_example": ["가공식품", "농산물", "축산물", "식품 첨가물", "유해물질", "기능성 식품"],
+ "baseline": [
+  {"task": "translation (en→ko)", "model": "OpenNMT", "metric": "BLEU", "value": "0.7588"},
+  {"task": "translation (zh→ko)", "model": "OpenNMT", "metric": "BLEU", "value": "0.7144"}
+ ],
+ "difficulty": "beginner",
+ "difficulty_note_ko": "약 1GB로 작아 번역 모델 미세조정 실습에 좋습니다.",
+ "skills_needed_ko": ["파이썬", "Hugging Face", "번역 모델"],
+ "caveats_ko": ["BLEU 값이 0~1 단위로 표기됨", "학술지 문장이라 일상 표현은 적음"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "식품 용어 번역기", "title_en": "Food-term translator", "desc_ko": "영-한 식품 문장으로 작은 번역 모델을 학습합니다.", "desc_en": "Train a small English-Korean food translator."},
+  {"level": "capstone", "title_ko": "수입식품 위해정보 번역 서비스", "title_en": "Imported-food alert translator", "desc_ko": "해외 식품 위해 뉴스를 한국어로 번역해 보여줍니다.", "desc_en": "Translate overseas food-safety alerts into Korean."},
+  {"level": "research", "title_ko": "일반 vs 전문 번역 모델", "title_en": "General vs domain translator", "desc_ko": "범용 번역기와 식품 특화 번역기의 전문 용어 정확도를 비교합니다.", "desc_en": "Compare term accuracy of general and food-specific translators."}
+ ],
+ "doc_used": true,
+ "uncertain": []
+}

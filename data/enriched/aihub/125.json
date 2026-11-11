@@ -1,0 +1,29 @@
+{
+ "dataset_id": "125",
+ "title_en": "Korean-English translation corpus (social science)",
+ "summary_ko": "법률(민법·형법·세법·판례)·교육·경제/금융·문화/관광/예술 등 사회과학 분야 한국어-영어 번역 문장 150만 쌍입니다. 법률·교육·경제 문서 전문 번역기나 분야별 용어 사전 개발에 쓸 수 있습니다.",
+ "summary_en": "1.5 million Korean-English sentence pairs in social science: law (civil, criminal, tax law, cases), education, economics and finance, and culture, tourism and arts. For specialised translators of legal, educational and economic documents, or field-specific term dictionaries.",
+ "contents_ko": "한국어 문장 + 영어 번역 + 대분야·소분야 라벨.",
+ "contents_en": "Korean sentence + English translation + main and sub-field labels.",
+ "modalities": ["text"],
+ "tasks": ["translation"],
+ "topics": [{"ko": "번역·외국어", "en": "Translation and foreign languages"}, {"ko": "법률", "en": "Law"}, {"ko": "교육", "en": "Education"}, {"ko": "경제·금융", "en": "Economics and finance"}],
+ "keywords_ko": ["한영 번역", "법률 번역", "병렬 말뭉치", "교육", "경제", "관광 번역"],
+ "keywords_en": ["Korean-English translation", "legal translation", "parallel corpus", "education", "economics", "tourism translation"],
+ "labels": ["parallel sentence pairs", "field and sub-field"],
+ "file_formats": ["json", "xlsx"],
+ "scale_ko": "병렬 문장 150만 쌍(법률 50만, 교육 40만, 경제 30만, 문화·관광 등)",
+ "classes_example": ["법률연구", "세법", "민법", "형법", "판례", "초중고등교육", "경제/경영", "금융", "공연", "관광"],
+ "baseline": [],
+ "difficulty": "beginner",
+ "difficulty_note_ko": "약 0.5GB로 작아 번역 품질 비교나 작은 번역 모델 미세조정 실습에 좋습니다.",
+ "skills_needed_ko": ["파이썬", "Hugging Face 번역 모델", "BLEU 평가"],
+ "caveats_ko": ["페이지 통계표가 기술과학 데이터셋과 같은 표를 씀", "파일 형식은 팩에서 확인하지 못해 추정"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "법률 문장 번역 품질 분석", "title_en": "Legal sentence translation quality", "desc_ko": "공개 번역기가 법률 문장에서 자주 틀리는 표현을 분석합니다.", "desc_en": "Analyse which legal expressions an open translator gets wrong."},
+  {"level": "capstone", "title_ko": "관광 안내문 영문 번역기", "title_en": "Tourism notice translator", "desc_ko": "관광·문화 분야로 미세조정한 번역기를 만들어 지역 안내문을 번역합니다.", "desc_en": "Fine-tune on tourism and culture to translate local notices."},
+  {"level": "research", "title_ko": "분야 적응 번역", "title_en": "Domain-adaptive translation", "desc_ko": "법률·교육·경제 분야별 적응 학습이 일반 모델보다 얼마나 나은지 비교합니다.", "desc_en": "Compare per-domain adaptation with a general model."}
+ ],
+ "doc_used": true,
+ "uncertain": ["파일 형식이 팩에 명시되지 않음"]
+}

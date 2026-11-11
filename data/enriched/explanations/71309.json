@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71309",
+ "easy_ko": "핵심 단어 묶음마다 사람이 상식에 맞는 문장을 두 개씩 새로 써 둔 데이터입니다. 주어진 단어들로 자연스러운 한국어 문장을 만드는 AI나 챗봇을 만들 수 있습니다.",
+ "easy_en": "Sets of key words, each with two new common-sense sentences written by people. You can build AI or chatbots that write natural Korean sentences from given words.",
+ "detail_ko": "71308번 데이터의 개념 집합 약 51만 개마다 사람이 상식에 맞는 문장을 2개씩 쓴 약 102만 문장(txt, JSON)입니다. 기준 성능은 seq2seq 상식 문장 생성 ROUGE-L 64.7%, 개념 포함률 0.86입니다. 71308·71311번과 이어지는 3단계 연작의 두 번째 데이터입니다.",
+ "detail_en": "About 1.02M sentences (txt, JSON): two human-written common-sense sentences for each of about 510k concept sets from dataset 71308. Baselines: seq2seq common-sense sentence generation ROUGE-L 64.7%, concept coverage 0.86. Second of a three-part series with 71308 and 71311.",
+ "amount_ko": "문장 약 102만 개",
+ "amount_en": "about 1.02M sentences",
+ "labels_ko": "핵심 단어 묶음, 사람이 쓴 정답 문장",
+ "labels_en": "concept set, human reference sentence",
+ "status": "full-run-2026-11-02"
+}

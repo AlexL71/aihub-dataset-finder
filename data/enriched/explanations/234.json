@@ -1,0 +1,12 @@
+{
+ "dataset_id": "234",
+ "easy_ko": "한자로 쓰인 옛 책과 문서 사진에서 한자 하나하나의 위치와 어떤 글자인지를 표시한 데이터입니다. 옛 문헌 속 한자를 자동으로 읽어 컴퓨터 글자로 바꿔 주는 AI를 만들어 역사나 한문 연구를 도울 수 있습니다.",
+ "easy_en": "Photos of old books and documents written in Chinese characters, with each character's position and identity marked. You can build AI that reads the characters in old texts and turns them into digital text, helping history and classical literature research.",
+ "detail_ko": "한자 고서·고문헌 원문 이미지 57,081장(jpg)에 한자 10,142,816자의 바운딩박스와 글자 라벨, 같은 한자 클러스터링 정보를 JSON으로 붙였습니다. 세로쓰기·이체자 등 고서 특성을 고려해야 하며, 기준 성능은 기록에서 확인되지 않습니다.",
+ "detail_en": "57,081 images (jpg) of old books and documents written in classical Chinese, with JSON bounding boxes and labels for 10,142,816 characters plus clustering info for identical characters. Vertical writing and variant character forms need special handling; no baseline is visible in the record.",
+ "amount_ko": "원문 사진 약 5.7만 장, 한자 약 1,014만 자",
+ "amount_en": "about 57k page images, about 10.14M characters",
+ "labels_ko": "한자 위치 상자, 정답 글자, 같은 글자 묶음",
+ "labels_en": "boxes around characters, character label, same-character clusters",
+ "status": "full-run-2026-11-02"
+}

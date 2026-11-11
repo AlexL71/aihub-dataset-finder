@@ -1,0 +1,29 @@
+{
+ "dataset_id": "175",
+ "title_en": "Maritime object images",
+ "summary_ko": "선박 운항 중 찍은 영상 1,500시간에서 뽑은 이미지 540만 장으로, 선박·해상풍력·부표·어망부표·등대·부유물 상자와 바다·하늘·섬·수평선·해안선 영역이 표시되어 있습니다. 자율운항 선박, 무인 수색, 해상 안전 AI에 쓸 수 있습니다.",
+ "summary_en": "5.4 million images from 1,500 hours of video taken from ships, with boxes for vessels, offshore wind turbines, buoys, fishing-net floats, lighthouses and floating debris, and regions for sea, sky, islands, horizon and coastline. For autonomous ships, unmanned search and maritime safety AI.",
+ "contents_ko": "선박 시점 이미지(jpg) + JSON(물체 상자, 환경 다각형·선).",
+ "contents_en": "Ship-view image (jpg) + JSON (object boxes, environment polygons and lines).",
+ "modalities": ["image", "video"],
+ "tasks": ["object_detection", "segmentation"],
+ "topics": [{"ko": "해양·선박", "en": "Sea and ships"}, {"ko": "자율운항", "en": "Autonomous navigation"}, {"ko": "해양 안전", "en": "Maritime safety"}],
+ "keywords_ko": ["해상 객체", "선박 탐지", "자율운항", "부표", "수평선", "무인 선박"],
+ "keywords_en": ["maritime objects", "ship detection", "autonomous ships", "buoy", "horizon", "unmanned vessel"],
+ "labels": ["bounding box", "polygon", "polyline"],
+ "file_formats": ["jpg", "json"],
+ "scale_ko": "이미지 540만 장(원본 영상 1,500시간), 선박 상자 100만, 바다·하늘 다각형 각 30만 등",
+ "classes_example": ["선박", "해상풍력", "부표", "어망부표", "등대", "기타 부유물", "섬", "수평선"],
+ "baseline": [{"task": "object detection", "model": "FCN / R-CNN", "metric": "mIoU", "value": "62.8%"}],
+ "difficulty": "intermediate",
+ "difficulty_note_ko": "YOLO로 선박 탐지 실습이 가능하지만 전체 약 4.5TB라 일부만 받아 쓰세요.",
+ "skills_needed_ko": ["파이썬", "YOLO 탐지", "분할 모델"],
+ "caveats_ko": ["전체 약 4.5TB", "성능 표에서 탐지 지표가 mIoU로 적혀 있음"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "바다 위 선박 탐지", "title_en": "Ship detection at sea", "desc_ko": "선박과 부표를 탐지하는 YOLO 모델을 학습합니다.", "desc_en": "Train a YOLO model for ships and buoys."},
+  {"level": "capstone", "title_ko": "충돌 위험 알림", "title_en": "Collision risk alert", "desc_ko": "탐지된 선박의 크기 변화로 다가오는 선박을 경고하는 데모를 만듭니다.", "desc_en": "Warn about approaching vessels from changes in detected size."},
+  {"level": "research", "title_ko": "안개·역광 속 해상 객체 인식", "title_en": "Maritime detection in fog and glare", "desc_ko": "악조건 영상에서 성능 저하를 분석하고 개선 방법을 연구합니다.", "desc_en": "Analyse and improve performance in fog and glare."}
+ ],
+ "doc_used": true,
+ "uncertain": []
+}

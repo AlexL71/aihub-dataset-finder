@@ -1,0 +1,12 @@
+{
+ "dataset_id": "564",
+ "easy_ko": "곤충 농장에서 키우는 동애등에, 꽃무지, 거저리, 누에의 알·애벌레·번데기·어른벌레·병든 개체를 일반 카메라와 열화상으로 찍어 영역을 표시하고, 온도·습도와 길이·무게·먹이 같은 관리 기록을 함께 모은 데이터입니다. 곤충 사육장을 자동으로 관리하는 AI를 만들 수 있습니다.",
+ "easy_en": "Ordinary and thermal photos of black soldier flies, flower chafers, mealworms and silkworms at insect farms, covering eggs, larvae, pupae, adults and infected insects, with their areas outlined, plus temperature, humidity and care records such as length, weight and feed. You can build AI that runs insect farms automatically.",
+ "detail_ko": "상업용 곤충 농장 4종(동애등에, 흰점박이꽃무지, 갈색거저리, 누에)의 RGB 영상 12만 건 이상과 열화상 6.2만 건(jpg)에 다각형, 종, 생육 단계(알, 애벌레, 번데기, 성충, 감염곤충)를 JSON으로 붙이고, 온습도 센서 18.2만 건과 길이·무게·사료 등 관리 기록 1만 건을 함께 제공합니다. 기준 성능은 기록에서 확인되지 않습니다. 종·단계별 수량 차이가 크며 알 사진은 500장뿐입니다.",
+ "detail_en": "120k+ RGB and 62k thermal images (jpg) of 4 farmed insects (black soldier fly, white-spotted flower chafer, mealworm, silkworm) with JSON polygons, species and stage (egg, larva, pupa, adult, infected), plus 182k temperature and humidity sensor records and 10k care records (length, weight, feed). No baseline is visible in the record. Counts vary widely; there are only 500 egg images.",
+ "amount_ko": "일반 사진 12만 건 이상, 열화상 6.2만 건, 센서 기록 18.2만 건",
+ "amount_en": "120k+ RGB images, 62k thermal images, 182k sensor records",
+ "labels_ko": "곤충 영역 테두리, 곤충 종류, 자라는 단계, 병 여부, 센서·관리 값",
+ "labels_en": "insect outlines, species, growth stage, infection, sensor and care values",
+ "status": "full-run-2026-11-02"
+}

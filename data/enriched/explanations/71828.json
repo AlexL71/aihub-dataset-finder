@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71828",
+ "easy_ko": "군 교범, 교수안, 교육 영상으로 만든 교육 자료 글과 질문-답, 해군의 정해진 통신 문구를 말한 목소리 약 118시간을 모은 데이터입니다. 군 교육용 질문 답변 챗봇이나 음성 인식에 쓸 수 있습니다.",
+ "easy_en": "Training material text and question-answer pairs built from military manuals, lesson plans and training videos, plus about 118 hours of recordings of standard navy radio phrases. You can use it to build military training chatbots or speech recognition.",
+ "detail_ko": "군 교범·교수안·CBT 영상으로 만든 교육자료 텍스트 53,780건과 질의응답 12,420건(csv, JSON), 해군 문어·답어(정해진 통신 문구) 음성 100,535건(wav, 약 118시간)과 전사문, 태깅으로 구성됩니다. 군 전문 용어가 많아 일반 언어 모델 성능이 낮을 수 있고, 품질 점수는 라벨 정확도이며 모델 성능 수치는 팩에 없습니다. 데이터 반출·이용 조건을 확인해야 합니다.",
+ "detail_en": "53,780 training-material texts and 12,420 question-answer pairs (csv, JSON) built from military manuals, lesson plans and CBT videos, plus 100,535 recordings (wav, about 118 hours) of navy standard call-and-response phrases with transcripts and tags. Heavy military jargon may lower general language models' performance; quality scores describe label accuracy and no model scores are in the pack. Check the export and usage conditions.",
+ "amount_ko": "교육자료 53,780건, 질의응답 12,420건, 음성 100,535건(약 118시간)",
+ "amount_en": "53,780 training texts, 12,420 QA pairs, 100,535 audio clips (about 118 hours)",
+ "labels_ko": "글 분류 표시, 질문과 답, 받아쓴 글",
+ "labels_en": "text tag, question-answer, transcript",
+ "status": "full-run-2026-11-02"
+}

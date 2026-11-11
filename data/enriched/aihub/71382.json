@@ -1,0 +1,29 @@
+{
+ "dataset_id": "71382",
+ "title_en": "Broadcast content Korean-English translation corpus",
+ "summary_ko": "다큐·교양·예능·드라마·인터뷰 등 방송 대사에서 뽑은 문장 약 196만 쌍의 번역 말뭉치입니다. 한국어→영어·스페인어·러시아어 각 50만 문장, 반대 방향 각 15만 문장으로 신조어·관용 표현이 담겨 있어 방송 자막 번역 AI에 쓸 수 있습니다.",
+ "summary_en": "About 1.96 million sentence pairs from broadcast dialogue (documentary, culture, entertainment, drama, interviews): 500k each Korean to English/Spanish/Russian and 150k each in the reverse direction. For subtitle translation AI.",
+ "contents_ko": "원문 문장 JSON(한국어 또는 영어·스페인어·러시아어) + 번역문 JSON(양방향 문장 쌍).",
+ "contents_en": "Source sentence JSON (Korean or English/Spanish/Russian) + translation JSON (bidirectional sentence pairs).",
+ "modalities": ["text"],
+ "tasks": ["translation"],
+ "topics": [{"ko": "방송·미디어", "en": "Broadcasting and media"}, {"ko": "번역·통역", "en": "Translation and interpretation"}],
+ "keywords_ko": ["번역 말뭉치", "방송 자막", "기계번역", "스페인어", "러시아어", "신조어"],
+ "keywords_en": ["parallel corpus", "broadcast subtitles", "machine translation", "Spanish", "Russian", "slang"],
+ "labels": ["translation"],
+ "file_formats": ["json"],
+ "scale_ko": "문장 쌍 1,958,601개(한→외 1,505,574개, 외→한 453,027개), 언어 4종",
+ "classes_example": ["다큐", "교양", "연예·공연", "영화·드라마", "오락·예능", "인터뷰"],
+ "baseline": [{"task": "machine translation (ko>en)", "model": "Transformer", "metric": "BLEU", "value": "0.5137"}, {"task": "machine translation (ko>es)", "model": "Transformer", "metric": "BLEU", "value": "0.4321"}, {"task": "machine translation (ko>ru)", "model": "Transformer", "metric": "BLEU", "value": "0.3934"}],
+ "difficulty": "intermediate",
+ "difficulty_note_ko": "텍스트만 있어 약 1.4GB로 가볍습니다. 번역 모델 미세조정 경험이 있으면 좋습니다.",
+ "skills_needed_ko": ["파이썬", "Hugging Face 번역 모델", "BLEU 평가"],
+ "caveats_ko": ["제목은 한국어-영어지만 스페인어·러시아어도 포함", "외국어→한국어 방향은 문장 수가 더 적음", "71379 통번역 음성 데이터와 같은 기관·구성"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "예능 자막 번역 맛보기", "title_en": "Variety show subtitle translation", "desc_ko": "공개 번역 모델로 예능 대사를 영어로 번역하고 BLEU를 잽니다.", "desc_en": "Translate variety-show lines to English with an open model and measure BLEU."},
+  {"level": "capstone", "title_ko": "K-콘텐츠 자막 번역기", "title_en": "K-content subtitle translator", "desc_ko": "방송 문장으로 번역 모델을 미세조정해 자막 파일을 자동 번역합니다.", "desc_en": "Fine-tune a translator on broadcast lines and translate subtitle files."},
+  {"level": "research", "title_ko": "신조어·관용구 번역 분석", "title_en": "Slang and idiom translation study", "desc_ko": "신조어·관용 표현에서 번역 오류가 얼마나 생기는지 장르별로 분석합니다.", "desc_en": "Analyse translation errors on slang and idioms by genre."}
+ ],
+ "doc_used": true,
+ "uncertain": []
+}

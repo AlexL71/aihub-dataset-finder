@@ -1,0 +1,34 @@
+{
+ "dataset_id": "71502",
+ "title_en": "Broadcast speech and NLP data for better children's speech and context recognition",
+ "summary_ko": "EBS·KBS 어린이 교육방송·드라마·예능에서 모은 음성 약 1,000시간(23,146개 파일)에 전사 글과 카테고리·주제어 정보가 붙어 있습니다. 어린이 목소리 음성 인식과 방송 자막 자동 제작 AI에 쓸 수 있습니다.",
+ "summary_en": "About 1,000 hours of audio (23,146 files) from EBS and KBS children's education, drama and entertainment shows, with transcripts and category/keyword labels. For children's speech recognition and automatic broadcast subtitles.",
+ "contents_ko": "음성(WAV) + JSON(전사, 카테고리, 주제어 등 맥락 정보).",
+ "contents_en": "Audio (WAV) + JSON (transcripts, category, keywords and context).",
+ "modalities": ["audio", "text"],
+ "tasks": ["speech_recognition", "text_classification"],
+ "topics": [{"ko": "음성 인식", "en": "Speech recognition"}, {"ko": "어린이·교육 방송", "en": "Children and educational broadcasting"}],
+ "keywords_ko": ["어린이 음성", "음성 인식", "방송 자막", "EBS", "KBS", "전사"],
+ "keywords_en": ["children's speech", "speech recognition", "broadcast subtitles", "EBS", "KBS", "transcription"],
+ "labels": ["transcript", "category", "keyword"],
+ "file_formats": ["wav", "json", "txt"],
+ "scale_ko": "음성 23,146개, 약 1,001.7시간",
+ "classes_example": ["미취학 아동 발달 교육", "어린이 교육", "어린이 드라마", "어린이 예능"],
+ "baseline": [
+  {"task": "category classification", "model": "KoBERT", "metric": "AP", "value": "98.03%"},
+  {"task": "keyword classification", "model": "KoBERT", "metric": "AP", "value": "89.17%"},
+  {"task": "speech recognition", "model": "HuBERT", "metric": "CER", "value": "11.49%"},
+  {"task": "speech recognition", "model": "HuBERT", "metric": "WER", "value": "23.31%"}
+ ],
+ "difficulty": "advanced",
+ "difficulty_note_ko": "전체 약 860GB로 매우 크고 음성 모델 학습에 큰 GPU가 필요합니다. 일부만 받아 쓰세요.",
+ "skills_needed_ko": ["파이썬", "음성 인식 모델(HuBERT)", "KoBERT 텍스트 분류", "음성 전처리"],
+ "caveats_ko": ["전체 약 860GB", "방송 음성이라 어른 목소리와 배경음이 섞여 있을 수 있음", "방송 저작물 이용 조건 확인 필요"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "방송 프로그램 종류 분류", "title_en": "Programme category classification", "desc_ko": "전사 글로 교육·드라마·예능 중 어떤 프로그램인지 분류합니다.", "desc_en": "Classify programme type from transcripts."},
+  {"level": "capstone", "title_ko": "어린이 방송 자동 자막", "title_en": "Auto subtitles for kids' shows", "desc_ko": "어린이 목소리에 맞게 음성 인식 모델을 미세조정해 자막을 만듭니다.", "desc_en": "Fine-tune speech recognition for children to generate subtitles."},
+  {"level": "research", "title_ko": "어린이·성인 음성 인식 차이", "title_en": "Child vs adult speech recognition gap", "desc_ko": "성인 음성으로 학습한 모델이 어린이 음성에서 틀리는 원인을 분석합니다.", "desc_en": "Analyse why adult-trained models fail on children's speech."}
+ ],
+ "doc_used": true,
+ "uncertain": ["화자가 어린이인 구간과 성인인 구간의 비율이 팩에서 확인되지 않음"]
+}

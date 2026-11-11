@@ -1,0 +1,29 @@
+{
+ "dataset_id": "568",
+ "title_en": "Speech recognition in noisy environments data",
+ "summary_ko": "가전·교통·길거리·카페·시장·지하철·공사장·공장·자연 소리 등 11가지 소음이 자연스럽게 섞인 한국어 대화 음성 약 7,500시간과 받아쓰기(전사) 텍스트 데이터입니다. 시끄러운 곳에서도 말을 잘 알아듣는 음성인식이나 잡음 제거 AI에 쓸 수 있습니다.",
+ "summary_en": "About 7,500 hours of Korean conversational speech naturally mixed with 11 kinds of noise (home appliances, traffic, street, cafes, markets, subway, construction, factories, nature and more), with transcripts. For speech recognition that works in noisy places, or noise-removal AI.",
+ "contents_ko": "소음 섞인 음성(wav) + JSON(전사 텍스트, 소음 종류).",
+ "contents_en": "Noisy speech audio (wav) + JSON (transcript, noise type).",
+ "modalities": ["audio", "text"],
+ "tasks": ["speech_recognition", "audio_classification"],
+ "topics": [{"ko": "음성인식", "en": "Speech recognition"}, {"ko": "소음·음향", "en": "Noise and acoustics"}],
+ "keywords_ko": ["소음", "음성인식", "잡음 제거", "한국어 음성", "전사"],
+ "keywords_en": ["noise", "speech recognition", "noise removal", "Korean speech", "transcription"],
+ "labels": ["transcript", "noise class"],
+ "file_formats": ["wav", "json"],
+ "scale_ko": "음성 약 7,500시간, 소음 클래스 11종",
+ "classes_example": ["가전소음", "교통수단소음", "길거리소음", "카페/음식점소음", "시장/쇼핑몰소음", "지하철/버스소음", "공사장소음"],
+ "baseline": [],
+ "difficulty": "advanced",
+ "difficulty_note_ko": "전체 약 3.8TB로 매우 큽니다. 소음 종류 몇 개만 골라 받으세요.",
+ "skills_needed_ko": ["파이썬", "음성 처리", "음성인식 모델(Whisper 등)"],
+ "caveats_ko": ["전체 약 3.8TB", "실제 사람 목소리라 개인 음성 정보 주의", "성능 지표가 팩 앞부분에 없음"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "소음 종류 분류", "title_en": "Noise type classifier", "desc_ko": "녹음에 섞인 소음이 어떤 종류인지 분류합니다.", "desc_en": "Classify which kind of noise is in a recording."},
+  {"level": "capstone", "title_ko": "시끄러운 곳 받아쓰기 앱", "title_en": "Noisy-place transcription app", "desc_ko": "음성인식 모델을 미세조정해 카페·지하철에서도 받아쓰기가 되게 합니다.", "desc_en": "Fine-tune a speech model so transcription works in cafes and subways."},
+  {"level": "research", "title_ko": "소음별 인식 성능 분석", "title_en": "Recognition error by noise", "desc_ko": "소음 종류마다 인식 오류율이 어떻게 다른지 비교합니다.", "desc_en": "Compare recognition error rates across noise types."}
+ ],
+ "doc_used": true,
+ "uncertain": []
+}

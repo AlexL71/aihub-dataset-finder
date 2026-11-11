@@ -1,0 +1,12 @@
+{
+ "dataset_id": "116",
+ "easy_ko": "작은 가게와 관공서 민원 창구에서 손님과 직원이 나누는 대화를 모으고, 손님이 무엇을 원하는지(의도)와 중요한 단어, 비슷한 말 사전을 붙인 데이터입니다. 가게 주문이나 민원 안내를 하는 챗봇을 만들 수 있습니다.",
+ "easy_en": "Conversations between customers and staff at small shops and public-service counters, labelled with what the customer wants (intent), key words and a dictionary of similar words. You can build chatbots that take shop orders or guide people through public services.",
+ "detail_ko": "소상공인 가게와 공공 민원 10개 분야의 손님-점원 대화 50만 건 이상으로, 손님 질문, 점원 추가 질문, 손님 답변, 시스템 응답과 도메인·카테고리, 메인/서브 의도, 엔티티, 시소러스가 있습니다. 2018년 구축으로 오래되었고 기준 성능 지표가 없으며, 파일 형식(xlsx)은 기록에서 확인되지 않은 추정입니다.",
+ "detail_en": "500k+ customer–staff dialogues across 10 small-business and public-service domains, with customer question, staff follow-up, customer answer and system response, plus domain, category, main and sub intent, entities and a thesaurus. Built in 2018 (dated), no baseline, and the file format (xlsx) is not confirmed.",
+ "amount_ko": "대화 50만 건 이상, 분야 10개",
+ "amount_en": "500k+ dialogues, 10 domains",
+ "labels_ko": "분야·종류, 손님 의도(큰 의도·세부 의도), 중요한 단어, 비슷한 말 사전",
+ "labels_en": "domain and category, main and sub intent, entities, thesaurus",
+ "status": "full-run-2026-11-02"
+}

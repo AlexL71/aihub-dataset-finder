@@ -1,0 +1,29 @@
+{
+ "dataset_id": "71300",
+ "title_en": "OCR data (education)",
+ "summary_ko": "초등 1학년부터 고등 3학년까지 학생들이 학원·학교·공모에서 쓴 손글씨 문서 약 12.9만 장에 글자 영역과 내용을 표시한 데이터입니다. 학년별로 고르게 나뉘어 있습니다. 학생 손글씨를 읽어 답안지를 자동 채점하는 에듀테크 OCR AI에 쓸 수 있습니다.",
+ "summary_en": "About 129,000 pages of handwriting by students from grade 1 to grade 12, collected from academies, schools and an open call, with text regions and content marked and spread evenly across grades. For edtech OCR AI that reads student handwriting and grades answer sheets automatically.",
+ "contents_ko": "손글씨 문서 이미지(png) + JSON(글자 영역, 텍스트, 학년).",
+ "contents_en": "Handwritten page images (png) + JSON (text regions, text, grade).",
+ "modalities": ["image", "text"],
+ "tasks": ["ocr"],
+ "topics": [{"ko": "교육", "en": "Education"}, {"ko": "에듀테크", "en": "Edtech"}],
+ "keywords_ko": ["학생 손글씨", "OCR", "자동 채점", "에듀테크", "답안지"],
+ "keywords_en": ["student handwriting", "OCR", "automatic grading", "edtech", "answer sheets"],
+ "labels": ["text region segmentation", "transcription", "grade"],
+ "file_formats": ["png", "json"],
+ "scale_ko": "손글씨 이미지 약 12.9만 장, 학년 12단계",
+ "classes_example": ["초1", "초6", "중1", "중3", "고1", "고3"],
+ "baseline": [],
+ "difficulty": "intermediate",
+ "difficulty_note_ko": "약 126GB이고 저학년 손글씨는 모양이 불규칙해 어렵습니다.",
+ "skills_needed_ko": ["파이썬", "OCR 모델(텍스트 탐지·인식)"],
+ "caveats_ko": ["미성년자 손글씨라 개인정보 주의", "성능 지표 표가 팩에서 비어 있음", "605번 대용량 손글씨 OCR과 함께 쓸 수 있음"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "학년 추정", "title_en": "Grade estimation", "desc_ko": "손글씨만 보고 대략 몇 학년인지 분류합니다.", "desc_en": "Estimate a student's grade from handwriting."},
+  {"level": "capstone", "title_ko": "받아쓰기 자동 채점", "title_en": "Dictation auto-grader", "desc_ko": "받아쓰기 답안을 읽어 정답과 비교해 채점합니다.", "desc_en": "Read dictation answers and grade them against the key."},
+  {"level": "research", "title_ko": "저학년 손글씨 인식", "title_en": "Young-child handwriting OCR", "desc_ko": "초등 저학년의 불규칙한 손글씨 인식을 높이는 방법을 연구합니다.", "desc_en": "Improve OCR for young children's irregular handwriting."}
+ ],
+ "doc_used": true,
+ "uncertain": ["baseline values"]
+}

@@ -1,0 +1,29 @@
+{
+ "dataset_id": "71767",
+ "title_en": "Korean popular music loop sound generation data",
+ "summary_ko": "컨소시엄이 가진 대중음악에서 만든 악기별 루프(짧은 반복 프레이즈) 오디오 120,000건으로, 각 오디오에 악보 형태의 채보(MIDI)와 악기·속성 메타데이터가 붙어 있습니다. 보컬 멜로디, 드럼, 피아노, 기타, 베이스, 스트링 등이 있어 AI 작곡, 자동 채보, 허밍 기반 음악 창작에 쓸 수 있습니다.",
+ "summary_en": "120,000 instrument loop (short repeated phrase) audio clips made from the consortium's popular music, each with a MIDI transcription and instrument/attribute metadata. Includes vocal melody, drums, piano, guitar, bass and strings, for AI composition, automatic transcription and humming-based music creation.",
+ "contents_ko": "오디오(wav) + 채보(mid) + 메타데이터(json).",
+ "contents_en": "Audio (wav) + transcription (mid) + metadata (json).",
+ "modalities": ["audio"],
+ "tasks": ["audio_classification", "speech_recognition", "text_generation"],
+ "topics": [{"ko": "AI 음악", "en": "AI music"}, {"ko": "음악 창작", "en": "Music creation"}],
+ "keywords_ko": ["루프 사운드", "K-pop", "MIDI", "자동 채보", "AI 작곡", "Music Transformer"],
+ "keywords_en": ["loop sound", "K-pop", "MIDI", "automatic transcription", "AI composition", "Music Transformer"],
+ "labels": ["MIDI transcription", "metadata"],
+ "file_formats": ["wav", "mid", "json"],
+ "scale_ko": "오디오·채보·메타데이터 각 120,000건",
+ "classes_example": ["Vocal Melody", "Drums", "Piano", "Guitar", "Bass", "Strings"],
+ "baseline": [],
+ "difficulty": "intermediate",
+ "difficulty_note_ko": "약 68GB입니다. MIDI 생성 실습은 쉽지만 오디오→MIDI 채보는 어렵습니다.",
+ "skills_needed_ko": ["파이썬", "오디오 처리(librosa)", "MIDI 처리(pretty_midi)", "시퀀스 생성 모델"],
+ "caveats_ko": ["페이지에 성능 점수 표가 없음(Music Transformer 등 소개만 있음)", "tasks의 speech_recognition은 자동 채보를, text_generation은 MIDI 생성을 대신한 근사값", "상업 음원 기반이라 생성물 저작권에 주의"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "악기 종류 분류", "title_en": "Instrument classifier", "desc_ko": "루프 오디오가 어떤 악기인지 분류합니다.", "desc_en": "Classify which instrument plays a loop."},
+  {"level": "capstone", "title_ko": "멜로디 자동 생성기", "title_en": "Melody generator", "desc_ko": "MIDI로 Music Transformer를 학습해 새 멜로디를 만듭니다.", "desc_en": "Train a Music Transformer on MIDI to make new melodies."},
+  {"level": "research", "title_ko": "오디오→악보 채보", "title_en": "Audio-to-score transcription", "desc_ko": "wav와 MIDI 쌍으로 자동 채보 정확도를 높이는 방법을 연구합니다.", "desc_en": "Study improving transcription with wav-MIDI pairs."}
+ ],
+ "doc_used": true,
+ "uncertain": []
+}

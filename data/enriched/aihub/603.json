@@ -1,0 +1,29 @@
+{
+ "dataset_id": "603",
+ "title_en": "Old book Chinese character (Hanja) OCR data",
+ "summary_ko": "조선시대 고서 원문 이미지 약 5.6만 장에 들어 있는 한자 약 1,044만 자 하나하나에 상자와 유니코드 한자를 표시한 데이터입니다. 해서·행서·초서 등 서체와 목판본·활자본·필사본 등 판본이 다양합니다. 옛 문헌의 한자를 디지털 글자로 읽어내는 OCR AI에 쓸 수 있습니다.",
+ "summary_en": "About 56,000 page images of Joseon-era old books with about 10.4 million individual Chinese characters (Hanja), each marked with a box and its Unicode character. Includes several scripts (regular, running, cursive) and printing types (woodblock, movable type, handwritten). For OCR AI that turns old documents into digital text.",
+ "contents_ko": "고서 페이지 이미지(jpg) + JSON(글자별 상자, 유니코드 한자).",
+ "contents_en": "Old-book page images (jpg) + JSON (per-character box, Unicode Hanja).",
+ "modalities": ["image", "text"],
+ "tasks": ["ocr", "object_detection"],
+ "topics": [{"ko": "역사·고문헌", "en": "History and old documents"}, {"ko": "문화유산 디지털화", "en": "Cultural heritage digitisation"}],
+ "keywords_ko": ["고서", "한자", "OCR", "조선시대", "고문헌", "서체"],
+ "keywords_en": ["old books", "Chinese characters", "OCR", "Joseon dynasty", "historical documents", "calligraphy styles"],
+ "labels": ["character bounding box", "Unicode character"],
+ "file_formats": ["jpg", "json"],
+ "scale_ko": "한자 약 1,044만 자, 이미지 약 5.6만 장, 서체 5종",
+ "classes_example": ["해서", "행서", "초서", "전서", "예서"],
+ "baseline": [{"task": "character detection", "model": "HRCenterNet", "metric": "F1", "value": "0.8472"}],
+ "difficulty": "advanced",
+ "difficulty_note_ko": "약 87GB이고 한자 종류가 수천 개라 인식이 어렵습니다. 글자 위치 탐지부터 시작하세요.",
+ "skills_needed_ko": ["파이썬", "객체 탐지", "OCR 모델", "한자 기초"],
+ "caveats_ko": ["해서체가 66%로 치우치고 전서·예서는 매우 적음", "글자 종류가 많아 드문 한자는 예시가 적음"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "한자 위치 탐지", "title_en": "Character localisation", "desc_ko": "고서 페이지에서 글자 하나하나의 위치를 찾습니다.", "desc_en": "Find the position of each character on a page."},
+  {"level": "capstone", "title_ko": "고서 디지털 텍스트 변환기", "title_en": "Old-book digitiser", "desc_ko": "페이지 사진을 올리면 한자 텍스트로 바꿔 검색할 수 있게 합니다.", "desc_en": "Turn page photos into searchable Hanja text."},
+  {"level": "research", "title_ko": "초서체 인식 개선", "title_en": "Better cursive recognition", "desc_ko": "데이터가 적은 초서체 인식을 높이는 방법을 연구합니다.", "desc_en": "Improve recognition of under-represented cursive script."}
+ ],
+ "doc_used": true,
+ "uncertain": []
+}

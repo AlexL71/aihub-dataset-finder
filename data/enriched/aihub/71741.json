@@ -1,0 +1,29 @@
+{
+ "dataset_id": "71741",
+ "title_en": "Daily-life task and command execution data (spaces), 2023",
+ "summary_ko": "카페·식당·오피스·아파트·주택·학원 등 한국형 실내 공간 1,400개를 3D(FBX)로 만든 데이터로, 의미·개체 분할과 깊이(Depth) 정보가 붙어 있습니다. 집안일·심부름 같은 명령을 수행하는 AI 에이전트·로봇이 실내 공간을 이해하도록 학습하는 데 쓸 수 있습니다.",
+ "summary_en": "1,400 Korean-style indoor 3D spaces (FBX) such as cafes, restaurants, offices, apartments, houses and academies, with semantic and instance segmentation and depth. For training AI agents and robots that carry out household commands to understand indoor spaces.",
+ "contents_ko": "3D 공간(fbx) + 렌더링 이미지(png) + JSON(의미·개체 분할, 깊이, 메타정보).",
+ "contents_en": "3D space (fbx) + rendered images (png) + JSON (semantic and instance segmentation, depth, metadata).",
+ "modalities": ["3d", "image"],
+ "tasks": ["segmentation", "depth_estimation", "3d_reconstruction"],
+ "topics": [{"ko": "로봇·AI 에이전트", "en": "Robots and AI agents"}, {"ko": "실내 공간·디지털 트윈", "en": "Indoor spaces and digital twins"}],
+ "keywords_ko": ["실내 공간", "3D 공간", "로봇 에이전트", "분할", "깊이 추정", "임베디드 AI"],
+ "keywords_en": ["indoor space", "3D scenes", "robot agent", "segmentation", "depth estimation", "embodied AI"],
+ "labels": ["semantic segmentation", "instance segmentation", "depth"],
+ "file_formats": ["fbx", "png", "json"],
+ "scale_ko": "3D 공간 1,400개(카페 358·아파트 311·오피스 210 등)",
+ "classes_example": ["카페", "식당", "오피스", "바", "아파트", "주택", "오피스텔", "학원"],
+ "baseline": [],
+ "difficulty": "advanced",
+ "difficulty_note_ko": "3D 공간과 렌더링을 다뤄야 하고 약 224GB입니다. 렌더링 이미지 분할부터 시작하세요.",
+ "skills_needed_ko": ["파이썬", "분할 모델(Mask R-CNN)", "3D 도구(Blender·Unity)", "깊이 추정"],
+ "caveats_ko": ["페이지에 성능 점수 표가 없음(Mask R-CNN 픽셀 정확도 목표 80%만 소개)", "가상 3D 공간이라 실제 사진과 차이가 있음", "71742(물체)·71743(명령어)과 같은 시리즈"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "실내 장면 분할", "title_en": "Indoor scene segmentation", "desc_ko": "렌더링 이미지에서 가구·벽·바닥을 분할합니다.", "desc_en": "Segment furniture, walls and floors in rendered images."},
+  {"level": "capstone", "title_ko": "로봇 심부름 시뮬레이터", "title_en": "Robot errand simulator", "desc_ko": "3D 공간을 불러와 로봇이 목표 장소로 이동하는 시뮬레이션을 만듭니다.", "desc_en": "Load 3D spaces and simulate a robot moving to a target."},
+  {"level": "research", "title_ko": "가상→실제 실내 인식", "title_en": "Synthetic-to-real indoor perception", "desc_ko": "가상 공간으로 학습한 분할·깊이 모델이 실제 사진에서 통하는지 연구합니다.", "desc_en": "Study whether models trained on synthetic spaces work on real photos."}
+ ],
+ "doc_used": true,
+ "uncertain": []
+}

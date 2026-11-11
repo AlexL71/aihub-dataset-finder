@@ -1,0 +1,29 @@
+{
+ "dataset_id": "71416",
+ "title_en": "IR real-environment face detection and recognition data",
+ "summary_ko": "CCTV에 많이 쓰는 적외선(IR) 카메라로 실내·실외(직광·역광)에서 찍은 얼굴 이미지 240,712장입니다. 인식용은 3,001명×72장, 검출용은 여러 명이 함께 찍힌 308팀×80장이며, 얼굴 상자와 키포인트가 표시되어 있어 야간·IR 환경 얼굴 검출·인식 AI에 쓸 수 있습니다.",
+ "summary_en": "240,712 face images from infrared (IR) cameras indoors and outdoors (direct and back light): 3,001 people x 72 images for recognition and 308 groups x 80 images for detection, with face boxes and keypoints. For IR face detection and recognition in CCTV.",
+ "contents_ko": "IR 얼굴 이미지(png) + JSON(얼굴 상자, 키포인트, 촬영 환경, 성별·연령대).",
+ "contents_en": "IR face image (png) + JSON (face box, keypoints, capture setting, gender and age group).",
+ "modalities": ["image"],
+ "tasks": ["object_detection", "keypoint_pose", "image_classification"],
+ "topics": [{"ko": "보안·감시", "en": "Security and surveillance"}, {"ko": "공공안전·신원 확인", "en": "Public safety and identity checks"}],
+ "keywords_ko": ["적외선 카메라", "얼굴 검출", "얼굴 인식", "CCTV", "야간 감시", "위변조 탐지"],
+ "keywords_en": ["infrared camera", "face detection", "face recognition", "CCTV", "night surveillance", "presentation attack detection"],
+ "labels": ["bounding box", "keypoints", "identity", "capture setting"],
+ "file_formats": ["png", "json"],
+ "scale_ko": "IR 얼굴 이미지 240,712장(인식용 216,072장=3,001명×72장, 검출용 24,640장=308팀×80장)",
+ "classes_example": ["실내 환경", "실외-직광", "실외-역광", "남자", "여자"],
+ "baseline": [{"task": "face recognition", "model": "RetinaFace", "metric": "Accuracy", "value": "94.93%"}, {"task": "face detection", "model": "ArcFace", "metric": "mAP", "value": "97.86%"}],
+ "difficulty": "intermediate",
+ "difficulty_note_ko": "검출·인식 실습에 좋고 약 261GB입니다. 검출용(약 2.5만 장)부터 시작하세요.",
+ "skills_needed_ko": ["파이썬", "얼굴 검출(RetinaFace)", "얼굴 인식(ArcFace)", "임베딩 비교"],
+ "caveats_ko": ["실제 얼굴 사진이라 개인정보·초상권 이용 조건을 꼭 확인", "성능표의 모델 이름이 바뀌어 보임(보통 RetinaFace는 검출, ArcFace는 인식용)", "같은 사람 72장이 있어 사람 단위로 분할해야 함"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "IR 얼굴 검출", "title_en": "IR face detection", "desc_ko": "IR 이미지에서 얼굴을 찾아 상자로 표시합니다.", "desc_en": "Detect and box faces in IR images."},
+  {"level": "capstone", "title_ko": "야간 출입 인증", "title_en": "Night-time access check", "desc_ko": "IR 카메라 얼굴로 등록된 사람인지 확인하는 출입 시스템 데모를 만듭니다.", "desc_en": "Build an IR face access-control demo."},
+  {"level": "research", "title_ko": "RGB→IR 전이 학습", "title_en": "RGB-to-IR transfer", "desc_ko": "일반 사진으로 학습한 얼굴 인식 모델을 IR 이미지에 맞추는 방법을 연구합니다.", "desc_en": "Study adapting RGB-trained face models to IR."}
+ ],
+ "doc_used": true,
+ "uncertain": []
+}

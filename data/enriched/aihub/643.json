@@ -1,0 +1,32 @@
+{
+ "dataset_id": "643",
+ "title_en": "Land cover map aerial and satellite image data (Jeju)",
+ "summary_ko": "제주 지역 항공사진(0.25m) 약 2.5만 장에 건물·주차장·도로·가로수·비닐하우스·밭·산림·나지 8종, Sentinel-2 위성영상(10m) 1,000장에 건물·도로·농경지·산림 4종 토지 피복을 칠한 데이터입니다. 땅이 어떻게 쓰이는지 지도로 만들고 변화를 찾는 AI에 쓸 수 있습니다.",
+ "summary_en": "About 25,000 aerial photos (0.25 m) of Jeju painted with 8 land-cover classes (buildings, parking lots, roads, street trees, greenhouses, fields, forest, bare land) and 1,000 Sentinel-2 satellite images (10 m) with 4 classes (buildings, roads, farmland, forest). For AI that maps land use and detects change.",
+ "contents_ko": "항공·위성 영상(TIF) + 라벨 마스크(TIF) + JSON.",
+ "contents_en": "Aerial and satellite images (TIF) + label masks (TIF) + JSON.",
+ "modalities": ["image"],
+ "tasks": ["segmentation"],
+ "topics": [{"ko": "국토·환경 모니터링", "en": "Land and environment monitoring"}, {"ko": "원격탐사", "en": "Remote sensing"}],
+ "keywords_ko": ["토지 피복", "항공사진", "위성영상", "제주", "비닐하우스", "변화 탐지"],
+ "keywords_en": ["land cover", "aerial photos", "satellite imagery", "Jeju", "greenhouses", "change detection"],
+ "labels": ["segmentation mask", "land-cover class"],
+ "file_formats": ["tif", "json"],
+ "scale_ko": "이미지 약 2.6만 장(항공 약 2.5만, 위성 1,000), 클래스 8종(항공)·4종(위성)",
+ "classes_example": ["건물", "주차장", "도로", "가로수", "비닐하우스", "밭", "산림", "나지"],
+ "baseline": [
+  {"task": "land-cover segmentation (aerial 25 cm)", "model": "U-Net", "metric": "pixel accuracy", "value": "95.24%"},
+  {"task": "land-cover segmentation (satellite 10 m)", "model": "U-Net", "metric": "pixel accuracy", "value": "95.95%"}
+ ],
+ "difficulty": "beginner",
+ "difficulty_note_ko": "약 19GB로 토지 피복 3개 지역판 중 가장 작아 처음 시작하기 좋습니다.",
+ "skills_needed_ko": ["파이썬", "분할 모델(U-Net)", "TIFF·GIS 기초"],
+ "caveats_ko": ["제주 지역만 있음", "다른 지역판과 달리 '논' 대신 '비닐하우스' 클래스가 있음", "641·642번 다른 지역판과 구조가 같음"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "비닐하우스 찾기", "title_en": "Greenhouse segmentation", "desc_ko": "항공사진에서 비닐하우스 영역을 칠합니다.", "desc_en": "Segment greenhouses in aerial photos."},
+  {"level": "capstone", "title_ko": "제주 개발 변화 지도", "title_en": "Jeju development map", "desc_ko": "산림·밭이 건물로 바뀐 곳을 지도로 보여줍니다.", "desc_en": "Map where forest and fields became buildings."},
+  {"level": "research", "title_ko": "항공→위성 지식 전달", "title_en": "Aerial-to-satellite transfer", "desc_ko": "고해상도 항공 라벨로 저해상도 위성 분할을 돕는 방법을 연구합니다.", "desc_en": "Use high-resolution aerial labels to help low-resolution satellite segmentation."}
+ ],
+ "doc_used": true,
+ "uncertain": []
+}

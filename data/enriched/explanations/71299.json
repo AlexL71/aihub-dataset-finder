@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71299",
+ "easy_ko": "시청과 외교사료관의 오래된 공공 문서를 스캔한 사진마다 인쇄 글씨, 타자기 글씨, 손글씨가 있는 곳과 정답 글자를 표시한 데이터입니다. 오래되고 흐릿한 행정 문서를 자동으로 읽어 컴퓨터 글자로 바꿔 주는 AI를 만들 수 있습니다.",
+ "easy_en": "Scans of old public documents from city halls and the diplomatic archives, with printed, typewritten and handwritten text marked along with the correct text. You can build AI that reads old, blurry administrative documents and turns them into digital text.",
+ "detail_ko": "창원시·김해시 공공문서와 외교사료관 문서 스캔 이미지 약 61.5만 장(jpg; 1980년대 이전~2010년대)에 인쇄체·타자체·손글씨 글자 영역, 텍스트, 분야(건설, 경제, 농림수산, 문화, 복지, 환경, 외교), 연대를 JSON으로 붙였습니다. 성능 지표 표는 비어 있습니다. 공공문서 개인정보가 가려졌는지 확인이 필요하고, 외교 문서는 2,549장으로 매우 적으며, 71300번 교육 OCR과 같은 구축 기관입니다.",
+ "detail_en": "About 615k scanned images (jpg) of public documents from Changwon and Gimhae city halls and the diplomatic archives (from before the 1980s to the 2010s), with JSON text regions for printed, typewritten and handwritten text, transcription, field (construction, economy, agriculture and fisheries, culture, welfare, environment, diplomacy) and decade. The performance table is empty. Check that personal data is masked; diplomatic documents are very few (2,549); same organisation as dataset 71300.",
+ "amount_ko": "문서 사진 약 61.5만 장, 분야 7종",
+ "amount_en": "about 615k document images, 7 fields",
+ "labels_ko": "글자 영역, 정답 글자, 문서 분야, 만든 시기",
+ "labels_en": "text regions, transcription, field, decade",
+ "status": "full-run-2026-11-02"
+}

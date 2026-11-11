@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71511",
+ "easy_ko": "제주 농가 40곳의 감귤나무를 찍은 사진 20만여 장에 꽃과 새순 부분을 테두리로 표시하고, 나무 크기와 꽃 핀 정도, 날씨 같은 환경 정보를 함께 담은 데이터입니다. 감귤이 얼마나 열릴지와 생산량을 미리 예측하는 AI에 쓸 수 있습니다.",
+ "easy_en": "Over 200,000 photos of citrus trees on 40 farms in Jeju, with flowers and new shoots outlined, plus tree size, how much the tree is flowering and environment data such as weather. You can use it to build AI that predicts how much fruit the trees will set and how big the harvest will be.",
+ "detail_ko": "제주 동·서·남·북 40개 농가의 감귤나무 이미지·라벨 201,184세트(jpg, JSON)로, 꽃·새순 영역 다각형, 나무 크기, 꽃·새순 상태 등급(많음, 보통, 빈약), 환경·메타 데이터가 있습니다. 기준 성능은 PyCaret 착과량 예측 MAPE 4.89%, NMAE 3.5%입니다. 전체 약 850GB이고, 팩의 클래스 예시는 꽃·새순 상태 등급입니다.",
+ "detail_en": "201,184 image-label sets (jpg, JSON) of citrus trees on 40 farms across east, west, south and north Jeju, with polygons for flowers and new shoots, tree size, flower/shoot state grades (many, normal, sparse) and environment and meta data. Baselines: fruit-set prediction with PyCaret, MAPE 4.89% and NMAE 3.5%. Total size is about 850 GB. The class examples in the pack are flower/shoot state grades.",
+ "amount_ko": "이미지·라벨 201,184세트, 농가 40곳",
+ "amount_en": "201,184 image-label sets, 40 farms",
+ "labels_ko": "꽃·새순 테두리, 나무 크기, 꽃 핀 정도, 환경 정보",
+ "labels_en": "polygons, tree size, flower/shoot state, environment data",
+ "status": "full-run-2026-11-02"
+}

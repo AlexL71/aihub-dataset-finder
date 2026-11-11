@@ -1,0 +1,29 @@
+{
+ "dataset_id": "71590",
+ "title_en": "High-precision collection vehicle daytime expressway data",
+ "summary_ko": "카메라·라이다·레이더·GNSS/INS를 동기화해 단 수집 차량으로 낮 시간 자동차 전용도로를 달리며 모은 데이터로, 전방 카메라 이미지 10만 장과 라이다 점군 10만 개가 있습니다. 판옵틱 분할과 3D 상자가 있어 고속 주행 자율주행 인식 연구에 쓸 수 있습니다.",
+ "summary_en": "Daytime expressway driving data from a vehicle with synchronised camera, lidar, radar and GNSS/INS: 100k front images and 100k lidar point clouds with panoptic segmentation and 3D boxes, for highway autonomous-driving perception.",
+ "contents_ko": "카메라 이미지(jpg) + 라이다 점군(pcd) + JSON(2D 판옵틱 분할, 3D 상자) + GNSS/INS 위치 정보.",
+ "contents_en": "Camera image (jpg) + lidar point cloud (pcd) + JSON (2D panoptic segmentation, 3D cuboids) + GNSS/INS pose.",
+ "modalities": ["image", "3d", "sensor"],
+ "tasks": ["segmentation", "object_detection"],
+ "topics": [{"ko": "자율주행", "en": "Autonomous driving"}, {"ko": "고속도로 교통", "en": "Highway traffic"}],
+ "keywords_ko": ["자율주행", "자동차 전용도로", "라이다", "판옵틱 분할", "3D 객체 탐지", "센서 융합"],
+ "keywords_en": ["autonomous driving", "expressway", "lidar", "panoptic segmentation", "3D object detection", "sensor fusion"],
+ "labels": ["panoptic segmentation", "3D cuboid"],
+ "file_formats": ["jpg", "pcd", "json"],
+ "scale_ko": "전방 카메라 이미지 100,000장, 라이다 점군 100,000개, 주행 장면 500개 이상",
+ "classes_example": ["맑음", "흐림", "비/눈", "평일", "휴일"],
+ "baseline": [{"task": "3D object detection", "model": "Voxel R-CNN", "metric": "mAP", "value": "87.03%"}, {"task": "panoptic segmentation", "model": "EfficientPS", "metric": "PQ", "value": "50.3%"}],
+ "difficulty": "advanced",
+ "difficulty_note_ko": "카메라·라이다를 함께 다뤄야 하고 전체 약 328GB입니다. 카메라 분할부터 시작하세요.",
+ "skills_needed_ko": ["파이썬", "분할 모델", "3D 점군 처리(Open3D·OpenPCDet)", "센서 좌표 변환"],
+ "caveats_ko": ["물체 클래스 목록은 팩 앞부분에 없음", "개요에 '도심부 데이터'라는 문구가 남아 있으나 실제는 자동차 전용도로", "71588 야간 전용도로 데이터와 같은 구성"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "고속도로 장면 분할", "title_en": "Expressway scene segmentation", "desc_ko": "전방 이미지에서 도로·차량·가드레일 영역을 분할합니다.", "desc_en": "Segment road, vehicles and guardrails in front images."},
+  {"level": "capstone", "title_ko": "라이다 차량 탐지 뷰어", "title_en": "Lidar vehicle detection viewer", "desc_ko": "점군에서 차량을 3D 상자로 탐지하고 화면에 보여 줍니다.", "desc_en": "Detect vehicles as 3D boxes in point clouds and visualise them."},
+  {"level": "research", "title_ko": "도심·고속도로 일반화", "title_en": "Urban vs expressway generalisation", "desc_ko": "도심 데이터(71577)와 전용도로 데이터 사이 모델 성능 차이를 연구합니다.", "desc_en": "Study performance gaps between urban (71577) and expressway data."}
+ ],
+ "doc_used": true,
+ "uncertain": []
+}

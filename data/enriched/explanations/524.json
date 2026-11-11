@@ -1,0 +1,12 @@
+{
+ "dataset_id": "524",
+ "easy_ko": "벼, 콩, 옥수수, 감자, 고구마, 참깨 같은 밭 작물을 땅에서 찍은 사진, 드론 특수 카메라, 온도 센서, 흙·환경 센서로 함께 기록하고, 사진마다 작물과 잡초 영역을 칠해 둔 데이터입니다. 작물이 잘 자라는지 판단하고 잡초를 찾아내는 농업 AI를 만들 수 있습니다.",
+ "easy_en": "Field crops such as rice, soybean, maize, potato, sweet potato and sesame recorded with ground photos, drone spectral cameras, infrared temperature and soil and environment sensors, with crop and weed areas coloured in on each photo. You can build farming AI that judges how well crops grow and finds weeds.",
+ "detail_ko": "노지 작물 10종(벼 조생종·중만생종, 콩, 옥수수, 감자, 고구마, 참깨, 들깨 등)을 지상 RGB, 다분광 드론, 적외선 온도, 토양·환경 센서로 기록한 데이터로, RGB 학습 이미지 715,178개(jpg)에 작물·잡초 분할과 생육 정보(생육단계 1~3)를 JSON으로 붙였고, 토양·환경 158,200세트와 적외선 133,911개 등이 있습니다. 기준 성능은 기록에서 확인되지 않습니다.",
+ "detail_en": "Records of 10 open-field crops (early and mid-late rice, soybean, maize, potato, sweet potato, sesame, perilla and more) from ground RGB, multispectral drones, infrared temperature and soil/environment sensors: 715,178 RGB training images (jpg) with JSON crop and weed segmentation and growth info (stages 1–3), plus 158,200 soil/environment sets, 133,911 infrared records and more. No baseline is visible in the record.",
+ "amount_ko": "사진 약 71.5만 장, 흙·환경 기록 약 15.8만 세트",
+ "amount_en": "about 715k images, about 158k soil and environment sets",
+ "labels_ko": "작물·잡초 영역(색칠), 자라는 단계, 센서 값",
+ "labels_en": "crop and weed masks, growth stage, sensor values",
+ "status": "full-run-2026-11-02"
+}

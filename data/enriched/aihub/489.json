@@ -1,0 +1,29 @@
+{
+ "dataset_id": "489",
+ "title_en": "CCTV videos for foot-traffic analysis",
+ "summary_ko": "부산 자갈치시장·서면·사직구장·동래역·사상터미널 등 상권 7곳의 CCTV 화각 영상 330시간(3분 클립 6,600개)으로, 사람 상자와 영역이 표시되고 얼굴은 비식별 처리되어 있습니다. 시간대·장소별 유동인구 분석, 버스 노선 같은 도시 정책, 인상착의로 사람 찾기에 쓸 수 있습니다.",
+ "summary_en": "330 hours (6,600 three-minute clips) of CCTV-angle video from 7 commercial areas in Busan (Jagalchi Market, Seomyeon, Sajik Stadium, Dongnae Station, Sasang Terminal and more), with people boxed and segmented and faces anonymised. For foot-traffic analysis by time and place, urban policy such as bus routes, and finding people by appearance.",
+ "contents_ko": "CCTV 영상(mp4) + JSON(사람 상자·분할, 인상착의 속성, 장소·시간대).",
+ "contents_en": "CCTV video (mp4) + JSON (person boxes and segmentation, appearance attributes, place and time of day).",
+ "modalities": ["video", "image"],
+ "tasks": ["object_detection", "object_tracking", "segmentation"],
+ "topics": [{"ko": "상권·유동인구", "en": "Commercial areas and foot traffic"}, {"ko": "도시 정책", "en": "Urban policy"}, {"ko": "CCTV", "en": "CCTV"}],
+ "keywords_ko": ["유동인구", "상권 분석", "CCTV", "보행자 계수", "부산", "인상착의"],
+ "keywords_en": ["foot traffic", "commercial area analysis", "CCTV", "people counting", "Busan", "appearance search"],
+ "labels": ["bounding box", "segmentation", "attributes"],
+ "file_formats": ["mp4", "json"],
+ "scale_ko": "3분 클립 6,600개(330시간), 상권 7곳, 시간대 5개",
+ "classes_example": ["자갈치시장", "서면", "사직구장 주변", "동래역", "사상 시외버스 터미널"],
+ "baseline": [],
+ "difficulty": "intermediate",
+ "difficulty_note_ko": "사람 탐지·계수는 쉽고 추적·속성 검색은 중급 이상입니다. 약 380GB입니다.",
+ "skills_needed_ko": ["파이썬", "YOLO 탐지", "객체 추적"],
+ "caveats_ko": ["실제 거리 영상이라 이용 약관·개인정보 확인 필요", "성능 지표가 팩 앞부분에 없음"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "시간대별 유동인구 그래프", "title_en": "Foot traffic by time of day", "desc_ko": "사람 수를 세어 상권·시간대별 그래프를 그립니다.", "desc_en": "Count people and plot traffic by area and time."},
+  {"level": "capstone", "title_ko": "상권 혼잡도 대시보드", "title_en": "Commercial-area crowd dashboard", "desc_ko": "CCTV로 실시간 혼잡도를 보여주는 대시보드를 만듭니다.", "desc_en": "Show live crowd levels from CCTV on a dashboard."},
+  {"level": "research", "title_ko": "유동인구와 상권 매출 관계", "title_en": "Foot traffic and sales", "desc_ko": "유동인구 패턴과 공개 상권 매출 통계의 관계를 분석합니다.", "desc_en": "Relate foot-traffic patterns to public sales statistics."}
+ ],
+ "doc_used": true,
+ "uncertain": []
+}

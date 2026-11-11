@@ -1,0 +1,29 @@
+{
+ "dataset_id": "71936",
+ "title_en": "Autonomous driving virtual sensor simulation data (upcycling)",
+ "summary_ko": "디지털 트윈 도로 환경에서 날씨·시간·차량(승용차·트럭·버스) 조건을 바꿔 만든 자율주행 가상센서 시뮬레이션 데이터로, 카메라 이미지 3,840만 장과 점군(PCD) 3,840만 건입니다. 기존 데이터를 중복 제거·경량화한 업사이클링판이며 라벨은 없습니다. 실제로 재현하기 어려운 돌발 상황 테스트와 시뮬레이션 기반 사전학습에 쓸 수 있습니다.",
+ "summary_en": "Virtual-sensor simulation data from a digital-twin road environment with varied weather, time and vehicles (car, truck, bus): 38.4M camera images and 38.4M point clouds (PCD). An upcycled, de-duplicated and slimmed version of earlier data, with no labels. For testing rare edge cases and simulation pretraining.",
+ "contents_ko": "가상 카메라 이미지(png) + 가상 라이다 점군(pcd), 라벨 없음.",
+ "contents_en": "Virtual camera images (png) + virtual lidar point clouds (pcd), no labels.",
+ "modalities": ["image", "3d"],
+ "tasks": ["object_detection", "depth_estimation"],
+ "topics": [{"ko": "자율주행 시뮬레이션", "en": "Driving simulation"}, {"ko": "디지털 트윈", "en": "Digital twins"}],
+ "keywords_ko": ["가상센서", "시뮬레이션", "디지털 트윈", "라이다", "엣지 케이스", "업사이클링"],
+ "keywords_en": ["virtual sensors", "simulation", "digital twin", "lidar", "edge cases", "upcycling"],
+ "labels": ["none (unlabelled raw sensor data)"],
+ "file_formats": ["png", "pcd"],
+ "scale_ko": "이미지 38,400,000장, PCD 38,400,000건(SSD 단위 180만 건씩)",
+ "classes_example": [],
+ "baseline": [],
+ "difficulty": "advanced",
+ "difficulty_note_ko": "전체 약 8TB로 매우 크고 라벨이 없습니다. SSD 한 묶음만 받아 자기지도 학습이나 시각화부터 하세요.",
+ "skills_needed_ko": ["파이썬", "3D 점군 처리(Open3D)", "자기지도 학습 기초", "대용량 데이터 관리"],
+ "caveats_ko": ["라벨이 없어 지도학습 탐지에 바로 쓸 수 없음(tasks는 활용 가능 분야 기준)", "페이지에 성능 점수 표와 모델 설명이 없음", "가상 데이터라 실제 센서와 차이가 있음", "'경량화'판인데도 약 8TB"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "가상 점군 시각화", "title_en": "Virtual point cloud viewer", "desc_ko": "PCD를 Open3D로 열어 날씨·차량 조건별 차이를 살펴봅니다.", "desc_en": "Open PCDs in Open3D and compare conditions."},
+  {"level": "capstone", "title_ko": "이미지-점군 깊이 학습", "title_en": "Depth from image-point pairs", "desc_ko": "이미지와 점군을 짝지어 단안 깊이 추정 모델을 학습합니다.", "desc_en": "Train monocular depth from image-point cloud pairs."},
+  {"level": "research", "title_ko": "시뮬레이션 사전학습 효과", "title_en": "Simulation pretraining effect", "desc_ko": "가상 데이터 사전학습이 실제 데이터 탐지 성능을 높이는지 연구합니다.", "desc_en": "Study whether sim pretraining helps real-world detection."}
+ ],
+ "doc_used": true,
+ "uncertain": ["이미지와 PCD의 센서 종류·해상도", "클래스 목록을 페이지와 설명서에서 찾지 못함"]
+}

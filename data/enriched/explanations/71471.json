@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71471",
+ "easy_ko": "한우, 젖소, 돼지 농장에서 찍은 영상과 사진, 울음소리, 몸 모양 입체 데이터에 가축이 짝짓기 시기(발정)인지 판정한 기록을 함께 담은 데이터입니다. 가축의 발정과 이상한 행동을 자동으로 알아채는 AI에 쓸 수 있습니다.",
+ "easy_en": "Videos, photos, calls and 3D body-shape data from Korean beef cattle, dairy cow and pig farms, together with records of whether each animal was in heat (ready to breed). You can use it to build AI that detects heat and unusual behaviour in livestock automatically.",
+ "detail_ko": "한우·젖소·양돈·흑돼지 농장의 축사 영상 600개(mp4), 키프레임 이미지 100만 장(jpg), 울음소리 600개(wav), 외음부 이미지 6만 장, 3D 체형 6만 장(npy), 발정 체크 6,000건(csv)에 상자, 키포인트, 다각형, 울음 라벨, 발정 여부를 JSON으로 붙였습니다. 기준 성능은 울음 탐지 YOLOX-Audio F1 0.9364, 멀티모달 발정 분류 CRNN F1 0.9024, 상자 탐지 YOLOX mAP 80.63%, 분할 Mask R-CNN mAP 80.13%, 키포인트 HRNet mAP 92.3%입니다. 전체 약 8,027GB이고, 농장 수가 적습니다(한우 3, 젖소 3, 돼지 1, 흑돼지 1). 영상 600개에서 뽑은 키프레임이라 비슷한 이미지가 많아 분할 시 누수에 주의해야 합니다.",
+ "detail_en": "From Hanwoo cattle, dairy cow, pig and black pig farms: 600 barn videos (mp4), 1 million keyframe images (jpg), 600 call recordings (wav), 60,000 vulva images, 60,000 3D body scans (npy) and 6,000 estrus checks (csv), with JSON boxes, keypoints, polygons, call labels and estrus status. Baselines: call detection with YOLOX-Audio, F1 0.9364; multimodal estrus classification with CRNN, F1 0.9024; box detection with YOLOX, mAP 80.63%; segmentation with Mask R-CNN, mAP 80.13%; keypoints with HRNet, mAP 92.3%. Total size is about 8,027 GB. Few farms are covered (3 Hanwoo, 3 dairy, 1 pig, 1 black pig), and since the keyframes come from only 600 videos, many images look alike, so split carefully to avoid leakage.",
+ "amount_ko": "영상 600개, 키프레임 100만 장, 울음소리 600개, 외음부 이미지 6만 장, 3D 6만 장, 발정 체크 6,000건",
+ "amount_en": "600 videos, 1 million keyframes, 600 call recordings, 60,000 vulva images, 60,000 3D scans, 6,000 estrus checks",
+ "labels_ko": "위치 상자, 관절 점, 영역 다각형, 울음 표시, 발정 여부",
+ "labels_en": "bounding boxes, keypoints, polygons, call labels, estrus status",
+ "status": "full-run-2026-11-02"
+}

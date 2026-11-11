@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71539",
+ "easy_ko": "한국인 남녀 530명의 얼굴을 여러 가지 표정으로 입체 스캔한 데이터로, 얼굴 입체 모형과 사진, 얼굴 특징 점이 있습니다. 사진 한 장으로 입체 얼굴을 만드는 AI나 가상 아바타 제작에 쓸 수 있습니다.",
+ "easy_en": "Three-dimensional scans of the faces of 530 Korean men and women making many different expressions, with face models, photos and facial landmark points. You can use it to build AI that creates a three-dimensional face from one photo, or to make virtual avatars.",
+ "detail_ko": "한국인 남녀 각 265명(530명)의 얼굴을 26가지 표정(A~Z, 0=무표정)으로 3D 스캔한 얼굴 3D 데이터 13,780세트(obj, gltf, 텍스처 png)와 2D 원시 이미지 551,200장에 키포인트, 표정, 성별, 연령대, BMI 등급을 JSON으로 붙였습니다. 기준 성능은 DECA 3D 얼굴 재구성 오차 2.66(단위 없음으로 표기)입니다. 전체 약 372GB이고 가장 작은 파일도 약 9GB이며, 얼굴 생체정보라 사용 조건을 꼭 확인해야 합니다.",
+ "detail_en": "3D scans of 265 Korean men and 265 women (530 people) making 26 expressions (A to Z, 0 = neutral): 13,780 3D face sets (obj, gltf, png textures) and 551,200 raw 2D images, with JSON keypoints, expression, sex, age group and BMI group. Baseline: 3D face reconstruction with DECA, error 2.66 (unit listed as 'none'). Total size is about 372 GB, and even the smallest file is about 9 GB. Faces are biometric data, so be sure to check the terms of use.",
+ "amount_ko": "얼굴 3D 데이터 13,780세트, 2D 원시 이미지 551,200장, 530명 × 표정 26종",
+ "amount_en": "13,780 3D face sets, 551,200 raw 2D images, 530 people × 26 expressions",
+ "labels_ko": "얼굴 특징 점, 표정, 성별, 나이대, 체형 등급",
+ "labels_en": "keypoints, expression, sex, age group, BMI group",
+ "status": "full-run-2026-11-02"
+}

@@ -1,0 +1,29 @@
+{
+ "dataset_id": "71591",
+ "title_en": "Broadcast content Korean-Asian languages translation corpus",
+ "summary_ko": "KBS 등 방송의 연예·드라마·다큐·예능·교양 대사에서 뽑은 한국어 문장 약 250만 개를 중국어(북경어)·일본어·대만어·몽골어·힌디어로 번역한 말뭉치입니다. 신조어·관용 표현이 담긴 방송 자막을 아시아 언어로 번역하는 AI에 쓸 수 있습니다.",
+ "summary_en": "About 2.5 million Korean sentences from broadcast dialogue (entertainment, drama, documentary, variety, culture) translated into Mandarin, Japanese, Taiwanese Mandarin, Mongolian and Hindi. For translating broadcast subtitles into Asian languages.",
+ "contents_ko": "원문 한국어 문장(txt) + 번역 JSON(대상 언어, 방송 카테고리).",
+ "contents_en": "Korean source sentences (txt) + translation JSON (target language, broadcast category).",
+ "modalities": ["text"],
+ "tasks": ["translation"],
+ "topics": [{"ko": "방송·미디어", "en": "Broadcasting and media"}, {"ko": "번역·통역", "en": "Translation and interpretation"}],
+ "keywords_ko": ["번역 말뭉치", "방송 자막", "중국어", "일본어", "몽골어", "힌디어"],
+ "keywords_en": ["parallel corpus", "broadcast subtitles", "Chinese", "Japanese", "Mongolian", "Hindi"],
+ "labels": ["translation"],
+ "file_formats": ["txt", "json"],
+ "scale_ko": "문장 2,503,365개(북경어 900,513·일본어 701,426·대만어 701,426·몽골어 100,000·힌디어 100,000)",
+ "classes_example": ["연예/공연", "영화/드라마", "다큐멘터리", "오락/예능", "교양"],
+ "baseline": [],
+ "difficulty": "intermediate",
+ "difficulty_note_ko": "텍스트만 있어 약 2.6GB로 가볍습니다. 번역 모델 미세조정 경험이 있으면 좋습니다.",
+ "skills_needed_ko": ["파이썬", "Hugging Face 번역 모델", "BLEU 평가"],
+ "caveats_ko": ["페이지에 번역 성능 지표 표가 없음(음성인식 모델 설명만 있음)", "몽골어·힌디어는 각 10만 문장으로 적음", "언어별 목표·결과 수량이 표마다 다름(예: 북경어 900,513 vs 1,011,606)"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "드라마 대사 일본어 번역", "title_en": "Drama lines to Japanese", "desc_ko": "공개 번역 모델로 드라마 대사를 일본어로 번역하고 BLEU를 잽니다.", "desc_en": "Translate drama lines to Japanese with an open model and measure BLEU."},
+  {"level": "capstone", "title_ko": "아시아 다국어 자막기", "title_en": "Asian multilingual subtitler", "desc_ko": "한국어 자막 파일을 중국어·일본어 자막으로 바꿔 주는 도구를 만듭니다.", "desc_en": "Convert Korean subtitle files into Chinese and Japanese."},
+  {"level": "research", "title_ko": "저자원 언어 번역", "title_en": "Low-resource language translation", "desc_ko": "10만 문장뿐인 몽골어·힌디어 번역 성능을 다국어 학습으로 높이는 방법을 연구합니다.", "desc_en": "Study multilingual training to boost Mongolian and Hindi with only 100k sentences."}
+ ],
+ "doc_used": true,
+ "uncertain": []
+}

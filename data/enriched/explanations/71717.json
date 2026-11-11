@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71717",
+ "easy_ko": "저작권 계약을 맺은 작가들의 한국 만화와 웹툰 그림 5만여 장에 장면을 설명하는 문장을 붙인 데이터로, 로맨스, 판타지, 액션 같은 장르로 나뉩니다. 글로 설명하면 웹툰 그림을 그려 주는 AI에 쓸 수 있습니다.",
+ "easy_en": "Over 50,000 Korean comic and webtoon images from artists who signed copyright agreements, each with a sentence describing the scene, sorted into genres such as romance, fantasy and action. You can use it to build AI that draws webtoon pictures from a text description.",
+ "detail_ko": "저작권 계약을 맺은 작가의 한국 만화·웹툰 이미지 53,525장(jpeg)에 장면 설명 문장과 장르(로맨스, 드라마, 판타지, 스릴러, 액션, 개그, 일상, 무협&사극, 감성, 스포츠)를 JSON으로 붙였습니다. 장르별 수량 차이가 크고(스포츠 502장, 로맨스 12,687장), FID로 평가했다고 하나 수치는 팩에 없으며, 이용 약관상 저작권 조건을 확인해야 합니다.",
+ "detail_en": "53,525 Korean comic and webtoon images (jpeg) from artists under copyright agreements, with JSON scene captions and genre (romance, drama, fantasy, thriller, action, comedy, slice of life, martial arts/period, emotional, sports). Genre counts vary widely (502 sports vs. 12,687 romance), FID was reportedly used but no value is in the pack, and the copyright terms should be checked.",
+ "amount_ko": "이미지 53,525장, 장르 10종",
+ "amount_en": "53,525 images, 10 genres",
+ "labels_ko": "장면 설명 문장, 장르",
+ "labels_en": "caption, genre",
+ "status": "full-run-2026-11-02"
+}

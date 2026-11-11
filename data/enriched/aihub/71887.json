@@ -1,0 +1,29 @@
+{
+ "dataset_id": "71887",
+ "title_en": "NEW step-by-step reasoning agricultural robot data",
+ "summary_ko": "사과·배·복숭아·자두 4종 과수의 적화·적과·가지치기·수확 작업을 시각, 양손 센서, 압력 센서, 환경 정보로 기록하고, 상자·질의응답·단계적 사고(CoT) 추론을 붙인 라벨 30,194건입니다. 과수원 농작업 로봇이 무엇을 어떻게 할지 판단하는 AI에 쓸 수 있습니다.",
+ "summary_en": "30,194 labelled records of flower thinning, fruit thinning, pruning and harvesting for apple, pear, peach and plum, from vision, two-hand sensors, pressure sensors and environment data, with boxes, QA and chain-of-thought reasoning. For orchard robots that decide what to do and how.",
+ "contents_ko": "이미지(jpeg) + 센서(csv) + JSON(상자, 질의응답, CoT).",
+ "contents_en": "Image (jpeg) + sensors (csv) + JSON (boxes, QA, CoT).",
+ "modalities": ["image", "sensor", "text"],
+ "tasks": ["object_detection", "visual_qa"],
+ "topics": [{"ko": "농업 로봇", "en": "Agricultural robots"}, {"ko": "피지컬 AI", "en": "Physical AI"}],
+ "keywords_ko": ["농작업 로봇", "과수 수확", "가지치기", "CoT", "비전-언어 모델", "VARCO-VISION"],
+ "keywords_en": ["farm robot", "fruit harvesting", "pruning", "chain-of-thought", "vision-language model", "VARCO-VISION"],
+ "labels": ["bounding box", "question-answer", "CoT"],
+ "file_formats": ["jpg", "csv", "json"],
+ "scale_ko": "라벨 30,194건(수확 17,296·가지치기 6,324·적과 4,119·적화 2,455)",
+ "classes_example": ["사과", "배", "복숭아", "자두", "적화", "적과", "가지치기", "수확", "비수확"],
+ "baseline": [],
+ "difficulty": "advanced",
+ "difficulty_note_ko": "약 27GB이지만 비전-언어 모델과 로봇 센서 지식이 필요합니다. 과일 탐지부터 시작하세요.",
+ "skills_needed_ko": ["파이썬", "YOLO 탐지", "비전-언어 모델(VLM) 기초", "로봇 센서 데이터 처리"],
+ "caveats_ko": ["페이지에 성능 점수 표가 없음(VARCO-VISION 소개만 있음)", "사과 수확이 24.85%로 많고 복숭아 적과는 1.99%로 적음", "적화 데이터에는 복숭아·자두가 없음"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "과일 탐지", "title_en": "Fruit detection", "desc_ko": "과수원 이미지에서 사과·배·복숭아·자두를 YOLO로 찾습니다.", "desc_en": "Detect apples, pears, peaches and plums with YOLO."},
+  {"level": "capstone", "title_ko": "수확 여부 판단기", "title_en": "Harvest decision helper", "desc_ko": "이미지를 보고 이 과일을 딸지 말지를 이유와 함께 답하는 모델을 만듭니다.", "desc_en": "Answer whether to pick a fruit, with reasons."},
+  {"level": "research", "title_ko": "추론 기반 로봇 동작", "title_en": "Reasoning-driven robot actions", "desc_ko": "CoT 추론 결과를 양손 로봇 동작 계획으로 바꾸는 방법을 연구합니다.", "desc_en": "Study turning CoT reasoning into two-hand robot plans."}
+ ],
+ "doc_used": true,
+ "uncertain": []
+}

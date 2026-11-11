@@ -1,0 +1,29 @@
+{
+ "dataset_id": "71763",
+ "title_en": "Pig bio-energy data (2023)",
+ "summary_ko": "스마트 돈사·챔버에서 모은 돼지 생체·환경 데이터로, 돼지 호흡·바닥 표면 이미지 400,153장(상자·키포인트)과 온도·습도·CO2·NH3 센서, 호흡량·증발량, 현열·잠열, 체중·체온 측정 등 텍스트 데이터 1,067,808건이 있습니다. 돈사 환경 제어와 에너지 예측, 디지털 트윈 AI에 쓸 수 있습니다.",
+ "summary_en": "Pig body and barn environment data from smart barns and chambers: 400,153 pig-breathing and floor-surface images (boxes, keypoints) plus 1,067,808 text records (temperature, humidity, CO2, NH3 sensors, respiration and evaporation, sensible/latent heat, weight and body temperature). For barn climate control, energy prediction and digital twins.",
+ "contents_ko": "이미지(png) + 센서·측정값(csv) + JSON(상자, 키포인트).",
+ "contents_en": "Images (png) + sensor and measurement values (csv) + JSON (boxes, keypoints).",
+ "modalities": ["image", "video", "sensor", "tabular"],
+ "tasks": ["keypoint_pose", "object_detection", "forecasting", "tabular_prediction"],
+ "topics": [{"ko": "스마트 축산", "en": "Smart livestock farming"}, {"ko": "축사 에너지 관리", "en": "Barn energy management"}],
+ "keywords_ko": ["양돈", "돼지 호흡", "축사 환경", "센서", "디지털 트윈", "HRNet"],
+ "keywords_en": ["pig farming", "pig respiration", "barn environment", "sensors", "digital twin", "HRNet"],
+ "labels": ["bounding box", "keypoints", "sensor values"],
+ "file_formats": ["png", "csv", "json"],
+ "scale_ko": "이미지 400,153장(호흡 300,130·바닥 100,023), 텍스트 1,067,808건(센서 702,720 등)",
+ "classes_example": ["돼지 호흡", "바닥 표면", "온도", "습도", "CO2", "NH3"],
+ "baseline": [],
+ "difficulty": "advanced",
+ "difficulty_note_ko": "이미지·센서가 섞여 있고 약 935GB입니다. 센서 csv로 시계열 예측부터 하면 쉽습니다.",
+ "skills_needed_ko": ["파이썬", "pandas 시계열", "키포인트 모델(HRNet)", "회귀·예측 모델"],
+ "caveats_ko": ["페이지에 성능 점수 표가 없음(HRNet 등 모델 소개만 있음)", "2023년 2차년도 데이터라 다른 연도판과 함께 보면 좋음", "측정 항목별 건수 차이가 커서(현열 37,440 vs 센서 175,680) 시간 맞추기가 필요"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "돈사 온습도 그래프", "title_en": "Barn climate dashboard", "desc_ko": "센서 csv로 돈사 온도·습도·CO2 변화를 그래프로 그립니다.", "desc_en": "Plot barn temperature, humidity and CO2 from sensor csv."},
+  {"level": "capstone", "title_ko": "돼지 호흡수 측정", "title_en": "Pig breathing rate", "desc_ko": "호흡 이미지 키포인트로 돼지 호흡 횟수를 자동으로 셉니다.", "desc_en": "Count pig breaths from keypoints in images."},
+  {"level": "research", "title_ko": "돈사 에너지 예측", "title_en": "Barn energy forecasting", "desc_ko": "생체·환경 데이터로 환기·난방 에너지를 예측하는 모델을 연구합니다.", "desc_en": "Study forecasting ventilation and heating energy from bio and climate data."}
+ ],
+ "doc_used": true,
+ "uncertain": ["비디오 데이터의 양과 형식(메타데이터에 형식이 PNG·CSV만 있음)"]
+}

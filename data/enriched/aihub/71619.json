@@ -1,0 +1,29 @@
+{
+ "dataset_id": "71619",
+ "title_en": "Driving-environment object perception data from 4D imaging radar",
+ "summary_ko": "자율주행차에 단 4D 이미징 레이다와 카메라·라이다로 고속도로·도심을 달리며 모은 데이터 약 100만 장입니다. 중앙분리대·방음벽·육교·터널·가로수·표지판·램프 같은 도로 주변 고정 구조물이 3D 상자(일부 다각형)로 표시되어 있어 레이다 기반 주행환경 인식 AI에 쓸 수 있습니다.",
+ "summary_en": "About 1 million frames from 4D imaging radar plus camera and lidar on highways and city roads, with roadside structures such as medians, sound barriers, overpasses, tunnels, trees, signs and ramps in 3D boxes (some polygons). For radar-based driving-environment perception.",
+ "contents_ko": "카메라 이미지(png) + 라이다 점군(pcd) + 레이다 데이터(txt) + JSON(3D 상자, 다각형, 객체 종류).",
+ "contents_en": "Camera image (png) + lidar point cloud (pcd) + radar data (txt) + JSON (3D boxes, polygons, object type).",
+ "modalities": ["image", "3d", "sensor"],
+ "tasks": ["object_detection", "segmentation"],
+ "topics": [{"ko": "자율주행", "en": "Autonomous driving"}, {"ko": "도로 구조물 인식", "en": "Road structure recognition"}],
+ "keywords_ko": ["4D 레이다", "주행환경", "중앙분리대", "터널", "센서 융합", "자율주행"],
+ "keywords_en": ["4D radar", "driving environment", "median barrier", "tunnel", "sensor fusion", "autonomous driving"],
+ "labels": ["3D bounding box", "polygon", "object class"],
+ "file_formats": ["png", "pcd", "txt", "json"],
+ "scale_ko": "약 1,000,091장(카메라·라이다·레이다 동기화), 주행환경 객체 7종",
+ "classes_example": ["중앙분리대", "방음벽", "육교", "터널", "가로수", "표지판", "램프"],
+ "baseline": [],
+ "difficulty": "advanced",
+ "difficulty_note_ko": "레이다·라이다·카메라를 함께 다뤄야 하고 전체 약 4.2TB입니다. 한 센서만 받아 시작하세요.",
+ "skills_needed_ko": ["파이썬", "3D 점군 처리(OpenPCDet)", "센서 융합", "레이다 데이터 기초"],
+ "caveats_ko": ["전체 약 4.2TB", "페이지에 성능 지표 표가 없음", "71617(동적 객체)과 같은 기관·센서 구성"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "도로 구조물 분류", "title_en": "Road structure classifier", "desc_ko": "카메라 이미지에서 터널·육교·방음벽을 분류합니다.", "desc_en": "Classify tunnels, overpasses and sound barriers in camera images."},
+  {"level": "capstone", "title_ko": "레이다 지도 만들기", "title_en": "Radar landmark map", "desc_ko": "레이다로 탐지한 고정 구조물을 위치와 함께 모아 주행 지도를 만듭니다.", "desc_en": "Map radar-detected fixed structures along a route."},
+  {"level": "research", "title_ko": "터널 속 레이다 인식", "title_en": "Radar perception in tunnels", "desc_ko": "GPS·카메라가 약한 터널에서 레이다 인식이 얼마나 안정적인지 연구합니다.", "desc_en": "Study radar reliability in tunnels where GPS and cameras struggle."}
+ ],
+ "doc_used": true,
+ "uncertain": []
+}

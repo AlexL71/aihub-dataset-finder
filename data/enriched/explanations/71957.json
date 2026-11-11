@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71957",
+ "easy_ko": "공공 문서 속 숫자 설명 글 1만 건으로 차트 그림 1만 장을 만들고, 차트에 대한 질문과 답, 답에 이르는 생각 과정을 붙인 데이터입니다. 문서 내용을 자동으로 차트로 그리거나 차트를 이해하는 AI에 쓸 수 있습니다.",
+ "easy_en": "10,000 chart images created from 10,000 passages describing numbers in public documents, with questions and answers about each chart and the reasoning steps. You can use it to build AI that turns document content into charts automatically or understands charts.",
+ "detail_ko": "공공데이터포털·정부·지자체 문서의 수치 설명문 10,000건(JSON)을 바탕으로 차트 이미지 10,000장(jpg)을 만들고, 차트 정보와 질의응답, 사고과정(CoT, 답에 이르는 추론 단계) 라벨을 붙였습니다. 차트 종류는 세로 막대형 43.5%, 가로 막대형 27.8%, 선형 13.8%, 원형 6.3% 등입니다. 막대형 차트가 70% 이상으로 차트 종류가 치우쳐 있고, 성능 지표 값은 팩 앞부분에 없습니다.",
+ "detail_en": "10,000 chart images (jpg) generated from 10,000 numerical passages (JSON) in Public Data Portal, government and local-government documents, with chart information, question-answer pairs and chain-of-thought (CoT, the reasoning steps to the answer) labels. Chart types: 43.5% vertical bar, 27.8% horizontal bar, 13.8% line, 6.3% pie and others. Bar charts make up over 70%, so chart types are skewed, and no metric values are in the pack.",
+ "amount_ko": "원천 10,000건, 라벨 10,000건, 차트 이미지 10,000장",
+ "amount_en": "10,000 source passages, 10,000 labels, 10,000 chart images",
+ "labels_ko": "차트 그림, 질문과 답, 생각 과정",
+ "labels_en": "chart image, question-answer, chain of thought",
+ "status": "full-run-2026-11-02"
+}

@@ -1,0 +1,29 @@
+{
+ "dataset_id": "563",
+ "title_en": "Major-country patent English-Korean data linked to industry information",
+ "summary_ko": "미국·일본·유럽·중국 특허 40만 건의 영문 명세서를 변리사가 참여해 한국어로 번역하고, 한국표준산업분류(KSIC) 코드와 기술용어를 붙인 데이터입니다. 특허 번역이나 특허를 산업 분야로 자동 분류하는 AI에 쓸 수 있습니다.",
+ "summary_en": "400,000 patents from the US, Japan, Europe and China, with English specifications translated into Korean with patent attorneys, plus Korean Standard Industrial Classification (KSIC) codes and technical terms. For patent translation or AI that sorts patents into industries.",
+ "contents_ko": "특허 명세서 영·한 문장 JSON + KSIC 코드 + 기술용어 태그.",
+ "contents_en": "English-Korean patent sentence JSON + KSIC codes + technical-term tags.",
+ "modalities": ["text"],
+ "tasks": ["translation", "text_classification", "information_extraction"],
+ "topics": [{"ko": "특허·지식재산", "en": "Patents and intellectual property"}, {"ko": "산업 분석", "en": "Industry analysis"}],
+ "keywords_ko": ["특허", "영한 번역", "산업분류", "KSIC", "기술용어"],
+ "keywords_en": ["patents", "English-Korean translation", "industry classification", "KSIC", "technical terms"],
+ "labels": ["Korean translation", "KSIC code", "technical term tags"],
+ "file_formats": ["json"],
+ "scale_ko": "특허 40만 건(국가별 10만), 200만 문장 이상",
+ "classes_example": [],
+ "baseline": [{"task": "patent industry classification", "model": "BERT-base multilingual cased", "metric": "uncertain", "value": "uncertain"}],
+ "difficulty": "intermediate",
+ "difficulty_note_ko": "약 2GB로 다루기 쉽지만 특허 문장이 길고 전문적입니다.",
+ "skills_needed_ko": ["파이썬", "BERT 미세조정", "번역 모델"],
+ "caveats_ko": ["KSIC 라벨은 국가별 10% 특허에만 3개 이상 붙음", "기술용어 태깅도 일부 특허에만 있음"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "특허 산업 분야 분류", "title_en": "Patent industry classifier", "desc_ko": "특허 문장으로 KSIC 대분류를 맞힙니다.", "desc_en": "Predict the top-level KSIC code from patent text."},
+  {"level": "capstone", "title_ko": "특허 영한 번역기", "title_en": "Patent English-Korean translator", "desc_ko": "특허 문장 전용 번역 모델을 미세조정해 일반 번역기와 비교합니다.", "desc_en": "Fine-tune a patent-specific translator and compare it with a general one."},
+  {"level": "research", "title_ko": "국가별 기술·산업 동향", "title_en": "Country tech-industry trends", "desc_ko": "국가별 특허의 산업 분포 차이를 분석합니다.", "desc_en": "Analyse how industry mix differs among countries' patents."}
+ ],
+ "doc_used": true,
+ "uncertain": ["baseline metric and value not in first part of pack", "클래스 목록을 페이지와 설명서에서 찾지 못함"]
+}

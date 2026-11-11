@@ -1,0 +1,29 @@
+{
+ "dataset_id": "162",
+ "title_en": "Building crack detection images",
+ "summary_ko": "드론과 고화질 카메라로 교량·댐·옹벽·건물을 찍은 결함 이미지 50만 장으로, 콘크리트 균열·박리·백태/누수·철근 노출과 강재 손상·도장 손상 6종이 표시되어 있습니다. 시설물 안전 점검을 자동화하는 AI에 쓸 수 있습니다.",
+ "summary_en": "500,000 drone and high-resolution camera images of bridges, dams, retaining walls and buildings with 6 defect types: concrete cracks, spalling, efflorescence/leaks, exposed rebar, steel damage and paint damage. For AI that automates structural safety inspection.",
+ "contents_ko": "결함 이미지 + JSON(결함 종류, 상자 또는 다각형, 재질, 시설물 종류).",
+ "contents_en": "Defect image + JSON (defect type, box or polygon, material, structure type).",
+ "modalities": ["image"],
+ "tasks": ["segmentation", "object_detection", "anomaly_detection"],
+ "topics": [{"ko": "건설·시설물 안전", "en": "Construction and structural safety"}, {"ko": "드론", "en": "Drones"}, {"ko": "도시 기반시설", "en": "Urban infrastructure"}],
+ "keywords_ko": ["균열 탐지", "건물 결함", "교량 점검", "드론", "콘크리트", "안전 진단"],
+ "keywords_en": ["crack detection", "building defects", "bridge inspection", "drone", "concrete", "safety inspection"],
+ "labels": ["polygon", "bounding box", "class (6 defects)"],
+ "file_formats": ["jpg", "json"],
+ "scale_ko": "50만 건(균열 17만, 강재 손상 10만, 백태/누수 8만, 박리 6.1만, 도장 손상 5.5만, 철근 노출 3.4만)",
+ "classes_example": ["콘크리트 균열", "박리", "백태/누수", "철근 노출", "강재 손상", "도장 손상"],
+ "baseline": [],
+ "difficulty": "intermediate",
+ "difficulty_note_ko": "균열은 가늘어서 분할이 쉽지 않고 전체 약 3.8TB입니다. 일부 결함 종류만 받아 시작하세요.",
+ "skills_needed_ko": ["파이썬", "이미지 분할(U-Net)·탐지(YOLO)"],
+ "caveats_ko": ["전체 약 3.8TB", "성능 지표가 팩에서 잘림"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "결함 종류 분류", "title_en": "Defect type classifier", "desc_ko": "이미지로 균열·박리·누수 등 6종을 분류합니다.", "desc_en": "Classify the 6 defect types from images."},
+  {"level": "capstone", "title_ko": "교량 점검 보고서 자동화", "title_en": "Automatic bridge inspection report", "desc_ko": "드론 사진에서 결함을 찾아 위치·종류·면적을 표로 정리합니다.", "desc_en": "Find defects in drone photos and list position, type and area."},
+  {"level": "research", "title_ko": "균열 폭 자동 측정", "title_en": "Automatic crack width measurement", "desc_ko": "분할 결과로 균열 폭과 길이를 측정해 위험도 평가에 쓰는 방법을 연구합니다.", "desc_en": "Measure crack width and length from masks for risk assessment."}
+ ],
+ "doc_used": true,
+ "uncertain": []
+}

@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71738",
+ "easy_ko": "한국 전통 씨름의 프로와 대학 선수 경기, 훈련 영상과 사진에 기술 동작 구간, 선수 위치, 몸 관절 점을 표시한 데이터입니다. 씨름 기술을 나누고 경기를 분석하거나 자세를 고쳐 주는 AI에 쓸 수 있습니다.",
+ "easy_en": "Match and training videos and photos of professional and university players of ssireum (traditional Korean wrestling), with technique segments, player boxes and body joint points marked. You can use it to build AI that classifies ssireum techniques, analyses matches or corrects posture.",
+ "detail_ko": "한국 전통 씨름 프로·대학 선수 경기(샅바TV, MBC)와 용인대 훈련 영상으로 만든 동영상 62,769세트(mp4)와 이미지 220,000세트(jpg; 경기 41%, 훈련 59%)에 동작 구간, 선수 상자, 2D·3D 키포인트, 체급(예: 태백, 금강, 한라, 백두, 매화, 국화, 무궁화)·소속을 JSON으로 붙였습니다. 페이지에 성능 점수 표가 없고(PoseC3D 목표 Top-3 90%만 소개), 남자 선수가 89%로 치우쳐 있으며, 기술 이름 목록은 팩 앞부분에 없습니다.",
+ "detail_en": "62,769 video sets (mp4) and 220,000 image sets (jpg; 41% matches, 59% training) from professional and university ssireum matches (Satba TV, MBC) and Yongin University training, with JSON action segments, player boxes, 2D and 3D keypoints, weight class (such as Taebaek, Geumgang, Halla, Baekdu, Maehwa, Gukhwa, Mugunghwa) and team. There is no score table (only a PoseC3D Top-3 90% target), male players make up 89%, and the technique names are not in the pack.",
+ "amount_ko": "동영상 62,769세트, 이미지 220,000세트",
+ "amount_en": "62,769 video sets, 220,000 image sets",
+ "labels_ko": "기술 동작 구간, 선수 위치 상자, 몸 관절 점(평면·입체)",
+ "labels_en": "action segments, bounding box, 2D keypoints, 3D keypoints",
+ "status": "full-run-2026-11-02"
+}

@@ -1,0 +1,40 @@
+{
+ "id": "amchem",
+ "name_ko": "신소재화학과",
+ "name_en": "Advanced Materials Chemistry",
+ "college": "과학기술대학",
+ "summary_ko": "유기·무기·물리·분석화학을 기초로 에너지, 디스플레이, 전자, 바이오에 쓰이는 새로운 소재를 합성하고 성질을 분석하는 방법을 배우는 학과입니다. 이론과 함께 화학 실험과 연구실 프로젝트 비중이 큽니다.",
+ "summary_en": "Builds on organic, inorganic, physical and analytical chemistry to make and analyse new materials for energy, displays, electronics and biology. Lab experiments and research projects are a large part of the program.",
+ "key_topics": ["유기·무기·물리·분석화학", "에너지 소재(이차전지, 연료전지, 태양전지)", "디스플레이·발광 소재", "나노 소재", "고분자", "기체 흡착·분리 소재", "전기화학", "전산화학"],
+ "course_keywords": ["일반화학및연습", "유기화학", "물리화학", "분석화학", "무기화학", "기기분석", "유기분광학", "양자화학", "전산화학", "고체화학", "표면화학", "전기화학", "유기금속화학", "고분자화학", "고분자물성", "유기합성", "디스플레이신소재", "에너지소재화학", "소재의약화학", "생명화학", "정보통계학입문", "컴퓨터언어"],
+ "careers": ["화학·소재 기업 연구원(배터리, 디스플레이, 반도체 소재)", "품질관리·분석 엔지니어", "정유·석유화학·정밀화학 기업", "공공 연구소 연구원", "대학원 진학", "화학 교사(교직 이수)"],
+ "research_areas": ["나노 전기화학", "무기화학·광촉매", "초고속 분광", "유기·유기금속 소재", "초분자 소재(기체 흡착, 이차전지, 연료전지)", "염료감응 태양전지", "분자 광전자 소재"],
+ "data_interests": [
+  {"topic_ko": "소재 물성과 분자 구조", "topic_en": "Material properties and molecular structure", "keywords": ["화합물 구조", "물성 표", "분자 데이터"]},
+  {"topic_ko": "배터리와 에너지", "topic_en": "Batteries and energy", "keywords": ["이차전지", "충방전 데이터", "태양광 발전"]},
+  {"topic_ko": "실험·분석 데이터", "topic_en": "Lab and instrument data", "keywords": ["스펙트럼", "현미경 이미지", "분석 장비"]},
+  {"topic_ko": "디스플레이·반도체 소재 불량", "topic_en": "Display and chip material defects", "keywords": ["디스플레이 패널", "결함 이미지", "공정 데이터"]},
+  {"topic_ko": "환경과 대기", "topic_en": "Environment and air", "keywords": ["대기 오염", "유해 물질", "수질"]},
+  {"topic_ko": "화학 안전", "topic_en": "Chemical safety", "keywords": ["위험물", "물질 안전 정보", "사고 예방"]}
+ ],
+ "interest_questions": [
+  {"q_ko": "어떤 소재에 관심이 있나요?", "q_en": "Which materials interest you?",
+   "options": [{"ko": "배터리·에너지", "en": "Batteries and energy"}, {"ko": "디스플레이·전자", "en": "Displays and electronics"}, {"ko": "의약·바이오", "en": "Medicine and bio"}, {"ko": "환경·안전", "en": "Environment and safety"}]},
+  {"q_ko": "다뤄보고 싶은 자료는?", "q_en": "What data would you like to use?",
+   "options": [{"ko": "현미경·검사 이미지", "en": "Microscope and inspection images"}, {"ko": "측정값·시계열", "en": "Measurements and time series"}, {"ko": "논문·문서 글", "en": "Papers and documents"}, {"ko": "물질 정보 표", "en": "Tables of substance information"}]}
+ ],
+ "project_themes": ["배터리 충방전 데이터로 수명 예측", "디스플레이 패널 결함 이미지 분류", "대기 오염 측정값 분석", "화학 논문에서 소재 성질 자동 추출"],
+ "data_skill_level": "low",
+ "data_skill_note": "컴퓨터언어, 정보통계학입문, 전산화학이 있지만 데이터 분석 과목은 적습니다. 쉬운 Python 분석부터 시작하는 것이 좋습니다.",
+ "sources": [
+  {"kind": "page", "label": "Faculty&Research", "url": "https://sejong.korea.ac.kr/faculty/8613/subview.do"},
+  {"kind": "page", "label": "Research Area", "url": "https://sejong.korea.ac.kr/amchem/7722/subview.do"},
+  {"kind": "page", "label": "전공체계도", "url": "https://sejong.korea.ac.kr/amchem/7724/subview.do"},
+  {"kind": "page", "label": "교육과정표", "url": "https://sejong.korea.ac.kr/amchem/7739/subview.do"},
+  {"kind": "pdf", "label": "전공역량기반 교육과정", "url": "https://sejong.korea.ac.kr/pdfView/amchem/6/62/fileDownload.do"}
+ ],
+ "inferred_fields": ["careers", "data_interests", "interest_questions", "project_themes"],
+ "gaps": ["No intro or careers page with text; no year-by-year course map. Research Area page lists some labs of retired faculty."],
+ "version": 1,
+ "created": "2026-10-29"
+}

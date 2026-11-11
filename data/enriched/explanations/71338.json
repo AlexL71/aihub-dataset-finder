@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71338",
+ "easy_ko": "여러 분야의 신문 기사마다 제목과 내용이 맞지 않는 '낚시성' 기사인지, 본문 중간에 엉뚱한 내용이 끼어 있는지를 표시한 데이터입니다. 독자를 속이는 낚시성 기사를 자동으로 걸러내는 AI를 만들 수 있습니다.",
+ "easy_en": "News articles from many sections, each marked as 'clickbait' (the headline does not match the body) or as having an unrelated passage inserted in the middle. You can build AI that filters out misleading clickbait articles automatically.",
+ "detail_ko": "경제·연예·세계·IT과학·생활문화·정치·사회 7개 분야 신문기사 약 73만 건(제목 불일치 약 36만, 본문 주제 불일치 약 37만)에 낚시성 여부, 생성 방식(자동·직접), 분야, 불일치 문장을 JSON으로 붙였습니다. 기준 성능은 HAND 제목-본문 불일치 분류 정확도 87.1%, BERT 주제 이탈 문단 탐지 83.88%입니다. 낚시성 기사 상당수가 인위적으로 만든 것이라 실제와 다를 수 있고, 기사 원문 저작권 확인이 필요합니다.",
+ "detail_en": "About 730k news articles in 7 sections (economy, entertainment, world, IT and science, lifestyle and culture, politics, society): about 360k with mismatched headlines and 370k with off-topic passages, with JSON clickbait label, generation method (automatic or manual), section and the inconsistent sentence. Baselines: HAND headline–body classification accuracy 87.1%, BERT off-topic passage detection 83.88%. Much of the clickbait is artificially created, so it may differ from real clickbait; check article copyright.",
+ "amount_ko": "기사 약 73만 건, 분야 7개",
+ "amount_en": "about 730k articles, 7 sections",
+ "labels_ko": "낚시성 여부, 만든 방식, 기사 분야, 어긋나는 문장",
+ "labels_en": "clickbait label, generation method, section, inconsistent sentence",
+ "status": "full-run-2026-11-02"
+}

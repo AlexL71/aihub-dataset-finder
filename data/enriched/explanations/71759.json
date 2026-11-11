@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71759",
+ "easy_ko": "국가무형문화재 탈춤 13가지를 전문가와 일반인이 춘 모습을 아주 선명한 화질로 찍은 사진, 영상, 몸 움직임 기록에 사람과 탈, 소품 위치와 몸 관절 점을 표시한 데이터입니다. 탈춤을 원격으로 가르치거나 자세를 고쳐 주는 AI에 쓸 수 있습니다.",
+ "easy_en": "High-resolution photos, videos and motion-capture recordings of 13 kinds of talchum (Korean mask dance, a national intangible heritage) performed by experts and beginners, marking people, masks and props and body joint points. You can use it to build AI that teaches talchum remotely or corrects dancers' posture.",
+ "detail_ko": "국가무형문화재 탈춤 13개 종목을 전문가(전승자·숙련자)와 비전문가가 춘 동작(전문가:비전문가 66.7:33.3)을 찍은 이미지 126,728장(jpg, 3840×2160), 2D 동영상 390클립, 3D 모션캡처 390개(FBX, CSV)에 사람·무구(탈·소품) 상자와 몸 키포인트를 JSON으로 붙였습니다(서브라벨 12,000개). 페이지에 성능 점수 표가 없고(YOLOv8s 등 소개만 있음), 13개 종목 이름은 팩 앞부분에 없습니다.",
+ "detail_en": "126,728 images (jpg, 3840×2160), 390 2D video clips and 390 3D motion-capture files (FBX, CSV) of 13 national-heritage talchum (mask dance) styles performed by experts (heritage holders and skilled dancers) and non-experts (66.7:33.3), with JSON boxes for people and props (masks and other items) and body keypoints, plus 12,000 sub-labels. There is no score table (only YOLOv8s and others are mentioned), and the 13 style names are not in the pack.",
+ "amount_ko": "이미지 126,728개, 동영상 390클립, 3D 모션 390개, 13종목",
+ "amount_en": "126,728 images, 390 video clips, 390 3D motion files, 13 styles",
+ "labels_ko": "사람·탈·소품 위치 상자, 몸 관절 점",
+ "labels_en": "bounding box, keypoints",
+ "status": "full-run-2026-11-02"
+}

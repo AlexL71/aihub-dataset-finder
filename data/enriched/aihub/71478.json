@@ -1,0 +1,29 @@
+{
+ "dataset_id": "71478",
+ "title_en": "3D printing output shape correction data",
+ "summary_ko": "DLP·FDM·MJP·SLA·SLS 등 비금속 3D 프린팅 방식으로 출력한 결과물의 외형 품질 이미지 165,780장과 수축 분석 이미지 55,260장에 출력 조건·소재 정보가 붙은 데이터입니다. 설계와 실제 출력물의 형상 차이를 미리 예측해 보정하는 AI에 쓸 수 있습니다.",
+ "summary_en": "165,780 appearance-quality images and 55,260 shrinkage-analysis images of non-metal 3D prints (DLP, FDM, MJP, SLA, SLS), with print settings and material info. For AI that predicts and corrects the shape gap between design and printed part.",
+ "contents_ko": "출력물 이미지(png) + JSON(상자, 출력 방식·파라미터·소재, 불량 유형, 수축 정보).",
+ "contents_en": "Print image (png) + JSON (box, print method, parameters, material, defect type, shrinkage info).",
+ "modalities": ["image", "tabular"],
+ "tasks": ["image_classification", "anomaly_detection", "image_generation"],
+ "topics": [{"ko": "제조·3D 프린팅", "en": "Manufacturing and 3D printing"}, {"ko": "품질 검사", "en": "Quality inspection"}],
+ "keywords_ko": ["3D 프린팅", "형상 보정", "수축", "외형 불량", "FDM", "SLA"],
+ "keywords_en": ["3D printing", "shape correction", "shrinkage", "appearance defects", "FDM", "SLA"],
+ "labels": ["bounding box", "defect type", "print parameters"],
+ "file_formats": ["png", "json"],
+ "scale_ko": "외형 품질 이미지 165,780장, 수축 분석 이미지 55,260장, 출력 방식 6종",
+ "classes_example": ["DLP", "G_FDM", "I_FDM", "MJP", "SLA", "SLS"],
+ "baseline": [{"task": "appearance defect classification", "model": "EfficientNet-B0", "metric": "AUC-ROC", "value": "0.942"}, {"task": "shrinkage image generation", "model": "Image-to-image translation", "metric": "FID (lower is better)", "value": "25.56"}],
+ "difficulty": "intermediate",
+ "difficulty_note_ko": "불량 분류는 쉽게 시작할 수 있지만 전체가 약 562GB입니다. 출력 방식 하나만 받아 쓰세요.",
+ "skills_needed_ko": ["파이썬", "이미지 분류", "이미지 변환 생성 모델"],
+ "caveats_ko": ["전체 약 562GB", "G_FDM이 약 52%로 대부분이고 DLP·MJP는 약 2%뿐임", "불량 유형 목록이 팩 앞부분에 없음"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "출력물 불량 분류", "title_en": "Print defect classifier", "desc_ko": "출력물 사진이 양품인지 불량인지 분류합니다.", "desc_en": "Classify prints as good or defective."},
+  {"level": "capstone", "title_ko": "출력 전 수축 미리보기", "title_en": "Pre-print shrinkage preview", "desc_ko": "출력 조건을 넣으면 예상 수축 이미지를 보여 주는 도구를 만듭니다.", "desc_en": "Show predicted shrinkage from print settings."},
+  {"level": "research", "title_ko": "자동 설계 보정", "title_en": "Automatic design compensation", "desc_ko": "예측된 수축을 반영해 설계 형상을 미리 보정하는 방법을 연구합니다.", "desc_en": "Pre-compensate designs for predicted shrinkage."}
+ ],
+ "doc_used": true,
+ "uncertain": ["불량 유형 클래스", "소재 종류"]
+}

@@ -1,0 +1,12 @@
+{
+ "dataset_id": "238",
+ "easy_ko": "지하철역에서 실제로 돌아가는 모터의 떨림과 전류를 센서로 기록하고, 정상인지 베어링 고장·균형 틀어짐·축 어긋남·벨트 느슨함 같은 고장인지 표시한 데이터입니다. 기계가 고장 나기 전에 미리 알려 주는 정비 AI를 만들 수 있습니다.",
+ "easy_en": "Vibration and current sensor readings from real motors running in subway stations, each marked as normal or as a fault such as a bad bearing, imbalance, misaligned shaft or loose belt. You can build maintenance AI that warns before a machine breaks down.",
+ "detail_ko": "대전 도시철도 역사 전동기의 진동·전류 시계열 데이터 2,333,172개(CSV; 정상 109.8만, 고장 123.5만: 베어링 불량 36.8만, 회전체 불평형 22.4만, 축정렬 불량 33.1만, 벨트 느슨함 31.3만)에 정상/고장 종류와 설비 정보를 라벨링했습니다. 기준 성능은 XGBoost 진동 기반 고장 분류 정확도 99.99%로 거의 100%라 과제가 쉬운 편일 수 있습니다. 최소 파일이 3GB이며 성능 표의 과제명(Image Classification)이 잘못 적혀 있습니다.",
+ "detail_en": "2,333,172 vibration and current time-series records (CSV) from motors in Daejeon subway stations: 1.098M normal and 1.235M faulty (bearing 368k, rotor imbalance 224k, shaft misalignment 331k, loose belt 313k), labelled with class and equipment info. Baseline: XGBoost vibration-based fault classification accuracy 99.99%, so the task may be easy. The smallest file is 3 GB; the table wrongly lists the task as image classification.",
+ "amount_ko": "센서 기록 약 233만 개, 고장 4종 + 정상",
+ "amount_en": "about 2.33M sensor records, 4 faults + normal",
+ "labels_ko": "정상·고장 종류, 설비 정보",
+ "labels_en": "normal or fault type, equipment info",
+ "status": "full-run-2026-11-02"
+}

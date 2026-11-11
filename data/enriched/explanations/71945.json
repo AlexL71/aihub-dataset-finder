@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71945",
+ "easy_ko": "예전 제조업 작업 영상 데이터를 다시 다듬어, 일하는 자세 사진 2만 장에 근육과 뼈에 무리가 가는 요인에 대한 질문과 답, 생각 과정을 붙인 데이터입니다. 작업 자세를 분석해 근골격계 질환을 막는 AI에 쓸 수 있습니다.",
+ "easy_en": "20,000 work-posture photos reworked from older manufacturing video data, each with questions and answers about strain on muscles and bones and the reasoning behind them. You can use it to build AI that analyses work posture to prevent musculoskeletal disorders.",
+ "detail_ko": "2022년 AI 허브 제조업 작업 영상 데이터를 다시 가공(업사이클링)해, 이미지 20,000건(jpg)에 질의응답(Q&A)과 사고과정(CoT, 답에 이르는 추론 단계) 라벨을 JSON으로 붙였습니다. 구성: 절단 14%, 사상 29%, 용접 20%, 밴딩 1% 등. sLLM 같은 멀티모달 추론형 AI의 작업 자세 분석과 근골격계 질환 예방에 쓰도록 만들었습니다. 작업자가 찍힌 이미지라 이용 조건을 확인해야 하고, 공정 간 불균형이 있으며(밴딩 1%), 성능 지표 값은 팩 앞부분에 없습니다.",
+ "detail_en": "20,000 images (jpg) reworked (upcycled) from AI Hub's 2022 manufacturing work video data, with JSON question-answer (Q&A) and chain-of-thought (CoT, the reasoning steps that lead to the answer) labels. Composition: 14% cutting, 29% finishing, 20% welding, 1% bending and others. It is meant for multimodal reasoning AI such as small LLMs, for work-posture analysis and musculoskeletal disorder prevention. Workers are visible, so check the terms of use, and processes are imbalanced (bending 1%). No metric values are in the pack.",
+ "amount_ko": "20,000건",
+ "amount_en": "20,000 items",
+ "labels_ko": "질문과 답, 답에 이르는 추론 과정",
+ "labels_en": "question-answer, chain of thought",
+ "status": "full-run-2026-11-02"
+}

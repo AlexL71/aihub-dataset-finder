@@ -1,0 +1,29 @@
+{
+ "dataset_id": "71740",
+ "title_en": "Unmanned construction machine operation data",
+ "summary_ko": "숙련 운전자의 굴착기·롤러 작업을 기록한 데이터 1,215,179건으로, 장애물(사람·덤프트럭) 탐지, 작업 영역 분할, 작업 순서·자세·가동 정보, 이미지 캡션으로 구성됩니다. 건설기계가 스스로 작업을 계획하고 수행하는 자율 작업 AI에 쓸 수 있습니다.",
+ "summary_en": "1,215,179 records of skilled operators' excavator and roller work: obstacle detection (people, dump trucks), work-area segmentation, work sequence, posture and operation data, and image captions. For autonomous construction machines that plan and perform work.",
+ "contents_ko": "이미지(jpg, jpeg) + CSV(작업 순서·자세·가동 정보) + JSON(상자, 분할 영역, 분류 태그, 캡션).",
+ "contents_en": "Images (jpg, jpeg) + CSV (work sequence, posture, operation info) + JSON (boxes, masks, class tags, captions).",
+ "modalities": ["image", "sensor", "text"],
+ "tasks": ["object_detection", "segmentation", "tabular_prediction"],
+ "topics": [{"ko": "스마트 건설", "en": "Smart construction"}, {"ko": "자율 작업 기계", "en": "Autonomous machinery"}],
+ "keywords_ko": ["굴착기", "롤러", "자율 작업", "장애물 탐지", "작업 영역", "건설 자동화"],
+ "keywords_en": ["excavator", "roller", "autonomous operation", "obstacle detection", "work area", "construction automation"],
+ "labels": ["bounding box", "segmentation", "class tags", "operation data"],
+ "file_formats": ["jpg", "jpeg", "csv", "json"],
+ "scale_ko": "1,215,179건(굴착기 장애물 50,000·작업영역 150,000 등, 롤러 400,000, 캡션 15,179)",
+ "classes_example": ["Obstacle", "Human", "Background", "Dump"],
+ "baseline": [],
+ "difficulty": "advanced",
+ "difficulty_note_ko": "이미지·작업 기록 데이터가 섞여 있고 약 204GB입니다. 장애물 탐지부터 시작하세요.",
+ "skills_needed_ko": ["파이썬", "YOLO 탐지", "분할 모델", "시계열·표 데이터 처리"],
+ "caveats_ko": ["페이지에 성능 점수 표가 없음(YOLOv5 사용 소개만 있음)", "사람 클래스가 약 9%로 적음", "작업 순서 데이터의 형식·의미는 설명서 확인 필요"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "현장 사람·덤프트럭 탐지", "title_en": "Person and dump-truck detection", "desc_ko": "굴착기 시점 이미지에서 사람과 덤프트럭을 YOLO로 찾습니다.", "desc_en": "Detect people and dump trucks from the excavator view."},
+  {"level": "capstone", "title_ko": "굴착기 충돌 경고", "title_en": "Excavator collision warning", "desc_ko": "작업 반경에 사람이 들어오면 경고하는 데모를 만듭니다.", "desc_en": "Warn when a person enters the working radius."},
+  {"level": "research", "title_ko": "숙련자 작업 순서 학습", "title_en": "Learning expert work sequences", "desc_ko": "숙련 운전자의 작업 순서 데이터로 굴착 계획을 예측하는 모델을 연구합니다.", "desc_en": "Study predicting digging plans from expert operation sequences."}
+ ],
+ "doc_used": true,
+ "uncertain": []
+}

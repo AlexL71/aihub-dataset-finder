@@ -1,0 +1,29 @@
+{
+ "dataset_id": "71967",
+ "title_en": "Media content de-identification data",
+ "summary_ko": "드라마·예능·뉴스 등 방송 영상에서 얼굴·자동차번호판·텍스트·문신(개인식별 요소)과 로고·간판(상업적 요소)이 나오는 장면을 골라, 객체 단위 분할 마스크와 한글·영어 설명 캡션, 속성 메타정보를 붙인 데이터 25,810건입니다. 방송 콘텐츠 자동 비식별 처리 AI에 쓸 수 있습니다.",
+ "summary_en": "25,810 items of broadcast footage (drama, entertainment, news) showing faces, licence plates, text and tattoos (personal identifiers) and logos and signboards (commercial elements), with object-level segmentation masks, Korean and English captions and attribute metadata. For automatic de-identification of broadcast content.",
+ "contents_ko": "방송 영상(mp4) + 이미지(jpg) + JSON(분할 마스크·캡션·속성).",
+ "contents_en": "Broadcast video (mp4) + images (jpg) + JSON (masks, captions, attributes).",
+ "modalities": ["video", "image", "text"],
+ "tasks": ["segmentation", "object_tracking", "image_captioning"],
+ "topics": [{"ko": "방송·미디어", "en": "Broadcasting and media"}, {"ko": "비식별화", "en": "De-identification"}],
+ "keywords_ko": ["비식별화", "얼굴", "번호판", "로고", "간판", "모자이크"],
+ "keywords_en": ["de-identification", "face", "licence plate", "logo", "signboard", "blurring"],
+ "labels": ["segmentation mask", "caption (Korean, English)", "attribute metadata"],
+ "file_formats": ["mp4", "jpg", "json"],
+ "scale_ko": "25,810건(로고 1,196건·텍스트 962건·얼굴 643건 등, 각 5분 이상 영상)",
+ "classes_example": ["얼굴", "자동차번호판", "텍스트정보", "문신", "로고", "간판"],
+ "baseline": [],
+ "difficulty": "advanced",
+ "difficulty_note_ko": "약 1,067GB(1TB)로 매우 커서 일부만 받아 실습해야 합니다.",
+ "skills_needed_ko": ["파이썬", "분할 모델", "영상 객체 추적"],
+ "caveats_ko": ["방송 저작물이라 이용 조건 확인 필요", "문신(28건)처럼 매우 적은 클래스가 있음", "71959(K-콘텐츠 클린본)와 설명이 같아 데이터가 겹칠 수 있음", "성능 지표 값이 팩 앞부분에 없음"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "로고 분할", "title_en": "Logo segmentation", "desc_ko": "방송 프레임에서 로고 영역을 칠합니다.", "desc_en": "Segment logos in broadcast frames."},
+  {"level": "capstone", "title_ko": "방송 자동 모자이크 도구", "title_en": "Auto broadcast blurring", "desc_ko": "얼굴·번호판·로고를 찾아 자동으로 가리는 도구를 만듭니다.", "desc_en": "Automatically blur faces, plates and logos."},
+  {"level": "research", "title_ko": "영상 속 비식별 대상 추적", "title_en": "Tracking for de-identification", "desc_ko": "움직이는 대상의 마스크를 프레임 간 안정적으로 유지하는 방법을 연구합니다.", "desc_en": "Keep masks stable across frames for moving targets."}
+ ],
+ "doc_used": true,
+ "uncertain": ["25,810건의 단위(영상·프레임)"]
+}

@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71754",
+ "easy_ko": "제주 바다 어선의 위치 기록, 바다 환경, 현장 CCTV를 합쳐 어선이 어떤 방식으로 고기를 잡는지와 그물을 던지는지, 올리는지 같은 행동을 표시한 데이터 10만 건입니다. 어선의 조업 행동을 알아내고 불법 조업을 단속하는 AI에 쓸 수 있습니다.",
+ "easy_en": "100,000 labelled records that combine fishing boats' position tracks around Jeju, ocean conditions and on-site CCTV, marking the fishing method and actions such as casting or hauling nets. You can use it to build AI that recognises what fishing boats are doing and helps catch illegal fishing.",
+ "detail_ko": "제주도 연근해 어선의 AIS 항적(ASCII), 해양 환경(HYCOM, NetCDF), 현장 CCTV(mp4), XLS를 합쳐 조업 종류 7종(자망, 안강망, 채낚기, 연승, 통발, 트롤, 선망)과 행태 4종(투망, 양망, 조업, 비조업)을 geojson 라벨 100,000건으로 표시했습니다. 페이지에 성능 점수 표가 없고(1D-CNN 모델 소개만 있음), 선망이 5%로 적고 비조업 구간이 약 41%입니다.",
+ "detail_en": "100,000 geojson labels for 7 fishing gear types (gillnet, stow net, jigging, longline, trap, trawl, purse seine) and 4 behaviours (casting, hauling, fishing, not fishing), built by combining AIS tracks (ASCII) of fishing boats around Jeju, ocean-environment data (HYCOM, NetCDF), on-site CCTV (mp4) and XLS files. There is no score table (only a 1D-CNN model is described); purse seine is only 5%, and about 41% of segments are non-fishing.",
+ "amount_ko": "라벨 100,000건, 조업 종류 7종, 행태 4종",
+ "amount_en": "100,000 labels, 7 gear types, 4 behaviours",
+ "labels_ko": "조업 방식, 조업 행동",
+ "labels_en": "gear type, fishing behaviour",
+ "status": "full-run-2026-11-02"
+}

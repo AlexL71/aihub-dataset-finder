@@ -1,0 +1,12 @@
+{
+ "dataset_id": "61",
+ "easy_ko": "두 명 이상의 사람이 함께 여러 가지 동작을 하는 모습을 찍고, 사람마다 입체 몸 모형과 관절 위치, 머리·몸통·팔 같은 몸 부위 영역을 만든 데이터입니다. 일반 영상 한 장면만으로 사람의 입체 자세와 체형을 알아내는 AI를 만들어 스포츠나 가상현실에 쓸 수 있습니다.",
+ "easy_en": "Videos of two or more people doing many kinds of movements together, with a full body model in depth, joint positions and body-part regions (head, torso, arms) made for each person. You can build AI that works out a person's pose and body shape in depth from ordinary video, for sports or virtual reality.",
+ "detail_ko": "한국인 240명이 2명 이상 함께 166가지 동작을 수행한 Full-HD 영상으로, 2D 영상 이미지 200만 개(jpg), 카메라 파라미터, 3D 인체 메시 40만 개(obj, 10만 폴리곤 이상), 3D 키포인트 27개와 신체 표면 분할 24클래스 라벨(JSON) 각 40만 개로 구성됩니다. 기준 성능은 Detectron2 2D 키포인트 mAP 88.523%, 사람 탐지 mAP 84.109%입니다. 전체 약 2.6TB이며 사람 얼굴·몸이 나오므로 이용 약관 확인이 필요합니다.",
+ "detail_en": "Full-HD video of 240 Korean participants performing 166 actions in groups of two or more: 2M 2D frames (jpg), camera parameters, 400k 3D body meshes (obj, 100k+ polygons) and 400k JSON labels each for 27 3D keypoints and 24-class body-surface segmentation. Baselines: Detectron2 2D keypoints mAP 88.523%, person detection mAP 84.109%. Total size is about 2.6 TB; faces and bodies are visible, so check the terms of use.",
+ "amount_ko": "영상 이미지 200만 개, 입체 모델 40만 개, 참여자 240명",
+ "amount_en": "2M video frames, 400k 3D body models, 240 participants",
+ "labels_ko": "입체 관절 위치(27개), 몸 부위 영역(24개), 사람 상자, 입체 몸 모형",
+ "labels_en": "3D joint positions (27), body-part regions (24), box around each person, 3D body mesh",
+ "status": "full-run-2026-11-02"
+}

@@ -1,0 +1,12 @@
+{
+ "dataset_id": "105",
+ "easy_ko": "길거리 간판, 현수막, 실내 안내판과 책 표지를 찍은 사진마다 한글이 있는 위치와 정답 글자를 표시한 데이터입니다. 간판이나 책 표지를 찍으면 글자를 읽어 주는 AI를 만들 수 있습니다.",
+ "easy_en": "Photos of street signs, banners, indoor signboards and book covers, with the position of each piece of Korean text and the correct text marked. You can build AI that reads the text when you photograph a sign or a book cover.",
+ "detail_ko": "가로형·세로형·돌출 간판, 현수막, 실내 안내판 사진 45만 장(실외 31.5만, 실내 13.5만)과 KDC 11분류 책표지 사진 5만 장(jpg)에 글자 영역 바운딩박스·폴리곤과 텍스트를 JSON으로 붙였습니다. 기준 성능 지표는 페이지에 없습니다. 간판 사진에 사람이나 차량 번호판이 찍혔을 수 있어 비식별 여부 확인이 필요합니다.",
+ "detail_en": "450k photos of signboards, banners and indoor signs (315k outdoor, 135k indoor) and 50k book-cover photos across 11 KDC categories (jpg), with JSON text bounding boxes or polygons and transcriptions. No baseline is given on the page. Sign photos may include people or licence plates, so check de-identification.",
+ "amount_ko": "간판 사진 45만 장, 책 표지 5만 장",
+ "amount_en": "450k sign photos, 50k book covers",
+ "labels_ko": "글자 위치 상자·윤곽, 정답 글자",
+ "labels_en": "boxes or outlines around text, correct text",
+ "status": "full-run-2026-11-02"
+}

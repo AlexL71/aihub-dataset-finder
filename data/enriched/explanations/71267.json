@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71267",
+ "easy_ko": "스스로 움직이는 휠체어에 단 카메라와 레이저 거리 측정 장비로 실내외 길을 기록하고, 보행자, 휠체어, 볼라드, 차, 킥보드, 벤치, 맨홀, 점자블록 같은 장애물과 길을 표시한 데이터입니다. 장애인과 어르신이 안전하게 다니도록 길을 안내하는 자율주행 휠체어를 만들 수 있습니다.",
+ "easy_en": "Indoor and outdoor routes recorded by cameras and laser scanners on self-driving wheelchairs, with obstacles and paths marked, such as pedestrians, wheelchairs, bollards, cars, scooters, benches, manholes and tactile paving. You can build self-driving wheelchairs that guide disabled and elderly people safely.",
+ "detail_ko": "자율주행 휠체어 좌우 카메라 이미지 28.8만 장(jpg)과 16채널 라이다 14.4만 프레임(pcd)에 실내·실외 장애물과 길(보행자, 휠체어, 볼라드, 승용차, 트럭, 오토바이, 킥보드, 자전거, 벤치, 맨홀, 점자블록, 라바콘 등)의 2D 다각형 분할과 3D 바운딩박스를 JSON으로 붙였습니다. 기준 성능은 3D 탐지 mAP 75.91%(모델이 Mask R-CNN으로 적혀 있어 확인 필요), Mask R-CNN 분할 mIoU 실내 72.09%, 실외 74.15%입니다. 보행자가 찍힌 영상입니다.",
+ "detail_en": "288k left/right camera images (jpg) and 144k frames of 16-channel lidar (pcd) from self-driving wheelchairs, with JSON 2D polygon segmentation and 3D boxes for indoor and outdoor obstacles and paths (pedestrian, wheelchair, bollard, car, truck, motorcycle, kick scooter, bicycle, bench, manhole, tactile blocks, traffic cone and more). Baselines: 3D detection mAP 75.91% (model listed as Mask R-CNN, which needs checking), Mask R-CNN segmentation mIoU 72.09% (indoor) and 74.15% (outdoor). Pedestrians appear in the footage.",
+ "amount_ko": "카메라 사진 28.8만 장, 레이저 점 데이터 14.4만 프레임",
+ "amount_en": "288k camera images, 144k lidar frames",
+ "labels_ko": "장애물·길 영역(테두리), 입체 상자, 물체 종류",
+ "labels_en": "polygon masks for obstacles and paths, 3D boxes, object class",
+ "status": "full-run-2026-11-02"
+}

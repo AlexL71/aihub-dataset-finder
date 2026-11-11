@@ -1,0 +1,29 @@
+{
+ "dataset_id": "71568",
+ "title_en": "Numerical reasoning machine reading data",
+ "summary_ko": "경제·스포츠 뉴스 기사 지문 324,026건에 '두 값의 차이는?', '몇 퍼센트 늘었나?', '며칠 뒤인가?'처럼 숫자 계산이 필요한 질문과 답 414,940쌍을 붙인 데이터입니다. 글을 읽고 계산까지 해서 답하는 기계독해(글 읽고 답하기) AI에 쓸 수 있습니다.",
+ "summary_en": "324,026 economy and sports news passages with 414,940 question-answer pairs that need number work: addition/subtraction, ratios, date arithmetic and extraction, and comparisons. For reading comprehension with numerical reasoning.",
+ "contents_ko": "뉴스 지문(txt) + JSON(질문, 답, 응답 유형, 연산 유형).",
+ "contents_en": "News passage (txt) + JSON (question, answer, answer type, operation type).",
+ "modalities": ["text"],
+ "tasks": ["question_answering"],
+ "topics": [{"ko": "뉴스·경제·스포츠", "en": "News, economy and sports"}, {"ko": "수리 추론", "en": "Numerical reasoning"}],
+ "keywords_ko": ["기계독해", "숫자연산", "수리추론", "질의응답", "뉴스"],
+ "keywords_en": ["machine reading", "numerical reasoning", "arithmetic", "question answering", "news"],
+ "labels": ["question", "answer", "answer type", "operation type"],
+ "file_formats": ["txt", "json"],
+ "scale_ko": "지문 324,026건, 질의응답 414,940쌍 (경제 210,694 + 스포츠 204,246)",
+ "classes_example": ["가산/감산", "비율연산", "날짜가산/감산", "날짜추출", "양자/다자비교", "경계추출", "단서추출"],
+ "baseline": [{"task": "numerical question answering", "model": "NumNet+ (Korean)", "metric": "F1-score", "value": "0.5965"}],
+ "difficulty": "intermediate",
+ "difficulty_note_ko": "데이터는 약 0.24GB로 작지만, 계산이 필요한 질문이라 일반 기계독해보다 어렵습니다(기준 F1 약 0.60).",
+ "skills_needed_ko": ["파이썬", "허깅페이스 Transformers", "한국어 자연어 처리"],
+ "caveats_ko": ["기준 모델 F1이 0.5965로 아직 낮음", "경제·스포츠 두 분야만 있음"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "연산 유형 분류", "title_en": "Operation type classification", "desc_ko": "질문이 덧셈·비율·날짜·비교 중 어떤 계산인지 분류합니다.", "desc_en": "Classify which operation a question needs."},
+  {"level": "capstone", "title_ko": "경기 기록 질의응답 봇", "title_en": "Sports stats QA bot", "desc_ko": "스포츠 기사를 읽고 점수 차이·승률 같은 질문에 답하는 봇을 만듭니다.", "desc_en": "Answer score-difference and win-rate questions from sports news."},
+  {"level": "research", "title_ko": "LLM 계산 단계 생성", "title_en": "LLM step-by-step arithmetic", "desc_ko": "언어 모델이 풀이 단계를 쓰게 하거나 계산기를 쓰게 할 때 정확도가 오르는지 연구합니다.", "desc_en": "Test whether step-by-step or calculator use improves LLM accuracy."}
+ ],
+ "doc_used": true,
+ "uncertain": []
+}

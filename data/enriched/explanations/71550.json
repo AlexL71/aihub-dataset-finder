@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71550",
+ "easy_ko": "무인 편의점과 가게에서 넘어짐, 물건 부수기, 불 지르기, 담배 피우기, 훔치기, 때리기 같은 이상한 행동을 꾸며 찍은 영상 약 6,500개에 사람 위치와 몸 관절 점을 표시한 데이터입니다. 무인 가게의 안전을 지켜보는 AI에 쓸 수 있습니다.",
+ "easy_en": "About 6,500 staged video clips from unmanned convenience stores and shops showing unusual behaviour such as falling, breaking things, arson, smoking, theft and assault, with each person's position and body joints marked. You can use it to build AI that watches over safety in unmanned stores.",
+ "detail_ko": "무인 편의점·매장 영상 6,492클립(mp4)에 사람 상자, 키포인트, 이상행동 8종(전도, 파손, 방화, 흡연, 유기, 절도, 폭행, 이동약자; 각 약 800건)을 XML로 붙였습니다. 기준 성능은 LSTM 이상행동 인식 정확도 71.00%, MIL Ranking 이상 탐지 정확도 78.40%, OpenPose 자세 추정 PCKh 88.40%, UniPose 93.94%입니다. MIL Ranking 정확도가 목표값 80%에 못 미치고, 연출 촬영이라 실제 사건과 다를 수 있으며, 라벨이 XML 형식입니다. 팩에 별도 성능 지표 표는 없습니다.",
+ "detail_en": "6,492 video clips (mp4) from unmanned convenience stores and shops, with XML person boxes, keypoints and 8 abnormal behaviours (fall, damage, arson, smoking, dumping, theft, assault, person needing help; about 800 each). Baselines: abnormal-behaviour recognition with LSTM, accuracy 71.00%; anomaly detection with MIL Ranking, accuracy 78.40%; pose estimation PCKh 88.40% (OpenPose) and 93.94% (UniPose). MIL Ranking misses its 80% target, the scenes are staged and may differ from real incidents, and labels are in XML. There is no separate metrics table in the pack.",
+ "amount_ko": "영상 6,492클립, 이상행동 8종",
+ "amount_en": "6,492 video clips, 8 abnormal behaviours",
+ "labels_ko": "사람 위치 상자, 관절 점, 이상행동 종류",
+ "labels_en": "bounding boxes, keypoints, behaviour class",
+ "status": "full-run-2026-11-02"
+}

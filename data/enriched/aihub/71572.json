@@ -1,0 +1,29 @@
+{
+ "dataset_id": "71572",
+ "title_en": "Data for AI-based traffic signal optimisation",
+ "summary_ko": "안양시·부천시 교차로 CCTV 영상 이미지 약 115만 장과 교통량(개별 차량·출발지-도착지·회전 교통량), 신호, 교통 지표, 도로 네트워크 데이터입니다. 심층강화학습(시행착오로 배우는 AI)으로 교통 신호를 조절해 정체를 줄이는 연구와 통행시간 예측에 쓸 수 있습니다.",
+ "summary_en": "About 1.15 million intersection CCTV images from Anyang and Bucheon plus traffic volume (per vehicle, origin-destination, turning), signal, indicator and road-network data. For deep reinforcement learning signal control and travel-time prediction.",
+ "contents_ko": "교차로 영상 이미지(jpg) + 교통량·신호·지표 CSV/XML + 네트워크 XML + 영상 라벨 CSV/XML.",
+ "contents_en": "Intersection image (jpg) + traffic volume, signal and indicator CSV/XML + network XML + image label CSV/XML.",
+ "modalities": ["image", "tabular"],
+ "tasks": ["forecasting", "tabular_prediction", "object_detection"],
+ "topics": [{"ko": "교통 신호·스마트시티", "en": "Traffic signals and smart city"}, {"ko": "교통 흐름", "en": "Traffic flow"}],
+ "keywords_ko": ["신호 최적화", "강화학습", "교통량", "교차로", "스마트시티"],
+ "keywords_en": ["signal optimisation", "reinforcement learning", "traffic volume", "intersection", "smart city"],
+ "labels": ["traffic volume", "signal timing", "traffic indicators", "image labels"],
+ "file_formats": ["jpg", "csv", "xml"],
+ "scale_ko": "총 1,804,194개 (영상 이미지 1,152,305장, 교통량 데이터 각 68,640개, 영상 라벨 3,840개), 약 5.04TB 표기",
+ "classes_example": ["car", "bus", "small_truck", "large_truck", "bike", "unknown"],
+ "baseline": [],
+ "difficulty": "advanced",
+ "difficulty_note_ko": "교통 시뮬레이터(SUMO 등)와 강화학습 지식이 필요하고 데이터가 매우 큽니다(가장 작은 파일도 약 37GB).",
+ "skills_needed_ko": ["파이썬", "강화학습", "교통 시뮬레이션(SUMO)", "판다스"],
+ "caveats_ko": ["페이지는 약 5.04TB, 파일 트리는 약 1TB로 크기가 다름", "가장 작은 파일도 약 37GB라 일부만 받기 어려움", "영상 라벨이 3,840개뿐", "팩에 성능 지표가 없음"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "교차로 교통량 시각화", "title_en": "Intersection traffic visualisation", "desc_ko": "교통량 CSV로 시간대별·방향별 교통량 그래프를 그립니다.", "desc_en": "Plot traffic volume by time and direction from CSV."},
+  {"level": "capstone", "title_ko": "통행시간 예측", "title_en": "Travel-time prediction", "desc_ko": "과거 교통량·신호 데이터로 교차로 통행시간을 예측합니다.", "desc_en": "Predict intersection travel time from past volume and signals."},
+  {"level": "research", "title_ko": "강화학습 신호 제어", "title_en": "RL traffic signal control", "desc_ko": "네트워크 데이터를 시뮬레이터에 올려 강화학습으로 신호 주기를 최적화합니다.", "desc_en": "Optimise signal timing with RL in a simulator built from network data."}
+ ],
+ "doc_used": true,
+ "uncertain": ["영상 라벨(3,840개)이 무엇을 표시하는지 팩 앞부분에서 확인되지 않음"]
+}

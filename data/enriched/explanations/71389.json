@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71389",
+ "easy_ko": "박물관과 전시장, 개인 소장품을 직접 찍은 한국 미술품과 유물의 사진과 입체 모형에 서예, 그림, 공예, 조각, 건축, 악기 같은 종류와 시대, 한국어·영어 설명을 붙인 데이터입니다. 가상 박물관을 만들거나 작품을 자동으로 분류하는 AI를 만들 수 있습니다.",
+ "easy_en": "Photos and 3D models of Korean artworks and artefacts shot in museums, exhibitions and private collections, labelled with type (calligraphy, painting, craft, sculpture, architecture, musical instrument), era and descriptions in Korean and English. You can build virtual museums or AI that classifies artworks automatically.",
+ "detail_ko": "한국 미술품·유물 2D 이미지 221,291장(jpg)과 3D 모델 10,097개(obj)에 2D 다각형·3D 큐보이드 영역, 작품 유형 6종(3D는 4종: 서예, 회화, 공예, 조각, 건축, 악기), 시대(고대, 근대, 현대), 한·영 메타데이터를 JSON으로 붙였습니다. 기준 성능은 SE-ResNet 2D 작품 분류 정확도 97.88%, PointNet 3D 작품 분류 85.86%입니다. 전체 약 493GB이며, 2D는 서예·회화가 80% 이상, 3D는 조각이 약 80%로 불균형이 크고, 2D 이미지 수가 표마다 조금씩 다릅니다.",
+ "detail_en": "221,291 2D images (jpg) and 10,097 3D models (obj) of Korean artworks and artefacts, with JSON 2D polygons and 3D cuboids, artwork type (6 for 2D, 4 for 3D: calligraphy, painting, craft, sculpture, architecture, instrument), era (ancient, modern, contemporary) and Korean/English metadata. Baselines: SE-ResNet 2D classification accuracy 97.88%, PointNet 3D classification 85.86%. Total size is about 493 GB; calligraphy and painting make up 80%+ of 2D and sculpture about 80% of 3D; 2D counts differ slightly between tables.",
+ "amount_ko": "사진 221,291장, 입체 모형 10,097개",
+ "amount_en": "221,291 images, 10,097 3D models",
+ "labels_ko": "작품 영역(테두리·입체 상자), 작품 종류, 시대, 한·영 설명",
+ "labels_en": "polygons and cuboids, artwork type, era, Korean/English metadata",
+ "status": "full-run-2026-11-02"
+}

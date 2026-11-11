@@ -1,0 +1,29 @@
+{
+ "dataset_id": "71483",
+ "title_en": "Rice growth abnormality recognition data",
+ "summary_ko": "벼 논을 드론으로 찍은 다분광 이미지 200,910장에 정상과 생육이상 4종(도복·결주·도열병·생육부진) 영역이 분할로 칠해져 있고, 벼 단위 수량 데이터 400건이 함께 있습니다. 드론으로 논의 이상 구역을 찾는 스마트 농업 AI에 쓸 수 있습니다.",
+ "summary_en": "200,910 drone multispectral images of rice paddies with healthy areas and 4 growth problems (lodging, missing plants, rice blast, poor growth) segmented, plus 400 rice yield records. For smart-farming AI that finds problem areas in paddies from drone images.",
+ "contents_ko": "드론 다분광 이미지(tif) + JSON(분할, 클래스, 날씨·시간 정보).",
+ "contents_en": "Drone multispectral image (tif) + JSON (segmentation, class, weather and time info).",
+ "modalities": ["image"],
+ "tasks": ["segmentation", "anomaly_detection"],
+ "topics": [{"ko": "스마트 농업", "en": "Smart farming"}, {"ko": "드론 원격탐사", "en": "Drone remote sensing"}],
+ "keywords_ko": ["벼", "드론", "다분광", "도열병", "도복", "생육 이상"],
+ "keywords_en": ["rice", "drone", "multispectral", "rice blast", "lodging", "growth abnormality"],
+ "labels": ["segmentation", "class"],
+ "file_formats": ["tif", "json"],
+ "scale_ko": "다분광 이미지 200,910장, 클래스 5종, 벼 수량 데이터 400건",
+ "classes_example": ["정상", "도열병", "도복", "결주", "생육부진"],
+ "baseline": [{"task": "normal vs lodging segmentation", "model": "SegFormer", "metric": "Pixel accuracy", "value": "90.46%"}, {"task": "normal vs blast segmentation", "model": "SegFormer", "metric": "Pixel accuracy", "value": "87.23%"}, {"task": "normal vs abnormal (all) segmentation", "model": "SegFormer", "metric": "Pixel accuracy", "value": "86.69%"}],
+ "difficulty": "intermediate",
+ "difficulty_note_ko": "분할 실습에 좋지만 다분광 tif 처리가 필요하고 전체 약 148GB입니다.",
+ "skills_needed_ko": ["파이썬", "분할 모델(SegFormer)", "다분광 영상 처리"],
+ "caveats_ko": ["클래스 불균형이 큼(정상 57.6%, 결주 32.1%, 도열병·도복 각 2.6%)", "전체 정확도가 77.44%와 86.69%로 두 번 다르게 적혀 있음", "같은 논을 여러 번 찍어 논 단위로 나눠야 누수를 막을 수 있음"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "정상·이상 논 구역 분할", "title_en": "Healthy vs abnormal paddy areas", "desc_ko": "드론 이미지에서 생육이상 영역을 칠합니다.", "desc_en": "Segment abnormal growth areas in drone images."},
+  {"level": "capstone", "title_ko": "논 이상 구역 지도", "title_en": "Paddy problem map", "desc_ko": "분할 결과를 모아 농가에 방제가 필요한 구역 지도를 보여 줍니다.", "desc_en": "Map areas needing treatment for farmers."},
+  {"level": "research", "title_ko": "희소 병해 분할 개선", "title_en": "Rare disease segmentation", "desc_ko": "도열병처럼 드문 클래스의 분할 성능을 높이는 방법을 연구합니다.", "desc_en": "Improve segmentation of rare classes such as rice blast."}
+ ],
+ "doc_used": true,
+ "uncertain": ["다분광 밴드 수"]
+}

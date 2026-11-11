@@ -1,0 +1,29 @@
+{
+ "dataset_id": "71",
+ "title_en": "Broadcast video content for scene-context understanding",
+ "summary_ko": "MBN·YTN·EBS 등 방송사 영상에 프레임별 물체 상자 약 150만 개와 클립별 장면·맥락(상황) 라벨 약 16만 개를 붙인 데이터입니다. 영상 속 장면이 어떤 상황인지 알아보는 AI로 영상 검색, OTT 추천, 광고 매칭에 쓸 수 있습니다.",
+ "summary_en": "Broadcast video from MBN, YTN, EBS and others with about 1.5 million per-frame object boxes and 160,000 per-clip scene/context labels. For AI that understands what situation a scene shows, useful for video search, OTT recommendation and ad matching.",
+ "contents_ko": "방송 영상 클립 + 객체 JSON(프레임별 상자, 물체 이름) + 맥락 JSON(클립 단위 상황 분류).",
+ "contents_en": "Broadcast clips + object JSON (per-frame boxes and names) + context JSON (situation class per clip).",
+ "modalities": ["video"],
+ "tasks": ["action_recognition", "object_detection", "retrieval_recommendation"],
+ "topics": [{"ko": "방송·미디어", "en": "Broadcasting and media"}, {"ko": "광고·OTT", "en": "Advertising and OTT"}],
+ "keywords_ko": ["방송 영상", "맥락 인식", "장면 이해", "객체 인식", "동영상 광고", "OTT"],
+ "keywords_en": ["broadcast video", "context recognition", "scene understanding", "object recognition", "video ads", "OTT"],
+ "labels": ["bounding box", "object class", "scene/context class"],
+ "file_formats": ["mp4", "jpg", "json"],
+ "scale_ko": "객체 라벨 약 150만 개, 맥락 라벨 약 16만 개(구축량 86.4만)",
+ "classes_example": ["건강 > 손씻기", "관리활동 > 네일케어", "착용 > 신발", "행사 > 결혼식", "상호작용 > 악수", "생산활동 > 수확", "객체 > 사람", "객체 > 음식(바나나, 피자)", "객체 > 탈 것(자전거, 버스)", "객체 > 전자제품(TV, 휴대폰)"],
+ "baseline": [{"task": "context classification", "model": "SlowFast-R50", "metric": "accuracy", "value": "70.02%"}],
+ "difficulty": "advanced",
+ "difficulty_note_ko": "영상 단위 분류 모델(SlowFast 등)이 필요하고 전체 약 2.2TB입니다.",
+ "skills_needed_ko": ["파이썬", "영상 분류 모델", "대용량 영상 일부 추출"],
+ "caveats_ko": ["전체 약 2.2TB", "방송 영상 이용 조건 확인 필요"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "방송 장면 물체 통계", "title_en": "Object statistics in broadcasts", "desc_ko": "객체 라벨로 방송사·장르별 자주 나오는 물체를 비교합니다.", "desc_en": "Compare frequent objects by channel and genre."},
+  {"level": "capstone", "title_ko": "장면 맞춤 광고 추천", "title_en": "Scene-aware ad matching", "desc_ko": "클립의 맥락을 분류해 어울리는 광고 카테고리를 추천하는 데모를 만듭니다.", "desc_en": "Classify clip context and suggest a matching ad category."},
+  {"level": "research", "title_ko": "물체 정보로 맥락 인식 개선", "title_en": "Objects to improve context recognition", "desc_ko": "프레임 물체 탐지 결과를 맥락 분류 모델에 넣었을 때 정확도가 오르는지 연구합니다.", "desc_en": "Test whether adding detected objects improves context classification."}
+ ],
+ "doc_used": true,
+ "uncertain": []
+}

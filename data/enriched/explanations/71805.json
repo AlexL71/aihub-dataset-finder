@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71805",
+ "easy_ko": "한국과 중국 일부 지역을 위성에서 찍은 사진에 공장 굴뚝의 위치와 높이, 산업단지와 시가지의 범위를 표시하고, 위성과 측정소에서 잰 대기오염 자료를 함께 넣은 데이터입니다. 하늘에서 오염을 내뿜는 곳을 찾아 지도로 보여 주는 AI를 만들 수 있습니다.",
+ "easy_en": "Satellite photos of parts of Korea and China with factory chimneys (location and height) and the extent of industrial areas and towns marked, together with air-pollution measurements from satellites and ground stations. You can build AI that finds pollution sources from space and maps them.",
+ "detail_ko": "Kompsat-3/3A(10,065장)·Sentinel-2(10,000장)·Landsat 8/9(5,000장) 위성 영상 25,065장(jpg·tif)에 굴뚝 바운딩박스, 굴뚝 높이 라인, 산업단지·시가지 분할 마스크가 라벨링되어 있습니다. GEMS 이산화질소 위성 자료와 대기오염 측정망 자료 60,000건이 함께 제공됩니다. 중국 일부 지역이 포함되어 지역별 성능 차이를 확인해야 하며, 성능 지표 값은 확인되지 않았습니다.",
+ "detail_en": "25,065 satellite images (jpg/tif) from Kompsat-3/3A (10,065), Sentinel-2 (10,000) and Landsat 8/9 (5,000), labelled with chimney bounding boxes, chimney-height lines and segmentation masks for industrial and urban areas, plus GEMS NO2 satellite data and 60,000 ground-station air-quality records. Includes parts of China, so check performance by region; no performance values were found.",
+ "amount_ko": "위성 사진 약 2.5만 장, 대기 측정 기록 6만 건",
+ "amount_en": "about 25k satellite images, 60k air-quality records",
+ "labels_ko": "굴뚝 위치 상자, 굴뚝 높이 선, 산업단지·시가지 영역",
+ "labels_en": "boxes around chimneys, chimney-height lines, industrial and town areas",
+ "status": "sample-2026-11-02"
+}

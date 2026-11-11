@@ -1,0 +1,48 @@
+{
+ "id": "biotechnology",
+ "name_ko": "생명정보공학과",
+ "name_en": "Biotechnology and Bioinformatics",
+ "college": "과학기술대학",
+ "summary_ko": "세포, 유전자, 단백질, 미생물의 원리를 배우고 이를 신약, 백신, 진단, 식품, 환경 기술에 응용하는 생명공학 학과입니다. 생물정보학·계산생물학처럼 컴퓨터로 생명 데이터를 분석하는 과목도 함께 다룹니다.",
+ "summary_en": "A biotechnology department that teaches how cells, genes, proteins and microbes work and applies this to drugs, vaccines, diagnosis, food and the environment. It also covers bioinformatics and computational biology, which analyse biological data with computers.",
+ "key_topics": ["분자세포생물학", "미생물학·바이러스학", "면역학과 감염병", "유전체학·단백질체학", "생물정보학·계산생물학", "단백질·유전공학", "합성생물공학", "발효·산업생명공학", "나노생물공학·바이오센서", "신약·백신 개발"],
+ "course_keywords": ["일반생물학", "생물유기화학", "미생물학", "분자세포생물학", "생물정보학", "생물정보프로그래밍", "생물통계학", "수리생물학", "생물구조학", "단백질공학", "기기분석", "생화학", "분자생물학", "생물물리학", "분자바이러스학", "합성생물공학", "조직생명공학", "유전체학", "단백질체학", "감염세균학", "발효공학", "세포공학", "면역학", "계산생물학개론", "나노생물공학", "유전공학", "의약화학", "효소화학", "생물안전성및법규"],
+ "curriculum_by_year": {
+  "1": ["일반생물학", "일반화학", "미적분학", "디지털리터러시 입문"],
+  "2": ["생물유기화학", "미생물학", "분자세포생물학", "생물정보학", "미생물-생화학실험", "생물통계학", "생물구조학", "단백질공학", "생물정보프로그래밍", "수리생물학", "기기분석"],
+  "3": ["생화학", "분자생물학", "생물물리학", "분자바이러스학", "합성생물공학", "조직생명공학", "유전체학", "단백질체학", "감염세균학", "발효공학", "세포공학", "면역학"],
+  "4": ["생물화학공학", "산업생명공학", "계산생물학개론", "나노생물공학", "유전공학", "분자유전학", "의약화학", "효소화학", "생물안전성및법규", "학사논문연구", "바이오산업체현장실습"]
+ },
+ "careers": ["제약·바이오 기업 연구원(삼성바이오로직스, 셀트리온, 녹십자 등)", "식품·화장품 기업 연구원(CJ제일제당, 농심 등)", "생명공학연구원·국제백신연구소 등 연구기관", "식품의약품안전처·보건산업진흥원 등 공공기관", "바이오벤처", "대학원 진학 후 연구자"],
+ "research_areas": ["계산 생물정보학(분자 모델링, 가상 스크리닝)", "분자면역미생물학", "나노·생체모방 공학", "선천성 면역 제어", "동물 분자 바이러스학·백신", "생체 나노공학·바이오센서", "재생 바이오공학", "노화·유전체", "통합 구조생물학"],
+ "data_interests": [
+  {"topic_ko": "유전체와 단백질", "topic_en": "Genomes and proteins", "keywords": ["유전자 서열", "단백질 구조", "바이오 데이터"]},
+  {"topic_ko": "세포·현미경 이미지", "topic_en": "Cell and microscope images", "keywords": ["세포 이미지", "조직 슬라이드", "세균 이미지"]},
+  {"topic_ko": "질병 진단", "topic_en": "Disease diagnosis", "keywords": ["의료 영상", "병리", "감염병"]},
+  {"topic_ko": "미생물과 발효 식품", "topic_en": "Microbes and fermented food", "keywords": ["발효", "식품 품질", "미생물"]},
+  {"topic_ko": "신약 후보 물질", "topic_en": "Drug candidates", "keywords": ["화합물", "분자 결합", "약물 정보"]},
+  {"topic_ko": "동물과 가축 건강", "topic_en": "Animal and livestock health", "keywords": ["가축 질병", "동물 행동", "축산"]},
+  {"topic_ko": "생명과학 문헌", "topic_en": "Life science literature", "keywords": ["논문", "의학 텍스트", "문헌 마이닝"]}
+ ],
+ "interest_questions": [
+  {"q_ko": "생명공학의 어떤 주제가 좋나요?", "q_en": "Which biotech topic do you like?",
+   "options": [{"ko": "질병 진단과 치료", "en": "Diagnosis and treatment"}, {"ko": "유전자·단백질 분석", "en": "Genes and proteins"}, {"ko": "미생물·발효 식품", "en": "Microbes and fermented food"}, {"ko": "동물·가축 건강", "en": "Animal and livestock health"}, {"ko": "신약·백신", "en": "Drugs and vaccines"}]},
+  {"q_ko": "다뤄보고 싶은 자료는?", "q_en": "What data would you like to use?",
+   "options": [{"ko": "세포·조직 이미지", "en": "Cell and tissue images"}, {"ko": "의료 영상", "en": "Medical images"}, {"ko": "서열·분자 데이터", "en": "Sequence and molecule data"}, {"ko": "논문·의학 텍스트", "en": "Papers and medical text"}]}
+ ],
+ "project_themes": ["병리 조직 이미지에서 이상 세포 찾기", "가축 영상으로 질병 징후 감지", "의학 논문 요약·키워드 추출", "발효 식품 품질 이미지 분류"],
+ "data_skill_level": "medium",
+ "data_skill_note": "생물정보학, 생물정보프로그래밍, 생물통계학, 계산생물학 과목이 있어 기초 프로그래밍과 통계 경험을 쌓을 수 있습니다. 딥러닝 과목은 없습니다.",
+ "sources": [
+  {"kind": "page", "label": "학과소개", "url": "https://sejong.korea.ac.kr/biotechnology/2993/subview.do"},
+  {"kind": "page", "label": "대학원 소개", "url": "https://sejong.korea.ac.kr/biotechnology/3019/subview.do"},
+  {"kind": "page", "label": "연구실 안내", "url": "https://sejong.korea.ac.kr/biotechnology/3021/subview.do"},
+  {"kind": "page", "label": "졸업 후 진로", "url": "https://sejong.korea.ac.kr/biotechnology/2997/subview.do"},
+  {"kind": "page", "label": "교과과정표", "url": "https://sejong.korea.ac.kr/biotechnology/3030/subview.do"},
+  {"kind": "pdf", "label": "전공역량기반 교육과정", "url": "https://sejong.korea.ac.kr/pdfView/biotechnology/10/65/fileDownload.do"}
+ ],
+ "inferred_fields": ["data_interests", "interest_questions", "project_themes"],
+ "gaps": ["curriculum_by_year is estimated from course numbers (2xx = year 2, etc.)."],
+ "version": 1,
+ "created": "2026-10-29"
+}

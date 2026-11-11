@@ -1,0 +1,29 @@
+{
+ "dataset_id": "71966",
+ "title_en": "Musculoskeletal disease biosignal data",
+ "summary_ko": "무릎관절염 조기 진단을 위해 스마트 인솔(웨어러블 장기 측정), 보행매트, IMU 센서로 수집한 보행·생체신호 600건에 관절염 여부와 진단 텍스트 라벨이 붙은 데이터입니다. 정상과 관절염 그룹으로 나뉘며, 근골격계 질환 조기 예측 AI 연구에 쓸 수 있습니다.",
+ "summary_en": "600 gait and biosignal records collected with smart insoles (long-term wearable), a gait mat and IMU sensors, labelled with knee arthritis status and diagnostic text. Split into normal and arthritis groups. For research on early prediction of musculoskeletal disease.",
+ "contents_ko": "보행·생체신호(json) + JSON(관절염 여부, 메타, 진단 텍스트).",
+ "contents_en": "Gait and biosignals (json) + JSON (arthritis status, metadata, diagnostic text).",
+ "modalities": ["sensor", "tabular"],
+ "tasks": ["tabular_prediction", "anomaly_detection"],
+ "topics": [{"ko": "의료·헬스케어", "en": "Healthcare"}, {"ko": "보행 분석", "en": "Gait analysis"}],
+ "keywords_ko": ["무릎관절염", "보행 분석", "스마트 인솔", "IMU", "웨어러블", "조기 진단"],
+ "keywords_en": ["knee arthritis", "gait analysis", "smart insole", "IMU", "wearable", "early diagnosis"],
+ "labels": ["arthritis status", "diagnostic text"],
+ "file_formats": ["json"],
+ "scale_ko": "원천·라벨 각 600건(장비별 정상·관절염 각 100건)",
+ "classes_example": ["정상", "관절염"],
+ "baseline": [],
+ "difficulty": "beginner",
+ "difficulty_note_ko": "용량이 매우 작아(0.01GB 미만) 바로 실습할 수 있지만, 600건이라 과적합에 주의해야 합니다.",
+ "skills_needed_ko": ["파이썬", "시계열 신호 처리", "분류 모델"],
+ "caveats_ko": ["600건으로 매우 적어 모델 일반화가 어려움", "환자 건강 정보라 이용 조건 확인 필요", "같은 사람이 여러 장비에 걸쳐 있는지 확인해 분할 시 누수에 주의", "성능 지표 값이 팩 앞부분에 없음"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "인솔 신호로 관절염 분류", "title_en": "Arthritis from insole signals", "desc_ko": "스마트 인솔 신호로 정상과 관절염을 구분합니다.", "desc_en": "Classify normal vs arthritis from insole data."},
+  {"level": "capstone", "title_ko": "보행 건강 리포트", "title_en": "Gait health report", "desc_ko": "보행 신호를 분석해 이상 징후를 알려 주는 리포트를 만듭니다.", "desc_en": "Report gait abnormalities from sensor data."},
+  {"level": "research", "title_ko": "장비 간 성능 비교", "title_en": "Sensor comparison", "desc_ko": "인솔·보행매트·IMU 중 어떤 장비가 조기 진단에 유리한지 연구합니다.", "desc_en": "Compare insole, mat and IMU for early diagnosis."}
+ ],
+ "doc_used": true,
+ "uncertain": ["보행매트·IMU의 관절염 그룹 수량", "피험자 수"]
+}

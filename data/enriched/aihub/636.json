@@ -1,0 +1,32 @@
+{
+ "dataset_id": "636",
+ "title_en": "Sign language video data for disaster safety information",
+ "summary_ko": "재난안전문자와 일기예보 한국어 문장 약 16만 개를 한국수어로 옮긴 영상 약 20만 건에, 수어 문법 문장·형태소·동작 시간·얼굴 표정 같은 비수지 정보와 몸·손 키포인트를 붙인 데이터입니다. 재난 정보를 청각장애인에게 수어로 전달하는 번역 AI에 쓸 수 있습니다.",
+ "summary_en": "About 160,000 Korean sentences from disaster-safety alerts and weather forecasts, with about 200,000 Korean Sign Language videos, sign-grammar sentences, morphemes with timing, non-manual signals (facial expressions) and body/hand keypoints. For translation AI that delivers disaster information to Deaf people in sign language.",
+ "contents_ko": "수어 영상(mp4) + 한국어 문장(txt) + JSON/XML(수어 형태소, 시간, 비수지 정보, 키포인트).",
+ "contents_en": "Sign-language videos (mp4) + Korean sentences (txt) + JSON/XML (sign morphemes, timing, non-manual signals, keypoints).",
+ "modalities": ["video", "text"],
+ "tasks": ["translation", "keypoint_pose", "action_recognition"],
+ "topics": [{"ko": "수어·접근성", "en": "Sign language and accessibility"}, {"ko": "재난 안전", "en": "Disaster safety"}],
+ "keywords_ko": ["한국수어", "수어 번역", "재난안전문자", "청각장애인", "일기예보"],
+ "keywords_en": ["Korean Sign Language", "sign translation", "disaster alerts", "Deaf accessibility", "weather forecast"],
+ "labels": ["sign-grammar sentence", "morpheme timing", "non-manual signal", "keypoint"],
+ "file_formats": ["mp4", "txt", "json", "xml"],
+ "scale_ko": "한국어 문장 약 16만 개, 수어 영상 약 20만 건",
+ "classes_example": ["사회재난", "자연재난", "일기예보"],
+ "baseline": [
+  {"task": "Korean-to-sign translation", "model": "Korean GPT model", "metric": "BLEU", "value": "0.1633"},
+  {"task": "sign motion similarity", "model": "Korean GPT model", "metric": "mASS", "value": "68.82%"}
+ ],
+ "difficulty": "advanced",
+ "difficulty_note_ko": "전체 약 4.6TB로 매우 크고 번역 기준 성능(BLEU 0.16)이 낮은 어려운 문제입니다. 텍스트·키포인트만 받아 쓰세요.",
+ "skills_needed_ko": ["파이썬", "번역 모델", "자세 추정", "수어 기초 지식"],
+ "caveats_ko": ["전체 약 4.6TB", "수어 통역사 얼굴이 보임", "번역 기준 성능이 매우 낮음"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "재난 문자 분류", "title_en": "Disaster alert classifier", "desc_ko": "재난안전문자를 재난 종류별로 분류합니다.", "desc_en": "Classify disaster alerts by disaster type."},
+  {"level": "capstone", "title_ko": "재난문자→수어 글로스 번역기", "title_en": "Alert-to-sign gloss translator", "desc_ko": "한국어 재난 문자를 수어 형태소 순서로 바꾸는 번역기를 만듭니다.", "desc_en": "Translate Korean alerts into sign-language gloss sequences."},
+  {"level": "research", "title_ko": "키포인트 수어 아바타", "title_en": "Keypoint sign avatar", "desc_ko": "번역된 형태소로 수어 키포인트 동작을 생성하는 방법을 연구합니다.", "desc_en": "Generate signing keypoint motion from translated glosses."}
+ ],
+ "doc_used": true,
+ "uncertain": []
+}

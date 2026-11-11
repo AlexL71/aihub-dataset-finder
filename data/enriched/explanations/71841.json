@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71841",
+ "easy_ko": "민사법의 판결문, 법령, 해석 같은 문서와 이를 바탕으로 만든 법률 상담 질문과 답, 요약을 모은 데이터로, 모두 10만여 건입니다. 일반인도 이해하기 쉬운 법률 상담 챗봇이나 비슷한 사례 찾기 AI에 쓸 수 있습니다.",
+ "easy_en": "Documents such as court rulings, statutes and official interpretations in civil law, plus legal-advice questions and answers and summaries built from them, about 100,000 items in total. You can use it to build legal-advice chatbots that ordinary people can understand, or AI that finds similar cases.",
+ "detail_ko": "민사법 판결문 91,285건 등 판결문·법령·심결례·유권해석 문서 94,530건(JSON)과, 이를 바탕으로 만든 법률 상담 질의응답과 요약 5,600건(JSON)으로 전체 100,130건입니다. 질의응답 건수 표가 팩에서 잘려 정확한 수량을 확인해야 하고, Context Precision 55% 이상은 목표값이며 실제 결과는 팩에 없습니다. 법령은 16건뿐입니다.",
+ "detail_en": "94,530 civil-law documents (JSON) including 91,285 court rulings plus statutes, tribunal decisions and official interpretations, and legal-advice question-answer pairs and 5,600 summaries built from them (JSON), 100,130 items in total. The QA count table is cut off in the pack, so check the exact number; context precision of 55% or more is a target, not a result; and there are only 16 statutes.",
+ "amount_ko": "법률 문서 94,530건(판결문 91,285건 등), 요약 5,600건, 전체 100,130건",
+ "amount_en": "94,530 legal documents (91,285 rulings and others), 5,600 summaries, 100,130 items in total",
+ "labels_ko": "질문과 답, 요약",
+ "labels_en": "question-answer, summary",
+ "status": "full-run-2026-11-02"
+}

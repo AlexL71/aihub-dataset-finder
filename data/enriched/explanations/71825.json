@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71825",
+ "easy_ko": "로봇 집게가 200가지 넘는 물건을 집고, 들고, 옮기고, 쌓는 모습을 실제와 가상 환경에서 기록한 데이터로, 사진과 로봇 관절 각도, 힘, 촉감 값, 한국어 동작 설명이 있습니다. 말로 지시하면 로봇이 움직이게 하는 AI에 쓸 수 있습니다.",
+ "easy_en": "Recordings in real and virtual settings of a robot gripper grasping, lifting, moving and stacking more than 200 kinds of objects, with images, robot joint angles, force, touch readings and Korean descriptions of each action. You can use it to build AI that makes robots act on spoken instructions.",
+ "detail_ko": "로봇 그리퍼가 물체 200종 이상을 다루는 장면을 실제·가상 환경에서 기록한 RGB·깊이 이미지(png) 262,166세트(학습 238,266, 테스트 23,900)에 로봇 관절 각도, 끝단 포즈, 힘·토크, 촉각 값, 한국어 동작 캡션(동작: 잡기, 들기, 옮기기, 놓기, 밀기, 끌기, 쌓기, 누르기)을 JSON으로 붙였습니다. VLA(비전-언어-행동) 모델용입니다. 실제·가상 비율이 팩에 명확하지 않고, 품질 점수는 라벨 정확도이며 모델 성능 수치는 팩에 없습니다. 학습 80%·테스트 10% 외 나머지 10%의 용도는 확인이 필요합니다.",
+ "detail_en": "262,166 sets (238,266 train, 23,900 test) of RGB and depth images (png) recorded in real and virtual settings of a robot gripper handling 200+ objects, with JSON robot joint angles, end-effector pose, force and torque, tactile values and Korean action captions (grasp, lift, move, place, push, drag, stack, press), for vision-language-action (VLA) models. The real/virtual split is unclear, quality scores describe label accuracy and no model scores are in the pack, and the remaining 10% beyond the 80% train and 10% test split needs checking.",
+ "amount_ko": "262,166세트(학습 238,266, 테스트 23,900), 물체 200종 이상",
+ "amount_en": "262,166 sets (238,266 train, 23,900 test), 200+ objects",
+ "labels_ko": "한국어 동작 설명, 로봇 상태(관절·힘·촉감)",
+ "labels_en": "caption, robot state",
+ "status": "full-run-2026-11-02"
+}

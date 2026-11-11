@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71777",
+ "easy_ko": "배추, 절인 배추, 김치까지 김치를 만드는 단계별로 찍은 일반 사진과 특수 카메라(초분광) 사진에 영역과 품질 등급을 표시한 데이터입니다. 재료를 자르지 않고 사진만으로 김치 원료 품질을 판정하는 AI에 쓸 수 있습니다.",
+ "easy_en": "Ordinary photos and special-camera (hyperspectral) images at each stage of kimchi making, from raw cabbage to salted cabbage to kimchi, with areas and quality grades marked. You can use it to build AI that judges kimchi ingredient quality from images without cutting anything.",
+ "detail_ko": "김치 생산 단계별(배추원물, 절임배추, 종균김치) RGB 이미지 약 90,728장(jpg)과 초분광 영상 약 181,456장(hsi·img + hdr, npz)에 분할과 품질 등급을 JSON으로 붙였습니다. 전체 약 5,030GB로 매우 크고, 품질 등급 기준은 팩 앞부분에 없으며, 성능 지표 값은 팩에 없습니다.",
+ "detail_en": "About 90,728 RGB images (jpg) and about 181,456 hyperspectral images (hsi/img + hdr, npz) at each kimchi production stage (raw cabbage, salted cabbage, starter-culture kimchi), with JSON segmentation and quality grade. Total size is about 5,030 GB, very large; the grading criteria are not in the pack, and no metric values are given.",
+ "amount_ko": "RGB 약 90,728장, 초분광 약 181,456장",
+ "amount_en": "about 90,728 RGB images, about 181,456 hyperspectral images",
+ "labels_ko": "영역, 품질 등급",
+ "labels_en": "segmentation, quality grade",
+ "status": "full-run-2026-11-02"
+}

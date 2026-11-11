@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71694",
+ "easy_ko": "SNS 말투로 두세 명이 주고받는 한국어 대화 약 20만 묶음을 건강, 경제, 과학, 문화, 패션, 스포츠 같은 주제로 나눈 데이터입니다. SNS 말투를 이해하고 자연스럽게 답하는 챗봇에 쓸 수 있습니다.",
+ "easy_en": "About 200,000 Korean chat sessions in social-media style between two or three people, sorted into topics such as health, economy, science, culture, fashion and sports. You can use it to build chatbots that understand social-media language and reply naturally.",
+ "detail_ko": "SNS 말투로 2~3명이 주고받은 한국어 대화 세션 196,235개, 발화 3,246,886개(원문 csv, 질의응답 라벨 JSON)로, 주제는 건강 및 식음료, 경제 및 사회, 과학 기술, 문화 생활 및 여가, 미용과 패션, 스포츠 및 e 스포츠입니다. 직접 만든 대화라 실제 SNS와 다를 수 있고, 성능 지표는 팩 앞부분에 없습니다.",
+ "detail_en": "196,235 Korean conversation sessions with 3,246,886 utterances in social-media style between 2 or 3 people (raw csv, JSON question-answer labels), in topics: health and food, economy and society, science and technology, culture and leisure, beauty and fashion, sports and e-sports. The conversations were written for the project, so they may differ from real social media, and no metrics are in the pack.",
+ "amount_ko": "대화 세션 196,235개, 발화 3,246,886개",
+ "amount_en": "196,235 sessions, 3,246,886 utterances",
+ "labels_ko": "질문과 답, 주제",
+ "labels_en": "question-answer, topic",
+ "status": "full-run-2026-11-02"
+}

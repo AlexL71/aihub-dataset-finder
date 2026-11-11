@@ -1,0 +1,29 @@
+{
+ "dataset_id": "52",
+ "title_en": "K-pop choreography videos",
+ "summary_ko": "전문 댄서와 일반인이 모션캡처 스튜디오에서 K-pop 100곡과 기본 안무 10곡을 춘 영상 클립 40만 개입니다. 프레임마다 몸 관절 위치(2D, 일부 3D)와 사람 상자, 안무 동작 구분이 붙어 있어 자세 추정, 댄스 코칭, 홈트레이닝 앱에 쓸 수 있습니다.",
+ "summary_en": "400,000 video clips of professional and amateur dancers performing 100 K-pop songs and 10 basic routines in a motion-capture studio. Each frame has 2D body joint positions (some 3D), a person box and dance-move classes, for pose estimation, dance coaching or home-fitness apps.",
+ "contents_ko": "안무 영상 프레임 이미지 + COCO 비슷한 JSON(관절 좌표와 보임 여부, 3D 관절, 상자, 댄서 ID, 곡 구간별 기본 동작 분류, 핵심 안무 여부, 카메라 파라미터).",
+ "contents_en": "Dance video frames + COCO-like JSON (joint coordinates with visibility, 3D joints, box, dancer ID, basic move class per song section, key-move flag, camera parameters).",
+ "modalities": ["video", "image", "3d"],
+ "tasks": ["keypoint_pose", "action_recognition"],
+ "topics": [{"ko": "춤·K-pop", "en": "Dance and K-pop"}, {"ko": "사람 동작", "en": "Human motion"}, {"ko": "운동·피트니스", "en": "Exercise and fitness"}, {"ko": "엔터테인먼트", "en": "Entertainment"}],
+ "keywords_ko": ["K-pop", "안무", "댄스", "모션캡처", "자세 추정", "관절", "홈트레이닝"],
+ "keywords_en": ["K-pop", "choreography", "dance", "motion capture", "pose estimation", "joints", "home fitness"],
+ "labels": ["keypoints 2D", "keypoints 3D", "bounding box", "action class"],
+ "file_formats": ["jpg", "json"],
+ "scale_ko": "클립 40만 개, 2D 관절 40만 건, 3D 관절 10만 건, K-pop 100곡 + 기본 안무 10곡",
+ "classes_example": [],
+ "baseline": [{"task": "2D pose estimation", "model": "HRNet", "metric": "mAP", "value": "75.9%"}],
+ "difficulty": "intermediate",
+ "difficulty_note_ko": "약 41GB로 다룰 만하고, 공개 자세 추정 모델(MediaPipe, HRNet)로 바로 실습할 수 있습니다.",
+ "skills_needed_ko": ["파이썬", "자세 추정 모델 사용", "관절 좌표 시계열 다루기"],
+ "caveats_ko": ["곡·안무 저작권 관련 이용 조건 확인 필요", "스튜디오 촬영이라 실제 환경 영상과 차이가 있음"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "댄서 관절 움직임 시각화", "title_en": "Visualise dancers' joint movement", "desc_ko": "관절 좌표를 그려 같은 곡을 춘 두 댄서의 동작 차이를 비교합니다.", "desc_en": "Plot joints to compare two dancers performing the same song."},
+  {"level": "capstone", "title_ko": "안무 따라하기 채점 앱", "title_en": "Dance-along scoring app", "desc_ko": "웹캠 자세를 추정해 정답 안무와 유사도를 점수로 보여주는 앱을 만듭니다.", "desc_en": "Estimate webcam pose and score similarity to the reference choreography."},
+  {"level": "research", "title_ko": "음악 구간별 안무 동작 인식", "title_en": "Recognising dance moves per music section", "desc_ko": "관절 시계열로 기본 동작을 분류하고 곡의 박자와 동작의 관계를 분석합니다.", "desc_en": "Classify basic moves from joint sequences and relate them to the music's beat."}
+ ],
+ "doc_used": true,
+ "uncertain": ["클래스 목록을 페이지와 설명서에서 찾지 못함"]
+}

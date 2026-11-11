@@ -1,0 +1,12 @@
+{
+ "dataset_id": "163",
+ "easy_ko": "공사현장 사진마다 안전모, 안전화, 안전벨트 같은 보호 장비와 중장비, 비계, 사다리, 자재 위치를 표시하고, 작업자의 몸 주요 점과 장비 착용 여부를 붙인 데이터입니다. 작업자가 안전 장비를 제대로 착용했는지 실시간으로 확인하는 안전 관리 AI를 만들 수 있습니다.",
+ "easy_en": "Construction-site photos marked with safety gear (helmets, safety shoes, harnesses), heavy machinery, scaffolding, ladders and materials, plus workers' key body points and whether gear is worn. You can build safety AI that checks in real time whether workers are wearing their protective gear.",
+ "detail_ko": "공사현장에서 촬영한 이미지 203만 장(jpg)에 바운딩박스 9,481,123개, 안전벨트 폴리곤 76,769개, 작업자 키포인트 128,656개와 착용 여부를 JSON으로 붙였습니다. 클래스는 안전모, 안전화, 안전벨트, 중장비, 비계, 사다리, 자재 및 공구 등입니다. 기준 성능은 기록에서 확인되지 않으며 설명에 YOLACT가 언급됩니다. 전체 약 1.1TB입니다.",
+ "detail_en": "2.03M construction-site images (jpg) with JSON for 9,481,123 bounding boxes, 76,769 harness polygons, 128,656 worker keypoint sets and gear-worn flags. Classes include helmet, safety shoes, harness, heavy equipment, scaffolding, ladder, and materials and tools. No baseline is visible, though YOLACT is mentioned. Total size is about 1.1 TB.",
+ "amount_ko": "이미지 203만 장, 상자 약 948만 개",
+ "amount_en": "2.03M images, about 9.48M boxes",
+ "labels_ko": "장비·물체 위치 상자, 안전벨트 윤곽, 작업자 몸의 주요 점, 착용 여부",
+ "labels_en": "boxes around gear and objects, harness outlines, worker key points, worn or not",
+ "status": "full-run-2026-11-02"
+}

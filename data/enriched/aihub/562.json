@@ -1,0 +1,29 @@
+{
+ "dataset_id": "562",
+ "title_en": "Companion animal eye disease data",
+ "summary_ko": "동물병원에서 모은 반려견(12종 질환)·반려묘(6종 질환) 눈 사진·안구 초음파 약 30만 장에 안검염·결막염·각막궤양·백내장 등 질환과 중증도를 표시한 데이터입니다. 사진으로 눈 질환을 찾는 AI에 쓸 수 있습니다.",
+ "summary_en": "About 300,000 eye photos and ocular ultrasound images of dogs (12 diseases) and cats (6 diseases) from animal hospitals, labelled with diseases such as blepharitis, conjunctivitis, corneal ulcer and cataract and their severity. For AI that spots eye disease from photos.",
+ "contents_ko": "눈 사진·초음파·안저 이미지(jpg) + JSON(상자, 분할 영역, 질환, 중증도).",
+ "contents_en": "Eye photos, ultrasound and fundus images (jpg) + JSON (boxes, segmentation, disease, severity).",
+ "modalities": ["image"],
+ "tasks": ["image_classification", "object_detection", "segmentation"],
+ "topics": [{"ko": "반려동물 건강", "en": "Pet health"}, {"ko": "수의학", "en": "Veterinary medicine"}],
+ "keywords_ko": ["반려견", "반려묘", "안구질환", "백내장", "펫헬스케어"],
+ "keywords_en": ["dogs", "cats", "eye disease", "cataract", "pet healthcare"],
+ "labels": ["bounding box", "segmentation", "disease class", "severity"],
+ "file_formats": ["jpg", "json"],
+ "scale_ko": "이미지 약 30만 장, 반려견 질환 12종·반려묘 6종",
+ "classes_example": ["안검염", "안검종양", "결막염", "각막궤양", "백내장", "핵경화", "유리체변성"],
+ "baseline": [],
+ "difficulty": "intermediate",
+ "difficulty_note_ko": "질환별 분류 실습에 좋지만 전체 약 201GB입니다.",
+ "skills_needed_ko": ["파이썬", "CNN 이미지 분류"],
+ "caveats_ko": ["전체 약 201GB", "촬영 장비(카메라·초음파·안저)가 섞여 있음", "561번 피부 질환 데이터와 같은 구축 기관", "성능 지표가 팩 앞부분에 없음"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "결막염 유무 분류", "title_en": "Conjunctivitis classifier", "desc_ko": "눈 사진으로 결막염이 있는지 분류합니다.", "desc_en": "Classify whether an eye photo shows conjunctivitis."},
+  {"level": "capstone", "title_ko": "반려동물 눈 건강 앱", "title_en": "Pet eye-health app", "desc_ko": "스마트폰 사진으로 의심 질환을 알려주는 앱을 만듭니다.", "desc_en": "Build an app that flags likely eye diseases from phone photos."},
+  {"level": "research", "title_ko": "백내장 단계 판정", "title_en": "Cataract stage grading", "desc_ko": "초기·비성숙·성숙 백내장 단계를 구분하는 모델을 연구합니다.", "desc_en": "Study models that grade early, immature and mature cataracts."}
+ ],
+ "doc_used": true,
+ "uncertain": []
+}

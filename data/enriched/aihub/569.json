@@ -1,0 +1,29 @@
+{
+ "dataset_id": "569",
+ "title_en": "Machine reading comprehension data on administrative documents",
+ "summary_ko": "정부 부처·지자체·공공기관의 보도자료 같은 행정문서 지문에 질문과 정답을 붙인 한국어 질의응답 데이터입니다. 정답을 지문에서 찾는 문제, 절차를 묻는 문제, 표에서 답을 찾는 문제, 예/아니오, 객관식, 답이 없는 문제까지 6가지 유형이 있어 행정 안내 챗봇이나 검색 서비스를 만들 수 있습니다.",
+ "summary_en": "Korean question-answer data built on administrative documents such as press releases from ministries, local governments and public agencies. It has 6 question types: find the answer span in the text, ask for a procedure, find the answer in a table, yes/no, multiple choice, and questions with no answer, for public-service chatbots or search.",
+ "contents_ko": "JSON 레코드: 문서 제목·발행기관·발행일·분야, 지문(200~2,000자), 지문마다 같은 뜻의 질문 2개와 정답(정답 위치, 유형, 답 없음 여부, 객관식 보기).",
+ "contents_en": "JSON records: document title, issuing agency, date and field; a passage (200–2,000 characters); and for each passage 2 paraphrased questions with the answer (answer position, type, no-answer flag, multiple-choice options).",
+ "modalities": ["text"],
+ "tasks": ["question_answering", "dialogue", "retrieval_recommendation"],
+ "topics": [{"ko": "행정·공공 서비스", "en": "Public administration and services"}, {"ko": "정부 문서·보도자료", "en": "Government documents and press releases"}, {"ko": "한국어 질의응답", "en": "Korean question answering"}],
+ "keywords_ko": ["행정문서", "기계독해", "질의응답", "챗봇", "보도자료", "표 질의응답", "공공기관", "민원 안내"],
+ "keywords_en": ["administrative documents", "machine reading comprehension", "question answering", "chatbot", "press release", "table QA", "public agency"],
+ "labels": ["question-answer pairs", "answer span", "QA type", "multiple-choice options", "document category"],
+ "file_formats": ["txt", "json"],
+ "scale_ko": "질의응답 411,840건(지문 약 20.6만 개 × 질문 2개), 원문 행정문서 약 60만 건에서 선별, 분야 11개",
+ "classes_example": ["정답경계 추출형", "절차(방법)형", "Table 정답 추출형", "Yes/No 단문형", "다지선다형", "응답불가형"],
+ "baseline": [{"task": "question answering", "model": "ELECTRA", "metric": "F1-score", "value": "0.8588"}],
+ "difficulty": "intermediate",
+ "difficulty_note_ko": "전체 0.25GB로 가볍고 노트북에서도 다룰 수 있습니다. 다만 한국어 언어모델(KoELECTRA 등)을 미세조정하는 방법을 알아야 합니다.",
+ "skills_needed_ko": ["파이썬", "Hugging Face로 언어모델 미세조정", "JSON 데이터 다루기"],
+ "caveats_ko": ["문서 대부분이 2014~2018년 자료라 최신 정책과 다를 수 있음"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "분야별 행정 질문 유형 분석", "title_en": "Question types by public-service field", "desc_ko": "분야(국토·환경·복지 등)별로 어떤 의문사와 질문 유형이 많은지 집계하고 시각화합니다.", "desc_en": "Count and visualise which question words and types are common in each field such as land, environment and welfare."},
+  {"level": "capstone", "title_ko": "정부 보도자료 질의응답 챗봇", "title_en": "Q&A chatbot for government press releases", "desc_ko": "검색으로 관련 지문을 찾고 기계독해 모델로 답을 뽑아 주는 행정 안내 챗봇을 만듭니다.", "desc_en": "Build a public-service chatbot that retrieves the right passage and extracts the answer with a reading-comprehension model."},
+  {"level": "research", "title_ko": "표가 들어간 문서의 질의응답 개선", "title_en": "Better QA over documents with tables", "desc_ko": "Table 정답 추출형과 응답불가형에서 모델이 틀리는 원인을 분석하고, 표 구조를 반영한 입력 방법을 비교합니다.", "desc_en": "Analyse why models fail on table questions and unanswerable questions, and compare input formats that keep table structure."}
+ ],
+ "doc_used": true,
+ "uncertain": []
+}

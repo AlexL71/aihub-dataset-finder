@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71406",
+ "easy_ko": "초등학생부터 성인까지 축구 선수들이 공을 차는 모습을 여러 대의 카메라로 찍고, 몸의 주요 점 위치와 공의 위치·날아간 길을 표시한 데이터입니다. 공 차는 자세를 코칭하거나 공이 어디로 날아갈지 예측하는 훈련 AI를 만들 수 있습니다.",
+ "easy_en": "Soccer players from elementary school to adults kicking a ball, filmed by several cameras, with key body points and the ball's position and flight path marked. You can build training AI that coaches kicking form or predicts where the ball will go.",
+ "detail_ko": "선수 114명(초·중·고·성인)이 찬 킥 23,760회를 카메라 8대로 촬영한 동작 이미지 1,140,480장(6개 동작 × 8채널, jpg)과 공 궤적 영상(mp4)에 선수 2D·3D 키포인트 22개(3D 142,500건)와 공 좌표·궤적을 JSON으로 붙였습니다. 기준 성능은 AlphaPose 킥 자세 추정 mAP 98.98%, ResNet-50 공 궤적 예측 평균 지점 오차 0.26m입니다. 전체 약 2.2TB이며, 오른발 킥이 약 80%로 치우치고, 같은 킥을 여러 카메라로 찍었으므로 분할 시 같은 킥이 섞이지 않게 주의해야 합니다.",
+ "detail_en": "23,760 kicks by 114 players (elementary, middle, high school and adults) filmed by 8 cameras: 1,140,480 motion images (6 phases × 8 channels, jpg) and ball-trajectory videos (mp4), with JSON 2D and 3D keypoints (22 points; 142,500 3D records) and ball coordinates and trajectories. Baselines: AlphaPose kick pose estimation mAP 98.98%, ResNet-50 ball trajectory prediction mean point error 0.26 m. Total size is about 2.2 TB; about 80% are right-foot kicks; each kick appears in many camera views, so split by kick.",
+ "amount_ko": "킥 23,760회, 사진 약 114만 장, 선수 114명",
+ "amount_en": "23,760 kicks, about 1.14M images, 114 players",
+ "labels_ko": "몸의 주요 점(평면·입체), 공 위치와 날아간 길",
+ "labels_en": "2D and 3D body key points, ball position and trajectory",
+ "status": "full-run-2026-11-02"
+}

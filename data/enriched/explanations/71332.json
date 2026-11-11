@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71332",
+ "easy_ko": "소방차, 소방 호스, 방화복, 소화기, 비상구 표시등 같은 소방 시설과 장비를 입체로 스캔해 만든 모형과, 이를 여러 방향에서 그린 사진에 장비 이름과 위치를 붙인 데이터입니다. 가상공간에서 소방 교육을 하거나 소방 장비를 알아보는 AI를 만들 수 있습니다.",
+ "easy_en": "3D scanned models of firefighting facilities and equipment, such as fire engines, hoses, protective suits, extinguishers and exit lights, plus rendered pictures of them from many angles labelled with name and position. You can build virtual firefighting training or AI that recognises firefighting equipment.",
+ "detail_ko": "소방 시설·장비 187종(417건)을 3D 스캔한 객체(fbx)와 렌더링 이미지(png, jpg) 약 47만 건에 바운딩박스와 장비 분류(기동장비, 화재 진압 장비, 구조·구급 장비, 정보 통신 장비, 소방시설 등)를 JSON·XML로 붙였습니다. 기준 성능은 ResNet-152 렌더링 이미지 장비 분류 정확도 94.94%입니다. 실제 제품과 형태·로고가 다른 창작 3D 모델이며, 전기자동차 등 일부 모델은 상업적 사용이 불가합니다(교육·보도·개인 용도만).",
+ "detail_en": "About 470k items: 3D scanned objects (fbx) of 187 firefighting facility and equipment types (417 items) and rendered images (png, jpg) with JSON/XML boxes and equipment class (vehicles, suppression gear, rescue and medical gear, communications, fire-safety installations and more). Baseline: ResNet-152 classification of rendered images accuracy 94.94%. The models are re-created and differ from real products in shape and logos; some (such as an electric car) are not for commercial use (education, news or personal use only).",
+ "amount_ko": "데이터 약 47만 건, 장비 187종",
+ "amount_en": "about 470k items, 187 equipment types",
+ "labels_ko": "장비 위치 상자, 장비 종류, 입체 모형",
+ "labels_en": "boxes around equipment, equipment class, 3D model",
+ "status": "full-run-2026-11-02"
+}

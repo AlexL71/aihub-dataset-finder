@@ -1,0 +1,12 @@
+{
+ "dataset_id": "157",
+ "easy_ko": "주요 농작물 10종을 자라는 단계마다 드론의 특수 카메라로 찍고, 실제 농가에서 거둔 수확량과 품질 값을 함께 붙인 데이터입니다. 밭 사진만 보고 올해 수확량과 품질을 미리 예측하는 AI를 만들 수 있습니다.",
+ "easy_en": "Ten major crops photographed at each growth stage with special drone cameras, together with the actual harvest amounts and quality values from the farms. You can build AI that predicts this year's harvest and quality just from field photos.",
+ "detail_ko": "당근·양파·감자·벼·옥수수·마늘·콩·배추·무·양배추 10종을 생육 단계별로 드론 초분광·다중분광 카메라로 촬영한 필지 단위 영상 타일 약 100만 건(tif)으로, 라벨에 작물, 생육 단계, 생육 정보, 수확량, 품질값이 있습니다. 기준 성능은 ResNet 수확량 회귀 RMSE 0.1606이며 성능 표의 단위가 'mm'로 잘못 적혀 있습니다. 전체 약 1.8TB입니다.",
+ "detail_en": "About 1M field-level spectral image tiles (tif) of 10 crops (carrot, onion, potato, rice, maize, garlic, soybean, napa cabbage, radish, cabbage) taken by drone hyperspectral and multispectral cameras at each growth stage, labelled with crop, growth stage, growth info, yield and quality. Baseline: ResNet yield regression RMSE 0.1606 (the table wrongly gives the unit as mm). Total size is about 1.8 TB.",
+ "amount_ko": "영상 약 100만 건, 작물 10종",
+ "amount_en": "about 1M image tiles, 10 crops",
+ "labels_ko": "자라는 단계, 생육 정보, 수확량, 품질 값",
+ "labels_en": "growth stage, growth info, yield, quality values",
+ "status": "full-run-2026-11-02"
+}

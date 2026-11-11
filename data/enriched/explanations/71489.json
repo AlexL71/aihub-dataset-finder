@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71489",
+ "easy_ko": "유럽어가 모국어인 외국인이 한국어로 말한 목소리 약 1,538시간에 받아쓴 글, 발음 실수 표시, 말하기 점수를 붙인 데이터입니다. 외국인의 한국어 말하기를 자동으로 채점하고 발음을 고쳐 주는 AI에 쓸 수 있습니다.",
+ "easy_en": "About 1,538 hours of native speakers of European languages speaking Korean, with written transcripts, marked pronunciation mistakes and speaking scores. You can use it to build AI that scores foreigners' spoken Korean and gives pronunciation feedback.",
+ "detail_ko": "유럽어가 모국어인 화자의 한국어 발화 음성 1,538.5시간(wav)에 철자·발음 전사, 발음 오류 태그(예: 모음오류, 강세 오류, 경계억양 오류, 구개음화, 비음화, 경음화)와 오류 원인, 말하기 평가 점수, 화자 정보를 JSON으로 붙였습니다. 기준 성능은 말하기 평가용 음성 인식 Conformer-CTC small CER 10.62%, 발음 평가 Wav2vec2.0 피어슨 상관 0.8, F1 0.9547입니다. 전체 약 300GB이고, 설명서 소개에 '서양어·아시아어 사용자'로 적혀 있어 아시아어 데이터셋과 설명이 섞였을 수 있습니다. 다른 모국어별 한국어 음성 데이터셋과 구조가 비슷합니다.",
+ "detail_en": "1,538.5 hours of Korean speech (wav) by native speakers of European languages, with JSON spelling and pronunciation transcripts, pronunciation error tags (such as vowel errors, stress errors, boundary-intonation errors, palatalisation, nasalisation, tensing) and their causes, speaking scores and speaker information. Baselines: speech recognition for speaking assessment with Conformer-CTC small, CER 10.62%; pronunciation assessment with Wav2vec2.0, Pearson correlation 0.8 and F1 0.9547. Total size is about 300 GB. The manual's introduction mentions 'Western and Asian language speakers', so its description may be mixed with the Asian-language dataset. It is similar to the other Korean-speech sets grouped by native language.",
+ "amount_ko": "음성 1,538.5시간",
+ "amount_en": "1,538.5 hours of speech",
+ "labels_ko": "철자·발음 받아쓰기, 발음 실수 표시, 말하기 점수",
+ "labels_en": "spelling and pronunciation transcripts, error tags, assessment scores",
+ "status": "full-run-2026-11-02"
+}

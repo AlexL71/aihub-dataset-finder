@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71535",
+ "easy_ko": "코트, 블라우스, 바지, 원피스처럼 모양이 일정하지 않은 옷과 그 옷을 입은 모델을 찍은 사진 약 41만 장에 옷 부분과 사람 몸 관절 점을 표시한 데이터입니다. 옷을 가상으로 입혀 보는 AI에 쓸 수 있습니다.",
+ "easy_en": "About 410,000 photos of soft, shape-changing clothes such as coats, blouses, trousers and dresses, and of models wearing them, with the garment painted in and body joint points marked. You can use it to build virtual try-on AI.",
+ "detail_ko": "형태가 일정하지 않은 의류(예: 코트, 베스트, 가디건, 블라우스, 티셔츠, 스웨터, 팬츠, 스커트, 드레스, 점프수트)와 착용 모델을 직접 촬영한 이미지 410,409장(의류·착용 399,985장 + 기본 의상 모델 10,424장)에 의류 분할, 2D 키포인트, 카테고리를 JSON으로 붙였습니다. 기준 성능은 Augmented-CE2P(SCHP) 의류 파싱 mAP 85.22%, Simple Baseline 자세 추정 mAP 98.11%입니다. 전체 약 527GB이고, 데이터 개요 문장(연도별 패션 선호도 매칭)이 실제 내용과 맞지 않으며, 메타데이터의 형식이 txt로 적혀 있어 이미지 형식이 불분명합니다.",
+ "detail_en": "410,409 images (399,985 garment and on-body + 10,424 basic-outfit model images) of shapeless clothing (such as coat, vest, cardigan, blouse, t-shirt, sweater, trousers, skirt, dress, jumpsuit) and models wearing it, with JSON garment segmentation, 2D keypoints and category. Baselines: clothing parsing with Augmented-CE2P (SCHP), mAP 85.22%; pose estimation with Simple Baseline, mAP 98.11%. Total size is about 527 GB. The overview sentence (about matching fashion preferences by year) does not match the actual content, and the metadata lists the format as txt, so the image format is unclear.",
+ "amount_ko": "이미지 410,409장(의류·착용 399,985 + 기본 의상 모델 10,424)",
+ "amount_en": "410,409 images (399,985 garment/on-body + 10,424 basic-outfit model)",
+ "labels_ko": "옷 영역, 몸 관절 점, 옷 종류",
+ "labels_en": "garment segmentation, 2D keypoints, category",
+ "status": "full-run-2026-11-02"
+}

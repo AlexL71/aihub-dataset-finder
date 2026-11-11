@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71351",
+ "easy_ko": "서울시와 정부가 공개한 행정 자료로 만든 데이터베이스마다 한국어 질문과, 같은 뜻의 데이터베이스 검색 명령문(SQL)을 짝지어 둔 데이터입니다. 말로 물어보면 데이터베이스에서 답을 찾아 주는 AI를 만들 수 있습니다.",
+ "easy_en": "Databases built from administrative data published by the Seoul city government and the national open-data portal, each with Korean questions paired with database query commands (SQL) that mean the same thing. You can build AI that finds answers in a database when you ask in plain words.",
+ "detail_ko": "서울시 열린데이터광장·공공데이터포털 행정 데이터로 만든 데이터베이스 약 6,400개(SQLite, SQL)와 한국어 질문-SQL 질의 쌍 약 11만 개, 데이터베이스 설명을 JSON으로 제공합니다. 기준 성능은 RYANSQL 변환 정확도 82.2%, BRIDGE 80.8%입니다. SQL 문법 수준(조인 등) 분포는 기록에서 확인되지 않으며, 공공 행정 데이터 중심입니다.",
+ "detail_en": "About 6,400 databases (SQLite, SQL) built from Seoul Open Data Plaza and national open-data portal administrative data, with about 110k Korean question–SQL pairs and database descriptions in JSON. Baselines: RYANSQL accuracy 82.2%, BRIDGE 80.8%. The distribution of SQL complexity (joins and so on) is not in the record; content centres on public administrative data.",
+ "amount_ko": "데이터베이스 약 6,400개, 질문-SQL 쌍 약 11만 개",
+ "amount_en": "about 6,400 databases, about 110k question–SQL pairs",
+ "labels_ko": "한국어 질문, 정답 검색 명령문(SQL), 데이터베이스 설명",
+ "labels_en": "Korean question, SQL query, database description",
+ "status": "full-run-2026-11-02"
+}

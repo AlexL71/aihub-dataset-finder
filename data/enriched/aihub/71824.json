@@ -1,0 +1,29 @@
+{
+ "dataset_id": "71824",
+ "title_en": "Medium and large object 2D image to 3D data",
+ "summary_ko": "가전·가구·생활용품·자동차 같은 중대형 물체 800개를 여러 각도에서 찍은 2D 이미지 43,200장과 3D 모델 800개, 텍스처, 설명 문장으로 구성됩니다. 사진으로 3D 모델을 복원하거나 AR 가구 배치·디지털 트윈에 쓸 수 있습니다.",
+ "summary_en": "800 medium and large objects (appliances, furniture, household goods, cars) with 43,200 multi-view 2D images, 800 3D models, textures and captions. For image-to-3D reconstruction, AR furniture placement and digital twins.",
+ "contents_ko": "다각도 이미지(jpg), 포인트 클라우드(pcd), 3D 모델(fbx), 텍스처 + JSON(캡션·메타 정보).",
+ "contents_en": "Multi-view images (jpg), point clouds (pcd), 3D models (fbx), textures + JSON (captions, metadata).",
+ "modalities": ["3d", "image", "text"],
+ "tasks": ["3d_reconstruction", "image_captioning"],
+ "topics": [{"ko": "3D 콘텐츠·그래픽스", "en": "3D content and graphics"}, {"ko": "AR·VR·메타버스", "en": "AR, VR and metaverse"}],
+ "keywords_ko": ["3D 복원", "멀티뷰 이미지", "가구", "가전", "포인트 클라우드", "디지털 트윈"],
+ "keywords_en": ["3D reconstruction", "multi-view images", "furniture", "appliances", "point cloud", "digital twin"],
+ "labels": ["caption"],
+ "file_formats": ["jpg", "pcd", "fbx", "json"],
+ "scale_ko": "2D 이미지 43,200장, 3D 에셋 800개, 텍스처 800개, 통합 라벨 800건",
+ "classes_example": ["가전", "가구", "생활용품", "잡화", "자동차"],
+ "baseline": [],
+ "difficulty": "advanced",
+ "difficulty_note_ko": "전체 약 3TB이며 NeRF 계열 3D 복원은 GPU를 많이 씁니다. 몇 개 물체만 받아 시작하세요.",
+ "skills_needed_ko": ["파이썬", "3D 처리(Open3D)", "NeRF·Neuralangelo"],
+ "caveats_ko": ["전체 약 3TB", "물체는 800개뿐이라 일반화에 한계", "품질 점수는 라벨 정확도이며 모델 성능 수치는 팩에 없음", "태그에 모션캡처 등 관계없어 보이는 항목이 섞여 있음"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "포인트 클라우드 시각화", "title_en": "Point cloud viewer", "desc_ko": "가구 포인트 클라우드를 불러와 회전·측정해 봅니다.", "desc_en": "Load and inspect furniture point clouds."},
+  {"level": "capstone", "title_ko": "AR 가구 배치 앱", "title_en": "AR furniture placement", "desc_ko": "3D 가구 모델을 방 사진 위에 배치해 보는 앱을 만듭니다.", "desc_en": "Place 3D furniture models into room photos."},
+  {"level": "research", "title_ko": "적은 시점 3D 복원", "title_en": "Few-view 3D reconstruction", "desc_ko": "이미지 몇 장만으로 중대형 물체를 복원하는 방법을 연구합니다.", "desc_en": "Study reconstructing large objects from a few views."}
+ ],
+ "doc_used": true,
+ "uncertain": ["캡션 언어(한국어·영어) 확인 필요"]
+}

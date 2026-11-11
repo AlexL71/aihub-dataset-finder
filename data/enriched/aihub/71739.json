@@ -1,0 +1,29 @@
+{
+ "dataset_id": "71739",
+ "title_en": "Patent data mapped to national strategic technologies",
+ "summary_ko": "특허 문서 619,844건을 생명·보건의료 등 국가중점기술 분류(대·중·소분류, 예: 유전자치료기술·줄기세포활용기술)에 맞춰 라벨링한 데이터입니다. 특허를 기술 분야별로 자동 분류해 기술 트렌드·신사업 분석에 쓰는 AI에 좋습니다.",
+ "summary_en": "619,844 patent documents labelled with Korea's national strategic technology categories (major, middle, minor; e.g. gene therapy, stem-cell applications). For auto-classifying patents to analyse technology trends and new business areas.",
+ "contents_ko": "특허 텍스트 JSON(제목·요약 등) + 라벨 JSON(국가중점기술 대·중·소분류).",
+ "contents_en": "Patent text JSON (title, abstract, etc.) + label JSON (national strategic technology major/middle/minor class).",
+ "modalities": ["text"],
+ "tasks": ["text_classification"],
+ "topics": [{"ko": "특허·지식재산", "en": "Patents and intellectual property"}, {"ko": "기술 정책·R&D", "en": "Technology policy and R&D"}],
+ "keywords_ko": ["특허 분류", "국가중점기술", "KoBERT", "기술 트렌드", "R&D", "텍스트 분류"],
+ "keywords_en": ["patent classification", "national strategic technologies", "KoBERT", "technology trends", "R&D", "text classification"],
+ "labels": ["technology category (3 levels)"],
+ "file_formats": ["json"],
+ "scale_ko": "특허 619,844건, 국가중점기술 3단계 분류",
+ "classes_example": ["유전체정보를이용한질환원인규명기술", "유전자치료기술", "줄기세포활용기술", "맞춤형신약개발기술", "바이오마커기술"],
+ "baseline": [],
+ "difficulty": "intermediate",
+ "difficulty_note_ko": "약 0.9GB 텍스트라 가볍지만 소분류가 많아 계층 분류 개념이 필요합니다.",
+ "skills_needed_ko": ["파이썬", "Hugging Face 한국어 BERT", "다중 클래스·계층 분류"],
+ "caveats_ko": ["페이지에 성능 점수 표가 없음(KoBERT 선택 이유만 소개)", "대분류 전체 목록은 팩 앞부분에 없음(생명·보건의료만 확인)", "특허 원문 언어(한국어 외 포함 여부) 확인 필요"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "특허 대분류 분류", "title_en": "Patent major-class classifier", "desc_ko": "특허 요약으로 국가중점기술 대분류를 맞히는 모델을 학습합니다.", "desc_en": "Predict the major technology class from a patent abstract."},
+  {"level": "capstone", "title_ko": "기술 트렌드 대시보드", "title_en": "Technology trend dashboard", "desc_ko": "분류 결과를 연도·국가별로 모아 기술 트렌드를 보여 줍니다.", "desc_en": "Show technology trends by year and country from classifications."},
+  {"level": "research", "title_ko": "계층 분류 정확도", "title_en": "Hierarchical classification", "desc_ko": "대→중→소분류 순서 예측과 한 번에 예측하는 방식을 비교합니다.", "desc_en": "Compare top-down and flat prediction across three levels."}
+ ],
+ "doc_used": true,
+ "uncertain": []
+}

@@ -1,0 +1,12 @@
+{
+ "dataset_id": "165",
+ "easy_ko": "시내도로 CCTV 영상에서 뽑은 사진마다 승용차, 버스, 트럭, 오토바이, 보행자의 위치를 상자와 윤곽으로 표시하고, 같은 차를 여러 장면에 걸쳐 따라가는 정보도 붙인 데이터입니다. 시내 교통량과 차의 움직임을 자동으로 분석하는 AI를 만들 수 있습니다.",
+ "easy_en": "Images from city-road CCTV with cars, buses, trucks, motorcycles and pedestrians marked by boxes and outlines, plus tracking information that follows the same vehicle across frames. You can build AI that analyses city traffic volume and vehicle movement automatically.",
+ "detail_ko": "대전·부천·안양 시내도로 CCTV 영상 505시간에서 뽑은 이미지 약 57만 장(탐지 18만, 추적 36만, 분할 3만)으로, COCO 형식 JSON에 차종 7종(승용차, 소형·대형버스, 트럭, 대형트레일러, 오토바이(자전거), 보행자) 바운딩박스·폴리곤, 추적 ID, 날씨·시간대·CCTV 높이·차선 수가 있고 악천후가 10% 이상 포함됩니다. 기준 성능은 CenterNet 탐지 mAP@0.5 84%, ASPP(DeepLab) 분할 mIoU 50.7%입니다. 전체 약 340GB이며, 속도 측정용 실제 거리 정보는 없어 별도 보정이 필요하고 category_id 형식이 COCO 표준과 조금 다릅니다.",
+ "detail_en": "About 570k images from 505 hours of city-road CCTV in Daejeon, Bucheon and Anyang (180k detection, 360k tracking, 30k segmentation), with COCO-style JSON boxes and polygons for 7 classes (car, small bus, large bus, truck, trailer, motorcycle/bicycle, pedestrian), tracking IDs, and weather, time, CCTV height and lane count; 10%+ are bad-weather scenes. Baselines: CenterNet detection mAP@0.5 84%, ASPP (DeepLab) segmentation mIoU 50.7%. Total size is about 340 GB; there is no real-world distance info for speed measurement, and category_id differs slightly from the COCO standard.",
+ "amount_ko": "이미지 약 57만 장, 차종 7종",
+ "amount_en": "about 570k images, 7 classes",
+ "labels_ko": "차량·보행자 위치 상자와 윤곽, 같은 차 번호(추적), 날씨·시간대",
+ "labels_en": "boxes and outlines around vehicles and pedestrians, tracking ID, weather and time",
+ "status": "full-run-2026-11-02"
+}

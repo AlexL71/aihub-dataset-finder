@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71643",
+ "easy_ko": "한강 주변을 비행기와 위성에서 찍은 사진, 구름을 뚫고 찍는 레이더 위성 영상에 물인 곳과 물이 아닌 곳을 칠해 표시한 데이터입니다. 홍수 같은 물난리에 대응하고 강가 지역의 변화를 찾아내는 AI에 쓸 수 있습니다.",
+ "easy_en": "Aerial photos, satellite images and radar satellite images (which see through clouds) of the Han River area, with water and non-water areas painted in. You can use it to build AI that helps respond to floods and spots changes along riverbanks.",
+ "detail_ko": "한강 유역의 가공 항공사진(25cm) 24,000건, 위성 이미지(10m) 24,682건, 위성 SAR(10m) 12,903건(tif)에 수체/비수체 분할을 JSON으로 붙였습니다. 성능 지표는 팩에 없고, 낙동강 유역(71644)과 같은 구조입니다.",
+ "detail_en": "24,000 processed aerial photos (25 cm), 24,682 satellite images (10 m) and 12,903 satellite SAR images (10 m) (tif) of the Han River basin, with JSON water/non-water segmentation. No metrics are in the pack. Same structure as the Nakdong River set (71644).",
+ "amount_ko": "항공사진 24,000건, 위성 24,682건, SAR 12,903건",
+ "amount_en": "24,000 aerial photos, 24,682 satellite images, 12,903 SAR images",
+ "labels_ko": "물인 곳과 물이 아닌 곳 영역",
+ "labels_en": "segmentation (water/non-water)",
+ "status": "full-run-2026-11-02"
+}

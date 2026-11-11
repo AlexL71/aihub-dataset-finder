@@ -1,0 +1,12 @@
+{
+ "dataset_id": "580",
+ "easy_ko": "법원 판결문의 문장마다 주장·사실·판단·결론 중 무엇인지 표시하고, 보험·금융·여행·게임 같은 약관 조항마다 소비자에게 유리한지 불리한지와 그 이유를 표시한 데이터입니다. 어려운 법률 문서와 약관을 쉽게 풀어 주는 AI를 만들 수 있습니다.",
+ "easy_en": "Court rulings with each sentence marked as a claim, fact, judgement or conclusion, and terms-of-service clauses (insurance, finance, travel, games and more) marked as fair or unfair to consumers, with the reason. You can build AI that makes difficult legal documents and terms easier to understand.",
+ "detail_ko": "민사·형사·행정 판결문 1만 건과 40여 분야 약관 1만 건의 원문(xml)에 문장 역할(주장, 사실, 판단, 결론), 조항 유·불리 판단, 위법성 이유 태그를 JSON으로 붙였습니다. 기준 성능은 GPT-2 / BERT 판결문 구조 분석 F1 0.88, 약관 유·불리 분류 F1 0.91입니다. 판결문 개인정보 비식별 여부 확인이 필요하고, 일부 약관 분야는 100건 안팎으로 적습니다.",
+ "detail_en": "10k civil, criminal and administrative court rulings and 10k terms-of-service documents in 40+ fields (xml), with JSON sentence roles (claim, fact, judgement, conclusion), fair/unfair clause labels and illegality reason tags. Baselines: GPT-2 / BERT ruling-structure F1 0.88, fair/unfair clause classification F1 0.91. Check de-identification in rulings; some terms fields have only about 100 documents.",
+ "amount_ko": "판결문 1만 건, 약관 1만 건",
+ "amount_en": "10k rulings, 10k terms documents",
+ "labels_ko": "판결문 문장 역할, 약관 조항의 유리·불리, 그 이유",
+ "labels_en": "sentence role in rulings, fair or unfair clause, reason tag",
+ "status": "full-run-2026-11-02"
+}

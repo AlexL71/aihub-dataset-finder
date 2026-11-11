@@ -1,0 +1,29 @@
+{
+ "dataset_id": "71864",
+ "title_en": "Synthetic skin tumor image data",
+ "summary_ko": "흔한 양성·악성 피부종양 15종(기저세포암·편평세포암·악성흑색종·보웬병·지루각화증·멜라닌세포모반 등)의 합성 이미지 1만 5천 장(512×512, 종류별 1천 장)으로, 상자와 임상정보가 라벨로 있습니다. 피부종양 진단 보조 AI에 쓸 수 있습니다.",
+ "summary_en": "15,000 synthetic images (512×512, 1,000 per class) of 15 common benign and malignant skin tumors (basal cell carcinoma, squamous cell carcinoma, melanoma, Bowen disease, seborrheic keratosis, melanocytic nevus and more), with boxes and clinical info. For skin tumor diagnosis support.",
+ "contents_ko": "합성 이미지(png) + JSON(상자, 임상정보).",
+ "contents_en": "Synthetic image (png) + JSON (boxes, clinical info).",
+ "modalities": ["image"],
+ "tasks": ["image_classification", "object_detection"],
+ "topics": [{"ko": "피부과 의료 영상", "en": "Dermatology imaging"}, {"ko": "피부암 진단", "en": "Skin cancer diagnosis"}],
+ "keywords_ko": ["피부종양", "피부암", "흑색종", "합성 데이터", "모반", "ResNet"],
+ "keywords_en": ["skin tumor", "skin cancer", "melanoma", "synthetic data", "nevus", "ResNet"],
+ "labels": ["bounding box", "clinical info"],
+ "file_formats": ["png", "json"],
+ "scale_ko": "합성 이미지 15,000장(15종 × 1,000장)",
+ "classes_example": ["기저세포암", "편평세포암", "악성흑색종", "보웬병", "광선각화증", "지루각화증", "멜라닌세포모반", "사마귀", "혈관종", "비립종"],
+ "baseline": [],
+ "difficulty": "beginner",
+ "difficulty_note_ko": "약 5.9GB로 가볍고 클래스가 균등해 15분류 실습에 좋습니다.",
+ "skills_needed_ko": ["파이썬", "이미지 분류(ResNet)", "의료 영상 평가 지표"],
+ "caveats_ko": ["페이지에 성능 점수 표가 없음(ResNet 15종 분류 소개만 있음)", "합성 이미지라 실제 환자 사진에서 성능이 다를 수 있음", "실제 진단에 바로 쓰면 안 됨"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "양성·악성 구분", "title_en": "Benign vs malignant", "desc_ko": "15종을 양성과 악성 두 그룹으로 나눠 분류합니다.", "desc_en": "Group 15 types into benign and malignant and classify."},
+  {"level": "capstone", "title_ko": "피부종양 15분류기", "title_en": "15-class skin tumor classifier", "desc_ko": "ResNet으로 15종을 분류하고 헷갈리는 쌍을 분석합니다.", "desc_en": "Classify 15 types with ResNet and study confused pairs."},
+  {"level": "research", "title_ko": "합성 데이터 보강 효과", "title_en": "Synthetic augmentation effect", "desc_ko": "공개 실제 피부 데이터에 합성 이미지를 더했을 때 성능 변화를 연구합니다.", "desc_en": "Study adding synthetic images to real skin datasets."}
+ ],
+ "doc_used": true,
+ "uncertain": []
+}

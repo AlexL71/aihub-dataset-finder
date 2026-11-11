@@ -1,0 +1,12 @@
+{
+ "dataset_id": "549",
+ "easy_ko": "프로배구 경기와 여러 각도에서 찍은 배구 영상의 사진마다 선수, 수비 전문 선수(리베로), 심판, 배구공의 위치와 선수 몸의 주요 점을 표시한 데이터입니다. 배구 경기를 자동으로 분석하거나 하이라이트 장면을 뽑아 주는 AI를 만들 수 있습니다.",
+ "easy_en": "Images from pro volleyball games and from volleyball videos shot at many angles, marked with players, the libero, referees, line judges and the ball, plus players' key body points. You can build AI that analyses volleyball matches or picks out highlights automatically.",
+ "detail_ko": "프로배구 협회 경기 영상과 직접 촬영한 경기·동작 영상에서 뽑은 이미지 122만 장 이상(jpg)으로, JSON에 선수·수비 전문 선수·주심·부심·선심·배구공 바운딩박스(선수 55만 이상, 배구공 15만 이상 등), 관절 키포인트, 행동이 있습니다. 기준 성능은 기록에서 확인되지 않습니다. 협회 경기 영상이 포함되어 이용 조건 확인이 필요합니다.",
+ "detail_en": "1.22M+ jpg images from pro volleyball association footage and self-recorded game and motion video, with JSON bounding boxes for players, libero, first and second referees, line judges and the ball (550k+ players, 150k+ balls and more), joint keypoints and actions. No baseline is visible in the record. Association footage is included, so check the usage terms.",
+ "amount_ko": "이미지 122만 장 이상",
+ "amount_en": "1.22M+ images",
+ "labels_ko": "선수·심판·공 위치 상자, 몸의 주요 점(키포인트), 행동",
+ "labels_en": "boxes around players, officials and ball, body key points, action",
+ "status": "full-run-2026-11-02"
+}

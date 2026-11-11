@@ -1,0 +1,29 @@
+{
+ "dataset_id": "494",
+ "title_en": "Ego-vision 2D and 3D hand movement data",
+ "summary_ko": "1인칭(내 손)과 3인칭(남의 손) 시점에서 400가지 손동작을 찍은 데이터 172.8만 건으로, 2D 손 관절, 3D 손 메시, 상자와 깊이 이미지, 손과 물체의 상호작용이 표시되어 있습니다. AR·VR에서 손으로 조작하는 인터페이스나 손동작 의도 인식에 쓸 수 있습니다.",
+ "summary_en": "1.728 million samples of 400 hand gestures filmed from first-person (own hands) and third-person (others' hands) views, with 2D hand keypoints, 3D hand meshes, boxes, depth images and hand-object interactions. For hand-controlled AR/VR interfaces and recognising intent from hand motion.",
+ "contents_ko": "손 이미지(jpg/png) + JSON(2D 키포인트, 상자) + 3D 메시(obj) + 깊이 이미지.",
+ "contents_en": "Hand images (jpg/png) + JSON (2D keypoints, box) + 3D mesh (obj) + depth images.",
+ "modalities": ["image", "3d"],
+ "tasks": ["keypoint_pose", "action_recognition", "3d_reconstruction"],
+ "topics": [{"ko": "손동작·제스처", "en": "Hand gestures"}, {"ko": "가상·증강현실", "en": "Virtual and augmented reality"}],
+ "keywords_ko": ["손 움직임", "1인칭 시점", "손 관절", "3D 손", "AR", "VR", "제스처"],
+ "keywords_en": ["hand motion", "egocentric view", "hand keypoints", "3D hand", "AR", "VR", "gesture"],
+ "labels": ["keypoints 2D", "3D mesh", "bounding box", "action class"],
+ "file_formats": ["jpg", "png", "json", "obj"],
+ "scale_ko": "172.8만 건(2D 100.8만: 자신의 손·타인의 손, 3D 72만: 상호작용 객체·행동), 동작 400종",
+ "classes_example": ["자신의 손", "타인의 손", "상호작용 객체", "행동"],
+ "baseline": [],
+ "difficulty": "advanced",
+ "difficulty_note_ko": "3D 손 메시와 깊이를 다뤄야 하고 전체 약 3.4TB이며 가장 작은 파일이 0.4GB입니다. 2D 키포인트만 쓰면 중급입니다.",
+ "skills_needed_ko": ["파이썬", "손 랜드마크 모델", "3D 손 모델(MANO)"],
+ "caveats_ko": ["전체 약 3.4TB", "성능 지표가 팩 앞부분에 없음"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "1인칭 손동작 분류", "title_en": "First-person gesture classifier", "desc_ko": "2D 키포인트로 손동작 몇 가지를 분류합니다.", "desc_en": "Classify a few gestures from 2D keypoints."},
+  {"level": "capstone", "title_ko": "손으로 조작하는 VR 메뉴", "title_en": "Hand-controlled VR menu", "desc_ko": "웹캠 손동작으로 가상 메뉴를 선택하는 데모를 만듭니다.", "desc_en": "Select items in a virtual menu with webcam hand gestures."},
+  {"level": "research", "title_ko": "물체를 잡은 손의 3D 복원", "title_en": "3D reconstruction of hands holding objects", "desc_ko": "물체에 가려진 손가락의 3D 자세 추정을 개선하는 방법을 연구합니다.", "desc_en": "Improve 3D pose of fingers hidden by held objects."}
+ ],
+ "doc_used": true,
+ "uncertain": []
+}

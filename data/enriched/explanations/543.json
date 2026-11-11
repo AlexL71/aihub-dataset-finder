@@ -1,0 +1,12 @@
+{
+ "dataset_id": "543",
+ "easy_ko": "음식, 집, 교통, 아르바이트, 군대, 학교, 가족 같은 여러 주제로 사람들이 직접 쓴 일상 대화 글에, 대화 주제와 말한 사람 정보, 문장마다 질문인지 부탁인지 대답인지를 표시한 데이터입니다. 자연스럽게 대화하는 한국어 챗봇을 만들 수 있습니다.",
+ "easy_en": "Everyday conversations written by people on topics such as food, home, transport, part-time jobs, the military, school and family, labelled with the topic, speaker info, and whether each sentence is a question, a request or an answer. You can build Korean chatbots that chat naturally.",
+ "detail_ko": "식음료·주거와 생활·교통·회사/아르바이트·군대·교육·가족 등 20여 개 주제의 일상 대화 텍스트 134,263건(구축량 109,614건)으로, JSON에 주제, 화자 정보, 문장별 화행(질문·요청·응답 등)이 있습니다. 기준 성능 지표는 없습니다. 사람이 상황을 정해 쓴 대화라 실제 대화보다 정돈되어 있습니다.",
+ "detail_en": "134,263 everyday dialogue texts (109,614 built items) on 20+ topics (food and drink, home life, transport, work and part-time jobs, military, education, family and more), with JSON topic, speaker info and per-sentence dialogue acts (question, request, response and more). No baseline is published. Dialogues were written for given situations, so they are tidier than real conversation.",
+ "amount_ko": "대화 약 13.4만 건, 주제 20여 개",
+ "amount_en": "about 134k dialogues, 20+ topics",
+ "labels_ko": "대화 주제, 말한 사람 정보, 문장 역할(질문·부탁·대답 등)",
+ "labels_en": "topic, speaker info, dialogue act (question, request, answer and more)",
+ "status": "full-run-2026-11-02"
+}

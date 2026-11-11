@@ -1,0 +1,17 @@
+.git
+.venv
+.env
+.claude
+.pytest_cache
+**/__pycache__
+graphify-out
+docs
+eval
+tests
+tools
+collectors
+data/raw
+data/parsed/aihub/pages
+data/parsed/aihub/docs
+data/parsed/university
+data/index/embedding_cache.sqlite

@@ -1,0 +1,33 @@
+{
+ "dataset_id": "634",
+ "title_en": "Jeju major crop automatic detection data",
+ "summary_ko": "제주의 주요 작물 15종(옥수수·감자·메밀 등 식량작물 5종, 월동무·당근·양배추·마늘 등 월동작물 10종)을 항공·위성·드론(일반·다중분광·초분광) 영상에서 필지별로 칠한 데이터입니다. 어느 밭에 어떤 작물이 자라는지 자동으로 파악해 재배 면적을 계산하는 AI에 쓸 수 있습니다.",
+ "summary_en": "15 major Jeju crops (5 food crops such as corn, potato, buckwheat; 10 winter crops such as radish, carrot, cabbage, garlic) painted per field on aerial, satellite and drone images (RGB, multispectral, hyperspectral). For AI that maps which crop grows in which field and calculates cultivated area.",
+ "contents_ko": "항공·위성·드론 영상 + XML(필지 분할, 작물 종류).",
+ "contents_en": "Aerial, satellite and drone images + XML (field segmentation, crop type).",
+ "modalities": ["image"],
+ "tasks": ["segmentation", "image_classification"],
+ "topics": [{"ko": "농업", "en": "Agriculture"}, {"ko": "원격탐사", "en": "Remote sensing"}],
+ "keywords_ko": ["제주", "작물 분류", "드론", "초분광", "재배면적", "월동작물"],
+ "keywords_en": ["Jeju", "crop classification", "drone", "hyperspectral", "cultivated area", "winter crops"],
+ "labels": ["field segmentation", "crop class"],
+ "file_formats": ["xml"],
+ "scale_ko": "라벨 약 200만 개, 작물 15종, 드론 스냅샷 약 45만 장",
+ "classes_example": ["옥수수", "감자", "메밀", "월동무", "당근", "양배추", "마늘"],
+ "baseline": [
+  {"task": "crop classification (RGB)", "model": "Xception", "metric": "F1", "value": "0.9851"},
+  {"task": "crop classification (multispectral)", "model": "Xception", "metric": "F1", "value": "0.9386"},
+  {"task": "crop classification (hyperspectral)", "model": "Xception", "metric": "F1", "value": "0.9583"}
+ ],
+ "difficulty": "advanced",
+ "difficulty_note_ko": "전체 약 404GB이고 다중·초분광 영상과 GIS 처리가 필요합니다.",
+ "skills_needed_ko": ["파이썬", "분할 모델", "GIS·원격탐사 기초", "다중분광 영상 처리"],
+ "caveats_ko": ["전체 약 404GB", "제주 지역만 있음", "영상 파일 형식이 팩에 XML로만 적혀 있음"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "드론 사진 작물 분류", "title_en": "Crop classifier from drone photos", "desc_ko": "드론 스냅샷으로 15가지 작물을 분류합니다.", "desc_en": "Classify 15 crops from drone snapshots."},
+  {"level": "capstone", "title_ko": "제주 월동작물 면적 지도", "title_en": "Jeju winter-crop area map", "desc_ko": "필지별 작물 예측으로 작물별 재배 면적을 지도에 보여줍니다.", "desc_en": "Map cultivated area per crop from field-level predictions."},
+  {"level": "research", "title_ko": "분광 영상 효과 비교", "title_en": "Value of spectral imagery", "desc_ko": "RGB·다중분광·초분광 중 어떤 영상이 작물 구분에 좋은지 비교합니다.", "desc_en": "Compare RGB, multispectral and hyperspectral imagery for crop mapping."}
+ ],
+ "doc_used": true,
+ "uncertain": ["image file formats"]
+}

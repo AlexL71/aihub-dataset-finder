@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71403",
+ "easy_ko": "도시철도, 일반철도, 고속철도, 경전철의 전차선(전기를 공급하는 공중 전선)과 애자(전기를 막는 부품)을 특수 장비로 찍은 사진마다 부품의 위치와 영역, 그리고 멀쩡한지 망가지거나 느슨해졌는지를 표시한 데이터입니다. 사람이 직접 걸어 다니며 하던 철도 점검을 자동으로 해 주는 AI를 만들 수 있습니다.",
+ "easy_en": "Photos of overhead contact lines (wires that supply power) and insulators on subway, conventional, high-speed and light rail lines, taken with special equipment, with each part's position and area marked and whether it is intact, damaged or loose. You can build AI that automates railway inspections that people used to do on foot.",
+ "detail_ko": "전차선(전기를 공급하는 공중 전선)과 애자(전기를 막는 부품) 이미지 133,845세트(도시철도 52,131, 일반철도 22,312, 고속철도 31,136, 경전철 28,266, jpg)에 시설물 14종(전차선, T-Bar, 롱이어, 안전핀, 행거, 클램프, 절연애자, 현수애자 등)의 바운딩박스·분할 영역과 정상·비정상 구분을 JSON으로 붙였습니다. 성능 지표 표는 비어 있고 YOLOv5·Mask R-CNN 사용만 소개되어 있습니다. 비정상 데이터 일부는 인위적으로 파손·이완을 만들어 촬영했으며, 71391번 데이터와 같은 기관·구성입니다.",
+ "detail_en": "133,845 image sets (jpg) of overhead contact lines (wires that supply power) and insulators (urban 52,131, conventional 22,312, high-speed 31,136, light rail 28,266), with JSON boxes, segmentation and normal/abnormal labels for 14 component types (contact wire, T-bar, long ear, safety pin, hanger, clamp, insulator, suspension insulator and more). The performance table is empty; only the use of YOLOv5 and Mask R-CNN is mentioned. Some abnormal cases were created by deliberately damaging or loosening parts; same organisation and structure as dataset 71391.",
+ "amount_ko": "사진 133,845세트, 시설물 14종",
+ "amount_en": "133,845 image sets, 14 component types",
+ "labels_ko": "부품 위치 상자·영역, 부품 종류, 정상·비정상",
+ "labels_en": "boxes and masks around parts, part type, normal or abnormal",
+ "status": "full-run-2026-11-02"
+}

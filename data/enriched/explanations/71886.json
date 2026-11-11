@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71886",
+ "easy_ko": "1만 명의 피부 사진과 피부 고민, 피부 타입, 생활 환경 설문에, 그 사람에게 맞는 화장품 성분과 관리법을 차근차근 따져 추천한 질문-생각 과정-답을 붙인 데이터입니다. 사람마다 맞는 화장품 성분을 추천하는 AI에 쓸 수 있습니다.",
+ "easy_en": "Skin photos and questionnaires on skin concerns, skin type and living environment from 10,000 people, each with a question, a step-by-step reasoning process and an answer recommending suitable skincare ingredients and care. You can use it to build AI that recommends skincare ingredients for each person.",
+ "detail_ko": "10,000명(여성 56%, 13~69세, 평균 43.8세)의 피부 이미지 10,000장(jpg)과 피부 고민·타입·생활환경 설문 10,000건(csv)에, 맞춤 성분·효능·관리법을 단계적 사고 과정(CoT, 추론 근거를 차례로 쓰는 방식)과 함께 적은 질문-추론-답변 10,000건과 성분·효능 태그(JSONL)를 붙였습니다. 페이지에 성능 점수 표가 없고(LLaVA-1.5-7B 소개만 있음), 얼굴·피부 사진이라 개인정보에 주의해야 하며, 중년층 중심입니다.",
+ "detail_en": "Skin images (10,000, jpg) and questionnaires on concerns, skin type and living environment (10,000, csv) from 10,000 people (56% women, aged 13 to 69, average 43.8), with 10,000 question-reasoning-answer items (JSONL) that recommend ingredients, effects and care using chain-of-thought (CoT, writing out reasoning step by step), plus ingredient and efficacy tags. There is no score table (only LLaVA-1.5-7B is mentioned); face and skin photos are personal data, so take care; and participants are mostly middle-aged.",
+ "amount_ko": "이미지 10,000장, 설문 10,000건, 질문-CoT-답변 10,000건",
+ "amount_en": "10,000 images, 10,000 questionnaires, 10,000 question-CoT-answer items",
+ "labels_ko": "질문-생각 과정-답, 성분 태그",
+ "labels_en": "question-CoT-answer, ingredient tags",
+ "status": "full-run-2026-11-02"
+}

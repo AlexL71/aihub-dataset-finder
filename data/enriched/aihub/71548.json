@@ -1,0 +1,29 @@
+{
+ "dataset_id": "71548",
+ "title_en": "Daily-life task and command data (objects)",
+ "summary_ko": "실제 생활에서 쓰는 물건(거울, 공구, 꽃병, 램프, 문구류, 바구니, 욕실용품 등)을 직접 촬영해 만든 한국형 3D 물체 데이터 6만 개입니다. 물체 정보와 분할 라벨이 있어 로봇·AI 에이전트가 가상 집 안에서 물건을 알아보고 다루는 연구에 쓸 수 있습니다.",
+ "summary_en": "60,000 Korean-style 3D object models scanned from real household items (mirrors, tools, vases, lamps, stationery, baskets, bathroom goods) with object info and segmentation labels. For robots and AI agents that recognise and handle objects in virtual homes.",
+ "contents_ko": "3D 물체 모델(FBX, 텍스처 PNG) + JSON(물체 정보, 분할, 클래스).",
+ "contents_en": "3D object model (FBX, PNG texture) + JSON (object info, segmentation, class).",
+ "modalities": ["3d"],
+ "tasks": ["3d_reconstruction", "segmentation"],
+ "topics": [{"ko": "로봇·AI 에이전트", "en": "Robots and AI agents"}, {"ko": "생활용품 3D 모델", "en": "Household 3D objects"}],
+ "keywords_ko": ["3D 물체", "생활용품", "로봇", "AI 에이전트", "가상공간"],
+ "keywords_en": ["3D objects", "household items", "robots", "AI agents", "virtual environment"],
+ "labels": ["object class", "object info", "segmentation"],
+ "file_formats": ["fbx", "png", "json"],
+ "scale_ko": "3D 물체 60,000개",
+ "classes_example": ["거울", "공", "공구", "꽃병", "램프", "문구류", "바구니", "박스", "샤워기", "세면대"],
+ "baseline": [],
+ "difficulty": "advanced",
+ "difficulty_note_ko": "3D 모델 파일(FBX)을 다뤄야 하고 전체 약 852GB입니다. 일부 클래스만 받아 쓰세요.",
+ "skills_needed_ko": ["파이썬", "3D 모델 다루기", "가상 환경(Unity 등)"],
+ "caveats_ko": ["전체 약 852GB", "데이터 유형이 '텍스트'로 적혀 있지만 실제는 3D", "팩에 성능 지표가 없음", "71546 공간, 71547 명령어 데이터와 한 세트"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "3D 물체 분류", "title_en": "3D object classification", "desc_ko": "3D 물체를 여러 각도로 렌더링해 종류를 분류합니다.", "desc_en": "Render objects from several views and classify them."},
+  {"level": "capstone", "title_ko": "가상 집 꾸미기", "title_en": "Furnishing a virtual home", "desc_ko": "71546 공간에 이 물체들을 배치해 로봇 실험용 가상 집을 만듭니다.", "desc_en": "Place these objects in 71546 spaces to build a virtual home."},
+  {"level": "research", "title_ko": "명령 기반 물체 조작", "title_en": "Command-driven object manipulation", "desc_ko": "71547 명령어를 듣고 해당 물체를 찾아 옮기는 에이전트를 연구합니다.", "desc_en": "Study agents that find and move objects from 71547 commands."}
+ ],
+ "doc_used": true,
+ "uncertain": ["전체 클래스 수가 팩에 명확히 적혀 있지 않음(일부 목표 구성비만 확인)"]
+}

@@ -1,0 +1,29 @@
+{
+ "dataset_id": "71612",
+ "title_en": "Tennis motion and match video data",
+ "summary_ko": "실업·대학·주니어 선수의 테니스 대회·훈련 영상에서 뽑은 이미지 192,000장으로, 선수·심판·코트·네트가 상자와 다각형으로, 선수 관절이 키포인트로 표시되어 있습니다. 경기 영상 분석, 선수 자세 분석·코칭 AI에 쓸 수 있습니다.",
+ "summary_en": "192,000 images from tennis match and training videos of pro, college and junior players, with players, umpires, court and net marked by boxes and polygons and player joints as keypoints. For match analysis and form coaching.",
+ "contents_ko": "경기 이미지(jpg) + 영상(mp4) + JSON(상자, 다각형, 관절 키포인트, 경기·동작 정보).",
+ "contents_en": "Match image (jpg) + video (mp4) + JSON (boxes, polygons, joint keypoints, match and motion info).",
+ "modalities": ["image", "video"],
+ "tasks": ["object_detection", "segmentation", "keypoint_pose", "action_recognition"],
+ "topics": [{"ko": "스포츠 분석", "en": "Sports analytics"}, {"ko": "라켓 스포츠", "en": "Racket sports"}],
+ "keywords_ko": ["테니스", "자세 추정", "경기 분석", "선수 탐지", "스윙", "코칭"],
+ "keywords_en": ["tennis", "pose estimation", "match analysis", "player detection", "swing", "coaching"],
+ "labels": ["bounding box", "polygon", "keypoints", "match info"],
+ "file_formats": ["jpg", "mp4", "json"],
+ "scale_ko": "이미지 192,000장(대회·훈련 영상 기반), 단식·복식·혼합",
+ "classes_example": ["선수", "심판", "코트", "네트", "단식", "복식", "혼합", "스윙"],
+ "baseline": [{"task": "object detection (player, umpire, court, net)", "model": "Faster R-CNN", "metric": "mAP@0.5", "value": "81.29%"}, {"task": "player keypoint detection", "model": "HRNet", "metric": "MPJPE", "value": "44.08 mm"}, {"task": "player keypoint detection", "model": "HRNet", "metric": "PCK", "value": "97.56%"}],
+ "difficulty": "intermediate",
+ "difficulty_note_ko": "약 54GB로 다룰 만하고 탐지·자세 추정 실습에 좋습니다.",
+ "skills_needed_ko": ["파이썬", "YOLO 탐지", "자세 추정(YOLO-pose·HRNet)"],
+ "caveats_ko": ["코트·네트 분할 성능이 기준 65%에 측정 10%로 적혀 있어 오기 가능성", "전문 선수 데이터가 약 90%", "같은 경기 연속 프레임이 많아 경기 단위로 분할 필요", "71611 배드민턴 데이터와 같은 구성"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "테니스 선수 탐지", "title_en": "Tennis player detection", "desc_ko": "경기 이미지에서 선수·코트·네트를 YOLO로 찾습니다.", "desc_en": "Detect players, court and net in match images."},
+  {"level": "capstone", "title_ko": "서브 자세 분석기", "title_en": "Serve form analyser", "desc_ko": "서브 동작의 관절 각도를 전문 선수와 비교해 보여 줍니다.", "desc_en": "Compare serve joint angles with pros."},
+  {"level": "research", "title_ko": "라켓 종목 간 자세 전이", "title_en": "Pose transfer across racket sports", "desc_ko": "배드민턴(71611)으로 학습한 자세 모델이 테니스에서도 통하는지 연구합니다.", "desc_en": "Study whether badminton-trained pose models (71611) work for tennis."}
+ ],
+ "doc_used": true,
+ "uncertain": ["코트·네트 분할 측정값 10%가 실제 값인지 확인 필요"]
+}

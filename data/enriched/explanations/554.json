@@ -1,0 +1,12 @@
+{
+ "dataset_id": "554",
+ "easy_ko": "여러 차종의 자동차 겉모습을 찍은 사진마다 차종, 연식, 색, 세부 모델과 범퍼·타이어·문·전조등 같은 부위 위치를 표시한 데이터입니다. 차를 알아보거나 차 겉면이 어디가 망가졌는지 확인하는 AI를 만들 수 있습니다.",
+ "easy_en": "Photos of car exteriors across many models, each marked with the model, year, colour and trim, and the positions of parts such as bumpers, tyres, doors and headlamps. You can build AI that identifies cars or checks where a car's body is damaged.",
+ "detail_ko": "100개 차종 3,099대의 차량 외관 이미지 322,664장(jpg)에 차량 바운딩박스, 차종·연식·색상·트림, 14개 부위(프론트·리어 범퍼, 타이어, 사이드미러, 헤드램프, 보닛, 트렁크 등) 바운딩박스를 JSON으로 붙였습니다. 기준 성능은 기록에서 확인되지 않습니다. 번호판 등 개인정보 비식별 여부 확인이 필요합니다.",
+ "detail_en": "322,664 jpg images of 3,099 cars of 100 models, with JSON vehicle boxes, model, year, colour and trim, and boxes for 14 parts (front and rear bumpers, tyres, side mirrors, headlamps, bonnet, boot and more). No baseline is visible in the record. Check whether licence plates and other personal data are de-identified.",
+ "amount_ko": "사진 약 32.3만 장, 차종 100종",
+ "amount_en": "about 323k images, 100 car models",
+ "labels_ko": "차 위치 상자, 차종·연식·색·세부 모델, 부위 위치 상자",
+ "labels_en": "box around the car, model, year, colour, trim, boxes around parts",
+ "status": "full-run-2026-11-02"
+}

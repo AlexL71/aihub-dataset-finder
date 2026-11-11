@@ -1,0 +1,29 @@
+{
+ "dataset_id": "71981",
+ "title_en": "Southeast Asian knowledge and culture data",
+ "summary_ko": "태국과 캄보디아의 다양한 자료를 모아 정제한 텍스트 4,870,205문장(태국어 2,915,932, 캄보디아어 1,954,273)에 문장 라벨, 삼중번역, 질의응답(QA)셋을 붙인 데이터입니다. 지역 언어와 문화 맥락을 반영한 다국어 LLM 학습에 쓸 수 있습니다.",
+ "summary_en": "4,870,205 cleaned sentences collected from Thai and Cambodian sources (Thai 2,915,932, Khmer 1,954,273), with sentence labels, three-way translations and a Q&A set. For training multilingual LLMs that reflect local language and culture.",
+ "contents_ko": "텍스트 문장 + 라벨(문장 라벨, 삼중번역, 질의응답).",
+ "contents_en": "Text sentences + labels (sentence labels, three-way translation, Q&A).",
+ "modalities": ["text"],
+ "tasks": ["translation", "question_answering", "text_classification"],
+ "topics": [{"ko": "동남아 언어", "en": "Southeast Asian languages"}, {"ko": "문화", "en": "Culture"}],
+ "keywords_ko": ["태국어", "캄보디아어", "크메르어", "번역", "질의응답", "다국어 LLM"],
+ "keywords_en": ["Thai", "Cambodian", "Khmer", "translation", "question answering", "multilingual LLM"],
+ "labels": ["sentence label", "three-way translation", "question-answer"],
+ "file_formats": [],
+ "scale_ko": "4,870,205문장(태국어 60%, 캄보디아어 40%)",
+ "classes_example": ["태국어", "캄보디아어"],
+ "baseline": [],
+ "difficulty": "intermediate",
+ "difficulty_note_ko": "약 8GB의 텍스트로 다룰 만하지만 저자원 언어 처리 경험이 필요합니다.",
+ "skills_needed_ko": ["파이썬", "다국어 트랜스포머", "기계 번역"],
+ "caveats_ko": ["삼중번역의 세 번째 언어(한국어·영어 등)가 팩 앞부분에 분명하지 않음", "QA셋 수량(목표 2만 개 이상)의 실제 값이 팩 앞부분에 없음", "파일 형식이 '텍스트'로만 적혀 있음"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "태국어 문장 분류", "title_en": "Thai sentence classifier", "desc_ko": "문장 라벨로 태국어 문장 분류 모델을 만듭니다.", "desc_en": "Train a Thai sentence classifier."},
+  {"level": "capstone", "title_ko": "태국·캄보디아 문화 Q&A", "title_en": "Thai/Khmer culture Q&A", "desc_ko": "현지 문화 질문에 답하는 다국어 챗봇을 만듭니다.", "desc_en": "Multilingual bot answering local culture questions."},
+  {"level": "research", "title_ko": "크메르어 번역 품질 개선", "title_en": "Improving Khmer translation", "desc_ko": "삼중번역 데이터로 저자원 크메르어 번역을 개선하는 방법을 연구합니다.", "desc_en": "Use three-way data to improve Khmer translation."}
+ ],
+ "doc_used": true,
+ "uncertain": ["번역 언어 구성", "QA셋 수량", "파일 형식"]
+}

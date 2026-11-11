@@ -1,0 +1,32 @@
+{
+ "dataset_id": "76",
+ "title_en": "Broadcast video content for scene and person recognition",
+ "summary_ko": "OBS·YTN·EBS 등 방송 영상에 물체 상자 약 800만 개, 인물 241명(14만 개), 장면 29종(21만 개) 라벨을 붙인 데이터입니다. 방송 영상에서 장면 종류와 등장인물을 자동으로 찾아 영상 검색이나 메타데이터 자동 생성에 쓸 수 있습니다.",
+ "summary_en": "Broadcast video from OBS, YTN, EBS and others with about 8 million object boxes, 241 people (140k labels) and 29 scene types (210k labels). For automatically finding scene types and people in broadcasts, for video search or automatic metadata.",
+ "contents_ko": "방송 영상 클립과 프레임 + 객체 JSON(상자, 물체 이름) + 인물 JSON(인물 ID, 얼굴 상자) + 장면 JSON(클립 단위 장면 종류).",
+ "contents_en": "Broadcast clips and frames + object JSON (boxes, names) + person JSON (person ID, face box) + scene JSON (scene type per clip).",
+ "modalities": ["video", "image"],
+ "tasks": ["object_detection", "image_classification", "action_recognition", "retrieval_recommendation"],
+ "topics": [{"ko": "방송·미디어", "en": "Broadcasting and media"}, {"ko": "연예·인물", "en": "Celebrities and people"}],
+ "keywords_ko": ["방송 영상", "장면 인식", "인물 인식", "연예인", "닮은꼴", "객체 인식"],
+ "keywords_en": ["broadcast video", "scene recognition", "person recognition", "celebrity", "look-alike", "object detection"],
+ "labels": ["bounding box", "person identity", "scene class"],
+ "file_formats": ["mp4", "jpg", "json"],
+ "scale_ko": "객체 약 800만 개, 인물 241명 14만 개, 장면 29종 21만 개(구축량 93.6만)",
+ "classes_example": ["식음료 > 요리하기", "스포츠 > 축구", "스포츠 > 수영", "예술 문화 > 피아노 연주", "관리 > 메이크업", "기타 활동 > 등산하기", "인물(200명)", "객체 > 사람", "객체 > 자동차", "객체 > TV"],
+ "baseline": [
+  {"task": "person recognition", "model": "ResNet50", "metric": "accuracy", "value": "87.5%"},
+  {"task": "object detection", "model": "EfficientDet-D7", "metric": "mAP", "value": "51.41%"}
+ ],
+ "difficulty": "advanced",
+ "difficulty_note_ko": "전체 약 4.2TB로 매우 크고 얼굴 인식은 개인정보 문제가 있어 주의가 필요합니다. 장면 분류만 하면 중급입니다.",
+ "skills_needed_ko": ["파이썬", "객체 탐지·이미지 분류", "대용량 영상 일부 추출"],
+ "caveats_ko": ["전체 약 4.2TB", "실존 인물 얼굴 인식이라 이용 약관과 초상권을 반드시 확인", "인물 인식 정확도가 기준값(90%)보다 낮게 적혀 있음"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "방송 장면 종류 분류", "title_en": "Broadcast scene classifier", "desc_ko": "프레임으로 뉴스 스튜디오·야외·인터뷰 같은 장면 종류를 분류합니다.", "desc_en": "Classify scene types such as studio, outdoor or interview from frames."},
+  {"level": "capstone", "title_ko": "방송 영상 자동 태그 생성", "title_en": "Automatic tags for broadcast video", "desc_ko": "장면·물체 인식 결과로 영상 구간마다 검색용 태그를 만들어 줍니다.", "desc_en": "Generate searchable tags per segment from scene and object recognition."},
+  {"level": "research", "title_ko": "장면 맥락을 이용한 물체 탐지", "title_en": "Scene context for object detection", "desc_ko": "장면 종류 정보를 넣었을 때 방송 영상의 물체 탐지가 좋아지는지 연구합니다.", "desc_en": "Study whether scene type helps object detection in broadcasts."}
+ ],
+ "doc_used": true,
+ "uncertain": []
+}

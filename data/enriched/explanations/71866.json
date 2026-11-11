@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71866",
+ "easy_ko": "한국 방송과 영상에서 뽑은 장면 사진마다, 무엇이 어떻게 보이는지를 한국어와 영어로 자세히 설명한 글을 붙인 데이터입니다. 뉴스, 예능, 드라마, 동식물 영상 등 여러 장르가 있어, 글로 원하는 장면을 찾아 주는 영상 검색 AI를 만들 수 있습니다.",
+ "easy_en": "Scenes taken from Korean TV and online videos, each with a detailed description of what is happening, in Korean and English. Genres include news, entertainment, drama and nature, so you can build video search that finds a scene from a written description.",
+ "detail_ko": "SBS 방송 등 한국 영상 7,822개에서 추출한 이미지 41,000장(png·jpeg)과 상세 설명 문장 410,000개(영어·한국어, txt·JSON 캡션)로 구성되며, 동식물·뉴스·예능·드라마 등 9개 장르 코드로 분류됩니다. 상황적·맥락적 이해를 위한 상세 설명(Detailed Description) 방식으로 작성되었습니다. 성능 점수 표는 없고 VAST 학습 조건만 소개되어 있습니다.",
+ "detail_en": "41,000 frames (png/jpeg) from 7,822 Korean videos including SBS broadcasts, with 410,000 detailed description sentences in English and Korean (txt and JSON captions), grouped into nine genre codes (nature, news, entertainment, drama and more). Descriptions are written to capture context, not only visible objects. No score table; only VAST training settings are described.",
+ "amount_ko": "영상 7,822개에서 뽑은 장면 4.1만 장, 설명 문장 41만 개",
+ "amount_en": "41k scenes from 7,822 videos, 410k description sentences",
+ "labels_ko": "장면 설명 글(한국어·영어), 장르",
+ "labels_en": "scene description (Korean and English), genre",
+ "status": "sample-2026-11-02"
+}

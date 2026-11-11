@@ -1,0 +1,33 @@
+{
+ "dataset_id": "640",
+ "title_en": "Smart aquaculture farm integrated data (eels)",
+ "summary_ko": "상업용 뱀장어 양식장 2곳에서 모은 수조 표면 뱀장어 이미지 약 20만 장(분할 표시), 사료 먹는 영상, 용존산소·수온·pH 등 센서 데이터 120만 세트, 수질 분석과 사료·생육·폐사 관리 기록을 담은 양식 전주기 데이터입니다. 뱀장어 성장과 크기 분포를 실시간으로 살피는 AI에 쓸 수 있습니다.",
+ "summary_en": "Full-cycle data from 2 commercial eel farms: about 200,000 tank-surface eel images with segmentation, feeding videos, 1.2 million sensor records (dissolved oxygen, temperature, pH and more), water-quality tests and feeding, growth and mortality records. For AI that monitors eel growth and size distribution in real time.",
+ "contents_ko": "뱀장어 이미지(jpg)·영상(mp4) + JSON(분할) + 센서·수질·관리 데이터.",
+ "contents_en": "Eel images (jpg) and videos (mp4) + JSON (segmentation) + sensor, water-quality and management data.",
+ "modalities": ["image", "video", "sensor", "tabular"],
+ "tasks": ["segmentation", "forecasting", "tabular_prediction"],
+ "topics": [{"ko": "수산 양식", "en": "Aquaculture"}, {"ko": "스마트팜", "en": "Smart farming"}],
+ "keywords_ko": ["뱀장어", "스마트 양식", "수질 센서", "성장 예측", "수산업"],
+ "keywords_en": ["eels", "smart aquaculture", "water-quality sensors", "growth prediction", "fisheries"],
+ "labels": ["segmentation", "eel length", "species", "size class"],
+ "file_formats": ["jpg", "mp4", "json"],
+ "scale_ko": "이미지 약 21만 장, 영상 1,500건, 센서 120만 세트, 관리 데이터 수천 세트",
+ "classes_example": ["자포니카", "말모라타", "소", "중", "대"],
+ "baseline": [
+  {"task": "eel segmentation", "model": "Mask R-CNN", "metric": "mIoU", "value": "77.7%"},
+  {"task": "eel length estimation", "model": "polynomial regression", "metric": "NRMSE", "value": "7.5%"},
+  {"task": "growth and uniformity prediction", "model": "deep encoder-based predictor", "metric": "relative error", "value": "4.3%"}
+ ],
+ "difficulty": "intermediate",
+ "difficulty_note_ko": "전체 약 795GB로 크지만 센서·관리 데이터만으로도 시계열 실습이 가능합니다.",
+ "skills_needed_ko": ["파이썬", "분할 모델", "시계열 분석"],
+ "caveats_ko": ["전체 약 795GB", "양식장 2곳 데이터뿐", "종별 이미지 수가 차이 남"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "수질 데이터 시각화", "title_en": "Water-quality dashboard", "desc_ko": "용존산소·수온 변화를 그래프로 보여줍니다.", "desc_en": "Plot dissolved oxygen and temperature over time."},
+  {"level": "capstone", "title_ko": "뱀장어 크기 분포 모니터", "title_en": "Eel size monitor", "desc_ko": "수조 사진을 분할해 크기 분포를 계산하고 선별 시기를 알려줍니다.", "desc_en": "Segment tank photos, compute size distribution and suggest sorting time."},
+  {"level": "research", "title_ko": "환경으로 성장 예측", "title_en": "Growth from environment", "desc_ko": "수질·사료 데이터로 뱀장어 성장 속도를 예측합니다.", "desc_en": "Predict eel growth from water quality and feeding data."}
+ ],
+ "doc_used": true,
+ "uncertain": []
+}

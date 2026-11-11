@@ -1,0 +1,29 @@
+{
+ "dataset_id": "194",
+ "title_en": "Building images captured while driving (GNSS-denied localisation)",
+ "summary_ko": "주행 중 찍은 건물·랜드마크 포함 이미지·영상·라이다·GNSS/INS 데이터 200만 건으로, 건물면·도로 표시·방음벽·기둥·표지판·신호등·터널 내 시설 등이 표시되고 시맨틱 포인트 클라우드 정밀지도도 있습니다. 위성 신호가 약한 도심·터널에서 차의 위치를 알아내는 AI에 쓸 수 있습니다.",
+ "summary_en": "2 million images, videos, lidar and GNSS/INS records captured while driving, labelled with building faces, road markings, noise walls, poles, signs, traffic lights and tunnel fixtures, plus a semantic point-cloud HD map. For AI that localises vehicles in city canyons and tunnels where satellite positioning is weak.",
+ "contents_ko": "주행 이미지 + JSON(건물·도로면 다각형, 도로 객체 상자) + 라이다 + GNSS/INS + 시맨틱 포인트 클라우드 지도.",
+ "contents_en": "Driving images + JSON (building and road-surface polygons, road-object boxes) + lidar + GNSS/INS + semantic point-cloud map.",
+ "modalities": ["image", "3d", "sensor"],
+ "tasks": ["segmentation", "object_detection", "3d_reconstruction"],
+ "topics": [{"ko": "자율주행", "en": "Self-driving"}, {"ko": "지도·공간정보", "en": "Maps and spatial data"}, {"ko": "도시·건물", "en": "Cities and buildings"}],
+ "keywords_ko": ["위치 인식", "GNSS 음영", "정밀지도", "포인트 클라우드", "건물", "터널"],
+ "keywords_en": ["localisation", "GNSS-denied", "HD map", "point cloud", "buildings", "tunnel"],
+ "labels": ["polygon", "bounding box", "semantic point cloud"],
+ "file_formats": ["jpg", "json", "pcd"],
+ "scale_ko": "200만 건 이상(도로면 표지 78.2만, 세로 기둥 54.3만, 교통표지판 27만, 건물 18.2만, 신호등 15.3만 등)",
+ "classes_example": ["건물", "차선", "횡단보도", "방음벽", "가드레일", "가로등", "교통표지판", "신호등"],
+ "baseline": [],
+ "difficulty": "advanced",
+ "difficulty_note_ko": "카메라·라이다·위치 센서를 함께 다루는 연구 수준 데이터입니다. 약 100GB로 크기는 중간입니다.",
+ "skills_needed_ko": ["파이썬", "분할 모델", "포인트 클라우드·좌표계 기초"],
+ "caveats_ko": ["성능 지표가 팩 앞부분에 없음", "파일 형식 일부는 추정"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "도로 표시 분할", "title_en": "Road marking segmentation", "desc_ko": "주행 이미지에서 차선·횡단보도를 칠하는 모델을 학습합니다.", "desc_en": "Train a model that paints lanes and crosswalks."},
+  {"level": "capstone", "title_ko": "건물로 위치 찾기", "title_en": "Localise by buildings", "desc_ko": "사진 속 건물·표지판을 지도와 맞춰 현재 위치를 추정하는 데모를 만듭니다.", "desc_en": "Match buildings and signs to the map to estimate position."},
+  {"level": "research", "title_ko": "터널 내 위치 인식", "title_en": "Localisation inside tunnels", "desc_ko": "GNSS가 끊긴 터널에서 비상등·환기구 같은 객체로 위치를 추정하는 방법을 연구합니다.", "desc_en": "Use tunnel fixtures to estimate position without GNSS."}
+ ],
+ "doc_used": true,
+ "uncertain": ["파일 형식 일부(pcd)는 추정"]
+}

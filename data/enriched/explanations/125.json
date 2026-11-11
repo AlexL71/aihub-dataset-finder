@@ -1,0 +1,12 @@
+{
+ "dataset_id": "125",
+ "easy_ko": "법률(민법·형법·세법·판례), 교육, 경제·금융, 문화·관광·예술 같은 사회과학 분야의 한국어 문장과 영어 번역을 짝지은 데이터입니다. 법률이나 교육 문서를 전문적으로 번역하는 AI나 분야별 용어 사전을 만들 수 있습니다.",
+ "easy_en": "Korean sentences paired with English translations in social-science fields: law (civil, criminal and tax law, court cases), education, economics and finance, and culture, tourism and the arts. You can build AI that translates legal or educational documents, or field-specific term dictionaries.",
+ "detail_ko": "사회과학 분야 한국어-영어 병렬 문장 150만 쌍(법률 50만, 교육 40만, 경제 30만, 문화·관광 등)으로 대분야·소분야 라벨이 있습니다. 기준 성능 지표는 없습니다. 페이지 통계표가 기술과학 데이터셋과 같은 표를 쓰고 있어 세부 수치는 원문 확인이 필요하며, 파일 형식(json/xlsx)은 확인되지 않은 추정입니다.",
+ "detail_en": "1.5M Korean–English sentence pairs in social science (law 500k, education 400k, economics 300k, culture and tourism and more) with field and sub-field labels. No baseline. The page reuses the science-and-technology dataset's statistics table, so check detailed figures in the manual; file formats (json/xlsx) are not confirmed.",
+ "amount_ko": "번역 문장 150만 쌍",
+ "amount_en": "1.5M sentence pairs",
+ "labels_ko": "한국어-영어 번역 짝, 큰 분야·세부 분야",
+ "labels_en": "Korean–English sentence pairs, field and sub-field",
+ "status": "full-run-2026-11-02"
+}

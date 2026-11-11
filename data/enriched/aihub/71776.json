@@ -1,0 +1,29 @@
+{
+ "dataset_id": "71776",
+ "title_en": "Domestic travel log data (Seoul metropolitan area) (2023)",
+ "summary_ko": "수도권을 여행한 여행객 3,200명이 전용 앱으로 남긴 여행자 정보, GPS 동선, 방문지·활동 기록, 소비 내역, 사진을 묶은 데이터입니다. 개인 맞춤 여행지·숙소 추천 AI에 쓸 수 있습니다.",
+ "summary_en": "Travel logs from 3,200 travellers in the Seoul metropolitan area collected through an app: traveller profiles, GPS routes, visits and activities, spending and photos. For personalised destination and accommodation recommendation AI.",
+ "contents_ko": "여행자·동선·활동·소비 기록(csv·json) + 사진(jpg).",
+ "contents_en": "Traveller, route, activity and spending records (csv, json) + photos (jpg).",
+ "modalities": ["tabular", "image", "text"],
+ "tasks": ["retrieval_recommendation", "tabular_prediction"],
+ "topics": [{"ko": "관광·여행", "en": "Tourism and travel"}, {"ko": "추천 시스템", "en": "Recommender systems"}],
+ "keywords_ko": ["여행 로그", "여행지 추천", "GPS 동선", "소비 내역", "수도권", "관광"],
+ "keywords_en": ["travel log", "destination recommendation", "GPS routes", "spending", "Seoul area", "tourism"],
+ "labels": ["traveller profile", "route", "activity", "spending"],
+ "file_formats": ["csv", "jpg", "json"],
+ "scale_ko": "여행자 3,200명(세트)",
+ "classes_example": [],
+ "baseline": [],
+ "difficulty": "beginner",
+ "difficulty_note_ko": "표 데이터 중심이라 판다스로 분석하고 추천 모델을 만들기 좋습니다. 사진까지 받으면 약 94GB입니다.",
+ "skills_needed_ko": ["파이썬", "판다스", "추천 시스템"],
+ "caveats_ko": ["GPS·소비 기록은 개인 이동 정보라 이용 조건 확인 필요", "동부권(71778) 등 4개 권역 중 하나", "성능 지표 값이 팩에 없음"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "인기 방문지 분석", "title_en": "Popular spot analysis", "desc_ko": "여행 기록에서 많이 간 곳과 여행 유형을 시각화합니다.", "desc_en": "Visualise popular spots and trip types."},
+  {"level": "capstone", "title_ko": "당일치기 코스 추천", "title_en": "Day-trip recommender", "desc_ko": "취향과 예산에 맞는 수도권 여행 코스를 추천합니다.", "desc_en": "Recommend Seoul-area routes by taste and budget."},
+  {"level": "research", "title_ko": "다음 방문지 예측", "title_en": "Next-visit prediction", "desc_ko": "동선 기록으로 여행자의 다음 방문지를 예측하는 방법을 연구합니다.", "desc_en": "Predict the next place a traveller visits."}
+ ],
+ "doc_used": true,
+ "uncertain": []
+}

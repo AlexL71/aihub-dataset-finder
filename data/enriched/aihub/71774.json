@@ -1,0 +1,29 @@
+{
+ "dataset_id": "71774",
+ "title_en": "Bridge exterior inspection orthophoto data",
+ "summary_ko": "드론으로 촬영한 교량 영상과 입면정사영상에서 뽑은 이미지 420,074장에 균열·박락·백태·누수·강재 부식 등 교량 결함 영역이 분할로 칠해진 데이터입니다. 교량 외관 점검과 위험 등급 자동 평가 AI에 쓸 수 있습니다.",
+ "summary_en": "420,074 images from drone video and facade orthophotos of bridges, with defects such as cracks, spalling, efflorescence, leaks and steel corrosion segmented. For bridge exterior inspection and automatic risk grading AI.",
+ "contents_ko": "교량 이미지(jpg) + JSON(결함 영역 분할, 재질, 결함 유형).",
+ "contents_en": "Bridge image (jpg) + JSON (defect segmentation, material, defect type).",
+ "modalities": ["image"],
+ "tasks": ["segmentation", "anomaly_detection"],
+ "topics": [{"ko": "시설물 안전", "en": "Infrastructure safety"}, {"ko": "드론 점검", "en": "Drone inspection"}],
+ "keywords_ko": ["교량 점검", "균열", "박락", "백태", "강재 부식", "드론"],
+ "keywords_en": ["bridge inspection", "cracks", "spalling", "efflorescence", "steel corrosion", "drone"],
+ "labels": ["segmentation", "defect type", "material"],
+ "file_formats": ["jpg", "json"],
+ "scale_ko": "이미지 420,074장(콘크리트 균열 116,377 등)",
+ "classes_example": ["균열", "박락", "백태", "누수", "함몰", "요철", "강재 부식", "강재 박리"],
+ "baseline": [],
+ "difficulty": "intermediate",
+ "difficulty_note_ko": "약 29GB로 다룰 만하고 균열 분할 실습에 좋습니다.",
+ "skills_needed_ko": ["파이썬", "분할 모델", "이미지 처리"],
+ "caveats_ko": ["결함별 수량 차이가 매우 큼(박락 612장, 균열 116,377장)", "성능 지표 값이 팩에 없음"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "교량 균열 분할", "title_en": "Bridge crack segmentation", "desc_ko": "교량 사진에서 균열을 칠합니다.", "desc_en": "Segment cracks in bridge photos."},
+  {"level": "capstone", "title_ko": "드론 점검 보고서 자동화", "title_en": "Automated drone inspection report", "desc_ko": "드론 사진에서 결함을 찾아 위치·종류별 보고서를 만듭니다.", "desc_en": "Find defects and draft a report by type and location."},
+  {"level": "research", "title_ko": "희소 결함 분할", "title_en": "Rare defect segmentation", "desc_ko": "박락처럼 드문 결함의 분할 성능을 높이는 방법을 연구합니다.", "desc_en": "Improve segmentation of rare defects like spalling."}
+ ],
+ "doc_used": true,
+ "uncertain": []
+}

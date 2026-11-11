@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71522",
+ "easy_ko": "김 씨앗을 키우는 곳에서 현미경으로 찍은 사진 12만여 장에 김이 어느 성장 단계에 있는지 영역을 칠해 표시한 데이터입니다. 김 씨앗을 기르는 환경을 분석하고 생산량을 예측하는 AI에 쓸 수 있습니다.",
+ "easy_en": "Over 120,000 microscope photos from laver (seaweed) seed farms, with areas painted to show which growth stage the laver is at. You can use it to build AI that analyses seed-growing conditions and predicts how much laver will be produced.",
+ "detail_ko": "김 종자 배양장에서 찍은 현미경 이미지 126,105건(JPG; 패각사상체 114,335, 유엽 11,770)에 성장 단계 4종(과포자 잠입기, 포자낭 형성기, 포자낭 성숙기, 유엽) 분할과 양식장 정보를 JSON으로 붙였습니다. 기준 성능은 YOLOv7 객체 탐지 mAP 75.5%, 75.2%, YOLACT 다각형 탐지 mAP 97.8%입니다. 전체 약 121GB이고, 클래스 비율 표의 비율 값이 건수와 맞지 않습니다. 성능지표에 유생·규조류·치패 등 김과 다른 대상이 나와 다른 데이터셋 내용이 섞였을 수 있습니다.",
+ "detail_en": "126,105 microscope images (JPG: 114,335 conchocelis in shells, 11,770 young blades) from laver seed-culture farms, with JSON segmentation of 4 growth stages (carpospore boring, sporangium forming, sporangium mature, young blade) and farm information. Baselines: object detection with YOLOv7, mAP 75.5% and 75.2%; polygon detection with YOLACT, mAP 97.8%. Total size is about 121 GB. The class-share table does not match the counts, and the metrics mention larvae, diatoms and spat, which are not laver, so content from another dataset may be mixed in.",
+ "amount_ko": "이미지 126,105건, 성장 단계 4종",
+ "amount_en": "126,105 images, 4 growth stages",
+ "labels_ko": "성장 단계 영역, 양식장 정보",
+ "labels_en": "segmentation, growth stage, farm",
+ "status": "full-run-2026-11-02"
+}

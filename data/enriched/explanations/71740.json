@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71740",
+ "easy_ko": "숙련된 운전자가 굴착기와 롤러로 작업한 기록 120만여 건에 사람과 덤프트럭 같은 장애물, 작업 영역, 작업 순서와 자세 정보, 사진 설명을 붙인 데이터입니다. 건설 기계가 스스로 작업을 계획하고 해내는 AI에 쓸 수 있습니다.",
+ "easy_en": "Over 1.2 million records of skilled operators working excavators and rollers, with obstacles such as people and dump trucks, work areas, work order and posture information, and photo descriptions. You can use it to build AI that lets construction machines plan and do their own work.",
+ "detail_ko": "숙련 운전자의 굴착기·롤러 작업 데이터 1,215,179건(굴착기 장애물 50,000·작업영역 150,000 등, 롤러 400,000, 캡션 15,179)으로, 이미지(jpg, jpeg)에 장애물(Obstacle, Human, Dump) 상자와 작업 영역 분할, 분류 태그, 캡션을 JSON으로, 작업 순서·자세·가동 정보를 CSV로 붙였습니다. 페이지에 성능 점수 표가 없고(YOLOv5 사용 소개만 있음), 사람 클래스가 약 9%로 적으며, 작업 순서 데이터의 형식과 의미는 설명서를 확인해야 합니다.",
+ "detail_en": "1,215,179 records of skilled operators' excavator and roller work (excavator: 50,000 obstacle, 150,000 work-area and more; roller: 400,000; 15,179 captions): images (jpg, jpeg) with JSON obstacle boxes (obstacle, human, dump truck), work-area segmentation, class tags and captions, plus CSV work order, posture and operation data. There is no score table (only YOLOv5 use is mentioned), people are only about 9% of objects, and the format and meaning of the work-order data need checking in the manual.",
+ "amount_ko": "1,215,179건(굴착기·롤러, 캡션 15,179)",
+ "amount_en": "1,215,179 records (excavator and roller, 15,179 captions)",
+ "labels_ko": "장애물 위치 상자, 작업 영역, 분류, 작업 정보",
+ "labels_en": "bounding box, segmentation, class tags, operation data",
+ "status": "full-run-2026-11-02"
+}

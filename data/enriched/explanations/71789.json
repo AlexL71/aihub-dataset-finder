@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71789",
+ "easy_ko": "한국 관광과 한류 문화에 맞춘 일본어 글 46만여 건과 이를 바탕으로 만든 일본어 질문과 답을 모은 데이터입니다. 한국을 찾는 일본인 관광객을 위한 검색이나 챗봇 서비스에 쓸 수 있습니다.",
+ "easy_en": "Over 460,000 Japanese texts focused on Korean tourism and K-culture, plus Japanese questions and answers built from them. You can use it to build search or chatbot services for Japanese tourists visiting Korea.",
+ "detail_ko": "한국 관광·K-컬처에 특화된 일본어 원문 464,932건(csv, 177,670,461어절)과 이를 바탕으로 만든 일본어 질의응답 라벨(JSON, 163,857,963어절)입니다. 일부 원천이 온라인·도서 저작물이라 이용 조건을 확인해야 하고, 분야 분류와 성능 지표는 팩 앞부분에 없습니다.",
+ "detail_en": "464,932 Japanese source texts (csv, 177,670,461 words) specialised in Korean tourism and K-culture, plus Japanese question-answer labels built from them (JSON, 163,857,963 words). Some sources are online and published works, so check the terms of use; the field categories and any metrics are not in the pack.",
+ "amount_ko": "원천 464,932건(177,670,461어절), 라벨 163,857,963어절",
+ "amount_en": "464,932 source texts (177,670,461 words), 163,857,963 words of labels",
+ "labels_ko": "질문과 답, 분야",
+ "labels_en": "question-answer, category",
+ "status": "full-run-2026-11-02"
+}

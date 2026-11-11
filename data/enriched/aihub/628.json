@@ -1,0 +1,33 @@
+{
+ "dataset_id": "628",
+ "title_en": "Lane violation video data",
+ "summary_ko": "버스 외부 카메라 등으로 직접 찍은 도로 이미지 80만 장 이상에 차선·차량 영역과 차로 위반 여부를 표시한 데이터입니다. 버스전용차로 위반이나 차선 위반 차량을 자동으로 찾는 AI에 쓸 수 있습니다.",
+ "summary_en": "800,000+ road images taken from cameras such as those on buses, with lane and vehicle areas and whether a lane violation occurs. For AI that automatically finds cars violating bus lanes or lane rules.",
+ "contents_ko": "도로 이미지(jpg) + JSON(차선·차량 분할, 위반 여부).",
+ "contents_en": "Road images (jpg) + JSON (lane and vehicle segmentation, violation flag).",
+ "modalities": ["image"],
+ "tasks": ["segmentation", "image_classification"],
+ "topics": [{"ko": "교통 단속", "en": "Traffic enforcement"}, {"ko": "자율주행", "en": "Autonomous driving"}],
+ "keywords_ko": ["차로 위반", "버스전용차로", "차선 인식", "교통 단속", "버스 카메라"],
+ "keywords_en": ["lane violation", "bus lane", "lane detection", "traffic enforcement", "bus camera"],
+ "labels": ["lane segmentation", "vehicle segmentation", "violation flag"],
+ "file_formats": ["jpg", "json"],
+ "scale_ko": "이미지 80만 장 이상, 클래스 3종(차선·차량·위반)",
+ "classes_example": ["차선", "차량", "위반"],
+ "baseline": [
+  {"task": "violation image classification", "model": "ResNet", "metric": "F1", "value": "0.9633"},
+  {"task": "vehicle segmentation", "model": "Mask R-CNN", "metric": "mAP", "value": "98.71%"},
+  {"task": "lane segmentation", "model": "Mask R-CNN", "metric": "mAP", "value": "94.91%"}
+ ],
+ "difficulty": "intermediate",
+ "difficulty_note_ko": "분할·분류 실습에 좋지만 전체 약 513GB입니다.",
+ "skills_needed_ko": ["파이썬", "분할 모델(Mask R-CNN 등)", "CNN 분류"],
+ "caveats_ko": ["전체 약 513GB", "번호판이 보일 수 있음", "팩에 클래스별 분포가 없음"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "위반 여부 분류", "title_en": "Violation classifier", "desc_ko": "도로 사진이 위반 상황인지 분류합니다.", "desc_en": "Classify whether a road photo shows a violation."},
+  {"level": "capstone", "title_ko": "버스전용차로 단속 카메라", "title_en": "Bus-lane enforcement camera", "desc_ko": "차선과 차량을 분할해 전용차로 침범 차량을 표시합니다.", "desc_en": "Segment lanes and cars to mark vehicles in the bus lane."},
+  {"level": "research", "title_ko": "야간·우천 차선 인식", "title_en": "Lanes at night and in rain", "desc_ko": "어두운 날·비 오는 날 차선 인식 성능을 높이는 방법을 연구합니다.", "desc_en": "Improve lane detection at night and in rain."}
+ ],
+ "doc_used": true,
+ "uncertain": []
+}

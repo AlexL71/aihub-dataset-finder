@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71697",
+ "easy_ko": "포도·감귤 과수원의 농로와 밭을 실제로 달리며 찍은 사진과 레이저 점 데이터에 사람, 손수레, 운반차, 사다리, 과일 상자, 나무 같은 것을 표시한 데이터입니다. 과수원에서 길을 찾고 장애물을 피하는 수확, 운반, 방제 로봇 AI에 쓸 수 있습니다.",
+ "easy_en": "Photos and laser point data recorded while driving the paths and fields of grape and citrus orchards, marking people, carts, transport vehicles, ladders, fruit boxes, trees and more. You can use it to build AI for harvesting, carrying and spraying robots that find their way and avoid obstacles in orchards.",
+ "detail_ko": "포도·감귤 과수원 농로·노지 주행 이미지 650,317장(jpg; 포도 309,909, 감귤 340,408)과 라이다 점군 305,197개(pcd)에 2D 객체 1,353,185개(2D 클래스 14종; 예: 사람, 손수레, 운반차, 트럭, 방제기, 사다리, 과수박스, 포도 봉지, 감귤, 비포장)의 상자, 3D 큐보이드, 분할 영역을 JSON으로 붙였습니다. 전체 약 5.6TB이고, 2D 객체의 약 32%가 사람으로 클래스가 불균형합니다. 성능 지표는 팩 앞부분에 없고, 71700 사과·배 과수원 데이터과 같은 구성입니다.",
+ "detail_en": "650,317 images (jpg; 309,909 grape, 340,408 citrus) and 305,197 lidar point clouds (pcd) recorded while driving paths and fields in grape and citrus orchards, with JSON boxes, 3D cuboids and segmentation for 1,353,185 2D objects in 14 classes (such as person, cart, carrier, truck, sprayer, ladder, fruit box, grape bag, citrus, unpaved ground). Total size is about 5.6 TB. About 32% of 2D objects are people, so classes are imbalanced. No metrics are in the pack. Same layout as the apple and pear orchard set 71700.",
+ "amount_ko": "이미지 650,317장, 점군 305,197개, 2D 객체 1,353,185개",
+ "amount_en": "650,317 images, 305,197 point clouds, 1,353,185 2D objects",
+ "labels_ko": "물체 위치 상자(평면·입체), 영역, 물체 종류",
+ "labels_en": "bounding boxes, 3D cuboids, polygons, class",
+ "status": "full-run-2026-11-02"
+}

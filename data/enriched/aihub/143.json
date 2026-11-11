@@ -1,0 +1,29 @@
+{
+ "dataset_id": "143",
+ "title_en": "Land cover map aerial and satellite images (Seoul metropolitan area)",
+ "summary_ko": "수도권 항공사진(51cm) 5.5만 장과 Sentinel-2 위성영상(10m)에 건물·주차장·도로·가로수·논·밭·산림·나지 8종 토지 이용을 칠한 데이터입니다. 도시 확장, 녹지 감소 같은 토지 변화를 자동으로 분석하는 AI에 쓸 수 있습니다.",
+ "summary_en": "55,000 aerial photos (51 cm) of the Seoul metropolitan area plus Sentinel-2 satellite images (10 m), with 8 land-use classes painted: buildings, parking, roads, street trees, paddies, fields, forest and bare land. For AI that analyses land change such as urban sprawl and loss of green space.",
+ "contents_ko": "512×512 또는 1024×1024 영상 패치(TIFF) + JSON 분할 라벨(정밀 또는 대략).",
+ "contents_en": "512×512 or 1024×1024 image patches (TIFF) + JSON segmentation labels (fine or coarse).",
+ "modalities": ["image"],
+ "tasks": ["segmentation"],
+ "topics": [{"ko": "위성·항공 영상", "en": "Satellite and aerial imagery"}, {"ko": "도시·국토", "en": "Cities and land"}, {"ko": "도시 녹지", "en": "Urban green space"}],
+ "keywords_ko": ["토지피복", "항공사진", "위성영상", "수도권", "도시 확장", "녹지"],
+ "keywords_en": ["land cover", "aerial photo", "satellite image", "Seoul area", "urban sprawl", "green space"],
+ "labels": ["segmentation mask (8 classes)", "fine/coarse annotation"],
+ "file_formats": ["tif", "json"],
+ "scale_ko": "항공사진 55,372장(정밀 20,200, 대략 35,172), 위성영상 300장",
+ "classes_example": ["건물", "주차장", "도로", "가로수", "논", "밭", "산림", "나지"],
+ "baseline": [{"task": "land cover segmentation (aerial)", "model": "DeepLab v3", "metric": "pixel accuracy", "value": "91.14%"}],
+ "difficulty": "beginner",
+ "difficulty_note_ko": "약 18GB로 작고 분할 모델 첫 실습에 좋습니다.",
+ "skills_needed_ko": ["파이썬", "이미지 분할 모델(U-Net, DeepLab)", "TIFF 영상 읽기"],
+ "caveats_ko": ["위성영상은 300장으로 적음"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "도시 건물·도로 분할", "title_en": "Segment buildings and roads", "desc_ko": "항공사진에서 건물·도로·녹지를 칠하는 모델을 학습합니다.", "desc_en": "Train a model for buildings, roads and green areas."},
+  {"level": "capstone", "title_ko": "구별 녹지·주차장 비율 지도", "title_en": "Green space and parking by district", "desc_ko": "분할 결과로 구별 녹지·주차장 면적 비율을 지도 웹으로 보여줍니다.", "desc_en": "Map green-space and parking shares by district."},
+  {"level": "research", "title_ko": "지역 간 토지피복 모델 일반화", "title_en": "Land-cover generalisation across regions", "desc_ko": "수도권으로 학습한 모델을 강원·충청(142번)에 적용해 차이를 분석합니다.", "desc_en": "Apply the model to Gangwon/Chungcheong (dataset 142) and analyse the gap."}
+ ],
+ "doc_used": true,
+ "uncertain": []
+}

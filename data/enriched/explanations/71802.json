@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71802",
+ "easy_ko": "반도체, 자동차 공장 같은 곳의 천장 이송 장치와 무인 운반차에서 모은 센서 값과 열화상 사진 12만여 세트에 과열로 타는 상태(탄화)를 정상, 관심, 경고, 위험으로 표시한 데이터입니다. 장비가 타기 전에 미리 알려 주는 설비 고장 예측 AI에 쓸 수 있습니다.",
+ "easy_en": "Over 120,000 sets of sensor readings and thermal images from overhead transport systems and automated guided vehicles in places such as chip and car factories, labelled normal, attention, warning or danger for overheating and charring. You can use it to build predictive-maintenance AI that warns before equipment burns.",
+ "detail_ko": "반도체·디스플레이·자동차 공장 등의 천장 이송장치(OHT)와 무인운반차(AGV)에서 모은 센서값(csv)과 열화상 이미지(bin) 124,263세트에 탄화 관련 상태 태그(정상, 관심, 경고, 위험)를 JSON으로 붙였습니다. 현재 1차 개방분 13,121세트(약 10.6%)만 공개되어 있고, 열화상이 bin 형식이라 읽는 방법을 설명서에서 확인해야 하며, 성능 지표는 팩 앞부분에 없습니다.",
+ "detail_en": "124,263 sets of sensor values (csv) and thermal images (bin) from overhead hoist transports (OHT) and automated guided vehicles (AGV) in semiconductor, display, car and other factories, with JSON status tags for charring (normal, attention, warning, danger). Only the first release of 13,121 sets (about 10.6%) is public so far, the thermal images are in bin format, so check the manual for how to read them, and no metrics are in the pack.",
+ "amount_ko": "124,263세트(1차 개방 13,121세트)",
+ "amount_en": "124,263 sets (13,121 in first release)",
+ "labels_ko": "장비 상태(정상·관심·경고·위험)",
+ "labels_en": "status tag",
+ "status": "full-run-2026-11-02"
+}

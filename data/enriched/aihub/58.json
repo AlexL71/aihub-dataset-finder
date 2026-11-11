@@ -1,0 +1,29 @@
+{
+ "dataset_id": "58",
+ "title_en": "Multimodal video (dialogue intent and emotion)",
+ "summary_ko": "영상 클립 6,000개(110시간)에 등장인물의 대사, 감정, 성별·연령대, 물체와 인물 관계, 상황 설명, 발화별 대화 의도와 전략을 붙인 데이터입니다. 감정 인식, 영상 질의응답, 대화 의도 분석, 음성 인식 등 8가지 AI 과제를 한 데이터로 연습할 수 있습니다.",
+ "summary_en": "6,000 video clips (110 hours) labelled with each character's lines, emotion, gender and age group, objects and relationships, situation descriptions, and the intent and strategy of each utterance. One dataset covers 8 AI tasks such as emotion recognition, video question answering, dialogue-intent analysis and speech recognition.",
+ "contents_ko": "클립 폴더마다 영상(mp4) + JSON(발화 8.5만 개의 대사·시간, 감정, 성별·연령대, 개체·관계, 상황 설명, 대화 의도·전략, 질의응답).",
+ "contents_en": "Each clip folder has a video (mp4) + JSON (85k utterances with text and time, emotion, gender and age group, objects and relations, situation descriptions, dialogue intent and strategy, Q&A).",
+ "modalities": ["video", "audio", "text"],
+ "tasks": ["sentiment_emotion", "visual_qa", "speech_recognition", "text_classification", "object_detection"],
+ "topics": [{"ko": "감정", "en": "Emotion"}, {"ko": "대화·의사소통", "en": "Conversation and communication"}, {"ko": "드라마·영상 콘텐츠", "en": "Drama and video content"}],
+ "keywords_ko": ["멀티모달", "감정 인식", "대화 의도", "영상 질의응답", "음성 인식", "인물 관계", "성별·나이 인식"],
+ "keywords_en": ["multimodal", "emotion recognition", "dialogue intent", "video QA", "speech recognition", "character relations", "gender and age recognition"],
+ "labels": ["transcript", "emotion", "gender and age group", "objects and relations", "situation description", "intent and strategy", "QA pairs"],
+ "file_formats": ["mp4", "json"],
+ "scale_ko": "클립 6,000개, 110시간, 발화 85,077개",
+ "classes_example": ["기쁨", "슬픔", "분노", "놀람", "공포", "경멸", "혐오", "중립", "대화전략 > 공감대화", "대화전략 > 질문대화", "대화전략 > 칭찬대화"],
+ "baseline": [{"task": "speech recognition", "model": "RNN", "metric": "accuracy", "value": "90%"}],
+ "difficulty": "advanced",
+ "difficulty_note_ko": "과제 종류가 많고 영상·음성·텍스트를 함께 다뤄야 합니다. 대사와 감정 라벨만 쓰는 텍스트 분석은 쉽게 시작할 수 있습니다.",
+ "skills_needed_ko": ["파이썬", "텍스트 분류 모델", "영상·음성 처리 기초"],
+ "caveats_ko": ["파일이 5GB 이상 덩어리로 제공(전체 89GB)", "성능 표 대부분이 '10%'로 적혀 있어 신뢰하기 어려움", "2019년 구축"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "대사로 감정 맞히기", "title_en": "Emotion from lines", "desc_ko": "발화 텍스트만으로 감정을 분류하는 모델을 만들고 감정별 자주 쓰는 단어를 봅니다.", "desc_en": "Classify emotion from utterance text and look at typical words per emotion."},
+  {"level": "capstone", "title_ko": "대화 의도 분석기", "title_en": "Dialogue intent analyser", "desc_ko": "앞뒤 발화를 함께 보고 질문·요청·위로 같은 대화 의도를 분류하는 도구를 만듭니다.", "desc_en": "Classify intents such as question, request or comfort using surrounding utterances."},
+  {"level": "research", "title_ko": "영상 장면 질의응답", "title_en": "Video scene question answering", "desc_ko": "영상·대사·상황 설명을 함께 넣는 질의응답 모델을 만들고 어떤 정보가 가장 도움이 되는지 분석합니다.", "desc_en": "Build a QA model over video, dialogue and descriptions and analyse which input helps most."}
+ ],
+ "doc_used": true,
+ "uncertain": ["성능 표의 측정값 대부분이 10%로 적혀 있어 입력 오류로 보임"]
+}

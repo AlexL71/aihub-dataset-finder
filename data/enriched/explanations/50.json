@@ -1,0 +1,12 @@
+{
+ "dataset_id": "50",
+ "easy_ko": "카메라 여러 대를 바둑판처럼 묶은 특수 카메라와 거리 측정 장비로 도로·자연·실내 장면을 여러 방향에서 동시에 찍고, 사람·건물·신호등 같은 물체 위치와 거리 정보를 붙인 데이터입니다. 가상현실(VR)이나 증강현실(AR) 화면을 더 실제처럼 보이게 하거나, 사진으로 입체 공간을 만드는 AI를 만들 수 있습니다.",
+ "easy_en": "Scenes of roads, nature and indoor places shot at once from many viewpoints by a special camera made of many small cameras, plus a distance sensor, with people, buildings and traffic lights marked and depth recorded. You can build AI that makes VR/AR scenes look more real or rebuilds a space in depth from photos.",
+ "detail_ko": "5×5 배열 카메라 25대로 구성된 플렌옵틱 카메라와 라이다로 17곳 이상의 장소를 3가지 이상의 날씨·조명 조건에서 촬영했습니다. 한 장면은 다시점 jpg 25장, 보정 이미지, 깊이 이미지, JSON/XML 라벨(바운딩박스, 폴리곤), 카메라 보정 txt로 구성되며 원천 약 500시간, 학습 데이터 약 18만 건입니다. 3D 리포커스(깊이) 기준 모델의 RMSE가 940.33mm로 커서 성능 비교 기준으로 쓰기 어렵습니다. 전체 약 1.6TB이며, 설명서 일부에 다른 과제(의류 3D) 문구가 섞여 있습니다.",
+ "detail_en": "Captured with a plenoptic camera (25 cameras in a 5×5 grid) and lidar at 17+ locations under 3+ weather and lighting conditions. Each scene has 25 multi-view jpg images, rectified images, a depth image, JSON/XML labels (bounding boxes, polygons) and camera calibration txt; about 500 hours of raw footage and about 180k training items. The depth baseline (RMSE 940.33 mm) is too weak to serve as a benchmark. Total size is about 1.6 TB, and parts of the manual copy text from an unrelated (clothing 3D) project.",
+ "amount_ko": "학습 데이터 약 18만 건, 원천 영상 약 500시간",
+ "amount_en": "about 180k training items, about 500 hours of raw footage",
+ "labels_ko": "물체 위치 상자, 물체 윤곽(다각형), 거리(깊이) 값, 카메라 보정 정보",
+ "labels_en": "boxes and outlines around objects, depth values, camera calibration",
+ "status": "full-run-2026-11-02"
+}

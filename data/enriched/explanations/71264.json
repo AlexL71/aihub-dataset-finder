@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71264",
+ "easy_ko": "어린 굴을 키울 때 먹이로 쓰는 아주 작은 플랑크톤을 기르는 사진과 물 온도·산소·산성도·소금기 같은 기록, 그리고 자라는 단계별 어린 굴의 사진과 성장·죽음 측정값을 모은 데이터입니다. 먹이 생물의 양을 예측하고 어린 굴이 잘 자라도록 관리하는 양식 AI를 만들 수 있습니다.",
+ "easy_en": "Photos of tiny plankton grown as feed for young oysters, with records such as water temperature, oxygen, acidity and salinity, plus photos and growth and death measurements of young oysters at each stage. You can build aquaculture AI that predicts how much feed plankton there will be and helps young oysters grow well.",
+ "detail_ko": "굴 인공종묘 생산용 먹이생물(플랑크톤) 배양 데이터 약 249만 건과 굴 종묘 데이터 약 195만 건(이미지 jpg, 센서·측정 csv)으로, JSON에 바운딩박스·키포인트, 성장 측정값, 폐사 정보, 생육 단계(유생기, 부착기, 가이식기, 본이식기)가 있고 수온·용존산소·pH·염도·탁도 같은 배양 환경 값이 함께 있습니다. 기준 성능은 LightGBM 굴 유생 성장지표 분류 F1 0.84, XGBoost 플랑크톤 밀도 예측 SMAPE 14.09%입니다. 데이터 종류가 많아 구조 파악에 시간이 걸리고, 현미경 이미지라 전문 지식이 필요할 수 있으며, 상세 설명 자료가 제한적입니다.",
+ "detail_en": "About 2.49M records on culturing feed plankton for oyster seed production and about 1.95M records on oyster seed (images in jpg; sensor and measurement data in csv), with JSON boxes, keypoints, growth measurements, mortality and stage (larva, settlement, nursery, grow-out), plus culture conditions such as temperature, dissolved oxygen, pH, salinity and turbidity. Baselines: LightGBM oyster-larva growth-index classification F1 0.84, XGBoost plankton-density prediction SMAPE 14.09%. Many data types make the structure slow to learn; microscope images may need expert knowledge; documentation is limited.",
+ "amount_ko": "먹이생물 기록 약 249만 건, 어린 굴 기록 약 195만 건",
+ "amount_en": "about 2.49M plankton records, about 1.95M oyster-seed records",
+ "labels_ko": "위치 상자, 주요 점, 자란 정도, 죽음 여부, 자라는 단계, 물 환경 값",
+ "labels_en": "boxes, key points, growth measurements, mortality, stage, water-condition values",
+ "status": "full-run-2026-11-02"
+}

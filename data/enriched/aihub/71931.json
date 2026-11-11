@@ -1,0 +1,29 @@
+{
+ "dataset_id": "71931",
+ "title_en": "Commercial autonomous vehicle night motorway data (upcycling)",
+ "summary_ko": "기존 AI 허브 상용 자율주행차 데이터를 재가공(업사이클링)한 야간 자동차 전용도로 이미지 8,000장에, 장면 설명(이미지-텍스트 관계)과 질의응답 라벨 16,000건을 붙인 데이터입니다. 주로 20~24시에 수집되었고 주행 속도·날씨 정보가 있어 야간 고속 주행 상황 이해와 시각 질의응답 AI에 쓸 수 있습니다.",
+ "summary_en": "8,000 night motorway images upcycled from existing AI Hub commercial driving data, with 16,000 labels of scene descriptions and QA, mostly captured 20:00–24:00, with speed and weather info. For night high-speed driving scene understanding and visual QA.",
+ "contents_ko": "도로 이미지(jpg) + JSON(장면 설명, 질의응답).",
+ "contents_en": "Road image (jpg) + JSON (scene description, QA).",
+ "modalities": ["image", "text"],
+ "tasks": ["visual_qa", "image_captioning"],
+ "topics": [{"ko": "자율주행", "en": "Autonomous driving"}, {"ko": "야간 인지", "en": "Night perception"}],
+ "keywords_ko": ["자율주행", "자동차 전용도로", "야간", "장면 설명", "시각 질의응답", "업사이클링"],
+ "keywords_en": ["autonomous driving", "motorway", "night", "scene description", "visual QA", "upcycling"],
+ "labels": ["image-text relation", "question-answer"],
+ "file_formats": ["jpg", "json"],
+ "scale_ko": "이미지 8,000장, 라벨 16,000건, 약 2,006개 장면",
+ "classes_example": ["맑음", "구름", "흐림", "20~22시", "22~24시"],
+ "baseline": [],
+ "difficulty": "beginner",
+ "difficulty_note_ko": "약 2.3GB로 가볍습니다. 야간 이미지라 밝기 차이에 주의하며 실습하세요.",
+ "skills_needed_ko": ["파이썬", "비전-언어 모델(VLM) 기초", "이미지 캡션 평가"],
+ "caveats_ko": ["페이지에 성능 점수 표와 모델 설명이 없음", "야간 데이터인데 7~20시 수집이 12.45% 포함", "원천 폴더별 수량(3,574·2,045·2,381)이 주간판(71930)과 똑같아 확인이 필요", "31~50km/h 장면이 1개뿐"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "야간 날씨 분류", "title_en": "Night weather classifier", "desc_ko": "야간 도로 이미지의 날씨를 분류합니다.", "desc_en": "Classify weather in night road images."},
+  {"level": "capstone", "title_ko": "야간 장면 설명기", "title_en": "Night scene narrator", "desc_ko": "어두운 고속도로 이미지를 한국어로 설명하는 캡션 모델을 만듭니다.", "desc_en": "Describe dark motorway scenes in Korean."},
+  {"level": "research", "title_ko": "저조도 VLM 견고성", "title_en": "Low-light VLM robustness", "desc_ko": "야간 이미지에서 VLM 설명 오류를 줄이는 방법을 연구합니다.", "desc_en": "Study reducing VLM errors on low-light images."}
+ ],
+ "doc_used": true,
+ "uncertain": ["원천 폴더별 수량 표가 주간판에서 복사된 것인지 여부"]
+}

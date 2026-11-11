@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71439",
+ "easy_ko": "절단, 갈기, 용접, 조립 같은 공장 작업을 하는 노동자 사진마다 사람 위치, 관절 위치, 작업 자세, 작업 정보를 표시한 데이터입니다. 근육과 뼈에 무리가 가는 작업 자세를 자동으로 평가해 직업병을 막는 AI를 만들 수 있습니다.",
+ "easy_en": "Photos of factory workers doing tasks such as cutting, grinding, welding and assembly, each marked with the worker's position, joint positions, working posture and task information. You can build AI that automatically rates postures that strain muscles and bones, to help prevent work injuries.",
+ "detail_ko": "17개 제조 공정(절단, 사상, 용접, 조립, 주조, 선별 등) 노동자 이미지 12만 장(jpg)에 작업자 바운딩박스, 관절 키포인트 27개, 작업 자세 정보 5종, 작업 부가 정보 14종을 JSON으로 붙였습니다. 기준 성능은 EfficientNet b3 작업 자세 분류 정확도 83.18%입니다. 전체 약 164GB이며, 공정별 비율 차이가 크고(도색 0.55%, 사상 13.88%), 작업 자세 5종의 클래스 이름은 기록에서 확인되지 않습니다.",
+ "detail_en": "120k images (jpg) of workers in 17 manufacturing processes (cutting, grinding, welding, assembly, casting, sorting and more), with JSON worker boxes, 27 joint keypoints, 5 posture attributes and 14 work attributes. Baseline: EfficientNet-B3 posture classification accuracy 83.18%. Total size is about 164 GB; process shares vary widely (painting 0.55%, grinding 13.88%); the 5 posture class names are not in the record.",
+ "amount_ko": "작업 사진 12만 장, 공정 17종",
+ "amount_en": "120k images, 17 processes",
+ "labels_ko": "작업자 위치 상자, 관절 주요 점, 작업 자세, 작업 정보",
+ "labels_en": "worker boxes, joint key points, posture, work attributes",
+ "status": "full-run-2026-11-02"
+}

@@ -1,0 +1,29 @@
+{
+ "dataset_id": "71708",
+ "title_en": "Hyperspectral image data of seaweeds and benthic materials",
+ "summary_ko": "해조류와 바다 밑 물질(기타 포함) 31종을 찍은 초분광 이미지 약 116만 장(복사휘도·반사도 반반)에 영역 분할이 표시되어 있습니다. 위성·항공기·드론으로 해조류 서식지와 바다숲을 살피는 원격탐사 AI에 쓸 수 있습니다.",
+ "summary_en": "About 1.16 million hyperspectral images (half radiance, half reflectance) of 31 seaweed and seabed material types, with segmentation. For remote-sensing AI that monitors seaweed habitats and marine forests from satellites, aircraft or drones.",
+ "contents_ko": "초분광 이미지(tiff) + 원시 이미지(png) + JSON(분할 영역, 종류).",
+ "contents_en": "Hyperspectral image (tiff) + raw image (png) + JSON (segmentation, type).",
+ "modalities": ["image"],
+ "tasks": ["segmentation", "image_classification"],
+ "topics": [{"ko": "해양 환경", "en": "Marine environment"}, {"ko": "원격탐사", "en": "Remote sensing"}],
+ "keywords_ko": ["초분광", "해조류", "저서물질", "바다숲", "원격탐사", "연안 환경"],
+ "keywords_en": ["hyperspectral", "seaweed", "benthic materials", "marine forest", "remote sensing", "coastal environment"],
+ "labels": ["polygon", "class"],
+ "file_formats": ["tiff", "png", "json"],
+ "scale_ko": "초분광 이미지·라벨 각 1,160,636장, 원시 png 35,059장, 31종",
+ "classes_example": ["갈파래류", "청각류", "대마디말류", "그물바탕말류", "모자반류", "나래미역류", "감태류", "유절산호말류", "무절산호말류"],
+ "baseline": [],
+ "difficulty": "advanced",
+ "difficulty_note_ko": "초분광 영상은 밴드가 많아 일반 사진보다 다루기 어렵고 전체 약 4.3TB입니다.",
+ "skills_needed_ko": ["파이썬", "초분광 영상 처리", "분할 모델"],
+ "caveats_ko": ["전체 약 4.3TB", "종별 수량 차이가 커서 클래스 불균형(모자반류가 많음)", "성능 지표가 팩 앞부분에 없음"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "해조류 스펙트럼 비교", "title_en": "Seaweed spectra comparison", "desc_ko": "녹조·갈조·홍조류의 파장별 반사도를 그래프로 비교합니다.", "desc_en": "Plot reflectance by wavelength for green, brown and red algae."},
+  {"level": "capstone", "title_ko": "해조류 종류 분할", "title_en": "Seaweed type segmentation", "desc_ko": "초분광 이미지에서 해조류 종류별 영역을 칠하는 모델을 만듭니다.", "desc_en": "Segment seaweed types in hyperspectral images."},
+  {"level": "research", "title_ko": "드론·위성 밴드로 줄이기", "title_en": "Reducing to drone/satellite bands", "desc_ko": "몇 개 밴드만으로도 해조류 구분이 되는지 연구해 원격탐사에 적용합니다.", "desc_en": "Study whether a few spectral bands suffice for remote sensing."}
+ ],
+ "doc_used": true,
+ "uncertain": ["31종 전체 목록 확인 필요"]
+}

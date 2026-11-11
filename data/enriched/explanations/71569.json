@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71569",
+ "easy_ko": "같은 도로를 달리며 값싼 저해상도 레이저 센서와 비싼 고해상도 레이저 센서로 동시에 찍은 점 데이터를 짝지은 데이터입니다. 값싼 센서의 거친 점 데이터를 촘촘하게 바꿔 물체를 더 잘 알아보게 하는 AI에 쓸 수 있습니다.",
+ "easy_en": "Paired laser point data recorded at the same time on the same roads by a cheap low-resolution lidar and an expensive high-resolution one. You can use it to build AI that turns the sparse points of a cheap sensor into dense ones so objects are easier to recognise.",
+ "detail_ko": "같은 도로 주행에서 저해상도(32채널)와 고해상도(128채널) 라이다로 동시에 찍은 점군 각 50,000장(총 100,000장, pcd)에 3D 분할·객체 정보 라벨 100,000개(JSON)를 붙였습니다. 클래스는 Car, Two-wheel vehicle, Pedestrian, Road, Sidewalk, Structure, Trunk, Fence, Pole, Traffic Sign, Traffic Light입니다. 기준 성능은 Implicit LiDAR Network 점군 초해상화 IoU 22.4%, SPVConv 3D 분할 mIoU 고해상도 51.9%, 저해상도 42.3%입니다. 데이터 유형이 '이미지'로 적혀 있지만 실제는 라이다 점군이고, 라벨 표의 해상도 표기가 헷갈리며, 초해상화 성능이 아직 낮습니다.",
+ "detail_en": "50,000 point clouds each from a low-resolution (32-channel) and a high-resolution (128-channel) lidar recorded at the same time while driving (100,000 in total, pcd), with 100,000 JSON labels for 3D segmentation and object information. Classes: car, two-wheeler, pedestrian, road, sidewalk, structure, trunk, fence, pole, traffic sign, traffic light. Baselines: point-cloud super-resolution with Implicit LiDAR Network, IoU 22.4%; 3D segmentation with SPVConv, mIoU 51.9% (high-res) and 42.3% (low-res). The data type is listed as 'image' although it is lidar, the label table's resolution note is confusing, and super-resolution performance is still low.",
+ "amount_ko": "점군 100,000장(32채널 50,000 + 128채널 50,000), 라벨 100,000개",
+ "amount_en": "100,000 point clouds (50,000 32-channel + 50,000 128-channel), 100,000 labels",
+ "labels_ko": "점마다 물체 종류(입체 분할), 물체 정보",
+ "labels_en": "3D segmentation, 3D object info",
+ "status": "full-run-2026-11-02"
+}

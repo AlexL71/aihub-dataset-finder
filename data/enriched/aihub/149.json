@@ -1,0 +1,29 @@
+{
+ "dataset_id": "149",
+ "title_en": "Agricultural product quality (QC) images",
+ "summary_ko": "농산물 품목별 사진 30만 건을 품질 기준에 따라 특·상·보통 등급으로 나눈 데이터입니다. 품종·촬영 각도·크기·부피 같은 메타정보가 있어 농산물 등급을 자동으로 판정하는 선별 앱이나 웹에 쓸 수 있습니다.",
+ "summary_en": "300,000 photos of agricultural products graded by quality standards into premium, good and normal. Metadata such as variety, shooting angle, size and volume support apps or websites that grade produce automatically.",
+ "contents_ko": "농산물 사진(png) + 메타정보(작물·품종, 등급, 촬영 각도·장비·장소·날짜, 크기, 부피).",
+ "contents_en": "Produce photo (png) + metadata (crop and variety, grade, angle, device, place, date, size, volume).",
+ "modalities": ["image"],
+ "tasks": ["image_classification"],
+ "topics": [{"ko": "농산물 유통", "en": "Agricultural produce and distribution"}, {"ko": "품질 검사", "en": "Quality inspection"}, {"ko": "과일·채소", "en": "Fruit and vegetables"}],
+ "keywords_ko": ["농산물 품질", "등급 판정", "선별", "과일", "채소", "품질 검사"],
+ "keywords_en": ["produce quality", "grading", "sorting", "fruit", "vegetables", "quality inspection"],
+ "labels": ["class (quality grade)", "attributes (variety, size, volume)"],
+ "file_formats": ["png", "json"],
+ "scale_ko": "정제 이미지 30만 건(원시 60만 건 중), 등급 3단계",
+ "classes_example": ["특", "상", "보통"],
+ "baseline": [],
+ "difficulty": "beginner",
+ "difficulty_note_ko": "라벨이 등급 3개뿐이라 이해하기 쉬운 분류 프로젝트입니다. 전체 약 224GB라 한 품목만 받아 시작하세요.",
+ "skills_needed_ko": ["파이썬 기초", "전이학습 이미지 분류"],
+ "caveats_ko": ["개요는 20종, 통계는 10품목으로 품목 수가 다르게 적혀 있음", "등급 차이가 미세해 정확도가 높지 않을 수 있음"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "사과 등급 분류기", "title_en": "Apple grade classifier", "desc_ko": "한 품목 사진으로 특·상·보통 등급을 분류합니다.", "desc_en": "Classify one product into premium, good and normal grades."},
+  {"level": "capstone", "title_ko": "농가용 등급 판정 앱", "title_en": "Grading app for farmers", "desc_ko": "사진을 찍으면 예상 등급과 크기를 알려주는 앱을 만듭니다.", "desc_en": "Snap produce to get its likely grade and size."},
+  {"level": "research", "title_ko": "등급 판단 근거 시각화", "title_en": "Explaining grade decisions", "desc_ko": "모델이 어떤 부위(흠집·색)를 보고 등급을 정하는지 시각화하고 사람 기준과 비교합니다.", "desc_en": "Visualise which features (blemishes, colour) drive grades and compare with human rules."}
+ ],
+ "doc_used": true,
+ "uncertain": ["대상 품목 수(10 vs 20)가 페이지에서 서로 다름"]
+}

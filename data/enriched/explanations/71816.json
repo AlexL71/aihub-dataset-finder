@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71816",
+ "easy_ko": "웹, 논문, 핸드북에서 모은 화학 물질 2만여 개의 분자 구조 그림과 파일에 증기압, 연소열, 인화점 같은 성질 값을 붙인 데이터입니다. 분자 구조만 보고 화학 물질이 얼마나 위험한지 예측하는 AI에 쓸 수 있습니다.",
+ "easy_en": "Molecular structure images and files of over 20,000 chemicals collected from the web, papers and handbooks, with property values such as vapour pressure, heat of combustion and flash point. You can use it to build AI that predicts how hazardous a chemical is from its structure alone.",
+ "detail_ko": "화학물질 구조 그림(png)·분자 파일(sdf) 각 20,125건에 물성 값 라벨 20,125건(JSON; 증기압 5,110, 연소열 5,005, 인화점 10,010)을 붙였습니다. 원시·원천 수량이 라벨 수량의 두 배로 적혀 있어 구성을 확인해야 하고, 물성별 데이터 수가 5천~1만 건으로 적은 편이며, 성능 지표 값은 팩 앞부분에 없습니다.",
+ "detail_en": "20,125 chemical structure images (png) and 20,125 molecule files (sdf) with 20,125 JSON property labels (5,110 vapour pressure, 5,005 heat of combustion, 10,010 flash point). Raw and source counts are listed as twice the label count, so check the layout; each property has only 5,000 to 10,000 values; no metric values are in the pack.",
+ "amount_ko": "원천 PNG·SDF 각 20,125건, 라벨 20,125건(증기압 5,110, 연소열 5,005, 인화점 10,010)",
+ "amount_en": "20,125 PNG and SDF files each, 20,125 labels (5,110 vapour pressure, 5,005 heat of combustion, 10,010 flash point)",
+ "labels_ko": "화학 물질 성질 값",
+ "labels_en": "chemical property values",
+ "status": "full-run-2026-11-02"
+}

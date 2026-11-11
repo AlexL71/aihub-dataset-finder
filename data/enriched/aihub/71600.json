@@ -1,0 +1,29 @@
+{
+ "dataset_id": "71600",
+ "title_en": "3D tourist site data (mountains and rivers)",
+ "summary_ko": "지리산국립공원의 탐방로와 주요 명소를 찍은 이미지(학습용 약 21만 장)와 파노라마, 라이다 점군, 정사영상·수치표고모델, 3D 모델입니다. 이미지에는 상자가 표시되어 있어 자연 관광지 이미지 탐지, 디지털 트윈·메타버스 산악 관광에 쓸 수 있습니다.",
+ "summary_en": "Images (about 210k for training) and panoramas from trails and key spots in Jirisan National Park, plus lidar point clouds, orthophotos, an elevation model and 3D models. Images have boxes, for nature-site detection and digital-twin or metaverse mountain tourism.",
+ "contents_ko": "이미지(jpg, 일반·파노라마) + 점군(las/pcd) + 정사영상·DEM(geotiff) + 3D 모델(obj) + JSON(이미지 상자).",
+ "contents_en": "Images (jpg, standard and panorama) + point clouds (las/pcd) + orthophoto and DEM (geotiff) + 3D models (obj) + JSON (image boxes).",
+ "modalities": ["image", "3d"],
+ "tasks": ["object_detection", "segmentation", "3d_reconstruction"],
+ "topics": [{"ko": "관광·메타버스", "en": "Tourism and metaverse"}, {"ko": "자연·국립공원", "en": "Nature and national parks"}],
+ "keywords_ko": ["지리산", "국립공원", "탐방로", "3D 점군", "디지털 트윈", "파노라마"],
+ "keywords_en": ["Jirisan", "national park", "hiking trails", "3D point cloud", "digital twin", "panorama"],
+ "labels": ["bounding box", "point-cloud segmentation"],
+ "file_formats": ["jpg", "pcd", "las", "geotiff", "obj", "json"],
+ "scale_ko": "학습용 이미지 약 210,000장, 탐방로 RGB 이미지 357,010장, 파노라마 508,344장, 점군 10식, 3D 모델 30개",
+ "classes_example": ["지리산 탐방로", "주요 POI", "파노라마"],
+ "baseline": [{"task": "2D object detection", "model": "Faster R-CNN", "metric": "mAP", "value": "72.21%"}, {"task": "object detection", "model": "ResNet + YOLOv3", "metric": "mAP", "value": "79.7%"}, {"task": "point-cloud segmentation", "model": "ConvPoint", "metric": "mIoU", "value": "78.85%"}],
+ "difficulty": "advanced",
+ "difficulty_note_ko": "이미지·점군·지리 데이터를 함께 다뤄야 하고 전체 약 424GB입니다. 이미지 탐지부터 시작하세요.",
+ "skills_needed_ko": ["파이썬", "YOLO 탐지", "3D 점군 처리", "GIS(geotiff) 기초"],
+ "caveats_ko": ["지리산 한 곳만 대상", "탐지 대상 클래스 목록은 팩 앞부분에 없음", "71596(관광명소)과 같은 기관·구성"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "탐방로 표지 탐지", "title_en": "Trail sign detection", "desc_ko": "탐방로 사진에서 표지판·시설물을 YOLO로 찾습니다.", "desc_en": "Detect trail signs and facilities with YOLO."},
+  {"level": "capstone", "title_ko": "지리산 가상 등산", "title_en": "Virtual Jirisan hike", "desc_ko": "파노라마와 표고모델로 웹에서 둘러보는 가상 등산로를 만듭니다.", "desc_en": "Build a web virtual hike from panoramas and the elevation model."},
+  {"level": "research", "title_ko": "산악 점군 분할", "title_en": "Mountain point-cloud segmentation", "desc_ko": "숲이 많은 산악 점군에서 길·바위·식생을 분할하는 방법을 연구합니다.", "desc_en": "Study segmenting paths, rocks and vegetation in forest point clouds."}
+ ],
+ "doc_used": true,
+ "uncertain": []
+}

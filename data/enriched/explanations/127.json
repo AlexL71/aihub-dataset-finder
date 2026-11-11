@@ -1,0 +1,12 @@
+{
+ "dataset_id": "127",
+ "easy_ko": "문화재·한식, 케이팝·대중문화, IT, 금융, 사회·복지, 교육, 의료, 자동차 같은 여러 분야의 한국어 문장과 일본어 번역을 짝지은 데이터입니다. 특정 분야에 강한 한국어-일본어 번역기나 분야별 용어 사전을 만들 수 있습니다.",
+ "easy_en": "Korean sentences paired with Japanese translations in fields such as cultural heritage and Korean food, K-pop and pop culture, IT, finance, society and welfare, education, medicine and cars. You can build Korean–Japanese translators that are strong in specific fields, or field-specific term dictionaries.",
+ "detail_ko": "9개 분야 한국어-일본어 병렬 문장 150만 쌍(K-POP·대중문화 20만, IT 20만, 금융 20만, 사회 20만, 자동차 20만, 문화재·K-FOOD 15만, 특허 15만, 교육 10만, 의료 10만)으로, 한국어 원문은 평균 15어절이며 분야 라벨이 있습니다. 기준 성능은 NMT 전문가 번역 대비 유사도 BLEU 0.9032입니다. 파일 형식(json/xlsx)은 확인되지 않은 추정입니다.",
+ "detail_en": "1.5M Korean–Japanese sentence pairs in 9 domains (K-pop and pop culture, IT, finance, society, cars 200k each; cultural heritage and Korean food, patents 150k each; education, medical 100k each); Korean sentences average 15 words, with domain labels. Baseline: NMT BLEU 0.9032 against expert translations. File formats (json/xlsx) are not confirmed.",
+ "amount_ko": "번역 문장 150만 쌍, 분야 9개",
+ "amount_en": "1.5M sentence pairs, 9 domains",
+ "labels_ko": "한국어-일본어 번역 짝, 분야",
+ "labels_en": "Korean–Japanese sentence pairs, domain",
+ "status": "full-run-2026-11-02"
+}

@@ -1,0 +1,33 @@
+{
+ "dataset_id": "71316",
+ "title_en": "Plant functionality prediction genome data",
+ "summary_ko": "국내 자생식물의 유전자 염기서열·아미노산 서열과 식물 대사체(화학 구조 SMILES)에, 조직별 유전자 발현 여부, 효소 기능(EC 번호), 항산화·항염증 같은 생리활성을 표시한 데이터입니다. 쓸모 있는 식물 자원이나 기능성 화합물을 찾는 AI에 쓸 수 있습니다.",
+ "summary_en": "Gene and amino-acid sequences of native Korean plants and plant metabolites (chemical structures as SMILES), labelled with tissue-level gene expression, enzyme function (EC numbers) and bioactivity such as antioxidant or anti-inflammatory effects. For AI that discovers useful plant resources or functional compounds.",
+ "contents_ko": "유전체·대사체 서열 텍스트(csv) + JSON(발현 여부, EC 번호, 생리활성).",
+ "contents_en": "Genome and metabolite sequence text (csv) + JSON (expression, EC number, bioactivity).",
+ "modalities": ["text", "tabular"],
+ "tasks": ["text_classification", "tabular_prediction"],
+ "topics": [{"ko": "생명공학·유전체", "en": "Biotechnology and genomics"}, {"ko": "농업", "en": "Agriculture"}],
+ "keywords_ko": ["식물 유전체", "효소 기능", "대사체", "SMILES", "생리활성", "바이오인포매틱스"],
+ "keywords_en": ["plant genome", "enzyme function", "metabolites", "SMILES", "bioactivity", "bioinformatics"],
+ "labels": ["gene expression", "EC number", "bioactivity"],
+ "file_formats": ["csv", "json"],
+ "scale_ko": "원천 약 3.6억 건, 라벨 약 1,450만 건(발현 680만, EC 769만, 생리활성 360)",
+ "classes_example": ["유전자 발현", "유전자 미발현", "효소", "비효소", "항산화능", "신경세포 독성", "항염증 및 면역"],
+ "baseline": [
+  {"task": "bioactivity classification", "model": "fingerprint module + MLP", "metric": "AUC-ROC", "value": "0.7419"},
+  {"task": "gene expression classification", "model": "1D CNN + MLP", "metric": "F1", "value": "0.6096"},
+  {"task": "EC number classification", "model": "1D CNN + MLP", "metric": "F1", "value": "0.8519"}
+ ],
+ "difficulty": "advanced",
+ "difficulty_note_ko": "약 12GB지만 생물학·화학 배경지식이 필요합니다.",
+ "skills_needed_ko": ["파이썬", "서열 데이터 처리", "1D CNN", "화학정보학 기초(RDKit)"],
+ "caveats_ko": ["생리활성 데이터는 360건으로 매우 적음", "발현·효소 라벨이 크게 치우침(미발현 84%, 비효소 75%)", "도메인 전문 지식 필요"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "효소 여부 분류", "title_en": "Enzyme vs non-enzyme", "desc_ko": "아미노산 서열로 효소인지 아닌지 분류합니다.", "desc_en": "Classify protein sequences as enzyme or not."},
+  {"level": "capstone", "title_ko": "기능성 화합물 후보 찾기", "title_en": "Functional compound finder", "desc_ko": "SMILES로 항산화 가능성이 높은 화합물을 골라 줍니다.", "desc_en": "Rank compounds by predicted antioxidant activity from SMILES."},
+  {"level": "research", "title_ko": "단백질 언어모델 활용", "title_en": "Protein language models", "desc_ko": "사전학습 단백질 모델(ESM 등)로 EC 분류 성능을 높이는 방법을 연구합니다.", "desc_en": "Use pre-trained protein models (e.g. ESM) to improve EC prediction."}
+ ],
+ "doc_used": true,
+ "uncertain": []
+}

@@ -1,0 +1,29 @@
+{
+ "dataset_id": "241",
+ "title_en": "Bird's-eye-view images of urban congestion",
+ "summary_ko": "서초구 고층 건물 옥상의 광각 CCTV로 넓은 도심을 내려다본 영상으로, 차량 이동 338시간, 정류장 사람 군집·이동 300시간 분량이 라벨링되어 있고 원본 영상 20,800시간과 사람·차를 지운 배경 이미지도 있습니다. 넓은 지역의 차량·사람 혼잡도를 분석하는 AI에 쓸 수 있습니다.",
+ "summary_en": "Wide-angle CCTV footage from rooftops of tall buildings in Seocho-gu looking down on the city: 338 hours of vehicle movement and 300 hours of crowds at bus stops and walking, labelled, plus 20,800 hours of raw video and background images with people and cars removed. For AI that analyses vehicle and crowd congestion over wide areas.",
+ "contents_ko": "버드아이뷰 영상·프레임(초당 1프레임 라벨) + JSON(차량·사람 상자, 혼잡도) + 배경 이미지 + 원본 영상.",
+ "contents_en": "Bird's-eye video and frames (labelled at 1 fps) + JSON (vehicle and person boxes, congestion) + background images + raw video.",
+ "modalities": ["video", "image"],
+ "tasks": ["object_detection", "object_tracking"],
+ "topics": [{"ko": "도시·교통", "en": "Cities and traffic"}, {"ko": "군중·혼잡", "en": "Crowds and congestion"}, {"ko": "재난·안전", "en": "Disaster and safety"}],
+ "keywords_ko": ["버드아이뷰", "혼잡도", "군중 계수", "교통량", "광각 CCTV", "서초구"],
+ "keywords_en": ["bird's-eye view", "congestion", "crowd counting", "traffic volume", "wide-angle CCTV", "Seocho"],
+ "labels": ["bounding box", "congestion level"],
+ "file_formats": ["mp4", "jpg", "json"],
+ "scale_ko": "라벨 영상 차량 338시간 + 사람 300시간, 배경 1,222시간, 원본 20,800시간(구축량 216만)",
+ "classes_example": ["차량", "사람"],
+ "baseline": [],
+ "difficulty": "intermediate",
+ "difficulty_note_ko": "위에서 본 작은 물체 탐지·계수라 쉽지 않고 전체 약 2TB입니다.",
+ "skills_needed_ko": ["파이썬", "객체 탐지·밀도 추정", "영상 처리"],
+ "caveats_ko": ["성능 지표 표가 비어 있음", "서초구 20개 지점만 포함"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "정류장 대기 인원 세기", "title_en": "Count people at bus stops", "desc_ko": "버드아이뷰 프레임에서 정류장 사람 수를 셉니다.", "desc_en": "Count people at bus stops in bird's-eye frames."},
+  {"level": "capstone", "title_ko": "도심 혼잡도 지도", "title_en": "Urban congestion map", "desc_ko": "시간대별 차량·사람 혼잡도를 지도에 표시하는 대시보드를 만듭니다.", "desc_en": "Show vehicle and crowd congestion by time on a map dashboard."},
+  {"level": "research", "title_ko": "밀집 군중 위험 예측", "title_en": "Predicting crowd-crush risk", "desc_ko": "군중 밀도 변화로 위험 수준을 미리 예측하는 방법을 연구합니다.", "desc_en": "Study early prediction of dangerous crowd density."}
+ ],
+ "doc_used": true,
+ "uncertain": []
+}

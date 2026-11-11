@@ -1,0 +1,29 @@
+{
+ "dataset_id": "71634",
+ "title_en": "Tactical judgement video data (handball)",
+ "summary_ko": "프로 핸드볼 경기 영상과 이미지 분석 데이터 38,890건으로, 선수 상자·추적, 팀 스탯 이벤트, 공격·수비 전술 상황이 라벨링되어 있습니다. 핸드볼 경기 영상 분석과 전술 분석 AI에 쓸 수 있습니다.",
+ "summary_en": "Professional handball match video and 38,890 image-analysis items, with player boxes and tracking, team stat events and attacking/defending tactical situations. For handball match and tactics analysis AI.",
+ "contents_ko": "경기 영상(mp4) + 프레임 이미지(jpg) + JSON(선수 상자·추적, 스탯 이벤트, 전술 상황).",
+ "contents_en": "Match video (mp4) + frame images (jpg) + JSON (player boxes and tracks, stat events, tactical situation).",
+ "modalities": ["video", "image"],
+ "tasks": ["object_detection", "object_tracking", "action_recognition"],
+ "topics": [{"ko": "스포츠 분석", "en": "Sports analytics"}, {"ko": "핸드볼", "en": "Handball"}],
+ "keywords_ko": ["핸드볼", "전술 분석", "선수 추적", "팀 스탯", "경기 영상", "승부 예측"],
+ "keywords_en": ["handball", "tactics analysis", "player tracking", "team stats", "match video", "match prediction"],
+ "labels": ["bounding box", "tracking", "tactic class", "stat event"],
+ "file_formats": ["mp4", "jpg", "json"],
+ "scale_ko": "전체 39,490건(이미지 분석 38,890건), 핸드볼 약 150경기",
+ "classes_example": ["공격 전술 > 크로스, 스크린, 속공시도", "미들포", "페인팅 어시스트", "건너뛰기 패스", "수비 전술 > 9m 내 수비 인원(0~9)", "심판 판정 > 일반파울, 옐로카드, 2분퇴장", "블루카드", "레드카드"],
+ "baseline": [{"task": "tactical situation classification", "model": "R3D", "metric": "Accuracy", "value": "70.49%"}, {"task": "team stat classification", "model": "R3D", "metric": "Accuracy", "value": "69.46%"}, {"task": "player detection", "model": "YOLO v5", "metric": "F1-score", "value": "0.8877"}],
+ "difficulty": "advanced",
+ "difficulty_note_ko": "선수 탐지는 쉽지만 전술 분류는 영상 행동 인식이라 어렵습니다. 약 66GB로 축구판보다 작습니다.",
+ "skills_needed_ko": ["파이썬", "YOLO 탐지", "영상 행동 인식"],
+ "caveats_ko": ["성능표에 정확도가 0.7049%처럼 적혀 있어 70.49%의 표기 오류로 보임", "축구(71482)와 같은 구조"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "핸드볼 선수 탐지", "title_en": "Handball player detection", "desc_ko": "경기 프레임에서 선수를 상자로 찾습니다.", "desc_en": "Box players in match frames."},
+  {"level": "capstone", "title_ko": "선수 이동 히트맵", "title_en": "Player movement heatmap", "desc_ko": "추적 결과로 선수별 이동 범위 히트맵을 만듭니다.", "desc_en": "Build per-player movement heatmaps from tracking."},
+  {"level": "research", "title_ko": "종목 간 전술 전이", "title_en": "Cross-sport tactic transfer", "desc_ko": "축구 데이터로 학습한 전술 모델을 핸드볼에 옮기는 방법을 연구합니다.", "desc_en": "Transfer tactic models from football to handball."}
+ ],
+ "doc_used": true,
+ "uncertain": ["경기 수"]
+}

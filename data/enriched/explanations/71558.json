@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71558",
+ "easy_ko": "충청도, 전라도, 제주도에 사는 50대 이상 어른들이 따라 말하기, 질문에 답하기, 둘이 대화하기로 들려준 사투리 목소리 약 2,000시간에 받아쓴 글을 붙인 데이터입니다. 나이 든 사투리 사용자의 말을 알아듣는 음성 인식과 사라져 가는 사투리 보존에 쓸 수 있습니다.",
+ "easy_en": "About 2,000 hours of dialect speech from adults aged 50 and over in Chungcheong, Jeolla and Jeju, repeating sentences, answering questions and chatting in pairs, with written transcripts. You can use it for speech recognition that understands older dialect speakers and for preserving disappearing dialects.",
+ "detail_ko": "충청도·전라도·제주도 50대 이상 화자의 방언 음성 약 2,004시간(wav; 충청도 801.1시간·라벨 161,415건, 전라도 1,015시간·라벨 179,844건, 제주도 207.2시간·라벨 56,666건)에 전사, 방언 주석, 화자 정보를 JSON으로 붙였고, 발화 유형은 따라말하기, 질문답하기, 2인대화입니다. 전체 약 155GB이고, 여성 화자 비율이 69~83%로 높으며 제주도는 약 207시간으로 적습니다. 메타데이터는 2,004시간, 분포 표 합계는 2,023시간으로 다르고, 팩에 성능 지표 값이 없습니다(BERT·Conformer 사용만 적혀 있음). 71517 강원·경상판과 구조가 같습니다.",
+ "detail_en": "About 2,004 hours of dialect speech (wav) by speakers aged 50+ in Chungcheong (801.1 hours, 161,415 labels), Jeolla (1,015 hours, 179,844 labels) and Jeju (207.2 hours, 56,666 labels), with JSON transcripts, dialect annotations and speaker information, in three types: repeating, question answering and two-person conversation. Total size is about 155 GB. 69 to 83% of speakers are women, and Jeju has less data (about 207 hours). The metadata says 2,004 hours while the distribution table sums to 2,023, and no metric values are in the pack (only that BERT and Conformer were used). Same structure as the Gangwon/Gyeongsang set 71517.",
+ "amount_ko": "음성 약 2,004시간(충청도 801.1, 전라도 1,015, 제주도 207.2시간), 라벨 397,925건",
+ "amount_en": "about 2,004 hours of speech (Chungcheong 801.1, Jeolla 1,015, Jeju 207.2), 397,925 labels",
+ "labels_ko": "받아쓴 글, 사투리 설명, 말한 사람 정보",
+ "labels_en": "transcripts, dialect annotations, speaker information",
+ "status": "full-run-2026-11-02"
+}

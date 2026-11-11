@@ -1,0 +1,29 @@
+{
+ "dataset_id": "71468",
+ "title_en": "Figure skating motion data",
+ "summary_ko": "피겨 스케이팅 점프·스핀·스텝 동작을 8대 카메라로 찍은 5,000개 동작(40,000개 영상 클립)에 2D·3D 관절 키포인트와 분할 라벨, 정상·넘어짐·회전수 부족 등 동작 결과가 붙어 있습니다. 동작 분류와 자세 정확도 분석, 비대면 코칭 AI에 쓸 수 있습니다.",
+ "summary_en": "5,000 figure skating moves (jumps, spins, steps) filmed by 8 cameras (40,000 clips), with 2D and 3D keypoints, segmentation and outcome labels such as clean, fall or under-rotation. For move classification, technique analysis and remote coaching AI.",
+ "contents_ko": "동작 영상(avi, 8채널) + 이미지(jpg) + CSV(2D·3D 키포인트) + JSON(동작 분류, 메타 정보).",
+ "contents_en": "Motion video (avi, 8 views) + image (jpg) + CSV (2D and 3D keypoints) + JSON (move class, metadata).",
+ "modalities": ["video", "image", "3d"],
+ "tasks": ["action_recognition", "keypoint_pose", "segmentation"],
+ "topics": [{"ko": "스포츠 분석", "en": "Sports analytics"}, {"ko": "동작 인식", "en": "Motion recognition"}],
+ "keywords_ko": ["피겨 스케이팅", "점프", "스핀", "키포인트", "동작 분류", "다시점 영상"],
+ "keywords_en": ["figure skating", "jumps", "spins", "keypoints", "motion classification", "multi-view video"],
+ "labels": ["2D keypoints", "3D keypoints", "segmentation", "move class", "error type"],
+ "file_formats": ["avi", "jpg", "csv", "json"],
+ "scale_ko": "동작 5,000개(8채널 영상 40,000클립), 2D 키포인트 40,000개, 3D 키포인트 5,000개",
+ "classes_example": ["Waltz", "1S(Salchow)", "1T(Toe loop)", "1Lz(Lutz)", "Two-Foot Spin", "Camel", "Swizzle", "넘어짐", "회전수 부족"],
+ "baseline": [{"task": "figure skating move classification (2D)", "model": "PoseC3D", "metric": "Top-3 Accuracy", "value": "99.94%"}, {"task": "error classification (2D)", "model": "PoseC3D", "metric": "Top-3 Accuracy", "value": "10%"}],
+ "difficulty": "advanced",
+ "difficulty_note_ko": "전체 약 2.3TB로 매우 큽니다. CSV 키포인트만 받아 동작 분류부터 시작하세요.",
+ "skills_needed_ko": ["파이썬", "자세 추정", "시계열·영상 행동 인식"],
+ "caveats_ko": ["전체 약 2,337GB", "오류 분류 성능이 10%로 기준(85%)과 크게 달라 표기 오류 가능성이 있음", "1회전 점프 위주로 보임"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "점프·스핀 구분", "title_en": "Jump vs spin classifier", "desc_ko": "2D 키포인트 CSV로 점프·스핀·스텝을 분류합니다.", "desc_en": "Classify jumps, spins and steps from 2D keypoint CSVs."},
+  {"level": "capstone", "title_ko": "피겨 동작 코칭 앱", "title_en": "Skating coaching app", "desc_ko": "연습 영상의 자세를 정상 동작과 비교해 차이를 보여 줍니다.", "desc_en": "Compare practice poses with clean moves and show differences."},
+  {"level": "research", "title_ko": "착지 실수 자동 판정", "title_en": "Landing error detection", "desc_ko": "3D 키포인트로 넘어짐·두발착지·회전수 부족을 판정하는 방법을 연구합니다.", "desc_en": "Detect falls, two-foot landings and under-rotation from 3D keypoints."}
+ ],
+ "doc_used": true,
+ "uncertain": ["오류 분류 성능 10%의 정확한 의미", "분할 라벨의 대상"]
+}

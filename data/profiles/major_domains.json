@@ -1,0 +1,288 @@
+{
+ "about": "Links from each KU Sejong major to domains in config/domains.yaml. Written by Claude (user's plan) from each profile's data_interests, key_topics, research_areas and careers; 'why' names the profile item behind the link. Not yet reviewed by department staff.",
+ "created": "2026-10-31",
+ "levels": {
+  "core": "Main fields of the major: shown first as interest chips, full weight in major_relevance.",
+  "related": "Fields the major touches or students often pick: shown after core chips, lower weight."
+ },
+ "majors": {
+  "aisemi": [
+   {"domain": "manufacturing", "level": "core", "why": "Semiconductor and manufacturing inspection"},
+   {"domain": "robotics", "level": "core", "why": "Robots and self-driving hardware"},
+   {"domain": "autonomous_driving", "level": "core", "why": "Robots and self-driving hardware; on-device AI"},
+   {"domain": "speech_voice", "level": "core", "why": "Speech and sound recognition"},
+   {"domain": "medical", "level": "related", "why": "Brain and medical imaging"},
+   {"domain": "energy", "level": "related", "why": "Sensor and time-series signals of power equipment"},
+   {"domain": "general_ai", "level": "related", "why": "Images for on-device AI"},
+   {"domain": "materials_chemistry", "level": "related", "why": "Electronic parts and materials"}
+  ],
+  "am": [
+   {"domain": "autonomous_driving", "level": "core", "why": "Perception for self-driving; vehicle sensors and drivers"},
+   {"domain": "traffic_transport", "level": "core", "why": "Traffic flow, public transport and road safety"},
+   {"domain": "robotics", "level": "core", "why": "Robots and drones"},
+   {"domain": "logistics", "level": "core", "why": "Logistics and delivery"},
+   {"domain": "satellite_aerial", "level": "related", "why": "Robots and drones (drone flight)"},
+   {"domain": "city_space", "level": "related", "why": "Travel demand and city mobility"},
+   {"domain": "energy", "level": "related", "why": "Electric vehicle batteries and power"}
+  ],
+  "amchem": [
+   {"domain": "materials_chemistry", "level": "core", "why": "Material properties and molecular structure; chemical safety"},
+   {"domain": "energy", "level": "core", "why": "Batteries and energy"},
+   {"domain": "manufacturing", "level": "core", "why": "Display and chip material defects"},
+   {"domain": "environment", "level": "related", "why": "Environment and air"},
+   {"domain": "workplace_safety", "level": "related", "why": "Chemical safety at work"},
+   {"domain": "pharma", "level": "related", "why": "Molecules and toxicity prediction"}
+  ],
+  "ba": [
+   {"domain": "business_commerce", "level": "core", "why": "Consumers and reviews; retail and e-commerce; customer service; marketing"},
+   {"domain": "finance", "level": "core", "why": "Finance and investment; accounting and tax documents"},
+   {"domain": "logistics", "level": "core", "why": "Logistics and operations"},
+   {"domain": "documents_office", "level": "related", "why": "Accounting and tax documents"},
+   {"domain": "social_media", "level": "related", "why": "Online reviews and consumer talk"},
+   {"domain": "tourism", "level": "related", "why": "Travel spending and consumer behaviour"},
+   {"domain": "foreign_languages", "level": "related", "why": "Global business and overseas markets"}
+  ],
+  "bigdatascience": [
+   {"domain": "general_ai", "level": "core", "why": "Large language models; general data analysis"},
+   {"domain": "medical", "level": "core", "why": "Health care data"},
+   {"domain": "finance", "level": "core", "why": "Finance and credit"},
+   {"domain": "government", "level": "core", "why": "Public and social statistics"},
+   {"domain": "social_media", "level": "related", "why": "Text and public opinion"},
+   {"domain": "health_care", "level": "related", "why": "Health care data (wearables, nutrition)"},
+   {"domain": "city_space", "level": "related", "why": "Spatial and time data"},
+   {"domain": "traffic_transport", "level": "related", "why": "Spatial and time data (trips, traffic)"},
+   {"domain": "science_research", "level": "related", "why": "Genomics and life science"},
+   {"domain": "korean_language", "level": "related", "why": "Text data and large language models"}
+  ],
+  "biotechnology": [
+   {"domain": "medical", "level": "core", "why": "Cell and microscope images; disease diagnosis"},
+   {"domain": "pharma", "level": "core", "why": "Drug candidates"},
+   {"domain": "science_research", "level": "core", "why": "Genomes and proteins; life science literature"},
+   {"domain": "food", "level": "related", "why": "Microbes and fermented food"},
+   {"domain": "livestock", "level": "related", "why": "Animal and livestock health"},
+   {"domain": "pets_vet", "level": "related", "why": "Animal health"},
+   {"domain": "agriculture", "level": "related", "why": "Plant genomes and breeding"}
+  ],
+  "cuhc": [
+   {"domain": "culture_heritage", "level": "core", "why": "Artefact images, heritage 3D data, old documents and scripts"},
+   {"domain": "tourism", "level": "core", "why": "Tourism and local culture"},
+   {"domain": "design_art", "level": "core", "why": "Artwork images; exhibition guides"},
+   {"domain": "games_virtual", "level": "related", "why": "Heritage 3D data and virtual museums"},
+   {"domain": "music_performing", "level": "related", "why": "Traditional music and dance"},
+   {"domain": "korean_language", "level": "related", "why": "Old Hangul scripts"},
+   {"domain": "city_space", "level": "related", "why": "Sites and landscape"}
+  ],
+  "culc": [
+   {"domain": "media_broadcast", "level": "core", "why": "Video and broadcasting; webtoons and characters"},
+   {"domain": "books_writing", "level": "core", "why": "Stories and scripts"},
+   {"domain": "music_performing", "level": "core", "why": "Music and sound"},
+   {"domain": "games_virtual", "level": "core", "why": "Characters, games and virtual content"},
+   {"domain": "design_art", "level": "related", "why": "Webtoons, characters and advertising visuals"},
+   {"domain": "foreign_languages", "level": "related", "why": "Translation and Hallyu"},
+   {"domain": "social_media", "level": "related", "why": "Audience response"},
+   {"domain": "culture_heritage", "level": "related", "why": "Traditional culture as content source"}
+  ],
+  "cwms": [
+   {"domain": "books_writing", "level": "core", "why": "Literature and writing; story generation; children's books"},
+   {"domain": "media_broadcast", "level": "core", "why": "Scripts and dialogue for media"},
+   {"domain": "korean_language", "level": "core", "why": "Writing style and Korean text"},
+   {"domain": "mind_emotion", "level": "related", "why": "Emotion and style"},
+   {"domain": "foreign_languages", "level": "related", "why": "Translation"},
+   {"domain": "design_art", "level": "related", "why": "Illustrations for stories"},
+   {"domain": "social_media", "level": "related", "why": "Ad copy and online writing"}
+  ],
+  "digb": [
+   {"domain": "business_commerce", "level": "core", "why": "Customers and purchases; e-commerce products; customer service"},
+   {"domain": "finance", "level": "core", "why": "Finance and investment"},
+   {"domain": "social_media", "level": "related", "why": "Reviews and social media"},
+   {"domain": "logistics", "level": "related", "why": "Operations and logistics"},
+   {"domain": "fashion_beauty", "level": "related", "why": "E-commerce products (fashion, cosmetics)"},
+   {"domain": "media_broadcast", "level": "related", "why": "Advertising performance and video content"}
+  ],
+  "dsphy": [
+   {"domain": "manufacturing", "level": "core", "why": "Display and chip defect inspection; process sensor data; electronic parts"},
+   {"domain": "materials_chemistry", "level": "core", "why": "Display and semiconductor materials"},
+   {"domain": "energy", "level": "core", "why": "Energy and solar"},
+   {"domain": "medical", "level": "related", "why": "Medical imaging devices"},
+   {"domain": "general_ai", "level": "related", "why": "Image and colour"}
+  ],
+  "economics": [
+   {"domain": "finance", "level": "core", "why": "Financial markets"},
+   {"domain": "business_commerce", "level": "core", "why": "Prices, jobs and business cycles; trade"},
+   {"domain": "government", "level": "core", "why": "Economic news and policy documents"},
+   {"domain": "city_space", "level": "related", "why": "Real estate and cities"},
+   {"domain": "welfare_care", "level": "related", "why": "Income and welfare"},
+   {"domain": "energy", "level": "related", "why": "Environment and energy"},
+   {"domain": "media_broadcast", "level": "related", "why": "Economic news"}
+  ],
+  "ell": [
+   {"domain": "foreign_languages", "level": "core", "why": "Translation and parallel corpora; conversation"},
+   {"domain": "education", "level": "core", "why": "English learning"},
+   {"domain": "speech_voice", "level": "core", "why": "English pronunciation and speech"},
+   {"domain": "books_writing", "level": "related", "why": "Literary text"},
+   {"domain": "media_broadcast", "level": "related", "why": "News and media English"},
+   {"domain": "tourism", "level": "related", "why": "Multilingual guides for visitors"}
+  ],
+  "emse": [
+   {"domain": "robotics", "level": "core", "why": "Robot motion and vision"},
+   {"domain": "autonomous_driving", "level": "core", "why": "Self-driving and vehicle sensors"},
+   {"domain": "manufacturing", "level": "core", "why": "Machine fault prediction; manufacturing inspection"},
+   {"domain": "satellite_aerial", "level": "related", "why": "Drones"},
+   {"domain": "energy", "level": "related", "why": "Energy systems"},
+   {"domain": "health_care", "level": "related", "why": "Biosignals"},
+   {"domain": "logistics", "level": "related", "why": "Delivery and picking robots"}
+  ],
+  "env": [
+   {"domain": "environment", "level": "core", "why": "Water quality, air quality, soil and groundwater"},
+   {"domain": "waste_recycling", "level": "core", "why": "Waste and recycling"},
+   {"domain": "weather_climate", "level": "core", "why": "Climate; energy and carbon"},
+   {"domain": "disaster_emergency", "level": "core", "why": "Climate and disasters"},
+   {"domain": "nature_ecology", "level": "related", "why": "Ecology and impact"},
+   {"domain": "energy", "level": "related", "why": "Energy and carbon"},
+   {"domain": "satellite_aerial", "level": "related", "why": "Remote sensing for environmental monitoring"},
+   {"domain": "ocean_fisheries", "level": "related", "why": "Marine environment and pollution"}
+  ],
+  "gchina": [
+   {"domain": "foreign_languages", "level": "core", "why": "Korean-Chinese translation; Chinese speech and conversation"},
+   {"domain": "tourism", "level": "core", "why": "Tourism and visitors"},
+   {"domain": "speech_voice", "level": "related", "why": "Chinese speech and conversation"},
+   {"domain": "business_commerce", "level": "related", "why": "Chinese market and companies"},
+   {"domain": "social_media", "level": "related", "why": "Social media and new words"},
+   {"domain": "culture_heritage", "level": "related", "why": "Chinese characters and classical texts"},
+   {"domain": "media_broadcast", "level": "related", "why": "Korean content subtitled into Chinese"}
+  ],
+  "german": [
+   {"domain": "foreign_languages", "level": "core", "why": "Translation and multilingual text"},
+   {"domain": "tourism", "level": "core", "why": "Tourism"},
+   {"domain": "media_broadcast", "level": "related", "why": "Cultural content"},
+   {"domain": "welfare_care", "level": "related", "why": "Welfare and social policy"},
+   {"domain": "energy", "level": "related", "why": "Environment and energy transition"},
+   {"domain": "manufacturing", "level": "related", "why": "Manufacturing and smart factories"},
+   {"domain": "sports", "level": "related", "why": "Sports industry"}
+  ],
+  "ids": [
+   {"domain": "general_ai", "level": "core", "why": "Undecided: try several fields; everyday photos"},
+   {"domain": "daily_life", "level": "core", "why": "Everyday photos and objects"},
+   {"domain": "environment", "level": "related", "why": "Environment"},
+   {"domain": "robotics", "level": "related", "why": "Robots and self-driving"},
+   {"domain": "autonomous_driving", "level": "related", "why": "Robots and self-driving"},
+   {"domain": "health_care", "level": "related", "why": "Health"},
+   {"domain": "korean_language", "level": "related", "why": "Language and dialogue"}
+  ],
+  "imath": [
+   {"domain": "math", "level": "core", "why": "Maths problems and education"},
+   {"domain": "finance", "level": "core", "why": "Finance and insurance"},
+   {"domain": "general_ai", "level": "related", "why": "Networks and graphs; shape analysis of images"},
+   {"domain": "education", "level": "related", "why": "Maths problems and education"},
+   {"domain": "science_research", "level": "related", "why": "Science and engineering simulation"},
+   {"domain": "weather_climate", "level": "related", "why": "Time series and forecasting"}
+  ],
+  "kfbt": [
+   {"domain": "food", "level": "core", "why": "Food images; food safety; processing and quality; fermentation"},
+   {"domain": "agriculture", "level": "core", "why": "Farm raw materials"},
+   {"domain": "livestock", "level": "core", "why": "Livestock products (meat, eggs) and insect protein"},
+   {"domain": "health_care", "level": "related", "why": "Nutrition and diet"},
+   {"domain": "ocean_fisheries", "level": "related", "why": "Fishery raw materials"},
+   {"domain": "pharma", "level": "related", "why": "Supplement information"},
+   {"domain": "science_research", "level": "related", "why": "Microbes and fermentation research"}
+  ],
+  "koreanstudies": [
+   {"domain": "korean_language", "level": "core", "why": "Korean learner data; Korean corpora"},
+   {"domain": "culture_heritage", "level": "core", "why": "Traditional and local culture; old scripts and Chinese characters"},
+   {"domain": "speech_voice", "level": "related", "why": "Korean speech and pronunciation"},
+   {"domain": "education", "level": "related", "why": "Korean learner data"},
+   {"domain": "media_broadcast", "level": "related", "why": "Hallyu and pop culture"},
+   {"domain": "books_writing", "level": "related", "why": "Classical and literary text"}
+  ],
+  "kuds": [
+   {"domain": "security_surveillance", "level": "core", "why": "Cyber security; defence and surveillance"},
+   {"domain": "foreign_languages", "level": "core", "why": "Multilingual translation"},
+   {"domain": "government", "level": "core", "why": "Diplomacy and policy documents"},
+   {"domain": "media_broadcast", "level": "related", "why": "Diplomacy and world news"},
+   {"domain": "satellite_aerial", "level": "related", "why": "Satellite images"},
+   {"domain": "social_media", "level": "related", "why": "International opinion"}
+  ],
+  "kueie": [
+   {"domain": "general_ai", "level": "core", "why": "Images and computer vision"},
+   {"domain": "speech_voice", "level": "core", "why": "Speech and sound"},
+   {"domain": "autonomous_driving", "level": "core", "why": "Self-driving and robots"},
+   {"domain": "robotics", "level": "core", "why": "Self-driving and robots"},
+   {"domain": "health_care", "level": "related", "why": "Biosignals and health care"},
+   {"domain": "people_body", "level": "related", "why": "Images and computer vision (faces, pose, gestures)"},
+   {"domain": "manufacturing", "level": "related", "why": "Chip inspection"},
+   {"domain": "security_surveillance", "level": "related", "why": "Communication signals (drone RF detection)"},
+   {"domain": "energy", "level": "related", "why": "IoT sensors on power equipment"}
+  ],
+  "pharm": [
+   {"domain": "pharma", "level": "core", "why": "Pill and drug identification; medicinal plants; molecules"},
+   {"domain": "medical", "level": "core", "why": "Diseases and clinical records"},
+   {"domain": "health_care", "level": "core", "why": "Supplements and nutrition; public health"},
+   {"domain": "fashion_beauty", "level": "related", "why": "Cosmetics and skin"},
+   {"domain": "food", "level": "related", "why": "Supplements and nutrition"},
+   {"domain": "materials_chemistry", "level": "related", "why": "Molecules and chemical toxicity"},
+   {"domain": "nature_ecology", "level": "related", "why": "Medicinal plants and natural products"}
+  ],
+  "pubs": [
+   {"domain": "welfare_care", "level": "core", "why": "Welfare and care; population and family"},
+   {"domain": "social_media", "level": "core", "why": "Social media and media"},
+   {"domain": "government", "level": "core", "why": "Complaints and counselling; public services"},
+   {"domain": "security_surveillance", "level": "related", "why": "Crime and safety"},
+   {"domain": "mind_emotion", "level": "related", "why": "Complaints and counselling"},
+   {"domain": "city_space", "level": "related", "why": "Cities and regional gaps"},
+   {"domain": "science_research", "level": "related", "why": "Surveys and public opinion"},
+   {"domain": "accessibility", "level": "related", "why": "Welfare and care for people with disabilities"}
+  ],
+  "sfa_business": [
+   {"domain": "sports", "level": "core", "why": "Game records and player data; game video"},
+   {"domain": "media_broadcast", "level": "core", "why": "Game video and sport broadcasting"},
+   {"domain": "business_commerce", "level": "related", "why": "Fans and spectators"},
+   {"domain": "tourism", "level": "related", "why": "Sport tourism and events"},
+   {"domain": "social_media", "level": "related", "why": "Sport news and social media"},
+   {"domain": "games_virtual", "level": "related", "why": "Esports and games"}
+  ],
+  "sfa_science": [
+   {"domain": "sports", "level": "core", "why": "Movement analysis; game video"},
+   {"domain": "people_body", "level": "core", "why": "Movement analysis"},
+   {"domain": "health_care", "level": "core", "why": "Wearables and biosignals; health and fitness"},
+   {"domain": "food", "level": "related", "why": "Nutrition and diet"},
+   {"domain": "medical", "level": "related", "why": "Injury and rehabilitation"}
+  ],
+  "smartcity": [
+   {"domain": "city_space", "level": "core", "why": "City 3D and digital twins; commercial areas and neighbourhoods"},
+   {"domain": "traffic_transport", "level": "core", "why": "Traffic and mobility"},
+   {"domain": "satellite_aerial", "level": "core", "why": "Satellite and aerial images"},
+   {"domain": "construction_infra", "level": "core", "why": "Construction site safety; crack detection"},
+   {"domain": "disaster_emergency", "level": "related", "why": "Disaster and climate risk"},
+   {"domain": "workplace_safety", "level": "related", "why": "Construction site safety"},
+   {"domain": "energy", "level": "related", "why": "Energy and buildings"},
+   {"domain": "environment", "level": "related", "why": "Sustainable cities, heat islands and land use"}
+  ],
+  "software": [
+   {"domain": "general_ai", "level": "core", "why": "Computer vision"},
+   {"domain": "korean_language", "level": "core", "why": "Language models and chatbots"},
+   {"domain": "autonomous_driving", "level": "core", "why": "Self-driving"},
+   {"domain": "medical", "level": "related", "why": "Medical and bio AI"},
+   {"domain": "security_surveillance", "level": "related", "why": "Security"},
+   {"domain": "agriculture", "level": "related", "why": "Smart farming"},
+   {"domain": "speech_voice", "level": "related", "why": "Speech"},
+   {"domain": "robotics", "level": "related", "why": "Robots and physical AI"}
+  ],
+  "spa": [
+   {"domain": "government", "level": "core", "why": "Complaints and administrative documents; public data; cities and local government"},
+   {"domain": "law", "level": "core", "why": "Laws and court cases"},
+   {"domain": "security_surveillance", "level": "core", "why": "Crime and public safety"},
+   {"domain": "disaster_emergency", "level": "related", "why": "Disaster and crisis management"},
+   {"domain": "city_space", "level": "related", "why": "Cities and local government"},
+   {"domain": "documents_office", "level": "related", "why": "Administrative documents"},
+   {"domain": "social_media", "level": "related", "why": "Policy opinion"}
+  ],
+  "sti": [
+   {"domain": "patents_ip", "level": "core", "why": "Patent documents; trademarks; copyright"},
+   {"domain": "law", "level": "core", "why": "Legal text"},
+   {"domain": "design_art", "level": "related", "why": "Trademarks and designs"},
+   {"domain": "documents_office", "level": "related", "why": "Standards and technical documents"},
+   {"domain": "manufacturing", "level": "related", "why": "Product quality and certification"},
+   {"domain": "music_performing", "level": "related", "why": "Copyright and content (music plagiarism)"}
+  ]
+ }
+}

@@ -1,0 +1,12 @@
+{
+ "dataset_id": "134",
+ "easy_ko": "전국 관광지 식당의 간판, 가게 앞모습, 메뉴판과 도로 표지판 사진을 모아, 한국관광공사의 장소 정보(이름·위치·종류)와 연결한 데이터입니다. 외국인 관광객이 간판이나 메뉴판을 찍으면 어떤 가게인지 알려 주는 안내 앱을 만들 수 있습니다.",
+ "easy_en": "Photos of restaurant signs, shopfronts and menus at tourist spots across Korea, plus road signs, linked to the Korea Tourism Organization's place information (name, location, type). You can build travel apps that tell foreign tourists what a shop is when they photograph its sign or menu.",
+ "detail_ko": "전국 관광지 식당의 간판·입간판·매장 전경·메뉴판과 도로 표지판·도로명 안내판 사진 150만 장 이상(구축량 194.8만, jpg)을 한국관광공사 POI 정보와 연결했으며, 메타정보에 POI 이름·위치·분류, 간판·메뉴판 글자, 표지판 종류, 어노테이션이 있습니다. 표지판 인식 벤치마크가 포함되어 있으나 기준 성능 지표는 없습니다. 2017년 구축이라 가게 정보가 바뀌었을 수 있고, 크롤링 이미지가 포함되어 이용 조건 확인이 필요합니다. 상세 설명 자료가 제한적입니다.",
+ "detail_en": "1.5M+ jpg photos (1.948M built items) of tourist-area restaurant signs, standing signs, shopfronts and menus plus road and street-name signs, linked to Korea Tourism Organization POI data, with metadata for POI name, location and category, sign and menu text, sign type and annotations. A sign-recognition benchmark is included, but no baseline score is given. Built in 2017, so shop info may be outdated; crawled images are included, so check usage terms. Documentation is limited.",
+ "amount_ko": "사진 150만 장 이상",
+ "amount_en": "1.5M+ photos",
+ "labels_ko": "장소 이름·위치·종류, 간판·메뉴판 글자, 표지판 종류, 위치 상자",
+ "labels_en": "place name, location and type, sign and menu text, sign type, boxes",
+ "status": "full-run-2026-11-02"
+}

@@ -1,0 +1,29 @@
+{
+ "dataset_id": "71922",
+ "title_en": "NEW corporate accounting standards data",
+ "summary_ko": "실무해설서, 전문 회계상담 자료, 한국회계기준원 공개 회계기준 문서를 정제한 원천 문서 10,139건과, 이를 바탕으로 만든 회계처리 질의응답 50,695쌍입니다. K-IFRS의 자산·부채·자본·손익·재무제표 등으로 분류되어 있어 기업 회계 상담 AI에 쓸 수 있습니다.",
+ "summary_en": "10,139 cleaned source documents (practice guides, professional accounting consultations, published standards from the Korea Accounting Standards Board) and 50,695 accounting QA pairs built from them, classified under K-IFRS topics (assets, liabilities, equity, income items, financial statements and more). For corporate accounting assistant AI.",
+ "contents_ko": "회계기준 문서 JSON + 질의응답 JSON(분류, 질문, 답변).",
+ "contents_en": "Accounting standard document JSON + QA JSON (category, question, answer).",
+ "modalities": ["text"],
+ "tasks": ["question_answering", "text_generation"],
+ "topics": [{"ko": "회계·재무", "en": "Accounting and finance"}, {"ko": "전문 지식 LLM", "en": "Domain-expert LLMs"}],
+ "keywords_ko": ["회계처리 기준", "K-IFRS", "재무제표", "질의응답", "회계 상담", "Qwen3"],
+ "keywords_en": ["accounting standards", "K-IFRS", "financial statements", "question answering", "accounting advice", "Qwen3"],
+ "labels": ["question-answer", "category"],
+ "file_formats": ["json"],
+ "scale_ko": "원천 문서 10,139건, 질의응답 50,695쌍",
+ "classes_example": ["자산", "손익항목", "특수회계처리", "부채", "재무제표", "자본", "회계기준전환"],
+ "baseline": [],
+ "difficulty": "beginner",
+ "difficulty_note_ko": "약 70MB로 아주 가볍습니다. 검색 기반 질의응답 실습에 좋고 회계 기초가 있으면 결과 해석이 쉽습니다.",
+ "skills_needed_ko": ["파이썬", "검색 기반 생성(RAG)", "LLM 미세조정(LoRA) 기초"],
+ "caveats_ko": ["페이지에 성능 점수 표가 없음(Qwen3 미세조정 모델 소개만 있음)", "회계기준 전환(0.47%) 등 일부 분류가 적음", "회계기준 개정 시 답변이 바뀔 수 있음"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "회계 질문 분류", "title_en": "Accounting question classifier", "desc_ko": "질문이 자산·부채·손익 중 어디에 속하는지 분류합니다.", "desc_en": "Classify questions as assets, liabilities or income items."},
+  {"level": "capstone", "title_ko": "K-IFRS 상담 챗봇", "title_en": "K-IFRS assistant", "desc_ko": "기준 문서를 검색해 근거와 함께 답하는 RAG 챗봇을 만듭니다.", "desc_en": "Answer with cited standards via a RAG chatbot."},
+  {"level": "research", "title_ko": "근거 인용 정확도", "title_en": "Citation faithfulness", "desc_ko": "답변이 실제 기준 조항과 맞는지 자동 검증하는 방법을 연구합니다.", "desc_en": "Study checking answers against actual standard clauses."}
+ ],
+ "doc_used": true,
+ "uncertain": []
+}

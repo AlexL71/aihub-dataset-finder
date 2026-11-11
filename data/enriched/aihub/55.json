@@ -1,0 +1,32 @@
+{
+ "dataset_id": "55",
+ "title_en": "Deepfake manipulated videos",
+ "summary_ko": "한국인 얼굴을 정면에서 찍은 원본 영상 1,500시간과, 5종 이상의 딥페이크 모델로 얼굴을 바꾼 변조 영상 625시간입니다. 탐지를 피하려고 일부러 손본 '탐지 방해' 영상도 들어 있어 가짜 영상을 찾아내는 AI를 만들 수 있습니다.",
+ "summary_en": "1,500 hours of original frontal videos of Korean faces and 625 hours of fakes made with 5+ deepfake models. It also includes 'anti-detection' videos altered on purpose to fool detectors, for building AI that spots fake videos.",
+ "contents_ko": "원본 영상(1인당 90초 이상, 1920×1080, 30fps)과 변조 영상(15초 이상) + 라벨(진짜/가짜, 변조 모델, 탐지 방해 여부). 폴더가 원본·변조·탐지방해로 나뉨.",
+ "contents_en": "Original videos (90+ s per person, 1920×1080, 30 fps) and fakes (15+ s) + labels (real/fake, manipulation model, anti-detection flag). Folders are split into original, fake and anti-detection.",
+ "modalities": ["video"],
+ "tasks": ["image_classification", "anomaly_detection", "image_generation"],
+ "topics": [{"ko": "딥페이크·가짜 정보", "en": "Deepfakes and misinformation"}, {"ko": "사람 얼굴", "en": "Human faces"}, {"ko": "디지털 보안·범죄", "en": "Digital security and crime"}],
+ "keywords_ko": ["딥페이크", "가짜 영상 탐지", "얼굴 합성", "변조 영상", "탐지 방해", "한국인 얼굴"],
+ "keywords_en": ["deepfake", "fake video detection", "face swap", "manipulated video", "anti-detection", "Korean faces"],
+ "labels": ["class (real/fake)", "manipulation method"],
+ "file_formats": ["mp4", "json"],
+ "scale_ko": "원본 1,500시간 이상(6만 개 이상 영상), 변조 625시간 이상(15만 개 이상 영상), 변조 모델 5종 이상",
+ "classes_example": ["원본", "변조", "탐지방해"],
+ "baseline": [
+  {"task": "deepfake detection (FaceForensics++ benchmark)", "model": "detection model (not named)", "metric": "accuracy", "value": "95.14%"},
+  {"task": "deepfake detection (DFDC)", "model": "detection model (not named)", "metric": "log loss", "value": "16.2%"}
+ ],
+ "difficulty": "advanced",
+ "difficulty_note_ko": "전체 약 2.8TB이고 영상에서 얼굴을 잘라 프레임 단위로 처리해야 해 난도가 높습니다. 일부 영상만 받아 프레임 분류로 시작할 수 있습니다.",
+ "skills_needed_ko": ["파이썬", "영상에서 얼굴 검출·자르기", "이미지 분류 모델 학습"],
+ "caveats_ko": ["전체 약 2.8TB", "실제 사람 얼굴 영상이라 이용 약관을 꼭 확인하고, 변조 기술을 악용하지 않아야 함", "성능 표의 '학습모델' 칸이 벤치마크 이름으로 적혀 있음"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "진짜/가짜 얼굴 프레임 분류", "title_en": "Real vs fake face frames", "desc_ko": "영상 몇 개에서 얼굴 프레임을 뽑아 진짜와 딥페이크를 구분하는 분류 모델을 만듭니다.", "desc_en": "Extract face frames from a few videos and train a real-vs-fake classifier."},
+  {"level": "capstone", "title_ko": "딥페이크 의심 영상 검사 웹", "title_en": "Deepfake check web tool", "desc_ko": "영상을 올리면 프레임별 가짜 확률과 의심 구간을 보여주는 웹 도구를 만듭니다.", "desc_en": "Upload a video and see per-frame fake probability and suspicious segments."},
+  {"level": "research", "title_ko": "처음 보는 변조 방법에도 강한 탐지", "title_en": "Detection that generalises to unseen fakes", "desc_ko": "한 변조 모델로 학습해 다른 모델과 탐지 방해 영상에서 성능이 얼마나 떨어지는지 분석하고 개선합니다.", "desc_en": "Train on one manipulation model and measure and improve the drop on others and on anti-detection videos."}
+ ],
+ "doc_used": true,
+ "uncertain": []
+}

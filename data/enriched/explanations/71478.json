@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71478",
+ "easy_ko": "플라스틱 등으로 물건을 찍어 내는 여러 방식의 3D 프린터 결과물을 찍은 사진에, 출력 조건과 재료, 겉모양 불량, 줄어든 정도를 표시한 데이터입니다. 설계와 실제 결과물의 모양 차이를 미리 예측해 바로잡는 AI에 쓸 수 있습니다.",
+ "easy_en": "Photos of parts made by several kinds of non-metal 3D printers, with print settings, materials, surface defects and how much each part shrank. You can use it to build AI that predicts and corrects the gap between a design and the printed shape in advance.",
+ "detail_ko": "비금속 3D 프린팅 방식 6종(DLP, G_FDM, I_FDM, MJP, SLA, SLS) 출력물의 외형 품질 이미지 165,780장과 수축 분석 이미지 55,260장(png)에 상자, 출력 방식·파라미터·소재, 불량 유형, 수축 정보를 JSON으로 붙였습니다. 기준 성능은 외형 불량 분류 EfficientNet-B0 AUC-ROC 0.942, 수축 이미지 생성 Image-to-image translation FID 25.56(낮을수록 좋음)입니다. 전체 약 562GB이고, G_FDM이 약 52%로 대부분이며 DLP·MJP는 약 2%뿐입니다. 불량 유형 목록은 팩 앞부분에 없습니다.",
+ "detail_en": "165,780 appearance-quality images and 55,260 shrinkage-analysis images (png) of parts from 6 non-metal 3D printing methods (DLP, G_FDM, I_FDM, MJP, SLA, SLS), with JSON boxes, print method, parameters and material, defect type and shrinkage data. Baselines: appearance defect classification with EfficientNet-B0, AUC-ROC 0.942; shrinkage image generation with image-to-image translation, FID 25.56 (lower is better). Total size is about 562 GB. G_FDM makes up about 52%, while DLP and MJP are only about 2% each. The defect-type list is not in the pack.",
+ "amount_ko": "외형 이미지 165,780장, 수축 이미지 55,260장, 출력 방식 6종",
+ "amount_en": "165,780 appearance images, 55,260 shrinkage images, 6 printing methods",
+ "labels_ko": "불량 위치 상자, 불량 종류, 출력 조건",
+ "labels_en": "bounding boxes, defect type, print parameters",
+ "status": "full-run-2026-11-02"
+}

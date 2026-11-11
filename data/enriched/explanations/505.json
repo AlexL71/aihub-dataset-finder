@@ -1,0 +1,12 @@
+{
+ "dataset_id": "505",
+ "easy_ko": "베트남어, 영어, 일본어, 중국어, 태국어 등을 모국어로 쓰는 외국인이 한국어 대본을 읽거나 질문에 자유롭게 답한 녹음과 받아 적은 글을 짝지은 데이터입니다. 외국인의 한국어를 잘 알아듣는 음성 인식이나 한국어 발음 연습 앱을 만들 수 있습니다.",
+ "easy_en": "Recordings of non-native speakers (whose first languages include Vietnamese, English, Japanese, Chinese and Thai) reading Korean scripts or answering questions freely, paired with transcripts. You can build speech recognition that understands foreigners' Korean well, or Korean pronunciation practice apps.",
+ "detail_ko": "외국인 화자의 한국어 발화 음성 4,302시간(wav)과 JSON/CSV(전사, 모국어, 과제 유형(대본 읽기/자유 발화), 주제 세트)으로, 모국어는 베트남어·영어·일본어·중국어·태국어 등 5개 이상입니다. 기준 성능은 기록에서 확인되지 않습니다.",
+ "detail_en": "4,302 hours of Korean speech (wav) by non-native speakers with 5+ first languages (Vietnamese, English, Japanese, Chinese, Thai and more), with JSON/CSV transcripts, first language, task type (script reading or free speech) and topic set. No baseline is visible in the record.",
+ "amount_ko": "음성 4,302시간",
+ "amount_en": "4,302 hours of speech",
+ "labels_ko": "말소리를 받아 적은 글(전사), 모국어, 읽기·자유 말하기 구분",
+ "labels_en": "transcripts, first language, task type",
+ "status": "full-run-2026-11-02"
+}

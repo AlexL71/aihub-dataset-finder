@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71809",
+ "easy_ko": "박물관 자료와 직접 찍은 유물에서 모은 한국 전통 무늬 그림 2만 4천여 장에 한글과 영어 설명 문장을 많이 붙인 데이터입니다. 글로 설명하면 전통 무늬 그림을 만들어 주는 AI에 쓸 수 있습니다.",
+ "easy_en": "Over 24,000 images of traditional Korean patterns collected from museum archives and photographed artefacts, with many Korean and English description sentences. You can use it to build AI that draws traditional patterns from a text description.",
+ "detail_ko": "국립중앙박물관·국가유산진흥원 등의 자료와 직접 촬영한 유물에서 모은 객체·문양 이미지 24,536장과 문양만 뽑은 이미지 24,536장(jpg)에 한글 캡션 278,803문장, 영어 캡션 262,024문장(JSON)을 붙였고, 분류는 건축, 문화재, 생활소품입니다. 유물 출처 기관별 이용 조건을 확인해야 하고, 성능 지표 값은 팩 앞부분에 없습니다.",
+ "detail_en": "24,536 object-and-pattern images and 24,536 pattern-only images (jpg) of traditional Korean patterns from the National Museum of Korea, the Korea Heritage Agency and self-photographed artefacts, with 278,803 Korean and 262,024 English caption sentences (JSON), in architecture, cultural heritage and everyday items. Check each source institution's terms of use; no metric values are in the pack.",
+ "amount_ko": "이미지 24,536장 + 문양 이미지 24,536장, 한글 캡션 278,803문장, 영어 캡션 262,024문장",
+ "amount_en": "24,536 images + 24,536 pattern images, 278,803 Korean and 262,024 English caption sentences",
+ "labels_ko": "한글·영어 그림 설명",
+ "labels_en": "image caption (Korean, English)",
+ "status": "full-run-2026-11-02"
+}

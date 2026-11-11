@@ -1,0 +1,12 @@
+{
+ "dataset_id": "633",
+ "easy_ko": "약과 화장품 포장 상자를 찍은 사진마다 글자가 있는 위치와 정답 글자를 표시한 데이터입니다. 포장을 찍으면 성분과 주의할 점을 읽어 주는 앱을 만들 수 있습니다.",
+ "easy_en": "Photos of medicine and cosmetics packaging, each with the position of every piece of text and the correct text marked. You can build apps that read out ingredients and warnings when you photograph a package.",
+ "detail_ko": "의약품·화장품 포장 이미지 5만 쌍(jpg)에 제품명, 성분표, 복용량, 유통기한, 사용법 등 글자 영역(4점 다각형·바운딩박스)과 텍스트를 JSON으로 붙였습니다. 기준 성능은 Mask R-CNN 기반 자체 모델 OCR F1 화장품 0.9522, 의약품 0.9449입니다. 전체 약 152GB이며 통계표는 기록에 없고, 632번 금융 문서 OCR과 같은 구축 기관입니다. 의료 판단에 그대로 쓰면 안 됩니다.",
+ "detail_en": "50k pairs of medicine and cosmetics packaging images (jpg) with JSON text regions (4-point polygons and boxes) and transcriptions for product names, ingredient lists, dosage, expiry dates, directions and more. Baselines: custom Mask R-CNN-based OCR F1 0.9522 (cosmetics) and 0.9449 (medicine). Total size is about 152 GB; the statistics table is not in the record; built by the same organisation as dataset 632. Do not rely on it for medical decisions.",
+ "amount_ko": "포장 사진 5만 쌍",
+ "amount_en": "50k packaging image pairs",
+ "labels_ko": "글자 위치 테두리·상자, 정답 글자",
+ "labels_en": "text polygons and boxes, transcription",
+ "status": "full-run-2026-11-02"
+}

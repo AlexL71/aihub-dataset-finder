@@ -1,0 +1,29 @@
+{
+ "dataset_id": "71560",
+ "title_en": "High-frequency error correction data by input interface (keyboard/voice)",
+ "summary_ko": "PC 키보드, 스마트폰 쿼티·천지인 자판, 음성 인식기에서 자주 생기는 오타·맞춤법·띄어쓰기 오류 문장과 올바르게 고친 문장 약 29만 쌍입니다. 한국어 맞춤법 자동 교정 AI를 만드는 데 쓸 수 있습니다.",
+ "summary_en": "About 290,000 pairs of Korean sentences with typos, spelling and spacing errors from PC keyboards, phone QWERTY and Cheonjiin keypads and speech recognisers, with corrected versions. For Korean spelling correction AI.",
+ "contents_ko": "오류 문장·교정 문장 쌍 JSON/CSV(오류 유형, 입력 방식, 연령대).",
+ "contents_en": "Error and corrected sentence pairs JSON/CSV (error type, input method, age group).",
+ "modalities": ["text"],
+ "tasks": ["text_generation"],
+ "topics": [{"ko": "한국어 맞춤법", "en": "Korean spelling"}, {"ko": "입력 도구", "en": "Input interfaces"}],
+ "keywords_ko": ["맞춤법 교정", "오탈자", "띄어쓰기", "천지인", "음성 인식 오류"],
+ "keywords_en": ["spelling correction", "typos", "word spacing", "Cheonjiin keypad", "speech recognition errors"],
+ "labels": ["corrected sentence", "error type", "input interface"],
+ "file_formats": ["json", "csv"],
+ "scale_ko": "문장 290,500건 (오탈자 110,000, 맞춤법 60,000, 음성인식 오류 30,000, 자동 생성 30,000, 띄어쓰기·문장부호 60,000, 자주 틀리는 맞춤법 500)",
+ "classes_example": ["PC/쿼티", "mobile/쿼티", "mobile/천지인", "자유게시판", "질문게시판", "SNS", "STT 엔진 오류"],
+ "baseline": [{"task": "grammatical error correction", "model": "BART", "metric": "F0.5-score", "value": "0.5907"}, {"task": "grammatical error correction (pre-trained)", "model": "BART", "metric": "F0.5-score", "value": "0.7863"}],
+ "difficulty": "beginner",
+ "difficulty_note_ko": "전체 약 0.04GB로 작고 문장 쌍 형태라 seq2seq(문장→문장) 모델 입문에 좋습니다.",
+ "skills_needed_ko": ["파이썬", "허깅페이스 Transformers", "한국어 자연어 처리"],
+ "caveats_ko": ["일부 원문은 AI Hub 한국어 SNS 데이터셋에서 가져옴", "자동 생성 오류 3만 건은 실제 사람이 낸 오류가 아님"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "오류 유형 분류", "title_en": "Error type classification", "desc_ko": "문장이 오타·띄어쓰기·음성인식 오류 중 무엇인지 분류합니다.", "desc_en": "Classify sentences by error type."},
+  {"level": "capstone", "title_ko": "한국어 맞춤법 교정기", "title_en": "Korean spelling corrector", "desc_ko": "KoBART를 미세조정해 틀린 문장을 고쳐 주는 웹 데모를 만듭니다.", "desc_en": "Fine-tune KoBART into a web demo that fixes sentences."},
+  {"level": "research", "title_ko": "입력 방식별 맞춤 교정", "title_en": "Interface-aware correction", "desc_ko": "천지인·쿼티·음성 등 입력 방식 정보를 넣으면 교정이 좋아지는지 연구합니다.", "desc_en": "Study whether knowing the input method improves correction."}
+ ],
+ "doc_used": true,
+ "uncertain": []
+}

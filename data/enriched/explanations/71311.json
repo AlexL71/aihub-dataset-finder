@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71311",
+ "easy_ko": "사람과 여러 AI가 쓴 상식 문장마다 문법이 맞는지, 사실에 맞는지, 자연스러운지, 다양한지를 점수로 매겨 둔 데이터입니다. AI가 쓴 문장이 얼마나 좋은지 자동으로 평가해 주는 AI를 만들 수 있습니다.",
+ "easy_en": "Common-sense sentences written by people and by several AI models, each scored for grammar, factual accuracy, fluency and variety. You can build AI that automatically judges how good AI-written sentences are.",
+ "detail_ko": "사람과 AI 모델 5종(KoGPT2, KoBART, mBART-50, KoLANG-T5, PKO-T5)이 쓴 상식 문장 약 107만 개(txt)에 문법성·사실성·유창성·다양성 4가지 기준을 3점 척도로 채점한 결과(csv)를 붙였습니다. 기준 성능은 ELECTRA 기반 채점 정확도 문법성 93%, 사실성 93%, 유창성 80%입니다. 71308·71309번과 이어지는 3단계 연작의 마지막 데이터이며, 개요(5가지)와 본문(4가지)의 기준 수가 다릅니다.",
+ "detail_en": "About 1.07M common-sense sentences (txt) written by people and 5 AI models (KoGPT2, KoBART, mBART-50, KoLANG-T5, PKO-T5), scored on a 3-point scale for grammar, factuality, fluency and diversity (csv). Baselines: ELECTRA-based scoring accuracy 93% (grammar), 93% (factuality), 80% (fluency). Last of a three-part series with 71308 and 71309; the overview lists 5 criteria while the body lists 4.",
+ "amount_ko": "문장 약 107만 개, 평가 기준 4가지",
+ "amount_en": "about 1.07M sentences, 4 criteria",
+ "labels_ko": "문법·사실·자연스러움·다양성 점수, 쓴 주체(사람·AI)",
+ "labels_en": "grammar, factuality, fluency and diversity scores, generator",
+ "status": "full-run-2026-11-02"
+}

@@ -1,0 +1,29 @@
+{
+ "dataset_id": "71808",
+ "title_en": "Question generation data based on video learning materials",
+ "summary_ko": "교육 영상 3,900건과 그 스크립트 텍스트 3,900건에서 만든 문제-정답 쌍 12,078건으로, 학습자에게 맞춘 문제를 자동으로 만들기 위한 데이터입니다. 강의 영상으로 퀴즈를 생성하는 교육용 AI에 쓸 수 있습니다.",
+ "summary_en": "12,078 question-answer pairs created from 3,900 educational videos and their 3,900 script texts, for automatically generating questions tailored to learners. For educational AI that makes quizzes from lecture videos.",
+ "contents_ko": "교육 영상(mp4) + 스크립트·문제-정답(json).",
+ "contents_en": "Educational video (mp4) + script and question-answer (json).",
+ "modalities": ["video", "text"],
+ "tasks": ["question_answering", "text_generation"],
+ "topics": [{"ko": "교육·이러닝", "en": "Education and e-learning"}, {"ko": "생성형 AI", "en": "Generative AI"}],
+ "keywords_ko": ["문제 생성", "교육 영상", "퀴즈", "스크립트", "맞춤형 학습", "질의응답"],
+ "keywords_en": ["question generation", "educational video", "quiz", "script", "personalised learning", "question answering"],
+ "labels": ["question-answer pair"],
+ "file_formats": ["mp4", "json"],
+ "scale_ko": "영상 3,900건, 스크립트 3,900건, 문제-정답 12,078건",
+ "classes_example": [],
+ "baseline": [],
+ "difficulty": "intermediate",
+ "difficulty_note_ko": "스크립트 텍스트만 써도 문제 생성 실습이 가능합니다. 영상까지 받으면 약 85GB입니다.",
+ "skills_needed_ko": ["파이썬", "트랜스포머", "텍스트 생성"],
+ "caveats_ko": ["문제-정답 쌍이 12,078건으로 많지 않음", "교과·분야 분포와 성능 지표가 팩 앞부분에 없음"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "스크립트로 퀴즈 만들기", "title_en": "Quiz from scripts", "desc_ko": "강의 스크립트에서 객관식 문제를 생성합니다.", "desc_en": "Generate multiple-choice questions from scripts."},
+  {"level": "capstone", "title_ko": "강의 영상 복습 앱", "title_en": "Lecture review app", "desc_ko": "강의 영상을 보고 나면 자동으로 복습 문제를 내 주는 앱을 만듭니다.", "desc_en": "App that quizzes students after a lecture video."},
+  {"level": "research", "title_ko": "난이도 조절 문제 생성", "title_en": "Difficulty-controlled questions", "desc_ko": "학습자 수준에 맞춰 문제 난이도를 조절하는 방법을 연구합니다.", "desc_en": "Generate questions matched to learner level."}
+ ],
+ "doc_used": true,
+ "uncertain": ["교과 분야 구성"]
+}

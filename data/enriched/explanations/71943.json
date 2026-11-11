@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71943",
+ "easy_ko": "예전 자연재해 시설 안전 데이터를 다시 다듬어, 사진 2만 장에 피해 상황에 대한 질문과 답, 답에 이르는 생각 과정을 붙인 데이터입니다. 재난이나 산업 안전을 안내하는 챗봇에 쓸 수 있습니다.",
+ "easy_en": "20,000 photos reworked from older natural-disaster facility safety data, each with questions and answers about the damage and the reasoning steps that lead to each answer. You can use it to build chatbots that guide people on disasters or industrial safety.",
+ "detail_ko": "2022년 AI 허브 자연재해 생활시설 안전 데이터를 다시 가공(업사이클링)해, 이미지 20,000건(jpg)에 질의응답(Q&A)과 사고과정(CoT, 답에 이르는 추론 단계) 라벨을 JSON으로 붙였습니다. 구성: 정상 상태 57.7%, 재해 피해 42.3%. sLLM 같은 멀티모달 추론형 AI의 재난·산업안전 챗봇에 쓰도록 만들었습니다. 재해 종류 목록은 팩 앞부분에 없고, 기존 데이터를 재가공해 원본과 이미지가 겹칠 수 있으며, 성능 지표 값은 팩 앞부분에 없습니다.",
+ "detail_en": "20,000 images (jpg) reworked (upcycled) from AI Hub's 2022 natural-disaster living-facility safety data, with JSON question-answer (Q&A) and chain-of-thought (CoT, the reasoning steps that lead to the answer) labels. Composition: 57.7% normal condition, 42.3% disaster damage. It is meant for multimodal reasoning AI such as small LLMs, for disaster and industrial-safety chatbots. The list of disaster types is not in the pack, and being reworked from existing data, images may overlap with the original. No metric values are in the pack.",
+ "amount_ko": "20,000건",
+ "amount_en": "20,000 items",
+ "labels_ko": "질문과 답, 답에 이르는 추론 과정",
+ "labels_en": "question-answer, chain of thought",
+ "status": "full-run-2026-11-02"
+}

@@ -1,0 +1,29 @@
+{
+ "dataset_id": "523",
+ "title_en": "Logistics infrastructure data for connected ports",
+ "summary_ko": "항만 터미널의 안벽크레인과 게이트 카메라로 찍은 이미지 62만 장으로, 컨테이너 식별 번호(BIC 코드), 위험물(IMDG) 표지, 야드 트랙터·샤시 같은 물체 약 140만 개가 상자·다각형으로 표시되어 있습니다. 항만 컨테이너 검수 자동화나 스마트 항만 AI에 쓸 수 있습니다.",
+ "summary_en": "620,000 images from quay-crane and gate cameras at port terminals, with about 1.4 million objects boxed or outlined, including container ID codes (BIC), dangerous-goods (IMDG) labels, yard tractors and chassis. For automated container inspection and smart-port AI.",
+ "contents_ko": "항만 이미지(jpg, 1920×1080) + JSON(물체 상자·다각형, 라벨, 코드 텍스트).",
+ "contents_en": "Port image (jpg, 1920×1080) + JSON (object boxes and polygons, labels, code text).",
+ "modalities": ["image"],
+ "tasks": ["object_detection", "ocr", "segmentation"],
+ "topics": [{"ko": "항만·물류", "en": "Ports and logistics"}, {"ko": "해양·선박", "en": "Sea and ships"}],
+ "keywords_ko": ["항만", "컨테이너", "BIC 코드", "위험물 표지", "야드 트랙터", "검수 자동화"],
+ "keywords_en": ["port", "container", "BIC code", "IMDG label", "yard tractor", "inspection automation"],
+ "labels": ["bounding box", "polygon", "code text"],
+ "file_formats": ["jpg", "json"],
+ "scale_ko": "이미지 619,262장, 객체 약 140만 개",
+ "classes_example": ["컨테이너", "BIC 코드", "IMDG 표지", "샤시", "야드 트랙터"],
+ "baseline": [],
+ "difficulty": "intermediate",
+ "difficulty_note_ko": "컨테이너 탐지와 코드 OCR을 함께 다룹니다. 약 310GB입니다.",
+ "skills_needed_ko": ["파이썬", "YOLO 탐지", "OCR"],
+ "caveats_ko": ["성능 지표가 팩 앞부분에 없음"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "컨테이너 탐지", "title_en": "Container detection", "desc_ko": "게이트 이미지에서 컨테이너와 차량을 탐지합니다.", "desc_en": "Detect containers and vehicles in gate images."},
+  {"level": "capstone", "title_ko": "컨테이너 번호 자동 판독", "title_en": "Automatic container-number reader", "desc_ko": "BIC 코드를 읽어 입출입 기록을 자동으로 남기는 데모를 만듭니다.", "desc_en": "Read BIC codes and log gate entries automatically."},
+  {"level": "research", "title_ko": "위험물 표지 인식", "title_en": "Dangerous-goods label recognition", "desc_ko": "작고 다양한 IMDG 표지를 정확히 인식하는 방법을 연구합니다.", "desc_en": "Study accurate recognition of small, varied IMDG labels."}
+ ],
+ "doc_used": true,
+ "uncertain": []
+}

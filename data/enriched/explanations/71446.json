@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71446",
+ "easy_ko": "1950년대부터 1990년대까지 남녀의 대표 패션 사진과, 사람들이 각 스타일을 얼마나 좋아하는지 답한 설문을 묶은 데이터입니다. 취향에 맞는 옷을 추천하거나 유행이 다시 돌아오는 흐름을 살펴보는 AI에 쓸 수 있습니다.",
+ "easy_en": "Typical fashion photos of men and women from the 1950s to the 1990s, linked with survey answers on how much people like each style. You can use it to build AI that recommends clothes to match someone's taste or tracks how trends come back over time.",
+ "detail_ko": "1950~1990년대 5개 연대의 남녀 대표 패션 이미지 112,062장(jpg)과 스타일 선호도 설문 응답 284,839건(JSON, 성별·연대 포함)을 연결했습니다. 기준 성능은 의류 추천 PinSage HR@500 80.67%입니다. 전체 약 336GB이고, 여성 이미지가 남성보다 약 2.5배 많습니다. 선호도는 설문 응답이라 응답자 특성에 따라 치우칠 수 있고, 메타데이터에는 데이터 형식이 txt로 적혀 있습니다.",
+ "detail_en": "112,062 typical fashion images (jpg) of men and women across 5 decades (1950s to 1990s), linked to 284,839 style-preference survey answers (JSON, with gender and decade). Baseline: clothing recommendation with PinSage, HR@500 80.67%. Total size is about 336 GB, and there are about 2.5 times more women's images than men's. Preferences are survey answers, so they may lean toward the respondents' profile, and the metadata lists the format as txt.",
+ "amount_ko": "패션 이미지 112,062장, 선호도 응답 284,839건, 연대 5개",
+ "amount_en": "112,062 fashion images, 284,839 preference answers, 5 decades",
+ "labels_ko": "스타일 선호도 설문 응답, 성별, 연대",
+ "labels_en": "style preference answers, gender, decade",
+ "status": "full-run-2026-11-02"
+}

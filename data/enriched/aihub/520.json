@@ -1,0 +1,29 @@
+{
+ "dataset_id": "520",
+ "title_en": "Crop digital phenotyping data",
+ "summary_ko": "벼·콩·밀·배추 같은 작물을 다각도 RGB, 위에서 본 RGB, 엽록소 형광, 초분광, 열화상, 라이다로 찍은 79만 건의 데이터로, 개체 상자가 표시되어 있습니다. 키·잎 수 같은 작물 표현형(겉모습 특징)을 자동으로 측정하는 품종 개발·육종 연구 AI에 쓸 수 있습니다.",
+ "summary_en": "790,000 records of crops such as rice, soybean, wheat and cabbage captured with multi-angle RGB, top-view RGB, chlorophyll fluorescence, hyperspectral, thermal and lidar sensors, with plant bounding boxes. For AI that measures crop phenotypes (height, leaf count and other traits) automatically for breeding research.",
+ "contents_ko": "이미지(png) + 라이다(csv) + JSON(개체 상자, 작물, 측정 지표).",
+ "contents_en": "Images (png) + lidar (csv) + JSON (plant box, crop, measured traits).",
+ "modalities": ["image", "sensor", "3d"],
+ "tasks": ["object_detection", "tabular_prediction", "3d_reconstruction"],
+ "topics": [{"ko": "농업·육종", "en": "Agriculture and plant breeding"}, {"ko": "식물 과학", "en": "Plant science"}],
+ "keywords_ko": ["디지털 피노타이핑", "표현형", "육종", "벼", "콩", "초분광", "라이다"],
+ "keywords_en": ["digital phenotyping", "phenotype", "breeding", "rice", "soybean", "hyperspectral", "lidar"],
+ "labels": ["bounding box", "trait measurements"],
+ "file_formats": ["png", "csv", "json"],
+ "scale_ko": "79만 건(다각도 RGB 60만, 탑뷰 RGB 12만, 라이다 14만, 열화상 1.2만, 초분광 7천, 엽록소 형광 1천)",
+ "classes_example": ["벼", "콩", "밀", "배추"],
+ "baseline": [],
+ "difficulty": "advanced",
+ "difficulty_note_ko": "여러 센서 데이터를 다루는 식물 과학 연구 수준입니다. 전체 약 1.6TB입니다.",
+ "skills_needed_ko": ["파이썬", "이미지 처리", "다중 센서 데이터 분석"],
+ "caveats_ko": ["전체 약 1.6TB", "표현형 지표 목록과 성능 지표가 팩 앞부분에 없음"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "작물 개체 탐지", "title_en": "Plant detection", "desc_ko": "탑뷰 RGB 이미지에서 작물 개체를 탐지해 수를 셉니다.", "desc_en": "Detect and count plants in top-view RGB images."},
+  {"level": "capstone", "title_ko": "작물 키 자동 측정", "title_en": "Automatic plant height", "desc_ko": "다각도 이미지나 라이다로 작물 키를 계산하는 도구를 만듭니다.", "desc_en": "Compute plant height from multi-angle images or lidar."},
+  {"level": "research", "title_ko": "센서별 표현형 예측 비교", "title_en": "Phenotype prediction by sensor", "desc_ko": "RGB·초분광·열화상 중 어느 센서가 생육 지표 예측에 가장 좋은지 비교합니다.", "desc_en": "Compare which sensor predicts growth traits best."}
+ ],
+ "doc_used": true,
+ "uncertain": []
+}

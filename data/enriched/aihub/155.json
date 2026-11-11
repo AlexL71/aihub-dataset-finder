@@ -1,0 +1,29 @@
+{
+ "dataset_id": "155",
+ "title_en": "Fish behaviour videos",
+ "summary_ko": "양식 어종 5종(넙치·조피볼락·참돔·감성돔·돌돔)의 수중 유영을 찍은 영상 371시간과 물고기 개체 126만 개 라벨입니다. 개체 상자, 헤엄 방향, 몸길이·몸높이 선이 표시되어 있어 물고기 행동 분석, 개체 추적, 크기 측정에 쓸 수 있습니다.",
+ "summary_en": "371 hours of underwater video of 5 farmed species (flounder, rockfish, red sea bream, black sea bream, striped beakfish) with 1.26 million fish instances labelled. Boxes, swimming angle and body length/height lines support fish behaviour analysis, tracking and size measurement.",
+ "contents_ko": "영상 키프레임 이미지 + JSON(개체 상자, 유영 각도, 체장·체고 선).",
+ "contents_en": "Key-frame images + JSON (fish box, swimming angle, body length and height lines).",
+ "modalities": ["image", "video"],
+ "tasks": ["object_detection", "object_tracking", "keypoint_pose"],
+ "topics": [{"ko": "수산·양식", "en": "Fisheries and aquaculture"}, {"ko": "물고기", "en": "Fish"}, {"ko": "동물 행동", "en": "Animal behaviour"}],
+ "keywords_ko": ["어류 행동", "수중 영상", "개체 추적", "체장 측정", "스마트 양식"],
+ "keywords_en": ["fish behaviour", "underwater video", "tracking", "length measurement", "smart fish farm"],
+ "labels": ["bounding box", "swimming angle", "length/height lines"],
+ "file_formats": ["jpg", "json"],
+ "scale_ko": "영상 371시간, 인스턴스 1,260,849개(어종별 약 24~27만)",
+ "classes_example": ["넙치", "조피볼락", "참돔", "감성돔", "돌돔"],
+ "baseline": [{"task": "body length/height line detection", "model": "EfficientDet D2", "metric": "NMAE", "value": "7.49%"}],
+ "difficulty": "intermediate",
+ "difficulty_note_ko": "약 200GB이고 탐지는 쉽지만 개체 추적과 크기 측정은 중급 이상입니다.",
+ "skills_needed_ko": ["파이썬", "객체 탐지·추적", "기하 계산(길이 측정)"],
+ "caveats_ko": ["수중 카메라 위치가 고정되어 다른 양식장에서는 성능이 다를 수 있음"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "수중 물고기 탐지", "title_en": "Underwater fish detection", "desc_ko": "키프레임 이미지에서 물고기를 탐지하는 YOLO 모델을 학습합니다.", "desc_en": "Train a YOLO model to detect fish in key frames."},
+  {"level": "capstone", "title_ko": "물고기 크기 자동 측정", "title_en": "Automatic fish size measurement", "desc_ko": "체장 선을 예측해 수조 물고기의 평균 크기와 성장 추이를 보여줍니다.", "desc_en": "Predict length lines to show average fish size and growth over time."},
+  {"level": "research", "title_ko": "유영 패턴으로 이상 행동 감지", "title_en": "Abnormal swimming detection", "desc_ko": "추적 결과의 유영 속도·방향 패턴으로 스트레스·질병 신호를 찾는 방법을 연구합니다.", "desc_en": "Find stress or disease signals from swimming speed and direction patterns."}
+ ],
+ "doc_used": true,
+ "uncertain": []
+}

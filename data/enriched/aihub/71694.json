@@ -1,0 +1,29 @@
+{
+ "dataset_id": "71694",
+ "title_en": "Korean SNS multi-turn conversation data",
+ "summary_ko": "SNS 말투로 2~3명이 주고받는 한국어 대화 약 19.6만 세션(발화 약 325만 개)이며, 건강·경제·과학·문화·패션·스포츠 등 주제로 나뉘어 있습니다. SNS 말투를 이해하고 답하는 챗봇이나 대화 상태 추적(DST) AI에 쓸 수 있습니다.",
+ "summary_en": "About 196,000 Korean SNS-style conversations between 2-3 people (about 3.25 million utterances) on topics such as health, economy, science, culture, fashion and sports. For chatbots and dialogue state tracking that understand SNS style.",
+ "contents_ko": "대화 원문(csv) + 질의응답 라벨 대화(JSON).",
+ "contents_en": "Raw conversation (csv) + labelled conversation with question-answer tags (JSON).",
+ "modalities": ["text"],
+ "tasks": ["dialogue", "text_generation", "text_classification"],
+ "topics": [{"ko": "챗봇·대화", "en": "Chatbots and conversation"}, {"ko": "SNS 언어", "en": "Social media language"}],
+ "keywords_ko": ["SNS 대화", "멀티턴", "챗봇", "대화 상태 추적", "구어체", "대화 생성"],
+ "keywords_en": ["SNS chat", "multi-turn", "chatbot", "dialogue state tracking", "informal language", "dialogue generation"],
+ "labels": ["question-answer"],
+ "file_formats": ["csv", "json"],
+ "scale_ko": "대화 세션 196,235개, 발화 3,246,886개",
+ "classes_example": ["건강 및 식음료", "경제 및 사회", "과학 기술", "문화 생활 및 여가", "미용과 패션", "스포츠 및 e 스포츠"],
+ "baseline": [],
+ "difficulty": "beginner",
+ "difficulty_note_ko": "전체 약 0.5GB 텍스트라 노트북에서도 바로 실습할 수 있습니다.",
+ "skills_needed_ko": ["파이썬", "Hugging Face", "언어 모델 미세조정"],
+ "caveats_ko": ["직접 만든(자체 제작) 대화라 실제 SNS와 다를 수 있음", "성능 지표가 팩 앞부분에 없음"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "대화 주제 분류", "title_en": "Conversation topic classification", "desc_ko": "대화 내용을 보고 어떤 주제인지 분류합니다.", "desc_en": "Classify the topic of a conversation."},
+  {"level": "capstone", "title_ko": "SNS 말투 챗봇", "title_en": "SNS-style chatbot", "desc_ko": "작은 언어 모델을 미세조정해 SNS 말투로 답하는 챗봇을 만듭니다.", "desc_en": "Fine-tune a small language model to reply in SNS style."},
+  {"level": "research", "title_ko": "3인 대화 상태 추적", "title_en": "Three-party dialogue state tracking", "desc_ko": "세 명이 대화할 때 누가 무엇을 원하는지 추적하는 방법을 연구합니다.", "desc_en": "Study tracking each speaker's goals in three-party chats."}
+ ],
+ "doc_used": true,
+ "uncertain": []
+}

@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71260",
+ "easy_ko": "여행, 음식, 게임, 스포츠, 의료 같은 여러 분야에서 영어 단어가 섞인 한국어 대화를 녹음하고, 그 말을 받아 적은 글을 짝지은 데이터입니다. '미팅 스케줄 체크해 줘'처럼 한국어와 영어가 섞인 말을 알아듣는 음성 인식을 만들 수 있습니다.",
+ "easy_en": "Recordings of Korean conversations mixed with English words in fields such as travel, food, games, sports and medicine, paired with transcripts. You can build speech recognition that understands Korean speech mixed with English, like 'check my meeting schedule' said half in English.",
+ "detail_ko": "15개 분야(여행, 음식, 엔터테인먼트, 게임, 스포츠/건강, 의료/의학, 패션 등)의 한영 혼합 발화 음성 약 1.4만 시간(pcm)과 JSON(전사, 분야)으로 구성됩니다. 기준 성능은 Transformer 음성 인식 CER 9.87%, WER 11.01%입니다. 전체 약 736GB이며, pcm 원시 음성이라 샘플링 정보 확인이 필요하고, 대본을 읽은 발화라 자연 대화와 다를 수 있습니다.",
+ "detail_en": "About 14k hours of Korean speech mixed with English (pcm) across 15 fields (travel, food, entertainment, games, sports and health, medicine, fashion and more), with JSON transcripts and topic. Baselines: Transformer speech recognition CER 9.87%, WER 11.01%. Total size is about 736 GB; raw pcm audio needs its sampling details checked; read speech may differ from natural conversation.",
+ "amount_ko": "음성 약 1.4만 시간, 분야 15개",
+ "amount_en": "about 14k hours of speech, 15 fields",
+ "labels_ko": "말소리를 받아 적은 글(전사), 분야",
+ "labels_en": "transcripts, topic",
+ "status": "full-run-2026-11-02"
+}

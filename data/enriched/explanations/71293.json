@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71293",
+ "easy_ko": "항구와 강물 속에서 찍은 사진마다 낚시 미끼, 낚시추, 유리병, 캔, 페트병, 장갑, 옷, 고철, 마스크 같은 물속 쓰레기의 영역을 칠해 둔 데이터입니다. 물속 쓰레기를 찾아 치우는 로봇이나 수중 쓰레기 감시 AI를 만들 수 있습니다.",
+ "easy_en": "Underwater photos from ports and rivers with rubbish such as fishing lures, sinkers, glass bottles, cans, PET bottles, gloves, clothes, scrap metal and face masks coloured in. You can build robots that find and collect underwater rubbish, or AI that monitors it.",
+ "detail_ko": "부산항·울산항·평택항·한강·낙동강·거제·사천 7곳의 수중에서 촬영한 이미지 약 74만 장(png)에 쓰레기 10종(루어, 낚시추, 유리병, 음료수 캔, 통조림 캔, 페트병, 장갑, 의류, 고철, 마스크) 객체 약 82만 개의 분할 영역과 수집 지역을 JSON으로 붙였습니다. 성능 지표 표는 비어 있습니다. 전체 약 837GB이며, 물이 탁해 화질이 낮고, 데이터 영역이 '한국어'로 잘못 표기되어 있습니다.",
+ "detail_en": "About 740k underwater images (png) from 7 sites (Busan, Ulsan and Pyeongtaek ports, Han and Nakdong rivers, Geoje, Sacheon), with JSON segmentation for about 820k waste objects in 10 classes (lure, sinker, glass bottle, drink can, food can, PET bottle, glove, clothing, scrap metal, mask) and collection site. The performance table is empty. Total size is about 837 GB; murky water lowers image quality; the data field is wrongly listed as Korean language.",
+ "amount_ko": "물속 사진 약 74만 장, 쓰레기 약 82만 개, 10종",
+ "amount_en": "about 740k underwater images, about 820k waste objects, 10 types",
+ "labels_ko": "쓰레기 영역(색칠), 쓰레기 종류, 찍은 장소",
+ "labels_en": "waste masks, waste class, collection site",
+ "status": "full-run-2026-11-02"
+}

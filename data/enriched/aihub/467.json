@@ -1,0 +1,29 @@
+{
+ "dataset_id": "467",
+ "title_en": "Video narrative question answering data",
+ "summary_ko": "MBN 보도·시사·교양·예능과 프로야구·프로배구 영상 3.8만 개에 영상 요약문과 질문-답을 붙인 데이터입니다. 생활안전·산업안전·자연재해·스포츠·건강 등 카테고리가 있어 영상 내용을 요약하거나 영상에 대한 질문에 답하는 AI에 쓸 수 있습니다.",
+ "summary_en": "38,000 videos from MBN news, current affairs, culture and entertainment plus pro baseball and volleyball, each with a summary and question-answer pairs. Categories such as everyday safety, industrial safety, natural disasters, sports and health support AI that summarises videos or answers questions about them.",
+ "contents_ko": "영상(mp4) + JSON(영상 요약문, 질문-답 쌍, 카테고리, 일부 대본 텍스트).",
+ "contents_en": "Video (mp4) + JSON (summary, question-answer pairs, category, some scripts).",
+ "modalities": ["video", "text"],
+ "tasks": ["visual_qa", "summarization", "image_captioning"],
+ "topics": [{"ko": "방송·미디어", "en": "Broadcasting and media"}, {"ko": "스포츠", "en": "Sports"}, {"ko": "재난·안전", "en": "Disaster and safety"}],
+ "keywords_ko": ["비디오 질의응답", "영상 요약", "영상 이해", "야구", "배구", "보도 영상"],
+ "keywords_en": ["video QA", "video summarisation", "video understanding", "baseball", "volleyball", "news video"],
+ "labels": ["video summary", "QA pairs", "category"],
+ "file_formats": ["mp4", "json"],
+ "scale_ko": "원천 영상 38,467개(예능교양 49.6%, 생활안전 30.4%, 스포츠 20%)",
+ "classes_example": ["사고발생", "산업안전", "자연재해", "치안안전", "배구", "야구", "건강", "다큐"],
+ "baseline": [],
+ "difficulty": "advanced",
+ "difficulty_note_ko": "영상과 한국어 텍스트를 함께 다루는 멀티모달 모델이 필요합니다. 약 158GB입니다.",
+ "skills_needed_ko": ["파이썬", "비디오-언어 모델", "한국어 텍스트 처리"],
+ "caveats_ko": ["방송·스포츠 영상 이용 조건 확인 필요", "라벨링 데이터 수가 '20개'로 이상하게 적혀 있음"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "카테고리별 질문 유형 분석", "title_en": "Question types by category", "desc_ko": "카테고리마다 어떤 질문이 많은지 집계합니다.", "desc_en": "Count which questions are common in each category."},
+  {"level": "capstone", "title_ko": "경기 영상 하이라이트 요약", "title_en": "Sports video summariser", "desc_ko": "야구·배구 영상의 요약문을 생성하는 데모를 만듭니다.", "desc_en": "Generate summaries for baseball and volleyball videos."},
+  {"level": "research", "title_ko": "대본 유무에 따른 영상 QA", "title_en": "Video QA with and without scripts", "desc_ko": "대본 텍스트가 있을 때와 없을 때 질의응답 성능 차이를 연구합니다.", "desc_en": "Study QA performance with and without scripts."}
+ ],
+ "doc_used": true,
+ "uncertain": ["라벨링 데이터 수 표기(20개)가 이상함"]
+}

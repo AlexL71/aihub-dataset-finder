@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71464",
+ "easy_ko": "한국인이 중국어와 일본어로 말한 목소리 1,019시간에 받아쓴 글과 말하기 수준 평가를 붙인 데이터입니다. 중국어와 일본어 발음, 말하기를 자동으로 채점하는 교육용 AI에 쓸 수 있습니다.",
+ "easy_en": "1,019 hours of Korean learners speaking Chinese and Japanese, with written transcripts and ratings of each speaker's level. You can use it to build educational AI that scores Chinese and Japanese pronunciation and speaking automatically.",
+ "detail_ko": "한국인 학습자의 중국어·일본어 발화 음성 1,019시간(wav)에 전사, 학습자 수준·평가, 언어학적 태깅을 JSON으로 붙였고, 말하기 문항 주제는 10종입니다. 기준 성능은 음성 인식 RNN-Transducer CER 중국어 6%, 일본어 4.2%, 발음 평가 wav2vec 2.0 + MLP 피어슨 상관 중국어 0.73, 일본어 0.62입니다. 언어별 시간 비율은 팩 앞부분에 없고, 일본어 발음 평가 성능이 중국어보다 낮습니다. 영어 버전(71463)과 같은 구조입니다.",
+ "detail_en": "1,019 hours of Chinese and Japanese speech (wav) by Korean learners, with JSON transcripts, learner level and ratings, and linguistic tags, across 10 speaking topics. Baselines: speech recognition with RNN-Transducer, CER 6% (Chinese) and 4.2% (Japanese); pronunciation assessment with wav2vec 2.0 + MLP, Pearson correlation 0.73 (Chinese) and 0.62 (Japanese). The split of hours by language is not in the pack, and Japanese pronunciation scoring is weaker than Chinese. It has the same structure as the English version (71463).",
+ "amount_ko": "음성 1,019시간(중국어·일본어), 주제 10종",
+ "amount_en": "1,019 hours of speech (Chinese, Japanese), 10 topics",
+ "labels_ko": "받아쓴 글, 말하기 수준 평가, 언어 분석 표시",
+ "labels_en": "transcripts, proficiency ratings, linguistic tags",
+ "status": "full-run-2026-11-02"
+}

@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71795",
+ "easy_ko": "국회 회의록 1만여 건에서 의원들의 발언을 질문과 답으로 나누어 만든 질문-답 4만여 쌍과 요약을 모은 데이터입니다. 국회 회의록을 바탕으로 답하는 챗봇이나 입법 지원, 정책 검색 AI에 쓸 수 있습니다.",
+ "easy_en": "Over 44,000 question-answer pairs and summaries made by splitting remarks from over 10,000 National Assembly meeting records into questions and answers. You can use it to build chatbots that answer from Assembly records, or AI for legislative support and policy search.",
+ "detail_ko": "국회 회의록 11,827건(txt)에서 발언을 질문과 답변으로 나누어 만든 질의응답 쌍 44,033건과 요약(JSON)입니다. 정치적 발언이 포함되어 있어 답변 편향에 주의해야 하고, 발언자 이름 등 공개 정보 처리 방식을 확인해야 하며, 성능 지표 값은 팩에 없습니다.",
+ "detail_en": "44,033 question-answer pairs and summaries (JSON) made by splitting remarks in 11,827 National Assembly minutes (txt) into questions and answers. The remarks are political, so watch for biased answers; check how speaker names and other public information are handled; no metric values are in the pack.",
+ "amount_ko": "회의록 11,827건, 질의응답 쌍 44,033건",
+ "amount_en": "11,827 meeting records, 44,033 QA pairs",
+ "labels_ko": "질문과 답, 요약",
+ "labels_en": "question-answer pair, summary",
+ "status": "full-run-2026-11-02"
+}

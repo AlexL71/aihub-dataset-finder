@@ -1,0 +1,29 @@
+{
+ "dataset_id": "71846",
+ "title_en": "Naturally occurring asbestos detection data",
+ "summary_ko": "자연발생 석면을 품은 암석·광물과 비교용 암석·광물을 일반 카메라(150,000장), 가시근적외선 초분광(694,620장), 단파적외선 초분광(1,002,240장)으로 찍고, 다각형 영역과 종류를 표시한 데이터입니다. 1급 발암물질인 석면 함유 암석을 현장에서 빠르게 찾는 AI에 쓸 수 있습니다.",
+ "summary_en": "Rocks and minerals with naturally occurring asbestos and comparison samples, imaged by optical camera (150,000), VNIR hyperspectral (694,620) and SWIR hyperspectral (1,002,240), with polygon masks and types. For AI that quickly finds asbestos-bearing rock in the field.",
+ "contents_ko": "광학 이미지(jpg)·초분광 이미지(tif) + JSON(분류, 다각형 분할, 지질도 정보).",
+ "contents_en": "Optical image (jpg) and hyperspectral image (tif) + JSON (class, polygon segmentation, geological map info).",
+ "modalities": ["image"],
+ "tasks": ["image_classification", "segmentation"],
+ "topics": [{"ko": "환경 안전", "en": "Environmental safety"}, {"ko": "지질·광물", "en": "Geology and minerals"}],
+ "keywords_ko": ["석면", "자연발생석면", "초분광", "암석 분류", "광물", "지질도"],
+ "keywords_en": ["asbestos", "naturally occurring asbestos", "hyperspectral", "rock classification", "minerals", "geological map"],
+ "labels": ["polygon", "class"],
+ "file_formats": ["jpg", "tif", "json"],
+ "scale_ko": "총 1,846,860건(광학 150,000·VNIR 694,620·SWIR 1,002,240)",
+ "classes_example": ["사문암", "각섬암", "감람암", "청석면", "갈석면", "백석면", "트레모라이트", "활석"],
+ "baseline": [],
+ "difficulty": "advanced",
+ "difficulty_note_ko": "약 97GB이고 초분광 tif 이미지를 다루려면 분광 데이터 지식이 필요합니다.",
+ "skills_needed_ko": ["파이썬", "초분광 영상 처리", "ResNet 분류", "DeepLab 분할"],
+ "caveats_ko": ["분포 표의 비율과 수량이 일부 맞지 않아 확인 필요", "품질 점수는 라벨 정확도이며 모델 성능 수치는 팩에 없음", "실험실 시료 촬영이라 야외 노두와 다를 수 있음"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "석면 암석 여부 분류", "title_en": "Asbestos-bearing rock classifier", "desc_ko": "광학 사진으로 석면 함유 가능 암석인지 분류합니다.", "desc_en": "Classify whether a rock photo may contain asbestos."},
+  {"level": "capstone", "title_ko": "석면 광물 분할 도구", "title_en": "Asbestos mineral segmentation", "desc_ko": "시료 사진에서 석면 광물 영역을 칠해 보여 주는 도구를 만듭니다.", "desc_en": "Highlight asbestos mineral areas in sample images."},
+  {"level": "research", "title_ko": "광학+초분광 결합", "title_en": "Optical-hyperspectral fusion", "desc_ko": "초분광 정보를 더하면 석면 판별이 얼마나 좋아지는지 연구합니다.", "desc_en": "Study how hyperspectral bands improve asbestos detection."}
+ ],
+ "doc_used": true,
+ "uncertain": ["광학·초분광 이미지가 같은 시료로 짝지어지는지 확인 필요"]
+}

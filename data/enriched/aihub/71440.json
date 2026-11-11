@@ -1,0 +1,29 @@
+{
+ "dataset_id": "71440",
+ "title_en": "Symbol (logo) generation data",
+ "summary_ko": "특허청 상표 자료에서 모은 로고 이미지 약 58만 장으로, 심볼 마크·캐릭터·콤비네이션 마크·워드마크 4종과 12개 산업군으로 나뉘어 있습니다. 글로 브랜드 콘셉트를 넣으면 로고를 만들어 주는 생성 AI에 쓸 수 있습니다.",
+ "summary_en": "About 580,000 logo images from Korean trademark records, split into symbol marks, characters, combination marks and wordmarks across 12 industries. For generative AI that turns a text brand concept into a logo.",
+ "contents_ko": "로고 이미지(png) + JSON(상자, 로고 종류, 산업군 등 설명).",
+ "contents_en": "Logo image (png) + JSON (box, logo type, industry and other descriptions).",
+ "modalities": ["image", "text"],
+ "tasks": ["image_generation", "image_classification"],
+ "topics": [{"ko": "디자인·브랜딩", "en": "Design and branding"}, {"ko": "소상공인 지원", "en": "Small business support"}],
+ "keywords_ko": ["로고 생성", "상표", "심볼 마크", "워드마크", "GAN", "디자인"],
+ "keywords_en": ["logo generation", "trademark", "symbol mark", "wordmark", "GAN", "design"],
+ "labels": ["bounding box", "logo type", "industry", "text description"],
+ "file_formats": ["png", "json"],
+ "scale_ko": "로고 이미지 583,725장, 로고 종류 4종, 산업군 12개",
+ "classes_example": ["심볼 마크", "캐릭터", "콤비네이션 마크", "워드마크"],
+ "baseline": [{"task": "image generation", "model": "GAN", "metric": "FID (lower is better)", "value": "62.14"}],
+ "difficulty": "advanced",
+ "difficulty_note_ko": "로고 분류는 쉽지만 글에서 로고를 만드는 생성 모델은 학습이 어렵고 GPU가 많이 듭니다.",
+ "skills_needed_ko": ["파이썬", "생성 모델(GAN·확산 모델)", "이미지 처리"],
+ "caveats_ko": ["원천은 상표 데이터라 생성 결과의 상표권 문제를 주의해야 함", "전체 약 57GB", "로고 종류별 수량 차이가 있음(심볼 마크 약 21만, 캐릭터 약 11만)"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "로고 종류 분류", "title_en": "Logo type classification", "desc_ko": "로고가 심볼·캐릭터·워드마크 중 무엇인지 분류합니다.", "desc_en": "Classify a logo as symbol, character, combination or wordmark."},
+  {"level": "capstone", "title_ko": "소상공인 로고 초안 생성기", "title_en": "Logo draft generator for small shops", "desc_ko": "업종과 키워드를 넣으면 로고 초안 여러 개를 만들어 주는 웹을 만듭니다.", "desc_en": "Web app that drafts several logos from industry and keywords."},
+  {"level": "research", "title_ko": "상표 유사도 검사", "title_en": "Trademark similarity check", "desc_ko": "생성된 로고가 기존 상표와 너무 비슷한지 판단하는 방법을 연구합니다.", "desc_en": "Detect whether a generated logo is too close to existing marks."}
+ ],
+ "doc_used": true,
+ "uncertain": ["JSON의 텍스트 설명 필드 구성", "상자가 무엇을 표시하는지(로고 영역 또는 요소)"]
+}

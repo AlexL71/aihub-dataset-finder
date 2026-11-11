@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71600",
+ "easy_ko": "지리산 국립공원의 탐방로와 주요 명소를 찍은 사진, 파노라마 사진, 레이저 스캔, 지형 자료, 입체 모형을 모은 데이터입니다. 사진 속 물체가 표시되어 있어 자연 관광지 사진 인식이나 가상 산악 관광(디지털 트윈, 메타버스)에 쓸 수 있습니다.",
+ "easy_en": "Photos, panoramas, laser scans, terrain data and three-dimensional models of the trails and main sights of Jirisan National Park. Objects in the photos are marked, so you can use it to recognise nature-site images or for virtual mountain tourism (digital twins, the metaverse).",
+ "detail_ko": "지리산국립공원 탐방로와 주요 POI를 찍은 학습용 이미지 약 210,000장, 탐방로 RGB 이미지 357,010장, 파노라마 508,344장(jpg)과 라이다 점군 10식(las/pcd), 정사영상·수치표고모델(geotiff), 3D 모델 30개(obj)로, 이미지에는 상자(JSON), 점군에는 분할이 있습니다. 기준 성능은 Faster R-CNN 2D 객체 탐지 mAP 72.21%, ResNet + YOLOv3 객체 탐지 mAP 79.7%, ConvPoint 점군 분할 mIoU 78.85%입니다. 지리산 한 곳만 대상이고, 탐지 클래스 목록은 팩 앞부분에 없습니다. 71596(관광명소)과 같은 기관·구성입니다.",
+ "detail_en": "About 210,000 training images, 357,010 trail RGB images and 508,344 panoramas (jpg) of trails and main POIs in Jirisan National Park, plus 10 lidar point-cloud sets (las/pcd), orthophotos and a digital elevation model (geotiff) and 30 3D models (obj), with JSON boxes for images and segmentation for point clouds. Baselines: 2D object detection with Faster R-CNN, mAP 72.21%; detection with ResNet + YOLOv3, mAP 79.7%; point-cloud segmentation with ConvPoint, mIoU 78.85%. Only Jirisan is covered, and the detection class list is not in the pack. Same builder and layout as 71596 (attractions).",
+ "amount_ko": "학습용 이미지 약 210,000장, 탐방로 이미지 357,010장, 파노라마 508,344장, 점군 10식, 3D 모델 30개",
+ "amount_en": "about 210,000 training images, 357,010 trail images, 508,344 panoramas, 10 point-cloud sets, 30 3D models",
+ "labels_ko": "사진 속 물체 위치 상자, 레이저 점 영역",
+ "labels_en": "bounding boxes, point-cloud segmentation",
+ "status": "full-run-2026-11-02"
+}

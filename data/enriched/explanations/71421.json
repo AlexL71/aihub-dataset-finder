@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71421",
+ "easy_ko": "스마트폰, 태블릿, 노트북, 차량 화면, 모니터를 보는 사람의 눈을 찍은 사진에 눈 영역과 주요 점, 보는 방향, 집중·졸림·딴짓 같은 상태를 표시한 데이터입니다. 사람이 어디를 보는지 알아내거나 졸음과 집중도를 판단하는 AI를 만들 수 있습니다.",
+ "easy_en": "Images of people's eyes as they look at smartphones, tablets, laptops, car screens and monitors, with eye areas, key points, gaze direction and states such as focused, drowsy or distracted marked. You can build AI that tracks where someone is looking or judges drowsiness and attention.",
+ "detail_ko": "디스플레이 5종(스마트폰, 태블릿, 노트북, 차량 LCD, 모니터)을 바라보는 사람의 눈 영상 87,740건에서 뽑은 이미지 2,558,104장(png, RGB·IR; 기기별 촬영 인원 150명)에 눈 키포인트, 분할 영역, 시선, 관찰자 상태(집중, 졸림, 집중결핍, 집중하락, 태만)와 자세를 JSON으로 붙였습니다. 기준 성능은 L2CS-Net 시선 추정 MAE 4.6도, RITnet 눈 영역 분할 mIoU 80%, Former-DFER 상태 분류 WAR 71.32%입니다. 전체 약 4.8TB이며, 얼굴·눈 사진이라 개인정보 이용 조건을 꼭 확인해야 하고, 같은 사람 영상에서 많은 프레임을 뽑았으므로 사람 단위로 나눠야 합니다.",
+ "detail_en": "2,558,104 eye images (png, RGB and IR) from 87,740 videos of people looking at 5 display types (smartphone, tablet, laptop, car LCD, monitor; 150 people per device), with JSON eye keypoints, segmentation, gaze, viewer state (focused, drowsy, attention deficit, declining attention, negligent) and posture. Baselines: L2CS-Net gaze MAE 4.6 degrees, RITnet eye segmentation mIoU 80%, Former-DFER state classification WAR 71.32%. Total size is about 4.8 TB; face and eye images need privacy checks; many frames come from each person, so split by person.",
+ "amount_ko": "눈 사진 약 256만 장, 화면 종류 5종",
+ "amount_en": "about 2.56M eye images, 5 display types",
+ "labels_ko": "눈 주요 점·영역, 보는 방향, 집중·졸림 등 상태",
+ "labels_en": "eye key points and masks, gaze, viewer state",
+ "status": "full-run-2026-11-02"
+}

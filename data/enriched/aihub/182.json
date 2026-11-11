@@ -1,0 +1,29 @@
+{
+ "dataset_id": "182",
+ "title_en": "Drone moving-object recognition images (top-down view)",
+ "summary_ko": "드론이 위에서 아래로 내려다보며 찍은 영상 300시간 이상과 가공 이미지 90만 장으로, 교차로 교통분석·조난자 수색·드론 택시 3가지 서비스 상황의 차량·사람 같은 이동체가 표시되어 있습니다. 드론으로 교통량을 세거나 실종자를 찾는 AI에 쓸 수 있습니다.",
+ "summary_en": "300+ hours of top-down drone video and 900,000 annotated images from 3 service scenarios (intersection traffic analysis, search for missing persons, drone taxis), with moving objects such as vehicles and people labelled. For drone AI that counts traffic or finds missing people.",
+ "contents_ko": "드론 영상(mp4) + 이미지(jpg) + JSON(이동체 상자, 클래스, 서비스 구분).",
+ "contents_en": "Drone video (mp4) + images (jpg) + JSON (moving-object boxes, class, scenario).",
+ "modalities": ["image", "video"],
+ "tasks": ["object_detection", "object_tracking"],
+ "topics": [{"ko": "드론", "en": "Drones"}, {"ko": "교통·도로", "en": "Traffic and roads"}, {"ko": "수색·구조", "en": "Search and rescue"}],
+ "keywords_ko": ["드론", "항공 시점", "교차로", "조난자 수색", "드론 택시", "이동체 탐지"],
+ "keywords_en": ["drone", "aerial view", "intersection", "search and rescue", "drone taxi", "moving-object detection"],
+ "labels": ["bounding box", "class", "scenario"],
+ "file_formats": ["mp4", "jpg", "json"],
+ "scale_ko": "원시 영상 300시간 이상, 가공 이미지 약 90만~100만 장(서비스 3종 각 30만 장 이상)",
+ "classes_example": ["교차로 교통분석", "조난자 수색", "드론 택시"],
+ "baseline": [],
+ "difficulty": "intermediate",
+ "difficulty_note_ko": "위에서 본 작은 물체 탐지라 일반 탐지보다 어렵습니다. 전체 약 1.9TB입니다.",
+ "skills_needed_ko": ["파이썬", "YOLO 탐지(작은 물체)", "영상 추적"],
+ "caveats_ko": ["전체 약 1.9TB", "성능 지표가 팩에서 잘림"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "드론 사진 차량 세기", "title_en": "Count cars in drone images", "desc_ko": "교차로 드론 사진에서 차량을 탐지해 수를 셉니다.", "desc_en": "Detect and count vehicles in intersection drone images."},
+  {"level": "capstone", "title_ko": "실종자 수색 보조 도구", "title_en": "Search-and-rescue helper", "desc_ko": "산·들판 드론 영상에서 사람을 찾아 위치를 표시하는 도구를 만듭니다.", "desc_en": "Find people in drone footage of hills and fields and mark them."},
+  {"level": "research", "title_ko": "고도에 따른 탐지 성능", "title_en": "Detection versus flight altitude", "desc_ko": "드론 고도에 따라 작은 사람·차량 탐지 성능이 어떻게 변하는지 분석합니다.", "desc_en": "Analyse how detection of small people and cars changes with altitude."}
+ ],
+ "doc_used": true,
+ "uncertain": []
+}

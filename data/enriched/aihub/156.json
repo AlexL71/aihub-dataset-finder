@@ -1,0 +1,29 @@
+{
+ "dataset_id": "156",
+ "title_en": "Drone images for detecting Jeju winter crops",
+ "summary_ko": "제주의 월동무·배추·마늘·양파·당근·브로콜리 6종 재배지를 드론과 항공기로 찍고 작물별로 칠한 이미지 150만 장입니다. 작물별 재배 면적을 자동으로 계산해 수급 조절과 생산량 예측에 쓰는 AI를 만들 수 있습니다.",
+ "summary_en": "1.5 million drone and aerial images of Jeju fields growing 6 winter crops (winter radish, cabbage, garlic, onion, carrot, broccoli), with each crop painted. For AI that calculates crop area automatically for supply planning and yield forecasting.",
+ "contents_ko": "정사영상 타일 이미지 + 분할 라벨(작물 6종 + 배경).",
+ "contents_en": "Orthophoto tiles + segmentation labels (6 crops + background).",
+ "modalities": ["image"],
+ "tasks": ["segmentation"],
+ "topics": [{"ko": "농업·스마트팜", "en": "Agriculture and smart farming"}, {"ko": "드론·원격탐사", "en": "Drones and remote sensing"}, {"ko": "제주 지역", "en": "Jeju region"}],
+ "keywords_ko": ["드론", "정사영상", "월동작물", "재배면적", "제주", "작물 분할"],
+ "keywords_en": ["drone", "orthophoto", "winter crops", "crop area", "Jeju", "crop segmentation"],
+ "labels": ["segmentation mask (6 crops + background)"],
+ "file_formats": ["png", "json"],
+ "scale_ko": "학습 이미지 150만 장(2018 항공 10.6만, 2019 드론 10.6만, 2020 드론 128.9만), 작업 블록 10,098개",
+ "classes_example": ["월동무", "배추", "마늘", "양파", "당근", "브로콜리"],
+ "baseline": [{"task": "winter crop segmentation", "model": "DeepLab V3+ (ResNet101)", "metric": "mIoU", "value": "82.95%"}],
+ "difficulty": "beginner",
+ "difficulty_note_ko": "클래스가 7개로 단순하고 약 137GB라 분할 실습에 좋습니다.",
+ "skills_needed_ko": ["파이썬", "이미지 분할 모델(U-Net, DeepLab)"],
+ "caveats_ko": ["제주 지역 작물만 포함", "파일 형식은 팩에서 확인하지 못해 추정"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "월동작물 분할", "title_en": "Winter crop segmentation", "desc_ko": "드론 사진에서 6개 작물을 칠하는 분할 모델을 학습합니다.", "desc_en": "Train a model that paints the 6 crops."},
+  {"level": "capstone", "title_ko": "제주 작물 재배면적 지도", "title_en": "Jeju crop area map", "desc_ko": "분할 결과로 읍·면별 작물 재배 면적을 계산해 지도로 보여줍니다.", "desc_en": "Compute crop area by town and map it."},
+  {"level": "research", "title_ko": "연도 간 작물 변화 탐지", "title_en": "Year-to-year crop change", "desc_ko": "2019·2020년 영상으로 재배 작물 변화를 탐지하고 수급 예측에 활용하는 방법을 연구합니다.", "desc_en": "Detect crop changes between years and use them for supply forecasting."}
+ ],
+ "doc_used": true,
+ "uncertain": ["파일 형식이 팩에 명시되지 않음"]
+}

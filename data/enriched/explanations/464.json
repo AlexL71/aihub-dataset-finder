@@ -1,0 +1,12 @@
+{
+ "dataset_id": "464",
+ "easy_ko": "토론 방송, 독서 모임, 온라인 회의, 의회 회의, 팟캐스트처럼 세 명 이상이 나누는 회의 대화를 녹음하고, 말을 받아 적은 글과 누가 언제 말했는지를 표시한 데이터입니다. 회의록을 자동으로 써 주거나 회의 자막을 다는 AI를 만들 수 있습니다.",
+ "easy_en": "Recordings of meetings with three or more people, such as TV debates, book clubs, online meetings, council sessions and podcasts, with transcripts and who spoke when. You can build AI that writes meeting minutes or adds subtitles to meetings automatically.",
+ "detail_ko": "시사토론·독서모임·온라인 회의·의회 녹취·팟캐스트 등 10개 카테고리의 3인 이상 회의 음성 7,000시간(wav)과 JSON(전사, 화자, 발화 구간, 억양구 경계, 비식별 표시, 카테고리)으로 구성됩니다. 기준 성능은 기록에서 확인되지 않습니다. 의회·방송 자료가 포함되어 이용 조건 확인이 필요합니다.",
+ "detail_en": "7,000 hours of meeting speech (wav) with three or more speakers across 10 categories (current-affairs debates, book clubs, online meetings, council records, podcasts and more), with JSON transcripts, speaker, segments, intonation-phrase boundaries, de-identification marks and category. No baseline is visible in the record. Council and broadcast material is included, so check the usage terms.",
+ "amount_ko": "음성 7,000시간, 회의 분야 10개",
+ "amount_en": "7,000 hours of speech, 10 categories",
+ "labels_ko": "말소리를 받아 적은 글(전사), 말한 사람과 시간, 억양 끊김 표시",
+ "labels_en": "transcripts, speaker turns and timing, intonation boundaries",
+ "status": "full-run-2026-11-02"
+}

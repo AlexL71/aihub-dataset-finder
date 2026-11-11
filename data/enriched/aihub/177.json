@@ -1,0 +1,29 @@
+{
+ "dataset_id": "177",
+ "title_en": "Foreign object detection on airport runways",
+ "summary_ko": "공항 활주로와 주변에서 찍은 이미지 200만 장 이상으로, 항공기·지상 조업 차량·화물·공구 상자·새·고라니 같은 동물·작업자 등 이상 물체 상자 600만 개 이상이 표시되어 있습니다. 항공기 이착륙 사고를 막는 활주로 이상물체 감지 AI에 쓸 수 있습니다.",
+ "summary_en": "2+ million images of airport runways and surroundings with 6+ million boxes for aircraft, ground vehicles, cargo, tool boxes, birds, animals such as water deer, and workers. For runway foreign-object detection that helps prevent take-off and landing accidents.",
+ "contents_ko": "활주로 이미지(jpg) + JSON(물체 상자, 다각형, 키포인트, 클래스).",
+ "contents_en": "Runway image (jpg) + JSON (object boxes, polygons, keypoints, class).",
+ "modalities": ["image"],
+ "tasks": ["object_detection", "segmentation", "keypoint_pose"],
+ "topics": [{"ko": "항공·공항", "en": "Aviation and airports"}, {"ko": "교통 안전", "en": "Transport safety"}, {"ko": "야생동물", "en": "Wildlife"}],
+ "keywords_ko": ["활주로", "이상물체", "FOD", "항공기", "조류 충돌", "공항 안전"],
+ "keywords_en": ["runway", "foreign object", "FOD", "aircraft", "bird strike", "airport safety"],
+ "labels": ["bounding box", "polygon", "keypoints"],
+ "file_formats": ["jpg", "json"],
+ "scale_ko": "이미지 200만 장 이상, 상자 약 1,740만 개(가공 기준), 다각형 33.9만, 키포인트 12만",
+ "classes_example": ["민간항공기", "군용기", "회전익", "지상 조업차량", "화물", "비둘기", "사람"],
+ "baseline": [{"task": "runway object detection", "model": "YOLO (416×416)", "metric": "mAP", "value": "55.91%"}],
+ "difficulty": "intermediate",
+ "difficulty_note_ko": "탐지 실습에 좋지만 작은 물체(새·공구)가 많아 쉽지 않고 전체 약 970GB입니다.",
+ "skills_needed_ko": ["파이썬", "YOLO 탐지(작은 물체)"],
+ "caveats_ko": ["전체 약 970GB", "상자 수가 표마다 600만·1,740만으로 다르게 적혀 있음"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "활주로 위 물체 탐지", "title_en": "Runway object detection", "desc_ko": "항공기·차량·사람을 탐지하는 YOLO 모델을 학습합니다.", "desc_en": "Train a YOLO model for aircraft, vehicles and people."},
+  {"level": "capstone", "title_ko": "활주로 이상물체 경보", "title_en": "Runway FOD alarm", "desc_ko": "활주로에 공구·동물이 나타나면 관제사에게 알리는 데모를 만듭니다.", "desc_en": "Alert controllers when tools or animals appear on the runway."},
+  {"level": "research", "title_ko": "작은 이상물체 탐지 개선", "title_en": "Better small-object detection", "desc_ko": "새·공구처럼 작은 물체의 탐지 성능을 높이는 방법을 비교합니다.", "desc_en": "Compare methods for detecting small objects such as birds and tools."}
+ ],
+ "doc_used": true,
+ "uncertain": ["상자 수가 표에 따라 다르게 적혀 있음"]
+}

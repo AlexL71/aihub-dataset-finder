@@ -1,0 +1,29 @@
+{
+ "dataset_id": "585",
+ "title_en": "Urban sound data",
+ "summary_ko": "도시에서 직접 녹음한 소리 약 7.4만 건(약 485시간)을 교통(경적·사이렌·오토바이·비행기·열차)·생활(발소리·청소기·개·고양이)·사업장(공사장·공장) 소음 24종으로 분류한 데이터입니다. 소음 종류를 실시간으로 알아내는 AI에 쓸 수 있습니다.",
+ "summary_en": "About 74,000 sound clips (about 485 hours) recorded in cities, sorted into 24 noise classes: traffic (horns, sirens, motorbikes, aircraft, trains), daily life (footsteps, vacuum cleaners, dogs, cats) and work sites (construction, factories). For AI that recognises noise types in real time.",
+ "contents_ko": "소리 파일(wav) + JSON(대·중·소분류).",
+ "contents_en": "Audio clips (wav) + JSON (3-level noise class).",
+ "modalities": ["audio"],
+ "tasks": ["audio_classification"],
+ "topics": [{"ko": "소음·음향", "en": "Noise and acoustics"}, {"ko": "도시 환경", "en": "Urban environment"}],
+ "keywords_ko": ["도시 소음", "소리 분류", "층간소음", "교통 소음", "공사장 소음"],
+ "keywords_en": ["urban noise", "sound classification", "floor noise", "traffic noise", "construction noise"],
+ "labels": ["sound class (3 levels)"],
+ "file_formats": ["wav", "json"],
+ "scale_ko": "소리 약 7.4만 건, 약 485시간, 소분류 24종",
+ "classes_example": ["경적", "사이렌", "비행기", "발소리", "청소기", "개", "항타기"],
+ "baseline": [{"task": "noise classification", "model": "CapsNet", "metric": "F1", "value": "0.97"}],
+ "difficulty": "beginner",
+ "difficulty_note_ko": "약 116GB지만 클래스별로 나눠 받을 수 있고 소리 분류 입문에 좋습니다.",
+ "skills_needed_ko": ["파이썬", "오디오 특징(MFCC·스펙트로그램)", "CNN 분류"],
+ "caveats_ko": ["전체 약 116GB", "568번 소음 환경 음성 데이터와 소음 종류가 겹침"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "도시 소리 분류기", "title_en": "Urban sound classifier", "desc_ko": "스펙트로그램으로 24가지 소리를 분류합니다.", "desc_en": "Classify 24 sounds from spectrograms."},
+  {"level": "capstone", "title_ko": "층간소음 기록 앱", "title_en": "Floor-noise logger app", "desc_ko": "발소리·가구 소리를 감지해 시간별로 기록하는 앱을 만듭니다.", "desc_en": "Detect footsteps and furniture noise and log them by time."},
+  {"level": "research", "title_ko": "가벼운 소리 분류 모델", "title_en": "Lightweight sound model", "desc_ko": "스마트폰·IoT 기기에서 돌아가는 작은 모델을 연구합니다.", "desc_en": "Study small models that run on phones and IoT devices."}
+ ],
+ "doc_used": true,
+ "uncertain": []
+}

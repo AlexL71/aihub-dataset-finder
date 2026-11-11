@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71970",
+ "easy_ko": "베트남과 말레이시아의 IT 제품 설명서와 콜센터 대화 8만 7천여 건을 바탕으로, 대화 의도와 맥락을 표시하고 번역된 질문과 답을 만든 데이터입니다. 여러 언어로 상담하는 챗봇이나 AI 전화 상담에 쓸 수 있습니다.",
+ "easy_en": "IT product manuals and over 87,000 call-centre conversations from Vietnam and Malaysia, with the intent and context of each exchange marked and translated questions and answers added. You can use it to build multilingual customer-service chatbots or AI phone agents.",
+ "detail_ko": "베트남·말레이시아 IT/SW 제품 매뉴얼 21,027건(6,594,838토큰)과 콜센터 대화 86,980건(csv; 턴·역할·발화, 2,020,678문장)을 원천으로, 대화 의도·문맥 분석 라벨 1,000,691건과 이중번역 질의응답(QA)셋(JSON)을 만들었고, 상담 분류는 기능, 앱설명, 설정, 설치법, 사용법입니다. QA셋 수량이 팩 앞부분에서 잘려 있고, '이중번역'에 쓰인 언어 쌍이 팩 앞부분에 분명하지 않으며, 성능 지표 값은 팩 앞부분에 없습니다.",
+ "detail_en": "21,027 Vietnamese and Malaysian IT/software product manuals (6,594,838 tokens) and 86,980 call-centre conversations (csv: turn, role, utterance; 2,020,678 sentences) as sources, with 1,000,691 dialogue intent and context labels and a double-translated question-answer (QA) set (JSON), in categories such as features, app descriptions, settings, installation and usage. The QA set count is cut off in the pack, the language pair used for 'double translation' is unclear, and no metric values are given.",
+ "amount_ko": "매뉴얼 21,027건, 콜센터 대화 86,980건(2,020,678문장), 의도·문맥 라벨 1,000,691건",
+ "amount_en": "21,027 manuals, 86,980 call-centre conversations (2,020,678 sentences), 1,000,691 intent/context labels",
+ "labels_ko": "대화 의도, 맥락, 번역된 질문과 답",
+ "labels_en": "dialogue intent, context, translated question-answer",
+ "status": "full-run-2026-11-02"
+}

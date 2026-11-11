@@ -1,0 +1,29 @@
+{
+ "dataset_id": "71562",
+ "title_en": "Story data from various cultural content",
+ "summary_ko": "영화·드라마·소설·만화 등 3,953편의 줄거리를 서사 단위 10만 개로 나누고, 장르·주제·설정·모티프·인물·서사단계·감정·장소 같은 이야기 요소를 표시한 텍스트 데이터입니다. 작가를 돕는 스토리 추천·자동 생성 AI에 쓸 수 있습니다.",
+ "summary_en": "Plots of 3,953 films, dramas, novels and comics split into about 100,000 story units, labelled with genre, theme, setting, motif, characters, narrative stage, emotion and place. For story recommendation and generation tools for writers.",
+ "contents_ko": "JSON(작품 줄거리, 스토리 유닛, 장르·주제·모티프·감정·서사단계 라벨, 지문·대사 분석).",
+ "contents_en": "JSON (plot summary, story units, genre/theme/motif/emotion/narrative-stage labels, script line analysis).",
+ "modalities": ["text"],
+ "tasks": ["text_generation", "text_classification", "retrieval_recommendation"],
+ "topics": [{"ko": "스토리·창작", "en": "Storytelling and writing"}, {"ko": "문화콘텐츠", "en": "Cultural content"}],
+ "keywords_ko": ["스토리", "줄거리", "서사구조", "모티프", "창작 지원", "시나리오"],
+ "keywords_en": ["story", "plot", "narrative structure", "motif", "writing assistant", "screenplay"],
+ "labels": ["summary", "sequence labels", "tags (genre, motif, emotion, narrative stage)"],
+ "file_formats": ["json"],
+ "scale_ko": "작품 3,953편, 스토리 유닛 100,077건, 스크립트 분석 1,376,589건(지문 873,462 + 대사 503,127)",
+ "classes_example": ["장르 > SF", "공포(호러)", "드라마", "멜로/로맨스", "미스터리", "스릴러", "액션", "전쟁", "코미디", "판타지"],
+ "baseline": [{"task": "next story unit selection (10 candidates)", "model": "ScriptWriter-CPre", "metric": "R10@1", "value": "0.7"}, {"task": "next story unit selection (2 candidates)", "model": "ScriptWriter-CPre", "metric": "R2@1", "value": "0.93"}],
+ "difficulty": "intermediate",
+ "difficulty_note_ko": "전체 약 0.07GB로 작지만 라벨 구조가 복잡해 먼저 JSON 구조를 파악해야 합니다.",
+ "skills_needed_ko": ["파이썬", "한국어 자연어 처리", "언어 모델 미세조정"],
+ "caveats_ko": ["원작 줄거리를 재창작한 텍스트라 원작 전문은 없음", "페이지에 지문 '873462건'이 쉼표 없이 적혀 있음", "모티프 전체 목록이 팩 앞부분에 없음"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "줄거리 장르 분류", "title_en": "Plot genre classification", "desc_ko": "줄거리 텍스트로 작품의 장르를 분류합니다.", "desc_en": "Classify genre from plot text."},
+  {"level": "capstone", "title_ko": "다음 장면 추천 도구", "title_en": "Next-scene suggestion tool", "desc_ko": "지금까지의 스토리 유닛을 보고 다음 전개 후보를 추천하는 작가 도구를 만듭니다.", "desc_en": "Suggest next plot units to writers from previous units."},
+  {"level": "research", "title_ko": "서사구조 조건 스토리 생성", "title_en": "Structure-conditioned story generation", "desc_ko": "서사단계·모티프를 조건으로 넣어 일관된 줄거리를 생성하는 방법을 연구합니다.", "desc_en": "Generate coherent plots conditioned on narrative stage and motif."}
+ ],
+ "doc_used": true,
+ "uncertain": []
+}

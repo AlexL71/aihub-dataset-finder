@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71758",
+ "easy_ko": "놀이기구와 놀이 시설에서 직접 찍은 영상과 사진 약 664만 건에 시설과 이용자 자세를 표시하고, 위험한 상황과 정상 상황을 나눈 데이터입니다. 놀이 시설 안전사고를 막는 영상 분석 AI에 쓸 수 있습니다.",
+ "easy_en": "About 6.64 million video clips and images filmed at amusement rides and play facilities, marking the equipment and users' body poses and sorting dangerous situations from normal ones. You can use it to build video-analysis AI that helps prevent accidents at play facilities.",
+ "detail_ko": "놀이기구·놀이시설에서 직접 촬영한 영상(mp4, 1920×1080, 약 300~645시간)과 이미지(jpg) 약 6,644,258건에 시설 객체 상자·분할, 이용자 키포인트, 위험·정상 상황 라벨을 JSON으로 붙였습니다. 페이지에 성능 점수 표가 없고(InternImage·위험상황 분류 모델 소개만 있음), 세부 시설·위험 클래스 목록은 팩 앞부분에 없으며, 사람이 찍힌 영상이라 개인정보에 주의해야 합니다.",
+ "detail_en": "About 6,644,258 items: video clips (mp4, 1920×1080, about 300 to 645 hours) and images (jpg) filmed at amusement rides and play facilities, with JSON boxes and segmentation for equipment, user keypoints and danger/normal labels. There is no score table (only InternImage and a danger-classification model are described), the detailed facility and danger classes are not in the pack, and people appear in the footage, so take care with personal data.",
+ "amount_ko": "약 6,644,258건, 영상 약 300~645시간",
+ "amount_en": "about 6,644,258 items, about 300 to 645 hours of video",
+ "labels_ko": "시설 위치 상자와 영역, 이용자 관절 점, 위험·정상 상황",
+ "labels_en": "bounding box, keypoints, segmentation, situation class",
+ "status": "full-run-2026-11-02"
+}

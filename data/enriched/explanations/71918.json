@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71918",
+ "easy_ko": "리튬 이온 배터리가 과열돼 불이 나는 현상(열폭주) 시험에서 찍은 열화상 사진 24만여 장과 전압, 전류, 압력, 온도, 가스 센서 기록에 열폭주 진행 단계를 표시한 데이터입니다. 에너지 저장 장치 화재를 미리 알아채고 단계를 예측하는 AI에 쓸 수 있습니다.",
+ "easy_en": "Over 240,000 thermal images from tests where lithium-ion batteries overheat and catch fire (thermal runaway), with voltage, current, pressure, temperature and gas sensor records, marked with the stage of the runaway. You can use it to build AI that spots energy-storage fires early and predicts how far they have progressed.",
+ "detail_ko": "리튬이온 배터리 6종의 열폭주 시험에서 찍은 열화상 이미지 242,580장(png)과 전압·전류·압력·온도·가스 5종 센서 시계열 242,580세트(JSON)에 열폭주 단계(1~6단계)와 이상 이벤트(예: 가열, 과충전)를 붙였습니다. 페이지에 성능 점수 표가 없고(트랜스포머 기반 멀티모달 분류 모델 소개만 있음), 배터리 종류·용량·충전율·유도 유형 조합별 수량 차이가 크며, 일부 조합(예: 과충전)은 표에 수량이 비어 있습니다.",
+ "detail_en": "242,580 thermal images (png) and 242,580 sets of 5-sensor time series (voltage, current, pressure, temperature, gas; JSON) from thermal-runaway tests on 6 types of lithium-ion battery, with runaway stage (1 to 6) and abnormal events (such as heating, overcharge). There is no score table (only a transformer-based multimodal classifier is described); counts vary widely by battery type, capacity, state of charge and trigger; and some combinations (such as overcharge) have empty counts in the table.",
+ "amount_ko": "열화상 242,580장 + 센서 242,580세트, 열폭주 6단계",
+ "amount_en": "242,580 thermal images + 242,580 sensor sets, 6 runaway stages",
+ "labels_ko": "열폭주 단계, 이상 상황",
+ "labels_en": "runaway stage, anomaly events",
+ "status": "full-run-2026-11-02"
+}

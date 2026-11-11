@@ -1,0 +1,29 @@
+{
+ "dataset_id": "160",
+ "title_en": "CCTV tracking videos (urban railway stations)",
+ "summary_ko": "대전 도시철도 역사 CCTV에서 휠체어 이용자·시각장애인·유모차 이용자·아동 등 교통약자 6종을 여러 카메라에 걸쳐 따라간 영상 500시간 이상입니다. 같은 사람을 추적해 역사 내 교통약자를 돕거나 안전을 지키는 지능형 CCTV에 쓸 수 있습니다.",
+ "summary_en": "500+ hours of CCTV video from Daejeon urban-railway stations following 6 types of mobility-vulnerable people (wheelchair users, blind people, people with strollers, children and others) across cameras. For intelligent CCTV that tracks people to assist and protect them in stations.",
+ "contents_ko": "CCTV 영상(mp4) + JSON/XML(사람 상자, 추적 ID, 대상 종류).",
+ "contents_en": "CCTV video (mp4) + JSON/XML (person boxes, tracking IDs, target type).",
+ "modalities": ["video", "image"],
+ "tasks": ["object_tracking", "object_detection", "retrieval_recommendation"],
+ "topics": [{"ko": "교통약자·접근성", "en": "Mobility-vulnerable people and accessibility"}, {"ko": "CCTV·보안", "en": "CCTV and security"}, {"ko": "대중교통", "en": "Public transport"}],
+ "keywords_ko": ["CCTV", "객체 추적", "도시철도", "휠체어", "시각장애인", "교통약자", "재식별"],
+ "keywords_en": ["CCTV", "object tracking", "urban railway", "wheelchair", "blind people", "vulnerable passengers", "re-identification"],
+ "labels": ["bounding box", "tracking id", "class (6 target types)"],
+ "file_formats": ["mp4", "json", "xml"],
+ "scale_ko": "영상 500시간 이상(휠체어 160h, 시각장애인 80h, 유모차 60h, 아동 110h 등), 6종",
+ "classes_example": ["휠체어", "시각장애인", "유모차 이용자", "아동"],
+ "baseline": [{"task": "multi-object tracking", "model": "YOLOv5 + tracker", "metric": "MOTA", "value": "65.79%"}],
+ "difficulty": "advanced",
+ "difficulty_note_ko": "여러 카메라 추적과 재식별이 필요하고 전체 약 740GB입니다. 단일 카메라 탐지는 중급으로 가능합니다.",
+ "skills_needed_ko": ["파이썬", "객체 탐지·추적(ByteTrack 등)", "재식별 기초"],
+ "caveats_ko": ["재식별 정확도가 10%로 적혀 있어 입력 오류로 보임", "실제 승객 영상이라 이용 약관·개인정보 확인 필요"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "휠체어·유모차 탐지", "title_en": "Detect wheelchairs and strollers", "desc_ko": "CCTV 프레임에서 휠체어와 유모차 이용자를 탐지합니다.", "desc_en": "Detect wheelchair and stroller users in CCTV frames."},
+  {"level": "capstone", "title_ko": "엘리베이터 도움 알림 시스템", "title_en": "Elevator assistance alert", "desc_ko": "휠체어 이용자를 감지하면 역무원에게 위치를 알려주는 데모를 만듭니다.", "desc_en": "Alert staff with the location when a wheelchair user is detected."},
+  {"level": "research", "title_ko": "카메라 간 교통약자 추적", "title_en": "Cross-camera tracking", "desc_ko": "여러 카메라에서 같은 사람을 이어 추적하는 재식별 성능을 개선하는 방법을 연구합니다.", "desc_en": "Improve re-identification for tracking the same person across cameras."}
+ ],
+ "doc_used": true,
+ "uncertain": ["재식별 Top-1 정확도 10%는 입력 오류로 보임"]
+}

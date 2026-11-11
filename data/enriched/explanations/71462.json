@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71462",
+ "easy_ko": "방송 프로그램의 한국어 말소리와, 이를 중국어, 일본어, 대만어, 몽골어, 힌디어로 옮긴 원어민 목소리와 번역 문장을 약 3,000시간 모은 데이터입니다. 방송 자막 번역과 자동 통역 AI에 쓸 수 있습니다.",
+ "easy_en": "About 3,000 hours of Korean speech from TV programmes, with native-speaker recordings and written translations in Mandarin Chinese, Japanese, Taiwanese, Mongolian and Hindi. You can use it to build AI for subtitle translation and automatic interpreting.",
+ "detail_ko": "KBS 등 방송 콘텐츠(예능·드라마·다큐·교양 등)의 한국어 음성(약 894시간)과 이를 옮긴 아시아어 원어민 음성 약 3,000시간(북경어·일본어·대만어·몽골어 각 700시간, 힌디어 200시간; wav), 전사·번역 텍스트(txt, JSON)로 구성됩니다. 기준 성능은 Transformer 번역 BLEU 한-중 0.4514, 한-일 0.4814, 한-대만 0.4085, 한-몽골 0.2106, 한-힌디 0.1689입니다. 전체 약 632GB(가장 작은 파일도 21GB)이고, 힌디어는 다른 언어보다 적으며 오락/예능 비중이 30%로 높습니다. 몽골어·힌디어 번역 성능이 낮습니다.",
+ "detail_en": "Korean speech from broadcast content (KBS and others: entertainment, drama, documentary, educational; about 894 hours) and about 3,000 hours of native-speaker speech in Asian languages (700 hours each of Mandarin, Japanese, Taiwanese and Mongolian, 200 hours of Hindi; wav), with transcripts and translations (txt, JSON). Baselines: Transformer translation BLEU 0.4514 (Korean-Chinese), 0.4814 (Korean-Japanese), 0.4085 (Korean-Taiwanese), 0.2106 (Korean-Mongolian), 0.1689 (Korean-Hindi). Total size is about 632 GB (even the smallest file is 21 GB). Hindi has less data than the other languages, entertainment makes up 30%, and Mongolian and Hindi scores are low.",
+ "amount_ko": "음성 약 3,000시간(아시아어 5종), 한국어 약 894시간",
+ "amount_en": "about 3,000 hours of speech (5 Asian languages), about 894 hours of Korean",
+ "labels_ko": "번역 문장, 받아쓴 글",
+ "labels_en": "translations, transcripts",
+ "status": "full-run-2026-11-02"
+}

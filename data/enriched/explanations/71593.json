@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71593",
+ "easy_ko": "AI 허브에 공개된 말뭉치로 만든 번역 문장 모음과 새로 만든 한-영, 한-일, 한-중 번역 문장, 번역기 평가 자료, 전문 용어 사전을 묶은 데이터입니다. 전문 분야 번역기를 만들거나 여러 번역기를 비교 평가하는 데 쓸 수 있습니다.",
+ "easy_en": "A bundle of translation memory built from AI Hub's public corpora, new Korean-English, Korean-Japanese and Korean-Chinese sentence pairs, translator evaluation data and a technical term dictionary. You can use it to build specialist translators or compare translators against each other.",
+ "detail_ko": "AI 허브 공개 말뭉치로 만든 번역 메모리(TM) 870,022문장, 한-영·한-일·한-중 신규 말뭉치 635,110문장, 번역기 평가 600,000문장, 유사문장 729,910문장, 기계번역 후편집(MTPE) 101,673문장, 전문용어 10,000건, 개체명(NER) 10,000건(txt, JSON)으로, 분야 예는 구어체-대화체, 뉴스 문어체, 지자체웹사이트, 조례 문어체, 전문분야 문어체(경제, 법률, 의학)입니다. 기준 성능은 OpenNMT Transformer BLEU 한-영 0.7014, 한-일 0.779, 한-중 0.7119, KoBERT-NER F1 0.8692입니다. TM은 기존 AI 허브 말뭉치에서 만든 것이라 다른 번역 데이터와 겹칠 수 있고, BLEU 0.7 이상은 매우 높아 평가 조건을 확인해야 합니다. 구축량 표기(1,090,000문장)와 세부 합계가 다릅니다.",
+ "detail_en": "Text (txt, JSON): 870,022 translation-memory (TM) sentences built from AI Hub public corpora, 635,110 new Korean-English/Japanese/Chinese sentences, 600,000 evaluation sentences, 729,910 similar sentences, 101,673 machine-translation post-editing (MTPE) sentences, 10,000 terms and 10,000 named-entity (NER) items, in fields such as colloquial dialogue, news, local-government websites, ordinances and specialist writing (economics, law, medicine). Baselines: OpenNMT Transformer BLEU 0.7014 (ko-en), 0.779 (ko-ja), 0.7119 (ko-zh); KoBERT-NER F1 0.8692. The TM comes from existing AI Hub corpora, so it may overlap with other translation sets, and BLEU above 0.7 is very high, so check the test setup. The stated build amount (1,090,000 sentences) differs from the sum of the parts.",
+ "amount_ko": "TM 870,022, 신규 635,110, 평가 600,000, 유사문장 729,910, MTPE 101,673문장, 용어 10,000건, NER 10,000건",
+ "amount_en": "870,022 TM, 635,110 new, 600,000 evaluation, 729,910 similar, 101,673 MTPE sentences; 10,000 terms; 10,000 NER items",
+ "labels_ko": "번역 문장, 전문 용어, 이름·장소 같은 개체명",
+ "labels_en": "translations, terms, named entities",
+ "status": "full-run-2026-11-02"
+}

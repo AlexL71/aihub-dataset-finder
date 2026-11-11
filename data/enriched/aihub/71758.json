@@ -1,0 +1,29 @@
+{
+ "dataset_id": "71758",
+ "title_en": "Amusement ride and facility user danger recognition data",
+ "summary_ko": "놀이기구·놀이시설에서 직접 촬영한 영상(1920×1080)을 이미지로 뽑아 만든 약 664만 건의 데이터로, 시설 객체는 상자·분할로, 이용자 자세는 키포인트로 표시되고 위험·정상 상황이 구분되어 있습니다. 놀이시설 안전사고 예방 영상 분석 AI에 쓸 수 있습니다.",
+ "summary_en": "About 6.64M items from video (1920×1080) filmed at amusement rides and facilities, with facility objects as boxes and segmentation, user poses as keypoints, and dangerous vs normal situations. For video analytics to prevent amusement-facility accidents.",
+ "contents_ko": "영상 클립(mp4) + 이미지(jpg) + JSON(상자, 키포인트, 분할, 위험 상황 라벨).",
+ "contents_en": "Video clip (mp4) + image (jpg) + JSON (boxes, keypoints, segmentation, danger labels).",
+ "modalities": ["image", "video"],
+ "tasks": ["object_detection", "keypoint_pose", "segmentation", "action_recognition"],
+ "topics": [{"ko": "생활 안전", "en": "Public safety"}, {"ko": "놀이시설", "en": "Amusement facilities"}],
+ "keywords_ko": ["놀이기구", "놀이터", "위험 상황", "키포인트", "안전사고", "InternImage"],
+ "keywords_en": ["amusement ride", "playground", "dangerous situation", "keypoints", "safety accident", "InternImage"],
+ "labels": ["bounding box", "keypoints", "segmentation", "situation class"],
+ "file_formats": ["mp4", "jpg", "json"],
+ "scale_ko": "약 6,644,258건, 영상 약 300~645시간",
+ "classes_example": ["위험 상황", "정상 상황"],
+ "baseline": [],
+ "difficulty": "advanced",
+ "difficulty_note_ko": "전체 약 2.3TB로 매우 큽니다. 이미지 일부로 객체 탐지부터 시작하세요.",
+ "skills_needed_ko": ["파이썬", "YOLO 탐지·자세 추정", "영상 행동 분류"],
+ "caveats_ko": ["페이지에 성능 점수 표가 없음(InternImage·위험상황 분류 모델 소개만 있음)", "세부 시설·위험 클래스 목록은 팩 앞부분에 없음", "사람이 찍힌 영상이라 활용 시 개인정보 주의"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "놀이시설 객체 탐지", "title_en": "Playground object detection", "desc_ko": "이미지에서 놀이기구와 이용자를 YOLO로 찾습니다.", "desc_en": "Detect rides and users in images with YOLO."},
+  {"level": "capstone", "title_ko": "위험 행동 경보", "title_en": "Danger behaviour alert", "desc_ko": "자세 키포인트로 위험한 행동을 감지해 알림을 띄우는 데모를 만듭니다.", "desc_en": "Alert on risky behaviour from pose keypoints."},
+  {"level": "research", "title_ko": "드문 사고 상황 인식", "title_en": "Rare accident recognition", "desc_ko": "위험 상황이 드물 때도 잘 찾도록 불균형 학습 방법을 연구합니다.", "desc_en": "Study imbalance-aware learning for rare danger events."}
+ ],
+ "doc_used": true,
+ "uncertain": ["위험·정상 상황 비율"]
+}

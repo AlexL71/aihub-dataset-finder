@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71517",
+ "easy_ko": "강원도와 경상도에 사는 50대 이상 어른들이 따라 말하기, 질문에 답하기, 둘이 대화하기로 들려준 사투리 목소리 약 2,000시간에 받아쓴 글을 붙인 데이터입니다. 나이 든 사투리 사용자의 말을 알아듣는 음성 인식과 사투리 보존에 쓸 수 있습니다.",
+ "easy_en": "About 2,000 hours of dialect speech from adults aged 50 and over in Gangwon and Gyeongsang provinces, repeating sentences, answering questions and chatting in pairs, with written transcripts. You can use it for speech recognition that understands older dialect speakers and for preserving dialects.",
+ "detail_ko": "강원도·경상도 50대 이상 화자의 방언 음성 약 2,004시간(wav; 강원도 801.4시간·라벨 142,374건, 경상도 1,202.9시간·라벨 236,563건)에 전사, 방언 주석, 화자 정보를 JSON으로 붙였고, 발화 유형은 따라말하기, 질문답하기, 2인대화입니다. 기준 성능은 BERT 감정 분류 정확도 69.6%, Conformer 음성 인식 CER 6.24%, sWER 12.52%입니다. 전체 약 157GB이고, 여성 화자 비율이 72~79%로 높습니다. 같은 시리즈의 다른 지역 중·노년층 방언 데이터와 구조가 같습니다.",
+ "detail_en": "About 2,004 hours of dialect speech (wav) by speakers aged 50+ in Gangwon (801.4 hours, 142,374 labels) and Gyeongsang (1,202.9 hours, 236,563 labels), with JSON transcripts, dialect annotations and speaker information, in three types: repeating, question answering and two-person conversation. Baselines: emotion classification with BERT, accuracy 69.6%; speech recognition with Conformer, CER 6.24% and sWER 12.52%. Total size is about 157 GB, and 72 to 79% of speakers are women. It has the same structure as the other regions in this older-adult dialect series.",
+ "amount_ko": "음성 약 2,004시간(강원도 801.4시간, 경상도 1,202.9시간), 라벨 378,937건",
+ "amount_en": "about 2,004 hours of speech (Gangwon 801.4, Gyeongsang 1,202.9), 378,937 labels",
+ "labels_ko": "받아쓴 글, 사투리 설명, 말한 사람 정보",
+ "labels_en": "transcripts, dialect annotations, speaker information",
+ "status": "full-run-2026-11-02"
+}

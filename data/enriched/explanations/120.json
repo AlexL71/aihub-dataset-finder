@@ -1,0 +1,12 @@
+{
+ "dataset_id": "120",
+ "easy_ko": "전라도 사람들이 사투리로 나눈 일상 대화를 녹음하고, 사투리 그대로 받아 적은 글과 표준어로 바꾼 문장을 함께 붙인 데이터입니다. 전라도 사투리를 알아듣는 음성 인식이나, 사투리를 표준어로 바꿔 주는 AI를 만들 수 있습니다.",
+ "easy_en": "Recordings of people from Jeolla chatting in their local dialect, with transcripts written exactly as spoken and the same sentences rewritten in standard Korean. You can build speech recognition that understands the Jeolla dialect, or AI that turns dialect into standard Korean.",
+ "detail_ko": "전라도 지역 10~60대 화자 2,000명 이상이 조용한 환경에서 사투리로 나눈 일상 대화 음성 3,000시간 이상(구축량 432만)으로, 방언 전사와 표준어 대응 문장 50만 건 이상이 있습니다. wav 음성과 JSON(방언 전사, 표준어 대응, 화자 성별·연령·지역, 대화 주제)으로 구성됩니다. 기준 성능 지표는 기록에서 확인되지 않습니다. 전체 약 608GB이며, 조용한 환경 녹음이라 실제 소음 환경과 다를 수 있습니다.",
+ "detail_en": "Over 3,000 hours of everyday conversation in Jeolla dialect by 2,000+ speakers aged 10 to 60s, recorded in quiet rooms (4.32M built items), with 500k+ dialect transcripts paired with standard Korean. Data is wav audio plus JSON (dialect transcript, standard-Korean version, speaker sex, age and region, topic). No baseline is visible in the record. Total size is about 608GB; quiet-room recordings may not match noisy real settings.",
+ "amount_ko": "음성 3,000시간 이상, 화자 2,000명 이상",
+ "amount_en": "3,000+ hours of speech, 2,000+ speakers",
+ "labels_ko": "사투리 받아 적기(전사), 표준어로 바꾼 문장, 화자 성별·나이·지역",
+ "labels_en": "dialect transcript, standard-Korean version, speaker sex, age and region",
+ "status": "full-run-2026-11-02"
+}

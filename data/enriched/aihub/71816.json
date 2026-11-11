@@ -1,0 +1,29 @@
+{
+ "dataset_id": "71816",
+ "title_en": "Chemical hazard prediction data",
+ "summary_ko": "웹·논문·핸드북에서 모은 화학물질의 구조(PNG 그림·SDF 파일) 20,125건에 증기압·연소열·인화점 같은 물리·화학적 특성 값이 붙은 데이터입니다. 분자 구조로 화학물질 위험성을 예측하는 AI와 규제 대응 시스템에 쓸 수 있습니다.",
+ "summary_en": "20,125 chemical structures (PNG drawings and SDF files) collected from the web, papers and handbooks, labelled with physical and chemical properties such as vapour pressure, heat of combustion and flash point. For AI that predicts chemical hazards from molecular structure and supports regulatory compliance.",
+ "contents_ko": "분자 구조 그림(png) + 분자 파일(sdf) + JSON(물성 값).",
+ "contents_en": "Structure images (png) + molecule files (sdf) + JSON (property values).",
+ "modalities": ["image", "tabular"],
+ "tasks": ["tabular_prediction"],
+ "topics": [{"ko": "화학 안전", "en": "Chemical safety"}, {"ko": "재난·안전", "en": "Disaster and safety"}],
+ "keywords_ko": ["화학물질", "인화점", "증기압", "연소열", "분자 구조", "물성 예측"],
+ "keywords_en": ["chemicals", "flash point", "vapour pressure", "heat of combustion", "molecular structure", "property prediction"],
+ "labels": ["chemical property values"],
+ "file_formats": ["png", "sdf", "json"],
+ "scale_ko": "원천 PNG·SDF 각 20,125건, 라벨 20,125건(증기압 5,110, 연소열 5,005, 인화점 10,010)",
+ "classes_example": ["증기압", "연소열", "인화점"],
+ "baseline": [],
+ "difficulty": "beginner",
+ "difficulty_note_ko": "약 0.27GB로 작아 노트북으로도 실습할 수 있습니다. 분자 표현(RDKit 등)을 조금 배우면 됩니다.",
+ "skills_needed_ko": ["파이썬", "RDKit(분자 처리)", "회귀 모델"],
+ "caveats_ko": ["원시·원천 수량이 라벨 수량의 두 배로 적혀 있어 구성 확인 필요", "물성별 데이터 수가 5천~1만 건으로 적은 편", "성능 지표 값이 팩 앞부분에 없음"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "인화점 예측", "title_en": "Flash point prediction", "desc_ko": "분자 구조로 인화점 값을 회귀로 예측합니다.", "desc_en": "Regress flash point from molecular structure."},
+  {"level": "capstone", "title_ko": "화학물질 위험성 조회 웹", "title_en": "Chemical hazard lookup web", "desc_ko": "분자를 입력하면 예상 물성과 위험 수준을 보여 주는 웹을 만듭니다.", "desc_en": "Web app showing predicted properties and hazard level."},
+  {"level": "research", "title_ko": "그래프 신경망 물성 예측", "title_en": "GNN property prediction", "desc_ko": "분자 그래프 신경망으로 여러 물성을 함께 예측하는 방법을 연구합니다.", "desc_en": "Multi-property prediction with graph neural networks."}
+ ],
+ "doc_used": true,
+ "uncertain": ["원시 데이터와 라벨 수량 차이 이유"]
+}

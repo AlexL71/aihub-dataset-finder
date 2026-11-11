@@ -1,0 +1,29 @@
+{
+ "dataset_id": "71933",
+ "title_en": "Commercial autonomous vehicle adverse weather data (upcycling)",
+ "summary_ko": "기존 AI 허브 상용 자율주행차 데이터를 재가공(업사이클링)한 악천후 주행 이미지 8,000장에, 장면 설명(이미지-텍스트 관계)과 질의응답 라벨 16,000건을 붙인 데이터입니다. 흐림·비 등 날씨와 주행 속도 정보가 있어 궂은 날씨 주행 상황 이해와 시각 질의응답 AI에 쓸 수 있습니다.",
+ "summary_en": "8,000 adverse-weather driving images upcycled from existing AI Hub commercial driving data, with 16,000 labels of scene descriptions and QA, plus weather (overcast, rain and more) and speed. For bad-weather driving scene understanding and visual QA.",
+ "contents_ko": "도로 이미지(jpg) + JSON(장면 설명, 질의응답).",
+ "contents_en": "Road image (jpg) + JSON (scene description, QA).",
+ "modalities": ["image", "text"],
+ "tasks": ["visual_qa", "image_captioning"],
+ "topics": [{"ko": "자율주행", "en": "Autonomous driving"}, {"ko": "악천후 인지", "en": "Adverse weather perception"}],
+ "keywords_ko": ["자율주행", "악천후", "비", "흐림", "시각 질의응답", "업사이클링"],
+ "keywords_en": ["autonomous driving", "adverse weather", "rain", "overcast", "visual QA", "upcycling"],
+ "labels": ["image-text relation", "question-answer"],
+ "file_formats": ["jpg", "json"],
+ "scale_ko": "이미지 8,000장, 라벨 16,000건, 약 2,004개 장면",
+ "classes_example": ["맑음", "흐림", "구름", "비"],
+ "baseline": [],
+ "difficulty": "beginner",
+ "difficulty_note_ko": "약 4.5GB로 가볍습니다. 작은 비전-언어 모델로 장면 설명 실습하기 좋습니다.",
+ "skills_needed_ko": ["파이썬", "비전-언어 모델(VLM) 기초", "이미지 캡션 평가"],
+ "caveats_ko": ["페이지에 성능 점수 표와 모델 설명이 없음", "'악천후' 데이터인데 맑음이 23%, 비는 25%뿐", "날씨 표 합계가 '0%'로 적혀 있음(오타로 보임)", "눈·안개 같은 다른 악천후는 없음"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "비·흐림 분류", "title_en": "Rain vs overcast classifier", "desc_ko": "주행 이미지의 날씨를 맑음·흐림·비로 분류합니다.", "desc_en": "Classify driving weather as clear, overcast or rain."},
+  {"level": "capstone", "title_ko": "빗길 주의 안내", "title_en": "Wet road assistant", "desc_ko": "비 오는 장면을 설명하고 주의할 점을 알려주는 VLM 데모를 만듭니다.", "desc_en": "Describe rainy scenes and give caution tips with a VLM."},
+  {"level": "research", "title_ko": "날씨 변화 견고성", "title_en": "Weather robustness", "desc_ko": "맑은 날로 학습한 모델이 비 오는 날 설명을 잘하는지 연구합니다.", "desc_en": "Study how clear-weather models handle rain."}
+ ],
+ "doc_used": true,
+ "uncertain": []
+}

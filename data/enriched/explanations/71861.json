@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71861",
+ "easy_ko": "물류 창고에 들어오고 나가는 물건을 찍은 사진 12만여 장에 물건 위치와 영역, 품목, 사진 설명, 실제로 잰 크기와 무게를 붙인 데이터입니다. 물건 크기를 짐작해 창고 공간을 예측하거나 물류 로봇이 물건을 다루는 데 쓸 수 있습니다.",
+ "easy_en": "Over 120,000 photos of goods coming in and going out of warehouses, with each item's position and area, product category, a description, and its measured size and weight. You can use it to estimate item sizes to plan warehouse space, or to help logistics robots handle goods.",
+ "detail_ko": "물류 창고 입·출고 물품 RGB 이미지 122,378장(jpg; 입고 캡션 60,512건)에 물품 상자·분할 영역, 품목 분류, 이미지 설명(JSON)과 실측 크기·무게(csv)를 붙였고, 규격은 극소형, 소형, 중형, 대형, 특대형, 특수 6종입니다. 극소형 물품이 많아(입고 약 81%) 규격이 불균형하고, 데이터 개요가 비어 있으며, 품목 분류 목록과 모델 성능 수치는 팩에 없습니다.",
+ "detail_en": "122,378 RGB images (jpg; 60,512 inbound captions) of goods entering and leaving warehouses, with JSON item boxes, segmentation, product category and captions plus measured size and weight (csv), in 6 size classes (extra-small, small, medium, large, extra-large, special). Extra-small items dominate (about 81% of inbound), so sizes are imbalanced; the overview is empty, and the product list and any model scores are not in the pack.",
+ "amount_ko": "이미지 122,378장(입고 캡션 60,512건), 규격 6종",
+ "amount_en": "122,378 images (60,512 inbound captions), 6 size classes",
+ "labels_ko": "물건 위치 상자와 영역, 품목, 사진 설명, 크기·무게",
+ "labels_en": "bounding box, segmentation mask, class, caption",
+ "status": "full-run-2026-11-02"
+}

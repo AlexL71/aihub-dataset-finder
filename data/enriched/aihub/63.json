@@ -1,0 +1,32 @@
+{
+ "dataset_id": "63",
+ "title_en": "Trademark images and text",
+ "summary_ko": "특허정보원(KIPRIS)에서 모은 상표 이미지 117만 건에서 도형 부분을 잘라 비엔나 코드(도형 분류)를 붙인 데이터와, 상표 출원이 거절된 이유(발음 유사·관념·식별력)를 분류한 심사 문서 텍스트입니다. 비슷한 상표 찾기나 상표 등록 가능성 예측에 쓸 수 있습니다.",
+ "summary_en": "Two parts from the Korean IP database (KIPRIS): 1.17 million trademark images with the figure parts cropped and labelled with Vienna codes (figure classes), and examination-notice text labelled with the reason a trademark was refused (similar pronunciation, concept or lack of distinctiveness). For similar-trademark search or predicting whether a mark can be registered.",
+ "contents_ko": "상표 이미지 + 도형 크롭 이미지와 비엔나 코드 라벨, 의견제출통지서 텍스트 + 거절 사유 라벨.",
+ "contents_en": "Trademark images + cropped figure images with Vienna-code labels; examination notice text + refusal-reason label.",
+ "modalities": ["image", "text"],
+ "tasks": ["retrieval_recommendation", "object_detection", "image_classification", "text_classification"],
+ "topics": [{"ko": "상표·지식재산", "en": "Trademarks and intellectual property"}, {"ko": "브랜드·로고", "en": "Brands and logos"}, {"ko": "법·심사 문서", "en": "Legal and examination documents"}],
+ "keywords_ko": ["상표", "로고", "유사 상표 검색", "비엔나 코드", "상표 거절", "지식재산", "KIPRIS"],
+ "keywords_en": ["trademark", "logo", "similar trademark search", "Vienna code", "trademark refusal", "intellectual property", "KIPRIS"],
+ "labels": ["class (Vienna code)", "bounding box / crop", "text class (refusal reason)"],
+ "file_formats": ["jpg", "json", "txt"],
+ "scale_ko": "상표 이미지 학습 데이터 260만 건(원천 117만 건), 텍스트 83.9만 건",
+ "classes_example": ["발음 유사", "관념", "식별력"],
+ "baseline": [
+  {"task": "refusal-reason text classification", "model": "BERT", "metric": "accuracy", "value": "90.66%"},
+  {"task": "trademark figure detection", "model": "CNN", "metric": "mAP", "value": "70%"}
+ ],
+ "difficulty": "intermediate",
+ "difficulty_note_ko": "약 64GB로 다룰 만하고, 텍스트 분류는 쉬운 편입니다. 유사 상표 검색은 이미지 임베딩 지식이 필요합니다.",
+ "skills_needed_ko": ["파이썬", "이미지 임베딩 검색(FAISS)", "한국어 텍스트 분류(BERT)"],
+ "caveats_ko": ["성능 표에서 텍스트 분류가 'Image Classification'으로 적혀 있음", "비엔나 코드 체계를 따로 알아야 라벨을 이해할 수 있음"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "상표 거절 사유 분류기", "title_en": "Trademark refusal-reason classifier", "desc_ko": "심사 문서 텍스트로 거절 사유 3종을 분류합니다.", "desc_en": "Classify the 3 refusal reasons from examination text."},
+  {"level": "capstone", "title_ko": "내 로고와 비슷한 상표 찾기", "title_en": "Find trademarks similar to my logo", "desc_ko": "로고를 올리면 이미지 임베딩으로 비슷한 등록 상표를 검색해 보여주는 웹을 만듭니다.", "desc_en": "Upload a logo and retrieve similar registered marks with image embeddings."},
+  {"level": "research", "title_ko": "도형 의미까지 반영한 상표 유사도", "title_en": "Trademark similarity with figure meaning", "desc_ko": "비엔나 코드 분류와 이미지 유사도를 결합해 심사관 판단에 가까운 유사도 척도를 연구합니다.", "desc_en": "Combine Vienna-code classes with image similarity to approach examiners' judgement."}
+ ],
+ "doc_used": true,
+ "uncertain": []
+}

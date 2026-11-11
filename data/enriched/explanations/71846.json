@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71846",
+ "easy_ko": "자연적으로 석면이 들어 있는 바위와 광물, 비교용 바위를 일반 카메라와 특수 카메라 두 종류로 찍은 사진 약 185만 장에 영역과 종류를 표시한 데이터입니다. 암을 일으키는 석면이 든 바위를 현장에서 빨리 찾아내는 AI에 쓸 수 있습니다.",
+ "easy_en": "About 1.85 million images of rocks and minerals that naturally contain asbestos, and comparison rocks, taken with an ordinary camera and two kinds of special cameras, with areas and types marked. You can use it to build AI that quickly finds asbestos-bearing rock, which causes cancer, in the field.",
+ "detail_ko": "자연발생 석면 함유 암석·광물과 비교군을 광학 카메라 150,000장(jpg), 가시근적외선(VNIR) 초분광 694,620장, 단파적외선(SWIR) 초분광 1,002,240장(tif), 총 1,846,860건으로 찍고, 분류(예: 사문암, 각섬암, 감람암, 청석면, 갈석면, 백석면, 트레모라이트, 활석), 다각형 분할, 지질도 정보를 JSON으로 붙였습니다. 분포 표의 비율과 수량이 일부 맞지 않고, 품질 점수는 라벨 정확도이며 모델 성능 수치는 팩에 없습니다. 실험실 시료 촬영이라 야외 노두와 다를 수 있습니다.",
+ "detail_en": "1,846,860 images of naturally occurring asbestos-bearing rocks and minerals and comparison samples: 150,000 optical (jpg), 694,620 visible/near-infrared (VNIR) hyperspectral and 1,002,240 short-wave infrared (SWIR) hyperspectral (tif), with JSON class (such as serpentinite, amphibolite, peridotite, crocidolite, amosite, chrysotile, tremolite, talc), polygon segmentation and geological-map data. Some shares in the distribution table do not match the counts; quality scores describe label accuracy and no model scores are in the pack; lab samples may differ from outdoor outcrops.",
+ "amount_ko": "총 1,846,860건(광학 150,000, VNIR 694,620, SWIR 1,002,240)",
+ "amount_en": "1,846,860 images (150,000 optical, 694,620 VNIR, 1,002,240 SWIR)",
+ "labels_ko": "바위·광물 영역, 종류",
+ "labels_en": "polygon, class",
+ "status": "full-run-2026-11-02"
+}

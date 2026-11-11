@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71767",
+ "easy_ko": "대중음악에서 만든 악기별 짧은 반복 연주(루프) 12만 개에 악보 파일과 악기, 속성 정보를 붙인 데이터입니다. 노래 멜로디, 드럼, 피아노, 기타, 베이스 같은 소리가 있어 AI 작곡, 자동 악보 만들기, 흥얼거림으로 음악 만들기에 쓸 수 있습니다.",
+ "easy_en": "120,000 short repeating instrument phrases (loops) made from popular music, each with a sheet-music (MIDI) file and instrument and attribute information. It includes vocal melodies, drums, piano, guitar, bass and more, so you can use it for AI composing, automatic transcription or making music from humming.",
+ "detail_ko": "컨소시엄이 가진 대중음악에서 만든 악기별 루프 오디오(wav), 채보(MIDI, mid), 메타데이터(json) 각 120,000건으로, 악기는 Vocal Melody, Drums, Piano, Guitar, Bass, Strings 등입니다. 페이지에 성능 점수 표가 없고(Music Transformer 등 소개만 있음), 상업 음원 기반이라 생성물 저작권에 주의해야 합니다.",
+ "detail_en": "120,000 each of instrument loop audio (wav), MIDI transcriptions (mid) and metadata (json), made from popular music owned by the consortium, with instruments such as vocal melody, drums, piano, guitar, bass and strings. There is no score table (only Music Transformer and others are described), and the source is commercial music, so take care with the copyright of generated output.",
+ "amount_ko": "오디오·채보·메타데이터 각 120,000건",
+ "amount_en": "120,000 each of audio, MIDI and metadata files",
+ "labels_ko": "악보(MIDI), 악기·속성 정보",
+ "labels_en": "MIDI transcription, metadata",
+ "status": "full-run-2026-11-02"
+}

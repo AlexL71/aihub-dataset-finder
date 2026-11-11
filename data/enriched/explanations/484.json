@@ -1,0 +1,12 @@
+{
+ "dataset_id": "484",
+ "easy_ko": "날짜, 시간, 전화번호, 금액처럼 숫자가 들어간 말을 '일·이·삼', '하나·둘'처럼 여러 방식으로 읽은 녹음과 그 대본을 짝지은 데이터입니다. 숫자를 정확히 알아듣는 AI 콜센터나 AI 스피커를 만들 수 있습니다.",
+ "easy_en": "Recordings of sentences containing numbers, such as dates, times, phone numbers and prices, read in different Korean number systems (Sino-Korean and native Korean), paired with their scripts. You can build AI call centres or smart speakers that understand numbers correctly.",
+ "detail_ko": "한자어·고유어·외래어 숫자 읽기를 84가지 패턴(통계/수치, 날짜/시간, 전화번호, 금액 등)과 864가지 구축 환경으로 녹음한 음성 13,342시간(묵음 제외 11,842시간, pcm)과 스크립트 149,998건(JSON: 스크립트, 숫자 패턴 카테고리, 화자·환경 정보)입니다. 기준 성능은 기록에서 확인되지 않습니다. 전체 약 1.1TB이며 라벨링 유형이 '내용요약'으로 잘못 적혀 있습니다.",
+ "detail_en": "13,342 hours of speech (11,842 hours without silence; pcm) reading numbers in Sino-Korean, native Korean and loanword forms across 84 patterns (statistics, dates and times, phone numbers, amounts and more) and 864 recording conditions, with 149,998 scripts (JSON: script, number-pattern category, speaker and environment). No baseline is visible in the record. Total size is about 1.1 TB; the labelling type is wrongly given as content summary.",
+ "amount_ko": "음성 13,342시간, 대본 약 15만 건",
+ "amount_en": "13,342 hours of speech, about 150k scripts",
+ "labels_ko": "대본 글, 숫자 패턴 종류, 화자·녹음 환경",
+ "labels_en": "script text, number-pattern category, speaker and environment",
+ "status": "full-run-2026-11-02"
+}

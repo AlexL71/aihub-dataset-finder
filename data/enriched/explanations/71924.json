@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71924",
+ "easy_ko": "물건이 겹겹이 쌓인 물류 현장에서 로봇이 시킨 물건을 부딪치지 않고 집도록, 사진, 깊이 사진, 점 데이터와 잡는 자세, 차근차근 따지는 추론을 모은 데이터입니다. 실제와 가상 환경 기록이 있어 물류 로봇이 물건을 집게 하는 AI에 쓸 수 있습니다.",
+ "easy_en": "Images, depth images, point clouds, grasp poses and step-by-step reasoning for robots that must pick a requested item without collisions in warehouses where goods are piled up. It has both real and simulated records, so you can use it to build AI that lets logistics robots pick things up.",
+ "detail_ko": "물체가 겹쳐 쌓인 물류 환경(피킹·분배·포장 구역)에서 지시받은 물체를 충돌 없이 집기 위한 데이터로, 실제 환경 71,994건과 가상(물리 시뮬레이터) 환경 71,598건의 RGB(png)·깊이(npy)·점군(pcd)과 3D CAD 물체 원천 1,890건(obj, mtl, 텍스처 png; 라벨 630건)에 3D 라벨, 파지 자세, 단계적 사고(CoT)를 JSON으로 붙였습니다. 물체 분류 예: 생활용품류, 식품/과자류. 페이지에 성능 점수 표가 없고(6자유도 파지 자세 추정 소개만 있음), 통계 표의 합계(258,939, 47,864)가 구축량과 단위가 달라 보입니다.",
+ "detail_en": "Data for picking a requested item without collisions in cluttered logistics zones (picking, distribution, packing): 71,994 real and 71,598 simulated (physics engine) records of RGB (png), depth (npy) and point clouds (pcd), plus 1,890 3D CAD objects (obj, mtl, png textures; 630 labelled), with JSON 3D labels, grasp poses and chain-of-thought (CoT) reasoning. Object groups include household goods and food/snacks. There is no score table (only 6-DoF grasp-pose estimation is described), and the statistics table totals (258,939, 47,864) seem to use different units from the build amount.",
+ "amount_ko": "실제 71,994건, 가상 71,598건, 3D CAD 원천 1,890건(라벨 630건)",
+ "amount_en": "71,994 real, 71,598 simulated, 1,890 3D CAD objects (630 labelled)",
+ "labels_ko": "입체 라벨, 잡는 자세, 단계별 추론",
+ "labels_en": "3D labels, grasp pose, CoT",
+ "status": "full-run-2026-11-02"
+}

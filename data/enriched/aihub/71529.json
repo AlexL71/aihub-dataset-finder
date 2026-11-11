@@ -1,0 +1,33 @@
+{
+ "dataset_id": "71529",
+ "title_en": "Social robot customer service data",
+ "summary_ko": "서비스 상황을 연출해 찍은 고객 영상 30만여 개에 사람 상자, 몸 키포인트, 표정, 고객 행동 설명문, 발화 의도(요청·인사·질문 등)가 붙어 있습니다. 소셜로봇이 고객 상태를 이해하고 응대하는 AI에 쓸 수 있습니다.",
+ "summary_en": "About 301,000 staged customer-service videos with person boxes, body keypoints, facial expressions, behaviour descriptions and utterance intents (request, greeting, question, etc.). For social robots that understand and respond to customers.",
+ "contents_ko": "영상(mp4) + 이미지(png) + JSON·CSV(상자, 키포인트, 표정, 행동 설명문, 발화 의도).",
+ "contents_en": "Video (mp4) + images (png) + JSON/CSV (boxes, keypoints, expressions, behaviour captions, intents).",
+ "modalities": ["video", "image", "text"],
+ "tasks": ["object_detection", "keypoint_pose", "sentiment_emotion", "image_captioning", "dialogue"],
+ "topics": [{"ko": "로봇·피지컬 AI", "en": "Robotics and physical AI"}, {"ko": "고객 서비스", "en": "Customer service"}],
+ "keywords_ko": ["소셜로봇", "고객응대", "표정 인식", "행동 설명", "발화 의도", "질의응답"],
+ "keywords_en": ["social robot", "customer service", "facial expression", "behaviour description", "utterance intent", "question answering"],
+ "labels": ["bounding box", "keypoint", "facial expression", "behaviour caption", "intent"],
+ "file_formats": ["mp4", "png", "json", "csv"],
+ "scale_ko": "영상 301,435개",
+ "classes_example": ["요청", "인사", "질문", "약속", "수락"],
+ "baseline": [
+  {"task": "customer facial expression classification", "model": "EfficientNet-B0", "metric": "Accuracy", "value": "79.24%"},
+  {"task": "customer behaviour caption generation", "model": "PDVC", "metric": "BLEU", "value": "0.3895"},
+  {"task": "social robot question answering", "model": "Transformer", "metric": "BLEU", "value": "0.8842"}
+ ],
+ "difficulty": "advanced",
+ "difficulty_note_ko": "여러 라벨이 섞인 멀티모달 데이터이고 전체 약 990GB입니다.",
+ "skills_needed_ko": ["파이썬", "영상 처리", "표정 분류", "대화 모델"],
+ "caveats_ko": ["전체 약 990GB", "고객 연령이 20~30대에 약 96% 몰려 있음", "성별 표의 수량에 쉼표·마침표 표기 오류가 있음", "캡션 BLEU 0.3895는 기준값 0.75보다 낮음"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "고객 표정 분류", "title_en": "Customer expression classification", "desc_ko": "얼굴 이미지로 고객의 표정을 분류합니다.", "desc_en": "Classify customer facial expressions."},
+  {"level": "capstone", "title_ko": "매장 안내 로봇 시뮬레이터", "title_en": "Store guide robot simulator", "desc_ko": "고객 의도를 알아보고 알맞은 답을 하는 응대 챗봇 데모를 만듭니다.", "desc_en": "Build a demo that detects intent and replies."},
+  {"level": "research", "title_ko": "표정·자세 결합 상태 인식", "title_en": "Expression and pose fusion", "desc_ko": "표정과 몸 자세를 함께 써서 고객 상태 인식이 좋아지는지 연구합니다.", "desc_en": "Study combining expression and pose for customer state."}
+ ],
+ "doc_used": true,
+ "uncertain": ["표정 클래스 구성이 팩 앞부분에 없음"]
+}

@@ -1,0 +1,12 @@
+{
+ "dataset_id": "185",
+ "easy_ko": "버스 앞문, 운전석, 뒷문을 비추는 카메라로 찍은 영상에 승객 위치와 몸의 주요 점, 타는지 내리는지, 넘어짐 같은 행동, 마스크 착용 여부를 표시하고 버스 흔들림 정보도 함께 담은 데이터입니다. 운전기사 없는 버스에서 승객 안전을 지키는 AI를 만들 수 있습니다.",
+ "easy_en": "Videos from cameras watching a bus's front door, driver's seat and back door, marked with each passenger's position, key body points, whether they are getting on or off, actions such as falling, and mask wearing, plus the bus's motion sensor data. You can build AI that keeps passengers safe on driverless buses.",
+ "detail_ko": "버스 정문·운전석·후문 카메라 3대로 촬영한 영상 클립 6,000~7,000개와 프레임 이미지 약 81만 장(카메라당 27만, 구축량 90만)으로, JSON에 승객 바운딩박스, 스켈레톤 키포인트, 행동, 승하차 여부, 성별, 마스크 착용, 자이로·가속도 값이 있습니다. 기사 폭행·넘어짐 같은 시나리오는 연출 장면입니다. 기준 성능 지표는 없으며, 승객 얼굴이 나오므로 이용 약관 확인이 필요합니다.",
+ "detail_en": "6,000–7,000 video clips and about 810k frames from 3 bus cameras (front door, driver, rear door; 270k each; 900k built items), with JSON passenger boxes, skeleton keypoints, action, boarding status, sex, mask wearing, and gyroscope and acceleration values. Scenarios such as assaults on the driver and falls are staged. No baseline is published; passengers' faces are visible, so check the terms of use.",
+ "amount_ko": "이미지 약 81만 장, 클립 약 7,000개",
+ "amount_en": "about 810k images, about 7,000 clips",
+ "labels_ko": "승객 위치 상자, 몸의 주요 점, 행동, 승하차 여부, 마스크 착용, 버스 흔들림 값",
+ "labels_en": "boxes around passengers, body key points, action, boarding status, mask, bus motion values",
+ "status": "full-run-2026-11-02"
+}

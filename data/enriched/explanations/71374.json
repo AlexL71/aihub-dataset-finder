@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71374",
+ "easy_ko": "물고기 새끼를 키우는 배양장에서 넙치와 돌돔의 아주 어린 새끼와 그 먹이가 되는 작은 생물을 현미경과 카메라로 찍고, 위치와 테두리, 자라는 단계를 표시한 뒤 물 상태 센서 기록과 사육 기록을 함께 담은 데이터입니다. 어린 물고기가 얼마나 자랐는지 자동으로 재는 AI를 만들 수 있습니다.",
+ "easy_en": "Microscope and camera photos from a fish hatchery of very young olive flounder and rock bream and of the tiny organisms they eat, with positions, outlines and growth stages marked, plus water-sensor and care records. You can build AI that automatically measures how much young fish have grown.",
+ "detail_ko": "종자배양장에서 현미경·DSLR로 촬영한 넙치·돌돔 유생과 치어, 먹이생물(로티퍼, 알테미아) 군집 이미지 약 15만 장(jpg)에 객체 약 62만 개의 바운딩박스·다각형과 성장 단계(넙치 변태 1~3단계·치어, 돌돔 유생·치어)를 JSON으로 붙이고, 수질 센서 약 84만 건과 사육 관리 기록을 함께 제공합니다. 기준 성능은 YOLOv5 넙치 변태 단계 탐지 정확도 99.77%입니다. 현미경 이미지라 전문 지식이 필요할 수 있으며, 640·71321번과 같은 구축 기관입니다.",
+ "detail_en": "About 150k colony images (jpg) taken with microscopes and DSLRs at a seed hatchery, showing olive flounder and rock bream larvae and juveniles and live feed (rotifers, artemia), with JSON boxes and polygons for about 620k objects and growth stage (flounder metamorphosis stages 1–3 and juveniles; rock bream larvae and juveniles), plus about 840k water-sensor records and husbandry logs. Baseline: YOLOv5 flounder metamorphosis-stage detection accuracy 99.77%. Microscope images may need expert knowledge; same organisation as datasets 640 and 71321.",
+ "amount_ko": "사진 약 15만 장, 물체 약 62만 개, 센서 기록 약 84만 건",
+ "amount_en": "about 150k images, about 620k objects, about 840k sensor records",
+ "labels_ko": "어린 물고기·먹이 생물 위치 상자·테두리, 자라는 단계, 물 상태 값",
+ "labels_en": "boxes and outlines around larvae, juveniles and feed organisms, growth stage, water values",
+ "status": "full-run-2026-11-02"
+}

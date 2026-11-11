@@ -1,0 +1,12 @@
+{
+ "dataset_id": "98",
+ "easy_ko": "쇼핑몰, 질병관리본부, 금융·보험사, 서울시 다산콜센터의 상담 내용을 고객 질문과 상담원 답변 짝으로 정리하고 일부는 녹음까지 담은 데이터입니다. 결제·반품·증상 문의·대출 같은 상담 종류가 표시되어 있어, 상담원을 돕는 AI나 AI 상담원을 만들 수 있습니다.",
+ "easy_en": "Customer-service conversations from online shops, the disease-control agency, banks and insurers, and Seoul's Dasan call centre, organised as customer-question and agent-answer pairs, some with recordings. Topics such as payment, returns, symptoms and loans are labelled, so you can build AI that helps agents or acts as an AI agent.",
+ "detail_ko": "쇼핑몰(55만), 질병관리본부(25만), 금융/보험(20만), 다산콜센터(10만) 상담 내용을 질의응답 약 110만 쌍과 음성 440시간 이상으로 구축했습니다. 라벨(JSON)에는 도메인, 상담 카테고리, 의도, 개체명이 있고 음성은 wav입니다. 기준 성능은 쇼핑 의도 분류 Word2Vec + CNN F1-score 0.8872입니다. 고객 정보는 비식별 처리되었지만 이용 약관 확인이 필요합니다.",
+ "detail_en": "About 1.1M question–answer pairs from online shopping (550k), the disease-control agency (250k), finance and insurance (200k) and the Dasan call centre (100k), plus 440+ hours of speech (wav). JSON labels give domain, consultation category, intent and named entities. Baseline: Word2Vec + CNN shopping-intent classification F1-score 0.8872. Customer data is de-identified, but check the terms of use.",
+ "amount_ko": "질문-답 약 110만 쌍, 음성 440시간 이상",
+ "amount_en": "about 1.1M question–answer pairs, 440+ hours of speech",
+ "labels_ko": "상담 분야·종류, 질문 의도, 중요한 단어(이름·장소 등)",
+ "labels_en": "domain and consultation category, intent, named entities",
+ "status": "full-run-2026-11-02"
+}

@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71488",
+ "easy_ko": "벌통 안 꿀벌 사진 27만여 장에 알, 애벌레, 번데기, 일벌, 여왕벌 같은 자라는 단계와 벌 종류, 병을 상자와 테두리로 표시한 데이터입니다. 꿀벌 병을 미리 알아채고 벌통을 관리하는 AI에 쓸 수 있습니다.",
+ "easy_en": "Over 270,000 photos of bees inside hives, with boxes and outlines marking life stage (egg, larva, pupa, worker, queen), bee type and disease. You can use it to build AI that spots bee disease early and helps manage hives.",
+ "detail_ko": "벌통 이미지 274,216건(jpg)에 클래스 12종(예: 알, 애벌레, 번데기, 수일벌-이탈리안, 수일벌-카니올란, 수일벌-한봉, 여왕벌, 호박벌, 백묵병) 상자와 분할 다각형을 JSON으로 붙였습니다. 음성 5,968건과 환경 데이터 2,712,823건도 있지만 모델 학습에는 쓰지 않았다고 명시돼 있습니다. 기준 성능은 GoogLeNet 질병 분류 정확도 97.21%, 생애단계 분류 정확도 91.42%입니다. 전체 약 77GB이고, 구축기관 표기가 페이지와 설명서에서 다릅니다.",
+ "detail_en": "274,216 hive images (jpg) with JSON boxes and segmentation polygons for 12 classes (such as egg, larva, pupa, Italian worker/drone, Carniolan worker/drone, native Korean bee, queen, bumblebee, chalkbrood). There are also 5,968 audio files and 2,712,823 environment records, but the pack states they were not used for model training. Baselines with GoogLeNet: disease classification accuracy 97.21%, life-stage classification accuracy 91.42%. Total size is about 77 GB, and the builder organisation differs between the page and the manual.",
+ "amount_ko": "이미지 274,216건, 클래스 12종 (음성 5,968건·환경 2,712,823건 별도)",
+ "amount_en": "274,216 images, 12 classes (plus 5,968 audio files and 2,712,823 environment records)",
+ "labels_ko": "벌 위치 상자와 테두리, 자라는 단계·종류·병",
+ "labels_en": "bounding boxes, polygons, class (life stage, bee type, disease)",
+ "status": "full-run-2026-11-02"
+}

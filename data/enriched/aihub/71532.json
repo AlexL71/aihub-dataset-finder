@@ -1,0 +1,29 @@
+{
+ "dataset_id": "71532",
+ "title_en": "Technology and science summarization data",
+ "summary_ko": "기술과학 논문·도서 지문 2만 1천여 건에서 만든 요약문 12만여 건으로, 지문·전문용어·단서 문장·요약문이 짝지어져 있고 수식은 LaTeX로 적혀 있습니다. 기술과학 문서 생성 요약과 전문용어 추출(개체명 인식)에 쓸 수 있습니다.",
+ "summary_en": "About 120,000 summaries built from 21,000 technology and science paper/book passages, each with passage, technical terms, clue sentences and summary; formulas written in LaTeX. For abstractive summarisation of technical documents and technical term extraction.",
+ "contents_ko": "지문 텍스트(txt) + JSON(요약문, 단서 문장, 전문용어 태그).",
+ "contents_en": "Passage text (txt) + JSON (summary, clue sentences, technical term tags).",
+ "modalities": ["text"],
+ "tasks": ["summarization", "information_extraction"],
+ "topics": [{"ko": "과학기술", "en": "Science and technology"}, {"ko": "한국어 자연어처리", "en": "Korean NLP"}],
+ "keywords_ko": ["생성 요약", "기술과학", "논문", "전문용어", "LaTeX", "개체명 인식"],
+ "keywords_en": ["abstractive summarisation", "science and technology", "papers", "technical terms", "LaTeX", "named entity recognition"],
+ "labels": ["summary", "clue sentence", "technical term"],
+ "file_formats": ["txt", "json"],
+ "scale_ko": "원천 지문 21,204건, 요약문 120,046건",
+ "classes_example": [],
+ "baseline": [{"task": "abstractive summarisation", "model": "BART", "metric": "ROUGE-L", "value": "33.04%"}],
+ "difficulty": "intermediate",
+ "difficulty_note_ko": "용량이 작아(약 0.3GB) 다루기 쉽지만 생성 요약 모델 학습에는 GPU가 필요합니다.",
+ "skills_needed_ko": ["파이썬", "요약 모델(BART·T5)", "토큰화"],
+ "caveats_ko": ["지문의 97%가 논문", "수식이 LaTeX로 들어 있어 전처리 필요", "같은 기관의 71533(기계독해) 데이터와 원천이 비슷함"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "핵심 문장 고르기", "title_en": "Key sentence selection", "desc_ko": "지문에서 단서 문장을 고르는 추출 요약 모델을 만듭니다.", "desc_en": "Build an extractive model that picks clue sentences."},
+  {"level": "capstone", "title_ko": "논문 3줄 요약기", "title_en": "Three-line paper summariser", "desc_ko": "한국어 기술 논문을 붙여넣으면 짧게 요약해 주는 웹 도구를 만듭니다.", "desc_en": "Build a web tool summarising Korean papers."},
+  {"level": "research", "title_ko": "수식 포함 문서 요약", "title_en": "Summarising text with formulas", "desc_ko": "LaTeX 수식이 요약 품질에 주는 영향을 분석합니다.", "desc_en": "Study how LaTeX formulas affect summary quality."}
+ ],
+ "doc_used": true,
+ "uncertain": []
+}

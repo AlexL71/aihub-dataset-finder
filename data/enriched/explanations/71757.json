@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71757",
+ "easy_ko": "산, 논밭, 바닷가의 비포장도로에서 찍은 주행 사진 15만여 장에 흙, 자갈, 잔디 같은 노면과 차, 사람, 바위, 전봇대, 웅덩이 같은 물체를 표시한 데이터입니다. 포장되지 않은 길을 달리는 자율주행 AI에 쓸 수 있습니다.",
+ "easy_en": "Over 150,000 driving photos from unpaved roads in mountains, farmland and along the coast, marking ground types such as dirt, gravel and grass and objects such as cars, people, rocks, utility poles and puddles. You can use it to build self-driving AI for unpaved roads.",
+ "detail_ko": "국내 산악·농경·해안 비포장도로에서 찍은 전방 주행 이미지 150,120장(png)에 노면(흙/진흙, 자갈, 잔디, 시멘트, 논밭)과 객체(차량, 사람, 바위, 전봇대, 웅덩이 등) 상자·분할 영역을 JSON으로 붙였고(서브라벨 15,000장), 좌·우·후방 이미지, 라이다, GPS, IMU가 참조 데이터로 함께 있습니다. 페이지에 성능 점수 표가 없고(InternImage 소개만 있음), 날씨·도로 유형 비율이 표에서 정확히 읽히지 않으며, 이륜차(702)·교통표지판(1,258)이 매우 적습니다.",
+ "detail_en": "150,120 front driving images (png) from unpaved mountain, farm and coastal roads in Korea, with JSON boxes and segmentation for surfaces (dirt/mud, gravel, grass, cement, fields) and objects (vehicles, people, rocks, utility poles, puddles and more) and 15,000 sub-labels, plus reference left, right and rear images, lidar, GPS and IMU. There is no score table (only InternImage is described), weather and road-type shares cannot be read clearly from the table, and two-wheelers (702) and traffic signs (1,258) are very rare.",
+ "amount_ko": "원천·라벨 각 150,120장, 서브라벨 15,000장",
+ "amount_en": "150,120 images and labels, 15,000 sub-labels",
+ "labels_ko": "노면·물체 위치 상자와 영역",
+ "labels_en": "bounding box, segmentation, sub-labels",
+ "status": "full-run-2026-11-02"
+}

@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71554",
+ "easy_ko": "부산 항구 근처 도로에서 컨테이너 트럭 때문에 생긴 도로 파손을 드론과 촬영 차량으로 찍은 사진 약 41만 장에, 갈라짐, 바퀴 자국 패임, 구멍(포트홀) 같은 파손 종류를 표시한 데이터입니다. 도로를 고치고 관리하는 AI에 쓸 수 있습니다.",
+ "easy_en": "About 410,000 drone and vehicle-camera photos of road damage caused by container trucks on roads around Busan port, marking damage types such as cracks, wheel ruts and potholes. You can use it to build AI that helps maintain and repair roads.",
+ "detail_ko": "부산 항만도로의 노면 파손을 드론(20m 상공 수직 촬영) 121,958장과 촬영 차량 카메라 284,722장, 총 406,680장(png)으로 찍고, 파손 대분류 8종·소분류 13종(예: 거북등, 단부균열, 세로방향균열, 시공균열, 반사균열, 러팅, 함몰, 포트홀, 라벨링(Ravelling), 박리) 객체 약 108만 개를 상자와 분할로 JSON에 표시했습니다. 전체 약 3.2TB이고, 성능 지표 표가 비어 있으며(YOLOv7, mAP@0.5로 검증했다고만 적혀 있음), 밀림균열·포트홀 등 일부 클래스가 1% 미만으로 매우 적습니다.",
+ "detail_en": "406,680 images (png) of road-surface damage on Busan port roads: 121,958 from a drone (vertical shots from 20 m) and 284,722 from a survey-vehicle camera, with about 1.08 million JSON objects as boxes and segmentation in 8 main and 13 sub damage types (such as alligator cracking, edge cracking, longitudinal cracking, construction joint cracking, reflection cracking, rutting, depression, pothole, ravelling, delamination). Total size is about 3.2 TB. The metrics table is empty (it only says YOLOv7 and mAP@0.5 were used), and some classes such as shoving cracks and potholes are under 1%.",
+ "amount_ko": "이미지 406,680장(드론 121,958 + 차량 284,722), 객체 약 108만 개, 파손 소분류 13종",
+ "amount_en": "406,680 images (121,958 drone + 284,722 vehicle), about 1.08 million objects, 13 damage sub-types",
+ "labels_ko": "파손 위치 상자, 파손 영역, 파손 종류",
+ "labels_en": "bounding boxes, segmentation, damage class",
+ "status": "full-run-2026-11-02"
+}

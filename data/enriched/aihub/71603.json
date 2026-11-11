@@ -1,0 +1,29 @@
+{
+ "dataset_id": "71603",
+ "title_en": "Aspect-based sentiment analysis data",
+ "summary_ko": "패션·화장품·가전·IT기기·생활용품 쇼핑몰과 SNS 상품 리뷰 250,312건으로, 리뷰 속 '착용감·디자인·가격·소재' 같은 속성과 그 속성에 대한 긍정·부정 감정이 표시되어 있습니다. 리뷰를 속성별로 분석해 상품 장단점을 정리하거나 추천에 쓰는 AI에 좋습니다.",
+ "summary_en": "250,312 product reviews from shopping malls and social media (fashion, cosmetics, appliances, IT devices, household goods) labelled with aspects such as fit, design, price and material and the sentiment toward each. For aspect-level review analysis and recommendation.",
+ "contents_ko": "리뷰 텍스트(txt) + JSON(속성, 속성 표현 구간, 감정 극성, 카테고리).",
+ "contents_en": "Review text (txt) + JSON (aspect, aspect phrase, sentiment polarity, category).",
+ "modalities": ["text"],
+ "tasks": ["sentiment_emotion", "information_extraction", "text_classification"],
+ "topics": [{"ko": "이커머스·리뷰", "en": "E-commerce and reviews"}, {"ko": "마케팅 분석", "en": "Marketing analytics"}],
+ "keywords_ko": ["속성 기반 감정 분석", "상품 리뷰", "쇼핑몰", "긍정·부정", "화장품", "패션"],
+ "keywords_en": ["aspect-based sentiment analysis", "product reviews", "online shopping", "positive/negative", "cosmetics", "fashion"],
+ "labels": ["aspect", "sentiment polarity", "category"],
+ "file_formats": ["txt", "json"],
+ "scale_ko": "리뷰 250,312건(쇼핑몰 225,300·SNS 25,012), 도메인 5종, 카테고리 20종",
+ "classes_example": ["착용감", "디자인", "가격", "기능", "소재", "활용성", "긍정", "부정"],
+ "baseline": [{"task": "aspect classification", "model": "BERT", "metric": "F1-score", "value": "0.8018"}, {"task": "sentiment classification", "model": "BERT", "metric": "F1-score", "value": "0.8414"}],
+ "difficulty": "beginner",
+ "difficulty_note_ko": "약 60MB 텍스트라 노트북에서도 다룰 수 있고 감정 분석 입문에 좋습니다.",
+ "skills_needed_ko": ["파이썬", "Hugging Face 한국어 BERT", "텍스트 분류"],
+ "caveats_ko": ["속성 종류 전체 목록은 팩 앞부분에 없음", "긍정 리뷰가 많을 가능성이 있어 감정 비율 확인 필요", "SNS 리뷰는 10%뿐"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "리뷰 긍정·부정 분류", "title_en": "Review sentiment classifier", "desc_ko": "KoBERT로 리뷰 문장이 긍정인지 부정인지 분류합니다.", "desc_en": "Classify review sentences as positive or negative with KoBERT."},
+  {"level": "capstone", "title_ko": "상품 장단점 요약 대시보드", "title_en": "Product pros-and-cons dashboard", "desc_ko": "리뷰에서 속성별 감정을 모아 '가격 좋음·사이즈 작음'처럼 보여 줍니다.", "desc_en": "Aggregate aspect sentiment into a pros-and-cons view."},
+  {"level": "research", "title_ko": "쇼핑몰↔SNS 리뷰 차이", "title_en": "Shop vs social-media reviews", "desc_ko": "쇼핑몰 리뷰로 학습한 모델이 SNS 리뷰에서도 잘 되는지 연구합니다.", "desc_en": "Study whether shop-trained models work on social-media reviews."}
+ ],
+ "doc_used": true,
+ "uncertain": []
+}

@@ -1,0 +1,29 @@
+{
+ "dataset_id": "71379",
+ "title_en": "Broadcast content Korean-English interpretation speech data",
+ "summary_ko": "다큐·교양·예능·드라마·인터뷰 등 방송 약 600시간의 한국어 음성과 전사, 그리고 영어·스페인어·러시아어 번역문과 원어민 녹음이 짝지어진 데이터입니다. 방송 자막 자동 생성, 음성 통역 AI에 쓸 수 있습니다.",
+ "summary_en": "About 600 hours of Korean broadcast speech (documentary, culture, entertainment, drama, interviews) with transcripts, English/Spanish/Russian translations and native-speaker recordings. For automatic subtitles and speech interpretation AI.",
+ "contents_ko": "한국어 방송 음성(wav) + 한국어 전사 JSON + 영어·스페인어·러시아어 번역 JSON + 원어민 발화 음성(wav).",
+ "contents_en": "Korean broadcast audio (wav) + Korean transcript JSON + English/Spanish/Russian translation JSON + native-speaker speech (wav).",
+ "modalities": ["audio", "text"],
+ "tasks": ["speech_recognition", "translation", "speech_synthesis"],
+ "topics": [{"ko": "방송·미디어", "en": "Broadcasting and media"}, {"ko": "번역·통역", "en": "Translation and interpretation"}],
+ "keywords_ko": ["방송 콘텐츠", "음성 인식", "자막", "통번역", "스페인어", "러시아어"],
+ "keywords_en": ["broadcast content", "speech recognition", "subtitles", "interpretation", "Spanish", "Russian"],
+ "labels": ["transcription", "translation"],
+ "file_formats": ["wav", "json"],
+ "scale_ko": "방송 약 600시간, 음성 구간 1,637,555개, 언어 4종(한·영·스·러)",
+ "classes_example": ["다큐", "교양", "연예·공연", "영화·드라마", "오락·예능", "인터뷰"],
+ "baseline": [{"task": "speech recognition", "model": "CTC + Transformer", "metric": "CER", "value": "8.87%"}, {"task": "machine translation (ko>en)", "model": "Transformer", "metric": "BLEU", "value": "0.4922"}, {"task": "machine translation (ko>es)", "model": "Transformer", "metric": "BLEU", "value": "0.4103"}, {"task": "machine translation (ko>ru)", "model": "Transformer", "metric": "BLEU", "value": "0.4126"}],
+ "difficulty": "advanced",
+ "difficulty_note_ko": "음성 인식과 번역을 함께 다뤄야 하고 전체 약 353GB입니다. 한 장르·한 언어만 골라 시작하세요.",
+ "skills_needed_ko": ["파이썬", "음성 인식 모델(Whisper 등)", "번역 모델 미세조정"],
+ "caveats_ko": ["전체 약 353GB", "제목은 한국어-영어지만 스페인어·러시아어도 포함", "영화·드라마는 30시간(5%)으로 적음", "71382 번역 말뭉치와 같은 기관·구성"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "방송 음성 받아쓰기", "title_en": "Broadcast speech transcription", "desc_ko": "공개 음성 인식 모델로 방송 음성을 받아쓰고 전사와 비교해 오류율을 잽니다.", "desc_en": "Transcribe broadcast audio with an open model and measure the error rate."},
+  {"level": "capstone", "title_ko": "자동 다국어 자막기", "title_en": "Automatic multilingual subtitler", "desc_ko": "한국어 영상의 음성을 인식하고 영어·스페인어 자막을 만들어 붙입니다.", "desc_en": "Recognise Korean speech in a video and add English or Spanish subtitles."},
+  {"level": "research", "title_ko": "음성→번역 직접 학습", "title_en": "End-to-end speech translation", "desc_ko": "받아쓰기 후 번역하는 방식과 음성에서 바로 번역하는 방식을 비교합니다.", "desc_en": "Compare cascaded ASR+MT with direct speech-to-text translation."}
+ ],
+ "doc_used": true,
+ "uncertain": []
+}

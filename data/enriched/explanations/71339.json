@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71339",
+ "easy_ko": "여러 금속을 섞은 합금마다 실험으로 잰 전기 저항, 단단함, 결정 구조, 두께 값과 전자현미경 사진을 모은 표 데이터입니다. 새 금속 재료가 어떤 성질을 가질지 미리 예측해 개발을 돕는 AI를 만들 수 있습니다.",
+ "easy_en": "Tables of measured electrical resistance, hardness, crystal structure and thickness for many metal alloys, from fast experiments, plus electron-microscope images. You can build AI that predicts the properties of new metal materials to speed up their development.",
+ "detail_ko": "고속 측정 실험으로 얻은 합금 조성별(Co-TM1-TM2, Al-TM1-TM2 등) 전기 저항·경도·결정 구조(비정질 여부)·두께 측정값 약 16만 건(csv, 원천 약 22.6만 파일)과 SEM 이미지(jpg)로 구성됩니다. 기준 성능은 순차 신경망 비정질 예측 F1 0.91, Random Forest 저항 예측 R2 0.99, 경도 예측 R2 0.94입니다. 원천 파일이 측정 장비별로 나뉘어 있어 합치는 작업이 필요하고, SEM 이미지는 약 2,000장으로 적습니다.",
+ "detail_en": "About 160k measurement records (csv; about 226k raw files) of resistivity, hardness, crystal structure (amorphous or not) and thickness by alloy composition (Co-TM1-TM2, Al-TM1-TM2 and more) from high-throughput experiments, plus SEM images (jpg). Baselines: sequential neural network amorphous prediction F1 0.91, Random Forest resistivity R2 0.99 and hardness R2 0.94. Raw files are split by instrument and need merging; there are only about 2,000 SEM images.",
+ "amount_ko": "측정 기록 약 16만 건",
+ "amount_en": "about 160k measurement records",
+ "labels_ko": "전기 저항, 단단함, 결정 구조 여부, 두께",
+ "labels_en": "resistivity, hardness, amorphous or crystalline, thickness",
+ "status": "full-run-2026-11-02"
+}

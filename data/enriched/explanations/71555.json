@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71555",
+ "easy_ko": "시민이 신고한 교통법규 위반 영상에서 뽑은 사진 149만 장으로, 신호 위반, 안전모 안 쓰기, 중앙선 넘기, 차선 바꾸기 위반으로 나누고 차량, 신호등, 차선을 표시했습니다. 교통법규 위반 장면을 자동으로 찾아내는 AI에 쓸 수 있습니다.",
+ "easy_en": "1.49 million images from traffic-violation videos reported by citizens, sorted into running red lights, riding without a helmet, crossing the centre line and illegal lane changes, with vehicles, traffic lights and lanes marked. You can use it to build AI that spots traffic violations automatically.",
+ "detail_ko": "시민 '스마트 국민 제보' 교통법규 위반 영상(경찰청 제공)에서 뽑은 이미지 1,490,000장(jpg)에 위반 유형 4종(신호위반, 안전모 미착용, 중앙선침범, 진로변경위반; 신호위반 예: 적색신호시 좌회전·직진)과 차량·신호등·차선 등의 상자, 분할, 폴리라인을 JSON으로 붙였습니다. 기준 성능은 LRCN 위반 분류 F1 0.8839, Detectron2 교통 객체 탐지 mAP 92.62%, 차선 폴리라인 탐지 mAP 91.57%입니다. 전체 약 300GB이고, 안전모 미착용은 16,626장으로 매우 적으며, 성능 표 3번 항목이 빠져 있고 데이터 유형이 '텍스트, 이미지'로 적혀 있습니다.",
+ "detail_en": "1,490,000 images (jpg) taken from traffic-violation videos reported by citizens through the 'Smart National Report' service (provided by the National Police Agency), with 4 violation types (signal violation, no helmet, centre-line crossing, illegal lane change; signal examples include left turn or going straight on red) and JSON boxes, segmentation and polylines for vehicles, traffic lights and lanes. Baselines: violation classification with LRCN, F1 0.8839; traffic object detection with Detectron2, mAP 92.62%; lane polyline detection with Detectron2, mAP 91.57%. Total size is about 300 GB. No-helmet images are very few (16,626), item 3 of the metrics table is missing, and the data type is listed as 'text, image'.",
+ "amount_ko": "이미지 1,490,000장, 위반 유형 4종",
+ "amount_en": "1,490,000 images, 4 violation types",
+ "labels_ko": "차량·신호등 위치 상자, 영역, 차선 선, 위반 종류",
+ "labels_en": "bounding boxes, segmentation, polylines, violation class",
+ "status": "full-run-2026-11-02"
+}

@@ -1,0 +1,12 @@
+{
+ "dataset_id": "550",
+ "easy_ko": "학교·병원·사무실 같은 실내 시설과 방을 레이저로 훑어 입체 점 데이터로 만들고, 바닥·벽·천장·문·창문·침대·책상·의자 같은 공간 요소를 입체 상자로 표시하고 실내 공기 상태도 함께 담은 데이터입니다. 실내 공간을 입체로 이해하는 로봇이나 인테리어 시뮬레이션 AI를 만들 수 있습니다.",
+ "easy_en": "Laser scans of indoor facilities and rooms turned into 3D point data, with space elements such as floors, walls, ceilings, doors, windows, beds, desks and chairs marked by 3D boxes, plus indoor air-quality readings. You can build robots that understand indoor spaces in depth, or interior-design simulation AI.",
+ "detail_ko": "실내 시설 28곳(공간 요소 46,588개)과 방 703곳(76,067개), 총 122,655건의 점구름(pts) 데이터에 2D 이미지, 일부 GPS, 실내 공기질 센서 정보를 합치고, 공간 요소(바닥, 벽, 천장, 기둥, 계단, 문, 창문, 침대, 테이블, 책상, 의자, 소파 등)의 3D 바운딩박스를 JSON으로 붙였습니다. 기준 성능은 기록에서 확인되지 않습니다.",
+ "detail_en": "122,655 point-cloud items (pts) from 28 indoor facilities (46,588 elements) and 703 rooms (76,067 elements), combined with 2D images, some GPS and indoor air-quality data, with JSON 3D bounding boxes for space elements (floor, wall, ceiling, column, stairs, door, window, bed, table, desk, chair, sofa and more). No baseline is visible in the record.",
+ "amount_ko": "데이터 약 12.3만 건, 시설 28곳, 방 703곳",
+ "amount_en": "about 123k items, 28 facilities, 703 rooms",
+ "labels_ko": "공간 요소 입체 상자와 종류, 공기 상태 값",
+ "labels_en": "3D boxes and classes for space elements, air-quality values",
+ "status": "full-run-2026-11-02"
+}

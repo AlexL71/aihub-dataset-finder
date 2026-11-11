@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71518",
+ "easy_ko": "서울 중학생들이 태블릿으로 국어와 수학 문제를 풀며 남긴 질문과 답, 태블릿을 움직이고 펜과 키보드를 쓴 기록에 정답인지, 이해했는지, 기분이 어땠는지를 표시한 데이터입니다. 학생의 기분과 이해도를 살펴 맞춤 공부를 돕는 AI 선생님에 쓸 수 있습니다.",
+ "easy_en": "Questions and answers left by Seoul middle-school students solving Korean and maths problems on tablets, plus records of how they moved the tablet and used the pen and keyboard, marked with whether they were right, whether they understood and how they felt. You can use it to build an AI tutor that reads a student's mood and understanding to tailor lessons.",
+ "detail_ko": "서울 중학생의 국어·수학 질의응답 기록 21,600건과 가속도·각속도·키보드·스타일러스 입력 센서 데이터 75,600건(JSON)에 정답여부(정답/오답), 이해여부(이해함/이해못함), 감정여부(긍정/중립/부정) 라벨을 붙였습니다. 기준 성능은 언어 기반 감정 예측 KR-BERT 정확도 83.98%, 행동 기반 SVM 정확도 정답 74.54%, 이해 73.8%, 감정 66.65%입니다. 미성년자 학습 데이터라 이용 조건을 꼭 확인해야 합니다.",
+ "detail_en": "21,600 question-answer records and 75,600 sensor records (accelerometer, gyroscope, keyboard and stylus input; JSON) from Seoul middle-school students working on Korean and maths, labelled for correctness (correct/wrong), understanding (understood/not understood) and emotion (positive/neutral/negative). Baselines: emotion prediction from language with KR-BERT, accuracy 83.98%; prediction from behaviour with SVM, accuracy 74.54% (correctness), 73.8% (understanding) and 66.65% (emotion). This is learning data from minors, so be sure to check the terms of use.",
+ "amount_ko": "질의응답 21,600건, 센서 데이터 75,600건",
+ "amount_en": "21,600 question-answer records, 75,600 sensor records",
+ "labels_ko": "정답 여부, 이해 여부, 기분(긍정·중립·부정)",
+ "labels_en": "correctness, understanding, emotion",
+ "status": "full-run-2026-11-02"
+}

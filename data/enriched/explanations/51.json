@@ -1,0 +1,12 @@
+{
+ "dataset_id": "51",
+ "easy_ko": "한국 사람들의 옷차림 사진마다 옷이 있는 자리와 상의·하의·외투·원피스 종류, 색·소재·핏 같은 특징, 그리고 '스트리트', '페미닌' 같은 전체 스타일을 패션 전문가가 표시한 데이터입니다. 사진 속 옷 스타일을 알아보거나 비슷한 옷을 찾아 주는 쇼핑 AI를 만들 수 있습니다.",
+ "easy_en": "Photos of Korean fashion where experts marked each piece of clothing (top, bottom, outerwear, dress), its colour, material and fit, and the overall style such as street or feminine. You can build shopping AI that recognises a style or finds similar clothes from a photo.",
+ "detail_ko": "한국 패션 이미지 120만 장(jpg)에 아우터·상의·하의·원피스별 바운딩박스와 폴리곤, 카테고리·기장·색상·소재·프린트·핏·디테일 속성(대분류 10개, 세부 속성 186개), 전체 스타일(23종)을 JSON으로 라벨링했습니다. 기준 성능은 패션 아이템 탐지 Mask R-CNN AP@50 81.48%, 스타일 분류 Recall top-3 91.11%, 매칭 아이템 추천 HR@10 72.85%입니다. 스타일 구분은 전문가 판단이라 클래스 경계가 모호할 수 있고, 사람이 나오는 사진이므로 이용 약관 확인이 필요합니다.",
+ "detail_en": "1.2M Korean fashion images (jpg) with JSON labels: bounding boxes and polygons for outerwear, tops, bottoms and dresses, attributes such as category, length, colour, material, print, fit and details (10 main categories, 186 attributes), and an overall style (23 styles). Baselines: item detection Mask R-CNN AP@50 81.48%, style classification recall top-3 91.11%, matching-item recommendation HR@10 72.85%. Style labels are expert judgements, so class borders can be fuzzy; photos show people, so check the terms of use.",
+ "amount_ko": "사진 120만 장, 스타일 23종, 세부 속성 186개",
+ "amount_en": "1.2M photos, 23 styles, 186 attributes",
+ "labels_ko": "옷 위치 상자와 윤곽, 옷 종류·색·소재·핏, 전체 스타일",
+ "labels_en": "boxes and outlines around clothes, clothing type, colour, material, fit, overall style",
+ "status": "full-run-2026-11-02"
+}

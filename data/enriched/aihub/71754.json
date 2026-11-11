@@ -1,0 +1,29 @@
+{
+ "dataset_id": "71754",
+ "title_en": "Fishing vessel operation pattern track data",
+ "summary_ko": "제주도 연근해 어선의 AIS 항적, 해양 환경(HYCOM), 현장 CCTV를 합쳐 만든 조업 패턴 라벨 10만 건으로, 자망·안강망·채낚기·연승·통발·트롤·선망 같은 조업 종류와 투망·양망·조업·비조업 행태가 표시되어 있습니다. 어선 조업 행태 판별, 불법 조업 단속 AI에 쓸 수 있습니다.",
+ "summary_en": "100k labelled fishing-pattern records for vessels off Jeju, combining AIS tracks, ocean data (HYCOM) and onboard CCTV, with gear types (gillnet, stow net, jigging, longline, trap, trawl, purse seine) and behaviours (setting, hauling, fishing, not fishing). For fishing behaviour detection and illegal-fishing enforcement.",
+ "contents_ko": "항적·환경 데이터(ASCII, NetCDF, XLS) + 영상(mp4) + geojson(조업 종류·행태 라벨).",
+ "contents_en": "Track and ocean data (ASCII, NetCDF, XLS) + video (mp4) + geojson (gear type and behaviour labels).",
+ "modalities": ["sensor", "tabular", "video"],
+ "tasks": ["text_classification", "tabular_prediction", "anomaly_detection"],
+ "topics": [{"ko": "해양·수산", "en": "Ocean and fisheries"}, {"ko": "불법 조업 감시", "en": "Illegal fishing monitoring"}],
+ "keywords_ko": ["AIS", "어선 항적", "조업 패턴", "불법 조업", "제주", "1D-CNN"],
+ "keywords_en": ["AIS", "vessel tracks", "fishing patterns", "illegal fishing", "Jeju", "1D-CNN"],
+ "labels": ["gear type", "fishing behaviour"],
+ "file_formats": ["txt", "nc", "mp4", "xls", "geojson"],
+ "scale_ko": "라벨 100,000건(조업 종류 7종), 행태 4종",
+ "classes_example": ["자망", "안강망", "채낚기", "연승", "통발", "트롤", "선망", "투망", "양망"],
+ "baseline": [],
+ "difficulty": "intermediate",
+ "difficulty_note_ko": "약 14GB로 가볍고 시계열 분류 실습에 좋습니다. 위경도 궤적 다루기에 익숙하면 좋습니다.",
+ "skills_needed_ko": ["파이썬", "pandas 시계열 처리", "1D-CNN·LSTM", "지리 데이터(geojson) 기초"],
+ "caveats_ko": ["페이지에 성능 점수 표가 없음(1D-CNN 모델 소개만 있음)", "선망이 5%로 적음", "비조업 구간이 약 41%", "tasks의 text_classification은 시계열 분류를 대신한 근사값"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "어선 항적 지도", "title_en": "Vessel track map", "desc_ko": "AIS 항적을 지도에 그려 조업 종류별 이동 패턴을 비교합니다.", "desc_en": "Map AIS tracks and compare movement by gear type."},
+  {"level": "capstone", "title_ko": "조업 종류 판별기", "title_en": "Gear type classifier", "desc_ko": "항적 속도·방향 변화로 조업 종류를 맞히는 모델을 만듭니다.", "desc_en": "Predict gear type from speed and heading changes."},
+  {"level": "research", "title_ko": "불법 조업 의심 탐지", "title_en": "Suspicious fishing detection", "desc_ko": "금지 구역·시간대의 조업 행태를 자동으로 찾는 이상 탐지를 연구합니다.", "desc_en": "Study anomaly detection for fishing in banned areas or times."}
+ ],
+ "doc_used": true,
+ "uncertain": ["행태 분포의 건수(수천만 건)는 라벨 10만 건이 아닌 항적 점 단위로 보임"]
+}

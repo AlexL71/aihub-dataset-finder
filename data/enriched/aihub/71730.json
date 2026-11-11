@@ -1,0 +1,29 @@
+{
+ "dataset_id": "71730",
+ "title_en": "Multilingual OCR data",
+ "summary_ko": "한국어와 영어·중국어·일본어가 함께 적힌 간판·안내문·공공 표지·동영상 화면 이미지 400,864장으로, 글자 영역이 다각형으로 표시되어 있습니다. 한국어·외국어가 섞인 글자를 읽는 다중언어 OCR(글자 인식) AI, 외국인 관광 안내에 쓸 수 있습니다.",
+ "summary_en": "400,864 images of signs, notices, public signage and video frames with Korean alongside English, Chinese or Japanese, with text regions marked by polygons. For multilingual OCR on mixed Korean and foreign text, e.g. tourist guidance.",
+ "contents_ko": "이미지(jpeg, png) + 라벨(글자 영역 다각형, 글자 내용, 언어).",
+ "contents_en": "Image (jpeg, png) + labels (text-region polygons, text content, language).",
+ "modalities": ["image"],
+ "tasks": ["ocr", "object_detection"],
+ "topics": [{"ko": "관광·다국어 안내", "en": "Tourism and multilingual guidance"}, {"ko": "문서·글자 인식", "en": "Text recognition"}],
+ "keywords_ko": ["OCR", "다중언어", "간판", "글자 인식", "한영 병기", "관광"],
+ "keywords_en": ["OCR", "multilingual", "signboards", "text recognition", "bilingual signs", "tourism"],
+ "labels": ["polygon", "text transcription", "language"],
+ "file_formats": ["jpeg", "png"],
+ "scale_ko": "이미지 400,864장(한-영 247,900·한-중 92,346·한-일 60,618), 주제 4종",
+ "classes_example": ["생활", "문화", "공공", "동영상", "한국어-영어", "한국어-중국어", "한국어-일본어"],
+ "baseline": [],
+ "difficulty": "intermediate",
+ "difficulty_note_ko": "OCR 실습에 좋지만 전체 약 461GB입니다. 한 언어쌍만 받아 쓰세요.",
+ "skills_needed_ko": ["파이썬", "OCR 모델(PaddleOCR·EasyOCR)", "글자 영역 검출"],
+ "caveats_ko": ["페이지에 성능 점수 표가 없음", "라벨링 형식이 '이미지'로 적혀 있어 실제 라벨 파일 형식 확인 필요", "한-영이 약 62%로 많음"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "간판 글자 영역 찾기", "title_en": "Sign text detection", "desc_ko": "간판 사진에서 글자가 있는 영역을 찾아 표시합니다.", "desc_en": "Detect text regions on signboard photos."},
+  {"level": "capstone", "title_ko": "관광 안내판 번역 카메라", "title_en": "Sign translation camera", "desc_ko": "안내판을 찍으면 글자를 읽고 원하는 언어로 번역해 보여 줍니다.", "desc_en": "Read signs from a photo and translate them."},
+  {"level": "research", "title_ko": "혼합 문자 OCR", "title_en": "Mixed-script OCR", "desc_ko": "한글과 한자·가나가 한 줄에 섞인 글자를 한 모델로 읽는 방법을 연구합니다.", "desc_en": "Study reading lines that mix Hangul with Chinese or Japanese script."}
+ ],
+ "doc_used": true,
+ "uncertain": ["라벨 파일 형식(JSON 여부)이 페이지에 명확하지 않음"]
+}

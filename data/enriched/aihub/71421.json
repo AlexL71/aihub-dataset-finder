@@ -1,0 +1,29 @@
+{
+ "dataset_id": "71421",
+ "title_en": "Display-centred eye movement image data",
+ "summary_ko": "스마트폰·태블릿·노트북·차량 LCD·모니터를 바라보는 사람의 눈 영상에서 뽑은 이미지 약 256만 장입니다. 눈 영역 분할과 키포인트, 시선 방향, 집중·졸림·태만 같은 상태가 표시되어 있어 시선 추적, 졸음·집중도 판단 AI에 쓸 수 있습니다.",
+ "summary_en": "About 2.56 million eye images from videos of people looking at phones, tablets, laptops, car LCDs and monitors. Labelled with eye segmentation, keypoints, gaze and states such as focused, drowsy or inattentive, for gaze tracking and attention or drowsiness detection.",
+ "contents_ko": "눈 영상 이미지(png, RGB·IR) + JSON(눈 키포인트, 분할 영역, 시선, 관찰자 상태·자세).",
+ "contents_en": "Eye image (png, RGB and IR) + JSON (eye keypoints, segmentation, gaze, viewer state and posture).",
+ "modalities": ["image"],
+ "tasks": ["keypoint_pose", "segmentation", "image_classification"],
+ "topics": [{"ko": "시선 추적·HCI", "en": "Gaze tracking and HCI"}, {"ko": "운전자 안전", "en": "Driver safety"}],
+ "keywords_ko": ["시선 추적", "안구", "졸음 감지", "집중도", "디스플레이", "이러닝"],
+ "keywords_en": ["gaze tracking", "eye", "drowsiness detection", "attention", "display", "e-learning"],
+ "labels": ["keypoints", "segmentation mask", "gaze", "viewer state"],
+ "file_formats": ["png", "json"],
+ "scale_ko": "이미지 2,558,104장(원본 영상 87,740건), 디스플레이 5종, 기기별 촬영 인원 150명",
+ "classes_example": ["집중", "졸림", "집중결핍", "집중하락", "태만"],
+ "baseline": [{"task": "gaze estimation", "model": "L2CS-Net", "metric": "MAE", "value": "4.6 degrees"}, {"task": "eye region segmentation", "model": "RITnet", "metric": "mIoU", "value": "80%"}, {"task": "viewer state classification", "model": "Former-DFER", "metric": "WAR", "value": "71.32%"}],
+ "difficulty": "advanced",
+ "difficulty_note_ko": "시선 각도·눈 분할 등 개념이 어렵고 전체 약 4.8TB입니다. 한 디스플레이 종류만 일부 받아 쓰세요.",
+ "skills_needed_ko": ["파이썬", "분할 모델", "시선 추정 모델", "영상 프레임 처리"],
+ "caveats_ko": ["전체 약 4.8TB", "얼굴·눈 사진이라 개인정보 이용 조건을 꼭 확인", "분포 표의 연령·성별 비율이 기기별 150명 구성과 맞는지 불분명", "같은 사람 영상에서 많은 프레임을 뽑아 사람 단위로 분할해야 함"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "눈 영역 분할", "title_en": "Eye region segmentation", "desc_ko": "눈 이미지에서 동공·홍채 영역을 분할합니다.", "desc_en": "Segment pupil and iris areas in eye images."},
+  {"level": "capstone", "title_ko": "온라인 강의 집중도 모니터", "title_en": "Online class attention monitor", "desc_ko": "노트북 카메라로 학생이 집중·졸림 상태인지 판단해 알려 줍니다.", "desc_en": "Use a laptop camera to flag focused or drowsy students."},
+  {"level": "research", "title_ko": "기기 간 시선 추정 일반화", "title_en": "Gaze estimation across devices", "desc_ko": "스마트폰으로 학습한 시선 모델이 차량 LCD·모니터에서도 맞는지 연구합니다.", "desc_en": "Study whether phone-trained gaze models transfer to car LCDs and monitors."}
+ ],
+ "doc_used": true,
+ "uncertain": []
+}

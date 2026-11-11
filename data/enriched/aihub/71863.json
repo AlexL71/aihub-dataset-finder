@@ -1,0 +1,29 @@
+{
+ "dataset_id": "71863",
+ "title_en": "Synthetic facial skin disease image data",
+ "summary_ko": "얼굴에 흔한 염증성 피부질환 5종(건선·아토피·여드름·주사·지루)과 정상 얼굴의 고해상도 합성 이미지 1만 2천 장으로, 병변 마스킹 이미지·상자와 임상정보 텍스트가 라벨로 있습니다. 안면 피부질환 진단 보조와 중증도 평가 AI에 쓸 수 있습니다.",
+ "summary_en": "12,000 high-resolution synthetic face images of 5 common inflammatory skin diseases (psoriasis, atopic dermatitis, acne, rosacea, seborrheic dermatitis) and normal skin, with lesion masks, boxes and clinical-info text. For facial skin disease diagnosis support and severity grading.",
+ "contents_ko": "합성 얼굴 이미지(png, 1024×1024·512×512) + 병변 마스킹(png) + JSON(임상정보, 상자).",
+ "contents_en": "Synthetic face image (png, 1024×1024 or 512×512) + lesion mask (png) + JSON (clinical info, boxes).",
+ "modalities": ["image"],
+ "tasks": ["image_classification", "segmentation", "object_detection"],
+ "topics": [{"ko": "피부과 의료 영상", "en": "Dermatology imaging"}, {"ko": "의료 합성 데이터", "en": "Medical synthetic data"}],
+ "keywords_ko": ["피부질환", "합성 데이터", "여드름", "아토피", "병변 분할", "DenseNet"],
+ "keywords_en": ["skin disease", "synthetic data", "acne", "atopic dermatitis", "lesion segmentation", "DenseNet"],
+ "labels": ["lesion mask", "bounding box", "clinical info"],
+ "file_formats": ["png", "json"],
+ "scale_ko": "합성 이미지 12,000장(6개 클래스), 임상정보 12,000건, 병변 마스크 5,000장",
+ "classes_example": ["건선", "아토피", "여드름", "주사", "지루", "정상"],
+ "baseline": [],
+ "difficulty": "beginner",
+ "difficulty_note_ko": "약 9.3GB로 가볍고 클래스별 양이 비슷해 분류 실습에 좋습니다.",
+ "skills_needed_ko": ["파이썬", "이미지 분류(DenseNet)", "분할 모델 기초"],
+ "caveats_ko": ["페이지에 성능 점수 표가 없음(DenseNet 6종 분류 소개만 있음)", "합성 이미지라 실제 환자 사진에서 성능이 다를 수 있음", "건선만 정면·측면이 있고 클래스별 수량 합이 1만 2천 장과 맞는지 팩에서 확인 안 됨"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "피부질환 6분류", "title_en": "Six-class skin disease classifier", "desc_ko": "얼굴 이미지를 5개 질환과 정상으로 분류합니다.", "desc_en": "Classify faces into 5 diseases or normal."},
+  {"level": "capstone", "title_ko": "병변 면적 측정", "title_en": "Lesion area measurement", "desc_ko": "병변을 분할하고 얼굴 대비 면적으로 중증도를 표시합니다.", "desc_en": "Segment lesions and show severity by area."},
+  {"level": "research", "title_ko": "합성→실제 피부 사진", "title_en": "Synthetic-to-real skin", "desc_ko": "합성 이미지로 학습한 모델이 실제 사진에서도 잘 되는지 연구합니다.", "desc_en": "Study how synthetic-trained models do on real photos."}
+ ],
+ "doc_used": true,
+ "uncertain": ["클래스별 정확한 이미지 수"]
+}

@@ -1,0 +1,29 @@
+{
+ "dataset_id": "71329",
+ "title_en": "Building wind (urban canyon wind) hazard analysis data",
+ "summary_ko": "고층 건물 사이에서 생기는 강한 바람(빌딩풍)을 센서 데이터와 전산유체역학(CFD, 컴퓨터로 공기 흐름을 계산하는 방법)으로 해석한 결과 이미지 약 35만 개와 라벨 약 35만 개를 담은 데이터입니다. 지역별 빌딩풍의 풍향·풍속을 예측해 재해 위험을 분석하는 AI에 쓸 수 있습니다.",
+ "summary_en": "About 350,000 result images and 350,000 labels from simulating strong winds between high-rise buildings (building wind) with sensor data and computational fluid dynamics (CFD, computer simulation of air flow). For AI that predicts local wind direction and speed to assess building-wind hazards.",
+ "contents_ko": "CFD 결과 이미지(png) + 센서·라벨 데이터(csv, json).",
+ "contents_en": "CFD result images (png) + sensor and label data (csv, json).",
+ "modalities": ["image", "sensor"],
+ "tasks": ["forecasting"],
+ "topics": [{"ko": "도시 재난 안전", "en": "Urban disaster safety"}, {"ko": "기상·바람", "en": "Weather and wind"}],
+ "keywords_ko": ["빌딩풍", "CFD", "풍속 예측", "고층 건물", "도시 재난"],
+ "keywords_en": ["building wind", "CFD", "wind speed forecasting", "high-rise buildings", "urban hazards"],
+ "labels": ["wind direction", "wind speed"],
+ "file_formats": ["png", "csv", "json"],
+ "scale_ko": "CFD 이미지 약 35만 개, 라벨 약 35만 개",
+ "classes_example": [],
+ "baseline": [{"task": "building-wind prediction", "model": "ConvLSTM", "metric": "RMSE", "value": "0.19"}],
+ "difficulty": "advanced",
+ "difficulty_note_ko": "약 5.4GB로 크지 않지만 유체역학과 시공간 예측 모델 이해가 필요합니다.",
+ "skills_needed_ko": ["파이썬", "시공간 예측(ConvLSTM)", "유체역학 기초"],
+ "caveats_ko": ["시뮬레이션 결과라 실제 측정과 다를 수 있음", "지역·건물 정보가 팩 앞부분에 자세히 없음", "AI Hub 데이터 유형은 이미지지만 실제로는 예측 과제"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "풍속 지도 시각화", "title_en": "Wind-speed map", "desc_ko": "CFD 결과로 건물 주변 풍속을 색 지도로 보여줍니다.", "desc_en": "Show wind speed around buildings as a colour map."},
+  {"level": "capstone", "title_ko": "보행자 강풍 경보", "title_en": "Pedestrian high-wind alert", "desc_ko": "예측 풍속이 위험하면 해당 구역 보행자에게 경고합니다.", "desc_en": "Warn pedestrians in zones with dangerous predicted wind."},
+  {"level": "research", "title_ko": "CFD 대체 AI 모델", "title_en": "AI surrogate for CFD", "desc_ko": "느린 CFD 계산을 빠르게 대신하는 딥러닝 모델을 연구합니다.", "desc_en": "Build deep-learning surrogates that replace slow CFD runs."}
+ ],
+ "doc_used": true,
+ "uncertain": ["region and building details"]
+}

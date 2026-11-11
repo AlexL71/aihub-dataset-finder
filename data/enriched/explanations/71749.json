@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71749",
+ "easy_ko": "AI 허브에 공개된 번역 문장을 다듬어 만든 번역 모음과, 번역기 성능을 높이고 비교하기 위한 새 번역 문장을 합친 약 140만 문장의 데이터입니다. 번역 메모리 서비스나 번역기 평가와 학습에 쓸 수 있습니다.",
+ "easy_en": "About 1.4 million sentences combining a translation memory cleaned up from AI Hub's public corpora with new sentences for improving and comparing translators. You can use it for translation-memory services or to evaluate and train translators.",
+ "detail_ko": "AI 허브 공개 말뭉치를 정제·검수한 번역 메모리(TM, 최소 800,000문장: 한중 53만, 한일 19.5만, 한영 6.6만, 영한 9천)와 신규 말뭉치·비교 평가 데이터를 합친 약 1,400,000문장(txt, JSON: 번역문, 언어쌍, 분야, 평가 정보)입니다. 페이지에 성능 점수 표가 없고(OpenNMT 학습 조건만 소개), TM은 기존 AI 허브 말뭉치에서 만든 것이라 다른 번역 데이터와 겹칠 수 있습니다. 71593(2022년판)의 후속 데이터입니다.",
+ "detail_en": "About 1,400,000 sentences (txt, JSON: translation, language pair, field, evaluation information): a translation memory (TM) of at least 800,000 sentences cleaned and checked from AI Hub public corpora (530,000 ko-zh, 195,000 ko-ja, 66,000 ko-en, 9,000 en-ko) plus new corpus and comparison evaluation data. There is no score table (only OpenNMT training conditions), and the TM comes from existing AI Hub corpora, so it may overlap with other translation sets. It follows the 2022 edition 71593.",
+ "amount_ko": "약 1,400,000문장(TM 최소 800,000)",
+ "amount_en": "about 1,400,000 sentences (TM at least 800,000)",
+ "labels_ko": "번역 문장, 언어 짝",
+ "labels_en": "translation, language pair",
+ "status": "full-run-2026-11-02"
+}

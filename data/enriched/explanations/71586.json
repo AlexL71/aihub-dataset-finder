@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71586",
+ "easy_ko": "전국의 관광 명소, 먹자골목, 문화 거리, 체험 마을 골목길 2,100곳을 레이저로 입체 스캔하고 건물, 나무, 벽, 도로, 조형물을 점 단위로 나누어 표시한 데이터입니다. 입체 골목 공간을 알아보는 AI나 가상 관광, 메타버스 공간 제작에 쓸 수 있습니다.",
+ "easy_en": "Laser 3D scans of 2,100 alleys at tourist sights, food streets, culture streets and hands-on villages across Korea, with buildings, trees, walls, roads and sculptures labelled point by point. You can use it to build AI that understands alley spaces, or to create virtual tours and metaverse spaces.",
+ "detail_ko": "전국 관광명소·먹자거리·문화거리·체험마을 골목길 2,100곳을 라이다로 스캔한 점군 2,100건(las)과 사진(jpg)·영상(mp4)에 객체 5종(건물, 식생, 벽, 도로, 조형물) 분할 객체 36,835개를 JSON·CSV(좌표·색상·분할 정보)로 붙였습니다. 기준 성능은 RandLA-Net 3D 시멘틱 분할 mIoU 57.52%입니다. 전체 약 1.2TB이고 가장 작은 파일도 약 17GB이며, 건물이 58%로 많고 조형물은 3%뿐입니다. 객체 합계(36,835)가 CSV 39,090건과 다릅니다.",
+ "detail_en": "2,100 lidar point clouds (las) of alleys at tourist sights, food streets, culture streets and hands-on villages across Korea, with photos (jpg) and videos (mp4), and 36,835 segmented objects in 5 classes (building, vegetation, wall, road, sculpture) in JSON and CSV (coordinates, colour, segmentation). Baseline: 3D semantic segmentation with RandLA-Net, mIoU 57.52%. Total size is about 1.2 TB, with even the smallest file about 17 GB. Buildings make up 58% and sculptures only 3%, and the object total (36,835) differs from the CSV count (39,090).",
+ "amount_ko": "골목 점군 2,100건, 분할 객체 36,835개(5종)",
+ "amount_en": "2,100 alley point clouds, 36,835 segmented objects (5 classes)",
+ "labels_ko": "점마다 물체 종류(건물·나무·벽·도로·조형물), 골목 종류",
+ "labels_en": "3D segmentation, category",
+ "status": "full-run-2026-11-02"
+}

@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71613",
+ "easy_ko": "뉴스, 일상 대화, 역사 문서, 스포츠 글에 '어제', '3월'처럼 시간을 나타내는 말과 사건, 그 둘의 시간 관계를 표시한 데이터입니다. 글에서 언제 무슨 일이 있었는지를 뽑아내는 AI나 챗봇, 요약 AI에 쓸 수 있습니다.",
+ "easy_en": "News, everyday conversations, history documents and sports texts with time expressions (such as 'yesterday' or 'in March'), events, and the time relations between them marked. You can use it to build AI that pulls out when things happened from text, or for chatbots and summarisation.",
+ "detail_ko": "뉴스·일상 대화·역사 문서·스포츠 글 41,111건(txt)에 시간 표현(TIMEX3), 사건(EVENT), 시간 관계(TLINK) 태그 2,123,386개를 JSON으로 붙였습니다. 기준 성능은 KoBERT / KoELECTRA F1 시간 표현 0.8078, 사건 0.8285, 시간 관계 0.9711입니다. TLINK 기준값이 0.4로 낮게 잡혀 있고, 도메인별 문서 수 비율은 팩 앞부분에 없습니다.",
+ "detail_en": "41,111 documents (txt) of news, everyday conversation, history and sports text with 2,123,386 JSON tags for time expressions (TIMEX3), events (EVENT) and temporal links (TLINK). Baselines with KoBERT / KoELECTRA, F1: time expressions 0.8078, events 0.8285, temporal links 0.9711. The TLINK target is set low at 0.4, and the share of documents per domain is not in the pack.",
+ "amount_ko": "문서 41,111건, 태그 2,123,386개",
+ "amount_en": "41,111 documents, 2,123,386 tags",
+ "labels_ko": "시간 표현, 사건, 시간 관계",
+ "labels_en": "TIMEX3, EVENT, TLINK",
+ "status": "full-run-2026-11-02"
+}

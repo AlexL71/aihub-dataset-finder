@@ -1,0 +1,29 @@
+{
+ "dataset_id": "71934",
+ "title_en": "Delivery robot off-road operation data (upcycling)",
+ "summary_ko": "기존 AI 허브 배송로봇 데이터를 재가공(업사이클링)한 인도·골목·공원·사무실·식당·전시 공간·복도 이미지 5,031장에, 장면 설명(이미지-텍스트 관계)과 질의응답 라벨 10,062건을 붙인 데이터입니다. 실외 75.6%·실내 24.4%, 실제 75%·가상 25%로 구성되어 배송·안내 로봇의 환경 이해와 시각 질의응답 AI에 쓸 수 있습니다.",
+ "summary_en": "5,031 images of sidewalks, alleys, parks, offices, restaurants, exhibition spaces and corridors, upcycled from existing AI Hub delivery-robot data, with 10,062 labels of scene descriptions and QA. 75.6% outdoor / 24.4% indoor, 75% real / 25% virtual. For environment understanding and visual QA in delivery and guide robots.",
+ "contents_ko": "로봇 시점 이미지(jpg) + JSON(장면 설명, 질의응답).",
+ "contents_en": "Robot-view image (jpg) + JSON (scene description, QA).",
+ "modalities": ["image", "text"],
+ "tasks": ["visual_qa", "image_captioning"],
+ "topics": [{"ko": "배송 로봇", "en": "Delivery robots"}, {"ko": "피지컬 AI", "en": "Physical AI"}],
+ "keywords_ko": ["배송로봇", "비도로", "인도", "실내외 주행", "시각 질의응답", "업사이클링"],
+ "keywords_en": ["delivery robot", "off-road", "sidewalk", "indoor-outdoor navigation", "visual QA", "upcycling"],
+ "labels": ["image-text relation", "question-answer"],
+ "file_formats": ["jpg", "json"],
+ "scale_ko": "이미지 5,031장, 라벨 10,062건(관계·QA 각 5,031)",
+ "classes_example": ["인도", "골목", "공원", "사무실", "식당", "전시 공간", "홀_복도"],
+ "baseline": [],
+ "difficulty": "beginner",
+ "difficulty_note_ko": "약 2.1GB로 가볍습니다. 작은 비전-언어 모델로 장면 설명 실습하기 좋습니다.",
+ "skills_needed_ko": ["파이썬", "비전-언어 모델(VLM) 기초", "이미지 캡션 평가"],
+ "caveats_ko": ["페이지에 성능 점수 표와 모델 설명이 없음", "가상 환경 이미지가 25% 섞여 있음", "사무실·식당·복도는 각 250장으로 적음"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "주행 장소 분류", "title_en": "Place classifier", "desc_ko": "로봇 시점 이미지가 인도·공원·사무실 등 어디인지 분류합니다.", "desc_en": "Classify where a robot-view image was taken."},
+  {"level": "capstone", "title_ko": "로봇 길 안내 질의응답", "title_en": "Robot navigation QA", "desc_ko": "'앞에 장애물이 있나?' 같은 질문에 답하는 VLM 데모를 만듭니다.", "desc_en": "Answer questions like 'is there an obstacle ahead?' with a VLM."},
+  {"level": "research", "title_ko": "가상→실제 장면 이해", "title_en": "Sim-to-real scene understanding", "desc_ko": "가상 이미지로 학습한 모델이 실제 장면에서도 잘 설명하는지 연구합니다.", "desc_en": "Study whether virtual-trained models describe real scenes well."}
+ ],
+ "doc_used": true,
+ "uncertain": []
+}

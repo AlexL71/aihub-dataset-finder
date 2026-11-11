@@ -1,0 +1,43 @@
+# Korea University Sejong Campus departments.
+# Source: https://sejong.korea.ac.kr/koreaSejong/7842/subview.do (checked 2026-10-27)
+# site: path of the department homepage on sejong.korea.ac.kr
+# ai_related: rough flag used to form the pilot comparison group (reviewed by hand later)
+
+departments:
+  # 과학기술대학 (College of Science and Technology)
+  - {id: imath,          college: 과학기술대학, name_ko: 응용수리과학부,              site: /sites/imath/index.do,          ai_related: true}
+  - {id: software,       college: 과학기술대학, name_ko: 컴퓨터융합소프트웨어학과,     site: /sites/software/index.do,       ai_related: true}
+  - {id: kfbt,           college: 과학기술대학, name_ko: 식품생명공학과,              site: /sites/kfbt/index.do,           ai_related: false}
+  - {id: ids,            college: 과학기술대학, name_ko: 자유공학부,                  site: /sites/ids/index.do,            ai_related: false}
+  - {id: dsphy,          college: 과학기술대학, name_ko: 디스플레이ㆍ반도체물리학부,     site: /dsphy/index.do,                ai_related: false}
+  - {id: kueie,          college: 과학기술대학, name_ko: 전자및정보공학과,             site: /sites/kueie/index.do,          ai_related: true}
+  - {id: emse,           college: 과학기술대학, name_ko: 전자ㆍ기계융합공학과,          site: /sites/emse/index.do,           ai_related: false}
+  - {id: am,             college: 과학기술대학, name_ko: 미래모빌리티학과,             site: /sites/am/index.do,             ai_related: false}
+  - {id: amchem,         college: 과학기술대학, name_ko: 신소재화학과,                site: /sites/amchem/index.do,         ai_related: false}
+  - {id: biotechnology,  college: 과학기술대학, name_ko: 생명정보공학과,              site: /sites/biotechnology/index.do,  ai_related: false}
+  - {id: env,            college: 과학기술대학, name_ko: 환경시스템공학과,             site: /sites/env/index.do,            ai_related: false}
+  - {id: aisemi,         college: 과학기술대학, name_ko: 지능형반도체공학과,           site: /sites/AISEMI/index.do,         ai_related: true}
+  # 공공정책대학 (College of Public Policy)
+  - {id: spa,            college: 공공정책대학, name_ko: 정부행정학부,                site: /sites/spa/index.do,            ai_related: false}
+  - {id: pubs,           college: 공공정책대학, name_ko: 공공사회ㆍ통일외교학부(공공사회학전공),   site: /sites/pubs/index.do, ai_related: false}
+  - {id: kuds,           college: 공공정책대학, name_ko: 공공사회ㆍ통일외교학부(통일외교안보전공), site: /sites/kuds/index.do, ai_related: false}
+  - {id: economics,      college: 공공정책대학, name_ko: 경제통계학부(경제정책학전공),  site: /sites/economics/index.do,      ai_related: false}
+  - {id: bigdatascience, college: 공공정책대학, name_ko: 빅데이터사이언스학부,          site: /sites/bigdatascience/index.do, ai_related: true}
+  # 문화스포츠대학 (College of Culture and Sports)
+  - {id: sfa_science,    college: 문화스포츠대학, name_ko: 국제스포츠학부(스포츠과학전공),     site: /sites/sfa/index.do,  ai_related: false}
+  - {id: sfa_business,   college: 문화스포츠대학, name_ko: 국제스포츠학부(스포츠비즈니스전공), site: /sites/sfa/index.do,  ai_related: false}
+  - {id: cuhc,           college: 문화스포츠대학, name_ko: 문화유산융합학부,           site: /sites/cuhc/index.do,           ai_related: false}
+  - {id: cwms,           college: 문화스포츠대학, name_ko: 문화창의학부(미디어문예창작전공), site: /sites/cwms/index.do,     ai_related: false}
+  - {id: culc,           college: 문화스포츠대학, name_ko: 문화창의학부(문화콘텐츠전공),    site: /sites/culc/index.do,     ai_related: false}
+  # 글로벌비즈니스대학 (College of Global Business)
+  - {id: koreanstudies,  college: 글로벌비즈니스대학, name_ko: 글로벌학부(한국학전공),  site: /sites/koreanstudies/index.do,  ai_related: false}
+  - {id: gchina,         college: 글로벌비즈니스대학, name_ko: 글로벌학부(중국학전공),  site: /sites/gchina/index.do,         ai_related: false}
+  - {id: ell,            college: 글로벌비즈니스대학, name_ko: 글로벌학부(영미학전공),  site: /sites/ell/index.do,            ai_related: false}
+  - {id: german,         college: 글로벌비즈니스대학, name_ko: 글로벌학부(독일학전공),  site: /sites/german/index.do,         ai_related: false, note: 모집중단}
+  - {id: digb,           college: 글로벌비즈니스대학, name_ko: 융합경영학부(디지털경영전공), site: /sites/digb/index.do,    ai_related: false}
+  - {id: sti,            college: 글로벌비즈니스대학, name_ko: 표준·지식학과,           site: /sites/sti/index.do,            ai_related: false}
+  - {id: ba,             college: 글로벌비즈니스대학, name_ko: 융합경영학부(글로벌경영전공), site: /sites/ba/index.do,      ai_related: false}
+  # 약학대학 (College of Pharmacy)
+  - {id: pharm,          college: 약학대학, name_ko: 약학과,                         site: /sites/pharm/index.do,          ai_related: false}
+  # 스마트도시학부 (Division of Smart Cities)
+  - {id: smartcity,      college: 스마트도시학부, name_ko: 스마트도시학부,             site: /sites/smartcity/index.do,      ai_related: false}

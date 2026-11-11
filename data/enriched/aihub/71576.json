@@ -1,0 +1,29 @@
+{
+ "dataset_id": "71576",
+ "title_en": "Indoor autonomous parking data",
+ "summary_ko": "밝기가 다른 여러 실내 주차장에서 전용 차량의 어라운드뷰(AVM) 카메라, 전방 카메라, 라이다, IMU로 기록한 데이터입니다. 주차 공간과 주변 사물이 분할·큐보이드로 표시되어 있고 위치 추정용 데이터도 있어 자율주차와 주차 공간 인식 AI에 쓸 수 있습니다.",
+ "summary_en": "Data from indoor car parks with different lighting, recorded by a vehicle's surround-view (AVM) cameras, front camera, LiDAR and IMU. Parking spaces and nearby objects have segmentation and cuboids, plus localisation data; for autonomous parking and parking-space detection.",
+ "contents_ko": "AVM·전방 카메라 영상(jpg) + 라이다 점군(pcd) + JSON(분할, 큐보이드) + 메타데이터.",
+ "contents_en": "AVM and front camera image (jpg) + LiDAR point cloud (pcd) + JSON (segmentation, cuboids) + metadata.",
+ "modalities": ["image", "3d", "sensor"],
+ "tasks": ["segmentation", "object_detection"],
+ "topics": [{"ko": "자율주차", "en": "Autonomous parking"}, {"ko": "차량 위치 인식", "en": "Vehicle localisation"}],
+ "keywords_ko": ["자율주차", "주차 공간 인식", "어라운드뷰", "라이다", "SLAM"],
+ "keywords_en": ["autonomous parking", "parking space detection", "surround view", "LiDAR", "SLAM"],
+ "labels": ["segmentation", "cuboid", "vehicle pose"],
+ "file_formats": ["jpg", "pcd", "json"],
+ "scale_ko": "객체 인식용 162,166장(AVM 80,194 + 전방 40,986 + 라이다 40,986), 위치 추정용 89,060장, 메타데이터 550개",
+ "classes_example": ["Parking Area", "No Parking Area", "Parking Line", "Parking Area Number", "Disabled Icon", "Women Icon", "Compact Car Icon", "Speed Bump", "Parking Block", "Pillar", "Vehicle", "Human"],
+ "baseline": [{"task": "localisation", "model": "HDL SLAM, Cartographer", "metric": "ATE", "value": "0.28"}, {"task": "image semantic segmentation", "model": "HRNet-OCR", "metric": "mIoU", "value": "73.35%"}, {"task": "parking space segmentation", "model": "DeepLabV3, STDC", "metric": "mIoU", "value": "71.98%"}, {"task": "image+LiDAR segmentation", "model": "CMX", "metric": "mIoU", "value": "73.53%"}],
+ "difficulty": "advanced",
+ "difficulty_note_ko": "여러 센서를 함께 다루고 SLAM 지식이 필요합니다. 전체 약 2.7TB로 매우 큽니다.",
+ "skills_needed_ko": ["파이썬", "ROS", "점군 처리", "SLAM", "분할 모델"],
+ "caveats_ko": ["전체 약 2.7TB", "데이터 유형이 '이미지'로 적혀 있지만 라이다·IMU도 포함", "71574 배송 로봇 데이터와 같은 기관·비슷한 구조"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "주차 칸 분할", "title_en": "Parking slot segmentation", "desc_ko": "어라운드뷰 영상에서 주차 칸 영역을 분할합니다.", "desc_en": "Segment parking slots in surround-view images."},
+  {"level": "capstone", "title_ko": "빈 주차 칸 안내", "title_en": "Empty slot guidance", "desc_ko": "주차 칸과 차량을 함께 인식해 빈 칸을 찾아 표시합니다.", "desc_en": "Detect slots and cars together to find empty slots."},
+  {"level": "research", "title_ko": "어두운 주차장 센서 융합", "title_en": "Sensor fusion in dark car parks", "desc_ko": "조명이 약한 곳에서 카메라와 라이다를 융합해 인식 성능을 높이는 방법을 연구합니다.", "desc_en": "Fuse camera and LiDAR to keep accuracy in low light."}
+ ],
+ "doc_used": true,
+ "uncertain": ["ATE 단위가 '단위없음'으로 적혀 있음(보통 미터)"]
+}

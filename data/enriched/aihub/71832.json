@@ -1,0 +1,29 @@
+{
+ "dataset_id": "71832",
+ "title_en": "Global norms and culture evaluation data",
+ "summary_ko": "대형 언어 모델(LLM)이 베트남어와 베트남 문화를 얼마나 잘 이해하는지 평가하는 문제 26,299건입니다. 상식 추론, 문장 이해, 환각 방지, 도덕성, 문화 기반 이미지 이해 등 10가지 과제(Vie-MMLU, Vie-TruthfulQA 등)로 나뉩니다.",
+ "summary_en": "26,299 benchmark items testing how well large language models understand Vietnamese and Vietnamese culture, across 10 tasks such as commonsense reasoning, reading, truthfulness, morality and culture-based multimodal understanding (Vie-MMLU, Vie-TruthfulQA and more).",
+ "contents_ko": "베트남어 평가 문항·정답(JSON, 원천 txt), CMMU 과제는 이미지 포함.",
+ "contents_en": "Vietnamese benchmark questions and answers (JSON, source txt); the CMMU task includes images.",
+ "modalities": ["text", "image"],
+ "tasks": ["question_answering", "text_classification", "visual_qa"],
+ "topics": [{"ko": "LLM 평가", "en": "LLM evaluation"}, {"ko": "베트남어·문화", "en": "Vietnamese language and culture"}],
+ "keywords_ko": ["LLM 벤치마크", "베트남어", "문화 규범", "MMLU", "환각", "상식 추론"],
+ "keywords_en": ["LLM benchmark", "Vietnamese", "cultural norms", "MMLU", "hallucination", "commonsense reasoning"],
+ "labels": ["question-answer"],
+ "file_formats": ["txt", "json"],
+ "scale_ko": "평가 문항 26,299건, 과제 10종",
+ "classes_example": ["Vie-CSQA", "Vie-HellaSwag", "Vie-MMLU", "Vie-TruthfulQA", "Vie-CommonGen", "Vie-HHH", "Vie-Winogrande", "Vie-DROP", "Vie-BoolQ", "Vie-CMMU"],
+ "baseline": [],
+ "difficulty": "intermediate",
+ "difficulty_note_ko": "약 1.3GB로 가볍지만 베트남어 이해와 LLM 평가 방법을 알아야 합니다.",
+ "skills_needed_ko": ["파이썬", "LLM 평가 도구(lm-eval-harness)", "Hugging Face"],
+ "caveats_ko": ["제목은 '글로벌'이지만 내용은 베트남어·베트남 문화 중심", "기존 벤치마크를 바탕으로 만들어 원본과 겹칠 수 있음", "모델 평가 결과 수치는 팩에 없음"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "오픈 LLM 베트남어 점수 비교", "title_en": "Compare open LLMs on Vietnamese", "desc_ko": "공개 LLM 몇 개를 Vie-MMLU로 채점해 비교합니다.", "desc_en": "Score a few open LLMs on Vie-MMLU."},
+  {"level": "capstone", "title_ko": "베트남 문화 벤치마크 대시보드", "title_en": "Vietnamese culture leaderboard", "desc_ko": "10개 과제 점수를 모아 모델별로 보여 주는 리더보드를 만듭니다.", "desc_en": "Build a leaderboard across all 10 tasks."},
+  {"level": "research", "title_ko": "문화 편향 분석", "title_en": "Cultural bias analysis", "desc_ko": "영어 중심 LLM이 베트남 문화 문항에서 어떤 오류를 보이는지 연구합니다.", "desc_en": "Study errors English-centric LLMs make on Vietnamese culture items."}
+ ],
+ "doc_used": true,
+ "uncertain": ["데이터 개요가 비어 있어 목적 설명이 부족함"]
+}

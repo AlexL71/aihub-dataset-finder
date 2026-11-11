@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71848",
+ "easy_ko": "형사법의 판결문, 법령, 해석 같은 문서와 이를 바탕으로 만든 법률 상담 질문과 답, 요약을 모은 데이터로, 모두 10만 건입니다. 일반인도 이해하기 쉬운 법률 상담 챗봇이나 비슷한 사례 찾기 AI에 쓸 수 있습니다.",
+ "easy_en": "Documents such as court rulings, statutes and official interpretations in criminal law, plus legal-advice questions and answers and summaries built from them, 100,000 items in total. You can use it to build legal-advice chatbots that ordinary people can understand, or AI that finds similar cases.",
+ "detail_ko": "형사법 법령·판결문·해석례·결정례 원천 3,050,000문장(csv)과, 이를 바탕으로 만든 지시 학습 데이터 100,000건(질의응답 59,292, 요약 40,708; JSON)입니다. 판결문이 83%로 많고 결정례는 거의 없으며(133건), 모델 성능 수치는 팩에 없습니다. 71847 행정법 데이터와 같은 기관·구조입니다.",
+ "detail_en": "3,050,000 source sentences (csv) from criminal-law statutes, court rulings, interpretations and decisions, plus 100,000 instruction-tuning items built from them (59,292 question-answer pairs, 40,708 summaries; JSON). Rulings make up 83% and decisions are almost absent (133); no model scores are in the pack. Same builder and structure as the administrative-law set 71847.",
+ "amount_ko": "원천 3,050,000문장, 지시 학습 데이터 100,000건(질의응답 59,292, 요약 40,708)",
+ "amount_en": "3,050,000 source sentences, 100,000 instruction items (59,292 QA, 40,708 summaries)",
+ "labels_ko": "질문과 답, 요약",
+ "labels_en": "question-answer, summary",
+ "status": "full-run-2026-11-02"
+}

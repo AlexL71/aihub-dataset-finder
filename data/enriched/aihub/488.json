@@ -1,0 +1,29 @@
+{
+ "dataset_id": "488",
+ "title_en": "Sports video data (baseball)",
+ "summary_ko": "프로야구 협회 경기 영상과 여러 각도에서 직접 찍은 경기·동작 영상에서 뽑은 이미지 122만 장 이상으로, 타자·투수·포수·야수·심판과 배트·공·글러브 상자, 선수 관절 키포인트가 표시되어 있습니다. AI 야구 중계나 투구·타격 동작 분석에 쓸 수 있습니다.",
+ "summary_en": "1.22+ million images from pro-baseball broadcasts and self-filmed games and movements from many angles, with boxes for batters, pitchers, catchers, fielders, umpires, bats, balls and gloves, plus player keypoints. For AI baseball broadcasting or pitching and batting motion analysis.",
+ "contents_ko": "경기 이미지(jpg) + JSON(선수·심판·장비 상자, 관절 키포인트, 행동).",
+ "contents_en": "Game image (jpg) + JSON (player, umpire and equipment boxes, joint keypoints, action).",
+ "modalities": ["image"],
+ "tasks": ["object_detection", "keypoint_pose", "action_recognition"],
+ "topics": [{"ko": "스포츠", "en": "Sports"}, {"ko": "야구", "en": "Baseball"}, {"ko": "방송·중계", "en": "Broadcasting"}],
+ "keywords_ko": ["야구", "투구", "타격", "AI 중계", "자세 추정", "스포츠 분석"],
+ "keywords_en": ["baseball", "pitching", "batting", "AI broadcasting", "pose estimation", "sports analytics"],
+ "labels": ["bounding box", "keypoints", "action"],
+ "file_formats": ["jpg", "json"],
+ "scale_ko": "이미지 122만 장 이상(선수 포지션별 10만 개 이상, 심판·장비 등)",
+ "classes_example": ["타자", "투수", "포수", "1루수", "유격수", "주심", "배트", "야구공", "글러브"],
+ "baseline": [],
+ "difficulty": "intermediate",
+ "difficulty_note_ko": "탐지·자세 추정 실습에 좋고 약 430GB입니다.",
+ "skills_needed_ko": ["파이썬", "YOLO 탐지", "자세 추정"],
+ "caveats_ko": ["협회 경기 영상 포함으로 이용 조건 확인 필요", "성능 지표가 팩 앞부분에 없음"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "야구공·배트 탐지", "title_en": "Ball and bat detection", "desc_ko": "경기 이미지에서 공과 배트를 탐지합니다.", "desc_en": "Detect balls and bats in game images."},
+  {"level": "capstone", "title_ko": "투구 폼 분석기", "title_en": "Pitching form analyser", "desc_ko": "투수 관절로 팔 각도·디딤발 타이밍을 계산해 보여줍니다.", "desc_en": "Compute arm angle and stride timing from pitcher keypoints."},
+  {"level": "research", "title_ko": "작고 빠른 공 추적", "title_en": "Tracking a small fast ball", "desc_ko": "빠르게 움직이는 작은 야구공 탐지·추적 성능을 높이는 방법을 연구합니다.", "desc_en": "Improve detection and tracking of the small, fast ball."}
+ ],
+ "doc_used": true,
+ "uncertain": []
+}

@@ -1,0 +1,29 @@
+{
+ "dataset_id": "71825",
+ "title_en": "Large-scale physical-environment robot manipulation data",
+ "summary_ko": "로봇 그리퍼가 200종 이상의 물체를 집고 옮기는 장면을 실제·가상 환경에서 기록한 데이터로, RGB·깊이 이미지 262,166세트에 로봇 관절 각도, 끝단 위치, 힘·토크, 촉각 값과 한국어 동작 설명이 붙어 있습니다. 문장 지시로 로봇을 움직이는 VLA(비전-언어-행동) 모델에 쓸 수 있습니다.",
+ "summary_en": "A robot gripper handling 200+ objects in real and simulated scenes: 262,166 RGB-D image sets with joint angles, end-effector pose, force/torque, tactile values and Korean action captions. For vision-language-action (VLA) robot models.",
+ "contents_ko": "RGB·깊이 이미지(png) + JSON(로봇 관절 각도, 끝단 포즈, 힘·토크, 촉각, 한국어 캡션).",
+ "contents_en": "RGB and depth images (png) + JSON (joint angles, end-effector pose, force/torque, tactile, Korean captions).",
+ "modalities": ["image", "sensor", "text"],
+ "tasks": ["image_captioning", "depth_estimation", "keypoint_pose"],
+ "topics": [{"ko": "로봇·피지컬 AI", "en": "Robotics and physical AI"}, {"ko": "로봇 조작", "en": "Robot manipulation"}],
+ "keywords_ko": ["로봇 조작", "VLA", "그리퍼", "RGB-D", "힘·토크", "촉각"],
+ "keywords_en": ["robot manipulation", "VLA", "gripper", "RGB-D", "force/torque", "tactile"],
+ "labels": ["caption", "robot state"],
+ "file_formats": ["png", "json"],
+ "scale_ko": "262,166세트(학습 238,266·테스트 23,900), 물체 200종 이상",
+ "classes_example": ["잡기(Grasp)", "들기(Lift)", "옮기기(Move)", "놓기(Place)", "밀기(Push)", "끌기(Drag)", "쌓기(Stack)", "누르기(Press)"],
+ "baseline": [],
+ "difficulty": "advanced",
+ "difficulty_note_ko": "약 71GB로 크기는 적당하지만 로봇 제어·VLA 모델 지식이 필요합니다.",
+ "skills_needed_ko": ["파이썬", "PyTorch", "로봇 운동학", "VLA·모방 학습"],
+ "caveats_ko": ["실제·가상 비율이 팩에 명확하지 않음", "품질 점수는 라벨 정확도이며 모델 성능 수치는 팩에 없음", "학습 80%·테스트 10% 외 나머지 10% 용도 확인 필요"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "로봇 동작 캡션 분석", "title_en": "Robot action caption analysis", "desc_ko": "캡션에 나오는 동작 종류와 물체를 세어 데이터 구성을 파악합니다.", "desc_en": "Count action types and objects in captions."},
+  {"level": "capstone", "title_ko": "이미지→잡기 자세 예측", "title_en": "Image-to-grasp prediction", "desc_ko": "RGB-D 이미지로 그리퍼 끝단 위치를 예측하는 모델을 만듭니다.", "desc_en": "Predict end-effector pose from RGB-D images."},
+  {"level": "research", "title_ko": "한국어 지시 VLA", "title_en": "Korean-instruction VLA", "desc_ko": "한국어 문장 지시로 로봇 동작을 생성하는 VLA 모델과 촉각 정보의 효과를 연구합니다.", "desc_en": "Study Korean-instruction VLA and the value of tactile input."}
+ ],
+ "doc_used": true,
+ "uncertain": ["촉각·힘 데이터가 모든 세트에 있는지 확인 필요"]
+}

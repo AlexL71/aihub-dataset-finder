@@ -1,0 +1,12 @@
+{
+ "dataset_id": "495",
+ "easy_ko": "재활용 선별장에서 찍은 버려진 플라스틱 사진마다 PET, PE, PP, PS 네 가지 재질 중 무엇인지와 그 영역을 칠해 둔 데이터입니다. 플라스틱 재질을 자동으로 골라내는 선별 기계나 분리배출 교육 앱을 만들 수 있습니다.",
+ "easy_en": "Photos of waste plastic at recycling sorting centres, each with its area coloured in and labelled as one of four materials: PET, PE, PP or PS. You can build sorting machines that separate plastics by material, or apps that teach recycling.",
+ "detail_ko": "생활계 폐플라스틱 이미지 802,870건(PE 31.1만, PET 23.3만, PP 15.4만, PS 10.3만, jpg)에 분할 폴리곤과 재질 클래스(4종)를 JSON으로 붙였습니다. 기준 성능은 기록에서 확인되지 않습니다. 전체 약 690GB이며, 겉모양만으로 재질 구분이 어려운 경우가 있습니다.",
+ "detail_en": "802,870 jpg images of household waste plastic (PE 311k, PET 233k, PP 154k, PS 103k) with JSON segmentation polygons and material class (4 types). No baseline is visible in the record. Total size is about 690 GB; some materials are hard to tell apart by appearance alone.",
+ "amount_ko": "사진 약 80.3만 건, 재질 4종",
+ "amount_en": "about 803k images, 4 materials",
+ "labels_ko": "플라스틱 영역(테두리), 재질 종류",
+ "labels_en": "plastic outlines, material type",
+ "status": "full-run-2026-11-02"
+}

@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71969",
+ "easy_ko": "한옥, 절, 한식, 전통 예술처럼 한국적인 분위기의 사진(광고·디자인에 쓰는 '스톡 사진')과, 각 사진을 자세히 설명하는 글을 짝지은 데이터입니다. 주식(증권) 데이터가 아닙니다. 글로 장면을 설명하면 맞는 사진을 찾아 주는 검색 AI를 만들 수 있습니다.",
+ "easy_en": "Korean-themed photos used in advertising and design ('stock photos' of hanok houses, temples, Korean food, traditional arts), each paired with a detailed description. This is not stock-market data. You can build search AI that finds the right photo from a written description.",
+ "detail_ko": "SBS가 제공한 한국적 스톡 이미지 52,463장(png)과 이미지별 상세 설명 텍스트(총 1,154,186문장)로 구성된 이미지-텍스트 데이터입니다. 설명은 시각적 정보뿐 아니라 문화적·맥락적 이해를 담도록 단계적 사고(CoT) 방식으로 작성되었습니다. 텍스트-이미지 검색, 이미지 캡셔닝, 한국 문화 특화 멀티모달 모델 학습에 적합합니다. 폴더 분류 코드의 의미는 원문 확인이 필요합니다.",
+ "detail_en": "52,463 Korean-themed stock images (png) from SBS with detailed descriptions (1,154,186 sentences in total), written with a chain-of-thought approach to capture cultural and contextual meaning, not just what is visible. Suited to text-to-image retrieval, captioning and Korea-specific multimodal models. Check the manual for the meaning of the folder codes.",
+ "amount_ko": "사진 약 5.2만 장, 설명 문장 약 115만 개",
+ "amount_en": "about 52k photos, about 1.15M description sentences",
+ "labels_ko": "사진 설명 글",
+ "labels_en": "photo description text",
+ "status": "sample-2026-11-02"
+}

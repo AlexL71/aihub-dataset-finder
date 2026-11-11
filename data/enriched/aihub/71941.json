@@ -1,0 +1,29 @@
+{
+ "dataset_id": "71941",
+ "title_en": "Tactical judgment video data (handball) (upcycling)",
+ "summary_ko": "2022년 AI 허브 핸드볼 전술판정 영상 데이터에서 중복 이미지를 빼고 무작위로 뽑은 이미지 20,000건에, 온톨로지·검색 기반 생성(RAG)과 사람 검수로 만든 이미지-텍스트 라벨을 붙인 업사이클링 데이터입니다. 경기 장면 요소 사이의 관계를 담아 전술 분류, 코치 AI, 행동 예측에 쓸 수 있습니다.",
+ "summary_en": "20,000 de-duplicated, randomly sampled images from AI Hub's 2022 handball tactical judgment video data, with image-text labels built using an ontology, retrieval-augmented generation (RAG) and human review. Captures relations between game elements, for tactic classification, coaching AI and action prediction.",
+ "contents_ko": "경기 이미지(jpg) + JSON(이미지-텍스트 설명, 요소 관계).",
+ "contents_en": "Game image (jpg) + JSON (image-text description, element relations).",
+ "modalities": ["image", "text"],
+ "tasks": ["image_captioning", "visual_qa", "action_recognition"],
+ "topics": [{"ko": "스포츠 분석", "en": "Sports analytics"}, {"ko": "멀티모달 AI", "en": "Multimodal AI"}],
+ "keywords_ko": ["핸드볼", "전술 분석", "이미지 캡션", "온톨로지", "RAG", "업사이클링"],
+ "keywords_en": ["handball", "tactical analysis", "image captioning", "ontology", "RAG", "upcycling"],
+ "labels": ["image-text"],
+ "file_formats": ["jpg", "json"],
+ "scale_ko": "20,000건",
+ "classes_example": [],
+ "baseline": [],
+ "difficulty": "intermediate",
+ "difficulty_note_ko": "약 4.6GB로 가볍습니다. 핸드볼 전술 용어를 조금 알면 라벨을 이해하기 쉽습니다.",
+ "skills_needed_ko": ["파이썬", "비전-언어 모델(VLM) 기초", "이미지 캡션 평가"],
+ "caveats_ko": ["페이지에 성능 점수 표와 모델 설명이 없음", "시즌·팀 분포 기준 없이 무작위 추출이라 팀·경기별 편향이 있을 수 있음", "전술 클래스 목록은 팩에 없음", "선수가 찍힌 이미지라 초상권 주의"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "경기 장면 설명", "title_en": "Game scene captioning", "desc_ko": "핸드볼 장면을 한국어 문장으로 설명하는 캡션을 만들어봅니다.", "desc_en": "Caption handball scenes in Korean."},
+  {"level": "capstone", "title_ko": "전술 질의응답 코치", "title_en": "Tactics QA coach", "desc_ko": "장면을 보고 '어떤 전술인가?'에 답하는 VLM 데모를 만듭니다.", "desc_en": "Answer 'which tactic is this?' from a scene with a VLM."},
+  {"level": "research", "title_ko": "온톨로지 기반 장면 이해", "title_en": "Ontology-grounded scene understanding", "desc_ko": "스포츠 온톨로지를 붙여 VLM 오답을 줄이는 방법을 연구합니다.", "desc_en": "Study using a sports ontology to cut VLM errors."}
+ ],
+ "doc_used": true,
+ "uncertain": ["클래스 목록을 페이지와 설명서에서 찾지 못함"]
+}

@@ -1,0 +1,12 @@
+{
+ "dataset_id": "182",
+ "easy_ko": "드론이 하늘에서 아래를 내려다보며 찍은 영상에, 교차로 교통 분석, 조난자 찾기, 드론 택시 상황에서 움직이는 차와 사람의 위치를 표시한 데이터입니다. 드론으로 교통량을 세거나 산이나 바다에서 실종자를 찾는 AI를 만들 수 있습니다.",
+ "easy_en": "Top-down drone videos with moving cars and people marked, in three situations: intersection traffic analysis, searching for missing people, and drone taxis. You can build AI that counts traffic from drones or finds missing people in mountains or at sea.",
+ "detail_ko": "드론 하향 시점 원시 영상 300시간 이상(mp4)과 가공 이미지 약 90만~100만 장(jpg, 서비스 3종 각 30만 장 이상)으로, JSON에 이동체 바운딩박스, 클래스, 서비스 구분(교차로 교통분석, 조난자 수색, 드론 택시)이 있습니다. 기준 성능은 기록에서 확인되지 않습니다. 전체 약 1.9TB입니다.",
+ "detail_en": "300+ hours of raw top-down drone video (mp4) and about 0.9–1M processed images (jpg, 300k+ for each of 3 services), with JSON moving-object bounding boxes, class and scenario (intersection traffic analysis, search and rescue, drone taxi). No baseline is visible in the record. Total size is about 1.9 TB.",
+ "amount_ko": "영상 300시간 이상, 이미지 약 90만~100만 장",
+ "amount_en": "300+ hours of video, about 0.9–1M images",
+ "labels_ko": "움직이는 물체 위치 상자, 물체 종류, 상황 구분",
+ "labels_en": "boxes around moving objects, object class, scenario",
+ "status": "full-run-2026-11-02"
+}

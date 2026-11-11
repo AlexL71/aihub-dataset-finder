@@ -1,0 +1,29 @@
+{
+ "dataset_id": "544",
+ "title_en": "Purpose-specific goal-oriented dialogue data",
+ "summary_ko": "온라인 쇼핑·교육·유통 상담센터 등에서 모은 고객 상담, 주문·예약, 문의 응대 대화 4.6만 건으로, 부서 안내·서류 문의·민원 신고·절차 문의·환불 문의 같은 주제가 표시되어 있습니다. 고객 응대 챗봇이나 문의 분류에 쓸 수 있습니다.",
+ "summary_en": "46,000 goal-oriented conversations (customer support, orders and bookings, enquiries) collected from online commerce, education and retail contact centres, labelled with topics such as department guidance, document questions, complaints, procedures and refunds. For customer-service chatbots and enquiry classification.",
+ "contents_ko": "대화 텍스트 + JSON(주제, 질문-응답, 화자 구분).",
+ "contents_en": "Conversation text + JSON (topic, question-answer, speaker roles).",
+ "modalities": ["text"],
+ "tasks": ["dialogue", "text_classification", "question_answering"],
+ "topics": [{"ko": "고객 서비스", "en": "Customer service"}, {"ko": "챗봇", "en": "Chatbots"}, {"ko": "주문·예약", "en": "Orders and bookings"}],
+ "keywords_ko": ["목적대화", "고객 상담", "주문", "예약", "환불 문의", "챗봇"],
+ "keywords_en": ["goal-oriented dialogue", "customer support", "orders", "bookings", "refund enquiry", "chatbot"],
+ "labels": ["topic", "QA pairs", "speaker roles"],
+ "file_formats": ["txt", "json"],
+ "scale_ko": "대화 46,281건",
+ "classes_example": ["부서안내", "서류 문의", "민원신고", "절차 문의", "프로그램 문의", "등록 문의", "비용/환불 문의"],
+ "baseline": [],
+ "difficulty": "beginner",
+ "difficulty_note_ko": "약 0.1GB 텍스트라 노트북에서 문의 분류 챗봇을 바로 만들어 볼 수 있습니다.",
+ "skills_needed_ko": ["파이썬", "pandas", "텍스트 분류"],
+ "caveats_ko": ["상담 대화라 상황별 표현이 정형화되어 있을 수 있음"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "문의 유형 분류", "title_en": "Enquiry type classifier", "desc_ko": "고객 질문을 환불·등록·서류 문의 등으로 분류합니다.", "desc_en": "Classify customer questions into refund, registration, documents and more."},
+  {"level": "capstone", "title_ko": "학원 상담 챗봇", "title_en": "Academy enquiry chatbot", "desc_ko": "교육 상담 대화로 수강 등록·환불 문의에 답하는 챗봇을 만듭니다.", "desc_en": "Answer enrolment and refund questions for a learning centre."},
+  {"level": "research", "title_ko": "적은 데이터 분야의 목적대화", "title_en": "Goal dialogue for low-data domains", "desc_ko": "다른 분야 대화로 학습해 데이터가 적은 분야에 옮기는 방법을 연구합니다.", "desc_en": "Transfer dialogue models to domains with little data."}
+ ],
+ "doc_used": true,
+ "uncertain": []
+}

@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71900",
+ "easy_ko": "전자 기판에 부품을 붙이는 공정의 검사 사진과 온도, 습도, 진동, 소리 같은 공정 센서 기록을 묶고, 납이 모자라거나 부품이 잘못 꽂힌 것 같은 결함을 표시한 데이터입니다. 결함을 찾아내고 공정 이상을 미리 알아채는 AI에 쓸 수 있습니다.",
+ "easy_en": "Inspection images from the process of mounting parts on circuit boards, combined with process sensor records such as temperature, humidity, vibration and sound, with defects such as missing solder or wrongly inserted parts marked. You can use it to build AI that finds defects and warns of process problems in advance.",
+ "detail_ko": "전자기판 표면실장(SMT) 공정의 SPI·AOI 검사 이미지(jpg)와 온도·습도·진동·소리 등 공정 센서(csv)를 묶은 원천 102,710건과 라벨 51,355건(JSON)에, 사전 공정(미납, 납부족, 납쇼트, 납볼 등)과 납땜 공정(냉납, 밀림, 오삽, 미삽, 역삽, 일어섬 등) 결함 상자와 분류 태그를 붙였습니다. 페이지에 성능 점수 표가 없고(멀티모달 이상 예측 모델 소개만 있음), 표에 '정상' 아래에도 결함 이름이 있어 정상/불량 구분 방식이 불분명하며, 오삽(309)처럼 적은 클래스가 있습니다.",
+ "detail_en": "102,710 source items and 51,355 JSON labels combining SPI and AOI inspection images (jpg) from surface-mount technology (SMT) circuit-board lines with process sensors (csv) such as temperature, humidity, vibration and sound, with boxes and class tags for pre-process defects (missing solder, insufficient solder, solder bridge, solder ball and more) and soldering defects (cold joint, shift, wrong insertion, missing part, reversed part, tombstoning and more). There is no score table (only a multimodal anomaly-prediction model is described); defect names also appear under 'normal' in the table, so the normal/defect split is unclear; and some classes are tiny (309 wrong insertions).",
+ "amount_ko": "원천 102,710건, 라벨 51,355건",
+ "amount_en": "102,710 source items, 51,355 labels",
+ "labels_ko": "결함 위치 상자, 결함·정상 분류",
+ "labels_en": "bounding box, classification tag",
+ "status": "full-run-2026-11-02"
+}

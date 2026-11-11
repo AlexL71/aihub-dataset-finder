@@ -1,0 +1,12 @@
+{
+ "dataset_id": "129",
+ "easy_ko": "정치·행정, 금융, 사회·복지, 조례, 케이팝·대중문화, 문화재·한식, 교육 같은 사회 분야의 한국어 문장과 중국어 번역을 짝지은 데이터입니다. 특정 분야에 강한 한국어-중국어 번역기나 분야별 용어 사전을 만들 수 있습니다.",
+ "easy_en": "Korean sentences paired with Chinese translations in social fields such as politics and administration, finance, society and welfare, local ordinances, K-pop and pop culture, cultural heritage and Korean food, and education. You can build Korean–Chinese translators that are strong in specific fields, or term dictionaries.",
+ "detail_ko": "사회과학 7개 분야 한국어-중국어 병렬 문장 130만 쌍(정치·행정 25만, 금융 20만, 사회 20만, 조례 20만, K-POP 20만, 문화재 15만, 교육 10만)으로, 한국어 원문은 평균 15어절이며 분야 라벨이 있습니다. 기준 성능 지표는 없습니다. 파일 형식(json/xlsx)은 확인되지 않은 추정입니다.",
+ "detail_en": "1.3M Korean–Chinese sentence pairs in 7 social-science domains (politics and administration 250k; finance, society, ordinances, K-pop 200k each; cultural heritage 150k; education 100k); Korean sentences average 15 words, with domain labels. No baseline is published. File formats (json/xlsx) are not confirmed.",
+ "amount_ko": "번역 문장 130만 쌍, 분야 7개",
+ "amount_en": "1.3M sentence pairs, 7 domains",
+ "labels_ko": "한국어-중국어 번역 짝, 분야",
+ "labels_en": "Korean–Chinese sentence pairs, domain",
+ "status": "full-run-2026-11-02"
+}

@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71937",
+ "easy_ko": "공작 기계에 부품을 넣고 빼는 로봇 작업을 자동화하기 위해, 실제 작업장과 가상 환경의 입체 설계 파일, 로봇 움직임 기록, 단계별로 따지는 추론을 모은 데이터입니다. 공장 로봇이 상황을 판단하고 스스로 결정하는 AI에 쓸 수 있습니다.",
+ "easy_en": "Data for automating robots that load and unload parts on machine tools: 3D design files from real workcells and a simulator, robot motion logs and step-by-step reasoning. You can use it to build AI that lets factory robots judge situations and make their own decisions.",
+ "detail_ko": "금속·공작기계 가공 셀의 로봇 머신텐딩 자동화를 위한 데이터로, 실제 작업 환경과 Gazebo 시뮬레이션의 3D CAD 원천 2,473개(stl)와 로봇 구동 로그 360개(csv), 이를 URDF(로봇 구조 기술 형식)·JSON·단계적 사고(CoT)로 라벨링한 공정 모델 120개(URDF·JSON 각 120)와 로봇 상태 라벨 360개가 있습니다. 공정 예: 정형 반복 핸들링, 비전 연계 투입, 이동로봇 협업 이송, 검사 연계 반출, 다중 로봇 협업. 페이지에 성능 점수 표가 없고, 라벨 공정 모델이 120개로 적으며, '사출 금형 전자 제품 제조 환경'은 결과값이 비어 있습니다.",
+ "detail_en": "Data for automating robot machine tending in metal-machining cells: 2,473 3D CAD source files (stl) from real workcells and Gazebo simulation, 360 robot operation logs (csv), and 120 process models labelled in URDF (a robot-description format), JSON and chain-of-thought (CoT) (120 each), plus 360 robot-state labels. Processes include repetitive handling, vision-guided loading, mobile-robot transfer, inspection-linked unloading and multi-robot collaboration. There is no score table, only 120 process models are labelled, and the 'injection-mould electronics' environment has no results.",
+ "amount_ko": "3D CAD 원천 2,473개, 로봇 상태 360개, 라벨 공정 모델 120개, 로봇 상태 라벨 360개",
+ "amount_en": "2,473 3D CAD sources, 360 robot-state logs, 120 labelled process models, 360 robot-state labels",
+ "labels_ko": "로봇 구조(URDF), 단계별 추론",
+ "labels_en": "URDF structure, CoT",
+ "status": "full-run-2026-11-02"
+}

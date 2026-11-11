@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71463",
+ "easy_ko": "한국인이 영어로 말한 목소리 1,052시간에 받아쓴 글과 말하기 수준 평가를 붙인 데이터입니다. 영어 발음과 말하기를 자동으로 채점하는 교육용 AI에 쓸 수 있습니다.",
+ "easy_en": "1,052 hours of Korean learners speaking English, with written transcripts and ratings of each speaker's level. You can use it to build educational AI that scores English pronunciation and speaking automatically.",
+ "detail_ko": "한국인 학습자의 영어 발화 음성 1,052시간(wav)에 전사, 학습자 수준·평가, 언어학적 태깅을 JSON으로 붙였고, 말하기 문항 주제는 10종(예: 인간관계, 음식, 여행/교통, 자연/동식물, 엔터테인먼트/게임)입니다. 기준 성능은 발음 평가 wav2vec 2.0 + MLP 피어슨 상관 0.72, 음성 인식 RNN-Transducer WER 5.4%입니다. 수준 평가 점수 기준은 설명서에서 확인해야 하고, 중국어·일본어 버전(71464)과 같은 구조입니다.",
+ "detail_en": "1,052 hours of English speech (wav) by Korean learners, with JSON transcripts, learner level and ratings, and linguistic tags, across 10 speaking topics (such as relationships, food, travel/transport, nature/animals and plants, entertainment/games). Baselines: pronunciation assessment with wav2vec 2.0 + MLP, Pearson correlation 0.72; speech recognition with RNN-Transducer, WER 5.4%. Check the manual for how level scores are defined. It has the same structure as the Chinese/Japanese version (71464).",
+ "amount_ko": "음성 1,052시간, 주제 10종",
+ "amount_en": "1,052 hours of speech, 10 topics",
+ "labels_ko": "받아쓴 글, 말하기 수준 평가, 언어 분석 표시",
+ "labels_en": "transcripts, proficiency ratings, linguistic tags",
+ "status": "full-run-2026-11-02"
+}

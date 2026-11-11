@@ -1,0 +1,32 @@
+{
+ "dataset_id": "71309",
+ "title_en": "Common-sense sentence generation data",
+ "summary_ko": "71308번 데이터의 개념 집합 약 51만 개마다 사람이 상식에 맞는 문장을 2개씩 새로 쓴 약 102만 문장입니다. 주어진 단어들로 자연스러운 한국어 문장을 만드는 생성 AI, 챗봇, 질의응답 연구에 쓸 수 있습니다.",
+ "summary_en": "About 1.02 million sentences written by people, 2 per concept set, for the about 510,000 concept sets from dataset 71308. For generative AI that writes natural Korean sentences from given words, and for chatbot and QA research.",
+ "contents_ko": "개념 집합 + 사람이 쓴 문장(txt) + JSON.",
+ "contents_en": "Concept sets + human-written sentences (txt) + JSON.",
+ "modalities": ["text"],
+ "tasks": ["text_generation"],
+ "topics": [{"ko": "상식 추론", "en": "Commonsense reasoning"}, {"ko": "문장 생성", "en": "Text generation"}],
+ "keywords_ko": ["상식 문장", "문장 생성", "개념 집합", "KoBART", "생성 AI"],
+ "keywords_en": ["common-sense sentences", "sentence generation", "concept sets", "KoBART", "generative AI"],
+ "labels": ["concept set", "reference sentence"],
+ "file_formats": ["txt", "json"],
+ "scale_ko": "문장 약 102만 개(개념 집합 약 51만 × 2)",
+ "classes_example": [],
+ "baseline": [
+  {"task": "common-sense sentence generation", "model": "seq2seq model", "metric": "ROUGE-L", "value": "64.7%"},
+  {"task": "common-sense sentence generation", "model": "seq2seq model", "metric": "concept coverage", "value": "0.86"}
+ ],
+ "difficulty": "beginner",
+ "difficulty_note_ko": "약 0.24GB로 작아 생성 모델 미세조정 실습에 좋습니다.",
+ "skills_needed_ko": ["파이썬", "Hugging Face", "생성 모델(KoBART·T5 등)"],
+ "caveats_ko": ["71308·71311번과 이어지는 3단계 연작의 두 번째 데이터"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "KoBART 문장 생성", "title_en": "KoBART sentence generator", "desc_ko": "개념 집합으로 문장을 만드는 KoBART를 미세조정합니다.", "desc_en": "Fine-tune KoBART to write sentences from concept sets."},
+  {"level": "capstone", "title_ko": "어린이 글쓰기 놀이", "title_en": "Kids' writing game", "desc_ko": "단어 카드를 고르면 문장 예시를 보여주는 놀이 앱을 만듭니다.", "desc_en": "Pick word cards and see example sentences."},
+  {"level": "research", "title_ko": "생성 다양성 높이기", "title_en": "More diverse generation", "desc_ko": "같은 개념으로 서로 다른 문장을 만드는 방법을 연구합니다.", "desc_en": "Generate varied sentences from the same concepts."}
+ ],
+ "doc_used": true,
+ "uncertain": []
+}

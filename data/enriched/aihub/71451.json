@@ -1,0 +1,29 @@
+{
+ "dataset_id": "71451",
+ "title_en": "Greenhouse strawberry plant and disease images",
+ "summary_ko": "시설 재배 딸기(설향) 이미지 191,149장으로, 정상과 질병 2종(역병·시들음병), 생리·영양장애 2종(잎끝마름·황화)이 상자로 표시되어 있습니다. 딸기 농가의 병해를 조기에 진단하는 AI에 쓸 수 있습니다.",
+ "summary_en": "191,149 images of greenhouse strawberries (Seolhyang variety): healthy, 2 diseases (Phytophthora blight, Fusarium wilt) and 2 physiological or nutrient disorders (leaf tip burn, yellowing), marked by boxes. For early disease diagnosis on strawberry farms.",
+ "contents_ko": "딸기 이미지(jpg) + JSON(상자, 상태 클래스).",
+ "contents_en": "Strawberry image (jpg) + JSON (box, condition class).",
+ "modalities": ["image"],
+ "tasks": ["object_detection", "image_classification"],
+ "topics": [{"ko": "스마트 농업", "en": "Smart farming"}, {"ko": "작물 병해", "en": "Crop disease"}],
+ "keywords_ko": ["딸기", "작물 질병", "역병", "시들음병", "영양장애", "시설 재배"],
+ "keywords_en": ["strawberry", "crop disease", "blight", "wilt", "nutrient disorder", "greenhouse"],
+ "labels": ["bounding box", "class"],
+ "file_formats": ["jpg", "json"],
+ "scale_ko": "이미지 191,149장, 클래스 5종(정상 74,290 포함)",
+ "classes_example": ["정상", "역병", "시들음병", "잎끝마름", "황화"],
+ "baseline": [{"task": "disease detection", "model": "YOLO v3", "metric": "mAP", "value": "78.13%"}],
+ "difficulty": "beginner",
+ "difficulty_note_ko": "클래스가 5개라 입문용으로 좋습니다. 전체 약 219GB라 클래스별로 일부만 받으세요.",
+ "skills_needed_ko": ["파이썬", "YOLO 탐지", "이미지 분류"],
+ "caveats_ko": ["전체 약 219GB", "품종이 설향 하나뿐임", "정상이 약 39%로 가장 많고 황화는 약 8%로 적음"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "딸기 병 분류", "title_en": "Strawberry disease classifier", "desc_ko": "딸기 사진이 정상인지, 어떤 병인지 분류합니다.", "desc_en": "Classify strawberry photos as healthy or by disease."},
+  {"level": "capstone", "title_ko": "초보 농부 진단 앱", "title_en": "Diagnosis app for new farmers", "desc_ko": "사진을 찍으면 병해를 진단하고 대처법을 알려 주는 앱을 만듭니다.", "desc_en": "App that diagnoses a photo and suggests what to do."},
+  {"level": "research", "title_ko": "조기 병해 탐지", "title_en": "Early disease detection", "desc_ko": "증상이 약한 초기 단계에서도 병을 찾는 방법을 연구합니다.", "desc_en": "Detect diseases at early, mild stages."}
+ ],
+ "doc_used": true,
+ "uncertain": []
+}

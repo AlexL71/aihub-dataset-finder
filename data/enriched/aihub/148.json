@@ -1,0 +1,29 @@
+{
+ "dataset_id": "148",
+ "title_en": "Open-field crop pest diagnosis images",
+ "summary_ko": "노지 작물에 사는 해충 19종(배추흰나비, 배추좀나방, 담배나방, 노린재류, 진딧물 등)과 정상 작물 사진 50만 건으로, 해충 위치가 상자로 표시되어 있습니다. 밭에서 해충을 찾아내고 방제 시기를 알려주는 AI에 쓸 수 있습니다.",
+ "summary_en": "500,000 photos of 19 pests on open-field crops (cabbage white butterfly, diamondback moth, tobacco budworm, stink bugs, aphids and more) and healthy crops, with pest positions boxed. For AI that spots pests in fields and suggests when to treat.",
+ "contents_ko": "작물·해충 사진 + JSON(해충 종류, 상자 좌표, 작물 정보). 해충 사진은 원본과 증강본이 있음.",
+ "contents_en": "Crop or pest photo + JSON (pest type, box, crop info). Pest photos come as originals plus augmented copies.",
+ "modalities": ["image"],
+ "tasks": ["object_detection", "image_classification"],
+ "topics": [{"ko": "농업·스마트팜", "en": "Agriculture and smart farming"}, {"ko": "곤충·해충", "en": "Insects and pests"}, {"ko": "채소", "en": "Vegetables"}],
+ "keywords_ko": ["해충", "작물 해충", "노린재", "나방", "진딧물", "충해 예찰", "스마트팜"],
+ "keywords_en": ["pests", "crop pests", "stink bug", "moth", "aphid", "pest surveillance", "smart farm"],
+ "labels": ["bounding box", "class (pest)"],
+ "file_formats": ["jpg", "json"],
+ "scale_ko": "학습 데이터 502,530건(정상 약 8.4만, 해충 원본 2만 + 증강 20만), 해충 19종, 작물 12종",
+ "classes_example": ["배추좀나방", "배추흰나비", "담배거세미나방", "먹노린재", "복숭아혹진딧물", "큰28점박이무당벌레", "꽃노랑총채벌레"],
+ "baseline": [],
+ "difficulty": "intermediate",
+ "difficulty_note_ko": "작은 해충을 찾는 탐지는 분류보다 어렵습니다. 전체 약 900GB라 일부 해충만 받아 쓰세요.",
+ "skills_needed_ko": ["파이썬", "YOLO 객체 탐지(작은 물체)"],
+ "caveats_ko": ["전체 약 900GB", "증강본이 많아 원본 기준으로 데이터 분할 필요", "페이지 표 제목이 '노지 작물 질병'으로 잘못 적혀 있음"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "해충 종류 분류", "title_en": "Pest species classifier", "desc_ko": "해충 상자를 잘라 19종을 분류하는 모델을 만듭니다.", "desc_en": "Crop pest boxes and classify the 19 species."},
+  {"level": "capstone", "title_ko": "밭 해충 알림 앱", "title_en": "Field pest alert app", "desc_ko": "잎 사진에서 해충을 탐지하고 방제 정보를 보여주는 앱을 만듭니다.", "desc_en": "Detect pests on leaf photos and show control advice."},
+  {"level": "research", "title_ko": "작은 해충 탐지 개선", "title_en": "Small-pest detection", "desc_ko": "총채벌레처럼 아주 작은 해충의 탐지 성능을 높이는 방법을 비교합니다.", "desc_en": "Compare methods for detecting tiny pests such as thrips."}
+ ],
+ "doc_used": true,
+ "uncertain": []
+}

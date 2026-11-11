@@ -1,0 +1,29 @@
+{
+ "dataset_id": "71802",
+ "title_en": "Multimodal data for predictive maintenance of factory transport equipment degradation",
+ "summary_ko": "반도체·디스플레이·자동차 공장 등의 천장 이송장치(OHT)와 무인운반차(AGV)에서 모은 센서값(csv)과 열화상 이미지(bin) 124,263세트에 탄화(과열로 타는 현상) 관련 상태 태그가 붙은 데이터입니다. 온디바이스 AI로 설비 탄화를 미리 예측하는 예지보전에 쓸 수 있습니다.",
+ "summary_en": "124,263 sets of sensor values (csv) and thermal images (bin) from overhead hoist transports (OHT) and automated guided vehicles (AGV) in factories, tagged with carbonisation (overheating burn) status. For on-device predictive maintenance that forecasts equipment carbonisation.",
+ "contents_ko": "센서값(csv) + 열화상 이미지(bin) + JSON(상태 태그).",
+ "contents_en": "Sensor values (csv) + thermal image (bin) + JSON (status tags).",
+ "modalities": ["sensor", "image"],
+ "tasks": ["anomaly_detection", "forecasting", "tabular_prediction"],
+ "topics": [{"ko": "제조·예지보전", "en": "Manufacturing and predictive maintenance"}, {"ko": "피지컬 AI", "en": "Physical AI"}],
+ "keywords_ko": ["예지보전", "OHT", "AGV", "열화상", "탄화 예측", "온디바이스 AI"],
+ "keywords_en": ["predictive maintenance", "OHT", "AGV", "thermal imaging", "carbonisation prediction", "on-device AI"],
+ "labels": ["status tag"],
+ "file_formats": ["csv", "bin", "json"],
+ "scale_ko": "124,263세트(1차 개방 13,121세트, 약 10.6%)",
+ "classes_example": ["정상", "관심", "경고", "위험"],
+ "baseline": [],
+ "difficulty": "intermediate",
+ "difficulty_note_ko": "현재 공개분은 약 5GB로 작아 시계열 이상 탐지 실습에 좋습니다.",
+ "skills_needed_ko": ["파이썬", "시계열 분석", "이상 탐지"],
+ "caveats_ko": ["현재 1차 개방분(약 10.6%)만 공개됨", "열화상이 bin 형식이라 읽는 방법을 설명서에서 확인해야 함", "성능 지표가 팩 앞부분에 없음"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "센서 이상 탐지", "title_en": "Sensor anomaly detection", "desc_ko": "센서 시계열에서 비정상 구간을 찾습니다.", "desc_en": "Find abnormal periods in sensor time series."},
+  {"level": "capstone", "title_ko": "설비 과열 경보 대시보드", "title_en": "Equipment overheating dashboard", "desc_ko": "열화상과 센서로 과열 위험을 실시간으로 보여 줍니다.", "desc_en": "Show overheating risk live from thermal and sensor data."},
+  {"level": "research", "title_ko": "경량 온디바이스 예측", "title_en": "Lightweight on-device prediction", "desc_ko": "작은 장치에서 돌아가는 가벼운 탄화 예측 모델을 연구합니다.", "desc_en": "Build lightweight carbonisation predictors for edge devices."}
+ ],
+ "doc_used": true,
+ "uncertain": []
+}

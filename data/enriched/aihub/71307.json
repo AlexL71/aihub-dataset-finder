@@ -1,0 +1,29 @@
+{
+ "dataset_id": "71307",
+ "title_en": "Genuine and forged handwriting data for personal identification",
+ "summary_ko": "수능·모의평가 필적 확인 문구 30개를 디지털펜으로 직접 쓴 자필과, 그 필체를 흉내 낸 모사 필기 이미지 약 1,300만 장(8.7만 세트)에 필압·필기 속도 등 24가지 필기 속성을 담은 데이터입니다. 필적 감정, 서명 위조 방지, 본인 인증 AI에 쓸 수 있습니다.",
+ "summary_en": "About 13 million images (87,000 sets) of 30 exam handwriting-check phrases written with a digital pen, half genuine and half forged imitations, with 24 writing attributes such as pen pressure and speed. For handwriting verification, signature-forgery prevention and identity checks.",
+ "contents_ko": "필기 이미지(png) + JSON(자필·모사 구분, 필기 속성 24종).",
+ "contents_en": "Handwriting images (png) + JSON (genuine/forged tag, 24 writing attributes).",
+ "modalities": ["image", "sensor"],
+ "tasks": ["image_classification", "anomaly_detection"],
+ "topics": [{"ko": "보안·인증", "en": "Security and authentication"}, {"ko": "필적 감정", "en": "Handwriting forensics"}],
+ "keywords_ko": ["필적 감정", "서명 위조", "디지털펜", "본인 인증", "손글씨"],
+ "keywords_en": ["handwriting verification", "signature forgery", "digital pen", "identity verification", "handwriting"],
+ "labels": ["genuine/forged", "writing attributes (24)", "phrase"],
+ "file_formats": ["png", "json"],
+ "scale_ko": "이미지 약 1,300만 장, 8.7만 세트(자필·모사 반반), 문구 30종",
+ "classes_example": ["자필", "모사"],
+ "baseline": [{"task": "genuine vs forged verification", "model": "Siamese network (CNN-LSTM)", "metric": "EER", "value": "18%"}],
+ "difficulty": "intermediate",
+ "difficulty_note_ko": "약 61GB이고 짝 비교(샴 네트워크) 학습이 필요합니다.",
+ "skills_needed_ko": ["파이썬", "샴 네트워크·메트릭 학습", "CNN"],
+ "caveats_ko": ["개인 필체라 생체정보 성격이 있어 사용 조건 확인 필요", "오류율(EER) 18%로 아직 어려운 문제", "날씨 정보가 라벨에 있지만 의미가 불분명함"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "자필·모사 분류", "title_en": "Genuine vs forged classifier", "desc_ko": "필기 이미지가 자필인지 모사인지 분류합니다.", "desc_en": "Classify handwriting as genuine or forged."},
+  {"level": "capstone", "title_ko": "온라인 시험 본인 확인", "title_en": "Online-exam identity check", "desc_ko": "시험 전 쓴 문구를 등록 필체와 비교해 본인인지 확인합니다.", "desc_en": "Verify test-takers by comparing a written phrase with their enrolled handwriting."},
+  {"level": "research", "title_ko": "필압·속도 정보 활용", "title_en": "Using pressure and speed", "desc_ko": "이미지에 필압·속도를 더하면 위조 판별이 얼마나 좋아지는지 연구합니다.", "desc_en": "Study how pen pressure and speed improve forgery detection."}
+ ],
+ "doc_used": true,
+ "uncertain": []
+}

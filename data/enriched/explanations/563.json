@@ -1,0 +1,12 @@
+{
+ "dataset_id": "563",
+ "easy_ko": "미국, 일본, 유럽, 중국 특허의 영어 문서를 변리사가 함께 한국어로 번역하고, 어떤 산업 분야인지와 기술 용어를 붙인 데이터입니다. 외국 특허를 한국어로 번역하거나 특허를 산업 분야별로 자동 분류하는 AI를 만들 수 있습니다.",
+ "easy_en": "English patent documents from the US, Japan, Europe and China translated into Korean with help from patent attorneys, labelled with the industry they belong to and technical terms. You can build AI that translates foreign patents into Korean or sorts patents by industry automatically.",
+ "detail_ko": "미국·일본·유럽·중국 특허 40만 건(국가별 10만)의 영문 명세서를 변리사 참여로 한국어 번역한 200만 문장 이상의 영·한 JSON에 한국표준산업분류(KSIC) 코드와 기술용어 태그를 붙였습니다. BERT-base multilingual cased 산업분류 모델이 소개되어 있으나 성능 값은 기록에서 확인되지 않습니다. KSIC 라벨은 국가별 10% 특허에만 3개 이상 붙어 있고, 기술용어 태깅도 일부 특허에만 있습니다.",
+ "detail_en": "400k patents from the US, Japan, Europe and China (100k each), with 2M+ English–Korean sentence pairs translated with patent-attorney input, plus KSIC industry codes and technical-term tags in JSON. A BERT-base multilingual cased industry classifier is mentioned, but its scores are not visible. KSIC labels (3 or more) exist for only 10% of patents per country, and term tags cover only some patents.",
+ "amount_ko": "특허 40만 건, 문장 200만 개 이상",
+ "amount_en": "400k patents, 2M+ sentences",
+ "labels_ko": "영어-한국어 번역, 산업 분류 코드(KSIC), 기술 용어 표시",
+ "labels_en": "English–Korean translation, KSIC code, technical-term tags",
+ "status": "full-run-2026-11-02"
+}

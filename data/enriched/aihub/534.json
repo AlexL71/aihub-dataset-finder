@@ -1,0 +1,29 @@
+{
+ "dataset_id": "534",
+ "title_en": "Intelligent smart farm integrated data (tomato)",
+ "summary_ko": "토마토 농가 6곳에서 찍은 이미지 20.9만 장(개체 다각형·상자)과 온실 환경 시계열 21.4만 건, 생육지표 측정 9,800건입니다. 토마토 생육 진단과 온실 환경 관리를 돕는 스마트팜 AI에 쓸 수 있습니다.",
+ "summary_en": "209,000 images from 6 tomato farms (plant polygons and boxes), 214,000 greenhouse environment time-series records and 9,800 growth measurements. For smart-farm AI that diagnoses tomato growth and helps manage the greenhouse.",
+ "contents_ko": "토마토 이미지(png) + JSON(개체 다각형·상자) + 온실 환경 시계열(엑셀/텍스트) + 생육지표.",
+ "contents_en": "Tomato images (png) + JSON (polygons and boxes) + greenhouse environment time series (Excel/text) + growth measurements.",
+ "modalities": ["image", "sensor", "tabular"],
+ "tasks": ["object_detection", "segmentation", "forecasting"],
+ "topics": [{"ko": "농업·스마트팜", "en": "Agriculture and smart farming"}, {"ko": "시설원예", "en": "Greenhouse horticulture"}, {"ko": "토마토", "en": "Tomatoes"}],
+ "keywords_ko": ["토마토", "스마트팜", "온실 환경", "생육 진단", "시계열"],
+ "keywords_en": ["tomato", "smart farm", "greenhouse environment", "growth diagnosis", "time series"],
+ "labels": ["polygon", "bounding box", "growth measurements"],
+ "file_formats": ["png", "json", "xlsx"],
+ "scale_ko": "이미지 209,100건, 환경 시계열 214,200건, 생육지표 9,800건",
+ "classes_example": ["생장 길이", "화방 높이", "줄기 두께", "엽장·엽폭", "개화군", "착과군", "꽃", "열매", "만개꽃"],
+ "baseline": [{"task": "image reading model", "model": "not named", "metric": "classification rate", "value": "95%"}],
+ "difficulty": "beginner",
+ "difficulty_note_ko": "이미지 탐지와 표 데이터 분석을 각각 쉽게 시작할 수 있습니다. 약 130GB입니다.",
+ "skills_needed_ko": ["파이썬", "YOLO 탐지", "pandas 시계열"],
+ "caveats_ko": ["파프리카 데이터(535번)와 구조가 같음"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "토마토 열매 탐지", "title_en": "Tomato fruit detection", "desc_ko": "온실 사진에서 토마토 열매를 탐지해 수를 셉니다.", "desc_en": "Detect and count tomato fruit in greenhouse photos."},
+  {"level": "capstone", "title_ko": "온실 생육 대시보드", "title_en": "Greenhouse growth dashboard", "desc_ko": "환경 시계열과 열매 수를 함께 보여주는 대시보드를 만듭니다.", "desc_en": "Show environment data and fruit counts together."},
+  {"level": "research", "title_ko": "환경으로 생육 예측", "title_en": "Growth from environment", "desc_ko": "온습도·일사량으로 생육지표를 예측하는 모델을 연구합니다.", "desc_en": "Predict growth measurements from temperature, humidity and light."}
+ ],
+ "doc_used": true,
+ "uncertain": []
+}

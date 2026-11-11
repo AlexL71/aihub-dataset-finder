@@ -1,0 +1,12 @@
+{
+ "dataset_id": "548",
+ "easy_ko": "많은 사람의 눈 움직임을 가까운 거리와 가상현실(VR) 헤드셋 안에서 적외선·일반·거리 측정 카메라와 시선 추적 장비로 찍고, 눈의 주요 점을 표시한 데이터입니다. VR에서 사용자가 어디를 보는지 알아내거나 게임·애니메이션 캐릭터의 눈을 자연스럽게 만드는 AI에 쓸 수 있습니다.",
+ "easy_en": "Eye movements of many people filmed at close range and inside VR headsets with infrared, ordinary and depth cameras and eye trackers, with key points of the eyes marked. You can build AI that finds where a VR user is looking, or makes eyes look natural in games and animation.",
+ "detail_ko": "참여자 1,510명의 눈 움직임을 50cm·30cm 거리와 VR 헤드셋 안에서 IR·RGB·깊이 카메라와 시선추적기로 촬영한 이미지 3,334,080장(png/jpg)에 눈 키포인트(XML)와 시선추적 CSV를 붙였습니다. 기준 성능은 기록에서 확인되지 않습니다. 눈·얼굴 생체 정보라 이용 약관 확인이 필요합니다.",
+ "detail_en": "3,334,080 images (png/jpg) of the eye movements of 1,510 participants, captured at 50 cm, 30 cm and inside a VR headset with IR, RGB and depth cameras and an eye tracker, with eye keypoints (XML) and eye-tracking CSV. No baseline is visible in the record. Eye and face data are biometric, so check the terms of use.",
+ "amount_ko": "눈 사진 약 333만 장, 참여자 1,510명",
+ "amount_en": "about 3.33M eye images, 1,510 participants",
+ "labels_ko": "눈의 주요 점, 시선 추적 값",
+ "labels_en": "eye key points, gaze-tracking values",
+ "status": "full-run-2026-11-02"
+}

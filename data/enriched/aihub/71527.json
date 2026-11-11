@@ -1,0 +1,32 @@
+{
+ "dataset_id": "71527",
+ "title_en": "Pests captured in digital traps data",
+ "summary_ko": "끈끈이형·페로몬형·유아등형 디지털 트랩에 잡힌 해충 사진 13만 7천여 장에 해충 영역이 분할로 표시되어 있고 환경 데이터가 함께 있습니다. 갈색날개매미충·썩덩나무노린재·작은뿌리파리 등 농업 해충을 자동으로 찾고 세는 AI에 쓸 수 있습니다.",
+ "summary_en": "About 137,000 photos of pests caught in sticky, pheromone and light digital traps, with pest areas segmented plus environment data. For AI that automatically detects and counts farm pests such as planthoppers, stink bugs and fungus gnats.",
+ "contents_ko": "트랩 이미지(png) + JSON(분할, 해충 종, 환경 데이터).",
+ "contents_en": "Trap images (png) + JSON (segmentation, pest species, environment data).",
+ "modalities": ["image", "sensor"],
+ "tasks": ["segmentation", "object_detection", "tabular_prediction"],
+ "topics": [{"ko": "농업·병해충", "en": "Agriculture and pests"}, {"ko": "스마트 예찰", "en": "Smart pest monitoring"}],
+ "keywords_ko": ["해충", "디지털 트랩", "끈끈이 트랩", "페로몬 트랩", "해충 예찰", "인스턴스 분할"],
+ "keywords_en": ["pests", "digital trap", "sticky trap", "pheromone trap", "pest monitoring", "instance segmentation"],
+ "labels": ["segmentation", "pest species", "environment data"],
+ "file_formats": ["png", "json"],
+ "scale_ko": "이미지 137,203장, 어노테이션 140,208건, 해충 7종",
+ "classes_example": ["갈색날개매미충", "미국선녀벌레", "썩덩나무노린재", "작은뿌리파리", "흰점도둑나방", "톱다리개미허리노린재", "담배거세미나방"],
+ "baseline": [
+  {"task": "pest instance segmentation", "model": "Detectron2", "metric": "mAP", "value": "98.631%"},
+  {"task": "pest growth-environment analysis", "model": "RandomForest", "metric": "MAE", "value": "0.695"}
+ ],
+ "difficulty": "intermediate",
+ "difficulty_note_ko": "분할 실습에 좋지만 해충이 작고 종별 수량 차이가 큽니다. 전체 약 670GB입니다.",
+ "skills_needed_ko": ["파이썬", "분할 모델(Detectron2)", "작은 물체 탐지"],
+ "caveats_ko": ["전체 약 670GB", "종별 수량 차이가 큼(갈색날개매미충 148장, 작은뿌리파리 62,305장)"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "트랩 해충 종 분류", "title_en": "Trap pest species classification", "desc_ko": "트랩 사진 속 해충이 어떤 종인지 분류합니다.", "desc_en": "Classify pest species in trap photos."},
+  {"level": "capstone", "title_ko": "농가 해충 발생 알림", "title_en": "Farm pest outbreak alert", "desc_ko": "트랩 사진에서 해충 수를 세어 늘어나면 알려주는 서비스를 만듭니다.", "desc_en": "Count pests and alert when numbers rise."},
+  {"level": "research", "title_ko": "희귀 해충 인식", "title_en": "Rare pest recognition", "desc_ko": "사진이 적은 해충 종의 인식률을 높이는 방법을 연구합니다.", "desc_en": "Improve recognition of pests with few images."}
+ ],
+ "doc_used": true,
+ "uncertain": ["환경 데이터 항목과 RandomForest 분석의 예측 대상이 팩에 자세히 없음"]
+}

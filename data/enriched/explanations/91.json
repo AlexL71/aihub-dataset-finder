@@ -1,0 +1,12 @@
+{
+ "dataset_id": "91",
+ "easy_ko": "행정·경제·교통 같은 실생활 서류 양식을 여러 글꼴로 다시 만든 문서 사진과, 많은 사람이 직접 쓴 한글 손글씨 사진에 글자 위치와 정답 글자를 표시한 데이터입니다. 표 안의 글자까지 서류를 자동으로 읽어 입력해 주는 AI를 만들 수 있습니다.",
+ "easy_en": "Images of everyday forms (administration, finance, transport) recreated in several fonts, plus photos of Korean handwriting by many people, with each text's position and correct text marked. You can build AI that reads forms automatically, even text inside tables, and types it in for you.",
+ "detail_ko": "실생활 서식 50종을 인기 폰트 10종으로 재구성한 인쇄체 서식 75,000장과, 152명이 작성한 손글씨 글자 344,412장·단어 756,813장, 총 1,176,225장(png/jpg)입니다. JSON에 글자 위치 바운딩박스와 정답 텍스트가 있으며 표 안 글자, 숫자, 문장부호도 포함됩니다. 서식 내용은 비식별 후 다시 만든 것이라 실제 문서와 차이가 있고, 기준 성능은 기록에서 확인되지 않습니다.",
+ "detail_en": "1,176,225 images (png/jpg): 75,000 printed forms (50 real-life form types re-typeset in 10 popular fonts) and handwriting by 152 writers (344,412 characters, 756,813 words). JSON gives text bounding boxes and transcriptions, including text inside tables, digits and punctuation. Form contents were de-identified and recreated, so they differ from real documents; no baseline is visible in the record.",
+ "amount_ko": "이미지 약 117.6만 장(서식 7.5만, 손글씨 약 110만)",
+ "amount_en": "about 1.18M images (75k forms, about 1.1M handwriting)",
+ "labels_ko": "글자 위치 상자, 정답 글자",
+ "labels_en": "boxes around text, correct text",
+ "status": "full-run-2026-11-02"
+}

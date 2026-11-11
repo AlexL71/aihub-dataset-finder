@@ -1,0 +1,29 @@
+{
+ "dataset_id": "71889",
+ "title_en": "NEW broadcasting and communication equipment conformity assessment data",
+ "summary_ko": "중앙전파관리소가 제공한 방송통신기자재 적합성평가 완료 데이터를 평가 유형과 법적 판단 근거에 따라 질의응답으로 만든 100,659건으로, EMC·무선·유선 대분류와 고시 기준 중분류로 나뉩니다. 적합성평가 상담 챗봇, 셀프 진단, 직원 답변 작성 보조 AI에 쓸 수 있습니다.",
+ "summary_en": "100,659 QA items built from completed conformity assessments of broadcasting and communication equipment (provided by the Central Radio Management Office), organized by assessment type and legal basis into EMC, wireless and wired groups and notice-based subgroups. For assessment chatbots, self-diagnosis and staff answer drafting.",
+ "contents_ko": "질의응답 JSON(평가 유형, 기자재 분류, 법적 근거, 답변).",
+ "contents_en": "QA JSON (assessment type, equipment class, legal basis, answer).",
+ "modalities": ["text"],
+ "tasks": ["question_answering", "text_classification", "text_generation"],
+ "topics": [{"ko": "전파·통신 규제", "en": "Radio and telecom regulation"}, {"ko": "법률·행정 AI", "en": "Legal and administrative AI"}],
+ "keywords_ko": ["적합성평가", "방송통신기자재", "EMC", "무선설비", "전파법", "챗봇"],
+ "keywords_en": ["conformity assessment", "telecom equipment", "EMC", "radio equipment", "Radio Waves Act", "chatbot"],
+ "labels": ["question-answer", "equipment class"],
+ "file_formats": ["json"],
+ "scale_ko": "질의응답 100,659건(원천·라벨 동일)",
+ "classes_example": ["EMC", "무선", "유선", "무선설비의 기기", "기타 무선설비의 기기", "단말장치"],
+ "baseline": [],
+ "difficulty": "beginner",
+ "difficulty_note_ko": "약 160MB로 아주 가볍습니다. 텍스트 분류·질의응답 실습에 좋습니다.",
+ "skills_needed_ko": ["파이썬", "Hugging Face 텍스트 모델", "검색 기반 생성(RAG) 기초"],
+ "caveats_ko": ["페이지에 성능 점수 표가 없음(질의응답 모델 설계 소개만 있음)", "무선설비의 기기가 1%로 적음", "법규 개정에 따라 답변이 바뀔 수 있음"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "기자재 분류기", "title_en": "Equipment class classifier", "desc_ko": "질문을 EMC·무선·유선으로 분류합니다.", "desc_en": "Classify questions as EMC, wireless or wired."},
+  {"level": "capstone", "title_ko": "적합성평가 상담 챗봇", "title_en": "Conformity assessment chatbot", "desc_ko": "기자재 정보를 받아 필요한 평가 유형과 근거를 알려주는 챗봇을 만듭니다.", "desc_en": "Tell users the needed assessment type and legal basis."},
+  {"level": "research", "title_ko": "법적 근거 인용 정확도", "title_en": "Legal citation accuracy", "desc_ko": "답변이 올바른 법 조항을 인용하는지 검증하는 방법을 연구합니다.", "desc_en": "Study verifying that answers cite the right legal clauses."}
+ ],
+ "doc_used": true,
+ "uncertain": []
+}

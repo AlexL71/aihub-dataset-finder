@@ -1,0 +1,29 @@
+{
+ "dataset_id": "71696",
+ "title_en": "Fairy-tale storyline generation data",
+ "summary_ko": "어린이 동화·소설 약 10만 건의 이야기 글에 줄거리 요약(추출 3문장, 생성 1문장)이 붙어 있습니다. 한국어 어린이 동화의 줄거리를 만들거나 요약하는 생성형 AI에 쓸 수 있습니다.",
+ "summary_en": "About 100,000 children's story texts with plot summaries (3-sentence extracted and 1-sentence generated). For generative AI that writes or summarises Korean children's story plots.",
+ "contents_ko": "동화 이야기 텍스트 + 줄거리 요약(JSON).",
+ "contents_en": "Story text + plot summary (JSON).",
+ "modalities": ["text"],
+ "tasks": ["summarization", "text_generation"],
+ "topics": [{"ko": "어린이 콘텐츠", "en": "Children's content"}, {"ko": "생성형 AI", "en": "Generative AI"}],
+ "keywords_ko": ["동화", "줄거리", "요약", "이야기 생성", "유아 교육", "생성형 AI"],
+ "keywords_en": ["fairy tale", "storyline", "summary", "story generation", "early education", "generative AI"],
+ "labels": ["summary"],
+ "file_formats": ["json"],
+ "scale_ko": "원문 100,000건, 줄거리 101,087건(추출 요약 138,579건, 생성 요약 101,087건)",
+ "classes_example": ["의사소통", "자연탐구", "사회관계", "예술경험", "신체운동/건강"],
+ "baseline": [],
+ "difficulty": "beginner",
+ "difficulty_note_ko": "전체 약 40MB 텍스트라 노트북에서 바로 실습할 수 있습니다.",
+ "skills_needed_ko": ["파이썬", "Hugging Face", "요약 모델"],
+ "caveats_ko": ["평가지표는 ROUGE·BERTScore F1이지만 값은 팩 앞부분에 없음", "원본 도서의 이용 조건 확인 필요", "71695 동화 삽화 생성 데이터와 같은 기관·같은 분류 체계"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "동화 한 줄 요약", "title_en": "One-line story summary", "desc_ko": "요약 모델을 미세조정해 동화를 한 문장으로 요약하고 ROUGE로 평가합니다.", "desc_en": "Fine-tune a summariser for one-sentence story summaries and score with ROUGE."},
+  {"level": "capstone", "title_ko": "누리과정 영역별 동화 생성", "title_en": "Curriculum-area story generator", "desc_ko": "자연탐구·사회관계 같은 영역을 고르면 맞는 동화 줄거리를 써 주는 모델을 만듭니다.", "desc_en": "Generate story plots for a chosen curriculum area."},
+  {"level": "research", "title_ko": "어린이 눈높이 평가", "title_en": "Age-appropriateness evaluation", "desc_ko": "생성된 줄거리가 유아·초등 수준에 맞는지 자동으로 평가하는 방법을 연구합니다.", "desc_en": "Study automatic checks of whether plots suit young readers."}
+ ],
+ "doc_used": true,
+ "uncertain": []
+}

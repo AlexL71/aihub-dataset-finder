@@ -1,0 +1,29 @@
+{
+ "dataset_id": "102",
+ "title_en": "Small-business customer order Q&A text",
+ "summary_ko": "백화점·홈쇼핑·쇼핑몰 콜센터와 음식점·소매점·수리점 등 약 20종 소상공인 가게의 고객 질문과 답변 500만 건입니다. 의도·개체명·감성 라벨이 있어 무인 상점이나 작은 가게용 주문·문의 응대 챗봇을 만들 수 있습니다.",
+ "summary_en": "5 million customer questions and answers from department-store, home-shopping and e-commerce call centres and about 20 kinds of small shops (restaurants, retailers, repair shops and more). Intent, entity and sentiment labels make it suitable for order and enquiry chatbots in unmanned or small shops.",
+ "contents_ko": "질문-답변 텍스트 + 라벨(인텐트, 개체명, 감성, 상점 업종).",
+ "contents_en": "Question-answer text + labels (intent, named entities, sentiment, shop type).",
+ "modalities": ["text"],
+ "tasks": ["dialogue", "text_classification", "information_extraction"],
+ "topics": [{"ko": "소상공인·가게", "en": "Small businesses and shops"}, {"ko": "고객 서비스", "en": "Customer service"}, {"ko": "주문·쇼핑", "en": "Ordering and shopping"}],
+ "keywords_ko": ["소상공인", "주문", "질의응답", "무인상점", "챗봇", "인텐트", "개체명"],
+ "keywords_en": ["small business", "ordering", "question answering", "unmanned store", "chatbot", "intent", "named entity"],
+ "labels": ["intent", "named entities", "sentiment", "shop type"],
+ "file_formats": ["json", "csv"],
+ "scale_ko": "질의응답 500만 건(콜센터 400만, 가게 녹취 100만), 업종 약 20종",
+ "classes_example": ["감성 > 긍정", "감성 > 중립", "감성 > 부정", "인텐트 > 배송_비용_질문", "개체명 > 가격", "개체명 > 수량", "개체명 > 장소", "개체명 > 상품명", "개체명 > 날짜", "상점 카테고리 > 슈퍼"],
+ "baseline": [{"task": "intent and entity classification", "model": "KoBERT", "metric": "F1-score", "value": "0.82"}],
+ "difficulty": "beginner",
+ "difficulty_note_ko": "약 0.18GB 텍스트라 노트북에서 바로 의도 분류 챗봇을 만들어 볼 수 있습니다.",
+ "skills_needed_ko": ["파이썬", "pandas", "한국어 텍스트 분류(KoBERT)"],
+ "caveats_ko": ["파일 형식은 팩에서 확인하지 못해 추정"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "가게 문의 의도 분류", "title_en": "Shop enquiry intent classifier", "desc_ko": "'영업시간', '배달 가능', '가격 문의' 같은 의도를 분류합니다.", "desc_en": "Classify intents such as opening hours, delivery or price."},
+  {"level": "capstone", "title_ko": "동네 가게 주문 챗봇", "title_en": "Order chatbot for a local shop", "desc_ko": "의도와 메뉴·수량 개체명을 뽑아 주문을 받는 챗봇을 만듭니다.", "desc_en": "Take orders by extracting intent, menu items and quantities."},
+  {"level": "research", "title_ko": "업종 간 챗봇 전이", "title_en": "Chatbot transfer across shop types", "desc_ko": "음식점으로 학습한 모델이 수리점·소매점에 얼마나 적용되는지 연구합니다.", "desc_en": "Study how a restaurant-trained model transfers to repair shops and retailers."}
+ ],
+ "doc_used": true,
+ "uncertain": ["파일 형식이 팩에 명시되지 않음"]
+}

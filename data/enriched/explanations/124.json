@@ -1,0 +1,12 @@
+{
+ "dataset_id": "124",
+ "easy_ko": "통신·컴퓨터·전기·전자·반도체·기계·의학·간호학 같은 기술과학 분야의 한국어 문장과 영어 번역을 짝지은 데이터입니다. 기술 문서나 논문을 전문적으로 번역하는 AI나 전문 용어 사전을 만들 수 있습니다.",
+ "easy_en": "Korean sentences paired with English translations in science and technology fields such as telecoms, computing, electrical and electronic engineering, semiconductors, machinery, medicine and nursing. You can build AI that translates technical documents and papers, or a technical-term dictionary.",
+ "detail_ko": "기술과학 분야 한국어-영어 병렬 문장 150만 쌍(ICT 35만, 전기 15만, 전자 15만, 기계 35만, 의학 50만 등)으로 대분야·소분야 라벨이 있습니다. 특허·논문 등 원천 자료에서 만들었습니다. 기준 성능 지표는 없고, 페이지 통계표에 사회과학 분야 목록이 섞여 있으며, 파일 형식(json/xlsx)은 확인되지 않은 추정입니다.",
+ "detail_en": "1.5M Korean–English sentence pairs in science and technology (ICT 350k, electrical 150k, electronics 150k, mechanical 350k, medicine 500k and more) with field and sub-field labels, built from sources such as patents and papers. No baseline; the page's statistics table mixes in the social-science list; file formats (json/xlsx) are not confirmed.",
+ "amount_ko": "번역 문장 150만 쌍",
+ "amount_en": "1.5M sentence pairs",
+ "labels_ko": "한국어-영어 번역 짝, 큰 분야·세부 분야",
+ "labels_en": "Korean–English sentence pairs, field and sub-field",
+ "status": "full-run-2026-11-02"
+}

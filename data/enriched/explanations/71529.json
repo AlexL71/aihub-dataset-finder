@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71529",
+ "easy_ko": "가게 같은 서비스 상황을 꾸며 찍은 손님 영상 30만여 개에 사람 위치, 몸 관절 점, 표정, 손님 행동 설명, 말의 뜻(부탁, 인사, 질문 등)을 붙인 데이터입니다. 손님을 맞이하는 로봇이 손님 상태를 알아보고 응대하는 AI에 쓸 수 있습니다.",
+ "easy_en": "Over 300,000 staged videos of customers in service situations such as shops, with each person's position, body joints, facial expression, a description of what the customer does and what they mean when they speak (request, greeting, question and more). You can use it to build AI for service robots that read customers and respond to them.",
+ "detail_ko": "서비스 상황을 연출해 찍은 고객 영상 301,435개(mp4)와 이미지(png)에 사람 상자, 몸 키포인트, 표정, 고객 행동 설명문, 발화 의도(예: 요청, 인사, 질문, 약속, 수락)를 JSON·CSV로 붙였습니다. 기준 성능은 EfficientNet-B0 고객 표정 분류 정확도 79.24%, PDVC 고객 행동 캡션 생성 BLEU 0.3895, Transformer 소셜로봇 질의응답 BLEU 0.8842입니다. 전체 약 990GB이고, 고객 연령이 20~30대에 약 96% 몰려 있으며, 성별 표의 수량에 쉼표·마침표 표기 오류가 있습니다. 캡션 BLEU는 기준값 0.75보다 낮습니다.",
+ "detail_en": "301,435 staged customer-service videos (mp4) with images (png) and JSON/CSV person boxes, body keypoints, facial expression, behaviour captions and speech intent (such as request, greeting, question, promise, acceptance). Baselines: customer expression classification with EfficientNet-B0, accuracy 79.24%; behaviour caption generation with PDVC, BLEU 0.3895; social-robot question answering with Transformer, BLEU 0.8842. Total size is about 990 GB. About 96% of customers are in their 20s and 30s, the gender table has comma/period typos in its counts, and the caption BLEU is below its target of 0.75.",
+ "amount_ko": "영상 301,435개",
+ "amount_en": "301,435 videos",
+ "labels_ko": "사람 위치 상자, 관절 점, 표정, 행동 설명, 말의 뜻",
+ "labels_en": "bounding boxes, keypoints, facial expression, behaviour captions, intent",
+ "status": "full-run-2026-11-02"
+}

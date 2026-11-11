@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71487",
+ "easy_ko": "허락을 받은 의학과 법률 전문 책, 의료 특허, 법원 판결문에서 모은 한국어 글을 아주 많이 담은 데이터입니다. 의료와 법률 분야의 말을 잘 이해하는 언어 AI를 만들거나 상담, 판례 요약에 쓸 수 있습니다.",
+ "easy_en": "A very large collection of Korean text from licensed medical and legal books, medical patents and court rulings. You can use it to train language AI that understands medical and legal language, or for advice services and summarising court cases.",
+ "detail_ko": "이용 허락을 받은 의료·법률 전문 도서, 의료 특허, 법원 판결문 126,513건(txt, 문서 정보 JSON), 102,300,332어절(의료 46,883건 약 4,922만 어절, 법률 79,630건 약 5,308만 어절)의 원문 말뭉치입니다. 기준 성능은 의료 개체명 인식(KM-BERT) F1 0.78, 법률 개체명 인식(KL-BERT) F1 0.89, 의료 언어 모델(KM-BERT) Perplexity 153.72입니다. 질의응답·요약용 정답 라벨은 팩에서 확인되지 않고, 성능표의 AI 과제가 'Text Generation'으로 적혀 있지만 실제 지표는 개체명 인식 F1입니다.",
+ "detail_en": "A raw-text corpus of 126,513 documents (txt, with JSON document metadata) from licensed medical and legal books, medical patents and court rulings, totalling 102,300,332 Korean words (medical: 46,883 documents, about 49.22 million words; legal: 79,630 documents, about 53.08 million words). Baselines: medical named-entity recognition (KM-BERT) F1 0.78, legal named-entity recognition (KL-BERT) F1 0.89, medical language model (KM-BERT) perplexity 153.72. Answer labels for question answering or summarisation are not visible in the pack, and the metrics table lists the task as 'Text Generation' although the metric is named-entity F1.",
+ "amount_ko": "문서 126,513건, 102,300,332어절",
+ "amount_en": "126,513 documents, 102,300,332 words",
+ "labels_ko": "문서 정보만 있음(정답 라벨 없음)",
+ "labels_en": "document metadata only (no answer labels)",
+ "status": "full-run-2026-11-02"
+}

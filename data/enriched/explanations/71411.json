@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71411",
+ "easy_ko": "한국어와 영어·일본어·중국어 사이의 번역 문장을 글말, 입말, 채팅 세 가지 말투로 같은 비율씩 모은 데이터입니다. 말투나 주제에 따라 번역기가 얼마나 잘하는지 비교하는 시험용 기준 자료로 쓸 수 있습니다.",
+ "easy_en": "Translated sentence pairs between Korean and English, Japanese or Chinese, in equal shares of three styles: written, spoken and chat. It works as a benchmark for comparing how well translators handle different styles and topics.",
+ "detail_ko": "한국어와 영어·일본어·중국어 사이의 양방향 번역 문장 쌍 90,003건(언어쌍 6개 각 약 16.7%, 발화유형 3종: 문어 WR, 구어 SP, 채팅 CH; 주제 4종)을 JSON으로 제공합니다. 기준 성능은 Fairseq Transformer BLEU 한-영 0.4277, 한-중 0.6630, 한-일 0.5712입니다. 벤치마크용이라 학습용으로는 양이 적고, 성능 기준값이 0.005점으로 매우 낮게 잡혀 있으며, 주제 약어(CA·ES·SH·ST)의 뜻은 기록에서 확인되지 않습니다.",
+ "detail_en": "90,003 bidirectional sentence pairs (JSON) between Korean and English, Japanese or Chinese (6 language pairs, about 16.7% each), in 3 styles (written WR, spoken SP, chat CH) and 4 topics. Baselines: Fairseq Transformer BLEU 0.4277 (ko–en), 0.6630 (ko–zh), 0.5712 (ko–ja). As a benchmark it is small for training; the target threshold is set very low (0.005); the topic codes (CA, ES, SH, ST) are not explained in the record.",
+ "amount_ko": "번역 문장 쌍 90,003건, 언어쌍 6개",
+ "amount_en": "90,003 sentence pairs, 6 language pairs",
+ "labels_ko": "번역 문장 짝, 말투(글말·입말·채팅), 주제",
+ "labels_en": "sentence pairs, style (written, spoken, chat), topic",
+ "status": "full-run-2026-11-02"
+}

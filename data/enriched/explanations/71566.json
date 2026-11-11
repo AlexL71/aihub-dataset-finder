@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71566",
+ "easy_ko": "국도 CCTV 영상에서 뽑은 사진 약 200만 장에 깜빡이 없이 차선 바꾸기, 실선에서 차선 바꾸기, 차선 걸쳐 달리기 같은 위험한 운전과 정상 운전을 차량 위치와 차선 선으로 표시한 데이터입니다. 국도 교통안전 관리와 사고 위험 예측 AI에 쓸 수 있습니다.",
+ "easy_en": "About 2 million images from national-road CCTV, marking risky driving such as changing lanes without signalling, crossing a solid line or straddling lanes, as well as normal driving, with vehicle boxes and lane lines. You can use it to build AI for national-road safety management and crash-risk prediction.",
+ "detail_ko": "국도 CCTV 이미지 2,117,886장(jpg; 정상 1,062,812장 포함)에 차량 상자, 차선 폴리라인, 주행 유형 14종(정상 7종: 예 방향지시등 이행 차선변경, 실선구간 정상주행, 정체구간 정상주행; 비정상 7종: 예 방향지시등 불이행, 실선구간 차선변경, 동시 차로변경, 차선 물기)을 JSON으로 붙였습니다. 기준 성능은 Swin Transformer 정상/비정상 주행 분류 Top-1 정확도 70.29%로 높지 않습니다. 전체 약 2TB이고 가장 작은 파일도 약 0.67GB이며, 메타데이터는 2,016,000장, 통계 표는 2,117,886장으로 다릅니다.",
+ "detail_en": "2,117,886 national-road CCTV images (jpg; 1,062,812 normal) with JSON vehicle boxes, lane polylines and 14 driving types (7 normal, such as signalled lane change, normal driving on solid-line sections, normal driving in congestion; 7 abnormal, such as no turn signal, lane change across a solid line, simultaneous lane change, lane straddling). Baseline: normal/abnormal classification with Swin Transformer, Top-1 accuracy 70.29%, which is not high. Total size is about 2 TB, with even the smallest file about 0.67 GB, and the metadata says 2,016,000 images while the statistics table says 2,117,886.",
+ "amount_ko": "이미지 2,117,886장(정상 1,062,812), 주행 유형 14종",
+ "amount_en": "2,117,886 images (1,062,812 normal), 14 driving types",
+ "labels_ko": "차량 위치 상자, 차선 선, 정상·비정상 주행 종류",
+ "labels_en": "bounding boxes, lane polylines, driving class",
+ "status": "full-run-2026-11-02"
+}

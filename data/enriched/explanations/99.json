@@ -1,0 +1,12 @@
+{
+ "dataset_id": "99",
+ "easy_ko": "교통사고, 층간소음, 퇴직금, 이혼, 학교폭력처럼 생활에서 자주 만나는 법 문제에 대해, 관련 법 조항과 실제 판결, 상담 사례를 서로 연결해 둔 자료입니다. 어려운 법률 용어를 쉬운 말로 풀어 주는 사전도 있어, 쉬운 법률 안내 챗봇이나 법령 검색 서비스를 만들 수 있습니다.",
+ "easy_en": "Everyday legal problems such as traffic accidents, noisy neighbours, severance pay, divorce and school violence, with the related laws, real court cases and counselling examples linked together, plus a dictionary that explains legal terms in plain words. You can build a simple legal-guide chatbot or law search.",
+ "detail_ko": "7개 생활 법률 분야의 법령·조문·판례·법률 상담 데이터를 상호 연결한 지식베이스(약 27만 건)와 온톨로지 모델, 법률·생활 용어 사전 및 색인으로 구성됩니다. 2017~2018년에 구축되어 이후 개정된 법령은 반영되지 않았습니다. 데이터 설명서가 없어 AI Hub 페이지 정보만으로 정리했습니다. 법률 조언을 대신하는 용도로는 적합하지 않습니다.",
+ "detail_en": "A knowledge base (about 270k items) linking statutes, articles, court cases and legal counselling in seven everyday legal areas, with an ontology model and a legal/everyday term dictionary and index. Built in 2017–2018, so later amendments are not included. There is no manual; this summary uses the AI Hub page only. Not suitable as a substitute for legal advice.",
+ "amount_ko": "약 27만 건, 생활 법률 7개 분야",
+ "amount_en": "about 270k items in 7 everyday legal areas",
+ "labels_ko": "법령-판례 연결, 용어 관계, 온톨로지",
+ "labels_en": "links between laws and cases, term relations, ontology",
+ "status": "sample-2026-11-02"
+}

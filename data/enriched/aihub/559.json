@@ -1,0 +1,29 @@
+{
+ "dataset_id": "559",
+ "title_en": "Hanwoo cattle body condition score (BCS) grade data",
+ "summary_ko": "도축장에서 위·뒤 카메라로 찍은 한우 이미지 약 122만 장에 소의 부위(목·전구·중구·후구) 영역과 신체충실지수(BCS) 5~9등급을 표시한 데이터입니다. 소의 살찐 정도를 사진으로 판정하는 AI에 쓸 수 있습니다.",
+ "summary_en": "About 1.22 million images of Hanwoo (Korean cattle) taken from top and rear cameras at slaughterhouses, with body-part areas (neck, fore, middle, hind) and body condition score grades 5 to 9. For AI that grades how well-fed cattle are from photos.",
+ "contents_ko": "한우 이미지(그레이스케일·깊이 포함) + JSON(부위 분할 좌표, 상자, BCS 등급).",
+ "contents_en": "Cattle images (incl. grayscale and depth) + JSON (body-part segmentation, boxes, BCS grade).",
+ "modalities": ["image"],
+ "tasks": ["image_classification", "segmentation"],
+ "topics": [{"ko": "축산", "en": "Livestock farming"}, {"ko": "농업", "en": "Agriculture"}],
+ "keywords_ko": ["한우", "신체충실지수", "BCS", "축산", "도축장"],
+ "keywords_en": ["Hanwoo cattle", "body condition score", "BCS", "livestock", "slaughterhouse"],
+ "labels": ["segmentation polygon", "bounding box", "BCS grade"],
+ "file_formats": ["jpg", "json"],
+ "scale_ko": "이미지 약 122만 장, BCS 5등급(5~9)",
+ "classes_example": ["5등급", "6등급", "7등급", "8등급", "9등급"],
+ "baseline": [{"task": "BCS grade classification", "model": "ResNet", "metric": "uncertain", "value": "uncertain"}],
+ "difficulty": "intermediate",
+ "difficulty_note_ko": "분류 실습은 쉽지만 전체 약 300GB이고 9등급이 59%로 매우 치우쳐 있습니다.",
+ "skills_needed_ko": ["파이썬", "CNN 이미지 분류", "클래스 불균형 처리"],
+ "caveats_ko": ["전체 약 300GB", "등급 불균형 심함(9등급 59%, 5등급 1%)", "도축장 2곳 이미지만 있음"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "BCS 등급 분류", "title_en": "BCS grade classifier", "desc_ko": "한우 사진으로 신체충실지수 등급을 분류합니다.", "desc_en": "Classify body condition grade from cattle photos."},
+  {"level": "capstone", "title_ko": "부위별 등급 판정 도구", "title_en": "Part-based grading tool", "desc_ko": "부위를 분할한 뒤 부위별 판정을 합쳐 최종 등급을 냅니다.", "desc_en": "Segment body parts, then combine part-level judgements into a final grade."},
+  {"level": "research", "title_ko": "깊이 정보 효과 분석", "title_en": "Effect of depth images", "desc_ko": "깊이·윤곽 이미지가 등급 판정 정확도에 주는 효과를 비교합니다.", "desc_en": "Compare how depth and edge images change grading accuracy."}
+ ],
+ "doc_used": true,
+ "uncertain": ["baseline metric and value not in first part of pack"]
+}

@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71722",
+ "easy_ko": "세법 판례와 법령 문서 3만 9천여 건에서 법률 용어 사이의 관계를 '무엇이 무엇과 어떤 관계' 형태로 정리한 데이터입니다. 세법 분야별로 나뉘어 있어 법률 지식 지도를 만들거나 똑똑한 법률 검색에 쓸 수 있습니다.",
+ "easy_en": "Relations between legal terms, written as 'subject - relation - object', taken from over 39,000 tax-law cases and statutes. It is grouped by area of tax law, so you can use it to build legal knowledge graphs or smarter legal search.",
+ "detail_ko": "세법 판례·법령 문서 39,035건(csv)에서 법률 용어 사이의 관계를 '주어-관계-목적어' 트리플 1,003,263개(JSON)로 표시했고, 세법 분야는 8종(국세기본법, 국세징수법, 법인세, 부가가치세, 상속증여세, 양도소득세, 종합소득세, 기타)이며 서브라벨링 데이터 10,087건이 있습니다. 성능 수치는 팩에 없고, 세법 위주라 다른 법 분야에는 바로 쓰기 어렵습니다. 71720 법률 번역 데이터와 같은 기관입니다.",
+ "detail_en": "1,003,263 JSON 'subject-relation-object' triples between legal terms taken from 39,035 tax-law cases and statutes (csv), in 8 tax areas (framework act on national taxes, national tax collection, corporate tax, VAT, inheritance and gift tax, capital gains tax, income tax, other), plus 10,087 sub-labelled items. No scores are in the pack, and it focuses on tax law, so it is hard to reuse for other legal fields. Same builder as the legal translation set 71720.",
+ "amount_ko": "문서 39,035건, 트리플 1,003,263개, 세법 분야 8종",
+ "amount_en": "39,035 documents, 1,003,263 triples, 8 tax-law areas",
+ "labels_ko": "법률 용어 사이 관계, 세법 분야",
+ "labels_en": "triple (subject-relation-object), class",
+ "status": "full-run-2026-11-02"
+}

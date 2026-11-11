@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71285",
+ "easy_ko": "비슷한 상표를 찾는 서비스에 사용자들이 올린 상표 그림에서 별, 태양, 달, 사다리, 기계 같은 도형 부분을 상표 도형 분류 기준에 따라 상자로 표시한 데이터입니다. 내 로고와 비슷한 상표가 이미 있는지 찾아 주는 그림 검색 AI를 만들 수 있습니다.",
+ "easy_en": "Trademark images uploaded by users of a similar-trademark search service, with figure elements such as stars, the sun, the moon, ladders and machines boxed according to the standard trademark figure classification. You can build image-search AI that checks whether a trademark similar to your logo already exists.",
+ "detail_ko": "유사 상표 검색 서비스 사용자가 올린 상표 이미지 약 28만 장(jpg)에 비엔나코드 중분류(별·혜성, 태양, 지구·행성, 달, 사다리, 산업용·농업용 기계 등) 기준 도형 객체 약 52만 개의 바운딩박스와 니스 국제상품분류(45종)를 JSON으로 붙였습니다. YOLOv5 상표 도형 탐지 모델이 소개되어 있으나 성능 값은 기록에서 잘려 확인되지 않습니다. 실제 기업 상표라 상업적 사용에 주의해야 하며, 비엔나코드 소분류(1,400개 이상)는 라벨되지 않고 중분류만 있습니다.",
+ "detail_en": "About 280k trademark images (jpg) uploaded by users of a similar-trademark search service, with JSON boxes for about 520k figure objects by Vienna Code mid-level class (stars and comets, sun, earth and planets, moon, ladders, industrial and farm machinery and more) and Nice product class (45 classes). A YOLOv5 figure detector is mentioned, but its score is cut off in the record. These are real company marks, so take care with commercial use; only mid-level Vienna classes are labelled, not the 1,400+ fine classes.",
+ "amount_ko": "상표 그림 약 28만 장, 도형 약 52만 개",
+ "amount_en": "about 280k trademark images, about 520k figures",
+ "labels_ko": "도형 위치 상자, 도형 분류(비엔나코드), 상품 분류",
+ "labels_en": "boxes around figures, Vienna Code class, Nice product class",
+ "status": "full-run-2026-11-02"
+}

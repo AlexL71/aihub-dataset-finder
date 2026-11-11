@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71330",
+ "easy_ko": "강릉 숲에서 일부러 불과 연기를 피워 찍은 영상과, 산 사진에 불과 연기를 합성한 이미지에 불꽃과 연기 영역을 칠해 둔 데이터입니다. CCTV나 드론으로 산불을 초기에 자동으로 찾아내는 AI를 만들 수 있습니다.",
+ "easy_en": "Videos of controlled fires and smoke set in a Gangneung forest, plus mountain photos with fire and smoke added digitally, with flame and smoke areas coloured in. You can build AI that spots wildfires early from CCTV or drones.",
+ "detail_ko": "강릉시 산림에서 실제 불·연막탄·연기 발생기로 모의 발화한 영상과 산 배경에 불·연기를 합성한 이미지 등 약 70만 장(jpg)에 불꽃·연기 분할과 촬영 위치를 JSON으로 붙였습니다. 기준 성능은 Swin Transformer 산불 탐지 mAP 실제 이미지 54.3%, 합성 이미지 65.2%(Mask R-CNN)입니다. 전체 약 663GB이며, 합성 이미지가 많아 실제 산불과 차이가 있을 수 있고 강릉 배경만 있으며, 클래스(불꽃·연기)는 기록에서 추정한 것입니다.",
+ "detail_en": "About 700k images (jpg) of staged fires in Gangneung forests (real fire, smoke bombs, smoke generators) and mountain scenes with composited fire and smoke, with JSON flame and smoke segmentation and capture location. Baselines: Swin Transformer wildfire detection mAP 54.3% (real) and 65.2% (synthetic, Mask R-CNN). Total size is about 663 GB; many images are synthetic and may differ from real fires; only Gangneung backgrounds; the classes (flame, smoke) are inferred from the record.",
+ "amount_ko": "이미지 약 70만 장(실제·합성)",
+ "amount_en": "about 700k images (real and synthetic)",
+ "labels_ko": "불꽃·연기 영역(색칠), 찍은 위치",
+ "labels_en": "flame and smoke masks, location",
+ "status": "full-run-2026-11-02"
+}

@@ -1,0 +1,44 @@
+{
+ "id": "ell",
+ "name_ko": "글로벌학부(영미학전공)",
+ "name_en": "English and American Studies (School of Global Studies)",
+ "college": "글로벌비즈니스대학",
+ "summary_ko": "영어 구사 능력과 함께 영미권의 언어학, 문학, 문화, 사회, 역사를 폭넓게 배우는 전공입니다. 번역, 영어교육, 미디어 영어 외에 디지털영어학, 영어와 인공지능, 영어 텍스트 데이터 분석 같은 디지털 과목도 있습니다.",
+ "summary_en": "Builds English skills together with broad knowledge of English-speaking linguistics, literature, culture, society and history. Besides translation, English teaching and media English, it offers digital courses such as digital English linguistics, English and AI, and English text data analysis.",
+ "key_topics": ["영어학(음성학, 구문, 의미)", "영미 문학(시, 소설, 희곡)", "영미 문화·사회·역사", "번역(한영, 일반)", "영어교육·영어 습득", "미디어·시사 영어", "디지털 영어학·영어와 AI", "영어 텍스트 데이터 분석"],
+ "course_keywords": ["영미어문의이해", "영문의이해", "영어음성학", "디지털영어학입문", "영어와인공지능", "영작문회화", "미디어영어", "번역연습", "실용영문법", "영어학개론", "영미아동문학읽기", "영미문화배경", "영어교육학개론", "영어권업무영어", "영어학습과디지털기술", "영어구문과의미", "일반번역", "영미시", "영미소설", "영미희곡", "실험영어학과데이터분석", "영어텍스트데이터분석실습", "영미대중예술", "문학과영화", "시사영어", "한영번역", "영어습득론", "영미사회의이해"],
+ "curriculum_by_year": {
+  "1": ["영미어문의이해", "디지털리터러시입문"],
+  "2": ["영문의이해", "영어음성학", "디지털영어학입문", "영어와인공지능", "영작문회화", "미디어영어", "번역연습", "실용영문법", "영어학개론", "영미문화배경", "영어교육학개론", "영어학습과디지털기술"],
+  "3": ["영국사", "미국사", "영어구문과의미", "일반번역", "영미시", "영미소설", "영미희곡", "실험영어학과데이터분석", "영어텍스트데이터분석실습", "영미대중예술", "문학과영화"],
+  "4": ["시사영어", "영어습득과문화", "한영번역", "영어습득론", "영어교육실습", "영미사회의이해", "영미주제연구"]
+ },
+ "careers": ["번역가·통역사", "영어 교사·강사(교직 이수)", "국제기구·국제회의 기획", "해외영업·무역", "언론인·광고", "공무원", "콘텐츠 현지화(로컬라이제이션)"],
+ "research_areas": [],
+ "data_interests": [
+  {"topic_ko": "번역과 병렬 말뭉치", "topic_en": "Translation and parallel corpora", "keywords": ["한영 번역", "기계번역", "자막 번역"]},
+  {"topic_ko": "영어 발음과 음성", "topic_en": "English pronunciation and speech", "keywords": ["발음 평가", "음성 인식", "억양"]},
+  {"topic_ko": "영어 학습", "topic_en": "English learning", "keywords": ["작문 첨삭", "문법 오류", "학습자 말뭉치"]},
+  {"topic_ko": "문학 텍스트", "topic_en": "Literary text", "keywords": ["소설", "시", "문체 분석"]},
+  {"topic_ko": "뉴스와 미디어 영어", "topic_en": "News and media English", "keywords": ["뉴스 기사", "요약", "주제 분류"]},
+  {"topic_ko": "대화와 회화", "topic_en": "Conversation", "keywords": ["대화 데이터", "회화 챗봇"]}
+ ],
+ "interest_questions": [
+  {"q_ko": "영어와 관련해 무엇을 해보고 싶나요?", "q_en": "What would you like to do with English?",
+   "options": [{"ko": "번역·통역", "en": "Translation and interpreting"}, {"ko": "영어 교육", "en": "Teaching English"}, {"ko": "발음·음성", "en": "Pronunciation and speech"}, {"ko": "문학·문화 분석", "en": "Literature and culture"}, {"ko": "뉴스·미디어", "en": "News and media"}]},
+  {"q_ko": "다뤄보고 싶은 자료는?", "q_en": "What data would you like to use?",
+   "options": [{"ko": "한영 번역 문장", "en": "Korean-English sentence pairs"}, {"ko": "영어 음성", "en": "English speech audio"}, {"ko": "학습자 작문", "en": "Learner writing"}, {"ko": "뉴스·문학 텍스트", "en": "News and literary text"}]}
+ ],
+ "project_themes": ["한영 번역 품질 비교 실험", "영어 발음 자동 평가", "영어 작문 문법 오류 찾기", "영미 소설 문체 분석"],
+ "data_skill_level": "low",
+ "data_skill_note": "디지털영어학입문, 영어와인공지능, 실험영어학과데이터분석, 영어텍스트데이터분석실습 과목이 있어 텍스트 데이터를 다뤄볼 기회가 있지만 프로그래밍 기초는 약합니다.",
+ "sources": [
+  {"kind": "page", "label": "학과소개", "url": "https://sejong.korea.ac.kr/ell/4066/subview.do"},
+  {"kind": "page", "label": "교육과정", "url": "https://sejong.korea.ac.kr/ell/4081/subview.do"},
+  {"kind": "page", "label": "교과목", "url": "https://sejong.korea.ac.kr/ell/4070/subview.do"}
+ ],
+ "inferred_fields": ["data_interests", "interest_questions", "project_themes"],
+ "gaps": ["Only 3 pages collected; no separate careers page (careers come from the intro page). No research labs listed."],
+ "version": 1,
+ "created": "2026-10-29"
+}

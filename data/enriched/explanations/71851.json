@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71851",
+ "easy_ko": "사고 위험이 큰 곳에서 운전자 모습, 차 앞 도로, 차량 속도와 브레이크 신호를 함께 기록한 데이터 3,300세트에 상황을 설명하는 문장을 붙였습니다. 안전 운전을 돕거나 운전 습관에 따른 보험 서비스에 쓸 수 있습니다.",
+ "easy_en": "3,300 sets of recordings from high-risk driving situations, combining video of the driver, the road ahead and the car's speed and brake signals, each with sentences describing the situation. You can use it to encourage safer driving or for insurance services based on driving habits.",
+ "detail_ko": "사고 위험 환경에서 운전자 행동 영상과 차량 앞 주행 영상(mp4), 이미지 13,200장(jpg), 차량 CAN 신호(JSON; 속도·브레이크 등)를 함께 기록한 3,300세트(약 111시간)에 상황 묘사 문장(181,015어절)을 붙였고, 위험 구간 유형은 코드(AFA, ARA, OA, C2C, C2H)로만 나와 있습니다. 전체 약 2.3TB이고, 운전자 얼굴이 찍혀 개인정보에 주의해야 하며, 품질 점수는 라벨 정확도이고 모델 성능 수치는 팩에 없습니다.",
+ "detail_en": "3,300 sets (about 111 hours) recorded in accident-risk environments, combining driver-behaviour video and front-road video (mp4), 13,200 images (jpg) and vehicle CAN signals (JSON; speed, brakes and more), with situation-description sentences (181,015 words); risk-zone types appear only as codes (AFA, ARA, OA, C2C, C2H). Total size is about 2.3 TB. Drivers' faces are visible, so handle personal data with care; quality scores describe label accuracy and no model scores are in the pack.",
+ "amount_ko": "3,300세트(약 111시간), 이미지 13,200장, 문장 181,015어절",
+ "amount_en": "3,300 sets (about 111 hours), 13,200 images, 181,015 words of sentences",
+ "labels_ko": "상황 설명 문장, 위험 구간 종류",
+ "labels_en": "sentence, risk-zone type",
+ "status": "full-run-2026-11-02"
+}

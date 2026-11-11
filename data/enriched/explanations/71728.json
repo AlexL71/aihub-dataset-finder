@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71728",
+ "easy_ko": "뉴스, 잡지, 책 글에서 '무엇이 무엇을 어떻게' 같은 지식 묶음을 뽑고, 그 묶음으로 다시 자연스러운 문장을 만들도록 짝지은 데이터입니다. 지식으로 문장을 만들어 내는 AI나 질문 답변 챗봇에 쓸 수 있습니다.",
+ "easy_en": "Knowledge units in the form 'subject - predicate - object' taken from news, magazine and book texts, each paired with a natural sentence written from them. You can use it to build AI that writes sentences from knowledge, or question-answering chatbots.",
+ "detail_ko": "MBN·매일경제 뉴스, 매거진, 도서(역사, 의료, 사회, 경제, 국제, 문화, IT) 원문 237,294건(csv)에서 주어-술어-목적어 트리플을 뽑고 대응 문장을 만든 가공 데이터 300,178건(JSON, 토큰 약 5,885만 개)입니다. 페이지에 성능 점수 표가 없고(BART 미세조정 계획만 있음), 뉴스가 약 90%라 문체가 치우쳐 있습니다. 71729와 같은 기관·원문 구성입니다.",
+ "detail_en": "300,178 processed items (JSON, about 58.85 million tokens) built from 237,294 source texts (csv) from MBN and Maeil Business news, magazines and books (history, medicine, society, economy, international, culture, IT): subject-predicate-object triples paired with target sentences. There is no score table (only a plan to fine-tune BART), and news makes up about 90%, so the writing style is skewed. Same builder and sources as 71729.",
+ "amount_ko": "원문 237,294건, 가공 300,178건, 토큰 약 5,885만 개",
+ "amount_en": "237,294 source texts, 300,178 processed items, about 58.85 million tokens",
+ "labels_ko": "지식 묶음(주어-술어-목적어), 대응 문장",
+ "labels_en": "subject-predicate-object triples, target sentence",
+ "status": "full-run-2026-11-02"
+}

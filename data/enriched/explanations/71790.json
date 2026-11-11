@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71790",
+ "easy_ko": "드론과 고정 카메라 등으로 골프장 잔디를 찍은 사진과 특수 카메라(다분광) 영상 40만여 세트에 병, 벌레 피해, 잡초 부분을 칠해 표시한 데이터입니다. 잔디가 잘 자랄지 예측하고 병해충을 찾아내는 AI에 쓸 수 있습니다.",
+ "easy_en": "Over 400,000 sets of photos and special multi-band camera images of golf-course turf taken by drones and fixed cameras, with disease, insect damage and weeds painted in. You can use it to build AI that predicts turf growth and finds pests and disease.",
+ "detail_ko": "드론·고정 감시장치·이동 장치로 골프장 그린·티잉 그라운드·페어웨이 등의 잔디를 찍은 이미지(jpg)와 다분광 영상(tif) 402,687세트에 병해·충해·잡초 분할과 생육·환경 정보를 JSON으로 붙였습니다. 전체 약 9,720GB로 매우 크고, 클래스 전체 목록과 성능 지표는 팩 앞부분에 없습니다.",
+ "detail_en": "402,687 sets of images (jpg) and multispectral images (tif) of turf on golf-course greens, tee grounds, fairways and more, taken by drones, fixed monitors and mobile devices, with JSON segmentation for disease, insect damage and weeds plus growth and environment information. Total size is about 9,720 GB, very large, and the full class list and metrics are not in the pack.",
+ "amount_ko": "402,687세트",
+ "amount_en": "402,687 sets",
+ "labels_ko": "병·벌레 피해·잡초 영역",
+ "labels_en": "segmentation, class",
+ "status": "full-run-2026-11-02"
+}

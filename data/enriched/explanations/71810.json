@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71810",
+ "easy_ko": "실내에서 일하는 서비스 로봇이 쉬거나 일할 때 기록한 상태 정보 117만여 건에 정상과 고장 상태를 표시한 데이터입니다. 로봇이 고장 나기 전에 미리 알아채는 정비 AI에 쓸 수 있습니다.",
+ "easy_en": "Over 1.17 million status records from indoor service robots while idle or working, each marked as normal or error. You can use it to build maintenance AI that spots robot faults before they happen.",
+ "detail_ko": "실내 서비스 로봇의 대기·업무 중 실시간 상태 기록 1,173,930건(JSON)에 정상·에러 라벨을 붙였습니다. 에러 상태가 정상보다 훨씬 적을 수 있어 클래스 불균형을 확인해야 하고, 상태 항목 목록과 성능 지표는 팩 앞부분에 없습니다.",
+ "detail_en": "1,173,930 real-time status records (JSON) from indoor service robots while idle or working, each labelled normal or error. Errors may be much rarer than normal records, so check the class balance; the status fields and any metrics are not in the pack.",
+ "amount_ko": "원천·라벨 각 1,173,930건",
+ "amount_en": "1,173,930 records and labels",
+ "labels_ko": "정상·고장 상태",
+ "labels_en": "normal/error status",
+ "status": "full-run-2026-11-02"
+}

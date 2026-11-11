@@ -1,0 +1,33 @@
+{
+ "dataset_id": "71533",
+ "title_en": "Technology and science document machine reading comprehension data",
+ "summary_ko": "기술과학 문서 지문 2만 2천여 건에서 만든 지문-질문-답변 약 40만 건으로, 정답 범위 추출형·예/아니오형·표 정답 추출형·다지선다형·절차형 5가지 질문이 있고 동의 질문도 함께 있습니다. 수식은 LaTeX, 표는 HTML로 적혀 있습니다. 기술과학 분야 질의응답 챗봇과 지능형 검색에 쓸 수 있습니다.",
+ "summary_en": "About 400,000 passage-question-answer sets from 22,600 technology and science passages, with five question types (span extraction, yes/no, table answer, multiple choice, procedure) and paraphrased questions; formulas in LaTeX and tables in HTML. For technical Q&A chatbots and intelligent search.",
+ "contents_ko": "지문 텍스트(txt) + JSON(질문, 정답, 질문 유형, 동의 질문).",
+ "contents_en": "Passage text (txt) + JSON (question, answer, question type, paraphrases).",
+ "modalities": ["text"],
+ "tasks": ["question_answering"],
+ "topics": [{"ko": "과학기술", "en": "Science and technology"}, {"ko": "한국어 자연어처리", "en": "Korean NLP"}],
+ "keywords_ko": ["기계독해", "질의응답", "표 질의응답", "기술과학", "LaTeX", "챗봇"],
+ "keywords_en": ["machine reading comprehension", "question answering", "table QA", "science and technology", "LaTeX", "chatbot"],
+ "labels": ["question", "answer span", "question type", "paraphrase"],
+ "file_formats": ["txt", "json"],
+ "scale_ko": "질의응답 400,346건, 원천 지문 22,616건, 질문 유형 5종",
+ "classes_example": ["정답경계추출형", "YesNo 단문형", "표 정답 추출형", "다지선다형", "절차형"],
+ "baseline": [
+  {"task": "long-document QA", "model": "Longformer", "metric": "EM", "value": "74.18%"},
+  {"task": "long-document QA", "model": "Longformer", "metric": "F1-score", "value": "0.883"},
+  {"task": "table QA", "model": "TAPEX", "metric": "EM", "value": "51.63%"}
+ ],
+ "difficulty": "intermediate",
+ "difficulty_note_ko": "용량이 작아(약 0.1GB) 기계독해 실습에 바로 쓸 수 있습니다. 표 질의응답은 더 어렵습니다.",
+ "skills_needed_ko": ["파이썬", "기계독해 모델(BERT·Longformer)", "Hugging Face"],
+ "caveats_ko": ["수식·표 문법(LaTeX·HTML) 전처리 필요", "같은 기관의 71532(요약) 데이터와 원천이 비슷함"],
+ "project_ideas": [
+  {"level": "beginner", "title_ko": "예/아니오 질문 답하기", "title_en": "Yes/no question answering", "desc_ko": "지문을 읽고 예/아니오형 질문에 답하는 모델을 학습합니다.", "desc_en": "Train a model for yes/no questions."},
+  {"level": "capstone", "title_ko": "전공 교재 질문 챗봇", "title_en": "Textbook Q&A chatbot", "desc_ko": "기술 문서를 넣고 질문하면 답의 위치를 찾아 주는 챗봇을 만듭니다.", "desc_en": "Build a chatbot that finds answers in technical documents."},
+  {"level": "research", "title_ko": "표와 글 함께 읽기", "title_en": "Joint table-text QA", "desc_ko": "표와 본문을 함께 이해하는 질의응답 방법을 연구합니다.", "desc_en": "Study QA that reads tables and text together."}
+ ],
+ "doc_used": true,
+ "uncertain": []
+}

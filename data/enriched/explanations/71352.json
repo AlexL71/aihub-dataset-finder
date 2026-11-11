@@ -1,0 +1,12 @@
+{
+ "dataset_id": "71352",
+ "easy_ko": "전국 댐, 호수, 하천, 취수장의 물 높이·물 양·내보내는 물 양과 물 온도·산성도·산소·흐림 정도 같은 물 상태 측정값, 녹조 정보를 시간마다 모은 아주 큰 표 데이터입니다. 수돗물이 될 물의 상태와 녹조가 언제 생길지 예측하는 AI를 만들 수 있습니다.",
+ "easy_en": "A very large table of hourly readings from dams, lakes, rivers and water intakes across Korea: water level, volume and discharge, water-quality values such as temperature, acidity, oxygen and cloudiness, and algal-bloom information. You can build AI that predicts the quality of drinking-water sources and when algal blooms will appear.",
+ "detail_ko": "전국 다목적댐·용수전용댐·호소(본류·지류)·하천·취수원 등 댐 40여 곳·수질 측정 지점 100여 곳의 수위·수량·방류량과 수온·pH·용존산소·탁도·총인·총질소 등 수질 측정값, 녹조 정보를 시간별로 모은 약 5억 건(csv, JSON)입니다. 기준 성능은 DLinear 센서 수질 예측 MAPE 1.23%, XGBoost 녹조 예측 MAPE 14.81%입니다. 행 수가 매우 많아 메모리 관리가 필요하고, 지점마다 항목이 달라 결측값이 많을 수 있으며, 녹조 이미지는 기록에서 확인되지 않습니다.",
+ "detail_en": "About 500M hourly records (csv, JSON) from 40+ dams and 100+ water-quality stations across multipurpose and water-supply dams, lakes (main and tributary), rivers and intakes: water level, volume, discharge, quality values (temperature, pH, dissolved oxygen, turbidity, total phosphorus, total nitrogen) and algal-bloom information. Baselines: DLinear sensor water-quality forecasting MAPE 1.23%, XGBoost algal-bloom forecasting MAPE 14.81%. The row count is huge, so manage memory; items vary by station, so expect many missing values; algal-bloom images are not visible in the record.",
+ "amount_ko": "측정 기록 약 5억 건",
+ "amount_en": "about 500M records",
+ "labels_ko": "물 상태 측정값, 녹조 정도, 물 높이·양",
+ "labels_en": "water-quality values, algal-bloom level, hydrological values",
+ "status": "full-run-2026-11-02"
+}

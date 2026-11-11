@@ -1,0 +1,77 @@
+query,expected_id,note
+고양이 사진으로 뭔가 만들고 싶어요,59|561|562|71520|498|499|501,"plain wish, Korean"
+I want to analyze what customers write in product reviews,71603,"plain wish, English"
+농작물 병 진단 사진,146|147|153|525|71451|71344|71523|71750|480|635,Korean
+elderly people's voice,94|107|71517|71558|71703,English
+children practicing English pronunciation,541|71463,English
+drone photos of farmland,152|156|157|524|634|71483|71484|71790,English
+쓰레기 분리수거 로봇,140|137|495|71362|71385|71822,Korean
+detect whether workers wear helmets,163|507|71407|71771,English
+"I'm a pharmacy student, what data about medicines is there?",576|633|151|612|71962|71369,major-flavoured wish
+sign language video,103|636,English
+판결문 요약,97|71723|71841|71847|71848|580,Korean
+patent document classification,547|71531|71739,English
+fashion style recommendation,51|71446,English
+traffic volume from CCTV cameras,164|165|71573|522|241,English
+빈 주차 공간 찾기,598|71576|192|193,Korean
+speech recognition in a noisy factory,71417|71376|568|71698,English
+콜센터 상담 대화 데이터,98|100|571|470|71926|71970|71844|484,Korean
+Korean news text for training a language model,624|577|71486|71613|71729,English
+웹툰 그림 생성,71717|71719,Korean
+traditional Korean ink painting style,71380|71734|71920,English
+dance motion capture,52|604|71315|71759|71424,English
+baseball umpire calls from video,71726|488,English
+관광지 질문에 답하는 챗봇,71598|71605|71607|71608|134|71714|71789,Korean wish
+flood risk map,71793|556|71643|71644|71494,English
+하천 수질 예측,141|71352|71370|71766,Korean
+rooftop solar panels in aerial images,71348|71923,English
+welding defect inspection,71761|579|71690,English
+predict toxicity of chemicals from molecular structure,71642|71962|71916|71816,English technical
+악성 댓글 혐오 표현 탐지,558|71760,Korean
+elderly fall detection with cameras,167|71641|71803|62|71850,English
+자동차 번호판 인식,172|71573,Korean
+airport baggage X-ray dangerous items,233|71442,English
+얼굴 위조 판별,161|168,Korean
+meeting minutes automatic transcription,132|464|71795,English
+한글 손글씨 인식,605|81|91|71300,Korean
+old documents written in Chinese characters,234|603|71294,English
+robot arm grasping objects,71599|71601|71692|71713|71825|71924|71383|551,English
+ship detection at sea,175|199|71858|71856|73,English
+치아 구강 이미지,71688,Korean
+고등학생 진로 상담,71618|71791|584,Korean
+민원 자동 분류,619|71852|98|116|569|492,Korean
+indoor delivery robot driving,646|71574|71604|71934|184|71755,English
+ECG heart signal data,650|651,detail only in manuals
+weather radar typhoon forecasting,478|556,English
+North Korea news sentences translated to English,71266,detail inside a translation corpus
+dog barking sounds,170|644|585,detail in a class list (585 added after first test run: "개" is one of its sound classes)
+strawberries growing in a smart farm,596|71451|71523,English
+한우 등급 판정,559|158,Korean
+skin wrinkles and pores measurement,71645|71886|71961,English
+"I study food science, which data fits me?",74|79|149|158|242|490|71262|71319|71426|71473|71504|71525|71553|71564|71701|71736|71777|71853,major wish; any food-domain dataset
+스마트시티 전공인데 도시 데이터 추천해줘,56|69|73|136|142|143|166|189|194|241|474|477|489|491|492|497|522|550|567|585|641|642|643|71296|71329|71361|71368|71387|71420|71458|71465|71530|71559|71561|71572|71586|71596|71765|71793,major wish; any city_space dataset
+bus passengers getting on and off,185,English
+지하철역 이상행동,174,Korean
+lip reading,538|68,English
+emotion recognition from facial expressions,82|71787|57|58|570,English (570 added after first test run: emotion from animated faces also fits)
+Vietnamese language corpus,71672|71832|71970|71782|71865,English
+가짜 뉴스 탐지,71338,Korean
+bird song recordings,644,moved from no-match after the test run: 644 has bird-call classes (crow, magpie, duck)
+새 울음소리 분류,644,moved from no-match after the test run: 644 has bird-call classes (까마귀, 까치, 오리)
+stock market prices,,no match: checked against all page and manual text 2026-11-01
+주식 차트로 주가 예측,,no match: checked against all page and manual text 2026-11-01
+cryptocurrency transactions,,no match: checked against all page and manual text 2026-11-01
+photos of Mars surface,,no match: checked against all page and manual text 2026-11-01
+지진파로 지진 감지,,no match: checked against all page and manual text 2026-11-01
+seismic waveforms,,no match: checked against all page and manual text 2026-11-01
+protein 3D structure prediction,,no match: checked against all page and manual text 2026-11-01
+Arabic speech recognition,,no match: checked against all page and manual text 2026-11-01
+telescope images of galaxies,,no match: checked against all page and manual text 2026-11-01
+League of Legends match records,,no match: checked against all page and manual text 2026-11-01
+바다거북 사진,,no match: checked against all page and manual text 2026-11-01
+online shopping clickstream logs,,no match: checked against all page and manual text 2026-11-01
+air traffic control radio,,no match: checked against all page and manual text 2026-11-01
+수면 무호흡 소리,,no match: checked against all page and manual text 2026-11-01
+glacier melting satellite images,,no match: checked against all page and manual text 2026-11-01
+로또 번호 예측,,no match: checked against all page and manual text 2026-11-01
+chess game records,,no match: checked against all page and manual text 2026-11-01
