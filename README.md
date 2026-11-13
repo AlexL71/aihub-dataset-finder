@@ -61,6 +61,21 @@ The image listens on `0.0.0.0:8000`, runs as a normal user, and has a health che
 - Behind the platform's proxy, set `FORWARDED_ALLOW_IPS` to the proxy's address (or `*` if the container is only
   reachable through that proxy) so the search limit sees each student's real address.
 
+### Google Cloud Run (how the live site is deployed)
+
+One-time setup: a Google Cloud project with billing, the `gcloud` CLI signed in (`gcloud auth login`), the services
+`run`, `cloudbuild`, `artifactregistry` and `secretmanager` enabled, and the Gemini key stored as the secret
+`gemini-api-key` (readable by the Cloud Run service account, role `roles/secretmanager.secretAccessor`).
+Deploy or redeploy from the repository root (`.gcloudignore` keeps the upload small):
+
+```bash
+gcloud run deploy datafinder --source . --region asia-northeast3 --memory 2Gi --cpu 1 --cpu-boost --min-instances 0 --max-instances 2 --concurrency 20 --timeout 120 --port 8000 --allow-unauthenticated --set-secrets "GEMINI_API_KEY=gemini-api-key:latest" --set-env-vars "FORWARDED_ALLOW_IPS=*"
+```
+
+With `--min-instances 0` nothing runs while nobody visits; the first visit after a quiet period waits for start-up
+(about 10-20 s). Note: Cloud Run reserves URL paths that end in `z`, so `/healthz` answers with Google's own 404 there;
+Cloud Run checks the app with its own start-up probe instead.
+
 ### Your own server with Nginx and HTTPS
 
 Run the container (or `python -m app.server` with `HOST=127.0.0.1`) and put Nginx in front:

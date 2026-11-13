@@ -1,0 +1,22 @@
+# Files not uploaded by `gcloud run deploy --source .` (same list as .dockerignore).
+# Without this file gcloud would build one from .gitignore and upload extra folders.
+.gcloudignore
+.git
+.gitignore
+.venv
+.env
+.claude
+.pytest_cache
+**/__pycache__
+graphify-out
+docs
+eval
+tests
+tools
+collectors
+data/raw
+data/parsed/aihub/pages
+data/parsed/aihub/docs
+data/parsed/university
+data/index/embedding_cache.sqlite
+promo
