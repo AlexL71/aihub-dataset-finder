@@ -1,0 +1,165 @@
+{
+  "lang": "en",
+  "voice": {
+    "id": "EXAVITQu4vr4xnSDxMaL",
+    "model": "eleven_v4",
+    "language": "en",
+    "settings": {
+      "stability": 0.45,
+      "similarity_boost": 0.8
+    }
+  },
+  "ui": {
+    "query": "food images and nutrition data",
+    "counterLabel": "open AI Hub datasets",
+    "problemAsk": "Which one fits my project?",
+    "urlBar": "datafinder · find AI Hub data",
+    "scoreNote": "Relevance",
+    "outroLine": "Finding data now takes one line",
+    "outroPill": "Try it now →",
+    "curriculumNote": "Uses your department's curriculum"
+  },
+  "scenes": [
+    {
+      "id": "s1-problem",
+      "headline": "",
+      "narration": "Starting an AI project, but no idea which data to use? AI Hub alone has eight hundred sixty-seven datasets.",
+      "lines": [
+        {
+          "at": "Starting",
+          "text": "Starting an AI project, but no idea which data to use?"
+        },
+        {
+          "at": "AI Hub alone",
+          "text": "AI Hub alone has 867 datasets."
+        }
+      ],
+      "cues": {
+        "ask": "no idea",
+        "count": "eight hundred",
+        "countEnd": "datasets."
+      }
+    },
+    {
+      "id": "s2-search",
+      "headline": "Type what you're into",
+      "narration": "So we built AI Hub DataFinder. Type what you're interested in. For example, food images and nutrition data.",
+      "lines": [
+        {
+          "at": "So we",
+          "text": "So we built AI Hub DataFinder."
+        },
+        {
+          "at": "Type",
+          "text": "Type what you're interested in. For example, food images and nutrition data."
+        }
+      ],
+      "cues": {
+        "browser": "So we",
+        "focus": "Type",
+        "type": "For example",
+        "typeEnd": "nutrition data"
+      }
+    },
+    {
+      "id": "s2b-major",
+      "headline": "Add your major for a better fit",
+      "narration": "Then pick your major. It also uses what your department's curriculum covers.",
+      "lines": [
+        {
+          "at": "Then",
+          "text": "Then pick your major."
+        },
+        {
+          "at": "It also",
+          "text": "It also uses what your department's curriculum covers."
+        }
+      ],
+      "cues": {
+        "pick": "pick",
+        "curriculum": "curriculum",
+        "press": "covers"
+      }
+    },
+    {
+      "id": "s3-results",
+      "headline": "Data that fits you",
+      "narration": "And the data that fits you shows up right away: food images with nutrition info, food photos for health care, and food description texts.",
+      "lines": [
+        {
+          "at": "And the",
+          "text": "And the data that fits you shows up right away:"
+        },
+        {
+          "at": "food images with",
+          "text": "food images with nutrition info, food photos for health care, and food description texts."
+        }
+      ],
+      "cues": {
+        "show": "And the",
+        "f1": "food images with",
+        "f2": "food photos",
+        "f3": "food description"
+      },
+      "focus": {
+        "f1": 0,
+        "f2": 1,
+        "f3": 2
+      }
+    },
+    {
+      "id": "s4-score",
+      "headline": "Our own relevance score",
+      "narration": "Look at those relevance scores. They come from our own scoring, so the best matches come first.",
+      "lines": [
+        {
+          "at": "Look",
+          "text": "Look at those relevance scores."
+        },
+        {
+          "at": "They come",
+          "text": "They come from our own scoring, so the best matches come first."
+        }
+      ],
+      "cues": {
+        "zoom": "relevance",
+        "first": "best matches"
+      }
+    },
+    {
+      "id": "s5-plan",
+      "headline": "Your project plan, in one click",
+      "narration": "Found one you like? One click, and the latest frontier AI models will help you plan your project.",
+      "lines": [
+        {
+          "at": "Found",
+          "text": "Found one you like?"
+        },
+        {
+          "at": "One click",
+          "text": "One click, and the latest frontier AI models will help you plan your project."
+        }
+      ],
+      "cues": {
+        "click": "One click",
+        "models": "the latest"
+      }
+    },
+    {
+      "id": "s6-outro",
+      "headline": "",
+      "narration": "Finding data now takes one line. AI Hub DataFinder.",
+      "lines": [
+        {
+          "at": "Finding",
+          "text": "Finding data now takes one line. AI Hub DataFinder."
+        }
+      ],
+      "cues": {
+        "logo": "Finding",
+        "line": "now",
+        "pill": "AI Hub"
+      }
+    }
+  ]
+}

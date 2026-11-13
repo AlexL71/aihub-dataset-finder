@@ -625,3 +625,21 @@ table.fit th:last-child, table.fit td:last-child { text-align: right; width: 80p
   .pick-site .pick-ic { grid-row: span 2; margin: 0; }
   .pick-body { padding: 16px; }
 }
+
+/* ---------- intro video (intro.js): full screen on first visit, Skip or end shows the page ---------- */
+html.intro-open { overflow: hidden; }
+#intro { position: fixed; inset: 0; z-index: 100; display: flex; flex-direction: column; align-items: center; justify-content: center;
+  gap: 18px; padding: 16px; background: #0b1630; transition: opacity .45s ease; }
+#intro.intro-out { opacity: 0; pointer-events: none; }
+.intro-frame { position: relative; width: min(100%, calc((100vh - 110px) * 16 / 9)); aspect-ratio: 16 / 9; border-radius: 14px; overflow: hidden;
+  background: #000; box-shadow: 0 20px 60px rgba(0, 0, 0, .45); }
+.intro-video { display: block; width: 100%; height: 100%; object-fit: contain; }
+.intro-bar { position: absolute; left: 0; right: 0; bottom: 0; height: 4px; background: rgba(255, 255, 255, .15); }
+.intro-progress { height: 100%; background: var(--blue); transform: scaleX(0); transform-origin: left; transition: transform .25s linear; }
+.intro-actions { display: flex; gap: 10px; }
+.intro-actions button { min-height: 44px; padding: 0 22px; border-radius: 999px; border: 1px solid rgba(255, 255, 255, .35); cursor: pointer;
+  background: rgba(255, 255, 255, .1); color: #fff; font-weight: 600; font-size: 15px; }
+.intro-actions button:hover { background: rgba(255, 255, 255, .2); }
+.intro-actions .intro-skip { background: #fff; color: #0b1630; border-color: #fff; }
+.intro-actions .intro-skip:hover { background: #e9f7fd; }
+@media (prefers-reduced-motion: reduce) { #intro { transition: none; } }
