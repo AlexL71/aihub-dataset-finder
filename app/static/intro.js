@@ -3,14 +3,19 @@
 // - Language: starts in the site's language; 한국어 / English buttons switch the video (from the start).
 // - Phone version: an upright phone gets the vertical video (promo-<lang>-v.mp4); turning the phone switches
 //   between vertical and landscape at the same moment (both versions have the same timing).
-// - Ends by itself, or with "건너뛰기" (Skip) or Esc. Browsers often block sound: the video then plays muted
-//   (it has subtitles) and shows a "소리 켜기" button.
+// - Ends by itself, or with "건너뛰기" (Skip) or Esc.
+// - Sound is on by default. Browsers do not let a site start sound before the visitor has interacted with it;
+//   when that blocks it, the video starts muted and the sound turns on with the visitor's first tap, click or key
+//   press anywhere. The sound button (🔊 / 🔇) is always shown; turning the voice off is remembered.
 "use strict";
 (() => {
   const SEEN_KEY = "intro_seen";
+  const MUTED_KEY = "intro_muted";   // "1" = the visitor turned the voice off
   const TEXT = {
-    ko: { skip: "건너뛰기", sound: "🔊 소리 켜기", label: "AI Hub DataFinder 소개 영상", lang: "영상 언어" },
-    en: { skip: "Skip", sound: "🔊 Sound on", label: "AI Hub DataFinder intro video", lang: "Video language" },
+    ko: { skip: "건너뛰기", on: "🔊 소리", off: "🔇 소리 꺼짐", mute: "소리 끄기", unmute: "소리 켜기",
+          label: "AI Hub DataFinder 소개 영상", lang: "영상 언어" },
+    en: { skip: "Skip", on: "🔊 Sound", off: "🔇 Muted", mute: "Turn sound off", unmute: "Turn sound on",
+          label: "AI Hub DataFinder intro video", lang: "Video language" },
   };
   const LANGS = [["ko", "한국어"], ["en", "English"]];
 
@@ -46,7 +51,7 @@
         <div class="intro-langs" role="group" aria-label="${ui.lang}">
           ${LANGS.map(([id, name]) => `<button type="button" data-lang="${id}" aria-pressed="false">${name}</button>`).join("")}
         </div>
-        <button type="button" class="intro-sound" hidden>${ui.sound}</button>
+        <button type="button" class="intro-sound"></button>
         <button type="button" class="intro-skip">${ui.skip} ›</button>
       </div>`;
     document.body.appendChild(box);
@@ -58,6 +63,7 @@
     const bar = box.querySelector(".intro-progress");
     const langBtns = [...box.querySelectorAll(".intro-langs button")];
     let closed = false;
+    let wantSound = store.get(localStorage, MUTED_KEY) !== "1";   // the visitor's choice (default: voice on)
 
     // Load the right file; keep the playing position when only the shape changes (same timing in both).
     const load = (keepTime) => {
@@ -68,15 +74,32 @@
       langBtns.forEach(b => b.setAttribute("aria-pressed", String(b.dataset.lang === lang)));
       play();
     };
-    // Try with sound; if the browser blocks it, play muted and offer the sound button.
+    // Sound button shows what is heard now; its label says what pressing it does.
+    const showSound = () => {
+      const on = !video.muted;
+      soundBtn.textContent = on ? ui.on : ui.off;
+      soundBtn.setAttribute("aria-label", on ? ui.mute : ui.unmute);
+      soundBtn.setAttribute("aria-pressed", String(on));
+    };
+    // Play with sound if wanted; if the browser blocks sound, play muted until the visitor's first interaction.
     const play = () => {
+      video.muted = !wantSound;
+      showSound();
       video.play().catch(() => {
         if (closed) return;
         video.muted = true;
-        soundBtn.hidden = false;
+        showSound();
         video.play().catch(close);
       });
     };
+    // First tap / click / key press anywhere: the browser now allows sound, so turn it on (if the visitor wants it).
+    const unlock = (e) => {
+      if (closed || !wantSound || !video.muted || (e && e.target === soundBtn)) return;
+      video.muted = false;
+      showSound();
+      video.play().catch(() => {});
+    };
+    ["pointerdown", "keydown", "touchstart"].forEach(ev => document.addEventListener(ev, unlock, true));
 
     const close = () => {
       if (closed) return;
@@ -85,6 +108,7 @@
       clearInterval(bandTimer);
       shape.removeEventListener("change", onShape);
       document.removeEventListener("keydown", onKey);
+      ["pointerdown", "keydown", "touchstart"].forEach(ev => document.removeEventListener(ev, unlock, true));
       video.pause();
       box.classList.add("intro-out");
       document.documentElement.classList.remove("intro-open");
@@ -99,7 +123,13 @@
     const onShape = () => { if (shape.matches !== vertical) { vertical = shape.matches; load(true); } };
 
     skipBtn.onclick = close;
-    soundBtn.onclick = () => { video.muted = false; soundBtn.hidden = true; video.play().catch(() => {}); };
+    soundBtn.onclick = () => {
+      wantSound = video.muted;                       // muted now -> the visitor wants sound, and the other way round
+      store.set(localStorage, MUTED_KEY, wantSound ? "0" : "1");
+      video.muted = !wantSound;
+      showSound();
+      video.play().catch(() => {});
+    };
     langBtns.forEach(b => { b.onclick = () => { if (b.dataset.lang !== lang) { lang = b.dataset.lang; load(false); } }; });
     video.addEventListener("ended", close);
     video.addEventListener("error", close);             // file missing or cannot play: just show the page
@@ -129,7 +159,6 @@
     const bandTimer = setInterval(paintBands, 250);
 
     current = { close };
-    video.muted = false;
     load(false);
     skipBtn.focus({ preventScroll: true });
   }
