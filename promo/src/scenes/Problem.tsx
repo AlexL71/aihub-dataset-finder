@@ -1,7 +1,7 @@
 import React from "react";
 import { AbsoluteFill, interpolate, useCurrentFrame } from "remotion";
 import { useCue, useScene } from "../context";
-import { Backdrop, clamp, KineticText, Sfx, Ticks, useEase } from "../parts";
+import { Backdrop, clamp, KineticText, Sfx, Ticks, useEase, usePortrait } from "../parts";
 import { C, EASE } from "../theme";
 import titles from "../titles.json";
 
@@ -32,6 +32,8 @@ export const Problem: React.FC = () => {
   const n = Math.round(interpolate(frame, [count, countEnd], [0, 867], { ...clamp, easing: EASE }));
   const numIn = useEase(count - 8, count + 10);
   const askOut = interpolate(frame, [count - 10, count + 4], [1, 0.35], clamp);
+  const portrait = usePortrait();
+  const nRows = portrait ? 13 : 6;
 
   return (
     <AbsoluteFill>
@@ -44,16 +46,16 @@ export const Problem: React.FC = () => {
           filter: `blur(${interpolate(frame, [count - 6, count + 10], [0, 3], clamp)}px)`,
         }}
       >
-        {[0, 1, 2, 3, 4, 5].map((r) => (
-          <Row key={r} items={list.slice((r * 7) % list.length).concat(list.slice(0, (r * 7) % list.length)).slice(0, 10)} y={110 + r * 140} speed={1.1 + (r % 3) * 0.35} dir={r % 2 ? 1 : -1} />
+        {Array.from({ length: nRows }, (_, r) => (
+          <Row key={r} items={list.slice((r * 7) % list.length).concat(list.slice(0, (r * 7) % list.length)).slice(0, 10)} y={(portrait ? 90 : 110) + r * 140} speed={1.1 + (r % 3) * 0.35} dir={r % 2 ? 1 : -1} />
         ))}
       </AbsoluteFill>
       <AbsoluteFill style={{ background: "radial-gradient(ellipse at center, rgba(6,10,24,0.92) 0%, rgba(6,10,24,0.55) 45%, transparent 75%)" }} />
 
-      <div style={{ position: "absolute", top: 250, left: 0, right: 0, opacity: askOut }}>
-        <KineticText text={ui.problemAsk} at={8} size={84} color="#fff" />
+      <div style={{ position: "absolute", top: portrait ? 560 : 250, left: portrait ? 60 : 0, right: portrait ? 60 : 0, opacity: askOut }}>
+        <KineticText text={ui.problemAsk} at={8} size={portrait ? 80 : 84} color="#fff" />
       </div>
-      <div style={{ position: "absolute", top: 400, left: 0, right: 0, textAlign: "center", opacity: numIn, transform: `translateY(${(1 - numIn) * 40}px) scale(${0.92 + 0.08 * numIn})` }}>
+      <div style={{ position: "absolute", top: portrait ? 800 : 400, left: 0, right: 0, textAlign: "center", opacity: numIn, transform: `translateY(${(1 - numIn) * 40}px) scale(${0.92 + 0.08 * numIn})` }}>
         <div style={{ fontSize: 250, fontWeight: 900, letterSpacing: -10, lineHeight: 1, backgroundImage: `linear-gradient(100deg, #9cc7ff, ${C.violet})`, WebkitBackgroundClip: "text", backgroundClip: "text", color: "transparent" }}>
           {n}
         </div>

@@ -1,7 +1,11 @@
 # Promo video (Remotion)
 
-The intro video shown on the home page, in Korean (~53 s) and English (~48 s): `app/static/promo-ko.mp4` and
-`promo-en.mp4`, played by `app/static/intro.js` in the site's language. Built with [Remotion](https://www.remotion.dev)
+The intro video shown on the home page, in Korean (~53 s) and English (~48 s), each as a landscape (1920 x 1080) and a
+phone version (1080 x 1920): `app/static/promo-{ko,en}.mp4` and `promo-{ko,en}-v.mp4`. `app/static/intro.js` plays it
+full screen on the first home-page visit (and from the "소개 영상 보기" button), in the site's language with a
+한국어 / English switch; an upright phone gets the vertical version, and turning the phone switches at the same moment.
+The phone layout comes from the same scenes (`usePortrait()` in `parts.tsx`; a taller browser window in `screen.tsx`
+where every camera zoom is capped so its target fits). Built with [Remotion](https://www.remotion.dev)
 (React → MP4, runs on the CPU). Needs Node.js 20+.
 
 Style: a product demo. The real DataFinder screens appear in a browser window; a camera glides and zooms to the part
@@ -53,12 +57,13 @@ node scripts/capture.mjs all
 # 2. narration (only changed scenes cost credits; --force remakes all)
 $env:ELEVENLABS_KEY_FILE = "path\to\key.txt"      # or set ELEVENLABS_API_KEY
 node scripts/audio.mjs voice all
-# 3. render, then a lighter web copy and a cover image for the site (repeat with en)
+# 3. render, then a lighter web copy and a cover image for the site (repeat with en, and with ko-v / en-v for the
+#    phone versions: Promo-ko-v, poster scale 720:-1)
 npx remotion render Promo-ko out/promo-ko.mp4 --codec=h264 --crf=20
 npx remotion ffmpeg -y -i out/promo-ko.mp4 -c:v libx264 -crf 27 -preset slow -pix_fmt yuv420p -c:a aac -b:a 128k -movflags +faststart ../app/static/promo-ko.mp4
 npx remotion ffmpeg -y -ss 51 -i out/promo-ko.mp4 -frames:v 1 -vf scale=1280:-1 -q:v 4 ../app/static/promo-poster-ko.jpg
 ```
 
-A render takes about 2 minutes per language on a laptop CPU. Remotion Studio (`npx remotion studio`) previews live but
+A render takes about 2-3 minutes per video on a laptop CPU. Remotion Studio (`npx remotion studio`) previews live but
 can stutter on a laptop without a graphics card; the rendered MP4 plays smoothly. Remotion is free for individuals and
 teams of up to 3. Sound credit: Kenney (www.kenney.nl), CC0.

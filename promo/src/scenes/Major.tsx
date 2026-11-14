@@ -1,6 +1,6 @@
 import React from "react";
 import { useCue, useScene } from "../context";
-import { Backdrop, KineticText } from "../parts";
+import { Backdrop, SceneTitle } from "../parts";
 import { Browser, Callout, Cursor, shotOn, Spotlight, WHOLE } from "../screen";
 
 // The real "tell us a little more" panel: the cursor opens the major box and the real screen changes from
@@ -20,9 +20,7 @@ export const Major: React.FC<{ headline: string }> = ({ headline }) => {
   return (
     <>
       <Backdrop />
-      <div style={{ position: "absolute", top: 34, left: 0, right: 0 }}>
-        <KineticText text={headline} at={4} size={60} />
-      </div>
+      <SceneTitle text={headline} at={4} />
       <Browser
         screens={[{ src: "major-empty", from: 0 }, { src: "major", from: clickMajor + 2 }]}
         shots={[WHOLE(0), shotOn(pickAt, row, 1.3), shotOn(curriculumAt, after.major, 1.6)]}

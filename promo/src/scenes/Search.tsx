@@ -1,7 +1,7 @@
 import React from "react";
 import { interpolate, useCurrentFrame } from "remotion";
 import { useCue, useScene } from "../context";
-import { Backdrop, clamp, KineticText, Sfx, usePop, Wordmark } from "../parts";
+import { Backdrop, clamp, SceneTitle, Sfx, usePop, usePortrait, Wordmark } from "../parts";
 import { Browser, Cursor, shotOn, WHOLE } from "../screen";
 import { C } from "../theme";
 
@@ -11,6 +11,7 @@ export const Search: React.FC<{ headline: string }> = ({ headline }) => {
   const frame = useCurrentFrame();
   const cue = useCue();
   const { ui, rects } = useScene();
+  const portrait = usePortrait();
   const { input, button } = rects.home;
   const focusAt = cue("focus", 90);
   const typeAt = cue("type", focusAt + 40);
@@ -26,12 +27,10 @@ export const Search: React.FC<{ headline: string }> = ({ headline }) => {
   return (
     <>
       <Backdrop />
-      <div style={{ position: "absolute", top: 40, left: 0, right: 0, display: "flex", justifyContent: "center", opacity: logo * logoOut, transform: `scale(${0.9 + 0.1 * logo})` }}>
-        <Wordmark size={64} />
+      <div style={{ position: "absolute", top: portrait ? 280 : 40, left: 0, right: 0, display: "flex", justifyContent: "center", opacity: logo * logoOut, transform: `scale(${0.9 + 0.1 * logo})` }}>
+        <Wordmark size={portrait ? 72 : 64} />
       </div>
-      <div style={{ position: "absolute", top: 34, left: 0, right: 0 }}>
-        <KineticText text={headline} at={focusAt} size={60} />
-      </div>
+      <SceneTitle text={headline} at={focusAt} />
 
       <Browser screens={[{ src: "home", from: 0 }]} shots={[WHOLE(0), shotOn(focusAt, area, 1.75)]} enterAt={2}>
         {focused ? (

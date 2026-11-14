@@ -1,5 +1,5 @@
 import React from "react";
-import { Img, interpolate, staticFile, useCurrentFrame } from "remotion";
+import { Img, interpolate, staticFile, useCurrentFrame, useVideoConfig } from "remotion";
 import { Box, useScene } from "./context";
 import { clamp, Sfx, SoundId, usePop } from "./parts";
 import { C, EASE, EASE_IN_OUT } from "./theme";
@@ -7,29 +7,43 @@ import { C, EASE, EASE_IN_OUT } from "./theme";
 // Product-demo pieces: a browser window showing a real app screenshot, a camera that glides and zooms
 // to parts of the page, a spotlight and a cursor. All positions are page pixels (page = 1440 x 900).
 export const PAGE = { w: 1440, h: 900 };
-export const WIN = { w: 1296, bar: 46 }; // browser width on the 1920 x 1080 canvas, title bar height
-export const VIEW = { w: WIN.w, h: (WIN.w * PAGE.h) / PAGE.w }; // 1296 x 810
-const S0 = VIEW.w / PAGE.w; // page px -> canvas px at zoom 1 (0.9)
+// Browser window on the canvas. Landscape: 1296 x 810 under the headline, showing the whole page width at zoom 1.
+// Phone (1080 x 1920): a tall 1000 x 1060 window filling the middle; the page is shown larger (its full 900 px height
+// fits the window), so app text is readable on a phone and the camera pans to the part being talked about.
+const BAR = 46; // title bar height
+const useWindow = () => {
+  const { width, height } = useVideoConfig();
+  const portrait = height > width;
+  const w = portrait ? 1000 : 1296;
+  const viewH = portrait ? 1060 : (w * PAGE.h) / PAGE.w;
+  const s0 = portrait ? viewH / PAGE.h : w / PAGE.w; // page px -> canvas px at zoom 1
+  return { portrait, w, viewH, left: (width - w) / 2, top: portrait ? 470 : 132, s0 };
+};
 
 // Camera keyframe: at frame `at`, show the page centred on (cx, cy) at zoom z (1 = whole page).
-export type Shot = { at: number; cx: number; cy: number; z: number };
+// `bw` = width of the thing being shown (page px): the zoom is capped so it always fits the window (phone version).
+export type Shot = { at: number; cx: number; cy: number; z: number; bw?: number };
 export const WHOLE = (at: number): Shot => ({ at, cx: PAGE.w / 2, cy: PAGE.h / 2, z: 1 });
-export const shotOn = (at: number, b: Box, z: number): Shot => ({ at, cx: b.x + b.w / 2, cy: b.y + b.h / 2, z });
+export const shotOn = (at: number, b: Box, z: number): Shot => ({ at, cx: b.x + b.w / 2, cy: b.y + b.h / 2, z, bw: b.w });
 
 // Camera state at the current frame: glides between keyframes over `glide` frames each.
 const useCamera = (shots: Shot[], pageH: number, glide = 22) => {
   const frame = useCurrentFrame();
-  let cur = shots[0];
-  for (let i = 1; i < shots.length; i++) {
-    const s = shots[i];
+  const win = useWindow();
+  // Largest zoom at which the shown thing still fits the window width (with a small margin).
+  const fit = (s: Shot): Shot => (s.bw ? { ...s, z: Math.min(s.z, (0.94 * win.w) / (s.bw * win.s0)) } : s);
+  const fitted = shots.map(fit);
+  let cur = fitted[0];
+  for (let i = 1; i < fitted.length; i++) {
+    const s = fitted[i];
     if (frame < s.at) break;
     const t = interpolate(frame, [s.at, s.at + glide], [0, 1], { ...clamp, easing: EASE_IN_OUT });
     cur = { at: s.at, cx: cur.cx + (s.cx - cur.cx) * t, cy: cur.cy + (s.cy - cur.cy) * t, z: cur.z + (s.z - cur.z) * t };
   }
-  const k = S0 * cur.z;
+  const k = win.s0 * cur.z;
   // Keep the page inside the window (no empty edges when zoomed).
-  const tx = Math.min(0, Math.max(VIEW.w - PAGE.w * k, VIEW.w / 2 - cur.cx * k));
-  const ty = Math.min(0, Math.max(VIEW.h - pageH * k, VIEW.h / 2 - cur.cy * k));
+  const tx = Math.min(0, Math.max(win.w - PAGE.w * k, win.w / 2 - cur.cx * k));
+  const ty = Math.min(0, Math.max(win.viewH - pageH * k, win.viewH / 2 - cur.cy * k));
   return { k, tx, ty };
 };
 
@@ -44,15 +58,16 @@ export const Browser: React.FC<{
   const frame = useCurrentFrame();
   const { lang, ui } = useScene();
   const { k, tx, ty } = useCamera(shots, pageH);
+  const win = useWindow();
   const enter = enterAt === undefined ? 1 : interpolate(frame, [enterAt, enterAt + 26], [0, 1], { ...clamp, easing: EASE });
   return (
     <div
       style={{
         position: "absolute",
-        left: (1920 - WIN.w) / 2,
-        top: 132,
-        width: WIN.w,
-        height: VIEW.h + WIN.bar,
+        left: win.left,
+        top: win.top,
+        width: win.w,
+        height: win.viewH + BAR,
         borderRadius: 18,
         overflow: "hidden",
         background: "#fff",
@@ -62,7 +77,7 @@ export const Browser: React.FC<{
         transform: `perspective(1800px) translateY(${(1 - enter) * 120}px) rotateX(${(1 - enter) * 14}deg) scale(${0.94 + 0.06 * enter})`,
       }}
     >
-      <div style={{ height: WIN.bar, display: "flex", alignItems: "center", gap: 9, padding: "0 18px", background: "#f8fafc", borderBottom: `1px solid ${C.line}` }}>
+      <div style={{ height: BAR, display: "flex", alignItems: "center", gap: 9, padding: "0 18px", background: "#f8fafc", borderBottom: `1px solid ${C.line}` }}>
         {["#ff5f57", "#febc2e", "#28c840"].map((c) => (
           <span key={c} style={{ width: 13, height: 13, borderRadius: 7, background: c }} />
         ))}
@@ -70,7 +85,7 @@ export const Browser: React.FC<{
           🔒 {ui.urlBar}
         </div>
       </div>
-      <div style={{ position: "relative", width: VIEW.w, height: VIEW.h, overflow: "hidden" }}>
+      <div style={{ position: "relative", width: win.w, height: win.viewH, overflow: "hidden" }}>
         <div style={{ position: "absolute", left: 0, top: 0, width: PAGE.w, height: pageH, transformOrigin: "0 0", transform: `translate(${tx}px, ${ty}px) scale(${k})` }}>
           {screens.map((s, i) => {
             const next = screens[i + 1];

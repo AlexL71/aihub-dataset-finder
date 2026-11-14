@@ -1,6 +1,6 @@
 import React from "react";
 import { useCue, useScene } from "../context";
-import { Backdrop, KineticText } from "../parts";
+import { Backdrop, SceneTitle } from "../parts";
 import { Browser, Callout, shotOn, Spotlight, WHOLE } from "../screen";
 
 // The relevance score, without the formula: zoom into the real score on the first card,
@@ -18,9 +18,7 @@ export const Score: React.FC<{ headline: string }> = ({ headline }) => {
   return (
     <>
       <Backdrop />
-      <div style={{ position: "absolute", top: 34, left: 0, right: 0 }}>
-        <KineticText text={headline} at={4} size={60} />
-      </div>
+      <SceneTitle text={headline} at={4} />
       <Browser screens={[{ src: "results", from: 0, h: rects.view.resultsHeight }]} pageH={rects.view.resultsHeight} shots={[WHOLE(0), shotOn(zoomAt, first.meter, 2.4), shotOn(firstAt, row, 1.25)]}>
         <Spotlight box={first.meter} from={zoomAt + 6} to={firstAt - 2} pad={8} radius={12} />
         <Callout box={first.meter} at={zoomAt + 14} to={firstAt - 4} text={`${ui.scoreNote} · ${first.score}`} side="below" />

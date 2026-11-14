@@ -1,103 +1,144 @@
-// Intro video shown first when a student arrives at the home page from a link.
-// The page behind it shows when the video ends, or right away with "건너뛰기" (Skip) or the Esc key.
-// Shown once per browser tab (sessionStorage), so a reload or going back home does not replay it.
-// Browsers often block autoplay with sound: then the video plays muted (it has subtitles) with a "소리 켜기" button.
-// The Korean or English version is chosen from the language saved by the site's language buttons.
+// Intro video. Plays full screen the first time a student opens the home page in a browser tab
+// (sessionStorage), and again whenever they press "소개 영상 보기" / "Watch the intro" (window.PromoIntro.open()).
+// - Language: starts in the site's language; 한국어 / English buttons switch the video (from the start).
+// - Phone version: an upright phone gets the vertical video (promo-<lang>-v.mp4); turning the phone switches
+//   between vertical and landscape at the same moment (both versions have the same timing).
+// - Ends by itself, or with "건너뛰기" (Skip) or Esc. Browsers often block sound: the video then plays muted
+//   (it has subtitles) and shows a "소리 켜기" button.
 "use strict";
 (() => {
   const SEEN_KEY = "intro_seen";
   const TEXT = {
-    ko: { skip: "건너뛰기", sound: "🔊 소리 켜기", label: "AI Hub DataFinder 소개 영상" },
-    en: { skip: "Skip", sound: "🔊 Sound on", label: "AI Hub DataFinder intro video" },
+    ko: { skip: "건너뛰기", sound: "🔊 소리 켜기", label: "AI Hub DataFinder 소개 영상", lang: "영상 언어" },
+    en: { skip: "Skip", sound: "🔊 Sound on", label: "AI Hub DataFinder intro video", lang: "Video language" },
   };
+  const LANGS = [["ko", "한국어"], ["en", "English"]];
 
-  const seen = () => { try { return sessionStorage.getItem(SEEN_KEY) === "1"; } catch (e) { return false; } };
-  const markSeen = () => { try { sessionStorage.setItem(SEEN_KEY, "1"); } catch (e) { /* private window: ignore */ } };
-  const lang = (() => { try { return JSON.parse(localStorage.getItem("lang")) === "en" ? "en" : "ko"; } catch (e) { return "ko"; } })();
-  const onHome = () => { const p = location.hash.split("/")[1]; return !p; };   // "", "#", "#/"
-
-  if (seen() || !onHome()) return;
-  markSeen();
-
-  // One video per site language (Korean and English narration).
-  const SRC = `/static/promo-${lang}.mp4`;
-  const POSTER = `/static/promo-poster-${lang}.jpg`;
-
-  const tx = TEXT[lang];
-  const box = document.createElement("div");
-  box.id = "intro";
-  box.setAttribute("role", "dialog");
-  box.setAttribute("aria-modal", "true");
-  box.setAttribute("aria-label", tx.label);
-  box.innerHTML = `
-    <div class="intro-frame">
-      <video class="intro-video" playsinline preload="auto" poster="${POSTER}"><source src="${SRC}" type="video/mp4"></video>
-      <div class="intro-bar"><div class="intro-progress"></div></div>
-    </div>
-    <div class="intro-actions">
-      <button type="button" class="intro-sound" hidden>${tx.sound}</button>
-      <button type="button" class="intro-skip">${tx.skip} ›</button>
-    </div>`;
-  document.body.appendChild(box);
-  document.documentElement.classList.add("intro-open");
-
-  const video = box.querySelector("video");
-  const soundBtn = box.querySelector(".intro-sound");
-  const skipBtn = box.querySelector(".intro-skip");
-  const bar = box.querySelector(".intro-progress");
-  let closed = false;
-
-  const close = () => {
-    if (closed) return;
-    closed = true;
-    video.pause();
-    box.classList.add("intro-out");
-    document.documentElement.classList.remove("intro-open");
-    document.removeEventListener("keydown", onKey);
-    setTimeout(() => {
-      box.remove();
-      const q = document.getElementById("q");   // home search box
-      if (q) q.focus({ preventScroll: true });
-    }, 450);
+  const store = {
+    get(area, k) { try { return area.getItem(k); } catch (e) { return null; } },
+    set(area, k, v) { try { area.setItem(k, v); } catch (e) { /* private window: ignore */ } },
   };
-  const onKey = e => { if (e.key === "Escape") close(); };
+  const siteLang = () => { try { return JSON.parse(localStorage.getItem("lang")) === "en" ? "en" : "ko"; } catch (e) { return "ko"; } };
+  const onHome = () => !location.hash.split("/")[1];   // "", "#", "#/"
+  const portrait = () => window.matchMedia("(orientation: portrait)").matches;
+  const source = (lang, vertical) => `/static/promo-${lang}${vertical ? "-v" : ""}.mp4`;
+  const poster = (lang, vertical) => `/static/promo-poster-${lang}${vertical ? "-v" : ""}.jpg`;
 
-  skipBtn.onclick = close;
-  soundBtn.onclick = () => { video.muted = false; soundBtn.hidden = true; video.play().catch(() => {}); };
-  video.addEventListener("ended", close);
-  video.addEventListener("error", close, true);           // file missing or cannot play: just show the page
-  video.addEventListener("timeupdate", () => {
-    if (video.duration) bar.style.transform = `scaleX(${video.currentTime / video.duration})`;
-  });
+  let current = null;   // the open intro, if any
 
-  // On screens that are not 16:9 the video leaves bands above/below or beside it. Paint them with the video's
-  // own edge color (sampled a few times a second), so the video looks edge to edge on light and dark scenes.
-  const sample = document.createElement("canvas");
-  sample.width = 8; sample.height = 8;
-  const ctx = sample.getContext("2d", { willReadFrequently: true });
-  const paintBands = () => {
-    if (closed || !ctx || video.readyState < 2) return;
-    try {
-      ctx.drawImage(video, 0, 0, video.videoWidth, video.videoHeight * 0.04, 0, 0, 8, 8);   // a thin strip at the top edge
-      const d = ctx.getImageData(0, 0, 8, 8).data;
-      let r = 0, g = 0, b = 0;
-      for (let i = 0; i < d.length; i += 4) { r += d[i]; g += d[i + 1]; b += d[i + 2]; }
-      const n = d.length / 4, color = `rgb(${Math.round(r / n)}, ${Math.round(g / n)}, ${Math.round(b / n)})`;
-      box.style.background = color;
-      video.style.background = color;
-    } catch (e) { /* canvas blocked: keep the default dark color */ }
-  };
-  const bandTimer = setInterval(paintBands, 250);
-  video.addEventListener("ended", () => clearInterval(bandTimer));
-  skipBtn.addEventListener("click", () => clearInterval(bandTimer));
-  document.addEventListener("keydown", onKey);
-  skipBtn.focus({ preventScroll: true });
+  function open() {
+    if (current) return;
+    const ui = TEXT[siteLang()];
+    let lang = siteLang();
+    let vertical = portrait();
 
-  // Try with sound first; if the browser blocks it, play muted and offer the sound button.
-  video.muted = false;
-  video.play().catch(() => {
-    video.muted = true;
-    soundBtn.hidden = false;
-    video.play().catch(close);
-  });
+    const box = document.createElement("div");
+    box.id = "intro";
+    box.setAttribute("role", "dialog");
+    box.setAttribute("aria-modal", "true");
+    box.setAttribute("aria-label", ui.label);
+    box.innerHTML = `
+      <div class="intro-frame">
+        <video class="intro-video" playsinline preload="auto"></video>
+        <div class="intro-bar"><div class="intro-progress"></div></div>
+      </div>
+      <div class="intro-actions">
+        <div class="intro-langs" role="group" aria-label="${ui.lang}">
+          ${LANGS.map(([id, name]) => `<button type="button" data-lang="${id}" aria-pressed="false">${name}</button>`).join("")}
+        </div>
+        <button type="button" class="intro-sound" hidden>${ui.sound}</button>
+        <button type="button" class="intro-skip">${ui.skip} ›</button>
+      </div>`;
+    document.body.appendChild(box);
+    document.documentElement.classList.add("intro-open");
+
+    const video = box.querySelector("video");
+    const soundBtn = box.querySelector(".intro-sound");
+    const skipBtn = box.querySelector(".intro-skip");
+    const bar = box.querySelector(".intro-progress");
+    const langBtns = [...box.querySelectorAll(".intro-langs button")];
+    let closed = false;
+
+    // Load the right file; keep the playing position when only the shape changes (same timing in both).
+    const load = (keepTime) => {
+      const t = keepTime ? video.currentTime : 0;
+      video.poster = poster(lang, vertical);
+      video.src = source(lang, vertical);
+      if (t) video.addEventListener("loadedmetadata", () => { video.currentTime = t; }, { once: true });
+      langBtns.forEach(b => b.setAttribute("aria-pressed", String(b.dataset.lang === lang)));
+      play();
+    };
+    // Try with sound; if the browser blocks it, play muted and offer the sound button.
+    const play = () => {
+      video.play().catch(() => {
+        if (closed) return;
+        video.muted = true;
+        soundBtn.hidden = false;
+        video.play().catch(close);
+      });
+    };
+
+    const close = () => {
+      if (closed) return;
+      closed = true;
+      current = null;
+      clearInterval(bandTimer);
+      shape.removeEventListener("change", onShape);
+      document.removeEventListener("keydown", onKey);
+      video.pause();
+      box.classList.add("intro-out");
+      document.documentElement.classList.remove("intro-open");
+      setTimeout(() => {
+        box.remove();
+        const q = document.getElementById("q");   // home search box
+        if (q) q.focus({ preventScroll: true });
+      }, 450);
+    };
+    const onKey = e => { if (e.key === "Escape") close(); };
+    const shape = window.matchMedia("(orientation: portrait)");
+    const onShape = () => { if (shape.matches !== vertical) { vertical = shape.matches; load(true); } };
+
+    skipBtn.onclick = close;
+    soundBtn.onclick = () => { video.muted = false; soundBtn.hidden = true; video.play().catch(() => {}); };
+    langBtns.forEach(b => { b.onclick = () => { if (b.dataset.lang !== lang) { lang = b.dataset.lang; load(false); } }; });
+    video.addEventListener("ended", close);
+    video.addEventListener("error", close);             // file missing or cannot play: just show the page
+    video.addEventListener("timeupdate", () => {
+      if (video.duration) bar.style.transform = `scaleX(${video.currentTime / video.duration})`;
+    });
+    shape.addEventListener("change", onShape);
+    document.addEventListener("keydown", onKey);
+
+    // Where the screen shape differs from the video's, paint the bands with the video's own edge color
+    // (sampled a few times a second), so the video looks edge to edge on light and dark scenes.
+    const sample = document.createElement("canvas");
+    sample.width = 8; sample.height = 8;
+    const ctx = sample.getContext("2d", { willReadFrequently: true });
+    const paintBands = () => {
+      if (closed || !ctx || video.readyState < 2) return;
+      try {
+        ctx.drawImage(video, 0, 0, video.videoWidth, video.videoHeight * 0.04, 0, 0, 8, 8);   // thin strip at the top edge
+        const d = ctx.getImageData(0, 0, 8, 8).data;
+        let r = 0, g = 0, b = 0;
+        for (let i = 0; i < d.length; i += 4) { r += d[i]; g += d[i + 1]; b += d[i + 2]; }
+        const n = d.length / 4, color = `rgb(${Math.round(r / n)}, ${Math.round(g / n)}, ${Math.round(b / n)})`;
+        box.style.background = color;
+        video.style.background = color;
+      } catch (e) { /* canvas blocked: keep the default dark color */ }
+    };
+    const bandTimer = setInterval(paintBands, 250);
+
+    current = { close };
+    video.muted = false;
+    load(false);
+    skipBtn.focus({ preventScroll: true });
+  }
+
+  window.PromoIntro = { open };
+
+  // First visit to the home page in this tab: play it automatically.
+  if (store.get(sessionStorage, SEEN_KEY) !== "1" && onHome()) {
+    store.set(sessionStorage, SEEN_KEY, "1");
+    open();
+  }
 })();

@@ -6,6 +6,12 @@ import { C, EASE } from "./theme";
 
 export const clamp = { extrapolateLeft: "clamp", extrapolateRight: "clamp" } as const;
 
+// Phone (vertical, 1080 x 1920) or landscape (1920 x 1080) video: decided by the canvas shape.
+export const usePortrait = () => {
+  const { width, height } = useVideoConfig();
+  return height > width;
+};
+
 // 0 -> 1 spring that starts at frame `at` (soft, no bounce by default).
 export const usePop = (at = 0, damping = 22, mass = 0.9) => {
   const frame = useCurrentFrame();
@@ -149,8 +155,19 @@ export const KineticText: React.FC<{
   );
 };
 
+// Scene headline: across the top on landscape, in the upper third (wrapping) on the phone version.
+export const SceneTitle: React.FC<{ text: string; at: number }> = ({ text, at }) => {
+  const portrait = usePortrait();
+  return (
+    <div style={{ position: "absolute", top: portrait ? 250 : 34, left: portrait ? 60 : 0, right: portrait ? 60 : 0 }}>
+      <KineticText text={text} at={at} size={portrait ? 68 : 60} />
+    </div>
+  );
+};
+
 // Narration subtitle at the bottom: each line appears when it is spoken (times from the speech).
 export const Subtitle: React.FC<{ dark?: boolean }> = ({ dark }) => {
+  const portrait = usePortrait();
   const frame = useCurrentFrame();
   const { timing } = useScene();
   const idx = timing.lines.reduce((cur, l, i) => (frame >= l.from ? i : cur), -1);
@@ -158,13 +175,13 @@ export const Subtitle: React.FC<{ dark?: boolean }> = ({ dark }) => {
   const line = timing.lines[idx];
   const p = interpolate(frame, [line.from, line.from + 10], [0, 1], { ...clamp, easing: EASE });
   return (
-    <div style={{ position: "absolute", bottom: 38, left: 0, right: 0, display: "flex", justifyContent: "center" }}>
+    <div style={{ position: "absolute", bottom: portrait ? 190 : 38, left: portrait ? 50 : 0, right: portrait ? 50 : 0, display: "flex", justifyContent: "center" }}>
       <div
         style={{
           maxWidth: 1560,
-          padding: "14px 30px",
+          padding: portrait ? "18px 30px" : "14px 30px",
           borderRadius: 16,
-          fontSize: 36,
+          fontSize: portrait ? 40 : 36,
           fontWeight: 600,
           lineHeight: 1.35,
           textAlign: "center",

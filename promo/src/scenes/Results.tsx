@@ -1,6 +1,6 @@
 import React from "react";
 import { useCue, useScene } from "../context";
-import { Backdrop, KineticText, Sfx } from "../parts";
+import { Backdrop, SceneTitle, Sfx } from "../parts";
 import { Browser, Shot, shotOn, Spotlight, WHOLE } from "../screen";
 
 // The real results for the search. The camera glides (and scrolls down when needed) to each dataset
@@ -16,9 +16,7 @@ export const Results: React.FC<{ headline: string }> = ({ headline }) => {
   return (
     <>
       <Backdrop />
-      <div style={{ position: "absolute", top: 34, left: 0, right: 0 }}>
-        <KineticText text={headline} at={4} size={60} />
-      </div>
+      <SceneTitle text={headline} at={4} />
       <Browser screens={[{ src: "results", from: 0, h: pageH }]} pageH={pageH} shots={shots}>
         {names.map((n, i) => (
           <Spotlight key={n} box={rects.cards[focus[n]].card} from={cue(n)} to={i < names.length - 1 ? cue(names[i + 1]) - 4 : undefined} />

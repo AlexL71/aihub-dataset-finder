@@ -1,6 +1,6 @@
 import React from "react";
 import { useCue, useScene } from "../context";
-import { Backdrop, KineticText, Sfx } from "../parts";
+import { Backdrop, SceneTitle, Sfx } from "../parts";
 import { Browser, Cursor, shotOn, Spotlight } from "../screen";
 
 // The cursor clicks the real "plan a project with AI" button; the real plan window opens and
@@ -16,9 +16,7 @@ export const Plan: React.FC<{ headline: string }> = ({ headline }) => {
   return (
     <>
       <Backdrop />
-      <div style={{ position: "absolute", top: 34, left: 0, right: 0 }}>
-        <KineticText text={headline} at={4} size={60} />
-      </div>
+      <SceneTitle text={headline} at={4} />
       <Browser
         screens={[{ src: "results", from: 0, h: rects.view.resultsHeight }, { src: "plan", from: openAt }]}
         pageH={rects.view.resultsHeight}

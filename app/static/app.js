@@ -24,7 +24,7 @@ const T = {
     major: "전공", major_none: "전공을 선택하세요", purpose: "어디에 쓰실 예정인가요?", purpose_none: "목적을 선택하세요",
     interests: "관심 있는 분야", interests_hint: "분야를 펼쳐 관심 있는 주제를 고르세요. {n}개까지 고를 수 있습니다.",
     my_major: "내 전공과 가까운 분야", n_sel: "{n}개 선택", max_sel: "관심 분야는 {n}개까지만 고를 수 있습니다.",
-    recommend: "데이터 추천받기", reset: "초기화", loading: "잘 맞는 데이터를 찾고 있습니다…",
+    recommend: "데이터 추천받기", reset: "초기화", intro_replay: "소개 영상 보기", loading: "잘 맞는 데이터를 찾고 있습니다…",
     n_results: "추천 데이터 {n}건", edit: "조건 바꾸기",
     no_input: "검색어를 적거나 전공, 관심 분야를 하나 이상 고르세요.",
     no_match: "요청과 딱 맞는 데이터는 AI Hub에 없는 것으로 보입니다. 가장 비슷한 데이터를 대신 보여 드립니다.",
@@ -56,7 +56,7 @@ const T = {
     major: "Major", major_none: "Choose your major", purpose: "What will you use it for?", purpose_none: "Choose a purpose",
     interests: "Fields you're interested in", interests_hint: "Open a field and pick topics, up to {n}.",
     my_major: "Close to your major", n_sel: "{n} selected", max_sel: "You can choose up to {n} fields.",
-    recommend: "Get recommendations", reset: "Reset", loading: "Finding data that fits…",
+    recommend: "Get recommendations", reset: "Reset", intro_replay: "Watch the intro", loading: "Finding data that fits…",
     n_results: "{n} datasets for you", edit: "Change answers",
     no_input: "Type what you're looking for, or choose a major or a field.",
     no_match: "AI Hub doesn't seem to have an exact match. Here are the closest datasets instead.",
@@ -290,6 +290,7 @@ async function pageHome(seq) {
     <form class="search" id="sform"><input id="q" maxlength="${META.limits.max_text_chars}" value="${esc(profile.text)}" placeholder="${esc(t("placeholder"))}" autocomplete="off" aria-label="${esc(t("hero_title"))}"><button>${esc(t("go"))}</button></form>
     <div id="kw">${keywordsHTML(mi)}</div>
     <div class="hero-links">
+      <button type="button" class="reset-link intro-link" id="replay-intro"><svg viewBox="0 0 24 24" width="15" height="15" fill="currentColor" aria-hidden="true"><path d="M8 5.5v13a1 1 0 0 0 1.5.86l10.6-6.5a1 1 0 0 0 0-1.72L9.5 4.64A1 1 0 0 0 8 5.5z"/></svg>${esc(t("intro_replay"))}</button>
       <button type="button" class="reset-link" id="reset"><svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12a8 8 0 1 0 2.3-5.6"/><path d="M4 4v4.5h4.5"/></svg>${esc(t("reset"))}</button></div>
   </section>
   ${browseHomeHTML()}
@@ -308,6 +309,7 @@ async function pageHome(seq) {
 
   $("#sform").onsubmit = e => { e.preventDefault(); goRecommend(); };
   $("#rec").onclick = goRecommend;
+  $("#replay-intro").onclick = () => window.PromoIntro && window.PromoIntro.open();
   $("#reset").onclick = () => { results = { profile: null, data: {} }; tabStore.set("current", results); profile = { univ: "", major: "", purpose: "", interests: [], text: "" }; saveProfile(); accOpen.clear(); accOpen.add("mine"); route(); };
   bindDropdown("univ", v => {
     profile.text = $("#q").value.trim(); profile.univ = v;

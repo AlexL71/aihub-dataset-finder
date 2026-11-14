@@ -56,6 +56,20 @@ export const RemotionRoot: React.FC = () => {
           calculateMetadata={calculateMetadata}
         />
       ))}
+      {/* Phone version: same scenes and narration, laid out for a vertical 1080 x 1920 screen. */}
+      {LANGS.map((lang) => (
+        <Composition
+          key={`${lang}-v`}
+          id={`Promo-${lang}-v`}
+          component={Promo}
+          durationInFrames={1200}
+          fps={FPS}
+          width={1080}
+          height={1920}
+          defaultProps={{ lang, timing: [] }}
+          calculateMetadata={calculateMetadata}
+        />
+      ))}
     </>
   );
 };
