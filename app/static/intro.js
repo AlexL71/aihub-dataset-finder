@@ -69,6 +69,27 @@
   video.addEventListener("timeupdate", () => {
     if (video.duration) bar.style.transform = `scaleX(${video.currentTime / video.duration})`;
   });
+
+  // On screens that are not 16:9 the video leaves bands above/below or beside it. Paint them with the video's
+  // own edge color (sampled a few times a second), so the video looks edge to edge on light and dark scenes.
+  const sample = document.createElement("canvas");
+  sample.width = 8; sample.height = 8;
+  const ctx = sample.getContext("2d", { willReadFrequently: true });
+  const paintBands = () => {
+    if (closed || !ctx || video.readyState < 2) return;
+    try {
+      ctx.drawImage(video, 0, 0, video.videoWidth, video.videoHeight * 0.04, 0, 0, 8, 8);   // a thin strip at the top edge
+      const d = ctx.getImageData(0, 0, 8, 8).data;
+      let r = 0, g = 0, b = 0;
+      for (let i = 0; i < d.length; i += 4) { r += d[i]; g += d[i + 1]; b += d[i + 2]; }
+      const n = d.length / 4, color = `rgb(${Math.round(r / n)}, ${Math.round(g / n)}, ${Math.round(b / n)})`;
+      box.style.background = color;
+      video.style.background = color;
+    } catch (e) { /* canvas blocked: keep the default dark color */ }
+  };
+  const bandTimer = setInterval(paintBands, 250);
+  video.addEventListener("ended", () => clearInterval(bandTimer));
+  skipBtn.addEventListener("click", () => clearInterval(bandTimer));
   document.addEventListener("keydown", onKey);
   skipBtn.focus({ preventScroll: true });
 

@@ -72,6 +72,11 @@ Deploy or redeploy from the repository root (`.gcloudignore` keeps the upload sm
 gcloud run deploy datafinder --source . --region asia-northeast3 --memory 2Gi --cpu 1 --cpu-boost --min-instances 0 --max-instances 2 --concurrency 20 --timeout 120 --port 8000 --allow-unauthenticated --set-secrets "GEMINI_API_KEY=gemini-api-key:latest" --set-env-vars "FORWARDED_ALLOW_IPS=*"
 ```
 
+Public address: **https://aihub-datafinder.web.app**. It is a Firebase Hosting site in the same project whose only rule
+sends every path to the Cloud Run service `datafinder` (asia-northeast3); it needs no redeploy when the app changes.
+Videos and images are sent with `Cache-Control: public, max-age=86400`, so Firebase's CDN keeps them and answers
+partial (Range) requests, which Safari needs to play video; pages and scripts stay `no-cache`.
+
 With `--min-instances 0` nothing runs while nobody visits; the first visit after a quiet period waits for start-up
 (about 10-20 s). Note: Cloud Run reserves URL paths that end in `z`, so `/healthz` answers with Google's own 404 there;
 Cloud Run checks the app with its own start-up probe instead.

@@ -105,11 +105,19 @@ app.mount("/static", StaticFiles(directory=STATIC), name="static")
 @app.middleware("http")
 async def revalidate_static(request: Request, call_next):
     """Pages and scripts: the browser must check for a newer version each time (unchanged files still come from
-    its cache via ETag), so students never run an old app.js after an update."""
+    its cache via ETag), so students never run an old app.js after an update.
+    Videos and images may be cached for a day: a CDN in front (Firebase Hosting) can then keep them and answer
+    partial (Range) requests, which Safari needs to play video."""
     response = await call_next(request)
-    if request.url.path == "/" or request.url.path.startswith("/static/"):
+    path = request.url.path
+    if path.startswith("/static/") and path.endswith(MEDIA_SUFFIXES):
+        response.headers["Cache-Control"] = "public, max-age=86400"
+    elif path == "/" or path.startswith("/static/"):
         response.headers["Cache-Control"] = "no-cache"
     return response
+
+
+MEDIA_SUFFIXES = (".mp4", ".jpg", ".jpeg", ".png", ".webp", ".svg")
 
 
 class RateLimit:

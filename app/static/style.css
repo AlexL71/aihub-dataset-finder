@@ -626,20 +626,21 @@ table.fit th:last-child, table.fit td:last-child { text-align: right; width: 80p
   .pick-body { padding: 16px; }
 }
 
-/* ---------- intro video (intro.js): full screen on first visit, Skip or end shows the page ---------- */
+/* ---------- intro video (intro.js): fills the whole screen on first visit; Skip or the end shows the page ---------- */
 html.intro-open { overflow: hidden; }
-#intro { position: fixed; inset: 0; z-index: 100; display: flex; flex-direction: column; align-items: center; justify-content: center;
-  gap: 18px; padding: 16px; background: #0b1630; transition: opacity .45s ease; }
+#intro { position: fixed; inset: 0; z-index: 100; background: #060a18; transition: opacity .45s ease, background-color .4s linear; }
 #intro.intro-out { opacity: 0; pointer-events: none; }
-.intro-frame { position: relative; width: min(100%, calc((100vh - 110px) * 16 / 9)); aspect-ratio: 16 / 9; border-radius: 14px; overflow: hidden;
-  background: #000; box-shadow: 0 20px 60px rgba(0, 0, 0, .45); }
-.intro-video { display: block; width: 100%; height: 100%; object-fit: contain; }
-.intro-bar { position: absolute; left: 0; right: 0; bottom: 0; height: 4px; background: rgba(255, 255, 255, .15); }
-.intro-progress { height: 100%; background: var(--blue); transform: scaleX(0); transform-origin: left; transition: transform .25s linear; }
-.intro-actions { display: flex; gap: 10px; }
-.intro-actions button { min-height: 44px; padding: 0 22px; border-radius: 999px; border: 1px solid rgba(255, 255, 255, .35); cursor: pointer;
-  background: rgba(255, 255, 255, .1); color: #fff; font-weight: 600; font-size: 15px; }
-.intro-actions button:hover { background: rgba(255, 255, 255, .2); }
-.intro-actions .intro-skip { background: #fff; color: #0b1630; border-color: #fff; }
-.intro-actions .intro-skip:hover { background: #e9f7fd; }
-@media (prefers-reduced-motion: reduce) { #intro { transition: none; } }
+/* the video covers the screen edge to edge; on screens that are not 16:9 the rest is the video's own dark color */
+.intro-frame { position: absolute; inset: 0; }
+.intro-video { display: block; width: 100%; height: 100%; object-fit: contain; background: #060a18; }
+.intro-bar { position: absolute; left: 0; right: 0; bottom: 0; height: 3px; background: rgba(255, 255, 255, .12); }
+.intro-progress { height: 100%; background: linear-gradient(90deg, #378aff, #7c5cff); transform: scaleX(0); transform-origin: left;
+  transition: transform .25s linear; }
+/* buttons float over the video in the top-right corner (inside phone notches and rounded corners) */
+.intro-actions { position: absolute; top: max(16px, env(safe-area-inset-top)); right: max(16px, env(safe-area-inset-right));
+  display: flex; gap: 8px; }
+.intro-actions button { min-height: 40px; padding: 0 18px; border-radius: 999px; cursor: pointer; font-weight: 600; font-size: 14px;
+  color: #fff; background: rgba(15, 23, 42, .45); border: 1px solid rgba(255, 255, 255, .28);
+  -webkit-backdrop-filter: blur(10px); backdrop-filter: blur(10px); transition: background .2s; }
+.intro-actions button:hover { background: rgba(15, 23, 42, .7); }
+@media (prefers-reduced-motion: reduce) { #intro, .intro-actions button { transition: none; } }
