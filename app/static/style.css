@@ -648,8 +648,14 @@ html.intro-open { overflow: hidden; }
   -webkit-backdrop-filter: blur(10px); backdrop-filter: blur(10px); }
 .intro-actions .intro-langs button { min-height: 34px; padding: 0 14px; border: 0; background: transparent; -webkit-backdrop-filter: none; backdrop-filter: none; }
 .intro-actions .intro-langs button[aria-pressed="true"] { background: #fff; color: #0b1630; }
+/* sound on / off: a see-through speaker icon only (no box); the shadow keeps it visible on light scenes */
+.intro-actions .intro-sound { width: 44px; min-height: 44px; padding: 0; display: grid; place-items: center; border: 0; background: transparent;
+  -webkit-backdrop-filter: none; backdrop-filter: none; filter: drop-shadow(0 1px 3px rgba(6, 10, 24, .55)); opacity: .9; }
+.intro-actions .intro-sound:hover { background: transparent; opacity: 1; }
+.intro-actions .intro-sound:focus-visible { outline: 2px solid #fff; outline-offset: 2px; }
+.intro-sound svg { display: block; }
 @media (max-width: 480px) { .intro-actions { left: max(12px, env(safe-area-inset-left)); justify-content: flex-end; flex-wrap: wrap; }
-  .intro-actions button { padding: 0 14px; } }
+  .intro-actions button:not(.intro-sound) { padding: 0 14px; } }
 /* "소개 영상 보기" next to Reset on the home page */
 .intro-link svg { color: var(--blue); }
 @media (prefers-reduced-motion: reduce) { #intro, .intro-actions button { transition: none; } }

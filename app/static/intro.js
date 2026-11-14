@@ -4,17 +4,17 @@
 // - Phone version: an upright phone gets the vertical video (promo-<lang>-v.mp4); turning the phone switches
 //   between vertical and landscape at the same moment (both versions have the same timing).
 // - Ends by itself, or with "건너뛰기" (Skip) or Esc.
-// - Sound is on by default. Browsers do not let a site start sound before the visitor has interacted with it;
-//   when that blocks it, the video starts muted and the sound turns on with the visitor's first tap, click or key
-//   press anywhere. The sound button (🔊 / 🔇) is always shown; turning the voice off is remembered.
+// - Sound is on every time the video opens (a link, a reload or the button). Browsers do not let a site start sound
+//   before the visitor has interacted with it; when that blocks it, the video starts muted and the sound turns on
+//   with the visitor's first tap, click or key press anywhere. The sound button is a see-through speaker icon;
+//   turning the voice off lasts until the video closes (it is not remembered).
 "use strict";
 (() => {
   const SEEN_KEY = "intro_seen";
-  const MUTED_KEY = "intro_muted";   // "1" = the visitor turned the voice off
   const TEXT = {
-    ko: { skip: "건너뛰기", on: "🔊 소리", off: "🔇 소리 꺼짐", mute: "소리 끄기", unmute: "소리 켜기",
+    ko: { skip: "건너뛰기", mute: "소리 끄기", unmute: "소리 켜기",
           label: "AI Hub DataFinder 소개 영상", lang: "영상 언어" },
-    en: { skip: "Skip", on: "🔊 Sound", off: "🔇 Muted", mute: "Turn sound off", unmute: "Turn sound on",
+    en: { skip: "Skip", mute: "Turn sound off", unmute: "Turn sound on",
           label: "AI Hub DataFinder intro video", lang: "Video language" },
   };
   const LANGS = [["ko", "한국어"], ["en", "English"]];
@@ -28,6 +28,12 @@
   const portrait = () => window.matchMedia("(orientation: portrait)").matches;
   const source = (lang, vertical) => `/static/promo-${lang}${vertical ? "-v" : ""}.mp4`;
   const poster = (lang, vertical) => `/static/promo-poster-${lang}${vertical ? "-v" : ""}.jpg`;
+
+  // Speaker icons (outline, currentColor): sound on = speaker with waves, sound off = speaker with a cross.
+  const ICON = {
+    on: '<svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 9.5h3.5L12 5.5v13l-4.5-4H4z"/><path d="M15.5 9a4.2 4.2 0 0 1 0 6"/><path d="M18.3 6.3a8 8 0 0 1 0 11.4"/></svg>',
+    off: '<svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 9.5h3.5L12 5.5v13l-4.5-4H4z"/><path d="m16 9.5 5 5M21 9.5l-5 5"/></svg>',
+  };
 
   let current = null;   // the open intro, if any
 
@@ -63,7 +69,7 @@
     const bar = box.querySelector(".intro-progress");
     const langBtns = [...box.querySelectorAll(".intro-langs button")];
     let closed = false;
-    let wantSound = store.get(localStorage, MUTED_KEY) !== "1";   // the visitor's choice (default: voice on)
+    let wantSound = true;   // sound on at every open; the sound button changes it until the video closes
 
     // Load the right file; keep the playing position when only the shape changes (same timing in both).
     const load = (keepTime) => {
@@ -77,7 +83,7 @@
     // Sound button shows what is heard now; its label says what pressing it does.
     const showSound = () => {
       const on = !video.muted;
-      soundBtn.textContent = on ? ui.on : ui.off;
+      soundBtn.innerHTML = on ? ICON.on : ICON.off;
       soundBtn.setAttribute("aria-label", on ? ui.mute : ui.unmute);
       soundBtn.setAttribute("aria-pressed", String(on));
     };
@@ -125,7 +131,6 @@
     skipBtn.onclick = close;
     soundBtn.onclick = () => {
       wantSound = video.muted;                       // muted now -> the visitor wants sound, and the other way round
-      store.set(localStorage, MUTED_KEY, wantSound ? "0" : "1");
       video.muted = !wantSound;
       showSound();
       video.play().catch(() => {});
