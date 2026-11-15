@@ -21,10 +21,13 @@ export const Compare: React.FC<{ headline: string }> = ({ headline }) => {
   const { cols, head } = rects.compare;
 
   // Desktop: the three buttons are in one row, one camera shot. Phone: one column, the camera follows each button.
+  // Phone: this Browser also holds the wider compare page, so the results shots are centred on the results page
+  // width (otherwise the camera centres on the wider page and cuts the results text at the left).
+  const onResults = (s: Shot): Shot => ({ ...s, cx: rects.view.width / 2 });
   const resultShots: Shot[] = phone
-    ? btns.map((b, i) => shotOn(clicks[i] - 12, unionBox(cards[i].titleBox, b), 1.2))
+    ? btns.map((b, i) => onResults(shotOn(clicks[i] - 12, unionBox(cards[i].titleBox, b), 1.2)))
     : [shotOn(addAt - 6, unionBox(...btns), 1.2)];
-  const first: Shot = phone ? shotOn(0, unionBox(cards[0].titleBox, btns[0]), 1.2) : shotOn(0, unionBox(...btns), 1);
+  const first: Shot = phone ? onResults(shotOn(0, unionBox(cards[0].titleBox, btns[0]), 1.2)) : shotOn(0, unionBox(...btns), 1);
   const compareShots: Shot[] = phone
     ? [shotOn(pageAt, cols[0], 1.4), shotOn(sideAt, cols[1], 1.4), shotOn(sideAt + 24, cols[2], 1.4)]
     : [shotOn(pageAt, head, 1.15)];

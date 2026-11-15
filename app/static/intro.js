@@ -26,8 +26,11 @@
   const siteLang = () => { try { return JSON.parse(localStorage.getItem("lang")) === "en" ? "en" : "ko"; } catch (e) { return "ko"; } };
   const onHome = () => !location.hash.split("/")[1];   // "", "#", "#/"
   const portrait = () => window.matchMedia("(orientation: portrait)").matches;
-  const source = (lang, vertical) => `/static/promo-${lang}${vertical ? "-v" : ""}.mp4`;
-  const poster = (lang, vertical) => `/static/promo-poster-${lang}${vertical ? "-v" : ""}.jpg`;
+  // Media files are cached for a day (server.py); change MEDIA_V whenever the videos are re-rendered so visitors
+  // get the new files at once instead of a cached old copy.
+  const MEDIA_V = "2026-11-16";
+  const source = (lang, vertical) => `/static/promo-${lang}${vertical ? "-v" : ""}.mp4?v=${MEDIA_V}`;
+  const poster = (lang, vertical) => `/static/promo-poster-${lang}${vertical ? "-v" : ""}.jpg?v=${MEDIA_V}`;
 
   // Speaker icons (outline, currentColor): sound on = speaker with waves, sound off = speaker with a cross.
   const ICON = {

@@ -24,8 +24,9 @@ Scenes (one per paragraph of the script; the plan paragraph is split in two):
 
 Phone version: real phone layouts, not a zoomed desktop. `capture.mjs` also captures every step at a 390 x 844 phone
 viewport (3x, mobile, touch) into `public/screens/<lang>/phone/` with its own `rects.json`; in a vertical composition the
-scenes use those screenshots inside a phone frame (700 px screen, 1.8x the phone page, status bar so the notch never
-covers app text), a finger tap instead of a mouse pointer, and camera zooms capped at 1.5x so nearby text is not cut.
+scenes use those screenshots inside a large phone frame (900 x 1312 px screen, 2.3x the phone page, status bar so the
+notch never covers app text) and a finger tap instead of a mouse pointer. The phone camera never zooms past the page
+width (it only scrolls up and down), so text is never cut at the sides; only the wide compare table pans column by column.
 
 Style: a product demo. The real DataFinder screens appear in a browser window; a camera glides and zooms to the part
 being talked about, a cursor types and clicks, and a spotlight dims everything else. Example: a Sport Science student
@@ -61,7 +62,9 @@ picture is ready before the words and there is a short pause between scenes (bot
 voice stops early, `audio.mjs` lists it and exits with code 2. No emotion tags: tags like `[sighs]` produced a breathy
 sound at the very start. In the Korean script, English words are written in Hangul (에이아이, 에이아이 허브
 데이터파인더, 팔백육십칠) so the voice keeps a Korean accent; the subtitles keep the normal spelling. No AI model is named
-in the voice or the subtitles.
+in the voice or the subtitles. Right after another word, the voice said 프롬프트 with an f-like sound ("frompt"); a short
+pause before it ("관심 분야를 담아, 프롬프트로") gives a real ㅍ (checked by measuring the lip-closure silence before
+the word in the audio).
 
 Sound: voice plus an interface sound on every movement, no background music. The shared components play their own
 sounds in sync: camera zoom in / zoom out / glide, cursor travel and every click, spotlight landing, labels popping up,
@@ -80,9 +83,10 @@ $env:ELEVENLABS_KEY_FILE = "path\to\key.txt"      # or set ELEVENLABS_API_KEY
 node scripts/audio.mjs voice all
 # 3. render, then a lighter web copy and a cover image for the site (repeat with en, and with ko-v / en-v for the
 #    phone versions: Promo-ko-v, poster scale 720:-1)
-npx remotion render Promo-ko out/promo-ko.mp4 --codec=h264 --crf=20
-npx remotion ffmpeg -y -i out/promo-ko.mp4 -c:v libx264 -crf 27 -preset slow -pix_fmt yuv420p -c:a aac -b:a 128k -movflags +faststart ../app/static/promo-ko.mp4
+npx remotion render Promo-ko out/promo-ko.mp4 --codec=h264 --crf=18
+npx remotion ffmpeg -y -i out/promo-ko.mp4 -c:v libx264 -crf 21 -preset slow -pix_fmt yuv420p -c:a aac -b:a 128k -movflags +faststart ../app/static/promo-ko.mp4
 npx remotion ffmpeg -y -ss 70 -i out/promo-ko.mp4 -frames:v 1 -vf scale=1280:-1 -q:v 4 ../app/static/promo-poster-ko.jpg
+# 4. change MEDIA_V in app/static/intro.js, so visitors get the new videos at once (media is cached for a day)
 ```
 
 A render takes about 5-10 minutes per video on a laptop CPU. Remotion Studio (`npx remotion studio`) previews live but

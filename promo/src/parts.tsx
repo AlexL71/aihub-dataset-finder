@@ -159,7 +159,7 @@ export const KineticText: React.FC<{
 export const SceneTitle: React.FC<{ text: string; at: number }> = ({ text, at }) => {
   const portrait = usePortrait();
   return (
-    <div style={{ position: "absolute", top: portrait ? 250 : 34, left: portrait ? 60 : 0, right: portrait ? 60 : 0 }}>
+    <div style={{ position: "absolute", top: portrait ? 150 : 34, left: portrait ? 60 : 0, right: portrait ? 60 : 0 }}>
       <KineticText text={text} at={at} size={portrait ? 68 : 60} />
     </div>
   );
@@ -175,7 +175,7 @@ export const Subtitle: React.FC<{ dark?: boolean }> = ({ dark }) => {
   const line = timing.lines[idx];
   const p = interpolate(frame, [line.from, line.from + 10], [0, 1], { ...clamp, easing: EASE });
   return (
-    <div style={{ position: "absolute", bottom: portrait ? 190 : 38, left: portrait ? 50 : 0, right: portrait ? 50 : 0, display: "flex", justifyContent: "center" }}>
+    <div style={{ position: "absolute", bottom: portrait ? 110 : 38, left: portrait ? 50 : 0, right: portrait ? 50 : 0, display: "flex", justifyContent: "center" }}>
       <div
         style={{
           maxWidth: 1560,

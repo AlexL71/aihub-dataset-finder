@@ -15,25 +15,25 @@ import { C, EASE, EASE_IN_OUT } from "./theme";
 // All positions are page pixels of the current device's screenshots (see context.tsx RECTS).
 //
 // Landscape video: a 1296 px browser window under the headline; the 1440 px desktop page fills its width at zoom 1.
-// Phone video (1080 x 1920): a phone frame in the middle showing the 390 px phone screenshots large (1.8x), so the
-// app looks like it does on a real phone.
+// Phone video (1080 x 1920): a large phone frame showing the 390 px phone screenshots at 2.3x (captured at 3x, so
+// they stay sharp). The camera only scrolls up and down there: the full app width is always visible, like on a phone.
 const BAR = 46; // browser title bar height (desktop only)
 const BEZEL = 18; // phone frame border
-const PHONE_MAX_ZOOM = 1.5;
+const PHONE_MAX_ZOOM = 1; // never zoom past the page width on the phone (zooming in cut text at the sides)
 const STATUS = 64; // phone status bar (holds the notch) above the app page
 const useWindow = () => {
   const { width, height } = useVideoConfig();
   const { rects } = useScene();
   const phone = height > width;
-  const w = phone ? 700 : 1296;
-  const viewH = phone ? 1110 : (w * 900) / 1440;
+  const w = phone ? 900 : 1296;
+  const viewH = phone ? 1312 : (w * 900) / 1440;
   const pageW = rects.view.width;
   return {
     phone,
     w,
     viewH,
     left: (width - w) / 2,
-    top: phone ? 430 : 132,
+    top: phone ? 300 : 132,
     s0: w / pageW,
     pageW,
   };
