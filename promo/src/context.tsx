@@ -5,6 +5,7 @@ import koRects from "../public/screens/ko/rects.json";
 import koPhoneRects from "../public/screens/ko/phone/rects.json";
 import en from "./scripts/en.json";
 import ko from "./scripts/ko.json";
+import { CUE_LEAD } from "./theme";
 
 export type Lang = "ko" | "en";
 export type Script = typeof ko;
@@ -42,11 +43,14 @@ export const useScene = () => {
   return ctx;
 };
 
-// Frame of a cue word in the current scene. Missing cues fall back to `fallback` so a script typo
-// does not break the render (scripts/audio.mjs already reports missing cues).
+// Frame where animations for a cue word start: CUE_LEAD frames before the word is spoken, so the move lands on it.
+// Missing cues fall back to `fallback` so a script typo does not break the render (scripts/audio.mjs reports them).
 export const useCue = () => {
   const { timing } = useScene();
-  return (name: string, fallback = 0) => timing.cues[name] ?? fallback;
+  return (name: string, fallback = 0) => {
+    const c = timing.cues[name];
+    return c === undefined ? fallback : Math.max(0, c - CUE_LEAD);
+  };
 };
 
 // Union of boxes (skips missing ones).

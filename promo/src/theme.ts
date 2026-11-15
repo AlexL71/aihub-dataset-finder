@@ -29,6 +29,10 @@ export const FPS = 30;
 export const SCENE_PAD = 12; // frames of quiet after each narration clip (must stay > TRANSITION)
 export const TRANSITION = 12; // frames of cross-fade between scenes
 export const END_HOLD = 24; // extra frames on the last scene
+// Each scene's narration starts once the cross-fade has finished, so the picture is ready before the words.
+export const VOICE_DELAY = 12;
+// Animations tied to a cue word start this many frames before the word, so a move lands while it is spoken.
+export const CUE_LEAD = 8;
 // Cuts covered by an overlay instead of a cross-fade (none in this version).
 export const LEAK_BEFORE = new Set<number>();
 

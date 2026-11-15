@@ -2,7 +2,7 @@ import { Audio } from "@remotion/media";
 import { linearTiming, TransitionSeries } from "@remotion/transitions";
 import { fade } from "@remotion/transitions/fade";
 import React from "react";
-import { AbsoluteFill, staticFile, useVideoConfig } from "remotion";
+import { AbsoluteFill, Sequence, staticFile, useVideoConfig } from "remotion";
 import { Lang, RECTS, SceneDef, SceneProvider, SceneTiming, SCRIPTS } from "./context";
 import { Subtitle } from "./parts";
 import { Outro } from "./scenes/Outro";
@@ -14,7 +14,7 @@ import { Results } from "./scenes/Results";
 import { Score } from "./scenes/Score";
 import { Major } from "./scenes/Major";
 import { Search } from "./scenes/Search";
-import { C, FONT, LEAK_BEFORE, TRANSITION, VOICE_VOLUME } from "./theme";
+import { C, FONT, LEAK_BEFORE, TRANSITION, VOICE_DELAY, VOICE_VOLUME } from "./theme";
 
 export type PromoProps = { lang: Lang; timing: SceneTiming[] };
 
@@ -52,7 +52,9 @@ export const Promo: React.FC<PromoProps> = ({ lang, timing }) => {
                   <Scene headline={scene.headline} />
                   <Subtitle dark={DARK.has(scene.id)} />
                 </SceneProvider>
-                <Audio src={staticFile(`voiceover/${lang}/${scene.id}.mp3`)} volume={VOICE_VOLUME} />
+                <Sequence from={VOICE_DELAY} layout="none" name="voice">
+                  <Audio src={staticFile(`voiceover/${lang}/${scene.id}.mp3`)} volume={VOICE_VOLUME} />
+                </Sequence>
               </TransitionSeries.Sequence>
             </React.Fragment>
           );

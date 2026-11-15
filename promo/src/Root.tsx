@@ -2,7 +2,7 @@ import { ALL_FORMATS, Input, UrlSource } from "mediabunny";
 import { CalculateMetadataFunction, Composition, staticFile } from "remotion";
 import { Lang, SceneTiming, SCRIPTS } from "./context";
 import { Promo, PromoProps } from "./Promo";
-import { END_HOLD, FPS, LEAK_BEFORE, SCENE_PAD, TRANSITION } from "./theme";
+import { END_HOLD, FPS, LEAK_BEFORE, SCENE_PAD, TRANSITION, VOICE_DELAY } from "./theme";
 
 type VoiceMeta = { end: number; cues: Record<string, number>; lines: { text: string; start: number }[] };
 
@@ -23,10 +23,10 @@ const calculateMetadata: CalculateMetadataFunction<PromoProps> = async ({ props 
         fetch(staticFile(`${base}.json`)).then((r) => r.json() as Promise<VoiceMeta>),
         audioSeconds(`${base}.mp3`),
       ]);
-      const toFrame = (s: number) => Math.round(s * FPS);
+      const toFrame = (s: number) => Math.round(s * FPS) + VOICE_DELAY; // scene frame (the voice starts at VOICE_DELAY)
       const last = i === script.scenes.length - 1;
       return {
-        frames: Math.ceil(Math.max(seconds, meta.end) * FPS) + SCENE_PAD + (last ? END_HOLD : 0),
+        frames: VOICE_DELAY + Math.ceil(Math.max(seconds, meta.end) * FPS) + SCENE_PAD + (last ? END_HOLD : 0),
         voiceEnd: toFrame(meta.end),
         cues: Object.fromEntries(Object.entries(meta.cues).map(([k, v]) => [k, toFrame(v)])),
         lines: meta.lines.map((l) => ({ text: l.text, from: toFrame(l.start) })),

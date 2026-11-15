@@ -1,6 +1,6 @@
 # Promo video (Remotion)
 
-The intro video shown on the home page, in Korean (**71.9 s**) and English (**66.8 s**), each as a landscape
+The intro video shown on the home page, in Korean (**75.5 s**) and English (**70.4 s**), each as a landscape
 (1920 x 1080) and a phone version (1080 x 1920): `app/static/promo-{ko,en}.mp4` and `promo-{ko,en}-v.mp4`.
 `app/static/intro.js` plays it full screen on the first home-page visit (and from the "소개 영상 보기" button), in the
 site's language with a 한국어 / English switch; an upright phone gets the vertical version, and turning the phone
@@ -55,7 +55,9 @@ curriculum"), not that every course name is used. The Sport Science profile is o
 Narration: ElevenLabs `eleven_v4` (the docs call it their most emotive, highest-quality model), voice "Sarah" for both
 languages (the free plan cannot use Voice Library voices through the API). The `with-timestamps` endpoint returns when
 each character is spoken. Each scene lists **cue words** (`"cues": {"press": "음식"}`); `audio.mjs` finds when each one is
-spoken, and the scene starts that camera move, click or highlight on that frame. If a cue word is not found, or the
+spoken, and the scene starts that camera move, click or highlight `CUE_LEAD` (8) frames before it, so the move
+lands while the word is heard. Each scene's voice starts `VOICE_DELAY` (12) frames in, after the cross-fade, so the
+picture is ready before the words and there is a short pause between scenes (both in `src/theme.ts`). If a cue word is not found, or the
 voice stops early, `audio.mjs` lists it and exits with code 2. No emotion tags: tags like `[sighs]` produced a breathy
 sound at the very start. In the Korean script, English words are written in Hangul (에이아이, 에이아이 허브
 데이터파인더, 팔백육십칠) so the voice keeps a Korean accent; the subtitles keep the normal spelling. No AI model is named

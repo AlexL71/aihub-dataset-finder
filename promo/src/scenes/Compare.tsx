@@ -11,7 +11,7 @@ export const Compare: React.FC<{ headline: string }> = ({ headline }) => {
   const { rects, ui, device } = useScene();
   const phone = device === "phone";
   const addAt = cue("add", 20);
-  const pageAt = Math.max(cue("page", addAt + 60), addAt + 40);
+  const pageAt = Math.max(cue("page", addAt + 50), addAt + 40);
   const sideAt = Math.max(cue("side", pageAt + 20), pageAt + 14);
   const cards = rects.cards.slice(0, 3);
   // Click times: one button after another, finishing before the compare page opens.
