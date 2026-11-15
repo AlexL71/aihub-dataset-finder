@@ -1,5 +1,5 @@
 import React from "react";
-import { useCue, useScene } from "../context";
+import { unionBox, useCue, useScene } from "../context";
 import { Backdrop, SceneTitle } from "../parts";
 import { Browser, Callout, Cursor, shotOn, Spotlight, WHOLE } from "../screen";
 
@@ -14,8 +14,9 @@ export const Major: React.FC<{ headline: string }> = ({ headline }) => {
   const pickAt = cue("pick", 20);
   const clickMajor = pickAt + 14;
   const curriculumAt = Math.max(cue("curriculum", clickMajor + 20), clickMajor + 10);
-  // University and major boxes side by side, with their labels and the hint line under them.
-  const row = { x: before.univ.x - 10, y: before.univ.y - 40, w: before.major.x + before.major.w - before.univ.x + 20, h: before.major.h + 110 };
+  // University and major boxes (side by side on desktop, stacked on the phone), with their labels.
+  const both = unionBox(before.univ, before.major);
+  const row = { x: both.x - 10, y: both.y - 40, w: both.w + 20, h: both.h + 80 };
 
   return (
     <>

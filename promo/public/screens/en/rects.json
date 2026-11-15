@@ -1,4 +1,42 @@
 {
+  "screens": {
+    "home": {
+      "w": 1440,
+      "h": 900
+    },
+    "major-empty": {
+      "w": 1440,
+      "h": 900
+    },
+    "major": {
+      "w": 1440,
+      "h": 900
+    },
+    "results": {
+      "w": 1440,
+      "h": 1440
+    },
+    "results-added": {
+      "w": 1440,
+      "h": 1440
+    },
+    "compare": {
+      "w": 1440,
+      "h": 1369
+    },
+    "plan": {
+      "w": 1440,
+      "h": 900
+    },
+    "plan-preview": {
+      "w": 1440,
+      "h": 900
+    },
+    "plan-copied": {
+      "w": 1440,
+      "h": 900
+    }
+  },
   "home": {
     "input": {
       "x": 342,
@@ -16,25 +54,25 @@
   "majorEmpty": {
     "panel": {
       "x": 150,
-      "y": 39.828125,
+      "y": 40,
       "w": 1140,
       "h": 915.546875
     },
     "univ": {
       "x": 181,
-      "y": 178.3125,
+      "y": 178.484375,
       "w": 529,
       "h": 48
     },
     "major": {
       "x": 730,
-      "y": 178.3125,
+      "y": 178.484375,
       "w": 529,
       "h": 48
     },
     "rec": {
       "x": 620.3125,
-      "y": 878.375,
+      "y": 878.546875,
       "w": 199.359375,
       "h": 46
     }
@@ -42,73 +80,29 @@
   "major": {
     "panel": {
       "x": 150,
-      "y": 40.09375,
+      "y": 40,
       "w": 1140,
       "h": 1037.03125
     },
     "univ": {
       "x": 181,
-      "y": 178.578125,
+      "y": 178.484375,
       "w": 529,
       "h": 48
     },
     "major": {
       "x": 730,
-      "y": 178.578125,
+      "y": 178.484375,
       "w": 529,
       "h": 48
     },
     "rec": {
       "x": 620.3125,
-      "y": 1000.125,
+      "y": 1000.03125,
       "w": 199.359375,
       "h": 46
     },
     "name": "Sport Science (School of International Sport)"
-  },
-  "results": {
-    "card1": {
-      "x": 150,
-      "y": 212.296875,
-      "w": 366.65625,
-      "h": 637.296875
-    },
-    "card2": {
-      "x": 536.65625,
-      "y": 212.296875,
-      "w": 366.671875,
-      "h": 637.296875
-    },
-    "meter1": {
-      "x": 265,
-      "y": 293.171875,
-      "w": 228.65625,
-      "h": 55.71875
-    },
-    "meter2": {
-      "x": 651.65625,
-      "y": 293.171875,
-      "w": 228.671875,
-      "h": 55.71875
-    },
-    "title1": {
-      "x": 265,
-      "y": 237.296875,
-      "w": 228.65625,
-      "h": 45.875
-    },
-    "title2": {
-      "x": 651.65625,
-      "y": 237.296875,
-      "w": 228.671875,
-      "h": 45.875
-    },
-    "plan1": {
-      "x": 188,
-      "y": 732.328125,
-      "w": 181.234375,
-      "h": 36.265625
-    }
   },
   "cards": [
     {
@@ -132,11 +126,23 @@
         "w": 228.65625,
         "h": 55.71875
       },
-      "icon": {
+      "why": {
         "x": 173,
-        "y": 235.296875,
-        "w": 76,
-        "h": 76
+        "y": 520.328125,
+        "w": 320.65625,
+        "h": 96.375
+      },
+      "cmp": {
+        "x": 336.328125,
+        "y": 788.59375,
+        "w": 157.328125,
+        "h": 38
+      },
+      "plan": {
+        "x": 188,
+        "y": 732.328125,
+        "w": 181.234375,
+        "h": 36.265625
       }
     },
     {
@@ -160,11 +166,23 @@
         "w": 228.671875,
         "h": 55.71875
       },
-      "icon": {
+      "why": {
         "x": 559.65625,
-        "y": 235.296875,
-        "w": 76,
-        "h": 76
+        "y": 520.328125,
+        "w": 320.671875,
+        "h": 96.375
+      },
+      "cmp": {
+        "x": 722.984375,
+        "y": 788.59375,
+        "w": 157.34375,
+        "h": 38
+      },
+      "plan": {
+        "x": 574.65625,
+        "y": 732.328125,
+        "w": 181.234375,
+        "h": 36.265625
       }
     },
     {
@@ -188,11 +206,23 @@
         "w": 228.65625,
         "h": 55.71875
       },
-      "icon": {
+      "why": {
         "x": 946.328125,
-        "y": 235.296875,
-        "w": 76,
-        "h": 76
+        "y": 520.328125,
+        "w": 320.65625,
+        "h": 96.375
+      },
+      "cmp": {
+        "x": 1109.65625,
+        "y": 788.59375,
+        "w": 157.328125,
+        "h": 38
+      },
+      "plan": {
+        "x": 961.328125,
+        "y": 732.328125,
+        "w": 181.234375,
+        "h": 36.265625
       }
     },
     {
@@ -216,11 +246,23 @@
         "w": 228.65625,
         "h": 55.71875
       },
-      "icon": {
+      "why": {
         "x": 173,
-        "y": 892.59375,
-        "w": 76,
-        "h": 76
+        "y": 1154.6875,
+        "w": 320.65625,
+        "h": 25.09375
+      },
+      "cmp": {
+        "x": 336.328125,
+        "y": 1374.765625,
+        "w": 157.328125,
+        "h": 38
+      },
+      "plan": {
+        "x": 188,
+        "y": 1295.40625,
+        "w": 181.234375,
+        "h": 36.265625
       }
     },
     {
@@ -244,11 +286,23 @@
         "w": 228.671875,
         "h": 55.71875
       },
-      "icon": {
+      "why": {
         "x": 559.65625,
-        "y": 892.59375,
-        "w": 76,
-        "h": 76
+        "y": 1154.6875,
+        "w": 320.671875,
+        "h": 25.09375
+      },
+      "cmp": {
+        "x": 722.984375,
+        "y": 1374.765625,
+        "w": 157.34375,
+        "h": 38
+      },
+      "plan": {
+        "x": 574.65625,
+        "y": 1318.5,
+        "w": 181.234375,
+        "h": 36.265625
       }
     },
     {
@@ -272,14 +326,74 @@
         "w": 228.65625,
         "h": 55.71875
       },
-      "icon": {
+      "why": {
         "x": 946.328125,
-        "y": 892.59375,
-        "w": 76,
-        "h": 76
+        "y": 1177.625,
+        "w": 320.65625,
+        "h": 25.09375
+      },
+      "cmp": {
+        "x": 1109.65625,
+        "y": 1374.765625,
+        "w": 157.328125,
+        "h": 38
+      },
+      "plan": {
+        "x": 961.328125,
+        "y": 1318.34375,
+        "w": 181.234375,
+        "h": 36.265625
       }
     }
   ],
+  "added": {
+    "count": {
+      "x": 576.828125,
+      "y": 25.625,
+      "w": 21.53125,
+      "h": 16
+    },
+    "nav": {
+      "x": 495.734375,
+      "y": 13.625,
+      "w": 114.625,
+      "h": 40.75
+    }
+  },
+  "compare": {
+    "table": {
+      "x": 151,
+      "y": 124.640625,
+      "w": 1138,
+      "h": 1128.5625
+    },
+    "cols": [
+      {
+        "x": 301,
+        "y": 124.640625,
+        "w": 334.234375,
+        "h": 216.34375
+      },
+      {
+        "x": 635.234375,
+        "y": 124.640625,
+        "w": 308.390625,
+        "h": 216.34375
+      },
+      {
+        "x": 943.625,
+        "y": 124.640625,
+        "w": 345.375,
+        "h": 216.34375
+      }
+    ],
+    "head": {
+      "x": 151,
+      "y": 124.640625,
+      "w": 1138,
+      "h": 216.34375
+    }
+  },
   "plan": {
     "panel": {
       "x": 340,
@@ -298,7 +412,61 @@
       "y": 381.703125,
       "w": 716,
       "h": 132.546875
+    },
+    "copy": {
+      "x": 362,
+      "y": 559.25,
+      "w": 169.890625,
+      "h": 38
+    },
+    "preview": {
+      "x": 362,
+      "y": 611.25,
+      "w": 716,
+      "h": 23.09375
     }
+  },
+  "preview": {
+    "panel": {
+      "x": 340,
+      "y": 70,
+      "w": 760,
+      "h": 760
+    },
+    "textarea": {
+      "x": 362,
+      "y": 483.703125,
+      "w": 716,
+      "h": 263.6875
+    },
+    "details": {
+      "x": 362,
+      "y": 452.609375,
+      "w": 716,
+      "h": 303.171875
+    }
+  },
+  "prompt": "I am a university student and want to do an AI project with the AI Hub dataset below. Please read my profile, how I found this dataset and the dataset information, and plan one project that fits me.\n\n- Do not invent facts that are not in the dataset information (amount, labels, files); if something is missing, tell me to check the AI Hub page.\n- Build on the recommendation reasons, my major and my interests.\n- I may be new to AI: use plain words and explain a technical term briefly the first time.\n- Answer in English.\n\n## About me\n- University: Korea University Sejong Campus\n- Major: Sport Science (School of International Sport)\n- What I want to do: food images and nutrition data\n\n## How I found this dataset\n- Found through: a personal recommendation in AI Hub DataFinder (picked from my major, interests and search words)\n- Search words: \"food images and nutrition data\"\n- Rank: 1 of 12\n- Relevance: 8.7 out of 10\n- Match with the search words: good\n- Why it was recommended:\n  - It matches what I searched for.\n  - It is in Food, Health care and wellbeing, a field close to my major (Sport Science (School of International Sport)).\n\n## Dataset\n- Name: Food images and nutrition information\n- AI Hub page: https://www.aihub.or.kr/aihubdata/data/view.do?currMenu=115&topMenu=100&aihubDataSe=data&dataSetSn=74\n- Topics: Food, Health care and wellbeing\n- Data types: image\n- File formats: jpg, txt, xml\n- Total size: 1,635.5 GB\n- Amount: 800k food photos (400 dishes) + 42k portion-measured photos\n- Labels: dish name, box around the food, portion level (1-5)\n- Baseline results: YOLOv3 accuracy 90.46%; ResNet accuracy 89.5%\n- Level: beginner\n- Built (year, organisation): 2020, 에이아이더\n- In short: Photos of Korean dishes and popular restaurant food, each marked with what the food is and where it sits in the picture. Some photos show the same dish in five portion sizes, so you can build a diet app that recognises a meal and estimates how much was eaten.\n\n### Details\n800k images of 400 frequently eaten Korean dishes plus 42k precisely photographed images where each dish was weighed and grouped into five portion levels. Labels are dish class and bounding box (txt/xml), with a portion level for the precise set. Baselines: food recognition with YOLOv3, 90.46% accuracy; portion estimation with ResNet, 89.5%. Whether a nutrition table (calories, sodium) is included should be checked in the original documents.\n\n### Project ideas for this dataset\n- Korean dish classifier: Pick 20 dishes and train a photo classifier.\n- One-photo meal logging app: Detect dishes on a tray and compute calories and sodium using a public nutrition database.\n- Portion size from photos: Estimate the 5 portion levels and analyse errors by bowl size and angle.\n\n## Answer format (markdown)\n```markdown\n## (Project title)\n**In one sentence**: (one sentence)\n### Why this dataset\n### Steps\n(numbered list, 4-6 steps)\n### Tools and skills\n### Difficulty and time\n### Tips for getting the data\n### Taking it further\n```\n\nAfter the plan, ask me what I should prepare first so we can go through it from step 1. I will request the data on AI Hub.\n",
+  "copied": {
+    "msg": {
+      "x": 362,
+      "y": 527.203125,
+      "w": 716,
+      "h": 23.09375
+    },
+    "sites": {
+      "x": 362,
+      "y": 380.65625,
+      "w": 716,
+      "h": 132.546875
+    },
+    "panel": {
+      "x": 340,
+      "y": 190.59375,
+      "w": 760,
+      "h": 518.796875
+    },
+    "text": "Copied. Paste it into the AI of your choice (Ctrl+V)."
   },
   "view": {
     "width": 1440,

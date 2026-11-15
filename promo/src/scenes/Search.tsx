@@ -43,10 +43,14 @@ export const Search: React.FC<{ headline: string }> = ({ headline }) => {
               height: input.h - 4,
               display: "flex",
               alignItems: "center",
-              paddingLeft: 22,
+              paddingLeft: portrait ? 14 : 22,
+              paddingRight: 6,
+              whiteSpace: "nowrap",
+              overflow: "hidden",
+              justifyContent: typed > (portrait ? 22 : 60) ? "flex-end" : "flex-start", // keep the end of long text in view
               background: "#fff",
               borderRadius: "28px 0 0 28px",
-              fontSize: 17,
+              fontSize: portrait ? 14 : 17,
               fontWeight: 500,
               color: "#222",
             }}
@@ -68,7 +72,7 @@ export const Search: React.FC<{ headline: string }> = ({ headline }) => {
         />
         <Cursor
           path={[
-            { at: focusAt - 6, x: 1000, y: 470 },
+            { at: focusAt - 6, x: input.x + input.w * 0.75, y: input.y + input.h + 160 },
             { at: focusAt + 14, x: input.x + 160, y: input.y + 34 },
           ]}
           clicks={[focusAt + 16]}

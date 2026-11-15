@@ -1,0 +1,357 @@
+{
+  "screens": {
+    "home": {
+      "w": 390,
+      "h": 844
+    },
+    "major-empty": {
+      "w": 390,
+      "h": 844
+    },
+    "major": {
+      "w": 390,
+      "h": 844
+    },
+    "results": {
+      "w": 390,
+      "h": 2288
+    },
+    "results-added": {
+      "w": 390,
+      "h": 2288
+    },
+    "compare": {
+      "w": 714,
+      "h": 1817
+    },
+    "plan": {
+      "w": 390,
+      "h": 844
+    },
+    "plan-preview": {
+      "w": 390,
+      "h": 844
+    },
+    "plan-copied": {
+      "w": 390,
+      "h": 844
+    }
+  },
+  "home": {
+    "input": {
+      "x": 18,
+      "y": 234.8125,
+      "w": 153.515625,
+      "h": 52.390625
+    },
+    "button": {
+      "x": 171.515625,
+      "y": 234.8125,
+      "w": 200.484375,
+      "h": 52.390625
+    }
+  },
+  "majorEmpty": {
+    "panel": {
+      "x": 16,
+      "y": 16,
+      "w": 358,
+      "h": 1169.84375
+    },
+    "univ": {
+      "x": 35,
+      "y": 169.578125,
+      "w": 320,
+      "h": 48
+    },
+    "major": {
+      "x": 35,
+      "y": 268.328125,
+      "w": 320,
+      "h": 48
+    },
+    "rec": {
+      "x": 95.3125,
+      "y": 1116.84375,
+      "w": 199.359375,
+      "h": 46
+    }
+  },
+  "major": {
+    "panel": {
+      "x": 16,
+      "y": 16,
+      "w": 358,
+      "h": 1426.609375
+    },
+    "univ": {
+      "x": 35,
+      "y": 169.578125,
+      "w": 377.28125,
+      "h": 48
+    },
+    "major": {
+      "x": 35,
+      "y": 268.328125,
+      "w": 377.28125,
+      "h": 48
+    },
+    "rec": {
+      "x": 95.3125,
+      "y": 1373.609375,
+      "w": 199.359375,
+      "h": 46
+    },
+    "name": "Sport Science (School of International Sport)"
+  },
+  "cards": [
+    {
+      "title": "Food images and nutrition information",
+      "score": "8.7",
+      "card": {
+        "x": 16,
+        "y": 288.5625,
+        "w": 358,
+        "h": 637.296875
+      },
+      "titleBox": {
+        "x": 131,
+        "y": 313.5625,
+        "w": 220,
+        "h": 45.875
+      },
+      "meter": {
+        "x": 131,
+        "y": 369.4375,
+        "w": 220,
+        "h": 55.71875
+      },
+      "why": {
+        "x": 39,
+        "y": 596.59375,
+        "w": 312,
+        "h": 96.375
+      },
+      "cmp": {
+        "x": 198,
+        "y": 864.859375,
+        "w": 153,
+        "h": 38
+      },
+      "plan": {
+        "x": 54,
+        "y": 808.59375,
+        "w": 181.234375,
+        "h": 36.265625
+      }
+    },
+    {
+      "title": "Food images for health management",
+      "score": "8.6",
+      "card": {
+        "x": 16,
+        "y": 945.859375,
+        "w": 358,
+        "h": 637.296875
+      },
+      "titleBox": {
+        "x": 131,
+        "y": 970.859375,
+        "w": 220,
+        "h": 45.875
+      },
+      "meter": {
+        "x": 131,
+        "y": 1026.734375,
+        "w": 220,
+        "h": 55.71875
+      },
+      "why": {
+        "x": 39,
+        "y": 1253.890625,
+        "w": 312,
+        "h": 96.375
+      },
+      "cmp": {
+        "x": 198,
+        "y": 1522.15625,
+        "w": 153,
+        "h": 38
+      },
+      "plan": {
+        "x": 54,
+        "y": 1465.890625,
+        "w": 181.234375,
+        "h": 36.265625
+      }
+    },
+    {
+      "title": "Food images and descriptive text data (vision)",
+      "score": "8.4",
+      "card": {
+        "x": 16,
+        "y": 1603.15625,
+        "w": 358,
+        "h": 660.234375
+      },
+      "titleBox": {
+        "x": 131,
+        "y": 1628.15625,
+        "w": 220,
+        "h": 68.8125
+      },
+      "meter": {
+        "x": 131,
+        "y": 1706.96875,
+        "w": 220,
+        "h": 55.71875
+      },
+      "why": {
+        "x": 39,
+        "y": 1934.125,
+        "w": 312,
+        "h": 96.375
+      },
+      "cmp": {
+        "x": 198,
+        "y": 2202.390625,
+        "w": 153,
+        "h": 38
+      },
+      "plan": {
+        "x": 54,
+        "y": 2146.125,
+        "w": 181.234375,
+        "h": 36.265625
+      }
+    }
+  ],
+  "added": {
+    "count": {
+      "x": 211.0625,
+      "y": 21.453125,
+      "w": 21.53125,
+      "h": 16
+    },
+    "nav": {
+      "x": 139.4375,
+      "y": 12.453125,
+      "w": 100.15625,
+      "h": 35.09375
+    }
+  },
+  "compare": {
+    "table": {
+      "x": 17,
+      "y": 116.640625,
+      "w": 680,
+      "h": 1562.1875
+    },
+    "cols": [
+      {
+        "x": 109.328125,
+        "y": 116.640625,
+        "w": 195.890625,
+        "h": 240.265625
+      },
+      {
+        "x": 305.21875,
+        "y": 116.640625,
+        "w": 195.890625,
+        "h": 240.265625
+      },
+      {
+        "x": 501.109375,
+        "y": 116.640625,
+        "w": 195.890625,
+        "h": 240.265625
+      }
+    ],
+    "head": {
+      "x": 17,
+      "y": 116.640625,
+      "w": 680,
+      "h": 240.265625
+    }
+  },
+  "plan": {
+    "panel": {
+      "x": 0,
+      "y": 55.703125,
+      "w": 390,
+      "h": 732.578125
+    },
+    "site1": {
+      "x": 16,
+      "y": 288.546875,
+      "w": 358,
+      "h": 74.546875
+    },
+    "sites": {
+      "x": 16,
+      "y": 288.546875,
+      "w": 358,
+      "h": 243.640625
+    },
+    "copy": {
+      "x": 16,
+      "y": 577.1875,
+      "w": 169.890625,
+      "h": 38
+    },
+    "preview": {
+      "x": 16,
+      "y": 675.1875,
+      "w": 358,
+      "h": 23.09375
+    }
+  },
+  "preview": {
+    "panel": {
+      "x": 0,
+      "y": 42,
+      "w": 390,
+      "h": 760
+    },
+    "textarea": {
+      "x": 16,
+      "y": 439.578125,
+      "w": 358,
+      "h": 263.6875
+    },
+    "details": {
+      "x": 16,
+      "y": 408.484375,
+      "w": 358,
+      "h": 303.171875
+    }
+  },
+  "prompt": "I am a university student and want to do an AI project with the AI Hub dataset below. Please read my profile, how I found this dataset and the dataset information, and plan one project that fits me.\n\n- Do not invent facts that are not in the dataset information (amount, labels, files); if something is missing, tell me to check the AI Hub page.\n- Build on the recommendation reasons, my major and my interests.\n- I may be new to AI: use plain words and explain a technical term briefly the first time.\n- Answer in English.\n\n## About me\n- University: Korea University Sejong Campus\n- Major: Sport Science (School of International Sport)\n- What I want to do: food images and nutrition data\n\n## How I found this dataset\n- Found through: a personal recommendation in AI Hub DataFinder (picked from my major, interests and search words)\n- Search words: \"food images and nutrition data\"\n- Rank: 1 of 12\n- Relevance: 8.7 out of 10\n- Match with the search words: good\n- Why it was recommended:\n  - It matches what I searched for.\n  - It is in Food, Health care and wellbeing, a field close to my major (Sport Science (School of International Sport)).\n\n## Dataset\n- Name: Food images and nutrition information\n- AI Hub page: https://www.aihub.or.kr/aihubdata/data/view.do?currMenu=115&topMenu=100&aihubDataSe=data&dataSetSn=74\n- Topics: Food, Health care and wellbeing\n- Data types: image\n- File formats: jpg, txt, xml\n- Total size: 1,635.5 GB\n- Amount: 800k food photos (400 dishes) + 42k portion-measured photos\n- Labels: dish name, box around the food, portion level (1-5)\n- Baseline results: YOLOv3 accuracy 90.46%; ResNet accuracy 89.5%\n- Level: beginner\n- Built (year, organisation): 2020, 에이아이더\n- In short: Photos of Korean dishes and popular restaurant food, each marked with what the food is and where it sits in the picture. Some photos show the same dish in five portion sizes, so you can build a diet app that recognises a meal and estimates how much was eaten.\n\n### Details\n800k images of 400 frequently eaten Korean dishes plus 42k precisely photographed images where each dish was weighed and grouped into five portion levels. Labels are dish class and bounding box (txt/xml), with a portion level for the precise set. Baselines: food recognition with YOLOv3, 90.46% accuracy; portion estimation with ResNet, 89.5%. Whether a nutrition table (calories, sodium) is included should be checked in the original documents.\n\n### Project ideas for this dataset\n- Korean dish classifier: Pick 20 dishes and train a photo classifier.\n- One-photo meal logging app: Detect dishes on a tray and compute calories and sodium using a public nutrition database.\n- Portion size from photos: Estimate the 5 portion levels and analyse errors by bowl size and angle.\n\n## Answer format (markdown)\n```markdown\n## (Project title)\n**In one sentence**: (one sentence)\n### Why this dataset\n### Steps\n(numbered list, 4-6 steps)\n### Tools and skills\n### Difficulty and time\n### Tips for getting the data\n### Taking it further\n```\n\nAfter the plan, ask me what I should prepare first so we can go through it from step 1. I will request the data on AI Hub.\n",
+  "copied": {
+    "msg": {
+      "x": 16,
+      "y": 545.140625,
+      "w": 358,
+      "h": 23.09375
+    },
+    "sites": {
+      "x": 16,
+      "y": 287.5,
+      "w": 358,
+      "h": 243.640625
+    },
+    "panel": {
+      "x": 0,
+      "y": 54.65625,
+      "w": 390,
+      "h": 734.671875
+    },
+    "text": "Copied. Paste it into the AI of your choice (Ctrl+V)."
+  },
+  "view": {
+    "width": 390,
+    "height": 844,
+    "scale": 3,
+    "resultsHeight": 2288
+  }
+}
