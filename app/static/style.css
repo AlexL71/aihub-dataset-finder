@@ -680,3 +680,75 @@ html.intro-open { overflow: hidden; }
 /* "소개 영상 보기" next to Reset on the home page */
 .intro-link svg { color: var(--blue); }
 @media (prefers-reduced-motion: reduce) { #intro, .intro-actions button { transition: none; } }
+
+/* ---------- all sizes: small layout fixes found in the phone review (2026-11-17) ---------- */
+.idea .chat-btn { display: flex; width: fit-content; }            /* the AI button sits on its own line, never after the text */
+.map-chips { display: none; }
+.tex.tex-scroll { -webkit-mask-image: linear-gradient(90deg, #000 86%, transparent); mask-image: linear-gradient(90deg, #000 86%, transparent); }
+table.cmp th[scope=row] { background: var(--surface); }
+
+/* ---------- phones (checked with Playwright at 390 x 844 and 360 x 780, touch, 3x) ---------- */
+@media (max-width: 700px) {
+  /* header: logo + language on the first row, all four menu items on a second row */
+  .gnb-in { flex-wrap: wrap; height: auto; padding-top: 8px; gap: 0 8px; }
+  .gnb-in .logo { order: 1; flex: 1; }
+  .gnb-in .lang { order: 2; }
+  .gnb-in .menu { order: 3; flex: 0 0 100%; justify-content: space-between; margin: 6px -7px 0; padding-bottom: 4px; }
+  .menu a[data-nav="results"]:not([hidden]), .menu a[data-nav="find"] { display: inline-block; }
+  .menu a { padding: 9px 10px; font-size: 14.5px; }
+  .menu-sub { left: auto; right: 0; transform: translate(0, -4px); }
+  .menu-dd:hover .menu-sub, .menu-dd:focus-within .menu-sub, .menu-dd.open .menu-sub { transform: translate(0, 0); }
+  .lang button { padding: 7px 12px; min-height: 34px; }
+  .tabs { top: 104px; } .sec { scroll-margin-top: 170px; }
+
+  /* one column that never grows past the screen (long English major names used to widen the form) */
+  .grid, .ideas, .form-row { grid-template-columns: minmax(0, 1fr); }
+  .back a { display: inline-block; padding: 8px 0; }
+
+  /* search: the button goes under the box, so the example text has the full width */
+  .search { flex-direction: column; border-radius: 16px; overflow: hidden; }
+  .search input { padding: 14px 16px; }
+  .search button { padding: 13px 18px; }
+
+  /* field cards: one per row (names no longer break syllable by syllable) */
+  .bh-grid { grid-template-columns: minmax(0, 1fr); gap: 8px; }
+  .bh-card { padding: 12px 14px; }
+
+  /* dataset page */
+  .back { margin-bottom: 6px; }
+  .dhead .btn-row { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; width: 100%; }
+  .dhead .btn-row > :first-child { grid-column: 1 / -1; }
+  .dhead .btn-row .btn { justify-content: center; text-align: center; margin: 0; }
+  .tabs { overflow-x: auto; scrollbar-width: none; -webkit-mask-image: linear-gradient(90deg, #000 85%, transparent); mask-image: linear-gradient(90deg, #000 85%, transparent); }
+  .tabs::-webkit-scrollbar { display: none; }
+  .tabs a { flex: none; }
+  .related { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; }
+  .rel { padding: 14px 8px; gap: 8px; font-size: 13.5px; }
+  .rel .tile-m { width: 64px; height: 64px; }
+
+  /* compare: row names stay in view, and the next dataset peeks in so the table clearly scrolls */
+  table.cmp { min-width: 0; width: auto; }
+  table.cmp th { position: sticky; left: 0; z-index: 1; width: 78px; min-width: 78px; padding: 12px 10px; background: var(--surface); box-shadow: 1px 0 0 var(--line); font-size: 13.5px; }
+  table.cmp td { width: calc((100vw - 32px - 78px) * .76); min-width: calc((100vw - 32px - 78px) * .76); padding: 12px 12px; font-size: 14px; }
+
+  /* about pages */
+  .vb-v, .vb-l { font-size: 12px; }
+  .map-tools input { flex: 1 0 100%; height: 42px; }
+  .map-tools .btn { flex: 1; }
+  .map-wrap.v .map-stage { display: none; }
+  .map-chips { display: block; }
+  .map-chips .mc-row { display: flex; flex-wrap: wrap; gap: 8px; }
+  .map-chips .mc-row + .mc-row { margin-top: 12px; padding-top: 12px; border-top: 1px solid var(--line); }
+  .map-chips button { display: inline-flex; align-items: center; gap: 7px; min-height: 38px; padding: 7px 13px; border: 1px solid var(--line); border-radius: 99px;
+    background: var(--surface); color: var(--text); font-size: 14px; font-weight: 600; cursor: pointer; }
+  .map-chips button i { width: 9px; height: 9px; border-radius: 50%; background: var(--gc); flex: none; }
+  .map-chips button small { color: var(--faint); font-weight: 500; font-size: 12.5px; }
+  .map-chips button.on { border-color: var(--gc); background: color-mix(in srgb, var(--gc) 10%, #fff); color: var(--ink); }
+  .map-chips .mc-label { width: 100%; color: var(--muted); font-size: 13px; font-weight: 600; }
+  .prep-text { grid-template-columns: auto minmax(0, 1fr); gap: 4px 12px; }
+  .prep-text > div { display: contents; }
+  .prep-text h3 { align-self: center; margin: 0; font-size: 18px; }
+  .prep-text p { grid-column: 1 / -1; margin-top: 8px; }
+  .tex .katex-display { font-size: .82em; }
+  .cl input[type=range] { height: 28px; margin: 0; background-clip: content-box; padding: 10px 0; }
+}

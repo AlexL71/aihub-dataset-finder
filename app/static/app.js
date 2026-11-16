@@ -536,12 +536,15 @@ async function pageCompare(seq) {
   if (seq !== navSeq) return;
   const items = d.items;
   if (!items.length) { view(`<div class="empty">${esc(t("cmp_empty"))}</div>`); return; }
-  const rows = items[0].facts.map((f, n) => `<tr><th>${esc(f[lang])}</th>${items.map(c => `<td>${esc(c.facts[n]?.["v_" + lang] ?? "")}</td>`).join("")}</tr>`).join("");
+  // rows by fact name, not position: datasets can miss a fact (e.g. no baseline), which used to shift the rows below it
+  const factNames = [], seen = new Set();
+  items.forEach(c => c.facts.forEach(f => { if (!seen.has(f.ko)) { seen.add(f.ko); factNames.push(f); } }));
+  const rows = factNames.map(f => `<tr><th scope="row">${esc(f[lang])}</th>${items.map(c => `<td>${esc(c.facts.find(x => x.ko === f.ko)?.["v_" + lang] ?? "—")}</td>`).join("")}</tr>`).join("");
   view(`<div class="cmp-wrap"><table class="cmp">
     <thead><tr><th></th>${items.map(c => `<td>${tile(c, "tile-s")}<a href="#/dataset/${esc(c.id)}"><b>${esc(L(c, "title"))}</b></a>
       <button class="btn btn-line btn-sm" style="margin-top:8px" data-rm="${esc(c.id)}">${esc(t("remove"))}</button></td>`).join("")}</tr></thead>
-    <tbody><tr><th>${esc(t("easy_row"))}</th>${items.map(c => `<td>${esc(L(c, "easy"))}</td>`).join("")}</tr>
-      <tr><th>${esc(t("fields_row"))}</th>${items.map(c => `<td>${c.domains.map(x => `<span class="tag">#${esc(name(x))}</span>`).join("")}</td>`).join("")}</tr>
+    <tbody><tr><th scope="row">${esc(t("easy_row"))}</th>${items.map(c => `<td>${esc(L(c, "easy"))}</td>`).join("")}</tr>
+      <tr><th scope="row">${esc(t("fields_row"))}</th>${items.map(c => `<td>${c.domains.map(x => `<span class="tag">#${esc(name(x))}</span>`).join("")}</td>`).join("")}</tr>
       ${rows}
       <tr><th></th>${items.map(c => `<td><a class="btn btn-coral btn-sm" href="${esc(c.url)}" target="_blank" rel="noopener">${esc(t("open_aihub"))} ↗</a></td>`).join("")}</tr></tbody>
   </table></div>`);

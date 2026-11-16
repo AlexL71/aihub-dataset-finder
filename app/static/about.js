@@ -375,6 +375,7 @@ async function pageMap(seq, focus) {
           <button type="button" class="btn btn-line btn-sm" id="m-reset">${esc(at("map_close_all"))}</button>
           <button type="button" class="btn btn-line btn-sm" id="m-full">${esc(at("map_full"))}</button>
         </div>
+        <div class="map-chips" id="map-chips"></div>
         <div class="map-stage"><svg id="map" role="tree" aria-label="${esc(at("map_title"))}"></svg></div>
         <p class="hint map-how"><b>${esc(at("map_how"))}</b> ${esc(at("map_how_v"))}</p>
       </div>
@@ -450,6 +451,20 @@ async function pageMap(seq, focus) {
     nodes.on("click", (e, n) => pick(n.data)).on("keydown", (e, n) => { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); pick(n.data); } });
     prev = pos;
     if (fs) stage.style.maxHeight = "";
+    drawChips();
+  }
+
+  // phones: the same choices as the tree, as rows of buttons (the 1000 px tree would need sideways scrolling)
+  function drawChips() {
+    const box = $("#map-chips"); if (!box) return;
+    const btn = (n, on, color) => `<button type="button" data-key="${esc(n.key)}" class="${on ? "on" : ""}" style="--gc:${color}" aria-pressed="${on}">
+      <i></i>${esc(nameOf(n))}<small>${countOf(n)}</small></button>`;
+    const fieldRow = data.kids.map(n => btn(n, mapState.field === n.g.id, gColor[n.g.id])).join("");
+    const open = data.kids.find(n => n.g.id === mapState.field);
+    const topicRow = open ? open.kids.map(n => btn(n, mapState.topic === n.d.id, gColor[n.d.group])).join("") : "";
+    box.innerHTML = `<div class="mc-row">${fieldRow}</div>${open ? `<div class="mc-row"><span class="mc-label">${esc(name(open.g))}</span>${topicRow}</div>` : ""}`;
+    const all = new Map(data.kids.flatMap(g => [[g.key, g], ...g.kids.map(d => [d.key, d])]));
+    box.querySelectorAll("[data-key]").forEach(b => b.onclick = () => pick(all.get(b.dataset.key)));
   }
 
   // ---------- the dataset list under the tree ----------
@@ -592,14 +607,15 @@ async function pagePrep(seq) {
 
 // ---------- page 4: how relevance is calculated ----------
 const TEX = {
-  cos: String.raw`\cos(\mathbf{q},\mathbf{d}) = \frac{\mathbf{q}\cdot\mathbf{d}}{\lVert\mathbf{q}\rVert\,\lVert\mathbf{d}\rVert} = \sum_{i=1}^{n} q_i\, d_i \quad (\lVert\mathbf{q}\rVert=\lVert\mathbf{d}\rVert=1)`,
-  rrf: (k, w) => String.raw`\mathrm{RRF}(d) = \sum_{\ell \in \text{4 lists}} \frac{w_\ell}{${k} + \mathrm{rank}_\ell(d)}, \qquad w_{\text{meaning}} = ${w.card_vec},\; w_{\text{word}} = ${w.card_bm25}`,
-  sim: (lo, hi) => String.raw`s = \mathrm{clip}\!\left(\frac{\max(\cos_{\text{card}},\cos_{\text{piece}}) - ${lo}}{${hi} - ${lo}},\,0,\,1\right)`,
+  // long formulas are split over two lines (gathered), so they fit a phone screen without sideways scrolling
+  cos: String.raw`\begin{gathered}\cos(\mathbf{q},\mathbf{d}) = \frac{\mathbf{q}\cdot\mathbf{d}}{\lVert\mathbf{q}\rVert\,\lVert\mathbf{d}\rVert} = \sum_{i=1}^{n} q_i\, d_i \\ (\lVert\mathbf{q}\rVert=\lVert\mathbf{d}\rVert=1)\end{gathered}`,
+  rrf: (k, w) => String.raw`\begin{gathered}\mathrm{RRF}(d) = \sum_{\ell \in \text{4 lists}} \frac{w_\ell}{${k} + \mathrm{rank}_\ell(d)} \\ w_{\text{meaning}} = ${w.card_vec},\quad w_{\text{word}} = ${w.card_bm25}\end{gathered}`,
+  sim: (lo, hi) => String.raw`\begin{gathered}s = \mathrm{clip}\!\left(\frac{c - ${lo}}{${hi} - ${lo}},\,0,\,1\right) \\ c = \max(\cos_{\text{card}},\cos_{\text{piece}})\end{gathered}`,
   interest: sh => String.raw`I_{\text{text}} = ${sh}\, s + ${(1 - sh).toFixed(1)}\, \frac{\mathrm{RRF}(d)}{\mathrm{RRF}_{\text{best}}}`,
   prof: String.raw`p = \mathrm{clip}\!\left(\frac{\cos(\mathbf{m},\mathbf{d}) - \mathrm{median}_m}{\max_m - \mathrm{median}_m},\,0,\,1\right)`,
   major: sh => String.raw`M = ${(1 - sh).toFixed(1)}\, f + ${sh}\, p`,
   score: String.raw`\text{relevance} = 10 \times \frac{w_I\, I + w_M\, M}{w_I + w_M}`,
-  mmr: lam => String.raw`\text{next} = \arg\max_{d}\; \Big[\, ${lam}\, \frac{\text{relevance}(d)}{10} - ${(1 - lam).toFixed(2)}\, \max_{d' \in \text{picked}} \cos(d, d') \Big]`,
+  mmr: lam => String.raw`\begin{gathered}\text{next} = \arg\max_{d}\; \big[\, ${lam}\, r(d) - ${(1 - lam).toFixed(2)}\, \mathrm{sim}(d) \,\big] \\ r(d) = \frac{\text{relevance}(d)}{10} \\ \mathrm{sim}(d) = \max_{d' \in \text{picked}} \cos(d, d')\end{gathered}`,
 };
 function texBlock(tex) { return `<div class="tex" data-tex="${esc(tex)}"><code>${esc(tex)}</code></div>`; }
 
@@ -634,8 +650,8 @@ async function pageMethod(seq) {
     <h3>${esc(at("d_score"))}</h3><p>${esc(at("d_score_t", { wi: wi.interest, wm: wi.major, ci: wc.interest, cm2: wc.major }))}</p>
     ${texBlock(TEX.score)}
     <div class="example"><b>${esc(at("d_example"))}</b> ${esc(at("d_example_t"))}
-      ${texBlock(String.raw`s = \frac{0.74 - ${it.sim_low}}{${it.sim_high} - ${it.sim_low}} = ${ex.sim.toFixed(2)},\quad I = ${it.sim_share}\times${ex.sim.toFixed(2)} + ${(1 - it.sim_share).toFixed(1)}\times 0.8 = ${ex.I.toFixed(2)}`)}
-      ${texBlock(String.raw`M = ${(1 - mj.profile_share).toFixed(1)}\times ${mj.core_main} + ${mj.profile_share}\times 0.6 = ${ex.M.toFixed(2)},\quad \text{relevance} = 10\times\frac{${wi.interest}\times${ex.I.toFixed(2)} + ${wi.major}\times${ex.M.toFixed(2)}}{${wi.interest}+${wi.major}} = ${ex.score.toFixed(1)}`)}</div>
+      ${texBlock(String.raw`\begin{gathered}s = \frac{0.74 - ${it.sim_low}}{${it.sim_high} - ${it.sim_low}} = ${ex.sim.toFixed(2)} \\ I =${it.sim_share}\times${ex.sim.toFixed(2)} + ${(1 - it.sim_share).toFixed(1)}\times 0.8 = ${ex.I.toFixed(2)}\end{gathered}`)}
+      ${texBlock(String.raw`\begin{gathered}M = ${(1 - mj.profile_share).toFixed(1)}\times ${mj.core_main} + ${mj.profile_share}\times 0.6 = ${ex.M.toFixed(2)} \\ \text{relevance} = 10\times${Math.abs(wi.interest + wi.major - 1) < 1e-9 ? "" : String.raw`\frac{1}{${wi.interest}+${wi.major}}`}(${wi.interest}\times${ex.I.toFixed(2)} + ${wi.major}\times${ex.M.toFixed(2)}) = ${ex.score.toFixed(1)}\end{gathered}`)}</div>
     <h3>${esc(at("d_label"))}</h3><p>${esc(at("d_label_t", { ks: s.match_label.korean.strong, kp: s.match_label.korean.partial, es: s.match_label.english.strong, ep: s.match_label.english.partial }))}</p>
     <h3>${esc(at("d_mmr"))}</h3><p>${esc(at("d_mmr_t", { lam: r.diversity.mmr_lambda }))}</p>
     ${texBlock(TEX.mmr(r.diversity.mmr_lambda))}
@@ -649,6 +665,9 @@ async function pageMethod(seq) {
     loadCss(KATEX + "katex.min.css"); await loadScript(KATEX + "katex.min.js");
     if (seq !== navSeq || !window.katex) return;
     document.querySelectorAll(".tex[data-tex]").forEach(el => { try { window.katex.render(el.dataset.tex, el, { displayMode: true, throwOnError: false, output: "html" }); el.setAttribute("role", "img"); el.setAttribute("aria-label", el.dataset.tex); } catch (e) { /* keep plain text */ } });
+    // a formula still wider than its box fades at the right edge, so it is clear that it scrolls
+    const markWide = () => document.querySelectorAll(".tex").forEach(el => el.classList.toggle("tex-scroll", el.scrollWidth > el.clientWidth + 2));
+    markWide(); setTimeout(markWide, 600); window.addEventListener("resize", markWide);   // again after the math fonts load
   } catch (e) { /* offline: plain formulas stay */ }
 }
 
