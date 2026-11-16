@@ -156,6 +156,7 @@ data/                ready-made data the service needs (records, search index, m
 tests/               pytest: scoring rules, prompts for all datasets, API checks
 eval/                question sets for testing search
 tools/search_ui.py   local test page for search queries (not the student app)
+tools/build_prep_examples.py  examples for the About → 데이터 준비 과정 page (data/about/prep_example.json)
 docs/                plan, work log, data sources
 Dockerfile           production image; requirements-app.txt = runtime packages, requirements.txt = everything
 ```
@@ -184,6 +185,7 @@ Needs the full `requirements.txt`, the collected raw files (not in git) and an A
 .venv/Scripts/python -m processing.build_index                # embeds only new or changed text (cached)
 .venv/Scripts/python -m processing.major_keywords build       # suggested keywords per major
 .venv/Scripts/python -m collectors.collect_aihub icons --all  # AI Hub icon address per dataset (resumes)
+.venv/Scripts/python -m tools.build_prep_examples           # examples on the data-preparation page (needs data/raw/aihub/pages/74.html)
 ```
 
 Command-line search and recommendation for checking results:

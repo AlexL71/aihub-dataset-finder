@@ -258,6 +258,11 @@ def about_method() -> dict:
     return about.method(S)
 
 
+@app.get("/api/about/prep")
+def about_prep() -> dict:
+    return about.prep(S)
+
+
 @app.get("/api/browse")
 def browse(group: str | None = None, topic: str | None = None, offset: int = 0, limit: int = 24) -> dict:
     """Datasets of one field (group) or one topic, by main topic, most downloaded first (like AI Hub's field filter)."""

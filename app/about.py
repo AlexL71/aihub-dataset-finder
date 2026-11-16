@@ -3,6 +3,7 @@
 stats()   numbers and chart data about AI Hub, counted from our 867 dataset records
 graph()   the data map: 8 groups -> 53 domains -> datasets (by main domain), plus each dataset's 5 most similar
           datasets (cosine of the dataset-card vectors, the same vectors search uses)
+prep()    one dataset followed through every data-preparation step (excerpts, built by tools/build_prep_examples.py)
 method()  the live scoring settings (config/ranking.yaml and config/search.yaml), so the explanation page
           always shows the numbers the app really uses
 Everything is computed once, the first time a page asks, and kept in memory.
@@ -21,6 +22,7 @@ from processing import cards
 ROOT = Path(__file__).resolve().parents[1]
 PAGES_DIR = ROOT / "data" / "parsed" / "aihub" / "pages"
 FIELDS_FILE = ROOT / "data" / "parsed" / "aihub" / "fields.json"   # the same, one small file (shipped for deployment)
+PREP_FILE = ROOT / "data" / "about" / "prep_example.json"           # tools/build_prep_examples.py
 N_SIMILAR = 5            # similar datasets listed per dataset on the map
 
 
@@ -108,3 +110,13 @@ def method(S) -> dict:
         "counts": {"datasets": len(S.recs), "cards": len(S.rec.index.cards), "chunks": len(S.rec.index.chunks),
                    "domains": len(S.domains), "groups": len(S.groups)},
     }
+
+
+def prep(S) -> dict:
+    """Examples for the data-preparation page, plus the counts the page quotes."""
+    if "prep" not in _cache:
+        ex = json.loads(PREP_FILE.read_text(encoding="utf-8")) if PREP_FILE.exists() else {"examples": {}}
+        _cache["prep"] = {**ex, "counts": {"datasets": len(S.recs), "manuals": sum(bool(r["doc_used"]) for r in S.recs.values()),
+                                           "cards": len(S.rec.index.cards), "chunks": len(S.rec.index.chunks),
+                                           "chunk_chars": S.rec.index.cfg["chunk"]["target_chars"]}}
+    return _cache["prep"]

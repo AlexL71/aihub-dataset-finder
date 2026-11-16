@@ -73,7 +73,7 @@ button, input { font: inherit; color: inherit; }
 .crumb { color: var(--faint); font-size: 14px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; min-width: 0; }
 main { padding-top: 32px; padding-bottom: 72px; min-height: 60vh; }
 .foot { border-top: 1px solid var(--line); background: var(--surface); color: var(--faint); font-size: 13px; }
-.foot p { margin: 0 auto; padding: 24px 0; max-width: 62ch; text-align: center; text-wrap: balance; line-height: 1.7; }
+.foot p { margin: 0; padding: 24px 0; line-height: 1.7; }   /* full page width, like a normal site footer */
 
 /* ---------- shared pieces ---------- */
 .panel { background: var(--surface); border: 1px solid var(--line); border-radius: 18px; padding: 30px; margin-bottom: 24px; }
@@ -426,18 +426,36 @@ table.fit th:last-child, table.fit td:last-child { text-align: right; width: 80p
 .note-cards { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 14px; margin-top: 14px; }
 .note-card { background: var(--page); border-radius: 14px; padding: 18px; color: var(--blue); }
 .note-card p { margin: 10px 0 0; color: var(--text); font-size: 14.5px; }
-/* method page: plain-language steps as cards */
-.easy-cards { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; }
-.easy-cards li:last-child:nth-child(odd) { grid-column: 1 / -1; }
-.easy-cards li { border: 1px solid var(--line); border-radius: 14px; padding: 18px 20px; display: grid; grid-template-columns: auto 1fr; column-gap: 16px; align-items: start; }
-.easy-cards li > b, .easy-cards li > p { grid-column: 2; }
-.ec-top { grid-row: 1 / span 2; display: flex; flex-direction: column; align-items: center; gap: 10px; color: var(--blue); }
-.ec-top em { font-style: normal; font-weight: 700; font-size: 13px; width: 26px; height: 26px; border-radius: 50%; background: var(--blue); color: #fff; display: grid; place-items: center; }
-.easy-cards b { color: var(--ink); display: block; margin-bottom: 6px; }
-.easy-cards p { margin: 0; font-size: 14.5px; color: var(--muted); }
+/* data preparation page: numbered steps, each with small example previews that open in a dialog */
+.prep { list-style: none; margin: 0; padding: 0; }
+.prep-step { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.1fr); gap: 28px; align-items: start; }
+.prep-text { display: grid; grid-template-columns: auto 1fr; gap: 16px; }
+.prep-text h3 { margin: 2px 0 8px; font-size: 19px; }
+.prep-text p { margin: 0; font-size: 15px; color: var(--text); }
+.prep-n { width: 30px; height: 30px; border-radius: 50%; background: var(--blue); color: #fff; font-weight: 700; font-size: 14px; display: grid; place-items: center; }
+.ex-row { display: grid; grid-template-columns: repeat(auto-fit, minmax(190px, 1fr)); gap: 14px; }
+.ex-card { display: flex; flex-direction: column; text-align: left; padding: 0; border: 1px solid var(--line); border-radius: 14px; background: var(--surface);
+  cursor: pointer; overflow: hidden; transition: border-color .15s, box-shadow .15s; }
+.ex-card:hover { border-color: var(--blue-line); box-shadow: var(--lift); }
+.ex-thumb { position: relative; display: block; height: 128px; overflow: hidden; background: var(--page); padding: 10px 12px; border-bottom: 1px solid var(--line); }
+.ex-thumb code { display: block; font: 10.5px/1.5 ui-monospace, SFMono-Regular, Consolas, "D2Coding", monospace; color: var(--muted); white-space: pre; }
+.ex-thumb::after { content: ""; position: absolute; inset: auto 0 0; height: 48px; background: linear-gradient(transparent, var(--page)); }
+.ex-cap { display: flex; flex-direction: column; gap: 2px; padding: 10px 14px 0; }
+.ex-cap b { color: var(--ink); font-size: 14.5px; }
+.ex-cap small { color: var(--faint); font-size: 13px; }
+.ex-open { padding: 4px 14px 12px; color: var(--blue); font-size: 13px; font-weight: 600; }
+.prep-next { margin: 8px 0 24px; text-align: center; }
+.ex-dlg { width: min(920px, calc(100vw - 32px)); max-height: min(86vh, 900px); padding: 0; border: 0; border-radius: 18px; box-shadow: var(--float); }
+.ex-dlg[open] { display: flex; flex-direction: column; }
+.ex-dlg::backdrop { background: rgba(17, 24, 39, .45); }
+.ex-dlg header { display: flex; align-items: center; justify-content: space-between; gap: 16px; padding: 16px 20px; border-bottom: 1px solid var(--line); }
+.ex-dlg h3 { margin: 0; font-size: 17px; }
+.ex-dlg small { color: var(--faint); font-size: 13px; }
+.ex-dlg pre { margin: 0; padding: 18px 20px; overflow: auto; flex: 1; background: var(--page); font: 12.5px/1.6 ui-monospace, SFMono-Regular, Consolas, "D2Coding", monospace;
+  color: var(--text); white-space: pre-wrap; word-break: break-all; }
 /* about pages on narrower screens: after the rules above, so these win */
 @media (max-width: 1020px) {
-  .map-wrap, .two, .cos-panel, .calc { grid-template-columns: minmax(0, 1fr); }
+  .map-wrap, .two, .cos-panel, .calc, .prep-step { grid-template-columns: minmax(0, 1fr); }
   .map-side { position: static; max-height: none; }
   .map-wrap.is-fs { grid-template-columns: minmax(0, 1fr); grid-template-rows: minmax(0, 1fr) auto; }
   .is-fs .map-side { height: auto; max-height: 34vh; overflow: auto; }
@@ -456,6 +474,9 @@ table.fit th:last-child, table.fit td:last-child { text-align: right; width: 80p
   .num b { font-size: 24px; }
   .vbars { gap: 2px; } .vb { font-size: 11px; padding: 2px 0; }
   .flow { flex-direction: column; gap: 22px; }
+  .prep-step { grid-template-columns: minmax(0, 1fr); gap: 18px; }
+  .ex-row { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; }
+  .ex-thumb { height: 104px; }
   .flow li:not(:last-child)::after { right: auto; left: 22px; top: auto; bottom: -17px; transform: rotate(135deg); }
 }
 

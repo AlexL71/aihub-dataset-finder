@@ -6,12 +6,12 @@
 
 const PT = {
   ko: { head: "AI로 프로젝트 계획 세우기", close: "닫기", pick: "사용할 AI를 고르세요",
-    how: "누르면 내 정보, 이 데이터를 찾은 경로, 데이터 정보(AI Hub 주소 포함), 계획을 부탁하는 문장이 함께 복사되고 고른 AI가 새 탭에서 열립니다. 입력창에 붙여 넣고(Ctrl+V) 보내세요.",
+    how: "AI를 선택하면 내 정보, 데이터를 찾은 경로, 데이터 정보(AI Hub 주소 포함), 요청 문장이 함께 복사되고 선택한 AI가 새 탭에서 열립니다. 입력창에 붙여 넣고(Ctrl+V) 보내세요.",
     copy: "프롬프트만 복사", copied: "복사했습니다. 원하는 AI의 입력창에 붙여 넣으세요(Ctrl+V).",
     opened: "복사했습니다. 새 탭에서 열린 {name} 입력창에 붙여 넣고(Ctrl+V) 보내세요.",
-    copy_fail: "자동 복사가 되지 않았습니다. 아래 미리 보기에서 글을 모두 선택해 복사하세요.",
+    copy_fail: "자동으로 복사하지 못했습니다. 아래 미리 보기에서 내용을 모두 선택해 복사하세요.",
     file: "파일로 내려받기 (.md)", preview: "프롬프트 미리 보기",
-    note: "각 AI는 그 회사의 계정이 필요할 수 있습니다. 이름, 학번, 연락처 같은 개인정보는 넣지 마세요.",
+    note: "AI 서비스에 따라 로그인이 필요할 수 있습니다. 이름, 학번, 연락처 같은 개인정보는 입력하지 마세요.",
     loading: "프롬프트를 만들고 있습니다…", err: "프롬프트를 만들지 못했습니다. 잠시 뒤 다시 시도하세요." },
   en: { head: "Plan a project with AI", close: "Close", pick: "Choose an AI",
     how: "Your profile, how you found this dataset, the dataset information (with its AI Hub link) and a request for a plan are copied, and the AI you choose opens in a new tab. Paste it into the message box (Ctrl+V) and send.",
