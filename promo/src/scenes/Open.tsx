@@ -13,8 +13,9 @@ export const Open: React.FC<{ headline: string }> = ({ headline }) => {
   const cue = useCue();
   const { rects, ui } = useScene();
   const portrait = usePortrait();
-  const openAt = cue("open", 10);
-  const chatAt = openAt + 22;
+  // The click lands on "one click" and the chat window rises on "AI opens", not at the start of the scene.
+  const clickAt = Math.max(cue("click", 20), 12);
+  const chatAt = Math.max(cue("chat", clickAt + 22), clickAt + 12);
   const pasteAt = Math.max(cue("paste", chatAt + 14), chatAt + 10);
   const planAt = Math.max(cue("plan", pasteAt + 20), pasteAt + 14);
   const sites = rects.copied.sites;
@@ -35,13 +36,13 @@ export const Open: React.FC<{ headline: string }> = ({ headline }) => {
       <Backdrop />
       <SceneTitle text={headline} at={4} />
       <Browser screens={[{ src: "plan-copied", from: 0 }]} shots={[shotOn(0, sites, 1.3)]}>
-        <Spotlight box={sites} from={openAt - 10} to={chatAt} pad={8} radius={20} />
+        <Spotlight box={sites} from={clickAt - 10} to={chatAt} pad={8} radius={20} />
         <Cursor
           path={[
-            { at: openAt - 22, x: site1.x + site1.w * 0.5 + 120, y: site1.y + site1.h + 80 },
-            { at: openAt - 2, x: site1.x + site1.w * 0.5, y: site1.y + site1.h * 0.55 },
+            { at: clickAt - 22, x: site1.x + site1.w * 0.5 + 120, y: site1.y + site1.h + 80 },
+            { at: clickAt - 2, x: site1.x + site1.w * 0.5, y: site1.y + site1.h * 0.55 },
           ]}
-          clicks={[openAt]}
+          clicks={[clickAt]}
           hideAfter={chatAt}
         />
       </Browser>

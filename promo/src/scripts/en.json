@@ -189,7 +189,8 @@
         }
       ],
       "cues": {
-        "open": "One click",
+        "click": "click",
+        "chat": "opens",
         "paste": "Just paste",
         "plan": "get your"
       }
@@ -206,7 +207,7 @@
       ],
       "cues": {
         "logo": "From",
-        "line": "planning",
+        "line": "From",
         "pill": "has you covered"
       }
     }

@@ -9,7 +9,7 @@ export const Outro: React.FC = () => {
   const cue = useCue();
   const { ui } = useScene();
   const logoAt = cue("logo", 4);
-  const lineAt = cue("line", 30);
+  const lineAt = Math.max(cue("line", 30), logoAt + 6); // the line appears as it starts being spoken
   const pillAt = cue("pill", 70);
   const logo = usePop(logoAt, 18);
   const pill = usePop(pillAt, 16);

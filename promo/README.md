@@ -1,6 +1,6 @@
 # Promo video (Remotion)
 
-The intro video shown on the home page, in Korean (**75.5 s**) and English (**70.4 s**), each as a landscape
+The intro video shown on the home page, in Korean (**77.2 s**) and English (**70.4 s**), each as a landscape
 (1920 x 1080) and a phone version (1080 x 1920): `app/static/promo-{ko,en}.mp4` and `promo-{ko,en}-v.mp4`.
 `app/static/intro.js` plays it full screen on the first home-page visit (and from the "소개 영상 보기" button), in the
 site's language with a 한국어 / English switch; an upright phone gets the vertical version, and turning the phone
@@ -62,7 +62,8 @@ picture is ready before the words and there is a short pause between scenes (bot
 voice stops early, `audio.mjs` lists it and exits with code 2. No emotion tags: tags like `[sighs]` produced a breathy
 sound at the very start. In the Korean script, English words are written in Hangul (에이아이, 에이아이 허브
 데이터파인더, 팔백육십칠) so the voice keeps a Korean accent; the subtitles keep the normal spelling. No AI model is named
-in the voice or the subtitles. Right after another word, the voice said 프롬프트 with an f-like sound ("frompt"); a short
+in the voice or the subtitles. The Korean narration mostly ends in 습니다/합니다, with 아요/어요 where a warmer tone fits
+(the score line, the AI line, the closing line). Right after another word, the voice said 프롬프트 with an f-like sound ("frompt"); a short
 pause before it ("관심 분야를 담아, 프롬프트로") gives a real ㅍ (checked by measuring the lip-closure silence before
 the word in the audio).
 
