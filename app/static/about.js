@@ -63,7 +63,7 @@ const AT = {
     ex_cut: "… (이하 {n}줄 생략)", ex_source: "원본 페이지", p_next: "관련도 계산 방법 보기",
     // method
     m_title: "관련도 계산 방법",
-    m_intro: "추천 목록의 '관련도'와 데이터 지도의 '비슷한 데이터'를 정하는 방법입니다. 이 페이지의 숫자는 서비스가 지금 쓰는 설정 파일에서 그대로 가져옵니다.",
+    m_intro: "추천 목록의 '관련도'를 정하는 방법입니다. 이 페이지의 숫자는 서비스가 지금 쓰는 설정 파일에서 그대로 가져옵니다.",
     m_prep: "검색용 카드와 조각을 만든 과정은 별도 페이지에서 설명합니다.",
     flow_title: "추천 순서",
     flow: ["검색어와 내 정보", "의미 검색 · 키워드 검색 (순위 4개)", "순위 합치기", "관심 점수 + 전공 점수", "관련도 0~10", "비슷한 데이터 정리", "추천 목록"],
@@ -86,23 +86,13 @@ const AT = {
     d_major_t: "두 값을 절반씩 섞습니다. 하나는 데이터 주제가 전공의 핵심 분야인지 관련 분야인지(아래 표)이고, 다른 하나는 전공 소개글(요약, 주요 분야, 관심 데이터, 프로젝트 주제)과 데이터 카드의 코사인 유사도입니다. 전공마다 유사도 범위가 달라서 그 전공의 중간값 데이터를 0, 가장 비슷한 데이터를 1로 다시 맞춥니다.",
     fit_table: ["데이터 주제", "점수"],
     d_score: "5. 관련도 (0~10)",
-    d_score_t: "입력한 정보만으로 가중 평균을 내고 10을 곱합니다. 검색어를 입력했으면 관심 {wi}, 전공 {wm}이고, 관심 분야만 선택했으면 관심 {ci}, 전공 {cm2}입니다. 이 비율은 31개 전공 모두로 시험 질문을 실행해 정했습니다. 관심 가중치가 0.9일 때 정답 데이터가 1위로 나온 비율은 99.3%였습니다.",
+    d_score_t: "입력한 정보만으로 가중 평균을 내고 10을 곱합니다. 검색어를 입력했으면 관심 {wi}, 전공 {wm}이고, 관심 분야만 선택했으면 관심 {ci}, 전공 {cm2}입니다.",
     d_example: "예시",
     d_example_t: "검색어 유사도 0.74, 순위 점수 0.8, 전공 핵심 분야가 중심 주제, 전공 소개글 유사도 0.6일 때:",
     d_label: "6. 일치도 표시",
-    d_label_t: "데이터 카드와 검색어의 코사인 유사도로 정합니다. 한국어 검색어는 {ks} 이상이면 '잘 맞습니다', {kp} 이상이면 '어느 정도 맞습니다', 그보다 낮으면 '관련이 적습니다'로 표시합니다. 영어 검색어는 유사도가 대체로 낮게 나와서 {es}와 {ep}을 기준으로 씁니다. 두 기준 모두 시험 질문으로 정한 임시값입니다.",
+    d_label_t: "데이터 카드와 검색어의 코사인 유사도로 정합니다. 한국어 검색어는 {ks} 이상이면 '잘 맞습니다', {kp} 이상이면 '어느 정도 맞습니다', 그보다 낮으면 '관련이 적습니다'로 표시합니다. 영어 검색어는 유사도가 대체로 낮게 나와서 더 낮은 기준({es}, {ep})을 씁니다.",
     d_mmr: "7. 비슷한 데이터 정리 (MMR)",
     d_mmr_t: "관련도가 높은 순서로 하나씩 고르되, 이미 고른 데이터와 비슷한 만큼 점수를 낮춥니다. λ가 {lam}이므로 유사도보다 관련도를 더 중요하게 봅니다.",
-    d_map: "8. 데이터 지도의 연결",
-    d_map_t: "데이터마다 주제를 1~3개 붙였고, 첫 번째가 중심 주제입니다. 53개 주제는 8개 분야로 묶입니다. 이 분류는 AI Hub의 14개 분야와 다르며, 학생이 이해하기 쉬운 말로 이 프로젝트에서 새로 만들었습니다. '비슷한 데이터'는 데이터 카드 벡터의 코사인 유사도가 가장 높은 5개입니다.",
-    d_eval: "정확도",
-    d_eval_t: "따로 떼어 둔 시험 질문 59개 중 찾던 데이터가 1위로 나온 경우는 56개, 5위 안에 든 경우는 57개였습니다. 31개 전공 정보를 함께 넣어 1,888번 실행했을 때는 1위 96.1%, 5위 이내 96.6%였습니다(2026년 11월 2일 측정).",
-    d_limits: "한계",
-    limits: [
-      "일치도 기준과 가중치는 시험 질문으로 정한 값이라 실제 학생 평가로 다시 맞춰야 합니다.",
-      "전공 소개글과 주제 분류는 AI가 쓴 초안이며, 아직 학과 검토를 받지 않았습니다.",
-      "검색어가 아주 짧거나 설명서 깊은 곳의 내용을 물으면 정확도가 떨어집니다.",
-    ],
     go_aihub: "AI Hub 바로가기", see_map: "데이터 지도 보기", map_open_all: "모든 분야 펼치기", map_close_all: "처음으로",
     map_how_tree: "분야와 주제를 누르면 가지가 펼쳐지고, 다시 누르면 접힙니다. 이름 옆 숫자는 데이터 수입니다. 데이터를 누르면 비슷한 데이터가 파란색으로 표시됩니다.",
     map_how_v: "분야를 누르면 주제가 펼쳐지고, 주제를 누르면 아래 목록에 해당 주제의 데이터가 나옵니다. 숫자는 데이터 수입니다.",
@@ -169,7 +159,7 @@ const AT = {
     ex_part: "{s} of {n} lines", ex_all: "{n} lines", ex_chunks: "{s} of {n} pieces", ex_open: "Open", ex_close: "Close",
     ex_cut: "… ({n} more lines not shown)", ex_source: "Source page", p_next: "See how relevance is calculated",
     m_title: "How relevance is calculated",
-    m_intro: "How the 'relevance' in your recommendations and the 'similar datasets' on the data map are decided. The numbers on this page are read live from the settings the app runs with.",
+    m_intro: "How the 'relevance' in your recommendations is decided. The numbers on this page are read live from the settings the app runs with.",
     m_prep: "How the search cards and pieces were made is explained on its own page.",
     flow_title: "How a recommendation is made",
     flow: ["Your request and profile", "Meaning + word search (4 rankings)", "Merge the rankings", "Interest + major score", "Relevance 0–10", "Remove near-duplicates", "Your list"],
@@ -192,23 +182,13 @@ const AT = {
     d_major_t: "Half comes from whether the dataset's topics are core or related fields of the major (table below), half from the cosine between the major's profile text (summary, key topics, data interests, project themes) and the dataset card. Similarity ranges differ per major, so each major's median dataset is set to 0 and its most similar dataset to 1.",
     fit_table: ["Dataset topic", "Score"],
     d_score: "5. Relevance (0–10)",
-    d_score_t: "A weighted mean of only the parts you gave, times 10. With a request: interest {wi}, major {wm}; with picked fields only: interest {ci}, major {cm2}. The weights were chosen by running the test questions with all 31 majors (interest 0.9 put the right dataset first 99.3% of the time).",
+    d_score_t: "A weighted mean of only the parts you gave, times 10. With a request: interest {wi}, major {wm}; with picked fields only: interest {ci}, major {cm2}.",
     d_example: "Example",
     d_example_t: "Similarity 0.74, rank score 0.8, the major's core field is the main topic, major profile similarity 0.6:",
     d_label: "6. The 'good match' label",
-    d_label_t: "Set by the cosine between the request and the dataset card. Korean requests: {ks} or more is 'good match', {kp} or more 'partly matches', below that 'loosely related'. English requests score lower overall and use {es} / {ep}. These thresholds are provisional, chosen on the test questions.",
+    d_label_t: "Set by the cosine between the request and the dataset card. Korean requests: {ks} or more is 'good match', {kp} or more 'partly matches', below that 'loosely related'. English requests score lower overall and use {es} / {ep}.",
     d_mmr: "7. Removing near-duplicates (MMR)",
     d_mmr_t: "Datasets are picked one by one by relevance, minus how much each looks like the datasets already picked. With λ = {lam}, relevance weighs more than likeness.",
-    d_map: "8. Links on the data map",
-    d_map_t: "Each dataset has 1–3 topics; the first is its main topic. The 53 topics form 8 big fields. This grouping is not AI Hub's 14 fields: this project made it in plain words for students. 'Similar datasets' are the 5 with the highest cosine between dataset-card vectors.",
-    d_eval: "How well does it work?",
-    d_eval_t: "On 59 held-out test questions, the wanted dataset came first 56 times and in the top 5 57 times. Run with each of the 31 majors (1,888 runs): first 96.1%, top 5 96.6% (measured 2 November 2026).",
-    d_limits: "Limits",
-    limits: [
-      "The label thresholds and weights were tuned on test questions and still need checking against real student ratings.",
-      "The major profiles and topic grouping are AI-written drafts, not yet reviewed by the departments.",
-      "Very short requests, or questions about details deep inside a manual, can be less accurate.",
-    ],
     go_aihub: "Visit AI Hub", see_map: "Explore the data map", map_open_all: "Open all fields", map_close_all: "Start over",
     map_how_tree: "Click a field or topic to open its branch, and again to close it. Numbers are dataset counts. Click a dataset to mark datasets with a similar meaning in blue.",
     map_how_v: "Click a field to show its topics; click a topic to list its datasets below. Numbers are dataset counts.",
@@ -662,9 +642,6 @@ async function pageMethod(seq) {
     <h3>${esc(at("d_label"))}</h3><p>${esc(at("d_label_t", { ks: s.match_label.korean.strong, kp: s.match_label.korean.partial, es: s.match_label.english.strong, ep: s.match_label.english.partial }))}</p>
     <h3>${esc(at("d_mmr"))}</h3><p>${esc(at("d_mmr_t", { lam: r.diversity.mmr_lambda }))}</p>
     ${texBlock(TEX.mmr(r.diversity.mmr_lambda))}
-    <h3>${esc(at("d_map"))}</h3><p>${esc(at("d_map_t"))} <a href="#/about/map">${esc(at("sub_map"))}</a></p>
-    <h3>${esc(at("d_eval"))}</h3><p>${esc(at("d_eval_t"))}</p>
-    <h3>${esc(at("d_limits"))}</h3><ul class="plain">${at("limits").map(x => `<li>${esc(x)}</li>`).join("")}</ul>
   </section>`);
   bindCalc(r);
   // nicer formulas when KaTeX loads; the plain TeX stays readable if it does not
