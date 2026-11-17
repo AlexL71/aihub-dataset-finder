@@ -615,9 +615,10 @@ const TEX = {
   prof: String.raw`p = \mathrm{clip}\!\left(\frac{\cos(\mathbf{m},\mathbf{d}) - \mathrm{median}_m}{\max_m - \mathrm{median}_m},\,0,\,1\right)`,
   major: sh => String.raw`M = ${(1 - sh).toFixed(1)}\, f + ${sh}\, p`,
   score: String.raw`\text{relevance} = 10 \times \frac{w_I\, I + w_M\, M}{w_I + w_M}`,
-  mmr: lam => String.raw`\begin{gathered}\text{next} = \arg\max_{d}\; \big[\, ${lam}\, r(d) - ${(1 - lam).toFixed(2)}\, \mathrm{sim}(d) \,\big] \\ r(d) = \frac{\text{relevance}(d)}{10} \\ \mathrm{sim}(d) = \max_{d' \in \text{picked}} \cos(d, d')\end{gathered}`,
+  mmr: lam => String.raw`\begin{gathered}\text{next} = \arg\max_{d}\; \mathrm{MMR}(d) \\ \mathrm{MMR}(d) = ${lam}\, r(d) - ${(1 - lam).toFixed(2)}\, \mathrm{sim}(d) \\ r(d) = \frac{\text{relevance}(d)}{10} \\ \mathrm{sim}(d) = \max_{d' \in \text{picked}} \cos(d, d')\end{gathered}`,
 };
-function texBlock(tex) { return `<div class="tex" data-tex="${esc(tex)}"><code>${esc(tex)}</code></div>`; }
+// cls "tex-desk" / "tex-phone": show this version only on wide / narrow screens (see style.css)
+function texBlock(tex, cls = "") { return `<div class="tex${cls ? " " + cls : ""}" data-tex="${esc(tex)}"><code>${esc(tex)}</code></div>`; }
 
 async function pageMethod(seq) {
   const m = await aboutData("method");
@@ -651,7 +652,13 @@ async function pageMethod(seq) {
     ${texBlock(TEX.score)}
     <div class="example"><b>${esc(at("d_example"))}</b> ${esc(at("d_example_t"))}
       ${texBlock(String.raw`\begin{gathered}s = \frac{0.74 - ${it.sim_low}}{${it.sim_high} - ${it.sim_low}} = ${ex.sim.toFixed(2)} \\ I =${it.sim_share}\times${ex.sim.toFixed(2)} + ${(1 - it.sim_share).toFixed(1)}\times 0.8 = ${ex.I.toFixed(2)}\end{gathered}`)}
-      ${texBlock(String.raw`\begin{gathered}M = ${(1 - mj.profile_share).toFixed(1)}\times ${mj.core_main} + ${mj.profile_share}\times 0.6 = ${ex.M.toFixed(2)} \\ \text{relevance} = 10\times${Math.abs(wi.interest + wi.major - 1) < 1e-9 ? "" : String.raw`\frac{1}{${wi.interest}+${wi.major}}`}(${wi.interest}\times${ex.I.toFixed(2)} + ${wi.major}\times${ex.M.toFixed(2)}) = ${ex.score.toFixed(1)}\end{gathered}`)}</div>
+      ${texBlock(String.raw`M = ${(1 - mj.profile_share).toFixed(1)}\times ${mj.core_main} + ${mj.profile_share}\times 0.6 = ${ex.M.toFixed(2)}`)}
+      ${(() => {   // one line on wide screens, split over three lines on phones
+        const w = Math.abs(wi.interest + wi.major - 1) < 1e-9 ? "" : String.raw`\frac{1}{${wi.interest}+${wi.major}}`;
+        const a = String.raw`${wi.interest}\times${ex.I.toFixed(2)}`, b = String.raw`${wi.major}\times${ex.M.toFixed(2)}`, v = ex.score.toFixed(1);
+        return texBlock(String.raw`\text{relevance} = 10\times${w}(${a} + ${b}) = ${v}`, "tex-desk")
+          + texBlock(String.raw`\begin{aligned}\text{relevance} &= 10\times${w}(${a} \\ &\qquad + ${b}) \\ &= ${v}\end{aligned}`, "tex-phone");
+      })()}</div>
     <h3>${esc(at("d_label"))}</h3><p>${esc(at("d_label_t", { ks: s.match_label.korean.strong, kp: s.match_label.korean.partial, es: s.match_label.english.strong, ep: s.match_label.english.partial }))}</p>
     <h3>${esc(at("d_mmr"))}</h3><p>${esc(at("d_mmr_t", { lam: r.diversity.mmr_lambda }))}</p>
     ${texBlock(TEX.mmr(r.diversity.mmr_lambda))}
